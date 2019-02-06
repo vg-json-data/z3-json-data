@@ -1,0 +1,1048 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 3,
+            "name": "Blinds Hideout",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Blind's Hideout - Top",
+                    "area": "Blinds Hideout",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Blind's Hideout - Left",
+                    "area": "Blinds Hideout",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Blind's Hideout - Right",
+                    "area": "Blinds Hideout",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Blind's Hideout - Far Left",
+                    "area": "Blinds Hideout",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Blind's Hideout - Far Right",
+                    "area": "Blinds Hideout",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Hyrule Castle Secret Entrance",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Secret Entrance Exit",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Link's Uncle",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Secret Passage",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Waterfall of Wishing",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Waterfall Fairy - Left",
+                    "area": "Waterfall of Wishing",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Waterfall Fairy - Right",
+                    "area": "Waterfall of Wishing",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Kings Grave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "King's Tomb",
+                    "area": "Kings Grave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "North Fairy Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "North Fairy Cave Exit",
+                    "area": "North Fairy Cave",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Dam",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Floodgate",
+                    "area": "Dam",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Floodgate Chest",
+                    "area": "Dam",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Links House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Links House Exit",
+                    "area": "Links House",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Link's House",
+                    "area": "Links House",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Chris Houlihan Room",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Chris Houlihan Room Exit",
+                    "area": "Chris Houlihan Room",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Tavern",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Kakariko Tavern",
+                    "area": "Tavern",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Elder House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Elder House Exit (East)",
+                    "area": "Elder House",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Elder House Exit (West)",
+                    "area": "Elder House",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Snitch Lady (East)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 16,
+            "name": "Snitch Lady (West)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 17,
+            "name": "Bush Covered House",
+            "roomType": "Cave"
+        },
+        {
+            "id": 18,
+            "name": "Tavern (Front)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 19,
+            "name": "Light World Bomb Hut",
+            "roomType": "Cave"
+        },
+        {
+            "id": 20,
+            "name": "Kakariko Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 21,
+            "name": "Fortune Teller (Light)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 22,
+            "name": "Lake Hylia Fortune Teller",
+            "roomType": "Cave"
+        },
+        {
+            "id": 23,
+            "name": "Lumberjack House",
+            "roomType": "Cave"
+        },
+        {
+            "id": 24,
+            "name": "Bonk Fairy (Light)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 25,
+            "name": "Bonk Fairy (Dark)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 26,
+            "name": "Lake Hylia Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 27,
+            "name": "Swamp Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 28,
+            "name": "Desert Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 29,
+            "name": "Dark Lake Hylia Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 30,
+            "name": "Dark Lake Hylia Ledge Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 31,
+            "name": "Dark Desert Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 32,
+            "name": "Dark Death Mountain Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 33,
+            "name": "Chicken House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Chicken House",
+                    "area": "Chicken House",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Aginahs Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Aginah's Cave",
+                    "area": "Aginahs Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Sahasrahlas Hut",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sahasrahla's Hut - Left",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Sahasrahla's Hut - Middle",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Sahasrahla's Hut - Right",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Sahasrahla",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Kakariko Well (top)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Kakariko Well (top to bottom)",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Kakariko Well - Top",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Kakariko Well - Left",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Kakariko Well - Middle",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Kakariko Well - Right",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Kakariko Well - Bottom",
+                    "area": "Kakariko Well (top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Kakariko Well (bottom)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Kakariko Well Exit",
+                    "area": "Kakariko Well (bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Blacksmiths Hut",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Blacksmith",
+                    "area": "Blacksmiths Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Missing Smith",
+                    "area": "Blacksmiths Hut",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Bat Cave (right)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bat Cave Door",
+                    "area": "Bat Cave (right)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Magic Bat",
+                    "area": "Bat Cave (right)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Bat Cave (left)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bat Cave Exit",
+                    "area": "Bat Cave (left)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Sick Kids House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sick Kid",
+                    "area": "Sick Kids House",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Lost Woods Hideout (top)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lost Woods Hideout (top to bottom)",
+                    "area": "Lost Woods Hideout (top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Lost Woods Hideout",
+                    "area": "Lost Woods Hideout (top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Lost Woods Hideout (bottom)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lost Woods Hideout Exit",
+                    "area": "Lost Woods Hideout (bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 46,
+            "name": "Lumberjack Tree (top)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lumberjack Tree (top to bottom)",
+                    "area": "Lumberjack Tree (top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Lumberjack Tree",
+                    "area": "Lumberjack Tree (top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Lumberjack Tree (bottom)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lumberjack Tree Exit",
+                    "area": "Lumberjack Tree (bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Cave 45",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Cave 45",
+                    "area": "Cave 45",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Graveyard Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Graveyard Cave",
+                    "area": "Graveyard Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Checkerboard Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Checkerboard Cave",
+                    "area": "Checkerboard Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Long Fairy Cave",
+            "roomType": "Cave"
+        },
+        {
+            "id": 54,
+            "name": "Mini Moldorm Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Mini Moldorm Cave - Far Left",
+                    "area": "Mini Moldorm Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Mini Moldorm Cave - Left",
+                    "area": "Mini Moldorm Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Mini Moldorm Cave - Right",
+                    "area": "Mini Moldorm Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Mini Moldorm Cave - Far Right",
+                    "area": "Mini Moldorm Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Mini Moldorm Cave - Generous Guy",
+                    "area": "Mini Moldorm Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "name": "Ice Rod Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Rod Cave",
+                    "area": "Ice Rod Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Good Bee Cave",
+            "roomType": "Cave"
+        },
+        {
+            "id": 57,
+            "name": "20 Rupee Cave",
+            "roomType": "Cave"
+        },
+        {
+            "id": 58,
+            "name": "Cave Shop (Lake Hylia)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 59,
+            "name": "Cave Shop (Dark Death Mountain)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 60,
+            "name": "Bonk Rock Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bonk Rock Cave",
+                    "area": "Bonk Rock Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 61,
+            "name": "Library",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Library",
+                    "area": "Library",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "name": "Kakariko Gamble Game",
+            "roomType": "Cave"
+        },
+        {
+            "id": 63,
+            "name": "Potion Shop",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Potion Shop",
+                    "area": "Potion Shop",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "name": "Capacity Upgrade",
+            "roomType": "Cave"
+        },
+        {
+            "id": 66,
+            "name": "Two Brothers House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Two Brothers House Exit (East)",
+                    "area": "Two Brothers House",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Two Brothers House Exit (West)",
+                    "area": "Two Brothers House",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 68,
+            "name": "50 Rupee Cave",
+            "roomType": "Cave"
+        },
+        {
+            "id": 80,
+            "name": "Lost Woods Gamble",
+            "roomType": "Cave"
+        },
+        {
+            "id": 90,
+            "name": "Old Man Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Old Man Cave Exit (East)",
+                    "area": "Old Man Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Old Man Cave Exit (West)",
+                    "area": "Old Man Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Old Man",
+                    "area": "Old Man Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 91,
+            "name": "Old Man House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Old Man House Exit (Bottom)",
+                    "area": "Old Man House",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Old Man House Front to Back",
+                    "area": "Old Man House",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 92,
+            "name": "Old Man House Back",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Old Man House Exit (Top)",
+                    "area": "Old Man House Back",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Old Man House Back to Front",
+                    "area": "Old Man House Back",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 94,
+            "name": "Death Mountain Return Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Death Mountain Return Cave Exit (West)",
+                    "area": "Death Mountain Return Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Death Mountain Return Cave Exit (East)",
+                    "area": "Death Mountain Return Cave",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 96,
+            "name": "Spectacle Rock Cave (Top)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spectacle Rock Cave Drop",
+                    "area": "Spectacle Rock Cave (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Spectacle Rock Cave Exit (Top)",
+                    "area": "Spectacle Rock Cave (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Spectacle Rock Cave",
+                    "area": "Spectacle Rock Cave (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 97,
+            "name": "Spectacle Rock Cave (Bottom)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spectacle Rock Cave Exit",
+                    "area": "Spectacle Rock Cave (Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "name": "Spectacle Rock Cave (Peak)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spectacle Rock Cave Peak Drop",
+                    "area": "Spectacle Rock Cave (Peak)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Spectacle Rock Cave Exit (Peak)",
+                    "area": "Spectacle Rock Cave (Peak)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 100,
+            "name": "Hookshot Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 101,
+            "name": "Paradox Cave Front",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Paradox Cave Push Block Reverse",
+                    "area": "Paradox Cave Front",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Paradox Cave Exit (Bottom)",
+                    "area": "Paradox Cave Front",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Light World Death Mountain Shop",
+                    "area": "Paradox Cave Front",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": "Paradox Cave Chest Area",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Paradox Cave Push Block",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Paradox Cave Bomb Jump",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Paradox Cave Lower - Far Left",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Paradox Cave Lower - Left",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Paradox Cave Lower - Right",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Paradox Cave Lower - Far Right",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Paradox Cave Lower - Middle",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 8,
+                    "name": "Paradox Cave Upper - Left",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 9,
+                    "name": "Paradox Cave Upper - Right",
+                    "area": "Paradox Cave Chest Area",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "Paradox Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Paradox Cave Exit (Middle)",
+                    "area": "Paradox Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Paradox Cave Exit (Top)",
+                    "area": "Paradox Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Paradox Cave Drop",
+                    "area": "Paradox Cave",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "name": "Light World Death Mountain Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 107,
+            "name": "Spiral Cave (Top)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spiral Cave (top to bottom)",
+                    "area": "Spiral Cave (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Spiral Cave Exit (Top)",
+                    "area": "Spiral Cave (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Spiral Cave",
+                    "area": "Spiral Cave (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 108,
+            "name": "Spiral Cave (Bottom)",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spiral Cave Exit",
+                    "area": "Spiral Cave (Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 110,
+            "name": "Fairy Ascension Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Fairy Ascension Cave Exit (Top)",
+                    "area": "Fairy Ascension Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Fairy Ascension Cave Exit (Bottom)",
+                    "area": "Fairy Ascension Cave",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 165,
+            "name": "Mimic Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Mimic Cave",
+                    "area": "Mimic Cave",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}

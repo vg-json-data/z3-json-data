@@ -1,0 +1,1863 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 74,
+            "name": "Desert Palace Main (Outer)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Pots (Outer)",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace Exit (West)",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Desert Palace Exit (East)",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Desert Palace East Wing",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Desert Palace - Big Chest",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Desert Palace - Torch",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Desert Palace - Map Chest",
+                    "area": "Desert Palace Main (Outer)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 75,
+            "name": "Desert Palace Main (Inner)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Exit (South)",
+                    "area": "Desert Palace Main (Inner)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace Pots (Inner)",
+                    "area": "Desert Palace Main (Inner)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 76,
+            "name": "Desert Palace East",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace - Compass Chest",
+                    "area": "Desert Palace East",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace - Big Key Chest",
+                    "area": "Desert Palace East",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 77,
+            "name": "Desert Palace North",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Exit (North)",
+                    "area": "Desert Palace North",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace - Lanmolas",
+                    "area": "Desert Palace North",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Desert Palace - Prize",
+                    "area": "Desert Palace North",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 78,
+            "name": "Eastern Palace",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Eastern Palace Exit",
+                    "area": "Eastern Palace",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Eastern Palace - Compass Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Eastern Palace - Big Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Eastern Palace - Cannonball Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Eastern Palace - Big Key Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Eastern Palace - Map Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Eastern Palace - Armos Knights",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 8,
+                    "name": "Eastern Palace - Prize",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 83,
+            "name": "Hyrule Castle",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Exit (East)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Hyrule Castle Exit (West)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Hyrule Castle Exit (South)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Throne Room",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Hyrule Castle - Boomerang Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Hyrule Castle - Map Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Hyrule Castle - Zelda's Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Sewer Drop",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sewer Drop",
+                    "area": "Sewer Drop",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Sewers (Dark)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sewers Door",
+                    "area": "Sewers (Dark)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sewers - Dark Cross",
+                    "area": "Sewers (Dark)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 86,
+            "name": "Sewers",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sanctuary Push Door",
+                    "area": "Sewers",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sewers Back Door",
+                    "area": "Sewers",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Sewers - Secret Room - Left",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Sewers - Secret Room - Middle",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Sewers - Secret Room - Right",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 87,
+            "name": "Sanctuary",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sanctuary Exit",
+                    "area": "Sanctuary",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sanctuary",
+                    "area": "Sanctuary",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 88,
+            "name": "Agahnims Tower",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Agahnim 1",
+                    "area": "Agahnims Tower",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Agahnims Tower Exit",
+                    "area": "Agahnims Tower",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Castle Tower - Room 03",
+                    "area": "Agahnims Tower",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Castle Tower - Dark Maze",
+                    "area": "Agahnims Tower",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 89,
+            "name": "Agahnim 1",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Agahnim 1",
+                    "area": "Agahnim 1",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 114,
+            "name": "Tower of Hera (Bottom)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera Small Key Door",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Tower of Hera Big Key Door",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Tower of Hera Exit",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Tower of Hera - Basement Cage",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Tower of Hera - Map Chest",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 115,
+            "name": "Tower of Hera (Basement)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera - Big Key Chest",
+                    "area": "Tower of Hera (Basement)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 116,
+            "name": "Tower of Hera (Top)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera - Compass Chest",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Tower of Hera - Big Chest",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Tower of Hera - Moldorm",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Tower of Hera - Prize",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 166,
+            "name": "Swamp Palace (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace Moat",
+                    "area": "Swamp Palace (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace Exit",
+                    "area": "Swamp Palace (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 167,
+            "name": "Swamp Palace (First Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace Small Key Door",
+                    "area": "Swamp Palace (First Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Entrance",
+                    "area": "Swamp Palace (First Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 168,
+            "name": "Swamp Palace (Starting Area)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace (Center)",
+                    "area": "Swamp Palace (Starting Area)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Map Chest",
+                    "area": "Swamp Palace (Starting Area)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 169,
+            "name": "Swamp Palace (Center)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace (North)",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Big Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Swamp Palace - Compass Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Swamp Palace - Big Key Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Swamp Palace - West Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 170,
+            "name": "Swamp Palace (North)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace - Flooded Room - Left",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Flooded Room - Right",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Swamp Palace - Waterfall Room",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Swamp Palace - Arrghus",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Swamp Palace - Prize",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 171,
+            "name": "Thieves Town (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Thieves Town Big Key Door",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Thieves Town Exit",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Thieves' Town - Big Key Chest",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Thieves' Town - Map Chest",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Thieves' Town - Compass Chest",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Thieves' Town - Ambush Chest",
+                    "area": "Thieves Town (Entrance)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 172,
+            "name": "Thieves Town (Deep)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Blind Fight",
+                    "area": "Thieves Town (Deep)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Thieves' Town - Attic",
+                    "area": "Thieves Town (Deep)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Thieves' Town - Big Chest",
+                    "area": "Thieves Town (Deep)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Thieves' Town - Blind's Cell",
+                    "area": "Thieves Town (Deep)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 173,
+            "name": "Blind Fight",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Thieves Town - Blind",
+                    "area": "Blind Fight",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Thieves Town - Prize",
+                    "area": "Blind Fight",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 174,
+            "name": "Skull Woods First Section",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods First Section Exit",
+                    "area": "Skull Woods First Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods First Section Bomb Jump",
+                    "area": "Skull Woods First Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods First Section South Door",
+                    "area": "Skull Woods First Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Skull Woods First Section West Door",
+                    "area": "Skull Woods First Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Skull Woods - Map Chest",
+                    "area": "Skull Woods First Section",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 175,
+            "name": "Skull Woods First Section (Right)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods First Section (Right) North Door",
+                    "area": "Skull Woods First Section (Right)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods - Pinball Room",
+                    "area": "Skull Woods First Section (Right)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 176,
+            "name": "Skull Woods First Section (Left)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods First Section (Left) Door to Exit",
+                    "area": "Skull Woods First Section (Left)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods First Section (Left) Door to Right",
+                    "area": "Skull Woods First Section (Left)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods - Compass Chest",
+                    "area": "Skull Woods First Section (Left)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Skull Woods - Pot Prison",
+                    "area": "Skull Woods First Section (Left)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 177,
+            "name": "Skull Woods First Section (Top)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods First Section (Top) One-Way Path",
+                    "area": "Skull Woods First Section (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods - Big Chest",
+                    "area": "Skull Woods First Section (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 178,
+            "name": "Skull Woods Second Section (Drop)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods Second Section (Drop)",
+                    "area": "Skull Woods Second Section (Drop)",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 179,
+            "name": "Skull Woods Second Section",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods Second Section Exit (East)",
+                    "area": "Skull Woods Second Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods Second Section Exit (West)",
+                    "area": "Skull Woods Second Section",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods - Big Key Chest",
+                    "area": "Skull Woods Second Section",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 180,
+            "name": "Skull Woods Final Section (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods Torch Room",
+                    "area": "Skull Woods Final Section (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods Final Section Exit",
+                    "area": "Skull Woods Final Section (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods - Bridge Room",
+                    "area": "Skull Woods Final Section (Entrance)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 181,
+            "name": "Skull Woods Final Section (Mothula)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods - Mothula",
+                    "area": "Skull Woods Final Section (Mothula)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods - Prize",
+                    "area": "Skull Woods Final Section (Mothula)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 182,
+            "name": "Ice Palace (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace Entrance Room",
+                    "area": "Ice Palace (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ice Palace Exit",
+                    "area": "Ice Palace (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 183,
+            "name": "Ice Palace (Main)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace (East)",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ice Palace (Kholdstare)",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Ice Palace - Compass Chest",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ice Palace - Freezor Chest",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Ice Palace - Big Chest",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Ice Palace - Iced T Room",
+                    "area": "Ice Palace (Main)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 184,
+            "name": "Ice Palace (East)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace (East Top)",
+                    "area": "Ice Palace (East)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ice Palace - Spike Room",
+                    "area": "Ice Palace (East)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 185,
+            "name": "Ice Palace (East Top)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace - Big Key Chest",
+                    "area": "Ice Palace (East Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Ice Palace - Map Chest",
+                    "area": "Ice Palace (East Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 186,
+            "name": "Ice Palace (Kholdstare)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace - Kholdstare",
+                    "area": "Ice Palace (Kholdstare)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Ice Palace - Prize",
+                    "area": "Ice Palace (Kholdstare)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 187,
+            "name": "Misery Mire (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire Entrance Gap",
+                    "area": "Misery Mire (Entrance)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire Exit",
+                    "area": "Misery Mire (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 188,
+            "name": "Misery Mire (Main)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire (West)",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire Big Key Door",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Misery Mire - Big Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Misery Mire - Map Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Misery Mire - Main Lobby",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Misery Mire - Bridge Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Misery Mire - Spike Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 189,
+            "name": "Misery Mire (West)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire - Compass Chest",
+                    "area": "Misery Mire (West)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire - Big Key Chest",
+                    "area": "Misery Mire (West)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 190,
+            "name": "Misery Mire (Final Area)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire (Vitreous)",
+                    "area": "Misery Mire (Final Area)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 191,
+            "name": "Misery Mire (Vitreous)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire - Vitreous",
+                    "area": "Misery Mire (Vitreous)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire - Prize",
+                    "area": "Misery Mire (Vitreous)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 192,
+            "name": "Turtle Rock (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Entrance Gap",
+                    "area": "Turtle Rock (Entrance)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Exit (Front)",
+                    "area": "Turtle Rock (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 193,
+            "name": "Turtle Rock (First Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Pokey Room",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Entrance Gap Reverse",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Compass Chest",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Roller Room - Left",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Turtle Rock - Roller Room - Right",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 194,
+            "name": "Turtle Rock (Chain Chomp Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Chain Chomp Room) (North)",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Chain Chomp Room) (South)",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Chain Chomps",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 195,
+            "name": "Turtle Rock (Second Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Ledge Exit (West)",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Chain Chomp Staircase",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock Big Key Door",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Big Key Chest",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 196,
+            "name": "Turtle Rock (Big Chest)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Big Chest) (North)",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Ledge Exit (East)",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Big Chest",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 197,
+            "name": "Turtle Rock (Crystaroller Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Dark Room Staircase",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Big Key Door Reverse",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Crystaroller Room",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 198,
+            "name": "Turtle Rock (Dark Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Dark Room) (North)",
+                    "area": "Turtle Rock (Dark Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Dark Room) (South)",
+                    "area": "Turtle Rock (Dark Room)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 199,
+            "name": "Turtle Rock (Eye Bridge)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Dark Room (South)",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Trinexx)",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock Isolated Ledge Exit",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Eye Bridge - Bottom Left",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Turtle Rock - Eye Bridge - Bottom Right",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Turtle Rock - Eye Bridge - Top Left",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Turtle Rock - Eye Bridge - Top Right",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 200,
+            "name": "Turtle Rock (Trinexx)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock - Trinexx",
+                    "area": "Turtle Rock (Trinexx)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock - Prize",
+                    "area": "Turtle Rock (Trinexx)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 201,
+            "name": "Palace of Darkness (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Bridge Room",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness Bonk Wall",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness Exit",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - Shooter Room",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 202,
+            "name": "Palace of Darkness (Center)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Big Key Chest Staircase",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness (North)",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness Big Key Door",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - The Arena - Bridge",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Palace of Darkness - Stalfos Basement",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 203,
+            "name": "Palace of Darkness (Big Key Chest)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Big Key Chest",
+                    "area": "Palace of Darkness (Big Key Chest)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 204,
+            "name": "Palace of Darkness (Bonk Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Hammer Peg Drop",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - The Arena - Ledge",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Map Chest",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "name": "Palace of Darkness (North)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Spike Statue Room Door",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness Maze Door",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Compass Chest",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - Dark Basement - Left",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Palace of Darkness - Dark Basement - Right",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 206,
+            "name": "Palace of Darkness (Maze)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Dark Maze - Top",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - Dark Maze - Bottom",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Big Chest",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 207,
+            "name": "Palace of Darkness (Harmless Hellway)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Harmless Hellway",
+                    "area": "Palace of Darkness (Harmless Hellway)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 208,
+            "name": "Palace of Darkness (Final Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Helmasaur",
+                    "area": "Palace of Darkness (Final Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - Prize",
+                    "area": "Palace of Darkness (Final Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 209,
+            "name": "Ganons Tower (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Tile Room)",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower (Hookshot Room)",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower Big Key Door",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower Exit",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Ganons Tower - Bob's Torch",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Ganons Tower - Hope Room - Left",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Ganons Tower - Hope Room - Right",
+                    "area": "Ganons Tower (Entrance)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 210,
+            "name": "Ganons Tower (Tile Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Tile Room) Key Door",
+                    "area": "Ganons Tower (Tile Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Tile Room",
+                    "area": "Ganons Tower (Tile Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 211,
+            "name": "Ganons Tower (Compass Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Bottom) (East)",
+                    "area": "Ganons Tower (Compass Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Compass Room - Top Left",
+                    "area": "Ganons Tower (Compass Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower - Compass Room - Top Right",
+                    "area": "Ganons Tower (Compass Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower - Compass Room - Bottom Left",
+                    "area": "Ganons Tower (Compass Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Ganons Tower - Compass Room - Bottom Right",
+                    "area": "Ganons Tower (Compass Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 212,
+            "name": "Ganons Tower (Hookshot Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Map Room)",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower (Double Switch Room)",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower - DMs Room - Top Left",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower - DMs Room - Top Right",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Ganons Tower - DMs Room - Bottom Left",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Ganons Tower - DMs Room - Bottom Right",
+                    "area": "Ganons Tower (Hookshot Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 213,
+            "name": "Ganons Tower (Map Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower - Map Chest",
+                    "area": "Ganons Tower (Map Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 214,
+            "name": "Ganons Tower (Firesnake Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Firesnake Room)",
+                    "area": "Ganons Tower (Firesnake Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Firesnake Room",
+                    "area": "Ganons Tower (Firesnake Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 215,
+            "name": "Ganons Tower (Teleport Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower (Bottom) (West)",
+                    "area": "Ganons Tower (Teleport Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Randomizer Room - Top Left",
+                    "area": "Ganons Tower (Teleport Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower - Randomizer Room - Top Right",
+                    "area": "Ganons Tower (Teleport Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower - Randomizer Room - Bottom Left",
+                    "area": "Ganons Tower (Teleport Room)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Ganons Tower - Randomizer Room - Bottom Right",
+                    "area": "Ganons Tower (Teleport Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 216,
+            "name": "Ganons Tower (Bottom)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower - Bob's Chest",
+                    "area": "Ganons Tower (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Big Chest",
+                    "area": "Ganons Tower (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower - Big Key Room - Left",
+                    "area": "Ganons Tower (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower - Big Key Room - Right",
+                    "area": "Ganons Tower (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Ganons Tower - Big Key Chest",
+                    "area": "Ganons Tower (Bottom)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 217,
+            "name": "Ganons Tower (Top)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower Torch Rooms",
+                    "area": "Ganons Tower (Top)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 218,
+            "name": "Ganons Tower (Before Moldorm)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower Moldorm Door",
+                    "area": "Ganons Tower (Before Moldorm)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganons Tower - Mini Helmasaur Room - Left",
+                    "area": "Ganons Tower (Before Moldorm)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower - Mini Helmasaur Room - Right",
+                    "area": "Ganons Tower (Before Moldorm)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Ganons Tower - Pre-Moldorm Chest",
+                    "area": "Ganons Tower (Before Moldorm)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 219,
+            "name": "Ganons Tower (Moldorm)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower Moldorm Gap",
+                    "area": "Ganons Tower (Moldorm)",
+                    "nodeType": "obstacle"
+                }
+            ]
+        },
+        {
+            "id": 220,
+            "name": "Agahnim 2",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganons Tower - Validation Chest",
+                    "area": "Agahnim 2",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Agahnim 2",
+                    "area": "Agahnim 2",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}

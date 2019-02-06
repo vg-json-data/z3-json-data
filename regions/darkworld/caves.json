@@ -1,0 +1,340 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 119,
+            "name": "Palace of Darkness Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 120,
+            "name": "East Dark World Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 122,
+            "name": "Big Bomb Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 123,
+            "name": "Archery Game",
+            "roomType": "Cave"
+        },
+        {
+            "id": 127,
+            "name": "Dark Lake Hylia Ledge Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 128,
+            "name": "Dark Lake Hylia Ledge Spike Cave",
+            "roomType": "Cave"
+        },
+        {
+            "id": 129,
+            "name": "Hype Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hype Cave - Top",
+                    "area": "Hype Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Hype Cave - Middle Right",
+                    "area": "Hype Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Hype Cave - Middle Left",
+                    "area": "Hype Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Hype Cave - Bottom",
+                    "area": "Hype Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Hype Cave - Generous Guy",
+                    "area": "Hype Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 134,
+            "name": "Fortune Teller (Dark)",
+            "roomType": "Cave"
+        },
+        {
+            "id": 135,
+            "name": "Village of Outcasts Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 136,
+            "name": "Dark Lake Hylia Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 137,
+            "name": "Dark World Lumberjack Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 138,
+            "name": "Dark World Potion Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 139,
+            "name": "Dark World Hammer Peg Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Peg Cave",
+                    "area": "Dark World Hammer Peg Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 140,
+            "name": "Pyramid Fairy",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Fairy - Left",
+                    "area": "Pyramid Fairy",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Pyramid Fairy - Right",
+                    "area": "Pyramid Fairy",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 141,
+            "name": "Brewery",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Brewery",
+                    "area": "Brewery",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 142,
+            "name": "C-Shaped House",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "C-Shaped House",
+                    "area": "C-Shaped House",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 143,
+            "name": "Chest Game",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Chest Game",
+                    "area": "Chest Game",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 144,
+            "name": "Red Shield Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 145,
+            "name": "Dark Sanctuary Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 146,
+            "name": "Bumper Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bumper Cave Exit (Bottom)",
+                    "area": "Bumper Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Bumper Cave Exit (Top)",
+                    "area": "Bumper Cave",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 151,
+            "name": "Mire Shed",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Mire Shed - Left",
+                    "area": "Mire Shed",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Mire Shed - Right",
+                    "area": "Mire Shed",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 152,
+            "name": "Dark Desert Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 158,
+            "name": "Superbunny Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Superbunny Cave Exit (Top)",
+                    "area": "Superbunny Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Superbunny Cave Exit (Bottom)",
+                    "area": "Superbunny Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Superbunny Cave - Top",
+                    "area": "Superbunny Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Superbunny Cave - Bottom",
+                    "area": "Superbunny Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 159,
+            "name": "Spike Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spike Cave",
+                    "area": "Spike Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 160,
+            "name": "Hookshot Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hookshot Cave Exit (South)",
+                    "area": "Hookshot Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Hookshot Cave Exit (North)",
+                    "area": "Hookshot Cave",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Hookshot Cave - Top Right",
+                    "area": "Hookshot Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Hookshot Cave - Top Left",
+                    "area": "Hookshot Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Hookshot Cave - Bottom Right",
+                    "area": "Hookshot Cave",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Hookshot Cave - Bottom Left",
+                    "area": "Hookshot Cave",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 221,
+            "name": "Pyramid",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ganon Drop",
+                    "area": "Pyramid",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Ganon",
+                    "area": "Pyramid",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 222,
+            "name": "Bottom of Pyramid",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Exit",
+                    "area": "Bottom of Pyramid",
+                    "nodeType": "door"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5143 @@
+{
+  "$schema": "../../schema/z3-connection.schema.json",
+  "connections": [
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Central Island Pier and Lake Hylia Central Island",
+      "nodes": [
+        {
+          "name": "Lake Hylia Central Island Pier",
+          "position": "origin"
+        },
+        {
+          "name": "Lake Hylia Central Island",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Central Island Teleporter and Dark Lake Hylia Central Island",
+      "nodes": [
+        {
+          "name": "Lake Hylia Central Island Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Central Island",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Zoras River and Zoras River",
+      "nodes": [
+        {
+          "name": "Zoras River",
+          "position": "origin"
+        },
+        {
+          "name": "Zoras River",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kings Grave Outer Rocks and Kings Grave Area",
+      "nodes": [
+        {
+          "name": "Kings Grave Outer Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Kings Grave Area",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kings Grave Inner Rocks and Light World",
+      "nodes": [
+        {
+          "name": "Kings Grave Inner Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kings Grave Mirror Spot and Kings Grave Area",
+      "nodes": [
+        {
+          "name": "Kings Grave Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Kings Grave Area",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Well (top to bottom) and Kakariko Well (bottom)",
+      "nodes": [
+        {
+          "name": "Kakariko Well (top to bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Kakariko Well (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Master Sword Meadow and Master Sword Meadow",
+      "nodes": [
+        {
+          "name": "Master Sword Meadow",
+          "position": "origin"
+        },
+        {
+          "name": "Master Sword Meadow",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hobo Bridge and Hobo Bridge",
+      "nodes": [
+        {
+          "name": "Hobo Bridge",
+          "position": "origin"
+        },
+        {
+          "name": "Hobo Bridge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace East Wing and Desert Palace East",
+      "nodes": [
+        {
+          "name": "Desert Palace East Wing",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace East",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Bat Cave Drop Ledge and Bat Cave Drop Ledge",
+      "nodes": [
+        {
+          "name": "Bat Cave Drop Ledge",
+          "position": "origin"
+        },
+        {
+          "name": "Bat Cave Drop Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bat Cave Door and Bat Cave (left)",
+      "nodes": [
+        {
+          "name": "Bat Cave Door",
+          "position": "origin"
+        },
+        {
+          "name": "Bat Cave (left)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lost Woods Hideout (top to bottom) and Lost Woods Hideout (bottom)",
+      "nodes": [
+        {
+          "name": "Lost Woods Hideout (top to bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Lost Woods Hideout (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lumberjack Tree (top to bottom) and Lumberjack Tree (bottom)",
+      "nodes": [
+        {
+          "name": "Lumberjack Tree (top to bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Lumberjack Tree (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Stairs and Desert Palace Stairs",
+      "nodes": [
+        {
+          "name": "Desert Palace Stairs",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Stairs",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Desert Palace Stairs Drop and Light World",
+      "nodes": [
+        {
+          "name": "Desert Palace Stairs Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (North) Rocks and Desert Palace Entrance (North) Spot",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (North) Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Entrance (North) Spot",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Ledge Return Rocks and Desert Ledge",
+      "nodes": [
+        {
+          "name": "Desert Ledge Return Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Hyrule Castle Ledge Courtyard Drop and Hyrule Castle Courtyard",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Ledge Courtyard Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Courtyard",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Main Gate and Hyrule Castle Courtyard",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Main Gate",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Courtyard",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Throne Room and Sewers (Dark)",
+      "nodes": [
+        {
+          "name": "Throne Room",
+          "position": "origin"
+        },
+        {
+          "name": "Sewers (Dark)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sewers Door and Sewers",
+      "nodes": [
+        {
+          "name": "Sewers Door",
+          "position": "origin"
+        },
+        {
+          "name": "Sewers",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sanctuary Push Door and Sanctuary",
+      "nodes": [
+        {
+          "name": "Sanctuary Push Door",
+          "position": "origin"
+        },
+        {
+          "name": "Sanctuary",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Sewer Drop and Sewers",
+      "nodes": [
+        {
+          "name": "Sewer Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Sewers",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sewers Back Door and Sewers (Dark)",
+      "nodes": [
+        {
+          "name": "Sewers Back Door",
+          "position": "origin"
+        },
+        {
+          "name": "Sewers (Dark)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Agahnim 1 and Agahnim 1",
+      "nodes": [
+        {
+          "name": "Agahnim 1",
+          "position": "origin"
+        },
+        {
+          "name": "Agahnim 1",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Flute Spot 1 and Death Mountain",
+      "nodes": [
+        {
+          "name": "Flute Spot 1",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Entrance Rock and Death Mountain Entrance",
+      "nodes": [
+        {
+          "name": "Death Mountain Entrance Rock",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Entrance",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Death Mountain Entrance Drop and Light World",
+      "nodes": [
+        {
+          "name": "Death Mountain Entrance Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Spectacle Rock Cave Drop and Spectacle Rock Cave (Bottom)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock Cave (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Spectacle Rock Cave Peak Drop and Spectacle Rock Cave (Bottom)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Peak Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock Cave (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Death Mountain Return Ledge Drop and Light World",
+      "nodes": [
+        {
+          "name": "Death Mountain Return Ledge Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House Front to Back and Old Man House Back",
+      "nodes": [
+        {
+          "name": "Old Man House Front to Back",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man House Back",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House Back to Front and Old Man House",
+      "nodes": [
+        {
+          "name": "Old Man House Back to Front",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Broken Bridge (West) and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Broken Bridge (West)",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Broken Bridge (East) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Broken Bridge (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between East Death Mountain Drop and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "East Death Mountain Drop",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave Ledge Access and Spiral Cave Ledge",
+      "nodes": [
+        {
+          "name": "Spiral Cave Ledge Access",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Spiral Cave Ledge Drop and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Spiral Cave Ledge Drop",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave (top to bottom) and Spiral Cave (Bottom)",
+      "nodes": [
+        {
+          "name": "Spiral Cave (top to bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Death Mountain (Top) and East Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "East Death Mountain (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain (Top) and Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Death Mountain (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Death Mountain Drop and Death Mountain",
+      "nodes": [
+        {
+          "name": "Death Mountain Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Spectacle Rock Drop and Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tower of Hera Small Key Door and Tower of Hera (Basement)",
+      "nodes": [
+        {
+          "name": "Tower of Hera Small Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Tower of Hera (Basement)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tower of Hera Big Key Door and Tower of Hera (Top)",
+      "nodes": [
+        {
+          "name": "Tower of Hera Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Tower of Hera (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Top of Pyramid and East Dark World",
+      "nodes": [
+        {
+          "name": "Top of Pyramid",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Dark Lake Hylia Drop (East) and Dark Lake Hylia",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Drop (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Dark Lake Hylia Drop (South) and Dark Lake Hylia",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Drop (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Teleporter and Dark Lake Hylia",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Ledge and Dark Lake Hylia Ledge",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Ledge",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Dark Lake Hylia Ledge Drop and Dark Lake Hylia",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Ledge Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Dark World Pier and East Dark World",
+      "nodes": [
+        {
+          "name": "East Dark World Pier",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Island Mirror Spot and Lake Hylia Island",
+      "nodes": [
+        {
+          "name": "Lake Hylia Island Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Lake Hylia Island",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Central Island Mirror Spot and Lake Hylia Central Island",
+      "nodes": [
+        {
+          "name": "Lake Hylia Central Island Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Lake Hylia Central Island",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Ledge Mirror Spot and Hyrule Castle Ledge",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between South Dark World Bridge and South Dark World",
+      "nodes": [
+        {
+          "name": "South Dark World Bridge",
+          "position": "origin"
+        },
+        {
+          "name": "South Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Dark World Bridge and East Dark World",
+      "nodes": [
+        {
+          "name": "East Dark World Bridge",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Maze Race Mirror Spot and Maze Race Ledge",
+      "nodes": [
+        {
+          "name": "Maze Race Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Maze Race Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Village of Outcasts Heavy Rock and West Dark World",
+      "nodes": [
+        {
+          "name": "Village of Outcasts Heavy Rock",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Village of Outcasts Drop and South Dark World",
+      "nodes": [
+        {
+          "name": "Village of Outcasts Drop",
+          "position": "origin"
+        },
+        {
+          "name": "South Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Village of Outcasts Eastern Rocks and Hammer Peg Area",
+      "nodes": [
+        {
+          "name": "Village of Outcasts Eastern Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Hammer Peg Area",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Village of Outcasts Pegs and Dark Grassy Lawn",
+      "nodes": [
+        {
+          "name": "Village of Outcasts Pegs",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Grassy Lawn",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Peg Area Rocks and West Dark World",
+      "nodes": [
+        {
+          "name": "Peg Area Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Grassy Lawn Pegs and West Dark World",
+      "nodes": [
+        {
+          "name": "Grassy Lawn Pegs",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Bat Cave Drop Ledge Mirror Spot and Bat Cave Drop Ledge",
+      "nodes": [
+        {
+          "name": "Bat Cave Drop Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Bat Cave Drop Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Dark World River Pier and East Dark World",
+      "nodes": [
+        {
+          "name": "East Dark World River Pier",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Obstacle",
+      "description": "Obstacle connection between West Dark World Gap and West Dark World",
+      "nodes": [
+        {
+          "name": "West Dark World Gap",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Dark World Broken Bridge Pass and East Dark World",
+      "nodes": [
+        {
+          "name": "East Dark World Broken Bridge Pass",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Northeast Dark World Broken Bridge Pass and Northeast Dark World",
+      "nodes": [
+        {
+          "name": "Northeast Dark World Broken Bridge Pass",
+          "position": "origin"
+        },
+        {
+          "name": "Northeast Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave Entrance Rock and Bumper Cave Entrance",
+      "nodes": [
+        {
+          "name": "Bumper Cave Entrance Rock",
+          "position": "origin"
+        },
+        {
+          "name": "Bumper Cave Entrance",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Bumper Cave Entrance Drop and West Dark World",
+      "nodes": [
+        {
+          "name": "Bumper Cave Entrance Drop",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave Entrance Mirror Spot and Death Mountain Entrance",
+      "nodes": [
+        {
+          "name": "Bumper Cave Entrance Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Entrance",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Bumper Cave Ledge Drop and West Dark World",
+      "nodes": [
+        {
+          "name": "Bumper Cave Ledge Drop",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave Ledge Mirror Spot and Death Mountain Return Ledge",
+      "nodes": [
+        {
+          "name": "Bumper Cave Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Return Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Forest and Skull Woods Forest",
+      "nodes": [
+        {
+          "name": "Skull Woods Forest",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Forest",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Ledge Mirror Spot and Desert Ledge",
+      "nodes": [
+        {
+          "name": "Desert Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Ledge (Northeast) Mirror Spot and Desert Ledge (Northeast)",
+      "nodes": [
+        {
+          "name": "Desert Ledge (Northeast) Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Ledge (Northeast)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (North) Mirror Spot and Desert Palace Entrance (North) Spot",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (North) Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Entrance (North) Spot",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Desert Teleporter and Dark Desert",
+      "nodes": [
+        {
+          "name": "Dark Desert Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Desert",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Stairs Mirror Spot and Desert Palace Stairs",
+      "nodes": [
+        {
+          "name": "Desert Palace Stairs Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Stairs",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Hyrule Teleporter and East Dark World",
+      "nodes": [
+        {
+          "name": "East Hyrule Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between South Hyrule Teleporter and South Dark World",
+      "nodes": [
+        {
+          "name": "South Hyrule Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "South Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Teleporter and West Dark World",
+      "nodes": [
+        {
+          "name": "Kakariko Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Teleporter and Dark Death Mountain (West Bottom)",
+      "nodes": [
+        {
+          "name": "Death Mountain Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (West Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Push Block Reverse and Paradox Cave Chest Area",
+      "nodes": [
+        {
+          "name": "Paradox Cave Push Block Reverse",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave Chest Area",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Push Block and Paradox Cave Front",
+      "nodes": [
+        {
+          "name": "Paradox Cave Push Block",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave Front",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Bomb Jump and Paradox Cave",
+      "nodes": [
+        {
+          "name": "Paradox Cave Bomb Jump",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Paradox Cave Drop and Paradox Cave Chest Area",
+      "nodes": [
+        {
+          "name": "Paradox Cave Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave Chest Area",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Light World Death Mountain Shop and Light World Death Mountain Shop",
+      "nodes": [
+        {
+          "name": "Light World Death Mountain Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Light World Death Mountain Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Rocks and Fairy Ascension Plateau",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Rocks",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Plateau",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Mirror Spot and Fairy Ascension Plateau",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Plateau",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Fairy Ascension Drop and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Drop",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Fairy Ascension Ledge Drop and Fairy Ascension Plateau",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Ledge Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Plateau",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Ledge and Fairy Ascension Ledge",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Ledge",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Mirror Spot and Spectacle Rock",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Dark Death Mountain Drop (East) and Dark Death Mountain (East Bottom)",
+      "nodes": [
+        {
+          "name": "Dark Death Mountain Drop (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (East Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Dark Death Mountain Drop (West) and Dark Death Mountain (West Bottom)",
+      "nodes": [
+        {
+          "name": "Dark Death Mountain Drop (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (West Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Death Mountain (Top) Mirror Spot and East Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "East Death Mountain (Top) Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Teleporter and Turtle Rock (Top)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Turtle Rock Drop and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Floating Island Drop and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Floating Island Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Floating Island Mirror Spot and Death Mountain Floating Island (Light World)",
+      "nodes": [
+        {
+          "name": "Floating Island Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Floating Island (Light World)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Death Mountain Teleporter and Dark Death Mountain (East Bottom)",
+      "nodes": [
+        {
+          "name": "East Death Mountain Teleporter",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (East Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Isolated Ledge Mirror Spot and Fairy Ascension Ledge",
+      "nodes": [
+        {
+          "name": "Isolated Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave Mirror Spot and Spiral Cave Ledge",
+      "nodes": [
+        {
+          "name": "Spiral Cave Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Mimic Cave Mirror Spot and Mimic Cave Ledge",
+      "nodes": [
+        {
+          "name": "Mimic Cave Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Mimic Cave Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Cave 45 Mirror Spot and Cave 45 Ledge",
+      "nodes": [
+        {
+          "name": "Cave 45 Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Cave 45 Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Graveyard Ledge Mirror Spot and Graveyard Ledge",
+      "nodes": [
+        {
+          "name": "Graveyard Ledge Mirror Spot",
+          "position": "origin"
+        },
+        {
+          "name": "Graveyard Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace Moat and Swamp Palace (First Room)",
+      "nodes": [
+        {
+          "name": "Swamp Palace Moat",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Palace (First Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace Small Key Door and Swamp Palace (Starting Area)",
+      "nodes": [
+        {
+          "name": "Swamp Palace Small Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Palace (Starting Area)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace (Center) and Swamp Palace (Center)",
+      "nodes": [
+        {
+          "name": "Swamp Palace (Center)",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Palace (Center)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace (North) and Swamp Palace (North)",
+      "nodes": [
+        {
+          "name": "Swamp Palace (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Palace (North)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Thieves Town Big Key Door and Thieves Town (Deep)",
+      "nodes": [
+        {
+          "name": "Thieves Town Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Thieves Town (Deep)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Torch Room and Skull Woods Final Section (Mothula)",
+      "nodes": [
+        {
+          "name": "Skull Woods Torch Room",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Final Section (Mothula)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Bomb Jump and Skull Woods First Section (Top)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Bomb Jump",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section South Door and Skull Woods First Section (Right)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section South Door",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Right)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section West Door and Skull Woods First Section (Left)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section West Door",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Left)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section (Right) North Door and Skull Woods First Section",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section (Right) North Door",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section (Left) Door to Right and Skull Woods First Section (Right)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section (Left) Door to Right",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Right)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section (Left) Door to Exit and Skull Woods First Section",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section (Left) Door to Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section (Top) One-Way Path and Skull Woods First Section",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section (Top) One-Way Path",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Skull Woods Second Section (Drop) and Skull Woods Second Section",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section (Drop)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Second Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Blind Fight and Blind Fight",
+      "nodes": [
+        {
+          "name": "Blind Fight",
+          "position": "origin"
+        },
+        {
+          "name": "Blind Fight",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Pots (Outer) and Desert Palace Main (Inner)",
+      "nodes": [
+        {
+          "name": "Desert Palace Pots (Outer)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Main (Inner)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Pots (Inner) and Desert Palace Main (Outer)",
+      "nodes": [
+        {
+          "name": "Desert Palace Pots (Inner)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Main (Outer)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace Entrance Room and Ice Palace (Main)",
+      "nodes": [
+        {
+          "name": "Ice Palace Entrance Room",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Palace (Main)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace (East) and Ice Palace (East)",
+      "nodes": [
+        {
+          "name": "Ice Palace (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Palace (East)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace (East Top) and Ice Palace (East Top)",
+      "nodes": [
+        {
+          "name": "Ice Palace (East Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Palace (East Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace (Kholdstare) and Ice Palace (Kholdstare)",
+      "nodes": [
+        {
+          "name": "Ice Palace (Kholdstare)",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Palace (Kholdstare)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Obstacle",
+      "description": "Obstacle connection between Misery Mire Entrance Gap and Misery Mire (Main)",
+      "nodes": [
+        {
+          "name": "Misery Mire Entrance Gap",
+          "position": "origin"
+        },
+        {
+          "name": "Misery Mire (Main)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Misery Mire (West) and Misery Mire (West)",
+      "nodes": [
+        {
+          "name": "Misery Mire (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Misery Mire (West)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Misery Mire Big Key Door and Misery Mire (Final Area)",
+      "nodes": [
+        {
+          "name": "Misery Mire Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Misery Mire (Final Area)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Misery Mire (Vitreous) and Misery Mire (Vitreous)",
+      "nodes": [
+        {
+          "name": "Misery Mire (Vitreous)",
+          "position": "origin"
+        },
+        {
+          "name": "Misery Mire (Vitreous)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Obstacle",
+      "description": "Obstacle connection between Turtle Rock Entrance Gap and Turtle Rock (First Section)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Entrance Gap",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (First Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Obstacle",
+      "description": "Obstacle connection between Turtle Rock Entrance Gap Reverse and Turtle Rock (Entrance)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Entrance Gap Reverse",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Pokey Room and Turtle Rock (Chain Chomp Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Pokey Room",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Chain Chomp Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Chain Chomp Room) (North) and Turtle Rock (Second Section)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Chain Chomp Room) (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Second Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Chain Chomp Room) (South) and Turtle Rock (First Section)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Chain Chomp Room) (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (First Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Chain Chomp Staircase and Turtle Rock (Chain Chomp Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Chain Chomp Staircase",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Chain Chomp Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Big Chest) (North) and Turtle Rock (Second Section)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Big Chest) (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Second Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Big Key Door and Turtle Rock (Crystaroller Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Crystaroller Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Big Key Door Reverse and Turtle Rock (Second Section)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Big Key Door Reverse",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Second Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Dark Room Staircase and Turtle Rock (Dark Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Dark Room Staircase",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Dark Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Dark Room) (North) and Turtle Rock (Crystaroller Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Dark Room) (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Crystaroller Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Dark Room) (South) and Turtle Rock (Eye Bridge)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Dark Room) (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Eye Bridge)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Dark Room (South) and Turtle Rock (Dark Room)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Dark Room (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Dark Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock (Trinexx) and Turtle Rock (Trinexx)",
+      "nodes": [
+        {
+          "name": "Turtle Rock (Trinexx)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Trinexx)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Bridge Room and Palace of Darkness (Center)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Bridge Room",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Center)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Bonk Wall and Palace of Darkness (Bonk Section)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Bonk Wall",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Bonk Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Big Key Chest Staircase and Palace of Darkness (Big Key Chest)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Big Key Chest Staircase",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Big Key Chest)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness (North) and Palace of Darkness (North)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (North)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Big Key Door and Palace of Darkness (Final Section)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Final Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Palace of Darkness Hammer Peg Drop and Palace of Darkness (Center)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Hammer Peg Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Center)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Spike Statue Room Door and Palace of Darkness (Harmless Hellway)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Spike Statue Room Door",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Harmless Hellway)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Maze Door and Palace of Darkness (Maze)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Maze Door",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Maze)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Tile Room) and Ganons Tower (Tile Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Tile Room)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Tile Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Tile Room) Key Door and Ganons Tower (Compass Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Tile Room) Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Compass Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Bottom) (East) and Ganons Tower (Bottom)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Bottom) (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Hookshot Room) and Ganons Tower (Hookshot Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Hookshot Room)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Hookshot Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Map Room) and Ganons Tower (Map Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Map Room)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Map Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Double Switch Room) and Ganons Tower (Firesnake Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Double Switch Room)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Firesnake Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Firesnake Room) and Ganons Tower (Teleport Room)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Firesnake Room)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Teleport Room)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower (Bottom) (West) and Ganons Tower (Bottom)",
+      "nodes": [
+        {
+          "name": "Ganons Tower (Bottom) (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower Big Key Door and Ganons Tower (Top)",
+      "nodes": [
+        {
+          "name": "Ganons Tower Big Key Door",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower Torch Rooms and Ganons Tower (Before Moldorm)",
+      "nodes": [
+        {
+          "name": "Ganons Tower Torch Rooms",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Before Moldorm)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower Moldorm Door and Ganons Tower (Moldorm)",
+      "nodes": [
+        {
+          "name": "Ganons Tower Moldorm Door",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Moldorm)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Obstacle",
+      "description": "Obstacle connection between Ganons Tower Moldorm Gap and Agahnim 2",
+      "nodes": [
+        {
+          "name": "Ganons Tower Moldorm Gap",
+          "position": "origin"
+        },
+        {
+          "name": "Agahnim 2",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Ganon Drop and Bottom of Pyramid",
+      "nodes": [
+        {
+          "name": "Ganon Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Bottom of Pyramid",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Pyramid Drop and East Dark World",
+      "nodes": [
+        {
+          "name": "Pyramid Drop",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Waterfall of Wishing and Waterfall of Wishing",
+      "nodes": [
+        {
+          "name": "Waterfall of Wishing",
+          "position": "origin"
+        },
+        {
+          "name": "Waterfall of Wishing",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Blinds Hideout and Blinds Hideout",
+      "nodes": [
+        {
+          "name": "Blinds Hideout",
+          "position": "origin"
+        },
+        {
+          "name": "Blinds Hideout",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dam and Dam",
+      "nodes": [
+        {
+          "name": "Dam",
+          "position": "origin"
+        },
+        {
+          "name": "Dam",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lumberjack House and Lumberjack House",
+      "nodes": [
+        {
+          "name": "Lumberjack House",
+          "position": "origin"
+        },
+        {
+          "name": "Lumberjack House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Hyrule Castle Secret Entrance Drop and Hyrule Castle Secret Entrance",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Secret Entrance Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Secret Entrance",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Secret Entrance Stairs and Hyrule Castle Secret Entrance",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Secret Entrance Stairs",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Secret Entrance",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Secret Entrance Exit and Light World",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Secret Entrance Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bonk Fairy (Light) and Bonk Fairy (Light)",
+      "nodes": [
+        {
+          "name": "Bonk Fairy (Light)",
+          "position": "origin"
+        },
+        {
+          "name": "Bonk Fairy (Light)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Fairy and Lake Hylia Healer Fairy",
+      "nodes": [
+        {
+          "name": "Lake Hylia Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Lake Hylia Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lake Hylia Fortune Teller and Lake Hylia Fortune Teller",
+      "nodes": [
+        {
+          "name": "Lake Hylia Fortune Teller",
+          "position": "origin"
+        },
+        {
+          "name": "Lake Hylia Fortune Teller",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Light Hype Fairy and Swamp Healer Fairy",
+      "nodes": [
+        {
+          "name": "Light Hype Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Fairy and Desert Healer Fairy",
+      "nodes": [
+        {
+          "name": "Desert Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kings Grave and Kings Grave",
+      "nodes": [
+        {
+          "name": "Kings Grave",
+          "position": "origin"
+        },
+        {
+          "name": "Kings Grave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tavern North and Tavern",
+      "nodes": [
+        {
+          "name": "Tavern North",
+          "position": "origin"
+        },
+        {
+          "name": "Tavern",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Chicken House and Chicken House",
+      "nodes": [
+        {
+          "name": "Chicken House",
+          "position": "origin"
+        },
+        {
+          "name": "Chicken House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Aginahs Cave and Aginahs Cave",
+      "nodes": [
+        {
+          "name": "Aginahs Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Aginahs Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sahasrahlas Hut and Sahasrahlas Hut",
+      "nodes": [
+        {
+          "name": "Sahasrahlas Hut",
+          "position": "origin"
+        },
+        {
+          "name": "Sahasrahlas Hut",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Cave Shop (Lake Hylia) and Cave Shop (Lake Hylia)",
+      "nodes": [
+        {
+          "name": "Cave Shop (Lake Hylia)",
+          "position": "origin"
+        },
+        {
+          "name": "Cave Shop (Lake Hylia)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Capacity Upgrade and Capacity Upgrade",
+      "nodes": [
+        {
+          "name": "Capacity Upgrade",
+          "position": "origin"
+        },
+        {
+          "name": "Capacity Upgrade",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Kakariko Well Drop and Kakariko Well (top)",
+      "nodes": [
+        {
+          "name": "Kakariko Well Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Kakariko Well (top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Well Cave and Kakariko Well (bottom)",
+      "nodes": [
+        {
+          "name": "Kakariko Well Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Kakariko Well (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Well Exit and Light World",
+      "nodes": [
+        {
+          "name": "Kakariko Well Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Blacksmiths Hut and Blacksmiths Hut",
+      "nodes": [
+        {
+          "name": "Blacksmiths Hut",
+          "position": "origin"
+        },
+        {
+          "name": "Blacksmiths Hut",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Bat Cave Drop and Bat Cave (right)",
+      "nodes": [
+        {
+          "name": "Bat Cave Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Bat Cave (right)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bat Cave Cave and Bat Cave (left)",
+      "nodes": [
+        {
+          "name": "Bat Cave Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Bat Cave (left)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bat Cave Exit and Light World",
+      "nodes": [
+        {
+          "name": "Bat Cave Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sick Kids House and Sick Kids House",
+      "nodes": [
+        {
+          "name": "Sick Kids House",
+          "position": "origin"
+        },
+        {
+          "name": "Sick Kids House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Elder House (East) and Elder House",
+      "nodes": [
+        {
+          "name": "Elder House (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Elder House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Elder House (West) and Elder House",
+      "nodes": [
+        {
+          "name": "Elder House (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Elder House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Elder House Exit (East) and Light World",
+      "nodes": [
+        {
+          "name": "Elder House Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Elder House Exit (West) and Light World",
+      "nodes": [
+        {
+          "name": "Elder House Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between North Fairy Cave Drop and North Fairy Cave",
+      "nodes": [
+        {
+          "name": "North Fairy Cave Drop",
+          "position": "origin"
+        },
+        {
+          "name": "North Fairy Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between North Fairy Cave and North Fairy Cave",
+      "nodes": [
+        {
+          "name": "North Fairy Cave",
+          "position": "origin"
+        },
+        {
+          "name": "North Fairy Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between North Fairy Cave Exit and Light World",
+      "nodes": [
+        {
+          "name": "North Fairy Cave Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lost Woods Gamble and Lost Woods Gamble",
+      "nodes": [
+        {
+          "name": "Lost Woods Gamble",
+          "position": "origin"
+        },
+        {
+          "name": "Lost Woods Gamble",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fortune Teller (Light) and Fortune Teller (Light)",
+      "nodes": [
+        {
+          "name": "Fortune Teller (Light)",
+          "position": "origin"
+        },
+        {
+          "name": "Fortune Teller (Light)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Snitch Lady (East) and Snitch Lady (East)",
+      "nodes": [
+        {
+          "name": "Snitch Lady (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Snitch Lady (East)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Snitch Lady (West) and Snitch Lady (West)",
+      "nodes": [
+        {
+          "name": "Snitch Lady (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Snitch Lady (West)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bush Covered House and Bush Covered House",
+      "nodes": [
+        {
+          "name": "Bush Covered House",
+          "position": "origin"
+        },
+        {
+          "name": "Bush Covered House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tavern (Front) and Tavern (Front)",
+      "nodes": [
+        {
+          "name": "Tavern (Front)",
+          "position": "origin"
+        },
+        {
+          "name": "Tavern (Front)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Light World Bomb Hut and Light World Bomb Hut",
+      "nodes": [
+        {
+          "name": "Light World Bomb Hut",
+          "position": "origin"
+        },
+        {
+          "name": "Light World Bomb Hut",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Shop and Kakariko Shop",
+      "nodes": [
+        {
+          "name": "Kakariko Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Kakariko Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Drop",
+      "description": "Drop connection between Lost Woods Hideout Drop and Lost Woods Hideout (top)",
+      "nodes": [
+        {
+          "name": "Lost Woods Hideout Drop",
+          "position": "origin"
+        },
+        {
+          "name": "Lost Woods Hideout (top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lost Woods Hideout Stump and Lost Woods Hideout (bottom)",
+      "nodes": [
+        {
+          "name": "Lost Woods Hideout Stump",
+          "position": "origin"
+        },
+        {
+          "name": "Lost Woods Hideout (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lost Woods Hideout Exit and Light World",
+      "nodes": [
+        {
+          "name": "Lost Woods Hideout Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lumberjack Tree Tree and Lumberjack Tree (top)",
+      "nodes": [
+        {
+          "name": "Lumberjack Tree Tree",
+          "position": "origin"
+        },
+        {
+          "name": "Lumberjack Tree (top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lumberjack Tree Cave and Lumberjack Tree (bottom)",
+      "nodes": [
+        {
+          "name": "Lumberjack Tree Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Lumberjack Tree (bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Lumberjack Tree Exit and Light World",
+      "nodes": [
+        {
+          "name": "Lumberjack Tree Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Cave 45 and Cave 45",
+      "nodes": [
+        {
+          "name": "Cave 45",
+          "position": "origin"
+        },
+        {
+          "name": "Cave 45",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Graveyard Cave and Graveyard Cave",
+      "nodes": [
+        {
+          "name": "Graveyard Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Graveyard Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Checkerboard Cave and Checkerboard Cave",
+      "nodes": [
+        {
+          "name": "Checkerboard Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Checkerboard Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Mini Moldorm Cave and Mini Moldorm Cave",
+      "nodes": [
+        {
+          "name": "Mini Moldorm Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Mini Moldorm Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Long Fairy Cave and Long Fairy Cave",
+      "nodes": [
+        {
+          "name": "Long Fairy Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Long Fairy Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Good Bee Cave and Good Bee Cave",
+      "nodes": [
+        {
+          "name": "Good Bee Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Good Bee Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between 20 Rupee Cave and 20 Rupee Cave",
+      "nodes": [
+        {
+          "name": "20 Rupee Cave",
+          "position": "origin"
+        },
+        {
+          "name": "20 Rupee Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between 50 Rupee Cave and 50 Rupee Cave",
+      "nodes": [
+        {
+          "name": "50 Rupee Cave",
+          "position": "origin"
+        },
+        {
+          "name": "50 Rupee Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Rod Cave and Ice Rod Cave",
+      "nodes": [
+        {
+          "name": "Ice Rod Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Rod Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bonk Rock Cave and Bonk Rock Cave",
+      "nodes": [
+        {
+          "name": "Bonk Rock Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Bonk Rock Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Library and Library",
+      "nodes": [
+        {
+          "name": "Library",
+          "position": "origin"
+        },
+        {
+          "name": "Library",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Kakariko Gamble Game and Kakariko Gamble Game",
+      "nodes": [
+        {
+          "name": "Kakariko Gamble Game",
+          "position": "origin"
+        },
+        {
+          "name": "Kakariko Gamble Game",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Potion Shop and Potion Shop",
+      "nodes": [
+        {
+          "name": "Potion Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Potion Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Two Brothers House (East) and Two Brothers House",
+      "nodes": [
+        {
+          "name": "Two Brothers House (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Two Brothers House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Two Brothers House (West) and Two Brothers House",
+      "nodes": [
+        {
+          "name": "Two Brothers House (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Two Brothers House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Two Brothers House Exit (East) and Light World",
+      "nodes": [
+        {
+          "name": "Two Brothers House Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Two Brothers House Exit (West) and Maze Race Ledge",
+      "nodes": [
+        {
+          "name": "Two Brothers House Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Maze Race Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sanctuary and Sanctuary",
+      "nodes": [
+        {
+          "name": "Sanctuary",
+          "position": "origin"
+        },
+        {
+          "name": "Sanctuary",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sanctuary Grave and Sewer Drop",
+      "nodes": [
+        {
+          "name": "Sanctuary Grave",
+          "position": "origin"
+        },
+        {
+          "name": "Sewer Drop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Sanctuary Exit and Light World",
+      "nodes": [
+        {
+          "name": "Sanctuary Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man Cave (West) and Old Man Cave",
+      "nodes": [
+        {
+          "name": "Old Man Cave (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man Cave (East) and Old Man Cave",
+      "nodes": [
+        {
+          "name": "Old Man Cave (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man Cave Exit (West) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Old Man Cave Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man Cave Exit (East) and Light World",
+      "nodes": [
+        {
+          "name": "Old Man Cave Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House (Bottom) and Old Man House",
+      "nodes": [
+        {
+          "name": "Old Man House (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House Exit (Bottom) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Old Man House Exit (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House (Top) and Old Man House Back",
+      "nodes": [
+        {
+          "name": "Old Man House (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Old Man House Back",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Old Man House Exit (Top) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Old Man House Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Return Cave (East) and Death Mountain Return Cave",
+      "nodes": [
+        {
+          "name": "Death Mountain Return Cave (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Return Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Return Cave (West) and Death Mountain Return Cave",
+      "nodes": [
+        {
+          "name": "Death Mountain Return Cave (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Return Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Return Cave Exit (West) and Death Mountain Return Ledge",
+      "nodes": [
+        {
+          "name": "Death Mountain Return Cave Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Return Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Death Mountain Return Cave Exit (East) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Death Mountain Return Cave Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave Peak and Spectacle Rock Cave (Peak)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Peak",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock Cave (Peak)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave (Bottom) and Spectacle Rock Cave (Bottom)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock Cave (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave and Spectacle Rock Cave (Top)",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Spectacle Rock Cave (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave Exit and Death Mountain",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave Exit (Top) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spectacle Rock Cave Exit (Peak) and Death Mountain",
+      "nodes": [
+        {
+          "name": "Spectacle Rock Cave Exit (Peak)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave (Bottom) and Paradox Cave Front",
+      "nodes": [
+        {
+          "name": "Paradox Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave Front",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave (Middle) and Paradox Cave",
+      "nodes": [
+        {
+          "name": "Paradox Cave (Middle)",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave (Top) and Paradox Cave",
+      "nodes": [
+        {
+          "name": "Paradox Cave (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Paradox Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Exit (Bottom) and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Paradox Cave Exit (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Exit (Middle) and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Paradox Cave Exit (Middle)",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Paradox Cave Exit (Top) and East Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Paradox Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hookshot Fairy and Hookshot Fairy",
+      "nodes": [
+        {
+          "name": "Hookshot Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Hookshot Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Cave (Bottom) and Fairy Ascension Cave",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Cave (Top) and Fairy Ascension Cave",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Cave (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Cave Exit (Bottom) and Fairy Ascension Plateau",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Cave Exit (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Plateau",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fairy Ascension Cave Exit (Top) and Fairy Ascension Ledge",
+      "nodes": [
+        {
+          "name": "Fairy Ascension Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Fairy Ascension Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave and Spiral Cave (Top)",
+      "nodes": [
+        {
+          "name": "Spiral Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave (Bottom) and Spiral Cave (Bottom)",
+      "nodes": [
+        {
+          "name": "Spiral Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave Exit and East Death Mountain (Bottom)",
+      "nodes": [
+        {
+          "name": "Spiral Cave Exit",
+          "position": "origin"
+        },
+        {
+          "name": "East Death Mountain (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spiral Cave Exit (Top) and Spiral Cave Ledge",
+      "nodes": [
+        {
+          "name": "Spiral Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Spiral Cave Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Pyramid Fairy and Pyramid Fairy",
+      "nodes": [
+        {
+          "name": "Pyramid Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Pyramid Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between East Dark World Hint and East Dark World Hint",
+      "nodes": [
+        {
+          "name": "East Dark World Hint",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World Hint",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Hint and Palace of Darkness Hint",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Hint",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness Hint",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Big Bomb Shop and Big Bomb Shop",
+      "nodes": [
+        {
+          "name": "Big Bomb Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Big Bomb Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Shop and Dark Lake Hylia Shop",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Fairy and Dark Lake Hylia Healer Fairy",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Ledge Fairy and Dark Lake Hylia Ledge Healer Fairy",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Ledge Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Ledge Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Ledge Spike Cave and Dark Lake Hylia Ledge Spike Cave",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Lake Hylia Ledge Hint and Dark Lake Hylia Ledge Hint",
+      "nodes": [
+        {
+          "name": "Dark Lake Hylia Ledge Hint",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Ledge Hint",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hype Cave and Hype Cave",
+      "nodes": [
+        {
+          "name": "Hype Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Hype Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bonk Fairy (Dark) and Bonk Fairy (Dark)",
+      "nodes": [
+        {
+          "name": "Bonk Fairy (Dark)",
+          "position": "origin"
+        },
+        {
+          "name": "Bonk Fairy (Dark)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Brewery and Brewery",
+      "nodes": [
+        {
+          "name": "Brewery",
+          "position": "origin"
+        },
+        {
+          "name": "Brewery",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between C-Shaped House and C-Shaped House",
+      "nodes": [
+        {
+          "name": "C-Shaped House",
+          "position": "origin"
+        },
+        {
+          "name": "C-Shaped House",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Chest Game and Chest Game",
+      "nodes": [
+        {
+          "name": "Chest Game",
+          "position": "origin"
+        },
+        {
+          "name": "Chest Game",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark World Hammer Peg Cave and Dark World Hammer Peg Cave",
+      "nodes": [
+        {
+          "name": "Dark World Hammer Peg Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Dark World Hammer Peg Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave (Bottom) and Bumper Cave",
+      "nodes": [
+        {
+          "name": "Bumper Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Bumper Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave (Top) and Bumper Cave",
+      "nodes": [
+        {
+          "name": "Bumper Cave (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Bumper Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Red Shield Shop and Red Shield Shop",
+      "nodes": [
+        {
+          "name": "Red Shield Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Red Shield Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Sanctuary Hint and Dark Sanctuary Hint",
+      "nodes": [
+        {
+          "name": "Dark Sanctuary Hint",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Sanctuary Hint",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Fortune Teller (Dark) and Fortune Teller (Dark)",
+      "nodes": [
+        {
+          "name": "Fortune Teller (Dark)",
+          "position": "origin"
+        },
+        {
+          "name": "Fortune Teller (Dark)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark World Shop and Village of Outcasts Shop",
+      "nodes": [
+        {
+          "name": "Dark World Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Village of Outcasts Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark World Lumberjack Shop and Dark World Lumberjack Shop",
+      "nodes": [
+        {
+          "name": "Dark World Lumberjack Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark World Lumberjack Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark World Potion Shop and Dark World Potion Shop",
+      "nodes": [
+        {
+          "name": "Dark World Potion Shop",
+          "position": "origin"
+        },
+        {
+          "name": "Dark World Potion Shop",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Archery Game and Archery Game",
+      "nodes": [
+        {
+          "name": "Archery Game",
+          "position": "origin"
+        },
+        {
+          "name": "Archery Game",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave Exit (Top) and Bumper Cave Ledge",
+      "nodes": [
+        {
+          "name": "Bumper Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Bumper Cave Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Bumper Cave Exit (Bottom) and West Dark World",
+      "nodes": [
+        {
+          "name": "Bumper Cave Exit (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Mire Shed and Mire Shed",
+      "nodes": [
+        {
+          "name": "Mire Shed",
+          "position": "origin"
+        },
+        {
+          "name": "Mire Shed",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Desert Hint and Dark Desert Hint",
+      "nodes": [
+        {
+          "name": "Dark Desert Hint",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Desert Hint",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Desert Fairy and Dark Desert Healer Fairy",
+      "nodes": [
+        {
+          "name": "Dark Desert Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Desert Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Spike Cave and Spike Cave",
+      "nodes": [
+        {
+          "name": "Spike Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Spike Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hookshot Cave and Hookshot Cave",
+      "nodes": [
+        {
+          "name": "Hookshot Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Hookshot Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Superbunny Cave (Top) and Superbunny Cave",
+      "nodes": [
+        {
+          "name": "Superbunny Cave (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Superbunny Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Cave Shop (Dark Death Mountain) and Cave Shop (Dark Death Mountain)",
+      "nodes": [
+        {
+          "name": "Cave Shop (Dark Death Mountain)",
+          "position": "origin"
+        },
+        {
+          "name": "Cave Shop (Dark Death Mountain)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Death Mountain Fairy and Dark Death Mountain Healer Fairy",
+      "nodes": [
+        {
+          "name": "Dark Death Mountain Fairy",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain Healer Fairy",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Superbunny Cave (Bottom) and Superbunny Cave",
+      "nodes": [
+        {
+          "name": "Superbunny Cave (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Superbunny Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Superbunny Cave Exit (Top) and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Superbunny Cave Exit (Top)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Superbunny Cave Exit (Bottom) and Dark Death Mountain (East Bottom)",
+      "nodes": [
+        {
+          "name": "Superbunny Cave Exit (Bottom)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (East Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hookshot Cave Exit (South) and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Hookshot Cave Exit (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hookshot Cave Exit (North) and Death Mountain Floating Island (Dark World)",
+      "nodes": [
+        {
+          "name": "Hookshot Cave Exit (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain Floating Island (Dark World)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hookshot Cave Back Entrance and Hookshot Cave",
+      "nodes": [
+        {
+          "name": "Hookshot Cave Back Entrance",
+          "position": "origin"
+        },
+        {
+          "name": "Hookshot Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Mimic Cave and Mimic Cave",
+      "nodes": [
+        {
+          "name": "Mimic Cave",
+          "position": "origin"
+        },
+        {
+          "name": "Mimic Cave",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Pyramid Hole and Pyramid",
+      "nodes": [
+        {
+          "name": "Pyramid Hole",
+          "position": "origin"
+        },
+        {
+          "name": "Pyramid",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Pyramid Exit and Pyramid Ledge",
+      "nodes": [
+        {
+          "name": "Pyramid Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Pyramid Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Pyramid Entrance and Bottom of Pyramid",
+      "nodes": [
+        {
+          "name": "Pyramid Entrance",
+          "position": "origin"
+        },
+        {
+          "name": "Bottom of Pyramid",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (South) and Desert Palace Main (Inner)",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Main (Inner)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (West) and Desert Palace Main (Outer)",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Main (Outer)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (North) and Desert Palace North",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace North",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Entrance (East) and Desert Palace Main (Outer)",
+      "nodes": [
+        {
+          "name": "Desert Palace Entrance (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Main (Outer)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Exit (South) and Desert Palace Stairs",
+      "nodes": [
+        {
+          "name": "Desert Palace Exit (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Stairs",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Exit (West) and Desert Ledge",
+      "nodes": [
+        {
+          "name": "Desert Palace Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Exit (East) and Desert Palace Lone Stairs",
+      "nodes": [
+        {
+          "name": "Desert Palace Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Lone Stairs",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Desert Palace Exit (North) and Desert Palace Entrance (North) Spot",
+      "nodes": [
+        {
+          "name": "Desert Palace Exit (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Desert Palace Entrance (North) Spot",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Eastern Palace and Eastern Palace",
+      "nodes": [
+        {
+          "name": "Eastern Palace",
+          "position": "origin"
+        },
+        {
+          "name": "Eastern Palace",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Eastern Palace Exit and Light World",
+      "nodes": [
+        {
+          "name": "Eastern Palace Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tower of Hera and Tower of Hera (Bottom)",
+      "nodes": [
+        {
+          "name": "Tower of Hera",
+          "position": "origin"
+        },
+        {
+          "name": "Tower of Hera (Bottom)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Tower of Hera Exit and Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Tower of Hera Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Entrance (South) and Hyrule Castle",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Entrance (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Entrance (West) and Hyrule Castle",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Entrance (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Entrance (East) and Hyrule Castle",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Entrance (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Exit (South) and Light World",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Exit (South)",
+          "position": "origin"
+        },
+        {
+          "name": "Light World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Exit (West) and Hyrule Castle Ledge",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Hyrule Castle Exit (East) and Hyrule Castle Ledge",
+      "nodes": [
+        {
+          "name": "Hyrule Castle Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Agahnims Tower and Agahnims Tower",
+      "nodes": [
+        {
+          "name": "Agahnims Tower",
+          "position": "origin"
+        },
+        {
+          "name": "Agahnims Tower",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Agahnims Tower Exit and Hyrule Castle Ledge",
+      "nodes": [
+        {
+          "name": "Agahnims Tower Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Hyrule Castle Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Thieves Town and Thieves Town (Entrance)",
+      "nodes": [
+        {
+          "name": "Thieves Town",
+          "position": "origin"
+        },
+        {
+          "name": "Thieves Town (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Thieves Town Exit and West Dark World",
+      "nodes": [
+        {
+          "name": "Thieves Town Exit",
+          "position": "origin"
+        },
+        {
+          "name": "West Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Hole (East) and Skull Woods First Section (Right)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Hole (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Right)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Hole (West) and Skull Woods First Section (Left)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Hole (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Left)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Hole (North) and Skull Woods First Section (Top)",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Hole (North)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Door and Skull Woods First Section",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Door",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods First Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods First Section Exit and Skull Woods Forest",
+      "nodes": [
+        {
+          "name": "Skull Woods First Section Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Forest",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Second Section Hole and Skull Woods Second Section (Drop)",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section Hole",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Second Section (Drop)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Second Section Door (East) and Skull Woods Second Section",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section Door (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Second Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Second Section Door (West) and Skull Woods Second Section",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section Door (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Second Section",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Second Section Exit (East) and Skull Woods Forest",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Forest",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Second Section Exit (West) and Skull Woods Forest (West)",
+      "nodes": [
+        {
+          "name": "Skull Woods Second Section Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Forest (West)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Final Section and Skull Woods Final Section (Entrance)",
+      "nodes": [
+        {
+          "name": "Skull Woods Final Section",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Final Section (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Skull Woods Final Section Exit and Skull Woods Forest (West)",
+      "nodes": [
+        {
+          "name": "Skull Woods Final Section Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Skull Woods Forest (West)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace and Ice Palace (Entrance)",
+      "nodes": [
+        {
+          "name": "Ice Palace",
+          "position": "origin"
+        },
+        {
+          "name": "Ice Palace (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ice Palace Exit and Dark Lake Hylia Central Island",
+      "nodes": [
+        {
+          "name": "Ice Palace Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Lake Hylia Central Island",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Misery Mire and Misery Mire (Entrance)",
+      "nodes": [
+        {
+          "name": "Misery Mire",
+          "position": "origin"
+        },
+        {
+          "name": "Misery Mire (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Misery Mire Exit and Dark Desert",
+      "nodes": [
+        {
+          "name": "Misery Mire Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Desert",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness and Palace of Darkness (Entrance)",
+      "nodes": [
+        {
+          "name": "Palace of Darkness",
+          "position": "origin"
+        },
+        {
+          "name": "Palace of Darkness (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Palace of Darkness Exit and East Dark World",
+      "nodes": [
+        {
+          "name": "Palace of Darkness Exit",
+          "position": "origin"
+        },
+        {
+          "name": "East Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace and Swamp Palace (Entrance)",
+      "nodes": [
+        {
+          "name": "Swamp Palace",
+          "position": "origin"
+        },
+        {
+          "name": "Swamp Palace (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Swamp Palace Exit and South Dark World",
+      "nodes": [
+        {
+          "name": "Swamp Palace Exit",
+          "position": "origin"
+        },
+        {
+          "name": "South Dark World",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock and Turtle Rock (Entrance)",
+      "nodes": [
+        {
+          "name": "Turtle Rock",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Exit (Front) and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Exit (Front)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Ledge Exit (West) and Dark Death Mountain Ledge",
+      "nodes": [
+        {
+          "name": "Turtle Rock Ledge Exit (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Ledge Exit (East) and Dark Death Mountain Ledge",
+      "nodes": [
+        {
+          "name": "Turtle Rock Ledge Exit (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Death Mountain Ledge (West) and Turtle Rock (Second Section)",
+      "nodes": [
+        {
+          "name": "Dark Death Mountain Ledge (West)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Second Section)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Dark Death Mountain Ledge (East) and Turtle Rock (Big Chest)",
+      "nodes": [
+        {
+          "name": "Dark Death Mountain Ledge (East)",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Big Chest)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Isolated Ledge Exit and Dark Death Mountain Isolated Ledge",
+      "nodes": [
+        {
+          "name": "Turtle Rock Isolated Ledge Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain Isolated Ledge",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Turtle Rock Isolated Ledge Entrance and Turtle Rock (Eye Bridge)",
+      "nodes": [
+        {
+          "name": "Turtle Rock Isolated Ledge Entrance",
+          "position": "origin"
+        },
+        {
+          "name": "Turtle Rock (Eye Bridge)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower and Ganons Tower (Entrance)",
+      "nodes": [
+        {
+          "name": "Ganons Tower",
+          "position": "origin"
+        },
+        {
+          "name": "Ganons Tower (Entrance)",
+          "position": "destination"
+        }
+      ]
+    },
+    {
+      "connectionType": "Door",
+      "description": "Door connection between Ganons Tower Exit and Dark Death Mountain (Top)",
+      "nodes": [
+        {
+          "name": "Ganons Tower Exit",
+          "position": "origin"
+        },
+        {
+          "name": "Dark Death Mountain (Top)",
+          "position": "destination"
+        }
+      ]
+    },
+  ]
+}

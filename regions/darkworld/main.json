@@ -1,0 +1,819 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 117,
+            "name": "East Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Fairy",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "South Dark World Bridge",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Dark Lake Hylia Drop (East)",
+                    "area": "East Dark World",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 5,
+                    "name": "Dark Lake Hylia Teleporter",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Hyrule Castle Ledge Mirror Spot",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Dark Lake Hylia Fairy",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Palace of Darkness Hint",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "East Dark World Hint",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 10,
+                    "name": "Pyramid Hole",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 11,
+                    "name": "Northeast Dark World Broken Bridge Pass",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 12,
+                    "name": "Pyramid",
+                    "area": "East Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 118,
+            "name": "Northeast Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "West Dark World Gap",
+                    "area": "Northeast Dark World",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark World Potion Shop",
+                    "area": "Northeast Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "East Dark World Broken Bridge Pass",
+                    "area": "Northeast Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Catfish",
+                    "area": "Northeast Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 121,
+            "name": "South Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Lake Hylia Drop (South)",
+                    "area": "South Dark World",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Hype Cave",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Swamp Palace",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Village of Outcasts Heavy Rock",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Maze Race Mirror Spot",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Cave 45 Mirror Spot",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "East Dark World Bridge",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Big Bomb Shop",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "Archery Game",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 10,
+                    "name": "Bonk Fairy (Dark)",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 11,
+                    "name": "Dark Lake Hylia Shop",
+                    "area": "South Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 12,
+                    "name": "Stumpy",
+                    "area": "South Dark World",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 13,
+                    "name": "Digging Game",
+                    "area": "South Dark World",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 14,
+                    "name": "Bombos Tablet",
+                    "area": "South Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 124,
+            "name": "Dark Lake Hylia",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lake Hylia Island Mirror Spot",
+                    "area": "Dark Lake Hylia",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "East Dark World Pier",
+                    "area": "Dark Lake Hylia",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Dark Lake Hylia Ledge",
+                    "area": "Dark Lake Hylia",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 125,
+            "name": "Dark Lake Hylia Central Island",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Ice Palace",
+                    "area": "Dark Lake Hylia Central Island",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Lake Hylia Central Island Mirror Spot",
+                    "area": "Dark Lake Hylia Central Island",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 126,
+            "name": "Dark Lake Hylia Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Lake Hylia Ledge Drop",
+                    "area": "Dark Lake Hylia Ledge",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark Lake Hylia Ledge Fairy",
+                    "area": "Dark Lake Hylia Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Dark Lake Hylia Ledge Hint",
+                    "area": "Dark Lake Hylia Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Dark Lake Hylia Ledge Spike Cave",
+                    "area": "Dark Lake Hylia Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 130,
+            "name": "West Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Village of Outcasts Drop",
+                    "area": "West Dark World",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "East Dark World River Pier",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Brewery",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "C-Shaped House",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Chest Game",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Thieves Town",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Graveyard Ledge Mirror Spot",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Kings Grave Mirror Spot",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "Bumper Cave Entrance Rock",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 10,
+                    "name": "Skull Woods Forest",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 11,
+                    "name": "Village of Outcasts Pegs",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 12,
+                    "name": "Village of Outcasts Eastern Rocks",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 13,
+                    "name": "Red Shield Shop",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 14,
+                    "name": "Dark Sanctuary Hint",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 15,
+                    "name": "Fortune Teller (Dark)",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 16,
+                    "name": "Dark World Lumberjack Shop",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 17,
+                    "name": "Frog",
+                    "area": "West Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 131,
+            "name": "Dark Grassy Lawn",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Grassy Lawn Pegs",
+                    "area": "Dark Grassy Lawn",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark World Shop",
+                    "area": "Dark Grassy Lawn",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 132,
+            "name": "Hammer Peg Area",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bat Cave Drop Ledge Mirror Spot",
+                    "area": "Hammer Peg Area",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark World Hammer Peg Cave",
+                    "area": "Hammer Peg Area",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Peg Area Rocks",
+                    "area": "Hammer Peg Area",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Dark Blacksmith Ruins",
+                    "area": "Hammer Peg Area",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 133,
+            "name": "Bumper Cave Entrance",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bumper Cave (Bottom)",
+                    "area": "Bumper Cave Entrance",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Bumper Cave Entrance Mirror Spot",
+                    "area": "Bumper Cave Entrance",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Bumper Cave Entrance Drop",
+                    "area": "Bumper Cave Entrance",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 147,
+            "name": "Bumper Cave Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Bumper Cave Ledge Drop",
+                    "area": "Bumper Cave Ledge",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Bumper Cave (Top)",
+                    "area": "Bumper Cave Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Bumper Cave Ledge Mirror Spot",
+                    "area": "Bumper Cave Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Bumper Cave Ledge",
+                    "area": "Bumper Cave Ledge",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 148,
+            "name": "Skull Woods Forest",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods First Section Hole (East)",
+                    "area": "Skull Woods Forest",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods First Section Hole (West)",
+                    "area": "Skull Woods Forest",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods First Section Hole (North)",
+                    "area": "Skull Woods Forest",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Skull Woods First Section Door",
+                    "area": "Skull Woods Forest",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Skull Woods Second Section Door (East)",
+                    "area": "Skull Woods Forest",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 149,
+            "name": "Skull Woods Forest (West)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Skull Woods Second Section Hole",
+                    "area": "Skull Woods Forest (West)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Skull Woods Second Section Door (West)",
+                    "area": "Skull Woods Forest (West)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Skull Woods Final Section",
+                    "area": "Skull Woods Forest (West)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 150,
+            "name": "Dark Desert",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Mire Shed",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Desert Ledge (Northeast) Mirror Spot",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Desert Ledge Mirror Spot",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Desert Palace Stairs Mirror Spot",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Desert Palace Entrance (North) Mirror Spot",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Dark Desert Hint",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Dark Desert Fairy",
+                    "area": "Dark Desert",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 153,
+            "name": "Dark Death Mountain (West Bottom)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spike Cave",
+                    "area": "Dark Death Mountain (West Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Spectacle Rock Mirror Spot",
+                    "area": "Dark Death Mountain (West Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Dark Death Mountain Fairy",
+                    "area": "Dark Death Mountain (West Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 154,
+            "name": "Dark Death Mountain (Top)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Death Mountain Drop (East)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark Death Mountain Drop (West)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Superbunny Cave (Top)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Hookshot Cave",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "East Death Mountain (Top) Mirror Spot",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Turtle Rock",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 155,
+            "name": "Dark Death Mountain Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Death Mountain Ledge (East)",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark Death Mountain Ledge (West)",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Mimic Cave Mirror Spot",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Spiral Cave Mirror Spot",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 156,
+            "name": "Dark Death Mountain Isolated Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Isolated Ledge Mirror Spot",
+                    "area": "Dark Death Mountain Isolated Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Isolated Ledge Entrance",
+                    "area": "Dark Death Mountain Isolated Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 157,
+            "name": "Dark Death Mountain (East Bottom)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Superbunny Cave (Bottom)",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Cave Shop (Dark Death Mountain)",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Fairy Ascension Mirror Spot",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 161,
+            "name": "Death Mountain Floating Island (Dark World)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Floating Island Drop",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Hookshot Cave Back Entrance",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Floating Island Mirror Spot",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 163,
+            "name": "Turtle Rock (Top)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Drop",
+                    "area": "Turtle Rock (Top)",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 223,
+            "name": "Pyramid Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Entrance",
+                    "area": "Pyramid Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Pyramid Drop",
+                    "area": "Pyramid Ledge",
+                    "nodeType": "drop"
+                }
+            ]
+        }
+    ]
+}
