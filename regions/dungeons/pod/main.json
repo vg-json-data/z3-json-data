@@ -1,0 +1,205 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 201,
+            "name": "Palace of Darkness (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Bridge Room",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness Bonk Wall",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness Exit",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - Shooter Room",
+                    "area": "Palace of Darkness (Entrance)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 202,
+            "name": "Palace of Darkness (Center)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Big Key Chest Staircase",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness (North)",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness Big Key Door",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - The Arena - Bridge",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Palace of Darkness - Stalfos Basement",
+                    "area": "Palace of Darkness (Center)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 203,
+            "name": "Palace of Darkness (Big Key Chest)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Big Key Chest",
+                    "area": "Palace of Darkness (Big Key Chest)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 204,
+            "name": "Palace of Darkness (Bonk Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Hammer Peg Drop",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - The Arena - Ledge",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Map Chest",
+                    "area": "Palace of Darkness (Bonk Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "name": "Palace of Darkness (North)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness Spike Statue Room Door",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness Maze Door",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Compass Chest",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Palace of Darkness - Dark Basement - Left",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Palace of Darkness - Dark Basement - Right",
+                    "area": "Palace of Darkness (North)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 206,
+            "name": "Palace of Darkness (Maze)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Dark Maze - Top",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - Dark Maze - Bottom",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness - Big Chest",
+                    "area": "Palace of Darkness (Maze)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 207,
+            "name": "Palace of Darkness (Harmless Hellway)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Harmless Hellway",
+                    "area": "Palace of Darkness (Harmless Hellway)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 208,
+            "name": "Palace of Darkness (Final Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Palace of Darkness - Helmasaur",
+                    "area": "Palace of Darkness (Final Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Palace of Darkness - Prize",
+                    "area": "Palace of Darkness (Final Section)",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
