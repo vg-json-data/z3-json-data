@@ -555,61 +555,6 @@
             ]
         },
         {
-            "id": 150,
-            "name": "Dark Desert",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Mire Shed",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Desert Ledge (Northeast) Mirror Spot",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Desert Ledge Mirror Spot",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Desert Palace Stairs Mirror Spot",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 6,
-                    "name": "Desert Palace Entrance (North) Mirror Spot",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 7,
-                    "name": "Dark Desert Hint",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 8,
-                    "name": "Dark Desert Fairy",
-                    "area": "Dark Desert",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
             "id": 153,
             "name": "Dark Death Mountain (West Bottom)",
             "roomType": "DarkWorld",
