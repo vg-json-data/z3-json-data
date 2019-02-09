@@ -40,57 +40,6 @@
             ]
         },
         {
-            "id": 10,
-            "name": "Dam",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Floodgate",
-                    "area": "Dam",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Floodgate Chest",
-                    "area": "Dam",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "name": "Links House",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Links House Exit",
-                    "area": "Links House",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Link's House",
-                    "area": "Links House",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "name": "Chris Houlihan Room",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Chris Houlihan Room Exit",
-                    "area": "Chris Houlihan Room",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
             "id": 21,
             "name": "Fortune Teller (Light)",
             "roomType": "Cave"
@@ -146,112 +95,8 @@
             "roomType": "Cave"
         },
         {
-            "id": 34,
-            "name": "Aginahs Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Aginah's Cave",
-                    "area": "Aginahs Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 49,
-            "name": "Cave 45",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Cave 45",
-                    "area": "Cave 45",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 52,
-            "name": "Checkerboard Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Checkerboard Cave",
-                    "area": "Checkerboard Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
             "id": 53,
             "name": "Long Fairy Cave",
-            "roomType": "Cave"
-        },
-        {
-            "id": 54,
-            "name": "Mini Moldorm Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Mini Moldorm Cave - Far Left",
-                    "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Mini Moldorm Cave - Left",
-                    "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 3,
-                    "name": "Mini Moldorm Cave - Right",
-                    "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 4,
-                    "name": "Mini Moldorm Cave - Far Right",
-                    "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 5,
-                    "name": "Mini Moldorm Cave - Generous Guy",
-                    "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 55,
-            "name": "Ice Rod Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Rod Cave",
-                    "area": "Ice Rod Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 56,
-            "name": "Good Bee Cave",
-            "roomType": "Cave"
-        },
-        {
-            "id": 57,
-            "name": "20 Rupee Cave",
-            "roomType": "Cave"
-        },
-        {
-            "id": 58,
-            "name": "Cave Shop (Lake Hylia)",
             "roomType": "Cave"
         },
         {
@@ -289,30 +134,6 @@
             "id": 62,
             "name": "Kakariko Gamble Game",
             "roomType": "Cave"
-        },
-        {
-            "id": 65,
-            "name": "Capacity Upgrade",
-            "roomType": "Cave"
-        },
-        {
-            "id": 66,
-            "name": "Two Brothers House",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Two Brothers House Exit (East)",
-                    "area": "Two Brothers House",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Two Brothers House Exit (West)",
-                    "area": "Two Brothers House",
-                    "nodeType": "door"
-                }
-            ]
         },
         {
             "id": 68,
