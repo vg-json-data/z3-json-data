@@ -1,0 +1,86 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 114,
+            "name": "Tower of Hera (Bottom)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera Small Key Door",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Tower of Hera Big Key Door",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Tower of Hera Exit",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Tower of Hera - Basement Cage",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Tower of Hera - Map Chest",
+                    "area": "Tower of Hera (Bottom)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 115,
+            "name": "Tower of Hera (Basement)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera - Big Key Chest",
+                    "area": "Tower of Hera (Basement)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 116,
+            "name": "Tower of Hera (Top)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Tower of Hera - Compass Chest",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Tower of Hera - Big Chest",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Tower of Hera - Moldorm",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Tower of Hera - Prize",
+                    "area": "Tower of Hera (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
