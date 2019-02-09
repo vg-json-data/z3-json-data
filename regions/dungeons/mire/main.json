@@ -1,0 +1,124 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 187,
+            "name": "Misery Mire (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire Entrance Gap",
+                    "area": "Misery Mire (Entrance)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire Exit",
+                    "area": "Misery Mire (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 188,
+            "name": "Misery Mire (Main)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire (West)",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire Big Key Door",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Misery Mire - Big Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Misery Mire - Map Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Misery Mire - Main Lobby",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Misery Mire - Bridge Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Misery Mire - Spike Chest",
+                    "area": "Misery Mire (Main)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 189,
+            "name": "Misery Mire (West)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire - Compass Chest",
+                    "area": "Misery Mire (West)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire - Big Key Chest",
+                    "area": "Misery Mire (West)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 190,
+            "name": "Misery Mire (Final Area)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire (Vitreous)",
+                    "area": "Misery Mire (Final Area)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 191,
+            "name": "Misery Mire (Vitreous)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Misery Mire - Vitreous",
+                    "area": "Misery Mire (Vitreous)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Misery Mire - Prize",
+                    "area": "Misery Mire (Vitreous)",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
