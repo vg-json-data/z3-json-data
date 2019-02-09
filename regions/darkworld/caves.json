@@ -32,37 +32,14 @@
             "roomType": "Cave"
         },
         {
-            "id": 135,
-            "name": "Village of Outcasts Shop",
-            "roomType": "Cave"
-        },
-        {
             "id": 136,
             "name": "Dark Lake Hylia Shop",
-            "roomType": "Cave"
-        },
-        {
-            "id": 137,
-            "name": "Dark World Lumberjack Shop",
             "roomType": "Cave"
         },
         {
             "id": 138,
             "name": "Dark World Potion Shop",
             "roomType": "Cave"
-        },
-        {
-            "id": 139,
-            "name": "Dark World Hammer Peg Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Peg Cave",
-                    "area": "Dark World Hammer Peg Cave",
-                    "nodeType": "item"
-                }
-            ]
         },
         {
             "id": 140,
@@ -80,74 +57,6 @@
                     "name": "Pyramid Fairy - Right",
                     "area": "Pyramid Fairy",
                     "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 141,
-            "name": "Brewery",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Brewery",
-                    "area": "Brewery",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 142,
-            "name": "C-Shaped House",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "C-Shaped House",
-                    "area": "C-Shaped House",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 143,
-            "name": "Chest Game",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Chest Game",
-                    "area": "Chest Game",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 144,
-            "name": "Red Shield Shop",
-            "roomType": "Cave"
-        },
-        {
-            "id": 145,
-            "name": "Dark Sanctuary Hint",
-            "roomType": "Cave"
-        },
-        {
-            "id": 146,
-            "name": "Bumper Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Bumper Cave Exit (Bottom)",
-                    "area": "Bumper Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Bumper Cave Exit (Top)",
-                    "area": "Bumper Cave",
-                    "nodeType": "door"
                 }
             ]
         },
