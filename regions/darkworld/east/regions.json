@@ -1,0 +1,84 @@
+{
+    "$schema": "../../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 117,
+            "name": "East Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Fairy",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "South Dark World Bridge",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Palace of Darkness",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Dark Lake Hylia Drop (East)",
+                    "area": "East Dark World",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 5,
+                    "name": "Dark Lake Hylia Teleporter",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Hyrule Castle Ledge Mirror Spot",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Dark Lake Hylia Fairy",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Palace of Darkness Hint",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "East Dark World Hint",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 10,
+                    "name": "Pyramid Hole",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 11,
+                    "name": "Northeast Dark World Broken Bridge Pass",
+                    "area": "East Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 12,
+                    "name": "Pyramid",
+                    "area": "East Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
