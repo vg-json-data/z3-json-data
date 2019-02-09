@@ -1,0 +1,254 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 192,
+            "name": "Turtle Rock (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Entrance Gap",
+                    "area": "Turtle Rock (Entrance)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Exit (Front)",
+                    "area": "Turtle Rock (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 193,
+            "name": "Turtle Rock (First Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Pokey Room",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Entrance Gap Reverse",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Compass Chest",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Roller Room - Left",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Turtle Rock - Roller Room - Right",
+                    "area": "Turtle Rock (First Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 194,
+            "name": "Turtle Rock (Chain Chomp Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Chain Chomp Room) (North)",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Chain Chomp Room) (South)",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Chain Chomps",
+                    "area": "Turtle Rock (Chain Chomp Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 195,
+            "name": "Turtle Rock (Second Section)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Ledge Exit (West)",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Chain Chomp Staircase",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock Big Key Door",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Big Key Chest",
+                    "area": "Turtle Rock (Second Section)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 196,
+            "name": "Turtle Rock (Big Chest)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Big Chest) (North)",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Ledge Exit (East)",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Big Chest",
+                    "area": "Turtle Rock (Big Chest)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 197,
+            "name": "Turtle Rock (Crystaroller Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Dark Room Staircase",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Big Key Door Reverse",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock - Crystaroller Room",
+                    "area": "Turtle Rock (Crystaroller Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 198,
+            "name": "Turtle Rock (Dark Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock (Dark Room) (North)",
+                    "area": "Turtle Rock (Dark Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Dark Room) (South)",
+                    "area": "Turtle Rock (Dark Room)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 199,
+            "name": "Turtle Rock (Eye Bridge)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Dark Room (South)",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock (Trinexx)",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Turtle Rock Isolated Ledge Exit",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Turtle Rock - Eye Bridge - Bottom Left",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Turtle Rock - Eye Bridge - Bottom Right",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Turtle Rock - Eye Bridge - Top Left",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Turtle Rock - Eye Bridge - Top Right",
+                    "area": "Turtle Rock (Eye Bridge)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 200,
+            "name": "Turtle Rock (Trinexx)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock - Trinexx",
+                    "area": "Turtle Rock (Trinexx)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock - Prize",
+                    "area": "Turtle Rock (Trinexx)",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
