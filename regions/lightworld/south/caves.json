@@ -53,6 +53,11 @@
             ]
         },
         {
+            "id": 22,
+            "name": "Lake Hylia Fortune Teller",
+            "roomType": "Cave"
+        },
+        {
             "id": 34,
             "name": "Aginahs Cave",
             "roomType": "Cave",

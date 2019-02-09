@@ -40,16 +40,6 @@
             ]
         },
         {
-            "id": 21,
-            "name": "Fortune Teller (Light)",
-            "roomType": "Cave"
-        },
-        {
-            "id": 22,
-            "name": "Lake Hylia Fortune Teller",
-            "roomType": "Cave"
-        },
-        {
             "id": 24,
             "name": "Bonk Fairy (Light)",
             "roomType": "Cave"
@@ -105,44 +95,8 @@
             "roomType": "Cave"
         },
         {
-            "id": 60,
-            "name": "Bonk Rock Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Bonk Rock Cave",
-                    "area": "Bonk Rock Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 61,
-            "name": "Library",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Library",
-                    "area": "Library",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 62,
-            "name": "Kakariko Gamble Game",
-            "roomType": "Cave"
-        },
-        {
             "id": 68,
             "name": "50 Rupee Cave",
-            "roomType": "Cave"
-        },
-        {
-            "id": 80,
-            "name": "Lost Woods Gamble",
             "roomType": "Cave"
         },
         {
