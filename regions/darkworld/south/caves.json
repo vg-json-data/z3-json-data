@@ -2,6 +2,26 @@
     "$schema": "../../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 122,
+            "name": "Big Bomb Shop",
+            "roomType": "Cave"
+        },
+        {
+            "id": 123,
+            "name": "Archery Game",
+            "roomType": "Cave"
+        },
+        {
+            "id": 127,
+            "name": "Dark Lake Hylia Ledge Hint",
+            "roomType": "Cave"
+        },
+        {
+            "id": 128,
+            "name": "Dark Lake Hylia Ledge Spike Cave",
+            "roomType": "Cave"
+        },
+        {
             "id": 129,
             "name": "Hype Cave",
             "roomType": "Cave",
@@ -39,8 +59,8 @@
             ]
         },
         {
-            "id": 134,
-            "name": "Fortune Teller (Dark)",
+            "id": 136,
+            "name": "Dark Lake Hylia Shop",
             "roomType": "Cave"
         }
     ]
