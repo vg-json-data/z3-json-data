@@ -2,16 +2,6 @@
     "$schema": "../../schema/z3-region.schema.json",
     "rooms": [
         {
-            "id": 119,
-            "name": "Palace of Darkness Hint",
-            "roomType": "Cave"
-        },
-        {
-            "id": 120,
-            "name": "East Dark World Hint",
-            "roomType": "Cave"
-        },
-        {
             "id": 122,
             "name": "Big Bomb Shop",
             "roomType": "Cave"
@@ -35,30 +25,6 @@
             "id": 136,
             "name": "Dark Lake Hylia Shop",
             "roomType": "Cave"
-        },
-        {
-            "id": 138,
-            "name": "Dark World Potion Shop",
-            "roomType": "Cave"
-        },
-        {
-            "id": 140,
-            "name": "Pyramid Fairy",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Pyramid Fairy - Left",
-                    "area": "Pyramid Fairy",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Pyramid Fairy - Right",
-                    "area": "Pyramid Fairy",
-                    "nodeType": "item"
-                }
-            ]
         },
         {
             "id": 158,
@@ -144,38 +110,6 @@
                     "name": "Hookshot Cave - Bottom Left",
                     "area": "Hookshot Cave",
                     "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 221,
-            "name": "Pyramid",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganon Drop",
-                    "area": "Pyramid",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganon",
-                    "area": "Pyramid",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 222,
-            "name": "Bottom of Pyramid",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Pyramid Exit",
-                    "area": "Bottom of Pyramid",
-                    "nodeType": "door"
                 }
             ]
         }
