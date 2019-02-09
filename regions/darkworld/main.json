@@ -2,31 +2,6 @@
     "$schema": "../../schema/z3-region.schema.json",
     "rooms": [
         {
-            "id": 153,
-            "name": "Dark Death Mountain (West Bottom)",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Spike Cave",
-                    "area": "Dark Death Mountain (West Bottom)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Spectacle Rock Mirror Spot",
-                    "area": "Dark Death Mountain (West Bottom)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Dark Death Mountain Fairy",
-                    "area": "Dark Death Mountain (West Bottom)",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
             "id": 154,
             "name": "Dark Death Mountain (Top)",
             "roomType": "DarkWorld",
