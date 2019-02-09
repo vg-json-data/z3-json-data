@@ -1,0 +1,142 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 83,
+            "name": "Hyrule Castle",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Exit (East)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Hyrule Castle Exit (West)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Hyrule Castle Exit (South)",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Throne Room",
+                    "area": "Hyrule Castle",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Hyrule Castle - Boomerang Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Hyrule Castle - Map Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Hyrule Castle - Zelda's Chest",
+                    "area": "Hyrule Castle",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Sewer Drop",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sewer Drop",
+                    "area": "Sewer Drop",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Sewers (Dark)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sewers Door",
+                    "area": "Sewers (Dark)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sewers - Dark Cross",
+                    "area": "Sewers (Dark)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 86,
+            "name": "Sewers",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sanctuary Push Door",
+                    "area": "Sewers",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sewers Back Door",
+                    "area": "Sewers",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Sewers - Secret Room - Left",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Sewers - Secret Room - Middle",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Sewers - Secret Room - Right",
+                    "area": "Sewers",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 87,
+            "name": "Sanctuary",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sanctuary Exit",
+                    "area": "Sanctuary",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Sanctuary",
+                    "area": "Sanctuary",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
