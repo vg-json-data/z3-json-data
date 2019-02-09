@@ -1,0 +1,136 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 166,
+            "name": "Swamp Palace (Entrance)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace Moat",
+                    "area": "Swamp Palace (Entrance)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace Exit",
+                    "area": "Swamp Palace (Entrance)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 167,
+            "name": "Swamp Palace (First Room)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace Small Key Door",
+                    "area": "Swamp Palace (First Room)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Entrance",
+                    "area": "Swamp Palace (First Room)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 168,
+            "name": "Swamp Palace (Starting Area)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace (Center)",
+                    "area": "Swamp Palace (Starting Area)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Map Chest",
+                    "area": "Swamp Palace (Starting Area)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 169,
+            "name": "Swamp Palace (Center)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace (North)",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Big Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Swamp Palace - Compass Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Swamp Palace - Big Key Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Swamp Palace - West Chest",
+                    "area": "Swamp Palace (Center)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 170,
+            "name": "Swamp Palace (North)",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Swamp Palace - Flooded Room - Left",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Swamp Palace - Flooded Room - Right",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Swamp Palace - Waterfall Room",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Swamp Palace - Arrghus",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Swamp Palace - Prize",
+                    "area": "Swamp Palace (North)",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
