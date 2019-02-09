@@ -32,48 +32,6 @@
             "roomType": "Cave"
         },
         {
-            "id": 129,
-            "name": "Hype Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Hype Cave - Top",
-                    "area": "Hype Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Hype Cave - Middle Right",
-                    "area": "Hype Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 3,
-                    "name": "Hype Cave - Middle Left",
-                    "area": "Hype Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 4,
-                    "name": "Hype Cave - Bottom",
-                    "area": "Hype Cave",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 5,
-                    "name": "Hype Cave - Generous Guy",
-                    "area": "Hype Cave",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 134,
-            "name": "Fortune Teller (Dark)",
-            "roomType": "Cave"
-        },
-        {
             "id": 135,
             "name": "Village of Outcasts Shop",
             "roomType": "Cave"
