@@ -52,6 +52,11 @@
             ]
         },
         {
+            "id": 53,
+            "name": "Long Fairy Cave",
+            "roomType": "Cave"
+        },
+        {
             "id": 63,
             "name": "Potion Shop",
             "roomType": "Cave",

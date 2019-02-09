@@ -2,6 +2,11 @@
     "$schema": "../../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 25,
+            "name": "Bonk Fairy (Dark)",
+            "roomType": "Cave"
+        },
+        {
             "id": 122,
             "name": "Big Bomb Shop",
             "roomType": "Cave"

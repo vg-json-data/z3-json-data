@@ -40,16 +40,6 @@
             ]
         },
         {
-            "id": 24,
-            "name": "Bonk Fairy (Light)",
-            "roomType": "Cave"
-        },
-        {
-            "id": 25,
-            "name": "Bonk Fairy (Dark)",
-            "roomType": "Cave"
-        },
-        {
             "id": 26,
             "name": "Lake Hylia Healer Fairy",
             "roomType": "Cave"
@@ -85,18 +75,8 @@
             "roomType": "Cave"
         },
         {
-            "id": 53,
-            "name": "Long Fairy Cave",
-            "roomType": "Cave"
-        },
-        {
             "id": 59,
             "name": "Cave Shop (Dark Death Mountain)",
-            "roomType": "Cave"
-        },
-        {
-            "id": 68,
-            "name": "50 Rupee Cave",
             "roomType": "Cave"
         }
     ]

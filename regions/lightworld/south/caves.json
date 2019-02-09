@@ -58,6 +58,11 @@
             "roomType": "Cave"
         },
         {
+            "id": 24,
+            "name": "Bonk Fairy (Light)",
+            "roomType": "Cave"
+        },
+        {
             "id": 34,
             "name": "Aginahs Cave",
             "roomType": "Cave",
@@ -184,6 +189,11 @@
                     "nodeType": "door"
                 }
             ]
+        },
+        {
+            "id": 68,
+            "name": "50 Rupee Cave",
+            "roomType": "Cave"
         }
     ]
 }
