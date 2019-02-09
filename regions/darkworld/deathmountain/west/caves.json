@@ -2,6 +2,11 @@
     "$schema": "../../../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 32,
+            "name": "Dark Death Mountain Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
             "id": 159,
             "name": "Spike Cave",
             "roomType": "Cave",

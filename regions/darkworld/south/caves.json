@@ -7,6 +7,16 @@
             "roomType": "Cave"
         },
         {
+            "id": 30,
+            "name": "Dark Lake Hylia Ledge Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 31,
+            "name": "Dark Desert Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
             "id": 122,
             "name": "Big Bomb Shop",
             "roomType": "Cave"

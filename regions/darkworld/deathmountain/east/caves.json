@@ -2,6 +2,11 @@
     "$schema": "../../../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 59,
+            "name": "Cave Shop (Dark Death Mountain)",
+            "roomType": "Cave"
+        },
+        {
             "id": 158,
             "name": "Superbunny Cave",
             "roomType": "Cave",

@@ -2,6 +2,31 @@
     "$schema": "../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 4,
+            "name": "Hyrule Castle Secret Entrance",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Secret Entrance Exit",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Link's Uncle",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Secret Passage",
+                    "area": "Hyrule Castle Secret Entrance",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
             "id": 6,
             "name": "Waterfall of Wishing",
             "roomType": "Cave",
@@ -19,6 +44,24 @@
                     "nodeType": "item"
                 }
             ]
+        },
+        {
+            "id": 9,
+            "name": "North Fairy Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "North Fairy Cave Exit",
+                    "area": "North Fairy Cave",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Lake Hylia Healer Fairy",
+            "roomType": "Cave"
         },
         {
             "id": 35,

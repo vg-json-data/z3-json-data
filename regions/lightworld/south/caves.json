@@ -63,6 +63,16 @@
             "roomType": "Cave"
         },
         {
+            "id": 27,
+            "name": "Swamp Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
+            "id": 28,
+            "name": "Desert Healer Fairy",
+            "roomType": "Cave"
+        },
+        {
             "id": 34,
             "name": "Aginahs Cave",
             "roomType": "Cave",
