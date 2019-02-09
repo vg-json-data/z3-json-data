@@ -27,25 +27,6 @@
             ]
         },
         {
-            "id": 6,
-            "name": "Waterfall of Wishing",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Waterfall Fairy - Left",
-                    "area": "Waterfall of Wishing",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Waterfall Fairy - Right",
-                    "area": "Waterfall of Wishing",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
             "id": 9,
             "name": "North Fairy Cave",
             "roomType": "Cave",
@@ -178,37 +159,6 @@
             ]
         },
         {
-            "id": 35,
-            "name": "Sahasrahlas Hut",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Sahasrahla's Hut - Left",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Sahasrahla's Hut - Middle",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 3,
-                    "name": "Sahasrahla's Hut - Right",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 4,
-                    "name": "Sahasrahla",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
             "id": 49,
             "name": "Cave 45",
             "roomType": "Cave",
@@ -217,19 +167,6 @@
                     "id": 1,
                     "name": "Cave 45",
                     "area": "Cave 45",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 51,
-            "name": "Graveyard Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Graveyard Cave",
-                    "area": "Graveyard Cave",
                     "nodeType": "item"
                 }
             ]
@@ -352,19 +289,6 @@
             "id": 62,
             "name": "Kakariko Gamble Game",
             "roomType": "Cave"
-        },
-        {
-            "id": 63,
-            "name": "Potion Shop",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Potion Shop",
-                    "area": "Potion Shop",
-                    "nodeType": "item"
-                }
-            ]
         },
         {
             "id": 65,

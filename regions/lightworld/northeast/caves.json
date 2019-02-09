@@ -1,0 +1,68 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 6,
+            "name": "Waterfall of Wishing",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Waterfall Fairy - Left",
+                    "area": "Waterfall of Wishing",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Waterfall Fairy - Right",
+                    "area": "Waterfall of Wishing",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Sahasrahlas Hut",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Sahasrahla's Hut - Left",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Sahasrahla's Hut - Middle",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Sahasrahla's Hut - Right",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Sahasrahla",
+                    "area": "Sahasrahlas Hut",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 63,
+            "name": "Potion Shop",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Potion Shop",
+                    "area": "Potion Shop",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
