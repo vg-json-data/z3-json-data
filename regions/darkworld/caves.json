@@ -194,30 +194,6 @@
             ]
         },
         {
-            "id": 151,
-            "name": "Mire Shed",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Mire Shed - Left",
-                    "area": "Mire Shed",
-                    "nodeType": "item"
-                },
-                {
-                    "id": 2,
-                    "name": "Mire Shed - Right",
-                    "area": "Mire Shed",
-                    "nodeType": "item"
-                }
-            ]
-        },
-        {
-            "id": 152,
-            "name": "Dark Desert Hint",
-            "roomType": "Cave"
-        },
-        {
             "id": 158,
             "name": "Superbunny Cave",
             "roomType": "Cave",
