@@ -1,0 +1,18 @@
+{
+    "$schema": "../../../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 159,
+            "name": "Spike Cave",
+            "roomType": "Cave",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spike Cave",
+                    "area": "Spike Cave",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
