@@ -1,0 +1,114 @@
+{
+    "$schema": "../../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 130,
+            "name": "West Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Village of Outcasts Drop",
+                    "area": "West Dark World",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "East Dark World River Pier",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Brewery",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "C-Shaped House",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Chest Game",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Thieves Town",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Graveyard Ledge Mirror Spot",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Kings Grave Mirror Spot",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "Bumper Cave Entrance Rock",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 10,
+                    "name": "Skull Woods Forest",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 11,
+                    "name": "Village of Outcasts Pegs",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 12,
+                    "name": "Village of Outcasts Eastern Rocks",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 13,
+                    "name": "Red Shield Shop",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 14,
+                    "name": "Dark Sanctuary Hint",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 15,
+                    "name": "Fortune Teller (Dark)",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 16,
+                    "name": "Dark World Lumberjack Shop",
+                    "area": "West Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 17,
+                    "name": "Frog",
+                    "area": "West Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
