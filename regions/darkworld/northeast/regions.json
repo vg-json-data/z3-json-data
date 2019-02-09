@@ -1,0 +1,36 @@
+{
+    "$schema": "../../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 118,
+            "name": "Northeast Dark World",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "West Dark World Gap",
+                    "area": "Northeast Dark World",
+                    "nodeType": "obstacle"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark World Potion Shop",
+                    "area": "Northeast Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "East Dark World Broken Bridge Pass",
+                    "area": "Northeast Dark World",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Catfish",
+                    "area": "Northeast Dark World",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
