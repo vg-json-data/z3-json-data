@@ -1,0 +1,60 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 78,
+            "name": "Eastern Palace",
+            "roomType": "Dungeon",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Eastern Palace Exit",
+                    "area": "Eastern Palace",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Eastern Palace - Compass Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 3,
+                    "name": "Eastern Palace - Big Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 4,
+                    "name": "Eastern Palace - Cannonball Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 5,
+                    "name": "Eastern Palace - Big Key Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 6,
+                    "name": "Eastern Palace - Map Chest",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 7,
+                    "name": "Eastern Palace - Armos Knights",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 8,
+                    "name": "Eastern Palace - Prize",
+                    "area": "Eastern Palace",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
