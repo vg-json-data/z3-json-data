@@ -1,0 +1,167 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 154,
+            "name": "Dark Death Mountain (Top)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Death Mountain Drop (East)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark Death Mountain Drop (West)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 3,
+                    "name": "Ganons Tower",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Superbunny Cave (Top)",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Hookshot Cave",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "East Death Mountain (Top) Mirror Spot",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Turtle Rock",
+                    "area": "Dark Death Mountain (Top)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 155,
+            "name": "Dark Death Mountain Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Dark Death Mountain Ledge (East)",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Dark Death Mountain Ledge (West)",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Mimic Cave Mirror Spot",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Spiral Cave Mirror Spot",
+                    "area": "Dark Death Mountain Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 156,
+            "name": "Dark Death Mountain Isolated Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Isolated Ledge Mirror Spot",
+                    "area": "Dark Death Mountain Isolated Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Turtle Rock Isolated Ledge Entrance",
+                    "area": "Dark Death Mountain Isolated Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 157,
+            "name": "Dark Death Mountain (East Bottom)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Superbunny Cave (Bottom)",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Cave Shop (Dark Death Mountain)",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Fairy Ascension Mirror Spot",
+                    "area": "Dark Death Mountain (East Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 161,
+            "name": "Death Mountain Floating Island (Dark World)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Floating Island Drop",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Hookshot Cave Back Entrance",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Floating Island Mirror Spot",
+                    "area": "Death Mountain Floating Island (Dark World)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 163,
+            "name": "Turtle Rock (Top)",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Turtle Rock Drop",
+                    "area": "Turtle Rock (Top)",
+                    "nodeType": "drop"
+                }
+            ]
+        }
+    ]
+}
