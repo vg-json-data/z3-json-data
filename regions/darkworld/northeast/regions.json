@@ -31,6 +31,25 @@
                     "nodeType": "item"
                 }
             ]
+        },
+        {
+            "id": 223,
+            "name": "Pyramid Ledge",
+            "roomType": "DarkWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Pyramid Entrance",
+                    "area": "Pyramid Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Pyramid Drop",
+                    "area": "Pyramid Ledge",
+                    "nodeType": "drop"
+                }
+            ]
         }
     ]
 }
