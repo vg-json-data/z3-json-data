@@ -34,7 +34,8 @@
                     "id": 5,
                     "name": "Skull Woods - Map Chest",
                     "area": "Skull Woods First Section",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD3"
                 }
             ]
         },
@@ -53,7 +54,8 @@
                     "id": 2,
                     "name": "Skull Woods - Pinball Room",
                     "area": "Skull Woods First Section (Right)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD3"
                 }
             ]
         },
@@ -78,13 +80,15 @@
                     "id": 3,
                     "name": "Skull Woods - Compass Chest",
                     "area": "Skull Woods First Section (Left)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD3"
                 },
                 {
                     "id": 4,
                     "name": "Skull Woods - Pot Prison",
                     "area": "Skull Woods First Section (Left)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD3"
                 }
             ]
         },
@@ -103,7 +107,8 @@
                     "id": 2,
                     "name": "Skull Woods - Big Chest",
                     "area": "Skull Woods First Section (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FireRod"
                 }
             ]
         },
@@ -141,7 +146,8 @@
                     "id": 3,
                     "name": "Skull Woods - Big Key Chest",
                     "area": "Skull Woods Second Section",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD3"
                 }
             ]
         },
@@ -166,7 +172,8 @@
                     "id": 3,
                     "name": "Skull Woods - Bridge Room",
                     "area": "Skull Woods Final Section (Entrance)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD3"
                 }
             ]
         },
@@ -179,13 +186,15 @@
                     "id": 1,
                     "name": "Skull Woods - Mothula",
                     "area": "Skull Woods Final Section (Mothula)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 2,
                     "name": "Skull Woods - Prize",
                     "area": "Skull Woods Final Section (Mothula)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal3"
                 }
             ]
         }

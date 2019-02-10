@@ -406,31 +406,36 @@
                     "id": 67,
                     "name": "Mushroom",
                     "area": "Light World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Mushroom"
                 },
                 {
                     "id": 68,
                     "name": "Bottle Merchant",
                     "area": "Light World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Bottle"
                 },
                 {
                     "id": 69,
                     "name": "Flute Spot",
                     "area": "Light World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "OcarinaInactive"
                 },
                 {
                     "id": 70,
                     "name": "Sunken Treasure",
                     "area": "Light World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 },
                 {
                     "id": 71,
                     "name": "Purple Chest",
                     "area": "Light World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Bottle"
                 }
             ]
         }

@@ -27,13 +27,15 @@
                     "id": 3,
                     "name": "Superbunny Cave - Top",
                     "area": "Superbunny Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 4,
                     "name": "Superbunny Cave - Bottom",
                     "area": "Superbunny Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 }
             ]
         },
@@ -58,25 +60,29 @@
                     "id": 3,
                     "name": "Hookshot Cave - Top Right",
                     "area": "Hookshot Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Hookshot Cave - Top Left",
                     "area": "Hookshot Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 },
                 {
                     "id": 5,
                     "name": "Hookshot Cave - Bottom Right",
                     "area": "Hookshot Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 },
                 {
                     "id": 6,
                     "name": "Hookshot Cave - Bottom Left",
                     "area": "Hookshot Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 }
             ]
         }

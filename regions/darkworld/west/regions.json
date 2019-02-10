@@ -212,7 +212,8 @@
                     "id": 4,
                     "name": "Bumper Cave Ledge",
                     "area": "Bumper Cave Ledge",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },

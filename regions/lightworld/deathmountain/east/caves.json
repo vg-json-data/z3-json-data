@@ -52,43 +52,50 @@
                     "id": 3,
                     "name": "Paradox Cave Lower - Far Left",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Paradox Cave Lower - Left",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 5,
                     "name": "Paradox Cave Lower - Right",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 6,
                     "name": "Paradox Cave Lower - Far Right",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 7,
                     "name": "Paradox Cave Lower - Middle",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 8,
                     "name": "Paradox Cave Upper - Left",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 9,
                     "name": "Paradox Cave Upper - Right",
                     "area": "Paradox Cave Chest Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 }
             ]
         },
@@ -143,7 +150,8 @@
                     "id": 3,
                     "name": "Spiral Cave",
                     "area": "Spiral Cave (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 }
             ]
         },
@@ -188,7 +196,8 @@
                     "id": 1,
                     "name": "Mimic Cave",
                     "area": "Mimic Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         }

@@ -41,31 +41,36 @@
                     "id": 3,
                     "name": "Misery Mire - Big Chest",
                     "area": "Misery Mire (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CaneOfSomaria"
                 },
                 {
                     "id": 4,
                     "name": "Misery Mire - Map Chest",
                     "area": "Misery Mire (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD6"
                 },
                 {
                     "id": 5,
                     "name": "Misery Mire - Main Lobby",
                     "area": "Misery Mire (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD6"
                 },
                 {
                     "id": 6,
                     "name": "Misery Mire - Bridge Chest",
                     "area": "Misery Mire (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD6"
                 },
                 {
                     "id": 7,
                     "name": "Misery Mire - Spike Chest",
                     "area": "Misery Mire (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD6"
                 }
             ]
         },
@@ -78,13 +83,15 @@
                     "id": 1,
                     "name": "Misery Mire - Compass Chest",
                     "area": "Misery Mire (West)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD6"
                 },
                 {
                     "id": 2,
                     "name": "Misery Mire - Big Key Chest",
                     "area": "Misery Mire (West)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD6"
                 }
             ]
         },
@@ -110,13 +117,15 @@
                     "id": 1,
                     "name": "Misery Mire - Vitreous",
                     "area": "Misery Mire (Vitreous)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 2,
                     "name": "Misery Mire - Prize",
                     "area": "Misery Mire (Vitreous)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal6"
                 }
             ]
         }

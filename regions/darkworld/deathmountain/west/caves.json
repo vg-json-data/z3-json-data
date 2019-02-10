@@ -15,7 +15,8 @@
                     "id": 1,
                     "name": "Spike Cave",
                     "area": "Spike Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CaneOfByrna"
                 }
             ]
         }

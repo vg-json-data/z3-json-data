@@ -41,25 +41,29 @@
                     "id": 3,
                     "name": "Ice Palace - Compass Chest",
                     "area": "Ice Palace (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD5"
                 },
                 {
                     "id": 4,
                     "name": "Ice Palace - Freezor Chest",
                     "area": "Ice Palace (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 5,
                     "name": "Ice Palace - Big Chest",
                     "area": "Ice Palace (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BlueMail"
                 },
                 {
                     "id": 6,
                     "name": "Ice Palace - Iced T Room",
                     "area": "Ice Palace (Main)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD5"
                 }
             ]
         },
@@ -78,7 +82,8 @@
                     "id": 2,
                     "name": "Ice Palace - Spike Room",
                     "area": "Ice Palace (East)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD5"
                 }
             ]
         },
@@ -91,13 +96,15 @@
                     "id": 1,
                     "name": "Ice Palace - Big Key Chest",
                     "area": "Ice Palace (East Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD5"
                 },
                 {
                     "id": 2,
                     "name": "Ice Palace - Map Chest",
                     "area": "Ice Palace (East Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD5"
                 }
             ]
         },
@@ -110,13 +117,15 @@
                     "id": 1,
                     "name": "Ice Palace - Kholdstare",
                     "area": "Ice Palace (Kholdstare)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 2,
                     "name": "Ice Palace - Prize",
                     "area": "Ice Palace (Kholdstare)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal5"
                 }
             ]
         }

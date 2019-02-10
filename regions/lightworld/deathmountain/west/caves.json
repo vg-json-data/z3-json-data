@@ -22,7 +22,8 @@
                     "id": 3,
                     "name": "Old Man",
                     "area": "Old Man Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MagicMirror"
                 }
             ]
         },
@@ -104,7 +105,8 @@
                     "id": 3,
                     "name": "Spectacle Rock Cave",
                     "area": "Spectacle Rock Cave (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },

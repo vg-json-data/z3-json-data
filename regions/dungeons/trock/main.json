@@ -41,19 +41,22 @@
                     "id": 3,
                     "name": "Turtle Rock - Compass Chest",
                     "area": "Turtle Rock (First Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD7"
                 },
                 {
                     "id": 4,
                     "name": "Turtle Rock - Roller Room - Left",
                     "area": "Turtle Rock (First Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD7"
                 },
                 {
                     "id": 5,
                     "name": "Turtle Rock - Roller Room - Right",
                     "area": "Turtle Rock (First Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD7"
                 }
             ]
         },
@@ -78,7 +81,8 @@
                     "id": 3,
                     "name": "Turtle Rock - Chain Chomps",
                     "area": "Turtle Rock (Chain Chomp Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD7"
                 }
             ]
         },
@@ -109,7 +113,8 @@
                     "id": 4,
                     "name": "Turtle Rock - Big Key Chest",
                     "area": "Turtle Rock (Second Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD7"
                 }
             ]
         },
@@ -134,7 +139,8 @@
                     "id": 3,
                     "name": "Turtle Rock - Big Chest",
                     "area": "Turtle Rock (Big Chest)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MirrorShield"
                 }
             ]
         },
@@ -159,7 +165,8 @@
                     "id": 3,
                     "name": "Turtle Rock - Crystaroller Room",
                     "area": "Turtle Rock (Crystaroller Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD7"
                 }
             ]
         },
@@ -209,25 +216,29 @@
                     "id": 4,
                     "name": "Turtle Rock - Eye Bridge - Bottom Left",
                     "area": "Turtle Rock (Eye Bridge)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD7"
                 },
                 {
                     "id": 5,
                     "name": "Turtle Rock - Eye Bridge - Bottom Right",
                     "area": "Turtle Rock (Eye Bridge)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 6,
                     "name": "Turtle Rock - Eye Bridge - Top Left",
                     "area": "Turtle Rock (Eye Bridge)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiveRupees"
                 },
                 {
                     "id": 7,
                     "name": "Turtle Rock - Eye Bridge - Top Right",
                     "area": "Turtle Rock (Eye Bridge)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "OneRupee"
                 }
             ]
         },
@@ -240,13 +251,15 @@
                     "id": 1,
                     "name": "Turtle Rock - Trinexx",
                     "area": "Turtle Rock (Trinexx)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 2,
                     "name": "Turtle Rock - Prize",
                     "area": "Turtle Rock (Trinexx)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal7"
                 }
             ]
         }

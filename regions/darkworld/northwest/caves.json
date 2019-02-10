@@ -25,7 +25,9 @@
                     "id": 1,
                     "name": "Peg Cave",
                     "area": "Dark World Hammer Peg Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "note": "Hammer Pegs"
                 }
             ]
         },
@@ -38,7 +40,8 @@
                     "id": 1,
                     "name": "Brewery",
                     "area": "Brewery",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeHundredRupees"
                 }
             ]
         },
@@ -51,7 +54,8 @@
                     "id": 1,
                     "name": "C-Shaped House",
                     "area": "C-Shaped House",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeHundredRupees"
                 }
             ]
         },
@@ -64,7 +68,8 @@
                     "id": 1,
                     "name": "Chest Game",
                     "area": "Chest Game",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },

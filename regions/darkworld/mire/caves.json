@@ -10,13 +10,15 @@
                     "id": 1,
                     "name": "Mire Shed - Left",
                     "area": "Mire Shed",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 },
                 {
                     "id": 2,
                     "name": "Mire Shed - Right",
                     "area": "Mire Shed",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 }
             ]
         },

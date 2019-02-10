@@ -30,13 +30,15 @@
                     "id": 1,
                     "name": "Pyramid Fairy - Left",
                     "area": "Pyramid Fairy",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "L4Sword"
                 },
                 {
                     "id": 2,
                     "name": "Pyramid Fairy - Right",
                     "area": "Pyramid Fairy",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "SilverArrowUpgrade"
                 }
             ]
         },
@@ -55,7 +57,8 @@
                     "id": 2,
                     "name": "Ganon",
                     "area": "Pyramid",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Triforce"
                 }
             ]
         },

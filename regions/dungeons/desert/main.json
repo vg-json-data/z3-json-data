@@ -34,19 +34,22 @@
                     "id": 5,
                     "name": "Desert Palace - Big Chest",
                     "area": "Desert Palace Main (Outer)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PowerGlove"
                 },
                 {
                     "id": 6,
                     "name": "Desert Palace - Torch",
                     "area": "Desert Palace Main (Outer)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyP2"
                 },
                 {
                     "id": 7,
                     "name": "Desert Palace - Map Chest",
                     "area": "Desert Palace Main (Outer)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapP2"
                 }
             ]
         },
@@ -78,13 +81,15 @@
                     "id": 1,
                     "name": "Desert Palace - Compass Chest",
                     "area": "Desert Palace East",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassP2"
                 },
                 {
                     "id": 2,
                     "name": "Desert Palace - Big Key Chest",
                     "area": "Desert Palace East",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyP2"
                 }
             ]
         },
@@ -103,13 +108,15 @@
                     "id": 2,
                     "name": "Desert Palace - Lanmolas",
                     "area": "Desert Palace North",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 3,
                     "name": "Desert Palace - Prize",
                     "area": "Desert Palace North",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PendantOfWisdom"
                 }
             ]
         }

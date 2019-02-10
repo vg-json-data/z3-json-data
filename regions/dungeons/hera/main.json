@@ -28,13 +28,15 @@
                     "id": 4,
                     "name": "Tower of Hera - Basement Cage",
                     "area": "Tower of Hera (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyP3"
                 },
                 {
                     "id": 5,
                     "name": "Tower of Hera - Map Chest",
                     "area": "Tower of Hera (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapP3"
                 }
             ]
         },
@@ -47,7 +49,8 @@
                     "id": 1,
                     "name": "Tower of Hera - Big Key Chest",
                     "area": "Tower of Hera (Basement)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyP3"
                 }
             ]
         },
@@ -60,25 +63,29 @@
                     "id": 1,
                     "name": "Tower of Hera - Compass Chest",
                     "area": "Tower of Hera (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassP3"
                 },
                 {
                     "id": 2,
                     "name": "Tower of Hera - Big Chest",
                     "area": "Tower of Hera (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MoonPearl"
                 },
                 {
                     "id": 3,
                     "name": "Tower of Hera - Moldorm",
                     "area": "Tower of Hera (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 4,
                     "name": "Tower of Hera - Prize",
                     "area": "Tower of Hera (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PendantOfPower"
                 }
             ]
         }

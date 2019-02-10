@@ -1,0 +1,149 @@
+{
+  "base": [
+    "GreenMail"
+  ],
+  "inventory": [
+    "FireRod",
+    "IceRod",
+    "Hammer",
+    "Hookshot",
+    "Bow",
+    "BowAndArrows",
+    "BowAndSilverArrows",
+    "Boomerang",
+    "Powder",
+    "Bombos",
+    "Ether",
+    "Quake",
+    "Lamp",
+    "Shovel",
+    "CaneOfSomaria",
+    "CaneOfByrna",
+    "Cape",
+    "MagicMirror",
+    "BookOfMudora",
+    "Flippers",
+    "MoonPearl",
+    "BugCatchingNet",
+    "Mushroom",
+    "RedBoomerang",
+    "Bottle",
+    "PegasusBoots",
+    "SilverArrowUpgrade",
+    "Triforce"
+  ],
+  "progressives": [
+    "L1Sword",
+    "L1SwordAndShield",
+    "L2Sword",
+    "MasterSword",
+    "L3Sword",
+    "L4Sword",
+    "BlueShield",
+    "RedShield",
+    "MirrorShield",
+    "OcarinaInactive",
+    "OcarinaActive",
+    "PowerGlove",
+    "TitansMitt",
+    "BlueMail",
+    "RedMail",
+    "HalfMagic",
+    "QuarterMagic",
+    "ProgressiveSword",
+    "ProgressiveShield",
+    "ProgressiveArmor",
+    "ProgressiveGlove"
+  ],
+  "ammo": [
+    "Arrow",
+    "Bomb",
+    "SmallMagic",
+    "ThreeBombs",
+    "TenArrows"
+  ],
+  "bottleContents": [
+    "Bee",
+    "Fairy",
+    "GoldBee",
+    "RedPotion",
+    "GreenPotion",
+    "BluePotion"
+  ],
+  "currency": [
+    "Rupoor",
+    "OneRupee",
+    "FiveRupees",
+    "TwentyRupees",
+    "FiftyRupees",
+    "OneHundredRupees",
+    "ThreeHundredRupees",
+    "RedClock",
+    "BlueClock",
+    "GreenClock"
+  ],
+  "drops": [
+    "Heart"
+  ],
+  "dungeonItems": [
+    "Key",
+    "Compass",
+    "BigKey",
+    "Map"
+  ],
+  "dungeonPrizes": [
+    "PendantOfCourage",
+    "PendantOfWisdom",
+    "PendantOfPower",
+    "Crystal1",
+    "Crystal2",
+    "Crystal3",
+    "Crystal4",
+    "Crystal5",
+    "Crystal6",
+    "Crystal7"
+  ],
+  "expansions": [
+    "SanctuaryHeart",
+    "HeartContainer",
+    "BossHeartContainer",
+    "HeartContainerNoAnimation",
+    "PieceOfHeart",
+    "BombUpgrade5",
+    "BombUpgrade10",
+    "BombUpgrade50",
+    "ArrowUpgrade5",
+    "ArrowUpgrade10",
+    "ArrowUpgrade70"
+  ],
+  "bosses": [
+    "ArmosKnights",
+    "Lanmolas",
+    "Moldorm",
+    "Agahnim1",
+    "HelmasaurKing",
+    "Arrghus",
+    "Blind",
+    "Mothula",
+    "Kholdstare",
+    "Vitreous",
+    "Trinexx",
+    "Agahnim2",
+    "Ganon"
+  ],
+  "flags": [
+    "RescueZelda",
+    "DrainedFloodgate",
+    "DefeatAgahnim",
+    "RescueBlacksmith",
+    "DefeatAgahnim2",
+    "DefeatGanon"
+  ],
+  "settings": {
+    "swords": [
+      "swords.swordless",
+      "swords.randomized",
+      "swords.uncle"
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "name": "canActivateTablets",
+    "requires": [
+      "canRead",
+      "hasMagicalSword"
+    ]
+  },
+  {
+    "name": "canActivateMedallions",
+    "requires": [ "hasSword" ]
+  },
+  {
+    "name": "canBlockLasers",
+    "requires": [ "MirrorShield" ],
+    "note": "Can also have 3 Progressive Shields"
+  },
+  {
+    "name": "canDash",
+    "requires": [ "PegasusBoots" ]
+  },
+  {
+    "name": "canExtendMagic",
+    "requires": [
+      "HalfMagic",
+      "QuarterMagic",
+      "Bottle"
+    ],
+    "note": "Somehow take an arg and do math"
+  },
+  {
+    "name": "canFly",
+    "requires": [ "OcarinaActive" ]
+  },
+  {
+    "name": "canGetGoodBee",
+    "requires": [
+      "BugCatchingNet",
+      "Bottle",
+      {
+        "or": [
+          "canDash",
+          {
+            "and": [
+              "canActivateMedallions",
+              "Quake"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "canGrapple",
+    "requires": [ "Hookshot" ]
+  },
+  {
+    "name": "canInvul",
+    "requires": [
+      "Cape",
+      "CaneOfByrna"
+    ]
+  },
+  {
+    "name": "canLiftRocks",
+    "requires": [
+      {
+        "or": [
+          "ProgressiveGlove",
+          "PowerGlove"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "canLiftDarkRocks",
+    "requires": [ "TitansMitt" ],
+    "note": "Can also have 2 Progressive Gloves"
+  },
+  {
+    "name": "canLightTorches",
+    "requires": [
+      "FireRod",
+      "Lamp"
+    ]
+  },
+  {
+    "name": "canMeltThings",
+    "requires": [
+      {
+        "and": [
+          "canActivateMedallions",
+          "Bombos"
+        ]
+      },
+      "FireRod"
+    ]
+  },
+  {
+    "name": "canRead",
+    "requires": [ "BookOfMudora" ]
+  },
+  {
+    "name": "canShootArrows",
+    "requires": [ "Bow" ]
+  },
+  {
+    "name": "canSwim",
+    "requires": [ "Flippers" ]
+  },
+  {
+    "name": "hasMagicalSword",
+    "requires": [
+      {
+        "or":
+        [
+          "L2Sword",
+          "L3Sword",
+          "L4Sword",
+          "MasterSword",
+          {
+            "and": [
+              "swords.swordless",
+              "Hammer"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hasSword",
+    "requires": [
+      {
+        "or": [
+          "hasMagicalSword",
+          "L1Sword",
+          "L1SwordAndShield"
+        ]
+      }
+    ]
+  }
+]

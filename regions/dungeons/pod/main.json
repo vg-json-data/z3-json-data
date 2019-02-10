@@ -28,7 +28,8 @@
                     "id": 4,
                     "name": "Palace of Darkness - Shooter Room",
                     "area": "Palace of Darkness (Entrance)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 }
             ]
         },
@@ -59,13 +60,15 @@
                     "id": 4,
                     "name": "Palace of Darkness - The Arena - Bridge",
                     "area": "Palace of Darkness (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 },
                 {
                     "id": 5,
                     "name": "Palace of Darkness - Stalfos Basement",
                     "area": "Palace of Darkness (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 }
             ]
         },
@@ -78,7 +81,8 @@
                     "id": 1,
                     "name": "Palace of Darkness - Big Key Chest",
                     "area": "Palace of Darkness (Big Key Chest)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD1"
                 }
             ]
         },
@@ -97,13 +101,15 @@
                     "id": 2,
                     "name": "Palace of Darkness - The Arena - Ledge",
                     "area": "Palace of Darkness (Bonk Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 },
                 {
                     "id": 3,
                     "name": "Palace of Darkness - Map Chest",
                     "area": "Palace of Darkness (Bonk Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD1"
                 }
             ]
         },
@@ -128,19 +134,22 @@
                     "id": 3,
                     "name": "Palace of Darkness - Compass Chest",
                     "area": "Palace of Darkness (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD1"
                 },
                 {
                     "id": 4,
                     "name": "Palace of Darkness - Dark Basement - Left",
                     "area": "Palace of Darkness (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Arrow"
                 },
                 {
                     "id": 5,
                     "name": "Palace of Darkness - Dark Basement - Right",
                     "area": "Palace of Darkness (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 }
             ]
         },
@@ -153,19 +162,22 @@
                     "id": 1,
                     "name": "Palace of Darkness - Dark Maze - Top",
                     "area": "Palace of Darkness (Maze)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 2,
                     "name": "Palace of Darkness - Dark Maze - Bottom",
                     "area": "Palace of Darkness (Maze)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD1"
                 },
                 {
                     "id": 3,
                     "name": "Palace of Darkness - Big Chest",
                     "area": "Palace of Darkness (Maze)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Hammer"
                 }
             ]
         },
@@ -178,7 +190,8 @@
                     "id": 1,
                     "name": "Palace of Darkness - Harmless Hellway",
                     "area": "Palace of Darkness (Harmless Hellway)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiveRupees"
                 }
             ]
         },
@@ -191,13 +204,15 @@
                     "id": 1,
                     "name": "Palace of Darkness - Helmasaur",
                     "area": "Palace of Darkness (Final Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 2,
                     "name": "Palace of Darkness - Prize",
                     "area": "Palace of Darkness (Final Section)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal1"
                 }
             ]
         }

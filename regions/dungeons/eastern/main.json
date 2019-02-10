@@ -16,43 +16,50 @@
                     "id": 2,
                     "name": "Eastern Palace - Compass Chest",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassP1"
                 },
                 {
                     "id": 3,
                     "name": "Eastern Palace - Big Chest",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Bow"
                 },
                 {
                     "id": 4,
                     "name": "Eastern Palace - Cannonball Chest",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "OneHundredRupees"
                 },
                 {
                     "id": 5,
                     "name": "Eastern Palace - Big Key Chest",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyP1"
                 },
                 {
                     "id": 6,
                     "name": "Eastern Palace - Map Chest",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapP1"
                 },
                 {
                     "id": 7,
                     "name": "Eastern Palace - Armos Knights",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 8,
                     "name": "Eastern Palace - Prize",
                     "area": "Eastern Palace",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PendantOfCourage"
                 }
             ]
         }

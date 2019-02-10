@@ -10,13 +10,15 @@
                     "id": 1,
                     "name": "Floodgate",
                     "area": "Dam",
-                    "nodeType": "item"
+                    "nodeType": "event",
+                    "yields": "DrainedFloodgate"
                 },
                 {
                     "id": 2,
                     "name": "Floodgate Chest",
                     "area": "Dam",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 }
             ]
         },
@@ -35,7 +37,8 @@
                     "id": 2,
                     "name": "Link's House",
                     "area": "Links House",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Lamp"
                 }
             ]
         },
@@ -81,7 +84,8 @@
                     "id": 1,
                     "name": "Aginah's Cave",
                     "area": "Aginahs Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },
@@ -94,7 +98,8 @@
                     "id": 1,
                     "name": "Cave 45",
                     "area": "Cave 45",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },
@@ -107,7 +112,8 @@
                     "id": 1,
                     "name": "Checkerboard Cave",
                     "area": "Checkerboard Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart"
                 }
             ]
         },
@@ -120,31 +126,37 @@
                     "id": 1,
                     "name": "Mini Moldorm Cave - Far Left",
                     "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 2,
                     "name": "Mini Moldorm Cave - Left",
                     "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 3,
                     "name": "Mini Moldorm Cave - Right",
                     "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Mini Moldorm Cave - Far Right",
                     "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 5,
                     "name": "Mini Moldorm Cave - Generous Guy",
                     "area": "Mini Moldorm Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeHundredRupees",
+                    "note": "Mini Moldorm Cave - NPC"
                 }
             ]
         },
@@ -157,7 +169,8 @@
                     "id": 1,
                     "name": "Ice Rod Cave",
                     "area": "Ice Rod Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "IceRod"
                 }
             ]
         },

@@ -34,19 +34,22 @@
                     "id": 5,
                     "name": "Hyrule Castle - Boomerang Chest",
                     "area": "Hyrule Castle",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BlueBoomerang"
                 },
                 {
                     "id": 6,
                     "name": "Hyrule Castle - Map Chest",
                     "area": "Hyrule Castle",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapH2"
                 },
                 {
                     "id": 7,
                     "name": "Hyrule Castle - Zelda's Chest",
                     "area": "Hyrule Castle",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Lamp"
                 }
             ]
         },
@@ -78,7 +81,8 @@
                     "id": 2,
                     "name": "Sewers - Dark Cross",
                     "area": "Sewers (Dark)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyH2"
                 }
             ]
         },
@@ -103,19 +107,22 @@
                     "id": 3,
                     "name": "Sewers - Secret Room - Left",
                     "area": "Sewers",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 4,
                     "name": "Sewers - Secret Room - Middle",
                     "area": "Sewers",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeHundredRupees"
                 },
                 {
                     "id": 5,
                     "name": "Sewers - Secret Room - Right",
                     "area": "Sewers",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 }
             ]
         },
@@ -134,7 +141,8 @@
                     "id": 2,
                     "name": "Sanctuary",
                     "area": "Sanctuary",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "SanctuaryHeart"
                 }
             ]
         }

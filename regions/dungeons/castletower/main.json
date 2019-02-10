@@ -22,13 +22,15 @@
                     "id": 3,
                     "name": "Castle Tower - Room 03",
                     "area": "Agahnims Tower",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA1"
                 },
                 {
                     "id": 4,
                     "name": "Castle Tower - Dark Maze",
                     "area": "Agahnims Tower",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA1"
                 }
             ]
         },
@@ -41,7 +43,8 @@
                     "id": 1,
                     "name": "Agahnim 1",
                     "area": "Agahnim 1",
-                    "nodeType": "item"
+                    "nodeType": "event",
+                    "yields": "DefeatAgahnim1"
                 }
             ]
         }

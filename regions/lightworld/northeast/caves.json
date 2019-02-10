@@ -22,7 +22,8 @@
                     "id": 3,
                     "name": "Secret Passage",
                     "area": "Hyrule Castle Secret Entrance",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Lamp"
                 }
             ]
         },
@@ -35,13 +36,15 @@
                     "id": 1,
                     "name": "Waterfall Fairy - Left",
                     "area": "Waterfall of Wishing",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "RedBoomerang"
                 },
                 {
                     "id": 2,
                     "name": "Waterfall Fairy - Right",
                     "area": "Waterfall of Wishing",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FireShield"
                 }
             ]
         },
@@ -72,25 +75,29 @@
                     "id": 1,
                     "name": "Sahasrahla's Hut - Left",
                     "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 },
                 {
                     "id": 2,
                     "name": "Sahasrahla's Hut - Middle",
                     "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 3,
                     "name": "Sahasrahla's Hut - Right",
                     "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "FiftyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Sahasrahla",
                     "area": "Sahasrahlas Hut",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PegasusBoots"
                 }
             ]
         },
@@ -108,7 +115,8 @@
                     "id": 1,
                     "name": "Potion Shop",
                     "area": "Potion Shop",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Powder"
                 }
             ]
         }

@@ -35,7 +35,8 @@
                     "id": 2,
                     "name": "Swamp Palace - Entrance",
                     "area": "Swamp Palace (First Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyD2"
                 }
             ]
         },
@@ -54,7 +55,8 @@
                     "id": 2,
                     "name": "Swamp Palace - Map Chest",
                     "area": "Swamp Palace (Starting Area)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapD2"
                 }
             ]
         },
@@ -73,25 +75,29 @@
                     "id": 2,
                     "name": "Swamp Palace - Big Chest",
                     "area": "Swamp Palace (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Hookshot"
                 },
                 {
                     "id": 3,
                     "name": "Swamp Palace - Compass Chest",
                     "area": "Swamp Palace (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassD2"
                 },
                 {
                     "id": 4,
                     "name": "Swamp Palace - Big Key Chest",
                     "area": "Swamp Palace (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyD2"
                 },
                 {
                     "id": 5,
                     "name": "Swamp Palace - West Chest",
                     "area": "Swamp Palace (Center)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 }
             ]
         },
@@ -104,31 +110,36 @@
                     "id": 1,
                     "name": "Swamp Palace - Flooded Room - Left",
                     "area": "Swamp Palace (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 2,
                     "name": "Swamp Palace - Flooded Room - Right",
                     "area": "Swamp Palace (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 3,
                     "name": "Swamp Palace - Waterfall Room",
                     "area": "Swamp Palace (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Swamp Palace - Arrghus",
                     "area": "Swamp Palace (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BossHeartContainer"
                 },
                 {
                     "id": 5,
                     "name": "Swamp Palace - Prize",
                     "area": "Swamp Palace (North)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Crystal2"
                 }
             ]
         }

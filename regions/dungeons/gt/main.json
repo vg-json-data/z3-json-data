@@ -34,19 +34,22 @@
                     "id": 5,
                     "name": "Ganons Tower - Bob's Torch",
                     "area": "Ganons Tower (Entrance)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA2"
                 },
                 {
                     "id": 6,
                     "name": "Ganons Tower - Hope Room - Left",
                     "area": "Ganons Tower (Entrance)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 7,
                     "name": "Ganons Tower - Hope Room - Right",
                     "area": "Ganons Tower (Entrance)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 }
             ]
         },
@@ -65,7 +68,8 @@
                     "id": 2,
                     "name": "Ganons Tower - Tile Room",
                     "area": "Ganons Tower (Tile Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA2"
                 }
             ]
         },
@@ -84,25 +88,29 @@
                     "id": 2,
                     "name": "Ganons Tower - Compass Room - Top Left",
                     "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "CompassA2"
                 },
                 {
                     "id": 3,
                     "name": "Ganons Tower - Compass Room - Top Right",
                     "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "OneRupee"
                 },
                 {
                     "id": 4,
                     "name": "Ganons Tower - Compass Room - Bottom Left",
                     "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 5,
                     "name": "Ganons Tower - Compass Room - Bottom Right",
                     "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 }
             ]
         },
@@ -127,25 +135,29 @@
                     "id": 3,
                     "name": "Ganons Tower - DMs Room - Top Left",
                     "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 4,
                     "name": "Ganons Tower - DMs Room - Top Right",
                     "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 5,
                     "name": "Ganons Tower - DMs Room - Bottom Left",
                     "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 6,
                     "name": "Ganons Tower - DMs Room - Bottom Right",
                     "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 }
             ]
         },
@@ -158,7 +170,8 @@
                     "id": 1,
                     "name": "Ganons Tower - Map Chest",
                     "area": "Ganons Tower (Map Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "MapA2"
                 }
             ]
         },
@@ -177,7 +190,8 @@
                     "id": 2,
                     "name": "Ganons Tower - Firesnake Room",
                     "area": "Ganons Tower (Firesnake Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA2"
                 }
             ]
         },
@@ -196,25 +210,29 @@
                     "id": 2,
                     "name": "Ganons Tower - Randomizer Room - Top Left",
                     "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 3,
                     "name": "Ganons Tower - Randomizer Room - Top Right",
                     "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 4,
                     "name": "Ganons Tower - Randomizer Room - Bottom Left",
                     "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 5,
                     "name": "Ganons Tower - Randomizer Room - Bottom Right",
                     "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 }
             ]
         },
@@ -227,31 +245,36 @@
                     "id": 1,
                     "name": "Ganons Tower - Bob's Chest",
                     "area": "Ganons Tower (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 2,
                     "name": "Ganons Tower - Big Chest",
                     "area": "Ganons Tower (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "RedMail"
                 },
                 {
                     "id": 3,
                     "name": "Ganons Tower - Big Key Room - Left",
                     "area": "Ganons Tower (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TenArrows"
                 },
                 {
                     "id": 4,
                     "name": "Ganons Tower - Big Key Room - Right",
                     "area": "Ganons Tower (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 5,
                     "name": "Ganons Tower - Big Key Chest",
                     "area": "Ganons Tower (Bottom)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "BigKeyA2"
                 }
             ]
         },
@@ -283,19 +306,22 @@
                     "id": 2,
                     "name": "Ganons Tower - Mini Helmasaur Room - Left",
                     "area": "Ganons Tower (Before Moldorm)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 3,
                     "name": "Ganons Tower - Mini Helmasaur Room - Right",
                     "area": "Ganons Tower (Before Moldorm)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeBombs"
                 },
                 {
                     "id": 4,
                     "name": "Ganons Tower - Pre-Moldorm Chest",
                     "area": "Ganons Tower (Before Moldorm)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "KeyA2"
                 }
             ]
         },
@@ -321,7 +347,9 @@
                     "id": 1,
                     "name": "Ganons Tower - Validation Chest",
                     "area": "Agahnim 2",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees",
+                    "note": "Ganon's Tower - Moldorm Chest"
                 },
                 {
                     "id": 2,
