@@ -145,6 +145,13 @@
     ]
   },
   {
+    "name": "hasLightCone",
+    "requires": [
+      "canDarkNav",
+      "Lamp"
+    ]
+  },
+  {
     "name": "hasMagicalSword",
     "requires": [
       "isLink",

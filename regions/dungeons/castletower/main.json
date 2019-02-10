@@ -5,6 +5,7 @@
             "id": 88,
             "name": "Agahnims Tower",
             "roomType": "Dungeon",
+            "requires": [ "hasLightCone" ],
             "nodes": [
                 {
                     "id": 1,
@@ -38,6 +39,15 @@
             "id": 89,
             "name": "Agahnim 1",
             "roomType": "Dungeon",
+            "requires": [
+                {"or": [
+                    "hasSword",
+                    {"and": [
+                        "swords.swordless",
+                        "BugCatchingNet"
+                    ]}
+                ]}
+            ],
             "nodes": [
                 {
                     "id": 1,
