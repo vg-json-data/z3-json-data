@@ -140,6 +140,9 @@
     "DefeatGanon"
   ],
   "settings": {
+    "mods": [
+      "mods.ohko"
+    ],
     "swords": [
       "swords.swordless",
       "swords.randomized",
