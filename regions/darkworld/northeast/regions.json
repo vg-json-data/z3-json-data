@@ -30,7 +30,7 @@
                     "area": "Northeast Dark World",
                     "nodeType": "item",
                     "requires": [
-                        "isLink",
+                        "isDarkLink",
                         "canLiftRocks"
                     ]
                 }

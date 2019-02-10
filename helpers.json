@@ -3,21 +3,36 @@
     "name": "canActivateTablets",
     "requires": [
       "canRead",
-      "hasMagicalSword"
+      "hasMagicalSword",
+      "isLink"
     ]
   },
   {
     "name": "canActivateMedallions",
-    "requires": [ "hasSword" ]
+    "requires": [
+      "hasSword",
+      "isLink"
+    ]
   },
   {
     "name": "canBlockLasers",
-    "requires": [ "MirrorShield" ],
+    "requires": [
+      "isLink",
+      "MirrorShield"
+    ],
     "note": "Can also have 3 Progressive Shields"
   },
   {
+    "name": "canBombThings",
+    "requires": [ "isLink" ],
+    "note": "Always assumed that you have a 10-pack of bombs"
+  },
+  {
     "name": "canDash",
-    "requires": [ "PegasusBoots" ]
+    "requires": [
+      "isLink",
+      "PegasusBoots"
+    ]
   },
   {
     "name": "canExtendMagic",
@@ -30,11 +45,15 @@
   },
   {
     "name": "canFly",
-    "requires": [ "OcarinaActive" ]
+    "requires": [
+      "isLink",
+      "OcarinaActive"
+    ]
   },
   {
     "name": "canGetGoodBee",
     "requires": [
+      "isLink",
       "BugCatchingNet",
       "Bottle",
       {"or": [
@@ -50,11 +69,15 @@
   },
   {
     "name": "canGrapple",
-    "requires": [ "Hookshot" ]
+    "requires": [
+      "isLink",
+      "Hookshot"
+    ]
   },
   {
     "name": "canInvul",
     "requires": [
+      "isLink",
       "Cape",
       "CaneOfByrna"
     ]
@@ -62,6 +85,7 @@
   {
     "name": "canLiftRocks",
     "requires": [
+      "isLink",
       {"or": [
         "canLiftDarkRocks",
         "ProgressiveGlove",
@@ -71,26 +95,35 @@
   },
   {
     "name": "canLiftDarkRocks",
-    "requires": [ "TitansMitt" ],
+    "requires": [
+      "isLink",
+      "TitansMitt"
+    ],
     "note": "Can also have 2 Progressive Gloves"
   },
   {
     "name": "canLightTorches",
     "requires": [
-      "FireRod",
-      "Lamp"
+      "isLink",
+      {"or": [
+        "FireRod",
+        "Lamp"
+      ]}
     ]
   },
   {
     "name": "canMeltThings",
     "requires": [
-      {
-        "and": [
-          "canActivateMedallions",
-          "Bombos"
-        ]
-      },
-      "FireRod"
+      "isLink",
+      {"or": [
+        {
+          "and": [
+            "canActivateMedallions",
+            "Bombos"
+          ]
+        },
+        "FireRod"
+      ]}
     ]
   },
   {
@@ -99,15 +132,22 @@
   },
   {
     "name": "canShootArrows",
-    "requires": [ "Bow" ]
+    "requires": [
+      "isLink",
+      "Bow"
+    ]
   },
   {
     "name": "canSwim",
-    "requires": [ "Flippers" ]
+    "requires": [
+      "isLink",
+      "Flippers"
+    ]
   },
   {
     "name": "hasMagicalSword",
     "requires": [
+      "isLink",
       {"or": [
         "L2Sword",
         "L3Sword",
@@ -123,6 +163,7 @@
   {
     "name": "hasSword",
     "requires": [
+      "isLink",
       {"or": [
         "hasMagicalSword",
         "L1Sword",
@@ -134,8 +175,36 @@
     "name": "isLink",
     "requires": [
       {"or": [
+        "isLightLink",
+        "isDarkLink"
+      ]}
+    ]
+  },
+  {
+    "name": "isLightLink",
+    "requires": [
+      {"or": [
+        "state.standard",
+        "state.open",
+        {"and": [
+          "state.inverted",
+          "MoonPearl"
+        ]}
+      ]}
+    ]
+  },
+  {
+    "name": "isDarkLink",
+    "requires": [
+      {"or": [
         "state.inverted",
-        "MoonPearl"
+        {"and": [
+          {"or": [
+            "state.standard",
+            "state.open"
+          ]},
+          "MoonPearl"
+        ]}
       ]}
     ]
   }

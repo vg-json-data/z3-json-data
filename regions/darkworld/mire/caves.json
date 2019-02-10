@@ -2,6 +2,13 @@
     "$schema": "../../../schema/z3-region.schema.json",
     "rooms": [
         {
+            "id": 31,
+            "name": "Dark Desert Healer Fairy",
+            "roomType": "Cave",
+            "note": "Dark Desert Fairy",
+            "requires": [ "isDarkLink" ]
+        },
+        {
             "id": 151,
             "name": "Mire Shed",
             "roomType": "Cave",
@@ -12,7 +19,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
-                    "requires": [ "isLink" ]
+                    "requires": [ "isDarkLink" ]
                 },
                 {
                     "id": 2,
@@ -20,7 +27,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "TwentyRupees",
-                    "requires": [ "isLink" ]
+                    "requires": [ "isDarkLink" ]
                 }
             ]
         },
@@ -28,7 +35,7 @@
             "id": 152,
             "name": "Dark Desert Hint",
             "roomType": "Cave",
-            "requires": [ "isLink" ]
+            "requires": [ "isDarkLink" ]
         }
     ]
 }

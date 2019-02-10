@@ -438,7 +438,7 @@
                     "nodeItem": "Bottle",
                     "requires": [
                         "RescueBlacksmith",
-                        "isLink"
+                        "isLightLink"
                     ]
                 }
             ]

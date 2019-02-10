@@ -10,20 +10,20 @@
             "id": 119,
             "name": "Palace of Darkness Hint",
             "roomType": "Cave",
-            "requires": [ "isLink" ]
+            "requires": [ "isDarkLink" ]
         },
         {
             "id": 120,
             "name": "East Dark World Hint",
             "roomType": "Cave",
-            "requires": [ "isLink" ]
+            "requires": [ "isDarkLink" ]
         },
         {
             "id": 138,
             "name": "Dark World Potion Shop",
             "roomType": "Cave",
             "requires": [
-                "isLink",
+                "isDarkLink",
                 {"or": [
                     "canLiftRocks",
                     "canSwim",
@@ -39,7 +39,7 @@
                 "hasSword",
                 "Crystal5",
                 "Crystal6",
-                "isLink",
+                "isDarkLink",
                 {"or": [
                     "Hammer",
                     {"and": [

@@ -47,14 +47,14 @@
                     "name": "Dark Desert Hint",
                     "area": "Dark Desert",
                     "nodeType": "door",
-                    "requires": [ "isLink" ]
+                    "requires": [ "isDarkLink" ]
                 },
                 {
                     "id": 8,
                     "name": "Dark Desert Fairy",
                     "area": "Dark Desert",
                     "nodeType": "door",
-                    "requires": [ "isLink" ]
+                    "requires": [ "isDarkLink" ]
                 }
             ]
         }

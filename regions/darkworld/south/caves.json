@@ -4,17 +4,18 @@
         {
             "id": 25,
             "name": "Bonk Fairy (Dark)",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [ "canDash" ]
         },
         {
             "id": 30,
             "name": "Dark Lake Hylia Ledge Healer Fairy",
-            "roomType": "Cave"
-        },
-        {
-            "id": 31,
-            "name": "Dark Desert Healer Fairy",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [
+                "canBombThings",
+                "canSwim"
+            ],
+            "note": "Dark Lake Hylia Ledge Fairy"
         },
         {
             "id": 122,
@@ -29,47 +30,59 @@
         {
             "id": 127,
             "name": "Dark Lake Hylia Ledge Hint",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [ "canSwim" ]
         },
         {
             "id": 128,
             "name": "Dark Lake Hylia Ledge Spike Cave",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [
+                "canSwim",
+                "canLiftRocks"
+            ]
         },
         {
             "id": 129,
             "name": "Hype Cave",
             "roomType": "Cave",
+            "requires": [ "canBombThings" ],
             "nodes": [
                 {
                     "id": 1,
                     "name": "Hype Cave - Top",
                     "area": "Hype Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 2,
                     "name": "Hype Cave - Middle Right",
                     "area": "Hype Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 3,
                     "name": "Hype Cave - Middle Left",
                     "area": "Hype Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "noteItem": "TwentyRupees"
                 },
                 {
                     "id": 4,
                     "name": "Hype Cave - Bottom",
                     "area": "Hype Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "TwentyRupees"
                 },
                 {
                     "id": 5,
                     "name": "Hype Cave - Generous Guy",
                     "area": "Hype Cave",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "ThreeHundredRupees",
+                    "note": "Hype Cave - NPC"
                 }
             ]
         },
