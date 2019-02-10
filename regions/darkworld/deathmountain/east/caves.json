@@ -4,7 +4,8 @@
         {
             "id": 59,
             "name": "Cave Shop (Dark Death Mountain)",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "note": "Dark World Death Mountain Shop"
         },
         {
             "id": 158,
@@ -28,14 +29,26 @@
                     "name": "Superbunny Cave - Top",
                     "area": "Superbunny Cave",
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]}
+                    ]
                 },
                 {
                     "id": 4,
                     "name": "Superbunny Cave - Bottom",
                     "area": "Superbunny Cave",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]}
+                    ]
                 }
             ]
         },
@@ -61,28 +74,60 @@
                     "name": "Hookshot Cave - Top Right",
                     "area": "Hookshot Cave",
                     "nodeType": "item",
-                    "nodeItem": "FiftyRupees"
+                    "nodeItem": "FiftyRupees",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]},
+                        "Hookshot"
+                    ]
                 },
                 {
                     "id": 4,
                     "name": "Hookshot Cave - Top Left",
                     "area": "Hookshot Cave",
                     "nodeType": "item",
-                    "nodeItem": "FiftyRupees"
+                    "nodeItem": "FiftyRupees",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]},
+                        "Hookshot"
+                    ]
                 },
                 {
                     "id": 5,
                     "name": "Hookshot Cave - Bottom Right",
                     "area": "Hookshot Cave",
                     "nodeType": "item",
-                    "nodeItem": "FiftyRupees"
+                    "nodeItem": "FiftyRupees",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]},
+                        {"or": [
+                            "canDash",
+                            "Hookshot"
+                        ]},
+                    ],
+                    "note": "Hookshot Cave - Bonk Chest"
                 },
                 {
                     "id": 6,
                     "name": "Hookshot Cave - Bottom Left",
                     "area": "Hookshot Cave",
                     "nodeType": "item",
-                    "nodeItem": "FiftyRupees"
+                    "nodeItem": "FiftyRupees",
+                    "requires": [
+                        {"or": [
+                            "state.inverted",
+                            "MoonPearl"
+                        ]},
+                        "Hookshot"
+                    ]
                 }
             ]
         }

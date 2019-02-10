@@ -37,17 +37,15 @@
     "requires": [
       "BugCatchingNet",
       "Bottle",
-      {
-        "or": [
-          "canDash",
-          {
-            "and": [
-              "canActivateMedallions",
-              "Quake"
-            ]
-          }
-        ]
-      }
+      {"or": [
+        "canDash",
+        {
+          "and": [
+            "canActivateMedallions",
+            "Quake"
+          ]
+        }
+      ]}
     ]
   },
   {
@@ -64,12 +62,10 @@
   {
     "name": "canLiftRocks",
     "requires": [
-      {
-        "or": [
-          "ProgressiveGlove",
-          "PowerGlove"
-        ]
-      }
+      {"or": [
+        "ProgressiveGlove",
+        "PowerGlove"
+      ]}
     ]
   },
   {
@@ -111,33 +107,26 @@
   {
     "name": "hasMagicalSword",
     "requires": [
-      {
-        "or":
-        [
-          "L2Sword",
-          "L3Sword",
-          "L4Sword",
-          "MasterSword",
-          {
-            "and": [
-              "swords.swordless",
-              "Hammer"
-            ]
-          }
-        ]
-      }
+      {"or": [
+        "L2Sword",
+        "L3Sword",
+        "L4Sword",
+        "MasterSword",
+        {"and": [
+          "swords.swordless",
+          "Hammer"
+        ]}
+      ]}
     ]
   },
   {
     "name": "hasSword",
     "requires": [
-      {
-        "or": [
-          "hasMagicalSword",
-          "L1Sword",
-          "L1SwordAndShield"
-        ]
-      }
+      {"or": [
+        "hasMagicalSword",
+        "L1Sword",
+        "L1SwordAndShield"
+      ]}
     ]
   }
 ]
