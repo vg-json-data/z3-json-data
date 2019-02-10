@@ -55,7 +55,8 @@
                     "area": "Eastern Palace",
                     "requires": [
                         "canShootArrows",
-                        "hasLightCone"
+                        "hasLightCone",
+                        "BigKeyP1"
                     ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
