@@ -1,0 +1,171 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 2,
+            "name": "Lake Hylia Central Island",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Capacity Upgrade",
+                    "area": "Lake Hylia Central Island",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Lake Hylia Central Island Teleporter",
+                    "area": "Lake Hylia Central Island",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Hobo Bridge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hobo",
+                    "area": "Hobo Bridge",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Cave 45 Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Cave 45",
+                    "area": "Cave 45 Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 64,
+            "name": "Lake Hylia Island",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Lake Hylia Island",
+                    "area": "Lake Hylia Island",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 67,
+            "name": "Maze Race Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Two Brothers House (West)",
+                    "area": "Maze Race Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Maze Race",
+                    "area": "Maze Race Ledge",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 69,
+            "name": "Desert Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Entrance (North) Rocks",
+                    "area": "Desert Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace Entrance (West)",
+                    "area": "Desert Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Desert Ledge",
+                    "area": "Desert Ledge",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 70,
+            "name": "Desert Ledge (Northeast)",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Checkerboard Cave",
+                    "area": "Desert Ledge (Northeast)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 71,
+            "name": "Desert Palace Stairs",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Entrance (South)",
+                    "area": "Desert Palace Stairs",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 72,
+            "name": "Desert Palace Lone Stairs",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Stairs Drop",
+                    "area": "Desert Palace Lone Stairs",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Palace Entrance (East)",
+                    "area": "Desert Palace Lone Stairs",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 73,
+            "name": "Desert Palace Entrance (North) Spot",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Desert Palace Entrance (North)",
+                    "area": "Desert Palace Entrance (North) Spot",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Desert Ledge Return Rocks",
+                    "area": "Desert Palace Entrance (North) Spot",
+                    "nodeType": "door"
+                }
+            ]
+        }
+    ]
+}

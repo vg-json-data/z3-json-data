@@ -1,0 +1,180 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 99,
+            "name": "East Death Mountain (Bottom)",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Broken Bridge (East)",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Paradox Cave (Bottom)",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Paradox Cave (Middle)",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "East Death Mountain Teleporter",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Hookshot Fairy",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Fairy Ascension Rocks",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Spiral Cave (Bottom)",
+                    "area": "East Death Mountain (Bottom)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "name": "East Death Mountain (Top)",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Paradox Cave (Top)",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Death Mountain (Top)",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Spiral Cave Ledge Access",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "East Death Mountain Drop",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 5,
+                    "name": "Turtle Rock Teleporter",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Fairy Ascension Ledge",
+                    "area": "East Death Mountain (Top)",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "name": "Spiral Cave Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spiral Cave",
+                    "area": "Spiral Cave Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Spiral Cave Ledge Drop",
+                    "area": "Spiral Cave Ledge",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 109,
+            "name": "Fairy Ascension Plateau",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Fairy Ascension Drop",
+                    "area": "Fairy Ascension Plateau",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Fairy Ascension Cave (Bottom)",
+                    "area": "Fairy Ascension Plateau",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 111,
+            "name": "Fairy Ascension Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Fairy Ascension Ledge Drop",
+                    "area": "Fairy Ascension Ledge",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Fairy Ascension Cave (Top)",
+                    "area": "Fairy Ascension Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 162,
+            "name": "Death Mountain Floating Island (Light World)",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Floating Island",
+                    "area": "Death Mountain Floating Island (Light World)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 164,
+            "name": "Mimic Cave Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Mimic Cave",
+                    "area": "Mimic Cave Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        }
+    ]
+}

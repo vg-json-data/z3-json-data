@@ -1,0 +1,93 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 5,
+            "name": "Zoras River",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "King Zora",
+                    "area": "Zoras River",
+                    "nodeType": "item"
+                },
+                {
+                    "id": 2,
+                    "name": "Zora's Ledge",
+                    "area": "Zoras River",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Kings Grave Area",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Kings Grave",
+                    "area": "Kings Grave Area",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Kings Grave Inner Rocks",
+                    "area": "Kings Grave Area",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "name": "Hyrule Castle Courtyard",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Secret Entrance Stairs",
+                    "area": "Hyrule Castle Courtyard",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Hyrule Castle Entrance (South)",
+                    "area": "Hyrule Castle Courtyard",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 82,
+            "name": "Hyrule Castle Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Hyrule Castle Entrance (East)",
+                    "area": "Hyrule Castle Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Hyrule Castle Entrance (West)",
+                    "area": "Hyrule Castle Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Agahnims Tower",
+                    "area": "Hyrule Castle Ledge",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Hyrule Castle Ledge Courtyard Drop",
+                    "area": "Hyrule Castle Ledge",
+                    "nodeType": "drop"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "$schema": "../../schema/z3-region.schema.json",
+    "rooms": [
+        {
+            "id": 1,
+            "name": "Death Mountain Entrance",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Old Man Cave (West)",
+                    "area": "Death Mountain Entrance",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Death Mountain Entrance Drop",
+                    "area": "Death Mountain Entrance",
+                    "nodeType": "drop"
+                }
+            ]
+        },
+        {
+            "id": 93,
+            "name": "Death Mountain",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Old Man Cave (East)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Old Man House (Bottom)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Old Man House (Top)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 4,
+                    "name": "Death Mountain Return Cave (East)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 5,
+                    "name": "Spectacle Rock Cave",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 6,
+                    "name": "Spectacle Rock Cave Peak",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 7,
+                    "name": "Spectacle Rock Cave (Bottom)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 8,
+                    "name": "Broken Bridge (West)",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 9,
+                    "name": "Death Mountain Teleporter",
+                    "area": "Death Mountain",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "name": "Death Mountain Return Ledge",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Death Mountain Return Ledge Drop",
+                    "area": "Death Mountain Return Ledge",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Death Mountain Return Cave (West)",
+                    "area": "Death Mountain Return Ledge",
+                    "nodeType": "door"
+                }
+            ]
+        },
+        {
+            "id": 112,
+            "name": "Death Mountain (Top)",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "East Death Mountain (Top)",
+                    "area": "Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 2,
+                    "name": "Tower of Hera",
+                    "area": "Death Mountain (Top)",
+                    "nodeType": "door"
+                },
+                {
+                    "id": 3,
+                    "name": "Death Mountain Drop",
+                    "area": "Death Mountain (Top)",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 4,
+                    "name": "Ether Tablet",
+                    "area": "Death Mountain (Top)",
+                    "nodeType": "item"
+                }
+            ]
+        },
+        {
+            "id": 113,
+            "name": "Spectacle Rock",
+            "roomType": "LightWorld",
+            "nodes": [
+                {
+                    "id": 1,
+                    "name": "Spectacle Rock Drop",
+                    "area": "Spectacle Rock",
+                    "nodeType": "drop"
+                },
+                {
+                    "id": 2,
+                    "name": "Spectacle Rock",
+                    "area": "Spectacle Rock",
+                    "nodeType": "item"
+                }
+            ]
+        }
+    ]
+}
