@@ -224,6 +224,7 @@
                     "id": 2,
                     "name": "Missing Smith",
                     "area": "Blacksmiths Hut",
+                    "requires": [ "canLiftDarkRocks" ],
                     "nodeType": "event",
                     "yields": "RescueBlacksmith"
                 }

@@ -106,7 +106,8 @@
                     "id": 17,
                     "name": "Frog",
                     "area": "West Dark World",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "note": "See Caves DW NW ID #38:2"
                 }
             ]
         },
