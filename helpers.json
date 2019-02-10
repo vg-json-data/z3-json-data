@@ -63,6 +63,7 @@
     "name": "canLiftRocks",
     "requires": [
       {"or": [
+        "canLiftDarkRocks",
         "ProgressiveGlove",
         "PowerGlove"
       ]}

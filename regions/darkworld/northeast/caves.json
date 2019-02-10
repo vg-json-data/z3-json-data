@@ -9,22 +9,46 @@
         {
             "id": 119,
             "name": "Palace of Darkness Hint",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [ "isLink" ]
         },
         {
             "id": 120,
             "name": "East Dark World Hint",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [ "isLink" ]
         },
         {
             "id": 138,
             "name": "Dark World Potion Shop",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "requires": [
+                "isLink",
+                {"or": [
+                    "canLiftRocks",
+                    "canSwim",
+                    "Hammer"
+                ]}
+            ]
         },
         {
             "id": 140,
             "name": "Pyramid Fairy",
             "roomType": "Cave",
+            "requires": [
+                "hasSword",
+                "Crystal5",
+                "Crystal6",
+                "isLink",
+                {"or": [
+                    "Hammer",
+                    {"and": [
+                        "MagicMirror",
+                        "DefeatAgahnim1"
+                    ]}
+                ]}
+            ],
+            "note": "Also requires access to South Dark World",
             "nodes": [
                 {
                     "id": 1,
