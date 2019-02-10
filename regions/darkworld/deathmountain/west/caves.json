@@ -4,7 +4,8 @@
         {
             "id": 32,
             "name": "Dark Death Mountain Healer Fairy",
-            "roomType": "Cave"
+            "roomType": "Cave",
+            "note": "Dark Death Mountain Fairy"
         },
         {
             "id": 159,
@@ -16,7 +17,25 @@
                     "name": "Spike Cave",
                     "area": "Spike Cave",
                     "nodeType": "item",
-                    "nodeItem": "CaneOfByrna"
+                    "nodeItem": "CaneOfByrna",
+                    "requires": [
+                        "canLiftRocks",
+                        "MoonPearl",
+                        "Hammer",
+                        {"or": [
+                            {"and": [
+                                "canExtendMagic",
+                                "Cape"
+                            ]},
+                            {"and": [
+                                {"or": [
+                                    "mods.ohko",
+                                    "canExtendMagic"
+                                ]},
+                                "CaneOfByrna"
+                            ]}
+                        ]}
+                    ]
                 }
             ]
         }
