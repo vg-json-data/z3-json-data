@@ -107,6 +107,7 @@
                     "id": 3,
                     "name": "Sewers - Secret Room - Left",
                     "area": "Sewers",
+                    "requires": [ "KeyH2" ],
                     "nodeType": "item",
                     "nodeItem": "ThreeBombs"
                 },
@@ -114,6 +115,7 @@
                     "id": 4,
                     "name": "Sewers - Secret Room - Middle",
                     "area": "Sewers",
+                    "requires": [ "KeyH2" ],
                     "nodeType": "item",
                     "nodeItem": "ThreeHundredRupees"
                 },
@@ -121,6 +123,7 @@
                     "id": 5,
                     "name": "Sewers - Secret Room - Right",
                     "area": "Sewers",
+                    "requires": [ "KeyH2" ],
                     "nodeType": "item",
                     "nodeItem": "TenArrows"
                 }
@@ -141,6 +144,7 @@
                     "id": 2,
                     "name": "Sanctuary",
                     "area": "Sanctuary",
+                    "requires": [ "KeyH2" ],
                     "nodeType": "item",
                     "nodeItem": "SanctuaryHeart"
                 }
