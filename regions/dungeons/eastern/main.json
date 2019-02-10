@@ -23,6 +23,7 @@
                     "id": 3,
                     "name": "Eastern Palace - Big Chest",
                     "area": "Eastern Palace",
+                    "requires": [ "BigKeyP1" ],
                     "nodeType": "item",
                     "nodeItem": "Bow"
                 },
@@ -37,6 +38,7 @@
                     "id": 5,
                     "name": "Eastern Palace - Big Key Chest",
                     "area": "Eastern Palace",
+                    "requires": [ "hasLightCone" ],
                     "nodeType": "item",
                     "nodeItem": "BigKeyP1"
                 },
@@ -51,6 +53,10 @@
                     "id": 7,
                     "name": "Eastern Palace - Armos Knights",
                     "area": "Eastern Palace",
+                    "requires": [
+                        "canShootArrows",
+                        "hasLightCone"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
                 },
