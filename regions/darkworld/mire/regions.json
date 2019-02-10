@@ -47,24 +47,14 @@
                     "name": "Dark Desert Hint",
                     "area": "Dark Desert",
                     "nodeType": "door",
-                    "requires": [
-                        {"or": [
-                            "state.inverted",
-                            "MoonPearl"
-                        ]}
-                    ]
+                    "requires": [ "isLink" ]
                 },
                 {
                     "id": 8,
                     "name": "Dark Desert Fairy",
                     "area": "Dark Desert",
                     "nodeType": "door",
-                    "requires": [
-                        {"or": [
-                            "state.inverted",
-                            "MoonPearl"
-                        ]}
-                    ]
+                    "requires": [ "isLink" ]
                 }
             ]
         }

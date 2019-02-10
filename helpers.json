@@ -128,5 +128,14 @@
         "L1SwordAndShield"
       ]}
     ]
+  },
+  {
+    "name": "isLink",
+    "requires": [
+      {"or": [
+        "state.inverted",
+        "MoonPearl"
+      ]}
+    ]
   }
 ]

@@ -12,12 +12,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
-                    "requires": [
-                        {"or": [
-                            "state.inverted",
-                            "MoonPearl"
-                        ]}
-                    ]
+                    "requires": [ "isLink" ]
                 },
                 {
                     "id": 2,
@@ -25,12 +20,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "TwentyRupees",
-                    "requires": [
-                        {"or": [
-                            "state.inverted",
-                            "MoonPearl"
-                        ]}
-                    ]
+                    "requires": [ "isLink" ]
                 }
             ]
         },
@@ -38,12 +28,7 @@
             "id": 152,
             "name": "Dark Desert Hint",
             "roomType": "Cave",
-            "requires": [
-                {"or": [
-                    "state.inverted",
-                    "MoonPearl"
-                ]}
-            ]
+            "requires": [ "isLink" ]
         }
     ]
 }
