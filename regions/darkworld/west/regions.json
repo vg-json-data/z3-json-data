@@ -156,7 +156,8 @@
                     "id": 4,
                     "name": "Dark Blacksmith Ruins",
                     "area": "Hammer Peg Area",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "note": "See Caves DW NW ID #139"
                 }
             ]
         },
@@ -213,7 +214,12 @@
                     "name": "Bumper Cave Ledge",
                     "area": "Bumper Cave Ledge",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "note": "Bumper Cave",
+                    "requires": [
+                        "canLiftRocks",
+                        "Cape"
+                    ]
                 }
             ]
         },

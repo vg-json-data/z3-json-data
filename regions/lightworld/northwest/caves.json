@@ -209,6 +209,9 @@
             "id": 38,
             "name": "Blacksmiths Hut",
             "roomType": "Cave",
+            "requires": [
+                "canLiftDarkRocks"
+            ],
             "nodes": [
                 {
                     "id": 1,

@@ -435,7 +435,11 @@
                     "name": "Purple Chest",
                     "area": "Light World",
                     "nodeType": "item",
-                    "nodeItem": "Bottle"
+                    "nodeItem": "Bottle",
+                    "requires": [
+                        "RescueBlacksmith",
+                        "isLink"
+                    ]
                 }
             ]
         }
