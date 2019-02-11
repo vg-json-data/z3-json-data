@@ -4,6 +4,15 @@
         {
             "id": 192,
             "name": "Turtle Rock (Entrance)",
+            "requires": [
+                "RescueZelda",
+                "canLiftDarkRocks",
+                "hasProperMedallion",
+                "isDarkLink",
+                "CaneOfSomaria",
+                "Hammer"
+            ],
+            "note": "Also requires access to East Death Mountain",
             "roomType": "Dungeon",
             "nodes": [
                 {
@@ -41,6 +50,7 @@
                     "id": 3,
                     "name": "Turtle Rock - Compass Chest",
                     "area": "Turtle Rock (First Section)",
+                    "requires": [ "CaneOfSomaria" ],
                     "nodeType": "item",
                     "nodeItem": "CompassD7"
                 },
@@ -48,6 +58,10 @@
                     "id": 4,
                     "name": "Turtle Rock - Roller Room - Left",
                     "area": "Turtle Rock (First Section)",
+                    "requires": [
+                        "CaneOfSomaria",
+                        "FireRod"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "MapD7"
                 },
@@ -55,6 +69,10 @@
                     "id": 5,
                     "name": "Turtle Rock - Roller Room - Right",
                     "area": "Turtle Rock (First Section)",
+                    "requires": [
+                        "CaneOfSomaria",
+                        "FireRod"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD7"
                 }
@@ -81,6 +99,7 @@
                     "id": 3,
                     "name": "Turtle Rock - Chain Chomps",
                     "area": "Turtle Rock (Chain Chomp Room)",
+                    "requires": [ "KeyD7" ],
                     "nodeType": "item",
                     "nodeItem": "KeyD7"
                 }
@@ -113,6 +132,7 @@
                     "id": 4,
                     "name": "Turtle Rock - Big Key Chest",
                     "area": "Turtle Rock (Second Section)",
+                    "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
                     "nodeItem": "BigKeyD7"
                 }
@@ -139,6 +159,14 @@
                     "id": 3,
                     "name": "Turtle Rock - Big Chest",
                     "area": "Turtle Rock (Big Chest)",
+                    "requires": [
+                        {"or": [
+                            "canGrapple",
+                            "CaneOfSomaria"
+                        ]},
+                        "BigKeyD7",
+                        "KeyD7:2"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "MirrorShield"
                 }
@@ -165,6 +193,10 @@
                     "id": 3,
                     "name": "Turtle Rock - Crystaroller Room",
                     "area": "Turtle Rock (Crystaroller Room)",
+                    "requires": [
+                        "BigKeyD7",
+                        "KeyD7:2"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD7"
                 }
@@ -216,6 +248,16 @@
                     "id": 4,
                     "name": "Turtle Rock - Eye Bridge - Bottom Left",
                     "area": "Turtle Rock (Eye Bridge)",
+                    "requires": [
+                        {"or": [
+                            "canBlockLasers",
+                            "canInvul"
+                        ]},
+                        "hasLightCone",
+                        "CaneOfSomaria",
+                        "BigKeyD7",
+                        "KeyD7:3"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD7"
                 },
@@ -223,6 +265,16 @@
                     "id": 5,
                     "name": "Turtle Rock - Eye Bridge - Bottom Right",
                     "area": "Turtle Rock (Eye Bridge)",
+                    "requires": [
+                        {"or": [
+                            "canBlockLasers",
+                            "canInvul"
+                        ]},
+                        "hasLightCone",
+                        "CaneOfSomaria",
+                        "BigKeyD7",
+                        "KeyD7:3"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "TwentyRupees"
                 },
@@ -230,6 +282,16 @@
                     "id": 6,
                     "name": "Turtle Rock - Eye Bridge - Top Left",
                     "area": "Turtle Rock (Eye Bridge)",
+                    "requires": [
+                        {"or": [
+                            "canBlockLasers",
+                            "canInvul"
+                        ]},
+                        "hasLightCone",
+                        "CaneOfSomaria",
+                        "BigKeyD7",
+                        "KeyD7:3"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "FiveRupees"
                 },
@@ -237,6 +299,16 @@
                     "id": 7,
                     "name": "Turtle Rock - Eye Bridge - Top Right",
                     "area": "Turtle Rock (Eye Bridge)",
+                    "requires": [
+                        {"or": [
+                            "canBlockLasers",
+                            "canInvul"
+                        ]},
+                        "hasLightCone",
+                        "CaneOfSomaria",
+                        "BigKeyD7",
+                        "KeyD7:3"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "OneRupee"
                 }
@@ -251,6 +323,12 @@
                     "id": 1,
                     "name": "Turtle Rock - Trinexx",
                     "area": "Turtle Rock (Trinexx)",
+                    "requires": [
+                        "hasLightCone",
+                        "BigKeyD7",
+                        "KeyD7:4",
+                        "CaneOfSomaria"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
                 },
