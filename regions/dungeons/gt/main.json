@@ -79,7 +79,7 @@
             "id": 211,
             "name": "Ganons Tower (Compass Room)",
             "roomType": "Dungeon",
-            "note": "Ganon's Tower - Compass Room",
+            "note": "Ganon's Tower - Compass Room; FIXME: Changes based on key placement",
             "nodes": [
                 {
                     "id": 1,
@@ -185,6 +185,7 @@
                     "id": 1,
                     "name": "Ganons Tower - Map Chest",
                     "area": "Ganons Tower (Map Room)",
+                    "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
                     "nodeItem": "MapA2"
                 }
@@ -222,7 +223,7 @@
                 "canGrapple",
                 "Hammer"
             ],
-            "note": "Ganon's Tower - Randomizer Room",
+            "note": "Ganon's Tower - Randomizer Room; FIXME: Changes based on key placement",
             "nodes": [
                 {
                     "id": 1,

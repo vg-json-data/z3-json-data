@@ -4,6 +4,15 @@
         {
             "id": 187,
             "name": "Misery Mire (Entrance)",
+            "requires": [
+                "RescueZelda",
+                "MoonPearl",
+                {"or": [
+                    "canDash",
+                    "canGrapple"
+                ]},
+                "hasProperMedallion"
+            ],
             "roomType": "Dungeon",
             "nodes": [
                 {
@@ -41,6 +50,7 @@
                     "id": 3,
                     "name": "Misery Mire - Big Chest",
                     "area": "Misery Mire (Main)",
+                    "requires": [ "BigKeyD6" ],
                     "nodeType": "item",
                     "nodeItem": "CaneOfSomaria"
                 },
@@ -48,6 +58,10 @@
                     "id": 4,
                     "name": "Misery Mire - Map Chest",
                     "area": "Misery Mire (Main)",
+                    "requires": [
+                        "KeyD6",
+                        "BigKeyD6"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "MapD6"
                 },
@@ -55,6 +69,10 @@
                     "id": 5,
                     "name": "Misery Mire - Main Lobby",
                     "area": "Misery Mire (Main)",
+                    "requires": [
+                        "KeyD6",
+                        "BigKeyD6"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD6"
                 },
@@ -69,6 +87,12 @@
                     "id": 7,
                     "name": "Misery Mire - Spike Chest",
                     "area": "Misery Mire (Main)",
+                    "requires": [
+                        {"or": [
+                            {"not": [ "mods.ohko" ]},
+                            "canInvul"
+                        ]}
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD6"
                 }
@@ -83,6 +107,8 @@
                     "id": 1,
                     "name": "Misery Mire - Compass Chest",
                     "area": "Misery Mire (West)",
+                    "requires": [ "canLightTorches" ],
+                    "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
                     "nodeItem": "CompassD6"
                 },
@@ -90,6 +116,8 @@
                     "id": 2,
                     "name": "Misery Mire - Big Key Chest",
                     "area": "Misery Mire (West)",
+                    "requires": [ "canLightTorches" ],
+                    "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
                     "nodeItem": "BigKeyD6"
                 }
@@ -117,6 +145,11 @@
                     "id": 1,
                     "name": "Misery Mire - Vitreous",
                     "area": "Misery Mire (Vitreous)",
+                    "requires": [
+                        "hasLightCone",
+                        "CaneOfSomaria",
+                        "BigKeyD6"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
                 },

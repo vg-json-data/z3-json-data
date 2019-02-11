@@ -168,6 +168,16 @@
     ]
   },
   {
+    "name": "hasProperMedallion",
+    "note": "FIXME: This is an unintelligent function at the moment",
+    "requires": [
+      "canActivateMedallions",
+      "Bombos",
+      "Ether",
+      "Quake"
+    ]
+  },
+  {
     "name": "hasSword",
     "requires": [
       "isLink",
