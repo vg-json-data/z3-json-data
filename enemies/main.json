@@ -1,0 +1,4027 @@
+{
+    "$schema": "../../schema/z3-enemies.schema.json",
+    "enemies": [
+        {
+            "id": 0,
+            "names": [
+                "Crow\/Raven (Light World)",
+                "Triceratops bird (Dark World) - more aggressive than",
+                "crow\/raven (on the SNES)"
+            ],
+            "hp": 8,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 1,
+            "names": [
+                "Vulture (Tendoru)"
+            ],
+            "hp": 6,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 2,
+            "names": [
+                "Floating Stalfos head (skull)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 8,
+            "names": [
+                "Octorok (Light World)",
+                "Slarok (purple rock spitter) (Dark World)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 9,
+            "names": [
+                "Moldorm"
+            ],
+            "hp": 12,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                2,
+                4,
+                8,
+                8,
+                4,
+                255,
+                4,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 10,
+            "names": [
+                "4-way Octorok (Light World)",
+                "4-way Slarok (Dark World, purple rock spitter.  I'm not",
+                "even sure this variety exists, but it is valid when put",
+                "on the map with Hyrule Magic.)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 11,
+            "names": [
+                "Chicken\/Cucco (Light World)",
+                "Chicken\/Cucco skeleton (Dark World)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 12,
+            "names": [
+                "Rock shot by Octorok\/Slarok"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                8,
+                8,
+                16,
+                16,
+                32
+            ]
+        },
+        {
+            "id": 13,
+            "names": [
+                "Buzz Blob"
+            ],
+            "hp": 3,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                249,
+                253,
+                254,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 14,
+            "names": [
+                "Snap Dragon"
+            ],
+            "hp": 12,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 15,
+            "names": [
+                "Octoballoon\/Octoblimp"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 16,
+            "names": [
+                "Octoballoon\/Octoblimp spawn (after explosion)"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                8,
+                8,
+                16,
+                16,
+                32
+            ]
+        },
+        {
+            "id": 17,
+            "names": [
+                "Hinox"
+            ],
+            "hp": 20,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                252,
+                2,
+                4,
+                8,
+                16,
+                64,
+                4,
+                0,
+                64,
+                100,
+                0,
+                8,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 18,
+            "names": [
+                "Pig Spear Man (Moblin?)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                64,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 19,
+            "names": [
+                "Mini Helmasaur\/Hiploop"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                64,
+                100,
+                250,
+                0,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 21,
+            "names": [
+                "Fire Faerie \/ Anti-faerie \/ Bubble"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                249,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 23,
+            "names": [
+                "Bush Spider\/Beetle\/Crab"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                0,
+                0,
+                0
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                64,
+                64,
+                64,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 24,
+            "names": [
+                "Mini Moldorm \/ Tail"
+            ],
+            "hp": 3,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                250,
+                253,
+                8,
+                253,
+                16,
+                250
+            ]
+        },
+        {
+            "id": 25,
+            "names": [
+                "Poe (Ghost) (Light World)",
+                "Hue (Ghost) (Dark World)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                64,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                64,
+                255
+            ]
+        },
+        {
+            "id": 27,
+            "names": [
+                "Spear thrown by Pig Man (Moblin?)",
+                "_Slightly_ longer spear thrown by Red grass-hiding",
+                "Soldier and by Red Knight with horned helmet",
+                "Arrow shot by archer soldiers"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                32,
+                64,
+                64,
+                64,
+                64,
+                64,
+                64,
+                64,
+                64,
+                24,
+                0,
+                64,
+                64,
+                64,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 32,
+            "names": [
+                "Bomb Slug (Nuranuru)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                0,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 34,
+            "names": [
+                "Ropa (Hopping Bulb Plant)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 35,
+            "names": [
+                "Red Bari (electric jellyfish)"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                64,
+                253,
+                64,
+                255
+            ]
+        },
+        {
+            "id": 36,
+            "names": [
+                "Blue Bari (dark green on GBA) (electric jellyfish)"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                64,
+                253,
+                64,
+                255
+            ]
+        },
+        {
+            "id": 38,
+            "names": [
+                "Red Hardhat Beetle (hard-shelled) (faster than blue one)",
+                "Blue Hardhat Beetle (hard-shelled)"
+            ],
+            "hp": 6,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                0,
+                255,
+                255,
+                100,
+                0,
+                0,
+                0,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 39,
+            "names": [
+                "Deadrock (Deddorokku) - annoying bugger, turns to stone when hit"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                250,
+                0,
+                0,
+                0,
+                0,
+                250
+            ]
+        },
+        {
+            "id": 62,
+            "names": [
+                "Rock Spider\/Beetle\/Crab"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                0,
+                0,
+                0
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                8,
+                64,
+                64,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 64,
+            "names": [
+                "Electric Barrier"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                2,
+                1,
+                1
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 65,
+            "names": [
+                "Blue soldier carrying sword (Light World)",
+                "Blue Taurus (Torosu) - helmeted bull carrying poker\/prod",
+                "(Dark World)"
+            ],
+            "hp": 6,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 66,
+            "names": [
+                "Green soldier carrying sword"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 67,
+            "names": [
+                "Red Soldier carrying spear (Light World)",
+                "Red Taurus (Torosu) - helmeted bull carrying fork",
+                "(Dark World)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                3,
+                4,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 68,
+            "names": [
+                "Warrior - blue, horned helmet, carrying sword, runs fast"
+            ],
+            "hp": 6,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 69,
+            "names": [
+                "Red Soldier carrying spear (Light World)",
+                "Red Taurus (Torosu) - helmeted bull carrying fork",
+                "(Dark World)",
+                "Green Soldier carrying spear, summoned by townspeople",
+                "(Light World)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                3,
+                4,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 70,
+            "names": [
+                "Blue archer soldier"
+            ],
+            "hp": 6,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 71,
+            "names": [
+                "Green, grass-hiding, archer soldier"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 72,
+            "names": [
+                "Red knight (has horned helmet), spear-throwing"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                3,
+                4,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 73,
+            "names": [
+                "Red, grass-hiding, spear-throwing soldier"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                3,
+                4,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 74,
+            "names": [
+                "Red bomb-throwing knight"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                3,
+                4,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 75,
+            "names": [
+                "Green soldier carrying dagger (in Hyrule Castle, relaxed)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 76,
+            "names": [
+                "Geldman"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                64,
+                255,
+                4,
+                100,
+                0,
+                64,
+                8,
+                64,
+                16,
+                255
+            ]
+        },
+        {
+            "id": 77,
+            "names": [
+                "Swamp hare\/bunny\/rabbit (Toppo)"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                64,
+                253,
+                64,
+                255
+            ]
+        },
+        {
+            "id": 78,
+            "names": [
+                "Popo - Blue and red tentacle plant"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 79,
+            "names": [
+                "Popo - Blue and red tentacle plant"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 80,
+            "names": [
+                "Black rolling cannon ball (comes from hole in wall)",
+                "Giant black rolling cannon ball (comes from hole in wall)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 81,
+            "names": [
+                "Armos statue"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                64,
+                255,
+                4,
+                100,
+                0,
+                8,
+                254,
+                253,
+                16,
+                255
+            ]
+        },
+        {
+            "id": 83,
+            "names": [
+                "Armos Knight"
+            ],
+            "hp": 48,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                4,
+                2,
+                4,
+                8,
+                8,
+                16,
+                0,
+                4,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 84,
+            "names": [
+                "Lanmolas"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                2,
+                4,
+                8,
+                8,
+                4,
+                0,
+                4,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 85,
+            "names": [
+                "Fireball Zora (Light World)",
+                "Ku (Dark World equivalent to Fireball Zora)",
+                "Small red Fireball shot by: Zora, Ku, Debirando, the",
+                "small face statue, the 4-way gold shooter, and a few",
+                "burning torches.",
+                "Small blue ball created when the cluster of blue magic",
+                "balls shot by Agahnim (enemy #123, second variety)",
+                "collides with something and breaks apart.  Looks a lot",
+                "like the small red fireball."
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                64,
+                32
+            ]
+        },
+        {
+            "id": 86,
+            "names": [
+                "Walking Zora"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                64,
+                32
+            ]
+        },
+        {
+            "id": 88,
+            "names": [
+                "Crab (fast, has pincers)"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                8,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 91,
+            "names": [
+                "Spark (clockwise)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                253,
+                0,
+                255
+            ]
+        },
+        {
+            "id": 92,
+            "names": [
+                "Spark (counterclockwise)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                253,
+                0,
+                255
+            ]
+        },
+        {
+            "id": 93,
+            "names": [
+                "Spike Roller 1 - moves down, then back up"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 94,
+            "names": [
+                "Spike Roller 2 - moves up, then back down"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 95,
+            "names": [
+                "Spike Roller 3 - moves right, then back left"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 96,
+            "names": [
+                "Spike Roller 4 - moves left, then back right"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                24,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 97,
+            "names": [
+                "Beamos (rotating laser statue)",
+                "Laser beam shot by Beamos"
+            ],
+            "hp": 255,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 99,
+            "names": [
+                ""
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 100,
+            "names": [
+                "Debirando (Sand crab) (blue) - emerges from whirl",
+                "Debirando (Sand crab) (red, spits fire) - emerges from",
+                "whirl"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                64,
+                8,
+                64,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 106,
+            "names": [
+                "Ball and chain trooper (Morning Star)"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                251,
+                2,
+                2,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                0,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 107,
+            "names": [
+                "Cannon soldier (blue, wears horned helmet, holds red",
+                "cannon, shoots spiked blue cannon ball, stationary",
+                "aside from rotating to face Link and raising arm to",
+                "fire cannon) - I'm told he's never used in the game,",
+                "so take a look at him hacked in here:",
+                "http:\/\/www14.brinkster.com\/assassin17\/cannon001.png",
+                "Spiked blue cannon ball shot by Cannon soldier",
+                "Smooth black cannon ball shot by wall cannon"
+            ],
+            "hp": 3,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                8,
+                8,
+                16,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 109,
+            "names": [
+                "Rat (Light World)",
+                "Bazu (little green reptile, moves like rat) (Dark World)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 110,
+            "names": [
+                "Rope (Gray Snake) (Light World)",
+                "Skullrope (Green snake with white skull mask)",
+                "(Dark World)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                250,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 111,
+            "names": [
+                "Blue bat (Keese) (Light World)",
+                "Blue big-eyed bat (Patra\/Chasupa) (Dark World)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 112,
+            "names": [
+                "Orange fireball from Helmasaur King"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 113,
+            "names": [
+                "Purple Leever (Spinning flower plant, submerges in sand)",
+                "(slightly faster than green)",
+                "Green Leever (Spinning flower plant, submerges in sand)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                64
+            ]
+        },
+        {
+            "id": 119,
+            "names": [
+                "Invincible Fire Faerie \/ Anti-faerie \/ Bubble - No idea if this"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 121,
+            "names": [
+                "Bee"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                2,
+                1,
+                1
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                249,
+                8,
+                8,
+                16,
+                16,
+                32
+            ]
+        },
+        {
+            "id": 122,
+            "names": [
+                "Agahnim"
+            ],
+            "hp": 96,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 123,
+            "names": [
+                "Large, glowing magic ball shot by Agahnim",
+                "Cluster of small blue magic balls shot by Agahnim"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 124,
+            "names": [
+                "Floating Stalfos head (a skull)"
+            ],
+            "hp": 24,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                64,
+                100,
+                0,
+                253,
+                254,
+                253,
+                16,
+                255
+            ]
+        },
+        {
+            "id": 125,
+            "names": [
+                "Big spike block"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 126,
+            "names": [
+                "Fire blade (clockwise)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 127,
+            "names": [
+                "Fire blade (counterclockwise)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 128,
+            "names": [
+                "Fire snake"
+            ],
+            "hp": 3,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 129,
+            "names": [
+                "Water bug\/tektite"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 130,
+            "names": [
+                "4 Fire Faeries \/ Anti-faeries \/ Bubbles clustered together"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 131,
+            "names": [
+                "Green Rocklops\/Eyegore",
+                "Green Goriya\/Copy (large rat, copies your movements)"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                64,
+                64,
+                16,
+                64,
+                0,
+                4,
+                24,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 132,
+            "names": [
+                "Red Rocklops\/Eyegore",
+                "Red Goriya\/Copy (large rat, copies your movements)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 133,
+            "names": [
+                "Head-detaching Stalfos\/skeleton"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                64,
+                253,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 134,
+            "names": [
+                "Kodondo - Fire-breathing triceratops, comes in green and red"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                0,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 135,
+            "names": [
+                "Fireball breathed by Kodondo"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 136,
+            "names": [
+                "Mothula"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 137,
+            "names": [
+                "Orange laser\/fire ring shot by Mothula"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 138,
+            "names": [
+                "Trap (Spike block)"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                8,
+                8,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 139,
+            "names": [
+                "Gibdos"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 140,
+            "names": [
+                "Arrghus"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                0,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 141,
+            "names": [
+                "Arrghus fuzz"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                4,
+                100,
+                0,
+                8,
+                8,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 142,
+            "names": [
+                "Turtle Shell"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                64,
+                100,
+                0,
+                8,
+                254,
+                64,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 143,
+            "names": [
+                "Blob \/ Gel \/ Zol (comes in red, yellow-brown, green)",
+                "Green-topped, partially transparent Yellow Slime\/Blob",
+                "created by Magic Powder or Quake"
+            ],
+            "hp": 4,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                64,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                64
+            ]
+        },
+        {
+            "id": 144,
+            "names": [
+                "Wallmaster \/ Clutch"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                2,
+                1,
+                1
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 145,
+            "names": [
+                "Stalfos Knight"
+            ],
+            "hp": 64,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 146,
+            "names": [
+                "Helmasaur King"
+            ],
+            "hp": 48,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                4,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 148,
+            "names": [
+                "Pirogusu (Orange fish, jumps out of pipes into water)",
+                "Flying floor tile"
+            ],
+            "hp": 2,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                64,
+                255
+            ]
+        },
+        {
+            "id": 149,
+            "names": [
+                "Eye laser (right)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 150,
+            "names": [
+                "Eye laser (left)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 151,
+            "names": [
+                "Eye laser (down)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 152,
+            "names": [
+                "Eye laser (up)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 153,
+            "names": [
+                "Penguin \/ Pengator"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                64,
+                100,
+                0,
+                8,
+                0,
+                253,
+                254,
+                64
+            ]
+        },
+        {
+            "id": 154,
+            "names": [
+                "Kyameron - Splash (water blob)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                64,
+                254,
+                64,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 155,
+            "names": [
+                "Wizzrobe"
+            ],
+            "hp": 2,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                0,
+                100,
+                0,
+                8,
+                8,
+                64,
+                16,
+                64
+            ]
+        },
+        {
+            "id": 156,
+            "names": [
+                "Zoro - Little black spiders \/ bats \/ whatever, come out of holes"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                64,
+                253,
+                64,
+                64
+            ]
+        },
+        {
+            "id": 157,
+            "names": [
+                "Babusu - black thing with arms and tail, jumps out of pipes"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                64,
+                253,
+                64,
+                64
+            ]
+        },
+        {
+            "id": 161,
+            "names": [
+                "Freezor (Ice man)"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                253,
+                0,
+                253,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 162,
+            "names": [
+                "Kholdstare (cloudy eyeball)"
+            ],
+            "hp": 64,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                16,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 163,
+            "names": [
+                "Kholdstare"
+            ],
+            "hp": 64,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8,
+                0,
+                64,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 164,
+            "names": [
+                "Falling ice in Kholdstare battle"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                4,
+                100,
+                0,
+                253,
+                0,
+                16,
+                16,
+                32
+            ]
+        },
+        {
+            "id": 165,
+            "names": [
+                "Blue mohawk lizard (Zazakku\/Daira)",
+                "Large yellow Fireball shot by Red mohawk lizard and",
+                "Lynel"
+            ],
+            "hp": 4,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                64,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 166,
+            "names": [
+                "Red mohawk lizard (shoots fire) (Zazakku\/Daira)"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                255,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                64,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 167,
+            "names": [
+                "Skeleton\/Stalfos (with purplish skull)",
+                "Skeleton\/Stalfos (with reddish skull, throws bones)"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                4,
+                4,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                253,
+                64,
+                253,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 168,
+            "names": [
+                "Green Zirro - mushroom air bomber"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 169,
+            "names": [
+                "Blue Zirro - mushroom air bomber"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                32
+            ]
+        },
+        {
+            "id": 170,
+            "names": [
+                "Pikit"
+            ],
+            "hp": 12,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                0,
+                253,
+                8,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 178,
+            "names": [
+                "Good Bee"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                2,
+                1,
+                1
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                8,
+                8,
+                16,
+                16,
+                32
+            ]
+        },
+        {
+            "id": 189,
+            "names": [
+                "Vitreous"
+            ],
+            "hp": 128,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                16,
+                0,
+                4,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 190,
+            "names": [
+                "Small Vitreous eyeball"
+            ],
+            "hp": 48,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                16,
+                0,
+                4,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 191,
+            "names": [
+                "Lightning (used by Agahnim in the first battle and by Vitreous)"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 194,
+            "names": [
+                "Falling Boulder",
+                "Small rock shot out by Lanmola when it emerges from sand"
+            ],
+            "hp": 255,
+            "dmgToLink": [],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 195,
+            "names": [
+                "Gibo - brown translucent star, spits out glowing red thing"
+            ],
+            "hp": 8,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                16,
+                0,
+                4,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 199,
+            "names": [
+                "Fuzzy Stack (Hokkubokku)"
+            ],
+            "hp": 32,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                0,
+                4,
+                24,
+                0,
+                253,
+                8,
+                253,
+                254,
+                255
+            ]
+        },
+        {
+            "id": 201,
+            "names": [
+                "Blue Tektite (big-eyed hopping spider)",
+                "Red Tektite"
+            ],
+            "hp": 12,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                251,
+                2,
+                4,
+                8,
+                16,
+                16,
+                16,
+                0,
+                64,
+                100,
+                0,
+                253,
+                254,
+                253,
+                254,
+                250
+            ]
+        },
+        {
+            "id": 202,
+            "names": [
+                "Chain Chomp \/ BowWow"
+            ],
+            "hp": 5,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                251,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 203,
+            "names": [
+                "Trinexx (gray stone part)"
+            ],
+            "hp": 40,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 204,
+            "names": [
+                "Trinexx (red part)"
+            ],
+            "hp": 40,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 205,
+            "names": [
+                "Trinexx (blue part)"
+            ],
+            "hp": 40,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 206,
+            "names": [
+                "Blind"
+            ],
+            "hp": 90,
+            "dmgToLink": [
+                16,
+                8,
+                4
+            ],
+            "dmgFromLink": [
+                0,
+                2,
+                4,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 207,
+            "names": [
+                "Swamola (Swamp snake)"
+            ],
+            "hp": 16,
+            "dmgToLink": [
+                32,
+                24,
+                16
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                64,
+                4,
+                100,
+                0,
+                8,
+                8,
+                16,
+                64,
+                32
+            ]
+        },
+        {
+            "id": 208,
+            "names": [
+                "Lynel (mountain lion)"
+            ],
+            "hp": 24,
+            "dmgToLink": [
+                32,
+                16,
+                8
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                8,
+                16,
+                16,
+                0,
+                0,
+                0,
+                24,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 209,
+            "names": [
+                "Transform - yellow, spinning, shimmering group of 5 stars that"
+            ],
+            "hp": 64,
+            "dmgToLink": [
+                2,
+                1,
+                1
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                249,
+                0,
+                0,
+                64,
+                64,
+                64
+            ]
+        },
+        {
+            "id": 211,
+            "names": [
+                "Stal - Alive skull rock"
+            ],
+            "hp": 4,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                16,
+                4,
+                255,
+                4,
+                100,
+                250,
+                8,
+                8,
+                16,
+                64,
+                250
+            ]
+        },
+        {
+            "id": 212,
+            "names": [
+                "Ground bomb (Land mine)"
+            ],
+            "hp": 0,
+            "dmgToLink": [
+                8,
+                4,
+                2
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 214,
+            "names": [
+                "Ganon"
+            ],
+            "hp": 255,
+            "dmgToLink": [
+                64,
+                48,
+                24
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                4,
+                8,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 215,
+            "names": [
+                "Stunned Ganon"
+            ],
+            "hp": "",
+            "dmgToLink": [
+                64,
+                48,
+                24
+            ],
+            "dmgFromLink": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                24,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}
