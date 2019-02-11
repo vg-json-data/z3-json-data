@@ -43,7 +43,7 @@
                 {"or": [
                     "Hammer",
                     {"and": [
-                        "MagicMirror",
+                        "canMirror",
                         "DefeatAgahnim1"
                     ]}
                 ]}

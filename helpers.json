@@ -127,6 +127,10 @@
     ]
   },
   {
+    "name": "canMirror",
+    "requires": [ "MagicMirror" ]
+  },
+  {
     "name": "canRead",
     "requires": [ "BookOfMudora" ]
   },
