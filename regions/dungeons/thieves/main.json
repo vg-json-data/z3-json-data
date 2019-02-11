@@ -4,6 +4,11 @@
         {
             "id": 171,
             "name": "Thieves Town (Entrance)",
+            "requires": [
+                "RescueZelda",
+                "isDarkLink"
+            ],
+            "note": "Also requires access to Northwest Dark World",
             "roomType": "Dungeon",
             "nodes": [
                 {
@@ -63,6 +68,10 @@
                     "id": 2,
                     "name": "Thieves' Town - Attic",
                     "area": "Thieves Town (Deep)",
+                    "requires": [
+                        "BigKeyD4",
+                        "KeyD4"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "ThreeBombs"
                 },
@@ -70,6 +79,12 @@
                     "id": 3,
                     "name": "Thieves' Town - Big Chest",
                     "area": "Thieves Town (Deep)",
+                    "requires": [
+                        "Hammer",
+                        "BigKeyD4",
+                        "KeyD4"
+                    ],
+                    "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
                     "nodeItem": "TitansMitt"
                 },
@@ -77,6 +92,7 @@
                     "id": 4,
                     "name": "Thieves' Town - Blind's Cell",
                     "area": "Thieves Town (Deep)",
+                    "requires": [ "BigKeyD4" ],
                     "nodeType": "item",
                     "nodeItem": "KeyD4"
                 }
@@ -91,6 +107,10 @@
                     "id": 1,
                     "name": "Thieves Town - Blind",
                     "area": "Blind Fight",
+                    "requires": [
+                        "BigKeyD4",
+                        "KeyD4"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
                 },
