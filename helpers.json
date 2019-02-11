@@ -131,6 +131,15 @@
     "requires": [ "BookOfMudora" ]
   },
   {
+    "name": "canSlashCurtains",
+    "requires": [
+      {"or": [
+        "swords.swordless",
+        "hasSword"
+      ]}
+    ]
+  },
+  {
     "name": "canShootArrows",
     "requires": [
       "isLink",

@@ -40,13 +40,15 @@
             "name": "Agahnim 1",
             "roomType": "Dungeon",
             "requires": [
-                {"or": [
-                    "hasSword",
-                    {"and": [
-                        "swords.swordless",
+                {"and": [
+                    "swords.swordless",
+                    {"or": [
+                        "Hammer",
                         "BugCatchingNet"
                     ]}
                 ]},
+                "canSlashCurtains",
+                "hasLightCone",
                 "KeyA1:2"
             ],
             "nodes": [

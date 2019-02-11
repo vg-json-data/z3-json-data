@@ -4,6 +4,11 @@
         {
             "id": 174,
             "name": "Skull Woods First Section",
+            "requires": [
+                "RescueZelda",
+                "isDarkLink"
+            ],
+            "note": "Also requires access to Northwest Dark World",
             "roomType": "Dungeon",
             "nodes": [
                 {
@@ -107,6 +112,7 @@
                     "id": 2,
                     "name": "Skull Woods - Big Chest",
                     "area": "Skull Woods First Section (Top)",
+                    "requires": [ "BigKeyD3 "],
                     "nodeType": "item",
                     "nodeItem": "FireRod"
                 }
@@ -172,6 +178,10 @@
                     "id": 3,
                     "name": "Skull Woods - Bridge Room",
                     "area": "Skull Woods Final Section (Entrance)",
+                    "requires": [
+                        "isDarkLink",
+                        "FireRod"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "KeyD3"
                 }
@@ -186,6 +196,12 @@
                     "id": 1,
                     "name": "Skull Woods - Mothula",
                     "area": "Skull Woods Final Section (Mothula)",
+                    "requires": [
+                        "canSlashCurtains",
+                        "isDarkLink",
+                        "FireRod",
+                        "KeyD3:3"
+                    ],
                     "nodeType": "item",
                     "nodeItem": "BossHeartContainer"
                 },
