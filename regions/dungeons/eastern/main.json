@@ -17,7 +17,8 @@
                     "name": "Eastern Palace - Compass Chest",
                     "area": "Eastern Palace",
                     "nodeType": "item",
-                    "nodeItem": "CompassP1"
+                    "nodeItem": "CompassP1",
+                    "nodeAddress": "0xE977"
                 },
                 {
                     "id": 3,
@@ -25,14 +26,16 @@
                     "area": "Eastern Palace",
                     "requires": [ "BigKeyP1" ],
                     "nodeType": "item",
-                    "nodeItem": "Bow"
+                    "nodeItem": "Bow",
+                    "nodeAddress": "0xE97D"
                 },
                 {
                     "id": 4,
                     "name": "Eastern Palace - Cannonball Chest",
                     "area": "Eastern Palace",
                     "nodeType": "item",
-                    "nodeItem": "OneHundredRupees"
+                    "nodeItem": "OneHundredRupees",
+                    "nodeAddress": "0xE9B3"
                 },
                 {
                     "id": 5,
@@ -40,14 +43,16 @@
                     "area": "Eastern Palace",
                     "requires": [ "hasLightCone" ],
                     "nodeType": "item",
-                    "nodeItem": "BigKeyP1"
+                    "nodeItem": "BigKeyP1",
+                    "nodeAddress": "0xE9B9"
                 },
                 {
                     "id": 6,
                     "name": "Eastern Palace - Map Chest",
                     "area": "Eastern Palace",
                     "nodeType": "item",
-                    "nodeItem": "MapP1"
+                    "nodeItem": "MapP1",
+                    "nodeAddress": "0xE9F5"
                 },
                 {
                     "id": 7,
@@ -59,14 +64,16 @@
                         "BigKeyP1"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180150"
                 },
                 {
                     "id": 8,
                     "name": "Eastern Palace - Prize",
                     "area": "Eastern Palace",
                     "nodeType": "item",
-                    "nodeItem": "PendantOfCourage"
+                    "nodeItem": "PendantOfCourage",
+                    "nodeAddress": ["0x1209D", "0x53EF8", "0x53EF9", "0x180052", "0x18007C", "0xC6FE"]
                 }
             ]
         }
