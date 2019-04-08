@@ -159,7 +159,9 @@
                     "id": 1,
                     "name": "Floating Island",
                     "area": "Death Mountain Floating Island (Light World)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180141"
                 }
             ]
         },

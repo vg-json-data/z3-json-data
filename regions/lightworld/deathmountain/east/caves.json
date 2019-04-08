@@ -53,49 +53,56 @@
                     "name": "Paradox Cave Lower - Far Left",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB2A"
                 },
                 {
                     "id": 4,
                     "name": "Paradox Cave Lower - Left",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB2D"
                 },
                 {
                     "id": 5,
                     "name": "Paradox Cave Lower - Right",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB30"
                 },
                 {
                     "id": 6,
                     "name": "Paradox Cave Lower - Far Right",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB33"
                 },
                 {
                     "id": 7,
                     "name": "Paradox Cave Lower - Middle",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB36"
                 },
                 {
                     "id": 8,
                     "name": "Paradox Cave Upper - Left",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEB39"
                 },
                 {
                     "id": 9,
                     "name": "Paradox Cave Upper - Right",
                     "area": "Paradox Cave Chest Area",
                     "nodeType": "item",
-                    "nodeItem": "TenArrows"
+                    "nodeItem": "TenArrows",
+                    "nodeAddress": "0xEB3C"
                 }
             ]
         },
@@ -151,7 +158,8 @@
                     "name": "Spiral Cave",
                     "area": "Spiral Cave (Top)",
                     "nodeType": "item",
-                    "nodeItem": "FiftyRupees"
+                    "nodeItem": "FiftyRupees",
+                    "nodeAddress": "0xE9BF"
                 }
             ]
         },
@@ -197,7 +205,8 @@
                     "name": "Mimic Cave",
                     "area": "Mimic Cave",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xE9C5"
                 }
             ]
         }
