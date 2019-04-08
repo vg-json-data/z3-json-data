@@ -2,120 +2,311 @@
   "base": [
     "GreenMail"
   ],
-  "inventory": [
-    "FireRod",
-    "IceRod",
-    "Hammer",
-    "Hookshot",
-    "Bow",
-    "BowAndArrows",
-    "BowAndSilverArrows",
-    "Boomerang",
-    "Powder",
-    "Bombos",
-    "Ether",
-    "Quake",
-    "Lamp",
-    "Shovel",
-    "CaneOfSomaria",
-    "CaneOfByrna",
-    "Cape",
-    "MagicMirror",
-    "BookOfMudora",
-    "Flippers",
-    "MoonPearl",
-    "BugCatchingNet",
-    "Mushroom",
-    "RedBoomerang",
-    "Bottle",
-    "PegasusBoots",
-    "SilverArrowUpgrade",
-    "Triforce"
-  ],
-  "progressives": [
-    "L1Sword",
-    "L1SwordAndShield",
-    "L2Sword",
-    "MasterSword",
-    "L3Sword",
-    "L4Sword",
-    "BlueShield",
-    "RedShield",
-    "MirrorShield",
-    "OcarinaInactive",
-    "OcarinaActive",
-    "PowerGlove",
-    "TitansMitt",
-    "BlueMail",
-    "RedMail",
-    "HalfMagic",
-    "QuarterMagic",
-    "ProgressiveSword",
-    "ProgressiveShield",
-    "ProgressiveArmor",
-    "ProgressiveGlove"
-  ],
-  "ammo": [
-    "Arrow",
-    "Bomb",
-    "SmallMagic",
-    "ThreeBombs",
-    "TenArrows"
-  ],
-  "bottleContents": [
-    "Bee",
-    "Fairy",
-    "GoldBee",
-    "RedPotion",
-    "GreenPotion",
-    "BluePotion"
-  ],
-  "currency": [
-    "Rupoor",
-    "OneRupee",
-    "FiveRupees",
-    "TwentyRupees",
-    "FiftyRupees",
-    "OneHundredRupees",
-    "ThreeHundredRupees",
-    "RedClock",
-    "BlueClock",
-    "GreenClock"
-  ],
-  "drops": [
-    "Heart"
-  ],
+  "inventory": {
+    "FireRod": {
+      "data": "0x07"
+    },
+    "IceRod": {
+      "data": "0x08"
+    },
+    "Hammer": {
+      "data": "0x09"
+    },
+    "Hookshot": {
+      "data": "0x0A"
+    },
+    "Bow": {
+      "data": "0x0B"
+    },
+    "BowAndArrows": {
+      "data": "0x3A"
+    },
+    "BowAndSilverArrows": {
+      "data": "0x3B"
+    },
+    "Boomerang": {
+      "data": "0x0C"
+    },
+    "Powder": {
+      "data": "0x0D"
+    },
+    "Bombos": {
+      "data": "0x0F"
+    },
+    "Ether": {
+      "data": "0x10"
+    },
+    "Quake": {
+      "data": "0x11"
+    },
+    "Lamp": {
+      "data": "0x12"
+    },
+    "Shovel": {
+      "data": "0x13"
+    },
+    "CaneOfSomaria": {
+      "data": "0x15"
+    },
+    "CaneOfByrna": {
+      "data": "0x18"
+    },
+    "Cape": {
+      "data": "0x19"
+    },
+    "MagicMirror": {
+      "data": "0x1A"
+    },
+    "BookOfMudora": {
+      "data": "0x1D"
+    },
+    "Flippers": {
+      "data": "0x1E"
+    },
+    "MoonPearl": {
+      "data": "0x1F"
+    },
+    "BugCatchingNet": {
+      "data": "0x21"
+    },
+    "Mushroom": {
+      "data": "0x29"
+    },
+    "RedBoomerang": {
+      "data": "0x2A"
+    },
+    "Bottle": {
+      "data": "0x16"
+    },
+    "PegasusBoots": {
+      "data": "0x4B"
+    },
+    "SilverArrowUpgrade": {
+      "data": "0x58"
+    },
+    "Triforce": {
+      "data": "0x6A"
+    }
+  },
+  "progressives": {
+    "L1Sword": {
+      "data": "0x49"
+    },
+    "L1SwordAndShield": {
+      "data": "0x00"
+    },
+    "L2Sword": {
+      "data": "0x01"
+    },
+    "MasterSword": {
+      "data": "0x50"
+    },
+    "L3Sword": {
+      "data": "0x02"
+    },
+    "L4Sword": {
+      "data": "0x03"
+    },
+    "BlueShield": {
+      "data": "0x04"
+    },
+    "RedShield": {
+      "data": "0x05"
+    },
+    "MirrorShield": {
+      "data": "0x06"
+    },
+    "OcarinaInactive": {
+      "data": "0x14"
+    },
+    "OcarinaActive": {
+      "data": "0x4A"
+    },
+    "PowerGlove": {
+      "data": "0x1B"
+    },
+    "TitansMitt": {
+      "data": "0x1C"
+    },
+    "BlueMail": {
+      "data": "0x22"
+    },
+    "RedMail": {
+      "data": "0x23"
+    },
+    "HalfMagic": {
+      "data": "0x4E"
+    },
+    "QuarterMagic": {
+      "data": "0x4F"
+    },
+    "ProgressiveSword": {
+      "data": "0x5E"
+    },
+    "ProgressiveShield": {
+      "data": "0x5F"
+    },
+    "ProgressiveArmor": {
+      "data": "0x60"
+    },
+    "ProgressiveGlove": {
+      "data": "0x61"
+    }
+  },
+  "ammo": {
+    "Arrow": {
+      "data": "0x43"
+    },
+    "Bomb": {
+      "data": "0x27"
+    },
+    "SmallMagic": {
+      "data": "0x45"
+    },
+    "ThreeBombs": {
+      "data": "0x28"
+    },
+    "TenArrows": {
+      "data": "0x44"
+    },
+    "TenBombs": {
+      "data": "0x31"
+    }
+  },
+  "bottleContents": {
+    "Bee": {
+      "filled": "0x3C",
+      "filling": "0x0E"
+    },
+    "Fairy": {
+      "filled": "0x3D"
+    },
+    "GoldBee": {
+      "filled": "0x48"
+    },
+    "RedPotion": {
+      "filled": "0x2B",
+      "filling": "0x2E"
+    },
+    "GreenPotion": {
+      "filled": "0x2C",
+      "filling": "0x2F"
+    },
+    "BluePotion": {
+      "filled": "0x2D",
+      "filling": "0x30"
+    }
+  },
+  "currency": {
+    "Rupoor": {
+      "data": "0x59"
+    },
+    "OneRupee": {
+      "data": "0x34"
+    },
+    "FiveRupees": {
+      "data": "0x35"
+    },
+    "TwentyRupees": {
+      "data": "0x36"
+    },
+    "FiftyRupees": {
+      "data": "0x41"
+    },
+    "OneHundredRupees": {
+      "data": "0x40"
+    },
+    "ThreeHundredRupees": {
+      "data": "0x46"
+    },
+    "RedClock": {
+      "data": "0x5B"
+    },
+    "BlueClock": {
+      "data": "0x5C"
+    },
+    "GreenClock": {
+      "data": "0x5D"
+    }
+  },
+  "drops": {
+    "Heart": {
+      "data": "0x42"
+    }
+  },
   "dungeonItems": [
     "Key",
     "Compass",
     "BigKey",
     "Map"
   ],
-  "dungeonPrizes": [
-    "PendantOfCourage",
-    "PendantOfWisdom",
-    "PendantOfPower",
-    "Crystal1",
-    "Crystal2",
-    "Crystal3",
-    "Crystal4",
-    "Crystal5",
-    "Crystal6",
-    "Crystal7"
-  ],
-  "expansions": [
-    "SanctuaryHeart",
-    "HeartContainer",
-    "BossHeartContainer",
-    "HeartContainerNoAnimation",
-    "PieceOfHeart",
-    "BombUpgrade5",
-    "BombUpgrade10",
-    "BombUpgrade50",
-    "ArrowUpgrade5",
-    "ArrowUpgrade10",
-    "ArrowUpgrade70"
-  ],
+  "dungeonPrizes": {
+    "PendantOfCourage": {
+      "data": ["0x37", "0x04", "0x38", "0x62", "0x00", "0x69", "0x01"]
+    },
+    "PendantOfWisdom": {
+      "data": ["0x38", "0x01", "0x32", "0x60", "0x00", "0x69", "0x03"]
+    },
+    "PendantOfPower": {
+      "data": ["0x39", "0x02", "0x34", "0x60", "0x00", "0x69", "0x02"]
+    },
+    "Crystal1": {
+      "data": [null, "0x02", "0x34", "0x64", "0x40", "0x7F", "0x06"]
+    },
+    "Crystal2": {
+      "data": [null, "0x10", "0x34", "0x64", "0x40", "0x79", "0x06"]
+    },
+    "Crystal3": {
+      "data": [null, "0x40", "0x34", "0x64", "0x40", "0x6C", "0x06"]
+    },
+    "Crystal4": {
+      "data": [null, "0x20", "0x34", "0x64", "0x40", "0x6D", "0x06"]
+    },
+    "Crystal5": {
+      "data": [null, "0x04", "0x32", "0x64", "0x40", "0x6E", "0x06"]
+    },
+    "Crystal6": {
+      "data": [null, "0x01", "0x32", "0x64", "0x40", "0x6F", "0x06"]
+    },
+    "Crystal7": {
+      "data": [null, "0x08", "0x34", "0x64", "0x40", "0x7C", "0x06"]
+    }
+  },
+  "expansions": {
+    "SanctuaryHeart": {
+      "data": "0x3F"
+    },
+    "HeartContainer": {
+      "data": "0x3E"
+    },
+    "BossHeartContainer": {
+      "data": "0x3E"
+    },
+    "HeartContainerNoAnimation": {
+      "data": "0x26"
+    },
+    "PieceOfHeart": {
+      "data": "0x17"
+    },
+    "BombUpgrade5": {
+      "data": "0x51"
+    },
+    "BombUpgrade10": {
+      "data": "0x52"
+    },
+    "BombUpgrade50": {
+      "data": "0x4C"
+    },
+    "ArrowUpgrade5": {
+      "data": "0x53"
+    },
+    "ArrowUpgrade10": {
+      "data": "0x54"
+    },
+    "ArrowUpgrade70": {
+      "data": "0x4D"
+    }
+  },
   "bosses": [
     "ArmosKnights",
     "Lanmolas",
