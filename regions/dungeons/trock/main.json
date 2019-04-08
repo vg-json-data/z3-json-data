@@ -52,7 +52,8 @@
                     "area": "Turtle Rock (First Section)",
                     "requires": [ "CaneOfSomaria" ],
                     "nodeType": "item",
-                    "nodeItem": "CompassD7"
+                    "nodeItem": "CompassD7",
+                    "nodeAddress": "0xEA22"
                 },
                 {
                     "id": 4,
@@ -63,7 +64,8 @@
                         "FireRod"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "MapD7"
+                    "nodeItem": "MapD7",
+                    "nodeAddress": "0xEA1C"
                 },
                 {
                     "id": 5,
@@ -74,7 +76,8 @@
                         "FireRod"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD7"
+                    "nodeItem": "KeyD7",
+                    "nodeAddress": "0xEA1F"
                 }
             ]
         },
@@ -101,7 +104,8 @@
                     "area": "Turtle Rock (Chain Chomp Room)",
                     "requires": [ "KeyD7" ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD7"
+                    "nodeItem": "KeyD7",
+                    "nodeAddress": "0xEA16"
                 }
             ]
         },
@@ -134,7 +138,8 @@
                     "area": "Turtle Rock (Second Section)",
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "BigKeyD7"
+                    "nodeItem": "BigKeyD7",
+                    "nodeAddress": "0xEA25"
                 }
             ]
         },
@@ -168,7 +173,8 @@
                         "KeyD7:2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "MirrorShield"
+                    "nodeItem": "MirrorShield",
+                    "nodeAddress": "0xEA19"
                 }
             ]
         },
@@ -198,7 +204,8 @@
                         "KeyD7:2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD7"
+                    "nodeItem": "KeyD7",
+                    "nodeAddress": "0xEA34"
                 }
             ]
         },
@@ -259,7 +266,8 @@
                         "KeyD7:3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD7"
+                    "nodeItem": "KeyD7",
+                    "nodeAddress": "0xEA31"
                 },
                 {
                     "id": 5,
@@ -276,7 +284,8 @@
                         "KeyD7:3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA2E"
                 },
                 {
                     "id": 6,
@@ -293,7 +302,8 @@
                         "KeyD7:3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "FiveRupees"
+                    "nodeItem": "FiveRupees",
+                    "nodeAddress": "0xEA2B"
                 },
                 {
                     "id": 7,
@@ -310,7 +320,8 @@
                         "KeyD7:3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "OneRupee"
+                    "nodeItem": "OneRupee",
+                    "nodeAddress": "0xEA28"
                 }
             ]
         },
@@ -330,14 +341,16 @@
                         "CaneOfSomaria"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180159"
                 },
                 {
                     "id": 2,
                     "name": "Turtle Rock - Prize",
                     "area": "Turtle Rock (Trinexx)",
                     "nodeType": "item",
-                    "nodeItem": "Crystal7"
+                    "nodeItem": "Crystal7",
+                    "nodeAddress": ["0x120A7", "0x53F24", "0x53F25", "0x18005C", "0x180079", "0xC708"]
                 }
             ]
         }
