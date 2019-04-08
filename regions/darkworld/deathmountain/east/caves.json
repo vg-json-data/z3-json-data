@@ -30,6 +30,7 @@
                     "area": "Superbunny Cave",
                     "nodeType": "item",
                     "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEA7C",
                     "requires": [ "isDarkLink" ]
                 },
                 {
@@ -38,6 +39,7 @@
                     "area": "Superbunny Cave",
                     "nodeType": "item",
                     "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA7F",
                     "requires": [ "isDarkLink" ]
                 }
             ]
@@ -65,6 +67,7 @@
                     "area": "Hookshot Cave",
                     "nodeType": "item",
                     "nodeItem": "FiftyRupees",
+                    "nodeAddress": "0xEB51",
                     "requires": [
                         "isDarkLink",
                         "Hookshot"
@@ -76,6 +79,7 @@
                     "area": "Hookshot Cave",
                     "nodeType": "item",
                     "nodeItem": "FiftyRupees",
+                    "nodeAddress": "0xEB54",
                     "requires": [
                         "isDarkLink",
                         "Hookshot"
@@ -87,6 +91,7 @@
                     "area": "Hookshot Cave",
                     "nodeType": "item",
                     "nodeItem": "FiftyRupees",
+                    "nodeAddress": "0xEB5A",
                     "requires": [
                         "isDarkLink",
                         {"or": [
@@ -102,6 +107,7 @@
                     "area": "Hookshot Cave",
                     "nodeType": "item",
                     "nodeItem": "FiftyRupees",
+                    "nodeAddress": "0xEB57",
                     "requires": [
                         "isDarkLink",
                         "Hookshot"
