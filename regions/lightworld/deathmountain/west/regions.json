@@ -127,7 +127,9 @@
                     "id": 4,
                     "name": "Ether Tablet",
                     "area": "Death Mountain (Top)",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Ether",
+                    "nodeAddress": "0x180016"
                 }
             ]
         },
@@ -146,7 +148,9 @@
                     "id": 2,
                     "name": "Spectacle Rock",
                     "area": "Spectacle Rock",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180140"
                 }
             ]
         }

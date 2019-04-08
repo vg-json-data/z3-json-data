@@ -23,7 +23,8 @@
                     "name": "Old Man",
                     "area": "Old Man Cave",
                     "nodeType": "item",
-                    "nodeItem": "MagicMirror"
+                    "nodeItem": "MagicMirror",
+                    "nodeAddress": "0xF69FA"
                 }
             ]
         },
@@ -106,7 +107,8 @@
                     "name": "Spectacle Rock Cave",
                     "area": "Spectacle Rock Cave (Top)",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180002"
                 }
             ]
         },
