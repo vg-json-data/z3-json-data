@@ -407,28 +407,32 @@
                     "name": "Mushroom",
                     "area": "Light World",
                     "nodeType": "item",
-                    "nodeItem": "Mushroom"
+                    "nodeItem": "Mushroom",
+                    "nodeAddress": "0x180013"
                 },
                 {
                     "id": 68,
                     "name": "Bottle Merchant",
                     "area": "Light World",
                     "nodeType": "item",
-                    "nodeItem": "Bottle"
+                    "nodeItem": "Bottle",
+                    "nodeAddress": "0x2EB18"
                 },
                 {
                     "id": 69,
                     "name": "Flute Spot",
                     "area": "Light World",
                     "nodeType": "item",
-                    "nodeItem": "OcarinaInactive"
+                    "nodeItem": "OcarinaInactive",
+                    "nodeAddress": "0x18014A"
                 },
                 {
                     "id": 70,
                     "name": "Sunken Treasure",
                     "area": "Light World",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180145"
                 },
                 {
                     "id": 71,
@@ -436,6 +440,7 @@
                     "area": "Light World",
                     "nodeType": "item",
                     "nodeItem": "Bottle",
+                    "nodeAddress": "0x33D68",
                     "requires": [
                         "RescueBlacksmith",
                         "isLightLink"
