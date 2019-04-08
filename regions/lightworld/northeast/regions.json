@@ -10,13 +10,17 @@
                     "id": 1,
                     "name": "King Zora",
                     "area": "Zoras River",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Flippers",
+                    "nodeAddress": "0xEE1C3"
                 },
                 {
                     "id": 2,
                     "name": "Zora's Ledge",
                     "area": "Zoras River",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180149"
                 }
             ]
         },
