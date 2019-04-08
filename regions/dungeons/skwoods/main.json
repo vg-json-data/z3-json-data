@@ -40,7 +40,8 @@
                     "name": "Skull Woods - Map Chest",
                     "area": "Skull Woods First Section",
                     "nodeType": "item",
-                    "nodeItem": "MapD3"
+                    "nodeItem": "MapD3",
+                    "nodeAddress": "0xE99B"
                 }
             ]
         },
@@ -60,7 +61,8 @@
                     "name": "Skull Woods - Pinball Room",
                     "area": "Skull Woods First Section (Right)",
                     "nodeType": "item",
-                    "nodeItem": "KeyD3"
+                    "nodeItem": "KeyD3",
+                    "nodeAddress": "0xE9C8"
                 }
             ]
         },
@@ -86,14 +88,16 @@
                     "name": "Skull Woods - Compass Chest",
                     "area": "Skull Woods First Section (Left)",
                     "nodeType": "item",
-                    "nodeItem": "CompassD3"
+                    "nodeItem": "CompassD3",
+                    "nodeAddress": "0xE992"
                 },
                 {
                     "id": 4,
                     "name": "Skull Woods - Pot Prison",
                     "area": "Skull Woods First Section (Left)",
                     "nodeType": "item",
-                    "nodeItem": "KeyD3"
+                    "nodeItem": "KeyD3",
+                    "nodeAddress": "0xE9A1"
                 }
             ]
         },
@@ -114,7 +118,8 @@
                     "area": "Skull Woods First Section (Top)",
                     "requires": [ "BigKeyD3 "],
                     "nodeType": "item",
-                    "nodeItem": "FireRod"
+                    "nodeItem": "FireRod",
+                    "nodeAddress": "0xE998"
                 }
             ]
         },
@@ -153,7 +158,8 @@
                     "name": "Skull Woods - Big Key Chest",
                     "area": "Skull Woods Second Section",
                     "nodeType": "item",
-                    "nodeItem": "BigKeyD3"
+                    "nodeItem": "BigKeyD3",
+                    "nodeAddress": "0xE99E"
                 }
             ]
         },
@@ -183,7 +189,8 @@
                         "FireRod"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD3"
+                    "nodeItem": "KeyD3",
+                    "nodeAddress": "0xE9FE"
                 }
             ]
         },
@@ -203,14 +210,16 @@
                         "KeyD3:3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180155"
                 },
                 {
                     "id": 2,
                     "name": "Skull Woods - Prize",
                     "area": "Skull Woods Final Section (Mothula)",
                     "nodeType": "item",
-                    "nodeItem": "Crystal3"
+                    "nodeItem": "Crystal3",
+                    "nodeAddress": ["0x120A3", "0x53F12", "0x53F13", "0x180058", "0x18007B", "0xC704"]
                 }
             ]
         }
