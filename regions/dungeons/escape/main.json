@@ -35,21 +35,24 @@
                     "name": "Hyrule Castle - Boomerang Chest",
                     "area": "Hyrule Castle",
                     "nodeType": "item",
-                    "nodeItem": "BlueBoomerang"
+                    "nodeItem": "BlueBoomerang",
+                    "nodeAddress": "0xE974"
                 },
                 {
                     "id": 6,
                     "name": "Hyrule Castle - Map Chest",
                     "area": "Hyrule Castle",
                     "nodeType": "item",
-                    "nodeItem": "MapH2"
+                    "nodeItem": "MapH2",
+                    "nodeAddress": "0xEB0C"
                 },
                 {
                     "id": 7,
                     "name": "Hyrule Castle - Zelda's Chest",
                     "area": "Hyrule Castle",
                     "nodeType": "item",
-                    "nodeItem": "Lamp"
+                    "nodeItem": "Lamp",
+                    "nodeAddress": "0xEB09"
                 }
             ]
         },
@@ -82,7 +85,8 @@
                     "name": "Sewers - Dark Cross",
                     "area": "Sewers (Dark)",
                     "nodeType": "item",
-                    "nodeItem": "KeyH2"
+                    "nodeItem": "KeyH2",
+                    "nodeAddress": "0xE96E"
                 }
             ]
         },
@@ -109,7 +113,8 @@
                     "area": "Sewers",
                     "requires": [ "KeyH2" ],
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEB5D"
                 },
                 {
                     "id": 4,
@@ -117,7 +122,8 @@
                     "area": "Sewers",
                     "requires": [ "KeyH2" ],
                     "nodeType": "item",
-                    "nodeItem": "ThreeHundredRupees"
+                    "nodeItem": "ThreeHundredRupees",
+                    "nodeAddress": "0xEB60"
                 },
                 {
                     "id": 5,
@@ -125,7 +131,8 @@
                     "area": "Sewers",
                     "requires": [ "KeyH2" ],
                     "nodeType": "item",
-                    "nodeItem": "TenArrows"
+                    "nodeItem": "TenArrows",
+                    "nodeAddress": "0xEB63"
                 }
             ]
         },
@@ -146,7 +153,8 @@
                     "area": "Sanctuary",
                     "requires": [ "KeyH2" ],
                     "nodeType": "item",
-                    "nodeItem": "SanctuaryHeart"
+                    "nodeItem": "SanctuaryHeart",
+                    "nodeAddress": "0xEA79"
                 }
             ]
         }
