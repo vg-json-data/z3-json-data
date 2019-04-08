@@ -29,14 +29,16 @@
                     "name": "Tower of Hera - Basement Cage",
                     "area": "Tower of Hera (Bottom)",
                     "nodeType": "item",
-                    "nodeItem": "KeyP3"
+                    "nodeItem": "KeyP3",
+                    "nodeAddress": "0x180162"
                 },
                 {
                     "id": 5,
                     "name": "Tower of Hera - Map Chest",
                     "area": "Tower of Hera (Bottom)",
                     "nodeType": "item",
-                    "nodeItem": "MapP3"
+                    "nodeItem": "MapP3",
+                    "nodeAddress": "0xE9AD"
                 }
             ]
         },
@@ -54,7 +56,8 @@
                         "KeyP3"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BigKeyP3"
+                    "nodeItem": "BigKeyP3",
+                    "nodeAddress": "0xE9E6"
                 }
             ]
         },
@@ -69,7 +72,8 @@
                     "area": "Tower of Hera (Top)",
                     "requires": [ "BigKeyP3" ],
                     "nodeType": "item",
-                    "nodeItem": "CompassP3"
+                    "nodeItem": "CompassP3",
+                    "nodeAddress": "0xE9FB"
                 },
                 {
                     "id": 2,
@@ -77,7 +81,8 @@
                     "area": "Tower of Hera (Top)",
                     "requires": [ "BigKeyP3" ],
                     "nodeType": "item",
-                    "nodeItem": "MoonPearl"
+                    "nodeItem": "MoonPearl",
+                    "nodeAddress": "0xE9F8"
                 },
                 {
                     "id": 3,
@@ -85,14 +90,16 @@
                     "area": "Tower of Hera (Top)",
                     "requires": [ "BigKeyP3" ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180152"
                 },
                 {
                     "id": 4,
                     "name": "Tower of Hera - Prize",
                     "area": "Tower of Hera (Top)",
                     "nodeType": "item",
-                    "nodeItem": "PendantOfPower"
+                    "nodeItem": "PendantOfPower",
+                    "nodeAddress": ["0x120A5", "0x53F0A", "0x53F0B", "0x18005A", "0x18007A", "0xC706"]
                 }
             ]
         }
