@@ -216,6 +216,7 @@
                     "area": "Bumper Cave Ledge",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180146",
                     "note": "Bumper Cave",
                     "requires": [
                         "canLiftRocks",
