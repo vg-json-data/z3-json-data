@@ -19,6 +19,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xEA73",
                     "requires": [ "isDarkLink" ]
                 },
                 {
@@ -27,6 +28,7 @@
                     "area": "Mire Shed",
                     "nodeType": "item",
                     "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA76",
                     "requires": [ "isDarkLink" ]
                 }
             ]
