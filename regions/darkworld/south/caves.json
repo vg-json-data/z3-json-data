@@ -53,28 +53,32 @@
                     "name": "Hype Cave - Top",
                     "area": "Hype Cave",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB1E"
                 },
                 {
                     "id": 2,
                     "name": "Hype Cave - Middle Right",
                     "area": "Hype Cave",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB21"
                 },
                 {
                     "id": 3,
                     "name": "Hype Cave - Middle Left",
                     "area": "Hype Cave",
                     "nodeType": "item",
-                    "noteItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB24"
                 },
                 {
                     "id": 4,
                     "name": "Hype Cave - Bottom",
                     "area": "Hype Cave",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB27"
                 },
                 {
                     "id": 5,
@@ -82,6 +86,7 @@
                     "area": "Hype Cave",
                     "nodeType": "item",
                     "nodeItem": "ThreeHundredRupees",
+                    "nodeAddress": "0x180011",
                     "note": "Hype Cave - NPC"
                 }
             ]

@@ -78,21 +78,24 @@
                     "name": "Stumpy",
                     "area": "South Dark World",
                     "nodeType": "item",
-                    "nodeItem": "Shovel"
+                    "nodeItem": "Shovel",
+                    "nodeAddress": "0x330C7"
                 },
                 {
                     "id": 13,
                     "name": "Digging Game",
                     "area": "South Dark World",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180148"
                 },
                 {
                     "id": 14,
                     "name": "Bombos Tablet",
                     "area": "South Dark World",
                     "nodeType": "item",
-                    "nodeItem": "Bombos"
+                    "nodeItem": "Bombos",
+                    "nodeAddress": "0x180017"
                 }
             ]
         },
