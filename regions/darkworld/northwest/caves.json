@@ -29,6 +29,7 @@
                     "area": "Dark World Hammer Peg Cave",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180006",
                     "requires": [
                         "canLiftDarkRocks",
                         "Hammer"
@@ -47,7 +48,8 @@
                     "name": "Brewery",
                     "area": "Brewery",
                     "nodeType": "item",
-                    "nodeItem": "ThreeHundredRupees"
+                    "nodeItem": "ThreeHundredRupees",
+                    "nodeAddress": "0xE9EC"
                 }
             ]
         },
@@ -61,7 +63,8 @@
                     "name": "C-Shaped House",
                     "area": "C-Shaped House",
                     "nodeType": "item",
-                    "nodeItem": "ThreeHundredRupees"
+                    "nodeItem": "ThreeHundredRupees",
+                    "nodeAddress": "0xE9EF"
                 }
             ]
         },
@@ -75,7 +78,8 @@
                     "name": "Chest Game",
                     "area": "Chest Game",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xEDA8"
                 }
             ]
         },
