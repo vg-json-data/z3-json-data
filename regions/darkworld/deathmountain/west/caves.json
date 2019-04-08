@@ -18,6 +18,7 @@
                     "area": "Spike Cave",
                     "nodeType": "item",
                     "nodeItem": "CaneOfByrna",
+                    "nodeAddress": "0xEA8B",
                     "requires": [
                         "canLiftRocks",
                         "MoonPearl",
