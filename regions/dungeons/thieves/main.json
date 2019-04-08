@@ -28,28 +28,32 @@
                     "name": "Thieves' Town - Big Key Chest",
                     "area": "Thieves Town (Entrance)",
                     "nodeType": "item",
-                    "nodeItem": "BigKeyD4"
+                    "nodeItem": "BigKeyD4",
+                    "nodeAddress": "0xEA04"
                 },
                 {
                     "id": 4,
                     "name": "Thieves' Town - Map Chest",
                     "area": "Thieves Town (Entrance)",
                     "nodeType": "item",
-                    "nodeItem": "MapD4"
+                    "nodeItem": "MapD4",
+                    "nodeAddress": "0xEA01"
                 },
                 {
                     "id": 5,
                     "name": "Thieves' Town - Compass Chest",
                     "area": "Thieves Town (Entrance)",
                     "nodeType": "item",
-                    "nodeItem": "CompassD4"
+                    "nodeItem": "CompassD4",
+                    "nodeAddress": "0xEA07"
                 },
                 {
                     "id": 6,
                     "name": "Thieves' Town - Ambush Chest",
                     "area": "Thieves Town (Entrance)",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA0A"
                 }
             ]
         },
@@ -73,7 +77,8 @@
                         "KeyD4"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEA0D"
                 },
                 {
                     "id": 3,
@@ -86,7 +91,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "TitansMitt"
+                    "nodeItem": "TitansMitt",
+                    "nodeAddress": "0xEA10"
                 },
                 {
                     "id": 4,
@@ -94,7 +100,8 @@
                     "area": "Thieves Town (Deep)",
                     "requires": [ "BigKeyD4" ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD4"
+                    "nodeItem": "KeyD4",
+                    "nodeAddress": "0xEA13"
                 }
             ]
         },
@@ -112,14 +119,16 @@
                         "KeyD4"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180156"
                 },
                 {
                     "id": 2,
                     "name": "Thieves Town - Prize",
                     "area": "Blind Fight",
                     "nodeType": "item",
-                    "nodeItem": "Crystal4"
+                    "nodeItem": "Crystal4",
+                    "nodeAddress": ["0x120A6", "0x53F36", "0x53F37", "0x18005B", "0x180077", "0xC707"]
                 }
             ]
         }
