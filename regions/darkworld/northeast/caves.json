@@ -55,14 +55,16 @@
                     "name": "Pyramid Fairy - Left",
                     "area": "Pyramid Fairy",
                     "nodeType": "item",
-                    "nodeItem": "L4Sword"
+                    "nodeItem": "L4Sword",
+                    "nodeAddress": "0xE980"
                 },
                 {
                     "id": 2,
                     "name": "Pyramid Fairy - Right",
                     "area": "Pyramid Fairy",
                     "nodeType": "item",
-                    "nodeItem": "SilverArrowUpgrade"
+                    "nodeItem": "SilverArrowUpgrade",
+                    "nodeAddress": "0xE983"
                 }
             ]
         },

@@ -29,6 +29,8 @@
                     "name": "Catfish",
                     "area": "Northeast Dark World",
                     "nodeType": "item",
+                    "nodeItem": "Quake",
+                    "nodeAddress": "0xEE185",
                     "requires": [
                         "isDarkLink",
                         "canLiftRocks"
