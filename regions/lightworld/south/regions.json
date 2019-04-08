@@ -29,7 +29,9 @@
                     "id": 1,
                     "name": "Hobo",
                     "area": "Hobo Bridge",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "Bottle",
+                    "nodeAddress": "0x33E7D"
                 }
             ]
         },
@@ -55,7 +57,9 @@
                     "id": 1,
                     "name": "Lake Hylia Island",
                     "area": "Lake Hylia Island",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180144"
                 }
             ]
         },
@@ -74,7 +78,9 @@
                     "id": 2,
                     "name": "Maze Race",
                     "area": "Maze Race Ledge",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180142"
                 }
             ]
         },
@@ -99,7 +105,9 @@
                     "id": 3,
                     "name": "Desert Ledge",
                     "area": "Desert Ledge",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180143"
                 }
             ]
         },
