@@ -77,7 +77,8 @@
                     "name": "Pyramid",
                     "area": "East Dark World",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180147"
                 }
             ]
         }
