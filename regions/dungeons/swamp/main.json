@@ -43,7 +43,8 @@
                     "name": "Swamp Palace - Entrance",
                     "area": "Swamp Palace (First Room)",
                     "nodeType": "item",
-                    "nodeItem": "KeyD2"
+                    "nodeItem": "KeyD2",
+                    "nodeAddress": "0xEA9D"
                 }
             ]
         },
@@ -66,7 +67,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "MapD2"
+                    "nodeItem": "MapD2",
+                    "nodeAddress": "0xE986"
                 }
             ]
         },
@@ -91,7 +93,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "Hookshot"
+                    "nodeItem": "Hookshot",
+                    "nodeAddress": "0xE989"
                 },
                 {
                     "id": 3,
@@ -102,7 +105,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "CompassD2"
+                    "nodeItem": "CompassD2",
+                    "nodeAddress": "0xEAA0"
                 },
                 {
                     "id": 4,
@@ -113,7 +117,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BigKeyD2"
+                    "nodeItem": "BigKeyD2",
+                    "nodeAddress": "0xEAA6"
                 },
                 {
                     "id": 5,
@@ -124,7 +129,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEAA3"
                 }
             ]
         },
@@ -143,7 +149,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEAA9"
                 },
                 {
                     "id": 2,
@@ -155,7 +162,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEAAC"
                 },
                 {
                     "id": 3,
@@ -167,7 +175,8 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEAAF"
                 },
                 {
                     "id": 4,
@@ -179,14 +188,16 @@
                         "KeyD2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180154"
                 },
                 {
                     "id": 5,
                     "name": "Swamp Palace - Prize",
                     "area": "Swamp Palace (North)",
                     "nodeType": "item",
-                    "nodeItem": "Crystal2"
+                    "nodeItem": "Crystal2",
+                    "nodeAddress": ["0x120A0", "0x53F6C", "0x53F6D", "0x180055", "0x180071", "0xC701"]
                 }
             ]
         }
