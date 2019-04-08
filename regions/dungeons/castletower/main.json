@@ -24,14 +24,16 @@
                     "name": "Castle Tower - Room 03",
                     "area": "Agahnims Tower",
                     "nodeType": "item",
-                    "nodeItem": "KeyA1"
+                    "nodeItem": "KeyA1",
+                    "nodeAddress": "0xEAB5"
                 },
                 {
                     "id": 4,
                     "name": "Castle Tower - Dark Maze",
                     "area": "Agahnims Tower",
                     "nodeType": "item",
-                    "nodeItem": "KeyA1"
+                    "nodeItem": "KeyA1",
+                    "nodeAddress": "0xEAB2"
                 }
             ]
         },
