@@ -11,35 +11,40 @@
                     "name": "Blind's Hideout - Top",
                     "area": "Blinds Hideout",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xEB0F"
                 },
                 {
                     "id": 2,
                     "name": "Blind's Hideout - Left",
                     "area": "Blinds Hideout",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB12"
                 },
                 {
                     "id": 3,
                     "name": "Blind's Hideout - Right",
                     "area": "Blinds Hideout",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB15"
                 },
                 {
                     "id": 4,
                     "name": "Blind's Hideout - Far Left",
                     "area": "Blinds Hideout",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB18"
                 },
                 {
                     "id": 5,
                     "name": "Blind's Hideout - Far Right",
                     "area": "Blinds Hideout",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEB1B"
                 }
             ]
         },
@@ -53,7 +58,8 @@
                     "name": "King's Tomb",
                     "area": "Kings Grave",
                     "nodeType": "item",
-                    "nodeItem": "Cape"
+                    "nodeItem": "Cape",
+                    "nodeAddress": "0xE97A"
                 }
             ]
         },
@@ -67,7 +73,8 @@
                     "name": "Kakariko Tavern",
                     "area": "Tavern",
                     "nodeType": "item",
-                    "nodeItem": "Bottle"
+                    "nodeItem": "Bottle",
+                    "nodeAddress": "0xE9CE"
                 }
             ]
         },
@@ -140,7 +147,8 @@
                     "name": "Chicken House",
                     "area": "Chicken House",
                     "nodeType": "item",
-                    "nodeItem": "BlueBoomerang"
+                    "nodeItem": "BlueBoomerang",
+                    "nodeAddress": "0xE9E9"
                 }
             ]
         },
@@ -160,35 +168,40 @@
                     "name": "Kakariko Well - Top",
                     "area": "Kakariko Well (top)",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xEA8E"
                 },
                 {
                     "id": 3,
                     "name": "Kakariko Well - Left",
                     "area": "Kakariko Well (top)",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA91"
                 },
                 {
                     "id": 4,
                     "name": "Kakariko Well - Middle",
                     "area": "Kakariko Well (top)",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA94"
                 },
                 {
                     "id": 5,
                     "name": "Kakariko Well - Right",
                     "area": "Kakariko Well (top)",
                     "nodeType": "item",
-                    "nodeItem": "TwentyRupees"
+                    "nodeItem": "TwentyRupees",
+                    "nodeAddress": "0xEA97"
                 },
                 {
                     "id": 6,
                     "name": "Kakariko Well - Bottom",
                     "area": "Kakariko Well (top)",
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEA9A"
                 }
             ]
         },
@@ -218,7 +231,8 @@
                     "name": "Blacksmith",
                     "area": "Blacksmiths Hut",
                     "nodeType": "item",
-                    "nodeItem": "L3Sword"
+                    "nodeItem": "L3Sword",
+                    "nodeAddress": "0x18002A"
                 },
                 {
                     "id": 2,
@@ -246,7 +260,8 @@
                     "name": "Magic Bat",
                     "area": "Bat Cave (right)",
                     "nodeType": "item",
-                    "nodeItem": "HalfMagic"
+                    "nodeItem": "HalfMagic",
+                    "nodeAddress": "0x180015"
                 }
             ]
         },
@@ -273,7 +288,8 @@
                     "name": "Sick Kid",
                     "area": "Sick Kids House",
                     "nodeType": "item",
-                    "nodeItem": "Bottle"
+                    "nodeItem": "Bottle",
+                    "nodeAddress": "0x339CF"
                 }
             ]
         },
@@ -293,7 +309,8 @@
                     "name": "Lost Woods Hideout",
                     "area": "Lost Woods Hideout (top)",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180000"
                 }
             ]
         },
@@ -326,7 +343,8 @@
                     "name": "Lumberjack Tree",
                     "area": "Lumberjack Tree (top)",
                     "nodeType": "item",
-                    "nodeItem": "PieceOfHeart"
+                    "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180001"
                 }
             ]
         },
@@ -354,6 +372,7 @@
                     "area": "Graveyard Cave",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0x180004",
                     "note": "Graveyard Ledge"
                 }
             ]
@@ -369,6 +388,7 @@
                     "area": "Bonk Rock Cave",
                     "nodeType": "item",
                     "nodeItem": "PieceOfHeart",
+                    "nodeAddress": "0xEB3F",
                     "note": "Pegasus Rocks"
                 }
             ]
@@ -383,7 +403,8 @@
                     "name": "Library",
                     "area": "Library",
                     "nodeType": "item",
-                    "nodeItem": "BookOfMudora"
+                    "nodeItem": "BookOfMudora",
+                    "nodeAddress": "0x180012"
                 }
             ]
         },

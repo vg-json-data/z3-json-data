@@ -36,7 +36,9 @@
                     "id": 1,
                     "name": "Master Sword Pedestal",
                     "area": "Master Sword Meadow",
-                    "nodeType": "item"
+                    "nodeType": "item",
+                    "nodeItem": "L2Sword",
+                    "nodeAddress": "0x289B0"
                 }
             ]
         }
