@@ -34,7 +34,8 @@
                     "name": "Palace of Darkness - Shooter Room",
                     "area": "Palace of Darkness (Entrance)",
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA5B"
                 }
             ]
         },
@@ -75,7 +76,8 @@
                         ]}
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA3D"
                 },
                 {
                     "id": 5,
@@ -91,7 +93,8 @@
                         ]}
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA49"
                 }
             ]
         },
@@ -111,7 +114,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "BigKeyD1"
+                    "nodeItem": "BigKeyD1",
+                    "nodeAddress": "0xEA37"
                 }
             ]
         },
@@ -134,7 +138,8 @@
                         "canShootArrows"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA3A"
                 },
                 {
                     "id": 3,
@@ -142,7 +147,8 @@
                     "area": "Palace of Darkness (Bonk Section)",
                     "requires": [ "canShootArrows" ],
                     "nodeType": "item",
-                    "nodeItem": "MapD1"
+                    "nodeItem": "MapD1",
+                    "nodeAddress": "0xEA52"
                 }
             ]
         },
@@ -174,7 +180,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "CompassD1"
+                    "nodeItem": "CompassD1",
+                    "nodeAddress": "0xEA43"
                 },
                 {
                     "id": 4,
@@ -187,7 +194,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "Arrow"
+                    "nodeItem": "Arrow",
+                    "nodeAddress": "0xEA4C"
                 },
                 {
                     "id": 5,
@@ -200,7 +208,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA4F"
                 }
             ]
         },
@@ -220,7 +229,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "ThreeBombs"
+                    "nodeItem": "ThreeBombs",
+                    "nodeAddress": "0xEA55"
                 },
                 {
                     "id": 2,
@@ -233,7 +243,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "KeyD1"
+                    "nodeItem": "KeyD1",
+                    "nodeAddress": "0xEA58"
                 },
                 {
                     "id": 3,
@@ -247,7 +258,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "Hammer"
+                    "nodeItem": "Hammer",
+                    "nodeAddress": "0xEA40"
                 }
             ]
         },
@@ -267,7 +279,8 @@
                     ],
                     "note": "FIXME: Changes based on key placement",
                     "nodeType": "item",
-                    "nodeItem": "FiveRupees"
+                    "nodeItem": "FiveRupees",
+                    "nodeAddress": "0xEA46"
                 }
             ]
         },
@@ -288,14 +301,16 @@
                         "Hammer"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180153"
                 },
                 {
                     "id": 2,
                     "name": "Palace of Darkness - Prize",
                     "area": "Palace of Darkness (Final Section)",
                     "nodeType": "item",
-                    "nodeItem": "Crystal1"
+                    "nodeItem": "Crystal1",
+                    "nodeAddress": ["0x120A1", "0x53F00", "0x53F01", "0x180056", "0x18007D", "0xC702"]
                 }
             ]
         }
