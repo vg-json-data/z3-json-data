@@ -47,7 +47,8 @@
                     "area": "Desert Palace Main (Outer)",
                     "requires": [ "BigKeyP2" ],
                     "nodeType": "item",
-                    "nodeItem": "PowerGlove"
+                    "nodeItem": "PowerGlove",
+                    "nodeAddress": "0xE98F"
                 },
                 {
                     "id": 6,
@@ -55,14 +56,16 @@
                     "area": "Desert Palace Main (Outer)",
                     "requires": [ "canDash" ],
                     "nodeType": "item",
-                    "nodeItem": "KeyP2"
+                    "nodeItem": "KeyP2",
+                    "nodeAddress": "0x180160"
                 },
                 {
                     "id": 7,
                     "name": "Desert Palace - Map Chest",
                     "area": "Desert Palace Main (Outer)",
                     "nodeType": "item",
-                    "nodeItem": "MapP2"
+                    "nodeItem": "MapP2",
+                    "nodeAddress": "0xE9B6"
                 }
             ]
         },
@@ -96,7 +99,8 @@
                     "area": "Desert Palace East",
                     "requires": [ "KeyP2" ],
                     "nodeType": "item",
-                    "nodeItem": "CompassP2"
+                    "nodeItem": "CompassP2",
+                    "nodeAddress": "0xE9CB"
                 },
                 {
                     "id": 2,
@@ -104,7 +108,8 @@
                     "area": "Desert Palace East",
                     "requires": [ "KeyP2" ],
                     "nodeType": "item",
-                    "nodeItem": "BigKeyP2"
+                    "nodeItem": "BigKeyP2",
+                    "nodeAddress": "0xE9C2"
                 }
             ]
         },
@@ -130,14 +135,16 @@
                         "KeyP2"
                     ],
                     "nodeType": "item",
-                    "nodeItem": "BossHeartContainer"
+                    "nodeItem": "BossHeartContainer",
+                    "nodeAddress": "0x180151"
                 },
                 {
                     "id": 3,
                     "name": "Desert Palace - Prize",
                     "area": "Desert Palace North",
                     "nodeType": "item",
-                    "nodeItem": "PendantOfWisdom"
+                    "nodeItem": "PendantOfWisdom",
+                    "nodeAddress": ["0x1209E", "0x53F1C", "0x53F1D", "0x180053", "0x180078", "0xC6FF"]
                 }
             ]
         }
