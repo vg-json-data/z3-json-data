@@ -1,175 +1,182 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 187,
+      "name": "Misery Mire (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "MoonPearl",
+        {"or": [
+          "canDash",
+          "canGrapple"
+        ]},
+        "hasProperMedallion"
+      ],
+      "roomType": "Dungeon",
+      "nodes": [
         {
-            "id": 187,
-            "name": "Misery Mire (Entrance)",
-            "requires": [
-                "RescueZelda",
-                "MoonPearl",
-                {"or": [
-                    "canDash",
-                    "canGrapple"
-                ]},
-                "hasProperMedallion"
-            ],
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire Entrance Gap",
-                    "area": "Misery Mire (Entrance)",
-                    "nodeType": "obstacle"
-                },
-                {
-                    "id": 2,
-                    "name": "Misery Mire Exit",
-                    "area": "Misery Mire (Entrance)",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 1,
+          "name": "Misery Mire Entrance Gap",
+          "area": "Misery Mire (Entrance)",
+          "nodeType": "obstacle"
         },
         {
-            "id": 188,
-            "name": "Misery Mire (Main)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire (West)",
-                    "area": "Misery Mire (Main)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Misery Mire Big Key Door",
-                    "area": "Misery Mire (Main)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Misery Mire - Big Chest",
-                    "area": "Misery Mire (Main)",
-                    "requires": [ "BigKeyD6" ],
-                    "nodeType": "item",
-                    "nodeItem": "CaneOfSomaria",
-                    "nodeAddress": "0xEA67"
-                },
-                {
-                    "id": 4,
-                    "name": "Misery Mire - Map Chest",
-                    "area": "Misery Mire (Main)",
-                    "requires": [
-                        "KeyD6",
-                        "BigKeyD6"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "MapD6",
-                    "nodeAddress": "0xEA6A"
-                },
-                {
-                    "id": 5,
-                    "name": "Misery Mire - Main Lobby",
-                    "area": "Misery Mire (Main)",
-                    "requires": [
-                        "KeyD6",
-                        "BigKeyD6"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyD6",
-                    "nodeAddress": "0xEA5E"
-                },
-                {
-                    "id": 6,
-                    "name": "Misery Mire - Bridge Chest",
-                    "area": "Misery Mire (Main)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD6",
-                    "nodeAddress": "0xEA61"
-                },
-                {
-                    "id": 7,
-                    "name": "Misery Mire - Spike Chest",
-                    "area": "Misery Mire (Main)",
-                    "requires": [
-                        {"or": [
-                            {"not": [ "mods.ohko" ]},
-                            "canInvul"
-                        ]}
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyD6",
-                    "nodeAddress": "0xE9DA"
-                }
-            ]
-        },
-        {
-            "id": 189,
-            "name": "Misery Mire (West)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire - Compass Chest",
-                    "area": "Misery Mire (West)",
-                    "requires": [ "canLightTorches" ],
-                    "note": "FIXME: Changes based on key placement",
-                    "nodeType": "item",
-                    "nodeItem": "CompassD6",
-                    "nodeAddress": "0xEA64"
-                },
-                {
-                    "id": 2,
-                    "name": "Misery Mire - Big Key Chest",
-                    "area": "Misery Mire (West)",
-                    "requires": [ "canLightTorches" ],
-                    "note": "FIXME: Changes based on key placement",
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyD6",
-                    "nodeAddress": "0xEA6D"
-                }
-            ]
-        },
-        {
-            "id": 190,
-            "name": "Misery Mire (Final Area)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire (Vitreous)",
-                    "area": "Misery Mire (Final Area)",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 191,
-            "name": "Misery Mire (Vitreous)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Misery Mire - Vitreous",
-                    "area": "Misery Mire (Vitreous)",
-                    "requires": [
-                        "hasLightCone",
-                        "CaneOfSomaria",
-                        "BigKeyD6"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BossHeartContainer",
-                    "nodeAddress": "0x180158"
-                },
-                {
-                    "id": 2,
-                    "name": "Misery Mire - Prize",
-                    "area": "Misery Mire (Vitreous)",
-                    "nodeType": "item",
-                    "nodeItem": "Crystal6",
-                    "nodeAddress": ["0x120A2", "0x53F48", "0x53F49", "0x180057", "0x180075", "0xC703"]
-                }
-            ]
+          "id": 2,
+          "name": "Misery Mire Exit",
+          "area": "Misery Mire (Entrance)",
+          "nodeType": "door"
         }
-    ]
+      ]
+    },
+    {
+      "id": 188,
+      "name": "Misery Mire (Main)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Misery Mire (West)",
+          "area": "Misery Mire (Main)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Misery Mire Big Key Door",
+          "area": "Misery Mire (Main)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Misery Mire - Big Chest",
+          "area": "Misery Mire (Main)",
+          "requires": ["BigKeyD6"],
+          "nodeType": "item",
+          "nodeItem": "CaneOfSomaria",
+          "nodeAddress": "0xEA67"
+        },
+        {
+          "id": 4,
+          "name": "Misery Mire - Map Chest",
+          "area": "Misery Mire (Main)",
+          "requires": [
+            "KeyD6",
+            "BigKeyD6"
+          ],
+          "nodeType": "item",
+          "nodeItem": "MapD6",
+          "nodeAddress": "0xEA6A"
+        },
+        {
+          "id": 5,
+          "name": "Misery Mire - Main Lobby",
+          "area": "Misery Mire (Main)",
+          "requires": [
+            "KeyD6",
+            "BigKeyD6"
+          ],
+          "nodeType": "item",
+          "nodeItem": "KeyD6",
+          "nodeAddress": "0xEA5E"
+        },
+        {
+          "id": 6,
+          "name": "Misery Mire - Bridge Chest",
+          "area": "Misery Mire (Main)",
+          "nodeType": "item",
+          "nodeItem": "KeyD6",
+          "nodeAddress": "0xEA61"
+        },
+        {
+          "id": 7,
+          "name": "Misery Mire - Spike Chest",
+          "area": "Misery Mire (Main)",
+          "requires": [
+            {"or": [
+              {"not": ["mods.ohko"]},
+              "canInvul"
+            ]}
+          ],
+          "nodeType": "item",
+          "nodeItem": "KeyD6",
+          "nodeAddress": "0xE9DA"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "Misery Mire (West)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Misery Mire - Compass Chest",
+          "area": "Misery Mire (West)",
+          "requires": ["canLightTorches"],
+          "note": "FIXME: Changes based on key placement",
+          "nodeType": "item",
+          "nodeItem": "CompassD6",
+          "nodeAddress": "0xEA64"
+        },
+        {
+          "id": 2,
+          "name": "Misery Mire - Big Key Chest",
+          "area": "Misery Mire (West)",
+          "requires": ["canLightTorches"],
+          "note": "FIXME: Changes based on key placement",
+          "nodeType": "item",
+          "nodeItem": "BigKeyD6",
+          "nodeAddress": "0xEA6D"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "name": "Misery Mire (Final Area)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Misery Mire (Vitreous)",
+          "area": "Misery Mire (Final Area)",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "name": "Misery Mire (Vitreous)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Misery Mire - Vitreous",
+          "area": "Misery Mire (Vitreous)",
+          "requires": [
+            "hasLightCone",
+            "CaneOfSomaria",
+            "BigKeyD6"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeAddress": "0x180158"
+        },
+        {
+          "id": 2,
+          "name": "Misery Mire - Prize",
+          "area": "Misery Mire (Vitreous)",
+          "nodeType": "item",
+          "nodeItem": "Crystal6",
+          "nodeAddress": [
+            "0x120A2",
+            "0x53F48",
+            "0x53F49",
+            "0x180057",
+            "0x180075",
+            "0xC703"
+          ]
+        }
+      ]
+    }
+  ]
 }

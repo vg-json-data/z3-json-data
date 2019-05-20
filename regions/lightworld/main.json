@@ -1,452 +1,452 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 0,
+      "name": "Light World",
+      "roomType": "LightWorld",
+      "nodes": [
         {
-            "id": 0,
-            "name": "Light World",
-            "roomType": "LightWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Blinds Hideout",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Hyrule Castle Secret Entrance Drop",
-                    "area": "Light World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 3,
-                    "name": "Zoras River",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Kings Grave Outer Rocks",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Dam",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 6,
-                    "name": "Links House",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 7,
-                    "name": "Tavern North",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 8,
-                    "name": "Chicken House",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 9,
-                    "name": "Aginahs Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 10,
-                    "name": "Sahasrahlas Hut",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 11,
-                    "name": "Kakariko Well Drop",
-                    "area": "Light World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 12,
-                    "name": "Kakariko Well Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 13,
-                    "name": "Blacksmiths Hut",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 14,
-                    "name": "Bat Cave Drop Ledge",
-                    "area": "Light World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 15,
-                    "name": "Bat Cave Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 16,
-                    "name": "Sick Kids House",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 17,
-                    "name": "Hobo Bridge",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 18,
-                    "name": "Lost Woods Hideout Drop",
-                    "area": "Light World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 19,
-                    "name": "Lost Woods Hideout Stump",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 20,
-                    "name": "Lumberjack Tree Tree",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 21,
-                    "name": "Lumberjack Tree Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 22,
-                    "name": "Mini Moldorm Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 23,
-                    "name": "Ice Rod Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 24,
-                    "name": "Lake Hylia Central Island Pier",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 25,
-                    "name": "Bonk Rock Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 26,
-                    "name": "Library",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 27,
-                    "name": "Potion Shop",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 28,
-                    "name": "Two Brothers House (East)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 29,
-                    "name": "Desert Palace Stairs",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 30,
-                    "name": "Eastern Palace",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 31,
-                    "name": "Master Sword Meadow",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 32,
-                    "name": "Sanctuary",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 33,
-                    "name": "Sanctuary Grave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 34,
-                    "name": "Death Mountain Entrance Rock",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 35,
-                    "name": "Flute Spot 1",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 36,
-                    "name": "Dark Desert Teleporter",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 37,
-                    "name": "East Hyrule Teleporter",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 38,
-                    "name": "South Hyrule Teleporter",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 39,
-                    "name": "Kakariko Teleporter",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 40,
-                    "name": "Elder House (East)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 41,
-                    "name": "Elder House (West)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 42,
-                    "name": "North Fairy Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 43,
-                    "name": "North Fairy Cave Drop",
-                    "area": "Light World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 44,
-                    "name": "Lost Woods Gamble",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 45,
-                    "name": "Snitch Lady (East)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 46,
-                    "name": "Snitch Lady (West)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 47,
-                    "name": "Tavern (Front)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 48,
-                    "name": "Bush Covered House",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 49,
-                    "name": "Light World Bomb Hut",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 50,
-                    "name": "Kakariko Shop",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 51,
-                    "name": "Long Fairy Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 52,
-                    "name": "Good Bee Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 53,
-                    "name": "20 Rupee Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 54,
-                    "name": "Cave Shop (Lake Hylia)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 55,
-                    "name": "Waterfall of Wishing",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 56,
-                    "name": "Hyrule Castle Main Gate",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 57,
-                    "name": "Bonk Fairy (Light)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 58,
-                    "name": "50 Rupee Cave",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 59,
-                    "name": "Fortune Teller (Light)",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 60,
-                    "name": "Lake Hylia Fairy",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 61,
-                    "name": "Light Hype Fairy",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 62,
-                    "name": "Desert Fairy",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 63,
-                    "name": "Lumberjack House",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 64,
-                    "name": "Lake Hylia Fortune Teller",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 65,
-                    "name": "Kakariko Gamble Game",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 66,
-                    "name": "Top of Pyramid",
-                    "area": "Light World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 67,
-                    "name": "Mushroom",
-                    "area": "Light World",
-                    "nodeType": "item",
-                    "nodeItem": "Mushroom",
-                    "nodeAddress": "0x180013"
-                },
-                {
-                    "id": 68,
-                    "name": "Bottle Merchant",
-                    "area": "Light World",
-                    "nodeType": "item",
-                    "nodeItem": "Bottle",
-                    "nodeAddress": "0x2EB18"
-                },
-                {
-                    "id": 69,
-                    "name": "Flute Spot",
-                    "area": "Light World",
-                    "nodeType": "item",
-                    "nodeItem": "OcarinaInactive",
-                    "nodeAddress": "0x18014A"
-                },
-                {
-                    "id": 70,
-                    "name": "Sunken Treasure",
-                    "area": "Light World",
-                    "nodeType": "item",
-                    "nodeItem": "PieceOfHeart",
-                    "nodeAddress": "0x180145"
-                },
-                {
-                    "id": 71,
-                    "name": "Purple Chest",
-                    "area": "Light World",
-                    "nodeType": "item",
-                    "nodeItem": "Bottle",
-                    "nodeAddress": "0x33D68",
-                    "requires": [
-                        "RescueBlacksmith",
-                        "isLightLink"
-                    ]
-                }
-            ]
+          "id": 1,
+          "name": "Blinds Hideout",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Hyrule Castle Secret Entrance Drop",
+          "area": "Light World",
+          "nodeType": "drop"
+        },
+        {
+          "id": 3,
+          "name": "Zoras River",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 4,
+          "name": "Kings Grave Outer Rocks",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 5,
+          "name": "Dam",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 6,
+          "name": "Links House",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 7,
+          "name": "Tavern North",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 8,
+          "name": "Chicken House",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 9,
+          "name": "Aginahs Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 10,
+          "name": "Sahasrahlas Hut",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 11,
+          "name": "Kakariko Well Drop",
+          "area": "Light World",
+          "nodeType": "drop"
+        },
+        {
+          "id": 12,
+          "name": "Kakariko Well Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 13,
+          "name": "Blacksmiths Hut",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 14,
+          "name": "Bat Cave Drop Ledge",
+          "area": "Light World",
+          "nodeType": "drop"
+        },
+        {
+          "id": 15,
+          "name": "Bat Cave Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 16,
+          "name": "Sick Kids House",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 17,
+          "name": "Hobo Bridge",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 18,
+          "name": "Lost Woods Hideout Drop",
+          "area": "Light World",
+          "nodeType": "drop"
+        },
+        {
+          "id": 19,
+          "name": "Lost Woods Hideout Stump",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 20,
+          "name": "Lumberjack Tree Tree",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 21,
+          "name": "Lumberjack Tree Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 22,
+          "name": "Mini Moldorm Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 23,
+          "name": "Ice Rod Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 24,
+          "name": "Lake Hylia Central Island Pier",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 25,
+          "name": "Bonk Rock Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 26,
+          "name": "Library",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 27,
+          "name": "Potion Shop",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 28,
+          "name": "Two Brothers House (East)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 29,
+          "name": "Desert Palace Stairs",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 30,
+          "name": "Eastern Palace",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 31,
+          "name": "Master Sword Meadow",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 32,
+          "name": "Sanctuary",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 33,
+          "name": "Sanctuary Grave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 34,
+          "name": "Death Mountain Entrance Rock",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 35,
+          "name": "Flute Spot 1",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 36,
+          "name": "Dark Desert Teleporter",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 37,
+          "name": "East Hyrule Teleporter",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 38,
+          "name": "South Hyrule Teleporter",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 39,
+          "name": "Kakariko Teleporter",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 40,
+          "name": "Elder House (East)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 41,
+          "name": "Elder House (West)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 42,
+          "name": "North Fairy Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 43,
+          "name": "North Fairy Cave Drop",
+          "area": "Light World",
+          "nodeType": "drop"
+        },
+        {
+          "id": 44,
+          "name": "Lost Woods Gamble",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 45,
+          "name": "Snitch Lady (East)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 46,
+          "name": "Snitch Lady (West)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 47,
+          "name": "Tavern (Front)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 48,
+          "name": "Bush Covered House",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 49,
+          "name": "Light World Bomb Hut",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 50,
+          "name": "Kakariko Shop",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 51,
+          "name": "Long Fairy Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 52,
+          "name": "Good Bee Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 53,
+          "name": "20 Rupee Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 54,
+          "name": "Cave Shop (Lake Hylia)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 55,
+          "name": "Waterfall of Wishing",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 56,
+          "name": "Hyrule Castle Main Gate",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 57,
+          "name": "Bonk Fairy (Light)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 58,
+          "name": "50 Rupee Cave",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 59,
+          "name": "Fortune Teller (Light)",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 60,
+          "name": "Lake Hylia Fairy",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 61,
+          "name": "Light Hype Fairy",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 62,
+          "name": "Desert Fairy",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 63,
+          "name": "Lumberjack House",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 64,
+          "name": "Lake Hylia Fortune Teller",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 65,
+          "name": "Kakariko Gamble Game",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 66,
+          "name": "Top of Pyramid",
+          "area": "Light World",
+          "nodeType": "door"
+        },
+        {
+          "id": 67,
+          "name": "Mushroom",
+          "area": "Light World",
+          "nodeType": "item",
+          "nodeItem": "Mushroom",
+          "nodeAddress": "0x180013"
+        },
+        {
+          "id": 68,
+          "name": "Bottle Merchant",
+          "area": "Light World",
+          "nodeType": "item",
+          "nodeItem": "Bottle",
+          "nodeAddress": "0x2EB18"
+        },
+        {
+          "id": 69,
+          "name": "Flute Spot",
+          "area": "Light World",
+          "nodeType": "item",
+          "nodeItem": "OcarinaInactive",
+          "nodeAddress": "0x18014A"
+        },
+        {
+          "id": 70,
+          "name": "Sunken Treasure",
+          "area": "Light World",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeAddress": "0x180145"
+        },
+        {
+          "id": 71,
+          "name": "Purple Chest",
+          "area": "Light World",
+          "nodeType": "item",
+          "nodeItem": "Bottle",
+          "nodeAddress": "0x33D68",
+          "requires": [
+            "RescueBlacksmith",
+            "isLightLink"
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

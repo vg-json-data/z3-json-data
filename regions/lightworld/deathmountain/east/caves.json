@@ -1,214 +1,214 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 100,
+      "name": "Hookshot Fairy",
+      "roomType": "Cave"
+    },
+    {
+      "id": 101,
+      "name": "Paradox Cave Front",
+      "roomType": "Cave",
+      "nodes": [
         {
-            "id": 100,
-            "name": "Hookshot Fairy",
-            "roomType": "Cave"
+          "id": 1,
+          "name": "Paradox Cave Push Block Reverse",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
         },
         {
-            "id": 101,
-            "name": "Paradox Cave Front",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Paradox Cave Push Block Reverse",
-                    "area": "Paradox Cave Front",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Paradox Cave Exit (Bottom)",
-                    "area": "Paradox Cave Front",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Light World Death Mountain Shop",
-                    "area": "Paradox Cave Front",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 2,
+          "name": "Paradox Cave Exit (Bottom)",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
         },
         {
-            "id": 102,
-            "name": "Paradox Cave Chest Area",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Paradox Cave Push Block",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Paradox Cave Bomb Jump",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Paradox Cave Lower - Far Left",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB2A"
-                },
-                {
-                    "id": 4,
-                    "name": "Paradox Cave Lower - Left",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB2D"
-                },
-                {
-                    "id": 5,
-                    "name": "Paradox Cave Lower - Right",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB30"
-                },
-                {
-                    "id": 6,
-                    "name": "Paradox Cave Lower - Far Right",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB33"
-                },
-                {
-                    "id": 7,
-                    "name": "Paradox Cave Lower - Middle",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB36"
-                },
-                {
-                    "id": 8,
-                    "name": "Paradox Cave Upper - Left",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEB39"
-                },
-                {
-                    "id": 9,
-                    "name": "Paradox Cave Upper - Right",
-                    "area": "Paradox Cave Chest Area",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEB3C"
-                }
-            ]
-        },
-        {
-            "id": 103,
-            "name": "Paradox Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Paradox Cave Exit (Middle)",
-                    "area": "Paradox Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Paradox Cave Exit (Top)",
-                    "area": "Paradox Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Paradox Cave Drop",
-                    "area": "Paradox Cave",
-                    "nodeType": "drop"
-                }
-            ]
-        },
-        {
-            "id": 104,
-            "name": "Light World Death Mountain Shop",
-            "roomType": "Cave"
-        },
-        {
-            "id": 107,
-            "name": "Spiral Cave (Top)",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Spiral Cave (top to bottom)",
-                    "area": "Spiral Cave (Top)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Spiral Cave Exit (Top)",
-                    "area": "Spiral Cave (Top)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Spiral Cave",
-                    "area": "Spiral Cave (Top)",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xE9BF"
-                }
-            ]
-        },
-        {
-            "id": 108,
-            "name": "Spiral Cave (Bottom)",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Spiral Cave Exit",
-                    "area": "Spiral Cave (Bottom)",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 110,
-            "name": "Fairy Ascension Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Fairy Ascension Cave Exit (Top)",
-                    "area": "Fairy Ascension Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Fairy Ascension Cave Exit (Bottom)",
-                    "area": "Fairy Ascension Cave",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 165,
-            "name": "Mimic Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Mimic Cave",
-                    "area": "Mimic Cave",
-                    "nodeType": "item",
-                    "nodeItem": "PieceOfHeart",
-                    "nodeAddress": "0xE9C5"
-                }
-            ]
+          "id": 3,
+          "name": "Light World Death Mountain Shop",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
         }
-    ]
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Paradox Cave Chest Area",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Push Block",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave Bomb Jump",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Paradox Cave Lower - Far Left",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB2A"
+        },
+        {
+          "id": 4,
+          "name": "Paradox Cave Lower - Left",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB2D"
+        },
+        {
+          "id": 5,
+          "name": "Paradox Cave Lower - Right",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB30"
+        },
+        {
+          "id": 6,
+          "name": "Paradox Cave Lower - Far Right",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB33"
+        },
+        {
+          "id": 7,
+          "name": "Paradox Cave Lower - Middle",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB36"
+        },
+        {
+          "id": 8,
+          "name": "Paradox Cave Upper - Left",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEB39"
+        },
+        {
+          "id": 9,
+          "name": "Paradox Cave Upper - Right",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEB3C"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Paradox Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Exit (Middle)",
+          "area": "Paradox Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave Exit (Top)",
+          "area": "Paradox Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Paradox Cave Drop",
+          "area": "Paradox Cave",
+          "nodeType": "drop"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Light World Death Mountain Shop",
+      "roomType": "Cave"
+    },
+    {
+      "id": 107,
+      "name": "Spiral Cave (Top)",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spiral Cave (top to bottom)",
+          "area": "Spiral Cave (Top)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Spiral Cave Exit (Top)",
+          "area": "Spiral Cave (Top)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Spiral Cave",
+          "area": "Spiral Cave (Top)",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xE9BF"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Spiral Cave (Bottom)",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spiral Cave Exit",
+          "area": "Spiral Cave (Bottom)",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Fairy Ascension Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Fairy Ascension Cave Exit (Top)",
+          "area": "Fairy Ascension Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Fairy Ascension Cave Exit (Bottom)",
+          "area": "Fairy Ascension Cave",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "name": "Mimic Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Mimic Cave",
+          "area": "Mimic Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeAddress": "0xE9C5"
+        }
+      ]
+    }
+  ]
 }

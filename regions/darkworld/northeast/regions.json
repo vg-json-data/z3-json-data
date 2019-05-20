@@ -1,61 +1,61 @@
 {
-    "$schema": "../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 118,
+      "name": "Northeast Dark World",
+      "roomType": "DarkWorld",
+      "nodes": [
         {
-            "id": 118,
-            "name": "Northeast Dark World",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "West Dark World Gap",
-                    "area": "Northeast Dark World",
-                    "nodeType": "obstacle"
-                },
-                {
-                    "id": 2,
-                    "name": "Dark World Potion Shop",
-                    "area": "Northeast Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "East Dark World Broken Bridge Pass",
-                    "area": "Northeast Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Catfish",
-                    "area": "Northeast Dark World",
-                    "nodeType": "item",
-                    "nodeItem": "Quake",
-                    "nodeAddress": "0xEE185",
-                    "requires": [
-                        "isDarkLink",
-                        "canLiftRocks"
-                    ]
-                }
-            ]
+          "id": 1,
+          "name": "West Dark World Gap",
+          "area": "Northeast Dark World",
+          "nodeType": "obstacle"
         },
         {
-            "id": 223,
-            "name": "Pyramid Ledge",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Pyramid Entrance",
-                    "area": "Pyramid Ledge",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Pyramid Drop",
-                    "area": "Pyramid Ledge",
-                    "nodeType": "drop"
-                }
-            ]
+          "id": 2,
+          "name": "Dark World Potion Shop",
+          "area": "Northeast Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "East Dark World Broken Bridge Pass",
+          "area": "Northeast Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 4,
+          "name": "Catfish",
+          "area": "Northeast Dark World",
+          "nodeType": "item",
+          "nodeItem": "Quake",
+          "nodeAddress": "0xEE185",
+          "requires": [
+            "isDarkLink",
+            "canLiftRocks"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": 223,
+      "name": "Pyramid Ledge",
+      "roomType": "DarkWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Entrance",
+          "area": "Pyramid Ledge",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Pyramid Drop",
+          "area": "Pyramid Ledge",
+          "nodeType": "drop"
+        }
+      ]
+    }
+  ]
 }

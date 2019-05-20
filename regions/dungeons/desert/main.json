@@ -1,152 +1,159 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 74,
+      "name": "Desert Palace Main (Outer)",
+      "roomType": "Dungeon",
+      "requires": [
+        "RescueZelda",
+        {"or": [
+          "canRead",
+          {"and": [
+            "canLiftDarkRocks",
+            "canFly",
+            "canMirror"
+          ]}
+        ]}
+      ],
+      "nodes": [
         {
-            "id": 74,
-            "name": "Desert Palace Main (Outer)",
-            "roomType": "Dungeon",
-            "requires": [
-                "RescueZelda",
-                {"or": [
-                    "canRead",
-                    {"and": [
-                        "canLiftDarkRocks",
-                        "canFly",
-                        "canMirror"
-                    ]}
-                ]}
-            ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Desert Palace Pots (Outer)",
-                    "area": "Desert Palace Main (Outer)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Desert Palace Exit (West)",
-                    "area": "Desert Palace Main (Outer)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Desert Palace Exit (East)",
-                    "area": "Desert Palace Main (Outer)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Desert Palace East Wing",
-                    "area": "Desert Palace Main (Outer)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Desert Palace - Big Chest",
-                    "area": "Desert Palace Main (Outer)",
-                    "requires": [ "BigKeyP2" ],
-                    "nodeType": "item",
-                    "nodeItem": "PowerGlove",
-                    "nodeAddress": "0xE98F"
-                },
-                {
-                    "id": 6,
-                    "name": "Desert Palace - Torch",
-                    "area": "Desert Palace Main (Outer)",
-                    "requires": [ "canDash" ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyP2",
-                    "nodeAddress": "0x180160"
-                },
-                {
-                    "id": 7,
-                    "name": "Desert Palace - Map Chest",
-                    "area": "Desert Palace Main (Outer)",
-                    "nodeType": "item",
-                    "nodeItem": "MapP2",
-                    "nodeAddress": "0xE9B6"
-                }
-            ]
+          "id": 1,
+          "name": "Desert Palace Pots (Outer)",
+          "area": "Desert Palace Main (Outer)",
+          "nodeType": "door"
         },
         {
-            "id": 75,
-            "name": "Desert Palace Main (Inner)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Desert Palace Exit (South)",
-                    "area": "Desert Palace Main (Inner)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Desert Palace Pots (Inner)",
-                    "area": "Desert Palace Main (Inner)",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 2,
+          "name": "Desert Palace Exit (West)",
+          "area": "Desert Palace Main (Outer)",
+          "nodeType": "door"
         },
         {
-            "id": 76,
-            "name": "Desert Palace East",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Desert Palace - Compass Chest",
-                    "area": "Desert Palace East",
-                    "requires": [ "KeyP2" ],
-                    "nodeType": "item",
-                    "nodeItem": "CompassP2",
-                    "nodeAddress": "0xE9CB"
-                },
-                {
-                    "id": 2,
-                    "name": "Desert Palace - Big Key Chest",
-                    "area": "Desert Palace East",
-                    "requires": [ "KeyP2" ],
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyP2",
-                    "nodeAddress": "0xE9C2"
-                }
-            ]
+          "id": 3,
+          "name": "Desert Palace Exit (East)",
+          "area": "Desert Palace Main (Outer)",
+          "nodeType": "door"
         },
         {
-            "id": 77,
-            "name": "Desert Palace North",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Desert Palace Exit (North)",
-                    "area": "Desert Palace North",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Desert Palace - Lanmolas",
-                    "area": "Desert Palace North",
-                    "requires": [
-                        "canLiftRocks",
-                        "canLightTorches",
-                        "BigKeyP2",
-                        "KeyP2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BossHeartContainer",
-                    "nodeAddress": "0x180151"
-                },
-                {
-                    "id": 3,
-                    "name": "Desert Palace - Prize",
-                    "area": "Desert Palace North",
-                    "nodeType": "item",
-                    "nodeItem": "PendantOfWisdom",
-                    "nodeAddress": ["0x1209E", "0x53F1C", "0x53F1D", "0x180053", "0x180078", "0xC6FF"]
-                }
-            ]
+          "id": 4,
+          "name": "Desert Palace East Wing",
+          "area": "Desert Palace Main (Outer)",
+          "nodeType": "door"
+        },
+        {
+          "id": 5,
+          "name": "Desert Palace - Big Chest",
+          "area": "Desert Palace Main (Outer)",
+          "requires": ["BigKeyP2"],
+          "nodeType": "item",
+          "nodeItem": "PowerGlove",
+          "nodeAddress": "0xE98F"
+        },
+        {
+          "id": 6,
+          "name": "Desert Palace - Torch",
+          "area": "Desert Palace Main (Outer)",
+          "requires": ["canDash"],
+          "nodeType": "item",
+          "nodeItem": "KeyP2",
+          "nodeAddress": "0x180160"
+        },
+        {
+          "id": 7,
+          "name": "Desert Palace - Map Chest",
+          "area": "Desert Palace Main (Outer)",
+          "nodeType": "item",
+          "nodeItem": "MapP2",
+          "nodeAddress": "0xE9B6"
         }
-    ]
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Desert Palace Main (Inner)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace Exit (South)",
+          "area": "Desert Palace Main (Inner)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace Pots (Inner)",
+          "area": "Desert Palace Main (Inner)",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Desert Palace East",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace - Compass Chest",
+          "area": "Desert Palace East",
+          "requires": ["KeyP2"],
+          "nodeType": "item",
+          "nodeItem": "CompassP2",
+          "nodeAddress": "0xE9CB"
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace - Big Key Chest",
+          "area": "Desert Palace East",
+          "requires": ["KeyP2"],
+          "nodeType": "item",
+          "nodeItem": "BigKeyP2",
+          "nodeAddress": "0xE9C2"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Desert Palace North",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace Exit (North)",
+          "area": "Desert Palace North",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace - Lanmolas",
+          "area": "Desert Palace North",
+          "requires": [
+            "canLiftRocks",
+            "canLightTorches",
+            "BigKeyP2",
+            "KeyP2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeAddress": "0x180151"
+        },
+        {
+          "id": 3,
+          "name": "Desert Palace - Prize",
+          "area": "Desert Palace North",
+          "nodeType": "item",
+          "nodeItem": "PendantOfWisdom",
+          "nodeAddress": [
+            "0x1209E",
+            "0x53F1C",
+            "0x53F1D",
+            "0x180053",
+            "0x180078",
+            "0xC6FF"
+          ]
+        }
+      ]
+    }
+  ]
 }

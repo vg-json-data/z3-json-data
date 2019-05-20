@@ -1,67 +1,67 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 88,
+      "name": "Agahnims Tower",
+      "roomType": "Dungeon",
+      "requires": ["hasLightCone"],
+      "nodes": [
         {
-            "id": 88,
-            "name": "Agahnims Tower",
-            "roomType": "Dungeon",
-            "requires": [ "hasLightCone" ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Agahnim 1",
-                    "area": "Agahnims Tower",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Agahnims Tower Exit",
-                    "area": "Agahnims Tower",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Castle Tower - Room 03",
-                    "area": "Agahnims Tower",
-                    "nodeType": "item",
-                    "nodeItem": "KeyA1",
-                    "nodeAddress": "0xEAB5"
-                },
-                {
-                    "id": 4,
-                    "name": "Castle Tower - Dark Maze",
-                    "area": "Agahnims Tower",
-                    "nodeType": "item",
-                    "nodeItem": "KeyA1",
-                    "nodeAddress": "0xEAB2"
-                }
-            ]
+          "id": 1,
+          "name": "Agahnim 1",
+          "area": "Agahnims Tower",
+          "nodeType": "door"
         },
         {
-            "id": 89,
-            "name": "Agahnim 1",
-            "roomType": "Dungeon",
-            "requires": [
-                {"and": [
-                    "swords.swordless",
-                    {"or": [
-                        "Hammer",
-                        "BugCatchingNet"
-                    ]}
-                ]},
-                "canSlashCurtains",
-                "hasLightCone",
-                "KeyA1:2"
-            ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Agahnim 1",
-                    "area": "Agahnim 1",
-                    "nodeType": "event",
-                    "yields": "DefeatAgahnim1"
-                }
-            ]
+          "id": 2,
+          "name": "Agahnims Tower Exit",
+          "area": "Agahnims Tower",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Castle Tower - Room 03",
+          "area": "Agahnims Tower",
+          "nodeType": "item",
+          "nodeItem": "KeyA1",
+          "nodeAddress": "0xEAB5"
+        },
+        {
+          "id": 4,
+          "name": "Castle Tower - Dark Maze",
+          "area": "Agahnims Tower",
+          "nodeType": "item",
+          "nodeItem": "KeyA1",
+          "nodeAddress": "0xEAB2"
         }
-    ]
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Agahnim 1",
+      "roomType": "Dungeon",
+      "requires": [
+        {"and": [
+          "swords.swordless",
+          {"or": [
+            "Hammer",
+            "BugCatchingNet"
+          ]}
+        ]},
+        "canSlashCurtains",
+        "hasLightCone",
+        "KeyA1:2"
+      ],
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Agahnim 1",
+          "area": "Agahnim 1",
+          "nodeType": "event",
+          "yields": "DefeatAgahnim1"
+        }
+      ]
+    }
+  ]
 }

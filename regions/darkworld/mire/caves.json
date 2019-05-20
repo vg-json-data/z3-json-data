@@ -1,43 +1,43 @@
 {
-    "$schema": "../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 31,
+      "name": "Dark Desert Healer Fairy",
+      "roomType": "Cave",
+      "note": "Dark Desert Fairy",
+      "requires": ["isDarkLink"]
+    },
+    {
+      "id": 151,
+      "name": "Mire Shed",
+      "roomType": "Cave",
+      "nodes": [
         {
-            "id": 31,
-            "name": "Dark Desert Healer Fairy",
-            "roomType": "Cave",
-            "note": "Dark Desert Fairy",
-            "requires": [ "isDarkLink" ]
+          "id": 1,
+          "name": "Mire Shed - Left",
+          "area": "Mire Shed",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeAddress": "0xEA73",
+          "requires": ["isDarkLink"]
         },
         {
-            "id": 151,
-            "name": "Mire Shed",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Mire Shed - Left",
-                    "area": "Mire Shed",
-                    "nodeType": "item",
-                    "nodeItem": "PieceOfHeart",
-                    "nodeAddress": "0xEA73",
-                    "requires": [ "isDarkLink" ]
-                },
-                {
-                    "id": 2,
-                    "name": "Mire Shed - Right",
-                    "area": "Mire Shed",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEA76",
-                    "requires": [ "isDarkLink" ]
-                }
-            ]
-        },
-        {
-            "id": 152,
-            "name": "Dark Desert Hint",
-            "roomType": "Cave",
-            "requires": [ "isDarkLink" ]
+          "id": 2,
+          "name": "Mire Shed - Right",
+          "area": "Mire Shed",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEA76",
+          "requires": ["isDarkLink"]
         }
-    ]
+      ]
+    },
+    {
+      "id": 152,
+      "name": "Dark Desert Hint",
+      "roomType": "Cave",
+      "requires": ["isDarkLink"]
+    }
+  ]
 }

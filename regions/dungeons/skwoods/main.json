@@ -1,227 +1,234 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 174,
+      "name": "Skull Woods First Section",
+      "requires": [
+        "RescueZelda",
+        "isDarkLink"
+      ],
+      "note": "Also requires access to Northwest Dark World",
+      "roomType": "Dungeon",
+      "nodes": [
         {
-            "id": 174,
-            "name": "Skull Woods First Section",
-            "requires": [
-                "RescueZelda",
-                "isDarkLink"
-            ],
-            "note": "Also requires access to Northwest Dark World",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods First Section Exit",
-                    "area": "Skull Woods First Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods First Section Bomb Jump",
-                    "area": "Skull Woods First Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Skull Woods First Section South Door",
-                    "area": "Skull Woods First Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Skull Woods First Section West Door",
-                    "area": "Skull Woods First Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Skull Woods - Map Chest",
-                    "area": "Skull Woods First Section",
-                    "nodeType": "item",
-                    "nodeItem": "MapD3",
-                    "nodeAddress": "0xE99B"
-                }
-            ]
+          "id": 1,
+          "name": "Skull Woods First Section Exit",
+          "area": "Skull Woods First Section",
+          "nodeType": "door"
         },
         {
-            "id": 175,
-            "name": "Skull Woods First Section (Right)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods First Section (Right) North Door",
-                    "area": "Skull Woods First Section (Right)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods - Pinball Room",
-                    "area": "Skull Woods First Section (Right)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD3",
-                    "nodeAddress": "0xE9C8"
-                }
-            ]
+          "id": 2,
+          "name": "Skull Woods First Section Bomb Jump",
+          "area": "Skull Woods First Section",
+          "nodeType": "door"
         },
         {
-            "id": 176,
-            "name": "Skull Woods First Section (Left)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods First Section (Left) Door to Exit",
-                    "area": "Skull Woods First Section (Left)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods First Section (Left) Door to Right",
-                    "area": "Skull Woods First Section (Left)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Skull Woods - Compass Chest",
-                    "area": "Skull Woods First Section (Left)",
-                    "nodeType": "item",
-                    "nodeItem": "CompassD3",
-                    "nodeAddress": "0xE992"
-                },
-                {
-                    "id": 4,
-                    "name": "Skull Woods - Pot Prison",
-                    "area": "Skull Woods First Section (Left)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD3",
-                    "nodeAddress": "0xE9A1"
-                }
-            ]
+          "id": 3,
+          "name": "Skull Woods First Section South Door",
+          "area": "Skull Woods First Section",
+          "nodeType": "door"
         },
         {
-            "id": 177,
-            "name": "Skull Woods First Section (Top)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods First Section (Top) One-Way Path",
-                    "area": "Skull Woods First Section (Top)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods - Big Chest",
-                    "area": "Skull Woods First Section (Top)",
-                    "requires": [ "BigKeyD3 "],
-                    "nodeType": "item",
-                    "nodeItem": "FireRod",
-                    "nodeAddress": "0xE998"
-                }
-            ]
+          "id": 4,
+          "name": "Skull Woods First Section West Door",
+          "area": "Skull Woods First Section",
+          "nodeType": "door"
         },
         {
-            "id": 178,
-            "name": "Skull Woods Second Section (Drop)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods Second Section (Drop)",
-                    "area": "Skull Woods Second Section (Drop)",
-                    "nodeType": "drop"
-                }
-            ]
-        },
-        {
-            "id": 179,
-            "name": "Skull Woods Second Section",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods Second Section Exit (East)",
-                    "area": "Skull Woods Second Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods Second Section Exit (West)",
-                    "area": "Skull Woods Second Section",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Skull Woods - Big Key Chest",
-                    "area": "Skull Woods Second Section",
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyD3",
-                    "nodeAddress": "0xE99E"
-                }
-            ]
-        },
-        {
-            "id": 180,
-            "name": "Skull Woods Final Section (Entrance)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods Torch Room",
-                    "area": "Skull Woods Final Section (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods Final Section Exit",
-                    "area": "Skull Woods Final Section (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Skull Woods - Bridge Room",
-                    "area": "Skull Woods Final Section (Entrance)",
-                    "requires": [
-                        "isDarkLink",
-                        "FireRod"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyD3",
-                    "nodeAddress": "0xE9FE"
-                }
-            ]
-        },
-        {
-            "id": 181,
-            "name": "Skull Woods Final Section (Mothula)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Skull Woods - Mothula",
-                    "area": "Skull Woods Final Section (Mothula)",
-                    "requires": [
-                        "canSlashCurtains",
-                        "isDarkLink",
-                        "FireRod",
-                        "KeyD3:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BossHeartContainer",
-                    "nodeAddress": "0x180155"
-                },
-                {
-                    "id": 2,
-                    "name": "Skull Woods - Prize",
-                    "area": "Skull Woods Final Section (Mothula)",
-                    "nodeType": "item",
-                    "nodeItem": "Crystal3",
-                    "nodeAddress": ["0x120A3", "0x53F12", "0x53F13", "0x180058", "0x18007B", "0xC704"]
-                }
-            ]
+          "id": 5,
+          "name": "Skull Woods - Map Chest",
+          "area": "Skull Woods First Section",
+          "nodeType": "item",
+          "nodeItem": "MapD3",
+          "nodeAddress": "0xE99B"
         }
-    ]
+      ]
+    },
+    {
+      "id": 175,
+      "name": "Skull Woods First Section (Right)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods First Section (Right) North Door",
+          "area": "Skull Woods First Section (Right)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods - Pinball Room",
+          "area": "Skull Woods First Section (Right)",
+          "nodeType": "item",
+          "nodeItem": "KeyD3",
+          "nodeAddress": "0xE9C8"
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "name": "Skull Woods First Section (Left)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods First Section (Left) Door to Exit",
+          "area": "Skull Woods First Section (Left)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods First Section (Left) Door to Right",
+          "area": "Skull Woods First Section (Left)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Skull Woods - Compass Chest",
+          "area": "Skull Woods First Section (Left)",
+          "nodeType": "item",
+          "nodeItem": "CompassD3",
+          "nodeAddress": "0xE992"
+        },
+        {
+          "id": 4,
+          "name": "Skull Woods - Pot Prison",
+          "area": "Skull Woods First Section (Left)",
+          "nodeType": "item",
+          "nodeItem": "KeyD3",
+          "nodeAddress": "0xE9A1"
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Skull Woods First Section (Top)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods First Section (Top) One-Way Path",
+          "area": "Skull Woods First Section (Top)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods - Big Chest",
+          "area": "Skull Woods First Section (Top)",
+          "requires": ["BigKeyD3 "],
+          "nodeType": "item",
+          "nodeItem": "FireRod",
+          "nodeAddress": "0xE998"
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "name": "Skull Woods Second Section (Drop)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods Second Section (Drop)",
+          "area": "Skull Woods Second Section (Drop)",
+          "nodeType": "drop"
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "name": "Skull Woods Second Section",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods Second Section Exit (East)",
+          "area": "Skull Woods Second Section",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Second Section Exit (West)",
+          "area": "Skull Woods Second Section",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Skull Woods - Big Key Chest",
+          "area": "Skull Woods Second Section",
+          "nodeType": "item",
+          "nodeItem": "BigKeyD3",
+          "nodeAddress": "0xE99E"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "Skull Woods Final Section (Entrance)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods Torch Room",
+          "area": "Skull Woods Final Section (Entrance)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Final Section Exit",
+          "area": "Skull Woods Final Section (Entrance)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Skull Woods - Bridge Room",
+          "area": "Skull Woods Final Section (Entrance)",
+          "requires": [
+            "isDarkLink",
+            "FireRod"
+          ],
+          "nodeType": "item",
+          "nodeItem": "KeyD3",
+          "nodeAddress": "0xE9FE"
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "name": "Skull Woods Final Section (Mothula)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods - Mothula",
+          "area": "Skull Woods Final Section (Mothula)",
+          "requires": [
+            "canSlashCurtains",
+            "isDarkLink",
+            "FireRod",
+            "KeyD3:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeAddress": "0x180155"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods - Prize",
+          "area": "Skull Woods Final Section (Mothula)",
+          "nodeType": "item",
+          "nodeItem": "Crystal3",
+          "nodeAddress": [
+            "0x120A3",
+            "0x53F12",
+            "0x53F13",
+            "0x180058",
+            "0x18007B",
+            "0xC704"
+          ]
+        }
+      ]
+    }
+  ]
 }

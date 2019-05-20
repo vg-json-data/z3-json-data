@@ -1,105 +1,105 @@
 {
-    "$schema": "../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 29,
+      "name": "Dark Lake Hylia Healer Fairy",
+      "roomType": "Cave"
+    },
+    {
+      "id": 119,
+      "name": "Palace of Darkness Hint",
+      "roomType": "Cave",
+      "requires": ["isDarkLink"]
+    },
+    {
+      "id": 120,
+      "name": "East Dark World Hint",
+      "roomType": "Cave",
+      "requires": ["isDarkLink"]
+    },
+    {
+      "id": 138,
+      "name": "Dark World Potion Shop",
+      "roomType": "Cave",
+      "requires": [
+        "isDarkLink",
+        {"or": [
+          "canLiftRocks",
+          "canSwim",
+          "Hammer"
+        ]}
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Pyramid Fairy",
+      "roomType": "Cave",
+      "requires": [
+        "hasSword",
+        "Crystal5",
+        "Crystal6",
+        "isDarkLink",
+        {"or": [
+          "Hammer",
+          {"and": [
+            "canMirror",
+            "DefeatAgahnim1"
+          ]}
+        ]}
+      ],
+      "note": "Also requires access to South Dark World",
+      "nodes": [
         {
-            "id": 29,
-            "name": "Dark Lake Hylia Healer Fairy",
-            "roomType": "Cave"
+          "id": 1,
+          "name": "Pyramid Fairy - Left",
+          "area": "Pyramid Fairy",
+          "nodeType": "item",
+          "nodeItem": "L4Sword",
+          "nodeAddress": "0xE980"
         },
         {
-            "id": 119,
-            "name": "Palace of Darkness Hint",
-            "roomType": "Cave",
-            "requires": [ "isDarkLink" ]
-        },
-        {
-            "id": 120,
-            "name": "East Dark World Hint",
-            "roomType": "Cave",
-            "requires": [ "isDarkLink" ]
-        },
-        {
-            "id": 138,
-            "name": "Dark World Potion Shop",
-            "roomType": "Cave",
-            "requires": [
-                "isDarkLink",
-                {"or": [
-                    "canLiftRocks",
-                    "canSwim",
-                    "Hammer"
-                ]}
-            ]
-        },
-        {
-            "id": 140,
-            "name": "Pyramid Fairy",
-            "roomType": "Cave",
-            "requires": [
-                "hasSword",
-                "Crystal5",
-                "Crystal6",
-                "isDarkLink",
-                {"or": [
-                    "Hammer",
-                    {"and": [
-                        "canMirror",
-                        "DefeatAgahnim1"
-                    ]}
-                ]}
-            ],
-            "note": "Also requires access to South Dark World",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Pyramid Fairy - Left",
-                    "area": "Pyramid Fairy",
-                    "nodeType": "item",
-                    "nodeItem": "L4Sword",
-                    "nodeAddress": "0xE980"
-                },
-                {
-                    "id": 2,
-                    "name": "Pyramid Fairy - Right",
-                    "area": "Pyramid Fairy",
-                    "nodeType": "item",
-                    "nodeItem": "SilverArrowUpgrade",
-                    "nodeAddress": "0xE983"
-                }
-            ]
-        },
-        {
-            "id": 221,
-            "name": "Pyramid",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganon Drop",
-                    "area": "Pyramid",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganon",
-                    "area": "Pyramid",
-                    "nodeType": "item",
-                    "nodeItem": "Triforce"
-                }
-            ]
-        },
-        {
-            "id": 222,
-            "name": "Bottom of Pyramid",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Pyramid Exit",
-                    "area": "Bottom of Pyramid",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 2,
+          "name": "Pyramid Fairy - Right",
+          "area": "Pyramid Fairy",
+          "nodeType": "item",
+          "nodeItem": "SilverArrowUpgrade",
+          "nodeAddress": "0xE983"
         }
-    ]
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Pyramid",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganon Drop",
+          "area": "Pyramid",
+          "nodeType": "drop"
+        },
+        {
+          "id": 2,
+          "name": "Ganon",
+          "area": "Pyramid",
+          "nodeType": "item",
+          "nodeItem": "Triforce"
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "Bottom of Pyramid",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Exit",
+          "area": "Bottom of Pyramid",
+          "nodeType": "door"
+        }
+      ]
+    }
+  ]
 }

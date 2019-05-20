@@ -1,205 +1,212 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 166,
+      "name": "Swamp Palace (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "canMirror",
+        "canSwim",
+        "isDarkLink"
+      ],
+      "note": "Also requires access to South Dark World",
+      "roomType": "Dungeon",
+      "nodes": [
         {
-            "id": 166,
-            "name": "Swamp Palace (Entrance)",
-            "requires": [
-                "RescueZelda",
-                "canMirror",
-                "canSwim",
-                "isDarkLink"
-            ],
-            "note": "Also requires access to South Dark World",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Swamp Palace Moat",
-                    "area": "Swamp Palace (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Swamp Palace Exit",
-                    "area": "Swamp Palace (Entrance)",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 1,
+          "name": "Swamp Palace Moat",
+          "area": "Swamp Palace (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 167,
-            "name": "Swamp Palace (First Room)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Swamp Palace Small Key Door",
-                    "area": "Swamp Palace (First Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Swamp Palace - Entrance",
-                    "area": "Swamp Palace (First Room)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD2",
-                    "nodeAddress": "0xEA9D"
-                }
-            ]
-        },
-        {
-            "id": 168,
-            "name": "Swamp Palace (Starting Area)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Swamp Palace (Center)",
-                    "area": "Swamp Palace (Starting Area)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Swamp Palace - Map Chest",
-                    "area": "Swamp Palace (Starting Area)",
-                    "requires": [
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "MapD2",
-                    "nodeAddress": "0xE986"
-                }
-            ]
-        },
-        {
-            "id": 169,
-            "name": "Swamp Palace (Center)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Swamp Palace (North)",
-                    "area": "Swamp Palace (Center)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Swamp Palace - Big Chest",
-                    "area": "Swamp Palace (Center)",
-                    "requires": [
-                        "Hammer",
-                        "BigKeyD2",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "Hookshot",
-                    "nodeAddress": "0xE989"
-                },
-                {
-                    "id": 3,
-                    "name": "Swamp Palace - Compass Chest",
-                    "area": "Swamp Palace (Center)",
-                    "requires": [
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "CompassD2",
-                    "nodeAddress": "0xEAA0"
-                },
-                {
-                    "id": 4,
-                    "name": "Swamp Palace - Big Key Chest",
-                    "area": "Swamp Palace (Center)",
-                    "requires": [
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyD2",
-                    "nodeAddress": "0xEAA6"
-                },
-                {
-                    "id": 5,
-                    "name": "Swamp Palace - West Chest",
-                    "area": "Swamp Palace (Center)",
-                    "requires": [
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAA3"
-                }
-            ]
-        },
-        {
-            "id": 170,
-            "name": "Swamp Palace (North)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Swamp Palace - Flooded Room - Left",
-                    "area": "Swamp Palace (North)",
-                    "requires": [
-                        "canGrapple",
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAA9"
-                },
-                {
-                    "id": 2,
-                    "name": "Swamp Palace - Flooded Room - Right",
-                    "area": "Swamp Palace (North)",
-                    "requires": [
-                        "canGrapple",
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAAC"
-                },
-                {
-                    "id": 3,
-                    "name": "Swamp Palace - Waterfall Room",
-                    "area": "Swamp Palace (North)",
-                    "requires": [
-                        "canGrapple",
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAAF"
-                },
-                {
-                    "id": 4,
-                    "name": "Swamp Palace - Arrghus",
-                    "area": "Swamp Palace (North)",
-                    "requires": [
-                        "canGrapple",
-                        "Hammer",
-                        "KeyD2"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BossHeartContainer",
-                    "nodeAddress": "0x180154"
-                },
-                {
-                    "id": 5,
-                    "name": "Swamp Palace - Prize",
-                    "area": "Swamp Palace (North)",
-                    "nodeType": "item",
-                    "nodeItem": "Crystal2",
-                    "nodeAddress": ["0x120A0", "0x53F6C", "0x53F6D", "0x180055", "0x180071", "0xC701"]
-                }
-            ]
+          "id": 2,
+          "name": "Swamp Palace Exit",
+          "area": "Swamp Palace (Entrance)",
+          "nodeType": "door"
         }
-    ]
+      ]
+    },
+    {
+      "id": 167,
+      "name": "Swamp Palace (First Room)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Swamp Palace Small Key Door",
+          "area": "Swamp Palace (First Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Swamp Palace - Entrance",
+          "area": "Swamp Palace (First Room)",
+          "nodeType": "item",
+          "nodeItem": "KeyD2",
+          "nodeAddress": "0xEA9D"
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "name": "Swamp Palace (Starting Area)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Swamp Palace (Center)",
+          "area": "Swamp Palace (Starting Area)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Swamp Palace - Map Chest",
+          "area": "Swamp Palace (Starting Area)",
+          "requires": [
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "MapD2",
+          "nodeAddress": "0xE986"
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "name": "Swamp Palace (Center)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Swamp Palace (North)",
+          "area": "Swamp Palace (Center)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Swamp Palace - Big Chest",
+          "area": "Swamp Palace (Center)",
+          "requires": [
+            "Hammer",
+            "BigKeyD2",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "Hookshot",
+          "nodeAddress": "0xE989"
+        },
+        {
+          "id": 3,
+          "name": "Swamp Palace - Compass Chest",
+          "area": "Swamp Palace (Center)",
+          "requires": [
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "CompassD2",
+          "nodeAddress": "0xEAA0"
+        },
+        {
+          "id": 4,
+          "name": "Swamp Palace - Big Key Chest",
+          "area": "Swamp Palace (Center)",
+          "requires": [
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BigKeyD2",
+          "nodeAddress": "0xEAA6"
+        },
+        {
+          "id": 5,
+          "name": "Swamp Palace - West Chest",
+          "area": "Swamp Palace (Center)",
+          "requires": [
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAA3"
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "name": "Swamp Palace (North)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Swamp Palace - Flooded Room - Left",
+          "area": "Swamp Palace (North)",
+          "requires": [
+            "canGrapple",
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAA9"
+        },
+        {
+          "id": 2,
+          "name": "Swamp Palace - Flooded Room - Right",
+          "area": "Swamp Palace (North)",
+          "requires": [
+            "canGrapple",
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAAC"
+        },
+        {
+          "id": 3,
+          "name": "Swamp Palace - Waterfall Room",
+          "area": "Swamp Palace (North)",
+          "requires": [
+            "canGrapple",
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAAF"
+        },
+        {
+          "id": 4,
+          "name": "Swamp Palace - Arrghus",
+          "area": "Swamp Palace (North)",
+          "requires": [
+            "canGrapple",
+            "Hammer",
+            "KeyD2"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeAddress": "0x180154"
+        },
+        {
+          "id": 5,
+          "name": "Swamp Palace - Prize",
+          "area": "Swamp Palace (North)",
+          "nodeType": "item",
+          "nodeItem": "Crystal2",
+          "nodeAddress": [
+            "0x120A0",
+            "0x53F6C",
+            "0x53F6D",
+            "0x180055",
+            "0x180071",
+            "0xC701"
+          ]
+        }
+      ]
+    }
+  ]
 }
