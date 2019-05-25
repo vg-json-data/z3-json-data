@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 88,
@@ -59,7 +59,7 @@
           "name": "Agahnim 1",
           "area": "Agahnim 1",
           "nodeType": "event",
-          "yields": "DefeatAgahnim1"
+          "yields": ["DefeatAgahnim1"]
         }
       ]
     }

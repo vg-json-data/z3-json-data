@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/miketrethewey/z3-json-data/master/schema/z3-connection.schema.json",
+  "type": "object",
+  "title": "Link to the PAst Connection Pathway Schema",
+  "description": "A list of connections between rooms, comprised of two nodes each",
+  "properties": {
+    "connections": {
+      "type": "array",
+      "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "An object that describes one connection between two Link to the Past rooms",
+        "required": [
+          "connectionType",
+          "nodes"
+        ],
+        "properties": {
+          "connectionType": {
+            "$id": "#/items/properties/connectionType",
+            "type": "string",
+            "title": "Connection Type",
+            "examples": [
+              "Horizontal Overworld Transition",
+              "Vertical Overworld Transition",
+              "Horizontal Door",
+              "Vertical Door"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "description": {
+            "$id": "#/items/properties/description",
+            "type": "string",
+            "title": "Connection description",
+            "description": "A textual description of the connection",
+            "default": "",
+            "pattern": "^(.*)$"
+          },
+          "nodes": {
+            "$id": "#/items/properties/nodes",
+            "type": "array",
+            "title": "Connection nodes",
+            "description": "An array of 2 nodes that each represent one end of a Connection.",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "$id": "#/items/properties/nodes/items",
+              "type": "object",
+              "title": "Connection Node",
+              "description": "A node that represents one end of a Connection. This is most often a door",
+              "required": [
+                "roomid",
+                "nodeid",
+                "position"
+              ],
+              "properties": {
+                "area": {
+                  "$id": "#/items/properties/nodes/items/properties/area",
+                  "type": "string",
+                  "title": "Area Name",
+                  "default": "",
+                  "examples": [
+                    "Light World"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "roomid": {
+                  "$id": "#/items/properties/nodes/items/properties/roomid",
+                  "type": "integer",
+                  "title": "Room ID",
+                  "description": "ID of the room in which the node exists",
+                  "examples": [
+                    38
+                  ]
+                },
+                "nodeid": {
+                  "$id": "#/items/properties/nodes/items/properties/nodeid",
+                  "type": "integer",
+                  "title": "Node ID",
+                  "description": "ID of the node within the room in which it exists",
+                  "examples": [
+                    1
+                  ]
+                },
+                "position": {
+                  "$id": "#/items/properties/nodes/items/properties/position",
+                  "type": "string",
+                  "title": "Node position",
+                  "description": "The position of a node within a connection",
+                  "examples": [
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

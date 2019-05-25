@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 3,
@@ -240,7 +240,7 @@
           "area": "Blacksmiths Hut",
           "requires": [ "canLiftDarkRocks" ],
           "nodeType": "event",
-          "yields": "RescueBlacksmith"
+          "yields": ["RescueBlacksmith"]
         }
       ]
     },
