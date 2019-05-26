@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 209,
@@ -34,7 +34,7 @@
           "id": 5,
           "name": "Ganons Tower - Bob's Torch",
           "area": "Ganons Tower (Entrance)",
-          "requires": ["canDash"],
+          "requires": [ "canDash" ],
           "nodeType": "item",
           "nodeItem": "KeyA2",
           "nodeAddress": "0x180161"
@@ -72,7 +72,7 @@
           "id": 2,
           "name": "Ganons Tower - Tile Room",
           "area": "Ganons Tower (Tile Room)",
-          "requires": ["CaneOfSomaria"],
+          "requires": [ "CaneOfSomaria" ],
           "nodeType": "item",
           "nodeItem": "KeyA2",
           "nodeAddress": "0xEAE2"

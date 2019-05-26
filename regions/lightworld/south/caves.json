@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 10,
@@ -11,7 +11,7 @@
           "name": "Floodgate",
           "area": "Dam",
           "nodeType": "event",
-          "yields": "DrainedFloodgate"
+          "yields": [ "DrainedFloodgate" ]
         },
         {
           "id": 2,

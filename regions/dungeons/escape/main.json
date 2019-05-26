@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 83,
@@ -111,7 +111,7 @@
           "id": 3,
           "name": "Sewers - Secret Room - Left",
           "area": "Sewers",
-          "requires": ["KeyH2"],
+          "requires": [ "KeyH2" ],
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
           "nodeAddress": "0xEB5D"
@@ -120,7 +120,7 @@
           "id": 4,
           "name": "Sewers - Secret Room - Middle",
           "area": "Sewers",
-          "requires": ["KeyH2"],
+          "requires": [ "KeyH2" ],
           "nodeType": "item",
           "nodeItem": "ThreeHundredRupees",
           "nodeAddress": "0xEB60"
@@ -129,7 +129,7 @@
           "id": 5,
           "name": "Sewers - Secret Room - Right",
           "area": "Sewers",
-          "requires": ["KeyH2"],
+          "requires": [ "KeyH2" ],
           "nodeType": "item",
           "nodeItem": "TenArrows",
           "nodeAddress": "0xEB63"
@@ -151,7 +151,7 @@
           "id": 2,
           "name": "Sanctuary",
           "area": "Sanctuary",
-          "requires": ["KeyH2"],
+          "requires": [ "KeyH2" ],
           "nodeType": "item",
           "nodeItem": "SanctuaryHeart",
           "nodeAddress": "0xEA79"

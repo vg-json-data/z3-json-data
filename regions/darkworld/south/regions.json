@@ -22,7 +22,7 @@
           "id": 3,
           "name": "Swamp Palace",
           "area": "South Dark World",
-          "requires": ["DrainedFloodgate"],
+          "requires": [ "DrainedFloodgate" ],
           "nodeType": "door"
         },
         {

@@ -1,11 +1,11 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 88,
       "name": "Agahnims Tower",
       "roomType": "Dungeon",
-      "requires": ["hasLightCone"],
+      "requires": [ "hasLightCone" ],
       "nodes": [
         {
           "id": 1,
@@ -59,7 +59,7 @@
           "name": "Agahnim 1",
           "area": "Agahnim 1",
           "nodeType": "event",
-          "yields": "DefeatAgahnim1"
+          "yields": [ "DefeatAgahnim1" ]
         }
       ]
     }

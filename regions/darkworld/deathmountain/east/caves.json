@@ -31,7 +31,7 @@
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
           "nodeAddress": "0xEA7C",
-          "requires": ["isDarkLink"]
+          "requires": [ "isDarkLink" ]
         },
         {
           "id": 4,
@@ -40,7 +40,7 @@
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
           "nodeAddress": "0xEA7F",
-          "requires": ["isDarkLink"]
+          "requires": [ "isDarkLink" ]
         }
       ]
     },

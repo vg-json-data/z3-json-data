@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 74,
@@ -45,7 +45,7 @@
           "id": 5,
           "name": "Desert Palace - Big Chest",
           "area": "Desert Palace Main (Outer)",
-          "requires": ["BigKeyP2"],
+          "requires": [ "BigKeyP2" ],
           "nodeType": "item",
           "nodeItem": "PowerGlove",
           "nodeAddress": "0xE98F"
@@ -54,7 +54,7 @@
           "id": 6,
           "name": "Desert Palace - Torch",
           "area": "Desert Palace Main (Outer)",
-          "requires": ["canDash"],
+          "requires": [ "canDash" ],
           "nodeType": "item",
           "nodeItem": "KeyP2",
           "nodeAddress": "0x180160"
@@ -97,7 +97,7 @@
           "id": 1,
           "name": "Desert Palace - Compass Chest",
           "area": "Desert Palace East",
-          "requires": ["KeyP2"],
+          "requires": [ "KeyP2" ],
           "nodeType": "item",
           "nodeItem": "CompassP2",
           "nodeAddress": "0xE9CB"
@@ -106,7 +106,7 @@
           "id": 2,
           "name": "Desert Palace - Big Key Chest",
           "area": "Desert Palace East",
-          "requires": ["KeyP2"],
+          "requires": [ "KeyP2" ],
           "nodeType": "item",
           "nodeItem": "BigKeyP2",
           "nodeAddress": "0xE9C2"

@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 171,
@@ -98,7 +98,7 @@
           "id": 4,
           "name": "Thieves' Town - Blind's Cell",
           "area": "Thieves Town (Deep)",
-          "requires": ["BigKeyD4"],
+          "requires": [ "BigKeyD4" ],
           "nodeType": "item",
           "nodeItem": "KeyD4",
           "nodeAddress": "0xEA13"

@@ -10,7 +10,7 @@
       "id": 135,
       "name": "Village of Outcasts Shop",
       "roomType": "Cave",
-      "requires": ["Hammer"],
+      "requires": [ "Hammer" ],
       "note": "Dark World Outcasts Shop"
     },
     {

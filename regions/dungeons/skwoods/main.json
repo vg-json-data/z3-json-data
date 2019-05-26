@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-region.schema.json",
+  "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
       "id": 174,
@@ -116,7 +116,7 @@
           "id": 2,
           "name": "Skull Woods - Big Chest",
           "area": "Skull Woods First Section (Top)",
-          "requires": ["BigKeyD3 "],
+          "requires": [ "BigKeyD3 " ],
           "nodeType": "item",
           "nodeItem": "FireRod",
           "nodeAddress": "0xE998"
