@@ -49,8 +49,6 @@
               "title": "Connection Node",
               "description": "A node that represents one end of a Connection. This is most often a door",
               "required": [
-                "roomid",
-                "nodeid",
                 "position"
               ],
               "properties": {

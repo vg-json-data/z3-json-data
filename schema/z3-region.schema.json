@@ -13,9 +13,7 @@
         "description": "An object that describes one contiguous area without transitions in Link to the Past",
         "required": [
           "id",
-          "name",
-          "nodes",
-          "links"
+          "name"
         ],
         "properties": {
           "id": {
@@ -100,7 +98,8 @@
                     "exit",
                     "event",
                     "item",
-                    "junction"
+                    "junction",
+                    "obstacle"
                   ],
                   "pattern": "^(.*)$"
                 },
@@ -112,7 +111,7 @@
                 },
                 "nodeAddress": {
                   "$id": "#/items/properties/nodes/items/properties/nodeAddress",
-                  "type": "string",
+                  "type": ["string", "array"],
                   "title": "Memory Address",
                   "description": "Memory address of this location"
                 },
