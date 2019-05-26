@@ -1,119 +1,119 @@
 {
-    "$schema": "../../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 59,
+      "name": "Cave Shop (Dark Death Mountain)",
+      "roomType": "Cave",
+      "note": "Dark World Death Mountain Shop"
+    },
+    {
+      "id": 158,
+      "name": "Superbunny Cave",
+      "roomType": "Cave",
+      "nodes": [
         {
-            "id": 59,
-            "name": "Cave Shop (Dark Death Mountain)",
-            "roomType": "Cave",
-            "note": "Dark World Death Mountain Shop"
+          "id": 1,
+          "name": "Superbunny Cave Exit (Top)",
+          "area": "Superbunny Cave",
+          "nodeType": "door"
         },
         {
-            "id": 158,
-            "name": "Superbunny Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Superbunny Cave Exit (Top)",
-                    "area": "Superbunny Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Superbunny Cave Exit (Bottom)",
-                    "area": "Superbunny Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Superbunny Cave - Top",
-                    "area": "Superbunny Cave",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEA7C",
-                    "requires": [ "isDarkLink" ]
-                },
-                {
-                    "id": 4,
-                    "name": "Superbunny Cave - Bottom",
-                    "area": "Superbunny Cave",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEA7F",
-                    "requires": [ "isDarkLink" ]
-                }
-            ]
+          "id": 2,
+          "name": "Superbunny Cave Exit (Bottom)",
+          "area": "Superbunny Cave",
+          "nodeType": "door"
         },
         {
-            "id": 160,
-            "name": "Hookshot Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Hookshot Cave Exit (South)",
-                    "area": "Hookshot Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Hookshot Cave Exit (North)",
-                    "area": "Hookshot Cave",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Hookshot Cave - Top Right",
-                    "area": "Hookshot Cave",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEB51",
-                    "requires": [
-                        "isDarkLink",
-                        "Hookshot"
-                    ]
-                },
-                {
-                    "id": 4,
-                    "name": "Hookshot Cave - Top Left",
-                    "area": "Hookshot Cave",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEB54",
-                    "requires": [
-                        "isDarkLink",
-                        "Hookshot"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "name": "Hookshot Cave - Bottom Right",
-                    "area": "Hookshot Cave",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEB5A",
-                    "requires": [
-                        "isDarkLink",
-                        {"or": [
-                            "canDash",
-                            "Hookshot"
-                        ]},
-                    ],
-                    "note": "Hookshot Cave - Bonk Chest"
-                },
-                {
-                    "id": 6,
-                    "name": "Hookshot Cave - Bottom Left",
-                    "area": "Hookshot Cave",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEB57",
-                    "requires": [
-                        "isDarkLink",
-                        "Hookshot"
-                    ]
-                }
-            ]
+          "id": 3,
+          "name": "Superbunny Cave - Top",
+          "area": "Superbunny Cave",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEA7C",
+          "requires": ["isDarkLink"]
+        },
+        {
+          "id": 4,
+          "name": "Superbunny Cave - Bottom",
+          "area": "Superbunny Cave",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEA7F",
+          "requires": ["isDarkLink"]
         }
-    ]
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Hookshot Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hookshot Cave Exit (South)",
+          "area": "Hookshot Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Hookshot Cave Exit (North)",
+          "area": "Hookshot Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Hookshot Cave - Top Right",
+          "area": "Hookshot Cave",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEB51",
+          "requires": [
+            "isDarkLink",
+            "Hookshot"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Hookshot Cave - Top Left",
+          "area": "Hookshot Cave",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEB54",
+          "requires": [
+            "isDarkLink",
+            "Hookshot"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Hookshot Cave - Bottom Right",
+          "area": "Hookshot Cave",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEB5A",
+          "requires": [
+            "isDarkLink",
+            {"or": [
+              "canDash",
+              "Hookshot"
+            ]}
+          ],
+          "note": "Hookshot Cave - Bonk Chest"
+        },
+        {
+          "id": 6,
+          "name": "Hookshot Cave - Bottom Left",
+          "area": "Hookshot Cave",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEB57",
+          "requires": [
+            "isDarkLink",
+            "Hookshot"
+          ]
+        }
+      ]
+    }
+  ]
 }

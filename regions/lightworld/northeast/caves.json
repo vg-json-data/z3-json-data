@@ -1,134 +1,134 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 4,
+      "name": "Hyrule Castle Secret Entrance",
+      "roomType": "Cave",
+      "nodes": [
         {
-            "id": 4,
-            "name": "Hyrule Castle Secret Entrance",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Hyrule Castle Secret Entrance Exit",
-                    "area": "Hyrule Castle Secret Entrance",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Link's Uncle",
-                    "area": "Hyrule Castle Secret Entrance",
-                    "nodeType": "item",
-                    "nodeItem": "L1Sword",
-                    "nodeAddress": "0x2DF45"
-                },
-                {
-                    "id": 3,
-                    "name": "Secret Passage",
-                    "area": "Hyrule Castle Secret Entrance",
-                    "nodeType": "item",
-                    "nodeItem": "Lamp",
-                    "nodeAddress": "0xE971"
-                }
-            ]
+          "id": 1,
+          "name": "Hyrule Castle Secret Entrance Exit",
+          "area": "Hyrule Castle Secret Entrance",
+          "nodeType": "door"
         },
         {
-            "id": 6,
-            "name": "Waterfall of Wishing",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Waterfall Fairy - Left",
-                    "area": "Waterfall of Wishing",
-                    "nodeType": "item",
-                    "nodeItem": "RedBoomerang",
-                    "nodeAddress": "0xE9B0"
-                },
-                {
-                    "id": 2,
-                    "name": "Waterfall Fairy - Right",
-                    "area": "Waterfall of Wishing",
-                    "nodeType": "item",
-                    "nodeItem": "FireShield",
-                    "nodeAddress": "0xE9D1"
-                }
-            ]
+          "id": 2,
+          "name": "Link's Uncle",
+          "area": "Hyrule Castle Secret Entrance",
+          "nodeType": "item",
+          "nodeItem": "L1Sword",
+          "nodeAddress": "0x2DF45"
         },
         {
-            "id": 9,
-            "name": "North Fairy Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "North Fairy Cave Exit",
-                    "area": "North Fairy Cave",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 26,
-            "name": "Lake Hylia Healer Fairy",
-            "roomType": "Cave"
-        },
-        {
-            "id": 35,
-            "name": "Sahasrahlas Hut",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Sahasrahla's Hut - Left",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEA82"
-                },
-                {
-                    "id": 2,
-                    "name": "Sahasrahla's Hut - Middle",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEA85"
-                },
-                {
-                    "id": 3,
-                    "name": "Sahasrahla's Hut - Right",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item",
-                    "nodeItem": "FiftyRupees",
-                    "nodeAddress": "0xEA88"
-                },
-                {
-                    "id": 4,
-                    "name": "Sahasrahla",
-                    "area": "Sahasrahlas Hut",
-                    "nodeType": "item",
-                    "nodeItem": "PegasusBoots",
-                    "nodeAddress": "0x2F1FC"
-                }
-            ]
-        },
-        {
-            "id": 53,
-            "name": "Long Fairy Cave",
-            "roomType": "Cave"
-        },
-        {
-            "id": 63,
-            "name": "Potion Shop",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Potion Shop",
-                    "area": "Potion Shop",
-                    "nodeType": "item",
-                    "nodeItem": "Powder",
-                    "nodeAddress": "0x180014"
-                }
-            ]
+          "id": 3,
+          "name": "Secret Passage",
+          "area": "Hyrule Castle Secret Entrance",
+          "nodeType": "item",
+          "nodeItem": "Lamp",
+          "nodeAddress": "0xE971"
         }
-    ]
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Waterfall of Wishing",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Waterfall Fairy - Left",
+          "area": "Waterfall of Wishing",
+          "nodeType": "item",
+          "nodeItem": "RedBoomerang",
+          "nodeAddress": "0xE9B0"
+        },
+        {
+          "id": 2,
+          "name": "Waterfall Fairy - Right",
+          "area": "Waterfall of Wishing",
+          "nodeType": "item",
+          "nodeItem": "FireShield",
+          "nodeAddress": "0xE9D1"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "North Fairy Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "North Fairy Cave Exit",
+          "area": "North Fairy Cave",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Lake Hylia Healer Fairy",
+      "roomType": "Cave"
+    },
+    {
+      "id": 35,
+      "name": "Sahasrahlas Hut",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Sahasrahla's Hut - Left",
+          "area": "Sahasrahlas Hut",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEA82"
+        },
+        {
+          "id": 2,
+          "name": "Sahasrahla's Hut - Middle",
+          "area": "Sahasrahlas Hut",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEA85"
+        },
+        {
+          "id": 3,
+          "name": "Sahasrahla's Hut - Right",
+          "area": "Sahasrahlas Hut",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeAddress": "0xEA88"
+        },
+        {
+          "id": 4,
+          "name": "Sahasrahla",
+          "area": "Sahasrahlas Hut",
+          "nodeType": "item",
+          "nodeItem": "PegasusBoots",
+          "nodeAddress": "0x2F1FC"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Long Fairy Cave",
+      "roomType": "Cave"
+    },
+    {
+      "id": 63,
+      "name": "Potion Shop",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Potion Shop",
+          "area": "Potion Shop",
+          "nodeType": "item",
+          "nodeItem": "Powder",
+          "nodeAddress": "0x180014"
+        }
+      ]
+    }
+  ]
 }

@@ -1,100 +1,100 @@
 {
-    "$schema": "../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 25,
+      "name": "Bonk Fairy (Dark)",
+      "roomType": "Cave",
+      "requires": ["canDash"]
+    },
+    {
+      "id": 30,
+      "name": "Dark Lake Hylia Ledge Healer Fairy",
+      "roomType": "Cave",
+      "requires": [
+        "canBombThings",
+        "canSwim"
+      ],
+      "note": "Dark Lake Hylia Ledge Fairy"
+    },
+    {
+      "id": 122,
+      "name": "Big Bomb Shop",
+      "roomType": "Cave"
+    },
+    {
+      "id": 123,
+      "name": "Archery Game",
+      "roomType": "Cave"
+    },
+    {
+      "id": 127,
+      "name": "Dark Lake Hylia Ledge Hint",
+      "roomType": "Cave",
+      "requires": ["canSwim"]
+    },
+    {
+      "id": 128,
+      "name": "Dark Lake Hylia Ledge Spike Cave",
+      "roomType": "Cave",
+      "requires": [
+        "canSwim",
+        "canLiftRocks"
+      ]
+    },
+    {
+      "id": 129,
+      "name": "Hype Cave",
+      "roomType": "Cave",
+      "requires": ["canBombThings"],
+      "nodes": [
         {
-            "id": 25,
-            "name": "Bonk Fairy (Dark)",
-            "roomType": "Cave",
-            "requires": [ "canDash" ]
+          "id": 1,
+          "name": "Hype Cave - Top",
+          "area": "Hype Cave",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB1E"
         },
         {
-            "id": 30,
-            "name": "Dark Lake Hylia Ledge Healer Fairy",
-            "roomType": "Cave",
-            "requires": [
-                "canBombThings",
-                "canSwim"
-            ],
-            "note": "Dark Lake Hylia Ledge Fairy"
+          "id": 2,
+          "name": "Hype Cave - Middle Right",
+          "area": "Hype Cave",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB21"
         },
         {
-            "id": 122,
-            "name": "Big Bomb Shop",
-            "roomType": "Cave"
+          "id": 3,
+          "name": "Hype Cave - Middle Left",
+          "area": "Hype Cave",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB24"
         },
         {
-            "id": 123,
-            "name": "Archery Game",
-            "roomType": "Cave"
+          "id": 4,
+          "name": "Hype Cave - Bottom",
+          "area": "Hype Cave",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB27"
         },
         {
-            "id": 127,
-            "name": "Dark Lake Hylia Ledge Hint",
-            "roomType": "Cave",
-            "requires": [ "canSwim" ]
-        },
-        {
-            "id": 128,
-            "name": "Dark Lake Hylia Ledge Spike Cave",
-            "roomType": "Cave",
-            "requires": [
-                "canSwim",
-                "canLiftRocks"
-            ]
-        },
-        {
-            "id": 129,
-            "name": "Hype Cave",
-            "roomType": "Cave",
-            "requires": [ "canBombThings" ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Hype Cave - Top",
-                    "area": "Hype Cave",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB1E"
-                },
-                {
-                    "id": 2,
-                    "name": "Hype Cave - Middle Right",
-                    "area": "Hype Cave",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB21"
-                },
-                {
-                    "id": 3,
-                    "name": "Hype Cave - Middle Left",
-                    "area": "Hype Cave",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB24"
-                },
-                {
-                    "id": 4,
-                    "name": "Hype Cave - Bottom",
-                    "area": "Hype Cave",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB27"
-                },
-                {
-                    "id": 5,
-                    "name": "Hype Cave - Generous Guy",
-                    "area": "Hype Cave",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeHundredRupees",
-                    "nodeAddress": "0x180011",
-                    "note": "Hype Cave - NPC"
-                }
-            ]
-        },
-        {
-            "id": 136,
-            "name": "Dark Lake Hylia Shop",
-            "roomType": "Cave"
+          "id": 5,
+          "name": "Hype Cave - Generous Guy",
+          "area": "Hype Cave",
+          "nodeType": "item",
+          "nodeItem": "ThreeHundredRupees",
+          "nodeAddress": "0x180011",
+          "note": "Hype Cave - NPC"
         }
-    ]
+      ]
+    },
+    {
+      "id": 136,
+      "name": "Dark Lake Hylia Shop",
+      "roomType": "Cave"
+    }
+  ]
 }

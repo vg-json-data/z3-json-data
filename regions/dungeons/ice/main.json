@@ -1,189 +1,196 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 182,
+      "name": "Ice Palace (Entrance)",
+      "requires": [
+        "canLiftDarkRocks",
+        "canMeltThings",
+        "canSwim",
+        "RescueZelda"
+      ],
+      "roomType": "Dungeon",
+      "nodes": [
         {
-            "id": 182,
-            "name": "Ice Palace (Entrance)",
-            "requires": [
-                "canLiftDarkRocks",
-                "canMeltThings",
-                "canSwim",
-                "RescueZelda"
-            ],
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace Entrance Room",
-                    "area": "Ice Palace (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ice Palace Exit",
-                    "area": "Ice Palace (Entrance)",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 1,
+          "name": "Ice Palace Entrance Room",
+          "area": "Ice Palace (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 183,
-            "name": "Ice Palace (Main)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace (East)",
-                    "area": "Ice Palace (Main)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ice Palace (Kholdstare)",
-                    "area": "Ice Palace (Main)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Ice Palace - Compass Chest",
-                    "area": "Ice Palace (Main)",
-                    "nodeType": "item",
-                    "nodeItem": "CompassD5",
-                    "nodeAddress": "0xE9D4"
-                },
-                {
-                    "id": 4,
-                    "name": "Ice Palace - Freezor Chest",
-                    "area": "Ice Palace (Main)",
-                    "requires": [ "canMeltThings" ],
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xE995"
-                },
-                {
-                    "id": 5,
-                    "name": "Ice Palace - Big Chest",
-                    "area": "Ice Palace (Main)",
-                    "requires": [ "BigKeyD5" ],
-                    "nodeType": "item",
-                    "nodeItem": "BlueMail",
-                    "nodeAddress": "0xE9AA"
-                },
-                {
-                    "id": 6,
-                    "name": "Ice Palace - Iced T Room",
-                    "area": "Ice Palace (Main)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD5",
-                    "nodeAddress": "0xE9E3"
-                }
-            ]
-        },
-        {
-            "id": 184,
-            "name": "Ice Palace (East)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace (East Top)",
-                    "area": "Ice Palace (East)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ice Palace - Spike Room",
-                    "area": "Ice Palace (East)",
-                    "requires": [
-                        {"or": [
-                            {"not": [ "mods.ohko" ] },
-                            "canGrapple",
-                            "canInvul"
-                        ]}
-                    ],
-                    "note": "FIXME: Changes based on key placement",
-                    "nodeType": "item",
-                    "nodeItem": "KeyD5",
-                    "nodeAddress": "0xE9E0"
-                }
-            ]
-        },
-        {
-            "id": 185,
-            "name": "Ice Palace (East Top)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace - Big Key Chest",
-                    "area": "Ice Palace (East Top)",
-                    "requires": [
-                        "Hammer",
-                        "canLiftRocks",
-                        {"or": [
-                            {"not": [ "mods.ohko" ] },
-                            "canGrapple",
-                            "canInvul"
-                        ]}
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyD5",
-                    "nodeAddress": "0xE9A4"
-                },
-                {
-                    "id": 2,
-                    "name": "Ice Palace - Map Chest",
-                    "area": "Ice Palace (East Top)",
-                    "requires": [
-                        "Hammer",
-                        "canLiftRocks",
-                        {"or": [
-                            {"not": [ "mods.ohko" ] },
-                            "canGrapple",
-                            "canInvul"
-                        ]}
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "MapD5",
-                    "nodeAddress": "0xE9DD"
-                }
-            ]
-        },
-        {
-            "id": 186,
-            "name": "Ice Palace (Kholdstare)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace - Kholdstare",
-                    "area": "Ice Palace (Kholdstare)",
-                    "nodeType": "item",
-                    "nodeItem": "BossHeartContainer",
-                    "nodeAddress": "0x180157"
-                },
-                {
-                    "id": 2,
-                    "name": "Ice Palace - Prize",
-                    "area": "Ice Palace (Kholdstare)",
-                    "requires": [
-                        "Hammer",
-                        "canMeltThings",
-                        "canLiftRocks",
-                        "BigKeyD5",
-                        {"or": [
-                            {"and": [
-                                "CaneOfSomaria",
-                                "KeyD5"
-                            ]},
-                            "KeyD5:2"
-                        ]}
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "Crystal5",
-                    "nodeAddress": ["0x120A4", "0x53F5A", "0x53F5B", "0x180059", "0x180073", "0xC705"]
-                }
-            ]
+          "id": 2,
+          "name": "Ice Palace Exit",
+          "area": "Ice Palace (Entrance)",
+          "nodeType": "door"
         }
-    ]
+      ]
+    },
+    {
+      "id": 183,
+      "name": "Ice Palace (Main)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Palace (East)",
+          "area": "Ice Palace (Main)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ice Palace (Kholdstare)",
+          "area": "Ice Palace (Main)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Ice Palace - Compass Chest",
+          "area": "Ice Palace (Main)",
+          "nodeType": "item",
+          "nodeItem": "CompassD5",
+          "nodeAddress": "0xE9D4"
+        },
+        {
+          "id": 4,
+          "name": "Ice Palace - Freezor Chest",
+          "area": "Ice Palace (Main)",
+          "requires": ["canMeltThings"],
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xE995"
+        },
+        {
+          "id": 5,
+          "name": "Ice Palace - Big Chest",
+          "area": "Ice Palace (Main)",
+          "requires": ["BigKeyD5"],
+          "nodeType": "item",
+          "nodeItem": "BlueMail",
+          "nodeAddress": "0xE9AA"
+        },
+        {
+          "id": 6,
+          "name": "Ice Palace - Iced T Room",
+          "area": "Ice Palace (Main)",
+          "nodeType": "item",
+          "nodeItem": "KeyD5",
+          "nodeAddress": "0xE9E3"
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "name": "Ice Palace (East)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Palace (East Top)",
+          "area": "Ice Palace (East)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ice Palace - Spike Room",
+          "area": "Ice Palace (East)",
+          "requires": [
+            {"or": [
+              {"not": ["mods.ohko"]},
+              "canGrapple",
+              "canInvul"
+            ]}
+          ],
+          "note": "FIXME: Changes based on key placement",
+          "nodeType": "item",
+          "nodeItem": "KeyD5",
+          "nodeAddress": "0xE9E0"
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Ice Palace (East Top)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Palace - Big Key Chest",
+          "area": "Ice Palace (East Top)",
+          "requires": [
+            "Hammer",
+            "canLiftRocks",
+            {"or": [
+              {"not": ["mods.ohko"]},
+              "canGrapple",
+              "canInvul"
+            ]}
+          ],
+          "nodeType": "item",
+          "nodeItem": "BigKeyD5",
+          "nodeAddress": "0xE9A4"
+        },
+        {
+          "id": 2,
+          "name": "Ice Palace - Map Chest",
+          "area": "Ice Palace (East Top)",
+          "requires": [
+            "Hammer",
+            "canLiftRocks",
+            {"or": [
+              {"not": ["mods.ohko"]},
+              "canGrapple",
+              "canInvul"
+            ]}
+          ],
+          "nodeType": "item",
+          "nodeItem": "MapD5",
+          "nodeAddress": "0xE9DD"
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "name": "Ice Palace (Kholdstare)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Palace - Kholdstare",
+          "area": "Ice Palace (Kholdstare)",
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeAddress": "0x180157"
+        },
+        {
+          "id": 2,
+          "name": "Ice Palace - Prize",
+          "area": "Ice Palace (Kholdstare)",
+          "requires": [
+            "Hammer",
+            "canMeltThings",
+            "canLiftRocks",
+            "BigKeyD5",
+            {"or": [
+              {"and": [
+                "CaneOfSomaria",
+                "KeyD5"
+              ]},
+              "KeyD5:2"
+            ]}
+          ],
+          "nodeType": "item",
+          "nodeItem": "Crystal5",
+          "nodeAddress": [
+            "0x120A4",
+            "0x53F5A",
+            "0x53F5B",
+            "0x180059",
+            "0x180073",
+            "0xC705"
+          ]
+        }
+      ]
+    }
+  ]
 }

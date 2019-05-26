@@ -1,46 +1,46 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 39,
+      "name": "Bat Cave Drop Ledge",
+      "roomType": "LightWorld",
+      "nodes": [
         {
-            "id": 39,
-            "name": "Bat Cave Drop Ledge",
-            "roomType": "LightWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Bat Cave Drop",
-                    "area": "Bat Cave Drop Ledge",
-                    "nodeType": "drop"
-                }
-            ]
-        },
-        {
-            "id": 50,
-            "name": "Graveyard Ledge",
-            "roomType": "LightWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Graveyard Cave",
-                    "area": "Graveyard Ledge",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 79,
-            "name": "Master Sword Meadow",
-            "roomType": "LightWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Master Sword Pedestal",
-                    "area": "Master Sword Meadow",
-                    "nodeType": "item",
-                    "nodeItem": "L2Sword",
-                    "nodeAddress": "0x289B0"
-                }
-            ]
+          "id": 1,
+          "name": "Bat Cave Drop",
+          "area": "Bat Cave Drop Ledge",
+          "nodeType": "drop"
         }
-    ]
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Graveyard Ledge",
+      "roomType": "LightWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Graveyard Cave",
+          "area": "Graveyard Ledge",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Master Sword Meadow",
+      "roomType": "LightWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Master Sword Pedestal",
+          "area": "Master Sword Meadow",
+          "nodeType": "item",
+          "nodeItem": "L2Sword",
+          "nodeAddress": "0x289B0"
+        }
+      ]
+    }
+  ]
 }

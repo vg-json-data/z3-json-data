@@ -1,178 +1,178 @@
 {
-    "$schema": "../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 121,
+      "name": "South Dark World",
+      "roomType": "DarkWorld",
+      "nodes": [
         {
-            "id": 121,
-            "name": "South Dark World",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Dark Lake Hylia Drop (South)",
-                    "area": "South Dark World",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 2,
-                    "name": "Hype Cave",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Swamp Palace",
-                    "area": "South Dark World",
-                    "requires": [ "DrainedFloodgate" ],
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Village of Outcasts Heavy Rock",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Maze Race Mirror Spot",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 6,
-                    "name": "Cave 45 Mirror Spot",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 7,
-                    "name": "East Dark World Bridge",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 8,
-                    "name": "Big Bomb Shop",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 9,
-                    "name": "Archery Game",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 10,
-                    "name": "Bonk Fairy (Dark)",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 11,
-                    "name": "Dark Lake Hylia Shop",
-                    "area": "South Dark World",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 12,
-                    "name": "Stumpy",
-                    "area": "South Dark World",
-                    "nodeType": "item",
-                    "nodeItem": "Shovel",
-                    "nodeAddress": "0x330C7"
-                },
-                {
-                    "id": 13,
-                    "name": "Digging Game",
-                    "area": "South Dark World",
-                    "nodeType": "item",
-                    "nodeItem": "PieceOfHeart",
-                    "nodeAddress": "0x180148"
-                },
-                {
-                    "id": 14,
-                    "name": "Bombos Tablet",
-                    "area": "South Dark World",
-                    "nodeType": "item",
-                    "nodeItem": "Bombos",
-                    "nodeAddress": "0x180017"
-                }
-            ]
-        },
-       {
-            "id": 124,
-            "name": "Dark Lake Hylia",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Lake Hylia Island Mirror Spot",
-                    "area": "Dark Lake Hylia",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "East Dark World Pier",
-                    "area": "Dark Lake Hylia",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Dark Lake Hylia Ledge",
-                    "area": "Dark Lake Hylia",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 1,
+          "name": "Dark Lake Hylia Drop (South)",
+          "area": "South Dark World",
+          "nodeType": "drop"
         },
         {
-            "id": 125,
-            "name": "Dark Lake Hylia Central Island",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ice Palace",
-                    "area": "Dark Lake Hylia Central Island",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Lake Hylia Central Island Mirror Spot",
-                    "area": "Dark Lake Hylia Central Island",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 2,
+          "name": "Hype Cave",
+          "area": "South Dark World",
+          "nodeType": "door"
         },
         {
-            "id": 126,
-            "name": "Dark Lake Hylia Ledge",
-            "roomType": "DarkWorld",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Dark Lake Hylia Ledge Drop",
-                    "area": "Dark Lake Hylia Ledge",
-                    "nodeType": "drop"
-                },
-                {
-                    "id": 2,
-                    "name": "Dark Lake Hylia Ledge Fairy",
-                    "area": "Dark Lake Hylia Ledge",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Dark Lake Hylia Ledge Hint",
-                    "area": "Dark Lake Hylia Ledge",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Dark Lake Hylia Ledge Spike Cave",
-                    "area": "Dark Lake Hylia Ledge",
-                    "nodeType": "door"
-                }
-            ]
+          "id": 3,
+          "name": "Swamp Palace",
+          "area": "South Dark World",
+          "requires": ["DrainedFloodgate"],
+          "nodeType": "door"
+        },
+        {
+          "id": 4,
+          "name": "Village of Outcasts Heavy Rock",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 5,
+          "name": "Maze Race Mirror Spot",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 6,
+          "name": "Cave 45 Mirror Spot",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 7,
+          "name": "East Dark World Bridge",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 8,
+          "name": "Big Bomb Shop",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 9,
+          "name": "Archery Game",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 10,
+          "name": "Bonk Fairy (Dark)",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 11,
+          "name": "Dark Lake Hylia Shop",
+          "area": "South Dark World",
+          "nodeType": "door"
+        },
+        {
+          "id": 12,
+          "name": "Stumpy",
+          "area": "South Dark World",
+          "nodeType": "item",
+          "nodeItem": "Shovel",
+          "nodeAddress": "0x330C7"
+        },
+        {
+          "id": 13,
+          "name": "Digging Game",
+          "area": "South Dark World",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeAddress": "0x180148"
+        },
+        {
+          "id": 14,
+          "name": "Bombos Tablet",
+          "area": "South Dark World",
+          "nodeType": "item",
+          "nodeItem": "Bombos",
+          "nodeAddress": "0x180017"
         }
-    ]
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Dark Lake Hylia",
+      "roomType": "DarkWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Island Mirror Spot",
+          "area": "Dark Lake Hylia",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "East Dark World Pier",
+          "area": "Dark Lake Hylia",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Dark Lake Hylia Ledge",
+          "area": "Dark Lake Hylia",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "Dark Lake Hylia Central Island",
+      "roomType": "DarkWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Palace",
+          "area": "Dark Lake Hylia Central Island",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Lake Hylia Central Island Mirror Spot",
+          "area": "Dark Lake Hylia Central Island",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "name": "Dark Lake Hylia Ledge",
+      "roomType": "DarkWorld",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Ledge Drop",
+          "area": "Dark Lake Hylia Ledge",
+          "nodeType": "drop"
+        },
+        {
+          "id": 2,
+          "name": "Dark Lake Hylia Ledge Fairy",
+          "area": "Dark Lake Hylia Ledge",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Dark Lake Hylia Ledge Hint",
+          "area": "Dark Lake Hylia Ledge",
+          "nodeType": "door"
+        },
+        {
+          "id": 4,
+          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "area": "Dark Lake Hylia Ledge",
+          "nodeType": "door"
+        }
+      ]
+    }
+  ]
 }

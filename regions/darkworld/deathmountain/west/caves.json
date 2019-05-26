@@ -1,44 +1,44 @@
 {
-    "$schema": "../../../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 32,
+      "name": "Dark Death Mountain Healer Fairy",
+      "roomType": "Cave",
+      "note": "Dark Death Mountain Fairy"
+    },
+    {
+      "id": 159,
+      "name": "Spike Cave",
+      "roomType": "Cave",
+      "nodes": [
         {
-            "id": 32,
-            "name": "Dark Death Mountain Healer Fairy",
-            "roomType": "Cave",
-            "note": "Dark Death Mountain Fairy"
-        },
-        {
-            "id": 159,
-            "name": "Spike Cave",
-            "roomType": "Cave",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Spike Cave",
-                    "area": "Spike Cave",
-                    "nodeType": "item",
-                    "nodeItem": "CaneOfByrna",
-                    "nodeAddress": "0xEA8B",
-                    "requires": [
-                        "canLiftRocks",
-                        "MoonPearl",
-                        "Hammer",
-                        {"or": [
-                            {"and": [
-                                "canExtendMagic",
-                                "Cape"
-                            ]},
-                            {"and": [
-                                {"or": [
-                                    "mods.ohko",
-                                    "canExtendMagic"
-                                ]},
-                                "CaneOfByrna"
-                            ]}
-                        ]}
-                    ]
-                }
-            ]
+          "id": 1,
+          "name": "Spike Cave",
+          "area": "Spike Cave",
+          "nodeType": "item",
+          "nodeItem": "CaneOfByrna",
+          "nodeAddress": "0xEA8B",
+          "requires": [
+            "canLiftRocks",
+            "MoonPearl",
+            "Hammer",
+            {"or": [
+              {"and": [
+                "canExtendMagic",
+                "Cape"
+              ]},
+              {"and": [
+                {"or": [
+                  "mods.ohko",
+                  "canExtendMagic"
+                ]},
+                "CaneOfByrna"
+              ]}
+            ]}
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

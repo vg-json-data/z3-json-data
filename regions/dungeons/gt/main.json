@@ -1,506 +1,506 @@
 {
-    "$schema": "../../schema/z3-region.schema.json",
-    "rooms": [
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 209,
+      "name": "Ganons Tower (Entrance)",
+      "roomType": "Dungeon",
+      "nodes": [
         {
-            "id": 209,
-            "name": "Ganons Tower (Entrance)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Tile Room)",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower (Hookshot Room)",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower Big Key Door",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower Exit",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 5,
-                    "name": "Ganons Tower - Bob's Torch",
-                    "area": "Ganons Tower (Entrance)",
-                    "requires": [ "canDash" ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyA2",
-                    "nodeAddress": "0x180161"
-                },
-                {
-                    "id": 6,
-                    "name": "Ganons Tower - Hope Room - Left",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEAD9"
-                },
-                {
-                    "id": 7,
-                    "name": "Ganons Tower - Hope Room - Right",
-                    "area": "Ganons Tower (Entrance)",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEADC"
-                }
-            ]
+          "id": 1,
+          "name": "Ganons Tower (Tile Room)",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 210,
-            "name": "Ganons Tower (Tile Room)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Tile Room) Key Door",
-                    "area": "Ganons Tower (Tile Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Tile Room",
-                    "area": "Ganons Tower (Tile Room)",
-                    "requires": [ "CaneOfSomaria" ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyA2",
-                    "nodeAddress": "0xEAE2"
-                }
-            ]
+          "id": 2,
+          "name": "Ganons Tower (Hookshot Room)",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 211,
-            "name": "Ganons Tower (Compass Room)",
-            "roomType": "Dungeon",
-            "note": "Ganon's Tower - Compass Room; FIXME: Changes based on key placement",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Bottom) (East)",
-                    "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Compass Room - Top Left",
-                    "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item",
-                    "nodeItem": "CompassA2",
-                    "nodeAddress": "0xEAE5"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower - Compass Room - Top Right",
-                    "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item",
-                    "nodeItem": "OneRupee",
-                    "nodeAddress": "0xEAE8"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower - Compass Room - Bottom Left",
-                    "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAEB"
-                },
-                {
-                    "id": 5,
-                    "name": "Ganons Tower - Compass Room - Bottom Right",
-                    "area": "Ganons Tower (Compass Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEAEE"
-                }
-            ]
+          "id": 3,
+          "name": "Ganons Tower Big Key Door",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 212,
-            "name": "Ganons Tower (Hookshot Room)",
-            "requires": [
-                "canGrapple",
-                "Hammer"
-            ],
-            "roomType": "Dungeon",
-            "note": "Ganon's Tower - DMs Room",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Map Room)",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower (Double Switch Room)",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower - DMs Room - Top Left",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEAB8"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower - DMs Room - Top Right",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEABB"
-                },
-                {
-                    "id": 5,
-                    "name": "Ganons Tower - DMs Room - Bottom Left",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEABE"
-                },
-                {
-                    "id": 6,
-                    "name": "Ganons Tower - DMs Room - Bottom Right",
-                    "area": "Ganons Tower (Hookshot Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEAC1"
-                }
-            ]
+          "id": 4,
+          "name": "Ganons Tower Exit",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "door"
         },
         {
-            "id": 213,
-            "name": "Ganons Tower (Map Room)",
-            "roomType": "Dungeon",
-            "requires": [
-                "Hammer",
-                {"or": [
-                    "canDash",
-                    "canGrapple"
-                ]}
-            ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower - Map Chest",
-                    "area": "Ganons Tower (Map Room)",
-                    "note": "FIXME: Changes based on key placement",
-                    "nodeType": "item",
-                    "nodeItem": "MapA2",
-                    "nodeAddress": "0xEAD3"
-                }
-            ]
+          "id": 5,
+          "name": "Ganons Tower - Bob's Torch",
+          "area": "Ganons Tower (Entrance)",
+          "requires": ["canDash"],
+          "nodeType": "item",
+          "nodeItem": "KeyA2",
+          "nodeAddress": "0x180161"
         },
         {
-            "id": 214,
-            "name": "Ganons Tower (Firesnake Room)",
-            "roomType": "Dungeon",
-            "requires": [
-                "canGrapple",
-                "Hammer"
-            ],
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Firesnake Room)",
-                    "area": "Ganons Tower (Firesnake Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Firesnake Room",
-                    "area": "Ganons Tower (Firesnake Room)",
-                    "nodeType": "item",
-                    "nodeItem": "KeyA2",
-                    "nodeAddress": "0xEAD0"
-                }
-            ]
+          "id": 6,
+          "name": "Ganons Tower - Hope Room - Left",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEAD9"
         },
         {
-            "id": 215,
-            "name": "Ganons Tower (Teleport Room)",
-            "roomType": "Dungeon",
-            "requires": [
-                "canGrapple",
-                "Hammer"
-            ],
-            "note": "Ganon's Tower - Randomizer Room; FIXME: Changes based on key placement",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower (Bottom) (West)",
-                    "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Randomizer Room - Top Left",
-                    "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEAC4"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower - Randomizer Room - Top Right",
-                    "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEAC7"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower - Randomizer Room - Bottom Left",
-                    "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEACA"
-                },
-                {
-                    "id": 5,
-                    "name": "Ganons Tower - Randomizer Room - Bottom Right",
-                    "area": "Ganons Tower (Teleport Room)",
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEACD"
-                }
-            ]
-        },
-        {
-            "id": 216,
-            "name": "Ganons Tower (Bottom)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower - Bob's Chest",
-                    "area": "Ganons Tower (Bottom)",
-                    "requires": [
-                        {"or": [
-                            {"and": [
-                                "canGrapple",
-                                "Hammer"
-                            ]},
-                            {"and": [
-                                "FireRod",
-                                "CaneOfSomaria"
-                            ]}
-                        ]},
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEADF"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Big Chest",
-                    "area": "Ganons Tower (Bottom)",
-                    "requires": [
-                        {"or": [
-                            {"and": [
-                                "canGrapple",
-                                "Hammer"
-                            ]},
-                            {"and": [
-                                "FireRod",
-                                "CaneOfSomaria"
-                            ]}
-                        ]},
-                        "BigKeyA2",
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "RedMail",
-                    "nodeAddress": "0xEAD6"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower - Big Key Room - Left",
-                    "area": "Ganons Tower (Bottom)",
-                    "requires": [
-                        {"or": [
-                            {"and": [
-                                "canGrapple",
-                                "Hammer"
-                            ]},
-                            {"and": [
-                                "FireRod",
-                                "CaneOfSomaria"
-                            ]}
-                        ]},
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "TenArrows",
-                    "nodeAddress": "0xEAF4"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower - Big Key Room - Right",
-                    "area": "Ganons Tower (Bottom)",
-                    "requires": [
-                        {"or": [
-                            {"and": [
-                                "canGrapple",
-                                "Hammer"
-                            ]},
-                            {"and": [
-                                "FireRod",
-                                "CaneOfSomaria"
-                            ]}
-                        ]},
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEAF7"
-                },
-                {
-                    "id": 5,
-                    "name": "Ganons Tower - Big Key Chest",
-                    "area": "Ganons Tower (Bottom)",
-                    "requires": [
-                        {"or": [
-                            {"and": [
-                                "canGrapple",
-                                "Hammer"
-                            ]},
-                            {"and": [
-                                "FireRod",
-                                "CaneOfSomaria"
-                            ]}
-                        ]},
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "BigKeyA2",
-                    "nodeAddress": "0xEAF1"
-                }
-            ]
-        },
-        {
-            "id": 217,
-            "name": "Ganons Tower (Top)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower Torch Rooms",
-                    "area": "Ganons Tower (Top)",
-                    "nodeType": "door"
-                }
-            ]
-        },
-        {
-            "id": 218,
-            "name": "Ganons Tower (Before Moldorm)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower Moldorm Door",
-                    "area": "Ganons Tower (Before Moldorm)",
-                    "nodeType": "door"
-                },
-                {
-                    "id": 2,
-                    "name": "Ganons Tower - Mini Helmasaur Room - Left",
-                    "area": "Ganons Tower (Before Moldorm)",
-                    "requires": [
-                        "canShootArrows",
-                        "canLightTorches",
-                        "BigKeyA2",
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEAFD"
-                },
-                {
-                    "id": 3,
-                    "name": "Ganons Tower - Mini Helmasaur Room - Right",
-                    "area": "Ganons Tower (Before Moldorm)",
-                    "requires": [
-                        "canShootArrows",
-                        "canLightTorches",
-                        "BigKeyA2",
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "ThreeBombs",
-                    "nodeAddress": "0xEB00"
-                },
-                {
-                    "id": 4,
-                    "name": "Ganons Tower - Pre-Moldorm Chest",
-                    "area": "Ganons Tower (Before Moldorm)",
-                    "requires": [
-                        "canShootArrows",
-                        "canLightTorches",
-                        "BigKeyA2",
-                        "KeyA2:3"
-                    ],
-                    "nodeType": "item",
-                    "nodeItem": "KeyA2",
-                    "nodeAddress": "0xEB03"
-                }
-            ]
-        },
-        {
-            "id": 219,
-            "name": "Ganons Tower (Moldorm)",
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower Moldorm Gap",
-                    "area": "Ganons Tower (Moldorm)",
-                    "nodeType": "obstacle"
-                }
-            ]
-        },
-        {
-            "id": 220,
-            "name": "Agahnim 2",
-            "requires": [
-                "canGrapple",
-                "canShootArrows",
-                "canLightTorches",
-                "BigKeyA2",
-                "KeyA2:4"
-            ],
-            "roomType": "Dungeon",
-            "nodes": [
-                {
-                    "id": 1,
-                    "name": "Ganons Tower - Validation Chest",
-                    "area": "Agahnim 2",
-                    "nodeType": "item",
-                    "nodeItem": "TwentyRupees",
-                    "nodeAddress": "0xEB06",
-                    "note": "Ganon's Tower - Moldorm Chest"
-                },
-                {
-                    "id": 2,
-                    "name": "Agahnim 2",
-                    "area": "Agahnim 2",
-                    "nodeType": "item"
-                }
-            ]
+          "id": 7,
+          "name": "Ganons Tower - Hope Room - Right",
+          "area": "Ganons Tower (Entrance)",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEADC"
         }
-    ]
+      ]
+    },
+    {
+      "id": 210,
+      "name": "Ganons Tower (Tile Room)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower (Tile Room) Key Door",
+          "area": "Ganons Tower (Tile Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Tile Room",
+          "area": "Ganons Tower (Tile Room)",
+          "requires": ["CaneOfSomaria"],
+          "nodeType": "item",
+          "nodeItem": "KeyA2",
+          "nodeAddress": "0xEAE2"
+        }
+      ]
+    },
+    {
+      "id": 211,
+      "name": "Ganons Tower (Compass Room)",
+      "roomType": "Dungeon",
+      "note": "Ganon's Tower - Compass Room; FIXME: Changes based on key placement",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower (Bottom) (East)",
+          "area": "Ganons Tower (Compass Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Compass Room - Top Left",
+          "area": "Ganons Tower (Compass Room)",
+          "nodeType": "item",
+          "nodeItem": "CompassA2",
+          "nodeAddress": "0xEAE5"
+        },
+        {
+          "id": 3,
+          "name": "Ganons Tower - Compass Room - Top Right",
+          "area": "Ganons Tower (Compass Room)",
+          "nodeType": "item",
+          "nodeItem": "OneRupee",
+          "nodeAddress": "0xEAE8"
+        },
+        {
+          "id": 4,
+          "name": "Ganons Tower - Compass Room - Bottom Left",
+          "area": "Ganons Tower (Compass Room)",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAEB"
+        },
+        {
+          "id": 5,
+          "name": "Ganons Tower - Compass Room - Bottom Right",
+          "area": "Ganons Tower (Compass Room)",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEAEE"
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "name": "Ganons Tower (Hookshot Room)",
+      "requires": [
+        "canGrapple",
+        "Hammer"
+      ],
+      "roomType": "Dungeon",
+      "note": "Ganon's Tower - DMs Room",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower (Map Room)",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower (Double Switch Room)",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Ganons Tower - DMs Room - Top Left",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEAB8"
+        },
+        {
+          "id": 4,
+          "name": "Ganons Tower - DMs Room - Top Right",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEABB"
+        },
+        {
+          "id": 5,
+          "name": "Ganons Tower - DMs Room - Bottom Left",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEABE"
+        },
+        {
+          "id": 6,
+          "name": "Ganons Tower - DMs Room - Bottom Right",
+          "area": "Ganons Tower (Hookshot Room)",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEAC1"
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "name": "Ganons Tower (Map Room)",
+      "roomType": "Dungeon",
+      "requires": [
+        "Hammer",
+        {"or": [
+          "canDash",
+          "canGrapple"
+        ]}
+      ],
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower - Map Chest",
+          "area": "Ganons Tower (Map Room)",
+          "note": "FIXME: Changes based on key placement",
+          "nodeType": "item",
+          "nodeItem": "MapA2",
+          "nodeAddress": "0xEAD3"
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "name": "Ganons Tower (Firesnake Room)",
+      "roomType": "Dungeon",
+      "requires": [
+        "canGrapple",
+        "Hammer"
+      ],
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower (Firesnake Room)",
+          "area": "Ganons Tower (Firesnake Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Firesnake Room",
+          "area": "Ganons Tower (Firesnake Room)",
+          "nodeType": "item",
+          "nodeItem": "KeyA2",
+          "nodeAddress": "0xEAD0"
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "name": "Ganons Tower (Teleport Room)",
+      "roomType": "Dungeon",
+      "requires": [
+        "canGrapple",
+        "Hammer"
+      ],
+      "note": "Ganon's Tower - Randomizer Room; FIXME: Changes based on key placement",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower (Bottom) (West)",
+          "area": "Ganons Tower (Teleport Room)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Randomizer Room - Top Left",
+          "area": "Ganons Tower (Teleport Room)",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEAC4"
+        },
+        {
+          "id": 3,
+          "name": "Ganons Tower - Randomizer Room - Top Right",
+          "area": "Ganons Tower (Teleport Room)",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEAC7"
+        },
+        {
+          "id": 4,
+          "name": "Ganons Tower - Randomizer Room - Bottom Left",
+          "area": "Ganons Tower (Teleport Room)",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEACA"
+        },
+        {
+          "id": 5,
+          "name": "Ganons Tower - Randomizer Room - Bottom Right",
+          "area": "Ganons Tower (Teleport Room)",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEACD"
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "name": "Ganons Tower (Bottom)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower - Bob's Chest",
+          "area": "Ganons Tower (Bottom)",
+          "requires": [
+            {"or": [
+              {"and": [
+                "canGrapple",
+                "Hammer"
+              ]},
+              {"and": [
+                "FireRod",
+                "CaneOfSomaria"
+              ]}
+            ]},
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEADF"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Big Chest",
+          "area": "Ganons Tower (Bottom)",
+          "requires": [
+            {"or": [
+              {"and": [
+                "canGrapple",
+                "Hammer"
+              ]},
+              {"and": [
+                "FireRod",
+                "CaneOfSomaria"
+              ]}
+            ]},
+            "BigKeyA2",
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "RedMail",
+          "nodeAddress": "0xEAD6"
+        },
+        {
+          "id": 3,
+          "name": "Ganons Tower - Big Key Room - Left",
+          "area": "Ganons Tower (Bottom)",
+          "requires": [
+            {"or": [
+              {"and": [
+                "canGrapple",
+                "Hammer"
+              ]},
+              {"and": [
+                "FireRod",
+                "CaneOfSomaria"
+              ]}
+            ]},
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeAddress": "0xEAF4"
+        },
+        {
+          "id": 4,
+          "name": "Ganons Tower - Big Key Room - Right",
+          "area": "Ganons Tower (Bottom)",
+          "requires": [
+            {"or": [
+              {"and": [
+                "canGrapple",
+                "Hammer"
+              ]},
+              {"and": [
+                "FireRod",
+                "CaneOfSomaria"
+              ]}
+            ]},
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEAF7"
+        },
+        {
+          "id": 5,
+          "name": "Ganons Tower - Big Key Chest",
+          "area": "Ganons Tower (Bottom)",
+          "requires": [
+            {"or": [
+              {"and": [
+                "canGrapple",
+                "Hammer"
+              ]},
+              {"and": [
+                "FireRod",
+                "CaneOfSomaria"
+              ]}
+            ]},
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "BigKeyA2",
+          "nodeAddress": "0xEAF1"
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "name": "Ganons Tower (Top)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower Torch Rooms",
+          "area": "Ganons Tower (Top)",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "name": "Ganons Tower (Before Moldorm)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower Moldorm Door",
+          "area": "Ganons Tower (Before Moldorm)",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Ganons Tower - Mini Helmasaur Room - Left",
+          "area": "Ganons Tower (Before Moldorm)",
+          "requires": [
+            "canShootArrows",
+            "canLightTorches",
+            "BigKeyA2",
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEAFD"
+        },
+        {
+          "id": 3,
+          "name": "Ganons Tower - Mini Helmasaur Room - Right",
+          "area": "Ganons Tower (Before Moldorm)",
+          "requires": [
+            "canShootArrows",
+            "canLightTorches",
+            "BigKeyA2",
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeAddress": "0xEB00"
+        },
+        {
+          "id": 4,
+          "name": "Ganons Tower - Pre-Moldorm Chest",
+          "area": "Ganons Tower (Before Moldorm)",
+          "requires": [
+            "canShootArrows",
+            "canLightTorches",
+            "BigKeyA2",
+            "KeyA2:3"
+          ],
+          "nodeType": "item",
+          "nodeItem": "KeyA2",
+          "nodeAddress": "0xEB03"
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "name": "Ganons Tower (Moldorm)",
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower Moldorm Gap",
+          "area": "Ganons Tower (Moldorm)",
+          "nodeType": "obstacle"
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "Agahnim 2",
+      "requires": [
+        "canGrapple",
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:4"
+      ],
+      "roomType": "Dungeon",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganons Tower - Validation Chest",
+          "area": "Agahnim 2",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeAddress": "0xEB06",
+          "note": "Ganon's Tower - Moldorm Chest"
+        },
+        {
+          "id": 2,
+          "name": "Agahnim 2",
+          "area": "Agahnim 2",
+          "nodeType": "item"
+        }
+      ]
+    }
+  ]
 }
