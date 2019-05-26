@@ -50,7 +50,7 @@
           "id": 3,
           "name": "Misery Mire - Big Chest",
           "area": "Misery Mire (Main)",
-          "requires": ["BigKeyD6"],
+          "requires": [ "BigKeyD6" ],
           "nodeType": "item",
           "nodeItem": "CaneOfSomaria",
           "nodeAddress": "0xEA67"
@@ -93,7 +93,7 @@
           "area": "Misery Mire (Main)",
           "requires": [
             {"or": [
-              {"not": ["mods.ohko"]},
+              {"not": [ "mods.ohko" ]},
               "canInvul"
             ]}
           ],
@@ -112,7 +112,7 @@
           "id": 1,
           "name": "Misery Mire - Compass Chest",
           "area": "Misery Mire (West)",
-          "requires": ["canLightTorches"],
+          "requires": [ "canLightTorches" ],
           "note": "FIXME: Changes based on key placement",
           "nodeType": "item",
           "nodeItem": "CompassD6",
@@ -122,7 +122,7 @@
           "id": 2,
           "name": "Misery Mire - Big Key Chest",
           "area": "Misery Mire (West)",
-          "requires": ["canLightTorches"],
+          "requires": [ "canLightTorches" ],
           "note": "FIXME: Changes based on key placement",
           "nodeType": "item",
           "nodeItem": "BigKeyD6",

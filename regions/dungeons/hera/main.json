@@ -70,7 +70,7 @@
           "id": 1,
           "name": "Tower of Hera - Compass Chest",
           "area": "Tower of Hera (Top)",
-          "requires": ["BigKeyP3"],
+          "requires": [ "BigKeyP3" ],
           "nodeType": "item",
           "nodeItem": "CompassP3",
           "nodeAddress": "0xE9FB"
@@ -79,7 +79,7 @@
           "id": 2,
           "name": "Tower of Hera - Big Chest",
           "area": "Tower of Hera (Top)",
-          "requires": ["BigKeyP3"],
+          "requires": [ "BigKeyP3" ],
           "nodeType": "item",
           "nodeItem": "MoonPearl",
           "nodeAddress": "0xE9F8"
@@ -88,7 +88,7 @@
           "id": 3,
           "name": "Tower of Hera - Moldorm",
           "area": "Tower of Hera (Top)",
-          "requires": ["BigKeyP3"],
+          "requires": [ "BigKeyP3" ],
           "nodeType": "item",
           "nodeItem": "BossHeartContainer",
           "nodeAddress": "0x180152"

@@ -240,7 +240,7 @@
           "area": "Blacksmiths Hut",
           "requires": [ "canLiftDarkRocks" ],
           "nodeType": "event",
-          "yields": ["RescueBlacksmith"]
+          "yields": [ "RescueBlacksmith" ]
         }
       ]
     },

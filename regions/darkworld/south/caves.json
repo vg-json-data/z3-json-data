@@ -5,7 +5,7 @@
       "id": 25,
       "name": "Bonk Fairy (Dark)",
       "roomType": "Cave",
-      "requires": ["canDash"]
+      "requires": [ "canDash" ]
     },
     {
       "id": 30,
@@ -31,7 +31,7 @@
       "id": 127,
       "name": "Dark Lake Hylia Ledge Hint",
       "roomType": "Cave",
-      "requires": ["canSwim"]
+      "requires": [ "canSwim" ]
     },
     {
       "id": 128,
@@ -46,7 +46,7 @@
       "id": 129,
       "name": "Hype Cave",
       "roomType": "Cave",
-      "requires": ["canBombThings"],
+      "requires": [ "canBombThings" ],
       "nodes": [
         {
           "id": 1,

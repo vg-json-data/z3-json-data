@@ -24,7 +24,7 @@
           "id": 3,
           "name": "Eastern Palace - Big Chest",
           "area": "Eastern Palace",
-          "requires": ["BigKeyP1"],
+          "requires": [ "BigKeyP1" ],
           "nodeType": "item",
           "nodeItem": "Bow",
           "nodeAddress": "0xE97D"
@@ -41,7 +41,7 @@
           "id": 5,
           "name": "Eastern Palace - Big Key Chest",
           "area": "Eastern Palace",
-          "requires": ["hasLightCone"],
+          "requires": [ "hasLightCone" ],
           "nodeType": "item",
           "nodeItem": "BigKeyP1",
           "nodeAddress": "0xE9B9"

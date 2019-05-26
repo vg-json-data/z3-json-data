@@ -6,7 +6,7 @@
       "name": "Dark Desert Healer Fairy",
       "roomType": "Cave",
       "note": "Dark Desert Fairy",
-      "requires": ["isDarkLink"]
+      "requires": [ "isDarkLink" ]
     },
     {
       "id": 151,
@@ -20,7 +20,7 @@
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
           "nodeAddress": "0xEA73",
-          "requires": ["isDarkLink"]
+          "requires": [ "isDarkLink" ]
         },
         {
           "id": 2,
@@ -29,7 +29,7 @@
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
           "nodeAddress": "0xEA76",
-          "requires": ["isDarkLink"]
+          "requires": [ "isDarkLink" ]
         }
       ]
     },
@@ -37,7 +37,7 @@
       "id": 152,
       "name": "Dark Desert Hint",
       "roomType": "Cave",
-      "requires": ["isDarkLink"]
+      "requires": [ "isDarkLink" ]
     }
   ]
 }

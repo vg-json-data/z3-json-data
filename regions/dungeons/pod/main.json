@@ -145,7 +145,7 @@
           "id": 3,
           "name": "Palace of Darkness - Map Chest",
           "area": "Palace of Darkness (Bonk Section)",
-          "requires": ["canShootArrows"],
+          "requires": [ "canShootArrows" ],
           "nodeType": "item",
           "nodeItem": "MapD1",
           "nodeAddress": "0xEA52"

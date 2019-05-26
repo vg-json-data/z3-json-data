@@ -11,7 +11,7 @@
           "name": "Floodgate",
           "area": "Dam",
           "nodeType": "event",
-          "yields": ["DrainedFloodgate"]
+          "yields": [ "DrainedFloodgate" ]
         },
         {
           "id": 2,

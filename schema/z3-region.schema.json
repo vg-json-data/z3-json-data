@@ -111,7 +111,10 @@
                 },
                 "nodeAddress": {
                   "$id": "#/items/properties/nodes/items/properties/nodeAddress",
-                  "type": ["string", "array"],
+                  "type": [
+                    "string",
+                    "array"
+                  ],
                   "title": "Memory Address",
                   "description": "Memory address of this location"
                 },

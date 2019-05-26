@@ -50,7 +50,7 @@
           "id": 3,
           "name": "Turtle Rock - Compass Chest",
           "area": "Turtle Rock (First Section)",
-          "requires": ["CaneOfSomaria"],
+          "requires": [ "CaneOfSomaria" ],
           "nodeType": "item",
           "nodeItem": "CompassD7",
           "nodeAddress": "0xEA22"
@@ -102,7 +102,7 @@
           "id": 3,
           "name": "Turtle Rock - Chain Chomps",
           "area": "Turtle Rock (Chain Chomp Room)",
-          "requires": ["KeyD7"],
+          "requires": [ "KeyD7" ],
           "nodeType": "item",
           "nodeItem": "KeyD7",
           "nodeAddress": "0xEA16"
