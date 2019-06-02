@@ -70,7 +70,7 @@
                 "name": {
                   "$id": "#/items/properties/nodes/items/properties/name",
                   "type": "string",
-                  "title": "Node Name",
+                  "title": "Node Name. Must be unique across all rooms.",
                   "default": "",
                   "examples": [
                     "Exit"
@@ -99,7 +99,8 @@
                     "event",
                     "item",
                     "junction",
-                    "obstacle"
+                    "obstacle",
+                    "transition"
                   ],
                   "pattern": "^(.*)$"
                 },

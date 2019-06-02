@@ -75,6 +75,13 @@
     ]
   },
   {
+    "name": "canHammerThings",
+    "requires": [
+      "isLink",
+      "Hammer"
+    ]
+  },
+  {
     "name": "canInvul",
     "requires": [
       "isLink",
