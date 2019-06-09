@@ -264,9 +264,14 @@
                     "$id": "#/items/properties/links/items/properties/to/items",
                     "type": "object",
                     "title": "The Items Schema",
-                    "required": [
-                      "id",
-                      "requires"
+                    "required": ["id"],
+                    "oneOf": [
+                      {
+                        "required": ["requires"]
+                      },
+                      {
+                        "required": ["strats"]
+                      }
                     ],
                     "properties": {
                       "id": {
@@ -293,6 +298,56 @@
                             "string"
                           ],
                           "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                        }
+                      },
+                      "strats": {
+                        "$id": "#/items/properties/links/items/properties/to/items/properties/strats",
+                        "type": "array",
+                        "title": "Link Strats",
+                        "description": "An array of strats that can be used to cross the link.",
+                        "items": {
+                          "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items",
+                          "type": "object",
+                          "required": [
+                            "name",
+                            "notable",
+                            "requires"
+                          ],
+                          "properties": {
+                            "name": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/name",
+                              "type": "string",
+                              "title": "Strat Name",
+                              "description": "A name for the strat",
+                              "default": "",
+                              "examples": [
+                                "Base",
+                                "Ice Palace Bomb Jump"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "notable": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/notable",
+                              "type": "boolean"
+                            },
+                            "requires": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/requires",
+                              "type": [
+                                "array",
+                                "null"
+                              ],
+                              "title": "Strat Requirements",
+                              "description": "Equipment, tech, and flag requirements to execute this strat.",
+                              "items": {
+                                "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/requires/items",
+                                "type": [
+                                  "object",
+                                  "string"
+                                ],
+                                "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                              }
+                            }
+                          }
                         }
                       },
                       "note": {
