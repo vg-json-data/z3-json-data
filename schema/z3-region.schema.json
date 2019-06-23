@@ -44,6 +44,16 @@
             "default": "",
             "pattern": "^(.*)$"
           },
+          "alttpEntrandoRegions": {
+            "$id": "#/items/properties/alttpEntrandoRegions",
+            "type": "array",
+            "title": "ALttP Entrando Regions",
+            "description": "The name of all regions (as defined in the ALttP Entrando project) that are (at least partially) contained in this room.",
+            "items": {
+              "$id": "#/items/properties/alttpEntrandoRegions/items",
+              "type": "string"
+            }
+          },
           "nodes": {
             "$id": "#/items/properties/nodes",
             "type": "array",

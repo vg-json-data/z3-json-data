@@ -5,6 +5,15 @@
       "id": 99,
       "name": "East Death Mountain Cliff",
       "roomType": "LightWorld",
+      "alttpEntrandoRegions": [
+        "East Death Mountain (Bottom)",
+        "East Death Mountain (Top)",
+        "Spiral Cave Ledge",
+        "Fairy Ascension Plateau",
+        "Fairy Ascension Ledge",
+        "Death Mountain Floating Island (Light World)",
+        "Mimic Cave Ledge"
+      ],
       "nodes": [
         {
           "id": 1,
@@ -419,6 +428,9 @@
       "id": 105,
       "name": "Peg Puzzle",
       "roomType": "LightWorld",
+      "alttpEntrandoRegions": [
+        "East Death Mountain (Top)"
+      ],
       "nodes": [
         {
           "id": 1,
