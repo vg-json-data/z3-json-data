@@ -65,8 +65,7 @@
     {
       "id": 1,
       "names": [
-        "Vulture",
-        "Tendoru"
+        "Vulture"
       ],
       "hp": 6,
       "dmgToLink": [
@@ -1825,7 +1824,11 @@
         "Beamos Laser Beam"
       ],
       "hp": 255,
-      "dmgToLink": [],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
       "dmgFromLink": [
         0,
         0,
@@ -2640,7 +2643,7 @@
         "Kodongo (Green)",
         "Kodongo (Red)"
       ],
-      "hp": 0,
+      "hp": 2,
       "dmgToLink": [
         8,
         8,
@@ -2911,7 +2914,42 @@
         "Zol"
       ],
       "hp": 4,
-      "dmgToLink": [],
+      "dmgToLink": [
+        16,
+        8,
+        4
+      ],
+      "dmgFromLink": [
+        255,
+        2,
+        4,
+        8,
+        16,
+        16,
+        4,
+        64,
+        64,
+        100,
+        0,
+        253,
+        254,
+        253,
+        254,
+        64
+      ]
+    },
+    {
+      "id": 226,
+      "names": [
+        "Slime"
+      ],
+      "sharedID": 143,
+      "hp": 0,
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
       "dmgFromLink": [
         255,
         2,
@@ -3480,7 +3518,11 @@
         "Lynel Fireball"
       ],
       "hp": 4,
-      "dmgToLink": [],
+      "dmgToLink": [
+        16,
+        8,
+        4
+      ],
       "dmgFromLink": [
         255,
         2,
