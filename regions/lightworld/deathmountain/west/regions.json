@@ -2,157 +2,956 @@
   "$schema": "../../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 1,
+      "id": 3,
       "name": "Death Mountain Entrance",
-      "roomType": "LightWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Death Mountain Entrance Rock",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Bumper Cave Entrance Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Old Man Cave (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x05",
+            "room_id": "0x00F0",
+            "ow_area": "0x0A",
+            "vram_loc": "0x03A0",
+            "scroll_y": "0x0264",
+            "scroll_x": "0x0500",
+            "link_y": "0x02B8",
+            "link_x": "0x05A8",
+            "camera_y": "0x02D3",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Death Mountain Entrance Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 81,
+      "name": "Old Man Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Old Man Cave Dropdown",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Old Man Cave (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x06",
+            "room_id": "0x00F1",
+            "ow_area": "0x03",
+            "vram_loc": "0x1402",
+            "scroll_y": "0x0294",
+            "scroll_x": "0x0604",
+            "link_y": "0x02E8",
+            "link_x": "0x0678",
+            "camera_y": "0x0303",
+            "camera_x": "0x0683",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Old Man Cave Exit (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x07",
+            "exit_id": "0x08"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Old Man",
+          "nodeType": "item",
+          "nodeItem": "MagicMirror",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xF69FA"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 82,
+      "name": "Old Man Cave Ledge",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Old Man Cave (West)",
-          "area": "Death Mountain Entrance",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x05",
+            "room_id": "0x00F0",
+            "ow_area": "0x0A",
+            "vram_loc": "0x03A0",
+            "scroll_y": "0x0264",
+            "scroll_x": "0x0500",
+            "link_y": "0x02B8",
+            "link_x": "0x05A8",
+            "camera_y": "0x02D3",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Death Mountain Entrance Drop",
-          "area": "Death Mountain Entrance",
-          "nodeType": "drop"
-        }
-      ]
-    },
-    {
-      "id": 93,
-      "name": "Death Mountain",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Old Man Cave (East)",
-          "area": "Death Mountain",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Old Man House (Bottom)",
-          "area": "Death Mountain",
-          "nodeType": "door"
+          "name": "Old Man Cave Exit (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x06",
+            "exit_id": "0x07"
+          }
         },
         {
           "id": 3,
-          "name": "Old Man House (Top)",
-          "area": "Death Mountain",
-          "nodeType": "door"
+          "name": "Old Man Cave Dropdown",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 83,
+      "name": "Old Man House",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Old Man S&Q",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Menu",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Menu",
+                  "nodeid": 0,
+                  "nodeName": "Menu",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Old Man House",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Old Man House",
+                  "nodeid": 0,
+                  "nodeName": "Old Man House",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Old Man House Back to Front",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Old Man House (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2F",
+            "room_id": "0x00E4",
+            "ow_area": "0x03",
+            "vram_loc": "0x181A",
+            "scroll_y": "0x031E",
+            "scroll_x": "0x06B4",
+            "link_y": "0x03A7",
+            "link_x": "0x0728",
+            "camera_y": "0x038D",
+            "camera_x": "0x0733",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0C",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 4,
-          "name": "Death Mountain Return Cave (East)",
-          "area": "Death Mountain",
-          "nodeType": "door"
+          "name": "Old Man House Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x30",
+            "exit_id": "0x31"
+          }
         },
         {
           "id": 5,
-          "name": "Spectacle Rock Cave",
-          "area": "Death Mountain",
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "Spectacle Rock Cave Peak",
-          "area": "Death Mountain",
-          "nodeType": "door"
-        },
-        {
-          "id": 7,
-          "name": "Spectacle Rock Cave (Bottom)",
-          "area": "Death Mountain",
-          "nodeType": "door"
-        },
-        {
-          "id": 8,
-          "name": "Broken Bridge (West)",
-          "area": "Death Mountain",
-          "nodeType": "door"
-        },
-        {
-          "id": 9,
-          "name": "Death Mountain Teleporter",
-          "area": "Death Mountain",
-          "nodeType": "door"
+          "name": "Old Man House Front to Back",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 95,
-      "name": "Death Mountain Return Ledge",
-      "roomType": "LightWorld",
+      "id": 84,
+      "name": "Old Man House Back",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Death Mountain Return Ledge Drop",
-          "area": "Death Mountain Return Ledge",
-          "nodeType": "drop"
+          "name": "Old Man House Front to Back",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Death Mountain Return Cave (West)",
-          "area": "Death Mountain Return Ledge",
-          "nodeType": "door"
+          "name": "Old Man House (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x30",
+            "room_id": "0x00E5",
+            "ow_area": "0x03",
+            "vram_loc": "0x10C6",
+            "scroll_y": "0x0224",
+            "scroll_x": "0x0814",
+            "link_y": "0x0278",
+            "link_x": "0x0888",
+            "camera_y": "0x0293",
+            "camera_x": "0x0893",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x0C",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Old Man House Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x31",
+            "exit_id": "0x32"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Old Man House Back to Front",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 112,
-      "name": "Death Mountain (Top)",
-      "roomType": "LightWorld",
+      "id": 85,
+      "name": "Death Mountain",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "East Death Mountain (Top)",
-          "area": "Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Flute Spot 1",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Tower of Hera",
-          "area": "Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Broken Bridge (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
           "name": "Death Mountain Drop",
-          "area": "Death Mountain (Top)",
-          "nodeType": "drop"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "Ether Tablet",
-          "area": "Death Mountain (Top)",
-          "nodeType": "item",
-          "nodeItem": "Ether",
-          "nodeAddress": "0x180016"
+          "name": "Old Man Cave Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x07",
+            "exit_id": "0x08"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Old Man House Exit (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x30",
+            "exit_id": "0x31"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Old Man House Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x31",
+            "exit_id": "0x32"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Death Mountain Return Cave Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2F",
+            "exit_id": "0x30"
+          }
+        },
+        {
+          "id": 8,
+          "name": "Spectacle Rock Cave Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x21",
+            "exit_id": "0x22"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Spectacle Rock Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x22",
+            "exit_id": "0x23"
+          }
+        },
+        {
+          "id": 10,
+          "name": "Spectacle Rock Cave Exit (Peak)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x23",
+            "exit_id": "0x24"
+          }
+        },
+        {
+          "id": 11,
+          "name": "Old Man Cave (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x06",
+            "room_id": "0x00F1",
+            "ow_area": "0x03",
+            "vram_loc": "0x1402",
+            "scroll_y": "0x0294",
+            "scroll_x": "0x0604",
+            "link_y": "0x02E8",
+            "link_x": "0x0678",
+            "camera_y": "0x0303",
+            "camera_x": "0x0683",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 12,
+          "name": "Old Man House (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2F",
+            "room_id": "0x00E4",
+            "ow_area": "0x03",
+            "vram_loc": "0x181A",
+            "scroll_y": "0x031E",
+            "scroll_x": "0x06B4",
+            "link_y": "0x03A7",
+            "link_x": "0x0728",
+            "camera_y": "0x038D",
+            "camera_x": "0x0733",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0C",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 13,
+          "name": "Old Man House (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x30",
+            "room_id": "0x00E5",
+            "ow_area": "0x03",
+            "vram_loc": "0x10C6",
+            "scroll_y": "0x0224",
+            "scroll_x": "0x0814",
+            "link_y": "0x0278",
+            "link_x": "0x0888",
+            "camera_y": "0x0293",
+            "camera_x": "0x0893",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x0C",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 14,
+          "name": "Death Mountain Return Cave (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2E",
+            "room_id": "0x00E7",
+            "ow_area": "0x03",
+            "vram_loc": "0x0D82",
+            "scroll_y": "0x01C4",
+            "scroll_x": "0x0600",
+            "link_y": "0x0218",
+            "link_x": "0x0648",
+            "camera_y": "0x0233",
+            "camera_x": "0x067F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 15,
+          "name": "Spectacle Rock Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x21",
+            "room_id": "0x00FA",
+            "ow_area": "0x03",
+            "vram_loc": "0x0EAC",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0754",
+            "link_y": "0x0237",
+            "link_x": "0x07C8",
+            "camera_y": "0x0252",
+            "camera_x": "0x07D3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 16,
+          "name": "Spectacle Rock Cave Peak",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x22",
+            "room_id": "0x00EA",
+            "ow_area": "0x03",
+            "vram_loc": "0x092C",
+            "scroll_y": "0x0133",
+            "scroll_x": "0x0754",
+            "link_y": "0x0187",
+            "link_x": "0x07C8",
+            "camera_y": "0x01A2",
+            "camera_x": "0x07D3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 17,
+          "name": "Spectacle Rock Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x20",
+            "room_id": "0x00F9",
+            "ow_area": "0x03",
+            "vram_loc": "0x0D9C",
+            "scroll_y": "0x01C3",
+            "scroll_x": "0x06D4",
+            "link_y": "0x0217",
+            "link_x": "0x0748",
+            "camera_y": "0x0232",
+            "camera_x": "0x0753",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 18,
+          "name": "Broken Bridge (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 19,
+          "name": "Death Mountain Teleporter",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 113,
-      "name": "Spectacle Rock",
-      "roomType": "LightWorld",
+      "id": 86,
+      "name": "Death Mountain Return Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Spectacle Rock Drop",
-          "area": "Spectacle Rock",
-          "nodeType": "drop"
+          "name": "Death Mountain Return Cave (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2E",
+            "room_id": "0x00E7",
+            "ow_area": "0x03",
+            "vram_loc": "0x0D82",
+            "scroll_y": "0x01C4",
+            "scroll_x": "0x0600",
+            "link_y": "0x0218",
+            "link_x": "0x0648",
+            "camera_y": "0x0233",
+            "camera_x": "0x067F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Spectacle Rock",
-          "area": "Spectacle Rock",
+          "name": "Death Mountain Return Cave (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2D",
+            "room_id": "0x00E6",
+            "ow_area": "0x0A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0205",
+            "scroll_x": "0x0500",
+            "link_y": "0x0257",
+            "link_x": "0x05B8",
+            "camera_y": "0x0272",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Death Mountain Return Cave Exit (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2E",
+            "exit_id": "0x2F"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Death Mountain Return Cave Exit (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2F",
+            "exit_id": "0x30"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 87,
+      "name": "Death Mountain Return Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Bumper Cave Ledge Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Death Mountain Return Cave Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2E",
+            "exit_id": "0x2F"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Death Mountain Return Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 4,
+          "name": "Death Mountain Return Cave (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2D",
+            "room_id": "0x00E6",
+            "ow_area": "0x0A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0205",
+            "scroll_x": "0x0500",
+            "link_y": "0x0257",
+            "link_x": "0x05B8",
+            "camera_y": "0x0272",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 88,
+      "name": "Spectacle Rock Cave (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x21",
+            "room_id": "0x00FA",
+            "ow_area": "0x03",
+            "vram_loc": "0x0EAC",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0754",
+            "link_y": "0x0237",
+            "link_x": "0x07C8",
+            "camera_y": "0x0252",
+            "camera_x": "0x07D3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Spectacle Rock Cave Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spectacle Rock Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x22",
+            "exit_id": "0x23"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Spectacle Rock Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 89,
+      "name": "Spectacle Rock Cave (Bottom)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Cave Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Spectacle Rock Cave Peak Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spectacle Rock Cave (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x20",
+            "room_id": "0x00F9",
+            "ow_area": "0x03",
+            "vram_loc": "0x0D9C",
+            "scroll_y": "0x01C3",
+            "scroll_x": "0x06D4",
+            "link_y": "0x0217",
+            "link_x": "0x0748",
+            "camera_y": "0x0232",
+            "camera_x": "0x0753",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Spectacle Rock Cave Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x21",
+            "exit_id": "0x22"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 90,
+      "name": "Spectacle Rock Cave (Peak)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Cave Peak",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x22",
+            "room_id": "0x00EA",
+            "ow_area": "0x03",
+            "vram_loc": "0x092C",
+            "scroll_y": "0x0133",
+            "scroll_x": "0x0754",
+            "link_y": "0x0187",
+            "link_x": "0x07C8",
+            "camera_y": "0x01A2",
+            "camera_x": "0x07D3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Spectacle Rock Cave Peak Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spectacle Rock Cave Exit (Peak)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x23",
+            "exit_id": "0x24"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 106,
+      "name": "Death Mountain (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Death Mountain (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Spectacle Rock Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Tower of Hera Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x33",
+            "exit_id": "0x2D"
+          }
+        },
+        {
+          "id": 4,
+          "name": "East Death Mountain (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Tower of Hera",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x32",
+            "room_id": "0x0077",
+            "ow_area": "0x03",
+            "vram_loc": "0x0050",
+            "scroll_y": "0x0014",
+            "scroll_x": "0x087C",
+            "link_y": "0x0068",
+            "link_x": "0x08F0",
+            "camera_y": "0x0083",
+            "camera_x": "0x08FB",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF4",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Death Mountain Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 7,
+          "name": "Ether Tablet",
+          "nodeType": "item",
+          "nodeItem": "Ether",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180016"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 107,
+      "name": "Spectacle Rock",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spectacle Rock Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Spectacle Rock Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spectacle Rock",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
           "nodeAddress": "0x180140"
         }
-      ]
+      ],
+      "links": []
     }
   ]
 }
