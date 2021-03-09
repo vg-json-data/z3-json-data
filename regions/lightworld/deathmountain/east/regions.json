@@ -2,181 +2,1287 @@
   "$schema": "../../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 99,
+      "id": 91,
       "name": "East Death Mountain (Bottom)",
-      "roomType": "LightWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
+          "name": "Broken Bridge (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "East Death Mountain Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spiral Cave Ledge Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 4,
+          "name": "Fairy Ascension Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Paradox Cave Exit (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1E",
+            "exit_id": "0x1F"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Paradox Cave Exit (Middle)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1F",
+            "exit_id": "0x20"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Spiral Cave Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1C",
+            "exit_id": "0x1D"
+          }
+        },
+        {
+          "id": 8,
           "name": "Broken Bridge (East)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 9,
+          "name": "Paradox Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1D",
+            "room_id": "0x00FF",
+            "ow_area": "0x05",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0237",
+            "link_x": "0x0DA8",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 10,
+          "name": "Paradox Cave (Middle)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1E",
+            "room_id": "0x00EF",
+            "ow_area": "0x05",
+            "vram_loc": "0x17E0",
+            "scroll_y": "0x0304",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0358",
+            "link_x": "0x0DC8",
+            "camera_y": "0x0373",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 11,
+          "name": "East Death Mountain Teleporter",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 12,
+          "name": "Hookshot Fairy",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x4F",
+            "entrance_id": "0x50",
+            "room_id": "0x010C",
+            "ow_area": "0x05",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0236",
+            "link_x": "0x0D78",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 13,
+          "name": "Fairy Ascension Rocks",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 14,
+          "name": "Spiral Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1B",
+            "room_id": "0x00FE",
+            "ow_area": "0x05",
+            "vram_loc": "0x0CCA",
+            "scroll_y": "0x01A3",
+            "scroll_x": "0x0C56",
+            "link_y": "0x01F7",
+            "link_x": "0x0CC8",
+            "camera_y": "0x0212",
+            "camera_x": "0x0CD3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 92,
+      "name": "Hookshot Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hookshot Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x4F",
+            "entrance_id": "0x50",
+            "room_id": "0x010C",
+            "ow_area": "0x05",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0236",
+            "link_x": "0x0D78",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 93,
+      "name": "Paradox Cave Front",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Push Block",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
           "name": "Paradox Cave (Bottom)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1D",
+            "room_id": "0x00FF",
+            "ow_area": "0x05",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0237",
+            "link_x": "0x0DA8",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 3,
-          "name": "Paradox Cave (Middle)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "Paradox Cave Push Block Reverse",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "East Death Mountain Teleporter",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "Paradox Cave Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1E",
+            "exit_id": "0x1F"
+          }
         },
         {
           "id": 5,
-          "name": "Hookshot Fairy",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "Fairy Ascension Rocks",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
-        },
-        {
-          "id": 7,
-          "name": "Spiral Cave (Bottom)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "Light World Death Mountain Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 105,
-      "name": "East Death Mountain (Top)",
-      "roomType": "LightWorld",
+      "id": 94,
+      "name": "Paradox Cave Chest Area",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Paradox Cave (Top)",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Paradox Cave Push Block Reverse",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Death Mountain (Top)",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Paradox Cave Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Spiral Cave Ledge Access",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Paradox Cave Push Block",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "East Death Mountain Drop",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "drop"
+          "name": "Paradox Cave Bomb Jump",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 5,
-          "name": "Turtle Rock Teleporter",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Paradox Cave Lower - Far Left",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB2A"
         },
         {
           "id": 6,
-          "name": "Fairy Ascension Ledge",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "name": "Paradox Cave Lower - Left",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB2D"
+        },
+        {
+          "id": 7,
+          "name": "Paradox Cave Lower - Right",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB30"
+        },
+        {
+          "id": 8,
+          "name": "Paradox Cave Lower - Far Right",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB33"
+        },
+        {
+          "id": 9,
+          "name": "Paradox Cave Lower - Middle",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB36"
+        },
+        {
+          "id": 10,
+          "name": "Paradox Cave Upper - Left",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB39"
+        },
+        {
+          "id": 11,
+          "name": "Paradox Cave Upper - Right",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB3C"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 106,
+      "id": 95,
+      "name": "Paradox Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Bomb Jump",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave (Middle)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1E",
+            "room_id": "0x00EF",
+            "ow_area": "0x05",
+            "vram_loc": "0x17E0",
+            "scroll_y": "0x0304",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0358",
+            "link_x": "0x0DC8",
+            "camera_y": "0x0373",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Paradox Cave (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1F",
+            "room_id": "0x00DF",
+            "ow_area": "0x05",
+            "vram_loc": "0x0460",
+            "scroll_y": "0x0093",
+            "scroll_x": "0x0D00",
+            "link_y": "0x00E7",
+            "link_x": "0x0DB8",
+            "camera_y": "0x0102",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Paradox Cave Exit (Middle)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1F",
+            "exit_id": "0x20"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Paradox Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x20",
+            "exit_id": "0x21"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Paradox Cave Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 96,
+      "name": "Light World Death Mountain Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Light World Death Mountain Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Paradox Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Paradox Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Paradox Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 255,
+        "shopkeepID": 160,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          255,
+          0,
+          0,
+          0,
+          67,
+          160,
+          0
+        ],
+        "sram": 18
+      }
+    },
+    {
+      "id": 97,
+      "name": "East Death Mountain (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "East Death Mountain (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "East Death Mountain (Top) Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Paradox Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x20",
+            "exit_id": "0x21"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Paradox Cave (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1F",
+            "room_id": "0x00DF",
+            "ow_area": "0x05",
+            "vram_loc": "0x0460",
+            "scroll_y": "0x0093",
+            "scroll_x": "0x0D00",
+            "link_y": "0x00E7",
+            "link_x": "0x0DB8",
+            "camera_y": "0x0102",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Death Mountain (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 6,
+          "name": "Spiral Cave Ledge Access",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 7,
+          "name": "East Death Mountain Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 8,
+          "name": "Turtle Rock Teleporter",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 9,
+          "name": "Fairy Ascension Ledge",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 98,
       "name": "Spiral Cave Ledge",
-      "roomType": "LightWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Spiral Cave Ledge Access",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Spiral Cave Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Spiral Cave Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Spiral Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Spiral Cave Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Spiral Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1D",
+            "exit_id": "0x1E"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Spiral Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1C",
+            "room_id": "0x00EE",
+            "ow_area": "0x05",
+            "vram_loc": "0x07C8",
+            "scroll_y": "0x0108",
+            "scroll_x": "0x0C46",
+            "link_y": "0x0158",
+            "link_x": "0x0CB8",
+            "camera_y": "0x0177",
+            "camera_x": "0x0CC3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Spiral Cave Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 99,
+      "name": "Spiral Cave (Top)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Spiral Cave",
-          "area": "Spiral Cave Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1C",
+            "room_id": "0x00EE",
+            "ow_area": "0x05",
+            "vram_loc": "0x07C8",
+            "scroll_y": "0x0108",
+            "scroll_x": "0x0C46",
+            "link_y": "0x0158",
+            "link_x": "0x0CB8",
+            "camera_y": "0x0177",
+            "camera_x": "0x0CC3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Spiral Cave Ledge Drop",
-          "area": "Spiral Cave Ledge",
-          "nodeType": "drop"
+          "name": "Spiral Cave (top to bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spiral Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1D",
+            "exit_id": "0x1E"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Spiral Cave",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE9BF"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 109,
-      "name": "Fairy Ascension Plateau",
-      "roomType": "LightWorld",
+      "id": 100,
+      "name": "Spiral Cave (Bottom)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
+          "name": "Spiral Cave (top to bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Spiral Cave (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1B",
+            "room_id": "0x00FE",
+            "ow_area": "0x05",
+            "vram_loc": "0x0CCA",
+            "scroll_y": "0x01A3",
+            "scroll_x": "0x0C56",
+            "link_y": "0x01F7",
+            "link_x": "0x0CC8",
+            "camera_y": "0x0212",
+            "camera_x": "0x0CD3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Spiral Cave Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1C",
+            "exit_id": "0x1D"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 101,
+      "name": "Fairy Ascension Plateau",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Fairy Ascension Rocks",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Fairy Ascension Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Fairy Ascension Ledge Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 4,
+          "name": "Fairy Ascension Cave Exit (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1A",
+            "exit_id": "0x1B"
+          }
+        },
+        {
+          "id": 5,
           "name": "Fairy Ascension Drop",
-          "area": "Fairy Ascension Plateau",
-          "nodeType": "drop"
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 6,
+          "name": "Fairy Ascension Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x19",
+            "room_id": "0x00FD",
+            "ow_area": "0x05",
+            "vram_loc": "0x0DD4",
+            "scroll_y": "0x01C4",
+            "scroll_x": "0x0CA6",
+            "link_y": "0x0218",
+            "link_x": "0x0D18",
+            "camera_y": "0x0233",
+            "camera_x": "0x0D23",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 102,
+      "name": "Fairy Ascension Cave (Bottom)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Fairy Ascension Cave Pots",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
           "name": "Fairy Ascension Cave (Bottom)",
-          "area": "Fairy Ascension Plateau",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x19",
+            "room_id": "0x00FD",
+            "ow_area": "0x05",
+            "vram_loc": "0x0DD4",
+            "scroll_y": "0x01C4",
+            "scroll_x": "0x0CA6",
+            "link_y": "0x0218",
+            "link_x": "0x0D18",
+            "camera_y": "0x0233",
+            "camera_x": "0x0D23",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Fairy Ascension Cave Climb",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 4,
+          "name": "Fairy Ascension Cave Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1A",
+            "exit_id": "0x1B"
+          }
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 111,
-      "name": "Fairy Ascension Ledge",
-      "roomType": "LightWorld",
+      "id": 103,
+      "name": "Fairy Ascension Cave (Drop)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Fairy Ascension Ledge Drop",
-          "area": "Fairy Ascension Ledge",
-          "nodeType": "drop"
+          "name": "Fairy Ascension Cave Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Fairy Ascension Cave Pots",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 104,
+      "name": "Fairy Ascension Cave (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Fairy Ascension Cave Climb",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
           "name": "Fairy Ascension Cave (Top)",
-          "area": "Fairy Ascension Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1A",
+            "room_id": "0x00ED",
+            "ow_area": "0x05",
+            "vram_loc": "0x0AD4",
+            "scroll_y": "0x0163",
+            "scroll_x": "0x0CA6",
+            "link_y": "0x01B7",
+            "link_x": "0x0D18",
+            "camera_y": "0x01D2",
+            "camera_x": "0x0D23",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Fairy Ascension Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1B",
+            "exit_id": "0x1C"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Fairy Ascension Cave Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 162,
-      "name": "Death Mountain Floating Island (Light World)",
-      "roomType": "LightWorld",
+      "id": 105,
+      "name": "Fairy Ascension Ledge",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Floating Island",
-          "area": "Death Mountain Floating Island (Light World)",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180141"
+          "name": "Fairy Ascension Ledge",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Isolated Ledge Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Dark Death Mountain Isolated Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Isolated Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Isolated Ledge",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Fairy Ascension Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Fairy Ascension Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Fairy Ascension Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Fairy Ascension Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x1B",
+            "exit_id": "0x1C"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Fairy Ascension Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Fairy Ascension Cave (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x1A",
+            "room_id": "0x00ED",
+            "ow_area": "0x05",
+            "vram_loc": "0x0AD4",
+            "scroll_y": "0x0163",
+            "scroll_x": "0x0CA6",
+            "link_y": "0x01B7",
+            "link_x": "0x0D18",
+            "camera_y": "0x01D2",
+            "camera_x": "0x0D23",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 164,
+      "id": 153,
+      "name": "Death Mountain Floating Island (Light World)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Floating Island Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Floating Island",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180141"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 154,
+      "name": "Turtle Rock (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Turtle Rock Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Turtle Rock Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 155,
       "name": "Mimic Cave Ledge",
-      "roomType": "LightWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Mimic Cave Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Mimic Cave Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mimic Cave",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x4E",
+            "entrance_id": "0x4F",
+            "room_id": "0x010C",
+            "ow_area": "0x05",
+            "vram_loc": "0x07E0",
+            "scroll_y": "0x0103",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0156",
+            "link_x": "0x0D78",
+            "camera_y": "0x0172",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Mimic Cave Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Mimic Cave",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 156,
+      "name": "Mimic Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Mimic Cave",
-          "area": "Mimic Cave Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x4E",
+            "entrance_id": "0x4F",
+            "room_id": "0x010C",
+            "ow_area": "0x05",
+            "vram_loc": "0x07E0",
+            "scroll_y": "0x0103",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0156",
+            "link_x": "0x0D78",
+            "camera_y": "0x0172",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Mimic Cave Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Mimic Cave",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mimic Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE9C5"
         }
-      ]
+      ],
+      "links": []
     }
   ]
 }
