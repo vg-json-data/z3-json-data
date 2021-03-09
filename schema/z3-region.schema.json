@@ -113,7 +113,8 @@
                   "$id": "#/items/properties/nodes/items/properties/nodeAddress",
                   "type": [
                     "string",
-                    "array"
+                    "array",
+                    "object"
                   ],
                   "title": "Memory Address",
                   "description": "Memory address of this location"

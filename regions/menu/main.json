@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Menu",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Links House S&Q",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Menu",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Menu",
+                  "nodeid": 0,
+                  "nodeName": "Menu",
+                  "position": "exit"
+                },
+                {
+                  "area": "Links House",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Links House",
+                  "nodeid": 0,
+                  "nodeName": "Links House",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Sanctuary S&Q",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Menu",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Menu",
+                  "nodeid": 0,
+                  "nodeName": "Menu",
+                  "position": "exit"
+                },
+                {
+                  "area": "Sanctuary",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Sanctuary",
+                  "nodeid": 0,
+                  "nodeName": "Sanctuary",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Old Man S&Q",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Menu",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Menu",
+                  "nodeid": 0,
+                  "nodeName": "Menu",
+                  "position": "exit"
+                },
+                {
+                  "area": "Old Man House",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Old Man House",
+                  "nodeid": 0,
+                  "nodeName": "Old Man House",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    }
+	]
+}
