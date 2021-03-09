@@ -2,96 +2,613 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 5,
-      "name": "Zoras River",
-      "roomType": "LightWorld",
+      "id": 6,
+      "name": "Hyrule Castle Secret Entrance",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "King Zora",
-          "area": "Zoras River",
-          "nodeType": "item",
-          "nodeItem": "Flippers",
-          "nodeAddress": "0xEE1C3"
+          "name": "Hyrule Castle Secret Entrance Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB858"
+            ]
+          }
         },
         {
           "id": 2,
-          "name": "Zora's Ledge",
-          "area": "Zoras River",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180149"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Kings Grave Area",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Kings Grave",
-          "area": "Kings Grave Area",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Kings Grave Inner Rocks",
-          "area": "Kings Grave Area",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 81,
-      "name": "Hyrule Castle Courtyard",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
           "name": "Hyrule Castle Secret Entrance Stairs",
-          "area": "Hyrule Castle Courtyard",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Hyrule Castle Entrance (South)",
-          "area": "Hyrule Castle Courtyard",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 82,
-      "name": "Hyrule Castle Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Hyrule Castle Entrance (East)",
-          "area": "Hyrule Castle Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Hyrule Castle Entrance (West)",
-          "area": "Hyrule Castle Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x31",
+            "room_id": "0x0055",
+            "ow_area": "0x1B",
+            "vram_loc": "0x044A",
+            "scroll_y": "0x067A",
+            "scroll_x": "0x0854",
+            "link_y": "0x06C8",
+            "link_x": "0x08C8",
+            "camera_y": "0x06E7",
+            "camera_x": "0x08D3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 3,
-          "name": "Agahnims Tower",
-          "area": "Hyrule Castle Ledge",
-          "nodeType": "door"
+          "name": "Hyrule Castle Secret Entrance Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x32",
+            "exit_id": "0x33"
+          }
         },
         {
           "id": 4,
-          "name": "Hyrule Castle Ledge Courtyard Drop",
-          "area": "Hyrule Castle Ledge",
-          "nodeType": "drop"
+          "name": "Link's Uncle",
+          "nodeType": "item",
+          "nodeItem": "L1Sword",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x2DF45"
+        },
+        {
+          "id": 5,
+          "name": "Secret Passage",
+          "nodeType": "item",
+          "nodeItem": "Lamp",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE971"
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 7,
+      "name": "Zoras River",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Zoras River",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "King Zora",
+          "nodeType": "item",
+          "nodeItem": "Flippers",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEE1C3"
+        },
+        {
+          "id": 3,
+          "name": "Zora's Ledge",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180149"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 8,
+      "name": "Waterfall of Wishing",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Waterfall of Wishing",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5B",
+            "entrance_id": "0x5C",
+            "room_id": "0x0114",
+            "ow_area": "0x0F",
+            "vram_loc": "0x0080",
+            "scroll_y": "0x0200",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0207",
+            "link_x": "0x0E60",
+            "camera_y": "0x026F",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Waterfall Fairy - Left",
+          "nodeType": "item",
+          "nodeItem": "RedBoomerang",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE980"
+        },
+        {
+          "id": 3,
+          "name": "Waterfall Fairy - Right",
+          "nodeType": "item",
+          "nodeItem": "FireShield",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE9D1"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 11,
+      "name": "North Fairy Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "North Fairy Cave Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB857"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "North Fairy Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x37",
+            "entrance_id": "0x7C",
+            "room_id": "0x0008",
+            "ow_area": "0x15",
+            "vram_loc": "0x0088",
+            "scroll_y": "0x0400",
+            "scroll_x": "0x0A36",
+            "link_y": "0x0448",
+            "link_x": "0x0AA8",
+            "camera_y": "0x046F",
+            "camera_x": "0x0AB3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0A",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "North Fairy Cave Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x38",
+            "exit_id": "0x39"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 28,
+      "name": "Lake Hylia Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5D",
+            "room_id": "0x0115",
+            "ow_area": "0x2E",
+            "vram_loc": "0x0016",
+            "scroll_y": "0x0A00",
+            "scroll_x": "0x0CB6",
+            "link_y": "0x0A37",
+            "link_x": "0x0D28",
+            "camera_y": "0x0A6D",
+            "camera_x": "0x0D33",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 37,
+      "name": "Sahasrahlas Hut",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Sahasrahlas Hut",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x44",
+            "entrance_id": "0x45",
+            "room_id": "0x0105",
+            "ow_area": "0x1E",
+            "vram_loc": "0x0610",
+            "scroll_y": "0x06D4",
+            "scroll_x": "0x0C76",
+            "link_y": "0x0727",
+            "link_x": "0x0CF0",
+            "camera_y": "0x0743",
+            "camera_x": "0x0CFB",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Sahasrahla's Hut - Left",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA82"
+        },
+        {
+          "id": 3,
+          "name": "Sahasrahla's Hut - Middle",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA85"
+        },
+        {
+          "id": 4,
+          "name": "Sahasrahla's Hut - Right",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA88"
+        },
+        {
+          "id": 5,
+          "name": "Sahasrahla",
+          "nodeType": "item",
+          "nodeItem": "PegasusBoots",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x2F1FC"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 55,
+      "name": "Long Fairy Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Long Fairy Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x54",
+            "entrance_id": "0x55",
+            "room_id": "0x011E",
+            "ow_area": "0x2F",
+            "vram_loc": "0x06A0",
+            "scroll_y": "0x0ACA",
+            "scroll_x": "0x0F00",
+            "link_y": "0x0B18",
+            "link_x": "0x0FA8",
+            "camera_y": "0x0B37",
+            "camera_x": "0x0F85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 65,
+      "name": "Potion Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Potion Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x4B",
+            "entrance_id": "0x4C",
+            "room_id": "0x0109",
+            "ow_area": "0x16",
+            "vram_loc": "0x070A",
+            "scroll_y": "0x04E6",
+            "scroll_x": "0x0C56",
+            "link_y": "0x0538",
+            "link_x": "0x0CC8",
+            "camera_y": "0x0553",
+            "camera_x": "0x0CD3",
+            "unknown_1": "0x08",
+            "unknown_2": "0xF8",
+            "door_1": "0x0A98",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Potion Shop",
+          "nodeType": "item",
+          "nodeItem": "Powder",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180014"
+        },
+        {
+          "id": 3,
+          "name": "Potion Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Potion Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 5,
+          "name": "Potion Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 265,
+        "shopkeepID": 255,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": true,
+        "bytes": [
+          0,
+          9,
+          1,
+          76,
+          0,
+          3,
+          255,
+          0
+        ],
+        "sram": 27
+      }
+    },
+    {
+      "id": 78,
+      "name": "Hyrule Castle Courtyard",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Ledge Courtyard Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Hyrule Castle Main Gate",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Hyrule Castle Secret Entrance Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x32",
+            "exit_id": "0x33"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Hyrule Castle Exit (South)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x04",
+            "exit_id": "0x03"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Hyrule Castle Secret Entrance Stairs",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x31",
+            "room_id": "0x0055",
+            "ow_area": "0x1B",
+            "vram_loc": "0x044A",
+            "scroll_y": "0x067A",
+            "scroll_x": "0x0854",
+            "link_y": "0x06C8",
+            "link_x": "0x08C8",
+            "camera_y": "0x06E7",
+            "camera_x": "0x08D3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Hyrule Castle Entrance (South)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x03",
+            "room_id": "0x0061",
+            "ow_area": "0x1B",
+            "vram_loc": "0x0530",
+            "scroll_y": "0x0692",
+            "scroll_x": "0x0784",
+            "link_y": "0x06CC",
+            "link_x": "0x07F8",
+            "camera_y": "0x06FF",
+            "camera_x": "0x0803",
+            "unknown_1": "0x0E",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x87BE"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 79,
+      "name": "Hyrule Castle Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Ledge Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Hyrule Castle Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x03",
+            "exit_id": "0x02"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Hyrule Castle Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x05",
+            "exit_id": "0x04"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Agahnims Tower Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x24",
+            "exit_id": "0x25"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Hyrule Castle Entrance (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x04",
+            "room_id": "0x0062",
+            "ow_area": "0x1B",
+            "vram_loc": "0x004A",
+            "scroll_y": "0x0600",
+            "scroll_x": "0x0856",
+            "link_y": "0x0604",
+            "link_x": "0x08C8",
+            "camera_y": "0x066D",
+            "camera_x": "0x08D3",
+            "unknown_1": "0x00",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x8158"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Hyrule Castle Entrance (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x02",
+            "room_id": "0x0060",
+            "ow_area": "0x1B",
+            "vram_loc": "0x0016",
+            "scroll_y": "0x0600",
+            "scroll_x": "0x06AE",
+            "link_y": "0x0604",
+            "link_x": "0x0728",
+            "camera_y": "0x066D",
+            "camera_x": "0x0733",
+            "unknown_1": "0x00",
+            "unknown_2": "0x02",
+            "door_1": "0x0000",
+            "door_2": "0x8124"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Agahnims Tower",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x23",
+            "room_id": "0x00E0",
+            "ow_area": "0x1B",
+            "vram_loc": "0x0032",
+            "scroll_y": "0x0600",
+            "scroll_x": "0x0784",
+            "link_y": "0x0634",
+            "link_x": "0x07F8",
+            "camera_y": "0x066D",
+            "camera_x": "0x0803",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0A",
+            "door_1": "0x0000",
+            "door_2": "0x82BE"
+          }
+        },
+        {
+          "id": 8,
+          "name": "Hyrule Castle Ledge Courtyard Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
     }
   ]
 }
