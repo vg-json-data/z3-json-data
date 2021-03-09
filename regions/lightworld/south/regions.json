@@ -1,179 +1,1232 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
+
     {
-      "id": 2,
+      "id": 4,
       "name": "Lake Hylia Central Island",
-      "roomType": "LightWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Capacity Upgrade",
-          "area": "Lake Hylia Central Island",
-          "nodeType": "door"
+          "name": "Lake Hylia Central Island Pier",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
+          "name": "Lake Hylia Central Island Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Capacity Upgrade",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5C",
+            "entrance_id": "0x5D",
+            "room_id": "0x0115",
+            "ow_area": "0x35",
+            "vram_loc": "0x0A46",
+            "scroll_y": "0x0D36",
+            "scroll_x": "0x0C2A",
+            "link_y": "0x0D88",
+            "link_x": "0x0CA8",
+            "camera_y": "0x0DA3",
+            "camera_x": "0x0CAF",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
           "name": "Lake Hylia Central Island Teleporter",
-          "area": "Lake Hylia Central Island",
-          "nodeType": "door"
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 43,
-      "name": "Hobo Bridge",
-      "roomType": "LightWorld",
+      "id": 12,
+      "name": "Dam",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Hobo",
-          "area": "Hobo Bridge",
+          "name": "Dam",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x4D",
+            "entrance_id": "0x4E",
+            "room_id": "0x010B",
+            "ow_area": "0x3B",
+            "vram_loc": "0x04A0",
+            "scroll_y": "0x0E8A",
+            "scroll_x": "0x06FA",
+            "link_y": "0x0ED8",
+            "link_x": "0x0778",
+            "camera_y": "0x0EF7",
+            "camera_x": "0x077F",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Floodgate",
+          "nodeType": "event",
+          "nodeItem": "DrainedFloodgate",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        },
+        {
+          "id": 3,
+          "name": "Floodgate Chest",
           "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0x33E7D"
+          "nodeItem": "ThreeBombs",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE98C"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 48,
+      "id": 13,
+      "name": "Links House",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Links House",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x00",
+            "room_id": "0x0104",
+            "ow_area": "0x2C",
+            "vram_loc": "0x0506",
+            "scroll_y": "0x0A9A",
+            "scroll_x": "0x0832",
+            "link_y": "0x0AE8",
+            "link_x": "0x08B8",
+            "camera_y": "0x0B07",
+            "camera_x": "0x08BF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFE",
+            "door_1": "0x0816",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Links House S&Q",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Menu",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Menu",
+                  "nodeid": 0,
+                  "nodeName": "Menu",
+                  "position": "entrances"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Links House",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Links House",
+                  "nodeid": 0,
+                  "nodeName": "Links House",
+                  "position": "entrances"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Links House Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x01",
+            "exit_id": "0x00"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Link's House",
+          "nodeType": "item",
+          "nodeItem": "Lamp",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE9BC"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 14,
+      "name": "Chris Houlihan Room",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Chris Houlihan Room Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "exit_id": "0x3D"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 36,
+      "name": "Aginahs Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Aginahs Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x70",
+            "entrance_id": "0x4D",
+            "room_id": "0x010A",
+            "ow_area": "0x30",
+            "vram_loc": "0x0656",
+            "scroll_y": "0x0CC6",
+            "scroll_x": "0x02AA",
+            "link_y": "0x0D18",
+            "link_x": "0x0328",
+            "camera_y": "0x0D33",
+            "camera_x": "0x032F",
+            "unknown_1": "0x08",
+            "unknown_2": "0xF8",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Aginah's Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE9F2"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 45,
+      "name": "Hobo Bridge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hobo Bridge",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Hobo",
+          "nodeType": "item",
+          "nodeItem": "Bottle",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x33E7D"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 50,
       "name": "Cave 45 Ledge",
-      "roomType": "LightWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Cave 45 Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Cave 45",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x50",
+            "entrance_id": "0x51",
+            "room_id": "0x011B",
+            "ow_area": "0x32",
+            "vram_loc": "0x0680",
+            "scroll_y": "0x0CC9",
+            "scroll_x": "0x0400",
+            "link_y": "0x0D16",
+            "link_x": "0x0438",
+            "camera_y": "0x0D36",
+            "camera_x": "0x0485",
+            "unknown_1": "0x07",
+            "unknown_2": "0xF9",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 51,
+      "name": "Cave 45",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Cave 45",
-          "area": "Cave 45 Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 64,
-      "name": "Lake Hylia Island",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lake Hylia Island",
-          "area": "Lake Hylia Island",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180144"
-        }
-      ]
-    },
-    {
-      "id": 67,
-      "name": "Maze Race Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Two Brothers House (West)",
-          "area": "Maze Race Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x50",
+            "entrance_id": "0x51",
+            "room_id": "0x011B",
+            "ow_area": "0x32",
+            "vram_loc": "0x0680",
+            "scroll_y": "0x0CC9",
+            "scroll_x": "0x0400",
+            "link_y": "0x0D16",
+            "link_x": "0x0438",
+            "camera_y": "0x0D36",
+            "camera_x": "0x0485",
+            "unknown_1": "0x07",
+            "unknown_2": "0xF9",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Maze Race",
-          "area": "Maze Race Ledge",
+          "name": "Cave 45",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180142"
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180003"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 69,
-      "name": "Desert Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Desert Palace Entrance (North) Rocks",
-          "area": "Desert Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Desert Palace Entrance (West)",
-          "area": "Desert Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Desert Ledge",
-          "area": "Desert Ledge",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180143"
-        }
-      ]
-    },
-    {
-      "id": 70,
-      "name": "Desert Ledge (Northeast)",
-      "roomType": "LightWorld",
+      "id": 54,
+      "name": "Checkerboard Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Checkerboard Cave",
-          "area": "Desert Ledge (Northeast)",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7D",
+            "entrance_id": "0x72",
+            "room_id": "0x0126",
+            "ow_area": "0x30",
+            "vram_loc": "0x00C8",
+            "scroll_y": "0x0C0A",
+            "scroll_x": "0x024A",
+            "link_y": "0x0C67",
+            "link_x": "0x02C8",
+            "camera_y": "0x0C77",
+            "camera_x": "0x02CF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Checkerboard Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180005"
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 56,
+      "name": "Mini Moldorm Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Mini Moldorm Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7C",
+            "entrance_id": "0x6C",
+            "room_id": "0x0123",
+            "ow_area": "0x35",
+            "vram_loc": "0x1480",
+            "scroll_y": "0x0E96",
+            "scroll_x": "0x0A00",
+            "link_y": "0x0EE8",
+            "link_x": "0x0A68",
+            "camera_y": "0x0F03",
+            "camera_x": "0x0A85",
+            "unknown_1": "0x08",
+            "unknown_2": "0xF8",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mini Moldorm Cave - Far Left",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB42"
+        },
+        {
+          "id": 3,
+          "name": "Mini Moldorm Cave - Left",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB45"
+        },
+        {
+          "id": 4,
+          "name": "Mini Moldorm Cave - Right",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB48"
+        },
+        {
+          "id": 5,
+          "name": "Mini Moldorm Cave - Far Right",
+          "nodeType": "item",
+          "nodeItem": "TenArrows",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB4B"
+        },
+        {
+          "id": 6,
+          "name": "Mini Moldorm Cave - Generous Guy",
+          "nodeType": "item",
+          "nodeItem": "ThreeHundredRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180010"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 57,
+      "name": "Ice Rod Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ice Rod Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7F",
+            "entrance_id": "0x84",
+            "room_id": "0x0120",
+            "ow_area": "0x37",
+            "vram_loc": "0x0080",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C37",
+            "link_x": "0x0E48",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Ice Rod Cave",
+          "nodeType": "item",
+          "nodeItem": "IceRod",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB4E"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 58,
+      "name": "Good Bee Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Good Bee Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6A",
+            "entrance_id": "0x56",
+            "room_id": "0x0120",
+            "ow_area": "0x37",
+            "vram_loc": "0x0084",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E26",
+            "link_y": "0x0C36",
+            "link_x": "0x0E98",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0EA3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 59,
+      "name": "20 Rupee Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "20 Rupee Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7A",
+            "entrance_id": "0x6F",
+            "room_id": "0x0125",
+            "ow_area": "0x37",
+            "vram_loc": "0x0200",
+            "scroll_y": "0x0C23",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C86",
+            "link_x": "0x0E68",
+            "camera_y": "0x0C92",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x0D",
+            "unknown_2": "0xF3",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 60,
+      "name": "Cave Shop (Lake Hylia)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Cave Shop (Lake Hylia)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x57",
+            "entrance_id": "0x58",
+            "room_id": "0x0112",
+            "ow_area": "0x35",
+            "vram_loc": "0x0022",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0B1A",
+            "link_y": "0x0C26",
+            "link_x": "0x0B98",
+            "camera_y": "0x0C6D",
+            "camera_x": "0x0B9F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Lake Hylia Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Lake Hylia Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Lake Hylia Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 274,
+        "shopkeepID": 160,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          18,
+          1,
+          88,
+          0,
+          3,
+          160,
+          0
+        ],
+        "sram": 24
+      }
+    },
+    {
+      "id": 66,
+      "name": "Lake Hylia Island",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Island Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Lake Hylia Island",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180144"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 67,
+      "name": "Capacity Upgrade",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Capacity Upgrade",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5C",
+            "entrance_id": "0x5D",
+            "room_id": "0x0115",
+            "ow_area": "0x35",
+            "vram_loc": "0x0A46",
+            "scroll_y": "0x0D36",
+            "scroll_x": "0x0C2A",
+            "link_y": "0x0D88",
+            "link_x": "0x0CA8",
+            "camera_y": "0x0DA3",
+            "camera_x": "0x0CAF",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Capacity Upgrade - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        },
+        {
+          "id": 3,
+          "name": "Capacity Upgrade - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 277,
+        "shopkeepID": 4,
+        "type": "ShopType.UpgradeShop",
+        "custom": true,
+        "locked": true,
+        "bytes": [
+          0,
+          21,
+          1,
+          93,
+          0,
+          18,
+          4,
+          0
+        ],
+        "sram": 30
+      }
+    },
+    {
+      "id": 68,
+      "name": "Two Brothers House",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Two Brothers House (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x0F",
+            "room_id": "0x00F5",
+            "ow_area": "0x29",
+            "vram_loc": "0x0880",
+            "scroll_y": "0x0B07",
+            "scroll_x": "0x0200",
+            "link_y": "0x0B58",
+            "link_x": "0x0238",
+            "camera_y": "0x0B74",
+            "camera_x": "0x028D",
+            "unknown_1": "0x09",
+            "unknown_2": "0x00",
+            "door_1": "0x0B86",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Two Brothers House (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x0E",
+            "room_id": "0x00F4",
+            "ow_area": "0x28",
+            "vram_loc": "0x08A0",
+            "scroll_y": "0x0B06",
+            "scroll_x": "0x0100",
+            "link_y": "0x0B58",
+            "link_x": "0x01B8",
+            "camera_y": "0x0B73",
+            "camera_x": "0x018D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0BB6",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Two Brothers House Exit (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x10",
+            "exit_id": "0x11"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Two Brothers House Exit (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x0F",
+            "exit_id": "0x10"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 69,
+      "name": "Maze Race Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Maze Race Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Two Brothers House Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x0F",
+            "exit_id": "0x10"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Two Brothers House (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x0E",
+            "room_id": "0x00F4",
+            "ow_area": "0x28",
+            "vram_loc": "0x08A0",
+            "scroll_y": "0x0B06",
+            "scroll_x": "0x0100",
+            "link_y": "0x0B58",
+            "link_x": "0x01B8",
+            "camera_y": "0x0B73",
+            "camera_x": "0x018D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0BB6",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Maze Race",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180142"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 70,
+      "name": "50 Rupee Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "50 Rupee Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x78",
+            "entrance_id": "0x6D",
+            "room_id": "0x0124",
+            "ow_area": "0x3A",
+            "vram_loc": "0x0790",
+            "scroll_y": "0x0EEA",
+            "scroll_x": "0x047A",
+            "link_y": "0x0F47",
+            "link_x": "0x04F8",
+            "camera_y": "0x0F57",
+            "camera_x": "0x04FF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
     },
     {
       "id": 71,
-      "name": "Desert Palace Stairs",
-      "roomType": "LightWorld",
+      "name": "Desert Ledge",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Desert Palace Entrance (South)",
-          "area": "Desert Palace Stairs",
-          "nodeType": "door"
+          "name": "Desert Ledge Return Rocks",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Desert Ledge Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Desert Palace Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x0B",
+            "exit_id": "0x0C"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Desert Palace Entrance (North) Rocks",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Desert Palace Entrance (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x0A",
+            "room_id": "0x0083",
+            "ow_area": "0x30",
+            "vram_loc": "0x0280",
+            "scroll_y": "0x0C46",
+            "scroll_x": "0x0003",
+            "link_y": "0x0C98",
+            "link_x": "0x0088",
+            "camera_y": "0x0CB3",
+            "camera_x": "0x0090",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFD",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Desert Ledge",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180143"
         }
-      ]
+      ],
+      "links": []
     },
     {
       "id": 72,
-      "name": "Desert Palace Lone Stairs",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-           "id": 1,
-           "name": "Desert Palace Stairs Drop",
-           "area": "Desert Palace Lone Stairs",
-           "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Desert Palace Entrance (East)",
-          "area": "Desert Palace Lone Stairs",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 73,
-      "name": "Desert Palace Entrance (North) Spot",
-      "roomType": "LightWorld",
+      "name": "Desert Ledge (Northeast)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Desert Palace Entrance (North)",
-          "area": "Desert Palace Entrance (North) Spot",
-          "nodeType": "door"
+          "name": "Desert Ledge (Northeast) Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Desert Ledge Return Rocks",
-          "area": "Desert Palace Entrance (North) Spot",
-          "nodeType": "door"
+          "name": "Checkerboard Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7D",
+            "entrance_id": "0x72",
+            "room_id": "0x0126",
+            "ow_area": "0x30",
+            "vram_loc": "0x00C8",
+            "scroll_y": "0x0C0A",
+            "scroll_x": "0x024A",
+            "link_y": "0x0C67",
+            "link_x": "0x02C8",
+            "camera_y": "0x0C77",
+            "camera_x": "0x02CF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 73,
+      "name": "Desert Palace Stairs",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace Stairs",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace Stairs Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Desert Palace Exit (South)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x09",
+            "exit_id": "0x0A"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Desert Palace Entrance (South)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x08",
+            "room_id": "0x0084",
+            "ow_area": "0x30",
+            "vram_loc": "0x0314",
+            "scroll_y": "0x0C56",
+            "scroll_x": "0x00A6",
+            "link_y": "0x0CA8",
+            "link_x": "0x0128",
+            "camera_y": "0x0CC3",
+            "camera_x": "0x0133",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 74,
+      "name": "Desert Palace Lone Stairs",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x0A",
+            "exit_id": "0x0B"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Desert East Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Desert East Portal",
+                  "nodeid": 0,
+                  "nodeName": "Desert East Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Desert Palace Lone Stairs",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Desert Palace Lone Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Desert Palace Lone Stairs",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace Stairs Drop",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Desert Palace Lone Stairs",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Desert Palace Lone Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Desert Palace Lone Stairs",
+                  "position": "exit"
+                },
+                {
+                  "area": "Light World",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Light World",
+                  "nodeid": 0,
+                  "nodeName": "Light World",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Desert Palace Entrance (East)",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x09",
+            "room_id": "0x0085",
+            "ow_area": "0x30",
+            "vram_loc": "0x02A8",
+            "scroll_y": "0x0C4A",
+            "scroll_x": "0x0142",
+            "link_y": "0x0C98",
+            "link_x": "0x01C8",
+            "camera_y": "0x0CB7",
+            "camera_x": "0x01CF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFE",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Desert Palace Lone Stairs",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Desert Palace Lone Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Desert Palace Lone Stairs",
+                  "position": "exit"
+                },
+                {
+                  "area": "Desert East Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Desert East Portal",
+                  "nodeid": 0,
+                  "nodeName": "Desert East Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 75,
+      "name": "Desert Palace Entrance (North) Spot",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Palace Entrance (North) Rocks",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Desert Palace Entrance (North) Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Desert Palace Exit (North)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x0C",
+            "exit_id": "0x0D"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Desert Palace Entrance (North)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x0B",
+            "room_id": "0x0063",
+            "ow_area": "0x30",
+            "vram_loc": "0x0016",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x00A2",
+            "link_y": "0x0C28",
+            "link_x": "0x0128",
+            "camera_y": "0x0C6D",
+            "camera_x": "0x012F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0E",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Desert Ledge Return Rocks",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
     }
   ]
 }
