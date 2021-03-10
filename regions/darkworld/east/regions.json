@@ -2,85 +2,240 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 117,
+      "id": 108,
       "name": "East Dark World",
-      "roomType": "DarkWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Pyramid Fairy",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "Top of Pyramid",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "South Dark World Bridge",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "East Dark World Pier",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Palace of Darkness",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "East Dark World Bridge",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "Dark Lake Hylia Drop (East)",
-          "area": "East Dark World",
-          "nodeType": "drop"
+          "name": "East Dark World River Pier",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 5,
-          "name": "Dark Lake Hylia Teleporter",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "East Dark World Broken Bridge Pass",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 6,
-          "name": "Hyrule Castle Ledge Mirror Spot",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "East Hyrule Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 7,
-          "name": "Dark Lake Hylia Fairy",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "Pyramid Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 8,
-          "name": "Palace of Darkness Hint",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "Palace of Darkness Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x26",
+            "exit_id": "0x27"
+          }
         },
         {
           "id": 9,
-          "name": "East Dark World Hint",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "Pyramid Fairy",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x62",
+            "entrance_id": "0x63",
+            "room_id": "0x0116",
+            "ow_area": "0x5B",
+            "vram_loc": "0x0B1E",
+            "scroll_y": "0x0754",
+            "scroll_x": "0x06FA",
+            "link_y": "0x07A7",
+            "link_x": "0x0778",
+            "camera_y": "0x07C3",
+            "camera_x": "0x077F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 10,
-          "name": "Pyramid Hole",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "South Dark World Bridge",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 11,
-          "name": "Northeast Dark World Broken Bridge Pass",
-          "area": "East Dark World",
-          "nodeType": "door"
+          "name": "Palace of Darkness",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x25",
+            "room_id": "0x004A",
+            "ow_area": "0x5E",
+            "vram_loc": "0x005A",
+            "scroll_y": "0x0600",
+            "scroll_x": "0x0ED6",
+            "link_y": "0x0628",
+            "link_x": "0x0F50",
+            "camera_y": "0x066D",
+            "camera_x": "0x0F5B",
+            "unknown_1": "0x00",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 12,
+          "name": "Dark Lake Hylia Drop (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 13,
+          "name": "Dark Lake Hylia Teleporter",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 14,
+          "name": "Hyrule Castle Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 15,
+          "name": "Dark Lake Hylia Fairy",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6C",
+            "room_id": "0x0115",
+            "ow_area": "0x6E",
+            "vram_loc": "0x0016",
+            "scroll_y": "0x0A00",
+            "scroll_x": "0x0CB6",
+            "link_y": "0x0A36",
+            "link_x": "0x0D28",
+            "camera_y": "0x0A6D",
+            "camera_x": "0x0D33",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 16,
+          "name": "Palace of Darkness Hint",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x67",
+            "entrance_id": "0x68",
+            "room_id": "0x011A",
+            "ow_area": "0x5E",
+            "vram_loc": "0x0C24",
+            "scroll_y": "0x0794",
+            "scroll_x": "0x0D12",
+            "link_y": "0x07E8",
+            "link_x": "0x0D90",
+            "camera_y": "0x0803",
+            "camera_x": "0x0D97",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 17,
+          "name": "East Dark World Hint",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x68",
+            "entrance_id": "0x69",
+            "room_id": "0x010E",
+            "ow_area": "0x6F",
+            "vram_loc": "0x06A0",
+            "scroll_y": "0x0ACA",
+            "scroll_x": "0x0F00",
+            "link_y": "0x0B18",
+            "link_x": "0x0FA8",
+            "camera_y": "0x0B37",
+            "camera_x": "0x0F85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 18,
+          "name": "Pyramid Hole",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB854",
+              "0x0DB855",
+              "0x0DB856"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "name": "Northeast Dark World Broken Bridge Pass",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 20,
           "name": "Pyramid",
-          "area": "East Dark World",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
           "nodeAddress": "0x180147"
         }
-      ]
+      ],
+      "links": []
     }
   ]
 }
