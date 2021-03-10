@@ -1314,34 +1314,6 @@
         }
       ],
       "links": []
-    },
-    {
-      "id": 80,
-      "name": "Sewer Drop",
-      "type": "interior",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Sanctuary Grave",
-          "nodeType": "entrance",
-          "nodeSubType": "",
-          "nodeAddress": {
-            "door_index": [
-              "0x0DB85E"
-            ]
-          }
-        },
-        {
-          "id": 2,
-          "name": "Sewer Drop",
-          "nodeType": "exit",
-          "nodeSubType": "",
-          "nodeAddress": {
-            "entrance_id": "0x81"
-          }
-        }
-      ],
-      "links": []
     }
   ]
 }

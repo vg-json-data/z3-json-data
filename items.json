@@ -240,6 +240,70 @@
     "BigKey",
     "Map"
   ],
+	"dungeonSpecificItems": {
+		"BigKeyH1": { "data": "0x9E" },
+		"BigKeyH2": { "data": "0x9F" },
+		"BigKeyP1": { "data": "0x9D" },
+		"BigKeyP2": { "data": "0x9C" },
+		"BigKeyP3": { "data": "0x95" },
+		"BigKeyA1": { "data": "0x9B" },
+		"BigKeyD1": { "data": "0x99" },
+		"BigKeyD2": { "data": "0x9A" },
+		"BigKeyD3": { "data": "0x97" },
+		"BigKeyD4": { "data": "0x94" },
+		"BigKeyD5": { "data": "0x96" },
+		"BigKeyD6": { "data": "0x98" },
+		"BigKeyD7": { "data": "0x93" },
+		"BigKeyA2": { "data": "0x92" },
+
+		"CompassH1": { "data": "0x8E" },
+		"CompassH2": { "data": "0x8F" },
+		"CompassP1": { "data": "0x8D" },
+		"CompassP2": { "data": "0x8C" },
+		"CompassP3": { "data": "0x85" },
+		"CompassA1": { "data": "0x8B" },
+		"CompassD1": { "data": "0x89" },
+		"CompassD2": { "data": "0x8A" },
+		"CompassD3": { "data": "0x87" },
+		"CompassD4": { "data": "0x84" },
+		"CompassD5": { "data": "0x86" },
+		"CompassD6": { "data": "0x88" },
+		"CompassD7": { "data": "0x83" },
+		"CompassA2": { "data": "0x82" },
+
+		"MapLW": { "data": "0x70" },
+		"MapDW": { "data": "0x71" },
+		"MapH1": { "data": "0x7E" },
+		"MapH2": { "data": "0x7F" },
+		"MapP1": { "data": "0x7D" },
+		"MapP2": { "data": "0x7C" },
+		"MapP3": { "data": "0x75" },
+		"MapA1": { "data": "0x7B" },
+		"MapD1": { "data": "0x79" },
+		"MapD2": { "data": "0x7A" },
+		"MapD3": { "data": "0x77" },
+		"MapD4": { "data": "0x74" },
+		"MapD5": { "data": "0x76" },
+		"MapD6": { "data": "0x78" },
+		"MapD7": { "data": "0x73" },
+		"MapA2": { "data": "0x72" },
+
+		"KeyH1": { "data": "0xA1" },
+		"KeyH2": { "data": "0xA0" },
+		"KeyP1": { "data": "0xA2" },
+		"KeyP2": { "data": "0xA3" },
+		"KeyP3": { "data": "0xAA" },
+		"KeyA1": { "data": "0xA4" },
+		"KeyD1": { "data": "0xA6" },
+		"KeyD2": { "data": "0xA5" },
+		"KeyD3": { "data": "0xA8" },
+		"KeyD4": { "data": "0xAB" },
+		"KeyD5": { "data": "0xA9" },
+		"KeyD6": { "data": "0xA7" },
+		"KeyD7": { "data": "0xAC" },
+		"KeyA2": { "data": "0xAD" },
+		"KeyGK": { "data": "0xAF" }
+	},
   "dungeonPrizes": {
     "PendantOfCourage": {
       "data": [ "0x37", "0x04", "0x38", "0x62", "0x00", "0x69", "0x01" ]
@@ -327,6 +391,7 @@
     "DrainedFloodgate",
     "DefeatAgahnim",
     "RescueBlacksmith",
+    "BigRedBomb",
     "DefeatAgahnim2",
     "DefeatGanon"
   ],
@@ -335,9 +400,10 @@
       "mods.ohko"
     ],
     "swords": [
-      "swords.swordless",
       "swords.randomized",
-      "swords.uncle"
+      "swords.swordless",
+      "swords.uncle",
+      "swords.vanilla"
     ]
   }
 }

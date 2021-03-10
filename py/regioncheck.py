@@ -9,7 +9,7 @@ ids = []
 notids = []
 
 for filename in glob.iglob(root_dir + "**/*.json", recursive=True):
-    if "schema" not in filename and "cavess" not in filename:
+    if "schema" not in filename and "caves" not in filename:
         with(open(filename)) as json_file:
             data = json.load(json_file)
             region = filename.replace(os.path.join(".","regions",""),"")
