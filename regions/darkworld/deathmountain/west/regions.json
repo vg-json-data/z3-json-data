@@ -2,29 +2,147 @@
   "$schema": "../../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 153,
+      "id": 34,
+      "name": "Dark Death Mountain Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Death Mountain Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6F",
+            "room_id": "0x0115",
+            "ow_area": "0x43",
+            "vram_loc": "0x1400",
+            "scroll_y": "0x0294",
+            "scroll_x": "0x0600",
+            "link_y": "0x02E8",
+            "link_x": "0x0678",
+            "camera_y": "0x0303",
+            "camera_x": "0x0685",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 144,
       "name": "Dark Death Mountain (West Bottom)",
-      "roomType": "DarkWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Death Mountain Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Dark Death Mountain Drop (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Spike Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x40",
+            "entrance_id": "0x41",
+            "room_id": "0x0117",
+            "ow_area": "0x43",
+            "vram_loc": "0x0ED4",
+            "scroll_y": "0x01E4",
+            "scroll_x": "0x08AA",
+            "link_y": "0x0236",
+            "link_x": "0x0928",
+            "camera_y": "0x0253",
+            "camera_x": "0x092F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Spectacle Rock Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Dark Death Mountain Fairy",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6F",
+            "room_id": "0x0115",
+            "ow_area": "0x43",
+            "vram_loc": "0x1400",
+            "scroll_y": "0x0294",
+            "scroll_x": "0x0600",
+            "link_y": "0x02E8",
+            "link_x": "0x0678",
+            "camera_y": "0x0303",
+            "camera_x": "0x0685",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 150,
+      "name": "Spike Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Spike Cave",
-          "area": "Dark Death Mountain (West Bottom)",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x40",
+            "entrance_id": "0x41",
+            "room_id": "0x0117",
+            "ow_area": "0x43",
+            "vram_loc": "0x0ED4",
+            "scroll_y": "0x01E4",
+            "scroll_x": "0x08AA",
+            "link_y": "0x0236",
+            "link_x": "0x0928",
+            "camera_y": "0x0253",
+            "camera_x": "0x092F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Spectacle Rock Mirror Spot",
-          "area": "Dark Death Mountain (West Bottom)",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Dark Death Mountain Fairy",
-          "area": "Dark Death Mountain (West Bottom)",
-          "nodeType": "door"
+          "name": "Spike Cave",
+          "nodeType": "item",
+          "nodeItem": "CaneOfByrna",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA8B"
         }
-      ]
+      ],
+      "links": []
     }
   ]
 }
