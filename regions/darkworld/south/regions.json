@@ -2,177 +2,742 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 121,
-      "name": "South Dark World",
-      "roomType": "DarkWorld",
+      "id": 27,
+      "name": "Bonk Fairy (Dark)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Dark Lake Hylia Drop (South)",
-          "area": "South Dark World",
-          "nodeType": "drop"
+          "name": "Bonk Fairy (Dark)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x77",
+            "entrance_id": "0x71",
+            "room_id": "0x0126",
+            "ow_area": "0x6B",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0A05",
+            "scroll_x": "0x0700",
+            "link_y": "0x0A66",
+            "link_x": "0x0788",
+            "camera_y": "0x0A72",
+            "camera_x": "0x0785",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 112,
+      "name": "South Dark World",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "South Dark World Bridge",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Hype Cave",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Village of Outcasts Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Swamp Palace",
-          "area": "South Dark World",
-          "requires": [ "DrainedFloodgate" ],
-          "nodeType": "door"
+          "name": "South Hyrule Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "Village of Outcasts Heavy Rock",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Swamp Palace Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x25",
+            "exit_id": "0x26"
+          }
         },
         {
           "id": 5,
-          "name": "Maze Race Mirror Spot",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Dark Lake Hylia Drop (South)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 6,
-          "name": "Cave 45 Mirror Spot",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Hype Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x3C",
+            "entrance_id": "0x3D",
+            "room_id": "0x011E",
+            "ow_area": "0x74",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0C0A",
+            "scroll_x": "0x0900",
+            "link_y": "0x0C58",
+            "link_x": "0x0988",
+            "camera_y": "0x0C77",
+            "camera_x": "0x097D",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 7,
-          "name": "East Dark World Bridge",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Swamp Palace",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x24",
+            "room_id": "0x0028",
+            "ow_area": "0x7B",
+            "vram_loc": "0x049E",
+            "scroll_y": "0x0E8C",
+            "scroll_x": "0x06F2",
+            "link_y": "0x0ED8",
+            "link_x": "0x0778",
+            "camera_y": "0x0EF9",
+            "camera_x": "0x077F",
+            "unknown_1": "0x04",
+            "unknown_2": "0xFE",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 8,
-          "name": "Big Bomb Shop",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Village of Outcasts Heavy Rock",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 9,
-          "name": "Archery Game",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Maze Race Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 10,
-          "name": "Bonk Fairy (Dark)",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "Cave 45 Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 11,
-          "name": "Dark Lake Hylia Shop",
-          "area": "South Dark World",
-          "nodeType": "door"
+          "name": "East Dark World Bridge",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 12,
-          "name": "Stumpy",
-          "area": "South Dark World",
-          "nodeType": "item",
-          "nodeItem": "Shovel",
-          "nodeAddress": "0x330C7"
+          "name": "Big Bomb Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x52",
+            "entrance_id": "0x53",
+            "room_id": "0x011C",
+            "ow_area": "0x6C",
+            "vram_loc": "0x0506",
+            "scroll_y": "0x0A9A",
+            "scroll_x": "0x0832",
+            "link_y": "0x0AE7",
+            "link_x": "0x08B8",
+            "camera_y": "0x0B07",
+            "camera_x": "0x08BF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0816",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 13,
-          "name": "Digging Game",
-          "area": "South Dark World",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180148"
+          "name": "Archery Game",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x58",
+            "entrance_id": "0x59",
+            "room_id": "0x0111",
+            "ow_area": "0x69",
+            "vram_loc": "0x069E",
+            "scroll_y": "0x0AC4",
+            "scroll_x": "0x02EA",
+            "link_y": "0x0B18",
+            "link_x": "0x0368",
+            "camera_y": "0x0B33",
+            "camera_x": "0x036F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x09AC",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 14,
+          "name": "Bonk Fairy (Dark)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x77",
+            "entrance_id": "0x71",
+            "room_id": "0x0126",
+            "ow_area": "0x6B",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0A05",
+            "scroll_x": "0x0700",
+            "link_y": "0x0A66",
+            "link_x": "0x0788",
+            "camera_y": "0x0A72",
+            "camera_x": "0x0785",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 15,
+          "name": "Dark Lake Hylia Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x73",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x75",
+            "vram_loc": "0x0380",
+            "scroll_y": "0x0C6A",
+            "scroll_x": "0x0A00",
+            "link_y": "0x0CB8",
+            "link_x": "0x0A58",
+            "camera_y": "0x0CD7",
+            "camera_x": "0x0A85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 16,
+          "name": "Stumpy",
+          "nodeType": "item",
+          "nodeItem": "Shovel",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x330C7"
+        },
+        {
+          "id": 17,
+          "name": "Digging Game",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180148"
+        },
+        {
+          "id": 18,
           "name": "Bombos Tablet",
-          "area": "South Dark World",
           "nodeType": "item",
           "nodeItem": "Bombos",
+          "nodeItemCode": "Item Code",
           "nodeAddress": "0x180017"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 124,
+      "id": 113,
+      "name": "Big Bomb Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Big Bomb Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x52",
+            "entrance_id": "0x53",
+            "room_id": "0x011C",
+            "ow_area": "0x6C",
+            "vram_loc": "0x0506",
+            "scroll_y": "0x0A9A",
+            "scroll_x": "0x0832",
+            "link_y": "0x0AE7",
+            "link_x": "0x08B8",
+            "camera_y": "0x0B07",
+            "camera_x": "0x08BF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0816",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 114,
+      "name": "Archery Game",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Archery Game",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x58",
+            "entrance_id": "0x59",
+            "room_id": "0x0111",
+            "ow_area": "0x69",
+            "vram_loc": "0x069E",
+            "scroll_y": "0x0AC4",
+            "scroll_x": "0x02EA",
+            "link_y": "0x0B18",
+            "link_x": "0x0368",
+            "camera_y": "0x0B33",
+            "camera_x": "0x036F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x09AC",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 115,
       "name": "Dark Lake Hylia",
-      "roomType": "DarkWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Lake Hylia Island Mirror Spot",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
+          "name": "Dark Lake Hylia Drop (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "East Dark World Pier",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
+          "name": "Dark Lake Hylia Drop (South)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Dark Lake Hylia Ledge",
-          "area": "Dark Lake Hylia",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "name": "Dark Lake Hylia Central Island",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Ice Palace",
-          "area": "Dark Lake Hylia Central Island",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Lake Hylia Central Island Mirror Spot",
-          "area": "Dark Lake Hylia Central Island",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 126,
-      "name": "Dark Lake Hylia Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Dark Lake Hylia Ledge Drop",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Dark Lake Hylia Ledge Fairy",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Dark Lake Hylia Ledge Hint",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
+          "name": "Dark Lake Hylia Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "Dark Lake Hylia Ledge Spike Cave",
-          "area": "Dark Lake Hylia Ledge",
-          "nodeType": "door"
+          "name": "Dark Lake Hylia Ledge Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Lake Hylia Island Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 6,
+          "name": "East Dark World Pier",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 7,
+          "name": "Dark Lake Hylia Ledge",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 116,
+      "name": "Dark Lake Hylia Central Island",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Central Island Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Ice Palace Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2D",
+            "exit_id": "0x2E"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Ice Palace",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x2C",
+            "room_id": "0x000E",
+            "ow_area": "0x75",
+            "vram_loc": "0x0BC6",
+            "scroll_y": "0x0D6A",
+            "scroll_x": "0x0C3E",
+            "link_y": "0x0DB8",
+            "link_x": "0x0CB8",
+            "camera_y": "0x0DD7",
+            "camera_x": "0x0CC3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xF2",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Lake Hylia Central Island Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 117,
+      "name": "Dark Lake Hylia Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Ledge",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Dark Lake Hylia Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Dark Lake Hylia Ledge Fairy",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x80",
+            "room_id": "0x0115",
+            "ow_area": "0x77",
+            "vram_loc": "0x0080",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C37",
+            "link_x": "0x0E48",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Dark Lake Hylia Ledge Hint",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x69",
+            "entrance_id": "0x6A",
+            "room_id": "0x010E",
+            "ow_area": "0x77",
+            "vram_loc": "0x0084",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E26",
+            "link_y": "0x0C36",
+            "link_x": "0x0E98",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0EA3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7B",
+            "entrance_id": "0x70",
+            "room_id": "0x0125",
+            "ow_area": "0x77",
+            "vram_loc": "0x0200",
+            "scroll_y": "0x0C27",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C86",
+            "link_x": "0x0E68",
+            "camera_y": "0x0C96",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 118,
+      "name": "Dark Lake Hylia Ledge Hint",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Ledge Hint",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x69",
+            "entrance_id": "0x6A",
+            "room_id": "0x010E",
+            "ow_area": "0x77",
+            "vram_loc": "0x0084",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E26",
+            "link_y": "0x0C36",
+            "link_x": "0x0E98",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0EA3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 119,
+      "name": "Dark Lake Hylia Ledge Spike Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7B",
+            "entrance_id": "0x70",
+            "room_id": "0x0125",
+            "ow_area": "0x77",
+            "vram_loc": "0x0200",
+            "scroll_y": "0x0C27",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C86",
+            "link_x": "0x0E68",
+            "camera_y": "0x0C96",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 120,
+      "name": "Hype Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hype Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x3C",
+            "entrance_id": "0x3D",
+            "room_id": "0x011E",
+            "ow_area": "0x74",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0C0A",
+            "scroll_x": "0x0900",
+            "link_y": "0x0C58",
+            "link_x": "0x0988",
+            "camera_y": "0x0C77",
+            "camera_x": "0x097D",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Hype Cave - Top",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB1E"
+        },
+        {
+          "id": 3,
+          "name": "Hype Cave - Middle Right",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB21"
+        },
+        {
+          "id": 4,
+          "name": "Hype Cave - Middle Left",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB24"
+        },
+        {
+          "id": 5,
+          "name": "Hype Cave - Bottom",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB27"
+        },
+        {
+          "id": 6,
+          "name": "Hype Cave - Generous Guy",
+          "nodeType": "item",
+          "nodeItem": "ThreeHundredRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180011"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 127,
+      "name": "Dark Lake Hylia Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x73",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x75",
+            "vram_loc": "0x0380",
+            "scroll_y": "0x0C6A",
+            "scroll_x": "0x0A00",
+            "link_y": "0x0CB8",
+            "link_x": "0x0A58",
+            "camera_y": "0x0CD7",
+            "camera_x": "0x0A85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Dark Lake Hylia Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Dark Lake Hylia Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Dark Lake Hylia Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 271,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          15,
+          1,
+          116,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 6
+      }
     }
   ]
 }
