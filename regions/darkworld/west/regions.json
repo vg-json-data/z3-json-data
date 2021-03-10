@@ -2,290 +2,957 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 130,
+      "id": 121,
       "name": "West Dark World",
-      "roomType": "DarkWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Village of Outcasts Drop",
-          "area": "West Dark World",
-          "nodeType": "drop"
+          "name": "Village of Outcasts Heavy Rock",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "East Dark World River Pier",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Peg Area Rocks",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Brewery",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Grassy Lawn Pegs",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 4,
-          "name": "C-Shaped House",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "West Dark World Gap",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 5,
-          "name": "Chest Game",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Bumper Cave Entrance Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 6,
-          "name": "Thieves Town",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Bumper Cave Ledge Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 7,
-          "name": "Graveyard Ledge Mirror Spot",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Kakariko Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 8,
-          "name": "Kings Grave Mirror Spot",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Bumper Cave Exit (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x16",
+            "exit_id": "0x17"
+          }
         },
         {
           "id": 9,
-          "name": "Bumper Cave Entrance Rock",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Thieves Town Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x34",
+            "exit_id": "0x35"
+          }
         },
         {
           "id": 10,
-          "name": "Skull Woods Forest",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Village of Outcasts Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 11,
-          "name": "Village of Outcasts Pegs",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "East Dark World River Pier",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 12,
-          "name": "Village of Outcasts Eastern Rocks",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Brewery",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x47",
+            "entrance_id": "0x48",
+            "room_id": "0x0106",
+            "ow_area": "0x58",
+            "vram_loc": "0x16A8",
+            "scroll_y": "0x08E4",
+            "scroll_x": "0x013E",
+            "link_y": "0x0938",
+            "link_x": "0x01B8",
+            "camera_y": "0x0953",
+            "camera_x": "0x01C3",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x1AB6",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 13,
-          "name": "Red Shield Shop",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "C-Shaped House",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x53",
+            "entrance_id": "0x54",
+            "room_id": "0x011C",
+            "ow_area": "0x58",
+            "vram_loc": "0x09D8",
+            "scroll_y": "0x0744",
+            "scroll_x": "0x02CE",
+            "link_y": "0x0797",
+            "link_x": "0x0348",
+            "camera_y": "0x07B3",
+            "camera_x": "0x0353",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0DE8",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 14,
-          "name": "Dark Sanctuary Hint",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Chest Game",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x46",
+            "entrance_id": "0x47",
+            "room_id": "0x0106",
+            "ow_area": "0x58",
+            "vram_loc": "0x078A",
+            "scroll_y": "0x0705",
+            "scroll_x": "0x004E",
+            "link_y": "0x0758",
+            "link_x": "0x00C8",
+            "camera_y": "0x0774",
+            "camera_x": "0x00D3",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0B98",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 15,
-          "name": "Fortune Teller (Dark)",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Thieves Town",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x33",
+            "room_id": "0x00DB",
+            "ow_area": "0x58",
+            "vram_loc": "0x0B2E",
+            "scroll_y": "0x075A",
+            "scroll_x": "0x0176",
+            "link_y": "0x07A8",
+            "link_x": "0x01F8",
+            "camera_y": "0x07C7",
+            "camera_x": "0x0203",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 16,
-          "name": "Dark World Lumberjack Shop",
-          "area": "West Dark World",
-          "nodeType": "door"
+          "name": "Graveyard Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 17,
+          "name": "Kings Grave Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 18,
+          "name": "Bumper Cave Entrance Rock",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 19,
+          "name": "Skull Woods Forest",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 20,
+          "name": "Village of Outcasts Pegs",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 21,
+          "name": "Village of Outcasts Eastern Rocks",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 22,
+          "name": "Red Shield Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x74",
+            "entrance_id": "0x57",
+            "room_id": "0x0110",
+            "ow_area": "0x5A",
+            "vram_loc": "0x079A",
+            "scroll_y": "0x06E8",
+            "scroll_x": "0x04D6",
+            "link_y": "0x0738",
+            "link_x": "0x0548",
+            "camera_y": "0x0755",
+            "camera_x": "0x0553",
+            "unknown_1": "0x08",
+            "unknown_2": "0xF8",
+            "door_1": "0x0AA8",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 23,
+          "name": "Dark Sanctuary Hint",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x59",
+            "entrance_id": "0x5A",
+            "room_id": "0x0112",
+            "ow_area": "0x53",
+            "vram_loc": "0x001E",
+            "scroll_y": "0x0400",
+            "scroll_x": "0x06E2",
+            "link_y": "0x0446",
+            "link_x": "0x0758",
+            "camera_y": "0x046D",
+            "camera_x": "0x075F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 24,
+          "name": "Fortune Teller (Dark)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x65",
+            "entrance_id": "0x66",
+            "room_id": "0x0122",
+            "ow_area": "0x51",
+            "vram_loc": "0x0610",
+            "scroll_y": "0x04B4",
+            "scroll_x": "0x027E",
+            "link_y": "0x0507",
+            "link_x": "0x02F8",
+            "camera_y": "0x0523",
+            "camera_x": "0x0303",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x091E",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 25,
+          "name": "Dark World Lumberjack Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x56",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x42",
+            "vram_loc": "0x041C",
+            "scroll_y": "0x0074",
+            "scroll_x": "0x04E2",
+            "link_y": "0x00C7",
+            "link_x": "0x0558",
+            "camera_y": "0x00E3",
+            "camera_x": "0x055F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 26,
           "name": "Frog",
-          "area": "West Dark World",
           "nodeType": "item",
-          "note": "See Caves DW NW ID #38:2"
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 131,
+      "id": 122,
       "name": "Dark Grassy Lawn",
-      "roomType": "DarkWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
+          "name": "Village of Outcasts Pegs",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
           "name": "Grassy Lawn Pegs",
-          "area": "Dark Grassy Lawn",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Dark World Shop",
-          "area": "Dark Grassy Lawn",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 132,
-      "name": "Hammer Peg Area",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Bat Cave Drop Ledge Mirror Spot",
-          "area": "Hammer Peg Area",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Dark World Hammer Peg Cave",
-          "area": "Hammer Peg Area",
-          "nodeType": "door"
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Peg Area Rocks",
-          "area": "Hammer Peg Area",
-          "nodeType": "door"
+          "name": "Dark World Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5F",
+            "room_id": "0x010F",
+            "ow_area": "0x58",
+            "vram_loc": "0x1058",
+            "scroll_y": "0x0814",
+            "scroll_x": "0x02BE",
+            "link_y": "0x0868",
+            "link_x": "0x0338",
+            "camera_y": "0x0883",
+            "camera_x": "0x0343",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 123,
+      "name": "Hammer Peg Area",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Village of Outcasts Eastern Rocks",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Bat Cave Drop Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Dark World Hammer Peg Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7E",
+            "entrance_id": "0x83",
+            "room_id": "0x0127",
+            "ow_area": "0x62",
+            "vram_loc": "0x0894",
+            "scroll_y": "0x091E",
+            "scroll_x": "0x0492",
+            "link_y": "0x09A6",
+            "link_x": "0x0508",
+            "camera_y": "0x098B",
+            "camera_x": "0x050F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 4,
+          "name": "Peg Area Rocks",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
           "name": "Dark Blacksmith Ruins",
-          "area": "Hammer Peg Area",
           "nodeType": "item",
-          "note": "See Caves DW NW ID #139"
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 133,
+      "id": 124,
       "name": "Bumper Cave Entrance",
-      "roomType": "DarkWorld",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Bumper Cave Entrance Rock",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Bumper Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x15",
+            "room_id": "0x00FB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x03A0",
+            "scroll_y": "0x0263",
+            "scroll_x": "0x0500",
+            "link_y": "0x02B7",
+            "link_x": "0x05A8",
+            "camera_y": "0x02D2",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Bumper Cave Entrance Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 4,
+          "name": "Bumper Cave Entrance Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 137,
+      "name": "Bumper Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Bumper Cave (Bottom)",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Bumper Cave Entrance Mirror Spot",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Bumper Cave Entrance Drop",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "drop"
-        }
-      ]
-    },
-    {
-      "id": 147,
-      "name": "Bumper Cave Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Bumper Cave Ledge Drop",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "drop"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x15",
+            "room_id": "0x00FB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x03A0",
+            "scroll_y": "0x0263",
+            "scroll_x": "0x0500",
+            "link_y": "0x02B7",
+            "link_x": "0x05A8",
+            "camera_y": "0x02D2",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
           "name": "Bumper Cave (Top)",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x16",
+            "room_id": "0x00EB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x020A",
+            "scroll_x": "0x0500",
+            "link_y": "0x0258",
+            "link_x": "0x05B8",
+            "camera_y": "0x0277",
+            "camera_x": "0x058D",
+            "unknown_1": "0x06",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 3,
-          "name": "Bumper Cave Ledge Mirror Spot",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "door"
+          "name": "Bumper Cave Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x16",
+            "exit_id": "0x17"
+          }
         },
         {
           "id": 4,
-          "name": "Bumper Cave Ledge",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180146",
-          "note": "Bumper Cave",
-          "requires": [
-            "canLiftRocks",
-            "Cape"
-          ]
+          "name": "Bumper Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x17",
+            "exit_id": "0x18"
+          }
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 148,
-      "name": "Skull Woods Forest",
-      "roomType": "DarkWorld",
+      "id": 138,
+      "name": "Bumper Cave Ledge",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Skull Woods First Section Hole (East)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
+          "name": "Bumper Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x17",
+            "exit_id": "0x18"
+          }
         },
         {
           "id": 2,
-          "name": "Skull Woods First Section Hole (West)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
+          "name": "Bumper Cave Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "Skull Woods First Section Hole (North)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
+          "name": "Bumper Cave (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x16",
+            "room_id": "0x00EB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x020A",
+            "scroll_x": "0x0500",
+            "link_y": "0x0258",
+            "link_x": "0x05B8",
+            "camera_y": "0x0277",
+            "camera_x": "0x058D",
+            "unknown_1": "0x06",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 4,
-          "name": "Skull Woods First Section Door",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
+          "name": "Bumper Cave Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 5,
-          "name": "Skull Woods Second Section Door (East)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
+          "name": "Bumper Cave Ledge",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180146"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 149,
-      "name": "Skull Woods Forest (West)",
-      "roomType": "DarkWorld",
+      "id": 139,
+      "name": "Skull Woods Forest",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Skull Woods Second Section Hole",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
+          "name": "Skull Woods Forest",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Skull Woods Second Section Door (West)",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
+          "name": "Skull Woods First Section Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x2A",
+            "exit_id": "0x2B"
+          }
         },
         {
           "id": 3,
-          "name": "Skull Woods Final Section",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
+          "name": "Skull Woods Second Section Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x29",
+            "exit_id": "0x2A"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Skull Woods First Section Hole (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB84F",
+              "0x0DB850"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "name": "Skull Woods First Section Hole (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB84D",
+              "0x0DB84E"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "name": "Skull Woods First Section Hole (North)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB84C"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "name": "Skull Woods First Section Door",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x29",
+            "room_id": "0x0058",
+            "ow_area": "0x40",
+            "vram_loc": "0x0F4C",
+            "scroll_y": "0x01F6",
+            "scroll_x": "0x0262",
+            "link_y": "0x0248",
+            "link_x": "0x02E8",
+            "camera_y": "0x0263",
+            "camera_x": "0x02EF",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFE",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 8,
+          "name": "Skull Woods Second Section Door (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x28",
+            "room_id": "0x0057",
+            "ow_area": "0x40",
+            "vram_loc": "0x0EB8",
+            "scroll_y": "0x01E6",
+            "scroll_x": "0x01C2",
+            "link_y": "0x0238",
+            "link_x": "0x0248",
+            "camera_y": "0x0253",
+            "camera_x": "0x024F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFE",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 140,
+      "name": "Skull Woods Forest (West)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Skull Woods Second Section Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x28",
+            "exit_id": "0x29"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Skull 2 West Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Skull 2 West Portal",
+                  "nodeid": 0,
+                  "nodeName": "Skull 2 West Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Skull Woods Forest (West)",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Skull Woods Forest (West)",
+                  "nodeid": 0,
+                  "nodeName": "Skull Woods Forest (West)",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Final Section Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x2B",
+            "exit_id": "0x2C"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Skull 3 Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Skull 3 Portal",
+                  "nodeid": 0,
+                  "nodeName": "Skull 3 Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Skull Woods Forest (West)",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Skull Woods Forest (West)",
+                  "nodeid": 0,
+                  "nodeName": "Skull Woods Forest (West)",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Skull Woods Second Section Hole",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB851",
+              "0x0DB852"
+            ]
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Skull Woods Forest (West)",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Skull Woods Forest (West)",
+                  "nodeid": 0,
+                  "nodeName": "Skull Woods Forest (West)",
+                  "position": "exit"
+                },
+                {
+                  "area": "Skull Back Drop",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Skull Back Drop",
+                  "nodeid": 0,
+                  "nodeName": "Skull Back Drop",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Skull Woods Second Section Door (West)",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x27",
+            "room_id": "0x0056",
+            "ow_area": "0x40",
+            "vram_loc": "0x0C8E",
+            "scroll_y": "0x01A6",
+            "scroll_x": "0x0062",
+            "link_y": "0x01F8",
+            "link_x": "0x00E8",
+            "camera_y": "0x0213",
+            "camera_x": "0x00EF",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x0E",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Skull Woods Forest (West)",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Skull Woods Forest (West)",
+                  "nodeid": 0,
+                  "nodeName": "Skull Woods Forest (West)",
+                  "position": "exit"
+                },
+                {
+                  "area": "Skull 2 West Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Skull 2 West Portal",
+                  "nodeid": 0,
+                  "nodeName": "Skull 2 West Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Skull Woods Final Section",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x2A",
+            "room_id": "0x0059",
+            "ow_area": "0x40",
+            "vram_loc": "0x0282",
+            "scroll_y": "0x0066",
+            "scroll_x": "0x0016",
+            "link_y": "0x00B8",
+            "link_x": "0x0098",
+            "camera_y": "0x00D3",
+            "camera_x": "0x00A3",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Skull Woods Forest (West)",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Skull Woods Forest (West)",
+                  "nodeid": 0,
+                  "nodeName": "Skull Woods Forest (West)",
+                  "position": "exit"
+                },
+                {
+                  "area": "Skull 3 Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Skull 3 Portal",
+                  "nodeid": 0,
+                  "nodeName": "Skull 3 Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
     }
   ]
 }
