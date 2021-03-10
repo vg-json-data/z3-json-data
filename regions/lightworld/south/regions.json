@@ -1,7 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
-
     {
       "id": 4,
       "name": "Lake Hylia Central Island",

@@ -2,166 +2,1086 @@
   "$schema": "../../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 154,
-      "name": "Dark Death Mountain (Top)",
-      "roomType": "DarkWorld",
+      "id": 61,
+      "name": "Cave Shop (Dark Death Mountain)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Dark Death Mountain Drop (East)",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Dark Death Mountain Drop (West)",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "drop"
-        },
-        {
-          "id": 3,
-          "name": "Ganons Tower",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Superbunny Cave (Top)",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 5,
-          "name": "Hookshot Cave",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "East Death Mountain (Top) Mirror Spot",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 7,
-          "name": "Turtle Rock",
-          "area": "Dark Death Mountain (Top)",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 155,
-      "name": "Dark Death Mountain Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Dark Death Mountain Ledge (East)",
-          "area": "Dark Death Mountain Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Dark Death Mountain Ledge (West)",
-          "area": "Dark Death Mountain Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Mimic Cave Mirror Spot",
-          "area": "Dark Death Mountain Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Spiral Cave Mirror Spot",
-          "area": "Dark Death Mountain Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 156,
-      "name": "Dark Death Mountain Isolated Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Isolated Ledge Mirror Spot",
-          "area": "Dark Death Mountain Isolated Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Turtle Rock Isolated Ledge Entrance",
-          "area": "Dark Death Mountain Isolated Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 157,
-      "name": "Dark Death Mountain (East Bottom)",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Superbunny Cave (Bottom)",
-          "area": "Dark Death Mountain (East Bottom)",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
           "name": "Cave Shop (Dark Death Mountain)",
-          "area": "Dark Death Mountain (East Bottom)",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Fairy Ascension Mirror Spot",
-          "area": "Dark Death Mountain (East Bottom)",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 161,
-      "name": "Death Mountain Floating Island (Dark World)",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Floating Island Drop",
-          "area": "Death Mountain Floating Island (Dark World)",
-          "nodeType": "drop"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6D",
+            "entrance_id": "0x58",
+            "room_id": "0x0112",
+            "ow_area": "0x45",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0236",
+            "link_x": "0x0DAA",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Hookshot Cave Back Entrance",
-          "area": "Death Mountain Floating Island (Dark World)",
-          "nodeType": "door"
+          "name": "Dark Death Mountain Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
         },
         {
           "id": 3,
-          "name": "Floating Island Mirror Spot",
-          "area": "Death Mountain Floating Island (Dark World)",
-          "nodeType": "door"
+          "name": "Dark Death Mountain Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Dark Death Mountain Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
         }
-      ]
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 274,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          18,
+          1,
+          110,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 0
+      }
     },
     {
-      "id": 163,
-      "name": "Turtle Rock (Top)",
-      "roomType": "DarkWorld",
+      "id": 145,
+      "name": "Dark Death Mountain (Top)",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Turtle Rock Drop",
-          "area": "Turtle Rock (Top)",
-          "nodeType": "drop"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Floating Island Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Superbunny Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x14",
+            "exit_id": "0x15"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Hookshot Cave Exit (South)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x3A",
+            "exit_id": "0x3B"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Turtle Rock Exit (Front)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x35",
+            "exit_id": "0x34"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Ganons Tower Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x37",
+            "exit_id": "0x38"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Dark Death Mountain Drop (East)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 8,
+          "name": "Dark Death Mountain Drop (West)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 9,
+          "name": "Ganons Tower",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x36",
+            "room_id": "0x000C",
+            "ow_area": "0x43",
+            "vram_loc": "0x0052",
+            "scroll_y": "0x0000",
+            "scroll_x": "0x0884",
+            "link_y": "0x0028",
+            "link_x": "0x08F8",
+            "camera_y": "0x006F",
+            "camera_x": "0x0903",
+            "unknown_1": "0x00",
+            "unknown_2": "0xFC",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 10,
+          "name": "Superbunny Cave (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x13",
+            "room_id": "0x00E8",
+            "ow_area": "0x45",
+            "vram_loc": "0x0460",
+            "scroll_y": "0x0093",
+            "scroll_x": "0x0D00",
+            "link_y": "0x00E7",
+            "link_x": "0x0DB8",
+            "camera_y": "0x0102",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 11,
+          "name": "Hookshot Cave",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x39",
+            "room_id": "0x003C",
+            "ow_area": "0x45",
+            "vram_loc": "0x04DA",
+            "scroll_y": "0x00A3",
+            "scroll_x": "0x0CD6",
+            "link_y": "0x0107",
+            "link_x": "0x0D48",
+            "camera_y": "0x0112",
+            "camera_x": "0x0D53",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 12,
+          "name": "East Death Mountain (Top) Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 13,
+          "name": "Turtle Rock",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x34",
+            "room_id": "0x00D6",
+            "ow_area": "0x47",
+            "vram_loc": "0x0712",
+            "scroll_y": "0x00DA",
+            "scroll_x": "0x0E96",
+            "link_y": "0x0128",
+            "link_x": "0x0F08",
+            "camera_y": "0x0147",
+            "camera_x": "0x0F13",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 146,
+      "name": "Dark Death Mountain Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Turtle Rock Ledge Exit (West)",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x15",
+            "exit_id": "0x16"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Turtle Rock Lazy Eyes Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Lazy Eyes Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Lazy Eyes Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Dark Death Mountain Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Turtle Rock Ledge Exit (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x19",
+            "exit_id": "0x1A"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Turtle Rock Chest Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Chest Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Chest Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Dark Death Mountain Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Dark Death Mountain Ledge (East)",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x18",
+            "room_id": "0x0024",
+            "ow_area": "0x45",
+            "vram_loc": "0x07E0",
+            "scroll_y": "0x0103",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0157",
+            "link_x": "0x0D78",
+            "camera_y": "0x0172",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Turtle Rock Chest Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Chest Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Chest Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Dark Death Mountain Ledge (West)",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x14",
+            "room_id": "0x0023",
+            "ow_area": "0x45",
+            "vram_loc": "0x07CA",
+            "scroll_y": "0x0103",
+            "scroll_x": "0x0C46",
+            "link_y": "0x0157",
+            "link_x": "0x0CB8",
+            "camera_y": "0x0172",
+            "camera_x": "0x0CC3",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x0A",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Turtle Rock Lazy Eyes Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Lazy Eyes Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Lazy Eyes Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Mimic Cave Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Mimic Cave Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Spiral Cave Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Spiral Cave Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Spiral Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Spiral Cave Ledge",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 147,
+      "name": "Dark Death Mountain Isolated Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Turtle Rock Isolated Ledge Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "entrance_id": "0x18",
+            "exit_id": "0x19"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Turtle Rock Eye Bridge Portal",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Eye Bridge Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Eye Bridge Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Dark Death Mountain Isolated Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Isolated Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Isolated Ledge",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Isolated Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Isolated Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Isolated Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Isolated Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Fairy Ascension Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Fairy Ascension Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Fairy Ascension Ledge",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Turtle Rock Isolated Ledge Entrance",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x17",
+            "room_id": "0x00D5",
+            "ow_area": "0x45",
+            "vram_loc": "0x0AD4",
+            "scroll_y": "0x0164",
+            "scroll_x": "0x0CA6",
+            "link_y": "0x01B8",
+            "link_x": "0x0D18",
+            "camera_y": "0x01D3",
+            "camera_x": "0x0D23",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Dark Death Mountain Isolated Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Isolated Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Isolated Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Turtle Rock Eye Bridge Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Turtle Rock Eye Bridge Portal",
+                  "nodeid": 0,
+                  "nodeName": "Turtle Rock Eye Bridge Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 148,
+      "name": "Dark Death Mountain (East Bottom)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Death Mountain Drop (East)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "East Death Mountain Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Superbunny Cave Exit (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x13",
+            "exit_id": "0x14"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Superbunny Cave (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x12",
+            "room_id": "0x00F8",
+            "ow_area": "0x45",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E4",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0238",
+            "link_x": "0x0D78",
+            "camera_y": "0x0253",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Cave Shop (Dark Death Mountain)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6D",
+            "entrance_id": "0x58",
+            "room_id": "0x0112",
+            "ow_area": "0x45",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E3",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0236",
+            "link_x": "0x0DAA",
+            "camera_y": "0x0252",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Fairy Ascension Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 149,
+      "name": "Superbunny Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Superbunny Cave (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x13",
+            "room_id": "0x00E8",
+            "ow_area": "0x45",
+            "vram_loc": "0x0460",
+            "scroll_y": "0x0093",
+            "scroll_x": "0x0D00",
+            "link_y": "0x00E7",
+            "link_x": "0x0DB8",
+            "camera_y": "0x0102",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Superbunny Cave (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x12",
+            "room_id": "0x00F8",
+            "ow_area": "0x45",
+            "vram_loc": "0x0EE0",
+            "scroll_y": "0x01E4",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0238",
+            "link_x": "0x0D78",
+            "camera_y": "0x0253",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0A",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Superbunny Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x14",
+            "exit_id": "0x15"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Superbunny Cave Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x13",
+            "exit_id": "0x14"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Superbunny Cave - Top",
+          "nodeType": "item",
+          "nodeItem": "ThreeBombs",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA7C"
+        },
+        {
+          "id": 6,
+          "name": "Superbunny Cave - Bottom",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA7F"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 151,
+      "name": "Hookshot Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hookshot Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x39",
+            "room_id": "0x003C",
+            "ow_area": "0x45",
+            "vram_loc": "0x04DA",
+            "scroll_y": "0x00A3",
+            "scroll_x": "0x0CD6",
+            "link_y": "0x0107",
+            "link_x": "0x0D48",
+            "camera_y": "0x0112",
+            "camera_x": "0x0D53",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Hookshot Cave Back Entrance",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x3A",
+            "room_id": "0x002C",
+            "ow_area": "0x45",
+            "vram_loc": "0x004C",
+            "scroll_y": "0x0000",
+            "scroll_x": "0x0C56",
+            "link_y": "0x0038",
+            "link_x": "0x0CC8",
+            "camera_y": "0x006F",
+            "camera_x": "0x0CD3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0A",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Hookshot Cave Exit (South)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x3A",
+            "exit_id": "0x3B"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Hookshot Cave Exit (North)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x3B",
+            "exit_id": "0x3C"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Hookshot Cave - Top Right",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB51"
+        },
+        {
+          "id": 6,
+          "name": "Hookshot Cave - Top Left",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB54"
+        },
+        {
+          "id": 7,
+          "name": "Hookshot Cave - Bottom Right",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB5A"
+        },
+        {
+          "id": 8,
+          "name": "Hookshot Cave - Bottom Left",
+          "nodeType": "item",
+          "nodeItem": "FiftyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEB57"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 152,
+      "name": "Death Mountain Floating Island (Dark World)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Hookshot Cave Exit (North)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x3B",
+            "exit_id": "0x3C"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Floating Island Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Hookshot Cave Back Entrance",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x3A",
+            "room_id": "0x002C",
+            "ow_area": "0x45",
+            "vram_loc": "0x004C",
+            "scroll_y": "0x0000",
+            "scroll_x": "0x0C56",
+            "link_y": "0x0038",
+            "link_x": "0x0CC8",
+            "camera_y": "0x006F",
+            "camera_x": "0x0CD3",
+            "unknown_1": "0x00",
+            "unknown_2": "0x0A",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Floating Island Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 154,
+      "name": "Turtle Rock (Top)",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Turtle Rock Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Turtle Rock Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 155,
+      "name": "Mimic Cave Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Mimic Cave Mirror Spot",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Dark Death Mountain Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Dark Death Mountain Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Dark Death Mountain Ledge",
+                  "position": "entrances"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Mimic Cave Ledge",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "entrances"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mimic Cave",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {
+            "door_index": "0x4E",
+            "entrance_id": "0x4F",
+            "room_id": "0x010C",
+            "ow_area": "0x05",
+            "vram_loc": "0x07E0",
+            "scroll_y": "0x0103",
+            "scroll_x": "0x0D00",
+            "link_y": "0x0156",
+            "link_x": "0x0D78",
+            "camera_y": "0x0172",
+            "camera_x": "0x0D7D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0xF5",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          },
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Mimic Cave Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave Ledge",
+                  "position": "exits"
+                },
+                {
+                  "area": "Mimic Cave",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Mimic Cave",
+                  "nodeid": 0,
+                  "nodeName": "Mimic Cave",
+                  "position": "exits"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
     }
   ]
 }
