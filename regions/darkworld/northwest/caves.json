@@ -2,115 +2,583 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 134,
+      "id": 125,
       "name": "Fortune Teller (Dark)",
-      "roomType": "Cave"
-    },
-    {
-      "id": 135,
-      "name": "Village of Outcasts Shop",
-      "roomType": "Cave",
-      "requires": [ "Hammer" ],
-      "note": "Dark World Outcasts Shop"
-    },
-    {
-      "id": 137,
-      "name": "Dark World Lumberjack Shop",
-      "roomType": "Cave"
-    },
-    {
-      "id": 139,
-      "name": "Dark World Hammer Peg Cave",
-      "roomType": "Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Peg Cave",
-          "area": "Dark World Hammer Peg Cave",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180006",
-          "requires": [
-            "canLiftDarkRocks",
-            "Hammer"
-          ],
-          "note": "Hammer Pegs"
+          "name": "Fortune Teller (Dark)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x65",
+            "entrance_id": "0x66",
+            "room_id": "0x0122",
+            "ow_area": "0x51",
+            "vram_loc": "0x0610",
+            "scroll_y": "0x04B4",
+            "scroll_x": "0x027E",
+            "link_y": "0x0507",
+            "link_x": "0x02F8",
+            "camera_y": "0x0523",
+            "camera_x": "0x0303",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x091E",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 141,
+      "id": 126,
+      "name": "Village of Outcasts Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark World Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5F",
+            "room_id": "0x010F",
+            "ow_area": "0x58",
+            "vram_loc": "0x1058",
+            "scroll_y": "0x0814",
+            "scroll_x": "0x02BE",
+            "link_y": "0x0868",
+            "link_x": "0x0338",
+            "camera_y": "0x0883",
+            "camera_x": "0x0343",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Village of Outcasts Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Village of Outcasts Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Village of Outcasts Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 271,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          15,
+          1,
+          96,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 12
+      }
+    },
+    {
+      "id": 128,
+      "name": "Dark World Lumberjack Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark World Lumberjack Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x56",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x42",
+            "vram_loc": "0x041C",
+            "scroll_y": "0x0074",
+            "scroll_x": "0x04E2",
+            "link_y": "0x00C7",
+            "link_x": "0x0558",
+            "camera_y": "0x00E3",
+            "camera_x": "0x055F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Dark Lumberjack Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Dark Lumberjack Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Dark Lumberjack Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 271,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          15,
+          1,
+          87,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 9
+      }
+    },
+    {
+      "id": 130,
+      "name": "Dark World Hammer Peg Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark World Hammer Peg Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7E",
+            "entrance_id": "0x83",
+            "room_id": "0x0127",
+            "ow_area": "0x62",
+            "vram_loc": "0x0894",
+            "scroll_y": "0x091E",
+            "scroll_x": "0x0492",
+            "link_y": "0x09A6",
+            "link_x": "0x0508",
+            "camera_y": "0x098B",
+            "camera_x": "0x050F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Peg Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0x180006"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 132,
       "name": "Brewery",
-      "roomType": "Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Brewery",
-          "area": "Brewery",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x47",
+            "entrance_id": "0x48",
+            "room_id": "0x0106",
+            "ow_area": "0x58",
+            "vram_loc": "0x16A8",
+            "scroll_y": "0x08E4",
+            "scroll_x": "0x013E",
+            "link_y": "0x0938",
+            "link_x": "0x01B8",
+            "camera_y": "0x0953",
+            "camera_x": "0x01C3",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x1AB6",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Brewery",
           "nodeType": "item",
           "nodeItem": "ThreeHundredRupees",
+          "nodeItemCode": "Item Code",
           "nodeAddress": "0xE9EC"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 142,
+      "id": 133,
       "name": "C-Shaped House",
-      "roomType": "Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "C-Shaped House",
-          "area": "C-Shaped House",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x53",
+            "entrance_id": "0x54",
+            "room_id": "0x011C",
+            "ow_area": "0x58",
+            "vram_loc": "0x09D8",
+            "scroll_y": "0x0744",
+            "scroll_x": "0x02CE",
+            "link_y": "0x0797",
+            "link_x": "0x0348",
+            "camera_y": "0x07B3",
+            "camera_x": "0x0353",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0DE8",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "C-Shaped House",
           "nodeType": "item",
           "nodeItem": "ThreeHundredRupees",
+          "nodeItemCode": "Item Code",
           "nodeAddress": "0xE9EF"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 143,
+      "id": 134,
       "name": "Chest Game",
-      "roomType": "Cave",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
           "name": "Chest Game",
-          "area": "Chest Game",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0xEDA8"
-        }
-      ]
-    },
-    {
-      "id": 144,
-      "name": "Red Shield Shop",
-      "roomType": "Cave"
-    },
-    {
-      "id": 145,
-      "name": "Dark Sanctuary Hint",
-      "roomType": "Cave"
-    },
-    {
-      "id": 146,
-      "name": "Bumper Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Bumper Cave Exit (Bottom)",
-          "area": "Bumper Cave",
-          "nodeType": "door"
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x46",
+            "entrance_id": "0x47",
+            "room_id": "0x0106",
+            "ow_area": "0x58",
+            "vram_loc": "0x078A",
+            "scroll_y": "0x0705",
+            "scroll_x": "0x004E",
+            "link_y": "0x0758",
+            "link_x": "0x00C8",
+            "camera_y": "0x0774",
+            "camera_x": "0x00D3",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0B98",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Bumper Cave Exit (Top)",
-          "area": "Bumper Cave",
-          "nodeType": "door"
+          "name": "Chest Game",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEDA8"
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 135,
+      "name": "Red Shield Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Red Shield Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x74",
+            "entrance_id": "0x57",
+            "room_id": "0x0110",
+            "ow_area": "0x5A",
+            "vram_loc": "0x079A",
+            "scroll_y": "0x06E8",
+            "scroll_x": "0x04D6",
+            "link_y": "0x0738",
+            "link_x": "0x0548",
+            "camera_y": "0x0755",
+            "camera_x": "0x0553",
+            "unknown_1": "0x08",
+            "unknown_2": "0xF8",
+            "door_1": "0x0AA8",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Red Shield Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Red Shield Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Red Shield Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        }
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 272,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          16,
+          1,
+          117,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 3
+      }
+    },
+    {
+      "id": 136,
+      "name": "Dark Sanctuary Hint",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Sanctuary Hint",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x59",
+            "entrance_id": "0x5A",
+            "room_id": "0x0112",
+            "ow_area": "0x53",
+            "vram_loc": "0x001E",
+            "scroll_y": "0x0400",
+            "scroll_x": "0x06E2",
+            "link_y": "0x0446",
+            "link_x": "0x0758",
+            "camera_y": "0x046D",
+            "camera_x": "0x075F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 137,
+      "name": "Bumper Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Bumper Cave (Bottom)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x15",
+            "room_id": "0x00FB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x03A0",
+            "scroll_y": "0x0263",
+            "scroll_x": "0x0500",
+            "link_y": "0x02B7",
+            "link_x": "0x05A8",
+            "camera_y": "0x02D2",
+            "camera_x": "0x058D",
+            "unknown_1": "0x0B",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Bumper Cave (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x16",
+            "room_id": "0x00EB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x020A",
+            "scroll_x": "0x0500",
+            "link_y": "0x0258",
+            "link_x": "0x05B8",
+            "camera_y": "0x0277",
+            "camera_x": "0x058D",
+            "unknown_1": "0x06",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Bumper Cave Exit (Bottom)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x16",
+            "exit_id": "0x17"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Bumper Cave Exit (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x17",
+            "exit_id": "0x18"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 138,
+      "name": "Bumper Cave Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Bumper Cave Exit (Top)",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x17",
+            "exit_id": "0x18"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Bumper Cave Ledge Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Bumper Cave (Top)",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x16",
+            "room_id": "0x00EB",
+            "ow_area": "0x4A",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x020A",
+            "scroll_x": "0x0500",
+            "link_y": "0x0258",
+            "link_x": "0x05B8",
+            "camera_y": "0x0277",
+            "camera_x": "0x058D",
+            "unknown_1": "0x06",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Bumper Cave Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Bumper Cave Ledge",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        }
+      ],
+      "links": []
     }
   ]
 }
