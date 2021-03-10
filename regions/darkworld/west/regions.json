@@ -481,6 +481,45 @@
       "links": []
     },
     {
+      "id": 130,
+      "name": "Dark World Hammer Peg Cave",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark World Hammer Peg Cave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x7E",
+            "entrance_id": "0x83",
+            "room_id": "0x0127",
+            "ow_area": "0x62",
+            "vram_loc": "0x0894",
+            "scroll_y": "0x091E",
+            "scroll_x": "0x0492",
+            "link_y": "0x09A6",
+            "link_x": "0x0508",
+            "camera_y": "0x098B",
+            "camera_x": "0x050F",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Peg Cave",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "0x17",
+          "nodeAddress": "0x180006"
+        }
+      ],
+      "links": []
+    },
+    {
       "id": 137,
       "name": "Bumper Cave",
       "type": "interior",
