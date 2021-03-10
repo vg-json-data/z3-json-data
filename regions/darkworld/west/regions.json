@@ -317,7 +317,7 @@
         {
           "id": 26,
           "name": "Frog",
-          "nodeType": "item",
+          "nodeType": "event",
           "nodeItem": "Item Name",
           "nodeItemCode": "Item Code",
           "nodeAddress": ""
@@ -422,9 +422,9 @@
           "id": 5,
           "name": "Dark Blacksmith Ruins",
           "nodeType": "item",
-          "nodeItem": "Item Name",
-          "nodeItemCode": "Item Code",
-          "nodeAddress": ""
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "0x17",
+          "nodeAddress": "0x180006"
         }
       ],
       "links": []
@@ -608,7 +608,7 @@
           "name": "Bumper Cave Ledge",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180146"
         }
       ],

@@ -24,7 +24,7 @@
     "BowAndSilverArrows": {
       "data": "0x3B"
     },
-    "Boomerang": {
+    "BlueBoomerang": {
       "data": "0x0C"
     },
     "Powder": {
@@ -110,7 +110,7 @@
     "BlueShield": {
       "data": "0x04"
     },
-    "RedShield": {
+    "FireShield": {
       "data": "0x05"
     },
     "MirrorShield": {

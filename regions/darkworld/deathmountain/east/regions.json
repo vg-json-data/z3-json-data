@@ -794,7 +794,7 @@
           "name": "Superbunny Cave - Top",
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x28",
           "nodeAddress": "0xEA7C"
         },
         {
@@ -802,7 +802,7 @@
           "name": "Superbunny Cave - Bottom",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA7F"
         }
       ],
@@ -882,7 +882,7 @@
           "name": "Hookshot Cave - Top Right",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEB51"
         },
         {
@@ -890,7 +890,7 @@
           "name": "Hookshot Cave - Top Left",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEB54"
         },
         {
@@ -898,7 +898,7 @@
           "name": "Hookshot Cave - Bottom Right",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEB5A"
         },
         {
@@ -906,7 +906,7 @@
           "name": "Hookshot Cave - Bottom Left",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEB57"
         }
       ],

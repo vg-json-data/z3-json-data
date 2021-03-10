@@ -34,7 +34,7 @@
           "name": "Blind's Hideout - Top",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xEB0F"
         },
         {
@@ -42,7 +42,7 @@
           "name": "Blind's Hideout - Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB12"
         },
         {
@@ -50,7 +50,7 @@
           "name": "Blind's Hideout - Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB15"
         },
         {
@@ -58,7 +58,7 @@
           "name": "Blind's Hideout - Far Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB18"
         },
         {
@@ -66,7 +66,7 @@
           "name": "Blind's Hideout - Far Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB1B"
         }
       ],
@@ -157,7 +157,7 @@
           "name": "King's Tomb",
           "nodeType": "item",
           "nodeItem": "Cape",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x19",
           "nodeAddress": "0xE97A"
         }
       ],
@@ -195,7 +195,7 @@
           "name": "Kakariko Tavern",
           "nodeType": "item",
           "nodeItem": "Bottle",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x16",
           "nodeAddress": "0xE9CE"
         }
       ],
@@ -630,7 +630,7 @@
           "name": "Chicken House",
           "nodeType": "item",
           "nodeItem": "BlueBoomerang",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x0C",
           "nodeAddress": "0xE9E9"
         }
       ],
@@ -665,7 +665,7 @@
           "name": "Kakariko Well - Top",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xEA8E"
         },
         {
@@ -673,7 +673,7 @@
           "name": "Kakariko Well - Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA91"
         },
         {
@@ -681,7 +681,7 @@
           "name": "Kakariko Well - Middle",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA94"
         },
         {
@@ -689,7 +689,7 @@
           "name": "Kakariko Well - Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA97"
         },
         {
@@ -697,7 +697,7 @@
           "name": "Kakariko Well - Bottom",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA9A"
         }
       ],
@@ -783,7 +783,7 @@
           "name": "Blacksmith",
           "nodeType": "item",
           "nodeItem": "L3Sword",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x02",
           "nodeAddress": "0x18002A"
         },
         {
@@ -860,7 +860,7 @@
           "name": "Magic Bat",
           "nodeType": "item",
           "nodeItem": "HalfMagic",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x4E",
           "nodeAddress": "0x180015"
         }
       ],
@@ -946,7 +946,7 @@
           "name": "Sick Kid",
           "nodeType": "item",
           "nodeItem": "Bottle",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x16",
           "nodeAddress": "0x339CF"
         }
       ],
@@ -980,7 +980,7 @@
           "name": "Lost Woods Hideout",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180000"
         }
       ],
@@ -1061,7 +1061,7 @@
           "name": "Lumberjack Tree",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180001"
         }
       ],
@@ -1185,7 +1185,7 @@
           "name": "Graveyard Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180004"
         }
       ],
@@ -1224,7 +1224,7 @@
           "name": "Bonk Rock Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xEB3F"
         }
       ],
@@ -1278,7 +1278,7 @@
           "name": "Master Sword Pedestal",
           "nodeType": "item",
           "nodeItem": "L2Sword",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x01",
           "nodeAddress": "0x289B0"
         }
       ],
@@ -1310,6 +1310,34 @@
             "unknown_2": "0x00",
             "door_1": "0x0000",
             "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 80,
+      "name": "Sewer Drop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Sanctuary Grave",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB85E"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Sewer Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x81"
           }
         }
       ],

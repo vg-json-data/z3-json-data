@@ -54,7 +54,7 @@
           "name": "Link's Uncle",
           "nodeType": "item",
           "nodeItem": "L1Sword",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x49",
           "nodeAddress": "0x2DF45"
         },
         {
@@ -62,7 +62,7 @@
           "name": "Secret Passage",
           "nodeType": "item",
           "nodeItem": "Lamp",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x12",
           "nodeAddress": "0xE971"
         }
       ],
@@ -85,7 +85,7 @@
           "name": "King Zora",
           "nodeType": "item",
           "nodeItem": "Flippers",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x1E",
           "nodeAddress": "0xEE1C3"
         },
         {
@@ -93,7 +93,7 @@
           "name": "Zora's Ledge",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180149"
         }
       ],
@@ -132,7 +132,7 @@
           "name": "Waterfall Fairy - Left",
           "nodeType": "item",
           "nodeItem": "RedBoomerang",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x2A",
           "nodeAddress": "0xE980"
         },
         {
@@ -140,7 +140,7 @@
           "name": "Waterfall Fairy - Right",
           "nodeType": "item",
           "nodeItem": "FireShield",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x05",
           "nodeAddress": "0xE9D1"
         }
       ],
@@ -261,7 +261,7 @@
           "name": "Sahasrahla's Hut - Left",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEA82"
         },
         {
@@ -269,7 +269,7 @@
           "name": "Sahasrahla's Hut - Middle",
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x28",
           "nodeAddress": "0xEA85"
         },
         {
@@ -277,7 +277,7 @@
           "name": "Sahasrahla's Hut - Right",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xEA88"
         },
         {
@@ -285,7 +285,7 @@
           "name": "Sahasrahla",
           "nodeType": "item",
           "nodeItem": "PegasusBoots",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x4B",
           "nodeAddress": "0x2F1FC"
         }
       ],

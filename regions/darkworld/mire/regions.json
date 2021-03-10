@@ -207,7 +207,7 @@
           "name": "Mire Shed - Left",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xEA73"
         },
         {
@@ -215,7 +215,7 @@
           "name": "Mire Shed - Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEA76"
         }
       ],

@@ -33,6 +33,66 @@
       "links": []
     },
     {
+      "id": 31,
+      "name": "Dark Lake Hylia Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6C",
+            "room_id": "0x0115",
+            "ow_area": "0x6E",
+            "vram_loc": "0x0016",
+            "scroll_y": "0x0A00",
+            "scroll_x": "0x0CB6",
+            "link_y": "0x0A36",
+            "link_x": "0x0D28",
+            "camera_y": "0x0A6D",
+            "camera_x": "0x0D33",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 32,
+      "name": "Dark Lake Hylia Ledge Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Lake Hylia Ledge Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x80",
+            "room_id": "0x0115",
+            "ow_area": "0x77",
+            "vram_loc": "0x0080",
+            "scroll_y": "0x0C00",
+            "scroll_x": "0x0E00",
+            "link_y": "0x0C37",
+            "link_x": "0x0E48",
+            "camera_y": "0x0C6F",
+            "camera_x": "0x0E7D",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
       "id": 112,
       "name": "South Dark World",
       "type": "interior",
@@ -245,7 +305,7 @@
           "name": "Stumpy",
           "nodeType": "item",
           "nodeItem": "Shovel",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x13",
           "nodeAddress": "0x330C7"
         },
         {
@@ -253,7 +313,7 @@
           "name": "Digging Game",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180148"
         },
         {
@@ -261,7 +321,7 @@
           "name": "Bombos Tablet",
           "nodeType": "item",
           "nodeItem": "Bombos",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x0F",
           "nodeAddress": "0x180017"
         }
       ],
@@ -625,7 +685,7 @@
           "name": "Hype Cave - Top",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB1E"
         },
         {
@@ -633,7 +693,7 @@
           "name": "Hype Cave - Middle Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB21"
         },
         {
@@ -641,7 +701,7 @@
           "name": "Hype Cave - Middle Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB24"
         },
         {
@@ -649,7 +709,7 @@
           "name": "Hype Cave - Bottom",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB27"
         },
         {
@@ -657,7 +717,7 @@
           "name": "Hype Cave - Generous Guy",
           "nodeType": "item",
           "nodeItem": "ThreeHundredRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x46",
           "nodeAddress": "0x180011"
         }
       ],

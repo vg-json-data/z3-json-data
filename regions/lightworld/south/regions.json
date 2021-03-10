@@ -94,7 +94,7 @@
           "name": "Floodgate Chest",
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x28",
           "nodeAddress": "0xE98C"
         }
       ],
@@ -178,7 +178,7 @@
           "name": "Link's House",
           "nodeType": "item",
           "nodeItem": "Lamp",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x12",
           "nodeAddress": "0xE9BC"
         }
       ],
@@ -234,8 +234,99 @@
           "name": "Aginah's Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xE9F2"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 24,
+      "name": "Lake Hylia Fortune Teller",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Fortune Teller",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x72",
+            "entrance_id": "0x65",
+            "room_id": "0x0122",
+            "ow_area": "0x35",
+            "vram_loc": "0x0380",
+            "scroll_y": "0x0C6A",
+            "scroll_x": "0x0A00",
+            "link_y": "0x0CB8",
+            "link_x": "0x0A58",
+            "camera_y": "0x0CD7",
+            "camera_x": "0x0A85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 30,
+      "name": "Desert Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Desert Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x71",
+            "room_id": "0x0115",
+            "ow_area": "0x3A",
+            "vram_loc": "0x0000",
+            "scroll_y": "0x0E00",
+            "scroll_x": "0x0400",
+            "link_y": "0x0E26",
+            "link_x": "0x0468",
+            "camera_y": "0x0E6D",
+            "camera_x": "0x0485",
+            "unknown_1": "0x00",
+            "unknown_2": "0x00",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 29,
+      "name": "Swamp Healer Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Light Hype Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6B",
+            "room_id": "0x0115",
+            "ow_area": "0x34",
+            "vram_loc": "0x00A0",
+            "scroll_y": "0x0C04",
+            "scroll_x": "0x0900",
+            "link_y": "0x0C58",
+            "link_x": "0x0988",
+            "camera_y": "0x0C73",
+            "camera_x": "0x0985",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
       ],
       "links": []
@@ -257,7 +348,7 @@
           "name": "Hobo",
           "nodeType": "item",
           "nodeItem": "Bottle",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x16",
           "nodeAddress": "0x33E7D"
         }
       ],
@@ -334,7 +425,7 @@
           "name": "Cave 45",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180003"
         }
       ],
@@ -373,7 +464,7 @@
           "name": "Checkerboard Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180005"
         }
       ],
@@ -412,7 +503,7 @@
           "name": "Mini Moldorm Cave - Far Left",
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x28",
           "nodeAddress": "0xEB42"
         },
         {
@@ -420,7 +511,7 @@
           "name": "Mini Moldorm Cave - Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB45"
         },
         {
@@ -428,7 +519,7 @@
           "name": "Mini Moldorm Cave - Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB48"
         },
         {
@@ -436,7 +527,7 @@
           "name": "Mini Moldorm Cave - Far Right",
           "nodeType": "item",
           "nodeItem": "TenArrows",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x44",
           "nodeAddress": "0xEB4B"
         },
         {
@@ -444,7 +535,7 @@
           "name": "Mini Moldorm Cave - Generous Guy",
           "nodeType": "item",
           "nodeItem": "ThreeHundredRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x46",
           "nodeAddress": "0x180010"
         }
       ],
@@ -483,7 +574,7 @@
           "name": "Ice Rod Cave",
           "nodeType": "item",
           "nodeItem": "IceRod",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x08",
           "nodeAddress": "0xEB4E"
         }
       ],
@@ -628,6 +719,45 @@
       }
     },
     {
+      "id": 63,
+      "name": "Library",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Library",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x48",
+            "entrance_id": "0x49",
+            "room_id": "0x0107",
+            "ow_area": "0x29",
+            "vram_loc": "0x0100",
+            "scroll_y": "0x0A14",
+            "scroll_x": "0x0200",
+            "link_y": "0x0A67",
+            "link_x": "0x0278",
+            "camera_y": "0x0A83",
+            "camera_x": "0x0285",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x040E",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Library",
+          "nodeType": "item",
+          "nodeItem": "BookOfMudora",
+          "nodeItemCode": "0x1D",
+          "nodeAddress": "0x180012"
+        }
+      ],
+      "links": []
+    },
+    {
       "id": 66,
       "name": "Lake Hylia Island",
       "type": "interior",
@@ -644,7 +774,7 @@
           "name": "Lake Hylia Island",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180144"
         }
       ],
@@ -836,7 +966,7 @@
           "name": "Maze Race",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180142"
         }
       ],
@@ -936,7 +1066,7 @@
           "name": "Desert Ledge",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180143"
         }
       ],

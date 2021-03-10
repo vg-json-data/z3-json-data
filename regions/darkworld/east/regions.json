@@ -231,7 +231,7 @@
           "name": "Pyramid",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180147"
         }
       ],

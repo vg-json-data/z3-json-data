@@ -101,7 +101,7 @@
           "name": "Old Man",
           "nodeType": "item",
           "nodeItem": "MagicMirror",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x1A",
           "nodeAddress": "0xF69FA"
         }
       ],
@@ -740,8 +740,8 @@
           "name": "Spectacle Rock Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
-          "nodeAddress": ""
+          "nodeItemCode": "0x17",
+          "nodeAddress": "0x180002"
         }
       ],
       "links": []
@@ -917,7 +917,7 @@
           "name": "Ether Tablet",
           "nodeType": "item",
           "nodeItem": "Ether",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x10",
           "nodeAddress": "0x180016"
         }
       ],
@@ -947,7 +947,7 @@
           "name": "Spectacle Rock",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180140"
         }
       ],

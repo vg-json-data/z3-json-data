@@ -307,7 +307,7 @@
           "name": "Paradox Cave Lower - Far Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB2A"
         },
         {
@@ -315,7 +315,7 @@
           "name": "Paradox Cave Lower - Left",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB2D"
         },
         {
@@ -323,7 +323,7 @@
           "name": "Paradox Cave Lower - Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB30"
         },
         {
@@ -331,7 +331,7 @@
           "name": "Paradox Cave Lower - Far Right",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB33"
         },
         {
@@ -339,7 +339,7 @@
           "name": "Paradox Cave Lower - Middle",
           "nodeType": "item",
           "nodeItem": "TwentyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x36",
           "nodeAddress": "0xEB36"
         },
         {
@@ -347,7 +347,7 @@
           "name": "Paradox Cave Upper - Left",
           "nodeType": "item",
           "nodeItem": "ThreeBombs",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x28",
           "nodeAddress": "0xEB39"
         },
         {
@@ -355,7 +355,7 @@
           "name": "Paradox Cave Upper - Right",
           "nodeType": "item",
           "nodeItem": "TenArrows",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x44",
           "nodeAddress": "0xEB3C"
         }
       ],
@@ -735,7 +735,7 @@
           "name": "Spiral Cave",
           "nodeType": "item",
           "nodeItem": "FiftyRupees",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x41",
           "nodeAddress": "0xE9BF"
         }
       ],
@@ -1093,7 +1093,7 @@
           "name": "Floating Island",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0x180141"
         }
       ],
@@ -1278,7 +1278,7 @@
           "name": "Mimic Cave",
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x17",
           "nodeAddress": "0xE9C5"
         }
       ],

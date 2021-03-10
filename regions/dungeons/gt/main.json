@@ -498,7 +498,7 @@
           "id": 2,
           "name": "Agahnim 2",
           "area": "Agahnim 2",
-          "nodeType": "item"
+          "nodeType": "event"
         }
       ]
     }

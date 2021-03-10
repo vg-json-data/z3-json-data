@@ -55,7 +55,7 @@
           "name": "Catfish",
           "nodeType": "item",
           "nodeItem": "Quake",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x11",
           "nodeAddress": "0xEE185"
         }
       ],
@@ -232,7 +232,7 @@
           "name": "Pyramid Fairy - Left",
           "nodeType": "item",
           "nodeItem": "L4Sword",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x03",
           "nodeAddress": "0xE980"
         },
         {
@@ -240,7 +240,7 @@
           "name": "Pyramid Fairy - Right",
           "nodeType": "item",
           "nodeItem": "SilverArrowUpgrade",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x58",
           "nodeAddress": "0xE983"
         }
       ],
@@ -274,10 +274,9 @@
         {
           "id": 3,
           "name": "Ganon",
-          "nodeType": "item",
+          "nodeType": "event",
           "nodeItem": "Triforce",
-          "nodeItemCode": "Item Code",
-          "nodeAddress": ""
+          "nodeItemCode": "Item Code"
         }
       ],
       "links": []

@@ -138,7 +138,7 @@
           "name": "Spike Cave",
           "nodeType": "item",
           "nodeItem": "CaneOfByrna",
-          "nodeItemCode": "Item Code",
+          "nodeItemCode": "0x18",
           "nodeAddress": "0xEA8B"
         }
       ],
