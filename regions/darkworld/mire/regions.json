@@ -2,61 +2,255 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 150,
-      "name": "Dark Desert",
-      "roomType": "DarkWorld",
+      "id": 33,
+      "name": "Dark Desert Healer Fairy",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Misery Mire",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Dark Desert Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x55",
+            "room_id": "0x0115",
+            "ow_area": "0x70",
+            "vram_loc": "0x03A8",
+            "scroll_y": "0x0C6A",
+            "scroll_x": "0x013A",
+            "link_y": "0x0CB7",
+            "link_x": "0x01B8",
+            "camera_y": "0x0CD7",
+            "camera_x": "0x01BF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 141,
+      "name": "Dark Desert",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Desert Teleporter",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Mire Shed",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Misery Mire Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x27",
+            "exit_id": "0x28"
+          }
         },
         {
           "id": 3,
-          "name": "Desert Ledge (Northeast) Mirror Spot",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Misery Mire",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x26",
+            "room_id": "0x0098",
+            "ow_area": "0x70",
+            "vram_loc": "0x0414",
+            "scroll_y": "0x0C79",
+            "scroll_x": "0x00A6",
+            "link_y": "0x0CC7",
+            "link_x": "0x0128",
+            "camera_y": "0x0CE6",
+            "camera_x": "0x0133",
+            "unknown_1": "0x07",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 4,
-          "name": "Desert Ledge Mirror Spot",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Mire Shed",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5E",
+            "entrance_id": "0x5F",
+            "room_id": "0x010D",
+            "ow_area": "0x70",
+            "vram_loc": "0x0384",
+            "scroll_y": "0x0C69",
+            "scroll_x": "0x001E",
+            "link_y": "0x0CB6",
+            "link_x": "0x0098",
+            "camera_y": "0x0CD6",
+            "camera_x": "0x00A3",
+            "unknown_1": "0x07",
+            "unknown_2": "0xF9",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 5,
-          "name": "Desert Palace Stairs Mirror Spot",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Desert Ledge (Northeast) Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 6,
-          "name": "Desert Palace Entrance (North) Mirror Spot",
-          "area": "Dark Desert",
-          "nodeType": "door"
+          "name": "Desert Ledge Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 7,
-          "name": "Dark Desert Hint",
-          "area": "Dark Desert",
-          "nodeType": "door",
-          "requires": [ "isDarkLink" ]
+          "name": "Desert Palace Stairs Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 8,
+          "name": "Desert Palace Entrance (North) Mirror Spot",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 9,
+          "name": "Dark Desert Hint",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x61",
+            "entrance_id": "0x62",
+            "room_id": "0x0114",
+            "ow_area": "0x70",
+            "vram_loc": "0x0654",
+            "scroll_y": "0x0CC5",
+            "scroll_x": "0x02AA",
+            "link_y": "0x0D16",
+            "link_x": "0x0328",
+            "camera_y": "0x0D32",
+            "camera_x": "0x032F",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 10,
           "name": "Dark Desert Fairy",
-          "area": "Dark Desert",
-          "nodeType": "door",
-          "requires": [ "isDarkLink" ]
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x55",
+            "room_id": "0x0115",
+            "ow_area": "0x70",
+            "vram_loc": "0x03A8",
+            "scroll_y": "0x0C6A",
+            "scroll_x": "0x013A",
+            "link_y": "0x0CB7",
+            "link_x": "0x01B8",
+            "camera_y": "0x0CD7",
+            "camera_x": "0x01BF",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         }
-      ]
+      ],
+      "links": []
+    },
+    {
+      "id": 142,
+      "name": "Mire Shed",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Mire Shed",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x5E",
+            "entrance_id": "0x5F",
+            "room_id": "0x010D",
+            "ow_area": "0x70",
+            "vram_loc": "0x0384",
+            "scroll_y": "0x0C69",
+            "scroll_x": "0x001E",
+            "link_y": "0x0CB6",
+            "link_x": "0x0098",
+            "camera_y": "0x0CD6",
+            "camera_x": "0x00A3",
+            "unknown_1": "0x07",
+            "unknown_2": "0xF9",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mire Shed - Left",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA73"
+        },
+        {
+          "id": 3,
+          "name": "Mire Shed - Right",
+          "nodeType": "item",
+          "nodeItem": "TwentyRupees",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEA76"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 143,
+      "name": "Dark Desert Hint",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark Desert Hint",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x61",
+            "entrance_id": "0x62",
+            "room_id": "0x0114",
+            "ow_area": "0x70",
+            "vram_loc": "0x0654",
+            "scroll_y": "0x0CC5",
+            "scroll_x": "0x02AA",
+            "link_y": "0x0D16",
+            "link_x": "0x0328",
+            "camera_y": "0x0D32",
+            "camera_x": "0x032F",
+            "unknown_1": "0x09",
+            "unknown_2": "0xF7",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
     }
   ]
 }
