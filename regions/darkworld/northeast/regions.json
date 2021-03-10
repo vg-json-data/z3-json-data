@@ -2,60 +2,379 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 118,
+      "id": 109,
       "name": "Northeast Dark World",
-      "roomType": "DarkWorld",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "West Dark World Gap",
-          "area": "Northeast Dark World",
-          "nodeType": "obstacle"
+          "name": "Northeast Dark World Broken Bridge Pass",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 2,
-          "name": "Dark World Potion Shop",
-          "area": "Northeast Dark World",
-          "nodeType": "door"
+          "name": "West Dark World Gap",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
         },
         {
           "id": 3,
-          "name": "East Dark World Broken Bridge Pass",
-          "area": "Northeast Dark World",
-          "nodeType": "door"
+          "name": "Dark World Potion Shop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6E",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x56",
+            "vram_loc": "0x080E",
+            "scroll_y": "0x04F4",
+            "scroll_x": "0x0C66",
+            "link_y": "0x0548",
+            "link_x": "0x0CD8",
+            "camera_y": "0x0563",
+            "camera_x": "0x0CE3",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 4,
+          "name": "East Dark World Broken Bridge Pass",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
           "name": "Catfish",
-          "area": "Northeast Dark World",
           "nodeType": "item",
           "nodeItem": "Quake",
-          "nodeAddress": "0xEE185",
-          "requires": [
-            "isDarkLink",
-            "canLiftRocks"
-          ]
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xEE185"
         }
-      ]
+      ],
+      "links": []
     },
     {
-      "id": 223,
-      "name": "Pyramid Ledge",
-      "roomType": "DarkWorld",
+      "id": 110,
+      "name": "Palace of Darkness Hint",
+      "type": "interior",
       "nodes": [
         {
           "id": 1,
-          "name": "Pyramid Entrance",
-          "area": "Pyramid Ledge",
-          "nodeType": "door"
+          "name": "Palace of Darkness Hint",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x67",
+            "entrance_id": "0x68",
+            "room_id": "0x011A",
+            "ow_area": "0x5E",
+            "vram_loc": "0x0C24",
+            "scroll_y": "0x0794",
+            "scroll_x": "0x0D12",
+            "link_y": "0x07E8",
+            "link_x": "0x0D90",
+            "camera_y": "0x0803",
+            "camera_x": "0x0D97",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 111,
+      "name": "East Dark World Hint",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "East Dark World Hint",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x68",
+            "entrance_id": "0x69",
+            "room_id": "0x010E",
+            "ow_area": "0x6F",
+            "vram_loc": "0x06A0",
+            "scroll_y": "0x0ACA",
+            "scroll_x": "0x0F00",
+            "link_y": "0x0B18",
+            "link_x": "0x0FA8",
+            "camera_y": "0x0B37",
+            "camera_x": "0x0F85",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 129,
+      "name": "Dark World Potion Shop",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Dark World Potion Shop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x6E",
+            "entrance_id": "0x60",
+            "room_id": "0x010F",
+            "ow_area": "0x56",
+            "vram_loc": "0x080E",
+            "scroll_y": "0x04F4",
+            "scroll_x": "0x0C66",
+            "link_y": "0x0548",
+            "link_x": "0x0CD8",
+            "camera_y": "0x0563",
+            "camera_x": "0x0CE3",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
         },
         {
           "id": 2,
-          "name": "Pyramid Drop",
-          "area": "Pyramid Ledge",
-          "nodeType": "drop"
+          "name": "Dark Potion Shop - Left",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 3,
+          "name": "Dark Potion Shop - Middle",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
+        },
+        {
+          "id": 4,
+          "name": "Dark Potion Shop - Right",
+          "nodeType": "item",
+          "nodeItem": "Item Name",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "",
+          "nodeItemPrice": 0
         }
-      ]
+      ],
+      "links": [],
+      "shop": {
+        "roomID": 271,
+        "shopkeepID": 193,
+        "type": "ShopType.Shop",
+        "custom": false,
+        "locked": false,
+        "bytes": [
+          0,
+          15,
+          1,
+          111,
+          0,
+          3,
+          193,
+          0
+        ],
+        "sram": 15
+      }
+    },
+    {
+      "id": 131,
+      "name": "Pyramid Fairy",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Fairy",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x62",
+            "entrance_id": "0x63",
+            "room_id": "0x0116",
+            "ow_area": "0x5B",
+            "vram_loc": "0x0B1E",
+            "scroll_y": "0x0754",
+            "scroll_x": "0x06FA",
+            "link_y": "0x07A7",
+            "link_x": "0x0778",
+            "camera_y": "0x07C3",
+            "camera_x": "0x077F",
+            "unknown_1": "0x0A",
+            "unknown_2": "0xF6",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Pyramid Fairy - Left",
+          "nodeType": "item",
+          "nodeItem": "L4Sword",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE980"
+        },
+        {
+          "id": 3,
+          "name": "Pyramid Fairy - Right",
+          "nodeType": "item",
+          "nodeItem": "SilverArrowUpgrade",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": "0xE983"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 157,
+      "name": "Pyramid",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Hole",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": [
+              "0x0DB854",
+              "0x0DB855",
+              "0x0DB856"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Ganon Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 3,
+          "name": "Ganon",
+          "nodeType": "item",
+          "nodeItem": "Triforce",
+          "nodeItemCode": "Item Code",
+          "nodeAddress": ""
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 158,
+      "name": "Bottom of Pyramid",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganon Drop",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 2,
+          "name": "Pyramid Entrance",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x35",
+            "room_id": "0x0010",
+            "ow_area": "0x5B",
+            "vram_loc": "0x0B0E",
+            "scroll_y": "0x075A",
+            "scroll_x": "0x0674",
+            "link_y": "0x07A8",
+            "link_x": "0x06E8",
+            "camera_y": "0x07C7",
+            "camera_x": "0x06F3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Pyramid Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x36",
+            "exit_id": "0x37"
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 159,
+      "name": "Pyramid Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Exit",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x36",
+            "exit_id": "0x37"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Pyramid Entrance",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x35",
+            "room_id": "0x0010",
+            "ow_area": "0x5B",
+            "vram_loc": "0x0B0E",
+            "scroll_y": "0x075A",
+            "scroll_x": "0x0674",
+            "link_y": "0x07A8",
+            "link_x": "0x06E8",
+            "camera_y": "0x07C7",
+            "camera_x": "0x06F3",
+            "unknown_1": "0x06",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Pyramid Drop",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
     }
   ]
 }
