@@ -33,6 +33,7 @@ for filename in glob.iglob(root_dir + "**/regions.json", recursive=True):
                                     if node["nodeType"] == "item":
                                         record = False
                                         nodeItemCode = False
+                                        nodeAddress = False
                                         if "nodeItem" not in node:
                                             record = True
                                         elif node["nodeItem"] == "Item Name":
@@ -45,8 +46,10 @@ for filename in glob.iglob(root_dir + "**/regions.json", recursive=True):
                                             nodeItemCode = True
                                         if "nodeAddress" not in node:
                                             record = True
+                                            nodeAddress = True
                                         elif node["nodeAddress"] == "":
                                             record = True
+                                            nodeAddress = True
                                         if record:
                                             if str(room["id"]) not in ids["rooms"]:
                                                 ids["rooms"][str(room["id"])] = {}
@@ -54,8 +57,15 @@ for filename in glob.iglob(root_dir + "**/regions.json", recursive=True):
                                                 ids["rooms"][str(room["id"])] = {"node":[]}
                                             nData = {}
                                             nData["id"] = str(node["id"])
-                                            if nodeItemCode and node["nodeItem"] in itemsDB:
-                                                nData["nodeItemCode"] = itemsDB[node["nodeItem"]]
+                                            if "name" in node:
+                                                nData["name"] = room["name"] + ':' + node["name"]
+                                            if nodeItemCode:
+                                                if node["nodeItem"] in itemsDB:
+                                                    nData["nodeItemCode"] = itemsDB[node["nodeItem"]]
+                                                else:
+                                                    nData["nodeItem"] = "Missing"
+                                            if nodeAddress:
+                                                nData["nodeAddress"] = "Missing"
                                             ids["rooms"][str(room["id"])]["node"].append(nData)
 ids2 = OrderedDict(sorted(ids["rooms"].items()))
 print(json.dumps(ids2,indent=2))

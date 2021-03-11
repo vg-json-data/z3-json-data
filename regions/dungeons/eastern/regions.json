@@ -1,0 +1,5681 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 164,
+      "name": "Eastern Portal",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Palace",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "door_index": "0x07",
+            "room_id": "0x00C9",
+            "ow_area": "0x1E",
+            "vram_loc": "0x005A",
+            "scroll_y": "0x0600",
+            "scroll_x": "0x0ED6",
+            "link_y": "0x0618",
+            "link_x": "0x0F50",
+            "camera_y": "0x066D",
+            "camera_x": "0x0F5B",
+            "unknown_1": "0x00",
+            "unknown_2": "0xFA",
+            "door_1": "0x0000",
+            "door_2": "0x0000"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Lobby S",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289446,
+            "hex": "0x13ACE6"
+          },
+          "quad_indicator": 0,
+          "target": [
+            201,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Portal",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Portal",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Palace Exit",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {
+            "entrance_id": "0x08",
+            "exit_id": "0x09"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Enter Eastern Palace",
+          "nodeType": "exit",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 216,
+      "name": "Eastern Lobby",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Lobby Bridge S",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby Bridge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby N",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Lobby Left Ledge SW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby Left Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Left Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Left Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby NW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Lobby Right Ledge SE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby Right Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Right Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Right Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby NE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Enter Eastern Palace",
+          "nodeType": "entrance",
+          "nodeSubType": "",
+          "nodeAddress": {}
+        },
+        {
+          "id": 5,
+          "name": "Eastern Lobby N",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby Bridge S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge S",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern Lobby S",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289446,
+            "hex": "0x13ACE6"
+          },
+          "quad_indicator": 0,
+          "target": [
+            201,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Portal",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Portal",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Portal",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Eastern Lobby NW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby Left Ledge SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Left Ledge SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Left Ledge SW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 8,
+          "name": "Eastern Lobby NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby Right Ledge SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Right Ledge SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Right Ledge SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 217,
+      "name": "Eastern Lobby Bridge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Lobby N",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby Bridge S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge S",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Cannonball S",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289110,
+            "hex": "0x13AB96"
+          },
+          "quad_indicator": 0,
+          "target": [
+            185,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 185,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby Bridge N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge N",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Lobby Bridge S",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby Bridge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby N",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Lobby Bridge N",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289434,
+            "hex": "0x13ACDA"
+          },
+          "quad_indicator": 0,
+          "target": [
+            201,
+            17
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby Bridge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball S",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 218,
+      "name": "Eastern Lobby Left Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Lobby NW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby Left Ledge SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Left Ledge SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Left Ledge SW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Lobby Left Ledge SW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby Left Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Left Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Left Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby NW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 219,
+      "name": "Eastern Lobby Right Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Lobby NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Lobby Right Ledge SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Right Ledge SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Right Ledge SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Lobby Right Ledge SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 201,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Lobby Right Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Right Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Right Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 220,
+      "name": "Eastern Cannonball",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Lobby Bridge N",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289434,
+            "hex": "0x13ACDA"
+          },
+          "quad_indicator": 0,
+          "target": [
+            201,
+            17
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 201,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Lobby Bridge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball S",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Courtyard Ledge S",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288774,
+            "hex": "0x13AA46"
+          },
+          "quad_indicator": 0,
+          "target": [
+            169,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball N",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Cannonball S",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289110,
+            "hex": "0x13AB96"
+          },
+          "quad_indicator": 0,
+          "target": [
+            185,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 185,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Lobby Bridge N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Lobby Bridge N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Lobby Bridge N",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Cannonball N",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289098,
+            "hex": "0x13AB8A"
+          },
+          "quad_indicator": 0,
+          "target": [
+            185,
+            1
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 185,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard Ledge S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge S",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Palace - Cannonball Chest",
+          "nodeType": "item",
+          "nodeItem": "OneHundredRupees",
+          "nodeItemCode": "0x40",
+          "nodeAddress": "0xE9B3"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 221,
+      "name": "Eastern Cannonball Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Big Key EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289090,
+            "hex": "0x13AB82"
+          },
+          "quad_indicator": 1,
+          "target": [
+            184,
+            0
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 184,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Big Key",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball Ledge WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Dark Square Key Door WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289126,
+            "hex": "0x13ABA6"
+          },
+          "quad_indicator": 1,
+          "target": [
+            186,
+            0
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 186,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball Ledge Key Door EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge Key Door EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge Key Door EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Cannonball Ledge WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289102,
+            "hex": "0x13AB8E"
+          },
+          "quad_indicator": 1,
+          "target": [
+            185,
+            0
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 185,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Big Key EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Cannonball Ledge Key Door EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289114,
+            "hex": "0x13AB9A"
+          },
+          "quad_indicator": 1,
+          "target": [
+            185,
+            0
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 185,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Dark Square Key Door WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square Key Door WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square Key Door WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 222,
+      "name": "Eastern Courtyard Ledge",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Cannonball N",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289098,
+            "hex": "0x13AB8A"
+          },
+          "quad_indicator": 0,
+          "target": [
+            185,
+            1
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 185,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard Ledge S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge S",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern West Wing E",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288756,
+            "hex": "0x13AA34"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            1
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern West Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard Ledge W",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge W",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge W",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern East Wing W",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288792,
+            "hex": "0x13AA58"
+          },
+          "quad_indicator": 1,
+          "target": [
+            170,
+            1
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard Ledge E",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge E",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge E",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Courtyard Ledge S",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288774,
+            "hex": "0x13AA46"
+          },
+          "quad_indicator": 0,
+          "target": [
+            169,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball N",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Courtyard Ledge W",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288768,
+            "hex": "0x13AA40"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            33
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern West Wing E",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing E",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing E",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern Courtyard Ledge E",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288780,
+            "hex": "0x13AA4C"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            17
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern East Wing W",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing W",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing W",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 223,
+      "name": "Eastern East Wing",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Pot Switch WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Pot Switch",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern East Wing EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Map Balcony WS",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Balcony",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern East Wing ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing ES",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Courtyard Ledge E",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288780,
+            "hex": "0x13AA4C"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            17
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern East Wing W",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing W",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing W",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern East Wing W",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288792,
+            "hex": "0x13AA58"
+          },
+          "quad_indicator": 1,
+          "target": [
+            170,
+            1
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard Ledge E",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge E",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge E",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern East Wing EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Pot Switch WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern East Wing ES",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Balcony WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony WS",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 224,
+      "name": "Eastern Pot Switch",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern East Wing EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Pot Switch WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Map Room NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Pot Switch SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Pot Switch WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Pot Switch",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern East Wing EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Pot Switch SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Pot Switch",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Room NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 225,
+      "name": "Eastern Map Balcony",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Map Room Drop Down",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Eastern Map Balcony",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern East Wing ES",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern East Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Map Balcony WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony WS",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Map Balcony WS",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Balcony",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern East Wing ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern East Wing ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern East Wing ES",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Map Balcony Hook Path",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Balcony",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Room",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 226,
+      "name": "Eastern Map Room",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Map Balcony Hook Path",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Balcony",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Eastern Map Room",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Pot Switch SE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Pot Switch",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Map Room NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room NE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Map Room NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 170,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Pot Switch SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Pot Switch SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Pot Switch SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Map Room Drop Down",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Room",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Balcony",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Balcony",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Balcony",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Palace - Map Chest",
+          "nodeType": "item",
+          "nodeItem": "MapP1",
+          "nodeItemCode": "0x7D",
+          "nodeAddress": "0xE9F5"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 227,
+      "name": "Eastern West Wing",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Stalfos Spawn ES",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Stalfos Spawn",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern West Wing WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing WS",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Courtyard Ledge W",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288768,
+            "hex": "0x13AA40"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            33
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern West Wing E",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing E",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing E",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern West Wing E",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288756,
+            "hex": "0x13AA34"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            1
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "doorIndex": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern West Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard Ledge W",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard Ledge W",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard Ledge W",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern West Wing WS",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern West Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Stalfos Spawn ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn ES",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 228,
+      "name": "Eastern Stalfos Spawn",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern West Wing WS",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern West Wing",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Stalfos Spawn ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn ES",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Compass Room SW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Compass Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Stalfos Spawn NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn NW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Stalfos Spawn ES",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Stalfos Spawn",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern West Wing WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern West Wing WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern West Wing WS",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Stalfos Spawn NW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Stalfos Spawn",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Compass Room SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room SW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 229,
+      "name": "Eastern Compass Room",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Stalfos Spawn NW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Stalfos Spawn",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Compass Room SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room SW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Hint Tile WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Hint Tile",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Compass Room EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Compass Room EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Compass Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Hint Tile WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Compass Room SW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Compass Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Stalfos Spawn NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Stalfos Spawn NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Stalfos Spawn NW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Palace - Compass Chest",
+          "nodeType": "item",
+          "nodeItem": "CompassP1",
+          "nodeItemCode": "0x8D",
+          "nodeAddress": "0xE977"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 230,
+      "name": "Eastern Hint Tile",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Hint Tile Push Block",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Hint Tile Blocked Path",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path",
+                  "position": "entrance"
+                }
+              ],
+              "to": [
+                {
+                  "subarea": "Eastern Hint Tile",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "entrance"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Compass Room EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Compass Room",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Hint Tile WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Courtyard WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288766,
+            "hex": "0x13AA3E"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            4
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 169,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Hint Tile EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Hint Tile EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288754,
+            "hex": "0x13AA32"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            4
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Hint Tile",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Hint Tile WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 168,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Hint Tile",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Compass Room EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Compass Room EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Compass Room EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 231,
+      "name": "Eastern Hint Tile Blocked Path",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Big Key NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289076,
+            "hex": "0x13AB74"
+          },
+          "quad_indicator": 0,
+          "target": [
+            184,
+            2
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 184,
+          "doorIndex": 2,
+          "bigkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Big Key",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Hint Tile Blocked Path SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Hint Tile Blocked Path SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288752,
+            "hex": "0x13AA30"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            2
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "smallkey": true,
+          "quad": 3,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Hint Tile Blocked Path",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Big Key NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Hint Tile Push Block",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Logical",
+          "nodeAddress": {},
+          "connection": {
+            "connectionType": "DoorType.Logical",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Hint Tile Blocked Path",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Hint Tile",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 232,
+      "name": "Eastern Courtyard",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Fairies' Warp",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Warp",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Warp",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Fairies",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Fairies",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Fairies",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Hint Tile EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288754,
+            "hex": "0x13AA32"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            4
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 168,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Hint Tile",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Map Valley WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288790,
+            "hex": "0x13AA56"
+          },
+          "quad_indicator": 1,
+          "target": [
+            170,
+            4
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Valley",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Darkness S",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288462,
+            "hex": "0x13A90E"
+          },
+          "quad_indicator": 0,
+          "target": [
+            153,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 153,
+          "doorIndex": 1,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Courtyard N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard N",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Courtyard WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288766,
+            "hex": "0x13AA3E"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            4
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 169,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Hint Tile EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern Courtyard EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288778,
+            "hex": "0x13AA4A"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            4
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 169,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Valley WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Eastern Courtyard N",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288762,
+            "hex": "0x13AA3A"
+          },
+          "quad_indicator": 0,
+          "target": [
+            169,
+            1
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "bigkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Darkness S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness S",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 8,
+          "name": "Eastern Courtyard Potholes",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Hole",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Hole",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Fairies",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Fairies",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Fairies",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 9,
+          "name": "Eastern Palace - Big Chest",
+          "nodeType": "item",
+          "nodeItem": "Bow",
+          "nodeItemCode": "0x0B",
+          "nodeAddress": "0xE97D"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 233,
+      "name": "Eastern Fairies",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Courtyard Potholes",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Hole",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Hole",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Fairies",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Fairies",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Fairies",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Fairies' Warp",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Warp",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Warp",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Fairies",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Fairies",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Fairies",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 234,
+      "name": "Eastern Map Valley",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Courtyard EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288778,
+            "hex": "0x13AA4A"
+          },
+          "quad_indicator": 1,
+          "target": [
+            169,
+            4
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 169,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Map Valley WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Dark Square NW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289120,
+            "hex": "0x13ABA0"
+          },
+          "quad_indicator": 0,
+          "target": [
+            186,
+            16
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Map Valley SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley SW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Map Valley WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288790,
+            "hex": "0x13AA56"
+          },
+          "quad_indicator": 1,
+          "target": [
+            170,
+            4
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 170,
+          "layer": 1,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Valley",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Map Valley SW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288796,
+            "hex": "0x13AA5C"
+          },
+          "quad_indicator": 0,
+          "target": [
+            170,
+            0
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Map Valley",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Dark Square NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square NW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 235,
+      "name": "Eastern Dark Square",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Dark Pots WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Dark Pots",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Pots",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Pots",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Dark Square EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Cannonball Ledge Key Door EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289114,
+            "hex": "0x13AB9A"
+          },
+          "quad_indicator": 1,
+          "target": [
+            185,
+            0
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 185,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Dark Square Key Door WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square Key Door WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square Key Door WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Map Valley SW",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288796,
+            "hex": "0x13AA5C"
+          },
+          "quad_indicator": 0,
+          "target": [
+            170,
+            0
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 170,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Map Valley",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Dark Square NW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square NW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square NW",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Dark Square NW",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289120,
+            "hex": "0x13ABA0"
+          },
+          "quad_indicator": 0,
+          "target": [
+            186,
+            16
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Map Valley SW",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Map Valley SW",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Map Valley SW",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Dark Square Key Door WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289126,
+            "hex": "0x13ABA6"
+          },
+          "quad_indicator": 1,
+          "target": [
+            186,
+            0
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 186,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball Ledge Key Door EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge Key Door EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge Key Door EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern Dark Square EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Dark Pots WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Pots WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Pots WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 236,
+      "name": "Eastern Dark Pots",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Dark Square EN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Dark Square",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Dark Pots WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Pots WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Pots WN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Dark Pots WN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 186,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Dark Pots",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Pots",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Pots",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Dark Square EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Dark Square EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Dark Square EN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Palace - Dark Square Pot Key",
+          "nodeType": "item",
+          "nodeItem": "KeyP1",
+          "nodeItemCode": "0xA2",
+          "nodeAddress": ""
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 237,
+      "name": "Eastern Big Key",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Cannonball Ledge WN",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289102,
+            "hex": "0x13AB8E"
+          },
+          "quad_indicator": 1,
+          "target": [
+            185,
+            0
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 185,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball Ledge",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Big Key EN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key EN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key EN",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Hint Tile Blocked Path SE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288752,
+            "hex": "0x13AA30"
+          },
+          "quad_indicator": 1,
+          "target": [
+            168,
+            2
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 168,
+          "doorIndex": 2,
+          "smallkey": true,
+          "quad": 3,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Hint Tile Blocked Path",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Big Key NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key NE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Big Key EN",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289090,
+            "hex": "0x13AB82"
+          },
+          "quad_indicator": 1,
+          "target": [
+            184,
+            0
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 184,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Big Key",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball Ledge WN",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Ledge WN",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Ledge WN",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Big Key NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289076,
+            "hex": "0x13AB74"
+          },
+          "quad_indicator": 0,
+          "target": [
+            184,
+            2
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 184,
+          "doorIndex": 2,
+          "bigkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Big Key",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Big Key",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Big Key",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Hint Tile Blocked Path SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Hint Tile Blocked Path SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Hint Tile Blocked Path SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Palace - Big Key Chest",
+          "nodeType": "item",
+          "nodeItem": "BigKeyP1",
+          "nodeItemCode": "0x9D",
+          "nodeAddress": "0xE9B9"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 238,
+      "name": "Eastern Darkness",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Rupees SE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 153,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Rupees",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Rupees",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Rupees",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Darkness NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness NE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Attic Start Down Stairs",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.SpiralStairs",
+          "nodeAddress": {
+            "dec": 1290684,
+            "hex": "0x13B1BC"
+          },
+          "quad_indicator": 0,
+          "target": [
+            218,
+            50,
+            128,
+            17
+          ],
+          "direction": "Direction.Down",
+          "roomIndex": 218,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.SpiralStairs",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Attic Start",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Darkness Up Stairs",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness Up Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness Up Stairs",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Courtyard N",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288762,
+            "hex": "0x13AA3A"
+          },
+          "quad_indicator": 0,
+          "target": [
+            169,
+            1
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 169,
+          "doorIndex": 1,
+          "bigkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Courtyard",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Darkness S",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness S",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness S",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Darkness S",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1288462,
+            "hex": "0x13A90E"
+          },
+          "quad_indicator": 0,
+          "target": [
+            153,
+            1
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 153,
+          "doorIndex": 1,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Courtyard N",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Courtyard N",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Courtyard N",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Eastern Darkness Up Stairs",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.SpiralStairs",
+          "nodeAddress": {
+            "dec": 1290592,
+            "hex": "0x13B160"
+          },
+          "quad_indicator": 0,
+          "target": [
+            153,
+            162,
+            108,
+            26
+          ],
+          "direction": "Direction.Up",
+          "roomIndex": 153,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.SpiralStairs",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Attic Start Down Stairs",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start Down Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start Down Stairs",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Eastern Darkness NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 153,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Rupees SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Rupees SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Rupees SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Eastern Palace - Dark Eyegore Key Drop",
+          "nodeType": "item",
+          "nodeItem": "KeyP1",
+          "nodeItemCode": "0xA2",
+          "nodeAddress": ""
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 239,
+      "name": "Eastern Rupees",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Darkness NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 153,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Rupees SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Rupees SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Rupees SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Rupees SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 153,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Rupees",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Rupees",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Rupees",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Darkness NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 240,
+      "name": "Eastern Attic Start",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Darkness Up Stairs",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.SpiralStairs",
+          "nodeAddress": {
+            "dec": 1290592,
+            "hex": "0x13B160"
+          },
+          "quad_indicator": 0,
+          "target": [
+            153,
+            162,
+            108,
+            26
+          ],
+          "direction": "Direction.Up",
+          "roomIndex": 153,
+          "smallkey": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.SpiralStairs",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Darkness",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Attic Start Down Stairs",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start Down Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start Down Stairs",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern False Switches ES",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289670,
+            "hex": "0x13ADC6"
+          },
+          "quad_indicator": 1,
+          "target": [
+            217,
+            10
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern False Switches",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Attic Start WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start WS",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Attic Start Down Stairs",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.SpiralStairs",
+          "nodeAddress": {
+            "dec": 1290684,
+            "hex": "0x13B1BC"
+          },
+          "quad_indicator": 0,
+          "target": [
+            218,
+            50,
+            128,
+            17
+          ],
+          "direction": "Direction.Down",
+          "roomIndex": 218,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.SpiralStairs",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Attic Start",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Darkness Up Stairs",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Darkness Up Stairs",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Darkness Up Stairs",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Attic Start WS",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289682,
+            "hex": "0x13ADD2"
+          },
+          "quad_indicator": 1,
+          "target": [
+            218,
+            34
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 218,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Attic Start",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern False Switches ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches ES",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 241,
+      "name": "Eastern False Switches",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Cannonball Hell ES",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball Hell",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern False Switches WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches WS",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Attic Start WS",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289682,
+            "hex": "0x13ADD2"
+          },
+          "quad_indicator": 1,
+          "target": [
+            218,
+            34
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 218,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Attic Start",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern False Switches ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches ES",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern False Switches ES",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289670,
+            "hex": "0x13ADC6"
+          },
+          "quad_indicator": 1,
+          "target": [
+            217,
+            10
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern False Switches",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Attic Start WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Attic Start WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Attic Start WS",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern False Switches WS",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern False Switches",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball Hell ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell ES",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 242,
+      "name": "Eastern Cannonball Hell",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern False Switches WS",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.West",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern False Switches",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball Hell ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell ES",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Single Eyegore ES",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289646,
+            "hex": "0x13ADAE"
+          },
+          "quad_indicator": 1,
+          "target": [
+            216,
+            2
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Single Eyegore",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Cannonball Hell WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell WS",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Cannonball Hell ES",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 1,
+          "direction": "Direction.East",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball Hell",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern False Switches WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern False Switches WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern False Switches WS",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Cannonball Hell WS",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289658,
+            "hex": "0x13ADBA"
+          },
+          "quad_indicator": 1,
+          "target": [
+            217,
+            34
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Cannonball Hell",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Single Eyegore ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore ES",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 243,
+      "name": "Eastern Single Eyegore",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Duo Eyegores SE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Duo Eyegores",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Single Eyegore NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore NE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Cannonball Hell WS",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289658,
+            "hex": "0x13ADBA"
+          },
+          "quad_indicator": 1,
+          "target": [
+            217,
+            34
+          ],
+          "direction": "Direction.West",
+          "roomIndex": 217,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Cannonball Hell",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Single Eyegore ES",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore ES",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore ES",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Single Eyegore ES",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289646,
+            "hex": "0x13ADAE"
+          },
+          "quad_indicator": 1,
+          "target": [
+            216,
+            2
+          ],
+          "direction": "Direction.East",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Single Eyegore",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Cannonball Hell WS",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Cannonball Hell WS",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Cannonball Hell WS",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Eastern Single Eyegore NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Single Eyegore",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Duo Eyegores SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 244,
+      "name": "Eastern Duo Eyegores",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Single Eyegore NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.North",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Single Eyegore",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Duo Eyegores SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Duo Eyegores SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Interior",
+          "nodeAddress": {},
+          "quad_indicator": 0,
+          "direction": "Direction.South",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Interior",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Duo Eyegores",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Single Eyegore NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Single Eyegore NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Single Eyegore NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Duo Eyegores NE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289628,
+            "hex": "0x13AD9C"
+          },
+          "quad_indicator": 0,
+          "target": [
+            216,
+            34
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Duo Eyegores",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Boss SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Boss SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Boss SE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 245,
+      "name": "Eastern Boss",
+      "type": "interior",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Eastern Duo Eyegores NE",
+          "nodeType": "entrance",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289628,
+            "hex": "0x13AD9C"
+          },
+          "quad_indicator": 0,
+          "target": [
+            216,
+            34
+          ],
+          "direction": "Direction.North",
+          "roomIndex": 216,
+          "doorIndex": 2,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [
+                {
+                  "area": "Eastern Duo Eyegores",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores",
+                  "position": "entrance"
+                },
+                {
+                  "subarea": "Eastern Boss SE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Boss SE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Boss SE",
+                  "position": "entrance"
+                }
+              ],
+              "to": []
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Eastern Boss SE",
+          "nodeType": "exit",
+          "nodeSubType": "DoorType.Normal",
+          "nodeAddress": {
+            "dec": 1289424,
+            "hex": "0x13ACD0"
+          },
+          "quad_indicator": 0,
+          "target": [
+            200,
+            34
+          ],
+          "direction": "Direction.South",
+          "roomIndex": 200,
+          "doorIndex": 2,
+          "blocked": true,
+          "quad": 2,
+          "connection": {
+            "connectionType": "DoorType.Normal",
+            "description": "",
+            "direction": "",
+            "nodes": {
+              "from": [],
+              "to": [
+                {
+                  "area": "Eastern Boss",
+                  "nodeType": "region",
+                  "roomid": 0,
+                  "roomName": "Eastern Boss",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Boss",
+                  "position": "exit"
+                },
+                {
+                  "area": "Eastern Duo Eyegores NE",
+                  "nodeType": "door",
+                  "roomid": 0,
+                  "roomName": "Eastern Duo Eyegores NE",
+                  "nodeid": 0,
+                  "nodeName": "Eastern Duo Eyegores NE",
+                  "position": "exit"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Eastern Palace - Boss",
+          "nodeType": "item",
+          "nodeItem": "BossHeartContainer",
+          "nodeItemCode": "0x3E",
+          "nodeAddress": "0x180150"
+        },
+        {
+          "id": 4,
+          "name": "Eastern Palace - Prize",
+          "nodeType": "item",
+          "nodeItem": "PendantOfCourage",
+          "nodeItemCode": [
+            "0x37",
+            "0x04",
+            "0x38",
+            "0x62",
+            "0x00",
+            "0x69",
+            "0x01"
+          ],
+          "nodeAddress": [
+            "0x1209D",
+            "0x53EF8",
+            "0x53EF9",
+            "0x180052",
+            "0x18007C",
+            "0xC6FE"
+          ]
+        }
+      ],
+      "links": []
+    }
+  ]
+}
