@@ -244,5 +244,13 @@
         ]}
       ]}
     ]
+  },
+  {
+    "name": "hasSwordSparkles",
+    "requires": [
+      "isLink",
+      "hasMagicalSword",
+      {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
+    ]
   }
 ]
