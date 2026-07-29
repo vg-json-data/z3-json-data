@@ -1,46 +1,53 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "rooms": [
+  "id": 88,
+  "name": "Agahnims Tower",
+  "roomType": "Dungeon",
+  "nodes": [
     {
-      "id": 88,
-      "name": "Agahnims Tower",
-      "roomType": "Dungeon",
+      "id": 1,
+      "name": "Agahnim 1",
+      "area": "Agahnims Tower",
       "requires": [ "hasLightCone" ],
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Agahnim 1",
-          "area": "Agahnims Tower",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Agahnims Tower Exit",
-          "area": "Agahnims Tower",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Castle Tower - Room 03",
-          "area": "Agahnims Tower",
-          "nodeType": "item",
-          "nodeItem": "KeyA1",
-          "nodeAddress": "0xEAB5"
-        },
-        {
-          "id": 4,
-          "name": "Castle Tower - Dark Maze",
-          "area": "Agahnims Tower",
-          "nodeType": "item",
-          "nodeItem": "KeyA1",
-          "nodeAddress": "0xEAB2"
-        }
-      ]
+      "nodeType": "door"
     },
     {
-      "id": 89,
+      "id": 2,
+      "name": "Agahnims Tower Exit",
+      "area": "Agahnims Tower",
+      "requires": [ "hasLightCone" ],
+      "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Castle Tower - Room 03",
+      "area": "Agahnims Tower",
+      "requires": [ "hasLightCone" ],
+      "nodeType": "item",
+      "nodeItem": "KeyA1",
+      "nodeAddress": "0xEAB5"
+    },
+    {
+      "id": 4,
+      "name": "Castle Tower - Dark Maze",
+      "area": "Agahnims Tower",
+      "requires": [ "hasLightCone" ],
+      "nodeType": "item",
+      "nodeItem": "KeyA1",
+      "nodeAddress": "0xEAB2"
+    },
+    {
+      "id": 5,
       "name": "Agahnim 1",
-      "roomType": "Dungeon",
+      "area": "Agahnims Tower",
+      "nodeType": "event"
+    }
+  ],
+  "strats": [
+    {
+      "id": 1,
+      "link": [5, 5],
+      "name": "Agahnim 1",
       "requires": [
         {"and": [
           "swords.swordless",
@@ -53,15 +60,7 @@
         "hasLightCone",
         "KeyA1:2"
       ],
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Agahnim 1",
-          "area": "Agahnim 1",
-          "nodeType": "event",
-          "yields": [ "DefeatAgahnim1" ]
-        }
-      ]
+      "yields": ["DefeatAgahnim1"]
     }
   ]
 }
