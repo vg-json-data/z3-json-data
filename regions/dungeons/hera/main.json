@@ -92,5 +92,30 @@
         "0xC706"
       ]
     }
+  ],
+  "strats": [
+    {
+      "link": [9, 9],
+      "name": "Moldorm - Sword",
+      "requires": [
+        "L1Sword"
+      ],
+      "setsFlags": ["f_DefeatedMoldorm"],
+      "collectsItems": [9, 10],
+      "devNote": ["This is simplified because of the pots filled with hearts below."]
+    },
+    {
+      "link": [9, 9],
+      "name": "Moldorm - Hammer",
+      "requires": [
+        "Hammer"
+      ],
+      "setsFlags": ["f_DefeatedMoldorm"],
+      "collectsItems": [9, 10],
+      "devNote": [
+        "This is simplified because of the pots filled with hearts below.",
+        "Surprisingly, this is not really harder than with a sword, because it only takes three hits and never speeds up fully."
+      ]
+    }
   ]
 }

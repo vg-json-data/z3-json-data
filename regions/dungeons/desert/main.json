@@ -198,5 +198,132 @@
         "0xC6FF"
       ]
     }
+  ],
+  "strats": [
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Sword",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Lanmolas", "type": "particle", "hits": 4}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Lanmolas", "type": "particle", "hits": 2}}
+          ]},
+          {"and": [
+            "L2Sword",
+            {"enemyDamage": {"enemy": "Lanmolas", "type": "particle", "hits": 2}}
+          ]},
+          "hasSwordSparkles",
+          "L3Sword",
+          {"bossProficiency": 3}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Blue Cane",
+      "requires": [
+        {"magic": {"type": "BlueCane", "count": 192}},
+        {"bossProficiency": 2}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Red Cane",
+      "requires": [
+        {"magic": {"type": "RedCane", "count": 5}},
+        {"bossProficiency": 2},
+        {"or": [
+          {"bossProficiency": 3},
+          {"enemyDamage": {"enemy": "Lanmolas", "type": "particle", "hits": 2}}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 12}},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 6}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Bow",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 15}},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 40}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14],
+      "note": ["Lanmolas can be very difficult to hit with arrows."]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 3},
+        {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 1}},
+        {"or": [
+          {"bossProficiency": 4},
+          {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 2}}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14]
+    },
+    {
+      "link": [13, 13],
+      "name": "Lanmolas - Bombs",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"ammo": {"type": "Bombs", "count": 15}},
+            {"enemyDamage": {"enemy": "Lanmolas", "type": "particle", "hits": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"ammo": {"type": "Bombs", "count": 10}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedLanmolas"],
+      "collectsItems": [13, 14],
+      "note": [
+        "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",
+        "When only one is remaining, throw the Bombs at the Lanmola."
+      ]
+    }
   ]
 }
