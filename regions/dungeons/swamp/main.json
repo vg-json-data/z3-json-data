@@ -156,6 +156,18 @@
     },
     {
       "id": 15,
+      "name": "Swamp Palace - Arrghus Fuzz",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "junction",
+      "note": "Represents killing the 13 Fuzz surrounding Arrghus."
+    },
+    {
+      "id": 16,
       "name": "Swamp Palace - Arrghus",
       "area": "Swamp Palace (North)",
       "requires": [
@@ -168,7 +180,7 @@
       "nodeAddress": "0x180154"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Swamp Palace - Prize",
       "area": "Swamp Palace (North)",
       "nodeType": "item",
@@ -181,6 +193,171 @@
         "0x180071",
         "0xC701"
       ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
+      "requires": [
+        "Hookshot",
+        "L2Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Arrghus", "type": "fuzz", "hits": 1}},
+          {"bossProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Sword (L1)",
+      "requires": [
+        "Hookshot",
+        "L1Sword",
+        {"bossProficiency": 3}
+      ],
+      "note": [
+        "With a Level 1 sword, Arrghus is only vulnerable to spin attacks.",
+        "Charge a spin attack then quickly shoot the Hookshot.",
+        "The Hookshot will activate and then the spin attack will trigger after grabbing the Fuzz."
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Swordless",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "SilverArrows", "count": 13}},
+          {"magic": {"type": "Rod", "count": 13}}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Bombs",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 9},
+        {"ammo": {"type": "Bombs", "count": 20}}
+      ],
+      "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Sword",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L2Sword",
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 3}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17],
+      "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 4}},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 12}},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 6}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 4}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Bow",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 1}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 5}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 1}},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 40}},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 6}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 30}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 3}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 20}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 10}},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 8}},
+            {"bossProficiency": 9}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
     }
   ]
 }
