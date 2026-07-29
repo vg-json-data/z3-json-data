@@ -3,178 +3,483 @@
   "rooms": [
     {
       "id": 99,
-      "name": "East Death Mountain (Bottom)",
+      "name": "East Death Mountain Cliff",
       "roomType": "LightWorld",
+      "alttpEntrandoRegions": [
+        "East Death Mountain (Bottom)",
+        "East Death Mountain (Top)",
+        "Spiral Cave Ledge",
+        "Fairy Ascension Plateau",
+        "Fairy Ascension Ledge",
+        "Death Mountain Floating Island (Light World)",
+        "Mimic Cave Ledge"
+      ],
       "nodes": [
         {
           "id": 1,
-          "name": "Broken Bridge (East)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "East Death Mountain Cliff Bottom Left Transition",
+          "nodeType": "transition"
         },
         {
           "id": 2,
-          "name": "Paradox Cave (Bottom)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "East Death Mountain Cliff Bottom Right Junction",
+          "nodeType": "junction"
         },
         {
           "id": 3,
           "name": "Paradox Cave (Middle)",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "nodeType": "door",
+          "note": "It's middle as viewed from inside the cave, but bottom as viewed from outside."
         },
         {
           "id": 4,
-          "name": "East Death Mountain Teleporter",
-          "area": "East Death Mountain (Bottom)",
-          "nodeType": "door"
+          "name": "Paradox Cave (Bottom)",
+          "nodeType": "door",
+          "note": "It's bottom as viewed from inside the cave, but middle as viewed from outside."
         },
         {
           "id": 5,
           "name": "Hookshot Fairy",
-          "area": "East Death Mountain (Bottom)",
           "nodeType": "door"
         },
         {
           "id": 6,
-          "name": "Fairy Ascension Rocks",
-          "area": "East Death Mountain (Bottom)",
+          "name": "Fairy Ascension Cave (Bottom)",
           "nodeType": "door"
         },
         {
           "id": 7,
           "name": "Spiral Cave (Bottom)",
-          "area": "East Death Mountain (Bottom)",
           "nodeType": "door"
+        },
+        {
+          "id": 8,
+          "name": "Fairy Ascension Cave (Top)",
+          "nodeType": "door"
+        },
+        {
+          "id": 9,
+          "name": "Mimic Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 10,
+          "name": "Spiral Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 11,
+          "name": "Paradox Cave (Top)",
+          "nodeType": "door"
+        },
+        {
+          "id": 12,
+          "name": "East Death Mountain Cliff Top Right Transition",
+          "nodeType": "transition"
+        },
+        {
+          "id": 13,
+          "name": "East Death Mountain Cliff Top Right Junction",
+          "nodeType": "junction"
+        },
+        {
+          "id": 14,
+          "name": "Floating Island",
+          "nodeType": "item",
+          "nodeItem": "PieceOfHeart",
+          "nodeAddress": "0x180141"
+        },
+        {
+          "id": 15,
+          "name": "East Death Mountain Cliff Top Left Transition",
+          "nodeType": "transition"
+        },
+        {
+          "id": 16,
+          "name": "East Death Mountain Teleporter",
+          "nodeType": "exit",
+          "requires": ["canLiftDarkRocks"]
+        }
+      ],
+      "links": [
+        {
+          "from": 1,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canGrapple"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 2,
+          "to": [
+            {
+              "id": 1,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canGrapple"]
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canLiftDarkRocks"]
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 16,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 3,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 4,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 5,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 6,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 7,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 8,
+          "to": [
+            {
+              "id": 6,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 10,
+          "to": [
+            {
+              "id": 7,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 11,
+          "to": [
+            {
+              "id": 13,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 12,
+          "to": [
+            {
+              "id": 13,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 13,
+          "to": [
+            {
+              "id": 5,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canHammerThings"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 15,
+          "to": [
+            {
+              "id": 13,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canHammerThings"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "from": 16,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "id": 105,
-      "name": "East Death Mountain (Top)",
+      "name": "Peg Puzzle",
       "roomType": "LightWorld",
+      "alttpEntrandoRegions": [
+        "East Death Mountain (Top)"
+      ],
       "nodes": [
         {
           "id": 1,
-          "name": "Paradox Cave (Top)",
-          "area": "East Death Mountain (Top)",
+          "name": "Peg Puzzle Left Transition",
           "nodeType": "door"
         },
         {
           "id": 2,
-          "name": "Death Mountain (Top)",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Spiral Cave Ledge Access",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "East Death Mountain Drop",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "drop"
-        },
-        {
-          "id": 5,
           "name": "Turtle Rock Teleporter",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
+          "nodeType": "exit",
+          "locks": [
+            {
+              "lockType": "lockedDoor",
+              "unlock": ["canHammerThings"]
+            }
+          ]
+          
+        }
+      ],
+      "links": [
+        {
+          "from": 1,
+          "to": [
+            {
+              "id": 2,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": ["canLiftDarkRocks"]
+                }
+              ]
+            }
+          ]
         },
         {
-          "id": 6,
-          "name": "Fairy Ascension Ledge",
-          "area": "East Death Mountain (Top)",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 106,
-      "name": "Spiral Cave Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Spiral Cave",
-          "area": "Spiral Cave Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Spiral Cave Ledge Drop",
-          "area": "Spiral Cave Ledge",
-          "nodeType": "drop"
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "name": "Fairy Ascension Plateau",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Fairy Ascension Drop",
-          "area": "Fairy Ascension Plateau",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Fairy Ascension Cave (Bottom)",
-          "area": "Fairy Ascension Plateau",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 111,
-      "name": "Fairy Ascension Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Fairy Ascension Ledge Drop",
-          "area": "Fairy Ascension Ledge",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Fairy Ascension Cave (Top)",
-          "area": "Fairy Ascension Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 162,
-      "name": "Death Mountain Floating Island (Light World)",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Floating Island",
-          "area": "Death Mountain Floating Island (Light World)",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180141"
-        }
-      ]
-    },
-    {
-      "id": 164,
-      "name": "Mimic Cave Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Mimic Cave",
-          "area": "Mimic Cave Ledge",
-          "nodeType": "door"
+          "from": 2,
+          "to": [
+            {
+              "id": 1,
+              "strats": [
+                {
+                  "name": "Base",
+                  "notable": false,
+                  "requires": null
+                }
+              ]
+            }
+          ]
         }
       ]
     }

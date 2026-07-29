@@ -493,62 +493,6 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Broken Bridge (East) and Death Mountain",
-      "nodes": [
-        {
-          "name": "Broken Bridge (East)",
-          "position": "origin"
-        },
-        {
-          "name": "Death Mountain",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Drop",
-      "description": "Drop connection between East Death Mountain Drop and East Death Mountain (Bottom)",
-      "nodes": [
-        {
-          "name": "East Death Mountain Drop",
-          "position": "origin"
-        },
-        {
-          "name": "East Death Mountain (Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between Spiral Cave Ledge Access and Spiral Cave Ledge",
-      "nodes": [
-        {
-          "name": "Spiral Cave Ledge Access",
-          "position": "origin"
-        },
-        {
-          "name": "Spiral Cave Ledge",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Drop",
-      "description": "Drop connection between Spiral Cave Ledge Drop and East Death Mountain (Bottom)",
-      "nodes": [
-        {
-          "name": "Spiral Cave Ledge Drop",
-          "position": "origin"
-        },
-        {
-          "name": "East Death Mountain (Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
       "description": "Door connection between Spiral Cave (top to bottom) and Spiral Cave (Bottom)",
       "nodes": [
         {
@@ -557,34 +501,6 @@
         },
         {
           "name": "Spiral Cave (Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between East Death Mountain (Top) and East Death Mountain (Top)",
-      "nodes": [
-        {
-          "name": "East Death Mountain (Top)",
-          "position": "origin"
-        },
-        {
-          "name": "East Death Mountain (Top)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between Death Mountain (Top) and Death Mountain (Top)",
-      "nodes": [
-        {
-          "name": "Death Mountain (Top)",
-          "position": "origin"
-        },
-        {
-          "name": "Death Mountain (Top)",
           "position": "destination"
         }
       ]
@@ -599,20 +515,6 @@
         },
         {
           "name": "Death Mountain",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Drop",
-      "description": "Drop connection between Spectacle Rock Drop and Death Mountain (Top)",
-      "nodes": [
-        {
-          "name": "Spectacle Rock Drop",
-          "position": "origin"
-        },
-        {
-          "name": "Death Mountain (Top)",
           "position": "destination"
         }
       ]
@@ -1263,20 +1165,6 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Fairy Ascension Rocks and Fairy Ascension Plateau",
-      "nodes": [
-        {
-          "name": "Fairy Ascension Rocks",
-          "position": "origin"
-        },
-        {
-          "name": "Fairy Ascension Plateau",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
       "description": "Door connection between Fairy Ascension Mirror Spot and Fairy Ascension Plateau",
       "nodes": [
         {
@@ -1285,48 +1173,6 @@
         },
         {
           "name": "Fairy Ascension Plateau",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Drop",
-      "description": "Drop connection between Fairy Ascension Drop and East Death Mountain (Bottom)",
-      "nodes": [
-        {
-          "name": "Fairy Ascension Drop",
-          "position": "origin"
-        },
-        {
-          "name": "East Death Mountain (Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Drop",
-      "description": "Drop connection between Fairy Ascension Ledge Drop and Fairy Ascension Plateau",
-      "nodes": [
-        {
-          "name": "Fairy Ascension Ledge Drop",
-          "position": "origin"
-        },
-        {
-          "name": "Fairy Ascension Plateau",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between Fairy Ascension Ledge and Fairy Ascension Ledge",
-      "nodes": [
-        {
-          "name": "Fairy Ascension Ledge",
-          "position": "origin"
-        },
-        {
-          "name": "Fairy Ascension Ledge",
           "position": "destination"
         }
       ]
@@ -1453,20 +1299,6 @@
         },
         {
           "name": "Dark Death Mountain (East Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between Isolated Ledge Mirror Spot and Fairy Ascension Ledge",
-      "nodes": [
-        {
-          "name": "Isolated Ledge Mirror Spot",
-          "position": "origin"
-        },
-        {
-          "name": "Fairy Ascension Ledge",
           "position": "destination"
         }
       ]
@@ -3727,20 +3559,6 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Fairy Ascension Cave Exit (Top) and Fairy Ascension Ledge",
-      "nodes": [
-        {
-          "name": "Fairy Ascension Cave Exit (Top)",
-          "position": "origin"
-        },
-        {
-          "name": "Fairy Ascension Ledge",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
       "description": "Door connection between Spiral Cave and Spiral Cave (Top)",
       "nodes": [
         {
@@ -4561,20 +4379,6 @@
         },
         {
           "name": "Tower of Hera (Bottom)",
-          "position": "destination"
-        }
-      ]
-    },
-    {
-      "connectionType": "Door",
-      "description": "Door connection between Tower of Hera Exit and Death Mountain (Top)",
-      "nodes": [
-        {
-          "name": "Tower of Hera Exit",
-          "position": "origin"
-        },
-        {
-          "name": "Death Mountain (Top)",
           "position": "destination"
         }
       ]

@@ -44,6 +44,16 @@
             "default": "",
             "pattern": "^(.*)$"
           },
+          "alttpEntrandoRegions": {
+            "$id": "#/items/properties/alttpEntrandoRegions",
+            "type": "array",
+            "title": "ALttP Entrando Regions",
+            "description": "The name of all regions (as defined in the ALttP Entrando project) that are (at least partially) contained in this room.",
+            "items": {
+              "$id": "#/items/properties/alttpEntrandoRegions/items",
+              "type": "string"
+            }
+          },
           "nodes": {
             "$id": "#/items/properties/nodes",
             "type": "array",
@@ -70,7 +80,7 @@
                 "name": {
                   "$id": "#/items/properties/nodes/items/properties/name",
                   "type": "string",
-                  "title": "Node Name",
+                  "title": "Node Name. Must be unique across all rooms.",
                   "default": "",
                   "examples": [
                     "Exit"
@@ -99,7 +109,8 @@
                     "event",
                     "item",
                     "junction",
-                    "obstacle"
+                    "obstacle",
+                    "transition"
                   ],
                   "pattern": "^(.*)$"
                 },
@@ -263,9 +274,14 @@
                     "$id": "#/items/properties/links/items/properties/to/items",
                     "type": "object",
                     "title": "The Items Schema",
-                    "required": [
-                      "id",
-                      "requires"
+                    "required": ["id"],
+                    "oneOf": [
+                      {
+                        "required": ["requires"]
+                      },
+                      {
+                        "required": ["strats"]
+                      }
                     ],
                     "properties": {
                       "id": {
@@ -292,6 +308,56 @@
                             "string"
                           ],
                           "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                        }
+                      },
+                      "strats": {
+                        "$id": "#/items/properties/links/items/properties/to/items/properties/strats",
+                        "type": "array",
+                        "title": "Link Strats",
+                        "description": "An array of strats that can be used to cross the link.",
+                        "items": {
+                          "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items",
+                          "type": "object",
+                          "required": [
+                            "name",
+                            "notable",
+                            "requires"
+                          ],
+                          "properties": {
+                            "name": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/name",
+                              "type": "string",
+                              "title": "Strat Name",
+                              "description": "A name for the strat",
+                              "default": "",
+                              "examples": [
+                                "Base",
+                                "Ice Palace Bomb Jump"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "notable": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/notable",
+                              "type": "boolean"
+                            },
+                            "requires": {
+                              "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/requires",
+                              "type": [
+                                "array",
+                                "null"
+                              ],
+                              "title": "Strat Requirements",
+                              "description": "Equipment, tech, and flag requirements to execute this strat.",
+                              "items": {
+                                "$id": "#/items/properties/links/items/properties/to/items/properties/strats/items/properties/requires/items",
+                                "type": [
+                                  "object",
+                                  "string"
+                                ],
+                                "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                              }
+                            }
+                          }
                         }
                       },
                       "note": {

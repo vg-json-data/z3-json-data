@@ -394,26 +394,6 @@
       ]
     },
     {
-      "id": 61,
-      "name": "Library",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Library",
-          "area": "Library",
-          "nodeType": "item",
-          "nodeItem": "BookOfMudora",
-          "nodeAddress": "0x180012"
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "name": "Kakariko Gamble Game",
-      "roomType": "Cave"
-    },
-    {
       "id": 80,
       "name": "Lost Woods Gamble",
       "roomType": "Cave"
