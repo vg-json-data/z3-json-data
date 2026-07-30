@@ -252,7 +252,20 @@
     },
     {
       "id": 23,
-      "name": "Palace of Darkness - Helmasaur",
+      "name": "Palace of Darkness - Helmasaur Mask",
+      "area": "Palace of Darkness (Final Section)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "BigKeyD1",
+        "KeyD1:6",
+        "Hammer"
+      ],
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Palace of Darkness - Helmasaur (Mask Broken)",
       "area": "Palace of Darkness (Final Section)",
       "requires": [
         "canShootArrows",
@@ -266,7 +279,7 @@
       "nodeAddress": "0x180153"
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Palace of Darkness - Prize",
       "area": "Palace of Darkness (Final Section)",
       "nodeType": "item",
@@ -279,6 +292,128 @@
         "0x18007D",
         "0xC702"
       ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Hammer",
+      "requires": [
+        "Hammer",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Bombs",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"ammo": {"type": "Bombs", "count": 7}},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"ammo": {"type": "Bombs", "count": 6}},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"ammo": {"type": "Bombs", "count": 5}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Bow",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 20}},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 15}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 10}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 8}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaur"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L1)",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaur"],
+      "collectsItems": [24, 25],
+      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
+      "requires": [
+        "L2Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L3Sword",
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 1}}
+          ]},
+          {"and": [
+            "L3Sword",
+            {"bossProficiency": 2}
+          ]},
+          "L4Sword"
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaur"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 4},
+        {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 8}}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaur"],
+      "collectsItems": [24, 25],
+      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
     }
   ]
 }
