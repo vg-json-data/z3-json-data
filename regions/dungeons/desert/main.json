@@ -280,6 +280,14 @@
           {"and": [
             {"ammo": {"type": "Arrows", "count": 40}},
             {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 3}},
+            {"bossProficiency": 9}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 12}},
+            {"bossProficiency": 9}
           ]}
         ]}
       ],
@@ -293,10 +301,13 @@
       "requires": [
         "Hammer",
         {"bossProficiency": 3},
-        {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 1}},
         {"or": [
-          {"bossProficiency": 4},
-          {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 2}}
+          {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 3}},
+          {"and": [
+            {"bossProficiency": 4},
+            {"enemyDamage": {"enemy": "Lanmolas", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 9}
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
