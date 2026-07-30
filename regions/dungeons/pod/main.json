@@ -409,7 +409,13 @@
       "requires": [
         "Hammer",
         {"bossProficiency": 4},
-        {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 8}}
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 8}},
+          {"and": [
+            {"bossProficiency": 9},
+            {"enemyDamage": {"enemy": "Helmasaur", "type": "contact", "hits": 4}}
+          ]}
+        ]}
       ],
       "setsFlags": ["f_DefeatedHelmasaur"],
       "collectsItems": [24, 25],

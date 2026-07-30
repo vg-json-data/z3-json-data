@@ -129,6 +129,17 @@
     },
     {
       "id": 13,
+      "name": "Misery Mire - Vitreous (Small Eyes)",
+      "area": "Misery Mire (Vitreous)",
+      "requires": [
+        "hasLightCone",
+        "CaneOfSomaria",
+        "BigKeyD6"
+      ],
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
       "name": "Misery Mire - Vitreous",
       "area": "Misery Mire (Vitreous)",
       "requires": [
@@ -141,7 +152,7 @@
       "nodeAddress": "0x180158"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Misery Mire - Prize",
       "area": "Misery Mire (Vitreous)",
       "nodeType": "item",
@@ -154,6 +165,126 @@
         "0x180075",
         "0xC703"
       ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Sword (L2-L4)",
+      "requires": [
+        "L2Sword",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 2}},
+            {"enemyDamage": {"enemy": "Vitreous", "type": "lightning", "hits": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L3Sword",
+            {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 1}},
+            {"enemyDamage": {"enemy": "Vitreous", "type": "lightning", "hits": 1}}
+          ]},
+          {"and": [
+            "L3Sword",
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Sword (L1)",
+      "requires": [
+        "L1Sword",
+        {"bossProficiency": 4},
+        {"or": [
+          {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 2}},
+          {"bossProficiency": 9}
+        ]}
+      ],
+      "note": ["With just the Level 1 sword, Vitreous is only vulnerable to spin attacks."]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Bow",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 10}},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 9}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 35}},
+            {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 2}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 30}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 27}},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 9}
+      ],
+      "devNote": ["FIXME: Needs testing."]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Bow",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 8}}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedVitreous"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Sword (L2-L4)",
+      "requires": [
+        "L2Sword"
+      ],
+      "setsFlags": ["f_DefeatedVitreous"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Sword (L1)",
+      "requires": [
+        "L1Sword",
+        {"bossProficiency": 4},
+        {"or": [
+          {"enemyDamage": {"enemy": "Vitreous", "type": "contact", "hits": 1}},
+          {"bossProficiency": 9}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedVitreous"],
+      "collectsItems": [14, 15],
+      "note": [
+        "With just the Level 1 sword, Vitreous is only vulnerable to spin attacks.",
+        "It is important to kite it in order to prevent taking damage. As there is not much room, a figure-8 pattern is recommended."
+      ],
+      "devNote": ["FIXME: Consider a high-level hammer kill."]
     }
   ]
 }

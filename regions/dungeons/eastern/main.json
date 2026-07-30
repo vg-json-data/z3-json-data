@@ -213,12 +213,17 @@
       "name": "Armos Knights - Red Cane",
       "requires": [
         {"magic": {"type": "RedCane", "count": 16}},
-        {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}},
         {"bossProficiency": 3},
         {"or": [
-          {"magic": {"type": "RedCane", "count": 2}},
-          {"bossProficiency": 4},
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}}
+          {"and": [
+            {"magic": {"type": "RedCane", "count": 2}},
+            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 4}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}}
+          ]},
+          {"bossProficiency": 9}
         ]}
       ],
       "setsFlags": ["f_DefeatedArmosKnights"],
@@ -246,7 +251,10 @@
       "requires": [
         "Hammer",
         {"bossProficiency": 4},
-        {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 20}}
+        {"or": [
+          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 20}},
+          {"bossProficiency": 9}
+        ]}
       ],
       "setsFlags": ["f_DefeatedArmosKnights"],
       "collectsItems": [7, 8]
