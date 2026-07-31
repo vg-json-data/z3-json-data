@@ -203,7 +203,7 @@
         "Hookshot",
         "L2Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Arrghus", "type": "fuzz", "hits": 1}},
+          {"enemyDamage": {"enemy": "Arrghus Fuzz", "hits": 1}},
           {"bossProficiency": 2}
         ]}
       ]
@@ -253,16 +253,16 @@
         {"or": [
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 1}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 1}}
           ]},
           {"bossProficiency": 3},
           {"and": [
             "L2Sword",
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 3}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 3}}
           ]},
           {"and": [
             "L4Sword",
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
           ]}
         ]}
       ],
@@ -277,10 +277,10 @@
         "Hammer",
         {"bossProficiency": 2},
         {"or": [
-          {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 4}},
+          {"enemyDamage": {"enemy": "Arrghus", "hits": 4}},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -318,12 +318,12 @@
         {"or": [
           {"and": [
             {"ammo": {"type": "SilverArrows", "count": 10}},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
           ]},
           {"and": [
             {"ammo": {"type": "SilverArrows", "count": 10}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 1}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 1}}
           ]},
           {"and": [
             {"ammo": {"type": "SilverArrows", "count": 5}},
@@ -335,12 +335,12 @@
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 40}},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 6}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 6}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 30}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Arrghus", "type": "contact", "hits": 3}}
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 3}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 20}},

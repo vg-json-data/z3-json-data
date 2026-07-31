@@ -94,7 +94,7 @@
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 22}},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 20}},
@@ -115,14 +115,14 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 10}},
+          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 10}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 6}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -140,7 +140,7 @@
         "hasSwordSparkles",
         {"or": [
           {"bossProficiency": 2},
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 3}}
+          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 3}}
         ]}
       ],
       "setsFlags": ["f_DefeatedArmosKnights"],
@@ -162,14 +162,14 @@
           ]}
         ]},
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 7}},
+          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 7}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 4}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 4}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 1}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 1}}
           ]}
         ]}
       ],
@@ -187,10 +187,10 @@
       "requires": [
         "L4Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 3}},
+          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 3}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 1}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 1}}
           ]},
           {"bossProficiency": 3}
         ]}
@@ -217,11 +217,11 @@
         {"or": [
           {"and": [
             {"magic": {"type": "RedCane", "count": 2}},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 4}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 4}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 2}}
+            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
           ]},
           {"bossProficiency": 9}
         ]}
@@ -252,7 +252,7 @@
         "Hammer",
         {"bossProficiency": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "type": "contact", "hits": 20}},
+          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 20}},
           {"bossProficiency": 9}
         ]}
       ],
