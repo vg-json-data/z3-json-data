@@ -254,7 +254,11 @@
       "names": [
         "Blind"
       ],
-      "note": ["Also uses attacks ???"],
+      "note": [
+        "It is not immediately clear which attacks belong to this enemy.",
+        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
+        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball id: 227"
+      ],
       "hp": 90,
       "dmgToLink": [
         16,
