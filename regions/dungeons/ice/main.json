@@ -131,15 +131,21 @@
       "nodeAddress": "0xE9DD"
     },
     {
-      "id": 1,
-      "name": "Ice Palace - Kholdstare",
+      "id": 13,
+      "name": "Ice Palace - Frozen Kholdstare Block",
+      "area": "Ice Palace (Kholdstare)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Ice Palace - Kholdstare (Thawed)",
       "area": "Ice Palace (Kholdstare)",
       "nodeType": "item",
       "nodeItem": "BossHeartContainer",
       "nodeAddress": "0x180157"
     },
     {
-      "id": 2,
+      "id": 15,
       "name": "Ice Palace - Prize",
       "area": "Ice Palace (Kholdstare)",
       "requires": [
@@ -164,6 +170,146 @@
         "0x180059",
         "0x180073",
         "0xC705"
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [13, 14],
+      "name": "Thaw Kholdstare - Fire Rod",
+      "requires": [
+        {"magic": {"type": "FireRod", "count": 8}}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Thaw Kholdstare - Bombos Medallion",
+      "requires": [
+        {"magic": {"type": "Bombos", "count": 1}}
+      ]
+    },
+    {
+      "link": [14, 14],
+      "name": "Kholdstare (Already Thawed) - Master Sword",
+      "requires": [
+        "L2Sword",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 5}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 10}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 3}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 6}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 2}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedKholdstare"],
+      "collectsItems": [14, 15],
+      "devNote": ["FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."]
+    },
+    {
+      "link": [14, 14],
+      "name": "Kholdstare (Already Thawed) - Sword (L3-L4)",
+      "requires": [
+        "L3Sword",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 2}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 4}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 2}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 2}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedKholdstare"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Kholdstare (Already Thawed) - Fire Rod",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"magic": {"type": "FireRod", "count": 14}},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+          ]},
+          {"and": [
+            {"magic": {"type": "FireRod", "count": 12}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 1}}
+          ]},
+          {"and": [
+            {"magic": {"type": "FireRod", "count": 12}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "FireRod", "count": 8}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedKholdstare"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Kholdstare (Already Thawed) - Precise Multi-Hit Fire Rod",
+      "requires": [
+        {"magic": {"type": "FireRod", "count": 6}},
+        {"bossProficiency": 4}
+      ],
+      "setsFlags": ["f_DefeatedKholdstare"],
+      "collectsItems": [14, 15],
+      "note": [
+        "Each Cloud can be killed with 4 Fire Rod shots. However, with clustering them, it is possible to kill all three with 6 shots.",
+        "Precisely time the first Fire Rod shot to hit all three. Dodge until a clear shot is available to hit two at a time,",
+        "while tracking which ones have already been damaged - grouping the same two three times will not enable a kill with only 6 shots."
+      ],
+      "devNote": [
+        "This enables a kill with no bottles or half-magic, with Fire Rod, Bombos, and either the Fighter Sword or a way to use Bombos swordless.",
+        "FIXME: This is intended to be a notable strat."
       ]
     }
   ]

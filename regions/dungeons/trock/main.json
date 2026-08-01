@@ -282,7 +282,19 @@
     },
     {
       "id": 30,
-      "name": "Turtle Rock - Trinexx",
+      "name": "Turtle Rock - Trinexx Fire and Ice Heads",
+      "area": "Turtle Rock (Trinexx)",
+      "requires": [
+        "hasLightCone",
+        "BigKeyD7",
+        "KeyD7:4",
+        "CaneOfSomaria"
+      ],
+      "nodeType": "junction"
+    },
+    {
+      "id": 31,
+      "name": "Turtle Rock - Trinexx Final Phase",
       "area": "Turtle Rock (Trinexx)",
       "requires": [
         "hasLightCone",
@@ -295,7 +307,7 @@
       "nodeAddress": "0x180159"
     },
     {
-      "id": 31,
+      "id": 32,
       "name": "Turtle Rock - Prize",
       "area": "Turtle Rock (Trinexx)",
       "nodeType": "item",
@@ -308,6 +320,188 @@
         "0x180079",
         "0xC708"
       ]
+    }
+  ],
+  "Strats": [
+    {
+      "link": [30, 31],
+      "name": "Trinexx's Fire and Ice Heads - Master Sword",
+      "requires": [
+        "L2Sword",
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"magic": {"type": "Rod", "count": 18}},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 7}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 16}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 4}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 10}},
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"bossProficiency": 4},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "note": ["It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"]
+    },
+    {
+      "link": [30, 31],
+      "name": "Trinexx's Fire and Ice Heads - Tempered Sword",
+      "requires": [
+        "L3Sword",
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 5}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 6}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 5}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 4}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [30, 31],
+      "name": "Trinexx's Fire and Ice Heads - Gold Sword",
+      "requires": [
+        "L4Sword",
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"magic": {"type": "Rod", "count": 6}},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 4}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 1}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 2}},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [30, 31],
+      "name": "Trinexx's Fire and Ice Heads - Hammer",
+      "requires": [
+        "Hammer",
+        "FireRod",
+        "IceRod",
+        {"bossProficiency": 2},
+        {"or": [
+          {"and": [
+            {"magic": {"type": "Rod", "count": 14}},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 4}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 10}},
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [30, 31],
+      "name": "Trinexx's Fire and Ice Heads - Rod Only Kill",
+      "requires": [
+        "FireRod",
+        "IceRod",
+        {"magic": {"type": "Rod", "count": 24}},
+        {"bossProficiency": 2},
+        {"or": [
+          {"bossProficiency": 4},
+          {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [31, 31],
+      "name": "Trinexx (Final Phase) - Sword (L1)",
+      "requires": [
+        "L1Sword",
+        {"bossProficiency": 3},
+        {"or": [
+          {"bossProficiency": 4},
+          {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedTrinexx"],
+      "collectsItems": [31, 32],
+      "note": ["With just the Fighter Sword, Trinexx can only be damaged with spin attacks."]
+    },
+    {
+      "link": [31, 31],
+      "name": "Trinexx (Final Phase) - Sword (L2 - L4)",
+      "requires": [
+        "L2Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 3}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L3Sword",
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 2}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 1}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"bossProficiency": 2}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedTrinexx"],
+      "collectsItems": [31, 32]
+    },
+    {
+      "link": [31, 31],
+      "name": "Trinexx (Final Phase) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"enemyDamage": {"enemy": "Trinexx (Body)", "hits": 3}},
+          {"bossProficiency": 3}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedTrinexx"],
+      "collectsItems": [31, 32]
     }
   ]
 }

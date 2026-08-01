@@ -97,7 +97,7 @@
       "names": [
         "Agahnim"
       ],
-      "note": ["Also uses attacks Lightning, ???"],
+      "note": ["Also uses attacks Agahnim's Tennis Ball, Lightning and Fireball"],
       "hp": 96,
       "dmgToLink": [
         8,
@@ -254,7 +254,11 @@
       "names": [
         "Blind"
       ],
-      "note": ["Also uses attacks ???"],
+      "note": [
+        "It is not immediately clear which attacks belong to this enemy.",
+        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
+        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball id: 227"
+      ],
       "hp": 90,
       "dmgToLink": [
         16,
@@ -411,11 +415,11 @@
     {
       "id": 203,
       "names": [
-        "Trinexx (body)"
+        "Trinexx (Body)"
       ],
       "note": [
         "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "The Red Head also uses attack ???"
+        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
       ],
       "hp": 40,
       "dmgToLink": [
@@ -447,6 +451,10 @@
       "names": [
         "Trinexx (Red Head)"
       ],
+      "note": [
+        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
+        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      ],
       "hp": 40,
       "dmgToLink": [
         32,
@@ -476,6 +484,10 @@
       "id": 205,
       "names": [
         "Trinexx (Blue Head)"
+      ],
+      "note": [
+        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
+        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
       ],
       "hp": 40,
       "dmgToLink": [
