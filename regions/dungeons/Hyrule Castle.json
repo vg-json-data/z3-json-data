@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../schema/z3-region.schema.json",
+  "$schema": "../../schema/z3-region.schema.json",
   "id": 83,
   "name": "Hyrule Castle",
   "roomType": "Dungeon",
@@ -30,19 +30,19 @@
     },
     {
       "id": 5,
-      "name": "Hyrule Castle - Boomerang Chest",
-      "area": "Hyrule Castle",
-      "nodeType": "item",
-      "nodeItem": "BlueBoomerang",
-      "nodeAddress": "0xE974"
-    },
-    {
-      "id": 6,
       "name": "Hyrule Castle - Map Chest",
       "area": "Hyrule Castle",
       "nodeType": "item",
       "nodeItem": "MapH2",
       "nodeAddress": "0xEB0C"
+    },
+    {
+      "id": 6,
+      "name": "Hyrule Castle - Boomerang Chest",
+      "area": "Hyrule Castle",
+      "nodeType": "item",
+      "nodeItem": "BlueBoomerang",
+      "nodeAddress": "0xE974"
     },
     {
       "id": 7,
@@ -54,18 +54,12 @@
     },
     {
       "id": 8,
-      "name": "Sewer Drop",
-      "area": "Sewer Drop",
-      "nodeType": "drop"
+      "name": "Sewer (One Way Entrance)",
+      "area": "Sewers (Dark)",
+      "nodeType": "junction"
     },
     {
       "id": 9,
-      "name": "Sewers Door",
-      "area": "Sewers (Dark)",
-      "nodeType": "door"
-    },
-    {
-      "id": 10,
       "name": "Sewers - Dark Cross",
       "area": "Sewers (Dark)",
       "nodeType": "item",
@@ -125,6 +119,230 @@
       "nodeType": "item",
       "nodeItem": "SanctuaryHeart",
       "nodeAddress": "0xEA79"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["FIXME: Includes a moderately difficult to dodge guard but it has a heart pot before and after."]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 8],
+      "name": "Push Door with Zelda",
+      "requires": [
+        {"obstaclesCleared": ["A"]}
+      ]
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [5]
+    },
+    {
+      "link": [5, 5],
+      "name": "Kill Guard for Key",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hammer",
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"magic": {"type": "Rod", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 1}}]
+    },
+    {
+      "link": [5, 5],
+      "name": "Kill Guard for Key (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 28}},
+          {"magic": {"type": "RedCane", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 1}}]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"or": [
+          "L1Sword",
+          "Hammer",
+          {"ammo": {"type": "Arrows", "count": 1}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"magic": {"type": "FireRod", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base (Alternate Weapons)",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 20}},
+          {"magic": {"type": "RedCane", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"type": "HyruleCastle", "id": 2}}
+      ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [6, 6],
+      "name": "Kill Guard for Key",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hammer",
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"magic": {"type": "Rod", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 2}}]
+    },
+    {
+      "link": [6, 6],
+      "name": "Kill Guard for Key (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 28}},
+          {"magic": {"type": "RedCane", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 2}}]
+    },
+    {
+      "link": [7, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"type": "HyruleCastle", "id": 2}},
+        {"or": [
+          "L1Sword",
+          "Hammer",
+          {"ammo": {"type": "Arrows", "count": 1}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"ammo": {"type": "Bombs", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"magic": {"type": "BlueCane", "count": 20}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"magic": {"type": "RedCane", "count": 1}}
+          ]}
+        ]}
+      ],
+      "devNote": [
+        "It is possible to skip the green guard on the way in, in which case they need to be killed on the way out.",
+        "FIXME: It could be worth tracking if the guard is killed as it could use double the ammo or magic for killing them twice.",
+        "But realistically, the optimal path would be to get there without the guard killed and reset the dungeon and resupply after the Boomerang chest."
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Kill Guard",
+      "requires": [],
+      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": "Big"}}],
+      "note": ["Without any weapons, it is still possible to kill the guard with pots."]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": "Big"}}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Rescue Zelda",
+      "requires": [
+        {"unlockDoor": {"type": "HyruleCastle", "id": "Big"}}
+      ],
+      "clearsObstacles": ["A"]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword"
+      ],
+      "devNote": ["FIXME: Refine this, there are plenty of ways to not need either of these."]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ],
+      "devNote": ["FIXME: Refine this, there are plenty of ways to not need Lamp."],
+      "collectsItems": [9]
     }
   ]
 }

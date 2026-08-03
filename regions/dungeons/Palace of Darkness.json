@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../schema/z3-region.schema.json",
+  "$schema": "../../schema/z3-region.schema.json",
   "id": 201,
   "name": "Palace of Darkness",
   "note": "Also requires access to Northeast Dark World",

@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../schema/z3-region.schema.json",
+  "$schema": "../../schema/z3-region.schema.json",
   "id": 171,
   "name": "Thieves Town",
   "note": "Also requires access to Northwest Dark World",
