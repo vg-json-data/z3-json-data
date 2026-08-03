@@ -30,32 +30,32 @@
     },
     {
       "id": 5,
-      "name": "Hyrule Castle Dungeon Entrance",
-      "area": "Hyrule Castle Dungeon",
+      "name": "Entrance",
+      "subarea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 6,
-      "name": "Hyrule Castle Dungeon - Boomerang Chest Room",
-      "area": "Hyrule Castle Dungeon",
+      "name": "Boomerang Chest Room",
+      "subarea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 7,
-      "name": "Hyrule Castle Dungeon - Zelda's Prison",
-      "area": "Hyrule Castle Dungeon",
+      "name": "Zelda's Prison",
+      "subarea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 8,
-      "name": "Sewers (Throne Room Entrance)",
-      "area": "Sewers (Dark)",
+      "name": "Entrance from Throne Room",
+      "subarea": "Sewers (Dark)",
       "nodeType": "junction"
     },
     {
       "id": 9,
-      "name": "Sewers - Dark Cross Room",
-      "area": "Sewers (Dark)",
+      "name": "Dark Cross Room",
+      "subarea": "Sewers (Dark)",
       "nodeType": "junction",
       "note": "Represents being in the middle of the room, after the first two snakes"
     },
@@ -65,19 +65,19 @@
     {
       "id": 11,
       "name": "Sanctuary Push Door",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "door"
     },
     {
       "id": 12,
       "name": "Sewers Back Door",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "door"
     },
     {
       "id": 13,
       "name": "Sewers - Secret Room - Left",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "item",
       "nodeItem": "ThreeBombs",
       "nodeAddress": "0xEB5D"
@@ -85,7 +85,7 @@
     {
       "id": 14,
       "name": "Sewers - Secret Room - Middle",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "item",
       "nodeItem": "ThreeHundredRupees",
       "nodeAddress": "0xEB60"
@@ -93,7 +93,7 @@
     {
       "id": 15,
       "name": "Sewers - Secret Room - Right",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "item",
       "nodeItem": "TenArrows",
       "nodeAddress": "0xEB63"
@@ -101,13 +101,13 @@
     {
       "id": 16,
       "name": "Sanctuary Exit",
-      "area": "Sewers",
+      "subarea": "Sewers",
       "nodeType": "door"
     },
     {
       "id": 17,
       "name": "Sanctuary",
-      "area": "Sanctuary",
+      "subarea": "Sanctuary",
       "nodeType": "item",
       "nodeItem": "SanctuaryHeart",
       "nodeAddress": "0xEA79"
@@ -116,90 +116,85 @@
   "items": [
     {
       "id": 1,
+      "subarea": "Hyrule Castle Dungeon",
       "locationName": "Map Chest",
-      "itemNode": 5,
+      "itemLocation": 5,
       "item": "Map",
       "itemAddress": "0xEB0C"
     },
     {
+      "id": 2,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "First Guard",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 3,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Boomerang Chest",
+      "itemLocation": 6,
+      "item": "BlueBoomerang",
+      "itemAddress": "0xE974"
+    },
+    {
+      "id": 4,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Boomerang Chest Guard",
+      "itemLocation": 6,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 5,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Zalda's Prison Guard",
+      "itemLocation": 7,
+      "item": "BigKey",
+      "itemAddress": "unknown"
+    },
+    {
       "id": 6,
-      "name": "Hyrule Castle - Boomerang Chest",
-      "area": "Hyrule Castle",
-      "nodeType": "item",
-      "nodeItem": "BlueBoomerang",
-      "nodeAddress": "0xE974"
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Zelda's Prison Chest",
+      "itemLocation": 7,
+      "item": "Lamp",
+      "itemAddress": "0xEB09"
     },
     {
       "id": 7,
-      "name": "Hyrule Castle - Zelda's Chest",
-      "area": "Hyrule Castle",
-      "nodeType": "item",
-      "nodeItem": "Lamp",
-      "nodeAddress": "0xEB09"
+      "subarea": "Sewers (Dark)",
+      "locationName": "Dark Cross Chest",
+      "itemLocation": 9,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "First Room",
+      "doorPosition": "south",
+      "doorLocation": 5,
+      "keyType": "small"
     },
     {
-      "id": 8,
-      "name": "Sewer (One Way Entrance)",
-      "area": "Sewers (Dark)",
-      "nodeType": "junction"
+      "id": 2,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Before Boomerang",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "small"
     },
     {
-      "id": 9,
-      "name": "Sewers - Dark Cross",
-      "area": "Sewers (Dark)",
-      "nodeType": "item",
-      "nodeItem": {"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 3}},
-      "nodeAddress": "0xE96E"
-    },
-    {
-      "id": 11,
-      "name": "Sanctuary Push Door",
-      "area": "Sewers",
-      "nodeType": "door"
-    },
-    {
-      "id": 12,
-      "name": "Sewers Back Door",
-      "area": "Sewers",
-      "nodeType": "door"
-    },
-    {
-      "id": 13,
-      "name": "Sewers - Secret Room - Left",
-      "area": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "ThreeBombs",
-      "nodeAddress": "0xEB5D"
-    },
-    {
-      "id": 14,
-      "name": "Sewers - Secret Room - Middle",
-      "area": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "ThreeHundredRupees",
-      "nodeAddress": "0xEB60"
-    },
-    {
-      "id": 15,
-      "name": "Sewers - Secret Room - Right",
-      "area": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "TenArrows",
-      "nodeAddress": "0xEB63"
-    },
-    {
-      "id": 16,
-      "name": "Sanctuary Exit",
-      "area": "Sewers",
-      "nodeType": "door"
-    },
-    {
-      "id": 17,
-      "name": "Sanctuary",
-      "area": "Sanctuary",
-      "nodeType": "item",
-      "nodeItem": "SanctuaryHeart",
-      "nodeAddress": "0xEA79"
+      "id": 3,
+      "subarea": "Hyrule Castle Dungeon",
+      "locationName": "Zelda's Prison",
+      "doorPosition": "middle",
+      "doorLocation": 7,
+      "keyType": "big"
     }
   ],
   "strats": [
@@ -243,7 +238,7 @@
       "link": [4, 8],
       "name": "Push Door with Zelda",
       "requires": [
-        {"obstaclesCleared": ["A"]}
+        {"obstaclesCleared": ["Zelda Following"]}
       ]
     },
     {
@@ -269,7 +264,7 @@
           {"magic": {"type": "Rod", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 1}}]
+      "collectsItems": [2]
     },
     {
       "link": [5, 5],
@@ -282,13 +277,13 @@
           {"magic": {"type": "RedCane", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 1}}]
+      "collectsItems": [2]
     },
     {
       "link": [5, 6],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
+        {"unlockDoor": 1},
         {"or": [
           "L1Sword",
           "Hammer",
@@ -302,7 +297,7 @@
       "link": [5, 6],
       "name": "Base (Alternate Weapons)",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
+        {"unlockDoor": 1},
         {"combatProficiency": 2},
         {"or": [
           {"ammo": {"type": "Bombs", "count": 1}},
@@ -315,15 +310,15 @@
       "link": [5, 7],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 2}}
+        {"unlockDoor": 1},
+        {"unlockDoor": 2}
       ]
     },
     {
       "link": [6, 6],
       "name": "Base",
       "requires": [],
-      "collectsItems": [6]
+      "collectsItems": [3]
     },
     {
       "link": [6, 6],
@@ -337,7 +332,7 @@
           {"magic": {"type": "Rod", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 2}}]
+      "collectsItems": [4]
     },
     {
       "link": [6, 6],
@@ -350,14 +345,14 @@
           {"magic": {"type": "RedCane", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 2}}]
+      "collectsItems": [4]
     },
     {
       "link": [7, 5],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 2}},
+        {"unlockDoor": 1},
+        {"unlockDoor": 2},
         {"or": [
           "L1Sword",
           "Hammer",
@@ -388,24 +383,24 @@
       "link": [7, 7],
       "name": "Base - Kill Guard",
       "requires": [],
-      "collectsItems": [{"item": {"type": "BigKey", "dungeon": "HyruleCastle"}}],
+      "collectsItems": [5],
       "note": ["Without any weapons, it is still possible to kill the guard with pots."]
     },
     {
       "link": [7, 7],
       "name": "Base - Open Chest",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": "Big"}}
+        {"unlockDoor": 3}
       ],
-      "collectsItems": [7]
+      "collectsItems": [6]
     },
     {
       "link": [7, 7],
       "name": "Base - Rescue Zelda",
       "requires": [
-        {"unlockDoor": {"dungeon": "HyruleCastle", "id": "Big"}}
+        {"unlockDoor": 3}
       ],
-      "clearsObstacles": ["A"]
+      "clearsObstacles": ["Zelda Following"]
     },
     {
       "link": [8, 9],
@@ -490,8 +485,7 @@
       "requires": [
         "Lamp"
       ],
-      "devNote": ["FIXME: Refine this, there are plenty of ways to not need Lamp."],
-      "collectsItems": [9]
+      "collectsItems": [7]
     },
     {
       "link": [9, 9],
@@ -507,7 +501,7 @@
           {"darkProficiency": 3}
         ]}
       ],
-      "collectsItems": [9]
+      "collectsItems": [7]
     },
   ]
 }
