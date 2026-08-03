@@ -65,58 +65,23 @@
       "subarea": "Sewers (Dark)",
       "nodeType": "junction"
     },
-
-
-
     {
       "id": 11,
-      "name": "Sanctuary Push Door",
-      "subarea": "Sewers",
-      "nodeType": "door"
+      "name": "First Light Room",
+      "subarea": "Sewers (Light)",
+      "nodeType": "junction"
     },
     {
       "id": 12,
-      "name": "Sewers Back Door",
-      "subarea": "Sewers",
+      "name": "Sanctuary Exit",
+      "subarea": "Sewers (Light)",
       "nodeType": "door"
     },
     {
       "id": 13,
-      "name": "Sewers - Secret Room - Left",
-      "subarea": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "ThreeBombs",
-      "nodeAddress": "0xEB5D"
-    },
-    {
-      "id": 14,
-      "name": "Sewers - Secret Room - Middle",
-      "subarea": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "ThreeHundredRupees",
-      "nodeAddress": "0xEB60"
-    },
-    {
-      "id": 15,
-      "name": "Sewers - Secret Room - Right",
-      "subarea": "Sewers",
-      "nodeType": "item",
-      "nodeItem": "TenArrows",
-      "nodeAddress": "0xEB63"
-    },
-    {
-      "id": 16,
-      "name": "Sanctuary Exit",
-      "subarea": "Sewers",
-      "nodeType": "door"
-    },
-    {
-      "id": 17,
-      "name": "Sanctuary",
-      "subarea": "Sanctuary",
-      "nodeType": "item",
-      "nodeItem": "SanctuaryHeart",
-      "nodeAddress": "0xEA79"
+      "name": "Cemetery Drop",
+      "subarea": "Sewers (Light)",
+      "nodeType": "drop"
     }
   ],
   "items": [
@@ -183,6 +148,30 @@
       "itemLocation": 10,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 9,
+      "subarea": "Sewers (Light)",
+      "locationName": "Secret Room - Left",
+      "itemLocation": 11,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEB5D"
+    },
+    {
+      "id": 10,
+      "subarea": "Sewers (Light)",
+      "locationName": "Secret Room - Middle",
+      "itemLocation": 11,
+      "item": "ThreeHundredRupees",
+      "itemAddress": "0xEB60"
+    },
+    {
+      "id": 11,
+      "subarea": "Sewers (Light)",
+      "locationName": "Secret Room - Right",
+      "itemLocation": 11,
+      "item": "TenArrows",
+      "itemAddress": "0xEB63"
     }
   ],
   "lockedDoors": [
@@ -212,19 +201,35 @@
     },
     {
       "id": 4,
-      "subarea": "Dark Cross Room",
-      "locationName": "Sewers (Dark)",
+      "subarea": "Sewers (Dark)",
+      "locationName": "Dark Cross Room",
       "doorPosition": "north",
       "doorLocation": 9,
       "keyType": "small"
     },
     {
       "id": 5,
-      "subarea": "Last Dark Room",
-      "locationName": "Sewers (Dark)",
+      "subarea": "Sewers (Dark)",
+      "locationName": "Last Dark Room",
       "doorPosition": "north",
       "doorLocation": 10,
       "keyType": "small"
+    },
+    {
+      "id": 6,
+      "subarea": "Sewers (Light)",
+      "locationName": "Secret Room - Bombable Wall (South)",
+      "doorPosition": "west",
+      "doorLocation": 11,
+      "keyType": "bomb"
+    },
+    {
+      "id": 7,
+      "subarea": "Sewers (Light)",
+      "locationName": "Secret Room - Bombable Wall (North)",
+      "doorPosition": "west",
+      "doorLocation": 11,
+      "keyType": "bomb"
     }
   ],
   "strats": [
@@ -675,5 +680,47 @@
         ]}
       ]
     },
+    {
+      "link": [11, 11],
+      "name": "Base - Bomb Wall (South)",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 1}},
+          {"unlockDoor": 6}
+        ]}
+      ],
+      "unlocksDoor": [6],
+      "collectsItems": [9, 10, 11]
+    },
+    {
+      "link": [11, 11],
+      "name": "Base - Bomb Wall (North)",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 1}},
+          {"unlockDoor": 7}
+        ]}
+      ],
+      "unlocksDoor": [7],
+      "collectsItems": [9, 10, 11]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 12],
+      "name": "Zelda Escaped",
+      "requires": [
+        {"obstaclesCleared": ["Zelda Following"]}
+      ],
+      "setsFlags": ["f_ZeldaEscaped"]
+    },
+    {
+      "link": [13, 11],
+      "name": "Base",
+      "requires": []
+    }
   ]
 }
