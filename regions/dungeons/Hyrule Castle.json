@@ -6,35 +6,120 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Hyrule Castle Exit (East)",
-      "area": "Hyrule Castle",
+      "name": "Upper East Exit",
+      "subarea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 2,
-      "name": "Hyrule Castle Exit (West)",
-      "area": "Hyrule Castle",
+      "name": "Upper West Exit",
+      "subarea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 3,
-      "name": "Hyrule Castle Exit (South)",
-      "area": "Hyrule Castle",
+      "name": "Lower South Exit",
+      "subarea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 4,
       "name": "Throne Room",
-      "area": "Hyrule Castle",
-      "nodeType": "door"
+      "subarea": "Hyrule Castle",
+      "nodeType": "junction"
     },
     {
       "id": 5,
-      "name": "Hyrule Castle - Map Chest",
-      "area": "Hyrule Castle",
+      "name": "Hyrule Castle Dungeon Entrance",
+      "area": "Hyrule Castle Dungeon",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Hyrule Castle Dungeon - Boomerang Chest Room",
+      "area": "Hyrule Castle Dungeon",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Hyrule Castle Dungeon - Zelda's Prison",
+      "area": "Hyrule Castle Dungeon",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Sewers (Throne Room Entrance)",
+      "area": "Sewers (Dark)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Sewers - Dark Cross Room",
+      "area": "Sewers (Dark)",
+      "nodeType": "junction",
+      "note": "Represents being in the middle of the room, after the first two snakes"
+    },
+
+
+
+    {
+      "id": 11,
+      "name": "Sanctuary Push Door",
+      "area": "Sewers",
+      "nodeType": "door"
+    },
+    {
+      "id": 12,
+      "name": "Sewers Back Door",
+      "area": "Sewers",
+      "nodeType": "door"
+    },
+    {
+      "id": 13,
+      "name": "Sewers - Secret Room - Left",
+      "area": "Sewers",
       "nodeType": "item",
-      "nodeItem": "MapH2",
-      "nodeAddress": "0xEB0C"
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEB5D"
+    },
+    {
+      "id": 14,
+      "name": "Sewers - Secret Room - Middle",
+      "area": "Sewers",
+      "nodeType": "item",
+      "nodeItem": "ThreeHundredRupees",
+      "nodeAddress": "0xEB60"
+    },
+    {
+      "id": 15,
+      "name": "Sewers - Secret Room - Right",
+      "area": "Sewers",
+      "nodeType": "item",
+      "nodeItem": "TenArrows",
+      "nodeAddress": "0xEB63"
+    },
+    {
+      "id": 16,
+      "name": "Sanctuary Exit",
+      "area": "Sewers",
+      "nodeType": "door"
+    },
+    {
+      "id": 17,
+      "name": "Sanctuary",
+      "area": "Sanctuary",
+      "nodeType": "item",
+      "nodeItem": "SanctuaryHeart",
+      "nodeAddress": "0xEA79"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Map Chest",
+      "itemNode": 5,
+      "item": "Map",
+      "itemAddress": "0xEB0C"
     },
     {
       "id": 6,
@@ -63,7 +148,7 @@
       "name": "Sewers - Dark Cross",
       "area": "Sewers (Dark)",
       "nodeType": "item",
-      "nodeItem": "KeyH2",
+      "nodeItem": {"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 3}},
       "nodeAddress": "0xE96E"
     },
     {
@@ -82,7 +167,6 @@
       "id": 13,
       "name": "Sewers - Secret Room - Left",
       "area": "Sewers",
-      "requires": [ "KeyH2" ],
       "nodeType": "item",
       "nodeItem": "ThreeBombs",
       "nodeAddress": "0xEB5D"
@@ -91,7 +175,6 @@
       "id": 14,
       "name": "Sewers - Secret Room - Middle",
       "area": "Sewers",
-      "requires": [ "KeyH2" ],
       "nodeType": "item",
       "nodeItem": "ThreeHundredRupees",
       "nodeAddress": "0xEB60"
@@ -100,7 +183,6 @@
       "id": 15,
       "name": "Sewers - Secret Room - Right",
       "area": "Sewers",
-      "requires": [ "KeyH2" ],
       "nodeType": "item",
       "nodeItem": "TenArrows",
       "nodeAddress": "0xEB63"
@@ -108,14 +190,13 @@
     {
       "id": 16,
       "name": "Sanctuary Exit",
-      "area": "Sanctuary",
+      "area": "Sewers",
       "nodeType": "door"
     },
     {
       "id": 17,
       "name": "Sanctuary",
       "area": "Sanctuary",
-      "requires": [ "KeyH2" ],
       "nodeType": "item",
       "nodeItem": "SanctuaryHeart",
       "nodeAddress": "0xEA79"
@@ -174,7 +255,7 @@
       "link": [5, 5],
       "name": "Base",
       "requires": [],
-      "collectsItems": [5]
+      "collectsItems": [1]
     },
     {
       "link": [5, 5],
@@ -188,7 +269,7 @@
           {"magic": {"type": "Rod", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 1}}]
+      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 1}}]
     },
     {
       "link": [5, 5],
@@ -201,13 +282,13 @@
           {"magic": {"type": "RedCane", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 1}}]
+      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 1}}]
     },
     {
       "link": [5, 6],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
         {"or": [
           "L1Sword",
           "Hammer",
@@ -221,7 +302,7 @@
       "link": [5, 6],
       "name": "Base (Alternate Weapons)",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
         {"combatProficiency": 2},
         {"or": [
           {"ammo": {"type": "Bombs", "count": 1}},
@@ -234,8 +315,8 @@
       "link": [5, 7],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
-        {"unlockDoor": {"type": "HyruleCastle", "id": 2}}
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 2}}
       ]
     },
     {
@@ -256,7 +337,7 @@
           {"magic": {"type": "Rod", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 2}}]
+      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 2}}]
     },
     {
       "link": [6, 6],
@@ -269,14 +350,14 @@
           {"magic": {"type": "RedCane", "count": 1}}
         ]}
       ],
-      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": 2}}]
+      "collectsItems": [{"item": {"type": "Key", "dungeon": "HyruleCastle", "id": 2}}]
     },
     {
       "link": [7, 5],
       "name": "Base",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": 1}},
-        {"unlockDoor": {"type": "HyruleCastle", "id": 2}},
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 1}},
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": 2}},
         {"or": [
           "L1Sword",
           "Hammer",
@@ -307,14 +388,14 @@
       "link": [7, 7],
       "name": "Base - Kill Guard",
       "requires": [],
-      "collectsItems": [{"collectKey": {"type": "HyruleCastle", "id": "Big"}}],
+      "collectsItems": [{"item": {"type": "BigKey", "dungeon": "HyruleCastle"}}],
       "note": ["Without any weapons, it is still possible to kill the guard with pots."]
     },
     {
       "link": [7, 7],
       "name": "Base - Open Chest",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": "Big"}}
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": "Big"}}
       ],
       "collectsItems": [7]
     },
@@ -322,7 +403,7 @@
       "link": [7, 7],
       "name": "Base - Rescue Zelda",
       "requires": [
-        {"unlockDoor": {"type": "HyruleCastle", "id": "Big"}}
+        {"unlockDoor": {"dungeon": "HyruleCastle", "id": "Big"}}
       ],
       "clearsObstacles": ["A"]
     },
@@ -331,9 +412,77 @@
       "name": "Base",
       "requires": [
         "Lamp",
-        "L1Sword"
+        {"or": [
+          "L1Sword",
+          {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base (Alternate Weapons)",
+      "requires": [
+        "Lamp",
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          "Hookshot",
+          "Boomerang",
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"ammo": {"type": "Bombs", "count": 1}},
+          {"magic": {"type": "Rod", "count": 3}},
+          {"magic": {"type": "BlueCane", "count": 28}},
+          {"magic": {"type": "RedCane", "count": 2}},
+          {"magic": {"type": "Cape", "count": 25}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Snake Dodge",
+      "requires": [
+        "Lamp",
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Fire Rod",
+      "requires": [
+        {"darkProficiency": 2},
+        {"combatProficiency": 3},
+        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"magic": {"type": "FireRod", "count": 1}},
+        {"enemyDamage": {"enemy": "Rope", "hits": 1}}
       ],
-      "devNote": ["FIXME: Refine this, there are plenty of ways to not need either of these."]
+      "note": ["Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."]
+    },
+    {
+      "link": [8, 9],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang",
+          {"magic": {"type": "BlueCane", "count": 52}},
+          {"magic": {"type": "RedCane", "count": 5}}
+        ]},
+        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Darkness (Fully Blind)",
+      "requires": [
+        {"darkProficiency": 3},
+        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"enemyDamage": {"enemy": "Rope", "hits": 4}}
+      ],
+      "note": ["Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."]
     },
     {
       "link": [9, 9],
@@ -343,6 +492,22 @@
       ],
       "devNote": ["FIXME: Refine this, there are plenty of ways to not need Lamp."],
       "collectsItems": [9]
-    }
+    },
+    {
+      "link": [9, 9],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang",
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"darkProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [9]
+    },
   ]
 }
