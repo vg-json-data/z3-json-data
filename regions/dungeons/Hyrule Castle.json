@@ -59,6 +59,12 @@
       "nodeType": "junction",
       "note": "Represents being in the middle of the room, after the first two snakes"
     },
+    {
+      "id": 10,
+      "name": "Last Dark Room",
+      "subarea": "Sewers (Dark)",
+      "nodeType": "junction"
+    },
 
 
 
@@ -169,6 +175,14 @@
       "itemLocation": 9,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subarea": "Sewers (Dark)",
+      "locationName": "Last Dark Room Rat",
+      "itemLocation": 10,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     }
   ],
   "lockedDoors": [
@@ -195,6 +209,22 @@
       "doorPosition": "middle",
       "doorLocation": 7,
       "keyType": "big"
+    },
+    {
+      "id": 4,
+      "subarea": "Dark Cross Room",
+      "locationName": "Sewers (Dark)",
+      "doorPosition": "north",
+      "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subarea": "Last Dark Room",
+      "locationName": "Sewers (Dark)",
+      "doorPosition": "north",
+      "doorLocation": 10,
+      "keyType": "small"
     }
   ],
   "strats": [
@@ -502,6 +532,148 @@
         ]}
       ],
       "collectsItems": [7]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Darkness",
+      "requires": [
+        {"unlockDoor": 4},
+        {"darkProficiency": 2},
+        {"or": [
+          {"and": [
+            "L1Sword",
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"or": [
+              "Hookshot",
+              "Boomerang",
+              {"magic": {"type": "RedCane", "count": 1}},
+              {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword"
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base (Alternate Weapons)",
+      "requires": [
+        "Lamp",
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 12}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Rat", "hits": 2}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Bombs", "count": 1}},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [10, 10],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 40}}
+        ]}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [10, 10],
+      "name": "Darkness - Fire Rod",
+      "requires": [
+        {"darkProficiency": 2},
+        {"magic": {"type": "FireRod", "count": 1}},
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "BlueCane", "count": 20}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Rat", "hits": 2}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Bombs", "count": 1}},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 11],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"unlockDoor": 5},
+        {"or": [
+          {"enemyDamage": {"enemy": "Rat", "hits": 2}},
+          {"and": [
+            {"darkProficiency": 3},
+            {"or": [
+              "L1Sword",
+              "Hookshot",
+              "Boomerang",
+              {"magic": {"type": "FireRod", "count": 1}},
+              {"magic": {"type": "RedCane", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ]
     },
   ]
 }
