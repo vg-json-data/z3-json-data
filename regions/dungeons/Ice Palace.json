@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 182,
-  "name": "Ice Palace (Entrance)",
+  "name": "Ice Palace",
   "roomType": "Dungeon",
   "nodes": [
     {

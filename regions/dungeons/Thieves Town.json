@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 171,
-  "name": "Thieves Town (Entrance)",
+  "name": "Thieves Town",
   "note": "Also requires access to Northwest Dark World",
   "roomType": "Dungeon",
   "nodes": [

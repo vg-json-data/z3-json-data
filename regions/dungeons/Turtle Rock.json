@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 192,
-  "name": "Turtle Rock (Entrance)",
+  "name": "Turtle Rock",
   "note": "Also requires access to East Death Mountain",
   "roomType": "Dungeon",
   "nodes": [

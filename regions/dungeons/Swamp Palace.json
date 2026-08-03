@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 166,
-  "name": "Swamp Palace (Entrance)",
+  "name": "Swamp Palace",
   "note": "Also requires access to South Dark World",
   "roomType": "Dungeon",
   "nodes": [
