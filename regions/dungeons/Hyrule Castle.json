@@ -550,8 +550,8 @@
       "link": [9, 10],
       "name": "Darkness",
       "requires": [
-        {"unlockDoor": 4},
         {"darkProficiency": 2},
+        {"unlockDoor": 4},
         {"or": [
           {"and": [
             "L1Sword",
@@ -565,6 +565,51 @@
               "Boomerang",
               {"magic": {"type": "RedCane", "count": 1}},
               {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 4},
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"and": [
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Darkness",
+      "requires": [
+        {"unlockDoor": 4},
+        {"or": [
+          {"and": [
+            "L1Sword",
+            {"darkProficiency": 2},
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+          ]},
+          {"and": [
+            "L1Sword",
+            {"darkProficiency": 3}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"or": [
+              "Hookshot",
+              "Boomerang",
+              {"magic": {"type": "RedCane", "count": 1}},
+              {"enemyDamage": {"enemy": "Rope", "hits": 2}}
             ]}
           ]}
         ]}
@@ -677,6 +722,30 @@
               {"magic": {"type": "RedCane", "count": 1}}
             ]}
           ]}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [11, 10],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"unlockDoor": 5},
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"enemyDamage": {"enemy": "Rat", "hits": 1}}
+          ]},
+          "hasSwordSparkles",
+          {"darkProficiency": 3}
         ]}
       ]
     },
