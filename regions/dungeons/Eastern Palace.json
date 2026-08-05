@@ -28,47 +28,26 @@
       "subArea": "Eastern Palace 1F",
       "nodeType": "junction"
     },
-
-
-    {
-      "id": 3,
-      "name": "Eastern Palace - Big Chest",
-      "subArea": "Eastern Palace 1F",
-      "nodeType": "item",
-      "nodeItem": "Bow",
-      "nodeAddress": "0xE97D"
-    },
     {
       "id": 5,
-      "name": "Eastern Palace - Big Key Chest",
+      "name": "Darkness Entrance",
       "subArea": "Eastern Palace 1F",
-      "nodeType": "item",
-      "nodeItem": "BigKeyP1",
-      "nodeAddress": "0xE9B9"
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Dark Pot Room",
+      "subArea": "Eastern Palace 1F",
+      "nodeType": "junction"
     },
     {
       "id": 7,
-      "name": "Eastern Palace - Armos Knights",
-      "subArea": "Eastern Palace 2F",
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180150"
+      "name": "Big Key Chest Room",
+      "subArea": "Eastern Palace 1F",
+      "nodeType": "junction"
     },
-    {
-      "id": 8,
-      "name": "Eastern Palace - Prize",
-      "subArea": "Eastern Palace 2F",
-      "nodeType": "item",
-      "nodeItem": "PendantOfCourage",
-      "nodeAddress": [
-        "0x1209D",
-        "0x53EF8",
-        "0x53EF9",
-        "0x180052",
-        "0x18007C",
-        "0xC6FE"
-      ]
-    }
+
+
   ],
   "items": [
     {
@@ -95,10 +74,84 @@
       "item": "Compass",
       "nodeAddress": "0xE977"
     },
-    
-    ,
-        "FIXME: It is possible to refill one small magic and two heats from the pots."
+    {
+      "id": 4,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Dark Pot Room",
+      "itemLocation": 6,
+      "item": "SmallKey",
+      "itemAddress": "unknown",
+      "devNote": ["FIXME: It is possible to refill one small magic and two heats from the pots."]
+    },
+    {
+      "id": 5,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Big Key Chest",
+      "itemLocation": 7,
+      "item": "BigKey",
+      "itemAddress": "0xE9B9"
+    },
+    {
+      "id": 6,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Big Chest",
+      "itemLocation": 4,
+      "nodeItem": "Bow",
+      "nodeAddress": "0xE97D"
+    },
 
+
+
+    {
+      "id": 7,
+      "name": "Eastern Palace - Armos Knights",
+      "subArea": "Eastern Palace 2F",
+      "nodeType": "item",
+      "nodeItem": "BossHeartContainer",
+      "nodeAddress": "0x180150"
+    },
+    {
+      "id": 8,
+      "name": "Eastern Palace - Prize",
+      "subArea": "Eastern Palace 2F",
+      "nodeType": "item",
+      "nodeItem": "PendantOfCourage",
+      "nodeAddress": [
+        "0x1209D",
+        "0x53EF8",
+        "0x53EF9",
+        "0x180052",
+        "0x18007C",
+        "0xC6FE"
+      ]
+    }
+
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Eastern Palace 1F",
+      "locationName": "Dark Room",
+      "doorPosition": "west",
+      "doorLocation": 5,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subarea": "Eastern Palace 1F",
+      "locationName": "Big Key Chest Room",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "big"
+    },
+    {
+      "id": 3,
+      "subarea": "Eastern Palace 1F",
+      "locationName": "Big Chest Room",
+      "doorPosition": "north",
+      "doorLocation": 4,
+      "keyType": "big"
+    },
   ],
   "strats": [
     {
@@ -165,6 +218,14 @@
       "name": "Base",
       "requires": [],
       "collectsItems": [3]
+    },
+    {
+      "link": [4, 4],
+      "name": "Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [6]
     },
     {
       "link": [4, 5],
@@ -412,14 +473,87 @@
         "it is important to step slightly away from the left wall in order pick up the pot above or below Link."
       ]
     },
-    
-    
     {
-      "link": [6, 4],
+      "link": [7, 4],
       "name": "Base",
       "requires": [
         {"unlockDoor": 2}
       ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Kill All Enemies",
+      "requires": [
+        "L1Sword"
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Kill All Enemies (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"ammo": {"type": "Arrows", "count": 3}},
+          {"ammo": {"type": "SilverArrows", "count": 3}},
+          {"magic": {"type": "Rod", "count": 3}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 24}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "Bombs", "count": 1}}
+          ]}
+        ]}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Kill All Enemies (Boomerang or Hookshot)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hookshot",
+            "Boomerang"
+          ]},
+          {"and": [
+            {"or": [
+              "Hookshot",
+              "Boomerang"
+            ]},
+            {"or": [
+              {"ammo": {"type": "Bombs", "count": 1}},
+              {"ammo": {"type": "Arrows", "count": 1}},
+              {"ammo": {"type": "SilverArrows", "count": 1}},
+              {"magic": {"type": "Rod", "count": 1}},
+              {"magic": {"type": "RedCane", "count": 1}},
+              {"magic": {"type": "BlueCane", "count": 24}}
+            ]}
+          ]}
+        ]}
+      ],
+      "collectsItems": [5],
+      "note": ["The Popos are vulnerable to Hookshot, the Stalfos are vulnerable to Boomerang."]
+    },
+    {
+      "link": [7, 7],
+      "name": "Grab the Pot Glitch",
+      "requires": [
+        {"combatProficiency": 3},
+        {"enemyDamage": {"enemy": "Bubble", "hits": 2}}
+      ],
+      "note": [
+        "Get i-frames from the Anti-Fairies then grab the pot between them.",
+        "Get i-frames again then step on the switch. Passing through too quickly can prevent pressing it."
+      ],
+      "devNote": [
+        "FIXME: This needs a better tech.",
+        "FIXME: Assumes 2 hits, grabbing the two nearby hearts, then 2 more hits. This is simplified to just 2 hits total for now."
+      ],
+      "collectsItems": [5]
     },
 
 
