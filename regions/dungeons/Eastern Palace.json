@@ -6,61 +6,50 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Eastern Palace Exit",
-      "area": "Eastern Palace",
+      "name": "Main Entrance",
+      "subArea": "Eastern Palace 1F",
       "nodeType": "door"
     },
     {
       "id": 2,
-      "name": "Eastern Palace - Compass Chest",
-      "area": "Eastern Palace",
-      "nodeType": "item",
-      "nodeItem": "CompassP1",
-      "nodeAddress": "0xE977"
+      "name": "Big Chest Room (Upper Ledge)",
+      "subArea": "Eastern Palace 1F",
+      "nodeType": "junction"
     },
     {
       "id": 3,
+      "name": "Stalfos Graveyard",
+      "subArea": "Eastern Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Big Chest Room (Lower)",
+      "subArea": "Eastern Palace 1F",
+      "nodeType": "junction"
+    },
+
+
+    {
+      "id": 3,
       "name": "Eastern Palace - Big Chest",
-      "area": "Eastern Palace",
-      "requires": [ "BigKeyP1" ],
+      "subArea": "Eastern Palace 1F",
       "nodeType": "item",
       "nodeItem": "Bow",
       "nodeAddress": "0xE97D"
     },
     {
-      "id": 4,
-      "name": "Eastern Palace - Cannonball Chest",
-      "area": "Eastern Palace",
-      "nodeType": "item",
-      "nodeItem": "OneHundredRupees",
-      "nodeAddress": "0xE9B3"
-    },
-    {
       "id": 5,
       "name": "Eastern Palace - Big Key Chest",
-      "area": "Eastern Palace",
-      "requires": [ "hasLightCone" ],
+      "subArea": "Eastern Palace 1F",
       "nodeType": "item",
       "nodeItem": "BigKeyP1",
       "nodeAddress": "0xE9B9"
     },
     {
-      "id": 6,
-      "name": "Eastern Palace - Map Chest",
-      "area": "Eastern Palace",
-      "nodeType": "item",
-      "nodeItem": "MapP1",
-      "nodeAddress": "0xE9F5"
-    },
-    {
       "id": 7,
       "name": "Eastern Palace - Armos Knights",
-      "area": "Eastern Palace",
-      "requires": [
-        "canShootArrows",
-        "hasLightCone",
-        "BigKeyP1"
-      ],
+      "subArea": "Eastern Palace 2F",
       "nodeType": "item",
       "nodeItem": "BossHeartContainer",
       "nodeAddress": "0x180150"
@@ -68,7 +57,7 @@
     {
       "id": 8,
       "name": "Eastern Palace - Prize",
-      "area": "Eastern Palace",
+      "subArea": "Eastern Palace 2F",
       "nodeType": "item",
       "nodeItem": "PendantOfCourage",
       "nodeAddress": [
@@ -81,7 +70,359 @@
       ]
     }
   ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Cannonball Chest",
+      "itemLocation": 2,
+      "item": "OneHundredRupees",
+      "itemAddress": "0xE9B3"
+    },
+    {
+      "id": 2,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Map Chest",
+      "itemLocation": 2,
+      "item": "Map",
+      "nodeAddress": "0xE9F5"
+    },
+    {
+      "id": 3,
+      "subArea": "Eastern Palace 1F",
+      "locationName": "Compass Chest",
+      "itemLocation": 4,
+      "item": "Compass",
+      "nodeAddress": "0xE977"
+    },
+    
+    ,
+        "FIXME: It is possible to refill one small magic and two heats from the pots."
+
+  ],
   "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Ball", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Stalfos", "hits": 1}}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Stalfos", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hammer",
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"magic": {"type": "Rod", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base - Pot Kill",
+      "requires": [
+        {"combatProficiency": 2}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"or": [
+          "L1Sword",
+          {"enemyDamage": {"enemy": "Popo", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              "Boomerang",
+              "Hookshot",
+              "Hammer",
+              {"ammo": {"type": "Arrows", "count": 1}},
+              {"ammo": {"type": "SilverArrows", "count": 1}},
+              {"magic": {"type": "Rod", "count": 1}},
+              {"magic": {"type": "BlueCane", "count": 20}},
+              {"magic": {"type": "RedCane", "count": 1}},
+              {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Damageless Dodge",
+      "requires": [
+        "Lamp",
+        {"combatProficiency": 3}
+      ],
+      "note": ["Wait for the Popo to get out of the way then quickly dodge it and the next one and loop around the room."]
+    },
+    {
+      "link": [5, 6],
+      "name": "Darkness - Lenient",
+      "requires": [
+        {"darkProficiency": 2},
+        {"enemyDamage": {"enemy": "Bubble", "hits": 2}},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Darkness - Blue Cane",
+      "requires": [
+        {"darkProficiency": 2},
+        {"magic": {"type": "BlueCane", "count":36}}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 3},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 20}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+        ]}
+      ]
+    },{
+      "link": [5, 7],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 1},
+        {"or": [
+          "L1Sword",
+          {"enemyDamage": {"enemy": "Popo", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              "Boomerang",
+              "Hookshot",
+              "Hammer",
+              {"ammo": {"type": "Arrows", "count": 1}},
+              {"ammo": {"type": "SilverArrows", "count": 1}},
+              {"magic": {"type": "Rod", "count": 1}},
+              {"magic": {"type": "BlueCane", "count": 28}},
+              {"magic": {"type": "RedCane", "count": 1}},
+              {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+            ]}
+          ]}
+        ]}
+      ],
+      "devNote": ["This strat does not obtain the key from the room to the right."]
+    },
+    {
+      "link": [5, 7],
+      "name": "Magic Powder Kill",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 1},
+        {"combatProficiency": 2},
+        {"magic": {"type": "MagicPowder", "count": 2}}
+      ],
+      "note": ["Use Magic Powder on the Anti-Fairies."],
+      "devNote": ["This strat does not obtain the key from the room to the right."]
+    },
+    {
+      "link": [5, 7],
+      "name": "Damageless Dodge",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 1},
+        {"combatProficiency": 3}
+      ],
+      "note": ["Wait for the Popo to get out of the way then quickly dodge it and the next one."],
+      "devNote": ["This strat does not obtain the key from the room to the right."]
+    },
+    {
+      "link": [5, 7],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 1},
+        {"unlockDoor": 1},
+        {"or": [
+          {"enemyDamage": {"enemy": "Bubble", "hits": 1}},
+          {"magic": {"type": "BlueCane", "count": 20}}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 7],
+      "name": "Darkness - Hookshot i-Frames",
+      "requires": [
+        {"darkProficiency": 2},
+        {"unlockDoor": 1},
+        "Hookshot",
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "In the top right corner, shoot the Hookshot downwards to kill the Popo,",
+        "then once the Anti-Faries are close, shoot again and they will pass through Link."
+      ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Grab the Key",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 1},
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Damageless Dodge",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 1},
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "Wait for the Popo to get out of the way then quickly dodge it and the next one and loop around the room before grabbing the key.",
+        "Then the Popos will be in a better position when exiting the room"
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Darkness - Lenient",
+      "requires": [
+        {"darkProficiency": 2},
+        {"unlockDoor": 1},
+        {"or": [
+          "L1Sword",
+          {"darkProficiency": 3},
+          {"enemyDamage": {"enemy": "Stalfos", "hits": 3}}
+        ]},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+        ]}
+      ],
+      "note": [
+        "When struggling to find the door to escape the pot room,",
+        "it is important to step slightly away from the left wall in order pick up the pot above or below Link."
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Darkness - Blue Cane",
+      "requires": [
+        {"darkProficiency": 2},
+        {"unlockDoor": 1},
+        {"or": [
+          {"darkProficiency": 3},,
+          {"magic": {"type": "BlueCane", "count":60}},
+          {"enemyDamage": {"enemy": "Stalfos", "hits": 3}}
+        ]},
+        {"magic": {"type": "BlueCane", "count":24}}
+      ],
+      "note": [
+        "When struggling to find the door to escape the pot room,",
+        "it is important to step slightly away from the left wall in order pick up the pot above or below Link."
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 3},
+        {"unlockDoor": 1},
+        {"or": [
+          "Hookshot",
+          "Boomerang",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+        ]}
+      ],
+      "note": [
+        "When struggling to find the door to escape the pot room,",
+        "it is important to step slightly away from the left wall in order pick up the pot above or below Link."
+      ]
+    },
+    
+    
+    {
+      "link": [6, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+
+
     {
       "link": [7, 7],
       "name": "Armos Knights - Bow",
