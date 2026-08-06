@@ -53,8 +53,18 @@
       "subArea": "Desert Palace 2F",
       "nodeType": "junction"
     },
-
-
+    {
+      "id": 9,
+      "name": "Pre-Boss Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Lanmolas Boss",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "boss"
+    }
   ],
   "items": [
     {
@@ -123,17 +133,17 @@
     },
     {
       "id": 9,
-      "name": "Desert Palace - Lanmolas",
-      "area": "Desert Palace North",
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180151"
+      "subArea": "Desert Palace 2F",
+      "locationName": "Lanmolas - Boss Drop",
+      "itemLocation": 10,
+      "item": "HeartContainer",
+      "itemAddress": "0x180151"
     },
     {
       "id": 10,
-      "name": "Desert Palace - Prize",
-      "area": "Desert Palace North",
-      "nodeType": "item",
+      "subArea": "Desert Palace 2F",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 10,
       "nodeItem": "PendantOfWisdom",
       "nodeAddress": [
         "0x1209E",
@@ -343,19 +353,49 @@
       "collectsItems": [8]
     },
     {
-      "link": [7, 8],
+      "link": [8, 9],
       "name": "Base - Second Tile Room Small Key Pot",
       "requires": [
-        {"unlockDoor": 3}
-      ],
-      "collectsItems": [8]
+        {"unlockDoor": 3},
+        {"unlockDoor": 4}
+      ]
     },
-
-
-
-
     {
-      "link": [13, 13],
+      "link": [9, 9],
+      "name": "Base - Light Torches",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 2}},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 1}},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Lamp", "count": 4}},
+            {"enemyDamage": {"enemy": "Eyegore (Red)", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_OpenedDesertPalaceWall"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "f_OpenedDesertPalaceWall",
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 10],
       "name": "Lanmolas - Sword",
       "requires": [
         "L1Sword",
@@ -378,7 +418,7 @@
       "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Blue Cane",
       "requires": [
         {"magic": {"type": "BlueCane", "count": 192}},
@@ -388,7 +428,7 @@
       "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Red Cane",
       "requires": [
         {"magic": {"type": "RedCane", "count": 5}},
@@ -402,7 +442,7 @@
       "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Fire or Ice Rod",
       "requires": [
         {"or": [
@@ -421,7 +461,7 @@
       "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Bow",
       "requires": [
         {"bossProficiency": 3},
@@ -450,7 +490,7 @@
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Hammer",
       "requires": [
         "Hammer",
@@ -468,7 +508,7 @@
       "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Bombs",
       "requires": [
         {"bossProficiency": 3},
