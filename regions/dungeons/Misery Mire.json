@@ -113,7 +113,7 @@
     },
     {
       "id": 11,
-      "name": "Misery Mire - Big Key Chest",
+      "name": "Misery Mire - Chest with Big Key",
       "area": "Misery Mire (West)",
       "requires": [ "canLightTorches" ],
       "note": "FIXME: Changes based on key placement",

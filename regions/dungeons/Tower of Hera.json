@@ -40,7 +40,7 @@
     },
     {
       "id": 6,
-      "name": "Tower of Hera - Big Key Chest",
+      "name": "Tower of Hera - Chest with Big Key",
       "area": "Tower of Hera (Basement)",
       "requires": [
         "canLightTorches",

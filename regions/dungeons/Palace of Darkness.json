@@ -49,7 +49,7 @@
     },
     {
       "id": 5,
-      "name": "Palace of Darkness Big Key Chest Staircase",
+      "name": "Palace of Darkness Chest with Big Key Staircase",
       "area": "Palace of Darkness (Center)",
       "nodeType": "door"
     },
@@ -101,8 +101,8 @@
     },
     {
       "id": 10,
-      "name": "Palace of Darkness - Big Key Chest",
-      "area": "Palace of Darkness (Big Key Chest)",
+      "name": "Palace of Darkness - Chest with Big Key",
+      "area": "Palace of Darkness (Chest with Big Key)",
       "requires": [
         "canShootArrows",
         "hasLightCone",

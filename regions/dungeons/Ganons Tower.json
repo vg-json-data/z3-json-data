@@ -299,7 +299,7 @@
     },
     {
       "id": 33,
-      "name": "Ganons Tower - Big Key Chest",
+      "name": "Ganons Tower - Chest with Big Key",
       "area": "Ganons Tower (Bottom)",
       "requires": [
         {"or": [
