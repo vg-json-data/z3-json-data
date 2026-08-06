@@ -1935,14 +1935,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Palace of Darkness Big Key Chest Staircase and Palace of Darkness (Big Key Chest)",
+      "description": "Door connection between Palace of Darkness Chest with Big Key Staircase and Palace of Darkness (Chest with Big Key)",
       "nodes": [
         {
-          "name": "Palace of Darkness Big Key Chest Staircase",
+          "name": "Palace of Darkness Chest with Big Key Staircase",
           "position": "origin"
         },
         {
-          "name": "Palace of Darkness (Big Key Chest)",
+          "name": "Palace of Darkness (Chest with Big Key)",
           "position": "destination"
         }
       ]

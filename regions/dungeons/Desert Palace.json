@@ -6,188 +6,144 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Desert Palace Pots (Outer)",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
+      "name": "Main Entrance",
+      "subArea": "Desert Palace B1",
       "nodeType": "door"
     },
     {
       "id": 2,
-      "name": "Desert Palace Exit (West)",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
-      "nodeType": "door"
+      "name": "West Exit",
+      "subArea": "Desert Palace B1",
+      "nodeType": "door",
+      "devNote": "FIXME: This is a good place to obtain fairies"
     },
     {
       "id": 3,
-      "name": "Desert Palace Exit (East)",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
+      "name": "East Exit",
+      "subArea": "Desert Palace B1",
       "nodeType": "door"
     },
     {
       "id": 4,
-      "name": "Desert Palace East Wing",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
-      "nodeType": "door"
+      "name": "East Wing",
+      "subArea": "Desert Palace B1",
+      "nodeType": "junction"
     },
     {
       "id": 5,
-      "name": "Desert Palace - Big Chest",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-         "BigKeyP2" ,
-
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "PowerGlove",
-      "nodeAddress": "0xE98F"
+      "name": "Dungeon's Second Half Entrance",
+      "subArea": "Desert Palace 1F",
+      "nodeType": "door"
     },
     {
       "id": 6,
-      "name": "Desert Palace - Torch",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-         "canDash" ,
-
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "KeyP2",
-      "nodeAddress": "0x180160"
+      "name": "Top Floor Entrance",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
     },
     {
       "id": 7,
-      "name": "Desert Palace - Map Chest",
-      "area": "Desert Palace Main (Outer)",
-      "requires": [
-        "RescueZelda",
-        {"or": [
-          "canRead",
-          {"and": [
-            "canLiftDarkRocks",
-            "canFly",
-            "canMirror"
-          ]}
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "MapP2",
-      "nodeAddress": "0xE9B6"
+      "name": "Bottom of Long Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
     },
     {
       "id": 8,
-      "name": "Desert Palace Exit (South)",
-      "area": "Desert Palace Main (Inner)",
-      "nodeType": "door"
+      "name": "Top of Long Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
     },
     {
       "id": 9,
-      "name": "Desert Palace Pots (Inner)",
-      "area": "Desert Palace Main (Inner)",
-      "nodeType": "door"
+      "name": "Pre-Boss Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
     },
     {
       "id": 10,
-      "name": "Desert Palace - Compass Chest",
-      "area": "Desert Palace East",
-      "requires": [ "KeyP2" ],
-      "nodeType": "item",
-      "nodeItem": "CompassP2",
-      "nodeAddress": "0xE9CB"
+      "name": "Lanmolas Boss",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "boss"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Desert Palace B1",
+      "locationName": "Map Chest",
+      "itemLocation": 1,
+      "item": "Map",
+      "itemAddress": "0xE9B6"
     },
     {
-      "id": 11,
-      "name": "Desert Palace - Big Key Chest",
-      "area": "Desert Palace East",
-      "requires": [ "KeyP2" ],
-      "nodeType": "item",
-      "nodeItem": "BigKeyP2",
-      "nodeAddress": "0xE9C2"
+      "id": 2,
+      "subArea": "Desert Palace B1",
+      "locationName": "Bonk Torch",
+      "itemLocation": 1,
+      "item": "SmallKey",
+      "itemAddress": "0x180160"
     },
     {
-      "id": 12,
-      "name": "Desert Palace Exit (North)",
-      "area": "Desert Palace North",
-      "nodeType": "door"
+      "id": 3,
+      "subArea": "Desert Palace B1",
+      "locationName": "Compass Chest",
+      "itemLocation": 4,
+      "item": "Compass",
+      "itemAddress": "0xE9CB"
     },
     {
-      "id": 13,
-      "name": "Desert Palace - Lanmolas",
-      "area": "Desert Palace North",
-      "requires": [
-        "canLiftRocks",
-        "canLightTorches",
-        "BigKeyP2",
-        "KeyP2"
-      ],
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180151"
+      "id": 4,
+      "subArea": "Desert Palace B1",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 4,
+      "item": "BigKey",
+      "itemAddress": "0xE9C2"
     },
     {
-      "id": 14,
-      "name": "Desert Palace - Prize",
-      "area": "Desert Palace North",
-      "nodeType": "item",
+      "id": 5,
+      "subArea": "Desert Palace B1",
+      "locationName": "Big Chest",
+      "itemLocation": 1,
+      "item": "PowerGlove",
+      "itemAddress": "0xE98F"
+    },
+    {
+      "id": 6,
+      "subArea": "Desert Palace 1F",
+      "locationName": "First Tile Room Pot",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 7,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Long Room Pot",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Second Tile Room Pot",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 9,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Lanmolas - Boss Drop",
+      "itemLocation": 10,
+      "item": "HeartContainer",
+      "itemAddress": "0x180151"
+    },
+    {
+      "id": 10,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 10,
       "nodeItem": "PendantOfWisdom",
       "nodeAddress": [
         "0x1209E",
@@ -199,9 +155,247 @@
       ]
     }
   ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Desert Palace B1",
+      "locationName": "East Wing",
+      "doorPosition": "east",
+      "doorLocation": 4,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subarea": "Desert Palace 1F",
+      "locationName": "First Tile Room",
+      "doorPosition": "north",
+      "doorLocation": 6,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Top of Long Room",
+      "doorPosition": "north",
+      "doorLocation": 8,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Second Tile Room",
+      "doorPosition": "north",
+      "doorLocation": 8,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Boss Door",
+      "doorPosition": "north",
+      "doorLocation": 9,
+      "keyType": "big"
+    }
+  ],
   "strats": [
     {
-      "link": [13, 13],
+      "link": [1, 1],
+      "name": "Base - Open North Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bonk Torch",
+      "requires": [
+        "PegasusBoots"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Open Chest to North",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 4}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"magic": {"type": "FireRod", "count": 4}}
+        ]}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Open Chest to North (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "SilverArrows", "count": 3}},
+          {"ammo": {"type": "Arrows", "count": 3}},
+          {"ammo": {"type": "Bombs", "count": 3}},
+          {"magic": {"type": "FireRod", "count": 3}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 32}}
+        ]}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Small Key Pot",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "Bombs", "count": 5}},
+          {"magic": {"type": "FireRod", "count": 5}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "SilverArrows", "count": 4}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"magic": {"type": "FireRod", "count": 4}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 40}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Beamos Laser Beam", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Small Key Pot",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Second Tile Room Small Key Pot",
+      "requires": [
+        {"unlockDoor": 3}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base - Second Tile Room Small Key Pot",
+      "requires": [
+        {"unlockDoor": 3},
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Light Torches",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 2}},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 1}},
+            {"magic": {"type": "Lamp", "count": 4}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Lamp", "count": 4}},
+            {"enemyDamage": {"enemy": "Eyegore (Red)", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_OpenedDesertPalaceWall"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "f_OpenedDesertPalaceWall",
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 10],
       "name": "Lanmolas - Sword",
       "requires": [
         "L1Sword",
@@ -221,20 +415,20 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Blue Cane",
       "requires": [
         {"magic": {"type": "BlueCane", "count": 192}},
         {"bossProficiency": 2}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Red Cane",
       "requires": [
         {"magic": {"type": "RedCane", "count": 5}},
@@ -245,10 +439,10 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Fire or Ice Rod",
       "requires": [
         {"or": [
@@ -264,10 +458,10 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Bow",
       "requires": [
         {"bossProficiency": 3},
@@ -292,11 +486,11 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14],
+      "collectsItems": [9, 10],
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Hammer",
       "requires": [
         "Hammer",
@@ -311,10 +505,10 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
-      "link": [13, 13],
+      "link": [10, 10],
       "name": "Lanmolas - Bombs",
       "requires": [
         {"bossProficiency": 3},
@@ -330,7 +524,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14],
+      "collectsItems": [9, 10],
       "note": [
         "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",
         "When only one is remaining, throw the Bombs at the Lanmola."
