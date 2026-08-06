@@ -31,7 +31,7 @@
     },
     {
       "id": 5,
-      "name": "Second Half Dungeon Entrance",
+      "name": "Dungeon's Second Half Entrance",
       "subArea": "Desert Palace 1F",
       "nodeType": "door"
     },
@@ -41,22 +41,88 @@
       "subArea": "Desert Palace 2F",
       "nodeType": "junction"
     },
+    {
+      "id": 7,
+      "name": "Bottom of Long Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Top of Long Room",
+      "subArea": "Desert Palace 2F",
+      "nodeType": "junction"
+    },
 
 
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Desert Palace B1",
+      "locationName": "Map Chest",
+      "itemLocation": 1,
+      "item": "Map",
+      "itemAddress": "0xE9B6"
+    },
+    {
+      "id": 2,
+      "subArea": "Desert Palace B1",
+      "locationName": "Bonk Torch",
+      "itemLocation": 1,
+      "item": "SmallKey",
+      "itemAddress": "0x180160"
+    },
+    {
+      "id": 3,
+      "subArea": "Desert Palace B1",
+      "locationName": "Compass Chest",
+      "itemLocation": 4,
+      "item": "Compass",
+      "itemAddress": "0xE9CB"
+    },
+    {
+      "id": 4,
+      "subArea": "Desert Palace B1",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 4,
+      "item": "BigKey",
+      "itemAddress": "0xE9C2"
+    },
+    {
+      "id": 5,
+      "subArea": "Desert Palace B1",
+      "locationName": "Big Chest",
+      "itemLocation": 1,
+      "item": "PowerGlove",
+      "itemAddress": "0xE98F"
+    },
+    {
+      "id": 6,
+      "subArea": "Desert Palace 1F",
+      "locationName": "First Tile Room Pot",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 7,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Long Room Pot",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Desert Palace 2F",
+      "locationName": "Second Tile Room Pot",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
     {
       "id": 9,
-      "name": "Desert Palace Pots (Inner)",
-      "area": "Desert Palace Main (Inner)",
-      "nodeType": "door"
-    },
-    {
-      "id": 12,
-      "name": "Desert Palace Exit (North)",
-      "area": "Desert Palace North",
-      "nodeType": "door"
-    },
-    {
-      "id": 13,
       "name": "Desert Palace - Lanmolas",
       "area": "Desert Palace North",
       "nodeType": "item",
@@ -64,7 +130,7 @@
       "nodeAddress": "0x180151"
     },
     {
-      "id": 14,
+      "id": 10,
       "name": "Desert Palace - Prize",
       "area": "Desert Palace North",
       "nodeType": "item",
@@ -79,50 +145,6 @@
       ]
     }
   ],
-  "items": [
-    {
-      "id": 1,
-      "subArea": "Desert Palace B1",
-      "locationName": "Map Chest",
-      "item": "Map",
-      "itemAddress": "0xE9B6"
-    },
-    {
-      "id": 2,
-      "subArea": "Desert Palace B1",
-      "locationName": "Bonk Torch",
-      "item": "SmallKey",
-      "itemAddress": "0x180160"
-    },
-    {
-      "id": 3,
-      "subArea": "Desert Palace B1",
-      "locationName": "Compass Chest",
-      "item": "Compass",
-      "itemAddress": "0xE9CB"
-    },
-    {
-      "id": 4,
-      "subArea": "Desert Palace B1",
-      "locationName": "Chest with Big Key",
-      "item": "BigKey",
-      "itemAddress": "0xE9C2"
-    },
-    {
-      "id": 5,
-      "subArea": "Desert Palace B1",
-      "locationName": "Big Chest",
-      "item": "PowerGlove",
-      "itemAddress": "0xE98F"
-    },
-    {
-      "id": 6,
-      "subArea": "Desert Palace 1F",
-      "locationName": "Tile Room Pot",
-      "item": "SmallKey",
-      "itemAddress": "unknown"
-    },
-  ],
   "lockedDoors": [
     {
       "id": 1,
@@ -135,11 +157,35 @@
     {
       "id": 2,
       "subarea": "Desert Palace 1F",
-      "locationName": "Tile Room",
+      "locationName": "First Tile Room",
       "doorPosition": "north",
       "doorLocation": 6,
       "keyType": "small"
     },
+    {
+      "id": 3,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Top of Long Room",
+      "doorPosition": "north",
+      "doorLocation": 8,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Second Tile Room",
+      "doorPosition": "north",
+      "doorLocation": 8,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subarea": "Desert Palace 2F",
+      "locationName": "Boss Door",
+      "doorPosition": "north",
+      "doorLocation": 9,
+      "keyType": "big"
+    }
   ],
   "strats": [
     {
@@ -242,6 +288,68 @@
         {"unlockDoor": 2}
       ]
     },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "Bombs", "count": 5}},
+          {"magic": {"type": "FireRod", "count": 5}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "SilverArrows", "count": 4}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"magic": {"type": "FireRod", "count": 4}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 40}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Beamos Laser Beam", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Small Key Pot",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Second Tile Room Small Key Pot",
+      "requires": [
+        {"unlockDoor": 3}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base - Second Tile Room Small Key Pot",
+      "requires": [
+        {"unlockDoor": 3}
+      ],
+      "collectsItems": [8]
+    },
 
 
 
@@ -267,7 +375,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
       "link": [13, 13],
@@ -277,7 +385,7 @@
         {"bossProficiency": 2}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
       "link": [13, 13],
@@ -291,7 +399,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
       "link": [13, 13],
@@ -310,7 +418,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
       "link": [13, 13],
@@ -338,7 +446,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14],
+      "collectsItems": [9, 10],
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
     {
@@ -357,7 +465,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14]
+      "collectsItems": [9, 10]
     },
     {
       "link": [13, 13],
@@ -376,7 +484,7 @@
         ]}
       ],
       "setsFlags": ["f_DefeatedLanmolas"],
-      "collectsItems": [13, 14],
+      "collectsItems": [9, 10],
       "note": [
         "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",
         "When only one is remaining, throw the Bombs at the Lanmola."
