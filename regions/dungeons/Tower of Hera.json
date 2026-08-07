@@ -30,8 +30,32 @@
     },
     {
       "id": 5,
-      "name": "Bottom Right 1F-2F Staircase",
+      "name": "Bottom Right 2F-3F Staircase",
       "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Bottom Left 3F",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Top Right 3F-4F Staircase",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Top Left 4F-5F Staircase",
+      "area": "Tower of Hera (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Big Chest, 5F Fall Pit",
+      "area": "Tower of Hera (Upper)",
       "nodeType": "junction"
     },
 
@@ -48,69 +72,64 @@
       "name": "Tower of Hera Exit",
       "area": "Tower of Hera (Bottom)",
       "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Tower of Hera (Lower)",
+      "locationName": "Map Chest",
+      "itemLocation": 3,
+      "item": "Map",
+      "itemAddress": "0xE9AD"
+    },
+    {
+      "id": 2,
+      "subArea": "Tower of Hera (Lower)",
+      "locationName": "Basement Cage",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0x180162"
+    },
+    {
+      "id": 3,
+      "subArea": "Tower of Hera (Lower)",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 4,
+      "item": "BigKey",
+      "itemAddress": "0xE9E6"
     },
     {
       "id": 4,
-      "name": "Tower of Hera - Basement Cage",
-      "area": "Tower of Hera (Bottom)",
-      "nodeType": "item",
-      "nodeItem": "KeyP3",
-      "nodeAddress": "0x180162"
+      "subArea": "Tower of Hera (Upper)",
+      "locationName": "Compass Chest",
+      "itemLocation": 8,
+      "item": "Compass",
+      "itemAddress": "0xE9FB"
     },
     {
       "id": 5,
-      "name": "Tower of Hera - Map Chest",
-      "area": "Tower of Hera (Bottom)",
-      "nodeType": "item",
-      "nodeItem": "MapP3",
-      "nodeAddress": "0xE9AD"
+      "subArea": "Tower of Hera (Upper)",
+      "locationName": "Big Chest",
+      "itemLocation": 9,
+      "item": "MoonPearl",
+      "itemAddress": "0xE9F8"
     },
     {
       "id": 6,
-      "name": "Tower of Hera - Chest with Big Key",
-      "area": "Tower of Hera (Basement)",
-      "requires": [
-        "canLightTorches",
-        "KeyP3"
-      ],
-      "nodeType": "item",
-      "nodeItem": "BigKeyP3",
-      "nodeAddress": "0xE9E6"
+      "subArea": "Tower of Hera (Upper)",
+      "locationName": "Moldorm - Boss Drop",
+      "itemLocation": 10,?
+      "item": "HeartContainer",
+      "itemAddress": "0x180152"
     },
     {
       "id": 7,
-      "name": "Tower of Hera - Compass Chest",
-      "area": "Tower of Hera (Top)",
-      "requires": [ "BigKeyP3" ],
-      "nodeType": "item",
-      "nodeItem": "CompassP3",
-      "nodeAddress": "0xE9FB"
-    },
-    {
-      "id": 8,
-      "name": "Tower of Hera - Big Chest",
-      "area": "Tower of Hera (Top)",
-      "requires": [ "BigKeyP3" ],
-      "nodeType": "item",
-      "nodeItem": "MoonPearl",
-      "nodeAddress": "0xE9F8"
-    },
-    {
-      "id": 9,
-      "name": "Tower of Hera - Moldorm",
-      "area": "Tower of Hera (Top)",
-      "requires": [ "BigKeyP3" ],
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180152"
-    },
-    {
-      "id": 10,
-      "name": "Tower of Hera - Prize",
-      "area": "Tower of Hera (Top)",
-      "nodeType": "item",
-      "nodeItem": "PendantOfPower",
-      "nodeAddress": [
+      "subArea": "Tower of Hera (Upper)",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 10,?
+      "item": "PendantOfPower",
+      "itemAddress": [
         "0x120A5",
         "0x53F0A",
         "0x53F0B",
@@ -119,6 +138,24 @@
         "0xC706"
       ]
     }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Tower of Hera (Lower)",
+      "locationName": "Top Left 1F-2F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subarea": "Tower of Hera (Lower)",
+      "locationName": "Top Left 3F Big Key Door",
+      "doorPosition": "north",
+      "doorLocation": 6,
+      "keyType": "big"
+    },
   ],
   "strats": [
     {
@@ -181,6 +218,78 @@
       ],
       "collectsItems": [3],
       "devNote": ["FIXME: There are magic pots in this room."]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]}
+          {"and": [
+            {"combatProficiency": 2},
+            {"ammo": {"type": "SilverArrows", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          {"ammo": {"type": "Bombs", "count": 1}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 28}}
+        ]},
+        {"or": [
+          {"combatProficiency": 3},
+          {"magic": {"type": "BlueCane", "count": 12}},
+          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2},
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 3}},
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["It is possible to get to the big chest with Hookshot, but it's free to just go up and fall back down."]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Big Chest",
+      "requires": [
+        "BigKey"
+      ]
     },
 
 
