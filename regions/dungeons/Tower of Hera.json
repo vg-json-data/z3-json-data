@@ -6,10 +6,37 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Tower of Hera Small Key Door",
-      "area": "Tower of Hera (Bottom)",
+      "name": "Main Entrance",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "door"
     },
+    {
+      "id": 2,
+      "name": "Bottom Left 1F-2F Staircase",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Top Left 1F-2F Staircase",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Chest with Big Key",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Bottom Right 1F-2F Staircase",
+      "area": "Tower of Hera (Lower)",
+      "nodeType": "junction"
+    },
+
+
+
     {
       "id": 2,
       "name": "Tower of Hera Big Key Door",
@@ -94,6 +121,72 @@
     }
   ],
   "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": [
+        "h_hitBlueOrangeSwitch",
+        "h_hitBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [1, 5],
+      "name": "Base",
+      "requires": [
+        "h_hitBlueOrangeSwitch",
+        "h_hitBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1},
+        "h_hitBlueOrangeSwitch",
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Flying Tile", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"magic": {"type": "Lamp", "count": 4}}
+        ]}
+      ],
+      "collectsItems": [3],
+      "devNote": ["FIXME: There are magic pots in this room."]
+    },
+
+
+
+
+
     {
       "link": [9, 9],
       "name": "Moldorm - Sword",

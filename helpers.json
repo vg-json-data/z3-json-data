@@ -252,5 +252,36 @@
       "hasMagicalSword",
       {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
     ]
+  },
+  {
+    "name": "h_hitBlueOrangeSwitch",
+    "requires": [
+      {"or": [
+        "L1Sword",
+        "Hammer",
+        "Boomerang",
+        "Hookshot",
+        {"ammo": {"type": "Bombs", "count": 1}},
+        {"ammo": {"type": "Arrows", "count": 1}},
+        {"ammo": {"type": "SilverArrows", "count": 1}},
+        {"magic": {"type": "Rod", "count": 1}},
+        {"magic": {"type": "RedCane", "count": 1}},
+        {"magic": {"type": "BlueCane", "count": 20}}
+      ]}
+    ]
+  },
+  {
+    "name": "h_rangeBlueOrangeSwitch",
+    "requires": [
+      {"or": [
+        "Boomerang",
+        {"ammo": {"type": "Bombs", "count": 1}},
+        {"ammo": {"type": "Arrows", "count": 1}},
+        {"ammo": {"type": "SilverArrows", "count": 1}},
+        {"magic": {"type": "Rod", "count": 1}},
+        {"magic": {"type": "RedCane", "count": 1}}
+      ]}
+    ],
+    "note": ["This is specifically for shooting a switch from behind a set of blue/orange pegs."]
   }
 ]
