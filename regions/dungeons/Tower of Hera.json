@@ -13,65 +13,63 @@
     {
       "id": 2,
       "name": "Bottom Left 1F-2F Staircase",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 3,
       "name": "Top Left 1F-2F Staircase",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 4,
       "name": "Chest with Big Key",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 5,
       "name": "Bottom Right 2F-3F Staircase",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 6,
       "name": "Bottom Left 3F",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 7,
       "name": "Top Right 3F-4F Staircase",
-      "area": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "nodeType": "junction"
     },
     {
       "id": 8,
       "name": "Top Left 4F-5F Staircase",
-      "area": "Tower of Hera (Upper)",
-      "nodeType": "junction"
+      "subArea": "Tower of Hera (Upper)",
+      "nodeType": "junction",
+      "devNote": ["FIXME: Add Hera Pot Clip glitch"]
     },
     {
       "id": 9,
       "name": "Big Chest, 5F Fall Pit",
-      "area": "Tower of Hera (Upper)",
+      "subArea": "Tower of Hera (Upper)",
       "nodeType": "junction"
     },
-
-
-
     {
-      "id": 2,
-      "name": "Tower of Hera Big Key Door",
-      "area": "Tower of Hera (Bottom)",
-      "nodeType": "door"
+      "id": 10,
+      "name": "Top Right 5F-6F Staircase",
+      "subArea": "Tower of Hera (Upper)",
+      "nodeType": "junction"
     },
     {
-      "id": 3,
-      "name": "Tower of Hera Exit",
-      "area": "Tower of Hera (Bottom)",
-      "nodeType": "door"
+      "id": 11,
+      "name": "Moldorm Boss",
+      "subArea": "Tower of Hera (Upper)",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -119,7 +117,7 @@
       "id": 6,
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Moldorm - Boss Drop",
-      "itemLocation": 10,?
+      "itemLocation": 11,
       "item": "HeartContainer",
       "itemAddress": "0x180152"
     },
@@ -127,7 +125,7 @@
       "id": 7,
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Dungeon Prize",
-      "itemLocation": 10,?
+      "itemLocation": 11,
       "item": "PendantOfPower",
       "itemAddress": [
         "0x120A5",
@@ -155,7 +153,7 @@
       "doorPosition": "north",
       "doorLocation": 6,
       "keyType": "big"
-    },
+    }
   ],
   "strats": [
     {
@@ -228,7 +226,7 @@
           {"and": [
             {"combatProficiency": 2},
             "Hammer"
-          ]}
+          ]},
           {"and": [
             {"combatProficiency": 2},
             {"ammo": {"type": "SilverArrows", "count": 1}}
@@ -274,7 +272,18 @@
       "requires": []
     },
     {
+      "link": [8, 8],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
       "link": [8, 9],
+      "name": "Base - Fall Into Pit",
+      "requires": []
+    },
+    {
+      "link": [8, 10],
       "name": "Base",
       "requires": []
     },
@@ -289,31 +298,32 @@
       "name": "Base - Big Chest",
       "requires": [
         "BigKey"
-      ]
+      ],
+      "collectsItems": [5]
     },
-
-
-
-
-
     {
-      "link": [9, 9],
+      "link": [10, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 11],
       "name": "Moldorm - Sword",
       "requires": [
         "L1Sword"
       ],
       "setsFlags": ["f_DefeatedMoldorm"],
-      "collectsItems": [9, 10],
+      "collectsItems": [6, 7],
       "devNote": ["This is simplified because of the pots filled with hearts below."]
     },
     {
-      "link": [9, 9],
+      "link": [11, 11],
       "name": "Moldorm - Hammer",
       "requires": [
         "Hammer"
       ],
       "setsFlags": ["f_DefeatedMoldorm"],
-      "collectsItems": [9, 10],
+      "collectsItems": [6, 7],
       "devNote": [
         "This is simplified because of the pots filled with hearts below.",
         "Surprisingly, this is not really harder than with a sword, because it only takes three hits and never speeds up fully."
