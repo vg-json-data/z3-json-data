@@ -45,7 +45,138 @@
   ],
   "strats": [
     {
-      "id": 1,
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"and": [
+          "L1Sword",
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 8}},
+          {"magic": {"type": "FireRod", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"magic": {"type": "RedCane", "count": 4}},
+          {"magic": {"type": "BlueCane", "count": 60}}
+        ]},
+        {"or": [
+          {"combatProficiency": 2},
+          {"magic": {"type": "BlueCane", "count": 16}},
+          {"enemyDamage": {"enemy": "Ball and Chain Trooper", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          "hasSwordSparkles",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill (Stun)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          "Boomerang"
+        ]},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"magic": {"type": "RedCane", "count": 2}}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 32}},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 4}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"and": [
+            {"magic": {"type": "RedCane", "count": 2}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 3}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 4}},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "RedCane", "count": 2}},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Bomb Doorway Kill",
+      "requires": [
+        {"combatProficiency": 3},
+        {"ammo": {"type": "Bombs", "count": 2}}
+      ],
+      "note": [
+        "Quickly place a bomb a bit away from the doorway, wait a second then place another and retreat to the safety of the doorway.",
+        "With a proper setup, the soldiers will not be able to reach Link and the second bomb will explode just after the soldiers lose their i-frames."
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Dodge",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    }
+
+
+
+
+
+    {
       "link": [5, 5],
       "name": "Agahnim 1",
       "requires": [
@@ -60,7 +191,7 @@
         "hasLightCone",
         "KeyA1:2"
       ],
-      "yields": ["DefeatAgahnim1"]
+      "yields": ["f_DefeatedAgahnim1"]
     }
   ]
 }
