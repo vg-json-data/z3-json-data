@@ -6,37 +6,132 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Agahnim 1",
-      "area": "Agahnims Tower",
-      "nodeType": "door"
+      "name": "Main Entrance",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "door",
+      "note": "Note that this dungeon's entrance is on floor 2F"
     },
     {
       "id": 2,
-      "name": "Agahnims Tower Exit",
-      "area": "Agahnims Tower",
-      "nodeType": "door"
+      "name": "Room 03",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
     },
     {
       "id": 3,
-      "name": "Castle Tower - Room 03",
-      "area": "Agahnims Tower",
-      "nodeType": "item",
-      "nodeItem": "KeyA1",
-      "nodeAddress": "0xEAB5"
+      "name": "Top Right 2F-3F Staircase",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
     },
     {
       "id": 4,
-      "name": "Castle Tower - Dark Maze",
-      "area": "Agahnims Tower",
-      "nodeType": "item",
-      "nodeItem": "KeyA1",
-      "nodeAddress": "0xEAB2"
+      "name": "End of Dark Maze",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Bottom Right 3F-4F Staircase",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "End of Dark Bridge Pit Room",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Top Right 4F-5F Staircase",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Guarded Pot Room",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Bottom Right 5F-6F Staircase",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
     },
     {
       "id": 10,
       "name": "Agahnim 1",
-      "area": "Agahnims Tower",
+      "subArea": "Agahnim's Tower (Upper)",
       "nodeType": "event"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Agahnim's Tower (Lower)",
+      "locationName": "Room 03 Chest",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0xEAB5"
+    },
+    {
+      "id": 2,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Maze Chest",
+      "itemLocation": 3,
+      "item": "SmallKey",
+      "itemAddress": "0xEAB2"
+    },
+    {
+      "id": 3,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Guard Key",
+      "itemLocation": 6,
+      "item": "SmallKey",
+      "nodeAddress": "unknown"
+    },
+    {
+      "id": 4,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Guarded Pot Room Key",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "nodeAddress": "unknown"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Top Right 2F-3F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Maze Room Lower Door",
+      "doorPosition": "east",
+      "doorLocation": 4,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Top Right 4F-5F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Guarded Pot Room",
+      "doorPosition": "east",
+      "doorLocation": 8,
+      "keyType": "small"
     }
   ],
   "strats": [
