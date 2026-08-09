@@ -164,11 +164,170 @@
         {"or": [
           {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
           {"and": [
-            {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+            {"or": [
+              "Boomerang",
+              "Hookshot",
+              {"combatProficiency": 2}
+            ]}
           ]},
           {"combatProficiency": 3}
         ]}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Sword, Fire Rod",
+      "requires": [
+        {"unlockDoor": 1},
+        "L1Sword",
+        {"magic": {"type": "FireRod", "count": 1}},
+        {"darkProficiency": 2},
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 3}
+          ]},
+          "hasSwordSparkles"
+        ]}
+      ],
+      "collectsItems": [2],
+      "note": [
+        "When entering the first room, charge up a spin attack multiple times until the first guard is dead.",
+        "In the second room, walk south a couple tiles then shoot fire rod to the left."
+      ],
+      "devNote": [
+        "An unlucky positioning of the soldier in the Dark Maze Room may waste the Fire Rod shot.",
+        "FIXME: Could be done swordless with tanking or another weapon."
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Tank the Damage",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 6}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 4}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Sword and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        "L1Sword"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Strong Weapon and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+        ]},
+        {"or": [
+          "Boomerang",
+          {"and": [
+            {"or": [
+              "Hammer",
+              "Hookshot"
+            ]},
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 1}},
+            {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"ammo": {"type": "Arrows", "count": 3}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              "Hammer",
+              "Hookshot",
+              {"ammo": {"type": "Arrows", "count": 2}},
+              {"ammo": {"type": "SilverArrows", "count": 1}},
+              {"magic": {"type": "Rod", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Alternate Weapon and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 32}}
+        ]}
+      ],
+      "collectsItems": [2],
+      "devNote": ["Bombs do help, but not enough to make it down to a combatProficiency of 2."]
+    },
+    {
+      "link": [3, 4],
+      "name": "Damageless Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"combatProficiency": 3}
+      ],
+      "collectsItems": [2],
+      "note": [
+        "The only easy to reach pot is the top left; it is recommended to use it to kill the north soldier to free up a second pot.",
+        "Then use the north pot to kill the bottom right soldier or to kill a Chasupa (bat) and then use the top right pot to do so.",
+        "This soldier guards two pots, which makes the remaining kills significantly more flexible."
+      ]
+    },
+    {
+      "link": [3, 7],
+      "name": "Sword, Fire Rod",
+      "requires": [
+        {"unlockDoor": 2},
+        "L1Sword",
+        {"magic": {"type": "FireRod", "count": 2}},
+        {"darkProficiency": 2},
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 3}},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 3},
+            {"magic": {"type": "FireRod", "count": 1}}
+          ]},
+          "hasSwordSparkles"
+        ]}
+      ],
+      "collectsItems": [3],
+      "note": [
+        "When entering the first room, charge up a spin attack multiple times until the first guard is dead.",
+        "In the second room, walk south a couple tiles then shoot fire rod to the left."
+      ],
+      "devNote": [
+        "An unlucky positioning of the soldier in the Dark Maze Room may waste the Fire Rod shot."
       ]
     }
 
