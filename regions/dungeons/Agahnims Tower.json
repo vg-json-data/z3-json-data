@@ -303,6 +303,7 @@
       "link": [3, 7],
       "name": "Sword, Fire Rod",
       "requires": [
+        {"unlockDoor": 1},
         {"unlockDoor": 2},
         "L1Sword",
         {"magic": {"type": "FireRod", "count": 2}},
@@ -329,7 +330,83 @@
       "devNote": [
         "An unlucky positioning of the soldier in the Dark Maze Room may waste the Fire Rod shot."
       ]
-    }
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2},
+        "Lamp",
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword"
+      ],
+      "devNote": ["FIXME: Node 5 and higher assume a sword, because it is needed for the curtains."]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"and": [
+            "L2Sword",
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3},
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 2}},
+          {"and": [
+            "Shield",
+            {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}}
+          ]},
+          "L3Sword",
+          "Boomerang",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4},
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
 
 
 
