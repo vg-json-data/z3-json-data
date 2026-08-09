@@ -8,21 +8,18 @@
       "id": 1,
       "name": "Agahnim 1",
       "area": "Agahnims Tower",
-      "requires": [ "hasLightCone" ],
       "nodeType": "door"
     },
     {
       "id": 2,
       "name": "Agahnims Tower Exit",
       "area": "Agahnims Tower",
-      "requires": [ "hasLightCone" ],
       "nodeType": "door"
     },
     {
       "id": 3,
       "name": "Castle Tower - Room 03",
       "area": "Agahnims Tower",
-      "requires": [ "hasLightCone" ],
       "nodeType": "item",
       "nodeItem": "KeyA1",
       "nodeAddress": "0xEAB5"
@@ -31,13 +28,12 @@
       "id": 4,
       "name": "Castle Tower - Dark Maze",
       "area": "Agahnims Tower",
-      "requires": [ "hasLightCone" ],
       "nodeType": "item",
       "nodeItem": "KeyA1",
       "nodeAddress": "0xEAB2"
     },
     {
-      "id": 5,
+      "id": 10,
       "name": "Agahnim 1",
       "area": "Agahnims Tower",
       "nodeType": "event"
@@ -407,27 +403,36 @@
         ]}
       ]
     },
-
-
-
-
-
     {
-      "link": [5, 5],
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "hits": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 10],
       "name": "Agahnim 1",
       "requires": [
-        {"and": [
-          "swords.swordless",
-          {"or": [
-            "Hammer",
-            "BugCatchingNet"
-          ]}
-        ]},
-        "canSlashCurtains",
-        "hasLightCone",
-        "KeyA1:2"
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Fireball", "hits": 2}},
+          {"combatProficiency": 2}
+        ]}
       ],
-      "yields": ["f_DefeatedAgahnim1"]
+      "yields": ["f_DefeatedAgahnim1"],
+      "devNote": [
+        "FIXME: Swordless variants here and throughout the top half of the dungeon should be added",
+        "if the sword requirement is removed from the curtains."
+      ]
     }
   ]
 }
