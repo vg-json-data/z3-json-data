@@ -293,7 +293,7 @@
         0
       ],
       "spriteIndex": 11,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -388,7 +388,7 @@
       ],
       "spriteIndex": 15,
       "spawnsSprite": 16,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -419,7 +419,7 @@
         32
       ],
       "spriteIndex": 16,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -455,6 +455,9 @@
     {
       "names": [
         "Moblin"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -543,7 +546,7 @@
         250
       ],
       "spriteIndex": 23,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -574,7 +577,7 @@
         250
       ],
       "spriteIndex": 62,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -855,7 +858,7 @@
         250
       ],
       "spriteIndex": 39,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -1017,11 +1020,14 @@
         250
       ],
       "spriteIndex": 69,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
         "Bow Soldier (Blue)"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 6,
       "dmgToLink": [
@@ -1053,6 +1059,9 @@
     {
       "names": [
         "Bow Soldier (Green, Grass)"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1462,7 +1471,7 @@
         0
       ],
       "spriteIndex": 97,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -1720,7 +1729,7 @@
         255
       ],
       "spriteIndex": 111,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -1815,7 +1824,7 @@
         32
       ],
       "spriteIndex": 121,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2174,7 +2183,7 @@
         64
       ],
       "spriteIndex": 144,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2239,7 +2248,7 @@
         255
       ],
       "spriteIndex": 148,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2336,7 +2345,7 @@
         64
       ],
       "spriteIndex": 156,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2367,7 +2376,7 @@
         64
       ],
       "spriteIndex": 157,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2398,7 +2407,7 @@
         0
       ],
       "spriteIndex": 161,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2621,7 +2630,7 @@
         32
       ],
       "spriteIndex": 178,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2652,7 +2661,7 @@
         0
       ],
       "spriteIndex": 195,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [
@@ -2776,7 +2785,7 @@
         32
       ],
       "spriteIndex": 207,
-      "prizePack": "none"
+      "prizePack": null
     },
     {
       "names": [

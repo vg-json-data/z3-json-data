@@ -1,8 +1,7 @@
 {
   "$schema": "../../schema/z3-enemies.schema.json",
-  "enemies": [
+  "bosses": [
     {
-      "spriteIndex": 83,
       "names": [
         "Armos Knight"
       ],
@@ -29,14 +28,16 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 83
     },
     {
-      "spriteIndex": 84,
       "names": [
         "Lanmolas"
       ],
-      "note": ["Also uses attack Lanmolas' Rocks"],
+      "attacks": [
+        "Lanmolas' Rocks"
+      ],
       "hp": 16,
       "dmgToLink": [
         8,
@@ -60,10 +61,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 84
     },
     {
-      "spriteIndex": 9,
       "names": [
         "Moldorm"
       ],
@@ -80,17 +81,18 @@
         4,
         8,
         8,
-        4,
-        255,
-        4,
-        100,
         0,
-        8,
-        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 9
     },
     {
       "spriteIndex": 122,
@@ -121,7 +123,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 146,
@@ -155,7 +158,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 140,
@@ -186,7 +190,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 141,
@@ -216,7 +221,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 136,
@@ -247,7 +253,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 206,
@@ -282,7 +289,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 162,
@@ -316,7 +324,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 163,
@@ -346,7 +355,8 @@
         64,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 189,
@@ -380,7 +390,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 190,
@@ -410,7 +421,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 203,
@@ -444,7 +456,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 204,
@@ -478,7 +491,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 205,
@@ -512,7 +526,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 214,
@@ -542,7 +557,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     },
     {
       "spriteIndex": 215,
@@ -572,7 +588,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 
     }
   ]
 }

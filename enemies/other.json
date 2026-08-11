@@ -2,40 +2,13 @@
   "$schema": "../../schema/z3-enemies.schema.json",
   "enemies": [
     {
-      "spriteIndex": 12,
-      "names": ["Octorok's Rock"],
-      "note": ["This is also created by a Slarok"],
-      "hp": 0,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        8,
-        8,
-        16,
-        16,
-        32
-      ]
-    },
-    {
-      "spriteIndex": 21,
       "names": [
         "Bubble"
       ],
-      "note": ["Often named Anti-Fairy"],
+      "note": [
+        "Often named Anti-Fairy",
+        "Also take 8 magic points per hit, regardless of tunic, with reduced i-frames."
+      ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -59,7 +32,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 21,
+      "prizePack": null
     },
     {
       "spriteIndex": 119,
@@ -90,7 +65,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 130,
@@ -121,104 +98,61 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
+    }
+  ],
+  "inanimate": [
+    {
+      "names": ["Octorok's Rock"],
+      "note": ["This is also created by a Slarok"],
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "spriteIndex": 12
     },
     {
-      "spriteIndex": 27,
       "names": [
+        "Moblin Spear",
         "Archer Arrow"
       ],
-      "note": ["This also includes the thrown Moblin Spear"],
-      "hp": 0,
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        32,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        24,
-        0,
-        64,
-        64,
-        64,
-        16,
-        64
-      ]
+      "spriteIndex": 27
     },
     {
-      "spriteIndex": 80,
       "names": [
-        "Ball"
+        "Ball",
+        "Gargantuan Ball"
       ],
-      "note": ["The larger variant named Gargantuan Ball shares the same entry"],
-      "hp": 255,
+      "note": ["Spawned from a hole in the wall"],
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 80
     },
     {
-      "spriteIndex": 227,
       "names": [
         "Fireball"
       ],
       "note": [
         "The small red fireball shot by: Zora, Ku, Devalant, Medusa, Yomo Medusa, Blind and a few burning torches",
-        "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart.",
-        "FIXME: This was split off from entry 85. It is unknown if the game treats them as the same enemy"
+        "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart."
       ],
-      "hp": 8,
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        4,
-        100,
-        0,
-        253,
-        8,
-        253,
-        64,
-        32
-      ]
+      "spriteIndex": 85
     },
     {
       "spriteIndex": 228,
@@ -252,7 +186,9 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 91,
@@ -283,7 +219,9 @@
         253,
         0,
         255
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 93,
@@ -314,7 +252,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 99,
@@ -349,7 +289,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 108,
@@ -383,7 +325,9 @@
         16,
         254,
         32
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 125,
@@ -413,7 +357,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 126,
@@ -447,7 +393,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 128,
@@ -478,7 +426,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 135,
@@ -508,7 +458,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 223,
@@ -539,7 +491,9 @@
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 149,
@@ -570,7 +524,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 154,
@@ -601,7 +557,9 @@
         64,
         254,
         32
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 194,
@@ -632,7 +590,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 202,
@@ -662,7 +622,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 212,
@@ -692,7 +654,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 64,
@@ -726,7 +690,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 209,
@@ -756,7 +722,9 @@
         64,
         64,
         64
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 123,
@@ -787,7 +755,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 112,
@@ -817,7 +787,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 137,
@@ -847,7 +819,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 138,
@@ -877,7 +851,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 164,
@@ -907,7 +883,9 @@
         16,
         16,
         32
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 191,
@@ -938,7 +916,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     },
     {
       "spriteIndex": 224,
@@ -969,7 +949,9 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": ,
+      "prizePack": 
     }
   ]
 }
