@@ -133,7 +133,9 @@
       "names": [
         "Octorok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 2,
       "dmgToLink": [
         8,
@@ -165,7 +167,9 @@
       "names": [
         "Slarok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -197,7 +201,9 @@
       "names": [
         "4-way Octorok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 2,
       "dmgToLink": [
         8,
@@ -229,7 +235,9 @@
       "names": [
         "4-way Slarok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -885,7 +893,6 @@
       "prizePack": 0
     },
     {
-      "spriteIndex": 66,
       "names": [
         "Sword Soldier (Green)"
       ],
@@ -913,15 +920,15 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 66,
+      "prizePack": 0
     },
     {
-      "spriteIndex": 67,
       "names": [
-        "Spear Soldier (Red)"
+        "Spear Soldier (Red)",
+        "Taros (Red)"
       ],
-      "note": ["The dark-world counterpart named Taros (Red) shares the same entry"],
+      "note": ["Identical to enemy 69."],
       "hp": 8,
       "dmgToLink": [
         8,
@@ -946,11 +953,11 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 67,
+      "additionalSpriteIndex": [69],
+      "prizePack": 0
     },
     {
-      "spriteIndex": 68,
       "names": [
         "Super Sword Soldier (Blue)"
       ],
@@ -978,19 +985,17 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 68,
+      "prizePack": 6
     },
     {
-      "spriteIndex": 69,
       "names": [
         "Spear Soldier (Green)"
       ],
       "note": [
-        "These are summoned by citizens of Kakariko Village.",
-        "FIXME: Looks like there were some errors with this entry and the values are incorrect."
+        "These are summoned by citizens of Kakariko Village."
       ],
-      "hp": 8,
+      "hp": 4,
       "dmgToLink": [
         8,
         4,
@@ -1014,11 +1019,10 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 69,
+      "prizePack": "none"
     },
     {
-      "spriteIndex": 70,
       "names": [
         "Bow Soldier (Blue)"
       ],
@@ -1046,13 +1050,12 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 70,
+      "prizePack": 4
     },
     {
-      "spriteIndex": 71,
       "names": [
-        "Bow Soldier (Green)"
+        "Bow Soldier (Green, Grass)"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1078,11 +1081,10 @@
         64,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 71,
+      "prizePack": 4
     },
     {
-      "spriteIndex": 72,
       "names": [
         "Super Spear Soldier (Red)"
       ],
@@ -1110,13 +1112,12 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 72,
+      "prizePack": 2
     },
     {
-      "spriteIndex": 73,
       "names": [
-        "Spear Soldier (Red)"
+        "Spear Soldier (Red, Grass)"
       ],
       "hp": 8,
       "dmgToLink": [
@@ -1142,11 +1143,10 @@
         64,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 73,
+      "prizePack": 6
     },
     {
-      "spriteIndex": 74,
       "names": [
         "Bomb Soldier (Red)"
       ],
@@ -1174,13 +1174,12 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 74,
+      "prizePack": 3
     },
     {
-      "spriteIndex": 75,
       "names": [
-        "Soldier (Green)"
+        "Dagger Soldier (Green)"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1206,11 +1205,10 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 75,
+      "prizePack": 0
     },
     {
-      "spriteIndex": 76,
       "names": [
         "Geldman"
       ],
@@ -1238,14 +1236,14 @@
         16,
         255
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 76,
+      "prizePack": 1
     },
     {
-      "spriteIndex": 77,
       "names": [
         "Toppo"
       ],
+      "note": ["Removing the grass and stranding it lets it talk to you, giving an item from Prize Pack 6."],
       "hp": 2,
       "dmgToLink": [
         4,
@@ -1270,75 +1268,42 @@
         64,
         255
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 77,
+      "prizePack": 0
     },
     {
+      "names": [
+        "Popo"
+      ],
+      "hp": 2,
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "dmgFromLink": [
+        255,
+        2,
+        4,
+        8,
+        16,
+        16,
+        4,
+        64,
+        4,
+        100,
+        250,
+        253,
+        254,
+        253,
+        254,
+        250
+      ],
       "spriteIndex": 78,
-      "names": [
-        "Popo (Fast)"
-      ],
-      "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        250,
-        253,
-        254,
-        253,
-        254,
-        250
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "additionalSpriteIndex": [79],
+      "prizePack": 1
     },
     {
-      "spriteIndex": 79,
-      "names": [
-        "Popo (Slow)"
-      ],
-      "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        250,
-        253,
-        254,
-        253,
-        254,
-        250
-      ],
-      "spriteIndex": ,
-      "prizePack": 
-    },
-    {
-      "spriteIndex": 81,
       "names": [
         "Armos"
       ],
@@ -1366,15 +1331,18 @@
         16,
         255
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 81,
+      "prizePack": 4
     },
     {
-      "spriteIndex": 85,
       "names": [
-        "Fireball Zora"
+        "Fireball Zora",
+        "Ku"
       ],
-      "note": ["The dark world counterpart named Ku shares the same entry"],
+      "attacks": [
+        "Fireball"
+      ],
+      "note": ["Many Fireball projectiles share the same entry."],
       "hp": 8,
       "dmgToLink": [
         4,
@@ -1399,11 +1367,10 @@
         64,
         32
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 85,
+      "prizePack": 3
     },
     {
-      "spriteIndex": 86,
       "names": [
         "Zora (Walking)"
       ],
@@ -1431,11 +1398,10 @@
         64,
         32
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 86,
+      "prizePack": 3
     },
     {
-      "spriteIndex": 88,
       "names": [
         "Sand Crab"
       ],
@@ -1463,18 +1429,17 @@
         254,
         250
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 88,
+      "prizePack": 0
     },
     {
-      "spriteIndex": 97,
       "names": [
         "Beamos"
       ],
-      "note": [
-        "This was originally sharing the same enemy as the Beamos Laser Beam, but they were split off.",
-        "It is unclear if they are actually the same enemy."
+      "attacks": [
+        "Beamos Laser Beam"
       ],
+      "note": ["The Beamos Laser Beam shares the same entry."],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -1499,8 +1464,8 @@
         0,
         0
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 97,
+      "prizePack": "none"
     },
     {
       "spriteIndex": 100,
