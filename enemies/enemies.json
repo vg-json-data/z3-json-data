@@ -946,11 +946,12 @@
     {
       "id": 69,
       "names": [
-        "Spear Soldier (Green)"
+        "Spear Soldier (Red) 2"
       ],
       "note": [
-        "These are summoned by citizens of Kakariko Village.",
-        "FIXME: Looks like there were some errors with this entry and the values are incorrect."
+        "This is the same as enemy 67.",
+        "The dark-world counterpart named Taros (Red) shares the same entry",
+        "The Spear Soldier (Green) summoned by citizens of Kakariko Village also uses this, but overrides it's hp to 4."
       ],
       "hp": 8,
       "dmgToLink": [
@@ -1070,7 +1071,7 @@
     {
       "id": 73,
       "names": [
-        "Spear Soldier (Red)"
+        "Spear Soldier (Red, Grass)"
       ],
       "hp": 8,
       "dmgToLink": [
