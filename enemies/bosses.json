@@ -2,7 +2,7 @@
   "$schema": "../../schema/z3-enemies.schema.json",
   "enemies": [
     {
-      "id": 83,
+      "spriteIndex": 83,
       "names": [
         "Armos Knight"
       ],
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 84,
+      "spriteIndex": 84,
       "names": [
         "Lanmolas"
       ],
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "id": 9,
+      "spriteIndex": 9,
       "names": [
         "Moldorm"
       ],
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "id": 122,
+      "spriteIndex": 122,
       "names": [
         "Agahnim"
       ],
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "id": 146,
+      "spriteIndex": 146,
       "names": [
         "Helmasaur King"
       ],
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "id": 140,
+      "spriteIndex": 140,
       "names": [
         "Arrghus"
       ],
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "id": 141,
+      "spriteIndex": 141,
       "names": [
         "Arrghus Fuzz"
       ],
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "id": 136,
+      "spriteIndex": 136,
       "names": [
         "Mothula"
       ],
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": 206,
+      "spriteIndex": 206,
       "names": [
         "Blind"
       ],
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": 162,
+      "spriteIndex": 162,
       "names": [
         "Kholdstare"
       ],
@@ -319,7 +319,7 @@
       ]
     },
     {
-      "id": 163,
+      "spriteIndex": 163,
       "names": [
         "Kholdstare's Shell"
       ],
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": 189,
+      "spriteIndex": 189,
       "names": [
         "Vitreous"
       ],
@@ -383,7 +383,7 @@
       ]
     },
     {
-      "id": 190,
+      "spriteIndex": 190,
       "names": [
         "Vitreous (Small Eye)"
       ],
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "id": 203,
+      "spriteIndex": 203,
       "names": [
         "Trinexx (Body)"
       ],
@@ -447,7 +447,7 @@
       ]
     },
     {
-      "id": 204,
+      "spriteIndex": 204,
       "names": [
         "Trinexx (Red Head)"
       ],
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "id": 205,
+      "spriteIndex": 205,
       "names": [
         "Trinexx (Blue Head)"
       ],
@@ -515,7 +515,7 @@
       ]
     },
     {
-      "id": 214,
+      "spriteIndex": 214,
       "names": [
         "Ganon"
       ],
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "id": 215,
+      "spriteIndex": 215,
       "names": [
         "Stunned Ganon"
       ],

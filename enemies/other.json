@@ -2,7 +2,7 @@
   "$schema": "../../schema/z3-enemies.schema.json",
   "enemies": [
     {
-      "id": 12,
+      "spriteIndex": 12,
       "names": ["Octorok's Rock"],
       "note": ["This is also created by a Slarok"],
       "hp": 0,
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": 21,
+      "spriteIndex": 21,
       "names": [
         "Bubble"
       ],
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": 119,
+      "spriteIndex": 119,
       "names": [
         "Invincible Bubble"
       ],
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "id": 130,
+      "spriteIndex": 130,
       "names": [
         "Bubble Cluster"
       ],
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "id": 27,
+      "spriteIndex": 27,
       "names": [
         "Archer Arrow"
       ],
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": 80,
+      "spriteIndex": 80,
       "names": [
         "Ball"
       ],
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": 227,
+      "spriteIndex": 227,
       "names": [
         "Fireball"
       ],
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "id": 228,
+      "spriteIndex": 228,
       "names": [
         "Spitting Fireball"
       ],
@@ -255,7 +255,7 @@
       ]
     },
     {
-      "id": 91,
+      "spriteIndex": 91,
       "names": [
         "Spark"
       ],
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "id": 93,
+      "spriteIndex": 93,
       "names": [
         "Rolling Spike Trap"
       ],
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "id": 99,
+      "spriteIndex": 99,
       "names": [
         "Beamos Laser Beam"
       ],
@@ -352,7 +352,7 @@
       ]
     },
     {
-      "id": 108,
+      "spriteIndex": 108,
       "names": [
         "Wall Turret Cannon Ball"
       ],
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "id": 125,
+      "spriteIndex": 125,
       "names": [
         "Spike Trap (Big & Yellow)"
       ],
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "id": 126,
+      "spriteIndex": 126,
       "names": [
         "Guruguru Bar"
       ],
@@ -450,7 +450,7 @@
       ]
     },
     {
-      "id": 128,
+      "spriteIndex": 128,
       "names": [
         "Winder"
       ],
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "id": 135,
+      "spriteIndex": 135,
       "names": [
         "Kodongo Fireball"
       ],
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "id": 223,
+      "spriteIndex": 223,
       "names": [
         "Flying Tile"
       ],
@@ -542,7 +542,7 @@
       ]
     },
     {
-      "id": 149,
+      "spriteIndex": 149,
       "names": [
         "Laser Eye"
       ],
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "id": 154,
+      "spriteIndex": 154,
       "names": [
         "Kyameron"
       ],
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "id": 194,
+      "spriteIndex": 194,
       "names": [
         "Boulder"
       ],
@@ -635,7 +635,7 @@
       ]
     },
     {
-      "id": 202,
+      "spriteIndex": 202,
       "names": [
         "Chain Chomp"
       ],
@@ -665,7 +665,7 @@
       ]
     },
     {
-      "id": 212,
+      "spriteIndex": 212,
       "names": [
         "Land Mine"
       ],
@@ -695,7 +695,7 @@
       ]
     },
     {
-      "id": 64,
+      "spriteIndex": 64,
       "names": [
         "Lightning Lock"
       ],
@@ -729,7 +729,7 @@
       ]
     },
     {
-      "id": 209,
+      "spriteIndex": 209,
       "names": [
         "Rabbit Beam"
       ],
@@ -759,7 +759,7 @@
       ]
     },
     {
-      "id": 123,
+      "spriteIndex": 123,
       "names": [
         "Agahnim's Tennis Ball"
       ],
@@ -790,7 +790,7 @@
       ]
     },
     {
-      "id": 112,
+      "spriteIndex": 112,
       "names": [
         "Helmasaur King's Fireball"
       ],
@@ -820,7 +820,7 @@
       ]
     },
     {
-      "id": 137,
+      "spriteIndex": 137,
       "names": [
         "Mothula's Loops"
       ],
@@ -850,7 +850,7 @@
       ]
     },
     {
-      "id": 138,
+      "spriteIndex": 138,
       "names": [
         "Spike Trap (Grey)"
       ],
@@ -880,7 +880,7 @@
       ]
     },
     {
-      "id": 164,
+      "spriteIndex": 164,
       "names": [
         "Kholdstare's Falling Ice"
       ],
@@ -910,7 +910,7 @@
       ]
     },
     {
-      "id": 191,
+      "spriteIndex": 191,
       "names": [
         "Lightning"
       ],
@@ -941,7 +941,7 @@
       ]
     },
     {
-      "id": 224,
+      "spriteIndex": 224,
       "names": [
         "Lanmolas' Rocks"
       ],
