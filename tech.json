@@ -1,6 +1,121 @@
-[
-  {
-    "name": "canDarkNav",
-    "requires": []
-  }
-]
+{
+  "$schema": "./schema/z3-tech.schema.json",
+  "techCategories": [
+    {
+      "name": "Tiered",
+      "description": "General configuration techs that have tiered proficiencies.",
+      "techs": [
+        {
+          "id": 1,
+          "name": "combatProficiency",
+          "tiers": [
+            {
+              "value": 1,
+              "note": [
+                "Ability to kill or dodge enemies with a similar level of precision as required in some of the later dungeons in the vanilla game.",
+                "This expects the ability to use weapons such as the bow or rods to deal damage, or even the Hammer or Bombs on slower enemies.",
+                "This also expects the ability to use the Hookshot or Boomerang to stun enemies."
+              ]
+            },
+            {
+              "value": 2,
+              "note": [
+                "Ability to kill or dodge enemies with precision while minimizing resouce usage.",
+                "This expects the ability to use alternate weapons such as the canes to kill enemies."
+              ]
+            },
+            {
+              "value": 3,
+              "note": [
+                "Expects refined and practiced movement to dodge enemies."
+              ]
+            },
+            {
+              "value": 4,
+              "note": [
+                "Expects high-precision dodging and full-room enemy manipulations to avoid damage."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "bossProficiency",
+          "tiers": [
+            {
+              "value": 1,
+              "note": [
+                "Ability to fight bosses with a similar level of difficulty as some of the later bosses in the vanilla game.",
+                "This expects the ability to use weapons such as the bow or rods on a variety of bosses."
+              ]
+            },
+            {
+              "value": 2,
+              "note": [
+                "Ability to fight bosses while efficiently dodging and dealing attacks with accuracy to avoid wasting resources.",
+                "This expects the ability to use alternate weapons such as the canes, Hammer, and Bombs on a variety of bosses."
+              ]
+            },
+            {
+              "value": 3,
+              "note": [
+                "Expects a refined and practiced boss fight with few or no hits taken or wasted ammo or magic."
+              ]
+            },
+            {
+              "value": 4,
+              "note": [
+                "Expects high-precision kills that only come with practicing bosses with unusual weapons."
+              ]
+            },
+            {
+              "value": 9,
+              "note": [
+                "Fights that should be theoretically possible but haven't been tested or precisely placed in the proper difficulty tier."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "darkProficiency",
+          "tiers": [
+            {
+              "value": 1,
+              "note": [
+                "Ability to traverse simple dark rooms without the Lamp.",
+                "Expects simple room traversal with plenty of enemy damage leniency.",
+                "This is typically only included for strats with a good movement indicator, like a sword, boomerang, etc."
+              ]
+            },
+            {
+              "value": 2,
+              "note": [
+                "Ability to traverse dark rooms without the Lamp.",
+                "Expects precise traversal of simple rooms or traversal of moderately difficult rooms with enemy damage leniency.",
+                "This also includes the ability to know where torches in a room are which can be lit with the Fire Rod.",
+                "Depending on the complexity of the room, this may expect traversal with creative movement indicators, like the Red Cane."
+              ]
+            },
+            {
+              "value": 3,
+              "note": [
+                "Expects the traversal of complex routes through dark rooms without the Lamp while minimizing enemy damage.",
+                "This also expects blindly killing enemies which can move but drop a required key.",
+                "It is important to know the layout of the room and where enemies will spawn,",
+                "where pots and chests are and scripted movements for how to get into position to pick them up,",
+                "and how to recover when an enemy unpredictably changes Link's positioning."
+              ]
+            },
+            {
+              "value": 4,
+              "note": [
+                "Expects fully scripted and practiced movement through many consecutive complex dark rooms in a row without the Lamp."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
