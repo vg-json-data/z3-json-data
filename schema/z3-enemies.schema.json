@@ -24,7 +24,7 @@
     "the vast majority of bosses have their tables overwritten in many ways, which can make those values not very meaningful.",
 
 
-    "special values:",
+    "weapons with special values:",
     "boomerang can have stun1second, stun4Seconds, stun10Seconds",
     "hookshot, bombs can have stun10Seconds",
     "magicPowder can have fairy, slime",
@@ -32,6 +32,15 @@
     "iceRod, ether can have freeze",
     "quake can have stun10Seconds, slime",
     "class1-5, arrows, silverArrows are always integers",
+
+    "special values:",
+    "stun1second the enemy is stunned for approximately 67 frames (1.1 seconds)",
+    "stun4Seconds the enemy is stunned for approximately 265 frames (4.4 seconds)",
+    "stun10Seconds the enemy is stunned for approximately 580 frames (9.7 seconds)",
+    "fairy: the enemy is replaced with a fairy",
+    "slime: the enemy is replaced with a 0-hp slime enemy spriteIndex 143",
+    "incinerate: the enemy dies to a moderately long fire animation",
+    "freeze: the enemy is frozen",
 
     "classes:",
     "boomerang is either color",
