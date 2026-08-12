@@ -21,6 +21,34 @@
 
     "many enemies override their values in their table, so even though the lightning lock to get into agahnim's tower shows it is vulnerable to a fighter sword spin attack,",
     "there is an override check that requires the master sword. these are not able to be represented in the current form, but it would be nice to at least include those kinds of notes maybe?",
-    "the vast majority of bosses have their tables overwritten in many ways, which can make those values not very meaningful."
+    "the vast majority of bosses have their tables overwritten in many ways, which can make those values not very meaningful.",
+
+
+    "special values:",
+    "boomerang can have stun1second, stun4Seconds, stun10Seconds",
+    "hookshot, bombs can have stun10Seconds",
+    "magicPowder can have fairy, slime",
+    "fireRod, bombos can have incinerate",
+    "iceRod, ether can have freeze",
+    "quake can have stun10Seconds, slime",
+    "class1-5, arrows, silverArrows are always integers",
+
+    "classes:",
+    "boomerang is either color",
+    "class 1 includes normal L1Sword hits, drawn L2Sword, sword sparkles, red cane, blue cane, bee, thrown purple or green bush",
+    "class 2 includes spin attack L1Sword, normal L2Sword, drawn L3Sword",
+    "class 3 includes spin attack L2Sword, normal L3Sword, drawn L4Sword, hammer, other thrown objects including frozen enemies and yellow bushes",
+    "class 4 includes spin attack L3Sword, normal L4Sword",
+    "class 4 includes spin attack L4Sword",
+
+    "prize packs (in just approximate details)",
+    "prize packs have a 50% nothing drop except pack 3, most packs have a common theme and approximately 6 of the 8 drops are of the same item",
+    "0: hearts",
+    "1: rupees (5-6 on average)",
+    "2: magic",
+    "3: bombs (100% drop rate)",
+    "4: arrows",
+    "5: variety low tier",
+    "6: variety high tier"
   ]
 }
