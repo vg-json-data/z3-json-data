@@ -4,7 +4,7 @@
     {
       "names": [
         "Cucco",
-        "Cucco skeleton"
+        "Cucco Skeleton"
       ],
       "hp": 255,
       "dmgToLink": {
@@ -166,9 +166,9 @@
         "silverArrows": 100,
         "magicPowder": 0,
         "fireRod": 64,
-        "iceRod": 254,
+        "iceRod": "freeze",
         "bombos": 64,
-        "ether": 254,
+        "ether": "freeze",
         "quake": 32
       },
       "spriteIndex": 154,
