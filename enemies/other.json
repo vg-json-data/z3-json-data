@@ -106,6 +106,107 @@
       "spriteIndex": 130,
       "spawnsSprite": 21,
       "prizePack": null
+    },
+    {
+      "names": [
+        "Kyameron"
+      ],
+      "note": [
+        "A respawning ball of water.",
+        "It is possible to make it stop respanwing by freezing then hammering it."
+      ],
+      "hp": 4,
+      "dmgToLink": [
+        8,
+        4,
+        2
+      ],
+      "dmgFromLink": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        16,
+        4,
+        64,
+        4,
+        100,
+        0,
+        64,
+        254,
+        64,
+        254,
+        32
+      ],
+      "spriteIndex": 154,
+      "prizePack": null
+    },
+    {
+      "names": [
+        "Rabbit Beam"
+      ],
+      "hp": 64,
+      "dmgToLink": [
+        0,
+        0,
+        0
+      ],
+      "dmgFromLink": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        249,
+        0,
+        0,
+        64,
+        64,
+        64
+      ],
+      "spriteIndex": 209,
+      "prizePack": null
+    },
+    {
+      "names": [
+        "Lightning Lock"
+      ],
+      "note": [
+        "The lock blocking Agahnim's Tower.",
+        "The dmgFromLink are not very accurate as they are overwritten. i.e. fighter sword spin attack and frozen enemies do not work, among others."
+      ],
+      "hp": 2,
+      "dmgToLink": [
+        2,
+        1,
+        1
+      ],
+      "dmgFromLink": [
+        0,
+        0,
+        4,
+        8,
+        16,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "spriteIndex": 64,
+      "prizePack": null
     }
   ],
   "invulnerable": [
@@ -162,40 +263,17 @@
       "spriteIndex": 85
     },
     {
-      "spriteIndex": 228,
       "names": [
         "Spitting Fireball"
       ],
-      "note": [
-        "This is also created by a Zazak (Red) and a Lynel",
-        "FIXME: This was split off from entry 165. It is unknown if the game treats them as the same enemy"
-      ],
-      "hp": 4,
+      "note": ["This is also created by a Zazak (Red) and a Lynel."],
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        64,
-        100,
-        0,
-        253,
-        254,
-        253,
-        254,
-        255
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 165,
+      "prizePack": null
     },
     {
       "names": [
@@ -222,77 +300,26 @@
       "additionalSpriteIndex": [94, 95, 96]
     },
     {
-      "spriteIndex": 99,
       "names": [
         "Beamos Laser Beam"
       ],
-      "note": [
-        "This was originally sharing the same enemy as the Beamos, but they were split off.",
-        "It is unclear if they are actually the same enemy.",
-        "The enemy that was originally id: 99 had no name and the same properties, so it was replaced."
-      ],
-      "hp": 255,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 97
     },
     {
-      "spriteIndex": 108,
       "names": [
         "Wall Turret Cannon Ball"
       ],
-      "note": [
-        "Also shares the same entry with Cannon Soldier (Blue) Cannon Ball, which does not appear in-game",
-        "FIXME: These values were split from Cannon Soldier (Blue), id: 107, and they do not appear to be accurate"
-      ],
-      "hp": 3,
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        4,
-        100,
-        0,
-        8,
-        8,
-        16,
-        254,
-        32
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 107
     },
     {
       "names": [
@@ -353,235 +380,49 @@
       "spriteIndex": 148
     },
     {
-      "spriteIndex": 149,
       "names": [
         "Laser Eye"
       ],
-      "note": ["This was originally split into four enemies, one moving each of the 4 directions"],
-      "hp": 255,
       "dmgToLink": [
         32,
         16,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 149,
+      "additionalSpriteIndex": [150, 151, 152]
     },
     {
-      "spriteIndex": 154,
       "names": [
-        "Kyameron"
+        "Falling Boulder"
       ],
-      "note": ["A respawning ball of water"],
-      "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        64,
-        254,
-        64,
-        254,
-        32
-      ],
-      "spriteIndex": ,
-      "prizePack": 
-    },
-    {
-      "spriteIndex": 194,
-      "names": [
-        "Boulder"
-      ],
-      "note": ["The boulders that fall down Death Mountain"],
-      "hp": 255,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 194
     },
     {
-      "spriteIndex": 202,
       "names": [
         "Chain Chomp"
       ],
-      "hp": 5,
       "dmgToLink": [
         32,
         24,
         16
       ],
-      "dmgFromLink": [
-        251,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 202
     },
     {
-      "spriteIndex": 212,
       "names": [
         "Land Mine"
       ],
-      "hp": 0,
       "dmgToLink": [
         8,
         4,
         2
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
-    },
-    {
-      "spriteIndex": 64,
-      "names": [
-        "Lightning Lock"
-      ],
-      "note": [
-        "The lock blocking Agahnim's Tower.",
-        "The dmgFromLink are not very accurate as they are overwritten. i.e. fighter sword spin attack and frozen enemies do not work, among others."
-      ],
-      "hp": 2,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        4,
-        8,
-        16,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
-    },
-    {
-      "spriteIndex": 209,
-      "names": [
-        "Rabbit Beam"
-      ],
-      "hp": 64,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        249,
-        0,
-        0,
-        64,
-        64,
-        64
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 212
     },
     {
       "names": [
@@ -642,102 +483,49 @@
       "spriteIndex": 138
     },
     {
-      "spriteIndex": 164,
       "names": [
         "Kholdstare's Falling Ice"
       ],
-      "hp": 8,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        0,
-        4,
-        100,
-        0,
-        253,
-        0,
-        16,
-        16,
-        32
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 164
     },
     {
-      "spriteIndex": 191,
       "names": [
         "Lightning"
       ],
-      "note": ["Used by Agahnim in the first battle and by Vitreous"],
-      "hp": 255,
+      "note": ["Used by Agahnim and by Vitreous."],
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 191
     },
     {
-      "spriteIndex": 224,
       "names": [
         "Lanmolas' Rocks"
       ],
-      "sharedID": 194,
-      "hp": 255,
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+      "spriteIndex": 194
+    },
+    {
+      "names": [
+        "Trinexx (Head)"
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "dmgToLink": [
+        32,
+        24,
+        16
+      ],
+      "spriteIndex": 203
     }
   ]
 }

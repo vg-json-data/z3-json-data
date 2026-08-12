@@ -131,14 +131,13 @@
       "spriteIndex": 122
     },
     {
-      "spriteIndex": 146,
       "names": [
         "Helmasaur King"
       ],
-      "note": [
-        "Not to be confused with a small Helmasaur",
-        "Also uses attack Helmasaur King's Fireball"
+      "attacks": [
+        "Helmasaur King's Fireball"
       ],
+      "note": ["Not to be confused with a small Helmasaur"],
       "hp": 48,
       "dmgToLink": [
         16,
@@ -154,7 +153,7 @@
         16,
         4,
         0,
-        4,
+        0,
         100,
         0,
         0,
@@ -163,10 +162,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 146
     },
     {
-      "spriteIndex": 140,
       "names": [
         "Arrghus"
       ],
@@ -195,10 +193,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 140
     },
     {
-      "spriteIndex": 141,
       "names": [
         "Arrghus Fuzz"
       ],
@@ -226,7 +223,7 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 141
     },
     {
       "names": [
@@ -263,16 +260,18 @@
       "spriteIndex": 136
     },
     {
-      "spriteIndex": 206,
       "names": [
         "Blind"
       ],
-      "note": [
-        "It is not immediately clear which attacks belong to this enemy.",
-        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
-        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball id: 227"
+      "attacks": [
+        "Fireball"
       ],
-      "hp": 90,
+      "note": [
+        "FIXME: It is not immediately clear which attacks belong to this enemy.",
+        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
+        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball"
+      ],
+      "hp": 9,
       "dmgToLink": [
         16,
         8,
@@ -280,11 +279,11 @@
       ],
       "dmgFromLink": [
         0,
-        2,
-        4,
-        8,
-        16,
-        16,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
         0,
         0,
@@ -296,17 +295,16 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 206
     },
     {
-      "spriteIndex": 162,
       "names": [
         "Kholdstare"
       ],
-      "note": [
-        "This is the main three enemies. The boss fight includes Kholdstare's Shell.",
-        "Also uses attack Kholdstare's Falling Ice"
+      "attacks": [
+        "Kholdstare's Falling Ice"
       ],
+      "note": ["This is the main three enemies. The boss fight includes Kholdstare's Shell."],
       "hp": 64,
       "dmgToLink": [
         32,
@@ -331,12 +329,14 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 162
     },
     {
-      "spriteIndex": 163,
       "names": [
         "Kholdstare's Shell"
+      ],
+      "attacks": [
+        "Kholdstare's Falling Ice"
       ],
       "hp": 64,
       "dmgToLink": [
@@ -362,17 +362,17 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 163,
+      "spawnsSprite": 162
     },
     {
-      "spriteIndex": 189,
       "names": [
         "Vitreous"
       ],
-      "note": [
-        "This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye).",
-        "Also uses attack Lightning"
+      "attacks": [
+        "Lightning"
       ],
+      "note": ["This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye)."],
       "hp": 128,
       "dmgToLink": [
         32,
@@ -397,10 +397,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 189
     },
     {
-      "spriteIndex": 190,
       "names": [
         "Vitreous (Small Eye)"
       ],
@@ -428,12 +427,14 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 190
     },
     {
-      "spriteIndex": 203,
       "names": [
         "Trinexx (Body)"
+      ],
+      "attacks": [
+        "Trinexx (Head)"
       ],
       "note": [
         "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
@@ -441,9 +442,9 @@
       ],
       "hp": 40,
       "dmgToLink": [
-        32,
-        24,
-        16
+        8,
+        8,
+        8
       ],
       "dmgFromLink": [
         0,
@@ -463,10 +464,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 203
     },
     {
-      "spriteIndex": 204,
       "names": [
         "Trinexx (Red Head)"
       ],
@@ -498,10 +498,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 204
     },
     {
-      "spriteIndex": 205,
       "names": [
         "Trinexx (Blue Head)"
       ],
@@ -533,10 +532,9 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 205
     },
     {
-      "spriteIndex": 214,
       "names": [
         "Ganon"
       ],
@@ -564,13 +562,13 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 214
     },
     {
-      "spriteIndex": 215,
       "names": [
         "Stunned Ganon"
       ],
+      "note": ["FIXME: needs a fixed number of silver arrow shots."],
       "hp": "",
       "dmgToLink": [
         64,
@@ -595,7 +593,7 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 215
     }
   ]
 }
