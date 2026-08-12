@@ -504,10 +504,10 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "hits": 2}},
+          {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "hits": 1}}
+            {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 1}}
           ]},
           {"combatProficiency": 3}
         ]}
@@ -519,7 +519,7 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Weak Fireball", "hits": 2}},
+          {"enemyDamage": {"enemy": "Agahnim", "attack": "Weak Fireball", "hits": 2}},
           {"combatProficiency": 2}
         ]}
       ],

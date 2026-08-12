@@ -196,22 +196,22 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 5}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 10}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 10}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 3}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 6}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 2}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]}
         ]}
       ],
@@ -227,35 +227,35 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 2}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 4}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 4}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 2}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 2}}
           ]},
           {"and": [
             "L4Sword",
             {"enemyDamage": {"enemy": "Kholdstare", "hits": 1}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             "L4Sword",
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             "L4Sword",
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 2}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 2}}
           ]},
           {"and": [
             "L4Sword",
@@ -273,12 +273,12 @@
         {"or": [
           {"and": [
             {"magic": {"type": "FireRod", "count": 14}},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 3}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 3}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 12}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Kholdstare's Falling Ice", "hits": 1}}
+            {"enemyDamage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "hits": 1}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 12}},
