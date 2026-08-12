@@ -176,7 +176,7 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Vitreous", "hits": 2}},
-            {"enemyDamage": {"enemy": "Lightning", "hits": 1}}
+            {"enemyDamage": {"enemy": "Vitreous", "attack": "Lightning", "hits": 1}}
           ]},
           {"and": [
             {"bossProficiency": 2},
@@ -186,7 +186,7 @@
           {"and": [
             "L3Sword",
             {"enemyDamage": {"enemy": "Vitreous", "hits": 1}},
-            {"enemyDamage": {"enemy": "Lightning", "hits": 1}}
+            {"enemyDamage": {"enemy": "Vitreous", "attack": "Lightning", "hits": 1}}
           ]},
           {"and": [
             "L3Sword",

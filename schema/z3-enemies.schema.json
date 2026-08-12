@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/miketrethewey/z3-json-data/master/schema/z3-enemies.schema.json",
+  "type": "object",
+  "title": "Link to the Past Tech schema",
+  "properties": {
+  },
+  "note": [
+    "Currently just some notes (sorry)",
+    "enemies are designed to be animate creatures with some sentience. bosses are bosses, and other is a mixture of invincible random things, unusual enemies and enemy attacks",
+    "enemyDamage lists the enemy name, and if there is no attack field, then it uses that enemy to hurt link, based on the mail color he has; 8 = 1 heart.",
+    "if there is an attack field, then instead the damage listed on the enemy with the name of the attack will be used.",
+    "the benefit of the attack field is for clarity: you can know which enemy hit you with the said attack, while also preventing mistakes: you can enforce that that enemy has that valid attack",
+    "this can be useful because many of the attacks have very generic names (Fireball, Weak Fireball, Spitting Fireball).",
+    "in the 'other' enemies file, in the section called 'attacks', these should never be allowed as the 'enemy' in 'enemyDamage'.",
+    "because attacks cant be called directly, some attacks that spawn from non-enemies need enemies added to the data. For example a Medusa can summon a Fireball.",
+    
+    "Many values in the tables are edited based on what is in the rom. The goal of this data is to show exactly how the game behaves from the player's perspective.",
+    "While it might be interesting that Spear Soldier (Green) is just Spear Soldier (Red) with an override on the hp, this is not the goal of the project.",
+    "similarly, listing tables that show enemies take x damage from y weapon is not important to this project if the enemy overrides it to prevent said damage.",
+
+    "many enemies override their values in their table, so even though the lightning lock to get into agahnim's tower shows it is vulnerable to a fighter sword spin attack,",
+    "there is an override check that requires the master sword. these are not able to be represented in the current form, but it would be nice to at least include those kinds of notes maybe?",
+    "the vast majority of bosses have their tables overwritten in many ways, which can make those values not very meaningful."
+  ]
+}

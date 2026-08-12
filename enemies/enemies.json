@@ -6,11 +6,11 @@
         "Crow"
       ],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -37,11 +37,11 @@
         "Dacto"
       ],
       "hp": 8,
-      "dmgToLink": [
-        24,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 24,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         1,
         2,
@@ -68,11 +68,11 @@
         "Vulture"
       ],
       "hp": 6,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         1,
         2,
@@ -100,11 +100,11 @@
       ],
       "note": "This comes from enemy 133, and is not the same as an already detached Floating Stalfos Head.",
       "hp": 255,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -134,11 +134,11 @@
         "Octorok's Rock"
       ],
       "hp": 2,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -168,11 +168,11 @@
         "Slarok's Rock"
       ],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -202,11 +202,11 @@
         "Octorok's Rock"
       ],
       "hp": 2,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -236,11 +236,11 @@
         "Slarok's Rock"
       ],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -267,11 +267,11 @@
         "Buzz Blob"
       ],
       "hp": 3,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -298,11 +298,11 @@
         "Snap Dragon"
       ],
       "hp": 12,
-      "dmgToLink": [
-        24,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 24,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         255,
         2,
@@ -329,11 +329,11 @@
         "Octoballoon"
       ],
       "hp": 2,
-      "dmgToLink": [
-        0,
-        0,
-        0
-      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
       "dmgFromLink": [
         1,
         2,
@@ -361,11 +361,11 @@
         "Octoballoon Spawn"
       ],
       "hp": 0,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -392,11 +392,11 @@
         "Hinox"
       ],
       "hp": 20,
-      "dmgToLink": [
-        24,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 24,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         252,
         2,
@@ -426,11 +426,11 @@
         "Archer Arrow"
       ],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -457,11 +457,11 @@
         "Helmasaur"
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -488,11 +488,11 @@
         "Hoarder (Bush)"
       ],
       "hp": 2,
-      "dmgToLink": [
-        0,
-        0,
-        0
-      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
       "dmgFromLink": [
         1,
         2,
@@ -519,11 +519,11 @@
         "Hoarder (Rock)"
       ],
       "hp": 2,
-      "dmgToLink": [
-        0,
-        0,
-        0
-      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
       "dmgFromLink": [
         1,
         2,
@@ -550,11 +550,11 @@
         "Mini-Moldorm"
       ],
       "hp": 3,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -582,11 +582,11 @@
         "Hue"
       ],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -613,11 +613,11 @@
         "Sluggula"
       ],
       "hp": 8,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         255,
         2,
@@ -644,11 +644,11 @@
         "Ropa"
       ],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -675,11 +675,11 @@
         "Bari (Red)"
       ],
       "hp": 2,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -707,11 +707,11 @@
         "Bari (Blue)"
       ],
       "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -738,11 +738,11 @@
         "Hardhat Beetle (Red)"
       ],
       "hp": 32,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -769,11 +769,11 @@
         "Hardhat Beetle (Blue)"
       ],
       "hp": 6,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -800,11 +800,11 @@
         "Deadrock"
       ],
       "hp": 255,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         0,
@@ -832,11 +832,11 @@
         "Taros (Blue)"
       ],
       "hp": 6,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -863,11 +863,11 @@
         "Sword Soldier (Green)"
       ],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -896,11 +896,11 @@
       ],
       "note": ["Identical to enemy 69."],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -928,11 +928,11 @@
         "Super Sword Soldier (Blue)"
       ],
       "hp": 6,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -962,11 +962,11 @@
         "These are summoned by citizens of Kakariko Village."
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -996,11 +996,11 @@
         "Archer Arrow"
       ],
       "hp": 6,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1030,11 +1030,11 @@
         "Archer Arrow"
       ],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1061,11 +1061,11 @@
         "Super Spear Soldier (Red)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1092,11 +1092,11 @@
         "Spear Soldier (Red, Grass)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1123,11 +1123,11 @@
         "Bomb Soldier (Red)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1154,11 +1154,11 @@
         "Dagger Soldier (Green)"
       ],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1185,11 +1185,11 @@
         "Geldman"
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1217,11 +1217,11 @@
       ],
       "note": ["Removing the grass and stranding it lets it talk to you, giving an item from Prize Pack 6."],
       "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1248,11 +1248,11 @@
         "Popo"
       ],
       "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1280,11 +1280,11 @@
         "Armos"
       ],
       "hp": 8,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1316,11 +1316,11 @@
       ],
       "note": ["Many Fireball projectiles share the same entry."],
       "hp": 8,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1347,11 +1347,11 @@
         "Zora (Walking)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1378,11 +1378,11 @@
         "Sand Crab"
       ],
       "hp": 2,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1412,11 +1412,11 @@
         "Weak Fireball"
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1443,11 +1443,11 @@
         "Ball and Chain Trooper"
       ],
       "hp": 16,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         251,
         2,
@@ -1481,11 +1481,11 @@
         "Shares an entry with the Spiked Blue Cannon Ball and the Cannon Ball which is smooth, black, and shot by wall cannon."
       ],
       "hp": 3,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1512,11 +1512,11 @@
         "Rat"
       ],
       "hp": 2,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
+      "dmgToLink": {
+        "green": 2,
+        "blue": 1,
+        "red": 1
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1544,11 +1544,11 @@
       ],
       "note": ["Also referred to as a Dark World rat."],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1576,11 +1576,11 @@
       ],
       "note": ["Also referred to as a snake."],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1608,11 +1608,11 @@
       ],
       "note": ["Also referred to as a Dark World snake."],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1639,11 +1639,11 @@
         "Keese"
       ],
       "hp": 1,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
+      "dmgToLink": {
+        "green": 2,
+        "blue": 1,
+        "red": 1
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1671,11 +1671,11 @@
       ],
       "note": ["Sometimes called a Patra. A weak, Dark World bat, with a large eye."],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1703,11 +1703,11 @@
       ],
       "note": ["Represents both the Green and Purple varieties."],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1734,11 +1734,11 @@
         "Bee"
       ],
       "hp": 0,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
+      "dmgToLink": {
+        "green": 2,
+        "blue": 1,
+        "red": 1
+      },
       "dmgFromLink": [
         0,
         2,
@@ -1766,11 +1766,11 @@
       ],
       "note": "This is not the same as an already detached Detatched Stalfos Head.",
       "hp": 24,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -1797,11 +1797,11 @@
         "Water Tektite"
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -1829,11 +1829,11 @@
         "Goriya (Green)"
       ],
       "hp": 16,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -1861,11 +1861,11 @@
         "Goriya (Red)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         0,
@@ -1893,11 +1893,11 @@
       ],
       "note": ["Simply owning the L3 or L4 sword prevents the head from detatching."],
       "hp": 8,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -1931,11 +1931,11 @@
         "Represents both the Green and Red varieties"
       ],
       "hp": 2,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -1962,11 +1962,11 @@
         "Gibdo"
       ],
       "hp": 32,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -1994,11 +1994,11 @@
       ],
       "note": ["Sometimes referred to as turtles."],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2026,11 +2026,11 @@
       ],
       "note": ["A small blob that comes in a variety of colors"],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -2058,11 +2058,11 @@
       ],
       "note": ["Only appears when using Magic Powder or the Quake Medallion on other enemies"],
       "hp": 0,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -2090,11 +2090,11 @@
       ],
       "note": ["Often referred to as 'hands'"],
       "hp": 8,
-      "dmgToLink": [
-        0,
-        0,
-        0
-      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2124,11 +2124,11 @@
         "They are immune to bombs until they are knocked down.",
         "The damage vulnerability to bombs is global until they stand up, so it is possible to knock one down then bomb another."],
       "hp": 64,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2155,11 +2155,11 @@
         "Pirogusu"
       ],
       "hp": 2,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2186,11 +2186,11 @@
         "Pengator"
       ],
       "hp": 16,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2217,11 +2217,11 @@
         "Wizzrobe"
       ],
       "hp": 2,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2249,11 +2249,11 @@
       ],
       "note": ["Sometimes referred to as little black spiders, they come out of bombed doorways."],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2280,11 +2280,11 @@
         "Babusu"
       ],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2311,11 +2311,11 @@
         "Freezor"
       ],
       "hp": 16,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         0,
@@ -2343,11 +2343,11 @@
       ],
       "note": ["Shares an entry with Spitting Fireball, which is created by a Zazak (Red) and a Lynel."],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -2377,11 +2377,11 @@
         "Spitting Fireball"
       ],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         255,
         2,
@@ -2409,11 +2409,11 @@
       ],
       "note": ["Represents both the Red and Purple varieties"],
       "hp": 4,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2440,11 +2440,11 @@
         "Zirro (Green)"
       ],
       "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2471,11 +2471,11 @@
         "Zirro (Blue)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2503,11 +2503,11 @@
       ],
       "note": ["The item drop will instead be the last thing it stole, if applicable."],
       "hp": 12,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2534,11 +2534,11 @@
         "Good Bee"
       ],
       "hp": 0,
-      "dmgToLink": [
-        2,
-        1,
-        1
-      ],
+      "dmgToLink": {
+        "green": 2,
+        "blue": 1,
+        "red": 1
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2565,11 +2565,11 @@
         "Gibo"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2596,11 +2596,11 @@
         "Hokkubokku"
       ],
       "hp": 32,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -2627,11 +2627,11 @@
         "Tektite (Blue)"
       ],
       "hp": 8,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         251,
         2,
@@ -2658,11 +2658,11 @@
         "Tektite (Red)"
       ],
       "hp": 12,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         251,
         2,
@@ -2689,11 +2689,11 @@
         "Swamola"
       ],
       "hp": 16,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         1,
         2,
@@ -2723,11 +2723,11 @@
         "Spitting Fireball"
       ],
       "hp": 24,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         0,
@@ -2754,11 +2754,11 @@
         "Stal"
       ],
       "hp": 4,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         1,
         2,

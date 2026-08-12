@@ -6,11 +6,11 @@
         "Armos Knight"
       ],
       "hp": 48,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
       "dmgFromLink": [
         1,
         4,
@@ -39,11 +39,11 @@
         "Lanmolas' Rocks"
       ],
       "hp": 16,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         2,
@@ -69,11 +69,11 @@
         "Moldorm"
       ],
       "hp": 12,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
       "dmgFromLink": [
         0,
         2,
@@ -105,11 +105,11 @@
         "Weak Fireball"
       ],
       "hp": 96,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         0,
@@ -139,11 +139,11 @@
       ],
       "note": ["Not to be confused with a small Helmasaur"],
       "hp": 48,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         0,
@@ -170,11 +170,11 @@
       ],
       "note": ["This is the main eyeball. The boss fight includes 13 Arrghus Fuzz"],
       "hp": 32,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         0,
@@ -200,11 +200,11 @@
         "Arrghus Fuzz"
       ],
       "hp": 8,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         0,
@@ -234,11 +234,11 @@
       ],
       "note": ["Surprisingly, this is vulnerable to swords except the Gold Sword."],
       "hp": 32,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         2,
@@ -273,11 +273,11 @@
         "Touching the bottom of Blind does 8 damage regardless of tunic."
       ],
       "hp": 9,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         1,
@@ -307,11 +307,11 @@
       ],
       "note": ["This is the main three enemies. The boss fight includes Kholdstare's Shell."],
       "hp": 64,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         0,
         0,
@@ -340,11 +340,11 @@
         "Kholdstare's Falling Ice"
       ],
       "hp": 64,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
       "dmgFromLink": [
         0,
         0,
@@ -375,11 +375,11 @@
       ],
       "note": ["This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye)."],
       "hp": 128,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         0,
         0,
@@ -405,11 +405,11 @@
         "Vitreous (Small Eye)"
       ],
       "hp": 48,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         0,
         0,
@@ -439,11 +439,11 @@
       ],
       "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
       "dmgFromLink": [
         0,
         0,
@@ -473,11 +473,11 @@
       ],
       "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         0,
         0,
@@ -507,11 +507,11 @@
       ],
       "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
       "dmgFromLink": [
         0,
         0,
@@ -537,11 +537,11 @@
         "Ganon"
       ],
       "hp": 255,
-      "dmgToLink": [
-        64,
-        48,
-        24
-      ],
+      "dmgToLink": {
+        "green": 64,
+        "blue": 48,
+        "red": 24
+      },
       "dmgFromLink": [
         0,
         0,
@@ -567,11 +567,11 @@
         "Stunned Ganon"
       ],
       "hp": 96,
-      "dmgToLink": [
-        64,
-        48,
-        24
-      ],
+      "dmgToLink": {
+        "green": 64,
+        "blue": 48,
+        "red": 24
+      },
       "dmgFromLink": [
         0,
         0,
