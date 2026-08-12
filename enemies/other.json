@@ -37,11 +37,13 @@
       "prizePack": null
     },
     {
-      "spriteIndex": 119,
       "names": [
         "Invincible Bubble"
       ],
-      "note": ["An invincible variant of an enemy often named Anti-Fairy"],
+      "note": [
+        "An invincible variant of an enemy often named Anti-Fairy",
+        "Also take 8 magic points per hit, regardless of tunic, with reduced i-frames."
+      ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -66,15 +68,17 @@
         0,
         0
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 119,
+      "prizePack": null
     },
     {
-      "spriteIndex": 130,
       "names": [
         "Bubble Cluster"
       ],
-      "note": ["Often named Anti-Fairy"],
+      "note": [
+        "Often named Anti-Fairy Cluster.",
+        "The 4 spawned Bubbles are invincible."
+    ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -99,14 +103,17 @@
         0,
         0
       ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 130,
+      "spawnsSprite": 21,
+      "prizePack": null
     }
   ],
-  "inanimate": [
+  "invulnerable": [
     {
-      "names": ["Octorok's Rock"],
-      "note": ["This is also created by a Slarok"],
+      "names": [
+        "Octorok's Rock",
+        "Slarok's Rock"
+      ],
       "dmgToLink": [
         4,
         4,
@@ -191,70 +198,28 @@
       "prizePack": 
     },
     {
-      "spriteIndex": 91,
       "names": [
         "Spark"
       ],
-      "note": ["This was originally split into two enemies, one clockwise and one counterclockwise"],
-      "hp": 255,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        253,
-        0,
-        255
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 91,
+      "additionalSpriteIndex": [92]
     },
     {
-      "spriteIndex": 93,
       "names": [
         "Rolling Spike Trap"
       ],
-      "note": ["This was originally split into four enemies, one moving each of the 4 directions"],
-      "hp": 255,
       "dmgToLink": [
         24,
         16,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 93,
+      "additionalSpriteIndex": [94, 95, 96]
     },
     {
       "spriteIndex": 99,
@@ -330,170 +295,62 @@
       "prizePack": 
     },
     {
-      "spriteIndex": 125,
       "names": [
-        "Spike Trap (Big & Yellow)"
+        "Giant Spike Block"
       ],
-      "hp": 255,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 125
     },
     {
-      "spriteIndex": 126,
       "names": [
         "Guruguru Bar"
       ],
-      "note": [
-        "Sometimes referred to as a Fire Bar",
-        "This was originally split into two enemies, one clockwise and one counterclockwise"
-      ],
-      "hp": 255,
+      "note": ["Sometimes referred to as a Fire Bar."],
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 126,
+      "additionalSpriteIndex": [127]
     },
     {
-      "spriteIndex": 128,
       "names": [
         "Winder"
       ],
-      "note": ["Sometimes referred to as a Fire Snake"],
-      "hp": 3,
+      "note": ["Sometimes referred to as a Fire Snake."],
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 128
     },
     {
-      "spriteIndex": 135,
       "names": [
         "Kodongo Fireball"
       ],
-      "hp": 255,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 135
     },
     {
-      "spriteIndex": 223,
       "names": [
         "Flying Tile"
       ],
-      "sharedID": 148,
-      "hp": 0,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        253,
-        8,
-        253,
-        64,
-        255
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 148
     },
     {
       "spriteIndex": 149,
@@ -727,133 +584,62 @@
       "prizePack": 
     },
     {
-      "spriteIndex": 123,
       "names": [
         "Agahnim's Tennis Ball"
       ],
-      "note": ["Another attack, Agahnim's Large Blue Balls, shares the same entry"],
-      "hp": 255,
+      "note": ["Can only be deflected with the Master Sword, Bug Catching Net, or during the second fight, with Hammer."],
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 123
     },
     {
-      "spriteIndex": 112,
+      "names": [
+        "Agahnim's Blue Ball"
+      ],
+      "note": ["Creates 6 Fireball when struck or when it hits a wall."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 123,
+      "spawnsSprite": 85
+    },
+    {
       "names": [
         "Helmasaur King's Fireball"
       ],
-      "hp": 255,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 112
     },
     {
-      "spriteIndex": 137,
       "names": [
         "Mothula's Loops"
       ],
-      "hp": 32,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 137
     },
     {
-      "spriteIndex": 138,
       "names": [
-        "Spike Trap (Grey)"
+        "Spike Block"
       ],
-      "hp": 32,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": ,
-      "prizePack": 
+      "spriteIndex": 138
     },
     {
       "spriteIndex": 164,

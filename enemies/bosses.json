@@ -95,11 +95,15 @@
       "spriteIndex": 9
     },
     {
-      "spriteIndex": 122,
       "names": [
         "Agahnim"
       ],
-      "note": ["Also uses attacks Agahnim's Tennis Ball, Lightning and Fireball"],
+      "attacks": [
+        "Agahnim's Tennis Ball",
+        "Agahnim's Blue Ball",
+        "Lightning",
+        "Fireball"
+      ],
       "hp": 96,
       "dmgToLink": [
         8,
@@ -124,7 +128,7 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 122
     },
     {
       "spriteIndex": 146,
@@ -225,11 +229,13 @@
       "spriteIndex": 
     },
     {
-      "spriteIndex": 136,
       "names": [
         "Mothula"
       ],
-      "note": ["Also uses attack Mothula's Loops"],
+      "attacks": [
+        "Mothula's Loops"
+      ],
+      "note": ["Surprisingly, this is vulnerable to swords except the Gold Sword."],
       "hp": 32,
       "dmgToLink": [
         16,
@@ -254,7 +260,7 @@
         0,
         0
       ],
-      "spriteIndex": 
+      "spriteIndex": 136
     },
     {
       "spriteIndex": 206,
