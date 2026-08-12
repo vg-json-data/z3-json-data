@@ -264,39 +264,6 @@
     },
     {
       "names": [
-        "Cucco",
-        "Cucco skeleton"
-      ],
-      "note": "FIXME: These are invincible. HP and dmgFromLink are meaningless.",
-      "hp": 255,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        8,
-        8,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": 11,
-      "prizePack": null
-    },
-    {
-      "names": [
         "Buzz Blob"
       ],
       "hp": 3,
@@ -361,12 +328,11 @@
       "names": [
         "Octoballoon"
       ],
-      "note": "FIXME: Does this actually deal damage?",
       "hp": 2,
       "dmgToLink": [
-        4,
-        4,
-        4
+        0,
+        0,
+        0
       ],
       "dmgFromLink": [
         1,
@@ -1346,7 +1312,7 @@
         "Ku"
       ],
       "attacks": [
-        "Fireball"
+        "Weak Fireball"
       ],
       "note": ["Many Fireball projectiles share the same entry."],
       "hp": 8,
@@ -1440,42 +1406,10 @@
     },
     {
       "names": [
-        "Beamos"
+        "Devalant"
       ],
       "attacks": [
-        "Beamos Laser Beam"
-      ],
-      "note": ["The Beamos Laser Beam shares the same entry."],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "spriteIndex": 97,
-      "prizePack": null
-    },
-    {
-      "names": [
-        "Devalant"
+        "Weak Fireball"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -2154,15 +2088,12 @@
       "names": [
         "Wallmaster"
       ],
-      "note": [
-        "Often referred to as 'hands'",
-        "FIXME: Can it actually do damage?"
-    ],
+      "note": ["Often referred to as 'hands'"],
       "hp": 8,
       "dmgToLink": [
-        2,
-        1,
-        1
+        0,
+        0,
+        0
       ],
       "dmgFromLink": [
         1,
@@ -2316,10 +2247,7 @@
       "names": [
         "Zoro"
       ],
-      "note": [
-        "Sometimes referred to as little black spiders, they come out of bombed doorways.",
-        "FIXME: Check vulnerabilities, might only be vulnerable to sword and hammer."
-      ],
+      "note": ["Sometimes referred to as little black spiders, they come out of bombed doorways."],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -2333,16 +2261,16 @@
         8,
         16,
         16,
-        4,
-        64,
-        4,
-        100,
         0,
-        253,
-        64,
-        253,
-        64,
-        64
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "spriteIndex": 156,
       "prizePack": null
@@ -2790,6 +2718,9 @@
     {
       "names": [
         "Lynel"
+      ],
+      "attacks": [
+        "Spitting Fireball"
       ],
       "hp": 24,
       "dmgToLink": [

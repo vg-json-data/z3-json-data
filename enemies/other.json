@@ -3,6 +3,38 @@
   "enemies": [
     {
       "names": [
+        "Cucco",
+        "Cucco skeleton"
+      ],
+      "hp": 255,
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "dmgFromLink": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "spriteIndex": 11,
+      "prizePack": null
+    },
+    {
+      "names": [
         "Bubble"
       ],
       "note": [
@@ -249,16 +281,30 @@
     },
     {
       "names": [
-        "Fireball"
+        "Weak Fireball"
       ],
       "note": [
-        "The small red fireball shot by: Zora, Ku, Devalant, Medusa, Yomo Medusa, Blind and a few burning torches",
+        "The small red fireball shot by: Zora, Ku, and Devalant.",
         "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart."
       ],
       "dmgToLink": [
         4,
         4,
         4
+      ],
+      "spriteIndex": 85
+    },
+    {
+      "names": [
+        "Fireball"
+      ],
+      "note": [
+        "A stronger variant of the small red fireball shot by: Medusa, Yomo Medusa, Blind and a few burning torches"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
       ],
       "spriteIndex": 85
     },
@@ -298,6 +344,21 @@
       ],
       "spriteIndex": 93,
       "additionalSpriteIndex": [94, 95, 96]
+    },
+    {
+      "names": [
+        "Beamos"
+      ],
+      "attacks": [
+        "Beamos Laser Beam"
+      ],
+      "note": ["The Beamos Laser Beam shares the same entry."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 97
     },
     {
       "names": [
@@ -518,6 +579,17 @@
     },
     {
       "names": [
+        "Blind Laser"
+      ],
+      "dmgToLink": [
+        16,
+        8,
+        4
+      ],
+      "spriteIndex": null
+    },
+    {
+      "names": [
         "Trinexx (Head)"
       ],
       "dmgToLink": [
@@ -526,6 +598,30 @@
         16
       ],
       "spriteIndex": 203
+    },
+    {
+      "names": [
+        "Trinexx (Fire Breath)"
+      ],
+      "note": ["This is generated using a garnish."],
+      "dmgToLink": [
+        16,
+        16,
+        16
+      ],
+      "spriteIndex": null
+    },
+    {
+      "names": [
+        "Trinexx (Ice Breath)"
+      ],
+      "note": ["This is generated using a garnish."],
+      "dmgToLink": [
+        0,
+        0,
+        0
+      ],
+      "spriteIndex": null
     }
   ]
 }

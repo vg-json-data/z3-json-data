@@ -102,7 +102,7 @@
         "Agahnim's Tennis Ball",
         "Agahnim's Blue Ball",
         "Lightning",
-        "Fireball"
+        "Weak Fireball"
       ],
       "hp": 96,
       "dmgToLink": [
@@ -264,12 +264,13 @@
         "Blind"
       ],
       "attacks": [
-        "Fireball"
+        "Fireball",
+        "Blind Laser",
+        "Blind Bottom Half"
       ],
       "note": [
-        "FIXME: It is not immediately clear which attacks belong to this enemy.",
-        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
-        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball"
+        "Touching the top of Blind or one of its floating heads does the damage shown here.",
+        "Touching the bottom of Blind does 8 damage regardless of tunic."
       ],
       "hp": 9,
       "dmgToLink": [
@@ -436,10 +437,7 @@
       "attacks": [
         "Trinexx (Head)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
-      ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
         8,
@@ -470,10 +468,10 @@
       "names": [
         "Trinexx (Red Head)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      "attacks": [
+        "Trinexx (Fire Breath)"
       ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
         32,
@@ -504,10 +502,10 @@
       "names": [
         "Trinexx (Blue Head)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      "attacks": [
+        "Trinexx (Ice Breath)"
       ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
         32,
@@ -568,8 +566,7 @@
       "names": [
         "Stunned Ganon"
       ],
-      "note": ["FIXME: needs a fixed number of silver arrow shots."],
-      "hp": "",
+      "hp": 96,
       "dmgToLink": [
         64,
         48,
