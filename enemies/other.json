@@ -2,40 +2,45 @@
   "$schema": "../../schema/z3-enemies.schema.json",
   "enemies": [
     {
-      "id": 12,
-      "names": ["Octorok's Rock"],
-      "note": ["This is also created by a Slarok"],
-      "hp": 0,
+      "names": [
+        "Cucco",
+        "Cucco skeleton"
+      ],
+      "hp": 255,
       "dmgToLink": [
         4,
         4,
         4
       ],
       "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
         0,
-        8,
-        8,
-        16,
-        16,
-        32
-      ]
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "spriteIndex": 11,
+      "prizePack": null
     },
     {
-      "id": 21,
       "names": [
         "Bubble"
       ],
-      "note": ["Often named Anti-Fairy"],
+      "note": [
+        "Often named Anti-Fairy",
+        "Also take 8 magic points per hit, regardless of tunic, with reduced i-frames."
+      ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -59,14 +64,18 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 21,
+      "prizePack": null
     },
     {
-      "id": 119,
       "names": [
         "Invincible Bubble"
       ],
-      "note": ["An invincible variant of an enemy often named Anti-Fairy"],
+      "note": [
+        "An invincible variant of an enemy often named Anti-Fairy",
+        "Also take 8 magic points per hit, regardless of tunic, with reduced i-frames."
+      ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -90,242 +99,18 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 119,
+      "prizePack": null
     },
     {
-      "id": 130,
       "names": [
         "Bubble Cluster"
       ],
-      "note": ["Often named Anti-Fairy"],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 27,
-      "names": [
-        "Archer Arrow"
-      ],
-      "note": ["This also includes the thrown Moblin Spear"],
-      "hp": 0,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        32,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        64,
-        24,
-        0,
-        64,
-        64,
-        64,
-        16,
-        64
-      ]
-    },
-    {
-      "id": 80,
-      "names": [
-        "Ball"
-      ],
-      "note": ["The larger variant named Gargantuan Ball shares the same entry"],
-      "hp": 255,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 227,
-      "names": [
-        "Fireball"
-      ],
       "note": [
-        "The small red fireball shot by: Zora, Ku, Devalant, Medusa, Yomo Medusa, Blind and a few burning torches",
-        "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart.",
-        "FIXME: This was split off from entry 85. It is unknown if the game treats them as the same enemy"
-      ],
-      "hp": 8,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        4,
-        100,
-        0,
-        253,
-        8,
-        253,
-        64,
-        32
-      ]
-    },
-    {
-      "id": 228,
-      "names": [
-        "Spitting Fireball"
-      ],
-      "note": [
-        "This is also created by a Zazak (Red) and a Lynel",
-        "FIXME: This was split off from entry 165. It is unknown if the game treats them as the same enemy"
-      ],
-      "hp": 4,
-      "dmgToLink": [
-        16,
-        8,
-        4
-      ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        64,
-        100,
-        0,
-        253,
-        254,
-        253,
-        254,
-        255
-      ]
-    },
-    {
-      "id": 91,
-      "names": [
-        "Spark"
-      ],
-      "note": ["This was originally split into two enemies, one clockwise and one counterclockwise"],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        253,
-        0,
-        255
-      ]
-    },
-    {
-      "id": 93,
-      "names": [
-        "Rolling Spike Trap"
-      ],
-      "note": ["This was originally split into four enemies, one moving each of the 4 directions"],
-      "hp": 255,
-      "dmgToLink": [
-        24,
-        16,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 99,
-      "names": [
-        "Beamos Laser Beam"
-      ],
-      "note": [
-        "This was originally sharing the same enemy as the Beamos, but they were split off.",
-        "It is unclear if they are actually the same enemy.",
-        "The enemy that was originally id: 99 had no name and the same properties, so it was replaced."
-      ],
+        "Often named Anti-Fairy Cluster.",
+        "The 4 spawned Bubbles are invincible."
+    ],
       "hp": 255,
       "dmgToLink": [
         8,
@@ -349,235 +134,19 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 130,
+      "spawnsSprite": 21,
+      "prizePack": null
     },
     {
-      "id": 108,
-      "names": [
-        "Wall Turret Cannon Ball"
-      ],
-      "note": [
-        "Also shares the same entry with Cannon Soldier (Blue) Cannon Ball, which does not appear in-game",
-        "FIXME: These values were split from Cannon Soldier (Blue), id: 107, and they do not appear to be accurate"
-      ],
-      "hp": 3,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        255,
-        4,
-        100,
-        0,
-        8,
-        8,
-        16,
-        254,
-        32
-      ]
-    },
-    {
-      "id": 125,
-      "names": [
-        "Spike Trap (Big & Yellow)"
-      ],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 126,
-      "names": [
-        "Guruguru Bar"
-      ],
-      "note": [
-        "Sometimes referred to as a Fire Bar",
-        "This was originally split into two enemies, one clockwise and one counterclockwise"
-      ],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 128,
-      "names": [
-        "Winder"
-      ],
-      "note": ["Sometimes referred to as a Fire Snake"],
-      "hp": 3,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 135,
-      "names": [
-        "Kodongo Fireball"
-      ],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 223,
-      "names": [
-        "Flying Tile"
-      ],
-      "sharedID": 148,
-      "hp": 0,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        253,
-        8,
-        253,
-        64,
-        255
-      ]
-    },
-    {
-      "id": 149,
-      "names": [
-        "Laser Eye"
-      ],
-      "note": ["This was originally split into four enemies, one moving each of the 4 directions"],
-      "hp": 255,
-      "dmgToLink": [
-        32,
-        16,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 154,
       "names": [
         "Kyameron"
       ],
-      "note": ["A respawning ball of water"],
+      "note": [
+        "A respawning ball of water.",
+        "It is possible to make it stop respanwing by freezing then hammering it."
+      ],
       "hp": 4,
       "dmgToLink": [
         8,
@@ -601,19 +170,19 @@
         64,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 154,
+      "prizePack": null
     },
     {
-      "id": 194,
       "names": [
-        "Boulder"
+        "Rabbit Beam"
       ],
-      "note": ["The boulders that fall down Death Mountain"],
-      "hp": 255,
+      "hp": 64,
       "dmgToLink": [
-        8,
-        8,
-        8
+        0,
+        0,
+        0
       ],
       "dmgFromLink": [
         0,
@@ -626,76 +195,17 @@
         0,
         0,
         0,
+        249,
         0,
         0,
-        0,
-        0,
-        0,
-        0
-      ]
+        64,
+        64,
+        64
+      ],
+      "spriteIndex": 209,
+      "prizePack": null
     },
     {
-      "id": 202,
-      "names": [
-        "Chain Chomp"
-      ],
-      "hp": 5,
-      "dmgToLink": [
-        32,
-        24,
-        16
-      ],
-      "dmgFromLink": [
-        251,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 212,
-      "names": [
-        "Land Mine"
-      ],
-      "hp": 0,
-      "dmgToLink": [
-        8,
-        4,
-        2
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 64,
       "names": [
         "Lightning Lock"
       ],
@@ -726,250 +236,392 @@
         0,
         0,
         0
-      ]
-    },
+      ],
+      "spriteIndex": 64,
+      "prizePack": null
+    }
+  ],
+  "invulnerable": [
     {
-      "id": 209,
       "names": [
-        "Rabbit Beam"
+        "Octorok's Rock",
+        "Slarok's Rock"
       ],
-      "hp": 64,
       "dmgToLink": [
-        2,
-        1,
-        1
+        4,
+        4,
+        4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        249,
-        0,
-        0,
-        64,
-        64,
-        64
-      ]
+      "spriteIndex": 12
     },
     {
-      "id": 123,
+      "names": [
+        "Moblin Spear",
+        "Archer Arrow"
+      ],
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "spriteIndex": 27
+    },
+    {
+      "names": [
+        "Ball",
+        "Gargantuan Ball"
+      ],
+      "note": ["Spawned from a hole in the wall"],
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "spriteIndex": 80
+    },
+    {
+      "names": [
+        "Weak Fireball"
+      ],
+      "note": [
+        "The small red fireball shot by: Zora, Ku, and Devalant.",
+        "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart."
+      ],
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "spriteIndex": 85
+    },
+    {
+      "names": [
+        "Fireball"
+      ],
+      "note": [
+        "A stronger variant of the small red fireball shot by: Medusa, Yomo Medusa, Blind and a few burning torches"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 85
+    },
+    {
+      "names": [
+        "Spitting Fireball"
+      ],
+      "note": ["This is also created by a Zazak (Red) and a Lynel."],
+      "dmgToLink": [
+        16,
+        8,
+        4
+      ],
+      "spriteIndex": 165,
+      "prizePack": null
+    },
+    {
+      "names": [
+        "Spark"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 91,
+      "additionalSpriteIndex": [92]
+    },
+    {
+      "names": [
+        "Rolling Spike Trap"
+      ],
+      "dmgToLink": [
+        24,
+        16,
+        8
+      ],
+      "spriteIndex": 93,
+      "additionalSpriteIndex": [94, 95, 96]
+    },
+    {
+      "names": [
+        "Beamos"
+      ],
+      "attacks": [
+        "Beamos Laser Beam"
+      ],
+      "note": ["The Beamos Laser Beam shares the same entry."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 97
+    },
+    {
+      "names": [
+        "Beamos Laser Beam"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 97
+    },
+    {
+      "names": [
+        "Wall Turret Cannon Ball"
+      ],
+      "dmgToLink": [
+        4,
+        4,
+        4
+      ],
+      "spriteIndex": 107
+    },
+    {
+      "names": [
+        "Giant Spike Block"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 125
+    },
+    {
+      "names": [
+        "Guruguru Bar"
+      ],
+      "note": ["Sometimes referred to as a Fire Bar."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 126,
+      "additionalSpriteIndex": [127]
+    },
+    {
+      "names": [
+        "Winder"
+      ],
+      "note": ["Sometimes referred to as a Fire Snake."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 128
+    },
+    {
+      "names": [
+        "Kodongo Fireball"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 135
+    },
+    {
+      "names": [
+        "Flying Tile"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 148
+    },
+    {
+      "names": [
+        "Laser Eye"
+      ],
+      "dmgToLink": [
+        32,
+        16,
+        8
+      ],
+      "spriteIndex": 149,
+      "additionalSpriteIndex": [150, 151, 152]
+    },
+    {
+      "names": [
+        "Falling Boulder"
+      ],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 194
+    },
+    {
+      "names": [
+        "Chain Chomp"
+      ],
+      "dmgToLink": [
+        32,
+        24,
+        16
+      ],
+      "spriteIndex": 202
+    },
+    {
+      "names": [
+        "Land Mine"
+      ],
+      "dmgToLink": [
+        8,
+        4,
+        2
+      ],
+      "spriteIndex": 212
+    },
+    {
       "names": [
         "Agahnim's Tennis Ball"
       ],
-      "note": ["Another attack, Agahnim's Large Blue Balls, shares the same entry"],
-      "hp": 255,
+      "note": ["Can only be deflected with the Master Sword, Bug Catching Net, or during the second fight, with Hammer."],
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 123
     },
     {
-      "id": 112,
+      "names": [
+        "Agahnim's Blue Ball"
+      ],
+      "note": ["Creates 6 Fireball when struck or when it hits a wall."],
+      "dmgToLink": [
+        8,
+        8,
+        8
+      ],
+      "spriteIndex": 123,
+      "spawnsSprite": 85
+    },
+    {
       "names": [
         "Helmasaur King's Fireball"
       ],
-      "hp": 255,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 112
     },
     {
-      "id": 137,
       "names": [
         "Mothula's Loops"
       ],
-      "hp": 32,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 137
     },
     {
-      "id": 138,
       "names": [
-        "Spike Trap (Grey)"
+        "Spike Block"
       ],
-      "hp": 32,
       "dmgToLink": [
         8,
         8,
         8
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 138
     },
     {
-      "id": 164,
       "names": [
         "Kholdstare's Falling Ice"
       ],
-      "hp": 8,
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        0,
-        4,
-        100,
-        0,
-        253,
-        0,
-        16,
-        16,
-        32
-      ]
+      "spriteIndex": 164
     },
     {
-      "id": 191,
       "names": [
         "Lightning"
       ],
-      "note": ["Used by Agahnim in the first battle and by Vitreous"],
-      "hp": 255,
+      "note": ["Used by Agahnim and by Vitreous."],
       "dmgToLink": [
         16,
         8,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "spriteIndex": 191
     },
     {
-      "id": 224,
       "names": [
         "Lanmolas' Rocks"
       ],
-      "sharedID": 194,
-      "hp": 255,
       "dmgToLink": [
         4,
         4,
         4
       ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+      "spriteIndex": 194
+    },
+    {
+      "names": [
+        "Blind Laser"
+      ],
+      "dmgToLink": [
+        16,
+        8,
+        4
+      ],
+      "spriteIndex": null
+    },
+    {
+      "names": [
+        "Trinexx (Head)"
+      ],
+      "dmgToLink": [
+        32,
+        24,
+        16
+      ],
+      "spriteIndex": 203
+    },
+    {
+      "names": [
+        "Trinexx (Fire Breath)"
+      ],
+      "note": ["This is generated using a garnish."],
+      "dmgToLink": [
+        16,
+        16,
+        16
+      ],
+      "spriteIndex": null
+    },
+    {
+      "names": [
+        "Trinexx (Ice Breath)"
+      ],
+      "note": ["This is generated using a garnish."],
+      "dmgToLink": [
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": null
     }
   ]
 }

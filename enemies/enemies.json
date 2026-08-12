@@ -2,7 +2,6 @@
   "$schema": "../../schema/z3-enemies.schema.json",
   "enemies": [
     {
-      "id": 0,
       "names": [
         "Crow"
       ],
@@ -25,18 +24,18 @@
         100,
         0,
         253,
-        254,
+        8,
         253,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 0,
+      "prizePack": 5
     },
     {
-      "id": 216,
       "names": [
         "Dacto"
       ],
-      "sharedID": 0,
       "hp": 8,
       "dmgToLink": [
         24,
@@ -56,14 +55,15 @@
         100,
         0,
         253,
-        254,
+        8,
         253,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 0,
+      "prizePack": 1
     },
     {
-      "id": 1,
       "names": [
         "Vulture"
       ],
@@ -86,17 +86,19 @@
         100,
         0,
         253,
-        254,
+        8,
         253,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 1,
+      "prizePack": 5
     },
     {
-      "id": 2,
       "names": [
-        "Floating Stalfos head (from #133)"
+        "Detatched Stalfos Head"
       ],
+      "note": "This comes from enemy 133, and is not the same as an already detached Floating Stalfos Head.",
       "hp": 255,
       "dmgToLink": [
         4,
@@ -120,14 +122,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 2,
+      "prizePack": 3
     },
     {
-      "id": 8,
       "names": [
         "Octorok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 2,
       "dmgToLink": [
         8,
@@ -151,15 +156,17 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 8,
+      "prizePack": 1
     },
     {
-      "id": 217,
       "names": [
         "Slarok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
-      "sharedID": 8,
+      "attacks": [
+        "Slarok's Rock"
+      ],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -183,14 +190,17 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 8,
+      "prizePack": 1
     },
     {
-      "id": 10,
       "names": [
         "4-way Octorok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
+      "attacks": [
+        "Octorok's Rock"
+      ],
       "hp": 2,
       "dmgToLink": [
         8,
@@ -214,15 +224,17 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 10,
+      "prizePack": 1
     },
     {
-      "id": 218,
       "names": [
         "4-way Slarok"
       ],
-      "note": ["Also uses attack Octorok's Rock"],
-      "sharedID": 10,
+      "attacks": [
+        "Slarok's Rock"
+      ],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -246,41 +258,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 10,
+      "prizePack": 1
     },
     {
-      "id": 11,
-      "names": [
-        "Cucco (Light World)",
-        "Cucco skeleton (Dark World)"
-      ],
-      "hp": 255,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        1,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        0,
-        8,
-        8,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 13,
       "names": [
         "Buzz Blob"
       ],
@@ -307,10 +289,11 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 13,
+      "prizePack": 2
     },
     {
-      "id": 14,
       "names": [
         "Snap Dragon"
       ],
@@ -335,20 +318,21 @@
         253,
         254,
         253,
-        254,
+        64,
         250
-      ]
+      ],
+      "spriteIndex": 14,
+      "prizePack": 6
     },
     {
-      "id": 15,
       "names": [
         "Octoballoon"
       ],
       "hp": 2,
       "dmgToLink": [
-        4,
-        4,
-        4
+        0,
+        0,
+        0
       ],
       "dmgFromLink": [
         1,
@@ -367,10 +351,12 @@
         253,
         16,
         64
-      ]
+      ],
+      "spriteIndex": 15,
+      "spawnsSprite": 16,
+      "prizePack": null
     },
     {
-      "id": 16,
       "names": [
         "Octoballoon Spawn"
       ],
@@ -397,10 +383,11 @@
         16,
         16,
         32
-      ]
+      ],
+      "spriteIndex": 16,
+      "prizePack": null
     },
     {
-      "id": 17,
       "names": [
         "Hinox"
       ],
@@ -427,12 +414,16 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 17,
+      "prizePack": 3
     },
     {
-      "id": 18,
       "names": [
         "Moblin"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -457,10 +448,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 18,
+      "prizePack": 0
     },
     {
-      "id": 19,
       "names": [
         "Helmasaur"
       ],
@@ -485,12 +477,13 @@
         0,
         0,
         253,
-        254,
+        64,
         250
-      ]
+      ],
+      "spriteIndex": 19,
+      "prizePack": 6
     },
     {
-      "id": 23,
       "names": [
         "Hoarder (Bush)"
       ],
@@ -517,10 +510,11 @@
         64,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 23,
+      "prizePack": null
     },
     {
-      "id": 62,
       "names": [
         "Hoarder (Rock)"
       ],
@@ -547,10 +541,11 @@
         64,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 62,
+      "prizePack": null
     },
     {
-      "id": 24,
       "names": [
         "Mini-Moldorm"
       ],
@@ -577,14 +572,15 @@
         253,
         16,
         250
-      ]
+      ],
+      "spriteIndex": 24,
+      "prizePack": 1
     },
     {
-      "id": 25,
       "names": [
-        "Poe"
+        "Poe",
+        "Hue"
       ],
-      "note": ["The dark-world counterpart named Hue shares the same entry"],
       "hp": 8,
       "dmgToLink": [
         16,
@@ -603,15 +599,16 @@
         4,
         100,
         0,
-        253,
+        8,
         8,
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": 25,
+      "prizePack": 5
     },
     {
-      "id": 32,
       "names": [
         "Sluggula"
       ],
@@ -638,10 +635,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 32,
+      "prizePack": 3
     },
     {
-      "id": 34,
       "names": [
         "Ropa"
       ],
@@ -666,12 +664,13 @@
         253,
         254,
         253,
-        254,
+        64,
         250
-      ]
+      ],
+      "spriteIndex": 34,
+      "prizePack": 1
     },
     {
-      "id": 35,
       "names": [
         "Bari (Red)"
       ],
@@ -698,10 +697,12 @@
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": 35,
+      "spawnsSprite": 35,
+      "prizePack": 5
     },
     {
-      "id": 36,
       "names": [
         "Bari (Blue)"
       ],
@@ -728,10 +729,11 @@
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": 36,
+      "prizePack": 5
     },
     {
-      "id": 38,
       "names": [
         "Hardhat Beetle (Red)"
       ],
@@ -758,14 +760,14 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 38,
+      "prizePack": 1
     },
     {
-      "id": 219,
       "names": [
         "Hardhat Beetle (Blue)"
       ],
-      "sharedID": 38,
       "hp": 6,
       "dmgToLink": [
         8,
@@ -789,10 +791,11 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 38,
+      "prizePack": 5
     },
     {
-      "id": 39,
       "names": [
         "Deadrock"
       ],
@@ -819,14 +822,15 @@
         0,
         0,
         250
-      ]
+      ],
+      "spriteIndex": 39,
+      "prizePack": null
     },
     {
-      "id": 65,
       "names": [
-        "Sword Soldier (Blue)"
+        "Sword Soldier (Blue)",
+        "Taros (Blue)"
       ],
-      "note": ["The dark-world counterpart named Taros (Blue) shares the same entry"],
       "hp": 6,
       "dmgToLink": [
         4,
@@ -850,10 +854,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 65,
+      "prizePack": 0
     },
     {
-      "id": 66,
       "names": [
         "Sword Soldier (Green)"
       ],
@@ -880,14 +885,16 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 66,
+      "prizePack": 0
     },
     {
-      "id": 67,
       "names": [
-        "Spear Soldier (Red)"
+        "Spear Soldier (Red)",
+        "Taros (Red)"
       ],
-      "note": ["The dark-world counterpart named Taros (Red) shares the same entry"],
+      "note": ["Identical to enemy 69."],
       "hp": 8,
       "dmgToLink": [
         8,
@@ -911,10 +918,12 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 67,
+      "additionalSpriteIndex": [69],
+      "prizePack": 0
     },
     {
-      "id": 68,
       "names": [
         "Super Sword Soldier (Blue)"
       ],
@@ -941,19 +950,18 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 68,
+      "prizePack": 6
     },
     {
-      "id": 69,
       "names": [
-        "Spear Soldier (Red) 2"
+        "Spear Soldier (Green)"
       ],
       "note": [
-        "This is the same as enemy 67.",
-        "The dark-world counterpart named Taros (Red) shares the same entry",
-        "The Spear Soldier (Green) summoned by citizens of Kakariko Village also uses this, but overrides it's hp to 4."
+        "These are summoned by citizens of Kakariko Village."
       ],
-      "hp": 8,
+      "hp": 4,
       "dmgToLink": [
         8,
         4,
@@ -976,12 +984,16 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 69,
+      "prizePack": null
     },
     {
-      "id": 70,
       "names": [
         "Bow Soldier (Blue)"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 6,
       "dmgToLink": [
@@ -1006,12 +1018,16 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 70,
+      "prizePack": 4
     },
     {
-      "id": 71,
       "names": [
-        "Bow Soldier (Green)"
+        "Bow Soldier (Green, Grass)"
+      ],
+      "attacks": [
+        "Archer Arrow"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1036,10 +1052,11 @@
         253,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 71,
+      "prizePack": 4
     },
     {
-      "id": 72,
       "names": [
         "Super Spear Soldier (Red)"
       ],
@@ -1066,10 +1083,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 72,
+      "prizePack": 2
     },
     {
-      "id": 73,
       "names": [
         "Spear Soldier (Red, Grass)"
       ],
@@ -1096,10 +1114,11 @@
         253,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 73,
+      "prizePack": 6
     },
     {
-      "id": 74,
       "names": [
         "Bomb Soldier (Red)"
       ],
@@ -1126,12 +1145,13 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 74,
+      "prizePack": 3
     },
     {
-      "id": 75,
       "names": [
-        "Soldier (Green)"
+        "Dagger Soldier (Green)"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1156,10 +1176,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 75,
+      "prizePack": 0
     },
     {
-      "id": 76,
       "names": [
         "Geldman"
       ],
@@ -1181,18 +1202,20 @@
         4,
         100,
         0,
-        64,
         8,
-        64,
+        8,
+        253,
         16,
         255
-      ]
+      ],
+      "spriteIndex": 76,
+      "prizePack": 1
     },
     {
-      "id": 77,
       "names": [
         "Toppo"
       ],
+      "note": ["Removing the grass and stranding it lets it talk to you, giving an item from Prize Pack 6."],
       "hp": 2,
       "dmgToLink": [
         4,
@@ -1216,12 +1239,13 @@
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": 77,
+      "prizePack": 0
     },
     {
-      "id": 78,
       "names": [
-        "Popo (Fast)"
+        "Popo"
       ],
       "hp": 2,
       "dmgToLink": [
@@ -1246,40 +1270,12 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 78,
+      "additionalSpriteIndex": [79],
+      "prizePack": 1
     },
     {
-      "id": 79,
-      "names": [
-        "Popo (Slow)"
-      ],
-      "hp": 2,
-      "dmgToLink": [
-        4,
-        4,
-        4
-      ],
-      "dmgFromLink": [
-        255,
-        2,
-        4,
-        8,
-        16,
-        16,
-        4,
-        64,
-        4,
-        100,
-        250,
-        253,
-        254,
-        253,
-        254,
-        250
-      ]
-    },
-    {
-      "id": 81,
       "names": [
         "Armos"
       ],
@@ -1306,14 +1302,19 @@
         253,
         16,
         255
-      ]
+      ],
+      "spriteIndex": 81,
+      "prizePack": 4
     },
     {
-      "id": 85,
       "names": [
-        "Fireball Zora"
+        "Fireball Zora",
+        "Ku"
       ],
-      "note": ["The dark world counterpart named Ku shares the same entry"],
+      "attacks": [
+        "Weak Fireball"
+      ],
+      "note": ["Many Fireball projectiles share the same entry."],
       "hp": 8,
       "dmgToLink": [
         4,
@@ -1337,10 +1338,11 @@
         253,
         64,
         32
-      ]
+      ],
+      "spriteIndex": 85,
+      "prizePack": 3
     },
     {
-      "id": 86,
       "names": [
         "Zora (Walking)"
       ],
@@ -1367,10 +1369,11 @@
         253,
         64,
         32
-      ]
+      ],
+      "spriteIndex": 86,
+      "prizePack": 3
     },
     {
-      "id": 88,
       "names": [
         "Sand Crab"
       ],
@@ -1397,46 +1400,16 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 88,
+      "prizePack": 0
     },
     {
-      "id": 97,
-      "names": [
-        "Beamos"
-      ],
-      "note": [
-        "This was originally sharing the same enemy as the Beamos Laser Beam, but they were split off.",
-        "It is unclear if they are actually the same enemy."
-      ],
-      "hp": 255,
-      "dmgToLink": [
-        8,
-        8,
-        8
-      ],
-      "dmgFromLink": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 100,
       "names": [
         "Devalant"
+      ],
+      "attacks": [
+        "Weak Fireball"
       ],
       "hp": 4,
       "dmgToLink": [
@@ -1452,19 +1425,20 @@
         16,
         16,
         4,
-        64,
+        255,
         4,
         100,
         0,
-        64,
         8,
-        64,
+        8,
+        253,
         16,
-        64
-      ]
+        250
+      ],
+      "spriteIndex": 100,
+      "prizePack": 1
     },
     {
-      "id": 106,
       "names": [
         "Ball and Chain Trooper"
       ],
@@ -1491,14 +1465,21 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 106,
+      "prizePack": 1
     },
     {
-      "id": 107,
       "names": [
         "Cannon Soldier (Blue)"
       ],
-      "note": ["Does not appear in the vanilla game, but exists in the code"],
+      "attacks": [
+        "Spiked Blue Cannon Ball"
+      ],
+      "note": [
+        "Does not appear in the vanilla game, but exists in the code.",
+        "Shares an entry with the Spiked Blue Cannon Ball and the Cannon Ball which is smooth, black, and shot by wall cannon."
+      ],
       "hp": 3,
       "dmgToLink": [
         4,
@@ -1522,10 +1503,11 @@
         16,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 107,
+      "prizePack": 0
     },
     {
-      "id": 109,
       "names": [
         "Rat"
       ],
@@ -1552,14 +1534,15 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 109,
+      "prizePack": 1
     },
     {
-      "id": 220,
       "names": [
         "Buzz"
       ],
-      "sharedID": 109,
+      "note": ["Also referred to as a Dark World rat."],
       "hp": 8,
       "dmgToLink": [
         16,
@@ -1583,14 +1566,15 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 109,
+      "prizePack": 1
     },
     {
-      "id": 110,
       "names": [
         "Rope"
       ],
-      "note": ["Also referred to as a snake"],
+      "note": ["Also referred to as a snake."],
       "hp": 4,
       "dmgToLink": [
         4,
@@ -1614,15 +1598,15 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 110,
+      "prizePack": 0
     },
     {
-      "id": 221,
       "names": [
         "Skullrope"
       ],
-      "note": ["Also referred to as a snake, only appears in the Dark World"],
-      "sharedID": 110,
+      "note": ["Also referred to as a Dark World snake."],
       "hp": 8,
       "dmgToLink": [
         16,
@@ -1646,10 +1630,11 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 110,
+      "prizePack": 0
     },
     {
-      "id": 111,
       "names": [
         "Keese"
       ],
@@ -1676,15 +1661,15 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 111,
+      "prizePack": null
     },
     {
-      "id": 222,
       "names": [
         "Chasupa"
       ],
-      "note": ["Sometimes called a Patra. A weak, Dark World bat, with a large eye"],
-      "sharedID": 111,
+      "note": ["Sometimes called a Patra. A weak, Dark World bat, with a large eye."],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -1708,14 +1693,15 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 111,
+      "prizePack": 6
     },
     {
-      "id": 113,
       "names": [
         "Leever"
       ],
-      "note": ["Represents both the Green and Purple varieties"],
+      "note": ["Represents both the Green and Purple varieties."],
       "hp": 4,
       "dmgToLink": [
         4,
@@ -1738,11 +1724,12 @@
         254,
         253,
         254,
-        64
-      ]
+        255
+      ],
+      "spriteIndex": 113,
+      "prizePack": 0
     },
     {
-      "id": 121,
       "names": [
         "Bee"
       ],
@@ -1753,14 +1740,14 @@
         1
       ],
       "dmgFromLink": [
-        1,
+        0,
         2,
         4,
         8,
         16,
         16,
         4,
-        64,
+        0,
         4,
         100,
         249,
@@ -1769,13 +1756,15 @@
         16,
         16,
         32
-      ]
+      ],
+      "spriteIndex": 121,
+      "prizePack": null
     },
     {
-      "id": 124,
       "names": [
-        "Floating Stalfos head (only a skull)"
+        "Floating Stalfos Head"
       ],
+      "note": "This is not the same as an already detached Detatched Stalfos Head.",
       "hp": 24,
       "dmgToLink": [
         32,
@@ -1799,10 +1788,11 @@
         253,
         16,
         255
-      ]
+      ],
+      "spriteIndex": 124,
+      "prizePack": 6
     },
     {
-      "id": 129,
       "names": [
         "Water Tektite"
       ],
@@ -1826,17 +1816,18 @@
         0,
         253,
         254,
-        253,
+        64,
         16,
         64
-      ]
+      ],
+      "spriteIndex": 129,
+      "prizePack": 1
     },
     {
-      "id": 131,
       "names": [
-        "Eyegore (Green)"
+        "Eyegore (Green)",
+        "Goriya (Green)"
       ],
-      "note": ["The dark-world counterpart named Goriya (Green) shares the same entry"],
       "hp": 16,
       "dmgToLink": [
         8,
@@ -1860,14 +1851,15 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 131,
+      "prizePack": 4
     },
     {
-      "id": 132,
       "names": [
-        "Eyegore (Red)"
+        "Eyegore (Red)",
+        "Goriya (Red)"
       ],
-      "note": ["The dark-world counterpart named Goriya (Red) shares the same entry"],
       "hp": 8,
       "dmgToLink": [
         8,
@@ -1891,13 +1883,15 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 132,
+      "prizePack": 4
     },
     {
-      "id": 133,
       "names": [
-        "Stalfos with detachable head (see #2)"
+        "Head-Detaching Stalfos"
       ],
+      "note": ["Simply owning the L3 or L4 sword prevents the head from detatching."],
       "hp": 8,
       "dmgToLink": [
         4,
@@ -1915,21 +1909,25 @@
         255,
         4,
         100,
-        250,
-        253,
+        0,
+        8,
         64,
         253,
         64,
-        250
-      ]
+        255
+      ],
+      "spriteIndex": 133,
+      "spawnsSprite": 2,
+      "prizePack": 6
     },
     {
-      "id": 134,
       "names": [
         "Kodongo"
       ],
+      "attacks": [
+        "Kodongo Fireball"
+      ],
       "note": [
-        "Also uses attack Kodongo Fireball",
         "Represents both the Green and Red varieties"
       ],
       "hp": 2,
@@ -1950,15 +1948,16 @@
         0,
         100,
         0,
-        253,
+        8,
         254,
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 134,
+      "prizePack": 5
     },
     {
-      "id": 139,
       "names": [
         "Gibdo"
       ],
@@ -1983,16 +1982,17 @@
         253,
         254,
         253,
-        254,
+        64,
         255
-      ]
+      ],
+      "spriteIndex": 139,
+      "prizePack": 2
     },
     {
-      "id": 142,
       "names": [
         "Terrorpin"
       ],
-      "note": ["Sometimes referred to as turtles"],
+      "note": ["Sometimes referred to as turtles."],
       "hp": 8,
       "dmgToLink": [
         8,
@@ -2014,12 +2014,13 @@
         8,
         254,
         64,
-        254,
+        64,
         255
-      ]
+      ],
+      "spriteIndex": 142,
+      "prizePack": 1
     },
     {
-      "id": 143,
       "names": [
         "Zol"
       ],
@@ -2047,15 +2048,15 @@
         253,
         254,
         64
-      ]
+      ],
+      "spriteIndex": 143,
+      "prizePack": 5
     },
     {
-      "id": 226,
       "names": [
         "Slime"
       ],
       "note": ["Only appears when using Magic Powder or the Quake Medallion on other enemies"],
-      "sharedID": 143,
       "hp": 0,
       "dmgToLink": [
         4,
@@ -2079,19 +2080,20 @@
         253,
         254,
         64
-      ]
+      ],
+      "spriteIndex": 143,
+      "prizePack": 0
     },
     {
-      "id": 144,
       "names": [
         "Wallmaster"
       ],
       "note": ["Often referred to as 'hands'"],
       "hp": 8,
       "dmgToLink": [
-        2,
-        1,
-        1
+        0,
+        0,
+        0
       ],
       "dmgFromLink": [
         1,
@@ -2105,18 +2107,22 @@
         4,
         100,
         0,
-        253,
+        8,
         8,
         253,
         16,
         64
-      ]
+      ],
+      "spriteIndex": 144,
+      "prizePack": null
     },
     {
-      "id": 145,
       "names": [
         "Stalfos Knight"
       ],
+      "note": [
+        "They are immune to bombs until they are knocked down.",
+        "The damage vulnerability to bombs is global until they stand up, so it is possible to knock one down then bomb another."],
       "hp": 64,
       "dmgToLink": [
         16,
@@ -2132,7 +2138,7 @@
         16,
         0,
         0,
-        0,
+        64,
         0,
         0,
         0,
@@ -2140,10 +2146,11 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 145,
+      "prizePack": 3
     },
     {
-      "id": 148,
       "names": [
         "Pirogusu"
       ],
@@ -2170,10 +2177,11 @@
         253,
         64,
         255
-      ]
+      ],
+      "spriteIndex": 148,
+      "prizePack": null
     },
     {
-      "id": 153,
       "names": [
         "Pengator"
       ],
@@ -2200,10 +2208,11 @@
         253,
         254,
         64
-      ]
+      ],
+      "spriteIndex": 153,
+      "prizePack": 2
     },
     {
-      "id": 155,
       "names": [
         "Wizzrobe"
       ],
@@ -2230,13 +2239,15 @@
         64,
         16,
         64
-      ]
+      ],
+      "spriteIndex": 155,
+      "prizePack": 0
     },
     {
-      "id": 156,
       "names": [
         "Zoro"
       ],
+      "note": ["Sometimes referred to as little black spiders, they come out of bombed doorways."],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -2250,20 +2261,21 @@
         8,
         16,
         16,
-        4,
-        64,
-        4,
-        100,
         0,
-        253,
-        64,
-        253,
-        64,
-        64
-      ]
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "spriteIndex": 156,
+      "prizePack": null
     },
     {
-      "id": 157,
       "names": [
         "Babusu"
       ],
@@ -2290,10 +2302,11 @@
         253,
         64,
         64
-      ]
+      ],
+      "spriteIndex": 157,
+      "prizePack": null
     },
     {
-      "id": 161,
       "names": [
         "Freezor"
       ],
@@ -2308,25 +2321,27 @@
         0,
         0,
         0,
-        16,
-        16,
         0,
         0,
         0,
         0,
         0,
-        253,
         0,
-        253,
+        0,
+        64,
+        0,
+        64,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 161,
+      "prizePack": null
     },
     {
-      "id": 165,
       "names": [
         "Zazak (Blue)"
       ],
+      "note": ["Shares an entry with Spitting Fireball, which is created by a Zazak (Red) and a Lynel."],
       "hp": 4,
       "dmgToLink": [
         16,
@@ -2350,14 +2365,17 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 165,
+      "prizePack": 5
     },
     {
-      "id": 166,
       "names": [
         "Zazak (Red)"
       ],
-      "note": ["Also uses attack Spitting Fireball"],
+      "attacks": [
+        "Spitting Fireball"
+      ],
       "hp": 8,
       "dmgToLink": [
         16,
@@ -2381,10 +2399,11 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 166,
+      "prizePack": 5
     },
     {
-      "id": 167,
       "names": [
         "Stalfos"
       ],
@@ -2407,15 +2426,16 @@
         4,
         100,
         250,
-        253,
+        8,
         64,
         253,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 167,
+      "prizePack": 5
     },
     {
-      "id": 168,
       "names": [
         "Zirro (Green)"
       ],
@@ -2442,10 +2462,11 @@
         253,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 168,
+      "prizePack": 0
     },
     {
-      "id": 169,
       "names": [
         "Zirro (Blue)"
       ],
@@ -2472,13 +2493,15 @@
         253,
         254,
         32
-      ]
+      ],
+      "spriteIndex": 169,
+      "prizePack": 6
     },
     {
-      "id": 170,
       "names": [
         "Pikit"
       ],
+      "note": ["The item drop will instead be the last thing it stole, if applicable."],
       "hp": 12,
       "dmgToLink": [
         16,
@@ -2502,10 +2525,11 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 170,
+      "prizePack": 1
     },
     {
-      "id": 178,
       "names": [
         "Good Bee"
       ],
@@ -2516,14 +2540,14 @@
         1
       ],
       "dmgFromLink": [
-        1,
+        0,
         2,
         4,
         8,
         16,
         16,
         4,
-        64,
+        0,
         4,
         100,
         0,
@@ -2532,10 +2556,11 @@
         16,
         16,
         32
-      ]
+      ],
+      "spriteIndex": 178,
+      "prizePack": null
     },
     {
-      "id": 195,
       "names": [
         "Gibo"
       ],
@@ -2562,10 +2587,11 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 195,
+      "prizePack": null
     },
     {
-      "id": 199,
       "names": [
         "Hokkubokku"
       ],
@@ -2592,10 +2618,11 @@
         253,
         254,
         255
-      ]
+      ],
+      "spriteIndex": 199,
+      "prizePack": 6
     },
     {
-      "id": 201,
       "names": [
         "Tektite (Blue)"
       ],
@@ -2622,14 +2649,14 @@
         253,
         254,
         250
-      ]
+      ],
+      "spriteIndex": 201,
+      "prizePack": 1
     },
     {
-      "id": 225,
       "names": [
         "Tektite (Red)"
       ],
-      "sharedID": 201,
       "hp": 12,
       "dmgToLink": [
         16,
@@ -2650,13 +2677,14 @@
         0,
         253,
         254,
-        253,
-        254,
-        250
-      ]
+        16,
+        16,
+        32
+      ],
+      "spriteIndex": 201,
+      "prizePack": 1
     },
     {
-      "id": 207,
       "names": [
         "Swamola"
       ],
@@ -2683,12 +2711,16 @@
         16,
         64,
         32
-      ]
+      ],
+      "spriteIndex": 207,
+      "prizePack": null
     },
     {
-      "id": 208,
       "names": [
         "Lynel"
+      ],
+      "attacks": [
+        "Spitting Fireball"
       ],
       "hp": 24,
       "dmgToLink": [
@@ -2713,10 +2745,11 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 208,
+      "prizePack": 6
     },
     {
-      "id": 211,
       "names": [
         "Stal"
       ],
@@ -2743,7 +2776,9 @@
         16,
         64,
         250
-      ]
+      ],
+      "spriteIndex": 211,
+      "prizePack": 0
     }
   ]
 }

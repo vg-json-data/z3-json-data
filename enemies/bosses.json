@@ -1,8 +1,7 @@
 {
   "$schema": "../../schema/z3-enemies.schema.json",
-  "enemies": [
+  "bosses": [
     {
-      "id": 83,
       "names": [
         "Armos Knight"
       ],
@@ -29,14 +28,16 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 83
     },
     {
-      "id": 84,
       "names": [
         "Lanmolas"
       ],
-      "note": ["Also uses attack Lanmolas' Rocks"],
+      "attacks": [
+        "Lanmolas' Rocks"
+      ],
       "hp": 16,
       "dmgToLink": [
         8,
@@ -60,10 +61,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 84
     },
     {
-      "id": 9,
       "names": [
         "Moldorm"
       ],
@@ -80,24 +81,29 @@
         4,
         8,
         8,
-        4,
-        255,
-        4,
-        100,
         0,
-        8,
-        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 9
     },
     {
-      "id": 122,
       "names": [
         "Agahnim"
       ],
-      "note": ["Also uses attacks Agahnim's Tennis Ball, Lightning and Fireball"],
+      "attacks": [
+        "Agahnim's Tennis Ball",
+        "Agahnim's Blue Ball",
+        "Lightning",
+        "Weak Fireball"
+      ],
       "hp": 96,
       "dmgToLink": [
         8,
@@ -121,17 +127,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 122
     },
     {
-      "id": 146,
       "names": [
         "Helmasaur King"
       ],
-      "note": [
-        "Not to be confused with a small Helmasaur",
-        "Also uses attack Helmasaur King's Fireball"
+      "attacks": [
+        "Helmasaur King's Fireball"
       ],
+      "note": ["Not to be confused with a small Helmasaur"],
       "hp": 48,
       "dmgToLink": [
         16,
@@ -147,7 +153,7 @@
         16,
         4,
         0,
-        4,
+        0,
         100,
         0,
         0,
@@ -155,10 +161,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 146
     },
     {
-      "id": 140,
       "names": [
         "Arrghus"
       ],
@@ -186,10 +192,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 140
     },
     {
-      "id": 141,
       "names": [
         "Arrghus Fuzz"
       ],
@@ -216,14 +222,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 141
     },
     {
-      "id": 136,
       "names": [
         "Mothula"
       ],
-      "note": ["Also uses attack Mothula's Loops"],
+      "attacks": [
+        "Mothula's Loops"
+      ],
+      "note": ["Surprisingly, this is vulnerable to swords except the Gold Sword."],
       "hp": 32,
       "dmgToLink": [
         16,
@@ -247,19 +256,23 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 136
     },
     {
-      "id": 206,
       "names": [
         "Blind"
       ],
-      "note": [
-        "It is not immediately clear which attacks belong to this enemy.",
-        "Touching the top of Blind, one of its floating heads, or a laser does the damage shown here.",
-        "Touching the bottom of Blind or one of the small fireballs do the damage shown in the enemy named Fireball id: 227"
+      "attacks": [
+        "Fireball",
+        "Blind Laser",
+        "Blind Bottom Half"
       ],
-      "hp": 90,
+      "note": [
+        "Touching the top of Blind or one of its floating heads does the damage shown here.",
+        "Touching the bottom of Blind does 8 damage regardless of tunic."
+      ],
+      "hp": 9,
       "dmgToLink": [
         16,
         8,
@@ -267,11 +280,11 @@
       ],
       "dmgFromLink": [
         0,
-        2,
-        4,
-        8,
-        16,
-        16,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
         0,
         0,
@@ -282,17 +295,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 206
     },
     {
-      "id": 162,
       "names": [
         "Kholdstare"
       ],
-      "note": [
-        "This is the main three enemies. The boss fight includes Kholdstare's Shell.",
-        "Also uses attack Kholdstare's Falling Ice"
+      "attacks": [
+        "Kholdstare's Falling Ice"
       ],
+      "note": ["This is the main three enemies. The boss fight includes Kholdstare's Shell."],
       "hp": 64,
       "dmgToLink": [
         32,
@@ -316,12 +329,15 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 162
     },
     {
-      "id": 163,
       "names": [
         "Kholdstare's Shell"
+      ],
+      "attacks": [
+        "Kholdstare's Falling Ice"
       ],
       "hp": 64,
       "dmgToLink": [
@@ -346,17 +362,18 @@
         64,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 163,
+      "spawnsSprite": 162
     },
     {
-      "id": 189,
       "names": [
         "Vitreous"
       ],
-      "note": [
-        "This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye).",
-        "Also uses attack Lightning"
+      "attacks": [
+        "Lightning"
       ],
+      "note": ["This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye)."],
       "hp": 128,
       "dmgToLink": [
         32,
@@ -380,10 +397,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 189
     },
     {
-      "id": 190,
       "names": [
         "Vitreous (Small Eye)"
       ],
@@ -410,22 +427,22 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 190
     },
     {
-      "id": 203,
       "names": [
         "Trinexx (Body)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      "attacks": [
+        "Trinexx (Head)"
       ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
-        32,
-        24,
-        16
+        8,
+        8,
+        8
       ],
       "dmgFromLink": [
         0,
@@ -444,17 +461,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 203
     },
     {
-      "id": 204,
       "names": [
         "Trinexx (Red Head)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      "attacks": [
+        "Trinexx (Fire Breath)"
       ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
         32,
@@ -478,17 +495,17 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 204
     },
     {
-      "id": 205,
       "names": [
         "Trinexx (Blue Head)"
       ],
-      "note": [
-        "The boss fight includes Trinexx (Red Head) and Trinexx (Blue Head).",
-        "FIXME: The Red Head also uses a fire attack, but it's not clear which"
+      "attacks": [
+        "Trinexx (Ice Breath)"
       ],
+      "note": ["The boss fight includes Trinexx (Red Head), Trinexx (Blue Head), and Trinexx (Body)."],
       "hp": 40,
       "dmgToLink": [
         32,
@@ -512,10 +529,10 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 205
     },
     {
-      "id": 214,
       "names": [
         "Ganon"
       ],
@@ -542,14 +559,14 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 214
     },
     {
-      "id": 215,
       "names": [
         "Stunned Ganon"
       ],
-      "hp": "",
+      "hp": 96,
       "dmgToLink": [
         64,
         48,
@@ -572,7 +589,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "spriteIndex": 215
     }
   ]
 }

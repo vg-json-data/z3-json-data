@@ -203,22 +203,22 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Mothula", "hits": 14}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 20}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 20}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Mothula", "hits": 8}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 14}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 14}}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 12}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 12}}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 6}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
           ]}
         ]}
       ],
@@ -237,22 +237,22 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Mothula", "hits": 7}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 10}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 10}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 7}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 7}}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 6}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 3}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 3}}
           ]}
         ]}
       ],
@@ -271,21 +271,21 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 7}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 7}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 6}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 4}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 3}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 3}}
           ]}
         ]}
       ],
@@ -304,24 +304,24 @@
           {"and": [
             {"magic": {"type": "FireRod", "count": 32}},
             {"enemyDamage": {"enemy": "Mothula", "hits": 3}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 10}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 10}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 24}},
             {"bossProficiency": 2},
             {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 6}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 16}},
             {"bossProficiency": 3},
             {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 4}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 10}},
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 4}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
           ]}
         ]}
       ],
@@ -347,12 +347,12 @@
         {"or": [
           {"and": [
             {"enemyDamage": {"enemy": "Mothula", "hits": 5}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 5}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 5}}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Trap (Grey)", "hits": 4}}
+            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
           ]}
         ]}
       ],
