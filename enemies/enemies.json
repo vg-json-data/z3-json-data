@@ -140,22 +140,22 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 8,
       "prizePack": 1
@@ -174,22 +174,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 8,
       "prizePack": 1
@@ -208,22 +208,22 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 10,
       "prizePack": 1
@@ -242,22 +242,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 10,
       "prizePack": 1
@@ -273,22 +273,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 249,
+        "magicPowder": "fairy",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 13,
       "prizePack": 2
@@ -304,22 +304,22 @@
         "red": 8
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 14,
       "prizePack": 6
@@ -374,7 +374,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -413,7 +413,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 17,
       "prizePack": 3
@@ -432,22 +432,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 64,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 18,
       "prizePack": 0
@@ -470,15 +470,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 64,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 0,
         "iceRod": 0,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 19,
       "prizePack": 6
@@ -501,15 +501,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 64,
         "iceRod": 64,
         "bombos": 64,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 23,
       "prizePack": null
@@ -532,15 +532,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 8,
         "iceRod": 64,
         "bombos": 64,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 62,
       "prizePack": null
@@ -566,12 +566,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 8,
         "bombos": 253,
         "ether": 16,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 24,
       "prizePack": 1
@@ -603,7 +603,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 25,
       "prizePack": 5
@@ -619,22 +619,22 @@
         "red": 8
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 0,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 32,
       "prizePack": 3
@@ -650,22 +650,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 34,
       "prizePack": 1
@@ -696,7 +696,7 @@
         "iceRod": 64,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 35,
       "spawnsSprite": 35,
@@ -728,7 +728,7 @@
         "iceRod": 64,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 36,
       "prizePack": 5
@@ -751,15 +751,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 0,
-        "hookshot": 255,
-        "bombs": 255,
+        "hookshot": "stun10Seconds",
+        "bombs": "stun10Seconds",
         "silverArrows": 100,
         "magicPowder": 0,
         "fireRod": 0,
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 38,
       "prizePack": 1
@@ -782,15 +782,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 0,
-        "hookshot": 255,
-        "bombs": 255,
+        "hookshot": "stun10Seconds",
+        "bombs": "stun10Seconds",
         "silverArrows": 100,
         "magicPowder": 0,
         "fireRod": 0,
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 38,
       "prizePack": 5
@@ -816,12 +816,12 @@
         "hookshot": 0,
         "bombs": 0,
         "silverArrows": 0,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 0,
         "iceRod": 0,
         "bombos": 0,
         "ether": 0,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 39,
       "prizePack": null
@@ -838,14 +838,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -853,7 +853,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 65,
       "prizePack": 0
@@ -869,22 +869,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 66,
       "prizePack": 0
@@ -902,14 +902,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 3,
         "class3": 4,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -917,7 +917,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 67,
       "additionalSpriteIndex": [69],
@@ -934,14 +934,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -949,7 +949,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 68,
       "prizePack": 6
@@ -968,14 +968,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 3,
         "class3": 4,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -983,7 +983,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 69,
       "prizePack": null
@@ -1002,14 +1002,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1017,7 +1017,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 70,
       "prizePack": 4
@@ -1036,14 +1036,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1051,7 +1051,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 71,
       "prizePack": 4
@@ -1067,14 +1067,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 3,
         "class3": 4,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1082,7 +1082,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 72,
       "prizePack": 2
@@ -1098,14 +1098,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 3,
         "class3": 4,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1113,7 +1113,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 73,
       "prizePack": 6
@@ -1129,14 +1129,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 3,
         "class3": 4,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1144,7 +1144,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 74,
       "prizePack": 3
@@ -1160,22 +1160,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 75,
       "prizePack": 0
@@ -1198,7 +1198,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 64,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1206,7 +1206,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 16,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 76,
       "prizePack": 1
@@ -1230,7 +1230,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1238,7 +1238,7 @@
         "iceRod": 64,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 77,
       "prizePack": 0
@@ -1254,7 +1254,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1264,12 +1264,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 78,
       "additionalSpriteIndex": [79],
@@ -1286,14 +1286,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 64,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1301,7 +1301,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 16,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 81,
       "prizePack": 4
@@ -1329,7 +1329,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1353,14 +1353,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1384,22 +1384,22 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 8,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 88,
       "prizePack": 0
@@ -1425,7 +1425,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1433,7 +1433,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 16,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 100,
       "prizePack": 1
@@ -1449,14 +1449,14 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 251,
+        "boomerang": "stun1Second",
         "class1": 2,
         "class2": 2,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1464,7 +1464,7 @@
         "iceRod": 0,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 106,
       "prizePack": 1
@@ -1487,14 +1487,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1518,7 +1518,7 @@
         "red": 1
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1528,12 +1528,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 109,
       "prizePack": 1
@@ -1550,7 +1550,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1560,12 +1560,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 109,
       "prizePack": 1
@@ -1582,7 +1582,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1592,12 +1592,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 110,
       "prizePack": 0
@@ -1614,7 +1614,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1624,12 +1624,12 @@
         "hookshot": 64,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 253,
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 110,
       "prizePack": 0
@@ -1660,7 +1660,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 111,
       "prizePack": null
@@ -1692,7 +1692,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 111,
       "prizePack": 6
@@ -1709,14 +1709,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1724,7 +1724,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 113,
       "prizePack": 0
@@ -1750,7 +1750,7 @@
         "hookshot": 0,
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 249,
+        "magicPowder": "fairy",
         "fireRod": 8,
         "iceRod": 8,
         "bombos": 16,
@@ -1787,7 +1787,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 16,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 124,
       "prizePack": 6
@@ -1906,7 +1906,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -1914,7 +1914,7 @@
         "iceRod": 64,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 133,
       "spawnsSprite": 2,
@@ -1952,7 +1952,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 134,
       "prizePack": 5
@@ -1968,7 +1968,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -1983,7 +1983,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 139,
       "prizePack": 2
@@ -2007,7 +2007,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 64,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -2015,7 +2015,7 @@
         "iceRod": 254,
         "bombos": 64,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 142,
       "prizePack": 1
@@ -2032,7 +2032,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -2064,7 +2064,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -2176,7 +2176,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 64,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 148,
       "prizePack": null
@@ -2349,14 +2349,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 64,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -2364,7 +2364,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 165,
       "prizePack": 5
@@ -2383,14 +2383,14 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 255,
+        "boomerang": "stun10Seconds",
         "class1": 2,
         "class2": 4,
         "class3": 8,
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 64,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -2398,7 +2398,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 166,
       "prizePack": 5
@@ -2422,15 +2422,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 8,
         "iceRod": 64,
         "bombos": 253,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 167,
       "prizePack": 5
@@ -2516,7 +2516,7 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
         "magicPowder": 0,
@@ -2524,7 +2524,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 170,
       "prizePack": 1
@@ -2617,7 +2617,7 @@
         "iceRod": 8,
         "bombos": 253,
         "ether": 254,
-        "quake": 255
+        "quake": "stun10Seconds"
       },
       "spriteIndex": 199,
       "prizePack": 6
@@ -2633,7 +2633,7 @@
         "red": 2
       },
       "dmgFromLink": {
-        "boomerang": 251,
+        "boomerang": "stun1Second",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -2648,7 +2648,7 @@
         "iceRod": 254,
         "bombos": 253,
         "ether": 254,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 201,
       "prizePack": 1
@@ -2664,7 +2664,7 @@
         "red": 4
       },
       "dmgFromLink": {
-        "boomerang": 251,
+        "boomerang": "stun1Second",
         "class1": 2,
         "class2": 4,
         "class3": 8,
@@ -2767,15 +2767,15 @@
         "class4": 16,
         "class5": 16,
         "arrows": 4,
-        "hookshot": 255,
+        "hookshot": "stun10Seconds",
         "bombs": 4,
         "silverArrows": 100,
-        "magicPowder": 250,
+        "magicPowder": "slime",
         "fireRod": 8,
         "iceRod": 8,
         "bombos": 16,
         "ether": 64,
-        "quake": 250
+        "quake": "slime"
       },
       "spriteIndex": 211,
       "prizePack": 0
