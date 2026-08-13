@@ -7,14 +7,20 @@
     {
       "id": 1,
       "name": "Hookshot Cave Exit (South)",
-      "area": "Hookshot Cave",
+      "subarea": "Big Room",
       "nodeType": "door"
     },
     {
       "id": 2,
       "name": "Hookshot Cave Exit (North)",
-      "area": "Hookshot Cave",
+      "subarea": "T-Room",
       "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Plus Room",
+      "subarea": "Plus Room",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -45,6 +51,175 @@
       "itemLocation": 1,
       "item": "FiftyRupees",
       "itemAddress": "0xEB57"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Big Room",
+      "locationName": "Main Room - Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "subarea": "Plus Room",
+      "locationName": "Plus Room - Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 3,
+      "subarea": "Plus Room",
+      "locationName": "Plus Room - Bombable Wall (West)",
+      "doorPosition": "west",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 4,
+      "subarea": "T-Room",
+      "locationName": "T-Room - Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 2,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bottom Right Chest",
+      "requires": [
+        "Hookshot"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Top Right Chest",
+      "requires": [
+        "Hookshot"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Top Left Chest",
+      "requires": [
+        "Hookshot"
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bottom Left Chest",
+      "requires": [
+        "Hookshot"
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [1, 1],
+      "name": "Bonk Boost - Bottom Right Chest",
+      "requires": [
+        "canBonkBoost"
+      ],
+      "collectsItems": [1],
+      "note": ["Bonk Boost twice to get to the bottom right chest."]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb Main Room North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Bomb T-Room East Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [3]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Bomb T-Room North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [3, 3],
+      "name": "Fairies",
+      "requires": [
+        {"unlockDoor": 4},
+        {"refill": {"type": "Fairy", "limit": 3}}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Bomb Plus Room South Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Bomb Plus Room North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Bomb Plus Room West Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [3]
+    },
+    {
+      "link": [3, 3],
+      "name": "Great Fairy Refill",
+      "requires": [
+        {"unlockDoor": 2},
+        {"refill": {"type": "Health", "limit": 20}}
+      ]
     }
   ]
 }

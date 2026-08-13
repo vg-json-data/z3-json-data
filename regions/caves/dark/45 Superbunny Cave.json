@@ -55,9 +55,21 @@
       ]
     },
     {
+      "link": [2, 3],
+      "name": "Bunny",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "true"
+    },
+    {
       "link": [3, 1],
       "name": "Base",
-      "requires": []
+      "requires": [],
+      "isBunny": "any"
     },
     {
       "link": [3, 3],

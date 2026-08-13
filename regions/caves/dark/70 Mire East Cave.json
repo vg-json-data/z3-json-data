@@ -9,5 +9,17 @@
       "name": "Entrance",
       "nodeType": "door"
     }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Paid Refill",
+      "requires": [
+        {"pay": 20},
+        {"refill": {"type": "Health", "limit": 20}}
+      ],
+      "isBunny": "any",
+      "devNote": ["FIXME: There is also a bombable wall that can refill hearts, bombs and arrows."]
+    }
   ]
 }

@@ -77,7 +77,7 @@
           ]
         },
         {
-          "id": 2,
+          "id": 3,
           "name": "darkProficiency",
           "tiers": [
             {
@@ -113,6 +113,24 @@
                 "Expects fully scripted and practiced movement through many consecutive complex dark rooms in a row without the Lamp."
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "description": "General configuration techs.",
+      "techs": [
+        {
+          "id": 4,
+          "name": "canBonkBoost",
+          "techRequires": [],
+          "otherRequires": [
+            "PegasusBoots"
+          ],
+          "note": [
+            "Dashing into an object, like a pot or wall, to boost backwards over a pit.",
+            "It is typically best to begin dashing while not facing the object, then rotate towards the object before the dash activates."
           ]
         }
       ]
