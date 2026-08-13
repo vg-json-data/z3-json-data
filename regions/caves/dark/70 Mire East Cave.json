@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 152,
+  "name": "Mire East Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ]
+}

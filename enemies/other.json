@@ -407,6 +407,17 @@
         "red": 8
       },
       "spriteIndex": 138
+    },
+    {
+      "names": [
+        "Ground Spikes"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": null
     }
   ],
   "attacks": [
