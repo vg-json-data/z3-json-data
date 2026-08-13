@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 160,
+  "name": "Hookshot Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Hookshot Cave Exit (South)",
+      "area": "Hookshot Cave",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Hookshot Cave Exit (North)",
+      "area": "Hookshot Cave",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Bottom Right Chest",
+      "itemLocation": 1,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEB5A"
+    },
+    {
+      "id": 2,
+      "locationName": "Top Right Chest",
+      "itemLocation": 1,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEB51"
+    },
+    {
+      "id": 3,
+      "locationName": "Top Left Chest",
+      "itemLocation": 1,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEB54"
+    },
+    {
+      "id": 4,
+      "locationName": "Bottom Left Chest",
+      "itemLocation": 1,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEB57"
+    }
+  ]
+}

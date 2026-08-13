@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 59,
+  "name": "Dark Death Mountain Shop",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ]
+}
