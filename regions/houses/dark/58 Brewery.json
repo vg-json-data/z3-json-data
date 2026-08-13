@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 141,
+  "name": "Brewery",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Brewery Chest",
+      "itemLocation": 1,
+      "item": "ThreeHundredRupees",
+      "itemAddress": "0xE9EC"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

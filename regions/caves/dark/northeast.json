@@ -19,19 +19,6 @@
       "requires": [ "isDarkLink" ]
     },
     {
-      "id": 138,
-      "name": "Dark World Potion Shop",
-      "roomType": "Cave",
-      "requires": [
-        "isDarkLink",
-        {"or": [
-          "canLiftRocks",
-          "canSwim",
-          "Hammer"
-        ]}
-      ]
-    },
-    {
       "id": 140,
       "name": "Pyramid Fairy",
       "roomType": "Cave",

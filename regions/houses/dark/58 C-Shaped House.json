@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 142,
+  "name": "C-Shaped House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "C-Shaped House Chest",
+      "itemLocation": 1,
+      "item": "ThreeHundredRupees",
+      "itemAddress": "0xE9EF"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

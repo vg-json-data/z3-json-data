@@ -3923,14 +3923,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark World Potion Shop and Dark World Potion Shop",
+      "description": "Door connection between Dark Potion Shop and Dark Potion Shop",
       "nodes": [
         {
-          "name": "Dark World Potion Shop",
+          "name": "Dark Potion Shop",
           "position": "origin"
         },
         {
-          "name": "Dark World Potion Shop",
+          "name": "Dark Potion Shop",
           "position": "destination"
         }
       ]
