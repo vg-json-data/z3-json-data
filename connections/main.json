@@ -3909,14 +3909,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark World Lumberjack Shop and Dark World Lumberjack Shop",
+      "description": "Door connection between Dark Lumberjack Shop and Dark Lumberjack Shop",
       "nodes": [
         {
-          "name": "Dark World Lumberjack Shop",
+          "name": "Dark Lumberjack Shop",
           "position": "origin"
         },
         {
-          "name": "Dark World Lumberjack Shop",
+          "name": "Dark Lumberjack Shop",
           "position": "destination"
         }
       ]
@@ -3993,28 +3993,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Desert Hint and Dark Desert Hint",
+      "description": "Door connection between Mire East Cave and Mire East Cave",
       "nodes": [
         {
-          "name": "Dark Desert Hint",
+          "name": "Mire East Cave",
           "position": "origin"
         },
         {
-          "name": "Dark Desert Hint",
+          "name": "Mire East Cave",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Desert Fairy and Dark Desert Healer Fairy",
+      "description": "Door connection between Mire Great Fairy Cave and Mire Great Fairy Cave",
       "nodes": [
         {
-          "name": "Dark Desert Fairy",
+          "name": "Mire Great Fairy Cave",
           "position": "origin"
         },
         {
-          "name": "Dark Desert Healer Fairy",
+          "name": "Mire Great Fairy Cave",
           "position": "destination"
         }
       ]
@@ -4063,28 +4063,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Cave Shop (Dark Death Mountain) and Cave Shop (Dark Death Mountain)",
+      "description": "Door connection between Dark Death Mountain Shop and Dark Death Mountain Shop",
       "nodes": [
         {
-          "name": "Cave Shop (Dark Death Mountain)",
+          "name": "Dark Death Mountain Shop",
           "position": "origin"
         },
         {
-          "name": "Cave Shop (Dark Death Mountain)",
+          "name": "Dark Death Mountain Shop",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Death Mountain Fairy and Dark Death Mountain Healer Fairy",
+      "description": "Door connection between Dark Death Mountain Great Fairy and Dark Death Mountain Great Fairy",
       "nodes": [
         {
-          "name": "Dark Death Mountain Fairy",
+          "name": "Dark Death Mountain Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Dark Death Mountain Healer Fairy",
+          "name": "Dark Death Mountain Great Fairy",
           "position": "destination"
         }
       ]

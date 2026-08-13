@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 137,
+  "name": "Dark Lumberjack Shop",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Shop",
+      "nodeType": "shop"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 32,
+  "name": "Dark Death Mountain Great Fairy",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Great Fairy Refill",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 20}}
+      ],
+      "isBunny": "any"
+    }
+  ]
+}

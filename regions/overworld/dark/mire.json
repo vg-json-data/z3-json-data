@@ -44,14 +44,14 @@
         },
         {
           "id": 7,
-          "name": "Dark Desert Hint",
+          "name": "Mire East Cave",
           "area": "Dark Desert",
           "nodeType": "door",
           "requires": [ "isDarkLink" ]
         },
         {
           "id": 8,
-          "name": "Dark Desert Fairy",
+          "name": "Mire Great Fairy Cave",
           "area": "Dark Desert",
           "nodeType": "door",
           "requires": [ "isDarkLink" ]
