@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "rooms": [
+    {
+      "id": 221,
+      "name": "Pyramid",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Ganon Drop",
+          "area": "Pyramid",
+          "nodeType": "drop"
+        },
+        {
+          "id": 2,
+          "name": "Ganon",
+          "area": "Pyramid",
+          "nodeType": "item",
+          "nodeItem": "Triforce"
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "Bottom of Pyramid",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Pyramid Exit",
+          "area": "Bottom of Pyramid",
+          "nodeType": "door"
+        }
+      ]
+    }
+  ]
+}

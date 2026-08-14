@@ -63,13 +63,13 @@
         },
         {
           "id": 10,
-          "name": "Bonk Fairy (Dark)",
+          "name": "Dark Bonk Fairies",
           "area": "South Dark World",
           "nodeType": "door"
         },
         {
           "id": 11,
-          "name": "Dark Lake Hylia Shop",
+          "name": "Ice Lake Shop",
           "area": "South Dark World",
           "nodeType": "door"
         },

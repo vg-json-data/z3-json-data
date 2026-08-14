@@ -3629,28 +3629,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between East Dark World Hint and East Dark World Hint",
+      "description": "Door connection between Dark East Portal Cave and Dark East Portal Cave",
       "nodes": [
         {
-          "name": "East Dark World Hint",
+          "name": "Dark East Portal Cave",
           "position": "origin"
         },
         {
-          "name": "East Dark World Hint",
+          "name": "Dark East Portal Cave",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Palace of Darkness Hint and Palace of Darkness Hint",
+      "description": "Door connection between Palace of Darkness Cottage and Palace of Darkness Cottage",
       "nodes": [
         {
-          "name": "Palace of Darkness Hint",
+          "name": "Palace of Darkness Cottage",
           "position": "origin"
         },
         {
-          "name": "Palace of Darkness Hint",
+          "name": "Palace of Darkness Cottage",
           "position": "destination"
         }
       ]
@@ -3671,28 +3671,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Lake Hylia Shop and Dark Lake Hylia Shop",
+      "description": "Door connection between Ice Lake Shop and Ice Lake Shop",
       "nodes": [
         {
-          "name": "Dark Lake Hylia Shop",
+          "name": "Ice Lake Shop",
           "position": "origin"
         },
         {
-          "name": "Dark Lake Hylia Shop",
+          "name": "Ice Lake Shop",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Lake Hylia Fairy and Dark Lake Hylia Healer Fairy",
+      "description": "Door connection between Ice Lake Inlet Great Fairy and Ice Lake Inlet Great Fairy",
       "nodes": [
         {
-          "name": "Dark Lake Hylia Fairy",
+          "name": "Ice Lake Inlet Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Dark Lake Hylia Healer Fairy",
+          "name": "Ice Lake Inlet Great Fairy",
           "position": "destination"
         }
       ]
@@ -3755,14 +3755,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bonk Fairy (Dark) and Bonk Fairy (Dark)",
+      "description": "Door connection between Dark Bonk Fairies and Dark Bonk Fairies",
       "nodes": [
         {
-          "name": "Bonk Fairy (Dark)",
+          "name": "Dark Bonk Fairies",
           "position": "origin"
         },
         {
-          "name": "Bonk Fairy (Dark)",
+          "name": "Dark Bonk Fairies",
           "position": "destination"
         }
       ]
@@ -3811,14 +3811,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark World Hammer Peg Cave and Dark World Hammer Peg Cave",
+      "description": "Door connection between Dark Hammer Peg Cave and Dark Hammer Peg Cave",
       "nodes": [
         {
-          "name": "Dark World Hammer Peg Cave",
+          "name": "Dark Hammer Peg Cave",
           "position": "origin"
         },
         {
-          "name": "Dark World Hammer Peg Cave",
+          "name": "Dark Hammer Peg Cave",
           "position": "destination"
         }
       ]
