@@ -3699,42 +3699,42 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Lake Hylia Ledge Fairy and Dark Lake Hylia Ledge Healer Fairy",
+      "description": "Door connection between Shopping Mall Great Fairy and Shopping Mall Great Fairy",
       "nodes": [
         {
-          "name": "Dark Lake Hylia Ledge Fairy",
+          "name": "Shopping Mall Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Dark Lake Hylia Ledge Healer Fairy",
+          "name": "Shopping Mall Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Lake Hylia Ledge Spike Cave and Dark Lake Hylia Ledge Spike Cave",
+      "description": "Door connection between Shopping Mall Spike Cave and Shopping Mall Spike Cave",
       "nodes": [
         {
-          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "name": "Shopping Mall Spike Cave",
           "position": "origin"
         },
         {
-          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "name": "Shopping Mall Spike Cave",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Dark Lake Hylia Ledge Hint and Dark Lake Hylia Ledge Hint",
+      "description": "Door connection between Shopping Mall East Cave and Shopping Mall East Cave",
       "nodes": [
         {
-          "name": "Dark Lake Hylia Ledge Hint",
+          "name": "Shopping Mall East Cave",
           "position": "origin"
         },
         {
-          "name": "Dark Lake Hylia Ledge Hint",
+          "name": "Shopping Mall East Cave",
           "position": "destination"
         }
       ]

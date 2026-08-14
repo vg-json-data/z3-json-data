@@ -156,19 +156,19 @@
         },
         {
           "id": 2,
-          "name": "Dark Lake Hylia Ledge Fairy",
+          "name": "Shopping Mall Great Fairy",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         },
         {
           "id": 3,
-          "name": "Dark Lake Hylia Ledge Hint",
+          "name": "Shopping Mall East Cave",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         },
         {
           "id": 4,
-          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "name": "Shopping Mall Spike Cave",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         }
