@@ -14,5 +14,19 @@
       "name": "Shop",
       "nodeType": "shop"
     }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    }
   ]
 }

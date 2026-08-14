@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 137,
-  "name": "Dark Lumberjack Shop",
+  "id": 123,
+  "name": "Archery Game",
   "roomType": "House",
   "nodes": [
     {
@@ -11,22 +11,20 @@
     },
     {
       "id": 2,
-      "name": "Shop",
-      "nodeType": "shop"
+      "name": "Archery Game",
+      "nodeType": "minigame"
     }
   ],
   "strats": [
     {
       "link": [1, 2],
       "name": "Base",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
       "name": "Base",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     }
   ]
 }

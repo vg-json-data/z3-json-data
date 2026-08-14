@@ -44,19 +44,19 @@
         },
         {
           "id": 7,
-          "name": "Dark Lake Hylia Fairy",
+          "name": "Ice Lake Inlet Great Fairy",
           "area": "East Dark World",
           "nodeType": "door"
         },
         {
           "id": 8,
-          "name": "Palace of Darkness Hint",
+          "name": "Palace of Darkness Cottage",
           "area": "East Dark World",
           "nodeType": "door"
         },
         {
           "id": 9,
-          "name": "East Dark World Hint",
+          "name": "Dark East Portal Cave",
           "area": "East Dark World",
           "nodeType": "door"
         },

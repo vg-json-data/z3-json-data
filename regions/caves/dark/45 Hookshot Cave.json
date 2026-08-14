@@ -161,7 +161,7 @@
       "unlocksDoor": [4]
     },
     {
-      "link": [3, 3],
+      "link": [2, 2],
       "name": "Fairies",
       "requires": [
         {"unlockDoor": 4},

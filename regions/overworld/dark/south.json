@@ -63,13 +63,13 @@
         },
         {
           "id": 10,
-          "name": "Bonk Fairy (Dark)",
+          "name": "Dark Bonk Fairies",
           "area": "South Dark World",
           "nodeType": "door"
         },
         {
           "id": 11,
-          "name": "Dark Lake Hylia Shop",
+          "name": "Ice Lake Shop",
           "area": "South Dark World",
           "nodeType": "door"
         },
@@ -156,19 +156,19 @@
         },
         {
           "id": 2,
-          "name": "Dark Lake Hylia Ledge Fairy",
+          "name": "Shopping Mall Great Fairy",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         },
         {
           "id": 3,
-          "name": "Dark Lake Hylia Ledge Hint",
+          "name": "Shopping Mall East Cave",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         },
         {
           "id": 4,
-          "name": "Dark Lake Hylia Ledge Spike Cave",
+          "name": "Shopping Mall Spike Cave",
           "area": "Dark Lake Hylia Ledge",
           "nodeType": "door"
         }
