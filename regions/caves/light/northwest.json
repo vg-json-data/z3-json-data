@@ -133,11 +133,6 @@
       "roomType": "Cave"
     },
     {
-      "id": 23,
-      "name": "Lumberjack House",
-      "roomType": "Cave"
-    },
-    {
       "id": 33,
       "name": "Chicken House",
       "roomType": "Cave",
@@ -294,74 +289,6 @@
       ]
     },
     {
-      "id": 44,
-      "name": "Lost Woods Hideout (top)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lost Woods Hideout (top to bottom)",
-          "area": "Lost Woods Hideout (top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Lost Woods Hideout",
-          "area": "Lost Woods Hideout (top)",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180000"
-        }
-      ]
-    },
-    {
-      "id": 45,
-      "name": "Lost Woods Hideout (bottom)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lost Woods Hideout Exit",
-          "area": "Lost Woods Hideout (bottom)",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "name": "Lumberjack Tree (top)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lumberjack Tree (top to bottom)",
-          "area": "Lumberjack Tree (top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Lumberjack Tree",
-          "area": "Lumberjack Tree (top)",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180001"
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "name": "Lumberjack Tree (bottom)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Lumberjack Tree Exit",
-          "area": "Lumberjack Tree (bottom)",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
       "id": 51,
       "name": "Graveyard Cave",
       "roomType": "Cave",
@@ -392,11 +319,6 @@
           "note": "Pegasus Rocks"
         }
       ]
-    },
-    {
-      "id": 80,
-      "name": "Lost Woods Gamble",
-      "roomType": "Cave"
     }
   ]
 }
