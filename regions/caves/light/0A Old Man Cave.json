@@ -1,0 +1,174 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 90,
+  "name": "Old Man Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Mountain Entrance Side",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Death Mountain Side",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Rescue Old Man",
+      "itemLocation": 2,
+      "item": "MagicMirror",
+      "itemAddress": "0xF69FA",
+      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [1, 2],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"and": [
+            "L1Sword",
+            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            "L1Sword"
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"enemyDamage": {"enemy": "Fall", "hits": 1}},
+            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [1, 2],
+      "name": "Darkness - Item Use Audio",
+      "requires": [
+        {"darkProficiency": 3},
+        {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+        {"or": [
+          "BookOfMudora",
+          "Bombos",
+          "Ether",
+          "Quake",
+          "Shovel",
+          "BugCatchingNet",
+          "PegasusBoots",
+          "Bottle",
+          "FireRod",
+          "IceRod",
+          "Bow",
+          "Powder",
+          "RedCane",
+          "BlueCane",
+          "Cape",
+          {"or": [
+            "Mushroom",
+            "canRiskPermanentLossOfAccess"
+          ]}
+        ]}
+      ],
+      "devNote": [
+        "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
+        "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
+        "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
+        "It's neglected for now due to schema limitations and because it only saves one heart.",
+        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"and": [
+            "L1Sword",
+            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            "L1Sword"
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"enemyDamage": {"enemy": "Keese", "hits": 3}},
+            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Darkness - Item Use Audio",
+      "requires": [
+        {"darkProficiency": 3},
+        {"enemyDamage": {"enemy": "Keese", "hits": 3}},
+        {"or": [
+          "BookOfMudora",
+          "Bombos",
+          "Ether",
+          "Quake",
+          "Shovel",
+          "BugCatchingNet",
+          "PegasusBoots",
+          "Bottle",
+          "FireRod",
+          "IceRod",
+          "Bow",
+          "Powder",
+          "RedCane",
+          "BlueCane",
+          "Cape",
+          {"or": [
+            "Mushroom",
+            "canRiskPermanentLossOfAccess"
+          ]}
+        ]}
+      ],
+      "devNote": [
+        "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
+        "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
+        "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
+        "It's neglected for now due to schema limitations and because it only saves one heart.",
+        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+      ],
+      "clearsObstacles": ["Old Man Following"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Rescure Old Man",
+      "requires": [
+        {"obstaclesCleared": ["Old Man Following"]}
+      ],
+      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
+    }
+  ]
+}
