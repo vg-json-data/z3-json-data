@@ -79,7 +79,7 @@
           "RedCane",
           "BlueCane",
           "Cape",
-          {"or": [
+          {"and": [
             "Mushroom",
             "canRiskPermanentLossOfAccess"
           ]}
@@ -147,7 +147,7 @@
           "RedCane",
           "BlueCane",
           "Cape",
-          {"or": [
+          {"and": [
             "Mushroom",
             "canRiskPermanentLossOfAccess"
           ]}
