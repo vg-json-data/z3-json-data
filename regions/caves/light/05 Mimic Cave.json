@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 165,
+  "name": "Mimic Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "drop"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Guarded Item",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0xE9C5"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Mimic Kill",
+      "requires": [
+        "Hammer"
+      ],
+      "collectsItems": [1],
+      "note": [
+        "It is possible to move the Mimics while grabbing a wall.",
+        "This makes the kill much easier to set up, and enables a Hammer only room traversal."
+      ]
+    }
+  ]
+}

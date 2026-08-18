@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 110,
+  "name": "Fairy Ascension Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Top Entrance",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "Bottom Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Pit Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Ledge Item",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180001"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 2}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": [],
+      "note": ["Drop using the top right pit."]
+    }
+  ]
+}
