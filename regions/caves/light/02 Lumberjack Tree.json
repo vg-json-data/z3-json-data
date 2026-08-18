@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 44,
+  "name": "Lumberjack Tree",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Drop Entrance",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "View Point",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Ledge Item",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180001"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Grab the Item",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 4}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

@@ -175,40 +175,6 @@
           "nodeType": "door"
         }
       ]
-    },
-    {
-      "id": 110,
-      "name": "Fairy Ascension Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Fairy Ascension Cave Exit (Top)",
-          "area": "Fairy Ascension Cave",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Fairy Ascension Cave Exit (Bottom)",
-          "area": "Fairy Ascension Cave",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 165,
-      "name": "Mimic Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Mimic Cave",
-          "area": "Mimic Cave",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0xE9C5"
-        }
-      ]
     }
   ]
 }
