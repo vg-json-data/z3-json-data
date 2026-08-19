@@ -31,19 +31,6 @@
       ]
     },
     {
-      "id": 9,
-      "name": "North Fairy Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "North Fairy Cave Exit",
-          "area": "North Fairy Cave",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
       "id": 26,
       "name": "Lake Hylia Healer Fairy",
       "roomType": "Cave"
@@ -91,21 +78,6 @@
       "id": 53,
       "name": "Long Fairy Cave",
       "roomType": "Cave"
-    },
-    {
-      "id": 63,
-      "name": "Potion Shop",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Potion Shop",
-          "area": "Potion Shop",
-          "nodeType": "item",
-          "nodeItem": "Powder",
-          "nodeAddress": "0x180014"
-        }
-      ]
     }
   ]
 }
