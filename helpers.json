@@ -283,5 +283,16 @@
       ]}
     ],
     "note": ["This is specifically for shooting a switch from behind a set of blue/orange pegs."]
+  },
+  {
+    "name": "h_greatFairyFreeUpgrades",
+    "requires": [
+      "never"
+    ],
+    "note": [
+      "Represents having to throw a specific item into one of the Great Fairy pools in order to receive a reward.",
+      "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerag;",
+      "in randomizers, it will typically be the case that the Great Fairies that give items won't require throwing specific items into the pool to receive a reward."
+    ]
   }
 ]

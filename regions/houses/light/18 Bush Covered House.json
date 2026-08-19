@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 17,
+  "name": "Bush Covered House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+  ]
+}

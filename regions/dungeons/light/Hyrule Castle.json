@@ -107,7 +107,8 @@
       "locationName": "Boomerang Chest",
       "itemLocation": 6,
       "item": "BlueBoomerang",
-      "itemAddress": "0xE974"
+      "itemAddress": "0xE974",
+      "devNote": ["This is replaced with 10 arrows if the Blue Boomerang is already owned."]
     },
     {
       "id": 4,
@@ -172,6 +173,14 @@
       "itemLocation": 11,
       "item": "TenArrows",
       "itemAddress": "0xEB63"
+    },
+    {
+      "id": 12,
+      "subarea": "Sanctuary",
+      "locationName": "Sanctuary Chest",
+      "itemLocation": 12,
+      "item": "HeartContainer",
+      "itemAddress": "0xEA79"
     }
   ],
   "lockedDoors": [
@@ -792,6 +801,13 @@
         {"obstaclesCleared": ["Zelda Following"]}
       ],
       "setsFlags": ["f_ZeldaEscaped"]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Sanctuary Chest",
+      "requires": [],
+      "collectsItems": [12],
+      "devNote": ["Does not require going through the sewers or rescuing Zelda."]
     },
     {
       "link": [13, 11],

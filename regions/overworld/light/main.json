@@ -272,13 +272,13 @@
         },
         {
           "id": 45,
-          "name": "Snitch Lady (East)",
+          "name": "East Snitch Lady's House",
           "area": "Light World",
           "nodeType": "door"
         },
         {
           "id": 46,
-          "name": "Snitch Lady (West)",
+          "name": "West Snitch Lady's House",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -296,7 +296,7 @@
         },
         {
           "id": 49,
-          "name": "Light World Bomb Hut",
+          "name": "Kakariko Bomb Shed",
           "area": "Light World",
           "nodeType": "door"
         },

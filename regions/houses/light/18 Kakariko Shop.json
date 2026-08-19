@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 20,
+  "name": "Kakariko Shop",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Shop",
+      "nodeType": "shop"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    }
+  ]
+}
