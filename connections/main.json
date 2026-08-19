@@ -451,28 +451,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House Front to Back and Old Man House Back",
+      "description": "Door connection between Old Man's House Front to Back and Old Man's House Back",
       "nodes": [
         {
-          "name": "Old Man House Front to Back",
+          "name": "Old Man's House Front to Back",
           "position": "origin"
         },
         {
-          "name": "Old Man House Back",
+          "name": "Old Man's House Back",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House Back to Front and Old Man House",
+      "description": "Door connection between Old Man's House Back to Front and Old Man's House",
       "nodes": [
         {
-          "name": "Old Man House Back to Front",
+          "name": "Old Man's House Back to Front",
           "position": "origin"
         },
         {
-          "name": "Old Man House",
+          "name": "Old Man's House",
           "position": "destination"
         }
       ]
@@ -3223,24 +3223,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House (Bottom) and Old Man House",
+      "description": "Door connection between Old Man's House (Bottom) and Old Man's House",
       "nodes": [
         {
-          "name": "Old Man House (Bottom)",
+          "name": "Old Man's House (Bottom)",
           "position": "origin"
         },
         {
-          "name": "Old Man House",
+          "name": "Old Man's House",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House Exit (Bottom) and Death Mountain",
+      "description": "Door connection between Old Man's House Exit (Bottom) and Death Mountain",
       "nodes": [
         {
-          "name": "Old Man House Exit (Bottom)",
+          "name": "Old Man's House Exit (Bottom)",
           "position": "origin"
         },
         {
@@ -3251,24 +3251,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House (Top) and Old Man House Back",
+      "description": "Door connection between Old Man's House (Top) and Old Man's House Back",
       "nodes": [
         {
-          "name": "Old Man House (Top)",
+          "name": "Old Man's House (Top)",
           "position": "origin"
         },
         {
-          "name": "Old Man House Back",
+          "name": "Old Man's House Back",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Old Man House Exit (Top) and Death Mountain",
+      "description": "Door connection between Old Man's House Exit (Top) and Death Mountain",
       "nodes": [
         {
-          "name": "Old Man House Exit (Top)",
+          "name": "Old Man's House Exit (Top)",
           "position": "origin"
         },
         {
@@ -3503,14 +3503,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Hookshot Fairy and Hookshot Fairy",
+      "description": "Door connection between Hookshot Fairy Cave and Hookshot Fairy Cave",
       "nodes": [
         {
-          "name": "Hookshot Fairy",
+          "name": "Hookshot Fairy Cave",
           "position": "origin"
         },
         {
-          "name": "Hookshot Fairy",
+          "name": "Hookshot Fairy Cave",
           "position": "destination"
         }
       ]
