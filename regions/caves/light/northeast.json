@@ -31,29 +31,6 @@
       ]
     },
     {
-      "id": 6,
-      "name": "Waterfall of Wishing",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Waterfall Fairy - Left",
-          "area": "Waterfall of Wishing",
-          "nodeType": "item",
-          "nodeItem": "RedBoomerang",
-          "nodeAddress": "0xE9B0"
-        },
-        {
-          "id": 2,
-          "name": "Waterfall Fairy - Right",
-          "area": "Waterfall of Wishing",
-          "nodeType": "item",
-          "nodeItem": "FireShield",
-          "nodeAddress": "0xE9D1"
-        }
-      ]
-    },
-    {
       "id": 9,
       "name": "North Fairy Cave",
       "roomType": "Cave",
