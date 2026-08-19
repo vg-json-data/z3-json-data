@@ -1,0 +1,216 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 101,
+  "name": "Paradox Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Spiral Cave (Top)",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "Spiral Cave (Bottom)",
+      "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Item Ledge",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Five Chest Room - Far Left",
+      "itemLocation": ?,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB2A"
+    },
+    {
+      "id": 2,
+      "locationName": "Five Chest Room - Mid Left",
+      "itemLocation": ?,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB2D"
+    },
+    {
+      "id": 3,
+      "locationName": "Five Chest Room - Middle",
+      "itemLocation": ?,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB36"
+    },
+    {
+      "id": 4,
+      "locationName": "Five Chest Room - Mid Right",
+      "itemLocation": ?,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB30"
+    },
+    {
+      "id": 5,
+      "locationName": "Five Chest Room - Far Right",
+      "itemLocation": ?,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB33"
+    },
+    {
+      "id": 6,
+      "locationName": "Two Chest Room - Left",
+      "itemLocation": ?,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEB39"
+    },
+    {
+      "id": 7,
+      "locationName": "Two Chest Room - Right",
+      "itemLocation": ?,
+      "item": "TenArrows",
+      "itemAddress": "0xEB3C"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 3}}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Arrows", "count": 5}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"magic": {"type": "Rod", "count": 3}},
+          {"magic": {"type": "RedCane", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 64}},
+          {"magic": {"type": "Cape", "count": 46}},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            "Hammer",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            "Hammer"
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "Bombs", "count": 4}},
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"ammo": {"type": "Bombs", "count": 3}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Grab the Item",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}}
+        ]}
+      ],
+      "devNoote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
+    }
+  ]
+}
+    {
+      "id": 101,
+      "name": "Paradox Cave Front",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Push Block Reverse",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave Exit (Bottom)",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Light World Death Mountain Shop",
+          "area": "Paradox Cave Front",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Paradox Cave Chest Area",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Push Block",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave Bomb Jump",
+          "area": "Paradox Cave Chest Area",
+          "nodeType": "door"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Paradox Cave",
+      "roomType": "Cave",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Paradox Cave Exit (Middle)",
+          "area": "Paradox Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 2,
+          "name": "Paradox Cave Exit (Top)",
+          "area": "Paradox Cave",
+          "nodeType": "door"
+        },
+        {
+          "id": 3,
+          "name": "Paradox Cave Drop",
+          "area": "Paradox Cave",
+          "nodeType": "drop"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Light World Death Mountain Shop",
+      "roomType": "Cave"
+    }
