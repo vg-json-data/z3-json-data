@@ -107,7 +107,8 @@
       "locationName": "Boomerang Chest",
       "itemLocation": 6,
       "item": "BlueBoomerang",
-      "itemAddress": "0xE974"
+      "itemAddress": "0xE974",
+      "devNote": ["This is replaced with 10 arrows if the Blue Boomerang is already owned."]
     },
     {
       "id": 4,

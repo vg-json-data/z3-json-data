@@ -2719,28 +2719,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Snitch Lady (East) and Snitch Lady (East)",
+      "description": "Door connection between East Snitch Lady's House and East Snitch Lady's House",
       "nodes": [
         {
-          "name": "Snitch Lady (East)",
+          "name": "East Snitch Lady's House",
           "position": "origin"
         },
         {
-          "name": "Snitch Lady (East)",
+          "name": "East Snitch Lady's House",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Snitch Lady (West) and Snitch Lady (West)",
+      "description": "Door connection between West Snitch Lady's House and West Snitch Lady's House",
       "nodes": [
         {
-          "name": "Snitch Lady (West)",
+          "name": "West Snitch Lady's House",
           "position": "origin"
         },
         {
-          "name": "Snitch Lady (West)",
+          "name": "West Snitch Lady's House",
           "position": "destination"
         }
       ]

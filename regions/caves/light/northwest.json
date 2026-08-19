@@ -17,21 +17,6 @@
       ]
     },
     {
-      "id": 15,
-      "name": "Snitch Lady (East)",
-      "roomType": "Cave"
-    },
-    {
-      "id": 16,
-      "name": "Snitch Lady (West)",
-      "roomType": "Cave"
-    },
-    {
-      "id": 17,
-      "name": "Bush Covered House",
-      "roomType": "Cave"
-    },
-    {
       "id": 18,
       "name": "Tavern (Front)",
       "roomType": "Cave"
@@ -45,21 +30,6 @@
       "id": 20,
       "name": "Kakariko Shop",
       "roomType": "Cave"
-    },
-    {
-      "id": 33,
-      "name": "Chicken House",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Chicken House",
-          "area": "Chicken House",
-          "nodeType": "item",
-          "nodeItem": "BlueBoomerang",
-          "nodeAddress": "0xE9E9"
-        }
-      ]
     },
     {
       "id": 38,
@@ -118,21 +88,6 @@
           "name": "Bat Cave Exit",
           "area": "Bat Cave (left)",
           "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "name": "Sick Kids House",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Sick Kid",
-          "area": "Sick Kids House",
-          "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0x339CF"
         }
       ]
     },
