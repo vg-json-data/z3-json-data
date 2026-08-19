@@ -25,6 +25,12 @@
       "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
     }
   ],
+  "obstacles": [
+    {
+      "id": "Old Man Following",
+      "note": "Rescued the Old Mann and he is following Link."
+    }
+  ],
   "strats": [
     {
       "link": [1, 2],
