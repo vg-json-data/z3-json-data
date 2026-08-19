@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 19,
+  "name": "Kakariko Bomb Shed",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Ammo Refill Pots",
+      "requires": [
+        {"refill": {"type": "Bombs", "limit": 4}},
+        {"refill": {"type": "Arrows", "limit": 5}}
+      ]
+    }
+  ]
+}

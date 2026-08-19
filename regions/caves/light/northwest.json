@@ -2,36 +2,6 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 13,
-      "name": "Tavern",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Kakariko Tavern",
-          "area": "Tavern",
-          "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0xE9CE"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Tavern (Front)",
-      "roomType": "Cave"
-    },
-    {
-      "id": 19,
-      "name": "Light World Bomb Hut",
-      "roomType": "Cave"
-    },
-    {
-      "id": 20,
-      "name": "Kakariko Shop",
-      "roomType": "Cave"
-    },
-    {
       "id": 38,
       "name": "Blacksmiths Hut",
       "roomType": "Cave",

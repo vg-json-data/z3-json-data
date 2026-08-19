@@ -2775,14 +2775,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Light World Bomb Hut and Light World Bomb Hut",
+      "description": "Door connection between Kakariko Bomb Shed and Kakariko Bomb Shed",
       "nodes": [
         {
-          "name": "Light World Bomb Hut",
+          "name": "Kakariko Bomb Shed",
           "position": "origin"
         },
         {
-          "name": "Light World Bomb Hut",
+          "name": "Kakariko Bomb Shed",
           "position": "destination"
         }
       ]
