@@ -1,0 +1,140 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 3,
+  "name": "Blinds Hideout",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Basement",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Secret Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Left Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB18"
+    },
+    {
+      "id": 2,
+      "locationName": "Mid Left Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB12"
+    },
+    {
+      "id": 3,
+      "locationName": "Mid Right Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB15"
+    },
+    {
+      "id": 4,
+      "locationName": "Right Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB1B"
+    },
+    {
+      "id": 5,
+      "locationName": "Hidden Chest",
+      "itemLocation": 3,
+      "item": "PieceOfHeart",
+      "itemAddress": "0xEB0F"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 2,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Pot Refill",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 3}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Left Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Mid Left Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Mid Right Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Right Chest",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [5]
+    }
+  ]
+}

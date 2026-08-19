@@ -2,53 +2,6 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 3,
-      "name": "Blinds Hideout",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Blind's Hideout - Top",
-          "area": "Blinds Hideout",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0xEB0F"
-        },
-        {
-          "id": 2,
-          "name": "Blind's Hideout - Left",
-          "area": "Blinds Hideout",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB12"
-        },
-        {
-          "id": 3,
-          "name": "Blind's Hideout - Right",
-          "area": "Blinds Hideout",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB15"
-        },
-        {
-          "id": 4,
-          "name": "Blind's Hideout - Far Left",
-          "area": "Blinds Hideout",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB18"
-        },
-        {
-          "id": 5,
-          "name": "Blind's Hideout - Far Right",
-          "area": "Blinds Hideout",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB1B"
-        }
-      ]
-    },
-    {
       "id": 13,
       "name": "Tavern",
       "roomType": "Cave",
