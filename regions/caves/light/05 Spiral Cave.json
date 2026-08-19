@@ -7,7 +7,7 @@
     {
       "id": 1,
       "name": "Spiral Cave (Top)",
-      "nodeType": "drop"
+      "nodeType": "door"
     },
     {
       "id": 2,

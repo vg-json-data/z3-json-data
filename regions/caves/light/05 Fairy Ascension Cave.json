@@ -7,7 +7,7 @@
     {
       "id": 1,
       "name": "Top Entrance",
-      "nodeType": "drop"
+      "nodeType": "door"
     },
     {
       "id": 2,
