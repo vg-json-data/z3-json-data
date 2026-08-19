@@ -32,19 +32,19 @@
         "Hammer",
         "Gloves",
         {"or": [
-          {"enemyDamage": {"enemy": "Ground Spikes", "hits": 15}},
+          {"damage": {"type": "Ground Spikes", "count": 15}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Ground Spikes", "hits": 14}}
+            {"damage": {"type": "Ground Spikes", "count": 14}}
           ]},
           {"and": [
             {"magic": {"type": "BlueCane", "count": 128}},
-            {"enemyDamage": {"enemy": "Ground Spikes", "hits": 4}}
+            {"damage": {"type": "Ground Spikes", "count": 4}}
           ]},
           {"and": [
             {"magic": {"type": "BlueCane", "count": 128}},
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Ground Spikes", "hits": 3}}
+            {"damage": {"type": "Ground Spikes", "count": 3}}
           ]},
           {"and": [
             "HalfMagic",
@@ -52,12 +52,12 @@
           ]},
           {"and": [
             {"magic": {"type": "Cape", "count": 128}},
-            {"enemyDamage": {"enemy": "Ground Spikes", "hits": 7}}
+            {"damage": {"type": "Ground Spikes", "count": 7}}
           ]},
           {"and": [
             {"magic": {"type": "Cape", "count": 128}},
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Ground Spikes", "hits": 6}}
+            {"damage": {"type": "Ground Spikes", "count": 6}}
           ]},
           {"and": [
             "HalfMagic",

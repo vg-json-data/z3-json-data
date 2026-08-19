@@ -138,11 +138,27 @@
           "name": "canBombBoost",
           "techRequires": [],
           "otherRequires": [
-            {"ammo": {"type": "Bombs", "count": 1}}
+            {"ammo": {"type": "Bombs", "count": 1}},
+            {"damage": {"type": "Bomb", "count": 1}}
           ],
           "note": [
-            "Using a bomb to boost Link over a pit.",
-            "Holding the direction of movement after the boost begins will give more distance."
+            "Using a bomb to boost Link over a small pit.",
+            "Requires positioning Link near the edge of the platform as the bomb explodes and pushes Link across the gap."
+          ],
+          "extensionTechs": [
+            {
+              "id": 7,
+              "name": "canPreciseBombBoost",
+              "techRequires": ["canBombBoost"],
+              "otherRequires": [
+                {"ammo": {"type": "Bombs", "count": 1}},
+                {"damage": {"type": "Bomb", "count": 1}}
+              ],
+              "note": [
+                "Using a bomb to boost Link over a 2-tile-wide pit, which may include a diagonal boost requirement.",
+                "This requires precise positioning of the bomb and getting hit while Link is at the very edge of the platform."
+              ]
+            }
           ]
         },
         {

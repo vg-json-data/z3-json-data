@@ -407,30 +407,6 @@
         "red": 8
       },
       "spriteIndex": 138
-    },
-    {
-      "names": [
-        "Ground Spikes"
-      ],
-      "dmgToLink": {
-        "green": 8,
-        "blue": 8,
-        "red": 8
-      },
-      "spriteIndex": null,
-      "devNote": ["This is not technically an enemy."]
-    },
-    {
-      "names": [
-        "Fall"
-      ],
-      "dmgToLink": {
-        "green": 8,
-        "blue": 8,
-        "red": 8
-      },
-      "spriteIndex": null,
-      "devNote": ["This is not an enemy, but is when Link falls into a pit and loses one heart."]
     }
   ],
   "attacks": [
