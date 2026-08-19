@@ -169,9 +169,94 @@
       "requires": []
     },
     {
+      "link": [3, 6],
+      "name": "Bomb Boost",
+      "requires": [
+        "canPreciseBombBoost"
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Tank the Damage",
+      "requires": [
+        "h_rangeBlueOrangeSwitch",
+        {"or": [
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 3}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "collectsItems": [1, 2, 3, 4, 5]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"and": [
+            "Hookshot",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hookshot"
+          ]}
+        ]},
+        "h_rangeBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill (Blue Cane)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"magic": {"type": "BlueCane", "count": 40}},
+        "h_rangeBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill (Red Cane)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"magic": {"type": "RedCane", "count": 2}},
+        {"or": [
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "note": [
+        "Doing this damageless can benefit from exploding the block to hit the switch early then placing a second.",
+        "One block is not enough to kill all the enemies regardless."
+      ]
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [1, 2, 3, 4, 5]
+    },
+    {
       "link": [6, 3],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [6, 3],
+      "name": "Bomb Boost",
+      "requires": [
+        "canPreciseBombBoost"
+      ],
+      "devNoote": ["This is not particularly useful as Link could drop down then climb the stairs."]
     },
     {
       "link": [6, 7],
