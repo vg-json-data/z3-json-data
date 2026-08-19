@@ -17,25 +17,6 @@
       ]
     },
     {
-      "id": 14,
-      "name": "Elder House",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Elder House Exit (East)",
-          "area": "Elder House",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Elder House Exit (West)",
-          "area": "Elder House",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
       "id": 15,
       "name": "Snitch Lady (East)",
       "roomType": "Cave"
@@ -77,72 +58,6 @@
           "nodeType": "item",
           "nodeItem": "BlueBoomerang",
           "nodeAddress": "0xE9E9"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "name": "Kakariko Well (top)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Kakariko Well (top to bottom)",
-          "area": "Kakariko Well (top)",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Kakariko Well - Top",
-          "area": "Kakariko Well (top)",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0xEA8E"
-        },
-        {
-          "id": 3,
-          "name": "Kakariko Well - Left",
-          "area": "Kakariko Well (top)",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEA91"
-        },
-        {
-          "id": 4,
-          "name": "Kakariko Well - Middle",
-          "area": "Kakariko Well (top)",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEA94"
-        },
-        {
-          "id": 5,
-          "name": "Kakariko Well - Right",
-          "area": "Kakariko Well (top)",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEA97"
-        },
-        {
-          "id": 6,
-          "name": "Kakariko Well - Bottom",
-          "area": "Kakariko Well (top)",
-          "nodeType": "item",
-          "nodeItem": "ThreeBombs",
-          "nodeAddress": "0xEA9A"
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "name": "Kakariko Well (bottom)",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Kakariko Well Exit",
-          "area": "Kakariko Well (bottom)",
-          "nodeType": "door"
         }
       ]
     },
