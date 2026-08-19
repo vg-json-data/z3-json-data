@@ -49,21 +49,6 @@
       ]
     },
     {
-      "id": 8,
-      "name": "Kings Grave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "King's Tomb",
-          "area": "Kings Grave",
-          "nodeType": "item",
-          "nodeItem": "Cape",
-          "nodeAddress": "0xE97A"
-        }
-      ]
-    },
-    {
       "id": 13,
       "name": "Tavern",
       "roomType": "Cave",
@@ -280,22 +265,6 @@
           "nodeType": "item",
           "nodeItem": "Bottle",
           "nodeAddress": "0x339CF"
-        }
-      ]
-    },
-    {
-      "id": 51,
-      "name": "Graveyard Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Graveyard Cave",
-          "area": "Graveyard Cave",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180004",
-          "note": "Graveyard Ledge"
         }
       ]
     },

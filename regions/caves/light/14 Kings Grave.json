@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 8,
+  "name": "Kings Grave",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "King's Tomb",
+      "itemLocation": 1,
+      "item": "Cape",
+      "itemAddress": "0xE97A"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}
