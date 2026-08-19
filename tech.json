@@ -132,6 +132,46 @@
             "Dashing into an object, like a pot or wall, to boost backwards over a pit.",
             "It is typically best to begin dashing while not facing the object, then rotate towards the object before the dash activates."
           ]
+        },
+        {
+          "id": 5,
+          "name": "canBombBoost",
+          "techRequires": [],
+          "otherRequires": [
+            {"ammo": {"type": "Bombs", "count": 1}},
+            {"damage": {"type": "Bomb", "count": 1}}
+          ],
+          "note": [
+            "Using a bomb to boost Link over a small pit.",
+            "Requires positioning Link near the edge of the platform as the bomb explodes and pushes Link across the gap."
+          ],
+          "extensionTechs": [
+            {
+              "id": 7,
+              "name": "canPreciseBombBoost",
+              "techRequires": ["canBombBoost"],
+              "otherRequires": [
+                {"ammo": {"type": "Bombs", "count": 1}},
+                {"damage": {"type": "Bomb", "count": 1}}
+              ],
+              "note": [
+                "Using a bomb to boost Link over a 2-tile-wide pit, which may include a diagonal boost requirement.",
+                "This requires precise positioning of the bomb and getting hit while Link is at the very edge of the platform."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "canPushBlockClip",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Using an item while pushing a block in order to have the item phase through the block.",
+            "This is typically used with Hookshot to pull Link through the block that is being pushed.",
+            "It can also be used with the Magic Mirror to delete the block entirely, in places where the mirror won't teleport Link.",
+            "Other items, such as the Fire Rod, can also be used but have minimal logical importance."
+          ]
         }
       ]
     }

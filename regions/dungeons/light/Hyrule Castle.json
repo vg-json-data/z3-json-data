@@ -232,6 +232,12 @@
       "keyType": "bomb"
     }
   ],
+  "obstacles": [
+    {
+      "id": "Zelda Following",
+      "note": "Rescued Zelda and she is following Link."
+    }
+  ],
   "strats": [
     {
       "link": [1, 3],

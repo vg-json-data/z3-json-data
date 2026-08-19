@@ -1,0 +1,347 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 101,
+  "name": "Paradox Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance South of Push Block",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Light World Death Mountain Shop",
+      "nodeType": "shop"
+    },
+    {
+      "id": 3,
+      "name": "North of Push Block",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Five Chest Room Entrance",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Five Chest Room Free of Mini-Moldorm",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Entrance South of Pit",
+      "nodeType": "door"
+    },
+    {
+      "id": 7,
+      "name": "Top Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Five Chest Room - Far Left",
+      "itemLocation": 4,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB2A"
+    },
+    {
+      "id": 2,
+      "locationName": "Five Chest Room - Mid Left",
+      "itemLocation": 4,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB2D"
+    },
+    {
+      "id": 3,
+      "locationName": "Five Chest Room - Middle",
+      "itemLocation": 4,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB36"
+    },
+    {
+      "id": 4,
+      "locationName": "Five Chest Room - Mid Right",
+      "itemLocation": 4,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB30"
+    },
+    {
+      "id": 5,
+      "locationName": "Five Chest Room - Far Right",
+      "itemLocation": 4,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB33"
+    },
+    {
+      "id": 6,
+      "locationName": "Two Chest Room - Left",
+      "itemLocation": 3,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEB39"
+    },
+    {
+      "id": 7,
+      "locationName": "Two Chest Room - Right",
+      "itemLocation": 3,
+      "item": "TenArrows",
+      "itemAddress": "0xEB3C"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subarea": "Push Block Room",
+      "locationName": "Left Side - To Shop",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "subarea": "Push Block Room",
+      "locationName": "Right Side - To Two Chest Room",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "bomb"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "Push Block",
+      "note": "The push block is no longer in the way."
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb Wall (To Shop)",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Push Block Moved",
+      "requires": [
+        {"obstaclesCleared": ["Push Block"]}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Push Block Delete",
+      "requires": [
+        "canPushBlockClip",
+        "MagicMirror"
+      ],
+      "clearsObstacles": ["Push Block"]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": [],
+      "clearsObstacles": ["Push Block"]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Bomb Wall (To Two Chest Room)",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Left Chest",
+      "requires": [
+        {"unlockDoor": 2}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Right Chest",
+      "requires": [
+        {"unlockDoor": 2}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 6],
+      "name": "Bomb Boost",
+      "requires": [
+        "canPreciseBombBoost"
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Tank the Damage",
+      "requires": [
+        "h_rangeBlueOrangeSwitch",
+        {"or": [
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 3}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "collectsItems": [1, 2, 3, 4, 5]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"and": [
+            "Hookshot",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hookshot"
+          ]}
+        ]},
+        "h_rangeBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill (Blue Cane)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"magic": {"type": "BlueCane", "count": 40}},
+        "h_rangeBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base - Mini-Moldorm Kill (Red Cane)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"magic": {"type": "RedCane", "count": 2}},
+        {"or": [
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "note": [
+        "Doing this damageless can benefit from exploding the block to hit the switch early then placing a second.",
+        "One block is not enough to kill all the enemies regardless."
+      ]
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [1, 2, 3, 4, 5]
+    },
+    {
+      "link": [6, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [6, 3],
+      "name": "Bomb Boost",
+      "requires": [
+        "canPreciseBombBoost"
+      ],
+      "devNoote": ["This is not particularly useful as Link could drop down then climb the stairs."]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 28}},
+          {"magic": {"type": "Cape", "count": 28}},
+          {"and": [
+            {"combatProficiency": 3},
+            "Hammer"
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 2}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 28}},
+          {"magic": {"type": "Cape", "count": 28}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "Arrows", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "SilverArrows", "count": 3}}
+          ]}
+        ]}
+      ]
+    }
+  ]
+}

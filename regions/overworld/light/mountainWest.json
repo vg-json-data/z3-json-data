@@ -33,13 +33,13 @@
         },
         {
           "id": 2,
-          "name": "Old Man House (Bottom)",
+          "name": "Old Man's House (Bottom)",
           "area": "Death Mountain",
           "nodeType": "door"
         },
         {
           "id": 3,
-          "name": "Old Man House (Top)",
+          "name": "Old Man's House (Top)",
           "area": "Death Mountain",
           "nodeType": "door"
         },

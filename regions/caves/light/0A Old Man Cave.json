@@ -25,6 +25,12 @@
       "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
     }
   ],
+  "obstacles": [
+    {
+      "id": "Old Man Following",
+      "note": "Rescued the Old Mann and he is following Link."
+    }
+  ],
   "strats": [
     {
       "link": [1, 2],
@@ -42,7 +48,7 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+            {"damage": {"type": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -50,7 +56,7 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Fall", "hits": 1}},
+            {"damage": {"type": "Fall", "count": 1}},
             {"enemyDamage": {"enemy": "Keese", "hits": 1}}
           ]}
         ]}
@@ -110,7 +116,7 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+            {"damage": {"type": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -119,7 +125,7 @@
           {"and": [
             {"darkProficiency": 3},
             {"enemyDamage": {"enemy": "Keese", "hits": 3}},
-            {"enemyDamage": {"enemy": "Fall", "hits": 1}}
+            {"damage": {"type": "Fall", "count": 1}}
           ]}
         ]}
       ],

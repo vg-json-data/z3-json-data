@@ -32,7 +32,7 @@
           {"and": [
             "L1Sword",
             {"enemyDamage": {"enemy": "Keese", "hits": 2}},
-            {"enemyDamage": {"enemy": "Fall", "hits": 2}}
+            {"damage": {"type": "Fall", "count": 2}}
           ]},
           {"and": [
             {"darkProficiency": 3},
