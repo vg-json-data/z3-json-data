@@ -7,45 +7,6 @@
       "roomType": "Cave"
     },
     {
-      "id": 35,
-      "name": "Sahasrahlas Hut",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Sahasrahla's Hut - Left",
-          "area": "Sahasrahlas Hut",
-          "nodeType": "item",
-          "nodeItem": "FiftyRupees",
-          "nodeAddress": "0xEA82"
-        },
-        {
-          "id": 2,
-          "name": "Sahasrahla's Hut - Middle",
-          "area": "Sahasrahlas Hut",
-          "nodeType": "item",
-          "nodeItem": "ThreeBombs",
-          "nodeAddress": "0xEA85"
-        },
-        {
-          "id": 3,
-          "name": "Sahasrahla's Hut - Right",
-          "area": "Sahasrahlas Hut",
-          "nodeType": "item",
-          "nodeItem": "FiftyRupees",
-          "nodeAddress": "0xEA88"
-        },
-        {
-          "id": 4,
-          "name": "Sahasrahla",
-          "area": "Sahasrahlas Hut",
-          "nodeType": "item",
-          "nodeItem": "PegasusBoots",
-          "nodeAddress": "0x2F1FC"
-        }
-      ]
-    },
-    {
       "id": 53,
       "name": "Long Fairy Cave",
       "roomType": "Cave"

@@ -768,24 +768,43 @@
       "link": [11, 11],
       "name": "Base - Bomb Wall (South)",
       "requires": [
-        {"or": [
-          {"ammo": {"type": "Bombs", "count": 1}},
-          {"unlockDoor": 6}
-        ]}
+        {"ammo": {"type": "Bombs", "count": 1}}
       ],
-      "unlocksDoor": [6],
-      "collectsItems": [9, 10, 11]
+      "unlocksDoor": [6]
+    },
+    {
+      "link": [11, 11],
+      "name": "Dash Break Wall (South)",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [6]
     },
     {
       "link": [11, 11],
       "name": "Base - Bomb Wall (North)",
       "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [11, 11],
+      "name": "Dash Break Wall (North)",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [11, 11],
+      "name": "Base - Open Chests",
+      "requires": [
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 1}},
+          {"unlockDoor": 6},
           {"unlockDoor": 7}
         ]}
       ],
-      "unlocksDoor": [7],
       "collectsItems": [9, 10, 11]
     },
     {

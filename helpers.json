@@ -294,5 +294,15 @@
       "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerag;",
       "in randomizers, it will typically be the case that the Great Fairies that give items won't require throwing specific items into the pool to receive a reward."
     ]
+  },
+  {
+    "name": "h_SahasrahlasRequest",
+    "requires": [
+      "PendantOfCourage"
+    ],
+    "note": [
+      "In the vanilla game Sahasrahla gives link a reward for having the Green Pendant.",
+      "Randomizers may be interested in changing this requirement to requiring any pendant or no pendant."
+    ]
   }
 ]

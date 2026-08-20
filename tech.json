@@ -172,6 +172,19 @@
             "It can also be used with the Magic Mirror to delete the block entirely, in places where the mirror won't teleport Link.",
             "Other items, such as the Fire Rod, can also be used but have minimal logical importance."
           ]
+        },
+        {
+          "id": 7,
+          "name": "canBreakDashableWall",
+          "techRequires": [],
+          "otherRequires": [
+            "PegasusBoots"
+          ],
+          "note": [
+            "A subset of bombable walls can also be broken by dashing into them with the Pegasus Boots.",
+            "The walls are visually distinct, with a circular crack pattern."
+          ],
+          "devNote": ["FIXME: Is this always true? find and determine each use."]
         }
       ]
     }
