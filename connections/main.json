@@ -143,28 +143,28 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop Ledge and Bat Cave Drop Ledge",
+      "description": "Drop connection between Magic Bat Cave Drop Ledge and Magic Bat Cave Drop Ledge",
       "nodes": [
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "origin"
         },
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Door and Bat Cave (left)",
+      "description": "Door connection between Magic Bat Cave Door and Magic Bat Cave (left)",
       "nodes": [
         {
-          "name": "Bat Cave Door",
+          "name": "Magic Bat Cave Door",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (left)",
+          "name": "Magic Bat Cave (left)",
           "position": "destination"
         }
       ]
@@ -815,14 +815,14 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop Ledge Mirror Spot and Bat Cave Drop Ledge",
+      "description": "Drop connection between Magic Bat Cave Drop Ledge Mirror Spot and Magic Bat Cave Drop Ledge",
       "nodes": [
         {
-          "name": "Bat Cave Drop Ledge Mirror Spot",
+          "name": "Magic Bat Cave Drop Ledge Mirror Spot",
           "position": "origin"
         },
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "destination"
         }
       ]
@@ -2537,38 +2537,38 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop and Bat Cave (right)",
+      "description": "Drop connection between Magic Bat Cave Drop and Magic Bat Cave (right)",
       "nodes": [
         {
-          "name": "Bat Cave Drop",
+          "name": "Magic Bat Cave Drop",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (right)",
+          "name": "Magic Bat Cave (right)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Cave and Bat Cave (left)",
+      "description": "Door connection between Magic Bat Cave Cave and Magic Bat Cave (left)",
       "nodes": [
         {
-          "name": "Bat Cave Cave",
+          "name": "Magic Bat Cave Cave",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (left)",
+          "name": "Magic Bat Cave (left)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Exit and Light World",
+      "description": "Door connection between Magic Bat Cave Exit and Light World",
       "nodes": [
         {
-          "name": "Bat Cave Exit",
+          "name": "Magic Bat Cave Exit",
           "position": "origin"
         },
         {

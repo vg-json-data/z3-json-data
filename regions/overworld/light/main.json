@@ -86,13 +86,13 @@
         },
         {
           "id": 14,
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "area": "Light World",
           "nodeType": "drop"
         },
         {
           "id": 15,
-          "name": "Bat Cave Cave",
+          "name": "Magic Bat Cave Cave",
           "area": "Light World",
           "nodeType": "door"
         },
