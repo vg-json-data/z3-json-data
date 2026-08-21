@@ -2355,28 +2355,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Light Hype Fairy and Swamp Healer Fairy",
+      "description": "Door connection between Swamp Great Fairy and Swamp Great Fairy",
       "nodes": [
         {
-          "name": "Light Hype Fairy",
+          "name": "Swamp Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Swamp Healer Fairy",
+          "name": "Swamp Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Desert Fairy and Desert Healer Fairy",
+      "description": "Door connection between Desert Great Fairy and Desert Great Fairy",
       "nodes": [
         {
-          "name": "Desert Fairy",
+          "name": "Desert Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Desert Healer Fairy",
+          "name": "Desert Great Fairy",
           "position": "destination"
         }
       ]
@@ -2453,28 +2453,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Cave Shop (Lake Hylia) and Cave Shop (Lake Hylia)",
+      "description": "Door connection between Lake Hylia Shop and Lake Hylia Shop",
       "nodes": [
         {
-          "name": "Cave Shop (Lake Hylia)",
+          "name": "Lake Hylia Shop",
           "position": "origin"
         },
         {
-          "name": "Cave Shop (Lake Hylia)",
+          "name": "Lake Hylia Shop",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Capacity Upgrade and Capacity Upgrade",
+      "description": "Door connection between Lake Hylia Great Fairy and Lake Hylia Great Fairy",
       "nodes": [
         {
-          "name": "Capacity Upgrade",
+          "name": "Lake Hylia Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Capacity Upgrade",
+          "name": "Lake Hylia Great Fairy",
           "position": "destination"
         }
       ]
@@ -2999,14 +2999,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ice Rod Cave and Ice Rod Cave",
+      "description": "Door connection between Ice Cave and Ice Cave",
       "nodes": [
         {
-          "name": "Ice Rod Cave",
+          "name": "Ice Cave",
           "position": "origin"
         },
         {
-          "name": "Ice Rod Cave",
+          "name": "Ice Cave",
           "position": "destination"
         }
       ]

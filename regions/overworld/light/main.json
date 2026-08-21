@@ -140,7 +140,7 @@
         },
         {
           "id": 23,
-          "name": "Ice Rod Cave",
+          "name": "Ice Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -326,7 +326,7 @@
         },
         {
           "id": 54,
-          "name": "Cave Shop (Lake Hylia)",
+          "name": "Lake Hylia Shop",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -368,13 +368,13 @@
         },
         {
           "id": 61,
-          "name": "Light Hype Fairy",
+          "name": "Swamp Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },
         {
           "id": 62,
-          "name": "Desert Fairy",
+          "name": "Desert Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },

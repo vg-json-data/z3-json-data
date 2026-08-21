@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 8,
-  "name": "Kings Grave",
+  "id": 49,
+  "name": "Cave 45",
   "roomType": "Cave",
   "nodes": [
     {
@@ -13,10 +13,10 @@
   "items": [
     {
       "id": 1,
-      "locationName": "King's Tomb",
+      "locationName": "Pot Blocked Item",
       "itemLocation": 1,
-      "item": "Cape",
-      "itemAddress": "0xE97A"
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180003"
     }
   ],
   "strats": [
@@ -25,6 +25,13 @@
       "name": "Base",
       "requires": [],
       "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Heart Pots",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 5}}
+      ]
     }
   ]
 }
