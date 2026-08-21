@@ -174,7 +174,10 @@
       "requires": [
         {"obstaclesCleared": ["Old Man Following"]}
       ],
-      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
+      "exitState": {
+        "state": "follower",
+        "type": "OldMan"
+      }
     }
   ]
 }
