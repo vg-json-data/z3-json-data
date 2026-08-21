@@ -42,31 +42,6 @@
       "roomType": "Cave"
     },
     {
-      "id": 27,
-      "name": "Swamp Healer Fairy",
-      "roomType": "Cave"
-    },
-    {
-      "id": 28,
-      "name": "Desert Healer Fairy",
-      "roomType": "Cave"
-    },
-    {
-      "id": 49,
-      "name": "Cave 45",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Cave 45",
-          "area": "Cave 45",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180003"
-        }
-      ]
-    },
-    {
       "id": 54,
       "name": "Mini Moldorm Cave",
       "roomType": "Cave",
@@ -115,31 +90,6 @@
       ]
     },
     {
-      "id": 55,
-      "name": "Ice Rod Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Ice Rod Cave",
-          "area": "Ice Rod Cave",
-          "nodeType": "item",
-          "nodeItem": "IceRod",
-          "nodeAddress": "0xEB4E"
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "name": "Good Bee Cave",
-      "roomType": "Cave"
-    },
-    {
-      "id": 57,
-      "name": "20 Rupee Cave",
-      "roomType": "Cave"
-    },
-    {
       "id": 58,
       "name": "Cave Shop (Lake Hylia)",
       "roomType": "Cave"
@@ -147,11 +97,6 @@
     {
       "id": 65,
       "name": "Capacity Upgrade",
-      "roomType": "Cave"
-    },
-    {
-      "id": 68,
-      "name": "50 Rupee Cave",
       "roomType": "Cave"
     }
   ]
