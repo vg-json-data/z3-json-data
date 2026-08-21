@@ -152,7 +152,7 @@
         },
         {
           "id": 25,
-          "name": "Bonk Rock Cave",
+          "name": "Sanctuary Bonk Rock Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -344,7 +344,7 @@
         },
         {
           "id": 57,
-          "name": "Bonk Fairy (Light)",
+          "name": "Light Bonk Fairies",
           "area": "Light World",
           "nodeType": "door"
         },

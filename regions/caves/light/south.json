@@ -63,11 +63,6 @@
       "roomType": "Cave"
     },
     {
-      "id": 24,
-      "name": "Bonk Fairy (Light)",
-      "roomType": "Cave"
-    },
-    {
       "id": 27,
       "name": "Swamp Healer Fairy",
       "roomType": "Cave"
@@ -201,48 +196,9 @@
       "roomType": "Cave"
     },
     {
-      "id": 61,
-      "name": "Library",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Library",
-          "area": "Library",
-          "nodeType": "item",
-          "nodeItem": "BookOfMudora",
-          "nodeAddress": "0x180012"
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "name": "Kakariko Gamble Game",
-      "roomType": "Cave"
-    },
-    {
       "id": 65,
       "name": "Capacity Upgrade",
       "roomType": "Cave"
-    },
-    {
-      "id": 66,
-      "name": "Two Brothers House",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Two Brothers House Exit (East)",
-          "area": "Two Brothers House",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Two Brothers House Exit (West)",
-          "area": "Two Brothers House",
-          "nodeType": "door"
-        }
-      ]
     },
     {
       "id": 68,
