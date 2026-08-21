@@ -2453,28 +2453,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Cave Shop (Lake Hylia) and Cave Shop (Lake Hylia)",
+      "description": "Door connection between Lake Hylia Shop and Lake Hylia Shop",
       "nodes": [
         {
-          "name": "Cave Shop (Lake Hylia)",
+          "name": "Lake Hylia Shop",
           "position": "origin"
         },
         {
-          "name": "Cave Shop (Lake Hylia)",
+          "name": "Lake Hylia Shop",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Capacity Upgrade and Capacity Upgrade",
+      "description": "Door connection between Lake Hylia Great Fairy and Lake Hylia Great Fairy",
       "nodes": [
         {
-          "name": "Capacity Upgrade",
+          "name": "Lake Hylia Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Capacity Upgrade",
+          "name": "Lake Hylia Great Fairy",
           "position": "destination"
         }
       ]

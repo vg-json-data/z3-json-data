@@ -35,69 +35,6 @@
           "nodeType": "door"
         }
       ]
-    },
-    {
-      "id": 22,
-      "name": "Lake Hylia Fortune Teller",
-      "roomType": "Cave"
-    },
-    {
-      "id": 54,
-      "name": "Mini Moldorm Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Mini Moldorm Cave - Far Left",
-          "area": "Mini Moldorm Cave",
-          "nodeType": "item",
-          "nodeItem": "ThreeBombs",
-          "nodeAddress": "0xEB42"
-        },
-        {
-          "id": 2,
-          "name": "Mini Moldorm Cave - Left",
-          "area": "Mini Moldorm Cave",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB45"
-        },
-        {
-          "id": 3,
-          "name": "Mini Moldorm Cave - Right",
-          "area": "Mini Moldorm Cave",
-          "nodeType": "item",
-          "nodeItem": "TwentyRupees",
-          "nodeAddress": "0xEB48"
-        },
-        {
-          "id": 4,
-          "name": "Mini Moldorm Cave - Far Right",
-          "area": "Mini Moldorm Cave",
-          "nodeType": "item",
-          "nodeItem": "TenArrows",
-          "nodeAddress": "0xEB4B"
-        },
-        {
-          "id": 5,
-          "name": "Mini Moldorm Cave - Generous Guy",
-          "area": "Mini Moldorm Cave",
-          "nodeType": "item",
-          "nodeItem": "ThreeHundredRupees",
-          "nodeAddress": "0x180010",
-          "note": "Mini Moldorm Cave - NPC"
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "name": "Cave Shop (Lake Hylia)",
-      "roomType": "Cave"
-    },
-    {
-      "id": 65,
-      "name": "Capacity Upgrade",
-      "roomType": "Cave"
     }
   ]
 }
