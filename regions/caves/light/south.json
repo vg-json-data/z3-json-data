@@ -52,21 +52,6 @@
       "roomType": "Cave"
     },
     {
-      "id": 34,
-      "name": "Aginahs Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Aginah's Cave",
-          "area": "Aginahs Cave",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0xE9F2"
-        }
-      ]
-    },
-    {
       "id": 49,
       "name": "Cave 45",
       "roomType": "Cave",
@@ -78,21 +63,6 @@
           "nodeType": "item",
           "nodeItem": "PieceOfHeart",
           "nodeAddress": "0x180003"
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "name": "Checkerboard Cave",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Checkerboard Cave",
-          "area": "Checkerboard Cave",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180005"
         }
       ]
     },

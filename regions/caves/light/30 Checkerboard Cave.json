@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 8,
-  "name": "Kings Grave",
+  "id": 52,
+  "name": "Checkerboard Cave",
   "roomType": "Cave",
   "nodes": [
     {
@@ -13,10 +13,10 @@
   "items": [
     {
       "id": 1,
-      "locationName": "King's Tomb",
+      "locationName": "Blocked Item",
       "itemLocation": 1,
-      "item": "Cape",
-      "itemAddress": "0xE97A"
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180005"
     }
   ],
   "strats": [
