@@ -24,27 +24,6 @@
       ]
     },
     {
-      "id": 11,
-      "name": "Links House",
-      "roomType": "Cave",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Links House Exit",
-          "area": "Links House",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Link's House",
-          "area": "Links House",
-          "nodeType": "item",
-          "nodeItem": "Lamp",
-          "nodeAddress": "0xE9BC"
-        }
-      ]
-    },
-    {
       "id": 12,
       "name": "Chris Houlihan Room",
       "roomType": "Cave",

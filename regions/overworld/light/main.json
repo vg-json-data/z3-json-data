@@ -254,13 +254,13 @@
         },
         {
           "id": 42,
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },
         {
           "id": 43,
-          "name": "North Fairy Cave Drop",
+          "name": "North Great Fairy Drop",
           "area": "Light World",
           "nodeType": "drop"
         },
@@ -362,7 +362,7 @@
         },
         {
           "id": 60,
-          "name": "Lake Hylia Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },

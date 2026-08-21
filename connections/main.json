@@ -2327,14 +2327,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Lake Hylia Fairy and Lake Hylia Healer Fairy",
+      "description": "Door connection between Lake Hylia Inlet Great Fairy and Lake Hylia Inlet Great Fairy",
       "nodes": [
         {
-          "name": "Lake Hylia Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Lake Hylia Healer Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "position": "destination"
         }
       ]
@@ -2649,38 +2649,38 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between North Fairy Cave Drop and North Fairy Cave",
+      "description": "Drop connection between North Great Fairy Drop and North Great Fairy",
       "nodes": [
         {
-          "name": "North Fairy Cave Drop",
+          "name": "North Great Fairy Drop",
           "position": "origin"
         },
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between North Fairy Cave and North Fairy Cave",
+      "description": "Door connection between North Great Fairy and North Great Fairy",
       "nodes": [
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "origin"
         },
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between North Fairy Cave Exit and Light World",
+      "description": "Door connection between North Great Fairy Exit and Light World",
       "nodes": [
         {
-          "name": "North Fairy Cave Exit",
+          "name": "North Great Fairy Exit",
           "position": "origin"
         },
         {
