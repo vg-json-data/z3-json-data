@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 53,
+  "name": "Long Fairy Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 4}}
+      ]
+    }
+  ]
+}

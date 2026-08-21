@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 62,
+  "name": "Kakariko Gamble Game",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Gamble Game",
+      "nodeType": "minigame"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

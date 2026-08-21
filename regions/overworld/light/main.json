@@ -86,13 +86,13 @@
         },
         {
           "id": 14,
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "area": "Light World",
           "nodeType": "drop"
         },
         {
           "id": 15,
-          "name": "Bat Cave Cave",
+          "name": "Magic Bat Cave Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -152,7 +152,7 @@
         },
         {
           "id": 25,
-          "name": "Bonk Rock Cave",
+          "name": "Sanctuary Bonk Rock Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -254,13 +254,13 @@
         },
         {
           "id": 42,
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },
         {
           "id": 43,
-          "name": "North Fairy Cave Drop",
+          "name": "North Great Fairy Drop",
           "area": "Light World",
           "nodeType": "drop"
         },
@@ -344,7 +344,7 @@
         },
         {
           "id": 57,
-          "name": "Bonk Fairy (Light)",
+          "name": "Light Bonk Fairies",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -362,7 +362,7 @@
         },
         {
           "id": 60,
-          "name": "Lake Hylia Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "area": "Light World",
           "nodeType": "door"
         },

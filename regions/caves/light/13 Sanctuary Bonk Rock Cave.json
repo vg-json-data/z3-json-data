@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-region.schema.json",
+  "id": 60,
+  "name": "Sanctuary Bonk Rock Cave",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Chest",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0xEB3F"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

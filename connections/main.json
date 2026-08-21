@@ -143,28 +143,28 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop Ledge and Bat Cave Drop Ledge",
+      "description": "Drop connection between Magic Bat Cave Drop Ledge and Magic Bat Cave Drop Ledge",
       "nodes": [
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "origin"
         },
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Door and Bat Cave (left)",
+      "description": "Door connection between Magic Bat Cave Door and Magic Bat Cave (left)",
       "nodes": [
         {
-          "name": "Bat Cave Door",
+          "name": "Magic Bat Cave Door",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (left)",
+          "name": "Magic Bat Cave (left)",
           "position": "destination"
         }
       ]
@@ -815,14 +815,14 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop Ledge Mirror Spot and Bat Cave Drop Ledge",
+      "description": "Drop connection between Magic Bat Cave Drop Ledge Mirror Spot and Magic Bat Cave Drop Ledge",
       "nodes": [
         {
-          "name": "Bat Cave Drop Ledge Mirror Spot",
+          "name": "Magic Bat Cave Drop Ledge Mirror Spot",
           "position": "origin"
         },
         {
-          "name": "Bat Cave Drop Ledge",
+          "name": "Magic Bat Cave Drop Ledge",
           "position": "destination"
         }
       ]
@@ -2313,28 +2313,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bonk Fairy (Light) and Bonk Fairy (Light)",
+      "description": "Door connection between Light Bonk Fairies and Light Bonk Fairies",
       "nodes": [
         {
-          "name": "Bonk Fairy (Light)",
+          "name": "Light Bonk Fairies",
           "position": "origin"
         },
         {
-          "name": "Bonk Fairy (Light)",
+          "name": "Light Bonk Fairies",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Lake Hylia Fairy and Lake Hylia Healer Fairy",
+      "description": "Door connection between Lake Hylia Inlet Great Fairy and Lake Hylia Inlet Great Fairy",
       "nodes": [
         {
-          "name": "Lake Hylia Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Lake Hylia Healer Fairy",
+          "name": "Lake Hylia Inlet Great Fairy",
           "position": "destination"
         }
       ]
@@ -2537,38 +2537,38 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between Bat Cave Drop and Bat Cave (right)",
+      "description": "Drop connection between Magic Bat Cave Drop and Magic Bat Cave (right)",
       "nodes": [
         {
-          "name": "Bat Cave Drop",
+          "name": "Magic Bat Cave Drop",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (right)",
+          "name": "Magic Bat Cave (right)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Cave and Bat Cave (left)",
+      "description": "Door connection between Magic Bat Cave Cave and Magic Bat Cave (left)",
       "nodes": [
         {
-          "name": "Bat Cave Cave",
+          "name": "Magic Bat Cave Cave",
           "position": "origin"
         },
         {
-          "name": "Bat Cave (left)",
+          "name": "Magic Bat Cave (left)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bat Cave Exit and Light World",
+      "description": "Door connection between Magic Bat Cave Exit and Light World",
       "nodes": [
         {
-          "name": "Bat Cave Exit",
+          "name": "Magic Bat Cave Exit",
           "position": "origin"
         },
         {
@@ -2649,38 +2649,38 @@
     },
     {
       "connectionType": "Drop",
-      "description": "Drop connection between North Fairy Cave Drop and North Fairy Cave",
+      "description": "Drop connection between North Great Fairy Drop and North Great Fairy",
       "nodes": [
         {
-          "name": "North Fairy Cave Drop",
+          "name": "North Great Fairy Drop",
           "position": "origin"
         },
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between North Fairy Cave and North Fairy Cave",
+      "description": "Door connection between North Great Fairy and North Great Fairy",
       "nodes": [
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "origin"
         },
         {
-          "name": "North Fairy Cave",
+          "name": "North Great Fairy",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between North Fairy Cave Exit and Light World",
+      "description": "Door connection between North Great Fairy Exit and Light World",
       "nodes": [
         {
-          "name": "North Fairy Cave Exit",
+          "name": "North Great Fairy Exit",
           "position": "origin"
         },
         {
@@ -3013,14 +3013,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Bonk Rock Cave and Bonk Rock Cave",
+      "description": "Door connection between Sanctuary Bonk Rock Cave and Sanctuary Bonk Rock Cave",
       "nodes": [
         {
-          "name": "Bonk Rock Cave",
+          "name": "Sanctuary Bonk Rock Cave",
           "position": "origin"
         },
         {
-          "name": "Bonk Rock Cave",
+          "name": "Sanctuary Bonk Rock Cave",
           "position": "destination"
         }
       ]
