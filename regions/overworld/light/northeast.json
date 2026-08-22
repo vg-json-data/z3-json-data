@@ -26,19 +26,19 @@
     },
     {
       "id": 7,
-      "name": "Kings Grave Area",
+      "name": "King's Grave Area",
       "roomType": "LightWorld",
       "nodes": [
         {
           "id": 1,
-          "name": "Kings Grave",
-          "area": "Kings Grave Area",
+          "name": "King's Grave",
+          "area": "King's Grave Area",
           "nodeType": "door"
         },
         {
           "id": 2,
-          "name": "Kings Grave Inner Rocks",
-          "area": "Kings Grave Area",
+          "name": "King's Grave Inner Rocks",
+          "area": "King's Grave Area",
           "nodeType": "door"
         }
       ]
@@ -81,7 +81,7 @@
         },
         {
           "id": 3,
-          "name": "Agahnims Tower",
+          "name": "Agahnim's Tower",
           "area": "Hyrule Castle Ledge",
           "nodeType": "door"
         },

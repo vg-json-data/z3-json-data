@@ -170,7 +170,7 @@
     },
     {
       "link": [2, 2],
-      "name": "Rescure Old Man",
+      "name": "Rescue Old Man",
       "requires": [
         {"obstaclesCleared": ["Old Man Following"]}
       ],

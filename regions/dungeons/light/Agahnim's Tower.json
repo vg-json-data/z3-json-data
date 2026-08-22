@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 88,
-  "name": "Agahnims Tower",
+  "name": "Agahnim's Tower",
   "roomType": "Dungeon",
   "nodes": [
     {

@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 42,
-  "name": "Sick Kids House",
+  "name": "Sick Kid's House",
   "roomType": "House",
   "nodes": [
     {

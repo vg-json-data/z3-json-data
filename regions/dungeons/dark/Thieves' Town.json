@@ -1,14 +1,14 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 171,
-  "name": "Thieves Town",
+  "name": "Thieves' Town",
   "note": "Also requires access to Northwest Dark World",
   "roomType": "Dungeon",
   "nodes": [
     {
       "id": 1,
-      "name": "Thieves Town Big Key Door",
-      "area": "Thieves Town (Entrance)",
+      "name": "Thieves' Town Big Key Door",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -17,8 +17,8 @@
     },
     {
       "id": 2,
-      "name": "Thieves Town Exit",
-      "area": "Thieves Town (Entrance)",
+      "name": "Thieves' Town Exit",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -28,7 +28,7 @@
     {
       "id": 3,
       "name": "Thieves' Town - Chest with Big Key",
-      "area": "Thieves Town (Entrance)",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "name": "Thieves' Town - Map Chest",
-      "area": "Thieves Town (Entrance)",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -52,7 +52,7 @@
     {
       "id": 5,
       "name": "Thieves' Town - Compass Chest",
-      "area": "Thieves Town (Entrance)",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -64,7 +64,7 @@
     {
       "id": 6,
       "name": "Thieves' Town - Ambush Chest",
-      "area": "Thieves Town (Entrance)",
+      "area": "Thieves' Town (Entrance)",
       "requires": [
         "RescueZelda",
         "isDarkLink"
@@ -76,13 +76,13 @@
     {
       "id": 7,
       "name": "Blind Fight",
-      "area": "Thieves Town (Deep)",
+      "area": "Thieves' Town (Deep)",
       "nodeType": "door"
     },
     {
       "id": 8,
       "name": "Thieves' Town - Attic",
-      "area": "Thieves Town (Deep)",
+      "area": "Thieves' Town (Deep)",
       "requires": [
         "BigKeyD4",
         "KeyD4"
@@ -94,7 +94,7 @@
     {
       "id": 9,
       "name": "Thieves' Town - Big Chest",
-      "area": "Thieves Town (Deep)",
+      "area": "Thieves' Town (Deep)",
       "requires": [
         "Hammer",
         "BigKeyD4",
@@ -108,7 +108,7 @@
     {
       "id": 10,
       "name": "Thieves' Town - Blind's Cell",
-      "area": "Thieves Town (Deep)",
+      "area": "Thieves' Town (Deep)",
       "requires": [ "BigKeyD4" ],
       "nodeType": "item",
       "nodeItem": "KeyD4",
@@ -116,7 +116,7 @@
     },
     {
       "id": 11,
-      "name": "Thieves Town - Blind",
+      "name": "Thieves' Town - Blind",
       "area": "Blind Fight",
       "requires": [
         "BigKeyD4",
@@ -128,7 +128,7 @@
     },
     {
       "id": 12,
-      "name": "Thieves Town - Prize",
+      "name": "Thieves' Town - Prize",
       "area": "Blind Fight",
       "nodeType": "item",
       "nodeItem": "Crystal4",

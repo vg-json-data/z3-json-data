@@ -1,0 +1,109 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "id": 27,
+  "name": "Link's House",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Central Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [9.5, 28]},
+        {"edge": "west", "span": [11.5, 14.5]},
+        {"edge": "west", "span": [15.5, 21.5]},
+        {"edge": "west", "span": [24, 27.5]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Link's House",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Big Bomb Shop",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "South Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [13, 16]}
+      ],
+      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+    },
+    {
+      "id": 3,
+      "name": "East Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [23, 27]}
+      ],
+      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        "f_ZeldaEscaped"
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        "f_ZeldaEscaped"
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        "f_ZeldaEscaped"
+      ],
+      "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        "f_ZeldaEscaped"
+      ],
+      "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}
