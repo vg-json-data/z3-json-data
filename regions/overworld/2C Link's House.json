@@ -15,8 +15,16 @@
         {"edge": "west", "span": [24, 27.5]}
       ],
       "entrances": [
-        {"name": "Link's House", "id": 1, "world": "light"},
-        {"name": "Big Bomb Shop", "id": 2, "world": "dark"}
+        {
+          "id": 1,
+          "name": "Link's House",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Big Bomb Shop",
+          "world": "dark"
+        }
       ]
     },
     {
