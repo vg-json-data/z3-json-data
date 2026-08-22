@@ -7,6 +7,7 @@
     {
       "id": 1,
       "name": "Central Area",
+      "world": "both",
       "transitions": [
         {"edge": "north", "span": [9.5, 28]},
         {"edge": "west", "span": [11.5, 14.5]},
@@ -21,6 +22,7 @@
     {
       "id": 2,
       "name": "South Transition",
+      "world": "both",
       "transitions": [
         {"edge": "south", "span": [13, 16]}
       ],
@@ -29,6 +31,7 @@
     {
       "id": 3,
       "name": "East Transition",
+      "world": "both",
       "transitions": [
         {"edge": "east", "span": [23, 27]}
       ],
