@@ -1,6 +1,6 @@
 {
   "$schema": "../../schema/z3-region.schema.json",
-  "id": 999,
+  "id": 27,
   "name": "Link's House",
   "roomType": "Overworld",
   "nodes": [
@@ -13,7 +13,7 @@
         {"edge": "west", "span": [15.5, 21.5]},
         {"edge": "west", "span": [24, 27.5]}
       ],
-      "connections": [
+      "entrances": [
         {"name": "Link's House", "id": 1, "world": "light"},
         {"name": "Big Bomb Shop", "id": 2, "world": "dark"}
       ]
