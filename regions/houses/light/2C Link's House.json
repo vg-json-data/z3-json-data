@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
   "id": 11,
-  "name": "Links House",
+  "name": "Link's House",
   "roomType": "House",
   "nodes": [
     {
@@ -13,7 +13,7 @@
   "items": [
     {
       "id": 1,
-      "locationName": "Links Chest",
+      "locationName": "Link's Chest",
       "itemLocation": 1,
       "item": "Lamp",
       "itemAddress": "0xE9BC",

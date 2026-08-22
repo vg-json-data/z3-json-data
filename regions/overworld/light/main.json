@@ -8,7 +8,7 @@
       "nodes": [
         {
           "id": 1,
-          "name": "Blinds Hideout",
+          "name": "Blind's Hideout",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -26,7 +26,7 @@
         },
         {
           "id": 4,
-          "name": "Kings Grave Outer Rocks",
+          "name": "King's Grave Outer Rocks",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -38,7 +38,7 @@
         },
         {
           "id": 6,
-          "name": "Links House",
+          "name": "Link's House",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -56,13 +56,13 @@
         },
         {
           "id": 9,
-          "name": "Aginahs Cave",
+          "name": "Aginah's Cave",
           "area": "Light World",
           "nodeType": "door"
         },
         {
           "id": 10,
-          "name": "Sahasrahlas Hut",
+          "name": "Sahasrahla's Hut",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -98,7 +98,7 @@
         },
         {
           "id": 16,
-          "name": "Sick Kids House",
+          "name": "Sick Kid's House",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -170,7 +170,7 @@
         },
         {
           "id": 28,
-          "name": "Two Brothers House (East)",
+          "name": "Two Brothers' House (East)",
           "area": "Light World",
           "nodeType": "door"
         },

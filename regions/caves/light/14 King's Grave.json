@@ -1,8 +1,8 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 38,
-  "name": "Blacksmiths Hut",
-  "roomType": "House",
+  "id": 8,
+  "name": "King's Grave",
+  "roomType": "Cave",
   "nodes": [
     {
       "id": 1,
@@ -13,19 +13,17 @@
   "items": [
     {
       "id": 1,
-      "locationName": "Smithed Item",
+      "locationName": "King's Tomb",
       "itemLocation": 1,
-      "item": "L3Sword",
-      "itemAddress": "0x18002A"
+      "item": "Cape",
+      "itemAddress": "0xE97A"
     }
   ],
   "strats": [
     {
       "link": [1, 1],
-      "name": "Base - Blacksmith Reward",
-      "requires": [
-        "f_RescueBlacksmith"
-      ],
+      "name": "Base",
+      "requires": [],
       "collectsItems": [1]
     }
   ]

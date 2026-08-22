@@ -38,7 +38,7 @@
         },
         {
           "id": 6,
-          "name": "Thieves Town",
+          "name": "Thieves' Town",
           "area": "West Dark World",
           "nodeType": "door"
         },
@@ -50,7 +50,7 @@
         },
         {
           "id": 8,
-          "name": "Kings Grave Mirror Spot",
+          "name": "King's Grave Mirror Spot",
           "area": "West Dark World",
           "nodeType": "door"
         },

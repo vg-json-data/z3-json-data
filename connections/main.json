@@ -45,24 +45,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Kings Grave Outer Rocks and Kings Grave Area",
+      "description": "Door connection between King's Grave Outer Rocks and King's Grave Area",
       "nodes": [
         {
-          "name": "Kings Grave Outer Rocks",
+          "name": "King's Grave Outer Rocks",
           "position": "origin"
         },
         {
-          "name": "Kings Grave Area",
+          "name": "King's Grave Area",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Kings Grave Inner Rocks and Light World",
+      "description": "Door connection between King's Grave Inner Rocks and Light World",
       "nodes": [
         {
-          "name": "Kings Grave Inner Rocks",
+          "name": "King's Grave Inner Rocks",
           "position": "origin"
         },
         {
@@ -73,14 +73,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Kings Grave Mirror Spot and Kings Grave Area",
+      "description": "Door connection between King's Grave Mirror Spot and King's Grave Area",
       "nodes": [
         {
-          "name": "Kings Grave Mirror Spot",
+          "name": "King's Grave Mirror Spot",
           "position": "origin"
         },
         {
-          "name": "Kings Grave Area",
+          "name": "King's Grave Area",
           "position": "destination"
         }
       ]
@@ -1417,14 +1417,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Thieves Town Big Key Door and Thieves Town (Deep)",
+      "description": "Door connection between Thieves' Town Big Key Door and Thieves' Town (Deep)",
       "nodes": [
         {
-          "name": "Thieves Town Big Key Door",
+          "name": "Thieves' Town Big Key Door",
           "position": "origin"
         },
         {
-          "name": "Thieves Town (Deep)",
+          "name": "Thieves' Town (Deep)",
           "position": "destination"
         }
       ]
@@ -2019,164 +2019,164 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Tile Room) and Ganons Tower (Tile Room)",
+      "description": "Door connection between Ganon's Tower (Tile Room) and Ganon's Tower (Tile Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Tile Room)",
+          "name": "Ganon's Tower (Tile Room)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Tile Room)",
+          "name": "Ganon's Tower (Tile Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Tile Room) Key Door and Ganons Tower (Compass Room)",
+      "description": "Door connection between Ganon's Tower (Tile Room) Key Door and Ganon's Tower (Compass Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Tile Room) Key Door",
+          "name": "Ganon's Tower (Tile Room) Key Door",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Compass Room)",
+          "name": "Ganon's Tower (Compass Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Bottom) (East) and Ganons Tower (Bottom)",
+      "description": "Door connection between Ganon's Tower (Bottom) (East) and Ganon's Tower (Bottom)",
       "nodes": [
         {
-          "name": "Ganons Tower (Bottom) (East)",
+          "name": "Ganon's Tower (Bottom) (East)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Bottom)",
+          "name": "Ganon's Tower (Bottom)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Hookshot Room) and Ganons Tower (Hookshot Room)",
+      "description": "Door connection between Ganon's Tower (Hookshot Room) and Ganon's Tower (Hookshot Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Hookshot Room)",
+          "name": "Ganon's Tower (Hookshot Room)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Hookshot Room)",
+          "name": "Ganon's Tower (Hookshot Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Map Room) and Ganons Tower (Map Room)",
+      "description": "Door connection between Ganon's Tower (Map Room) and Ganon's Tower (Map Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Map Room)",
+          "name": "Ganon's Tower (Map Room)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Map Room)",
+          "name": "Ganon's Tower (Map Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Double Switch Room) and Ganons Tower (Firesnake Room)",
+      "description": "Door connection between Ganon's Tower (Double Switch Room) and Ganon's Tower (Firesnake Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Double Switch Room)",
+          "name": "Ganon's Tower (Double Switch Room)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Firesnake Room)",
+          "name": "Ganon's Tower (Firesnake Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Firesnake Room) and Ganons Tower (Teleport Room)",
+      "description": "Door connection between Ganon's Tower (Firesnake Room) and Ganon's Tower (Teleport Room)",
       "nodes": [
         {
-          "name": "Ganons Tower (Firesnake Room)",
+          "name": "Ganon's Tower (Firesnake Room)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Teleport Room)",
+          "name": "Ganon's Tower (Teleport Room)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower (Bottom) (West) and Ganons Tower (Bottom)",
+      "description": "Door connection between Ganon's Tower (Bottom) (West) and Ganon's Tower (Bottom)",
       "nodes": [
         {
-          "name": "Ganons Tower (Bottom) (West)",
+          "name": "Ganon's Tower (Bottom) (West)",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Bottom)",
+          "name": "Ganon's Tower (Bottom)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower Big Key Door and Ganons Tower (Top)",
+      "description": "Door connection between Ganon's Tower Big Key Door and Ganon's Tower (Top)",
       "nodes": [
         {
-          "name": "Ganons Tower Big Key Door",
+          "name": "Ganon's Tower Big Key Door",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Top)",
+          "name": "Ganon's Tower (Top)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower Torch Rooms and Ganons Tower (Before Moldorm)",
+      "description": "Door connection between Ganon's Tower Torch Rooms and Ganon's Tower (Before Moldorm)",
       "nodes": [
         {
-          "name": "Ganons Tower Torch Rooms",
+          "name": "Ganon's Tower Torch Rooms",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Before Moldorm)",
+          "name": "Ganon's Tower (Before Moldorm)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower Moldorm Door and Ganons Tower (Moldorm)",
+      "description": "Door connection between Ganon's Tower Moldorm Door and Ganon's Tower (Moldorm)",
       "nodes": [
         {
-          "name": "Ganons Tower Moldorm Door",
+          "name": "Ganon's Tower Moldorm Door",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Moldorm)",
+          "name": "Ganon's Tower (Moldorm)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Obstacle",
-      "description": "Obstacle connection between Ganons Tower Moldorm Gap and Agahnim 2",
+      "description": "Obstacle connection between Ganon's Tower Moldorm Gap and Agahnim 2",
       "nodes": [
         {
-          "name": "Ganons Tower Moldorm Gap",
+          "name": "Ganon's Tower Moldorm Gap",
           "position": "origin"
         },
         {
@@ -2229,14 +2229,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Blinds Hideout and Blinds Hideout",
+      "description": "Door connection between Blind's Hideout and Blind's Hideout",
       "nodes": [
         {
-          "name": "Blinds Hideout",
+          "name": "Blind's Hideout",
           "position": "origin"
         },
         {
-          "name": "Blinds Hideout",
+          "name": "Blind's' Hideout",
           "position": "destination"
         }
       ]
@@ -2383,14 +2383,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Kings Grave and Kings Grave",
+      "description": "Door connection between King's Grave and King's Grave",
       "nodes": [
         {
-          "name": "Kings Grave",
+          "name": "King's Grave",
           "position": "origin"
         },
         {
-          "name": "Kings Grave",
+          "name": "King's Grave",
           "position": "destination"
         }
       ]
@@ -2425,28 +2425,28 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Aginahs Cave and Aginahs Cave",
+      "description": "Door connection between Aginah's Cave and Aginah's Cave",
       "nodes": [
         {
-          "name": "Aginahs Cave",
+          "name": "Aginah's Cave",
           "position": "origin"
         },
         {
-          "name": "Aginahs Cave",
+          "name": "Aginah's Cave",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Sahasrahlas Hut and Sahasrahlas Hut",
+      "description": "Door connection between Sahasrahla's Hut and Sahasrahla's Hut",
       "nodes": [
         {
-          "name": "Sahasrahlas Hut",
+          "name": "Sahasrahla's Hut",
           "position": "origin"
         },
         {
-          "name": "Sahasrahlas Hut",
+          "name": "Sahasrahla's Hut",
           "position": "destination"
         }
       ]
@@ -2579,14 +2579,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Sick Kids House and Sick Kids House",
+      "description": "Door connection between Sick Kid's House and Sick Kid's House",
       "nodes": [
         {
-          "name": "Sick Kids House",
+          "name": "Sick Kid's House",
           "position": "origin"
         },
         {
-          "name": "Sick Kids House",
+          "name": "Sick Kid's House",
           "position": "destination"
         }
       ]
@@ -3069,38 +3069,38 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Two Brothers House (East) and Two Brothers House",
+      "description": "Door connection between Two Brothers' House (East) and Two Brothers' House",
       "nodes": [
         {
-          "name": "Two Brothers House (East)",
+          "name": "Two Brothers' House (East)",
           "position": "origin"
         },
         {
-          "name": "Two Brothers House",
+          "name": "Two Brothers' House",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Two Brothers House (West) and Two Brothers House",
+      "description": "Door connection between Two Brothers' House (West) and Two Brothers' House",
       "nodes": [
         {
-          "name": "Two Brothers House (West)",
+          "name": "Two Brothers' House (West)",
           "position": "origin"
         },
         {
-          "name": "Two Brothers House",
+          "name": "Two Brothers' House",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Two Brothers House Exit (East) and Light World",
+      "description": "Door connection between Two Brothers' House Exit (East) and Light World",
       "nodes": [
         {
-          "name": "Two Brothers House Exit (East)",
+          "name": "Two Brothers' House Exit (East)",
           "position": "origin"
         },
         {
@@ -3111,10 +3111,10 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Two Brothers House Exit (West) and Maze Race Ledge",
+      "description": "Door connection between Two Brothers' House Exit (West) and Maze Race Ledge",
       "nodes": [
         {
-          "name": "Two Brothers House Exit (West)",
+          "name": "Two Brothers' House Exit (West)",
           "position": "origin"
         },
         {
@@ -4469,24 +4469,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Agahnims Tower and Agahnims Tower",
+      "description": "Door connection between Agahnim's Tower and Agahnim's Tower",
       "nodes": [
         {
-          "name": "Agahnims Tower",
+          "name": "Agahnim's Tower",
           "position": "origin"
         },
         {
-          "name": "Agahnims Tower",
+          "name": "Agahnim's Tower",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Agahnims Tower Exit and Hyrule Castle Ledge",
+      "description": "Door connection between Agahnim's Tower Exit and Hyrule Castle Ledge",
       "nodes": [
         {
-          "name": "Agahnims Tower Exit",
+          "name": "Agahnim's Tower Exit",
           "position": "origin"
         },
         {
@@ -4497,24 +4497,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Thieves Town and Thieves Town (Entrance)",
+      "description": "Door connection between Thieves' Town and Thieves' Town (Entrance)",
       "nodes": [
         {
-          "name": "Thieves Town",
+          "name": "Thieves' Town",
           "position": "origin"
         },
         {
-          "name": "Thieves Town (Entrance)",
+          "name": "Thieves' Town (Entrance)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Thieves Town Exit and West Dark World",
+      "description": "Door connection between Thieves' Town Exit and West Dark World",
       "nodes": [
         {
-          "name": "Thieves Town Exit",
+          "name": "Thieves' Town Exit",
           "position": "origin"
         },
         {
@@ -4917,24 +4917,24 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower and Ganons Tower (Entrance)",
+      "description": "Door connection between Ganon's Tower and Ganon's Tower (Entrance)",
       "nodes": [
         {
-          "name": "Ganons Tower",
+          "name": "Ganon's Tower",
           "position": "origin"
         },
         {
-          "name": "Ganons Tower (Entrance)",
+          "name": "Ganon's Tower (Entrance)",
           "position": "destination"
         }
       ]
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Ganons Tower Exit and Dark Death Mountain (Top)",
+      "description": "Door connection between Ganon's Tower Exit and Dark Death Mountain (Top)",
       "nodes": [
         {
-          "name": "Ganons Tower Exit",
+          "name": "Ganon's Tower Exit",
           "position": "origin"
         },
         {
