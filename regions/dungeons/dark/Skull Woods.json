@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 174,
+  "id": 95,
   "name": "Skull Woods",
   "note": "Also requires access to Northwest Dark World",
   "roomType": "Dungeon",

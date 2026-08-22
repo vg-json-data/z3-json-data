@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 166,
+  "id": 94,
   "name": "Swamp Palace",
   "note": "Also requires access to South Dark World",
   "roomType": "Dungeon",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 120,
+  "id": 73,
   "name": "Dark East Portal Cave",
   "roomType": "Cave",
   "nodes": [

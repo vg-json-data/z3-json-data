@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 135,
+  "id": 87,
   "name": "Village of Outcasts Shop",
   "roomType": "House",
   "nodes": [

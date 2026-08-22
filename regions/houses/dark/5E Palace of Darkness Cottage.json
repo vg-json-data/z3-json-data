@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 119,
+  "id": 89,
   "name": "Palace of Darkness Cottage",
   "roomType": "House",
   "nodes": [

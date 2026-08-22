@@ -4,7 +4,7 @@ This is just a rough set of notes for now:
 
 ## ids
 
-id 1-42 are reserved for overworld rooms. Other rooms need to be reindexed.
+id 1-40 are reserved for overworld rooms, 41-43 are for special overworld rooms.
 
 ## nodes
 
@@ -27,3 +27,10 @@ For all nodes with a `"world": "both"`, there is an implicit strat to use the Ma
     ]
 }
 ```
+
+# Underworld
+
+## ids
+
+These share a unique id space from overworld rooms. all rooms with a `roomType` of `Cave`, `House` or `Dungeon` are included in this id space.
+The ordering is approximately light caves, light houses, light dungeons, dark caves, dark houses, dark dungeons.

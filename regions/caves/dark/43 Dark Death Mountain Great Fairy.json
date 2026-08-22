@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 32,
+  "id": 62,
   "name": "Dark Death Mountain Great Fairy",
   "roomType": "Cave",
   "nodes": [

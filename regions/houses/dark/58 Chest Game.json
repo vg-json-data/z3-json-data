@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 143,
+  "id": 86,
   "name": "Chest Game",
   "roomType": "House",
   "nodes": [

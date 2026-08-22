@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 65,
+  "id": 27,
   "name": "Lake Hylia Great Fairy",
   "roomType": "Cave",
   "nodes": [

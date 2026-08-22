@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 101,
+  "id": 9,
   "name": "Paradox Cave",
   "roomType": "Cave",
   "nodes": [

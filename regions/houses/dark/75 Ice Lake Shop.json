@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 136,
+  "id": 92,
   "name": "Ice Lake Shop",
   "roomType": "House",
   "nodes": [

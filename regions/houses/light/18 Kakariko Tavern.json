@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 13,
+  "id": 46,
   "name": "Kakariko Tavern",
   "roomType": "House",
   "nodes": [

@@ -2,7 +2,7 @@
   "$schema": "../../../schema/z3-region.schema.json",
   "rooms": [
     {
-      "id": 221,
+      "id": 101,
       "name": "Pyramid",
       "roomType": "Cave",
       "nodes": [

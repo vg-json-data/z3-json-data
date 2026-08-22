@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 16,
+  "id": 48,
   "name": "West Snitch Lady's House",
   "roomType": "House",
   "nodes": [

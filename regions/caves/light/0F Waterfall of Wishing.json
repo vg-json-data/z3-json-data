@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 6,
+  "id": 12,
   "name": "Waterfall of Wishing",
   "roomType": "Cave",
   "nodes": [

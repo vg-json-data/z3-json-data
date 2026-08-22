@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 80,
+  "id": 35,
   "name": "Lost Woods Gamble",
   "roomType": "House",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 29,
+  "id": 72,
   "name": "Ice Lake Inlet Great Fairy",
   "roomType": "Cave",
   "nodes": [

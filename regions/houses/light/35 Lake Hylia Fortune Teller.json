@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 22,
+  "id": 56,
   "name": "Lake Hylia Fortune Teller",
   "roomType": "House",
   "nodes": [
