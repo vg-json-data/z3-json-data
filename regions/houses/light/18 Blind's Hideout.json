@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 3,
+  "id": 39,
   "name": "Blind's Hideout",
   "roomType": "House",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 38,
+  "id": 51,
   "name": "Blacksmith's Hut",
   "roomType": "House",
   "nodes": [

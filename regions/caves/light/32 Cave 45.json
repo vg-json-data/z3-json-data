@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 49,
+  "id": 25,
   "name": "Cave 45",
   "roomType": "Cave",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 139,
+  "id": 70,
   "name": "Dark Hammer Peg Cave",
   "roomType": "Cave",
   "nodes": [

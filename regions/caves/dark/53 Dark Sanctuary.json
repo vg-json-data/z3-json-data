@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 145,
+  "id": 68,
   "name": "Dark Sanctuary",
   "roomType": "Cave",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 21,
+  "id": 37,
   "name": "Fortune Teller (Light)",
   "roomType": "House",
   "nodes": [

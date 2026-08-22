@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 60,
+  "id": 13,
   "name": "Sanctuary Bonk Rock Cave",
   "roomType": "Cave",
   "nodes": [

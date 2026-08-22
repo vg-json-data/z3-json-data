@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 78,
+  "id": 58,
   "name": "Eastern Palace",
   "roomType": "Dungeon",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 160,
+  "id": 65,
   "name": "Hookshot Cave",
   "roomType": "Cave",
   "nodes": [

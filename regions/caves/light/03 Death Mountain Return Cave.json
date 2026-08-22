@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 94,
+  "id": 3,
   "name": "Death Mountain Return Cave",
   "roomType": "Cave",
   "nodes": [

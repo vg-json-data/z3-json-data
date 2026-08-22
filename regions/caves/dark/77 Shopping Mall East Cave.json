@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 127,
+  "id": 78,
   "name": "Shopping Mall East Cave",
   "roomType": "Cave",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 62,
+  "id": 52,
   "name": "Kakariko Gamble Game",
   "roomType": "House",
   "nodes": [

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 58,
+  "id": 28,
   "name": "Lake Hylia Shop",
   "roomType": "Cave",
   "nodes": [

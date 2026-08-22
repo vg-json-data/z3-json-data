@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 122,
+  "id": 91,
   "name": "Big Bomb Shop",
   "roomType": "House",
   "nodes": [

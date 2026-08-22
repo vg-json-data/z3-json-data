@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 201,
+  "id": 93,
   "name": "Palace of Darkness",
   "note": "Also requires access to Northeast Dark World",
   "roomType": "Dungeon",

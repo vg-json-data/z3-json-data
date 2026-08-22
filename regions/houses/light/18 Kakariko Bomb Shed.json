@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 19,
+  "id": 44,
   "name": "Kakariko Bomb Shed",
   "roomType": "House",
   "nodes": [

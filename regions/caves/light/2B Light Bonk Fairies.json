@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 24,
+  "id": 19,
   "name": "Light Bonk Fairies",
   "roomType": "Cave",
   "nodes": [

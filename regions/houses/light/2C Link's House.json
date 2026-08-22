@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 11,
+  "id": 55,
   "name": "Link's House",
   "roomType": "House",
   "nodes": [

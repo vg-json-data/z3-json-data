@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-region.schema.json",
-  "id": 35,
+  "id": 50,
   "name": "Sahasrahla's Hut",
   "roomType": "House",
   "nodes": [
