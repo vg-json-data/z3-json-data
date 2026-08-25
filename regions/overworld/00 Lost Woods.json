@@ -353,10 +353,77 @@
       "isBunny": "no"
     },
     {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "PowerGlove"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "PowerGlove"
+      ],
+      "isBunny": "no"
+    },
+    {
       "link": [2, 10],
       "name": "Base",
       "world": "light",
       "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "PowerGlove",
+        {"or": [
+          {"combatProficiency": 2},
+          "L1Sword",
+          "Boomerang",
+          "Hookshot",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          "L1Sword",
+          "Boomerang",
+          "Hookshot",
+          {"magic": {"type": "Rod", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 4],
+      "name": "Bunny",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
       "isBunny": "any"
     },
     {
@@ -381,6 +448,31 @@
       "isBunny": "no"
     },
     {
+      "link": [4, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [4, 6],
+      "name": "Bunny",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
       "link": [4, 7],
       "name": "Base",
       "world": "light",
@@ -393,6 +485,27 @@
       "world": "light",
       "requires": [],
       "isBunny": "no"
+    },
+    {
+      "link": [6, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "L1Sword"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [4, 6],
+      "name": "Base - Dodge or Tank",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
     },
     {
       "link": [7, 1],
@@ -627,6 +740,15 @@
       "devNote": ["FIXME: Add a thief hit."]
     },
     {
+      "link": [9, 10],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "f_SkullWoodsOpen"
+      ],
+      "isBunny": "any"
+    },
+    {
       "link": [10, 1],
       "name": "Base",
       "world": "light",
@@ -677,6 +799,19 @@
       "devNote": ["FIXME: Add a thief hit."]
     },
     {
+      "link": [10, 8],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
       "link": [10, 9],
       "name": "Base - Bush",
       "world": "light",
@@ -699,6 +834,25 @@
       ],
       "isBunny": "no",
       "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [10, 9],
+      "name": "Open Skull Woods",
+      "world": "dark",
+      "requires": [
+        {"magic": {"type": "FireRod", "count": 1}}
+      ],
+      "isBunny": "no",
+      "yields": ["f_SkullWoodsOpen"]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Already Opened",
+      "world": "dark",
+      "requires": [
+        "f_SkullWoodsOpen"
+      ],
+      "isBunny": "any"
     }
   ]
 }
