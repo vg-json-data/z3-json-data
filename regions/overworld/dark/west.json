@@ -55,18 +55,6 @@
           "nodeType": "door"
         },
         {
-          "id": 9,
-          "name": "Bumper Cave Entrance Rock",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 10,
-          "name": "Skull Woods Forest",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 11,
           "name": "Village of Outcasts Pegs",
           "area": "West Dark World",
@@ -87,18 +75,6 @@
         {
           "id": 14,
           "name": "Dark Sanctuary Hint",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 15,
-          "name": "Fortune Teller (Dark)",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 16,
-          "name": "Dark Lumberjack Shop",
           "area": "West Dark World",
           "nodeType": "door"
         },
@@ -159,131 +135,6 @@
           "area": "Hammer Peg Area",
           "nodeType": "item",
           "note": "See Caves DW NW ID #139"
-        }
-      ]
-    },
-    {
-      "id": 133,
-      "name": "Bumper Cave Entrance",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Bumper Cave (Bottom)",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Bumper Cave Entrance Mirror Spot",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Bumper Cave Entrance Drop",
-          "area": "Bumper Cave Entrance",
-          "nodeType": "drop"
-        }
-      ]
-    },
-    {
-      "id": 147,
-      "name": "Bumper Cave Ledge",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Bumper Cave Ledge Drop",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "drop"
-        },
-        {
-          "id": 2,
-          "name": "Bumper Cave (Top)",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Bumper Cave Ledge Mirror Spot",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Bumper Cave Ledge",
-          "area": "Bumper Cave Ledge",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180146",
-          "note": "Bumper Cave",
-          "requires": [
-            "canLiftRocks",
-            "Cape"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 148,
-      "name": "Skull Woods Forest",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Skull Woods First Section Hole (East)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Skull Woods First Section Hole (West)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Skull Woods First Section Hole (North)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Skull Woods First Section Door",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
-        },
-        {
-          "id": 5,
-          "name": "Skull Woods Second Section Door (East)",
-          "area": "Skull Woods Forest",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
-      "id": 149,
-      "name": "Skull Woods Forest (West)",
-      "roomType": "DarkWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Skull Woods Second Section Hole",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Skull Woods Second Section Door (West)",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
-        },
-        {
-          "id": 3,
-          "name": "Skull Woods Final Section",
-          "area": "Skull Woods Forest (West)",
-          "nodeType": "door"
         }
       ]
     }

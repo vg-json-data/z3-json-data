@@ -109,30 +109,6 @@
           "nodeType": "door"
         },
         {
-          "id": 18,
-          "name": "Lost Woods Hideout Drop",
-          "area": "Light World",
-          "nodeType": "drop"
-        },
-        {
-          "id": 19,
-          "name": "Lost Woods Hideout Stump",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 20,
-          "name": "Lumberjack Tree Tree",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 21,
-          "name": "Lumberjack Tree Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 22,
           "name": "Mini Moldorm Cave",
           "area": "Light World",
@@ -205,12 +181,6 @@
           "nodeType": "door"
         },
         {
-          "id": 34,
-          "name": "Death Mountain Entrance Rock",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 35,
           "name": "Flute Spot 1",
           "area": "Light World",
@@ -263,12 +233,6 @@
           "name": "North Great Fairy Drop",
           "area": "Light World",
           "nodeType": "drop"
-        },
-        {
-          "id": 44,
-          "name": "Lost Woods Gamble",
-          "area": "Light World",
-          "nodeType": "door"
         },
         {
           "id": 45,
@@ -355,12 +319,6 @@
           "nodeType": "door"
         },
         {
-          "id": 59,
-          "name": "Fortune Teller (Light)",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 60,
           "name": "Lake Hylia Inlet Great Fairy",
           "area": "Light World",
@@ -375,12 +333,6 @@
         {
           "id": 62,
           "name": "Desert Great Fairy",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 63,
-          "name": "Lumberjack House",
           "area": "Light World",
           "nodeType": "door"
         },

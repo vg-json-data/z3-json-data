@@ -1,0 +1,119 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "id": 9,
+  "name": "Fortune Teller's Hut",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southwest Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [22.5, 27.5]},
+        {"edge": "south", "span": [14.5, 21.5]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Fortune Teller (Light)",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Fortune Teller (Dark)",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Northeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [24.5, 25.5]},
+        {"edge": "east", "span": [5.5, 10]}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Bonk Bomb",
+      "world": "light",
+      "requires": [
+        "PegasusBoots",
+        {"refill": {"type": "Bombs", "limit": 1}}
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Bonk Fairies",
+      "world": "dark",
+      "requires": [
+        "PegasusBoots",
+        {"refill": {"type": "Fairy", "limit": 2}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Tank or Dodge",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Taros (Red)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Bush Kill",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Tank or Dodge",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Taros (Red)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Kill",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Boomerang",
+          "Hookshot",
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    }
+  ]
+}

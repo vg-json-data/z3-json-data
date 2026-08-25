@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "id": 2,
+  "name": "Lumberjack's Home",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [5.5, 21]},
+        {"edge": "west", "span": [7.5, 11.5]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Lumberjack House",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Lumberjack Tree View Point",
+          "world": "light"
+        },
+        {
+          "id": 3,
+          "name": "Dark Lumberjack Shop",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lumberjack's Tree",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Lumberjack Tree Drop Entrance",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base - Tree Dash",
+      "world": "light",
+      "requires": [
+        "f_DefeatedAgahnim1",
+        "PegasusBoots"
+      ],
+      "isBunny": "no"
+    }
+  ]
+}
