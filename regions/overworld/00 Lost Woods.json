@@ -141,6 +141,16 @@
       ]
     }
   ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Mushroom Location",
+      "itemLocation": 1,
+      "world": "light",
+      "item": "Mushroom",
+      "itemAddress": "0x180013"
+    }
+  ],
   "strats": [
     {
       "link": [1, 2],
@@ -688,6 +698,14 @@
       "world": "light",
       "requires": [],
       "isBunny": "no"
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Collect Item",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any",
+      "collectsItems": [1]
     },
     {
       "link": [8, 9],
