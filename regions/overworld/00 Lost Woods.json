@@ -171,6 +171,34 @@
       "isBunny": "no"
     },
     {
+      "link": [1, 7],
+      "name": "Precise Manipulation, Rock Kill",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 4},
+        "PowerGlove"
+      ],
+      "isBunny": "no",
+      "note": [
+        "Kill the first Ropa using the rock to the north. Lure the second Ropa to the left then sneak past it.",
+        "Dodge the remaining enemies to get to the other side."
+      ]
+    },
+    {
+      "link": [1, 7],
+      "name": "Very Precise Manipulation",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 5}
+      ],
+      "isBunny": "no",
+      "note": [
+        "Kill the first Ropa using all 4 available bushes. If a Bee or guard spawns, reset the room.",
+        "If the Ropa respawns, it regains its health, so it is important to lure it north for each bush.",
+        "The rest are much easier to lure and dodge."
+      ]
+    },
+    {
       "link": [1, 10],
       "name": "Base - Bush",
       "world": "light",
@@ -222,7 +250,7 @@
     {
       "link": [4, 5],
       "name": "Base",
-      "world": "light",
+      "world": "any",
       "requires": [],
       "isBunny": "no"
     },
@@ -239,6 +267,40 @@
       "world": "light",
       "requires": [],
       "isBunny": "no"
+    },
+    {
+      "link": [7, 1],
+      "name": "Precise Manipulation, Rock Kill",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 4},
+        "PowerGlove"
+      ],
+      "isBunny": "no",
+      "note": [
+        "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
+        "Lure the third Ropa up to the top right and kill it with bushes.",
+        "Grab a skull rock and skip the next Ropa and use the rock to kill one of the bottom left two.",
+        "Return for another rock or manipulate the last Ropa very precisely to sneak past it."
+      ]
+    },
+    {
+      "link": [7, 1],
+      "name": "Very Precise Manipulation",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 5}
+      ],
+      "isBunny": "no",
+      "note": [
+        "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
+        "Lure the third Ropa up to the top right and either kill it with bushes or run past it.",
+        "Note that it will respawn in it's original location once Link goes far enough, so it may be worth killing it.",
+        "Alternatively, shuffle the third and fourth Ropa and kill the fourth one instead to make the last part a bit easier.",
+        "At the end, lure the Ropa right of the bush up north and sneak past it.",
+        "There is a way to despawn it because it goes too far north while still preventing it from respawning - that can make things easier.",
+        "Repeat for the last one to escape."
+      ]
     },
     {
       "link": [7, 4],
