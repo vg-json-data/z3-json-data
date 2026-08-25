@@ -172,6 +172,132 @@
     },
     {
       "link": [1, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang"
+        ]},
+        {"or": [
+          "L2Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 7],
+      "name": "Range Kill",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 4}},
+          {"ammo": {"type": "Arrows", "count": 10}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              {"magic": {"type": "IceRod", "count": 1}},
+              {"ammo": {"type": "Arrows", "count": 7}},
+              {"ammo": {"type": "SilverArrows", "count": 3}}
+            ]}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"or": [
+              {"magic": {"type": "FireRod", "count": 3}},
+              {"ammo": {"type": "Arrows", "count": 4}},
+              {"ammo": {"type": "SilverArrows", "count": 2}}
+            ]}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            "PowerGlove",
+            {"or": [
+              {"magic": {"type": "FireRod", "count": 1}},
+              {"ammo": {"type": "Arrows", "count": 2}},
+              {"ammo": {"type": "SilverArrows", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "note": [
+        "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
+        "With the Power Glove, it can save resources to kill one with a rock found north."
+      ]
+    },
+    {
+      "link": [1, 7],
+      "name": "Base - Alternate Weapons",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"magic": {"type": "blueCane", "count": 80}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "blueCane", "count": 36}}
+          ]},
+          {"magic": {"type": "redCane", "count": 4}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "redCane", "count": 2}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 7],
+      "name": "Tank",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Ropa", "hits": 4}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "devNote": ["It is possible to Lure some of the Ropa away and take less damage."]
+    },
+    {
+      "link": [1, 7],
+      "name": "Cape",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "Cape", "count": 62}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "Cape", "count": 42}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "devNote": ["It is possible to Lure some of the Ropa away to use less magic."]
+    },
+    {
+      "link": [1, 7],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
       "requires": [
@@ -267,6 +393,140 @@
       "world": "light",
       "requires": [],
       "isBunny": "no"
+    },
+    {
+      "link": [7, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang"
+        ]},
+        {"or": [
+          "L2Sword",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [7, 1],
+      "name": "Range Kill",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 5}},
+          {"ammo": {"type": "Arrows", "count": 10}},
+          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              {"magic": {"type": "IceRod", "count": 1}},
+              {"magic": {"type": "FireRod", "count": 3}},
+              {"ammo": {"type": "Arrows", "count": 7}},
+              {"ammo": {"type": "SilverArrows", "count": 3}}
+            ]}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            "PowerGlove",
+            {"or": [
+              {"magic": {"type": "FireRod", "count": 2}},
+              {"ammo": {"type": "Arrows", "count": 4}},
+              {"ammo": {"type": "SilverArrows", "count": 2}}
+            ]}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "note": [
+        "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
+        "With the Power Glove, it can save magic to kill one with a rock found north."
+      ]
+    },
+    {
+      "link": [7, 1],
+      "name": "Base - Alternate Weapons",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"magic": {"type": "blueCane", "count": 64}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "blueCane", "count": 36}}
+          ]},
+          {"magic": {"type": "redCane", "count": 3}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "redCane", "count": 2}}
+          ]},
+          {"and": [
+            "PowerGlove",
+            {"magic": {"type": "redCane", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            "PowerGlove",
+            {"magic": {"type": "redCane", "count": 1}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
+    },
+    {
+      "link": [7, 1],
+      "name": "Tank",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Ropa", "hits": 4}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Ropa", "hits": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            "PowerGlove",
+            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
+    },
+    {
+      "link": [7, 1],
+      "name": "Cape",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "Cape", "count": 58}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "Cape", "count": 42}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
     {
       "link": [7, 1],
