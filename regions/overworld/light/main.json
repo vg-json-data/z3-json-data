@@ -403,14 +403,6 @@
           "nodeType": "door"
         },
         {
-          "id": 67,
-          "name": "Mushroom",
-          "area": "Light World",
-          "nodeType": "item",
-          "nodeItem": "Mushroom",
-          "nodeAddress": "0x180013"
-        },
-        {
           "id": 68,
           "name": "Bottle Merchant",
           "area": "Light World",
