@@ -291,7 +291,7 @@
     ],
     "note": [
       "Represents having to throw a specific item into one of the Great Fairy pools in order to receive a reward.",
-      "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerag;",
+      "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerang;",
       "in randomizers, it will typically be the case that the Great Fairies that give items won't require throwing specific items into the pool to receive a reward."
     ]
   },
@@ -303,6 +303,18 @@
     "note": [
       "In the vanilla game Sahasrahla gives link a reward for having the Green Pendant.",
       "Randomizers may be interested in changing this requirement to requiring any pendant or no pendant."
+    ]
+  },
+  {
+    "name": "h_NoAgahnimLoophole",
+    "requires": [],
+    "note": [
+      "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",
+      "i.e. sword or sufficient skill to kill Agahnim with swordless methods, then traversal is also free."
+    ],
+    "devNote": [
+      "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
+      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free."
     ]
   }
 ]

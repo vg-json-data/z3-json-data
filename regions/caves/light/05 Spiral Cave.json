@@ -94,7 +94,7 @@
           {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}}
         ]}
       ],
-      "devNoote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
+      "devNote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
     }
   ]
 }

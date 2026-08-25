@@ -1,0 +1,382 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "id": 1,
+  "name": "Lost Woods",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southwest Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [5.5, 6.5]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "South Middle Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [23.5, 24.5]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Southeast Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [56.5, 57.5]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hideout Main Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Lost Woods Hideout Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Main Entrance",
+          "world": "dark"
+        },
+        {
+          "id": 3,
+          "name": "Skull Woods Bottom Left Drop Entrance",
+          "world": "dark"
+        },
+        {
+          "id": 4,
+          "name": "Skull Woods Bottom Right Drop Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bush Drop Entrance",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Lost Woods Hideout Bush Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Bush Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Skull Woods Second Main Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Skull Woods Second Main Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Northeast Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [7.5, 11.5]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Lost Woods Gamble",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mushroom Location",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Skull Woods Top Left Drop Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Northwest Area",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Sacred Grove",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Skull Woods Fire Rod Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "West Area",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Skull Woods Second Area Exit",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 2],
+      "name": "Dodge",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 10],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 10],
+      "name": "Dodge",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 10],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [4, 7],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [4, 8],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [7, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [8, 4],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [8, 9],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [8, 10],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any",
+      "note": ["Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."],
+      "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no",
+      "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [10, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [10, 1],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [10, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [10, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [10, 8],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no",
+      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
+      "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "any",
+      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
+      "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no",
+      "devNote": ["FIXME: Add a thief hit."]
+    }
+  ]
+}
