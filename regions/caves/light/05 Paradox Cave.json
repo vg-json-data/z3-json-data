@@ -270,7 +270,7 @@
       "requires": [
         "canPreciseBombBoost"
       ],
-      "devNoote": ["This is not particularly useful as Link could drop down then climb the stairs."]
+      "devNote": ["This is not particularly useful as Link could drop down then climb the stairs."]
     },
     {
       "link": [6, 7],
