@@ -15,19 +15,6 @@
       ]
     },
     {
-      "id": 50,
-      "name": "Graveyard Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Graveyard Cave",
-          "area": "Graveyard Ledge",
-          "nodeType": "door"
-        }
-      ]
-    },
-    {
       "id": 79,
       "name": "Master Sword Meadow",
       "roomType": "LightWorld",

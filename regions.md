@@ -23,7 +23,7 @@ For all nodes with a `"world": "both"`, there is an implicit strat to use the Ma
     "toWorld": "light",
     "name": "Base",
     "requires": [
-    "MagicMirror"
+      "MagicMirror"
     ]
 }
 ```

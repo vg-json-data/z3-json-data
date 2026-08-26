@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/z3-region.schema.json",
+  "id": 11,
+  "name": "Sanctuary",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [7.5, 28]},
+        {"edge": "west", "span": [20, 28]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Sanctuary",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Dark Sanctuary",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Upper Ledge",
+      "world": "both",
+      "transitions": [
+        {"edge": "west", "span": [9, 17.5]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bonk Rock Cave",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Sanctuary Bonk Rock Cave",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "PegasusBoots"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    }
+  ]
+}

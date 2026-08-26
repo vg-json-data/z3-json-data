@@ -19,26 +19,8 @@
           "nodeType": "drop"
         },
         {
-          "id": 3,
-          "name": "Zoras River",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "King's Grave Outer Rocks",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 5,
           "name": "Dam",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "Link's House",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -127,20 +109,8 @@
           "nodeType": "door"
         },
         {
-          "id": 25,
-          "name": "Sanctuary Bonk Rock Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 26,
           "name": "Library",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 27,
-          "name": "Potion Shop",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -169,18 +139,6 @@
           "nodeType": "door"
         },
         {
-          "id": 32,
-          "name": "Sanctuary",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 33,
-          "name": "Sanctuary Grave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 35,
           "name": "Flute Spot 1",
           "area": "Light World",
@@ -205,12 +163,6 @@
           "nodeType": "door"
         },
         {
-          "id": 39,
-          "name": "Kakariko Teleporter",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 40,
           "name": "Elder House (East)",
           "area": "Light World",
@@ -221,18 +173,6 @@
           "name": "Elder House (West)",
           "area": "Light World",
           "nodeType": "door"
-        },
-        {
-          "id": 42,
-          "name": "North Great Fairy",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 43,
-          "name": "North Great Fairy Drop",
-          "area": "Light World",
-          "nodeType": "drop"
         },
         {
           "id": 45,
@@ -291,12 +231,6 @@
         {
           "id": 54,
           "name": "Lake Hylia Shop",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 55,
-          "name": "Waterfall of Wishing",
           "area": "Light World",
           "nodeType": "door"
         },
