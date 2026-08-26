@@ -13,28 +13,10 @@
           "nodeType": "obstacle"
         },
         {
-          "id": 2,
-          "name": "Dark Potion Shop",
-          "area": "Northeast Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 3,
           "name": "East Dark World Broken Bridge Pass",
           "area": "Northeast Dark World",
           "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "Catfish",
-          "area": "Northeast Dark World",
-          "nodeType": "item",
-          "nodeItem": "Quake",
-          "nodeAddress": "0xEE185",
-          "requires": [
-            "isDarkLink",
-            "canLiftRocks"
-          ]
         }
       ]
     },

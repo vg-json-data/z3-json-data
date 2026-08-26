@@ -10,7 +10,7 @@
       "world": "both",
       "transitions": [
         {"edge": "east", "span": [7.5, 27]},
-        {"edge": "east", "span": [7.5, 28]}
+        {"edge": "west", "span": [7.5, 28]}
       ]
     },
     {
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "name": "Drop Grave",
-      "world": "both",
+      "world": "light",
       "entrances": [
         {
           "id": 1,
@@ -50,7 +50,7 @@
     {
       "id": 6,
       "name": "Inside King's Grave",
-      "world": "both",
+      "world": "light",
       "entrances": [
         {
           "id": 1,

@@ -43,18 +43,6 @@
           "nodeType": "door"
         },
         {
-          "id": 7,
-          "name": "Graveyard Ledge Mirror Spot",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 8,
-          "name": "King's Grave Mirror Spot",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 11,
           "name": "Village of Outcasts Pegs",
           "area": "West Dark World",
@@ -71,19 +59,6 @@
           "name": "Red Shield Shop",
           "area": "West Dark World",
           "nodeType": "door"
-        },
-        {
-          "id": 14,
-          "name": "Dark Sanctuary Hint",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 17,
-          "name": "Frog",
-          "area": "West Dark World",
-          "nodeType": "item",
-          "note": "See Caves DW NW ID #38:2"
         }
       ]
     },
