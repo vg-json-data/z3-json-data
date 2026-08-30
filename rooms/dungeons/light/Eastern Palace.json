@@ -144,7 +144,7 @@
   "lockedDoors": [
     {
       "id": 1,
-      "subarea": "Eastern Palace 1F",
+      "subArea": "Eastern Palace 1F",
       "locationName": "Dark Room",
       "doorPosition": "west",
       "doorLocation": 5,
@@ -152,7 +152,7 @@
     },
     {
       "id": 2,
-      "subarea": "Eastern Palace 1F",
+      "subArea": "Eastern Palace 1F",
       "locationName": "Chest with Big Key Room",
       "doorPosition": "north",
       "doorLocation": 7,
@@ -160,7 +160,7 @@
     },
     {
       "id": 3,
-      "subarea": "Eastern Palace 1F",
+      "subArea": "Eastern Palace 1F",
       "locationName": "Big Chest Room",
       "doorPosition": "north",
       "doorLocation": 4,
@@ -168,7 +168,7 @@
     },
     {
       "id": 4,
-      "subarea": "Eastern Palace 1F",
+      "subArea": "Eastern Palace 1F",
       "locationName": "Dark Eyegore Room",
       "doorPosition": "north",
       "doorLocation": 8,

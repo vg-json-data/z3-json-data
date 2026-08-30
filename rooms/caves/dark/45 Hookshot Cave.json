@@ -7,19 +7,19 @@
     {
       "id": 1,
       "name": "Hookshot Cave Exit (South)",
-      "subarea": "Big Room",
+      "subArea": "Big Room",
       "nodeType": "door"
     },
     {
       "id": 2,
       "name": "Hookshot Cave Exit (North)",
-      "subarea": "T-Room",
+      "subArea": "T-Room",
       "nodeType": "door"
     },
     {
       "id": 3,
       "name": "Plus Room",
-      "subarea": "Plus Room",
+      "subArea": "Plus Room",
       "nodeType": "junction"
     }
   ],
@@ -56,7 +56,7 @@
   "lockedDoors": [
     {
       "id": 1,
-      "subarea": "Big Room",
+      "subArea": "Big Room",
       "locationName": "Main Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "subarea": "Plus Room",
+      "subArea": "Plus Room",
       "locationName": "Plus Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
@@ -72,7 +72,7 @@
     },
     {
       "id": 3,
-      "subarea": "Plus Room",
+      "subArea": "Plus Room",
       "locationName": "Plus Room - Bombable Wall (West)",
       "doorPosition": "west",
       "doorLocation": 1,
@@ -80,7 +80,7 @@
     },
     {
       "id": 4,
-      "subarea": "T-Room",
+      "subArea": "T-Room",
       "locationName": "T-Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 2,

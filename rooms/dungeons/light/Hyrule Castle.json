@@ -7,55 +7,55 @@
     {
       "id": 1,
       "name": "Upper East Exit",
-      "subarea": "Hyrule Castle",
+      "subArea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 2,
       "name": "Upper West Exit",
-      "subarea": "Hyrule Castle",
+      "subArea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 3,
       "name": "Lower South Exit",
-      "subarea": "Hyrule Castle",
+      "subArea": "Hyrule Castle",
       "nodeType": "door"
     },
     {
       "id": 4,
       "name": "Throne Room",
-      "subarea": "Hyrule Castle",
+      "subArea": "Hyrule Castle",
       "nodeType": "junction"
     },
     {
       "id": 5,
       "name": "Entrance",
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 6,
       "name": "Boomerang Chest Room",
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 7,
       "name": "Zelda's Prison",
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
     {
       "id": 8,
       "name": "Entrance from Throne Room",
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "nodeType": "junction"
     },
     {
       "id": 9,
       "name": "Dark Cross Room",
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "nodeType": "junction",
       "note": [
         "Represents being in the middle of the room, after the first two snakes"
@@ -64,32 +64,32 @@
     {
       "id": 10,
       "name": "Last Dark Room",
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "nodeType": "junction"
     },
     {
       "id": 11,
       "name": "First Light Room",
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "nodeType": "junction"
     },
     {
       "id": 12,
       "name": "Sanctuary Exit",
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "nodeType": "door"
     },
     {
       "id": 13,
       "name": "Cemetery Drop",
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "nodeType": "drop"
     }
   ],
   "items": [
     {
       "id": 1,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Map Chest",
       "itemLocation": 5,
       "item": "Map",
@@ -97,7 +97,7 @@
     },
     {
       "id": 2,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "First Guard",
       "itemLocation": 5,
       "item": "SmallKey",
@@ -105,7 +105,7 @@
     },
     {
       "id": 3,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Boomerang Chest",
       "itemLocation": 6,
       "item": "BlueBoomerang",
@@ -114,7 +114,7 @@
     },
     {
       "id": 4,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Boomerang Chest Guard",
       "itemLocation": 6,
       "item": "SmallKey",
@@ -122,7 +122,7 @@
     },
     {
       "id": 5,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Zalda's Prison Guard",
       "itemLocation": 7,
       "item": "BigKey",
@@ -130,7 +130,7 @@
     },
     {
       "id": 6,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Zelda's Prison Chest",
       "itemLocation": 7,
       "item": "Lamp",
@@ -138,7 +138,7 @@
     },
     {
       "id": 7,
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "locationName": "Dark Cross Chest",
       "itemLocation": 9,
       "item": "SmallKey",
@@ -146,7 +146,7 @@
     },
     {
       "id": 8,
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "locationName": "Last Dark Room Rat",
       "itemLocation": 10,
       "item": "SmallKey",
@@ -154,7 +154,7 @@
     },
     {
       "id": 9,
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "locationName": "Secret Room - Left",
       "itemLocation": 11,
       "item": "ThreeBombs",
@@ -162,7 +162,7 @@
     },
     {
       "id": 10,
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "locationName": "Secret Room - Middle",
       "itemLocation": 11,
       "item": "ThreeHundredRupees",
@@ -170,7 +170,7 @@
     },
     {
       "id": 11,
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "locationName": "Secret Room - Right",
       "itemLocation": 11,
       "item": "TenArrows",
@@ -178,7 +178,7 @@
     },
     {
       "id": 12,
-      "subarea": "Sanctuary",
+      "subArea": "Sanctuary",
       "locationName": "Sanctuary Chest",
       "itemLocation": 12,
       "item": "HeartContainer",
@@ -188,7 +188,7 @@
   "lockedDoors": [
     {
       "id": 1,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "First Room",
       "doorPosition": "south",
       "doorLocation": 5,
@@ -196,7 +196,7 @@
     },
     {
       "id": 2,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Before Boomerang",
       "doorPosition": "north",
       "doorLocation": 5,
@@ -204,7 +204,7 @@
     },
     {
       "id": 3,
-      "subarea": "Hyrule Castle Dungeon",
+      "subArea": "Hyrule Castle Dungeon",
       "locationName": "Zelda's Prison",
       "doorPosition": "middle",
       "doorLocation": 7,
@@ -212,7 +212,7 @@
     },
     {
       "id": 4,
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "locationName": "Dark Cross Room",
       "doorPosition": "north",
       "doorLocation": 9,
@@ -220,7 +220,7 @@
     },
     {
       "id": 5,
-      "subarea": "Sewers (Dark)",
+      "subArea": "Sewers (Dark)",
       "locationName": "Last Dark Room",
       "doorPosition": "north",
       "doorLocation": 10,
@@ -228,7 +228,7 @@
     },
     {
       "id": 6,
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "locationName": "Secret Room - Bombable Wall (South)",
       "doorPosition": "west",
       "doorLocation": 11,
@@ -236,7 +236,7 @@
     },
     {
       "id": 7,
-      "subarea": "Sewers (Light)",
+      "subArea": "Sewers (Light)",
       "locationName": "Secret Room - Bombable Wall (North)",
       "doorPosition": "west",
       "doorLocation": 11,

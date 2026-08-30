@@ -94,7 +94,7 @@
   "lockedDoors": [
     {
       "id": 1,
-      "subarea": "Push Block Room",
+      "subArea": "Push Block Room",
       "locationName": "Left Side - To Shop",
       "doorPosition": "north",
       "doorLocation": 1,
@@ -102,7 +102,7 @@
     },
     {
       "id": 2,
-      "subarea": "Push Block Room",
+      "subArea": "Push Block Room",
       "locationName": "Right Side - To Two Chest Room",
       "doorPosition": "north",
       "doorLocation": 3,

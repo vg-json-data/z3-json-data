@@ -140,7 +140,7 @@
   "lockedDoors": [
     {
       "id": 1,
-      "subarea": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "locationName": "Top Left 1F-2F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
@@ -148,7 +148,7 @@
     },
     {
       "id": 2,
-      "subarea": "Tower of Hera (Lower)",
+      "subArea": "Tower of Hera (Lower)",
       "locationName": "Top Left 3F Big Key Door",
       "doorPosition": "north",
       "doorLocation": 6,
