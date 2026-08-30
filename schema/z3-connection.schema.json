@@ -14,13 +14,7 @@
         ],
         "properties": {
           "connectionType": {
-            "type": "string",
-            "examples": [
-              "Horizontal Overworld Transition",
-              "Vertical Overworld Transition",
-              "Horizontal Door",
-              "Vertical Door"
-            ]
+            "type": "string"
           },
           "description": {
             "type": "string",
@@ -42,34 +36,19 @@
                 "area": {
                   "type": "string",
                   "description": "Name of the area containing this node.",
-                  "default": "",
-                  "examples": [
-                    "Light World"
-                  ]
+                  "default": ""
                 },
                 "roomid": {
                   "type": "integer",
-                  "description": "ID of the room in which the node exists",
-                  "examples": [
-                    38
-                  ]
+                  "description": "ID of the room in which the node exists"
                 },
                 "nodeid": {
                   "type": "integer",
-                  "description": "ID of the node within the room in which it exists",
-                  "examples": [
-                    1
-                  ]
+                  "description": "ID of the node within the room in which it exists"
                 },
                 "position": {
                   "type": "string",
-                  "description": "The position of a node within a connection",
-                  "examples": [
-                    "left",
-                    "right",
-                    "top",
-                    "bottom"
-                  ]
+                  "description": "The position of a node within a connection"
                 }
               }
             }
