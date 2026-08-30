@@ -91,7 +91,9 @@
           "canInvul"
         ]}
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "KeyD5",
       "nodeAddress": "0xE9E0"

@@ -28,7 +28,9 @@
   "obstacles": [
     {
       "id": "Old Man Following",
-      "note": "Rescued the Old Mann and he is following Link."
+      "note": [
+        "Rescued the Old Mann and he is following Link."
+      ]
     }
   ],
   "strats": [

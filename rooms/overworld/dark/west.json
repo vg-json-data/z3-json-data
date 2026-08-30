@@ -109,7 +109,9 @@
           "name": "Dark Blacksmith Ruins",
           "area": "Hammer Peg Area",
           "nodeType": "item",
-          "note": "See Caves DW NW ID #139"
+          "note": [
+            "See Caves DW NW ID #139"
+          ]
         }
       ]
     }

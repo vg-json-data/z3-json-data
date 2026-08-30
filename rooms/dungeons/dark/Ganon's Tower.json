@@ -154,7 +154,9 @@
       "id": 21,
       "name": "Ganon's Tower - Map Chest",
       "area": "Ganon's Tower (Map Room)",
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "MapA2",
       "nodeAddress": "0xEAD3"
@@ -392,7 +394,9 @@
       "nodeType": "item",
       "nodeItem": "TwentyRupees",
       "nodeAddress": "0xEB06",
-      "note": "Ganon's Tower - Moldorm Chest"
+      "note": [
+        "Ganon's Tower - Moldorm Chest"
+      ]
     },
     {
       "id": 41,

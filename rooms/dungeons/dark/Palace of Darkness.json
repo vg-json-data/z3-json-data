@@ -2,7 +2,9 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 93,
   "name": "Palace of Darkness",
-  "note": "Also requires access to Northeast Dark World",
+  "note": [
+    "Also requires access to Northeast Dark World"
+  ],
   "roomType": "Dungeon",
   "nodes": [
     {
@@ -108,7 +110,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "BigKeyD1",
       "nodeAddress": "0xEA37"
@@ -160,7 +164,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "CompassD1",
       "nodeAddress": "0xEA43"
@@ -174,7 +180,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "Arrow",
       "nodeAddress": "0xEA4C"
@@ -188,7 +196,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "KeyD1",
       "nodeAddress": "0xEA4F"
@@ -202,7 +212,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "ThreeBombs",
       "nodeAddress": "0xEA55"
@@ -216,7 +228,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "KeyD1",
       "nodeAddress": "0xEA58"
@@ -231,7 +245,9 @@
         "canShootArrows",
         "hasLightCone"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "Hammer",
       "nodeAddress": "0xEA40"
@@ -245,7 +261,9 @@
         "hasLightCone",
         "Hammer"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "FiveRupees",
       "nodeAddress": "0xEA46"

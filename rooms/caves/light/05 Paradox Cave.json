@@ -112,7 +112,9 @@
   "obstacles": [
     {
       "id": "Push Block",
-      "note": "The push block is no longer in the way."
+      "note": [
+        "The push block is no longer in the way."
+      ]
     }
   ],
   "strats": [

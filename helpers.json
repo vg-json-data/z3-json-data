@@ -20,12 +20,16 @@
       "isLink",
       "MirrorShield"
     ],
-    "note": "Can also have 3 Progressive Shields"
+    "note": [
+      "Can also have 3 Progressive Shields"
+    ]
   },
   {
     "name": "canBombThings",
     "requires": [ "isLink" ],
-    "note": "Always assumed that you have a 10-pack of bombs"
+    "note": [
+      "Always assumed that you have a 10-pack of bombs"
+    ]
   },
   {
     "name": "canDash",
@@ -41,7 +45,9 @@
       "QuarterMagic",
       "Bottle"
     ],
-    "note": "Somehow take an arg and do math"
+    "note": [
+      "Somehow take an arg and do math"
+    ]
   },
   {
     "name": "canFly",
@@ -106,7 +112,9 @@
       "isLink",
       "TitansMitt"
     ],
-    "note": "Can also have 2 Progressive Gloves"
+    "note": [
+      "Can also have 2 Progressive Gloves"
+    ]
   },
   {
     "name": "canLightTorches",
@@ -189,7 +197,9 @@
   },
   {
     "name": "hasProperMedallion",
-    "note": "FIXME: This is an unintelligent function at the moment",
+    "note": [
+      "FIXME: This is an unintelligent function at the moment"
+    ],
     "requires": [
       "canActivateMedallions",
       "Bombos",

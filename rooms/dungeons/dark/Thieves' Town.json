@@ -2,7 +2,9 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 96,
   "name": "Thieves' Town",
-  "note": "Also requires access to Northwest Dark World",
+  "note": [
+    "Also requires access to Northwest Dark World"
+  ],
   "roomType": "Dungeon",
   "nodes": [
     {
@@ -100,7 +102,9 @@
         "BigKeyD4",
         "KeyD4"
       ],
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "TitansMitt",
       "nodeAddress": "0xEA10"

@@ -27,7 +27,9 @@
   "obstacles": [
     {
       "id": "Drained Floodgate",
-      "note": "The Floodgate has been drained."
+      "note": [
+        "The Floodgate has been drained."
+      ]
     }
   ],
   "strats": [

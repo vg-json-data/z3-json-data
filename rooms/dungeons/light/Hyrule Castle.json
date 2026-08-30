@@ -57,7 +57,9 @@
       "name": "Dark Cross Room",
       "subarea": "Sewers (Dark)",
       "nodeType": "junction",
-      "note": "Represents being in the middle of the room, after the first two snakes"
+      "note": [
+        "Represents being in the middle of the room, after the first two snakes"
+      ]
     },
     {
       "id": 10,
@@ -244,7 +246,9 @@
   "obstacles": [
     {
       "id": "Zelda Following",
-      "note": "Rescued Zelda and she is following Link."
+      "note": [
+        "Rescued Zelda and she is following Link."
+      ]
     }
   ],
   "strats": [

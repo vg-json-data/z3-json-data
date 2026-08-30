@@ -2,7 +2,9 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 99,
   "name": "Turtle Rock",
-  "note": "Also requires access to East Death Mountain",
+  "note": [
+    "Also requires access to East Death Mountain"
+  ],
   "roomType": "Dungeon",
   "nodes": [
     {
@@ -121,7 +123,9 @@
       "id": 14,
       "name": "Turtle Rock - Chest with Big Key",
       "area": "Turtle Rock (Second Section)",
-      "note": "FIXME: Changes based on key placement",
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
       "nodeType": "item",
       "nodeItem": "BigKeyD7",
       "nodeAddress": "0xEA25"

@@ -9,7 +9,9 @@
       "name": "Main Entrance",
       "subArea": "Agahnim's Tower (Lower)",
       "nodeType": "door",
-      "note": "Note that this dungeon's entrance is on floor 2F"
+      "note": [
+        "Note that this dungeon's entrance is on floor 2F"
+      ]
     },
     {
       "id": 2,

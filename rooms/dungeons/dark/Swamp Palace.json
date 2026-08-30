@@ -2,7 +2,9 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 94,
   "name": "Swamp Palace",
-  "note": "Also requires access to South Dark World",
+  "note": [
+    "Also requires access to South Dark World"
+  ],
   "roomType": "Dungeon",
   "nodes": [
     {
@@ -164,7 +166,9 @@
         "KeyD2"
       ],
       "nodeType": "junction",
-      "note": "Represents killing the 13 Fuzz surrounding Arrghus."
+      "note": [
+        "Represents killing the 13 Fuzz surrounding Arrghus."
+      ]
     },
     {
       "id": 16,

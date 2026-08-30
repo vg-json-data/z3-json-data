@@ -29,13 +29,17 @@
           "id": 3,
           "name": "Paradox Cave (Middle)",
           "nodeType": "door",
-          "note": "It's middle as viewed from inside the cave, but bottom as viewed from outside."
+          "note": [
+            "It's middle as viewed from inside the cave, but bottom as viewed from outside."
+          ]
         },
         {
           "id": 4,
           "name": "Paradox Cave (Bottom)",
           "nodeType": "door",
-          "note": "It's bottom as viewed from inside the cave, but middle as viewed from outside."
+          "note": [
+            "It's bottom as viewed from inside the cave, but middle as viewed from outside."
+          ]
         },
         {
           "id": 5,
