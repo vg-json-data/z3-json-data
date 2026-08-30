@@ -12,7 +12,7 @@
       "name": "Skull Woods First Section Exit",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -22,7 +22,7 @@
       "name": "Skull Woods First Section Bomb Jump",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -32,7 +32,7 @@
       "name": "Skull Woods First Section South Door",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -42,7 +42,7 @@
       "name": "Skull Woods First Section West Door",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -52,7 +52,7 @@
       "name": "Skull Woods - Map Chest",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",

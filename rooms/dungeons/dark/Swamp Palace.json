@@ -12,7 +12,7 @@
       "name": "Swamp Palace Moat",
       "area": "Swamp Palace (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "canMirror",
         "canSwim",
         "isDarkLink"
@@ -24,7 +24,7 @@
       "name": "Swamp Palace Exit",
       "area": "Swamp Palace (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "canMirror",
         "canSwim",
         "isDarkLink"

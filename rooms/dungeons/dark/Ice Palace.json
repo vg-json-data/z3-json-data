@@ -12,7 +12,7 @@
         "canLiftDarkRocks",
         "canMeltThings",
         "canSwim",
-        "RescuedZelda"
+        {"flag": "GameStateZelda"}
       ],
       "nodeType": "door"
     },
@@ -24,7 +24,7 @@
         "canLiftDarkRocks",
         "canMeltThings",
         "canSwim",
-        "RescuedZelda"
+        {"flag": "GameStateZelda"}
       ],
       "nodeType": "door"
     },

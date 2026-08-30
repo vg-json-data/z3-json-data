@@ -9,7 +9,7 @@
       "name": "Misery Mire Entrance Gap",
       "area": "Misery Mire (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "MoonPearl",
         {"or": [
           "canDash",
@@ -24,7 +24,7 @@
       "name": "Misery Mire Exit",
       "area": "Misery Mire (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "MoonPearl",
         {"or": [
           "canDash",

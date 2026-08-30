@@ -12,7 +12,7 @@
       "name": "Thieves' Town Big Key Door",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -22,7 +22,7 @@
       "name": "Thieves' Town Exit",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -32,7 +32,7 @@
       "name": "Thieves' Town - Chest with Big Key",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",
@@ -44,7 +44,7 @@
       "name": "Thieves' Town - Map Chest",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",
@@ -56,7 +56,7 @@
       "name": "Thieves' Town - Compass Chest",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",
@@ -68,7 +68,7 @@
       "name": "Thieves' Town - Ambush Chest",
       "area": "Thieves' Town (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",

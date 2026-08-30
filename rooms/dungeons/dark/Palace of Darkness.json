@@ -12,7 +12,7 @@
       "name": "Palace of Darkness Bridge Room",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -22,7 +22,7 @@
       "name": "Palace of Darkness Bonk Wall",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -32,7 +32,7 @@
       "name": "Palace of Darkness Exit",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -42,7 +42,7 @@
       "name": "Palace of Darkness - Shooter Room",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescuedZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",
