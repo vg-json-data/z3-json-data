@@ -762,7 +762,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        "f_SkullWoodsOpen"
+        {"flag": "OpenedSkullWoods"}
       ],
       "isBunny": "any"
     },
@@ -861,14 +861,14 @@
         {"magic": {"type": "FireRod", "count": 1}}
       ],
       "isBunny": "no",
-      "yields": ["f_SkullWoodsOpen"]
+      "setsFlags": ["OpenedSkullWoods"]
     },
     {
       "link": [10, 9],
       "name": "Base - Already Opened",
       "world": "dark",
       "requires": [
-        "f_SkullWoodsOpen"
+        {"flag": "OpenedSkullWoods"}
       ],
       "isBunny": "any"
     }

@@ -12,7 +12,7 @@
       "name": "Turtle Rock Entrance Gap",
       "area": "Turtle Rock (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "canLiftDarkRocks",
         "hasProperMedallion",
         "isDarkLink",
@@ -26,7 +26,7 @@
       "name": "Turtle Rock Exit (Front)",
       "area": "Turtle Rock (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "canLiftDarkRocks",
         "hasProperMedallion",
         "isDarkLink",
@@ -460,7 +460,7 @@
           {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
         ]}
       ],
-      "setsFlags": ["f_DefeatedTrinexx"],
+      "setsFlags": ["DefeatedTrinexx"],
       "collectsItems": [31, 32],
       "note": ["With just the Fighter Sword, Trinexx can only be damaged with spin attacks."]
     },
@@ -490,7 +490,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedTrinexx"],
+      "setsFlags": ["DefeatedTrinexx"],
       "collectsItems": [31, 32]
     },
     {
@@ -504,7 +504,7 @@
           {"bossProficiency": 3}
         ]}
       ],
-      "setsFlags": ["f_DefeatedTrinexx"],
+      "setsFlags": ["DefeatedTrinexx"],
       "collectsItems": [31, 32]
     }
   ]

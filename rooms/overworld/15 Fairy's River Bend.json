@@ -138,7 +138,7 @@
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
           {"and": [
             "canRiskPermanentLossOfAccess",
-            {"not": "f_DefeatedAgahnim1"}
+            {"notFlag": "GameStateAgahnim"}
           ]}
         ]}
       ],

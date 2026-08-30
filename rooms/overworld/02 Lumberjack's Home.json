@@ -49,7 +49,7 @@
       "name": "Base - Tree Dash",
       "world": "light",
       "requires": [
-        "f_DefeatedAgahnim1",
+        {"flag": "DefeatedAgahnim1"},
         "PegasusBoots"
       ],
       "isBunny": "no"

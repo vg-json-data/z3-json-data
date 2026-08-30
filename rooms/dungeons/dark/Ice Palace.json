@@ -12,7 +12,7 @@
         "canLiftDarkRocks",
         "canMeltThings",
         "canSwim",
-        "RescueZelda"
+        "RescuedZelda"
       ],
       "nodeType": "door"
     },
@@ -24,7 +24,7 @@
         "canLiftDarkRocks",
         "canMeltThings",
         "canSwim",
-        "RescueZelda"
+        "RescuedZelda"
       ],
       "nodeType": "door"
     },
@@ -217,7 +217,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedKholdstare"],
+      "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [14, 15],
       "devNote": ["FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."]
     },
@@ -265,7 +265,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedKholdstare"],
+      "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [14, 15]
     },
     {
@@ -292,7 +292,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedKholdstare"],
+      "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [14, 15]
     },
     {
@@ -302,7 +302,7 @@
         {"magic": {"type": "FireRod", "count": 6}},
         {"bossProficiency": 4}
       ],
-      "setsFlags": ["f_DefeatedKholdstare"],
+      "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [14, 15],
       "note": [
         "Each Cloud can be killed with 4 Fire Rod shots. However, with clustering them, it is possible to kill all three with 6 shots.",

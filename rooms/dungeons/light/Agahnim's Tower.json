@@ -525,7 +525,7 @@
           {"combatProficiency": 2}
         ]}
       ],
-      "yields": ["f_DefeatedAgahnim1"],
+      "setsFlags": ["DefeatedAgahnim1"],
       "devNote": [
         "FIXME: Swordless variants here and throughout the top half of the dungeon should be added",
         "if the sword requirement is removed from the curtains."

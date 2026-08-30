@@ -716,7 +716,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -737,7 +737,7 @@
           {"bossProficiency": 4}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9],
       "devNote": [
         "The Master Sword does less damage than the Fighter Sword, so these numbers are for the Master Sword."
@@ -753,7 +753,7 @@
           {"damage": {"enemy": "ArmosKnights", "count": 3}}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -783,7 +783,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9],
       "devNote": [
         "The L1 and L3 swords are equally strong, but the Master Sword is weaker.",
@@ -805,7 +805,7 @@
           {"bossProficiency": 3}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -815,7 +815,7 @@
         {"magic": {"type": "BlueCane", "count": 192}},
         {"bossProficiency": 2}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -836,7 +836,7 @@
           {"bossProficiency": 9}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -852,7 +852,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     },
     {
@@ -866,7 +866,7 @@
           {"bossProficiency": 9}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArmosKnights"],
+      "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     }
   ]

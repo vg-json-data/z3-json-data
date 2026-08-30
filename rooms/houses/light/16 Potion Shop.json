@@ -29,7 +29,7 @@
       "link": [1, 1],
       "name": "Base - Mushroom Reward",
       "requires": [
-        "f_gaveWitchMushroom"
+        {"flag": "GaveWitchMushroom"}
       ],
       "collectsItems": [1]
     },

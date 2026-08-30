@@ -823,7 +823,7 @@
       "requires": [
         {"obstaclesCleared": ["Zelda Following"]}
       ],
-      "setsFlags": ["f_ZeldaEscaped"]
+      "setsFlags": ["GameStateZelda"]
     },
     {
       "link": [12, 12],

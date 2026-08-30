@@ -12,7 +12,7 @@
       "name": "Palace of Darkness Bridge Room",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -22,7 +22,7 @@
       "name": "Palace of Darkness Bonk Wall",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -32,7 +32,7 @@
       "name": "Palace of Darkness Exit",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -42,7 +42,7 @@
       "name": "Palace of Darkness - Shooter Room",
       "area": "Palace of Darkness (Entrance)",
       "requires": [
-        "RescueZelda",
+        "RescuedZelda",
         "isDarkLink"
       ],
       "nodeType": "item",
@@ -370,7 +370,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [24, 25]
     },
     {
@@ -391,7 +391,7 @@
           {"bossProficiency": 4}
         ]}
       ],
-      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [24, 25],
       "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
     },
@@ -418,7 +418,7 @@
           "L4Sword"
         ]}
       ],
-      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [24, 25]
     },
     {
@@ -435,7 +435,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [24, 25],
       "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
     }

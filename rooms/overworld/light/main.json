@@ -320,7 +320,7 @@
           "nodeItem": "Bottle",
           "nodeAddress": "0x33D68",
           "requires": [
-            "RescueBlacksmith",
+            "RescuedBlacksmith",
             "isLightLink"
           ]
         }
