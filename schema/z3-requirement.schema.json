@@ -118,6 +118,9 @@
       "type": "integer",
       "minimum": 1
     },
+    "flag": {
+      "type": "string"
+    },
     "obstaclesCleared": {
       "type": "array",
       "minItems": 1,
