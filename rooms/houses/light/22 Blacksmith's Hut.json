@@ -24,7 +24,7 @@
       "link": [1, 1],
       "name": "Base - Blacksmith Reward",
       "requires": [
-        "f_RescueBlacksmith"
+        {"flag": "RescuedBlacksmith"}
       ],
       "collectsItems": [1]
     }

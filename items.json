@@ -1,7 +1,4 @@
 {
-  "base": [
-    "GreenMail"
-  ],
   "inventory": {
     "FireRod": {
       "data": "0x07"
@@ -307,37 +304,29 @@
       "data": "0x4D"
     }
   },
-  "bosses": [
-    "ArmosKnights",
-    "Lanmolas",
-    "Moldorm",
-    "Agahnim1",
-    "HelmasaurKing",
-    "Arrghus",
-    "Blind",
-    "Mothula",
-    "Kholdstare",
-    "Vitreous",
-    "Trinexx",
-    "Agahnim2",
-    "Ganon"
+  "gameState": [
   ],
   "flags": [
-    "RescueZelda",
+    "GameStateZelda",
+    "GameStateAgahnim",
+    "DefeatedArmosKnights",
+    "DefeatedLanmolas",
+    "DefeatedMoldorm",
+    "DefeatedAgahnim1",
+    "DefeatedHelmasaurKing",
+    "DefeatedArrghus",
+    "DefeatedBlind",
+    "DefeatedMothula",
+    "DefeatedKholdstare",
+    "DefeatedVitreous",
+    "DefeatedTrinexx",
+    "DefeatedAgahnim2",
+    "DefeatedGanon",
     "DrainedFloodgate",
-    "DefeatAgahnim",
-    "RescueBlacksmith",
-    "DefeatAgahnim2",
-    "DefeatGanon"
-  ],
-  "settings": {
-    "mods": [
-      "mods.ohko"
-    ],
-    "swords": [
-      "swords.swordless",
-      "swords.randomized",
-      "swords.uncle"
-    ]
-  }
+    "RescuedBlacksmith",
+    "GaveWitchMushroom",
+    "OpenedDesertPalaceWall",
+    "OpenedSkullWoods",
+    "OpenedPyramid"
+  ]
 }

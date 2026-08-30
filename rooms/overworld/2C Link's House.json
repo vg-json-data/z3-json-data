@@ -52,7 +52,7 @@
       "name": "Rescued Zelda",
       "world": "light",
       "requires": [
-        "f_ZeldaEscaped"
+        {"flag": "GameStateZelda"}
       ]
     },
     {
@@ -66,7 +66,7 @@
       "name": "Rescued Zelda",
       "world": "light",
       "requires": [
-        "f_ZeldaEscaped"
+        {"flag": "GameStateZelda"}
       ]
     },
     {
@@ -80,7 +80,7 @@
       "name": "Rescued Zelda",
       "world": "light",
       "requires": [
-        "f_ZeldaEscaped"
+        {"flag": "GameStateZelda"}
       ],
       "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
     },
@@ -95,7 +95,7 @@
       "name": "Rescued Zelda",
       "world": "light",
       "requires": [
-        "f_ZeldaEscaped"
+        {"flag": "GameStateZelda"}
       ],
       "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
     },

@@ -312,7 +312,7 @@
       "requires": [
         "L1Sword"
       ],
-      "setsFlags": ["f_DefeatedMoldorm"],
+      "setsFlags": ["DefeatedMoldorm"],
       "collectsItems": [6, 7],
       "devNote": ["This is simplified because of the pots filled with hearts below."]
     },
@@ -322,7 +322,7 @@
       "requires": [
         "Hammer"
       ],
-      "setsFlags": ["f_DefeatedMoldorm"],
+      "setsFlags": ["DefeatedMoldorm"],
       "collectsItems": [6, 7],
       "devNote": [
         "This is simplified because of the pots filled with hearts below.",

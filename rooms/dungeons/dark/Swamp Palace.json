@@ -12,7 +12,7 @@
       "name": "Swamp Palace Moat",
       "area": "Swamp Palace (Entrance)",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "canMirror",
         "canSwim",
         "isDarkLink"
@@ -24,7 +24,7 @@
       "name": "Swamp Palace Exit",
       "area": "Swamp Palace (Entrance)",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "canMirror",
         "canSwim",
         "isDarkLink"
@@ -270,7 +270,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArrghus"],
+      "setsFlags": ["DefeatedArrghus"],
       "collectsItems": [16, 17],
       "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
     },
@@ -289,7 +289,7 @@
           {"bossProficiency": 4}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArrghus"],
+      "setsFlags": ["DefeatedArrghus"],
       "collectsItems": [16, 17]
     },
     {
@@ -312,7 +312,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArrghus"],
+      "setsFlags": ["DefeatedArrghus"],
       "collectsItems": [16, 17]
     },
     {
@@ -360,7 +360,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedArrghus"],
+      "setsFlags": ["DefeatedArrghus"],
       "collectsItems": [16, 17]
     }
   ]

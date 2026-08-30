@@ -384,13 +384,13 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_OpenedDesertPalaceWall"]
+      "setsFlags": ["OpenedDesertPalaceWall"]
     },
     {
       "link": [9, 10],
       "name": "Base",
       "requires": [
-        "f_OpenedDesertPalaceWall",
+        {"flag": "OpenedDesertPalaceWall"},
         {"unlockDoor": 5}
       ]
     },
@@ -414,7 +414,7 @@
           {"bossProficiency": 3}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10]
     },
     {
@@ -424,7 +424,7 @@
         {"magic": {"type": "BlueCane", "count": 192}},
         {"bossProficiency": 2}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10]
     },
     {
@@ -438,7 +438,7 @@
           {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10]
     },
     {
@@ -457,7 +457,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10]
     },
     {
@@ -485,7 +485,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10],
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
@@ -504,7 +504,7 @@
           {"bossProficiency": 9}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10]
     },
     {
@@ -523,7 +523,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedLanmolas"],
+      "setsFlags": ["DefeatedLanmolas"],
       "collectsItems": [9, 10],
       "note": [
         "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",

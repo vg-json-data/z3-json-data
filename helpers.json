@@ -326,5 +326,23 @@
       "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
       "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free."
     ]
+  },
+  {
+    "name": "Boomerang",
+    "requires": [
+      {"or": [
+        "RedBoomerang",
+        "BlueBoomerang"
+      ]}
+    ]
+  },
+  {
+    "name": "useYItems",
+    "requires": [
+      {"or": [
+        "isLink",
+        "isLonk"
+      ]}
+    ]
   }
 ]

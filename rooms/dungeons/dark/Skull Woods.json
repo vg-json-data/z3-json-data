@@ -12,7 +12,7 @@
       "name": "Skull Woods First Section Exit",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -22,7 +22,7 @@
       "name": "Skull Woods First Section Bomb Jump",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -32,7 +32,7 @@
       "name": "Skull Woods First Section South Door",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -42,7 +42,7 @@
       "name": "Skull Woods First Section West Door",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "door"
@@ -52,7 +52,7 @@
       "name": "Skull Woods - Map Chest",
       "area": "Skull Woods First Section",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "isDarkLink"
       ],
       "nodeType": "item",
@@ -224,7 +224,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22],
       "devNote": [
         "FIXME: Completely ignores that the L4 sword doesn't deal damage in vanilla.",
@@ -258,7 +258,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22],
       "devNote": [
         "FIXME: Completely ignores that the L4 sword doesn't deal damage in vanilla.",
@@ -291,7 +291,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22],
       "devNote": [
         "FIXME: Completely ignores that the L4 sword doesn't deal damage in vanilla.",
@@ -327,7 +327,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22]
     },
     {
@@ -337,7 +337,7 @@
         {"magic": {"type": "BlueCane", "count": 512}},
         {"bossProficiency": 2}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22]
     },
     {
@@ -358,7 +358,7 @@
           ]}
         ]}
       ],
-      "setsFlags": ["f_DefeatedMothula"],
+      "setsFlags": ["DefeatedMothula"],
       "collectsItems": [21, 22]
     }
   ]

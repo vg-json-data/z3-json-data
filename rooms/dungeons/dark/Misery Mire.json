@@ -9,7 +9,7 @@
       "name": "Misery Mire Entrance Gap",
       "area": "Misery Mire (Entrance)",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "MoonPearl",
         {"or": [
           "canDash",
@@ -24,7 +24,7 @@
       "name": "Misery Mire Exit",
       "area": "Misery Mire (Entrance)",
       "requires": [
-        "RescueZelda",
+        {"flag": "GameStateZelda"},
         "MoonPearl",
         {"or": [
           "canDash",
@@ -259,7 +259,7 @@
           {"ammo": {"type": "Arrows", "count": 8}}
         ]}
       ],
-      "setsFlags": ["f_DefeatedVitreous"],
+      "setsFlags": ["DefeatedVitreous"],
       "collectsItems": [14, 15]
     },
     {
@@ -268,7 +268,7 @@
       "requires": [
         "L2Sword"
       ],
-      "setsFlags": ["f_DefeatedVitreous"],
+      "setsFlags": ["DefeatedVitreous"],
       "collectsItems": [14, 15]
     },
     {
@@ -282,7 +282,7 @@
           {"bossProficiency": 9}
         ]}
       ],
-      "setsFlags": ["f_DefeatedVitreous"],
+      "setsFlags": ["DefeatedVitreous"],
       "collectsItems": [14, 15],
       "note": [
         "With just the Level 1 sword, Vitreous is only vulnerable to spin attacks.",

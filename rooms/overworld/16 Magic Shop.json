@@ -51,7 +51,7 @@
       "requires": [
         "Mushroom"
       ],
-      "setsFlags": ["f_gaveWitchMushroom"],
+      "setsFlags": ["gaveWitchMushroom"],
       "isBunny": "no"
     },
     {
