@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 34,
+  "name": "Dam",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Control Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Floodgate Chest",
+      "itemLocation": 1,
+      "item": "ThreeBombs",
+      "itemAddress": "0xE98C"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "Drained Floodgate",
+      "note": [
+        "The Floodgate has been drained."
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1],
+      "devNote": ["Without a block clip, this prevents going to Node 2 without resetting the room."]
+    },
+    {
+      "link": [1, 1],
+      "name": "Leave with Water Drained",
+      "requires": [
+        {"obstaclesCleared": ["DrainedFloodgate"]}
+      ],
+      "exitState": {
+        "state": "event",
+        "type": "DrainedFloodgate"
+      }
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Open The Floodgates",
+      "requires": [],
+      "clearsObstacles": ["DrainedFloodgate"]
+    }
+  ]
+}

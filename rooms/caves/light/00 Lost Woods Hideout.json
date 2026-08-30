@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 1,
+  "name": "Lost Woods Hideout",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "North Entrance",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "South Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Ledge Item",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180000"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Grab the Item",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

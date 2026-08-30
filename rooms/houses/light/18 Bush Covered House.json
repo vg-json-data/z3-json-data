@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 40,
+  "name": "Bush Covered House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+  ]
+}

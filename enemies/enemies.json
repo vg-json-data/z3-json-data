@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-enemies.schema.json",
+  "$schema": "../schema/z3-enemies.schema.json",
   "enemies": [
     {
       "names": [
@@ -98,7 +98,9 @@
       "names": [
         "Detatched Stalfos Head"
       ],
-      "note": "This comes from enemy 133, and is not the same as an already detached Floating Stalfos Head.",
+      "note": [
+        "This comes from enemy 133, and is not the same as an already detached Floating Stalfos Head."
+      ],
       "hp": 255,
       "dmgToLink": {
         "green": 4,
@@ -1764,7 +1766,9 @@
       "names": [
         "Floating Stalfos Head"
       ],
-      "note": "This is not the same as an already detached Detatched Stalfos Head.",
+      "note": [
+        "This is not the same as an already detached Detatched Stalfos Head."
+      ],
       "hp": 24,
       "dmgToLink": {
         "green": 32,

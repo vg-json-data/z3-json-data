@@ -1,0 +1,191 @@
+{
+  "$schema": "../schema/z3-enemies.schema.json",
+  "enemies": [
+    {
+      "names": [
+        "Ball",
+        "Gargantuan Ball"
+      ],
+      "note": [
+        "Spawned from a hole in the wall"
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 80
+    },
+    {
+      "names": [
+        "Spark"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 91,
+      "additionalSpriteIndex": [
+        92
+      ]
+    },
+    {
+      "names": [
+        "Rolling Spike Trap"
+      ],
+      "dmgToLink": {
+        "green": 24,
+        "blue": 16,
+        "red": 8
+      },
+      "spriteIndex": 93,
+      "additionalSpriteIndex": [
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "names": [
+        "Beamos"
+      ],
+      "attacks": [
+        "Beamos Laser Beam"
+      ],
+      "note": [
+        "The Beamos Laser Beam shares the same entry."
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 97
+    },
+    {
+      "names": [
+        "Wall Turret Cannon Ball"
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 107
+    },
+    {
+      "names": [
+        "Giant Spike Block"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 125
+    },
+    {
+      "names": [
+        "Guruguru Bar"
+      ],
+      "note": [
+        "Sometimes referred to as a Fire Bar."
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 126,
+      "additionalSpriteIndex": [
+        127
+      ]
+    },
+    {
+      "names": [
+        "Winder"
+      ],
+      "note": [
+        "Sometimes referred to as a Fire Snake."
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 128
+    },
+    {
+      "names": [
+        "Flying Tile"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 148
+    },
+    {
+      "names": [
+        "Laser Eye"
+      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 16,
+        "red": 8
+      },
+      "spriteIndex": 149,
+      "additionalSpriteIndex": [
+        150,
+        151,
+        152
+      ]
+    },
+    {
+      "names": [
+        "Falling Boulder"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 194
+    },
+    {
+      "names": [
+        "Chain Chomp"
+      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
+      "spriteIndex": 202
+    },
+    {
+      "names": [
+        "Land Mine"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 4,
+        "red": 2
+      },
+      "spriteIndex": 212
+    },
+    {
+      "names": [
+        "Spike Block"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 138
+    }
+  ]
+}

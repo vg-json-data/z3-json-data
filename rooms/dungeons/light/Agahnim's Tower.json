@@ -1,0 +1,535 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 61,
+  "name": "Agahnim's Tower",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "door",
+      "note": [
+        "Note that this dungeon's entrance is on floor 2F"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Room 03",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Top Right 2F-3F Staircase",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "End of Dark Maze",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Bottom Right 3F-4F Staircase",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "End of Dark Bridge Pit Room",
+      "subArea": "Agahnim's Tower (Lower)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Top Right 4F-5F Staircase",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Guarded Pot Room",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Bottom Right 5F-6F Staircase",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Agahnim 1",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "event"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Agahnim's Tower (Lower)",
+      "locationName": "Room 03 Chest",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0xEAB5"
+    },
+    {
+      "id": 2,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Maze Chest",
+      "itemLocation": 3,
+      "item": "SmallKey",
+      "itemAddress": "0xEAB2"
+    },
+    {
+      "id": 3,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Guard Key",
+      "itemLocation": 6,
+      "item": "SmallKey",
+      "nodeAddress": "unknown"
+    },
+    {
+      "id": 4,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Guarded Pot Room Key",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "nodeAddress": "unknown"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Top Right 2F-3F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Agahnim's Tower (Lower)",
+      "name": "Dark Maze Room Lower Door",
+      "doorPosition": "east",
+      "doorLocation": 4,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Top Right 4F-5F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Agahnim's Tower (Upper)",
+      "name": "Guarded Pot Room",
+      "doorPosition": "east",
+      "doorLocation": 8,
+      "keyType": "small"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"and": [
+          "L1Sword",
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 8}},
+          {"magic": {"type": "FireRod", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"magic": {"type": "RedCane", "count": 4}},
+          {"magic": {"type": "BlueCane", "count": 60}}
+        ]},
+        {"or": [
+          {"combatProficiency": 2},
+          {"magic": {"type": "BlueCane", "count": 16}},
+          {"enemyDamage": {"enemy": "Ball and Chain Trooper", "hits": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          "hasSwordSparkles",
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill (Stun)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          "Boomerang"
+        ]},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "Bombs", "count": 4}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"magic": {"type": "RedCane", "count": 2}}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Kill (Alternate Weapons)",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 32}},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 4}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"and": [
+            {"magic": {"type": "RedCane", "count": 2}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 3}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 4}},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "RedCane", "count": 2}},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Bomb Doorway Kill",
+      "requires": [
+        {"combatProficiency": 3},
+        {"ammo": {"type": "Bombs", "count": 2}}
+      ],
+      "note": [
+        "Quickly place a bomb a bit away from the doorway, wait a second then place another and retreat to the safety of the doorway.",
+        "With a proper setup, the soldiers will not be able to reach Link and the second bomb will explode just after the soldiers lose their i-frames."
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Soldier Dodge",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"and": [
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+            {"or": [
+              "Boomerang",
+              "Hookshot",
+              {"combatProficiency": 2}
+            ]}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Sword, Fire Rod",
+      "requires": [
+        {"unlockDoor": 1},
+        "L1Sword",
+        {"magic": {"type": "FireRod", "count": 1}},
+        {"darkProficiency": 2},
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 3}
+          ]},
+          "hasSwordSparkles"
+        ]}
+      ],
+      "collectsItems": [2],
+      "note": [
+        "When entering the first room, charge up a spin attack multiple times until the first guard is dead.",
+        "In the second room, walk south a couple tiles then shoot fire rod to the left."
+      ],
+      "devNote": [
+        "An unlucky positioning of the soldier in the Dark Maze Room may waste the Fire Rod shot.",
+        "FIXME: Could be done swordless with tanking or another weapon."
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Tank the Damage",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 6}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 4}},
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Sword and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        "L1Sword"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Strong Weapon and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"or": [
+          {"combatProficiency": 2},
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+        ]},
+        {"or": [
+          "Boomerang",
+          {"and": [
+            {"or": [
+              "Hammer",
+              "Hookshot"
+            ]},
+            {"enemyDamage": {"enemy": "Chasupa", "hits": 1}},
+            {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"ammo": {"type": "Arrows", "count": 3}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "Rod", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"or": [
+              "Hammer",
+              "Hookshot",
+              {"ammo": {"type": "Arrows", "count": 2}},
+              {"ammo": {"type": "SilverArrows", "count": 1}},
+              {"magic": {"type": "Rod", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Alternate Weapon and Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 32}}
+        ]}
+      ],
+      "collectsItems": [2],
+      "devNote": ["Bombs do help, but not enough to make it down to a combatProficiency of 2."]
+    },
+    {
+      "link": [3, 4],
+      "name": "Damageless Pot Kill",
+      "requires": [
+        {"unlockDoor": 1},
+        "Lamp",
+        {"combatProficiency": 3}
+      ],
+      "collectsItems": [2],
+      "note": [
+        "The only easy to reach pot is the top left; it is recommended to use it to kill the north soldier to free up a second pot.",
+        "Then use the north pot to kill the bottom right soldier or to kill a Chasupa (bat) and then use the top right pot to do so.",
+        "This soldier guards two pots, which makes the remaining kills significantly more flexible."
+      ]
+    },
+    {
+      "link": [3, 7],
+      "name": "Sword, Fire Rod",
+      "requires": [
+        {"unlockDoor": 1},
+        {"unlockDoor": 2},
+        "L1Sword",
+        {"magic": {"type": "FireRod", "count": 2}},
+        {"darkProficiency": 2},
+        {"or": [
+          {"magic": {"type": "FireRod", "count": 3}},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"combatProficiency": 3},
+            {"magic": {"type": "FireRod", "count": 1}}
+          ]},
+          "hasSwordSparkles"
+        ]}
+      ],
+      "collectsItems": [3],
+      "note": [
+        "When entering the first room, charge up a spin attack multiple times until the first guard is dead.",
+        "In the second room, walk south a couple tiles then shoot fire rod to the left."
+      ],
+      "devNote": [
+        "An unlucky positioning of the soldier in the Dark Maze Room may waste the Fire Rod shot."
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2},
+        "Lamp",
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword"
+      ],
+      "devNote": ["FIXME: Node 5 and higher assume a sword, because it is needed for the curtains."]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"and": [
+            "L2Sword",
+            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          ]},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3},
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 2}},
+          {"and": [
+            "Shield",
+            {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}}
+          ]},
+          "L3Sword",
+          "Boomerang",
+          "Hookshot",
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"magic": {"type": "FireRod", "count": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4},
+        {"or": [
+          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Agahnim 1",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Agahnim", "attack": "Weak Fireball", "hits": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "yields": ["f_DefeatedAgahnim1"],
+      "devNote": [
+        "FIXME: Swordless variants here and throughout the top half of the dungeon should be added",
+        "if the sword requirement is removed from the curtains."
+      ]
+    }
+  ]
+}

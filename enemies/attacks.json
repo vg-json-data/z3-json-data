@@ -1,0 +1,232 @@
+{
+  "$schema": "../schema/z3-enemies.schema.json",
+  "enemies": [
+    {
+      "names": [
+        "Octorok's Rock",
+        "Slarok's Rock"
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 12
+    },
+    {
+      "names": [
+        "Moblin Spear",
+        "Archer Arrow"
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 27
+    },
+    {
+      "names": [
+        "Weak Fireball"
+      ],
+      "note": [
+        "The small red fireball shot by: Zora, Ku, and Devalant.",
+        "This also includes the small blue ball created when the cluster of blue magic balls shot by Agahnim collides with something and breaks apart."
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 85
+    },
+    {
+      "names": [
+        "Fireball"
+      ],
+      "note": [
+        "A stronger variant of the small red fireball shot by: Medusa, Yomo Medusa, Blind and a few burning torches"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 85
+    },
+    {
+      "names": [
+        "Spitting Fireball"
+      ],
+      "note": [
+        "This is also created by a Zazak (Red) and a Lynel."
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": 165,
+      "prizePack": null
+    },
+    {
+      "names": [
+        "Beamos Laser Beam"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 97
+    },
+    {
+      "names": [
+        "Kodongo Fireball"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 135
+    },
+    {
+      "names": [
+        "Agahnim's Tennis Ball"
+      ],
+      "note": [
+        "Can only be deflected with the Master Sword, Bug Catching Net, or during the second fight, with Hammer."
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 123
+    },
+    {
+      "names": [
+        "Agahnim's Blue Ball"
+      ],
+      "note": [
+        "Creates 6 Fireball when struck or when it hits a wall."
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": 123,
+      "spawnsSprite": 85
+    },
+    {
+      "names": [
+        "Helmasaur King's Fireball"
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": 112
+    },
+    {
+      "names": [
+        "Mothula's Loops"
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": 137
+    },
+    {
+      "names": [
+        "Kholdstare's Falling Ice"
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": 164
+    },
+    {
+      "names": [
+        "Lightning"
+      ],
+      "note": [
+        "Used by Agahnim and by Vitreous."
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": 191
+    },
+    {
+      "names": [
+        "Lanmolas' Rocks"
+      ],
+      "dmgToLink": {
+        "green": 4,
+        "blue": 4,
+        "red": 4
+      },
+      "spriteIndex": 194
+    },
+    {
+      "names": [
+        "Blind Laser"
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 8,
+        "red": 4
+      },
+      "spriteIndex": null
+    },
+    {
+      "names": [
+        "Trinexx (Head)"
+      ],
+      "dmgToLink": {
+        "green": 32,
+        "blue": 24,
+        "red": 16
+      },
+      "spriteIndex": 203
+    },
+    {
+      "names": [
+        "Trinexx (Fire Breath)"
+      ],
+      "note": [
+        "This is generated using a garnish."
+      ],
+      "dmgToLink": {
+        "green": 16,
+        "blue": 16,
+        "red": 16
+      },
+      "spriteIndex": null
+    },
+    {
+      "names": [
+        "Trinexx (Ice Breath)"
+      ],
+      "note": [
+        "This is generated using a garnish."
+      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
+      "spriteIndex": null
+    }
+  ]
+}

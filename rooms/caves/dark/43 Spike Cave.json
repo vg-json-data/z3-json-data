@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 63,
+  "name": "Spike Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Treasure Chest",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Chest",
+      "itemLocation": 2,
+      "item": "blueCane",
+      "itemAddress": "0xEA8B"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Open Left Chest",
+      "requires": [
+        "Hammer",
+        "Gloves",
+        {"or": [
+          {"damage": {"type": "Ground Spikes", "count": 15}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"type": "Ground Spikes", "count": 14}}
+          ]},
+          {"and": [
+            {"magic": {"type": "BlueCane", "count": 128}},
+            {"damage": {"type": "Ground Spikes", "count": 4}}
+          ]},
+          {"and": [
+            {"magic": {"type": "BlueCane", "count": 128}},
+            {"combatProficiency": 2},
+            {"damage": {"type": "Ground Spikes", "count": 3}}
+          ]},
+          {"and": [
+            "HalfMagic",
+            {"magic": {"type": "BlueCane", "count": 156}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Cape", "count": 128}},
+            {"damage": {"type": "Ground Spikes", "count": 7}}
+          ]},
+          {"and": [
+            {"magic": {"type": "Cape", "count": 128}},
+            {"combatProficiency": 2},
+            {"damage": {"type": "Ground Spikes", "count": 6}}
+          ]},
+          {"and": [
+            "HalfMagic",
+            {"magic": {"type": "Cape", "count": 206}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

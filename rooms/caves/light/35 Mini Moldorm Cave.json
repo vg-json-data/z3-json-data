@@ -1,0 +1,202 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 29,
+  "name": "Mini Moldorm Cave",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Guarded Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Left Chest",
+      "itemLocation": 2,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEB42"
+    },
+    {
+      "id": 2,
+      "locationName": "Mid Left Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB45"
+    },
+    {
+      "id": 3,
+      "locationName": "Mid Right Chest",
+      "itemLocation": 2,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEB48"
+    },
+    {
+      "id": 4,
+      "locationName": "Right Chest",
+      "itemLocation": 2,
+      "item": "TenArrows",
+      "itemAddress": "0xEB4B"
+    },
+    {
+      "id": 5,
+      "locationName": "Generous Guy",
+      "itemLocation": 2,
+      "item": "ThreeHundredRupees",
+      "itemAddress": "0x180010"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base Kill",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"and": [
+            {"combatProficiency": 2},
+            "L1Sword"
+          ]}
+        ]}
+      ],
+      "note": ["It is possible to walk across the bottom edge of the room and kill the Mini-Moldorms with a sword."]
+    },
+    {
+      "link": [1, 2],
+      "name": "Bomb Kill",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "Bombs", "count": 6}},
+          {"and": [
+            "L1Sword",
+            {"ammo": {"type": "Bombs", "count": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"ammo": {"type": "Bombs", "count": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "Bombs", "count": 3}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Rod Kill",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 6}},
+          {"and": [
+            "L1Sword",
+            {"magic": {"type": "Rod", "count": 5}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"magic": {"type": "Rod", "count": 5}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "Rod", "count": 4}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Bow Kill",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "Arrows", "count": 10}},
+          {"ammo": {"type": "SilverArrows", "count": 10}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "Arrows", "count": 6}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"ammo": {"type": "SilverArrows", "count": 6}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"ammo": {"type": "Arrows", "count": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"ammo": {"type": "SilverArrows", "count": 4}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Alternate Weapon Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"magic": {"type": "RedCane", "count": 2}},
+          {"magic": {"type": "BlueCane", "count": 88}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"magic": {"type": "BlueCane", "count": 72}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 4}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            "Hammer",
+            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            "Hammer"
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Left Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Mid Left Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Mid Right Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Right Chest",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Generous Guy",
+      "requires": [],
+      "collectsItems": [5]
+    }
+  ]
+}

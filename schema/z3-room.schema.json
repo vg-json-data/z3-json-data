@@ -1,0 +1,587 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-room.schema.json",
+  "type": "object",
+  "description": "A contiguous area in Link to the Past.",
+  "required": [
+    "id",
+    "name",
+    "roomType",
+    "nodes",
+    "strats"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string"
+    },
+    "roomType": {
+      "type": "string",
+      "enum": [
+        "Cave",
+        "Dungeon",
+        "House",
+        "Overworld"
+      ]
+    },
+    "note": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alttpEntrandoRegions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "name": {
+            "type": "string"
+          },
+          "nodeType": {
+            "type": "string",
+            "enum": [
+              "boss",
+              "door",
+              "drop",
+              "entrance",
+              "event",
+              "exit",
+              "fortune",
+              "item",
+              "junction",
+              "minigame",
+              "obstacle",
+              "shop",
+              "transition"
+            ]
+          },
+          "area": {
+            "type": "string"
+          },
+          "subArea": {
+            "type": "string"
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark",
+              "both"
+            ]
+          },
+          "entrances": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
+          "transitions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "edge",
+                "span"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "edge": {
+                  "type": "string",
+                  "enum": [
+                    "north",
+                    "south",
+                    "east",
+                    "west"
+                  ]
+                },
+                "span": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "terrain": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "teleports": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
+          "nodeItem": {
+            "type": "string"
+          },
+          "nodeAddress": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "locks": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "object",
+              "required": [
+                "lockType",
+                "unlock"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "lockType": {
+                  "type": "string",
+                  "enum": [
+                    "bossFight",
+                    "cutscene",
+                    "gameFlag",
+                    "killEnemies",
+                    "lockedDoor",
+                    "permanent",
+                    "triggeredEvent"
+                  ]
+                },
+                "lock": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "z3-requirement.schema.json"
+                  }
+                },
+                "unlock": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "z3-requirement.schema.json"
+                  }
+                },
+                "note": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "view": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "yields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "locationName",
+          "itemLocation",
+          "item",
+          "itemAddress"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "locationName": {
+            "type": "string"
+          },
+          "itemLocation": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "item": {
+            "type": "string"
+          },
+          "itemAddress": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "subArea": {
+            "type": "string"
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "lockedDoors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "locationName",
+          "doorPosition",
+          "doorLocation",
+          "keyType"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "locationName": {
+            "type": "string"
+          },
+          "doorPosition": {
+            "type": "string",
+            "enum": [
+              "north",
+              "south",
+              "east",
+              "west",
+              "middle"
+            ]
+          },
+          "doorLocation": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "keyType": {
+            "type": "string"
+          },
+          "subArea": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "obstacles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "note"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "strats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "link",
+          "name",
+          "requires"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "link": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "notable": {
+            "type": "boolean"
+          },
+          "collectsItems": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "setsFlags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "clearsObstacles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "unlocksDoor": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark",
+              "any"
+            ]
+          },
+          "fromWorld": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "toWorld": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "isBunny": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "any"
+            ]
+          },
+          "exitState": {
+            "type": "object",
+            "required": [
+              "state",
+              "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "type": "string",
+                "enum": [
+                  "event",
+                  "follower"
+                ]
+              },
+              "type": {
+                "type": "string"
+              }
+            }
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "roomType"
+        ],
+        "properties": {
+          "roomType": {
+            "const": "Overworld"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "nodes": {
+            "items": {
+              "required": [
+                "world"
+              ]
+            }
+          },
+          "strats": {
+            "items": {
+              "oneOf": [
+                {
+                  "required": [
+                    "world"
+                  ]
+                },
+                {
+                  "required": [
+                    "fromWorld",
+                    "toWorld"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "nodes": {
+            "items": {
+              "required": [
+                "nodeType"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

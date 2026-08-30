@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 42,
+  "name": "East Snitch Lady's House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Heart Pot",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 1}}
+      ]
+    }
+  ]
+}

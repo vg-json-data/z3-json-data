@@ -1,0 +1,263 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 8,
+  "name": "Lost Woods Entrance",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Northwest Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [5.5, 6.5]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Southwest Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [7.5, 10.5]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Northeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [23.5, 24.5]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Blocked East Area",
+      "world": "both"
+    },
+    {
+      "id": 5,
+      "name": "Southeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [19.5, 22.5]}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang"
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Simple Weapons",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 6}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 4}},
+            "h_NoAgahnimLoophole"
+          ]}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Bushes",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 2],
+      "name": "Precise Dodge",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "isBunny": "any",
+      "note": [
+        "On entry, quickly sneak past the guard by moving southeast.",
+        "Trigger the second guard and use the bush to block him and run on the other side."
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Guard Tank",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 2}},
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"enemyDamage": {"enemy": "Sword Soldier (Green)", "hits": 2}}
+          ]}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang"
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Simple Weapons",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 2}},
+          {"ammo": {"type": "Arrows", "count": 4}},
+          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"magic": {"type": "Rod", "count": 1}}
+          ]},
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"ammo": {"type": "Arrows", "count": 1}}
+          ]},
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"ammo": {"type": "SilverArrows", "count": 1}}
+          ]}
+        ]}
+      ],
+      "isBunny": "no",
+      "note": ["Kill the first guard(s) then take the east path to avoid the last guard."]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Signpost and Bushes",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2}
+      ],
+      "isBunny": "no",
+      "note": ["Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."]
+    },
+    {
+      "link": [2, 1],
+      "name": "Precise Dodge",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "isBunny": "any",
+      "note": ["Wait for the guard to notice Link, then use the signpost to get the guard to go left, run up right and precisely dodge the other guard(s)."]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Guard Tank",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 3}},
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"enemyDamage": {"enemy": "Sword Soldier (Green)", "hits": 2}}
+          ]}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "Hammer"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [4, 4],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": [
+        "PowerGlove"
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "TitansMitt"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "TitansMitt"
+      ],
+      "isBunny": "no"
+    }
+  ]
+}

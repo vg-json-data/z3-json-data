@@ -1,6 +1,6 @@
 {
-  "$schema": "../../schema/z3-enemies.schema.json",
-  "non-enemies": [
+  "$schema": "../schema/z3-enemies.schema.json",
+  "enemies": [
     {
       "names": [
         "Ground Spikes"
@@ -11,7 +11,9 @@
         "red": 8
       },
       "spriteIndex": null,
-      "devNote": ["Animated ground spikes that Link can walk over."]
+      "devNote": [
+        "Animated ground spikes that Link can walk over."
+      ]
     },
     {
       "names": [
@@ -23,7 +25,9 @@
         "red": 8
       },
       "spriteIndex": null,
-      "devNote": ["Falling into a pit which causes damage and respawns Link."]
+      "devNote": [
+        "Falling into a pit which causes damage and respawns Link."
+      ]
     },
     {
       "names": [
@@ -35,7 +39,9 @@
         "red": 2
       },
       "spriteIndex": null,
-      "devNote": ["Taking damage by Link's own bomb."]
+      "devNote": [
+        "Taking damage by Link's own bomb."
+      ]
     }
   ]
 }

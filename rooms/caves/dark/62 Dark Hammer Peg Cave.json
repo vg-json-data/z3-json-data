@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 70,
+  "name": "Dark Hammer Peg Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Hammer Peg Cave Item",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180006"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 54,
+  "name": "Two Brothers' House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "East Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "West Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall (West)",
+      "doorPosition": "west",
+      "doorLocation": 1,
+      "keyType": "bomb, dash"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Dash Break West Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Dash Break East Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    }
+  ]
+}

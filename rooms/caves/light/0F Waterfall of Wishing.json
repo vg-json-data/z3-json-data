@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 12,
+  "name": "Waterfall of Wishing",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "First Item",
+      "itemLocation": 1,
+      "item": "RedBoomerang",
+      "itemAddress": "0xE9B0"
+    },
+    {
+      "id": 1,
+      "locationName": "Second Item",
+      "itemLocation": 1,
+      "item": "RedShield",
+      "itemAddress": "0xE9D1"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - First Item",
+      "requires": [
+        {"or": [
+          "Boomerang",
+          "h_greatFairyFreeUpgrades"
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Second Item",
+      "requires": [
+        {"or": [
+          "Shield",
+          "h_greatFairyFreeUpgrades"
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Fill Empty Bottle",
+      "requires": [
+        {"refill": {"type": "GreenPotion", "limit": 1}}
+      ]
+    }
+  ]
+}

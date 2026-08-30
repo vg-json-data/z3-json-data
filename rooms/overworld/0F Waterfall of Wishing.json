@@ -1,0 +1,110 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 7,
+  "name": "Waterfall of Wishing",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Raised Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [23, 26]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Zora's Waterfall",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lower Land",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [23, 26]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Zora's Waterfall",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Water",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Waterfall of Wishing",
+          "world": "light"
+        }
+      ],
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Waterfall of Wishing Whirlpool",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Angry Catfish's Item",
+      "itemLocation": 1,
+      "world": "dark",
+      "item": "Quake",
+      "itemAddress": "0xEE185"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "isBunny": "any",
+      "devNote": ["FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."]
+    },
+    {
+      "link": [2, 2],
+      "name": "Disturb Catfish",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "no",
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "Flippers"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "Flippers"
+      ],
+      "isBunny": "no"
+    }
+  ]
+}

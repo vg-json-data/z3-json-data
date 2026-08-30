@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 93,
+  "name": "Palace of Darkness",
+  "note": [
+    "Also requires access to Northeast Dark World"
+  ],
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Palace of Darkness Bridge Room",
+      "area": "Palace of Darkness (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "isDarkLink"
+      ],
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Palace of Darkness Bonk Wall",
+      "area": "Palace of Darkness (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "isDarkLink"
+      ],
+      "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Palace of Darkness Exit",
+      "area": "Palace of Darkness (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "isDarkLink"
+      ],
+      "nodeType": "door"
+    },
+    {
+      "id": 4,
+      "name": "Palace of Darkness - Shooter Room",
+      "area": "Palace of Darkness (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "isDarkLink"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA5B"
+    },
+    {
+      "id": 5,
+      "name": "Palace of Darkness Chest with Big Key Staircase",
+      "area": "Palace of Darkness (Center)",
+      "nodeType": "door"
+    },
+    {
+      "id": 6,
+      "name": "Palace of Darkness (North)",
+      "area": "Palace of Darkness (Center)",
+      "nodeType": "door"
+    },
+    {
+      "id": 7,
+      "name": "Palace of Darkness Big Key Door",
+      "area": "Palace of Darkness (Center)",
+      "nodeType": "door"
+    },
+    {
+      "id": 8,
+      "name": "Palace of Darkness - The Arena - Bridge",
+      "area": "Palace of Darkness (Center)",
+      "requires": [
+        {"or": [
+          "KeyD1",
+          {"and": [
+            "Hammer",
+            "canShootArrows"
+          ]}
+        ]}
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA3D"
+    },
+    {
+      "id": 9,
+      "name": "Palace of Darkness - Stalfos Basement",
+      "area": "Palace of Darkness (Center)",
+      "requires": [
+        {"or": [
+          "KeyD1",
+          {"and": [
+            "Hammer",
+            "canShootArrows"
+          ]}
+        ]}
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA49"
+    },
+    {
+      "id": 10,
+      "name": "Palace of Darkness - Chest with Big Key",
+      "area": "Palace of Darkness (Chest with Big Key)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "BigKeyD1",
+      "nodeAddress": "0xEA37"
+    },
+    {
+      "id": 11,
+      "name": "Palace of Darkness Hammer Peg Drop",
+      "area": "Palace of Darkness (Bonk Section)",
+      "nodeType": "drop"
+    },
+    {
+      "id": 12,
+      "name": "Palace of Darkness - The Arena - Ledge",
+      "area": "Palace of Darkness (Bonk Section)",
+      "requires": [
+        "canShootArrows"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA3A"
+    },
+    {
+      "id": 13,
+      "name": "Palace of Darkness - Map Chest",
+      "area": "Palace of Darkness (Bonk Section)",
+      "requires": [ "canShootArrows" ],
+      "nodeType": "item",
+      "nodeItem": "MapD1",
+      "nodeAddress": "0xEA52"
+    },
+    {
+      "id": 14,
+      "name": "Palace of Darkness Spike Statue Room Door",
+      "area": "Palace of Darkness (North)",
+      "nodeType": "door"
+    },
+    {
+      "id": 15,
+      "name": "Palace of Darkness Maze Door",
+      "area": "Palace of Darkness (North)",
+      "nodeType": "door"
+    },
+    {
+      "id": 16,
+      "name": "Palace of Darkness - Compass Chest",
+      "area": "Palace of Darkness (North)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "CompassD1",
+      "nodeAddress": "0xEA43"
+    },
+    {
+      "id": 17,
+      "name": "Palace of Darkness - Dark Basement - Left",
+      "area": "Palace of Darkness (North)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "Arrow",
+      "nodeAddress": "0xEA4C"
+    },
+    {
+      "id": 18,
+      "name": "Palace of Darkness - Dark Basement - Right",
+      "area": "Palace of Darkness (North)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA4F"
+    },
+    {
+      "id": 19,
+      "name": "Palace of Darkness - Dark Maze - Top",
+      "area": "Palace of Darkness (Maze)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEA55"
+    },
+    {
+      "id": 20,
+      "name": "Palace of Darkness - Dark Maze - Bottom",
+      "area": "Palace of Darkness (Maze)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD1",
+      "nodeAddress": "0xEA58"
+    },
+    {
+      "id": 21,
+      "name": "Palace of Darkness - Big Chest",
+      "area": "Palace of Darkness (Maze)",
+      "requires": [
+        "BigKeyD1",
+        "Hammer",
+        "canShootArrows",
+        "hasLightCone"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "Hammer",
+      "nodeAddress": "0xEA40"
+    },
+    {
+      "id": 22,
+      "name": "Palace of Darkness - Harmless Hellway",
+      "area": "Palace of Darkness (Harmless Hellway)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "Hammer"
+      ],
+      "note": [
+        "FIXME: Changes based on key placement"
+      ],
+      "nodeType": "item",
+      "nodeItem": "FiveRupees",
+      "nodeAddress": "0xEA46"
+    },
+    {
+      "id": 23,
+      "name": "Palace of Darkness - Helmasaur Mask",
+      "area": "Palace of Darkness (Final Section)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "BigKeyD1",
+        "KeyD1:6",
+        "Hammer"
+      ],
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Palace of Darkness - Helmasaur (Mask Broken)",
+      "area": "Palace of Darkness (Final Section)",
+      "requires": [
+        "canShootArrows",
+        "hasLightCone",
+        "BigKeyD1",
+        "KeyD1:6",
+        "Hammer"
+      ],
+      "nodeType": "item",
+      "nodeItem": "BossHeartContainer",
+      "nodeAddress": "0x180153"
+    },
+    {
+      "id": 25,
+      "name": "Palace of Darkness - Prize",
+      "area": "Palace of Darkness (Final Section)",
+      "nodeType": "item",
+      "nodeItem": "Crystal1",
+      "nodeAddress": [
+        "0x120A1",
+        "0x53F00",
+        "0x53F01",
+        "0x180056",
+        "0x18007D",
+        "0xC702"
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Hammer",
+      "requires": [
+        "Hammer",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+          ]},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Bombs",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"ammo": {"type": "Bombs", "count": 7}},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"ammo": {"type": "Bombs", "count": 6}},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"ammo": {"type": "Bombs", "count": 5}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Bow",
+      "requires": [
+        {"or": [
+          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 20}},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 15}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 10}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 8}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L1)",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25],
+      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
+      "requires": [
+        "L2Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L3Sword",
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+          ]},
+          {"and": [
+            "L3Sword",
+            {"bossProficiency": 2}
+          ]},
+          "L4Sword"
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 4},
+        {"or": [
+          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 8}},
+          {"and": [
+            {"bossProficiency": 9},
+            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 4}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25],
+      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
+    }
+  ]
+}
