@@ -463,7 +463,7 @@
         "Lamp",
         {"or": [
           "L1Sword",
-          {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+          {"damage": {"enemy": "Rope", "count": 1}}
         ]}
       ]
     },
@@ -501,9 +501,9 @@
       "requires": [
         {"darkProficiency": 2},
         {"combatProficiency": 3},
-        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"damage": {"enemy": "Rat", "count": 1}},
         {"magic": {"type": "FireRod", "count": 1}},
-        {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+        {"damage": {"enemy": "Rope", "count": 1}}
       ],
       "note": ["Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."]
     },
@@ -519,8 +519,8 @@
           {"magic": {"type": "BlueCane", "count": 52}},
           {"magic": {"type": "RedCane", "count": 5}}
         ]},
-        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
-        {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+        {"damage": {"enemy": "Rat", "count": 1}},
+        {"damage": {"enemy": "Rope", "count": 1}}
       ]
     },
     {
@@ -528,8 +528,8 @@
       "name": "Darkness (Fully Blind)",
       "requires": [
         {"darkProficiency": 3},
-        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
-        {"enemyDamage": {"enemy": "Rope", "hits": 4}}
+        {"damage": {"enemy": "Rat", "count": 1}},
+        {"damage": {"enemy": "Rope", "count": 4}}
       ],
       "note": ["Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."]
     },
@@ -574,16 +574,16 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"damage": {"enemy": "Keese", "count": 1}},
             {"or": [
               "Hookshot",
               "Boomerang",
               {"magic": {"type": "RedCane", "count": 1}},
-              {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+              {"damage": {"enemy": "Keese", "count": 1}}
             ]}
           ]}
         ]}
@@ -599,8 +599,8 @@
           "L1Sword",
           {"combatProficiency": 2},
           {"and": [
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
-            {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}},
+            {"damage": {"enemy": "Rope", "count": 1}}
           ]}
         ]}
       ]
@@ -614,8 +614,8 @@
           {"and": [
             "L1Sword",
             {"darkProficiency": 2},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
-            {"enemyDamage": {"enemy": "Rope", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}},
+            {"damage": {"enemy": "Rope", "count": 1}}
           ]},
           {"and": [
             "L1Sword",
@@ -623,12 +623,12 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+            {"damage": {"enemy": "Keese", "count": 1}},
             {"or": [
               "Hookshot",
               "Boomerang",
               {"magic": {"type": "RedCane", "count": 1}},
-              {"enemyDamage": {"enemy": "Rope", "hits": 2}}
+              {"damage": {"enemy": "Rope", "count": 2}}
             ]}
           ]}
         ]}
@@ -658,7 +658,7 @@
           {"ammo": {"type": "SilverArrows", "count": 5}},
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Rat", "hits": 2}}
+            {"damage": {"enemy": "Rat", "count": 2}}
           ]},
           {"and": [
             "Hammer",
@@ -677,7 +677,7 @@
       "name": "Darkness",
       "requires": [
         {"darkProficiency": 2},
-        {"enemyDamage": {"enemy": "Rat", "hits": 1}},
+        {"damage": {"enemy": "Rat", "count": 1}},
         {"or": [
           "L1Sword",
           "Hookshot",
@@ -701,7 +701,7 @@
           {"ammo": {"type": "SilverArrows", "count": 5}},
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Rat", "hits": 2}}
+            {"damage": {"enemy": "Rat", "count": 2}}
           ]},
           {"and": [
             "Hammer",
@@ -730,7 +730,7 @@
         {"darkProficiency": 2},
         {"unlockDoor": 5},
         {"or": [
-          {"enemyDamage": {"enemy": "Rat", "hits": 2}},
+          {"damage": {"enemy": "Rat", "count": 2}},
           {"and": [
             {"darkProficiency": 3},
             {"or": [
@@ -760,8 +760,8 @@
         {"unlockDoor": 5},
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}},
-            {"enemyDamage": {"enemy": "Rat", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}},
+            {"damage": {"enemy": "Rat", "count": 1}}
           ]},
           "hasSwordSparkles",
           {"darkProficiency": 3}

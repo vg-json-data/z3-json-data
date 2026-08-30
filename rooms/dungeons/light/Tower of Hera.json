@@ -201,7 +201,7 @@
         "h_hitBlueOrangeSwitch",
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Flying Tile", "hits": 1}}
+          {"damage": {"enemy": "Flying Tile", "count": 1}}
         ]}
       ]
     },
@@ -248,7 +248,7 @@
         {"or": [
           {"combatProficiency": 3},
           {"magic": {"type": "BlueCane", "count": 12}},
-          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ]
     },
@@ -262,7 +262,7 @@
           "Hookshot",
           {"ammo": {"type": "SilverArrows", "count": 3}},
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ]
     },

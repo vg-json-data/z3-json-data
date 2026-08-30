@@ -63,10 +63,10 @@
       "name": "Moldorm Tank",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]}
         ]}
       ]
@@ -109,10 +109,10 @@
       "name": "Moldorm Tank",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]}
         ]}
       ]

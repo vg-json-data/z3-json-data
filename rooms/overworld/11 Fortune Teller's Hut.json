@@ -68,7 +68,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Taros (Red)", "hits": 1}}
+          {"damage": {"enemy": "Taros (Red)", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -94,7 +94,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Taros (Red)", "hits": 1}}
+          {"damage": {"enemy": "Taros (Red)", "count": 1}}
         ]}
       ],
       "isBunny": "any"

@@ -182,7 +182,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Ball", "hits": 1}}
+          {"damage": {"enemy": "Ball", "count": 1}}
         ]}
       ]
     },
@@ -199,7 +199,7 @@
         {"or": [
           "L1Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Stalfos", "hits": 1}}
+          {"damage": {"enemy": "Stalfos", "count": 1}}
         ]}
       ],
       "collectsItems": [2]
@@ -211,7 +211,7 @@
         {"or": [
           "L1Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Stalfos", "hits": 1}}
+          {"damage": {"enemy": "Stalfos", "count": 1}}
         ]}
       ]
     },
@@ -272,7 +272,7 @@
         {"or": [
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Eyegore (Green)", "hits": 2}}
+            {"damage": {"enemy": "Eyegore (Green)", "count": 2}}
           ]},
           {"combatProficiency": 3}
         ]}
@@ -290,7 +290,7 @@
         {"or": [
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Eyegore (Green)", "hits": 2}}
+            {"damage": {"enemy": "Eyegore (Green)", "count": 2}}
           ]},
           {"combatProficiency": 3}
         ]}
@@ -335,7 +335,7 @@
           {"and": [
             "L1Sword",
             {"combatProficiency": 3},
-            {"enemyDamage": {"enemy": "Eyegore (Green)", "hits": 6}}
+            {"damage": {"enemy": "Eyegore (Green)", "count": 6}}
           ]}
         ]}
       ],
@@ -365,7 +365,7 @@
         "Lamp",
         {"or": [
           "L1Sword",
-          {"enemyDamage": {"enemy": "Popo", "hits": 2}},
+          {"damage": {"enemy": "Popo", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
             {"or": [
@@ -377,7 +377,7 @@
               {"magic": {"type": "Rod", "count": 1}},
               {"magic": {"type": "BlueCane", "count": 20}},
               {"magic": {"type": "RedCane", "count": 1}},
-              {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+              {"damage": {"enemy": "Popo", "count": 1}}
             ]}
           ]}
         ]}
@@ -397,13 +397,13 @@
       "name": "Darkness - Lenient",
       "requires": [
         {"darkProficiency": 2},
-        {"enemyDamage": {"enemy": "Bubble", "hits": 2}},
+        {"damage": {"enemy": "Bubble", "count": 2}},
         {"or": [
           "L1Sword",
           "Hookshot",
           {"magic": {"type": "Rod", "count": 1}},
           {"magic": {"type": "RedCane", "count": 1}},
-          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+          {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
     },
@@ -427,7 +427,7 @@
           {"magic": {"type": "Rod", "count": 1}},
           {"magic": {"type": "BlueCane", "count": 20}},
           {"magic": {"type": "RedCane", "count": 1}},
-          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+          {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
     },{
@@ -438,7 +438,7 @@
         {"unlockDoor": 1},
         {"or": [
           "L1Sword",
-          {"enemyDamage": {"enemy": "Popo", "hits": 2}},
+          {"damage": {"enemy": "Popo", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
             {"or": [
@@ -450,7 +450,7 @@
               {"magic": {"type": "Rod", "count": 1}},
               {"magic": {"type": "BlueCane", "count": 28}},
               {"magic": {"type": "RedCane", "count": 1}},
-              {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+              {"damage": {"enemy": "Popo", "count": 1}}
             ]}
           ]}
         ]}
@@ -487,7 +487,7 @@
         {"darkProficiency": 1},
         {"unlockDoor": 1},
         {"or": [
-          {"enemyDamage": {"enemy": "Bubble", "hits": 1}},
+          {"damage": {"enemy": "Bubble", "count": 1}},
           {"magic": {"type": "BlueCane", "count": 20}}
         ]}
       ]
@@ -521,7 +521,7 @@
         {"or": [
           "L1Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+          {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
     },
@@ -547,14 +547,14 @@
         {"or": [
           "L1Sword",
           {"darkProficiency": 3},
-          {"enemyDamage": {"enemy": "Stalfos", "hits": 3}}
+          {"damage": {"enemy": "Stalfos", "count": 3}}
         ]},
         {"or": [
           "L1Sword",
           "Hookshot",
           {"magic": {"type": "Rod", "count": 1}},
           {"magic": {"type": "RedCane", "count": 1}},
-          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+          {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ],
       "note": [
@@ -571,7 +571,7 @@
         {"or": [
           {"darkProficiency": 3},
           {"magic": {"type": "BlueCane", "count": 60}},
-          {"enemyDamage": {"enemy": "Stalfos", "hits": 3}}
+          {"damage": {"enemy": "Stalfos", "count": 3}}
         ]},
         {"magic": {"type": "BlueCane", "count": 24}}
       ],
@@ -591,7 +591,7 @@
           "Boomerang",
           {"magic": {"type": "Rod", "count": 1}},
           {"magic": {"type": "RedCane", "count": 1}},
-          {"enemyDamage": {"enemy": "Popo", "hits": 1}}
+          {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ],
       "note": [
@@ -669,7 +669,7 @@
       "name": "Grab the Pot Glitch",
       "requires": [
         {"combatProficiency": 3},
-        {"enemyDamage": {"enemy": "Bubble", "hits": 2}}
+        {"damage": {"enemy": "Bubble", "count": 2}}
       ],
       "note": [
         "Get i-frames from the Anti-Fairies then grab the pot between them.",
@@ -704,7 +704,7 @@
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 22}},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 20}},
@@ -725,14 +725,14 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 10}},
+          {"damage": {"enemy": "ArmosKnights", "count": 10}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 6}}
+            {"damage": {"enemy": "ArmosKnights", "count": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -750,7 +750,7 @@
         "hasSwordSparkles",
         {"or": [
           {"bossProficiency": 2},
-          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 3}}
+          {"damage": {"enemy": "ArmosKnights", "count": 3}}
         ]}
       ],
       "setsFlags": ["f_DefeatedArmosKnights"],
@@ -772,14 +772,14 @@
           ]}
         ]},
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 7}},
+          {"damage": {"enemy": "ArmosKnights", "count": 7}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 4}}
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 1}}
+            {"damage": {"enemy": "ArmosKnights", "count": 1}}
           ]}
         ]}
       ],
@@ -797,10 +797,10 @@
       "requires": [
         "L4Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 3}},
+          {"damage": {"enemy": "ArmosKnights", "count": 3}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 1}}
+            {"damage": {"enemy": "ArmosKnights", "count": 1}}
           ]},
           {"bossProficiency": 3}
         ]}
@@ -827,11 +827,11 @@
         {"or": [
           {"and": [
             {"magic": {"type": "RedCane", "count": 2}},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 4}}
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "ArmosKnights", "hits": 2}}
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
           ]},
           {"bossProficiency": 9}
         ]}
@@ -862,7 +862,7 @@
         "Hammer",
         {"bossProficiency": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "ArmosKnights", "hits": 20}},
+          {"damage": {"enemy": "ArmosKnights", "count": 20}},
           {"bossProficiency": 9}
         ]}
       ],

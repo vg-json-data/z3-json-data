@@ -50,7 +50,7 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"damage": {"type": "Fall", "count": 1}}
+            {"damage": {"enemy": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -58,8 +58,8 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"damage": {"type": "Fall", "count": 1}},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            {"damage": {"enemy": "Fall", "count": 1}},
+            {"damage": {"enemy": "Keese", "count": 1}}
           ]}
         ]}
       ],
@@ -70,7 +70,7 @@
       "name": "Darkness - Item Use Audio",
       "requires": [
         {"darkProficiency": 3},
-        {"enemyDamage": {"enemy": "Keese", "hits": 1}},
+        {"damage": {"enemy": "Keese", "count": 1}},
         {"or": [
           "BookOfMudora",
           "Bombos",
@@ -118,7 +118,7 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"damage": {"type": "Fall", "count": 1}}
+            {"damage": {"enemy": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -126,8 +126,8 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Keese", "hits": 3}},
-            {"damage": {"type": "Fall", "count": 1}}
+            {"damage": {"enemy": "Keese", "count": 3}},
+            {"damage": {"enemy": "Fall", "count": 1}}
           ]}
         ]}
       ],
@@ -138,7 +138,7 @@
       "name": "Darkness - Item Use Audio",
       "requires": [
         {"darkProficiency": 3},
-        {"enemyDamage": {"enemy": "Keese", "hits": 3}},
+        {"damage": {"enemy": "Keese", "count": 3}},
         {"or": [
           "BookOfMudora",
           "Bombos",

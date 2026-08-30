@@ -337,22 +337,22 @@
         {"or": [
           {"and": [
             {"magic": {"type": "Rod", "count": 18}},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 7}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 7}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 16}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 4}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 10}},
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 8}},
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 1}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]}
         ]}
       ],
@@ -368,12 +368,12 @@
         {"or": [
           {"and": [
             {"magic": {"type": "Rod", "count": 8}},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 5}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 5}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 6}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 5}},
@@ -396,12 +396,12 @@
         {"or": [
           {"and": [
             {"magic": {"type": "Rod", "count": 6}},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 4}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 1}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 2}},
@@ -421,12 +421,12 @@
         {"or": [
           {"and": [
             {"magic": {"type": "Rod", "count": 14}},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 4}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 10}},
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 8}},
@@ -445,7 +445,7 @@
         {"bossProficiency": 2},
         {"or": [
           {"bossProficiency": 4},
-          {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 1}}
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
         ]}
       ]
     },
@@ -457,7 +457,7 @@
         {"bossProficiency": 3},
         {"or": [
           {"bossProficiency": 4},
-          {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
         ]}
       ],
       "setsFlags": ["f_DefeatedTrinexx"],
@@ -470,19 +470,19 @@
       "requires": [
         "L2Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 3}},
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 3}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 1}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]},
           {"bossProficiency": 3},
           {"and": [
             "L3Sword",
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 2}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
             "L4Sword",
-            {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 1}}
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]},
           {"and": [
             "L4Sword",
@@ -500,7 +500,7 @@
         "Hammer",
         {"bossProficiency": 2},
         {"or": [
-          {"enemyDamage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "hits": 3}},
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 3}},
           {"bossProficiency": 3}
         ]}
       ],

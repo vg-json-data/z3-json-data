@@ -139,7 +139,7 @@
           "techRequires": [],
           "otherRequires": [
             {"ammo": {"type": "Bombs", "count": 1}},
-            {"damage": {"type": "Bomb", "count": 1}}
+            {"damage": {"enemy": "Bomb", "count": 1}}
           ],
           "note": [
             "Using a bomb to boost Link over a small pit.",
@@ -152,7 +152,7 @@
               "techRequires": ["canBombBoost"],
               "otherRequires": [
                 {"ammo": {"type": "Bombs", "count": 1}},
-                {"damage": {"type": "Bomb", "count": 1}}
+                {"damage": {"enemy": "Bomb", "count": 1}}
               ],
               "note": [
                 "Using a bomb to boost Link over a 2-tile-wide pit, which may include a diagonal boost requirement.",

@@ -154,17 +154,17 @@
         "L1Sword",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 7}},
-            {"enemyDamage": {"enemy": "Blind", "hits": 2}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 7}},
+            {"damage": {"enemy": "Blind", "count": 2}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 4}},
-            {"enemyDamage": {"enemy": "Blind", "hits": 1}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 4}},
+            {"damage": {"enemy": "Blind", "count": 1}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 2}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 2}}
           ]},
           {"bossProficiency": 4},
           {"and": [
@@ -205,12 +205,12 @@
         {"bossProficiency": 2},
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 4}},
-            {"enemyDamage": {"enemy": "Blind", "hits": 1}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 4}},
+            {"damage": {"enemy": "Blind", "count": 1}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 2}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 2}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -227,13 +227,13 @@
         {"bossProficiency": 2},
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 9}},
-            {"enemyDamage": {"enemy": "Blind", "hits": 3}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 9}},
+            {"damage": {"enemy": "Blind", "count": 3}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Blind", "attack": "Fireball", "hits": 6}},
-            {"enemyDamage": {"enemy": "Blind", "hits": 2}}
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 6}},
+            {"damage": {"enemy": "Blind", "count": 2}}
           ]},
           {"bossProficiency": 4}
         ]}

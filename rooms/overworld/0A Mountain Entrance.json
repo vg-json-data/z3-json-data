@@ -91,11 +91,11 @@
           {"magic": {"type": "Cape", "count": 36}},
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Dacto", "hits": 1}}
+            {"damage": {"enemy": "Dacto", "count": 1}}
           ]},
           {"and": [
             {"magic": {"type": "Rod", "count": 1}},
-            {"enemyDamage": {"enemy": "Dacto", "hits": 1}}
+            {"damage": {"enemy": "Dacto", "count": 1}}
           ]}
         ]}
       ],
@@ -121,7 +121,7 @@
       "world": "dark",
       "requires": [
         "PowerGlove",
-        {"enemyDamage": {"enemy": "Dacto", "hits": 2}}
+        {"damage": {"enemy": "Dacto", "count": 2}}
       ],
       "isBunny": "no"
     },
@@ -146,7 +146,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Dacto", "hits": 1}}
+          {"damage": {"enemy": "Dacto", "count": 1}}
         ]}
       ],
       "isBunny": "any",

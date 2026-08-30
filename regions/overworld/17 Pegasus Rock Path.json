@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/z3-room.schema.json",
+  "$schema": "../../schema/z3-region.schema.json",
   "id": 15,
   "name": "Pegasus Rock Path",
   "roomType": "Overworld",

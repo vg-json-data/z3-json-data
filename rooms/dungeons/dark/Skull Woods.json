@@ -204,23 +204,23 @@
         "L1Sword",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Mothula", "hits": 14}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 20}}
+            {"damage": {"enemy": "Mothula", "count": 14}},
+            {"damage": {"enemy": "Spike Block", "count": 20}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 8}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 14}}
+            {"damage": {"enemy": "Mothula", "count": 8}},
+            {"damage": {"enemy": "Spike Block", "count": 14}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 12}}
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 12}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
           ]}
         ]}
       ],
@@ -238,23 +238,23 @@
         "L2Sword",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Mothula", "hits": 7}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 10}}
+            {"damage": {"enemy": "Mothula", "count": 7}},
+            {"damage": {"enemy": "Spike Block", "count": 10}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 7}}
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 7}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 3}}
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 3}}
           ]}
         ]}
       ],
@@ -272,22 +272,22 @@
         "L3Sword",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Mothula", "hits": 4}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 7}}
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 7}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 3}}
+            {"damage": {"enemy": "Spike Block", "count": 3}}
           ]}
         ]}
       ],
@@ -305,25 +305,25 @@
         {"or": [
           {"and": [
             {"magic": {"type": "FireRod", "count": 32}},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 3}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 10}}
+            {"damage": {"enemy": "Mothula", "count": 3}},
+            {"damage": {"enemy": "Spike Block", "count": 10}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 24}},
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 6}}
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 16}},
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 1}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
           ]},
           {"and": [
             {"magic": {"type": "FireRod", "count": 10}},
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
+            {"damage": {"enemy": "Spike Block", "count": 4}}
           ]}
         ]}
       ],
@@ -348,13 +348,13 @@
         {"bossProficiency": 3},
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Mothula", "hits": 5}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 5}}
+            {"damage": {"enemy": "Mothula", "count": 5}},
+            {"damage": {"enemy": "Spike Block", "count": 5}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"enemyDamage": {"enemy": "Mothula", "hits": 2}},
-            {"enemyDamage": {"enemy": "Spike Block", "hits": 4}}
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
           ]}
         ]}
       ],

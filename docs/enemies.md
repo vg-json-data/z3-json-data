@@ -6,14 +6,12 @@
 - Bosses are represented separately in `bosses.json`.
 - Unusual enemies are stored in `other.json`.
 - Invulnerable objects are stored in `invulnerable.json`.
-- Enemy attacks are stored in `attacks.json` and must not be used as the `enemy` in an `enemyDamage` requirement.
-- Non-enemy damage sources are stored in `non-enemies.json`.
+- Enemy attacks are stored in `attacks.json` and must not be used as the `enemy` in a `damage` requirement.
+- Non-enemy damage sources are stored in `hazards.json`.
 
-Some attacks spawned by non-enemies also need enemy records because attacks cannot be referenced directly. For example, a Medusa can summon a Fireball.
+## Damage requirements
 
-## Enemy damage requirements
-
-An `enemyDamage` requirement identifies the enemy dealing damage. Without an `attack`, damage comes from that enemy's `dmgToLink` value for Link's mail color; 8 damage equals one heart.
+A `damage` requirement identifies the enemy dealing damage. Without an `attack`, damage comes from that enemy's `dmgToLink` value for Link's mail color; 8 damage equals one heart.
 
 When `attack` is present, damage instead comes from the named attack's `dmgToLink` value. Naming the attack clarifies which attack hit Link and allows validation that the enemy can perform it. This matters because many attacks have generic names such as Fireball, Weak Fireball, and Spitting Fireball.
 

@@ -31,8 +31,8 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"enemyDamage": {"enemy": "Keese", "hits": 2}},
-            {"damage": {"type": "Fall", "count": 2}}
+            {"damage": {"enemy": "Keese", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 2}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -40,7 +40,7 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}}
           ]}
         ]}
       ]
@@ -60,7 +60,7 @@
         {"or": [
           {"and": [
             "L1Sword",
-            {"enemyDamage": {"enemy": "Keese", "hits": 2}}
+            {"damage": {"enemy": "Keese", "count": 2}}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -68,7 +68,7 @@
           ]},
           {"and": [
             {"darkProficiency": 3},
-            {"enemyDamage": {"enemy": "Keese", "hits": 1}}
+            {"damage": {"enemy": "Keese", "count": 1}}
           ]}
         ]}
       ]

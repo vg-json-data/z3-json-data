@@ -197,10 +197,10 @@
       "requires": [
         "h_rangeBlueOrangeSwitch",
         {"or": [
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 3}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 3}},
           {"and": [
             {"combatProficiency": 3},
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]},
           {"combatProficiency": 4}
         ]}
@@ -215,7 +215,7 @@
           "L1Sword",
           {"and": [
             "Hookshot",
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]},
           {"and": [
             {"combatProficiency": 2},
@@ -241,7 +241,7 @@
         {"combatProficiency": 2},
         {"magic": {"type": "RedCane", "count": 2}},
         {"or": [
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 1}},
           {"combatProficiency": 3}
         ]}
       ],
@@ -281,10 +281,10 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]}
         ]}
       ]
@@ -315,10 +315,10 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]}
         ]}
       ]
