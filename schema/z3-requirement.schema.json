@@ -5,7 +5,6 @@
   "oneOf": [
     {
       "type": "string",
-      "minLength": 1,
       "description": "Base requirement: item, flag, tech, helper, etc."
     },
     {
