@@ -20,14 +20,12 @@
               "Vertical Overworld Transition",
               "Horizontal Door",
               "Vertical Door"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "description": {
             "type": "string",
             "description": "A textual description of the connection",
-            "default": "",
-            "pattern": "^(.*)$"
+            "default": ""
           },
           "nodes": {
             "type": "array",
@@ -47,8 +45,7 @@
                   "default": "",
                   "examples": [
                     "Light World"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "roomid": {
                   "type": "integer",
@@ -72,8 +69,7 @@
                     "right",
                     "top",
                     "bottom"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 }
               }
             }

@@ -22,13 +22,11 @@
       "default": "",
       "examples": [
         "Link's House"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "note": {
       "type": "string",
-      "default": "",
-      "pattern": "^(.*)$"
+      "default": ""
     },
     "alttpEntrandoRegions": {
       "type": "array",
@@ -62,8 +60,7 @@
             "default": "",
             "examples": [
               "Exit"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "nodeType": {
             "type": "string",
@@ -87,8 +84,7 @@
               "junction",
               "obstacle",
               "transition"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "nodeItem": {
             "type": "string",
@@ -140,8 +136,7 @@
                     "killEnemies",
                     "permanent",
                     "triggeredEvent"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "lock": {
                   "type": [
@@ -159,8 +154,7 @@
                 },
                 "note": {
                   "type": "string",
-                  "default": "",
-                  "pattern": "^(.*)$"
+                  "default": ""
                 }
               }
             }
@@ -187,8 +181,7 @@
             "default": "",
             "examples": [
               "Door Object"
-            ],
-            "pattern": "^(.*)$"
+            ]
           }
         }
       }
@@ -274,8 +267,7 @@
                         "examples": [
                           "Base",
                           "Ice Palace Bomb Jump"
-                        ],
-                        "pattern": "^(.*)$"
+                        ]
                       },
                       "notable": {
                         "type": "boolean"
@@ -298,8 +290,7 @@
                 },
                 "note": {
                   "type": "string",
-                  "default": "",
-                  "pattern": "^(.*)$"
+                  "default": ""
                 }
               }
             }
