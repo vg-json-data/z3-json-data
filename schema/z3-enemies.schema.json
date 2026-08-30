@@ -2,61 +2,278 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "z3-enemies.schema.json",
   "type": "object",
+  "description": "Enemies, bosses, hazards, and attacks in Link to the Past.",
+  "required": [
+    "enemies"
+  ],
+  "additionalProperties": false,
   "properties": {
-  },
-  "note": [
-    "Currently just some notes (sorry)",
-    "enemies are designed to be animate creatures with some sentience. bosses are bosses, and other is a mixture of invincible random things, unusual enemies and enemy attacks",
-    "enemyDamage lists the enemy name, and if there is no attack field, then it uses that enemy to hurt link, based on the mail color he has; 8 = 1 heart.",
-    "if there is an attack field, then instead the damage listed on the enemy with the name of the attack will be used.",
-    "the benefit of the attack field is for clarity: you can know which enemy hit you with the said attack, while also preventing mistakes: you can enforce that that enemy has that valid attack",
-    "this can be useful because many of the attacks have very generic names (Fireball, Weak Fireball, Spitting Fireball).",
-    "in the 'other' enemies file, in the section called 'attacks', these should never be allowed as the 'enemy' in 'enemyDamage'.",
-    "because attacks cant be called directly, some attacks that spawn from non-enemies need enemies added to the data. For example a Medusa can summon a Fireball.",
-    
-    "Many values in the tables are edited based on what is in the rom. The goal of this data is to show exactly how the game behaves from the player's perspective.",
-    "While it might be interesting that Spear Soldier (Green) is just Spear Soldier (Red) with an override on the hp, this is not the goal of the project.",
-    "similarly, listing tables that show enemies take x damage from y weapon is not important to this project if the enemy overrides it to prevent said damage.",
-
-    "many enemies override their values in their table, so even though the lightning lock to get into agahnim's tower shows it is vulnerable to a fighter sword spin attack,",
-    "there is an override check that requires the master sword. these are not able to be represented in the current form, but it would be nice to at least include those kinds of notes maybe?",
-    "the vast majority of bosses have their tables overwritten in many ways, which can make those values not very meaningful.",
-
-
-    "weapons with special values:",
-    "boomerang can have stun1second, stun4Seconds, stun10Seconds",
-    "hookshot, bombs can have stun10Seconds",
-    "magicPowder can have fairy, slime",
-    "fireRod, bombos can have incinerate",
-    "iceRod, ether can have freeze",
-    "quake can have stun10Seconds, slime",
-    "class1-5, arrows, silverArrows are always integers",
-
-    "special values:",
-    "stun1second the enemy is stunned for approximately 67 frames (1.1 seconds)",
-    "stun4Seconds the enemy is stunned for approximately 265 frames (4.4 seconds)",
-    "stun10Seconds the enemy is stunned for approximately 580 frames (9.7 seconds)",
-    "fairy: the enemy is replaced with a fairy",
-    "slime: the enemy is replaced with a 0-hp slime enemy spriteIndex 143",
-    "incinerate: the enemy dies to a moderately long fire animation",
-    "freeze: the enemy is frozen",
-
-    "classes:",
-    "boomerang is either color",
-    "class 1 includes normal L1Sword hits, drawn L2Sword, sword sparkles, red cane, blue cane, bee, thrown purple or green bush",
-    "class 2 includes spin attack L1Sword, normal L2Sword, drawn L3Sword",
-    "class 3 includes spin attack L2Sword, normal L3Sword, drawn L4Sword, hammer, other thrown objects including frozen enemies and yellow bushes",
-    "class 4 includes spin attack L3Sword, normal L4Sword",
-    "class 4 includes spin attack L4Sword",
-
-    "prize packs (in just approximate details)",
-    "prize packs have a 50% nothing drop except pack 3, most packs have a common theme and approximately 6 of the 8 drops are of the same item",
-    "0: hearts",
-    "1: rupees (5-6 on average)",
-    "2: magic",
-    "3: bombs (100% drop rate)",
-    "4: arrows",
-    "5: variety low tier",
-    "6: variety high tier"
-  ]
+    "$schema": {
+      "type": "string"
+    },
+    "enemies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "names",
+          "dmgToLink",
+          "spriteIndex"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "names": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "attacks": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "hp": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          },
+          "dmgToLink": {
+            "type": "object",
+            "required": [
+              "green",
+              "blue",
+              "red"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "green": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "blue": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "red": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "dmgFromLink": {
+            "type": "object",
+            "required": [
+              "boomerang",
+              "class1",
+              "class2",
+              "class3",
+              "class4",
+              "class5",
+              "arrows",
+              "hookshot",
+              "bombs",
+              "silverArrows",
+              "magicPowder",
+              "fireRod",
+              "iceRod",
+              "bombos",
+              "ether",
+              "quake"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "boomerang": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "enum": [
+                      "stun1Second",
+                      "stun4Seconds",
+                      "stun10Seconds"
+                    ]
+                  }
+                ]
+              },
+              "class1": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "class2": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "class3": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "class4": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "class5": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "arrows": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "hookshot": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "stun10Seconds"
+                  }
+                ]
+              },
+              "bombs": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "stun10Seconds"
+                  }
+                ]
+              },
+              "silverArrows": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "magicPowder": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "enum": [
+                      "fairy",
+                      "slime"
+                    ]
+                  }
+                ]
+              },
+              "fireRod": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "incinerate"
+                  }
+                ]
+              },
+              "iceRod": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "freeze"
+                  }
+                ]
+              },
+              "bombos": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "incinerate"
+                  }
+                ]
+              },
+              "ether": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "const": "freeze"
+                  }
+                ]
+              },
+              "quake": {
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "enum": [
+                      "stun10Seconds",
+                      "slime"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "spriteIndex": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 255
+          },
+          "additionalSpriteIndex": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          },
+          "spawnsSprite": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          },
+          "prizePack": {
+            "enum": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              null
+            ]
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
 }
