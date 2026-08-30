@@ -2,92 +2,209 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "z3-room.schema.json",
   "type": "object",
-  "description": "An object that describes one contiguous area without transitions in Link to the Past",
+  "description": "A contiguous area in Link to the Past.",
   "required": [
     "id",
-    "name"
+    "name",
+    "roomType",
+    "nodes",
+    "strats"
   ],
+  "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "id": {
       "type": "integer",
-      "description": "Identifier for this room, unique across the entire game",
-      "default": 0
+      "minimum": 0
     },
     "name": {
       "type": "string",
-      "description": "A name for the room. Must be unique.",
-      "default": ""
+      "minLength": 1
+    },
+    "roomType": {
+      "type": "string",
+      "enum": [
+        "Cave",
+        "Dungeon",
+        "House",
+        "Overworld"
+      ]
     },
     "note": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "alttpEntrandoRegions": {
       "type": "array",
-      "description": "The name of all regions (as defined in the ALttP Entrando project) that are (at least partially) contained in this room.",
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1
       }
     },
     "nodes": {
       "type": "array",
-      "description": "Doors, transitions, item locations, and other points of interest within this room.",
       "items": {
         "type": "object",
         "required": [
           "id",
-          "name",
-          "nodeType"
+          "name"
         ],
+        "additionalProperties": false,
         "properties": {
           "id": {
             "type": "integer",
-            "description": "Identifier for this node, unique within the room.",
-            "default": 0
+            "minimum": 1
           },
           "name": {
             "type": "string",
-            "description": "Name of this node. Must be unique across all rooms.",
-            "default": ""
+            "minLength": 1
           },
           "nodeType": {
             "type": "string",
-            "description": "Examples: door, elevator, event, eye, gray, green, item, vertical",
-            "default": "",
             "enum": [
+              "boss",
               "door",
               "drop",
               "entrance",
-              "exit",
               "event",
+              "exit",
+              "fortune",
               "item",
               "junction",
+              "minigame",
               "obstacle",
+              "shop",
               "transition"
             ]
           },
+          "area": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subArea": {
+            "type": "string",
+            "minLength": 1
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark",
+              "both"
+            ]
+          },
+          "entrances": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
+          "transitions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "edge",
+                "span"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "edge": {
+                  "type": "string",
+                  "enum": [
+                    "north",
+                    "south",
+                    "east",
+                    "west"
+                  ]
+                },
+                "span": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "terrain": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "teleports": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
           "nodeItem": {
             "type": "string",
-            "description": "Item that normally resides at this node in Vanilla"
+            "minLength": 1
           },
           "nodeAddress": {
             "type": [
               "string",
               "array"
             ],
-            "description": "Memory address of this location"
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           },
           "requires": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "description": "Equipment, tech, and flag requirements to reach this node within Room. Array elements are ANDed together.",
+            "type": "array",
             "items": {
-              "type": [
-                "object",
-                "string"
-              ]
+              "$ref": "z3-requirement.schema.json"
             }
           },
           "locks": {
@@ -95,25 +212,22 @@
               "array",
               "null"
             ],
-            "description": "An array of corresponding lock and unlock conditions for this node",
-            "default": null,
             "items": {
               "type": "object",
-              "description": "Contains corresponding lock and unlock conditions for a node. If lock condition is missing, the lock is initially active.",
               "required": [
                 "lockType",
                 "unlock"
               ],
+              "additionalProperties": false,
               "properties": {
                 "lockType": {
                   "type": "string",
-                  "default": "",
                   "enum": [
                     "bossFight",
-                    "lockedDoor",
                     "cutscene",
                     "gameFlag",
                     "killEnemies",
+                    "lockedDoor",
                     "permanent",
                     "triggeredEvent"
                   ]
@@ -123,18 +237,21 @@
                     "array",
                     "null"
                   ],
-                  "description": "Equipment, tech, and flag requirements for this node to be locked"
+                  "items": {
+                    "$ref": "z3-requirement.schema.json"
+                  }
                 },
                 "unlock": {
                   "type": [
                     "array",
                     "null"
                   ],
-                  "description": "Equipment, tech, and flag requirements to deactivate the associated lock"
+                  "items": {
+                    "$ref": "z3-requirement.schema.json"
+                  }
                 },
                 "note": {
-                  "type": "string",
-                  "default": ""
+                  "type": "string"
                 }
               }
             }
@@ -144,126 +261,338 @@
               "array",
               "null"
             ],
-            "description": "Equipment, tech, and flag requirements to view this node within Room. Array elements are ANDed together.",
             "items": {
-              "type": [
-                "object",
-                "string"
-              ]
+              "$ref": "z3-requirement.schema.json"
             }
           },
           "yields": {
             "type": "array",
-            "description": "Abilities or flags granted by this node."
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           },
           "note": {
-            "type": "string",
-            "default": ""
+            "type": "string"
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
     },
-    "links": {
+    "items": {
       "type": "array",
-      "description": "Pathways between nodes within the room.",
       "items": {
         "type": "object",
         "required": [
-          "from",
-          "to"
+          "id",
+          "locationName",
+          "itemLocation",
+          "item",
+          "itemAddress"
         ],
+        "additionalProperties": false,
         "properties": {
-          "from": {
+          "id": {
             "type": "integer",
-            "description": "ID of the node within this room where the link originates.",
-            "default": 0
+            "minimum": 1
           },
-          "to": {
+          "locationName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "itemLocation": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "item": {
+            "type": "string",
+            "minLength": 1
+          },
+          "itemAddress": {
             "type": [
-              "array",
-              "null"
+              "string",
+              "array"
             ],
-            "description": "Possible destination nodes for this link within the room.",
+            "minItems": 1,
             "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "oneOf": [
-                {
-                  "required": [
-                    "requires"
-                  ]
-                },
-                {
-                  "required": [
-                    "strats"
-                  ]
-                }
-              ],
-              "properties": {
-                "id": {
-                  "type": "integer",
-                  "description": "ID of the destination node within this room.",
-                  "default": 0
-                },
-                "requires": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "description": "Equipment, tech, and flag requirements to traverse this Link. Array elements are ANDed together.",
-                  "items": {
-                    "type": [
-                      "object",
-                      "string"
-                    ]
-                  }
-                },
-                "strats": {
-                  "type": "array",
-                  "description": "An array of strats that can be used to cross the link.",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "name",
-                      "notable",
-                      "requires"
-                    ],
-                    "properties": {
-                      "name": {
-                        "type": "string",
-                        "description": "A name for the strat",
-                        "default": ""
-                      },
-                      "notable": {
-                        "type": "boolean"
-                      },
-                      "requires": {
-                        "type": [
-                          "array",
-                          "null"
-                        ],
-                        "description": "Equipment, tech, and flag requirements to execute this strat. Array elements are ANDed together.",
-                        "items": {
-                          "type": [
-                            "object",
-                            "string"
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "note": {
-                  "type": "string",
-                  "default": ""
-                }
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "subArea": {
+            "type": "string",
+            "minLength": 1
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "lockedDoors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "locationName",
+          "doorPosition",
+          "doorLocation",
+          "keyType"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "locationName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "doorPosition": {
+            "type": "string",
+            "enum": [
+              "north",
+              "south",
+              "east",
+              "west",
+              "middle"
+            ]
+          },
+          "doorLocation": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "keyType": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subArea": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "obstacles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "note"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "strats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "link",
+          "name",
+          "requires"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "link": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "notable": {
+            "type": "boolean"
+          },
+          "collectsItems": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "setsFlags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "clearsObstacles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "unlocksDoor": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark",
+              "any"
+            ]
+          },
+          "fromWorld": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "toWorld": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
+          },
+          "isBunny": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "any"
+            ]
+          },
+          "exitState": {
+            "type": "object",
+            "required": [
+              "state",
+              "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "type": "string",
+                "enum": [
+                  "event",
+                  "follower"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "minLength": 1
               }
+            }
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           }
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "roomType"
+        ],
+        "properties": {
+          "roomType": {
+            "const": "Overworld"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "nodes": {
+            "items": {
+              "required": [
+                "world"
+              ]
+            }
+          },
+          "strats": {
+            "items": {
+              "oneOf": [
+                {
+                  "required": [
+                    "world"
+                  ]
+                },
+                {
+                  "required": [
+                    "fromWorld",
+                    "toWorld"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "nodes": {
+            "items": {
+              "required": [
+                "nodeType"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
 }
