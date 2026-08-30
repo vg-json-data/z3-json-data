@@ -50,7 +50,7 @@
           "L1Sword",
           "Hookshot",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ]
     },
@@ -60,10 +60,10 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Hardhat Beetle (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ],
-      "isBunny": "true"
+      "isBunny": "yes"
     },
     {
       "link": [3, 1],

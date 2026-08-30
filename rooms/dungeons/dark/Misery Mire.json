@@ -179,18 +179,18 @@
         "L2Sword",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Vitreous", "hits": 2}},
-            {"enemyDamage": {"enemy": "Vitreous", "attack": "Lightning", "hits": 1}}
+            {"damage": {"enemy": "Vitreous", "count": 2}},
+            {"damage": {"enemy": "Vitreous", "attack": "Lightning", "count": 1}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Vitreous", "hits": 1}}
+            {"damage": {"enemy": "Vitreous", "count": 1}}
           ]},
           {"bossProficiency": 3},
           {"and": [
             "L3Sword",
-            {"enemyDamage": {"enemy": "Vitreous", "hits": 1}},
-            {"enemyDamage": {"enemy": "Vitreous", "attack": "Lightning", "hits": 1}}
+            {"damage": {"enemy": "Vitreous", "count": 1}},
+            {"damage": {"enemy": "Vitreous", "attack": "Lightning", "count": 1}}
           ]},
           {"and": [
             "L3Sword",
@@ -198,7 +198,7 @@
           ]},
           {"and": [
             "L4Sword",
-            {"enemyDamage": {"enemy": "Vitreous", "hits": 1}}
+            {"damage": {"enemy": "Vitreous", "count": 1}}
           ]}
         ]}
       ]
@@ -210,7 +210,7 @@
         "L1Sword",
         {"bossProficiency": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "Vitreous", "hits": 2}},
+          {"damage": {"enemy": "Vitreous", "count": 2}},
           {"bossProficiency": 9}
         ]}
       ],
@@ -228,7 +228,7 @@
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 35}},
-            {"enemyDamage": {"enemy": "Vitreous", "hits": 2}}
+            {"damage": {"enemy": "Vitreous", "count": 2}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 30}},
@@ -278,7 +278,7 @@
         "L1Sword",
         {"bossProficiency": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "Vitreous", "hits": 1}},
+          {"damage": {"enemy": "Vitreous", "count": 1}},
           {"bossProficiency": 9}
         ]}
       ],

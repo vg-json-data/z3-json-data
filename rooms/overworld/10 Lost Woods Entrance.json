@@ -81,7 +81,7 @@
         {"combatProficiency": 2},
         {"or": [
           "h_NoAgahnimLoophole",
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -105,10 +105,10 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 2}},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 2}},
           {"and": [
             "h_NoAgahnimLoophole",
-            {"enemyDamage": {"enemy": "Sword Soldier (Green)", "hits": 2}}
+            {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
           ]}
         ]}
       ],
@@ -193,10 +193,10 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 3}},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 3}},
           {"and": [
             "h_NoAgahnimLoophole",
-            {"enemyDamage": {"enemy": "Sword Soldier (Green)", "hits": 2}}
+            {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
           ]}
         ]}
       ],

@@ -319,10 +319,10 @@
       "requires": [
         "Hammer",
         {"or": [
-          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}},
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"bossProficiency": 3}
         ]}
@@ -335,12 +335,12 @@
         {"or": [
           {"and": [
             {"ammo": {"type": "Bombs", "count": 7}},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}}
+            {"damage": {"enemy": "Helmasaur King", "count": 2}}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"ammo": {"type": "Bombs", "count": 6}},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"and": [
             {"bossProficiency": 3},
@@ -379,14 +379,14 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 6}},
+          {"damage": {"enemy": "Helmasaur King", "count": 6}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 3}}
+            {"damage": {"enemy": "Helmasaur King", "count": 3}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -401,15 +401,15 @@
       "requires": [
         "L2Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 2}},
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
           {"and": [
             {"bossProficiency": 2},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"bossProficiency": 3},
           {"and": [
             "L3Sword",
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 1}}
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"and": [
             "L3Sword",
@@ -428,10 +428,10 @@
         "Hammer",
         {"bossProficiency": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "Helmasaur King", "hits": 8}},
+          {"damage": {"enemy": "Helmasaur King", "count": 8}},
           {"and": [
             {"bossProficiency": 9},
-            {"enemyDamage": {"enemy": "Helmasaur King", "hits": 4}}
+            {"damage": {"enemy": "Helmasaur King", "count": 4}}
           ]}
         ]}
       ],

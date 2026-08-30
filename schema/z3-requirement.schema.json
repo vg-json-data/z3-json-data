@@ -64,25 +64,8 @@
     "damage": {
       "type": "object",
       "required": [
-        "type",
-        "count"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "count": {
-          "type": "integer",
-          "minimum": 1
-        }
-      }
-    },
-    "enemyDamage": {
-      "type": "object",
-      "required": [
         "enemy",
-        "hits"
+        "count"
       ],
       "additionalProperties": false,
       "properties": {
@@ -92,7 +75,7 @@
         "attack": {
           "type": "string"
         },
-        "hits": {
+        "count": {
           "type": "integer",
           "minimum": 1
         }

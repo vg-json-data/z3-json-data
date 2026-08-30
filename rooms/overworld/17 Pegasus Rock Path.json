@@ -50,7 +50,7 @@
             "canRiskPermanentLossOfAccess",
             {"not": "f_DefeatedAgahnim1"}
           ]},
-          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}}
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -77,7 +77,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Slarok", "hits": 1}}
+          {"damage": {"enemy": "Slarok", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -102,7 +102,7 @@
             "canRiskPermanentLossOfAccess",
             {"not": "f_DefeatedAgahnim1"}
           ]},
-          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}}
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
         ]}
       ],
       "isBunny": "any",

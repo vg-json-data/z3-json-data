@@ -163,7 +163,7 @@
         {"or": [
           {"combatProficiency": 2},
           {"magic": {"type": "BlueCane", "count": 16}},
-          {"enemyDamage": {"enemy": "Ball and Chain Trooper", "hits": 1}}
+          {"damage": {"enemy": "Ball and Chain Trooper", "count": 1}}
         ]}
       ]
     },
@@ -175,7 +175,7 @@
         {"or": [
           "hasSwordSparkles",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}}
         ]}
       ],
       "collectsItems": [1]
@@ -211,15 +211,15 @@
           {"magic": {"type": "BlueCane", "count": 32}},
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}}
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}}
           ]},
           {"and": [
             {"ammo": {"type": "Arrows", "count": 4}},
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]},
           {"and": [
             {"magic": {"type": "RedCane", "count": 2}},
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 3}}
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 3}}
           ]},
           {"and": [
             "Hammer",
@@ -255,9 +255,9 @@
       "name": "Base - Soldier Dodge",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}},
           {"and": [
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}},
             {"or": [
               "Boomerang",
               "Hookshot",
@@ -303,13 +303,13 @@
         "Lamp",
         {"or": [
           {"and": [
-            {"enemyDamage": {"enemy": "Chasupa", "hits": 6}},
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 4}}
+            {"damage": {"enemy": "Chasupa", "count": 6}},
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 4}}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Chasupa", "hits": 4}},
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+            {"damage": {"enemy": "Chasupa", "count": 4}},
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]}
         ]}
       ],
@@ -333,7 +333,7 @@
         "Lamp",
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
         ]},
         {"or": [
           "Boomerang",
@@ -342,8 +342,8 @@
               "Hammer",
               "Hookshot"
             ]},
-            {"enemyDamage": {"enemy": "Chasupa", "hits": 1}},
-            {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+            {"damage": {"enemy": "Chasupa", "count": 1}},
+            {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
           ]},
           {"ammo": {"type": "Arrows", "count": 3}},
           {"ammo": {"type": "SilverArrows", "count": 2}},
@@ -431,7 +431,7 @@
         {"unlockDoor": 2},
         "Lamp",
         {"or": [
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}},
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}},
           {"combatProficiency": 2}
         ]}
       ]
@@ -452,10 +452,10 @@
         "Lamp",
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}},
           {"and": [
             "L2Sword",
-            {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 1}}
+            {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]},
           {"combatProficiency": 2}
         ]}
@@ -469,10 +469,10 @@
         {"unlockDoor": 3},
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 2}},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}},
           {"and": [
             "Shield",
-            {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}}
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
           ]},
           "L3Sword",
           "Boomerang",
@@ -495,7 +495,7 @@
       "requires": [
         {"unlockDoor": 4},
         {"or": [
-          {"enemyDamage": {"enemy": "Super Sword Soldier (Blue)", "hits": 2}},
+          {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}},
           {"combatProficiency": 2}
         ]}
       ]
@@ -506,10 +506,10 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 2}},
+          {"damage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "hits": 1}}
+            {"damage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "count": 1}}
           ]},
           {"combatProficiency": 3}
         ]}
@@ -521,7 +521,7 @@
       "requires": [
         "L1Sword",
         {"or": [
-          {"enemyDamage": {"enemy": "Agahnim", "attack": "Weak Fireball", "hits": 2}},
+          {"damage": {"enemy": "Agahnim", "attack": "Weak Fireball", "count": 2}},
           {"combatProficiency": 2}
         ]}
       ],

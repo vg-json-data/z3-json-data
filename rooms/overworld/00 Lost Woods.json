@@ -166,7 +166,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -193,7 +193,7 @@
         {"or": [
           "L2Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -249,7 +249,7 @@
         {"or": [
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+            {"damage": {"enemy": "Ropa", "count": 1}}
           ]},
           {"and": [
             "Hammer",
@@ -275,14 +275,14 @@
       "world": "dark",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Ropa", "hits": 4}},
+          {"damage": {"enemy": "Ropa", "count": 4}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+            {"damage": {"enemy": "Ropa", "count": 2}}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+            {"damage": {"enemy": "Ropa", "count": 1}}
           ]}
         ]}
       ],
@@ -348,7 +348,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -401,7 +401,7 @@
           {"magic": {"type": "Rod", "count": 1}},
           {"ammo": {"type": "Arrows", "count": 2}},
           {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -419,7 +419,7 @@
           {"magic": {"type": "Rod", "count": 1}},
           {"ammo": {"type": "Arrows", "count": 2}},
           {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -431,7 +431,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -465,7 +465,7 @@
         {"or": [
           "L1Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -477,7 +477,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -512,7 +512,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -530,7 +530,7 @@
         {"or": [
           "L2Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -579,7 +579,7 @@
         {"or": [
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+            {"damage": {"enemy": "Ropa", "count": 1}}
           ]},
           {"and": [
             "Hammer",
@@ -615,19 +615,19 @@
       "world": "dark",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Ropa", "hits": 4}},
+          {"damage": {"enemy": "Ropa", "count": 4}},
           {"and": [
             {"combatProficiency": 2},
-            {"enemyDamage": {"enemy": "Ropa", "hits": 3}}
+            {"damage": {"enemy": "Ropa", "count": 3}}
           ]},
           {"and": [
             {"combatProficiency": 2},
             "PowerGlove",
-            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+            {"damage": {"enemy": "Ropa", "count": 2}}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"enemyDamage": {"enemy": "Ropa", "hits": 2}}
+            {"damage": {"enemy": "Ropa", "count": 2}}
           ]}
         ]}
       ],
@@ -715,7 +715,7 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -728,7 +728,7 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -740,7 +740,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "any",
@@ -773,7 +773,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "any"
@@ -809,7 +809,7 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "no",
@@ -824,7 +824,7 @@
         {"or": [
           "L1Sword",
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Ropa", "hits": 1}}
+          {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
       "isBunny": "no"
@@ -836,7 +836,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 3},
-          {"enemyDamage": {"enemy": "Sword Soldier (Blue)", "hits": 1}}
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
       "isBunny": "any",

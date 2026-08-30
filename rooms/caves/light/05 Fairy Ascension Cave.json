@@ -48,7 +48,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 1}}
+          {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
         ]}
       ]
     },

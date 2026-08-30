@@ -135,7 +135,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
           {"and": [
             "canRiskPermanentLossOfAccess",
             {"not": "f_DefeatedAgahnim1"}

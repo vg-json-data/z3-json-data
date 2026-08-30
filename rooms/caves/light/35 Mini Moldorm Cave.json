@@ -149,12 +149,12 @@
           ]},
           {"and": [
             "Hammer",
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 4}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 4}}
           ]},
           {"and": [
             {"combatProficiency": 3},
             "Hammer",
-            {"enemyDamage": {"enemy": "Mini-Moldorm", "hits": 2}}
+            {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
           ]},
           {"and": [
             {"combatProficiency": 4},
