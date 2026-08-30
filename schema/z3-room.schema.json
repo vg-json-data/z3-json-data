@@ -10,7 +10,6 @@
   ],
   "properties": {
     "id": {
-      "$id": "#/properties/id",
       "type": "integer",
       "title": "Room ID",
       "description": "Identifier for this room, unique across the entire game",
@@ -20,7 +19,6 @@
       ]
     },
     "name": {
-      "$id": "#/properties/name",
       "type": "string",
       "title": "Room Name",
       "description": "A name for the room. Must be unique.",
@@ -31,28 +29,23 @@
       "pattern": "^(.*)$"
     },
     "note": {
-      "$id": "#/properties/note",
       "type": "string",
       "title": "Note field",
       "default": "",
       "pattern": "^(.*)$"
     },
     "alttpEntrandoRegions": {
-      "$id": "#/properties/alttpEntrandoRegions",
       "type": "array",
       "title": "ALttP Entrando Regions",
       "description": "The name of all regions (as defined in the ALttP Entrando project) that are (at least partially) contained in this room.",
       "items": {
-        "$id": "#/properties/alttpEntrandoRegions/items",
         "type": "string"
       }
     },
     "nodes": {
-      "$id": "#/properties/nodes",
       "type": "array",
       "title": "Nodes; Doors, Transitions, Item Locations, etc",
       "items": {
-        "$id": "#/properties/nodes/items",
         "type": "object",
         "title": "Node Object",
         "required": [
@@ -62,7 +55,6 @@
         ],
         "properties": {
           "id": {
-            "$id": "#/properties/nodes/items/properties/id",
             "type": "integer",
             "title": "Node ID within Room",
             "default": 0,
@@ -71,7 +63,6 @@
             ]
           },
           "name": {
-            "$id": "#/properties/nodes/items/properties/name",
             "type": "string",
             "title": "Node Name. Must be unique across all rooms.",
             "default": "",
@@ -81,7 +72,6 @@
             "pattern": "^(.*)$"
           },
           "nodeType": {
-            "$id": "#/properties/nodes/items/properties/nodeType",
             "type": "string",
             "title": "Node Type",
             "description": "Examples: door, elevator, event, eye, gray, green, item, vertical",
@@ -108,13 +98,11 @@
             "pattern": "^(.*)$"
           },
           "nodeItem": {
-            "$id": "#/properties/nodes/items/properties/nodeItem",
             "type": "string",
             "title": "Vanilla Item",
             "description": "Item that normally resides at this node in Vanilla"
           },
           "nodeAddress": {
-            "$id": "#/properties/nodes/items/properties/nodeAddress",
             "type": [
               "string",
               "array"
@@ -123,7 +111,6 @@
             "description": "Memory address of this location"
           },
           "requires": {
-            "$id": "#/properties/nodes/items/properties/requires",
             "type": [
               "array",
               "null"
@@ -131,7 +118,6 @@
             "title": "Node Requirements",
             "description": "Equipment, tech, and flag requirements to reach this node within Room",
             "items": {
-              "$id": "#/properties/nodes/items/properties/requires/items",
               "type": [
                 "object",
                 "string"
@@ -140,7 +126,6 @@
             }
           },
           "locks": {
-            "$id": "#/properties/nodes/items/properties/locks",
             "type": [
               "array",
               "null"
@@ -149,7 +134,6 @@
             "description": "An array of corresponding lock and unlock conditions for this node",
             "default": null,
             "items": {
-              "$id": "#/properties/nodes/items/properties/locks/items",
               "type": "object",
               "title": "Lock Object",
               "description": "Contains corresponding lock and unlock conditions for a node. If lock condition is missing, the lock is initially active.",
@@ -159,7 +143,6 @@
               ],
               "properties": {
                 "lockType": {
-                  "$id": "#/properties/nodes/items/properties/locks/items/properties/lockType",
                   "type": "string",
                   "title": "Lock Type",
                   "default": "",
@@ -175,7 +158,6 @@
                   "pattern": "^(.*)$"
                 },
                 "lock": {
-                  "$id": "#/properties/nodes/items/properties/locks/items/properties/lock",
                   "type": [
                     "array",
                     "null"
@@ -184,7 +166,6 @@
                   "description": "Equipment, tech, and flag requirements for this node to be locked"
                 },
                 "unlock": {
-                  "$id": "#/properties/nodes/items/properties/locks/items/properties/unlock",
                   "type": [
                     "array",
                     "null"
@@ -193,7 +174,6 @@
                   "description": "Equipment, tech, and flag requirements to deactivate the associated lock"
                 },
                 "note": {
-                  "$id": "#/properties/nodes/items/properties/locks/items/properties/note",
                   "type": "string",
                   "title": "Lock Note field",
                   "default": "",
@@ -203,7 +183,6 @@
             }
           },
           "view": {
-            "$id": "#/properties/nodes/items/properties/view",
             "type": [
               "array",
               "null"
@@ -211,7 +190,6 @@
             "title": "View Requirements",
             "description": "Equipment, tech, and flag requirements to view this node within Room",
             "items": {
-              "$id": "#/properties/nodes/items/properties/view/items",
               "type": [
                 "object",
                 "string"
@@ -220,12 +198,10 @@
             }
           },
           "yields": {
-            "$id": "#/properties/nodes/items/properties/yields",
             "type": "array",
             "title": "This Node grants an ability/flag"
           },
           "note": {
-            "$id": "#/properties/nodes/items/properties/note",
             "type": "string",
             "title": "Node Note field",
             "default": "",
@@ -238,11 +214,9 @@
       }
     },
     "links": {
-      "$id": "#/properties/links",
       "type": "array",
       "title": "Links; pathways within the Room",
       "items": {
-        "$id": "#/properties/links/items",
         "type": "object",
         "title": "Link",
         "required": [
@@ -251,7 +225,6 @@
         ],
         "properties": {
           "from": {
-            "$id": "#/properties/links/items/properties/from",
             "type": "integer",
             "title": "This Link originates at this Node ID within the Room",
             "default": 0,
@@ -260,14 +233,12 @@
             ]
           },
           "to": {
-            "$id": "#/properties/links/items/properties/to",
             "type": [
               "array",
               "null"
             ],
             "title": "This Link terminates at this Node ID within the Room",
             "items": {
-              "$id": "#/properties/links/items/properties/to/items",
               "type": "object",
               "title": "The Items Schema",
               "required": [
@@ -287,7 +258,6 @@
               ],
               "properties": {
                 "id": {
-                  "$id": "#/properties/links/items/properties/to/items/properties/id",
                   "type": "integer",
                   "title": "Target Node ID within the Room",
                   "default": 0,
@@ -296,7 +266,6 @@
                   ]
                 },
                 "requires": {
-                  "$id": "#/properties/links/items/properties/to/items/properties/requires",
                   "type": [
                     "array",
                     "null"
@@ -304,7 +273,6 @@
                   "title": "Link Requirements",
                   "description": "Equipment, tech, and flag requirements to traverse this Link",
                   "items": {
-                    "$id": "#/properties/links/items/properties/to/items/properties/requires/items",
                     "type": [
                       "object",
                       "string"
@@ -313,12 +281,10 @@
                   }
                 },
                 "strats": {
-                  "$id": "#/properties/links/items/properties/to/items/properties/strats",
                   "type": "array",
                   "title": "Link Strats",
                   "description": "An array of strats that can be used to cross the link.",
                   "items": {
-                    "$id": "#/properties/links/items/properties/to/items/properties/strats/items",
                     "type": "object",
                     "required": [
                       "name",
@@ -327,7 +293,6 @@
                     ],
                     "properties": {
                       "name": {
-                        "$id": "#/properties/links/items/properties/to/items/properties/strats/items/properties/name",
                         "type": "string",
                         "title": "Strat Name",
                         "description": "A name for the strat",
@@ -339,11 +304,9 @@
                         "pattern": "^(.*)$"
                       },
                       "notable": {
-                        "$id": "#/properties/links/items/properties/to/items/properties/strats/items/properties/notable",
                         "type": "boolean"
                       },
                       "requires": {
-                        "$id": "#/properties/links/items/properties/to/items/properties/strats/items/properties/requires",
                         "type": [
                           "array",
                           "null"
@@ -351,7 +314,6 @@
                         "title": "Strat Requirements",
                         "description": "Equipment, tech, and flag requirements to execute this strat.",
                         "items": {
-                          "$id": "#/properties/links/items/properties/to/items/properties/strats/items/properties/requires/items",
                           "type": [
                             "object",
                             "string"
@@ -363,7 +325,6 @@
                   }
                 },
                 "note": {
-                  "$id": "#/properties/links/items/properties/to/items/properties/note",
                   "type": "string",
                   "title": "Note field",
                   "default": "",

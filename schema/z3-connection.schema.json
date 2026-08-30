@@ -8,7 +8,6 @@
     "connections": {
       "type": "array",
       "items": {
-        "$id": "#/items",
         "type": "object",
         "title": "An object that describes one connection between two Link to the Past rooms",
         "required": [
@@ -17,7 +16,6 @@
         ],
         "properties": {
           "connectionType": {
-            "$id": "#/items/properties/connectionType",
             "type": "string",
             "title": "Connection Type",
             "examples": [
@@ -29,7 +27,6 @@
             "pattern": "^(.*)$"
           },
           "description": {
-            "$id": "#/items/properties/description",
             "type": "string",
             "title": "Connection description",
             "description": "A textual description of the connection",
@@ -37,14 +34,12 @@
             "pattern": "^(.*)$"
           },
           "nodes": {
-            "$id": "#/items/properties/nodes",
             "type": "array",
             "title": "Connection nodes",
             "description": "An array of 2 nodes that each represent one end of a Connection.",
             "minItems": 2,
             "maxItems": 2,
             "items": {
-              "$id": "#/items/properties/nodes/items",
               "type": "object",
               "title": "Connection Node",
               "description": "A node that represents one end of a Connection. This is most often a door",
@@ -53,7 +48,6 @@
               ],
               "properties": {
                 "area": {
-                  "$id": "#/items/properties/nodes/items/properties/area",
                   "type": "string",
                   "title": "Area Name",
                   "default": "",
@@ -63,7 +57,6 @@
                   "pattern": "^(.*)$"
                 },
                 "roomid": {
-                  "$id": "#/items/properties/nodes/items/properties/roomid",
                   "type": "integer",
                   "title": "Room ID",
                   "description": "ID of the room in which the node exists",
@@ -72,7 +65,6 @@
                   ]
                 },
                 "nodeid": {
-                  "$id": "#/items/properties/nodes/items/properties/nodeid",
                   "type": "integer",
                   "title": "Node ID",
                   "description": "ID of the node within the room in which it exists",
@@ -81,7 +73,6 @@
                   ]
                 },
                 "position": {
-                  "$id": "#/items/properties/nodes/items/properties/position",
                   "type": "string",
                   "title": "Node position",
                   "description": "The position of a node within a connection",
