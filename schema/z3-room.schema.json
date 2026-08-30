@@ -32,7 +32,10 @@
       ]
     },
     "note": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "alttpEntrandoRegions": {
       "type": "array",
@@ -241,7 +244,10 @@
                   }
                 },
                 "note": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -262,7 +268,10 @@
             }
           },
           "note": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "devNote": {
             "type": "array",
@@ -386,7 +395,10 @@
             "type": "string"
           },
           "note": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
