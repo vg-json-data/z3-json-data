@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "z3-room.schema.json",
   "type": "object",
-  "title": "Link to the Past Room Schema",
   "description": "An object that describes one contiguous area without transitions in Link to the Past",
   "required": [
     "id",
@@ -11,7 +10,6 @@
   "properties": {
     "id": {
       "type": "integer",
-      "title": "Room ID",
       "description": "Identifier for this room, unique across the entire game",
       "default": 0,
       "examples": [
@@ -20,7 +18,6 @@
     },
     "name": {
       "type": "string",
-      "title": "Room Name",
       "description": "A name for the room. Must be unique.",
       "default": "",
       "examples": [
@@ -30,13 +27,11 @@
     },
     "note": {
       "type": "string",
-      "title": "Note field",
       "default": "",
       "pattern": "^(.*)$"
     },
     "alttpEntrandoRegions": {
       "type": "array",
-      "title": "ALttP Entrando Regions",
       "description": "The name of all regions (as defined in the ALttP Entrando project) that are (at least partially) contained in this room.",
       "items": {
         "type": "string"
@@ -44,10 +39,9 @@
     },
     "nodes": {
       "type": "array",
-      "title": "Nodes; Doors, Transitions, Item Locations, etc",
+      "description": "Doors, transitions, item locations, and other points of interest within this room.",
       "items": {
         "type": "object",
-        "title": "Node Object",
         "required": [
           "id",
           "name",
@@ -56,7 +50,7 @@
         "properties": {
           "id": {
             "type": "integer",
-            "title": "Node ID within Room",
+            "description": "Identifier for this node, unique within the room.",
             "default": 0,
             "examples": [
               1
@@ -64,7 +58,7 @@
           },
           "name": {
             "type": "string",
-            "title": "Node Name. Must be unique across all rooms.",
+            "description": "Name of this node. Must be unique across all rooms.",
             "default": "",
             "examples": [
               "Exit"
@@ -73,7 +67,6 @@
           },
           "nodeType": {
             "type": "string",
-            "title": "Node Type",
             "description": "Examples: door, elevator, event, eye, gray, green, item, vertical",
             "default": "",
             "examples": [
@@ -99,7 +92,6 @@
           },
           "nodeItem": {
             "type": "string",
-            "title": "Vanilla Item",
             "description": "Item that normally resides at this node in Vanilla"
           },
           "nodeAddress": {
@@ -107,7 +99,6 @@
               "string",
               "array"
             ],
-            "title": "Memory Address",
             "description": "Memory address of this location"
           },
           "requires": {
@@ -115,14 +106,12 @@
               "array",
               "null"
             ],
-            "title": "Node Requirements",
-            "description": "Equipment, tech, and flag requirements to reach this node within Room",
+            "description": "Equipment, tech, and flag requirements to reach this node within Room. Array elements are ANDed together.",
             "items": {
               "type": [
                 "object",
                 "string"
-              ],
-              "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+              ]
             }
           },
           "locks": {
@@ -130,12 +119,10 @@
               "array",
               "null"
             ],
-            "title": "Node Locks",
             "description": "An array of corresponding lock and unlock conditions for this node",
             "default": null,
             "items": {
               "type": "object",
-              "title": "Lock Object",
               "description": "Contains corresponding lock and unlock conditions for a node. If lock condition is missing, the lock is initially active.",
               "required": [
                 "lockType",
@@ -144,7 +131,6 @@
               "properties": {
                 "lockType": {
                   "type": "string",
-                  "title": "Lock Type",
                   "default": "",
                   "enum": [
                     "bossFight",
@@ -162,7 +148,6 @@
                     "array",
                     "null"
                   ],
-                  "title": "Lock Requirements",
                   "description": "Equipment, tech, and flag requirements for this node to be locked"
                 },
                 "unlock": {
@@ -170,12 +155,10 @@
                     "array",
                     "null"
                   ],
-                  "title": "Unlock Requirements",
                   "description": "Equipment, tech, and flag requirements to deactivate the associated lock"
                 },
                 "note": {
                   "type": "string",
-                  "title": "Lock Note field",
                   "default": "",
                   "pattern": "^(.*)$"
                 }
@@ -187,23 +170,20 @@
               "array",
               "null"
             ],
-            "title": "View Requirements",
-            "description": "Equipment, tech, and flag requirements to view this node within Room",
+            "description": "Equipment, tech, and flag requirements to view this node within Room. Array elements are ANDed together.",
             "items": {
               "type": [
                 "object",
                 "string"
-              ],
-              "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+              ]
             }
           },
           "yields": {
             "type": "array",
-            "title": "This Node grants an ability/flag"
+            "description": "Abilities or flags granted by this node."
           },
           "note": {
             "type": "string",
-            "title": "Node Note field",
             "default": "",
             "examples": [
               "Door Object"
@@ -215,10 +195,9 @@
     },
     "links": {
       "type": "array",
-      "title": "Links; pathways within the Room",
+      "description": "Pathways between nodes within the room.",
       "items": {
         "type": "object",
-        "title": "Link",
         "required": [
           "from",
           "to"
@@ -226,7 +205,7 @@
         "properties": {
           "from": {
             "type": "integer",
-            "title": "This Link originates at this Node ID within the Room",
+            "description": "ID of the node within this room where the link originates.",
             "default": 0,
             "examples": [
               1
@@ -237,10 +216,9 @@
               "array",
               "null"
             ],
-            "title": "This Link terminates at this Node ID within the Room",
+            "description": "Possible destination nodes for this link within the room.",
             "items": {
               "type": "object",
-              "title": "The Items Schema",
               "required": [
                 "id"
               ],
@@ -259,7 +237,7 @@
               "properties": {
                 "id": {
                   "type": "integer",
-                  "title": "Target Node ID within the Room",
+                  "description": "ID of the destination node within this room.",
                   "default": 0,
                   "examples": [
                     2
@@ -270,19 +248,16 @@
                     "array",
                     "null"
                   ],
-                  "title": "Link Requirements",
-                  "description": "Equipment, tech, and flag requirements to traverse this Link",
+                  "description": "Equipment, tech, and flag requirements to traverse this Link. Array elements are ANDed together.",
                   "items": {
                     "type": [
                       "object",
                       "string"
-                    ],
-                    "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                    ]
                   }
                 },
                 "strats": {
                   "type": "array",
-                  "title": "Link Strats",
                   "description": "An array of strats that can be used to cross the link.",
                   "items": {
                     "type": "object",
@@ -294,7 +269,6 @@
                     "properties": {
                       "name": {
                         "type": "string",
-                        "title": "Strat Name",
                         "description": "A name for the strat",
                         "default": "",
                         "examples": [
@@ -311,14 +285,12 @@
                           "array",
                           "null"
                         ],
-                        "title": "Strat Requirements",
-                        "description": "Equipment, tech, and flag requirements to execute this strat.",
+                        "description": "Equipment, tech, and flag requirements to execute this strat. Array elements are ANDed together.",
                         "items": {
                           "type": [
                             "object",
                             "string"
-                          ],
-                          "title": "Elements are assumed to be ANDed together, unless this array has a key of 'or'"
+                          ]
                         }
                       }
                     }
@@ -326,7 +298,6 @@
                 },
                 "note": {
                   "type": "string",
-                  "title": "Note field",
                   "default": "",
                   "pattern": "^(.*)$"
                 }
