@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://raw.githubusercontent.com/miketrethewey/z3-json-data/master/schema/z3-connection.schema.json",
+  "$id": "z3-connection.schema.json",
   "type": "object",
   "title": "Link to the PAst Connection Pathway Schema",
   "description": "A list of connections between rooms, comprised of two nodes each",

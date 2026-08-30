@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 88,
+  "name": "Red Shield Shop",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Shop",
+      "nodeType": "shop"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [],
+      "isBunny": "any"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 51,
+  "name": "Blacksmith's Hut",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Smithed Item",
+      "itemLocation": 1,
+      "item": "L3Sword",
+      "itemAddress": "0x18002A"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Blacksmith Reward",
+      "requires": [
+        "f_RescueBlacksmith"
+      ],
+      "collectsItems": [1]
+    }
+  ]
+}

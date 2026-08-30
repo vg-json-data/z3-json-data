@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 4,
+  "name": "Old Man's House",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Front Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Back Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Refill",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 20}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 1}
+      ]
+    }
+  ]
+}

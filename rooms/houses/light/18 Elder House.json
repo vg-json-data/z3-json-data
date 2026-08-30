@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 43,
+  "name": "Elder House",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "East Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "West Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 50,
+  "name": "Sahasrahla's Hut",
+  "roomType": "House",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Secret Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Sahasrahla's Reward",
+      "itemLocation": 1,
+      "item": "PegasusBoots",
+      "itemAddress": "0x2F1FC"
+    },
+    {
+      "id": 2,
+      "locationName": "Left Secret Chest",
+      "itemLocation": 2,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEA82"
+    },
+    {
+      "id": 3,
+      "locationName": "Middle Secret Chest",
+      "itemLocation": 2,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEA85"
+    },
+    {
+      "id": 4,
+      "locationName": "Right Secret Chest",
+      "itemLocation": 2,
+      "item": "FiftyRupees",
+      "itemAddress": "0xEA88"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb, dash"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Heart Pots",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 3}}
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Sahasrahla's Reward",
+      "requires": [
+        "h_SahasrahlasRequest"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Left Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Middle Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Right Chest",
+      "requires": [],
+      "collectsItems": [4]
+    }
+  ]
+}

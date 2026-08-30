@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 20,
+  "name": "Chris Houlihan Room",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "Exit",
+      "nodeType": "door",
+      "note": ["This room is not accessible by normal means, exiting it takes Link outside of his house."]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Rupees",
+      "requires": [
+        {"refill": {"type": "Rupee", "limit": 225}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

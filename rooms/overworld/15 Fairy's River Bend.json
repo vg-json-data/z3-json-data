@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 13,
+  "name": "Fairy's River Bend",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "West Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [4.5, 16]},
+        {"edge": "west", "span": [7.5, 27]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "North Great Fairy Blocked Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "East Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [11.5, 18.5]},
+        {"edge": "east", "span": [22.5, 26]},
+        {"edge": "south", "span": [23, 27]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "River",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [8.5, 10], "terrain": "water"},
+        {"edge": "south", "span": [18.5, 20.5], "terrain": "water"}
+      ],
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Fairy's River Bend Whirlpool",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Dark River Bend Whirlpool",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Drop Bush",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Sewers Drop Entrance",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 4],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "L1Sword",
+          "Hookshot",
+          "Boomerang",
+          {"magic": {"type": "FireRod", "count": 1}},
+          {"ammo": {"type": "Arrows", "count": 2}},
+          {"ammo": {"type": "SilverArrows", "count": 1}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 2],
+      "name": "Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"magic": {"type": "RedCane", "count": 1}},
+          {"magic": {"type": "BlueCane", "count": 20}},
+          {"magic": {"type": "Cape", "count": 50}},
+          {"ammo": {"type": "Bombs", "count": 2}}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"enemyDamage": {"enemy": "Spear Soldier (Red)", "hits": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"not": "f_DefeatedAgahnim1"}
+          ]}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "isBunny": "any"
+    }
+  ]
+}

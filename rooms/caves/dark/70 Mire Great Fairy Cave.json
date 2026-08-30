@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 75,
+  "name": "Mire Great Fairy Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Great Fairy Refill",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 20}}
+      ],
+      "isBunny": "any"
+    }
+  ]
+}

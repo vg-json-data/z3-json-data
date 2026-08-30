@@ -1,0 +1,363 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 94,
+  "name": "Swamp Palace",
+  "note": "Also requires access to South Dark World",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Swamp Palace Moat",
+      "area": "Swamp Palace (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "canMirror",
+        "canSwim",
+        "isDarkLink"
+      ],
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Swamp Palace Exit",
+      "area": "Swamp Palace (Entrance)",
+      "requires": [
+        "RescueZelda",
+        "canMirror",
+        "canSwim",
+        "isDarkLink"
+      ],
+      "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Swamp Palace Small Key Door",
+      "area": "Swamp Palace (First Room)",
+      "nodeType": "door"
+    },
+    {
+      "id": 4,
+      "name": "Swamp Palace - Entrance",
+      "area": "Swamp Palace (First Room)",
+      "nodeType": "item",
+      "nodeItem": "KeyD2",
+      "nodeAddress": "0xEA9D"
+    },
+    {
+      "id": 5,
+      "name": "Swamp Palace (Center)",
+      "area": "Swamp Palace (Starting Area)",
+      "nodeType": "door"
+    },
+    {
+      "id": 6,
+      "name": "Swamp Palace - Map Chest",
+      "area": "Swamp Palace (Starting Area)",
+      "requires": [
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "MapD2",
+      "nodeAddress": "0xE986"
+    },
+    {
+      "id": 7,
+      "name": "Swamp Palace (North)",
+      "area": "Swamp Palace (Center)",
+      "nodeType": "door"
+    },
+    {
+      "id": 8,
+      "name": "Swamp Palace - Big Chest",
+      "area": "Swamp Palace (Center)",
+      "requires": [
+        "Hammer",
+        "BigKeyD2",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "Hookshot",
+      "nodeAddress": "0xE989"
+    },
+    {
+      "id": 9,
+      "name": "Swamp Palace - Compass Chest",
+      "area": "Swamp Palace (Center)",
+      "requires": [
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "CompassD2",
+      "nodeAddress": "0xEAA0"
+    },
+    {
+      "id": 10,
+      "name": "Swamp Palace - Chest with Big Key",
+      "area": "Swamp Palace (Center)",
+      "requires": [
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "BigKeyD2",
+      "nodeAddress": "0xEAA6"
+    },
+    {
+      "id": 11,
+      "name": "Swamp Palace - West Chest",
+      "area": "Swamp Palace (Center)",
+      "requires": [
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEAA3"
+    },
+    {
+      "id": 12,
+      "name": "Swamp Palace - Flooded Room - Left",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEAA9"
+    },
+    {
+      "id": 13,
+      "name": "Swamp Palace - Flooded Room - Right",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEAAC"
+    },
+    {
+      "id": 14,
+      "name": "Swamp Palace - Waterfall Room",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEAAF"
+    },
+    {
+      "id": 15,
+      "name": "Swamp Palace - Arrghus Fuzz",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "junction",
+      "note": "Represents killing the 13 Fuzz surrounding Arrghus."
+    },
+    {
+      "id": 16,
+      "name": "Swamp Palace - Arrghus",
+      "area": "Swamp Palace (North)",
+      "requires": [
+        "canGrapple",
+        "Hammer",
+        "KeyD2"
+      ],
+      "nodeType": "item",
+      "nodeItem": "BossHeartContainer",
+      "nodeAddress": "0x180154"
+    },
+    {
+      "id": 17,
+      "name": "Swamp Palace - Prize",
+      "area": "Swamp Palace (North)",
+      "nodeType": "item",
+      "nodeItem": "Crystal2",
+      "nodeAddress": [
+        "0x120A0",
+        "0x53F6C",
+        "0x53F6D",
+        "0x180055",
+        "0x180071",
+        "0xC701"
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
+      "requires": [
+        "Hookshot",
+        "L2Sword",
+        {"or": [
+          {"enemyDamage": {"enemy": "Arrghus Fuzz", "hits": 1}},
+          {"bossProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Sword (L1)",
+      "requires": [
+        "Hookshot",
+        "L1Sword",
+        {"bossProficiency": 3}
+      ],
+      "note": [
+        "With a Level 1 sword, Arrghus is only vulnerable to spin attacks.",
+        "Charge a spin attack then quickly shoot the Hookshot.",
+        "The Hookshot will activate and then the spin attack will trigger after grabbing the Fuzz."
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Swordless",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"ammo": {"type": "SilverArrows", "count": 13}},
+          {"magic": {"type": "Rod", "count": 13}}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Kill Arrghus's Fuzz - Bombs",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 9},
+        {"ammo": {"type": "Bombs", "count": 20}}
+      ],
+      "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Sword",
+      "requires": [
+        "L1Sword",
+        {"or": [
+          {"and": [
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            "L2Sword",
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 3}}
+          ]},
+          {"and": [
+            "L4Sword",
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17],
+      "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"enemyDamage": {"enemy": "Arrghus", "hits": 4}},
+          {"and": [
+            {"bossProficiency": 3},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"magic": {"type": "Rod", "count": 12}},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 8}},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 6}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"magic": {"type": "Rod", "count": 4}},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
+    },
+    {
+      "link": [16, 16],
+      "name": "Arrghus (Fuzz Killed) - Bow",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 2}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 1}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 5}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "SilverArrows", "count": 1}},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 40}},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 6}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 30}},
+            {"bossProficiency": 2},
+            {"enemyDamage": {"enemy": "Arrghus", "hits": 3}}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 20}},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 10}},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"ammo": {"type": "Arrows", "count": 8}},
+            {"bossProficiency": 9}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["f_DefeatedArrghus"],
+      "collectsItems": [16, 17]
+    }
+  ]
+}

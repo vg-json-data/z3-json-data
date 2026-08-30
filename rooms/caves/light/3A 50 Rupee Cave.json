@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 32,
+  "name": "50 Rupee Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Rupee Pots",
+      "requires": [
+        {"refill": {"type": "Rupee", "limit": 50}}
+      ]
+    }
+  ]
+}

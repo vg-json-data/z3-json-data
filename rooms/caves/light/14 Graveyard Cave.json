@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 14,
+  "name": "Graveyard Cave",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Cave Entrance",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Secret Room",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Secret Item",
+      "itemLocation": 2,
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180004"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"ammo": {"type": "Bombs", "count": 1}}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Pot Refill",
+      "requires": [
+        {"refill": {"type": "Bombs", "limit": 4}},
+        {"refill": {"type": "Health", "limit": 4}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [1]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 71,
+  "name": "Dark Bonk Fairies",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 4}}
+      ]
+    }
+  ]
+}

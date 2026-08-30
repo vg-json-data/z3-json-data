@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 76,
+  "name": "Mire Shed",
+  "roomType": "Cave",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Entrance",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Left Chest",
+      "itemLocation": 1,
+      "item": "PieceOfHeart",
+      "itemAddress": "0xEA73"
+    },
+    {
+      "id": 2,
+      "locationName": "Right Chest",
+      "itemLocation": 1,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEA76"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [2]
+    }
+  ]
+}
