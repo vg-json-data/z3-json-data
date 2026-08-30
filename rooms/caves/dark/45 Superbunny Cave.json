@@ -63,7 +63,7 @@
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ],
-      "isBunny": "true"
+      "isBunny": "yes"
     },
     {
       "link": [3, 1],
