@@ -304,24 +304,24 @@
       "requires": [
         {"or": [
           {"and": [
-            {"magic": {"type": "FireRod", "count": 32}},
+            {"fireRod": 32},
             {"damage": {"enemy": "Mothula", "count": 3}},
             {"damage": {"enemy": "Spike Block", "count": 10}}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 24}},
+            {"fireRod": 24},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Mothula", "count": 2}},
             {"damage": {"enemy": "Spike Block", "count": 6}}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 16}},
+            {"fireRod": 16},
             {"bossProficiency": 3},
             {"damage": {"enemy": "Mothula", "count": 1}},
             {"damage": {"enemy": "Spike Block", "count": 4}}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 10}},
+            {"fireRod": 10},
             {"bossProficiency": 4},
             {"damage": {"enemy": "Spike Block", "count": 4}}
           ]}
@@ -334,7 +334,7 @@
       "link": [21, 21],
       "name": "Mothula - Blue Cane",
       "requires": [
-        {"magic": {"type": "BlueCane", "count": 512}},
+        {"blueCane": 512},
         {"bossProficiency": 2}
       ],
       "setsFlags": ["DefeatedMothula"],

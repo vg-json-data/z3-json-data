@@ -221,21 +221,21 @@
       "name": "Kill Vitreous Small Eyes - Bow",
       "requires": [
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 10}},
+          {"silverArrows": 10},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 9}},
+            {"silverArrows": 9},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 35}},
+            {"arrows": 35},
             {"damage": {"enemy": "Vitreous", "count": 2}}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 30}},
+            {"arrows": 30},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 27}},
+            {"arrows": 27},
             {"bossProficiency": 3}
           ]}
         ]}
@@ -255,8 +255,8 @@
       "name": "Vitreous (Big Eye Only) - Bow",
       "requires": [
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 8}}
+          {"silverArrows": 2},
+          {"arrows": 8}
         ]}
       ],
       "setsFlags": ["DefeatedVitreous"],

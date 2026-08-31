@@ -260,10 +260,10 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"ammo": {"type": "SilverArrows", "count": 4}},
-          {"ammo": {"type": "Arrows", "count": 4}},
-          {"ammo": {"type": "Bombs", "count": 4}},
-          {"magic": {"type": "FireRod", "count": 4}}
+          {"silverArrows": 4},
+          {"arrows": 4},
+          {"bombs": 4},
+          {"fireRod": 4}
         ]}
       ],
       "collectsItems": [4]
@@ -275,12 +275,12 @@
         {"combatProficiency": 2},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "SilverArrows", "count": 3}},
-          {"ammo": {"type": "Arrows", "count": 3}},
-          {"ammo": {"type": "Bombs", "count": 3}},
-          {"magic": {"type": "FireRod", "count": 3}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 32}}
+          {"silverArrows": 3},
+          {"arrows": 3},
+          {"bombs": 3},
+          {"fireRod": 3},
+          {"redCane": 1},
+          {"blueCane": 32}
         ]}
       ],
       "collectsItems": [4]
@@ -305,10 +305,10 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"ammo": {"type": "SilverArrows", "count": 5}},
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "Bombs", "count": 5}},
-          {"magic": {"type": "FireRod", "count": 5}}
+          {"silverArrows": 5},
+          {"arrows": 5},
+          {"bombs": 5},
+          {"fireRod": 5}
         ]}
       ]
     },
@@ -319,12 +319,12 @@
         {"combatProficiency": 2},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "SilverArrows", "count": 4}},
-          {"ammo": {"type": "Arrows", "count": 4}},
-          {"ammo": {"type": "Bombs", "count": 4}},
-          {"magic": {"type": "FireRod", "count": 4}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 40}}
+          {"silverArrows": 4},
+          {"arrows": 4},
+          {"bombs": 4},
+          {"fireRod": 4},
+          {"redCane": 1},
+          {"blueCane": 40}
         ]}
       ]
     },
@@ -365,21 +365,21 @@
       "name": "Base - Light Torches",
       "requires": [
         {"or": [
-          {"magic": {"type": "FireRod", "count": 2}},
+          {"fireRod": 2},
           {"and": [
             {"combatProficiency": 2},
-            {"magic": {"type": "Lamp", "count": 4}}
+            {"lamp": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 2}},
-            {"magic": {"type": "Lamp", "count": 4}}
+            {"arrows": 2},
+            {"lamp": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 1}},
-            {"magic": {"type": "Lamp", "count": 4}}
+            {"silverArrows": 1},
+            {"lamp": 4}
           ]},
           {"and": [
-            {"magic": {"type": "Lamp", "count": 4}},
+            {"lamp": 4},
             {"damage": {"enemy": "Eyegore (Red)", "count": 1}}
           ]}
         ]}
@@ -421,7 +421,7 @@
       "link": [10, 10],
       "name": "Lanmolas - Blue Cane",
       "requires": [
-        {"magic": {"type": "BlueCane", "count": 192}},
+        {"blueCane": 192},
         {"bossProficiency": 2}
       ],
       "setsFlags": ["DefeatedLanmolas"],
@@ -431,7 +431,7 @@
       "link": [10, 10],
       "name": "Lanmolas - Red Cane",
       "requires": [
-        {"magic": {"type": "RedCane", "count": 5}},
+        {"redCane": 5},
         {"bossProficiency": 2},
         {"or": [
           {"bossProficiency": 3},
@@ -446,13 +446,13 @@
       "name": "Lanmolas - Fire or Ice Rod",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 12}},
+          {"rod": 12},
           {"and": [
-            {"magic": {"type": "Rod", "count": 8}},
+            {"rod": 8},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 6}},
+            {"rod": 6},
             {"bossProficiency": 4}
           ]}
         ]}
@@ -466,21 +466,21 @@
       "requires": [
         {"bossProficiency": 3},
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 15}},
+          {"silverArrows": 15},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"silverArrows": 10},
             {"bossProficiency": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 40}},
+            {"arrows": 40},
             {"bossProficiency": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 3}},
+            {"silverArrows": 3},
             {"bossProficiency": 9}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 12}},
+            {"arrows": 12},
             {"bossProficiency": 9}
           ]}
         ]}
@@ -514,12 +514,12 @@
         {"bossProficiency": 3},
         {"or": [
           {"and": [
-            {"ammo": {"type": "Bombs", "count": 15}},
+            {"bombs": 15},
             {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"ammo": {"type": "Bombs", "count": 10}}
+            {"bombs": 10}
           ]}
         ]}
       ],

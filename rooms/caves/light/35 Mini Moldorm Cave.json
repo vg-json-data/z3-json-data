@@ -72,18 +72,18 @@
       "name": "Bomb Kill",
       "requires": [
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 6}},
+          {"bombs": 6},
           {"and": [
             "L1Sword",
-            {"ammo": {"type": "Bombs", "count": 4}}
+            {"bombs": 4}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"ammo": {"type": "Bombs", "count": 4}}
+            {"bombs": 4}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "Bombs", "count": 3}}
+            {"bombs": 3}
           ]}
         ]}
       ]
@@ -93,18 +93,18 @@
       "name": "Rod Kill",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 6}},
+          {"rod": 6},
           {"and": [
             "L1Sword",
-            {"magic": {"type": "Rod", "count": 5}}
+            {"rod": 5}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"magic": {"type": "Rod", "count": 5}}
+            {"rod": 5}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "Rod", "count": 4}}
+            {"rod": 4}
           ]}
         ]}
       ]
@@ -114,23 +114,23 @@
       "name": "Bow Kill",
       "requires": [
         {"or": [
-          {"ammo": {"type": "Arrows", "count": 10}},
-          {"ammo": {"type": "SilverArrows", "count": 10}},
+          {"arrows": 10},
+          {"silverArrows": 10},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "Arrows", "count": 6}}
+            {"arrows": 6}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "SilverArrows", "count": 6}}
+            {"silverArrows": 6}
           ]},
           {"and": [
             {"combatProficiency": 4},
-            {"ammo": {"type": "Arrows", "count": 4}}
+            {"arrows": 4}
           ]},
           {"and": [
             {"combatProficiency": 4},
-            {"ammo": {"type": "SilverArrows", "count": 4}}
+            {"silverArrows": 4}
           ]}
         ]}
       ]
@@ -141,11 +141,11 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "RedCane", "count": 2}},
-          {"magic": {"type": "BlueCane", "count": 88}},
+          {"redCane": 2},
+          {"blueCane": 88},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "BlueCane", "count": 72}}
+            {"blueCane": 72}
           ]},
           {"and": [
             "Hammer",

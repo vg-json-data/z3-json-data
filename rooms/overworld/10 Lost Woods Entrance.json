@@ -62,11 +62,11 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 6}},
-          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"rod": 2},
+          {"arrows": 6},
+          {"silverArrows": 2},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 4}},
+            {"arrows": 4},
             "h_NoAgahnimLoophole"
           ]}
         ]}
@@ -147,20 +147,20 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 4}},
-          {"ammo": {"type": "SilverArrows", "count": 2}},
+          {"rod": 2},
+          {"arrows": 4},
+          {"silverArrows": 2},
           {"and": [
             "h_NoAgahnimLoophole",
-            {"magic": {"type": "Rod", "count": 1}}
+            {"rod": 1}
           ]},
           {"and": [
             "h_NoAgahnimLoophole",
-            {"ammo": {"type": "Arrows", "count": 1}}
+            {"arrows": 1}
           ]},
           {"and": [
             "h_NoAgahnimLoophole",
-            {"ammo": {"type": "SilverArrows", "count": 1}}
+            {"silverArrows": 1}
           ]}
         ]}
       ],

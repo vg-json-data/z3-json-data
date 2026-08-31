@@ -133,7 +133,7 @@
       "link": [1, 1],
       "name": "Base - Bomb Main Room North Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [1]
     },
@@ -148,7 +148,7 @@
       "link": [2, 2],
       "name": "Base - Bomb T-Room East Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [3]
     },
@@ -156,7 +156,7 @@
       "link": [2, 2],
       "name": "Base - Bomb T-Room North Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [4]
     },
@@ -193,7 +193,7 @@
       "link": [3, 3],
       "name": "Base - Bomb Plus Room South Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [1]
     },
@@ -201,7 +201,7 @@
       "link": [3, 3],
       "name": "Base - Bomb Plus Room North Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [2]
     },
@@ -209,7 +209,7 @@
       "link": [3, 3],
       "name": "Base - Bomb Plus Room West Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [3]
     },

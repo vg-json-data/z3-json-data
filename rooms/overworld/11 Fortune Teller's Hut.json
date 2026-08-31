@@ -108,9 +108,9 @@
           "L1Sword",
           "Boomerang",
           "Hookshot",
-          {"magic": {"type": "FireRod", "count": 1}},
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}}
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1}
         ]}
       ],
       "isBunny": "no"

@@ -27,39 +27,61 @@
     "not": {
       "type": "string"
     },
-    "ammo": {
-      "type": "object",
-      "required": [
-        "type",
-        "count"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "count": {
-          "type": "integer",
-          "minimum": 1
-        }
-      }
+    "arrows": {
+      "type": "integer",
+      "minimum": 1
     },
-    "magic": {
-      "type": "object",
-      "required": [
-        "type",
-        "count"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "count": {
-          "type": "integer",
-          "minimum": 1
-        }
-      }
+    "silverArrows": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "bombs": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "magicPowder": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "fireRod": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "iceRod": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rod": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "bombos": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "ether": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "quake": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lamp": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "redCane": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "blueCane": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "cape": {
+      "type": "integer",
+      "minimum": 1
     },
     "damage": {
       "type": "object",

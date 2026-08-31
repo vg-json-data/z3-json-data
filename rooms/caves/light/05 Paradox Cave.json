@@ -122,7 +122,7 @@
       "link": [1, 1],
       "name": "Base - Bomb Wall (To Shop)",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [1]
     },
@@ -159,7 +159,7 @@
       "link": [3, 3],
       "name": "Base - Bomb Wall (To Two Chest Room)",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [2]
     },
@@ -230,7 +230,7 @@
       "name": "Base - Mini-Moldorm Kill (Blue Cane)",
       "requires": [
         {"combatProficiency": 2},
-        {"magic": {"type": "BlueCane", "count": 40}},
+        {"blueCane": 40},
         "h_rangeBlueOrangeSwitch"
       ]
     },
@@ -239,7 +239,7 @@
       "name": "Base - Mini-Moldorm Kill (Red Cane)",
       "requires": [
         {"combatProficiency": 2},
-        {"magic": {"type": "RedCane", "count": 2}},
+        {"redCane": 2},
         {"or": [
           {"damage": {"enemy": "Mini-Moldorm", "count": 1}},
           {"combatProficiency": 3}
@@ -295,12 +295,12 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"magic": {"type": "Rod", "count": 2}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 28}},
-          {"magic": {"type": "Cape", "count": 28}},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"rod": 2},
+          {"redCane": 1},
+          {"blueCane": 28},
+          {"cape": 28},
           {"and": [
             {"combatProficiency": 3},
             "Hammer"
@@ -329,18 +329,18 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 2}},
-          {"magic": {"type": "Rod", "count": 2}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 28}},
-          {"magic": {"type": "Cape", "count": 28}},
+          {"bombs": 2},
+          {"rod": 2},
+          {"redCane": 1},
+          {"blueCane": 28},
+          {"cape": 28},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "Arrows", "count": 3}}
+            {"arrows": 3}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "SilverArrows", "count": 3}}
+            {"silverArrows": 3}
           ]}
         ]}
       ]

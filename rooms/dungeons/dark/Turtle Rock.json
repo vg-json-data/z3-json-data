@@ -336,21 +336,21 @@
         "IceRod",
         {"or": [
           {"and": [
-            {"magic": {"type": "Rod", "count": 18}},
+            {"rod": 18},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 7}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 16}},
+            {"rod": 16},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 10}},
+            {"rod": 10},
             {"bossProficiency": 3},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 8}},
+            {"rod": 8},
             {"bossProficiency": 4},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]}
@@ -367,20 +367,20 @@
         "IceRod",
         {"or": [
           {"and": [
-            {"magic": {"type": "Rod", "count": 8}},
+            {"rod": 8},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 5}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 6}},
+            {"rod": 6},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 5}},
+            {"rod": 5},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 4}},
+            {"rod": 4},
             {"bossProficiency": 4}
           ]}
         ]}
@@ -395,16 +395,16 @@
         "IceRod",
         {"or": [
           {"and": [
-            {"magic": {"type": "Rod", "count": 6}},
+            {"rod": 6},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 4}},
+            {"rod": 4},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 2}},
+            {"rod": 2},
             {"bossProficiency": 3}
           ]}
         ]}
@@ -420,16 +420,16 @@
         {"bossProficiency": 2},
         {"or": [
           {"and": [
-            {"magic": {"type": "Rod", "count": 14}},
+            {"rod": 14},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 10}},
+            {"rod": 10},
             {"bossProficiency": 3},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 8}},
+            {"rod": 8},
             {"bossProficiency": 4}
           ]}
         ]}
@@ -441,7 +441,7 @@
       "requires": [
         "FireRod",
         "IceRod",
-        {"magic": {"type": "Rod", "count": 24}},
+        {"rod": 24},
         {"bossProficiency": 2},
         {"or": [
           {"bossProficiency": 4},

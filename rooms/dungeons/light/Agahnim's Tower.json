@@ -143,9 +143,9 @@
       "requires": [
         {"and": [
           "L1Sword",
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 8}},
-          {"magic": {"type": "FireRod", "count": 2}}
+          {"silverArrows": 2},
+          {"arrows": 8},
+          {"fireRod": 2}
         ]}
       ]
     },
@@ -156,13 +156,13 @@
         {"combatProficiency": 2},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "Bombs", "count": 4}},
-          {"magic": {"type": "RedCane", "count": 4}},
-          {"magic": {"type": "BlueCane", "count": 60}}
+          {"bombs": 4},
+          {"redCane": 4},
+          {"blueCane": 60}
         ]},
         {"or": [
           {"combatProficiency": 2},
-          {"magic": {"type": "BlueCane", "count": 16}},
+          {"blueCane": 16},
           {"damage": {"enemy": "Ball and Chain Trooper", "count": 1}}
         ]}
       ]
@@ -191,11 +191,11 @@
         ]},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "Bombs", "count": 4}},
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 4}},
-          {"magic": {"type": "FireRod", "count": 2}},
-          {"magic": {"type": "RedCane", "count": 2}}
+          {"bombs": 4},
+          {"silverArrows": 2},
+          {"arrows": 4},
+          {"fireRod": 2},
+          {"redCane": 2}
         ]}
       ],
       "collectsItems": [1]
@@ -206,19 +206,19 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"magic": {"type": "FireRod", "count": 2}},
-          {"magic": {"type": "BlueCane", "count": 32}},
+          {"silverArrows": 2},
+          {"fireRod": 2},
+          {"blueCane": 32},
           {"and": [
             "Hammer",
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 4}},
+            {"arrows": 4},
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]},
           {"and": [
-            {"magic": {"type": "RedCane", "count": 2}},
+            {"redCane": 2},
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 3}}
           ]},
           {"and": [
@@ -226,11 +226,11 @@
             {"combatProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 4}},
+            {"arrows": 4},
             {"combatProficiency": 3}
           ]},
           {"and": [
-            {"magic": {"type": "RedCane", "count": 2}},
+            {"redCane": 2},
             {"combatProficiency": 3}
           ]}
         ]}
@@ -242,7 +242,7 @@
       "name": "Base - Bomb Doorway Kill",
       "requires": [
         {"combatProficiency": 3},
-        {"ammo": {"type": "Bombs", "count": 2}}
+        {"bombs": 2}
       ],
       "note": [
         "Quickly place a bomb a bit away from the doorway, wait a second then place another and retreat to the safety of the doorway.",
@@ -274,10 +274,10 @@
       "requires": [
         {"unlockDoor": 1},
         "L1Sword",
-        {"magic": {"type": "FireRod", "count": 1}},
+        {"fireRod": 1},
         {"darkProficiency": 2},
         {"or": [
-          {"magic": {"type": "FireRod", "count": 1}},
+          {"fireRod": 1},
           {"and": [
             {"darkProficiency": 3},
             {"combatProficiency": 3}
@@ -345,17 +345,17 @@
             {"damage": {"enemy": "Chasupa", "count": 1}},
             {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
           ]},
-          {"ammo": {"type": "Arrows", "count": 3}},
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"magic": {"type": "Rod", "count": 2}},
+          {"arrows": 3},
+          {"silverArrows": 2},
+          {"rod": 2},
           {"and": [
             {"combatProficiency": 2},
             {"or": [
               "Hammer",
               "Hookshot",
-              {"ammo": {"type": "Arrows", "count": 2}},
-              {"ammo": {"type": "SilverArrows", "count": 1}},
-              {"magic": {"type": "Rod", "count": 1}}
+              {"arrows": 2},
+              {"silverArrows": 1},
+              {"rod": 1}
             ]}
           ]}
         ]}
@@ -370,8 +370,8 @@
         "Lamp",
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 32}}
+          {"redCane": 1},
+          {"blueCane": 32}
         ]}
       ],
       "collectsItems": [2],
@@ -399,10 +399,10 @@
         {"unlockDoor": 1},
         {"unlockDoor": 2},
         "L1Sword",
-        {"magic": {"type": "FireRod", "count": 2}},
+        {"fireRod": 2},
         {"darkProficiency": 2},
         {"or": [
-          {"magic": {"type": "FireRod", "count": 3}},
+          {"fireRod": 3},
           {"and": [
             {"darkProficiency": 3},
             {"combatProficiency": 4}
@@ -410,7 +410,7 @@
           {"and": [
             {"darkProficiency": 3},
             {"combatProficiency": 3},
-            {"magic": {"type": "FireRod", "count": 1}}
+            {"fireRod": 1}
           ]},
           "hasSwordSparkles"
         ]}
@@ -477,8 +477,8 @@
           "L3Sword",
           "Boomerang",
           "Hookshot",
-          {"ammo": {"type": "SilverArrows", "count": 2}},
-          {"magic": {"type": "FireRod", "count": 2}},
+          {"silverArrows": 2},
+          {"fireRod": 2},
           {"combatProficiency": 2}
         ]}
       ]

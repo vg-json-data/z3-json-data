@@ -313,9 +313,9 @@
         {"or": [
           "L1Sword",
           "Hammer",
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"magic": {"type": "Rod", "count": 1}}
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1}
         ]}
       ],
       "collectsItems": [2]
@@ -326,9 +326,9 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 2}},
-          {"magic": {"type": "BlueCane", "count": 28}},
-          {"magic": {"type": "RedCane", "count": 1}}
+          {"bombs": 2},
+          {"blueCane": 28},
+          {"redCane": 1}
         ]}
       ],
       "collectsItems": [2]
@@ -341,9 +341,9 @@
         {"or": [
           "L1Sword",
           "Hammer",
-          {"ammo": {"type": "Arrows", "count": 1}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"magic": {"type": "FireRod", "count": 1}}
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1}
         ]}
       ]
     },
@@ -354,9 +354,9 @@
         {"unlockDoor": 1},
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 20}},
-          {"magic": {"type": "RedCane", "count": 1}}
+          {"bombs": 1},
+          {"blueCane": 20},
+          {"redCane": 1}
         ]}
       ]
     },
@@ -381,9 +381,9 @@
         {"or": [
           "L1Sword",
           "Hammer",
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"magic": {"type": "Rod", "count": 1}}
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1}
         ]}
       ],
       "collectsItems": [4]
@@ -394,9 +394,9 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Bombs", "count": 2}},
-          {"magic": {"type": "BlueCane", "count": 28}},
-          {"magic": {"type": "RedCane", "count": 1}}
+          {"bombs": 2},
+          {"blueCane": 28},
+          {"redCane": 1}
         ]}
       ],
       "collectsItems": [4]
@@ -410,20 +410,20 @@
         {"or": [
           "L1Sword",
           "Hammer",
-          {"ammo": {"type": "Arrows", "count": 1}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"magic": {"type": "FireRod", "count": 1}},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
           {"and": [
             {"combatProficiency": 2},
-            {"ammo": {"type": "Bombs", "count": 1}}
+            {"bombs": 1}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"magic": {"type": "BlueCane", "count": 20}}
+            {"blueCane": 20}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"magic": {"type": "RedCane", "count": 1}}
+            {"redCane": 1}
           ]}
         ]}
       ],
@@ -477,13 +477,13 @@
           "Hammer",
           "Hookshot",
           "Boomerang",
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
-          {"ammo": {"type": "Bombs", "count": 1}},
-          {"magic": {"type": "Rod", "count": 3}},
-          {"magic": {"type": "BlueCane", "count": 28}},
-          {"magic": {"type": "RedCane", "count": 2}},
-          {"magic": {"type": "Cape", "count": 25}}
+          {"arrows": 5},
+          {"silverArrows": 5},
+          {"bombs": 1},
+          {"rod": 3},
+          {"blueCane": 28},
+          {"redCane": 2},
+          {"cape": 25}
         ]}
       ]
     },
@@ -502,7 +502,7 @@
         {"darkProficiency": 2},
         {"combatProficiency": 3},
         {"damage": {"enemy": "Rat", "count": 1}},
-        {"magic": {"type": "FireRod", "count": 1}},
+        {"fireRod": 1},
         {"damage": {"enemy": "Rope", "count": 1}}
       ],
       "note": ["Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."]
@@ -516,8 +516,8 @@
           "L1Sword",
           "Hookshot",
           "Boomerang",
-          {"magic": {"type": "BlueCane", "count": 52}},
-          {"magic": {"type": "RedCane", "count": 5}}
+          {"blueCane": 52},
+          {"redCane": 5}
         ]},
         {"damage": {"enemy": "Rat", "count": 1}},
         {"damage": {"enemy": "Rope", "count": 1}}
@@ -550,8 +550,8 @@
           "L1Sword",
           "Hookshot",
           "Boomerang",
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "FireRod", "count": 1}},
+          {"redCane": 1},
+          {"fireRod": 1},
           {"darkProficiency": 3}
         ]}
       ],
@@ -582,7 +582,7 @@
             {"or": [
               "Hookshot",
               "Boomerang",
-              {"magic": {"type": "RedCane", "count": 1}},
+              {"redCane": 1},
               {"damage": {"enemy": "Keese", "count": 1}}
             ]}
           ]}
@@ -627,7 +627,7 @@
             {"or": [
               "Hookshot",
               "Boomerang",
-              {"magic": {"type": "RedCane", "count": 1}},
+              {"redCane": 1},
               {"damage": {"enemy": "Rope", "count": 2}}
             ]}
           ]}
@@ -651,11 +651,11 @@
         {"combatProficiency": 2},
         {"or": [
           "Hookshot",
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 12}},
-          {"magic": {"type": "Rod", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"redCane": 1},
+          {"blueCane": 12},
+          {"rod": 2},
+          {"arrows": 5},
+          {"silverArrows": 5},
           {"and": [
             "Hammer",
             {"damage": {"enemy": "Rat", "count": 2}}
@@ -665,7 +665,7 @@
             {"combatProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "Bombs", "count": 1}},
+            {"bombs": 1},
             {"combatProficiency": 3}
           ]}
         ]}
@@ -681,8 +681,8 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 40}}
+          {"redCane": 1},
+          {"blueCane": 40}
         ]}
       ],
       "collectsItems": [8]
@@ -692,13 +692,13 @@
       "name": "Darkness - Fire Rod",
       "requires": [
         {"darkProficiency": 2},
-        {"magic": {"type": "FireRod", "count": 1}},
+        {"fireRod": 1},
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "BlueCane", "count": 20}},
-          {"magic": {"type": "Rod", "count": 2}},
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"blueCane": 20},
+          {"rod": 2},
+          {"arrows": 5},
+          {"silverArrows": 5},
           {"and": [
             "Hammer",
             {"damage": {"enemy": "Rat", "count": 2}}
@@ -708,7 +708,7 @@
             {"combatProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "Bombs", "count": 1}},
+            {"bombs": 1},
             {"combatProficiency": 3}
           ]}
         ]}
@@ -737,8 +737,8 @@
               "L1Sword",
               "Hookshot",
               "Boomerang",
-              {"magic": {"type": "FireRod", "count": 1}},
-              {"magic": {"type": "RedCane", "count": 1}}
+              {"fireRod": 1},
+              {"redCane": 1}
             ]}
           ]}
         ]}
@@ -772,7 +772,7 @@
       "link": [11, 11],
       "name": "Base - Bomb Wall (South)",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [6]
     },
@@ -788,7 +788,7 @@
       "link": [11, 11],
       "name": "Base - Bomb Wall (North)",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [7]
     },

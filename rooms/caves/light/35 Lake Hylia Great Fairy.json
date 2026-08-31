@@ -29,7 +29,7 @@
       "link": [1, 1],
       "name": "Base - Bomb East Wall",
       "requires": [
-        {"ammo": {"type": "Bombs", "count": 1}}
+        {"bombs": 1}
       ],
       "unlocksDoor": [1]
     },

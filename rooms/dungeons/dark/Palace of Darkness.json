@@ -334,17 +334,17 @@
       "requires": [
         {"or": [
           {"and": [
-            {"ammo": {"type": "Bombs", "count": 7}},
+            {"bombs": 7},
             {"damage": {"enemy": "Helmasaur King", "count": 2}}
           ]},
           {"and": [
             {"bossProficiency": 2},
-            {"ammo": {"type": "Bombs", "count": 6}},
+            {"bombs": 6},
             {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"ammo": {"type": "Bombs", "count": 5}}
+            {"bombs": 5}
           ]}
         ]}
       ]
@@ -354,18 +354,18 @@
       "name": "Helmasaur (Mask Broken) - Bow",
       "requires": [
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 1}},
-          {"ammo": {"type": "Arrows", "count": 20}},
+          {"silverArrows": 1},
+          {"arrows": 20},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 15}},
+            {"arrows": 15},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 10}},
+            {"arrows": 10},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 8}},
+            {"arrows": 8},
             {"bossProficiency": 4}
           ]}
         ]}
