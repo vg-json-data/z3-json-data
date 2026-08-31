@@ -19,30 +19,6 @@
           "nodeType": "door"
         },
         {
-          "id": 3,
-          "name": "Brewery",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 4,
-          "name": "C-Shaped House",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 5,
-          "name": "Chest Game",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
-          "id": 6,
-          "name": "Thieves' Town",
-          "area": "West Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 11,
           "name": "Village of Outcasts Pegs",
           "area": "West Dark World",

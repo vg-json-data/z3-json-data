@@ -7,12 +7,6 @@
       "roomType": "LightWorld",
       "nodes": [
         {
-          "id": 1,
-          "name": "Blind's Hideout",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 2,
           "name": "Hyrule Castle Secret Entrance Drop",
           "area": "Light World",
@@ -25,18 +19,6 @@
           "nodeType": "door"
         },
         {
-          "id": 7,
-          "name": "Tavern North",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 8,
-          "name": "Chicken House",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 9,
           "name": "Aginah's Cave",
           "area": "Light World",
@@ -45,18 +27,6 @@
         {
           "id": 10,
           "name": "Sahasrahla's Hut",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 11,
-          "name": "Kakariko Well Drop",
-          "area": "Light World",
-          "nodeType": "drop"
-        },
-        {
-          "id": 12,
-          "name": "Kakariko Well Cave",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -75,12 +45,6 @@
         {
           "id": 15,
           "name": "Magic Bat Cave Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 16,
-          "name": "Sick Kid's House",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -163,54 +127,6 @@
           "nodeType": "door"
         },
         {
-          "id": 40,
-          "name": "Elder House (East)",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 41,
-          "name": "Elder House (West)",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 45,
-          "name": "East Snitch Lady's House",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 46,
-          "name": "West Snitch Lady's House",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 47,
-          "name": "Tavern (Front)",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 48,
-          "name": "Bush Covered House",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 49,
-          "name": "Kakariko Bomb Shed",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 50,
-          "name": "Kakariko Shop",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 51,
           "name": "Long Fairy Cave",
           "area": "Light World",
@@ -277,24 +193,10 @@
           "nodeType": "door"
         },
         {
-          "id": 65,
-          "name": "Kakariko Gamble Game",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 66,
           "name": "Top of Pyramid",
           "area": "Light World",
           "nodeType": "door"
-        },
-        {
-          "id": 68,
-          "name": "Bottle Merchant",
-          "area": "Light World",
-          "nodeType": "item",
-          "nodeItem": "Bottle",
-          "nodeAddress": "0x2EB18"
         },
         {
           "id": 69,

@@ -377,6 +377,13 @@
           },
           "subArea": {
             "type": "string"
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
           }
         }
       }
