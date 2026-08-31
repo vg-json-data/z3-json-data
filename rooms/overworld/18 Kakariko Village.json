@@ -1,0 +1,318 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 16,
+  "name": "Kakariko Village",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [7.5, 10.5]},
+        {"edge": "north", "span": [19.5, 22.5]},
+        {"edge": "north", "span": [46.5, 53.5]},
+        {"edge": "east", "span": [49, 54]},
+        {"edge": "south", "span": [53, 58]}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Kakariko Well Drop Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Kakariko Well Cave Entrance",
+          "world": "light"
+        },
+        {
+          "id": 3,
+          "name": "Blind's Hideout",
+          "world": "light"
+        },
+        {
+          "id": 4,
+          "name": "Elder House West Entrance",
+          "world": "light"
+        },
+        {
+          "id": 5,
+          "name": "Elder House East Entrance",
+          "world": "light"
+        },
+        {
+          "id": 6,
+          "name": "West Snitch Lady's House",
+          "world": "light"
+        },
+        {
+          "id": 7,
+          "name": "East Snitch Lady's House",
+          "world": "light"
+        },
+        {
+          "id": 8,
+          "name": "Chicken House",
+          "world": "light"
+        },
+        {
+          "id": 9,
+          "name": "Sick Kid's House",
+          "world": "light"
+        },
+        {
+          "id": 10,
+          "name": "Kakariko Tavern Secret Entrance",
+          "world": "light"
+        },
+        {
+          "id": 11,
+          "name": "Kakariko Tavern Main Entrance",
+          "world": "light"
+        },
+        {
+          "id": 12,
+          "name": "Chest Game",
+          "world": "dark"
+        },
+        {
+          "id": 13,
+          "name": "C-Shaped House",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bird Statue",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Thieves' Town",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bush Blocked House",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Bush Blocked House",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Village of Outcasts Shop",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Southwest Bomb Shed",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Kakariko Bomb Shed",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chicken Coop",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Kakariko Shop",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Brewery",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Activate Flute",
+      "itemLocation": 2,
+      "world": "light",
+      "item": "OcarinaActive",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 2,
+      "locationName": "Bottle Merchant",
+      "itemLocation": 1,
+      "world": "light",
+      "item": "Bottle",
+      "itemAddress": "0x2EB18"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bomb Shed - Bombable Wall",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 4,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "locationName": "Chicken Coop - Bombable Wall",
+      "world": "dark",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Bottle Merchant",
+      "world": "light",
+      "requires": [
+        {"pay": 100}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Open Thieves' Town",
+      "world": "dark",
+      "requires": [
+        {"glove": 1}
+      ],
+      "setsFlags": ["OpenedThievesTown"]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Already Open",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedThievesTown"}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base - Hammer Pegs",
+      "world": "dark",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base - Bomb",
+      "world": "light",
+      "requires": [
+        {"glove": 0},
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base - Already Bombed",
+      "world": "light",
+      "requires": [
+        {"glove": 0},
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [1, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 5],
+      "name": "Base - Bomb",
+      "world": "dark",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [1, 5],
+      "name": "Base - Already Bombed",
+      "world": "dark",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Activate Flute",
+      "world": "light",
+      "requires": [
+        "OcarinaInactive"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base - Hammer Pegs",
+      "world": "dark",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [5, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    }
+  ]
+}

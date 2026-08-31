@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 40,
-  "name": "Bush Covered House",
+  "name": "Bush Blocked House",
   "roomType": "House",
   "nodes": [
     {
