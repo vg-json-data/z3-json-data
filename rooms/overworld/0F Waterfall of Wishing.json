@@ -84,7 +84,9 @@
       "link": [2, 2],
       "name": "Disturb Catfish",
       "world": "dark",
-      "requires": [],
+      "requires": [
+        {"glove": 0}
+      ],
       "isBunny": "no",
       "collectsItems": [1]
     },

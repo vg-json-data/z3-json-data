@@ -65,7 +65,7 @@
           "Hookshot",
           "Boomerang",
           "PegasusBoots",
-          "TitansMitt"
+          {"glove": 2}
         ]}
       ],
       "isBunny": "no"

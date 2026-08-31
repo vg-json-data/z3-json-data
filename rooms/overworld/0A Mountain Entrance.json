@@ -64,7 +64,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        "PowerGlove"
+        {"glove": 1}
       ],
       "isBunny": "no"
     },
@@ -73,7 +73,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        "PowerGlove",
+        {"glove": 1},
         {"sword": 1}
       ],
       "isBunny": "no"
@@ -83,7 +83,7 @@
       "name": "Alternate Weapons",
       "world": "dark",
       "requires": [
-        "PowerGlove",
+        {"glove": 1},
         {"combatProficiency": 2},
         {"or": [
           {"redCane": 1},
@@ -106,7 +106,7 @@
       "name": "Sign Post Kill",
       "world": "dark",
       "requires": [
-        "PowerGlove",
+        {"glove": 1},
         {"combatProficiency": 3}
       ],
       "isBunny": "no",
@@ -120,7 +120,7 @@
       "name": "Tank",
       "world": "dark",
       "requires": [
-        "PowerGlove",
+        {"glove": 1},
         {"damage": {"enemy": "Dacto", "count": 2}}
       ],
       "isBunny": "no"

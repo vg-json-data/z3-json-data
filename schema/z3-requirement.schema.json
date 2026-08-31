@@ -41,8 +41,7 @@
       "enum": [
         1,
         2,
-        3,
-        4
+        3
       ]
     },
     "shield": {
@@ -57,8 +56,15 @@
       "type": "integer",
       "enum": [
         1,
-        2,
-        3
+        2
+      ]
+    },
+    "glove": {
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
       ]
     },
     "arrows": {
@@ -175,6 +181,9 @@
       "minimum": 1
     },
     "flag": {
+      "type": "string"
+    },
+    "notFlag": {
       "type": "string"
     },
     "obstaclesCleared": {

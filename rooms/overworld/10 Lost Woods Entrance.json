@@ -79,6 +79,7 @@
       "world": "light",
       "requires": [
         {"combatProficiency": 2},
+        {"glove": 0},
         {"or": [
           "h_NoAgahnimLoophole",
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
@@ -125,7 +126,9 @@
       "link": [1, 3],
       "name": "Base",
       "world": "dark",
-      "requires": [],
+      "requires": [
+        {"glove": 0}
+      ],
       "isBunny": "no"
     },
     {
@@ -172,7 +175,8 @@
       "name": "Base - Signpost and Bushes",
       "world": "light",
       "requires": [
-        {"combatProficiency": 2}
+        {"combatProficiency": 2},
+        {"glove": 0}
       ],
       "isBunny": "no",
       "note": ["Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."]
@@ -213,7 +217,9 @@
       "link": [3, 1],
       "name": "Base",
       "world": "dark",
-      "requires": [],
+      "requires": [
+        {"glove": 0}
+      ],
       "isBunny": "no"
     },
     {
@@ -238,7 +244,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        "PowerGlove"
+        {"glove": 1}
       ]
     },
     {
@@ -246,7 +252,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        "TitansMitt"
+        {"glove": 2}
       ],
       "isBunny": "no"
     },
@@ -255,7 +261,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        "TitansMitt"
+        {"glove": 2}
       ],
       "isBunny": "no"
     }
