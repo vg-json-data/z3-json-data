@@ -1,265 +1,8 @@
 [
   {
-    "name": "canActivateTablets",
-    "requires": [
-      "canRead",
-      "hasMagicalSword",
-      "isLink"
-    ]
-  },
-  {
-    "name": "canActivateMedallions",
-    "requires": [
-      "hasSword",
-      "isLink"
-    ]
-  },
-  {
-    "name": "canBlockLasers",
-    "requires": [
-      "isLink",
-      "MirrorShield"
-    ],
-    "note": [
-      "Can also have 3 Progressive Shields"
-    ]
-  },
-  {
-    "name": "canBombThings",
-    "requires": [ "isLink" ],
-    "note": [
-      "Always assumed that you have a 10-pack of bombs"
-    ]
-  },
-  {
-    "name": "canDash",
-    "requires": [
-      "isLink",
-      "PegasusBoots"
-    ]
-  },
-  {
-    "name": "canExtendMagic",
-    "requires": [
-      "HalfMagic",
-      "QuarterMagic",
-      "Bottle"
-    ],
-    "note": [
-      "Somehow take an arg and do math"
-    ]
-  },
-  {
-    "name": "canFly",
-    "requires": [
-      "isLink",
-      "OcarinaActive"
-    ]
-  },
-  {
-    "name": "canGetGoodBee",
-    "requires": [
-      "isLink",
-      "BugCatchingNet",
-      "Bottle",
-      {"or": [
-        "canDash",
-        {
-          "and": [
-            "canActivateMedallions",
-            "Quake"
-          ]
-        }
-      ]}
-    ]
-  },
-  {
-    "name": "canGrapple",
-    "requires": [
-      "isLink",
-      "Hookshot"
-    ]
-  },
-  {
-    "name": "canHammerThings",
-    "requires": [
-      "isLink",
-      "Hammer"
-    ]
-  },
-  {
-    "name": "canInvul",
-    "requires": [
-      "isLink",
-      "Cape",
-      "CaneOfByrna"
-    ]
-  },
-  {
-    "name": "canLiftRocks",
-    "requires": [
-      "isLink",
-      {"or": [
-        "canLiftDarkRocks",
-        "ProgressiveGlove",
-        "PowerGlove"
-      ]}
-    ]
-  },
-  {
-    "name": "canLiftDarkRocks",
-    "requires": [
-      "isLink",
-      "TitansMitt"
-    ],
-    "note": [
-      "Can also have 2 Progressive Gloves"
-    ]
-  },
-  {
-    "name": "canLightTorches",
-    "requires": [
-      "isLink",
-      {"or": [
-        "FireRod",
-        "Lamp"
-      ]}
-    ]
-  },
-  {
-    "name": "canMeltThings",
-    "requires": [
-      "isLink",
-      {"or": [
-        {
-          "and": [
-            "canActivateMedallions",
-            "Bombos"
-          ]
-        },
-        "FireRod"
-      ]}
-    ]
-  },
-  {
-    "name": "canMirror",
-    "requires": [ "MagicMirror" ]
-  },
-  {
-    "name": "canRead",
-    "requires": [ "BookOfMudora" ]
-  },
-  {
-    "name": "canSlashCurtains",
-    "requires": [
-      {"or": [
-        "swords.swordless",
-        "hasSword"
-      ]}
-    ]
-  },
-  {
-    "name": "canShootArrows",
-    "requires": [
-      "isLink",
-      "Bow"
-    ]
-  },
-  {
-    "name": "canSwim",
-    "requires": [
-      "isLink",
-      "Flippers"
-    ]
-  },
-  {
-    "name": "hasLightCone",
-    "requires": [
-      "canDarkNav",
-      "Lamp"
-    ]
-  },
-  {
-    "name": "hasMagicalSword",
-    "requires": [
-      "isLink",
-      {"or": [
-        "L2Sword",
-        "L3Sword",
-        "L4Sword",
-        "MasterSword",
-        {"and": [
-          "swords.swordless",
-          "Hammer"
-        ]}
-      ]}
-    ]
-  },
-  {
-    "name": "hasProperMedallion",
-    "note": [
-      "FIXME: This is an unintelligent function at the moment"
-    ],
-    "requires": [
-      "canActivateMedallions",
-      "Bombos",
-      "Ether",
-      "Quake"
-    ]
-  },
-  {
-    "name": "hasSword",
-    "requires": [
-      "isLink",
-      {"or": [
-        "hasMagicalSword",
-        "L1Sword",
-        "L1SwordAndShield"
-      ]}
-    ]
-  },
-  {
-    "name": "isLink",
-    "requires": [
-      {"or": [
-        "isLightLink",
-        "isDarkLink"
-      ]}
-    ]
-  },
-  {
-    "name": "isLightLink",
-    "requires": [
-      {"or": [
-        "state.standard",
-        "state.open",
-        {"and": [
-          "state.inverted",
-          "MoonPearl"
-        ]}
-      ]}
-    ]
-  },
-  {
-    "name": "isDarkLink",
-    "requires": [
-      {"or": [
-        "state.inverted",
-        {"and": [
-          {"or": [
-            "state.standard",
-            "state.open"
-          ]},
-          "MoonPearl"
-        ]}
-      ]}
-    ]
-  },
-  {
     "name": "hasSwordSparkles",
     "requires": [
-      "isLink",
-      "hasMagicalSword",
+      {"sword": 2},
       {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
     ]
   },
@@ -267,7 +10,7 @@
     "name": "h_hitBlueOrangeSwitch",
     "requires": [
       {"or": [
-        "L1Sword",
+        {"sword": 1},
         "Hammer",
         "Boomerang",
         "Hookshot",
@@ -326,6 +69,22 @@
       "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
       "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free."
     ]
+  },
+  {
+    "name": "h_MothulaVulnerableToGoldSword",
+    "requires": [
+      "canRiskPermanentLossOfAccess",
+      {"or": [
+        {"swordExact": 1},
+        {"swordExact": 2},
+        {"swordExact": 3}
+      ]}
+    ],
+    "note": [
+      "In the vanilla game, Mothula is invulnerable to the gold sword, but vulnerable to all others.",
+      "Most randomizers would want to fix this, as it could create a canRiskPermanentLossOfAccess situation."
+    ],
+    "devNote": ["The requires of this helper should all be removed if Mothula takes damage to the gold sword."]
   },
   {
     "name": "Boomerang",

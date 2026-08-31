@@ -142,7 +142,7 @@
       "name": "Base",
       "requires": [
         {"and": [
-          "L1Sword",
+          {"sword": 1},
           {"silverArrows": 2},
           {"arrows": 8},
           {"fireRod": 2}
@@ -171,7 +171,7 @@
       "link": [2, 3],
       "name": "Base - Soldier Kill",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           "hasSwordSparkles",
           {"combatProficiency": 2},
@@ -273,7 +273,7 @@
       "name": "Sword, Fire Rod",
       "requires": [
         {"unlockDoor": 1},
-        "L1Sword",
+        {"sword": 1},
         {"fireRod": 1},
         {"darkProficiency": 2},
         {"or": [
@@ -321,7 +321,7 @@
       "requires": [
         {"unlockDoor": 1},
         "Lamp",
-        "L1Sword"
+        {"sword": 1}
       ],
       "collectsItems": [2]
     },
@@ -398,7 +398,7 @@
       "requires": [
         {"unlockDoor": 1},
         {"unlockDoor": 2},
-        "L1Sword",
+        {"sword": 1},
         {"fireRod": 2},
         {"darkProficiency": 2},
         {"or": [
@@ -441,7 +441,7 @@
       "name": "Base",
       "requires": [
         "Lamp",
-        "L1Sword"
+        {"sword": 1}
       ],
       "devNote": ["FIXME: Node 5 and higher assume a sword, because it is needed for the curtains."]
     },
@@ -450,11 +450,11 @@
       "name": "Base",
       "requires": [
         "Lamp",
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 2}},
           {"and": [
-            "L2Sword",
+            {"sword": 2},
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]},
           {"combatProficiency": 2}
@@ -467,14 +467,14 @@
       "name": "Base",
       "requires": [
         {"unlockDoor": 3},
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}},
           {"and": [
-            "Shield",
+            {"shield": 1},
             {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
           ]},
-          "L3Sword",
+          {"sword": 3},
           "Boomerang",
           "Hookshot",
           {"silverArrows": 2},
@@ -504,7 +504,7 @@
       "link": [9, 10],
       "name": "Base",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "count": 2}},
           {"and": [
@@ -519,7 +519,7 @@
       "link": [10, 10],
       "name": "Agahnim 1",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Agahnim", "attack": "Weak Fireball", "count": 2}},
           {"combatProficiency": 2}

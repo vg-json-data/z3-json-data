@@ -258,7 +258,7 @@
       "name": "Base - Open Chest to North",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"silverArrows": 4},
           {"arrows": 4},
@@ -303,7 +303,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"silverArrows": 5},
           {"arrows": 5},
@@ -398,7 +398,7 @@
       "link": [10, 10],
       "name": "Lanmolas - Sword",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 4}},
           {"and": [
@@ -406,11 +406,11 @@
             {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
           ]},
           {"and": [
-            "L2Sword",
+            {"sword": 2},
             {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
           ]},
           "hasSwordSparkles",
-          "L3Sword",
+          {"sword": 3},
           {"bossProficiency": 3}
         ]}
       ],

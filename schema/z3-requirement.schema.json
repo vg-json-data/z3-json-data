@@ -27,6 +27,46 @@
     "not": {
       "type": "string"
     },
+    "sword": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "swordExact": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "shield": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "shieldExact": {
+      "type": "integer",
+      "enum": [
+        1,
+        2
+      ]
+    },
+    "glove": {
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
     "arrows": {
       "type": "integer",
       "minimum": 1
@@ -141,6 +181,9 @@
       "minimum": 1
     },
     "flag": {
+      "type": "string"
+    },
+    "notFlag": {
       "type": "string"
     },
     "obstaclesCleared": {

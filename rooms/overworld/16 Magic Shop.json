@@ -59,7 +59,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        "PowerGlove"
+        {"glove": 1}
       ],
       "isBunny": "no"
     },
@@ -77,7 +77,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        "PowerGlove"
+        {"glove": 1}
       ],
       "isBunny": "no"
     },

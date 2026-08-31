@@ -212,7 +212,7 @@
       "name": "Base - Mini-Moldorm Kill",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"and": [
             "Hookshot",
             {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
@@ -279,7 +279,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [
@@ -313,7 +313,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"damage": {"enemy": "Mini-Moldorm", "count": 2}},
           {"and": [

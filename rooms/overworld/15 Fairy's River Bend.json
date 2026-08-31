@@ -78,7 +78,9 @@
       "link": [1, 4],
       "name": "Base - Bush",
       "world": "light",
-      "requires": [],
+      "requires": [
+        {"glove": 0}
+      ],
       "isBunny": "no"
     },
     {
@@ -103,7 +105,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           {"fireRod": 1},

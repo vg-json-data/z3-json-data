@@ -50,7 +50,7 @@
       "name": "Moldorm Kill",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"and": [
             {"combatProficiency": 2},
             "Hookshot"
@@ -96,7 +96,7 @@
       "name": "Moldorm Kill",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"and": [
             {"combatProficiency": 2},
             "Hookshot"

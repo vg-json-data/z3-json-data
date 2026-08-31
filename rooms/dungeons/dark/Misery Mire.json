@@ -176,7 +176,7 @@
       "link": [13, 14],
       "name": "Kill Vitreous Small Eyes - Sword (L2-L4)",
       "requires": [
-        "L2Sword",
+        {"sword": 2},
         {"or": [
           {"and": [
             {"damage": {"enemy": "Vitreous", "count": 2}},
@@ -188,16 +188,16 @@
           ]},
           {"bossProficiency": 3},
           {"and": [
-            "L3Sword",
+            {"sword": 3},
             {"damage": {"enemy": "Vitreous", "count": 1}},
             {"damage": {"enemy": "Vitreous", "attack": "Lightning", "count": 1}}
           ]},
           {"and": [
-            "L3Sword",
+            {"sword": 3},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"damage": {"enemy": "Vitreous", "count": 1}}
           ]}
         ]}
@@ -207,7 +207,7 @@
       "link": [13, 14],
       "name": "Kill Vitreous Small Eyes - Sword (L1)",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"bossProficiency": 4},
         {"or": [
           {"damage": {"enemy": "Vitreous", "count": 2}},
@@ -266,7 +266,7 @@
       "link": [14, 14],
       "name": "Vitreous (Big Eye Only) - Sword (L2-L4)",
       "requires": [
-        "L2Sword"
+        {"sword": 2}
       ],
       "setsFlags": ["DefeatedVitreous"],
       "collectsItems": [14, 15]
@@ -275,7 +275,7 @@
       "link": [14, 14],
       "name": "Vitreous (Big Eye Only) - Sword (L1)",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"bossProficiency": 4},
         {"or": [
           {"damage": {"enemy": "Vitreous", "count": 1}},

@@ -151,7 +151,7 @@
       "link": [11, 11],
       "name": "Blind - Sword",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"and": [
             {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 7}},

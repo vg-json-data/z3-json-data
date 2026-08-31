@@ -61,11 +61,11 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           "PegasusBoots",
-          "TitansMitt"
+          {"glove": 2}
         ]}
       ],
       "isBunny": "no"

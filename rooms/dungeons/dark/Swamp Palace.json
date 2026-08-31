@@ -205,7 +205,7 @@
       "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
       "requires": [
         "Hookshot",
-        "L2Sword",
+        {"sword": 2},
         {"or": [
           {"damage": {"enemy": "Arrghus Fuzz", "count": 1}},
           {"bossProficiency": 2}
@@ -217,7 +217,7 @@
       "name": "Kill Arrghus's Fuzz - Sword (L1)",
       "requires": [
         "Hookshot",
-        "L1Sword",
+        {"sword": 1},
         {"bossProficiency": 3}
       ],
       "note": [
@@ -253,7 +253,7 @@
       "link": [16, 16],
       "name": "Arrghus (Fuzz Killed) - Sword",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"and": [
             {"bossProficiency": 2},
@@ -261,11 +261,11 @@
           ]},
           {"bossProficiency": 3},
           {"and": [
-            "L2Sword",
+            {"sword": 2},
             {"damage": {"enemy": "Arrghus", "count": 3}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"damage": {"enemy": "Arrghus", "count": 2}}
           ]}
         ]}

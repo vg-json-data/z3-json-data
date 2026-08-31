@@ -377,7 +377,7 @@
       "link": [24, 24],
       "name": "Helmasaur (Mask Broken) - Sword (L1)",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "Helmasaur King", "count": 6}},
           {"and": [
@@ -399,7 +399,7 @@
       "link": [24, 24],
       "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
       "requires": [
-        "L2Sword",
+        {"sword": 2},
         {"or": [
           {"damage": {"enemy": "Helmasaur King", "count": 2}},
           {"and": [
@@ -408,14 +408,14 @@
           ]},
           {"bossProficiency": 3},
           {"and": [
-            "L3Sword",
+            {"sword": 3},
             {"damage": {"enemy": "Helmasaur King", "count": 1}}
           ]},
           {"and": [
-            "L3Sword",
+            {"sword": 3},
             {"bossProficiency": 2}
           ]},
-          "L4Sword"
+          {"sword": 4}
         ]}
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
