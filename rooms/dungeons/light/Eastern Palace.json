@@ -74,7 +74,7 @@
       "locationName": "Map Chest",
       "itemLocation": 2,
       "item": "Map",
-      "nodeAddress": "0xE9F5"
+      "itemAddress": "0xE9F5"
     },
     {
       "id": 3,
@@ -82,7 +82,7 @@
       "locationName": "Compass Chest",
       "itemLocation": 4,
       "item": "Compass",
-      "nodeAddress": "0xE977"
+      "itemAddress": "0xE977"
     },
     {
       "id": 4,
