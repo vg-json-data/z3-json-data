@@ -25,14 +25,6 @@
       "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
     }
   ],
-  "obstacles": [
-    {
-      "id": "Old Man Following",
-      "note": [
-        "Rescued the Old Mann and he is following Link."
-      ]
-    }
-  ],
   "strats": [
     {
       "link": [1, 2],
@@ -40,7 +32,7 @@
       "requires": [
         "Lamp"
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [1, 2],
@@ -63,7 +55,7 @@
           ]}
         ]}
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [1, 2],
@@ -100,7 +92,7 @@
         "It's neglected for now due to schema limitations and because it only saves one heart.",
         "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [2, 2],
@@ -108,7 +100,7 @@
       "requires": [
         "Lamp"
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [2, 2],
@@ -131,7 +123,7 @@
           ]}
         ]}
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [2, 2],
@@ -168,18 +160,17 @@
         "It's neglected for now due to schema limitations and because it only saves one heart.",
         "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
       ],
-      "clearsObstacles": ["Old Man Following"]
+      "setsFollower": "Old Man"
     },
     {
       "link": [2, 2],
       "name": "Rescue Old Man",
       "requires": [
-        {"obstaclesCleared": ["Old Man Following"]}
+        {"follower": "Old Man"}
       ],
-      "exitState": {
-        "state": "follower",
-        "type": "OldMan"
-      }
+      "collectsItems": [1],
+      "FollowerComplete": "Old Man",
+      "devNote": ["FIXME: The item is not obtained here, this needs to be fixed."]
     }
   ]
 }

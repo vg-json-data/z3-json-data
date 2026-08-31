@@ -1,0 +1,115 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 23,
+  "name": "Maze Race Game",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Lower Level",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [28, 30]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "House Exit",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [22.5, 24], "world": "dark"}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Two Brothers' House West Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Upper West Ledge",
+      "world": "both"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Maze Race Reward",
+      "itemLocation": 3,
+      "world": "light",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180142"
+    },
+    {
+      "id": 2,
+      "locationName": "Digging Game Reward",
+      "itemLocation": 3,
+      "world": "dark",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180148"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Maze Race Game and Return",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ],
+      "collectsItems": [1],
+      "devNote": ["The lady will not let Link pass left to right unless he already just started the game going right to left."]
+    },
+    {
+      "link": [2, 3],
+      "name": "Maze Race Game",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Digging Game Jump Point",
+      "world": "dark",
+      "requires": [
+        {"pay": 80},
+        {"glove": 2}
+      ],
+      "collectsItems": [2],
+      "devNote": ["Usually you will get the 80 rupees back from digging."]
+    },
+    {
+      "link": [3, 3],
+      "name": "Digging Game",
+      "world": "dark",
+      "requires": [
+        {"pay": 80}
+      ],
+      "collectsItems": [2],
+      "isBunny": "no",
+      "devNote": ["Usually you will get the 80 rupees back from digging."]
+    }
+  ]
+}

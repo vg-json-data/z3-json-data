@@ -1,0 +1,143 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 24,
+  "name": "Library",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "South Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [22.5, 27.5]},
+        {"edge": "west", "span": [28, 30]},
+        {"edge": "west", "span": [22.5, 24], "world": "dark"}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Two Brothers' House East Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Kakariko Gamble Game",
+          "world": "light"
+        },
+        {
+          "id": 3,
+          "name": "Archery Game",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Northwest Area",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Library",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Northeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [21, 26]}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [2, 2],
+      "name": "Rescue Frog (Dwarf)",
+      "world": "light",
+      "requires": [
+        {"glove": 2}
+      ],
+      "setsFollower": "Dwarf"
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"and": [
+            {"combatProficiency": 2},
+            {"glove": 0}
+          ]}
+        ]}
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "isBunny": "any",
+      "note": ["It is possible to lure the guard around the bushes, to avoid damage."]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    }
+  ]
+}

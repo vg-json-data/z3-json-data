@@ -64,27 +64,6 @@
       ]
     },
     {
-      "id": 67,
-      "name": "Maze Race Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Two Brothers' House (West)",
-          "area": "Maze Race Ledge",
-          "nodeType": "door"
-        },
-        {
-          "id": 2,
-          "name": "Maze Race",
-          "area": "Maze Race Ledge",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180142"
-        }
-      ]
-    },
-    {
       "id": 69,
       "name": "Desert Ledge",
       "roomType": "LightWorld",

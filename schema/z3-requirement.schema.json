@@ -186,6 +186,17 @@
     "notFlag": {
       "type": "string"
     },
+    "follower": {
+      "type": "string",
+      "enum": [
+        "None",
+        "Zelda",
+        "Old Man",
+        "Kiki",
+        "Blind",
+        "Dwarf"
+      ]
+    },
     "obstaclesCleared": {
       "type": "array",
       "minItems": 1,
