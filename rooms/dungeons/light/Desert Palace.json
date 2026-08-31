@@ -15,7 +15,7 @@
       "name": "West Exit",
       "subArea": "Desert Palace B1",
       "nodeType": "door",
-      "devNote": "FIXME: This is a good place to obtain fairies"
+      "devNote": ["FIXME: This is a good place to obtain fairies"]
     },
     {
       "id": 3,
@@ -144,8 +144,8 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Dungeon Prize",
       "itemLocation": 10,
-      "nodeItem": "PendantOfWisdom",
-      "nodeAddress": [
+      "item": "PendantOfWisdom",
+      "itemAddress": [
         "0x1209E",
         "0x53F1C",
         "0x53F1D",
