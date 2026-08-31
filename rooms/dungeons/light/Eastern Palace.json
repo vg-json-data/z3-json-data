@@ -222,9 +222,9 @@
         {"or": [
           "L1Sword",
           "Hammer",
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
-          {"magic": {"type": "Rod", "count": 1}}
+          {"arrows": 5},
+          {"silverArrows": 5},
+          {"rod": 1}
         ]}
       ]
     },
@@ -257,8 +257,8 @@
         "Lamp",
         {"or": [
           "L1Sword",
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 2}}
+          {"arrows": 2},
+          {"silverArrows": 2}
         ]}
       ],
       "collectsItems": [7]
@@ -286,7 +286,7 @@
       "requires": [
         {"unlockDoor": 3},
         {"darkProficiency": 2},
-        {"magic": {"type": "FireRod", "count": 1}},
+        {"fireRod": 1},
         {"or": [
           {"and": [
             {"combatProficiency": 2},
@@ -306,7 +306,7 @@
         {"darkProficiency": 2},
         {"or": [
           "L2Sword",
-          {"magic": {"type": "BlueCane", "count": 108}}
+          {"blueCane": 108}
         ]}
       ],
       "collectsItems": [7]
@@ -321,15 +321,15 @@
           {"and": [
             "L1Sword",
             {"or": [
-              {"ammo": {"type": "Arrows", "count": 2}},
-              {"ammo": {"type": "SilverArrows", "count": 2}}
+              {"arrows": 2},
+              {"silverArrows": 2}
             ]}
           ]},
           {"and": [
             {"combatProficiency": 3},
             {"or": [
-              {"ammo": {"type": "Arrows", "count": 6}},
-              {"ammo": {"type": "SilverArrows", "count": 6}}
+              {"arrows": 6},
+              {"silverArrows": 6}
             ]}
           ]},
           {"and": [
@@ -372,11 +372,11 @@
               "Boomerang",
               "Hookshot",
               "Hammer",
-              {"ammo": {"type": "Arrows", "count": 1}},
-              {"ammo": {"type": "SilverArrows", "count": 1}},
-              {"magic": {"type": "Rod", "count": 1}},
-              {"magic": {"type": "BlueCane", "count": 20}},
-              {"magic": {"type": "RedCane", "count": 1}},
+              {"arrows": 1},
+              {"silverArrows": 1},
+              {"rod": 1},
+              {"blueCane": 20},
+              {"redCane": 1},
               {"damage": {"enemy": "Popo", "count": 1}}
             ]}
           ]}
@@ -401,8 +401,8 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"magic": {"type": "RedCane", "count": 1}},
+          {"rod": 1},
+          {"redCane": 1},
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
@@ -412,7 +412,7 @@
       "name": "Darkness - Blue Cane",
       "requires": [
         {"darkProficiency": 2},
-        {"magic": {"type": "BlueCane", "count": 36}}
+        {"blueCane": 36}
       ]
     },
     {
@@ -424,9 +424,9 @@
           "L1Sword",
           "Hookshot",
           "Boomerang",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 20}},
-          {"magic": {"type": "RedCane", "count": 1}},
+          {"rod": 1},
+          {"blueCane": 20},
+          {"redCane": 1},
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
@@ -445,11 +445,11 @@
               "Boomerang",
               "Hookshot",
               "Hammer",
-              {"ammo": {"type": "Arrows", "count": 1}},
-              {"ammo": {"type": "SilverArrows", "count": 1}},
-              {"magic": {"type": "Rod", "count": 1}},
-              {"magic": {"type": "BlueCane", "count": 28}},
-              {"magic": {"type": "RedCane", "count": 1}},
+              {"arrows": 1},
+              {"silverArrows": 1},
+              {"rod": 1},
+              {"blueCane": 28},
+              {"redCane": 1},
               {"damage": {"enemy": "Popo", "count": 1}}
             ]}
           ]}
@@ -464,7 +464,7 @@
         "Lamp",
         {"unlockDoor": 1},
         {"combatProficiency": 2},
-        {"magic": {"type": "MagicPowder", "count": 2}}
+        {"magicPowder": 2}
       ],
       "note": ["Use Magic Powder on the Anti-Fairies."],
       "devNote": ["This strat does not obtain the key from the room to the right."]
@@ -488,7 +488,7 @@
         {"unlockDoor": 1},
         {"or": [
           {"damage": {"enemy": "Bubble", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 20}}
+          {"blueCane": 20}
         ]}
       ]
     },
@@ -552,8 +552,8 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"magic": {"type": "RedCane", "count": 1}},
+          {"rod": 1},
+          {"redCane": 1},
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ],
@@ -570,10 +570,10 @@
         {"unlockDoor": 1},
         {"or": [
           {"darkProficiency": 3},
-          {"magic": {"type": "BlueCane", "count": 60}},
+          {"blueCane": 60},
           {"damage": {"enemy": "Stalfos", "count": 3}}
         ]},
-        {"magic": {"type": "BlueCane", "count": 24}}
+        {"blueCane": 24}
       ],
       "note": [
         "When struggling to find the door to escape the pot room,",
@@ -589,8 +589,8 @@
         {"or": [
           "Hookshot",
           "Boomerang",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"magic": {"type": "RedCane", "count": 1}},
+          {"rod": 1},
+          {"redCane": 1},
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ],
@@ -621,15 +621,15 @@
         {"combatProficiency": 2},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "Bombs", "count": 4}},
-          {"ammo": {"type": "Arrows", "count": 3}},
-          {"ammo": {"type": "SilverArrows", "count": 3}},
-          {"magic": {"type": "Rod", "count": 3}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 24}},
+          {"bombs": 4},
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"rod": 3},
+          {"redCane": 1},
+          {"blueCane": 24},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "Bombs", "count": 1}}
+            {"bombs": 1}
           ]}
         ]}
       ],
@@ -651,12 +651,12 @@
               "Boomerang"
             ]},
             {"or": [
-              {"ammo": {"type": "Bombs", "count": 1}},
-              {"ammo": {"type": "Arrows", "count": 1}},
-              {"ammo": {"type": "SilverArrows", "count": 1}},
-              {"magic": {"type": "Rod", "count": 1}},
-              {"magic": {"type": "RedCane", "count": 1}},
-              {"magic": {"type": "BlueCane", "count": 24}}
+              {"bombs": 1},
+              {"arrows": 1},
+              {"silverArrows": 1},
+              {"rod": 1},
+              {"redCane": 1},
+              {"blueCane": 24}
             ]}
           ]}
         ]}
@@ -686,8 +686,8 @@
       "name": "Base",
       "requires": [
         {"or": [
-          {"ammo": {"type": "Arrows", "count": 6}},
-          {"ammo": {"type": "SilverArrows", "count": 3}}
+          {"arrows": 6},
+          {"silverArrows": 3}
         ]}
       ],
       "devNote": ["FIXME: Could use a way to kill the first Green Eyegore and then take into account the arrow refill in the pots."]
@@ -697,21 +697,21 @@
       "name": "Armos Knights - Bow",
       "requires": [
         {"or": [
-          {"ammo": {"type": "SilverArrows", "count": 7}},
+          {"silverArrows": 7},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 6}},
+            {"silverArrows": 6},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 22}},
+            {"arrows": 22},
             {"damage": {"enemy": "ArmosKnights", "count": 2}}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 20}},
+            {"arrows": 20},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 18}},
+            {"arrows": 18},
             {"bossProficiency": 3}
           ]}
         ]}
@@ -812,7 +812,7 @@
       "link": [9, 9],
       "name": "Armos Knights - Blue Cane",
       "requires": [
-        {"magic": {"type": "BlueCane", "count": 192}},
+        {"blueCane": 192},
         {"bossProficiency": 2}
       ],
       "setsFlags": ["DefeatedArmosKnights"],
@@ -822,11 +822,11 @@
       "link": [9, 9],
       "name": "Armos Knights - Red Cane",
       "requires": [
-        {"magic": {"type": "RedCane", "count": 16}},
+        {"redCane": 16},
         {"bossProficiency": 3},
         {"or": [
           {"and": [
-            {"magic": {"type": "RedCane", "count": 2}},
+            {"redCane": 2},
             {"damage": {"enemy": "ArmosKnights", "count": 4}}
           ]},
           {"and": [
@@ -845,9 +845,9 @@
       "requires": [
         {"bossProficiency": 2},
         {"or": [
-          {"magic": {"type": "Rod", "count": 6}},
+          {"rod": 6},
           {"and": [
-            {"magic": {"type": "Rod", "count": 5}},
+            {"rod": 5},
             {"bossProficiency": 3}
           ]}
         ]}

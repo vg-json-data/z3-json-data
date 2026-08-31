@@ -204,32 +204,32 @@
       "world": "dark",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 4}},
-          {"ammo": {"type": "Arrows", "count": 10}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"rod": 4},
+          {"arrows": 10},
+          {"silverArrows": 5},
           {"and": [
             {"combatProficiency": 2},
             {"or": [
-              {"magic": {"type": "IceRod", "count": 1}},
-              {"ammo": {"type": "Arrows", "count": 7}},
-              {"ammo": {"type": "SilverArrows", "count": 3}}
+              {"iceRod": 1},
+              {"arrows": 7},
+              {"silverArrows": 3}
             ]}
           ]},
           {"and": [
             {"combatProficiency": 3},
             {"or": [
-              {"magic": {"type": "FireRod", "count": 3}},
-              {"ammo": {"type": "Arrows", "count": 4}},
-              {"ammo": {"type": "SilverArrows", "count": 2}}
+              {"fireRod": 3},
+              {"arrows": 4},
+              {"silverArrows": 2}
             ]}
           ]},
           {"and": [
             {"combatProficiency": 3},
             "PowerGlove",
             {"or": [
-              {"magic": {"type": "FireRod", "count": 1}},
-              {"ammo": {"type": "Arrows", "count": 2}},
-              {"ammo": {"type": "SilverArrows", "count": 1}}
+              {"fireRod": 1},
+              {"arrows": 2},
+              {"silverArrows": 1}
             ]}
           ]}
         ]}
@@ -255,15 +255,15 @@
             "Hammer",
             {"combatProficiency": 3}
           ]},
-          {"magic": {"type": "blueCane", "count": 80}},
+          {"blueCane": 80},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "blueCane", "count": 36}}
+            {"blueCane": 36}
           ]},
-          {"magic": {"type": "redCane", "count": 4}},
+          {"redCane": 4},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "redCane", "count": 2}}
+            {"redCane": 2}
           ]}
         ]}
       ],
@@ -296,10 +296,10 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "Cape", "count": 62}},
+          {"cape": 62},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "Cape", "count": 42}}
+            {"cape": 42}
           ]}
         ]}
       ],
@@ -398,9 +398,9 @@
           "L1Sword",
           "Boomerang",
           "Hookshot",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"rod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
@@ -416,9 +416,9 @@
           "L1Sword",
           "Boomerang",
           "Hookshot",
-          {"magic": {"type": "Rod", "count": 1}},
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}},
+          {"rod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ],
@@ -541,25 +541,25 @@
       "world": "dark",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 5}},
-          {"ammo": {"type": "Arrows", "count": 10}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
+          {"rod": 5},
+          {"arrows": 10},
+          {"silverArrows": 5},
           {"and": [
             {"combatProficiency": 2},
             {"or": [
-              {"magic": {"type": "IceRod", "count": 1}},
-              {"magic": {"type": "FireRod", "count": 3}},
-              {"ammo": {"type": "Arrows", "count": 7}},
-              {"ammo": {"type": "SilverArrows", "count": 3}}
+              {"iceRod": 1},
+              {"fireRod": 3},
+              {"arrows": 7},
+              {"silverArrows": 3}
             ]}
           ]},
           {"and": [
             {"combatProficiency": 2},
             "PowerGlove",
             {"or": [
-              {"magic": {"type": "FireRod", "count": 2}},
-              {"ammo": {"type": "Arrows", "count": 4}},
-              {"ammo": {"type": "SilverArrows", "count": 2}}
+              {"fireRod": 2},
+              {"arrows": 4},
+              {"silverArrows": 2}
             ]}
           ]}
         ]}
@@ -585,24 +585,24 @@
             "Hammer",
             {"combatProficiency": 3}
           ]},
-          {"magic": {"type": "blueCane", "count": 64}},
+          {"blueCane": 64},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "blueCane", "count": 36}}
+            {"blueCane": 36}
           ]},
-          {"magic": {"type": "redCane", "count": 3}},
+          {"redCane": 3},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "redCane", "count": 2}}
+            {"redCane": 2}
           ]},
           {"and": [
             "PowerGlove",
-            {"magic": {"type": "redCane", "count": 2}}
+            {"redCane": 2}
           ]},
           {"and": [
             {"combatProficiency": 3},
             "PowerGlove",
-            {"magic": {"type": "redCane", "count": 1}}
+            {"redCane": 1}
           ]}
         ]}
       ],
@@ -641,10 +641,10 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "Cape", "count": 58}},
+          {"cape": 58},
           {"and": [
             {"combatProficiency": 3},
-            {"magic": {"type": "Cape", "count": 42}}
+            {"cape": 42}
           ]}
         ]}
       ],
@@ -858,7 +858,7 @@
       "name": "Open Skull Woods",
       "world": "dark",
       "requires": [
-        {"magic": {"type": "FireRod", "count": 1}}
+        {"fireRod": 1}
       ],
       "isBunny": "no",
       "setsFlags": ["OpenedSkullWoods"]

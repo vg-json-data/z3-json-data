@@ -86,15 +86,15 @@
         "PowerGlove",
         {"combatProficiency": 2},
         {"or": [
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 40}},
-          {"magic": {"type": "Cape", "count": 36}},
+          {"redCane": 1},
+          {"blueCane": 40},
+          {"cape": 36},
           {"and": [
             "Hammer",
             {"damage": {"enemy": "Dacto", "count": 1}}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 1}},
+            {"rod": 1},
             {"damage": {"enemy": "Dacto", "count": 1}}
           ]}
         ]}

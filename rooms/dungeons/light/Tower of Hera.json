@@ -210,8 +210,8 @@
       "name": "Base",
       "requires": [
         {"or": [
-          {"magic": {"type": "FireRod", "count": 2}},
-          {"magic": {"type": "Lamp", "count": 4}}
+          {"fireRod": 2},
+          {"lamp": 4}
         ]}
       ],
       "collectsItems": [3],
@@ -229,7 +229,7 @@
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"ammo": {"type": "SilverArrows", "count": 1}}
+            {"silverArrows": 1}
           ]}
         ]}
       ]
@@ -241,13 +241,13 @@
         {"combatProficiency": 2},
         {"or": [
           "Hookshot",
-          {"ammo": {"type": "Bombs", "count": 1}},
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 28}}
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 28}
         ]},
         {"or": [
           {"combatProficiency": 3},
-          {"magic": {"type": "BlueCane", "count": 12}},
+          {"blueCane": 12},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ]
@@ -260,7 +260,7 @@
         {"or": [
           "L1Sword",
           "Hookshot",
-          {"ammo": {"type": "SilverArrows", "count": 3}},
+          {"silverArrows": 3},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}

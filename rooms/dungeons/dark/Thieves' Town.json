@@ -182,14 +182,14 @@
       "requires": [
         {"bossProficiency": 2},
         {"or": [
-          {"magic": {"type": "BlueCane", "count": 192}},
+          {"blueCane": 192},
           {"and": [
             {"bossProficiency": 3},
-            {"magic": {"type": "BlueCane", "count": 128}}
+            {"blueCane": 128}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"magic": {"type": "BlueCane", "count": 120}}
+            {"blueCane": 120}
           ]}
         ]}
       ],
@@ -201,7 +201,7 @@
       "link": [11, 11],
       "name": "Blind - Red Cane",
       "requires": [
-        {"magic": {"type": "RedCane", "count": 8}},
+        {"redCane": 8},
         {"bossProficiency": 2},
         {"or": [
           {"and": [

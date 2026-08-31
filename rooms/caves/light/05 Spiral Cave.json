@@ -47,12 +47,12 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          {"ammo": {"type": "Arrows", "count": 5}},
-          {"ammo": {"type": "SilverArrows", "count": 5}},
-          {"magic": {"type": "Rod", "count": 3}},
-          {"magic": {"type": "RedCane", "count": 2}},
-          {"magic": {"type": "BlueCane", "count": 64}},
-          {"magic": {"type": "Cape", "count": 46}},
+          {"arrows": 5},
+          {"silverArrows": 5},
+          {"rod": 3},
+          {"redCane": 2},
+          {"blueCane": 64},
+          {"cape": 46},
           {"and": [
             "Hammer",
             {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
@@ -68,12 +68,12 @@
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"ammo": {"type": "Bombs", "count": 4}},
+            {"bombs": 4},
             {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]},
           {"and": [
             {"combatProficiency": 4},
-            {"ammo": {"type": "Bombs", "count": 3}}
+            {"bombs": 3}
           ]}
         ]}
       ]

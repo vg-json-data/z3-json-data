@@ -38,30 +38,30 @@
             {"damage": {"enemy": "Ground Spikes", "count": 14}}
           ]},
           {"and": [
-            {"magic": {"type": "BlueCane", "count": 128}},
+            {"blueCane": 128},
             {"damage": {"enemy": "Ground Spikes", "count": 4}}
           ]},
           {"and": [
-            {"magic": {"type": "BlueCane", "count": 128}},
+            {"blueCane": 128},
             {"combatProficiency": 2},
             {"damage": {"enemy": "Ground Spikes", "count": 3}}
           ]},
           {"and": [
             "HalfMagic",
-            {"magic": {"type": "BlueCane", "count": 156}}
+            {"blueCane": 156}
           ]},
           {"and": [
-            {"magic": {"type": "Cape", "count": 128}},
+            {"cape": 128},
             {"damage": {"enemy": "Ground Spikes", "count": 7}}
           ]},
           {"and": [
-            {"magic": {"type": "Cape", "count": 128}},
+            {"cape": 128},
             {"combatProficiency": 2},
             {"damage": {"enemy": "Ground Spikes", "count": 6}}
           ]},
           {"and": [
             "HalfMagic",
-            {"magic": {"type": "Cape", "count": 206}}
+            {"cape": 206}
           ]}
         ]}
       ]

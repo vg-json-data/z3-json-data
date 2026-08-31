@@ -35,14 +35,14 @@
           "Hookshot",
           {"combatProficiency": 2}
         ]},
-        {"magic": {"type": "Cape", "count": 16}}
+        {"cape": 16}
       ]
     },
     {
       "link": [2, 1],
       "name": "Base",
       "requires": [
-        {"magic": {"type": "Cape", "count": 16}},
+        {"cape": 16},
         {"refill": {"type": "Magic", "limit": 32}}
       ]
     }

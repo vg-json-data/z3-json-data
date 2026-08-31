@@ -106,9 +106,9 @@
           "L1Sword",
           "Hookshot",
           "Boomerang",
-          {"magic": {"type": "FireRod", "count": 1}},
-          {"ammo": {"type": "Arrows", "count": 2}},
-          {"ammo": {"type": "SilverArrows", "count": 1}}
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1}
         ]}
       ],
       "isBunny": "no"
@@ -121,10 +121,10 @@
         {"combatProficiency": 2},
         {"or": [
           "Hammer",
-          {"magic": {"type": "RedCane", "count": 1}},
-          {"magic": {"type": "BlueCane", "count": 20}},
-          {"magic": {"type": "Cape", "count": 50}},
-          {"ammo": {"type": "Bombs", "count": 2}}
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 50},
+          {"bombs": 2}
         ]}
       ],
       "isBunny": "no"

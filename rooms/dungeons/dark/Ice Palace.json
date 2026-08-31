@@ -180,14 +180,14 @@
       "link": [13, 14],
       "name": "Thaw Kholdstare - Fire Rod",
       "requires": [
-        {"magic": {"type": "FireRod", "count": 8}}
+        {"fireRod": 8}
       ]
     },
     {
       "link": [13, 14],
       "name": "Thaw Kholdstare - Bombos Medallion",
       "requires": [
-        {"magic": {"type": "Bombos", "count": 1}}
+        {"bombos": 1}
       ]
     },
     {
@@ -274,20 +274,20 @@
       "requires": [
         {"or": [
           {"and": [
-            {"magic": {"type": "FireRod", "count": 14}},
+            {"fireRod": 14},
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 12}},
+            {"fireRod": 12},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 1}}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 12}},
+            {"fireRod": 12},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"magic": {"type": "FireRod", "count": 8}},
+            {"fireRod": 8},
             {"bossProficiency": 4}
           ]}
         ]}
@@ -299,7 +299,7 @@
       "link": [14, 14],
       "name": "Kholdstare (Already Thawed) - Precise Multi-Hit Fire Rod",
       "requires": [
-        {"magic": {"type": "FireRod", "count": 6}},
+        {"fireRod": 6},
         {"bossProficiency": 4}
       ],
       "setsFlags": ["DefeatedKholdstare"],

@@ -49,7 +49,7 @@
       "link": [3, 3],
       "name": "Base - Magic Powder",
       "requires": [
-        {"magic": {"type": "MagicPowder", "count": 1}}
+        {"magicPowder": 1}
       ],
       "collectsItems": [1],
       "devNote": ["FIXME: Add fake powder method."]

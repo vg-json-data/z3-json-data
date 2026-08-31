@@ -234,8 +234,8 @@
         {"bossProficiency": 2},
         {"or": [
           "Hammer",
-          {"ammo": {"type": "SilverArrows", "count": 13}},
-          {"magic": {"type": "Rod", "count": 13}}
+          {"silverArrows": 13},
+          {"rod": 13}
         ]}
       ]
     },
@@ -245,7 +245,7 @@
       "requires": [
         "Hookshot",
         {"bossProficiency": 9},
-        {"ammo": {"type": "Bombs", "count": 20}}
+        {"bombs": 20}
       ],
       "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
     },
@@ -297,17 +297,17 @@
       "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
       "requires": [
         {"or": [
-          {"magic": {"type": "Rod", "count": 12}},
+          {"rod": 12},
           {"and": [
-            {"magic": {"type": "Rod", "count": 8}},
+            {"rod": 8},
             {"bossProficiency": 2}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 6}},
+            {"rod": 6},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"magic": {"type": "Rod", "count": 4}},
+            {"rod": 4},
             {"bossProficiency": 4}
           ]}
         ]}
@@ -321,41 +321,41 @@
       "requires": [
         {"or": [
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"silverArrows": 10},
             {"damage": {"enemy": "Arrghus", "count": 2}}
           ]},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 10}},
+            {"silverArrows": 10},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Arrghus", "count": 1}}
           ]},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 5}},
+            {"silverArrows": 5},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "SilverArrows", "count": 1}},
+            {"silverArrows": 1},
             {"bossProficiency": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 40}},
+            {"arrows": 40},
             {"damage": {"enemy": "Arrghus", "count": 6}}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 30}},
+            {"arrows": 30},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Arrghus", "count": 3}}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 20}},
+            {"arrows": 20},
             {"bossProficiency": 3}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 10}},
+            {"arrows": 10},
             {"bossProficiency": 4}
           ]},
           {"and": [
-            {"ammo": {"type": "Arrows", "count": 8}},
+            {"arrows": 8},
             {"bossProficiency": 9}
           ]}
         ]}

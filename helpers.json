@@ -271,12 +271,12 @@
         "Hammer",
         "Boomerang",
         "Hookshot",
-        {"ammo": {"type": "Bombs", "count": 1}},
-        {"ammo": {"type": "Arrows", "count": 1}},
-        {"ammo": {"type": "SilverArrows", "count": 1}},
-        {"magic": {"type": "Rod", "count": 1}},
-        {"magic": {"type": "RedCane", "count": 1}},
-        {"magic": {"type": "BlueCane", "count": 20}}
+        {"bombs": 1},
+        {"arrows": 1},
+        {"silverArrows": 1},
+        {"rod": 1},
+        {"redCane": 1},
+        {"blueCane": 20}
       ]}
     ]
   },
@@ -285,11 +285,11 @@
     "requires": [
       {"or": [
         "Boomerang",
-        {"ammo": {"type": "Bombs", "count": 1}},
-        {"ammo": {"type": "Arrows", "count": 1}},
-        {"ammo": {"type": "SilverArrows", "count": 1}},
-        {"magic": {"type": "Rod", "count": 1}},
-        {"magic": {"type": "RedCane", "count": 1}}
+        {"bombs": 1},
+        {"arrows": 1},
+        {"silverArrows": 1},
+        {"rod": 1},
+        {"redCane": 1}
       ]}
     ],
     "note": ["This is specifically for shooting a switch from behind a set of blue/orange pegs."]
