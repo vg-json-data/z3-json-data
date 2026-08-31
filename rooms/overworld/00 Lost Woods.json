@@ -186,12 +186,12 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang"
         ]},
         {"or": [
-          "L2Sword",
+          {"sword": 2},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
@@ -395,7 +395,7 @@
         "PowerGlove",
         {"or": [
           {"combatProficiency": 2},
-          "L1Sword",
+          {"sword": 1},
           "Boomerang",
           "Hookshot",
           {"rod": 1},
@@ -413,7 +413,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          "L1Sword",
+          {"sword": 1},
           "Boomerang",
           "Hookshot",
           {"rod": 1},
@@ -463,7 +463,7 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
@@ -501,7 +501,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        "L1Sword"
+        {"sword": 1}
       ],
       "isBunny": "no"
     },
@@ -523,12 +523,12 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang"
         ]},
         {"or": [
-          "L2Sword",
+          {"sword": 2},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
@@ -822,7 +822,7 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}

@@ -311,7 +311,7 @@
       "name": "Kill Guard for Key",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hammer",
           {"arrows": 2},
           {"silverArrows": 1},
@@ -339,7 +339,7 @@
       "requires": [
         {"unlockDoor": 1},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hammer",
           {"arrows": 1},
           {"silverArrows": 1},
@@ -379,7 +379,7 @@
       "name": "Kill Guard for Key",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hammer",
           {"arrows": 2},
           {"silverArrows": 1},
@@ -408,7 +408,7 @@
         {"unlockDoor": 1},
         {"unlockDoor": 2},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hammer",
           {"arrows": 1},
           {"silverArrows": 1},
@@ -462,7 +462,7 @@
       "requires": [
         "Lamp",
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"damage": {"enemy": "Rope", "count": 1}}
         ]}
       ]
@@ -513,7 +513,7 @@
       "requires": [
         {"darkProficiency": 2},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           {"blueCane": 52},
@@ -547,7 +547,7 @@
       "requires": [
         {"darkProficiency": 2},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           {"redCane": 1},
@@ -573,7 +573,7 @@
         {"unlockDoor": 4},
         {"or": [
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"damage": {"enemy": "Keese", "count": 1}}
           ]},
           {"and": [
@@ -596,7 +596,7 @@
         "Lamp",
         {"unlockDoor": 4},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"and": [
             {"damage": {"enemy": "Keese", "count": 1}},
@@ -612,13 +612,13 @@
         {"unlockDoor": 4},
         {"or": [
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"darkProficiency": 2},
             {"damage": {"enemy": "Keese", "count": 1}},
             {"damage": {"enemy": "Rope", "count": 1}}
           ]},
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"darkProficiency": 3}
           ]},
           {"and": [
@@ -639,7 +639,7 @@
       "name": "Base",
       "requires": [
         "Lamp",
-        "L1Sword"
+        {"sword": 1}
       ],
       "collectsItems": [8]
     },
@@ -679,7 +679,7 @@
         {"darkProficiency": 2},
         {"damage": {"enemy": "Rat", "count": 1}},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"redCane": 1},
           {"blueCane": 40}
@@ -734,7 +734,7 @@
           {"and": [
             {"darkProficiency": 3},
             {"or": [
-              "L1Sword",
+              {"sword": 1},
               "Hookshot",
               "Boomerang",
               {"fireRod": 1},

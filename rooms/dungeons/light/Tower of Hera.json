@@ -222,7 +222,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"and": [
             {"combatProficiency": 2},
             "Hammer"
@@ -258,7 +258,7 @@
       "requires": [
         {"unlockDoor": 2},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"silverArrows": 3},
           {"combatProficiency": 2},
@@ -310,7 +310,7 @@
       "link": [11, 11],
       "name": "Moldorm - Sword",
       "requires": [
-        "L1Sword"
+        {"sword": 1}
       ],
       "setsFlags": ["DefeatedMoldorm"],
       "collectsItems": [6, 7],

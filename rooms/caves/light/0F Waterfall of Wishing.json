@@ -43,11 +43,12 @@
       "name": "Base - Second Item",
       "requires": [
         {"or": [
-          "Shield",
+          {"shieldExact": 1},
           "h_greatFairyFreeUpgrades"
         ]}
       ],
-      "collectsItems": [2]
+      "collectsItems": [2],
+      "devNote": ["This is not really a second item, but instead an upgrade that can be done multiple times."]
     },
     {
       "link": [1, 1],

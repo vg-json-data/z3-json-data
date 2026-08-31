@@ -35,7 +35,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"damage": {"enemy": "Mini-Moldorm", "count": 3}}
         ]}
@@ -89,7 +89,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
         ]}

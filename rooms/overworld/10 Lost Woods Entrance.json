@@ -49,7 +49,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang"
         ]}
@@ -134,7 +134,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang"
         ]}

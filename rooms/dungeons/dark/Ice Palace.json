@@ -194,7 +194,7 @@
       "link": [14, 14],
       "name": "Kholdstare (Already Thawed) - Master Sword",
       "requires": [
-        "L2Sword",
+        {"sword": 2},
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 5}},
@@ -225,7 +225,7 @@
       "link": [14, 14],
       "name": "Kholdstare (Already Thawed) - Sword (L3-L4)",
       "requires": [
-        "L3Sword",
+        {"sword": 3},
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 2}},
@@ -245,22 +245,22 @@
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"bossProficiency": 3},
             {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"bossProficiency": 4}
           ]}
         ]}

@@ -27,6 +27,40 @@
     "not": {
       "type": "string"
     },
+    "sword": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "swordExact": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "shield": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "shieldExact": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
     "arrows": {
       "type": "integer",
       "minimum": 1

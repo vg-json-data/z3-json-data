@@ -47,7 +47,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}

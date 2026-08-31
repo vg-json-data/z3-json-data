@@ -1895,7 +1895,7 @@
       "names": [
         "Head-Detaching Stalfos"
       ],
-      "note": ["Simply owning the L3 or L4 sword prevents the head from detatching."],
+      "note": ["Simply owning the tempered or gold sword prevents the head from detatching."],
       "hp": 8,
       "dmgToLink": {
         "green": 4,

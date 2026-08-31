@@ -105,7 +105,7 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Boomerang",
           "Hookshot",
           {"fireRod": 1},

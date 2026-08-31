@@ -61,7 +61,7 @@
       "world": "dark",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           "PegasusBoots",

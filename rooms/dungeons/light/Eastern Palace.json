@@ -197,7 +197,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Stalfos", "count": 1}}
         ]}
@@ -209,7 +209,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Stalfos", "count": 1}}
         ]}
@@ -220,7 +220,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hammer",
           {"arrows": 5},
           {"silverArrows": 5},
@@ -256,7 +256,7 @@
         {"unlockDoor": 3},
         "Lamp",
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"arrows": 2},
           {"silverArrows": 2}
         ]}
@@ -305,7 +305,7 @@
         {"unlockDoor": 3},
         {"darkProficiency": 2},
         {"or": [
-          "L2Sword",
+          {"sword": 2},
           {"blueCane": 108}
         ]}
       ],
@@ -319,7 +319,7 @@
         {"darkProficiency": 3},
         {"or": [
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"or": [
               {"arrows": 2},
               {"silverArrows": 2}
@@ -333,7 +333,7 @@
             ]}
           ]},
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"combatProficiency": 3},
             {"damage": {"enemy": "Eyegore (Green)", "count": 6}}
           ]}
@@ -364,7 +364,7 @@
       "requires": [
         "Lamp",
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"damage": {"enemy": "Popo", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
@@ -399,7 +399,7 @@
         {"darkProficiency": 2},
         {"damage": {"enemy": "Bubble", "count": 2}},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"rod": 1},
           {"redCane": 1},
@@ -421,7 +421,7 @@
       "requires": [
         {"darkProficiency": 3},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           "Boomerang",
           {"rod": 1},
@@ -437,7 +437,7 @@
         "Lamp",
         {"unlockDoor": 1},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"damage": {"enemy": "Popo", "count": 2}},
           {"and": [
             {"combatProficiency": 2},
@@ -519,7 +519,7 @@
         "Lamp",
         {"unlockDoor": 1},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
@@ -545,12 +545,12 @@
         {"darkProficiency": 2},
         {"unlockDoor": 1},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           {"darkProficiency": 3},
           {"damage": {"enemy": "Stalfos", "count": 3}}
         ]},
         {"or": [
-          "L1Sword",
+          {"sword": 1},
           "Hookshot",
           {"rod": 1},
           {"redCane": 1},
@@ -610,7 +610,7 @@
       "link": [7, 7],
       "name": "Base - Kill All Enemies",
       "requires": [
-        "L1Sword"
+        {"sword": 1}
       ],
       "collectsItems": [5]
     },
@@ -723,7 +723,7 @@
       "link": [9, 9],
       "name": "Armos Knights - Sword (L1-L2)",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"or": [
           {"damage": {"enemy": "ArmosKnights", "count": 10}},
           {"and": [
@@ -761,13 +761,13 @@
       "name": "Armos Knights - Sword (L1 or L3)",
       "requires": [
         {"or": [
-          "L3Sword",
+          {"sword": 3},
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
           ]},
           {"and": [
-            "L1Sword",
+            {"swordExact": 1},
             "canRiskPermanentLossOfAccess"
           ]}
         ]},
@@ -795,7 +795,7 @@
       "link": [9, 9],
       "name": "Armos Knights - Sword (L4)",
       "requires": [
-        "L4Sword",
+        {"sword": 4},
         {"or": [
           {"damage": {"enemy": "ArmosKnights", "count": 3}},
           {"and": [

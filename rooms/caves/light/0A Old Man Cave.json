@@ -49,12 +49,12 @@
         {"darkProficiency": 2},
         {"or": [
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"damage": {"enemy": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
-            "L1Sword"
+            {"sword": 1}
           ]},
           {"and": [
             {"darkProficiency": 3},
@@ -117,12 +117,12 @@
         {"darkProficiency": 2},
         {"or": [
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"damage": {"enemy": "Fall", "count": 1}}
           ]},
           {"and": [
             {"darkProficiency": 3},
-            "L1Sword"
+            {"sword": 1}
           ]},
           {"and": [
             {"darkProficiency": 3},

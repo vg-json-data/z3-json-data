@@ -61,7 +61,7 @@
           "Hookshot",
           {"and": [
             {"combatProficiency": 2},
-            "L1Sword"
+            {"sword": 1}
           ]}
         ]}
       ],
@@ -74,7 +74,7 @@
         {"or": [
           {"bombs": 6},
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"bombs": 4}
           ]},
           {"and": [
@@ -95,7 +95,7 @@
         {"or": [
           {"rod": 6},
           {"and": [
-            "L1Sword",
+            {"sword": 1},
             {"rod": 5}
           ]},
           {"and": [

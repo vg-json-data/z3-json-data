@@ -331,7 +331,7 @@
       "link": [30, 31],
       "name": "Trinexx's Fire and Ice Heads - Master Sword",
       "requires": [
-        "L2Sword",
+        {"sword": 2},
         "FireRod",
         "IceRod",
         {"or": [
@@ -362,7 +362,7 @@
       "link": [30, 31],
       "name": "Trinexx's Fire and Ice Heads - Tempered Sword",
       "requires": [
-        "L3Sword",
+        {"sword": 3},
         "FireRod",
         "IceRod",
         {"or": [
@@ -390,7 +390,7 @@
       "link": [30, 31],
       "name": "Trinexx's Fire and Ice Heads - Gold Sword",
       "requires": [
-        "L4Sword",
+        {"sword": 4},
         "FireRod",
         "IceRod",
         {"or": [
@@ -453,7 +453,7 @@
       "link": [31, 31],
       "name": "Trinexx (Final Phase) - Sword (L1)",
       "requires": [
-        "L1Sword",
+        {"sword": 1},
         {"bossProficiency": 3},
         {"or": [
           {"bossProficiency": 4},
@@ -468,7 +468,7 @@
       "link": [31, 31],
       "name": "Trinexx (Final Phase) - Sword (L2 - L4)",
       "requires": [
-        "L2Sword",
+        {"sword": 2},
         {"or": [
           {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 3}},
           {"and": [
@@ -477,15 +477,15 @@
           ]},
           {"bossProficiency": 3},
           {"and": [
-            "L3Sword",
+            {"sword": 3},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
           ]},
           {"and": [
-            "L4Sword",
+            {"sword": 4},
             {"bossProficiency": 2}
           ]}
         ]}
