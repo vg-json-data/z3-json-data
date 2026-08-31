@@ -22,6 +22,15 @@
   "strats": [
     {
       "link": [1, 1],
+      "name": "Return Blacksmith",
+      "requires": [
+        {"follower": "Dwarf"}
+      ],
+      "setsFlags": ["RescuedBlacksmith"],
+      "FollowerComplete": "Dwarf"
+    },
+    {
+      "link": [1, 1],
       "name": "Base - Blacksmith Reward",
       "requires": [
         {"flag": "RescuedBlacksmith"}

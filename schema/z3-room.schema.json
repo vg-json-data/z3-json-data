@@ -149,6 +149,13 @@
                 },
                 "terrain": {
                   "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
                 }
               }
             }
@@ -502,6 +509,31 @@
               "any"
             ]
           },
+          "setsFollower": {
+            "type": "string",
+            "enum": [
+              "None",
+              "Zelda",
+              "Old Man",
+              "Kiki",
+              "Blind",
+              "Dwarf",
+              "Purple Chest",
+              "Big Bomb"
+            ]
+          },
+          "FollowerComplete": {
+            "type": "string",
+            "enum": [
+              "Zelda",
+              "Old Man",
+              "Kiki",
+              "Blind",
+              "Dwarf",
+              "Purple Chest",
+              "Big Bomb"
+            ]
+          },
           "exitState": {
             "type": "object",
             "required": [
@@ -513,8 +545,7 @@
               "state": {
                 "type": "string",
                 "enum": [
-                  "event",
-                  "follower"
+                  "event"
                 ]
               },
               "type": {
