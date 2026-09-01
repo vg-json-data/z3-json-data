@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 18,
+  "name": "Hyrule Castle",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "East Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [40, 44]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "South Transition (Eastern)",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [41.5, 60]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "South Transition (Western)",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [7, 11.5]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Western Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [18, 21], "world": "light"}
+      ],
+      "devNote": [
+        "This is separated from node 17 because in the Light World, if Zelda hasn't been rescued, guards block the path."
+      ]
+    }
+  ],
+  "strats": [
+  ]
+}
