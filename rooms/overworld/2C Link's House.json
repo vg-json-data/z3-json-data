@@ -82,7 +82,7 @@
       "requires": [
         {"flag": "GameStateZelda"}
       ],
-      "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
+      "devNote": ["Entering through this transition without this flag puts Link out of bounds."]
     },
     {
       "link": [2, 1],
@@ -97,7 +97,7 @@
       "requires": [
         {"flag": "GameStateZelda"}
       ],
-      "devNote": ["Entering through this transition without this flag puts Link out of bounda."]
+      "devNote": ["Entering through this transition without this flag puts Link out of bounds."]
     },
     {
       "link": [3, 1],

@@ -172,5 +172,285 @@
     }
   ],
   "strats": [
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"glove": 0},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 13],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 17],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"}
+      ],
+      "devNote": ["Entering through this transition without this flag will softlock the game."]
+    },
+    {
+      "link": [5, 5],
+      "name": "Bonk Fairy",
+      "world": "dark",
+      "requires": [
+        "PegasusBoots",
+        {"refill": {"type": "Fairy", "limit": 1}}
+      ],
+      "note": ["The left tree will release a fairy when dashed into."]
+    },
+    {
+      "link": [5, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 2},
+          {"arrows": 5},
+          {"silverArrows": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"},
+            {"or": [
+              {"glove": 0},
+              {"damage": {"enemy": "Spear Soldier (Green)", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 13],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [5, 13],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [5, 17],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [6, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [6, 13],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "devNote": [
+        "The light world guards can get stuck in an unfavorable position after Agahnim is defeated,",
+        "but it is usually pretty easy to get them out of the way, especially with being able to use the bushes."
+      ]
+    },
+    {
+      "link": [7, 13],
+      "name": "Agahnim Not Defeated",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [7, 13],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [7, 7],
+      "name": "Castle Gate Portal - Agahnim Defeated",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "requires": [
+        {"flag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [13, 5],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [13, 6],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "devNote": [
+        "The light world guards can get stuck in an unfavorable position after Agahnim is defeated,",
+        "but it is usually pretty easy to get them out of the way, especially with a shield."
+      ]
+    },
+    {
+      "link": [13, 7],
+      "name": "Agahnim Not Defeated",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [13, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Castle Gate Portal - Agahnim Defeated",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "requires": [
+        {"flag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [17, 4],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"}
+      ]
+    },
+    {
+      "link": [17, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 5],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    }
   ]
 }

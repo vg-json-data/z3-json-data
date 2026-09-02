@@ -162,11 +162,11 @@
     },
     "combatProficiency": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 2
     },
     "bossProficiency": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 2
     },
     "darkProficiency": {
       "type": "integer",
