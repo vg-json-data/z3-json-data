@@ -87,6 +87,19 @@
     "devNote": ["The requires of this helper should all be removed if Mothula takes damage to the gold sword."]
   },
   {
+    "name": "h_castleNotLocked",
+    "requires": [],
+    "note": [
+      "In the vanilla game, the castle doors lock after Agahnim is defeated.",
+      "This helper is a combination of both enabling randomizers to easily not lock the door,",
+      "as well as some hand-waving of pretending the door is not locked, because in vanilla, you don't have a reason to enter the castle if Agahnim is defeated."
+    ],
+    "devNote": [
+      "To model the game more accurately, there would need to be some sort of canRiskPermanentLossOfAccess tied to this helper.",
+      "This is especially true if door locations are randomized and there is a reason to go through these doors after Agahnim is defeated."
+    ]
+  },
+  {
     "name": "Boomerang",
     "requires": [
       {"or": [
