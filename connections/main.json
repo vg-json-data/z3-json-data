@@ -3615,14 +3615,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Pyramid Fairy and Pyramid Fairy",
+      "description": "Door connection between Pyramid Great Fairy and Pyramid Great Fairy",
       "nodes": [
         {
-          "name": "Pyramid Fairy",
+          "name": "Pyramid Great Fairy",
           "position": "origin"
         },
         {
-          "name": "Pyramid Fairy",
+          "name": "Pyramid Great Fairy",
           "position": "destination"
         }
       ]

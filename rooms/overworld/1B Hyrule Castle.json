@@ -38,6 +38,137 @@
       "devNote": [
         "This is separated from node 17 because in the Light World, if Zelda hasn't been rescued, guards block the path."
       ]
+    },
+    {
+      "id": 5,
+      "name": "Southwest Area (North of River)",
+      "world": "both"
+    },
+    {
+      "id": 6,
+      "name": "Southeast Area (North of River)",
+      "world": "both"
+    },
+    {
+      "id": 7,
+      "name": "Castle Courtyard (On Lower Pyramid)",
+      "world": "both"
+    },
+    {
+      "id": 8,
+      "name": "Castle Courtyard Door",
+      "world": "light",
+      "devNote": ["This is a separate node because during some game states you can't leave the castle from this door."]
+    },
+    {
+      "id": 9,
+      "name": "Castle Secret Entrance (Courtyard Side)",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Secret Entrance (Stairs)",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Castle Secret Entrance (Drop)",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Secret Entrance (Drop)",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Castle Upper Level (Top of Pyramid)",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Upper East Entrance",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Hyrule Castle Upper West Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Castle Agahnim's Tower Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Agahnim's Tower Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "South of Castle Gate (South of Pyramid)",
+      "world": "both"
+    },
+    {
+      "id": 14,
+      "name": "Pyramid Big Bomb Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Pyramid Great Fairy",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Pyramid Hole Drop Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Ganon Drop",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Pyramid West Exit",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Pyramid Exit",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "West Area",
+      "world": "light",
+      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Pyramid Ledge Item",
+      "itemLocation": 7,
+      "world": "dark",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180147"
     }
   ],
   "strats": [

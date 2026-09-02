@@ -7,12 +7,6 @@
       "roomType": "DarkWorld",
       "nodes": [
         {
-          "id": 1,
-          "name": "Pyramid Fairy",
-          "area": "East Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 2,
           "name": "South Dark World Bridge",
           "area": "East Dark World",
@@ -37,12 +31,6 @@
           "nodeType": "door"
         },
         {
-          "id": 6,
-          "name": "Hyrule Castle Ledge Mirror Spot",
-          "area": "East Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 7,
           "name": "Ice Lake Inlet Great Fairy",
           "area": "East Dark World",
@@ -61,24 +49,10 @@
           "nodeType": "door"
         },
         {
-          "id": 10,
-          "name": "Pyramid Hole",
-          "area": "East Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 11,
           "name": "Northeast Dark World Broken Bridge Pass",
           "area": "East Dark World",
           "nodeType": "door"
-        },
-        {
-          "id": 12,
-          "name": "Pyramid",
-          "area": "East Dark World",
-          "nodeType": "item",
-          "nodeItem": "PieceOfHeart",
-          "nodeAddress": "0x180147"
         }
       ]
     }
