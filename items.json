@@ -326,9 +326,11 @@
     "RescuedBlacksmith",
     "GaveWitchMushroom",
     "OpenedDesertPalaceWall",
+    "OpenedCastleElectricBarrier",
     "OpenedSkullWoods",
     "OpenedThievesTown",
     "OpenedHammerPegsStaircase",
+    "OpenedPyramidBigBomb",
     "OpenedPyramid"
   ]
 }

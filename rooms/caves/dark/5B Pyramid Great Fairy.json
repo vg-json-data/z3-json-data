@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 69,
-  "name": "Pyramid Fairy",
+  "name": "Pyramid Great Fairy",
   "roomType": "Cave",
   "nodes": [
     {

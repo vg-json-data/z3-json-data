@@ -1,0 +1,654 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 18,
+  "name": "Hyrule Castle",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "East Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [40, 44]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "South Transition (Eastern)",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [41.5, 60]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "South Transition (Western)",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [7, 11.5]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Western Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [18, 21], "world": "light"}
+      ],
+      "devNote": [
+        "This is separated from node 17 because in the Light World, if Zelda hasn't been rescued, guards block the path."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Southwest Area (North of River)",
+      "world": "both"
+    },
+    {
+      "id": 6,
+      "name": "Southeast Area (North of River)",
+      "world": "both"
+    },
+    {
+      "id": 7,
+      "name": "Castle Courtyard (On Lower Pyramid)",
+      "world": "both"
+    },
+    {
+      "id": 8,
+      "name": "Castle Courtyard Door",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Main Entrance",
+          "world": "light"
+        }
+      ],
+      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+    },
+    {
+      "id": 9,
+      "name": "Castle Secret Entrance (Courtyard Side)",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Secret Entrance (Stairs)",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Castle Secret Entrance (Drop)",
+      "world": "both",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Secret Entrance (Drop)",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Castle Upper Level (Top of Pyramid)",
+      "world": "both"
+    },
+    {
+      "id": 12,
+      "name": "Castle Agahnim's Tower Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Agahnim's Tower Entrance",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "South of Castle Gate (South of Pyramid)",
+      "world": "both"
+    },
+    {
+      "id": 14,
+      "name": "Pyramid Big Bomb Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Pyramid Great Fairy",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Pyramid Hole Drop Entrance",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Ganon Drop",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Pyramid West Exit",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Pyramid Exit",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "West Area",
+      "world": "light",
+      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+    },
+    {
+      "id": 18,
+      "name": "Hyrule Castle Upper East Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Upper East Entrance",
+          "world": "light"
+        }
+      ],
+      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+    },
+    {
+      "id": 19,
+      "name": "Hyrule Castle Upper West Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Hyrule Castle Upper West Entrance",
+          "world": "light"
+        }
+      ],
+      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Pyramid Ledge Item",
+      "itemLocation": 11,
+      "world": "dark",
+      "item": "PieceOfHeart",
+      "itemAddress": "0x180147"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"glove": 0},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 13],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 17],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"}
+      ],
+      "devNote": ["Entering through this transition without this flag will softlock the game."]
+    },
+    {
+      "link": [5, 5],
+      "name": "Bonk Fairy",
+      "world": "dark",
+      "requires": [
+        "PegasusBoots",
+        {"refill": {"type": "Fairy", "limit": 1}}
+      ],
+      "note": ["The left tree will release a fairy when dashed into."]
+    },
+    {
+      "link": [5, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 2},
+          {"arrows": 5},
+          {"silverArrows": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"},
+            {"or": [
+              {"glove": 0},
+              {"damage": {"enemy": "Spear Soldier (Green)", "count": 1}}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [5, 13],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [5, 13],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [5, 17],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [6, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [6, 13],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "devNote": [
+        "The light world guards can get stuck in an unfavorable position after Agahnim is defeated,",
+        "but it is usually pretty easy to get them out of the way, especially with being able to use the bushes."
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Castle Gate Portal - Agahnim Defeated",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "requires": [
+        {"flag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"follower": "Big Bomb"}
+      ],
+      "FollowerComplete": "Big Bomb",
+      "setsFlags": ["OpenedPyramidBigBomb"]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_castleNotLocked"
+      ]
+    },
+    {
+      "link": [7, 9],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [7, 11],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ],
+      "note": ["Lure the Ropa to the left and squeeze past it."]
+    },
+    {
+      "link": [7, 13],
+      "name": "Agahnim Not Defeated",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [7, 13],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [7, 14],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedPyramidBigBomb"}
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [9, 7],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [11, 7],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [11, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "fromWorld": "dark",
+      "toWorld": "light",
+      "requires": [
+        "MagicMirror"
+      ],
+      "note": ["Mirror from the ledge above the ledge with the item in order to bypass the bushes."]
+    },
+    {
+      "link": [11, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"sword": 2}
+      ],
+      "setsFlags": ["OpenedCastleElectricBarrier"]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"flag": "OpenedCastleElectricBarrier"}
+      ],
+      "devNote": [
+        "FIXME: There is a glitch to mirror in, open the door before dying from the first electricity hit, fairy revival, enter the door.",
+        "The precision is not trivial though and the softlock risk is moderately high."
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Cape",
+      "world": "light",
+      "requires": [
+        {"cape": 15}
+      ]
+    },
+    {
+      "link": [11, 15],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"flag": "OpenedPyramid"}
+      ]
+    },
+    {
+      "link": [11, 18],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_castleNotLocked"
+      ]
+    },
+    {
+      "link": [11, 19],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_castleNotLocked"
+      ]
+    },
+    {
+      "link": [12, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"flag": "OpenedCastleElectricBarrier"},
+          {"damage": {"enemy": "Lightning Lock", "count": 1}}
+        ]}
+      ],
+      "note": ["Hold down while exiting the door to move through the lightning lock without taking damage."]
+    },
+    {
+      "link": [13, 5],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [13, 6],
+      "name": "Base",
+      "world": "any",
+      "requires": [],
+      "devNote": [
+        "The light world guards can get stuck in an unfavorable position after Agahnim is defeated,",
+        "but it is usually pretty easy to get them out of the way, especially with a shield."
+      ]
+    },
+    {
+      "link": [13, 7],
+      "name": "Agahnim Not Defeated",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [13, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Castle Gate Portal - Agahnim Defeated",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "requires": [
+        {"flag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [14, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [16, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [17, 4],
+      "name": "Rescued Zelda",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"}
+      ]
+    },
+    {
+      "link": [17, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 5],
+      "name": "No Guards Yet",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateZelda"},
+        {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [18, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [19, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    }
+  ]
+}
