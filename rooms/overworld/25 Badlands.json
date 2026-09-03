@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 22,
+  "name": "Badlands",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [4, 18]},
+        {"edge": "south", "span": [4, 27]},
+        {"edge": "west", "span": [8, 12]}
+      ]
+    }
+  ],
+  "strats": []
+}

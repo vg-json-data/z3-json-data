@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 17,
+  "name": "Forgotten Forest",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [7.5, 14]},
+        {"edge": "north", "span": [17, 20.5]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Southeast Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [18, 21], "world": "light"}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Red Shield Shop",
+          "world": "dark"
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 2},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    }
+  ]
+}

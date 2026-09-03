@@ -35,11 +35,17 @@
     {
       "link": [1, 2],
       "name": "Base - Swim",
-      "world": "light",
+      "world": "any",
       "requires": [
         "Flippers"
       ],
       "isBunny": "no"
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
     }
   ]
 }

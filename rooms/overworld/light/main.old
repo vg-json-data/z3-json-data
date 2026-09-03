@@ -7,12 +7,6 @@
       "roomType": "LightWorld",
       "nodes": [
         {
-          "id": 2,
-          "name": "Hyrule Castle Secret Entrance Drop",
-          "area": "Light World",
-          "nodeType": "drop"
-        },
-        {
           "id": 5,
           "name": "Dam",
           "area": "Light World",
@@ -31,30 +25,6 @@
           "nodeType": "door"
         },
         {
-          "id": 13,
-          "name": "Blacksmiths Hut",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 14,
-          "name": "Magic Bat Cave Drop Ledge",
-          "area": "Light World",
-          "nodeType": "drop"
-        },
-        {
-          "id": 15,
-          "name": "Magic Bat Cave Cave",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 17,
-          "name": "Hobo Bridge",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 22,
           "name": "Mini Moldorm Cave",
           "area": "Light World",
@@ -69,18 +39,6 @@
         {
           "id": 24,
           "name": "Lake Hylia Central Island Pier",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 26,
-          "name": "Library",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 28,
-          "name": "Two Brothers' House (East)",
           "area": "Light World",
           "nodeType": "door"
         },
@@ -151,18 +109,6 @@
           "nodeType": "door"
         },
         {
-          "id": 56,
-          "name": "Hyrule Castle Main Gate",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 57,
-          "name": "Light Bonk Fairies",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
           "id": 58,
           "name": "50 Rupee Cave",
           "area": "Light World",
@@ -189,12 +135,6 @@
         {
           "id": 64,
           "name": "Lake Hylia Fortune Teller",
-          "area": "Light World",
-          "nodeType": "door"
-        },
-        {
-          "id": 66,
-          "name": "Top of Pyramid",
           "area": "Light World",
           "nodeType": "door"
         },

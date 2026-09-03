@@ -7,12 +7,6 @@
       "roomType": "DarkWorld",
       "nodes": [
         {
-          "id": 2,
-          "name": "South Dark World Bridge",
-          "area": "East Dark World",
-          "nodeType": "door"
-        },
-        {
           "id": 3,
           "name": "Palace of Darkness",
           "area": "East Dark World",

@@ -46,6 +46,16 @@
       ]
     }
   ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bonk Rocks",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 2,
+      "keyType": "boots"
+    }
+  ],
   "strats": [
     {
       "link": [1, 2],
@@ -62,13 +72,21 @@
       "isBunny": "any"
     },
     {
-      "link": [2, 3],
-      "name": "Base",
+      "link": [2, 2],
+      "name": "Base - Bonk Rocks",
       "world": "light",
       "requires": [
         "PegasusBoots"
       ],
-      "isBunny": "no"
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Already Opened",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
     },
     {
       "link": [3, 2],
