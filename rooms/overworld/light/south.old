@@ -22,13 +22,13 @@
     },
     {
       "id": 43,
-      "name": "Hobo Bridge",
+      "name": "Camper's Bridge",
       "roomType": "LightWorld",
       "nodes": [
         {
           "id": 1,
-          "name": "Hobo",
-          "area": "Hobo Bridge",
+          "name": "Camper",
+          "area": "Camper's Bridge",
           "nodeType": "item",
           "nodeItem": "Bottle",
           "nodeAddress": "0x33E7D"

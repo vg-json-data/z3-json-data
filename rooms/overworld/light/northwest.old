@@ -2,19 +2,6 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "rooms": [
     {
-      "id": 39,
-      "name": "Magic Bat Cave Drop Ledge",
-      "roomType": "LightWorld",
-      "nodes": [
-        {
-          "id": 1,
-          "name": "Magic Bat Cave Drop",
-          "area": "Magic Bat Cave Drop Ledge",
-          "nodeType": "drop"
-        }
-      ]
-    },
-    {
       "id": 79,
       "name": "Master Sword Meadow",
       "roomType": "LightWorld",

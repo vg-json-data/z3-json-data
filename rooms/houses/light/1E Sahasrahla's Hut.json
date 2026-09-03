@@ -51,7 +51,7 @@
       "locationName": "Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb, dash"
+      "keyType": "bomb, boots"
     }
   ],
   "strats": [

@@ -1,0 +1,136 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 28,
+  "name": "Camper's Bridge",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "North of Bridge",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [4, 27]},
+        {"edge": "east", "span": [7, 13]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "South of Bridge",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [8, 21]},
+        {"edge": "west", "span": [23, 27]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "River (East of Bridge)",
+      "world": "both",
+      "transitions": [
+        {"edge": "east", "span": [16.5, 25], "terrain": "water"}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Under the Bridge",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Shallow River Mirror Point",
+      "world": "both"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 2},
+          {"arrows": 4},
+          {"silverArrows": 2},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base - Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"blueCane": 20},
+          {"redCane": 2},
+          {"cape": 34}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "Hammer",
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"rod": 2},
+          {"arrows": 4},
+          {"silverArrows": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Taros (Blue)", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    }
+  ]
+}

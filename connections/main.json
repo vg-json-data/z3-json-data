@@ -115,14 +115,14 @@
     },
     {
       "connectionType": "Door",
-      "description": "Door connection between Hobo Bridge and Hobo Bridge",
+      "description": "Door connection between Camper's Bridge and Camper's Bridge",
       "nodes": [
         {
-          "name": "Hobo Bridge",
+          "name": "Camper's Bridge",
           "position": "origin"
         },
         {
-          "name": "Hobo Bridge",
+          "name": "Camper's Bridge",
           "position": "destination"
         }
       ]

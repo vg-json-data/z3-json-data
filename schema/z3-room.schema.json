@@ -380,7 +380,14 @@
             "minimum": 1
           },
           "keyType": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "big",
+              "small",
+              "bomb",
+              "bomb, boots",
+              "boots"
+            ]
           },
           "subArea": {
             "type": "string"

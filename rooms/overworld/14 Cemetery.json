@@ -60,6 +60,16 @@
       ]
     }
   ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "King's Grave",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "boots"
+    }
+  ],
   "strats": [
     {
       "link": [1, 1],
@@ -170,13 +180,21 @@
       "isBunny": "no"
     },
     {
-      "link": [3, 6],
-      "name": "Base",
+      "link": [3, 3],
+      "name": "Base - Open Grave",
       "world": "light",
       "requires": [
         "PegasusBoots"
       ],
-      "isBunny": "no"
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [3, 6],
+      "name": "Base - Already Opened",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
     },
     {
       "link": [4, 2],
