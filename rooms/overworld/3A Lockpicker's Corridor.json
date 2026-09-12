@@ -1,0 +1,283 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 37,
+  "name": "Lockpicker's Corridor",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southeast Edge",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [29, 30]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "East Edge (Upper)",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [18, 19]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "West Side",
+      "world": "both",
+      "transitions": [
+        {"edge": "west", "span": [18, 19], "world": "light"}
+      ],
+      "entrances": [
+        {
+          "id": 1,
+          "name": "Desert Great Fairy",
+          "world": "light"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Northeast Area",
+      "world": "both"
+    },
+    {
+      "id": 5,
+      "name": "Southern Middle Area",
+      "world": "both"
+    },
+    {
+      "id": 6,
+      "name": "Southern Big Rock Cave",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 1,
+          "name": "50 Rupee Cave",
+          "world": "light"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "locationName": "Purple Chest Item",
+      "itemLocation": 4,
+      "world": "light",
+      "item": "Bottle",
+      "itemAddress": "0x33D68"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Lift Rock Entrance",
+      "world": "light",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "glove"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"sword": 1},
+          {"glove": 1},
+          "Boomerang",
+          "Hookshot",
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Crow", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"glove": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 5],
+      "name": "Base - Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 24},
+          {"cape": 55}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 5],
+      "name": "Guard Dodge",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "Lure the guard to the top left, then get past them.",
+        "Then either lure the crows while cricling the rocks just south, or make a quick dodge directly up northeast."
+      ]
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Deliver Purple Chest",
+      "world": "light",
+      "requires": [
+        {"follower": "Purple Chest"}
+      ],
+      "collectsItems": [1],
+      "FollowerComplete": "Purple Chest"
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"sword": 1},
+          {"glove": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Glove",
+      "world": "light",
+      "requires": [
+        {"glove": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base - Already Lifted",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    }
+  ]
+}

@@ -560,6 +560,25 @@
               }
             }
           },
+          "entranceState": {
+            "type": "object",
+            "required": [
+              "state",
+              "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "type": "string",
+                "enum": [
+                  "event"
+                ]
+              },
+              "type": {
+                "type": "string"
+              }
+            }
+          },
           "note": {
             "type": "array",
             "items": {

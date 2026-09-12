@@ -9,7 +9,7 @@
       "name": "Main Area",
       "world": "both",
       "transitions": [
-        {"edge": "east", "span": [56, 60]}
+        {"edge": "east", "span": [56, 60], "world": "light"}
       ],
       "entrances": [
         {

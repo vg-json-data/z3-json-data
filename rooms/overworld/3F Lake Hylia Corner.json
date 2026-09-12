@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/z3-room.schema.json",
+  "id": 40,
+  "name": "Lake Hylia Corner",
+  "roomType": "Overworld",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Area",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [14, 29]},
+        {"edge": "west", "span": [23.5, 29]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lower River",
+      "world": "both",
+      "transitions": [
+        {"edge": "west", "span": [18.5, 21.5], "terrain": "water"}
+      ],
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Lake Hylia Corner Whirlpool",
+          "world": "light"
+        },
+        {
+          "id": 2,
+          "name": "Ice Lake Corner Whirlpool",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Above Waterfall",
+      "world": "both",
+      "transitions": [
+        {"edge": "north", "span": [7.5, 9.5], "terrain": "water"}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
+    }
+  ]
+}
