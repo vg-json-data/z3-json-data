@@ -1,0 +1,174 @@
+{
+  "$schema": null,
+  "name": "Overworld to Underworld Connections",
+  "connections": [
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Lost Woods Hideout",
+        "roomId": 1,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "drop",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "drop",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "drop",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "Lost Woods Hideout",
+        "roomId": 1,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "drop",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 7
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 8
+      },
+      "underworld": {
+        "roomName": "Lost Woods Gamble",
+        "roomId": 35,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "drop",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 9
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 10
+      },
+      "underworld": {
+        "roomName": "Sacred Grove",
+        "roomId": 102,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 11
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lost Woods",
+        "roomId": 1,
+        "entranceId": 12
+      },
+      "underworld": {
+        "roomName": "Skull Woods",
+        "roomId": 95,
+        "nodeId": "unknown"
+      }
+    }
+  ]
+}
