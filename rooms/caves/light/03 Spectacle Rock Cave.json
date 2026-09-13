@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 5,
-  "name": "Old Man Cave",
+  "name": "Spectacle Rock Cave",
   "roomType": "Cave",
   "nodes": [
     {

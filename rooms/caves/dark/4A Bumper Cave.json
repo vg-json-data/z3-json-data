@@ -6,12 +6,12 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Exit (Bottom)",
+      "name": "Lower Entrance",
       "nodeType": "door"
     },
     {
       "id": 2,
-      "name": "Exit (Top)",
+      "name": "Upper Exit",
       "nodeType": "door"
     }
   ],
