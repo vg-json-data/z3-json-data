@@ -28,7 +28,7 @@
       ],
       "entrances": [
         {
-          "id": 1,
+          "id": 2,
           "name": "Zora's Waterfall",
           "world": "light"
         }
@@ -40,12 +40,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Waterfall of Wishing",
           "world": "light"
         }
       ],
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Waterfall of Wishing Whirlpool",

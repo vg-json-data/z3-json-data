@@ -35,7 +35,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Magic Bat Cave Drop Entrance",
           "world": "light"
         }
@@ -47,7 +47,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Dark Hammer Peg Cave",
           "world": "dark"
         }

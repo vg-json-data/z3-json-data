@@ -73,7 +73,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 2,
           "name": "Hyrule Castle Secret Entrance (Stairs)",
           "world": "light"
         }
@@ -85,7 +85,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Hyrule Castle Secret Entrance (Drop)",
           "world": "light"
         }
@@ -102,7 +102,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Agahnim's Tower Entrance",
           "world": "light"
         }
@@ -119,7 +119,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Pyramid Great Fairy",
           "world": "dark"
         }
@@ -131,7 +131,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 6,
           "name": "Ganon Drop",
           "world": "dark"
         }
@@ -143,7 +143,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 7,
           "name": "Pyramid Exit",
           "world": "dark"
         }
@@ -161,7 +161,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 8,
           "name": "Hyrule Castle Upper East Entrance",
           "world": "light"
         }
@@ -174,7 +174,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Hyrule Castle Upper West Entrance",
           "world": "light"
         }

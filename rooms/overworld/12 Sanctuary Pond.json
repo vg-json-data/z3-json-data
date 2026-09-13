@@ -22,7 +22,7 @@
       "id": 2,
       "name": "In the Pond",
       "world": "both",
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Sanctuary Pond Whirlpool",

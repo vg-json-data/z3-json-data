@@ -43,7 +43,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Hookshot Cave North Exit",
           "world": "dark"
         }
@@ -55,7 +55,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Hookshot Cave South Entrance",
           "world": "dark"
         }
@@ -67,12 +67,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Spiral Cave Top Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 6,
           "name": "Turtle Rock Laser Door Exit",
           "world": "dark"
         }
@@ -84,12 +84,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 7,
           "name": "Mimic Cave Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 8,
           "name": "Turtle Rock Big Chest Exit",
           "world": "dark"
         }
@@ -101,12 +101,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Fairy Ascension Trinexx Refill Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 10,
           "name": "Turtle Rock Laser Bridge Exit",
           "world": "dark"
         }
@@ -118,12 +118,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 11,
           "name": "Spiral Cave Bottom Exit",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 12,
           "name": "Paradox Cave Entrance South of Pit",
           "world": "light"
         }
@@ -135,7 +135,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 13,
           "name": "Fairy Ascension Cave Bottom Entrance",
           "world": "light"
         }
@@ -147,22 +147,22 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 14,
           "name": "Hookshot Fairy Cave Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 15,
           "name": "Paradox Cave Entrance South of Block",
           "world": "light"
         },
         {
-          "id": 3,
+          "id": 16,
           "name": "Superbunny Cave Bottom Entrance",
           "world": "dark"
         },
         {
-          "id": 4,
+          "id": 17,
           "name": "Dark Death Mountain Shop Entrance",
           "world": "dark"
         }

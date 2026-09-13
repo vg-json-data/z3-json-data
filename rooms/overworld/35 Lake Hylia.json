@@ -59,7 +59,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Mini Moldorm Cave Entrance",
           "world": "light"
         }
@@ -73,7 +73,7 @@
         {"edge": "north", "span": [51.5, 54.5], "terrain": "water"},
         {"edge": "east", "span": [50.5, 53.5], "terrain": "water"}
       ],
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Lake Hylia Whirlpool",
@@ -87,12 +87,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Lake Hylia Great Fairy",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 6,
           "name": "Ice Palace Entrance",
           "world": "dark"
         }

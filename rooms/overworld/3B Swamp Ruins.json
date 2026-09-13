@@ -13,7 +13,8 @@
         {"edge": "east", "span": [3, 29]},
         {"edge": "west", "span": [18, 19]},
         {"edge": "west", "span": [29, 30]}
-      ]
+      ],
+      "fluteLocation": 7
     },
     {
       "id": 2,

@@ -35,7 +35,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Desert Palace Main Entrance",
           "world": "light"
         }
@@ -47,12 +47,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Desert Palace West Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 6,
           "name": "Mire Shed Entrance",
           "world": "dark"
         }
@@ -64,7 +64,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 7,
           "name": "Desert Palace Second Half Entrance",
           "world": "light"
         }
@@ -73,7 +73,8 @@
     {
       "id": 5,
       "name": "Southwest Dark Portal Ledge",
-      "world": "both"
+      "world": "both",
+      "fluteLocation": 6
     },
     {
       "id": 6,
@@ -100,7 +101,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 8,
           "name": "Checkerboard Cave",
           "world": "light"
         }
@@ -112,7 +113,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Misery Mire Dungeon Entrance",
           "world": "dark"
         }

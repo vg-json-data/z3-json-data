@@ -23,7 +23,8 @@
           "name": "Dark Potion Shop",
           "world": "dark"
         }
-      ]
+      ],
+      "fluteLocation": 2
     },
     {
       "id": 2,
