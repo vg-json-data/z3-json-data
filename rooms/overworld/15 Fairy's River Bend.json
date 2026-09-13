@@ -38,7 +38,7 @@
         {"edge": "east", "span": [8.5, 10], "terrain": "water"},
         {"edge": "south", "span": [18.5, 20.5], "terrain": "water"}
       ],
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Fairy's River Bend Whirlpool",
@@ -57,7 +57,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 2,
           "name": "Hyrule Castle Sewers Drop Entrance",
           "world": "light"
         }

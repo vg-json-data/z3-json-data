@@ -37,7 +37,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Library",
           "world": "light"
         }

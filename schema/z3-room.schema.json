@@ -161,7 +161,7 @@
               }
             }
           },
-          "teleports": {
+          "whirlpools": {
             "type": "array",
             "items": {
               "type": "object",
@@ -189,8 +189,14 @@
               }
             }
           },
+          "fluteLocation": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
           "nodeItem": {
-            "type": "string"
+            "type": "string",
+            "note": "deprecated"
           },
           "nodeAddress": {
             "type": [
@@ -200,7 +206,8 @@
             "minItems": 1,
             "items": {
               "type": "string"
-            }
+            },
+            "note": "deprecated"
           },
           "requires": {
             "type": "array",

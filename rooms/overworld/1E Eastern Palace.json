@@ -26,7 +26,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 2,
           "name": "Sahasrahla's Hut",
           "world": "light"
         }
@@ -38,12 +38,12 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Eastern Palace Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 4,
           "name": "Palace of Darkness Entrance",
           "world": "dark"
         }

@@ -35,7 +35,7 @@
       "transitions": [
         {"edge": "east", "span": [15, 21], "terrain": "water"}
       ],
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Great Swamp Lake Whirlpool",

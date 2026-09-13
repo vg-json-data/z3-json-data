@@ -41,7 +41,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 2,
           "name": "Hyrule Castle Sewers Drop Entrance",
           "world": "light"
         }
@@ -53,7 +53,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "King's Grave",
           "world": "light"
         }

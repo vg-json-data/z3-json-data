@@ -19,7 +19,8 @@
           "name": "Dark Death Mountain Great Fairy",
           "world": "dark"
         }
-      ]
+      ],
+      "fluteLocation": 1
     },
     {
       "id": 2,
@@ -27,7 +28,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Old Man's House Entrance",
           "world": "light"
         }
@@ -39,7 +40,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Old Man's House Back Entrance",
           "world": "light"
         }
@@ -59,7 +60,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Death Mountain Return Cave",
           "world": "light"
         }
@@ -71,7 +72,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 6,
           "name": "Spectacle Rock Top Entrance",
           "world": "light"
         }
@@ -96,12 +97,12 @@
       ],
       "entrances": [
         {
-          "id": 1,
+          "id": 7,
           "name": "Tower of Hera Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 8,
           "name": "Ganon's Tower Entrance",
           "world": "dark"
         }
@@ -113,7 +114,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Spectacle Rock Bottom Left Entrance",
           "world": "light"
         }
@@ -125,7 +126,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 10,
           "name": "Spectacle Rock Bottom Right Entrance",
           "world": "light"
         }
@@ -137,7 +138,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 11,
           "name": "Spike Cave Entrance",
           "world": "dark"
         }

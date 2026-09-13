@@ -38,7 +38,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 3,
           "name": "Ice Cave West Entrance",
           "world": "light"
         }
@@ -50,7 +50,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 4,
           "name": "Shopping Mall Great Fairy",
           "world": "dark"
         }
@@ -62,7 +62,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "20 Rupee Cave",
           "world": "light"
         }
@@ -74,7 +74,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 6,
           "name": "Shopping Mall Spike Cave",
           "world": "dark"
         }

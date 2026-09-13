@@ -11,7 +11,8 @@
       "transitions": [
         {"edge": "north", "span": [14, 29]},
         {"edge": "west", "span": [23.5, 29]}
-      ]
+      ],
+      "fluteLocation": 8
     },
     {
       "id": 2,
@@ -20,7 +21,7 @@
       "transitions": [
         {"edge": "west", "span": [18.5, 21.5], "terrain": "water"}
       ],
-      "teleports": [
+      "whirlpools": [
         {
           "id": 1,
           "name": "Lake Hylia Corner Whirlpool",

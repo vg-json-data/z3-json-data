@@ -81,7 +81,8 @@
           "name": "C-Shaped House",
           "world": "dark"
         }
-      ]
+      ],
+      "fluteLocation": 3
     },
     {
       "id": 2,
@@ -89,7 +90,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 14,
           "name": "Thieves' Town",
           "world": "dark"
         }
@@ -101,12 +102,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 15,
           "name": "Bush Blocked House",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 16,
           "name": "Village of Outcasts Shop",
           "world": "dark"
         }
@@ -118,7 +119,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
+          "id": 17,
           "name": "Kakariko Bomb Shed",
           "world": "light"
         }
@@ -130,12 +131,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 18,
           "name": "Kakariko Shop",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 19,
           "name": "Brewery",
           "world": "dark"
         }

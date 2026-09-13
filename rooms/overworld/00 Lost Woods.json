@@ -61,12 +61,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 5,
           "name": "Lost Woods Hideout Bush Entrance",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 6,
           "name": "Skull Woods Bush Entrance",
           "world": "dark"
         }
@@ -78,7 +78,7 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
+          "id": 7,
           "name": "Skull Woods Second Main Entrance",
           "world": "dark"
         }
@@ -93,7 +93,7 @@
       ],
       "entrances": [
         {
-          "id": 1,
+          "id": 8,
           "name": "Lost Woods Gamble",
           "world": "light"
         }
@@ -105,7 +105,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Skull Woods Top Left Drop Entrance",
           "world": "dark"
         }
@@ -117,12 +117,12 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 10,
           "name": "Sacred Grove",
           "world": "light"
         },
         {
-          "id": 2,
+          "id": 11,
           "name": "Skull Woods Fire Rod Entrance",
           "world": "dark"
         }
@@ -134,7 +134,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
+          "id": 12,
           "name": "Skull Woods Second Area Exit",
           "world": "dark"
         }
