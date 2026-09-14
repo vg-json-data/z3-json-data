@@ -1597,6 +1597,412 @@
         "roomId": 73,
         "nodeId": 1
       }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Aginah's Cave",
+        "roomId": 23,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Mire East Cave",
+        "roomId": 74,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Mire Great Fairy Cave",
+        "roomId": 75,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Desert Palace",
+        "roomId": 59,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "Desert Palace",
+        "roomId": 59,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "Mire Shed",
+        "roomId": 76,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 7
+      },
+      "underworld": {
+        "roomName": "Desert Palace",
+        "roomId": 59,
+        "nodeId": 5
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 8
+      },
+      "underworld": {
+        "roomName": "Desert Palace",
+        "roomId": 59,
+        "nodeId": 3
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 9
+      },
+      "underworld": {
+        "roomName": "Checkerboard Cave",
+        "roomId": 24,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Desert of Mystery",
+        "roomId": 31,
+        "entranceId": 10
+      },
+      "underworld": {
+        "roomName": "Misery Mire",
+        "roomId": 98,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Cave 45",
+        "roomId": 32,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Cave 45",
+        "roomId": 25,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Great Swamp Fairy",
+        "roomId": 34,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Swamp Great Fairy",
+        "roomId": 26,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Great Swamp Fairy",
+        "roomId": 34,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Hype Cave",
+        "roomId": 77,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Lake Hylia Fortune Teller",
+        "roomId": 56,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Lake Hylia Shop",
+        "roomId": 28,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Ice Lake Shop",
+        "roomId": 92,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Mini Moldorm Cave",
+        "roomId": 29,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "Lake Hylia Great Fairy",
+        "roomId": 27,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "Ice Palace",
+        "roomId": 97,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Ice Cave",
+        "roomId": 31,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Shopping Mall East Cave",
+        "roomId": 78,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Ice Cave",
+        "roomId": 31,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Shopping Mall Great Fairy",
+        "roomId": 79,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "20 Rupee Cave",
+        "roomId": 30,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Ice Cave Entrance",
+        "roomId": 36,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "Shopping Mall Spike Cave",
+        "roomId": 80,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lockpicker's Corridor",
+        "roomId": 37,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Desert Great Fairy",
+        "roomId": 33,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lockpicker's Corridor",
+        "roomId": 37,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "50 Rupee Cave",
+        "roomId": 32,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Swamp Ruins",
+        "roomId": 38,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Dam",
+        "roomId": 34,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Swamp Ruins",
+        "roomId": 38,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Swamp Palace",
+        "roomId": 94,
+        "nodeId": "unknown"
+      }
     }
   ]
 }
