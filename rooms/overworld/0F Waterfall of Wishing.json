@@ -10,13 +10,6 @@
       "world": "both",
       "transitions": [
         {"edge": "south", "span": [23, 26]}
-      ],
-      "entrances": [
-        {
-          "id": 1,
-          "name": "Zora's Waterfall",
-          "world": "light"
-        }
       ]
     },
     {
@@ -28,7 +21,7 @@
       ],
       "entrances": [
         {
-          "id": 2,
+          "id": 1,
           "name": "Zora's Waterfall",
           "world": "light"
         }
@@ -40,7 +33,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
+          "id": 2,
           "name": "Waterfall of Wishing",
           "world": "light"
         }

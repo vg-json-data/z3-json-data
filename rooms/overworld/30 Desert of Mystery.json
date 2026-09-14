@@ -85,6 +85,13 @@
       "id": 7,
       "name": "Desert Palace East Drop Exit",
       "world": "light",
+      "entrances": [
+        {
+          "id": 8,
+          "name": "Desert Palace East Exit",
+          "world": "light"
+        }
+      ],
       "note": ["There is not a way to mirror in to this location."]
     },
     {
@@ -101,7 +108,7 @@
       "world": "light",
       "entrances": [
         {
-          "id": 8,
+          "id": 9,
           "name": "Checkerboard Cave",
           "world": "light"
         }
@@ -113,7 +120,7 @@
       "world": "both",
       "entrances": [
         {
-          "id": 9,
+          "id": 10,
           "name": "Misery Mire Dungeon Entrance",
           "world": "dark"
         }
