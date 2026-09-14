@@ -1,0 +1,62 @@
+{
+  "$schema": null,
+  "name": "Overworld to Overworld Whirlpool Connections",
+  "connections": [
+    {
+      "type": "whirlpool",
+      "world": "light",
+      "overworld": {
+        "roomName": "Waterfall of Wishing",
+        "roomId": 7,
+        "whirlpoolId": 1
+      },
+      "overworld2": {
+        "roomName": "Lake Hylia",
+        "roomId": 35,
+        "whirlpoolId": 1
+      }
+    },
+    {
+      "type": "whirlpool",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia Corner",
+        "roomId": 40,
+        "whirlpoolId": 1
+      },
+      "overworld2": {
+        "roomName": "Sanctuary Pond",
+        "roomId": 10,
+        "whirlpoolId": 1
+      }
+    },
+    {
+      "type": "whirlpool",
+      "world": "light",
+      "overworld": {
+        "roomName": "Fairy's River Bend",
+        "roomId": 13,
+        "whirlpoolId": 1
+      },
+      "overworld2": {
+        "roomName": "Great Swamp Lake",
+        "roomId": 33,
+        "whirlpoolId": 1
+      }
+    },
+    {
+      "type": "whirlpool",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lake Hylia Corner",
+        "roomId": 40,
+        "whirlpoolId": 2
+      },
+      "overworld2": {
+        "roomName": "Fairy's River Bend",
+        "roomId": 13,
+        "whirlpoolId": 2
+      }
+    }
+  ]
+}
