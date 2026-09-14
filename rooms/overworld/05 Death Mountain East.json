@@ -3,6 +3,8 @@
   "id": 4,
   "name": "Death Mountain East",
   "roomType": "Overworld",
+  "position": [5, 0],
+  "size": [4, 4],
   "nodes": [
     {
       "id": 1,

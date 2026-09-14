@@ -3,6 +3,8 @@
   "id": 38,
   "name": "Swamp Ruins",
   "roomType": "Overworld",
+  "position": [3, 7],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

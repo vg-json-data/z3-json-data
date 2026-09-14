@@ -3,6 +3,8 @@
   "id": 21,
   "name": "Dwarven Smithy",
   "roomType": "Overworld",
+  "position": [2, 4],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

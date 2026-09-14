@@ -3,6 +3,8 @@
   "id": 22,
   "name": "Badlands",
   "roomType": "Overworld",
+  "position": [5, 4],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 33,
   "name": "Great Swamp Lake",
   "roomType": "Overworld",
+  "position": [3, 6],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 7,
   "name": "Waterfall of Wishing",
   "roomType": "Overworld",
+  "position": [7, 1],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

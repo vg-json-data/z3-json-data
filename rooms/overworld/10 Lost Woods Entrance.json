@@ -3,6 +3,8 @@
   "id": 8,
   "name": "Lost Woods Entrance",
   "roomType": "Overworld",
+  "position": [0, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

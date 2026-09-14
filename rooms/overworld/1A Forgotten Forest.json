@@ -3,6 +3,8 @@
   "id": 17,
   "name": "Forgotten Forest",
   "roomType": "Overworld",
+  "position": [2, 3],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

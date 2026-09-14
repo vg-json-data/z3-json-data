@@ -3,6 +3,8 @@
   "id": 30,
   "name": "East Warp Point",
   "roomType": "Overworld",
+  "position": [7, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

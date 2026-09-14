@@ -3,6 +3,8 @@
   "id": 37,
   "name": "Lockpicker's Corridor",
   "roomType": "Overworld",
+  "position": [2, 7],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

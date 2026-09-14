@@ -3,6 +3,8 @@
   "id": 11,
   "name": "Sanctuary",
   "roomType": "Overworld",
+  "position": [3, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

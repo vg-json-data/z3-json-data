@@ -3,6 +3,8 @@
   "id": 12,
   "name": "Cemetery",
   "roomType": "Overworld",
+  "position": [4, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

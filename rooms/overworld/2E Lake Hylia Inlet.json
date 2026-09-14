@@ -3,6 +3,8 @@
   "id": 29,
   "name": "Lake Hylia Inlet",
   "roomType": "Overworld",
+  "position": [6, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,
