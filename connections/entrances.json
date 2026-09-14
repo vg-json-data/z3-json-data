@@ -883,6 +883,720 @@
         "roomId": 83,
         "nodeId": 1
       }
+    },
+    {
+      "type": "drop",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Kakariko Well",
+        "roomId": 17,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Kakariko Well",
+        "roomId": 17,
+        "nodeId": 3
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Blind's Hideout",
+        "roomId": 39,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Elder House",
+        "roomId": 43,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "Elder House",
+        "roomId": 43,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "West Snitch Lady's House",
+        "roomId": 48,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 7
+      },
+      "underworld": {
+        "roomName": "East Snitch Lady's House",
+        "roomId": 42,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 8
+      },
+      "underworld": {
+        "roomName": "Chicken House",
+        "roomId": 41,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 9
+      },
+      "underworld": {
+        "roomName": "Sick Kid's House",
+        "roomId": 47,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 10
+      },
+      "underworld": {
+        "roomName": "Kakariko Tavern",
+        "roomId": 46,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 11
+      },
+      "underworld": {
+        "roomName": "Kakariko Tavern",
+        "roomId": 46,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 12
+      },
+      "underworld": {
+        "roomName": "Chest Game",
+        "roomId": 86,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 13
+      },
+      "underworld": {
+        "roomName": "C-Shaped House",
+        "roomId": 85,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 14
+      },
+      "underworld": {
+        "roomName": "Thieves' Town",
+        "roomId": 96,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 15
+      },
+      "underworld": {
+        "roomName": "Bush Blocked House",
+        "roomId": 40,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 16
+      },
+      "underworld": {
+        "roomName": "Village of Outcasts Shop",
+        "roomId": 87,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 17
+      },
+      "underworld": {
+        "roomName": "Kakariko Bomb Shed",
+        "roomId": 44,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 18
+      },
+      "underworld": {
+        "roomName": "Kakariko Shop",
+        "roomId": 45,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Kakariko Village",
+        "roomId": 16,
+        "entranceId": 19
+      },
+      "underworld": {
+        "roomName": "Brewery",
+        "roomId": 84,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Forgotten Forest",
+        "roomId": 17,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Red Shield Shop",
+        "roomId": 88,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 57,
+        "nodeId": 3
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Hyrule Castle Secret Entrance",
+        "roomId": 49,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "drop",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Hyrule Castle Secret Entrance",
+        "roomId": 49,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Agahnim's Tower",
+        "roomId": 61,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 5
+      },
+      "underworld": {
+        "roomName": "Pyramid Great Fairy",
+        "roomId": 69,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "drop",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 6
+      },
+      "underworld": {
+        "roomName": "Pyramid",
+        "roomId": 101,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 7
+      },
+      "underworld": {
+        "roomName": "Pyramid",
+        "roomId": 101,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 8
+      },
+      "underworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 57,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "entranceId": 9
+      },
+      "underworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 57,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Eastern Palace",
+        "roomId": 20,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Palace of Darkness Cottage",
+        "roomId": 89,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Eastern Palace",
+        "roomId": 20,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Sahasrahla's Hut",
+        "roomId": 50,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Eastern Palace",
+        "roomId": 20,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Eastern Palace",
+        "roomId": 58,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Eastern Palace",
+        "roomId": 20,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Palace of Darkness",
+        "roomId": 93,
+        "nodeId": "unknown"
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Dwarven Smithy",
+        "roomId": 21,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Blacksmith's Hut",
+        "roomId": 51,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Dwarven Smithy",
+        "roomId": 21,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Magic Bat Cave",
+        "roomId": 18,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "drop",
+      "world": "light",
+      "overworld": {
+        "roomName": "Dwarven Smithy",
+        "roomId": 21,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Magic Bat Cave",
+        "roomId": 18,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Dwarven Smithy",
+        "roomId": 21,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Dark Hammer Peg Cave",
+        "roomId": 70,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Maze Race Game",
+        "roomId": 23,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Two Brothers' House",
+        "roomId": 54,
+        "nodeId": 2
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Library",
+        "roomId": 24,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Two Brothers' House",
+        "roomId": 54,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Library",
+        "roomId": 24,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Kakariko Gamble Game",
+        "roomId": 52,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Library",
+        "roomId": 24,
+        "entranceId": 3
+      },
+      "underworld": {
+        "roomName": "Archery Game",
+        "roomId": 90,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Library",
+        "roomId": 24,
+        "entranceId": 4
+      },
+      "underworld": {
+        "roomName": "Library",
+        "roomId": 53,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Bonk Fairies",
+        "roomId": 26,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Light Bonk Fairies",
+        "roomId": 19,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Bonk Fairies",
+        "roomId": 26,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Dark Bonk Fairies",
+        "roomId": 71,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Link's House",
+        "roomId": 27,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Link's House",
+        "roomId": 55,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Link's House",
+        "roomId": 27,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Big Bomb Shop",
+        "roomId": 91,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Camper's Bridge",
+        "roomId": 28,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Under the Bridge",
+        "roomId": 103,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "Lake Hylia Inlet",
+        "roomId": 29,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Lake Hylia Inlet Great Fairy",
+        "roomId": 21,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "Lake Hylia Inlet",
+        "roomId": 29,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Ice Lake Inlet Great Fairy",
+        "roomId": 72,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "light",
+      "overworld": {
+        "roomName": "East Warp Point",
+        "roomId": 30,
+        "entranceId": 1
+      },
+      "underworld": {
+        "roomName": "Long Fairy Cave",
+        "roomId": 22,
+        "nodeId": 1
+      }
+    },
+    {
+      "type": "door",
+      "world": "dark",
+      "overworld": {
+        "roomName": "East Warp Point",
+        "roomId": 30,
+        "entranceId": 2
+      },
+      "underworld": {
+        "roomName": "Dark East Portal Cave",
+        "roomId": 73,
+        "nodeId": 1
+      }
     }
   ]
 }
