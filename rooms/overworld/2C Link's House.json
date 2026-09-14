@@ -3,6 +3,8 @@
   "id": 27,
   "name": "Link's House",
   "roomType": "Overworld",
+  "position": [4, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 34,
   "name": "Great Swamp Fairy",
   "roomType": "Overworld",
+  "position": [4, 6],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 10,
   "name": "Sanctuary Pond",
   "roomType": "Overworld",
+  "position": [2, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

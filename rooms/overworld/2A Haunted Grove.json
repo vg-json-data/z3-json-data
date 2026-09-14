@@ -3,6 +3,8 @@
   "id": 25,
   "name": "Haunted Grove",
   "roomType": "Overworld",
+  "position": [2, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

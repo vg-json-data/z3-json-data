@@ -3,6 +3,8 @@
   "id": 14,
   "name": "Magic Shop",
   "roomType": "Overworld",
+  "position": [6, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 32,
   "name": "Cave 45",
   "roomType": "Overworld",
+  "position": [2, 6],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 39,
   "name": "Great Swamp Southeast",
   "roomType": "Overworld",
+  "position": [4, 7],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 15,
   "name": "Pegasus Rock Path",
   "roomType": "Overworld",
+  "position": [7, 2],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

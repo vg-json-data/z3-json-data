@@ -3,6 +3,8 @@
   "id": 19,
   "name": "Eastern Bridge",
   "roomType": "Overworld",
+  "position": [5, 3],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,8 @@
   "id": 23,
   "name": "Maze Race Game",
   "roomType": "Overworld",
+  "position": [0, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

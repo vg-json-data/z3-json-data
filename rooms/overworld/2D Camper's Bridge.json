@@ -3,6 +3,8 @@
   "id": 28,
   "name": "Camper's Bridge",
   "roomType": "Overworld",
+  "position": [5, 5],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

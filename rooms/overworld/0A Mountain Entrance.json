@@ -3,6 +3,8 @@
   "id": 6,
   "name": "Mountain Entrance",
   "roomType": "Overworld",
+  "position": [2, 1],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,

@@ -38,11 +38,24 @@
         "type": "string"
       }
     },
-    "alttpEntrandoRegions": {
+    "position": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 7
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "size": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
     },
     "nodes": {
       "type": "array",

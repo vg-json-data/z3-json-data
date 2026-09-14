@@ -3,6 +3,8 @@
   "id": 2,
   "name": "Lumberjack's Home",
   "roomType": "Overworld",
+  "position": [2, 0],
+  "size": [2, 2],
   "nodes": [
     {
       "id": 1,
