@@ -1,0 +1,484 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 93,
+  "name": "Palace of Darkness",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Basement Left Path",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Basement Right Path",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Bridge Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Basement Right Path - Teleporter",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Basement Right Path - East Blue Bari Hallway",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Basement Right Path - West Blue Bari Hallway",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Basement Right Path - Goriya Room",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Map Chest Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "The Arena Bombable Ledge Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Map Chest Fairies",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Basement Left Path Chest",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0xEA5B"
+    },
+    {
+      "id": 2,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest",
+      "itemLocation": 9,
+      "item": "Map",
+      "itemAddress": "0xEA52"
+    },
+    {
+      "id": 3,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena Bombable Ledge Chest",
+      "itemLocation": 10,
+      "item": "SmallKey",
+      "itemAddress": "0xEA3A"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Central Path",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Teleporter Room South Wall - Bomb or Dash",
+      "doorPosition": "south",
+      "doorLocation": 5,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 3,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "West Blue Bari Hallway - Bomb or Dash",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 4,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest Room West Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    },
+    {
+      "id": 5,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest Room East Bombable Wall",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [5, 5],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [6, 6],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [7, 7],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [8, 8],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [8, 9],
+      "name": "Bow",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["These pots can refill arrows."]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [9, 11],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [11, 11],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 3}}
+      ]
+    },
+
+
+
+
+
+
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Hammer",
+      "requires": [
+        "Hammer",
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Break Helmasaur's Mask - Bombs",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"bombs": 7},
+            {"damage": {"enemy": "Helmasaur King", "count": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"bombs": 6},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"bombs": 5}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 1},
+          {"arrows": 20},
+          {"and": [
+            {"arrows": 15},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 10},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 8},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L1)",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25],
+      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
+      "requires": [
+        {"sword": 2},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"bossProficiency": 2}
+          ]},
+          {"sword": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25]
+    },
+    {
+      "link": [24, 24],
+      "name": "Helmasaur (Mask Broken) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 4},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 8}},
+          {"and": [
+            {"bossProficiency": 9},
+            {"damage": {"enemy": "Helmasaur King", "count": 4}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [24, 25],
+      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
+    }
+  ]
+}
