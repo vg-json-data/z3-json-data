@@ -69,6 +69,24 @@
       "name": "Map Chest Fairies",
       "subArea": "Palace of Darkness 1F",
       "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Stalfos Basement",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Stalfos Basement - Upper Ledge",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Bridge Room Big Key Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -95,6 +113,22 @@
       "itemLocation": 10,
       "item": "SmallKey",
       "itemAddress": "0xEA3A"
+    },
+    {
+      "id": 4,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Stalfos Basement Chest",
+      "itemLocation": 12,
+      "item": "SmallKey",
+      "itemAddress": "0xEA49"
+    },
+    {
+      "id": 5,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Bridge Room Big Key Chest",
+      "itemLocation": 14,
+      "item": "BigKey",
+      "itemAddress": "0xEA37"
     }
   ],
   "lockedDoors": [
@@ -137,6 +171,14 @@
       "doorPosition": "east",
       "doorLocation": 9,
       "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Stalfos Basement",
+      "doorPosition": "north",
+      "doorLocation": 13,
+      "keyType": "small"
     }
   ],
   "strats": [
@@ -149,6 +191,13 @@
       "link": [1, 3],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
     },
     {
       "link": [2, 1],
@@ -168,6 +217,35 @@
     },
     {
       "link": [3, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [4, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 13],
+      "name": "Base - Bomb the Bridge",
+      "requires": [
+        {"bombs": 1}
+      ]
+    },
+    {
+      "link": [4, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 16],
       "name": "Base",
       "requires": []
     },
@@ -221,6 +299,76 @@
         "canBreakDashableWall"
       ],
       "unlocksDoor": [1]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"rod": 2},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24},
+          {"cape": 26}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Bari Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"rod": 2},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24},
+          {"cape": 26}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Bari Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
     },
     {
       "link": [7, 7],
@@ -347,6 +495,74 @@
       "requires": [
         {"refill": {"type": "Fairy", "limit": 3}}
       ]
+    },
+    {
+      "link": [12, 5],
+      "name": "Teleporter",
+      "requires": []
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Stalfos Basement Chest",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [13, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [14, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 13],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [14, 14],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [5]
+    },
+    {
+      "link": [15, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 15],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [15, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["FIXME: Add 16->17, consider how the arena works, currently 4-16 is free and 17->16 is free, which wont quite all work"]
     },
 
 
