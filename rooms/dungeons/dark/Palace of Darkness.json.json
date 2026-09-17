@@ -24,7 +24,7 @@
     },
     {
       "id": 4,
-      "name": "Bridge Room",
+      "name": "Double Bridge Room",
       "subArea": "Palace of Darkness 1F",
       "nodeType": "junction"
     },
@@ -84,7 +84,57 @@
     },
     {
       "id": 14,
-      "name": "Bridge Room Big Key Chest",
+      "name": "Double Bridge Room Big Key Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "The Arena - Bridge Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "The Arena",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "The Arena - Between Blue Pegs",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction",
+      "note": ["This node assumes the blue pegs are up."]
+    },
+    {
+      "id": 18,
+      "name": "The Arena - Top Left Door",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction",
+      "note": ["This node assumes the blue pegs are up."]
+    },
+    {
+      "id": 19,
+      "name": "Crumble Bridge Room - South",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Crumble Bridge Room - North",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Dark Basement Chests",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Harmless Hellway",
       "subArea": "Palace of Darkness 1F",
       "nodeType": "junction"
     }
@@ -125,10 +175,50 @@
     {
       "id": 5,
       "subArea": "Palace of Darkness 1F",
-      "locationName": "Bridge Room Big Key Chest",
+      "locationName": "Double Bridge Room Big Key Chest",
       "itemLocation": 14,
       "item": "BigKey",
       "itemAddress": "0xEA37"
+    },
+    {
+      "id": 6,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena Bridge Chest",
+      "itemLocation": 15,
+      "item": "SmallKey",
+      "itemAddress": "0xEA3D"
+    },
+    {
+      "id": 7,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Compass Chest",
+      "itemLocation": 20,
+      "item": "Compass",
+      "itemAddress": "0xEA43"
+    },
+    {
+      "id": 8,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Right Chest",
+      "itemLocation": 21,
+      "item": "SmallKey",
+      "itemAddress": "0xEA4F"
+    },
+    {
+      "id": 9,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Left Chest",
+      "itemLocation": 21,
+      "item": "Arrow",
+      "itemAddress": "0xEA4C"
+    },
+    {
+      "id": 10,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Harmless Hellway Chest",
+      "itemLocation": 22,
+      "item": "FiveRupees",
+      "itemAddress": "0xEA46"
     }
   ],
   "lockedDoors": [
@@ -178,6 +268,22 @@
       "locationName": "Stalfos Basement",
       "doorPosition": "north",
       "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena North West Door",
+      "doorPosition": "north",
+      "doorLocation": 18,
+      "keyType": "small"
+    },
+    {
+      "id": 8,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Harmless Hellway Room",
+      "doorPosition": "north",
+      "doorLocation": 22,
       "keyType": "small"
     }
   ],
@@ -503,7 +609,7 @@
     },
     {
       "link": [12, 12],
-      "name": "Base - Stalfos Basement Chest",
+      "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [4]
     },
@@ -561,8 +667,148 @@
     {
       "link": [17, 16],
       "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Helmasaur", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Chest",
       "requires": [],
-      "devNote": ["FIXME: Add 16->17, consider how the arena works, currently 4-16 is free and 17->16 is free, which wont quite all work"]
+      "collectsItems": [7]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"refill": {"type": "Rupee", "limit": 270}}
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Dark",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Bubble", "count": 1}},
+          {"darkProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 8}
+      ]
+    },
+    {
+      "link": [21, 20],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Right Chest",
+      "requires": [
+        "Lamp"
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Left Chest",
+      "requires": [
+        "Lamp"
+      ],
+      "collectsItems": [9]
+    },
+    {
+      "link": [21, 21],
+      "name": "Dark - Open Right Chest",
+      "requires": [
+        {"darkProficiency": 2}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 21],
+      "name": "Dark - Open Left Chest",
+      "requires": [
+        {"darkProficiency": 3}
+      ],
+      "collectsItems": [9],
+      "note": ["Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."]
+    },
+    {
+      "link": [22, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 20],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 8}
+      ]
+    },
+    {
+      "link": [22, 22],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [10]
     },
 
 
