@@ -1,0 +1,1444 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 93,
+  "name": "Palace of Darkness",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Basement Left Path",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Basement Right Path",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Double Bridge Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Basement Right Path - Teleporter",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Basement Right Path - East Blue Bari Hallway",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Basement Right Path - West Blue Bari Hallway",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Basement Right Path - Goriya Room",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Map Chest Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "The Arena Bombable Ledge Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Map Chest Fairies",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Stalfos Basement",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Stalfos Basement - Upper Ledge",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Double Bridge Room Big Key Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "The Arena - Bridge Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "The Arena",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "The Arena - Between Blue Pegs",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction",
+      "note": ["This node assumes the blue pegs are up."]
+    },
+    {
+      "id": 18,
+      "name": "The Arena - Top Left Door",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction",
+      "note": ["This node assumes the blue pegs are up."]
+    },
+    {
+      "id": 19,
+      "name": "Crumble Bridge Room - South",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Crumble Bridge Room - North",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Dark Basement Chests",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Harmless Hellway",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Big Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Push Statue Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Green Eye Statue Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Final Basement Entrance",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Basement Dark Turtle Room",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 28,
+      "name": "Basement Boss Teleporter",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 29,
+      "name": "Helmasaur Mask",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "boss"
+    },
+    {
+      "id": 30,
+      "name": "Helmasaur (Mask Broken)",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "boss"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Basement Left Path Chest",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0xEA5B"
+    },
+    {
+      "id": 2,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest",
+      "itemLocation": 9,
+      "item": "Map",
+      "itemAddress": "0xEA52"
+    },
+    {
+      "id": 3,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena Bombable Ledge Chest",
+      "itemLocation": 10,
+      "item": "SmallKey",
+      "itemAddress": "0xEA3A"
+    },
+    {
+      "id": 4,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Stalfos Basement Chest",
+      "itemLocation": 12,
+      "item": "SmallKey",
+      "itemAddress": "0xEA49"
+    },
+    {
+      "id": 5,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Double Bridge Room Big Key Chest",
+      "itemLocation": 14,
+      "item": "BigKey",
+      "itemAddress": "0xEA37"
+    },
+    {
+      "id": 6,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena Bridge Chest",
+      "itemLocation": 15,
+      "item": "SmallKey",
+      "itemAddress": "0xEA3D"
+    },
+    {
+      "id": 7,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Compass Chest",
+      "itemLocation": 20,
+      "item": "Compass",
+      "itemAddress": "0xEA43"
+    },
+    {
+      "id": 8,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Right Chest",
+      "itemLocation": 21,
+      "item": "SmallKey",
+      "itemAddress": "0xEA4F"
+    },
+    {
+      "id": 9,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Left Chest",
+      "itemLocation": 21,
+      "item": "Arrow",
+      "itemAddress": "0xEA4C"
+    },
+    {
+      "id": 10,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Harmless Hellway Chest",
+      "itemLocation": 22,
+      "item": "FiveRupees",
+      "itemAddress": "0xEA46"
+    },
+    {
+      "id": 11,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Top Left Chest",
+      "itemLocation": 20,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEA55"
+    },
+    {
+      "id": 12,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Bottom Right Chest",
+      "itemLocation": 20,
+      "item": "SmallKey",
+      "itemAddress": "0xEA58"
+    },
+    {
+      "id": 13,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Big Chest",
+      "itemLocation": 23,
+      "item": "Hammer",
+      "itemAddress": "0xEA40"
+    },
+    {
+      "id": 14,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Lanmolas - Boss Drop",
+      "itemLocation": 30,
+      "item": "HeartContainer",
+      "itemAddress": "0x180153"
+    },
+    {
+      "id": 15,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 30,
+      "item": "Crystal1",
+      "itemAddress": [
+        "0x120A1",
+        "0x53F00",
+        "0x53F01",
+        "0x180056",
+        "0x18007D",
+        "0xC702"
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Central Path",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Teleporter Room South Wall - Bomb or Dash",
+      "doorPosition": "south",
+      "doorLocation": 5,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 3,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "West Blue Bari Hallway - Bomb or Dash",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 4,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest Room West Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    },
+    {
+      "id": 5,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Map Chest Room East Bombable Wall",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Stalfos Basement",
+      "doorPosition": "north",
+      "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "The Arena North West Door",
+      "doorPosition": "north",
+      "doorLocation": 18,
+      "keyType": "small"
+    },
+    {
+      "id": 8,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Harmless Hellway Room",
+      "doorPosition": "north",
+      "doorLocation": 22,
+      "keyType": "small"
+    },
+    {
+      "id": 9,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Locked Door",
+      "doorPosition": "west",
+      "doorLocation": 20,
+      "keyType": "small"
+    },
+    {
+      "id": 10,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Big Chest Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 23,
+      "keyType": "bomb"
+    },
+    {
+      "id": 11,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Entrance West Door",
+      "doorPosition": "west",
+      "doorLocation": 26,
+      "keyType": "small"
+    },
+    {
+      "id": 12,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Boss Door",
+      "doorPosition": "north",
+      "doorLocation": 28,
+      "keyType": "big"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [4, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 13],
+      "name": "Base - Bomb the Bridge",
+      "requires": [
+        {"bombs": 1}
+      ]
+    },
+    {
+      "link": [4, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 16],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [5, 5],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [6, 6],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"rod": 2},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24},
+          {"cape": 26}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Bari Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"rod": 2},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24},
+          {"cape": 26}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Bari Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [7, 7],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [8, 8],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [8, 9],
+      "name": "Bow Kill",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["FIXME: These pots can refill arrows."]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [9, 11],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [9, 24],
+      "name": "Base",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [11, 11],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 3}}
+      ]
+    },
+    {
+      "link": [12, 5],
+      "name": "Teleporter",
+      "requires": []
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [13, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [14, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 13],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [14, 14],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [5]
+    },
+    {
+      "link": [15, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 15],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [15, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot"
+        ]},
+        {"or": [
+          {"combatProficiency": 2},
+          {"and": [
+            {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Alternate Weapons",
+      "requires": [
+        {"or": [
+          {"silverArrows": 5},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Invincible",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 44},
+          {"cape": 68}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Precise Dodge, Pot Kill",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "Dodge the Hardhats and use the pots to try to either kill a Blue Hardhat or push a Red Hardhat off the edge.",
+        "After using the pots, retreat and reset the room to respawn the pots."
+      ]
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ],
+      "devNote": ["FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."]
+    },
+    {
+      "link": [17, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Helmasaur", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp"
+      ],
+      "collectsItems": [11]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp"
+      ],
+      "collectsItems": [12]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Bomb Big Chest Wall",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp",
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [11],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "collectsItems": [12],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Bomb Big Chest Wall",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"bombs": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "unlocksDoor": [10],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"refill": {"type": "Rupee", "limit": 270}}
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Dark",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Bubble", "count": 1}},
+          {"darkProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 8}
+      ]
+    },
+    {
+      "link": [20, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        "Lamp"
+      ]
+    },
+    {
+      "link": [20, 23],
+      "name": "Dark Maze Traversal",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [21, 20],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Right Chest",
+      "requires": [
+        "Lamp"
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Left Chest",
+      "requires": [
+        "Lamp"
+      ],
+      "collectsItems": [9]
+    },
+    {
+      "link": [21, 21],
+      "name": "Dark - Open Right Chest",
+      "requires": [
+        {"darkProficiency": 2}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 21],
+      "name": "Dark - Open Left Chest",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"sword": 1},
+          {"darkProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [9],
+      "note": ["Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."]
+    },
+    {
+      "link": [22, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 20],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 8}
+      ]
+    },
+    {
+      "link": [22, 22],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [23, 20],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        "Lamp"
+      ]
+    },
+    {
+      "link": [23, 20],
+      "name": "Dark Maze Traversal",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [13]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        "Lamp"
+      ],
+      "collectsItems": [12]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        "Lamp"
+      ],
+      "collectsItems": [11]
+    },
+    {
+      "link": [23, 23],
+      "name": "Dark - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1}
+      ],
+      "collectsItems": [12],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [23, 23],
+      "name": "Dark - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "collectsItems": [11],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [24, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"silverArrows": 4},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 16],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"blueCane": 24},
+          {"cape": 28}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 16],
+      "name": "Precise Hardhat Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "On entry, move down. Once the Hardhats are very close to Link, go up then hold left to pass them all.",
+        "An alternate strategy is to immediately go up the stairs, and immediately once the closest Blue Hardhat hits the north wall, go down the stairs and move past it to the south.",
+        "It is also possible to just constantly move left and dodge all the Hardhats, but the Arena can get more chaotic; using a pot to kill one or two and retreating is always possible."
+      ]
+    },
+    {
+      "link": [24, 25],
+      "name": "BBow Kill",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["FIXME: These pots can refill arrows."]
+    },
+    {
+      "link": [25, 24],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["FIXME: These pots can refill arrows."]
+    },
+    {
+      "link": [25, 25],
+      "name": "Shoot Statue's Eye",
+      "requires": [
+        {"or": [
+          {"arrows": 1},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "setsFlags": ["OpenedPalaceOfDarknessBasement"]
+    },
+    {
+      "link": [25, 26],
+      "name": "Base - Already Opened",
+      "requires": [
+        {"flag": "OpenedPalaceOfDarknessBasement"}
+      ]
+    },
+    {
+      "link": [26, 27],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "Hammer",
+        {"or": [
+          "h_rangeBlueOrangeSwitch",
+          "Hookshot"
+        ]},
+        {"or": [
+          "RedBoomerang",
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"redCane": 1}
+        ]},
+        {"unlockDoor": 11}
+      ],
+      "devNote": [
+        "Cant use h_rangeBlueOrangeSwitch twice because Hookshot is allowed to hit the switch the first time",
+        "and the Blue Boomerang is not allowed for the second hit."
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "Hammer",
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Terrorpin", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "Hammer",
+        {"unlockDoor": 12}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Break Helmasaur's Mask - Hammer",
+      "requires": [
+        "Hammer",
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Break Helmasaur's Mask - Bombs",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"bombs": 7},
+            {"damage": {"enemy": "Helmasaur King", "count": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"bombs": 6},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"bombs": 5}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [30, 30],
+      "name": "Helmasaur (Mask Broken) - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 1},
+          {"arrows": 20},
+          {"and": [
+            {"arrows": 15},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 10},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 8},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [30, 30],
+      "name": "Helmasaur (Mask Broken) - Sword (L1)",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [14, 15],
+      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+    },
+    {
+      "link": [30, 30],
+      "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
+      "requires": [
+        {"sword": 2},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 2}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Helmasaur King", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"bossProficiency": 2}
+          ]},
+          {"sword": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [30, 30],
+      "name": "Helmasaur (Mask Broken) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 4},
+        {"or": [
+          {"damage": {"enemy": "Helmasaur King", "count": 8}},
+          {"and": [
+            {"bossProficiency": 9},
+            {"damage": {"enemy": "Helmasaur King", "count": 4}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedHelmasaurKing"],
+      "collectsItems": [14, 15],
+      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
+    }
+  ]
+}
