@@ -137,6 +137,30 @@
       "name": "Harmless Hellway",
       "subArea": "Palace of Darkness 1F",
       "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Big Chest",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Push Statue Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Green Eye Statue Room",
+      "subArea": "Palace of Darkness 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Final Basement Entrance",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -214,11 +238,35 @@
     },
     {
       "id": 10,
-      "subArea": "Palace of Darkness B1",
+      "subArea": "Palace of Darkness 1F",
       "locationName": "Harmless Hellway Chest",
       "itemLocation": 22,
       "item": "FiveRupees",
       "itemAddress": "0xEA46"
+    },
+    {
+      "id": 11,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Top Left Chest",
+      "itemLocation": 20,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEA55"
+    },
+    {
+      "id": 12,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Bottom Right Chest",
+      "itemLocation": 20,
+      "item": "SmallKey",
+      "itemAddress": "0xEA58"
+    },
+    {
+      "id": 13,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Big Chest",
+      "itemLocation": 23,
+      "item": "Hammer",
+      "itemAddress": "0xEA40"
     }
   ],
   "lockedDoors": [
@@ -285,6 +333,22 @@
       "doorPosition": "north",
       "doorLocation": 22,
       "keyType": "small"
+    },
+    {
+      "id": 9,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Dark Maze Locked Door",
+      "doorPosition": "west",
+      "doorLocation": 20,
+      "keyType": "small"
+    },
+    {
+      "id": 10,
+      "subArea": "Palace of Darkness 1F",
+      "locationName": "Big Chest Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 23,
+      "keyType": "bomb"
     }
   ],
   "strats": [
@@ -524,7 +588,7 @@
     },
     {
       "link": [8, 9],
-      "name": "Bow",
+      "name": "Bow Kill",
       "requires": [
         {"or": [
           {"arrows": 2},
@@ -532,7 +596,7 @@
         ]}
       ],
       "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
-      "devNote": ["These pots can refill arrows."]
+      "devNote": ["FIXME: These pots can refill arrows."]
     },
     {
       "link": [9, 8],
@@ -573,6 +637,13 @@
       "name": "Base",
       "requires": [
         {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [9, 24],
+      "name": "Base",
+      "requires": [
+        "Hammer"
       ]
     },
     {
@@ -665,16 +736,74 @@
       "requires": []
     },
     {
+      "link": [16, 24],
+      "name": "Hardhat Arena",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot"
+        ]},
+        {"or": [
+          {"combatProficiency": 2},
+          {"and": [
+            {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Alternate Weapons",
+      "requires": [
+        {"or": [
+          {"silverArrows": 5},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Invincible",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 44},
+          {"cape": 68}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 24],
+      "name": "Hardhat Arena - Precise Dodge, Pot Kill",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "Dodge the Hardhats and use the pots to try to either kill a Blue Hardhat or push a Red Hardhat off the edge.",
+        "After using the pots, retreat and reset the room to respawn the pots."
+      ]
+    },
+    {
       "link": [17, 16],
       "name": "Base",
       "requires": [
         {"or": [
           {"sword": 1},
+          "Hookshot",
           {"silverArrows": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
-      ]
+      ],
+      "devNote": ["FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."]
     },
     {
       "link": [17, 18],
@@ -682,6 +811,7 @@
       "requires": [
         {"or": [
           {"sword": 1},
+          "Hookshot",
           {"silverArrows": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
@@ -694,6 +824,7 @@
       "requires": [
         {"or": [
           {"sword": 1},
+          "Hookshot",
           {"silverArrows": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
@@ -727,6 +858,80 @@
       "collectsItems": [7]
     },
     {
+      "link": [20, 20],
+      "name": "Base - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp"
+      ],
+      "collectsItems": [11]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp"
+      ],
+      "collectsItems": [12]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Bomb Big Chest Wall",
+      "requires": [
+        {"unlockDoor": 9},
+        "Lamp",
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [11],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "collectsItems": [12],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Dark - Bomb Big Chest Wall",
+      "requires": [
+        {"unlockDoor": 9},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"bombs": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "unlocksDoor": [10],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
       "link": [20, 21],
       "name": "Base",
       "requires": [
@@ -751,6 +956,30 @@
       "requires": [
         {"unlockDoor": 8}
       ]
+    },
+    {
+      "link": [20, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        "Lamp"
+      ]
+    },
+    {
+      "link": [20, 23],
+      "name": "Dark Maze Traversal",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
       "link": [21, 20],
@@ -787,7 +1016,11 @@
       "link": [21, 21],
       "name": "Dark - Open Left Chest",
       "requires": [
-        {"darkProficiency": 3}
+        {"darkProficiency": 2},
+        {"or": [
+          {"sword": 1},
+          {"darkProficiency": 3}
+        ]}
       ],
       "collectsItems": [9],
       "note": ["Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."]
@@ -809,6 +1042,175 @@
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [10]
+    },
+    {
+      "link": [23, 20],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        "Lamp"
+      ]
+    },
+    {
+      "link": [23, 20],
+      "name": "Dark Maze Traversal",
+      "requires": [
+        {"unlockDoor": 9},
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [13]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        "Lamp"
+      ],
+      "collectsItems": [12]
+    },
+    {
+      "link": [23, 23],
+      "name": "Base - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        "Lamp"
+      ],
+      "collectsItems": [11]
+    },
+    {
+      "link": [23, 23],
+      "name": "Dark - Open Bottom Right Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1}
+      ],
+      "collectsItems": [12],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [23, 23],
+      "name": "Dark - Open Top Left Dark Maze Chest",
+      "requires": [
+        {"unlockDoor": 10},
+        {"darkProficiency": 3},
+        {"sword": 1},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Kodongo", "attack": "Kodongo Fireball", "count": 3}}
+        ]}
+      ],
+      "collectsItems": [11],
+      "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
+    },
+    {
+      "link": [24, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"silverArrows": 4},
+          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 16],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"blueCane": 24},
+          {"cape": 28}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 16],
+      "name": "Precise Hardhat Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "note": [
+        "On entry, move down. Once the Hardhats are very close to Link, go up then hold left to pass them all.",
+        "An alternate strategy is to immediately go up the stairs, and immediately once the closest Blue Hardhat hits the north wall, go down the stairs and move past it to the south.",
+        "It is also possible to just constantly move left and dodge all the Hardhats, but the Arena can get more chaotic; using a pot to kill one or two and retreating is always possible."
+      ]
+    },
+    {
+      "link": [24, 25],
+      "name": "BBow Kill",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["FIXME: These pots can refill arrows."]
+    },
+    {
+      "link": [25, 24],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
+      "devNote": ["FIXME: These pots can refill arrows."]
+    },
+    {
+      "link": [25, 25],
+      "name": "Shoot Statue's Eye",
+      "requires": [
+        {"or": [
+          {"arrows": 1},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "setsFlags": ["OpenedPalaceOfDarknessBasement"]
+    },
+    {
+      "link": [25, 26],
+      "name": "Base - Already Opened",
+      "requires": [
+        {"flag": "OpenedPalaceOfDarknessBasement"}
+      ]
+    },
+    {
+      "link": [26, 25],
+      "name": "Base - Already Opened",
+      "requires": [
+        {"flag": "OpenedPalaceOfDarknessBasement"}
+      ]
     },
 
 
