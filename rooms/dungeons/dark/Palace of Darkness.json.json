@@ -161,6 +161,30 @@
       "name": "Final Basement Entrance",
       "subArea": "Palace of Darkness B1",
       "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Basement Dark Turtle Room",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 28,
+      "name": "Basement Boss Teleporter",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 29,
+      "name": "Helmasaur Mask",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "boss"
+    },
+    {
+      "id": 30,
+      "name": "Helmasaur (Mask Broken)",
+      "subArea": "Palace of Darkness B1",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -267,6 +291,29 @@
       "itemLocation": 23,
       "item": "Hammer",
       "itemAddress": "0xEA40"
+    },
+    {
+      "id": 14,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Lanmolas - Boss Drop",
+      "itemLocation": 30,
+      "item": "HeartContainer",
+      "itemAddress": "0x180153"
+    },
+    {
+      "id": 15,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 30,
+      "item": "Crystal1",
+      "itemAddress": [
+        "0x120A1",
+        "0x53F00",
+        "0x53F01",
+        "0x180056",
+        "0x18007D",
+        "0xC702"
+      ]
     }
   ],
   "lockedDoors": [
@@ -349,6 +396,22 @@
       "doorPosition": "west",
       "doorLocation": 23,
       "keyType": "bomb"
+    },
+    {
+      "id": 11,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Entrance West Door",
+      "doorPosition": "west",
+      "doorLocation": 26,
+      "keyType": "small"
+    },
+    {
+      "id": 12,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dark Basement Boss Door",
+      "doorPosition": "north",
+      "doorLocation": 28,
+      "keyType": "big"
     }
   ],
   "strats": [
@@ -1206,20 +1269,53 @@
       ]
     },
     {
-      "link": [26, 25],
-      "name": "Base - Already Opened",
+      "link": [26, 27],
+      "name": "Base",
       "requires": [
-        {"flag": "OpenedPalaceOfDarknessBasement"}
+        "Lamp",
+        "Hammer",
+        {"or": [
+          "h_rangeBlueOrangeSwitch",
+          "Hookshot"
+        ]},
+        {"or": [
+          "RedBoomerang",
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"redCane": 1}
+        ]},
+        {"unlockDoor": 11}
+      ],
+      "devNote": [
+        "Cant use h_rangeBlueOrangeSwitch twice because Hookshot is allowed to hit the switch the first time",
+        "and the Blue Boomerang is not allowed for the second hit."
       ]
     },
-
-
-
-
-
-
     {
-      "link": [23, 24],
+      "link": [27, 28],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "Hammer",
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Terrorpin", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        "Hammer",
+        {"unlockDoor": 12}
+      ]
+    },
+    {
+      "link": [29, 30],
       "name": "Break Helmasaur's Mask - Hammer",
       "requires": [
         "Hammer",
@@ -1234,7 +1330,7 @@
       ]
     },
     {
-      "link": [23, 24],
+      "link": [29, 30],
       "name": "Break Helmasaur's Mask - Bombs",
       "requires": [
         {"or": [
@@ -1255,7 +1351,7 @@
       ]
     },
     {
-      "link": [24, 24],
+      "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Bow",
       "requires": [
         {"or": [
@@ -1276,10 +1372,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
-      "collectsItems": [24, 25]
+      "collectsItems": [14, 15]
     },
     {
-      "link": [24, 24],
+      "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Sword (L1)",
       "requires": [
         {"sword": 1},
@@ -1297,11 +1393,11 @@
         ]}
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
-      "collectsItems": [24, 25],
+      "collectsItems": [14, 15],
       "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
     },
     {
-      "link": [24, 24],
+      "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
       "requires": [
         {"sword": 2},
@@ -1324,10 +1420,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
-      "collectsItems": [24, 25]
+      "collectsItems": [14, 15]
     },
     {
-      "link": [24, 24],
+      "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Hammer",
       "requires": [
         "Hammer",
@@ -1341,7 +1437,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
-      "collectsItems": [24, 25],
+      "collectsItems": [14, 15],
       "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
     }
   ]
