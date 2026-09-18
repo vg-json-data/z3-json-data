@@ -11,6 +11,12 @@
     "$schema": {
       "type": "string"
     },
+    "description": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "enemies": {
       "type": "array",
       "minItems": 1,

@@ -1,5 +1,8 @@
 {
   "$schema": "../schema/z3-enemies.schema.json",
+  "description": [
+    "This is for enemies that seem like environmental hazards but are technically enemies."
+  ],
   "enemies": [
     {
       "names": [

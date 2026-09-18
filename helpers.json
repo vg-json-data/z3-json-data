@@ -118,6 +118,14 @@
     ]
   },
   {
+    "name": "h_SwampPalacePermanentFloodgates",
+    "requires": [],
+    "note": [
+      "In vanilla, the east and west floodgates are permanent. Randomizers may wish to disable this in order to prevent permanently losing access to the pot keys.",
+      "This helper is not used to flood the dungeon's entrance moat."
+    ]
+  },
+  {
     "name": "Boomerang",
     "requires": [
       {"or": [

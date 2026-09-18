@@ -1343,7 +1343,7 @@
       "underworld": {
         "roomName": "Palace of Darkness",
         "roomId": 93,
-        "nodeId": "unknown"
+        "nodeId": 1
       }
     },
     {
@@ -2001,7 +2001,7 @@
       "underworld": {
         "roomName": "Swamp Palace",
         "roomId": 94,
-        "nodeId": "unknown"
+        "nodeId": 1
       }
     }
   ]

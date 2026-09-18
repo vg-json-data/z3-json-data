@@ -205,6 +205,13 @@
         "type": "string"
       }
     },
+    "obstaclesNotCleared": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
     "resourceMissingAtMost": {
       "type": "array",
       "minItems": 1,

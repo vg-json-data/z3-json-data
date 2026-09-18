@@ -1,0 +1,1200 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 94,
+  "name": "Swamp Palace",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Across the Entrance Moat",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Middle Floor Eastern Room - Northern Staircase",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Middle Floor Eastern Room - Southwest Door",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Eastern Floodable Channel",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Eastern Floodgate Switch Room",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Big Chest Room",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Western Floodable Channel",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Western Floodgate Switch Room (With Blue Pegs Up)",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "At the Western Floodgate Switch",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Far West Staircase",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Far West - Left Drop Ledge",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Far West - Right Drop Ledge",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Behind the Orange Pegs",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Push Statue Room",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Basement North Flooded Room - Right Staircase",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Basement South Flooded Room",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Waterfall Room",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Behind the Fake Waterfall",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Fast River Room Entrance",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Arrghus Fuzz",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "boss",
+      "note": [
+        "Represents killing the 13 Fuzz surrounding Arrghus."
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Arrghus (Fuzz Killed)",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "boss"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Swamp Palace 1F",
+      "locationName": "Entrance Room Chest",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0xEA9D"
+    },
+    {
+      "id": 2,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Map Chest",
+      "itemLocation": 3,
+      "item": "Map",
+      "itemAddress": "0xE986"
+    },
+    {
+      "id": 3,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Middle Floor Eastern Room Pot Key",
+      "itemLocation": 4,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 4,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Eastern Floodable Pot Key",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 5,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Compass Chest",
+      "itemLocation": 7,
+      "item": "Compass",
+      "itemAddress": "0xEAA0"
+    },
+    {
+      "id": 6,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Big Chest",
+      "itemLocation": 7,
+      "item": "Hookshot",
+      "itemAddress": "0xE989"
+    },
+    {
+      "id": 7,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Hookshot Pot Key",
+      "itemLocation": 7,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Western Floodable Pot Key",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 9,
+      "subArea": "Swamp Palace B1",
+      "locationName": "West Chest",
+      "itemLocation": 12,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAA3"
+    },
+    {
+      "id": 10,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 14,
+      "item": "BigKey",
+      "itemAddress": "0xEAA6"
+    },
+    {
+      "id": 11,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Flooded Room Left Chest",
+      "itemLocation": 17,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAA9"
+    },
+    {
+      "id": 12,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Flooded Room Right Chest",
+      "itemLocation": 17,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAAC"
+    },
+    {
+      "id": 13,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Waterfall Room Chest",
+      "itemLocation": 18,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAAF"
+    },
+    {
+      "id": 14,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Fast River Room Pot Key",
+      "itemLocation": 20,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 15,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Arrghus - Boss Drop",
+      "itemLocation": 22,
+      "item": "HeartContainer",
+      "itemAddress": "0x180154"
+    },
+    {
+      "id": 16,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 22,
+      "item": "Crystal2",
+      "itemAddress": [
+        "0x120A0",
+        "0x53F6C",
+        "0x53F6D",
+        "0x180055",
+        "0x180071",
+        "0xC701"
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Swamp Palace 1F",
+      "locationName": "Entrance Room North Door",
+      "doorPosition": "north",
+      "doorLocation": 2,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Middle Floor Eastern Room - Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 3,
+      "keyType": "bomb"
+    },
+    {
+      "id": 3,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Middle Floor Eastern Room - Locked Door",
+      "doorPosition": "west",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Eastern Floodable Channel - North Door",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Eastern Floodgate Switch Room - Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 6,
+      "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Big Chest Room - Northwest Door",
+      "doorPosition": "west",
+      "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Big Chest Room - North Door",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "big"
+    },
+    {
+      "id": 8,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Fast River Room - Bombable Wall",
+      "doorPosition": "north",
+      "doorLocation": 20,
+      "keyType": "bomb"
+    },
+    {
+      "id": 9,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Fast River Room - Northwest Door",
+      "doorPosition": "north",
+      "doorLocation": 20,
+      "keyType": "small"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "Flood Eastern Channel",
+      "note": [
+        "The eastern channel has been flooded."
+      ]
+    },
+    {
+      "id": "Flood Western Channel",
+      "note": [
+        "The western channel has been flooded."
+      ]
+    },
+    {
+      "id": "Western Floodgate Exit Strategy",
+      "note": [
+        "Represents being at the western floodgate switch with the ability to exit the blue peg prison without having to exit the dungeon."
+      ]
+    },
+    {
+      "id": "Blue Pegs Down",
+      "note": [
+        "Represents the blue pegs being down, which will prevent getting the big key chest."
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        "Flippers"
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Kill Water Tektite",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"fireRod": 1},
+          {"bombs": 1}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Kill Water Tektite - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 2},
+          {"blueCane": 24},
+          {"and": [
+            {"redCane": 1},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Bomb Northwest Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Wall Already Bombed",
+      "requires": [
+        {"unlockDoor": 2}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Kyameron", "count": 1}},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 28},
+          {"cape": 25}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Eastern Room Pot Key",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Kyameron", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [5, 5],
+      "name": "Eastern Floodable Pot Key",
+      "requires": [],
+      "collectsItems": [4],
+      "devNote": ["FIXME: This assumes that this can be reached without flooding it."]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [5, 7],
+      "name": "Base",
+      "requires": [
+        "Flippers",
+        {"or": [
+          {"obstaclesCleared": ["Flood Eastern Channel"]},
+          {"and": [
+            "h_SwampPalacePermanentFloodgates",
+            {"flag": "OpenedSwampPalaceEastFloodgate"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Flood Eastern Channel",
+      "requires": [
+        "Hammer"
+      ],
+      "clearsObstacles": ["Flood Eastern Channel"],
+      "setsFlags": ["OpenedSwampPalaceEastFloodgate"]
+    },
+    {
+      "link": [6, 6],
+      "name": "Base - Bomb Western Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open South Chest",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"rod": 3},
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"damage": {"enemy": "Water Tektite", "count": 2}}
+        ]}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Alternate Weapons - Open South Chest",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 3},
+          {"redCane": 2},
+          {"blueCane": 60},
+          {"cape": 42}
+        ]}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Water Tektite Precise Dodge - Open South Chest",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Hookshot Pot Key",
+      "requires": [
+        "Hookshot"
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6},
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 3},
+          {"and": [
+            {"damage": {"enemy": "Water Tektite", "count": 1}},
+            {"damage": {"enemy": "Pirogusu", "count": 1}}
+          ]}
+        ]}
+      ],
+      "devNote": ["This path feels a bit harder than the others in the room."]
+    },
+    {
+      "link": [7, 9],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"unlockDoor": 6},
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 20}
+        ]}
+      ],
+      "devNote": ["This path feels a bit harder than the others in the room."]
+    },
+    {
+      "link": [7, 15],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Western Floodable Pot Key",
+      "requires": [],
+      "collectsItems": [8],
+      "devNote": ["FIXME: This assumes that this can be reached without flooding it."]
+    },
+    {
+      "link": [8, 11],
+      "name": "Base",
+      "requires": [
+        "Flippers",
+        {"or": [
+          {"obstaclesCleared": ["Flood Western Channel"]},
+          {"and": [
+            "h_SwampPalacePermanentFloodgates",
+            {"flag": "OpenedSwampPalaceWestFloodgate"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6},
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base with Return Strategy",
+      "requires": [
+        "h_rangeBlueOrangeSwitch",
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Western Floodgate Exit Strategy"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "note": [
+        "Expects getting to the switch with no way to exit without lowering the blue switches.",
+        "This is only useful if the flooding is permanent, like in vanilla."
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base - Blue Pegs Down",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"],
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block with Return Strategy",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 40},
+          {"cape": 24},
+          {"damage": {"enemy": "Spike Block", "count": 2}},
+          {"and": [
+            {"cape": 12},
+            "h_hitBlueOrangeSwitch",
+            "h_hitBlueOrangeSwitch"
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Spike Block", "count": 1}},
+            "h_hitBlueOrangeSwitch",
+            "h_hitBlueOrangeSwitch"
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Western Floodgate Exit Strategy"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 20},
+          {"cape": 12},
+          {"damage": {"enemy": "Spike Block", "count": 1}}
+        ]}
+      ],
+      "note": [
+        "Expects getting to the switch with no way to exit without lowering the blue switches.",
+        "This is only useful if the flooding is permanent, like in vanilla."
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block - Blue Pegs Down",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 20},
+          {"cape": 12},
+          {"damage": {"enemy": "Spike Block", "count": 1}}
+        ]},
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"],
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Return",
+      "requires": [
+        {"obstaclesCleared": ["Western Floodgate Exit Strategy"]}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ],
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Flood Western Channel",
+      "requires": [],
+      "clearsObstacles": ["Flood Western Channel"],
+      "setsFlags": ["OpenedSwampPalaceWestFloodgate"]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Kyameron", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Kyameron", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 13],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Kyameron", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Kyameron", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [12, 13],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open West Chest",
+      "requires": [],
+      "collectsItems": [9]
+    },
+    {
+      "link": [13, 12],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Orange Pegs Down",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [14, 14],
+      "name": "Base - Open Big Key Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [],
+      "note": ["The easiest way to get to the southern flooded room without damage is to go back upstairs."]
+    },
+    {
+      "link": [16, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [],
+      "note": ["The easiest way to get to the northen flooded room without damage is to go back upstairs."]
+    },
+    {
+      "link": [17, 17],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [11]
+    },
+    {
+      "link": [17, 17],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [12]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 18],
+      "name": "Base - Open Waterfall Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 12}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 20],
+      "name": "Upstream Pot Key",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [14],
+      "devNote": ["This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Upstream Pot Key - Medallion Tektite Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"bombos": 1},
+          {"ether": 1},
+          {"quake": 1}
+        ]}
+      ],
+      "collectsItems": [14]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9}
+      ]
+    },
+    {
+      "link": [21, 22],
+      "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
+      "requires": [
+        "Hookshot",
+        {"sword": 2},
+        {"or": [
+          {"damage": {"enemy": "Arrghus Fuzz", "count": 1}},
+          {"bossProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [21, 22],
+      "name": "Kill Arrghus's Fuzz - Sword (L1)",
+      "requires": [
+        "Hookshot",
+        {"sword": 1},
+        {"bossProficiency": 3}
+      ],
+      "note": [
+        "With a Level 1 sword, Arrghus is only vulnerable to spin attacks.",
+        "Charge a spin attack then quickly shoot the Hookshot.",
+        "The Hookshot will activate and then the spin attack will trigger after grabbing the Fuzz."
+      ]
+    },
+    {
+      "link": [21, 22],
+      "name": "Kill Arrghus's Fuzz - Swordless",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"silverArrows": 13},
+          {"rod": 13}
+        ]}
+      ]
+    },
+    {
+      "link": [21, 22],
+      "name": "Kill Arrghus's Fuzz - Bombs",
+      "requires": [
+        "Hookshot",
+        {"bossProficiency": 9},
+        {"bombs": 20}
+      ],
+      "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
+    },
+    {
+      "link": [22, 22],
+      "name": "Arrghus (Fuzz Killed) - Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Arrghus", "count": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            {"sword": 2},
+            {"damage": {"enemy": "Arrghus", "count": 3}}
+          ]},
+          {"and": [
+            {"sword": 4},
+            {"damage": {"enemy": "Arrghus", "count": 2}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedArrghus"],
+      "collectsItems": [15, 16],
+      "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
+    },
+    {
+      "link": [22, 22],
+      "name": "Arrghus (Fuzz Killed) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Arrghus", "count": 4}},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Arrghus", "count": 2}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedArrghus"],
+      "collectsItems": [15, 16]
+    },
+    {
+      "link": [22, 22],
+      "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"rod": 12},
+          {"and": [
+            {"rod": 8},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"rod": 6},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 4},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedArrghus"],
+      "collectsItems": [15, 16]
+    },
+    {
+      "link": [22, 22],
+      "name": "Arrghus (Fuzz Killed) - Bow",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"silverArrows": 10},
+            {"damage": {"enemy": "Arrghus", "count": 2}}
+          ]},
+          {"and": [
+            {"silverArrows": 10},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Arrghus", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"silverArrows": 1},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 40},
+            {"damage": {"enemy": "Arrghus", "count": 6}}
+          ]},
+          {"and": [
+            {"arrows": 30},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Arrghus", "count": 3}}
+          ]},
+          {"and": [
+            {"arrows": 20},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 10},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 8},
+            {"bossProficiency": 9}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedArrghus"],
+      "collectsItems": [15, 16]
+    }
+  ]
+}

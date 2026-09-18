@@ -178,7 +178,10 @@
       "id": 29,
       "name": "Helmasaur Mask",
       "subArea": "Palace of Darkness B1",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "note": [
+        "Represents breaking Helmasaur's Mask."
+      ]
     },
     {
       "id": 30,
@@ -295,7 +298,7 @@
     {
       "id": 14,
       "subArea": "Palace of Darkness B1",
-      "locationName": "Lanmolas - Boss Drop",
+      "locationName": "Helmasaur - Boss Drop",
       "itemLocation": 30,
       "item": "HeartContainer",
       "itemAddress": "0x180153"

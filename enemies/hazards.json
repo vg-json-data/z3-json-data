@@ -1,6 +1,24 @@
 {
   "$schema": "../schema/z3-enemies.schema.json",
+  "description": [
+    "This is for damage sources that are not technically enemies."
+  ],
   "enemies": [
+    {
+      "names": [
+        "Medusa",
+        "Yomo Medusa"
+      ],
+      "attacks": [
+        "Fireball"
+      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
+      "spriteIndex": null
+    },
     {
       "names": [
         "Ground Spikes"
