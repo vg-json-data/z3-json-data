@@ -69,6 +69,42 @@
       "name": "Far West Staircase",
       "subArea": "Swamp Palace 1F",
       "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Far West - Left Drop Ledge",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Far West - Right Drop Ledge",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Behind the Orange Pegs",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Push Statue Room",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Basement North Flooded Room - Right Staircase",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Basement South Flooded Room",
+      "subArea": "Swamp Palace b2",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -127,6 +163,46 @@
       "itemLocation": 7,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Western Floodable Pot Key",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 9,
+      "subArea": "Swamp Palace B1",
+      "locationName": "West Chest",
+      "itemLocation": 12,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAA3"
+    },
+    {
+      "id": 10,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 14,
+      "item": "BigKey",
+      "itemAddress": "0xEAA6"
+    },
+    {
+      "id": 11,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Flooded Room Left Chest",
+      "itemLocation": 17,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAA9"
+    },
+    {
+      "id": 12,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Flooded Room Right Chest",
+      "itemLocation": 17,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAAC"
     }
   ],
   "lockedDoors": [
@@ -169,6 +245,22 @@
       "doorPosition": "west",
       "doorLocation": 6,
       "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Big Chest Room - Northwest Door",
+      "doorPosition": "west",
+      "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Big Chest Room - North Door",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "big"
     }
   ],
   "obstacles": [
@@ -188,6 +280,12 @@
       "id": "Western Floodgate Exit Strategy",
       "note": [
         "Represents being at the western floodgate switch with the ability to exit the blue peg prison without having to exit the dungeon."
+      ]
+    },
+    {
+      "id": "Blue Pegs Down",
+      "note": [
+        "Represents the blue pegs being down, which will prevent getting the big key chest."
       ]
     }
   ],
@@ -437,6 +535,7 @@
       "link": [7, 9],
       "name": "Base",
       "requires": [
+        {"unlockDoor": 6},
         {"or": [
           {"sword": 1},
           "Hookshot",
@@ -456,6 +555,7 @@
       "link": [7, 9],
       "name": "Base - Alternate Weapons",
       "requires": [
+        {"unlockDoor": 6},
         {"combatProficiency": 2},
         {"or": [
           {"redCane": 1},
@@ -464,6 +564,13 @@
         ]}
       ],
       "devNote": ["This path feels a bit harder than the others in the room."]
+    },
+    {
+      "link": [7, 15],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
     },
     {
       "link": [8, 7],
@@ -505,6 +612,7 @@
       "link": [9, 7],
       "name": "Base",
       "requires": [
+        {"unlockDoor": 6},
         {"or": [
           {"sword": 1},
           "Hookshot",
@@ -514,6 +622,13 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Water Tektite", "count": 1}}
         ]}
+      ]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
       ]
     },
     {
@@ -531,7 +646,24 @@
       "requires": [
         "h_rangeBlueOrangeSwitch"
       ],
-      "note": ["Expects getting to the switch with no way to exit. This is only useful if the flooding is permanent, like in vanilla."]
+      "note": [
+        "Expects getting to the switch with no way to exit without lowering the blue switches.",
+        "This is only useful if the flooding is permanent, like in vanilla."
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base - Blue Pegs Down",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"],
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
     },
     {
       "link": [9, 10],
@@ -567,15 +699,50 @@
           {"damage": {"enemy": "Spike Block", "count": 1}}
         ]}
       ],
-      "note": ["Expects getting to the switch with no way to exit. This is only useful if the flooding is permanent, like in vanilla."]
+      "note": [
+        "Expects getting to the switch with no way to exit without lowering the blue switches.",
+        "This is only useful if the flooding is permanent, like in vanilla."
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block - Blue Pegs Down",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 20},
+          {"cape": 12},
+          {"damage": {"enemy": "Spike Block", "count": 1}}
+        ]},
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"],
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
     },
     {
       "link": [10, 9],
       "name": "Base - Return",
       "requires": [
         {"obstaclesCleared": ["Western Floodgate Exit Strategy"]}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
       ],
-      "clearsObstacles": ["Flood Western Channel"]
+      "note": [
+        "This will enable Link to go to the west side of the dungeon and collect one but not both of the chests there."
+      ],
+      "devNote": [
+        "If flooding is permanent, like in vanilla, Link can just flood the channel and then reset the dungeon."
+      ]
     },
     {
       "link": [10, 10],
@@ -583,6 +750,96 @@
       "requires": [],
       "clearsObstacles": ["Flood Western Channel"],
       "setsFlags": ["OpenedSwampPalaceWestFloodgate"]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Kyameron", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Kyameron", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 13],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Kyameron", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Kyameron", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [12, 13],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open West Chest",
+      "requires": [],
+      "collectsItems": [9]
+    },
+    {
+      "link": [13, 12],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Orange Pegs Down",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [14, 14],
+      "name": "Base - Open Big Key Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [],
+      "note": ["The easiest way to get to the southern flooded room without damage is to go back upstairs."]
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [],
+      "note": ["The easiest way to get to the northen flooded room without damage is to go back upstairs."]
+    },
+    {
+      "link": [17, 17],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [11]
+    },
+    {
+      "link": [17, 17],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [12]
     },
 
     
