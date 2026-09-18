@@ -45,6 +45,30 @@
       "name": "Big Chest Room",
       "subArea": "Swamp Palace B1",
       "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Western Floodable Channel",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Western Floodgate Switch Room (With Blue Pegs Up)",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "At the Western Floodgate Switch",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Far West Staircase",
+      "subArea": "Swamp Palace 1F",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -158,6 +182,12 @@
       "id": "Flood Western Channel",
       "note": [
         "The western channel has been flooded."
+      ]
+    },
+    {
+      "id": "Western Floodgate Exit Strategy",
+      "note": [
+        "Represents being at the western floodgate switch with the ability to exit the blue peg prison without having to exit the dungeon."
       ]
     }
   ],
@@ -301,7 +331,13 @@
       "name": "Base",
       "requires": [
         "Flippers",
-        {"obstaclesCleared": ["Flood Eastern Channel"]}
+        {"or": [
+          {"obstaclesCleared": ["Flood Eastern Channel"]},
+          {"and": [
+            "h_SwampPalacePermanentFloodgates",
+            {"flag": "OpenedSwampPalaceEastFloodgate"}
+          ]}
+        ]}
       ]
     },
     {
@@ -317,7 +353,8 @@
       "requires": [
         "Hammer"
       ],
-      "clearsObstacles": ["Flood Eastern Channel"]
+      "clearsObstacles": ["Flood Eastern Channel"],
+      "setsFlags": ["OpenedSwampPalaceEastFloodgate"]
     },
     {
       "link": [6, 6],
@@ -381,6 +418,174 @@
       ],
       "collectsItems": [7]
     },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 9],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 3},
+          {"and": [
+            {"damage": {"enemy": "Water Tektite", "count": 1}},
+            {"damage": {"enemy": "Pirogusu", "count": 1}}
+          ]}
+        ]}
+      ],
+      "devNote": ["This path feels a bit harder than the others in the room."]
+    },
+    {
+      "link": [7, 9],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 20}
+        ]}
+      ],
+      "devNote": ["This path feels a bit harder than the others in the room."]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Western Floodable Pot Key",
+      "requires": [],
+      "collectsItems": [8],
+      "devNote": ["FIXME: This assumes that this can be reached without flooding it."]
+    },
+    {
+      "link": [8, 11],
+      "name": "Base",
+      "requires": [
+        "Flippers",
+        {"or": [
+          {"obstaclesCleared": ["Flood Western Channel"]},
+          {"and": [
+            "h_SwampPalacePermanentFloodgates",
+            {"flag": "OpenedSwampPalaceWestFloodgate"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 7],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base with Return Strategy",
+      "requires": [
+        "h_rangeBlueOrangeSwitch",
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Western Floodgate Exit Strategy"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "note": ["Expects getting to the switch with no way to exit. This is only useful if the flooding is permanent, like in vanilla."]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block with Return Strategy",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 40},
+          {"cape": 24},
+          {"damage": {"enemy": "Spike Block", "count": 2}},
+          {"and": [
+            {"cape": 12},
+            "h_hitBlueOrangeSwitch",
+            "h_hitBlueOrangeSwitch"
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Spike Block", "count": 1}},
+            "h_hitBlueOrangeSwitch",
+            "h_hitBlueOrangeSwitch"
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Western Floodgate Exit Strategy"]
+    },
+    {
+      "link": [9, 10],
+      "name": "Through the Spike Block",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 20},
+          {"cape": 12},
+          {"damage": {"enemy": "Spike Block", "count": 1}}
+        ]}
+      ],
+      "note": ["Expects getting to the switch with no way to exit. This is only useful if the flooding is permanent, like in vanilla."]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base - Return",
+      "requires": [
+        {"obstaclesCleared": ["Western Floodgate Exit Strategy"]}
+      ],
+      "clearsObstacles": ["Flood Western Channel"]
+    },
+    {
+      "link": [10, 10],
+      "name": "Flood Western Channel",
+      "requires": [],
+      "clearsObstacles": ["Flood Western Channel"],
+      "setsFlags": ["OpenedSwampPalaceWestFloodgate"]
+    },
+
+    
 
 
 
