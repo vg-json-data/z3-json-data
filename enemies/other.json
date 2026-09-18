@@ -1,5 +1,8 @@
 {
   "$schema": "../schema/z3-enemies.schema.json",
+  "description": [
+    "This is for unusual enemies, such as those that seem like hazards but are vulnerable to something, or those that seem like enemies but are invulnerable."
+  ],
   "enemies": [
     {
       "names": [

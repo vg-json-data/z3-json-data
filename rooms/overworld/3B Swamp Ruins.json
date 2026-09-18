@@ -60,7 +60,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"obstaclesCleared": ["DrainedFloodgate"]}
+        {"obstaclesCleared": ["Drained Floodgate"]}
       ],
       "collectsItems": [1]
     },
@@ -118,14 +118,14 @@
         "type": "DrainedFloodgate"
       },
       "requires": [],
-      "clearsObstacles": ["DrainedFloodgate"]
+      "clearsObstacles": ["Drained Floodgate"]
     },
     {
       "link": [2, 2],
       "name": "Enter Swamp Palace with Water Drained",
       "world": "dark",
       "requires": [
-        {"obstaclesCleared": ["DrainedFloodgate"]}
+        {"obstaclesCleared": ["Drained Floodgate"]}
       ],
       "exitState": {
         "state": "event",
