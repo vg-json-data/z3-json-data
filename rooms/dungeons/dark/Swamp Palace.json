@@ -103,8 +103,41 @@
     {
       "id": 17,
       "name": "Basement South Flooded Room",
-      "subArea": "Swamp Palace b2",
+      "subArea": "Swamp Palace B2",
       "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Waterfall Room",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Behind the Fake Waterfall",
+      "subArea": "Swamp Palace B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Fast River Room Entrance",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Arrghus Fuzz",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "boss",
+      "note": [
+        "Represents killing the 13 Fuzz surrounding Arrghus."
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Arrghus (Fuzz Killed)",
+      "subArea": "Swamp Palace B1",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -203,6 +236,45 @@
       "itemLocation": 17,
       "item": "TwentyRupees",
       "itemAddress": "0xEAAC"
+    },
+    {
+      "id": 13,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Waterfall Room Chest",
+      "itemLocation": 18,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAAF"
+    },
+    {
+      "id": 14,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Fast River Room Pot Key",
+      "itemLocation": 20,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 15,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Arrghus - Boss Drop",
+      "itemLocation": 22,
+      "item": "HeartContainer",
+      "itemAddress": "0x180154"
+    },
+    {
+      "id": 16,
+      "subArea": "Swamp Palace B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 22,
+      "item": "Crystal2",
+      "itemAddress": [
+        "0x120A0",
+        "0x53F6C",
+        "0x53F6D",
+        "0x180055",
+        "0x180071",
+        "0xC701"
+      ]
     }
   ],
   "lockedDoors": [
@@ -261,6 +333,22 @@
       "doorPosition": "north",
       "doorLocation": 7,
       "keyType": "big"
+    },
+    {
+      "id": 8,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Fast River Room - Bombable Wall",
+      "doorPosition": "north",
+      "doorLocation": 20,
+      "keyType": "bomb"
+    },
+    {
+      "id": 9,
+      "subArea": "Swamp Palace B2",
+      "locationName": "Fast River Room - Northwest Door",
+      "doorPosition": "north",
+      "doorLocation": 20,
+      "keyType": "small"
     }
   ],
   "obstacles": [
@@ -824,6 +912,21 @@
       "note": ["The easiest way to get to the southern flooded room without damage is to go back upstairs."]
     },
     {
+      "link": [16, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
       "link": [17, 16],
       "name": "Base",
       "requires": [],
@@ -841,15 +944,97 @@
       "requires": [],
       "collectsItems": [12]
     },
-
-    
-
-
-
-
-
     {
-      "link": [15, 16],
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 18],
+      "name": "Base - Open Waterfall Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"damage": {"enemy": "Bari (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 12}
+        ]}
+      ]
+    },
+    {
+      "link": [20, 20],
+      "name": "Upstream Pot Key",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Water Tektite", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [14],
+      "devNote": ["This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."]
+    },
+    {
+      "link": [20, 20],
+      "name": "Upstream Pot Key - Medallion Tektite Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"bombos": 1},
+          {"ether": 1},
+          {"quake": 1}
+        ]}
+      ],
+      "collectsItems": [14]
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9}
+      ]
+    },
+    {
+      "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
       "requires": [
         "Hookshot",
@@ -861,7 +1046,7 @@
       ]
     },
     {
-      "link": [15, 16],
+      "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Sword (L1)",
       "requires": [
         "Hookshot",
@@ -875,7 +1060,7 @@
       ]
     },
     {
-      "link": [15, 16],
+      "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Swordless",
       "requires": [
         "Hookshot",
@@ -888,7 +1073,7 @@
       ]
     },
     {
-      "link": [15, 16],
+      "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Bombs",
       "requires": [
         "Hookshot",
@@ -898,7 +1083,7 @@
       "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
     },
     {
-      "link": [16, 16],
+      "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Sword",
       "requires": [
         {"sword": 1},
@@ -919,11 +1104,11 @@
         ]}
       ],
       "setsFlags": ["DefeatedArrghus"],
-      "collectsItems": [16, 17],
+      "collectsItems": [15, 16],
       "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
     },
     {
-      "link": [16, 16],
+      "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Hammer",
       "requires": [
         "Hammer",
@@ -938,10 +1123,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedArrghus"],
-      "collectsItems": [16, 17]
+      "collectsItems": [15, 16]
     },
     {
-      "link": [16, 16],
+      "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
       "requires": [
         {"or": [
@@ -961,10 +1146,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedArrghus"],
-      "collectsItems": [16, 17]
+      "collectsItems": [15, 16]
     },
     {
-      "link": [16, 16],
+      "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Bow",
       "requires": [
         {"or": [
@@ -1009,7 +1194,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedArrghus"],
-      "collectsItems": [16, 17]
+      "collectsItems": [15, 16]
     }
   ]
 }
