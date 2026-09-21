@@ -24,7 +24,7 @@
     },
     {
       "id": 4,
-      "name": "First Section Southwest Drop Entrance",
+      "name": "Southwest Drop Entrance",
       "subArea": "Skull Woods First Section",
       "nodeType": "drop"
     },
@@ -32,19 +32,113 @@
       "id": 5,
       "name": "Compass Chest Room",
       "subArea": "Skull Woods First Section",
-      "nodeType": "drop"
+      "nodeType": "junction"
     },
     {
       "id": 6,
       "name": "Pot Prison",
       "subArea": "Skull Woods First Section",
-      "nodeType": "drop"
+      "nodeType": "junction"
     },
     {
       "id": 7,
-      "name": "First Section Southeast Drop Entrance (Pinball Room)",
+      "name": "Southeast Drop Entrance (Pinball Room)",
       "subArea": "Skull Woods First Section",
       "nodeType": "drop"
+    },
+    {
+      "id": 8,
+      "name": "Second Section East Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 9,
+      "name": "Chest with Big Key Room",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Second Section Bumper Hallway",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Second Section West Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 12,
+      "name": "Second Section North Drop Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "drop"
+    },
+    {
+      "id": 13,
+      "name": "Final Section Entrance",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "door"
+    },
+    
+
+
+
+
+    {
+      "id": 18,
+      "name": "Skull Woods Torch Room",
+      "area": "Skull Woods Final Section (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 19,
+      "name": "Skull Woods Final Section Exit",
+      "area": "Skull Woods Final Section (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 20,
+      "name": "Skull Woods - Bridge Room",
+      "area": "Skull Woods Final Section (Entrance)",
+      "requires": [
+        "isDarkLink",
+        "FireRod"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyD3",
+      "nodeAddress": "0xE9FE"
+    },
+    {
+      "id": 21,
+      "name": "Skull Woods - Mothula",
+      "area": "Skull Woods Final Section (Mothula)",
+      "requires": [
+        "canSlashCurtains",
+        "isDarkLink",
+        "FireRod",
+        "KeyD3:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "BossHeartContainer",
+      "nodeAddress": "0x180155"
+    },
+    {
+      "id": 22,
+      "name": "Skull Woods - Prize",
+      "area": "Skull Woods Final Section (Mothula)",
+      "nodeType": "item",
+      "nodeItem": "Crystal3",
+      "nodeAddress": [
+        "0x120A3",
+        "0x53F12",
+        "0x53F13",
+        "0x180058",
+        "0x18007B",
+        "0xC704"
+      ]
     }
   ],
   "items": [
@@ -87,6 +181,22 @@
       "itemLocation": 7,
       "item": "SmallKey",
       "itemAddress": "0xE9C8"
+    },
+    {
+      "id": 6,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 9,
+      "item": "BigKey",
+      "itemAddress": "0xE99E"
+    },
+    {
+      "id": 7,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Pot Key By Useless Door",
+      "itemLocation": 11,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     }
   ],
   "lockedDoors": [
@@ -112,6 +222,22 @@
       "locationName": "Pinball Room North Door",
       "doorPosition": "north",
       "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Chest with Big Key Room - Bombable Wall",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    },
+    {
+      "id": 5,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Locked Door to Useless Room",
+      "doorPosition": "north",
+      "doorLocation": 11,
       "keyType": "small"
     }
   ],
@@ -225,6 +351,14 @@
       "devNote": ["Technically also requires the wall removed, but it should be if the door is bombed open."]
     },
     {
+      "link": [3, 3],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [2]
+    },
+    {
       "link": [4, 5],
       "name": "Base",
       "requires": []
@@ -290,6 +424,126 @@
         ]}
       ],
       "collectsItems": [5]
+    },
+    {
+      "link": [8, 9],
+      "name": "Gibdo Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"rod": 2},
+          {"silverArrows": 2},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"blueCane": 112}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"iceRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Blue Cane Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 112},
+          {"and": [
+            {"combatProficiency": 3},
+            {"blueCane": 68}
+          ]}
+        ]}
+      ],
+      "note": ["Position the Gibdos so that they are both getting hurt constantly. The pots can also be used to deal significant damage."]
+    },
+    {
+      "link": [8, 9],
+      "name": "Red Cane",
+      "requires": [
+        {"combatProficiency": 2},
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Gibdo", "count": 3}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Gibdo", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "devNote": ["Use the pots to kill the Blue Bari. Dodge the Gibdo while positioning the statue."]
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Eastern Room Magic Refill",
+      "requires": [
+        {"unlockDoor": 4},
+        {"refill": {"type": "magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [10, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 11],
+      "name": "Base - Collect Pot Key",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [12, 10],
+      "name": "Base",
+      "requires": []
     },
 
 
