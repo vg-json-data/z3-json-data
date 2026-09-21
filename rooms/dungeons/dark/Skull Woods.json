@@ -82,63 +82,29 @@
       "subArea": "Skull Woods Final Section",
       "nodeType": "door"
     },
-    
-
-
-
-
     {
-      "id": 18,
-      "name": "Skull Woods Torch Room",
-      "area": "Skull Woods Final Section (Entrance)",
-      "nodeType": "door"
+      "id": 14,
+      "name": "Torch Room",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
     },
     {
-      "id": 19,
-      "name": "Skull Woods Final Section Exit",
-      "area": "Skull Woods Final Section (Entrance)",
-      "nodeType": "door"
+      "id": 15,
+      "name": "Pre-Mothula First Arena",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
     },
     {
-      "id": 20,
-      "name": "Skull Woods - Bridge Room",
-      "area": "Skull Woods Final Section (Entrance)",
-      "requires": [
-        "isDarkLink",
-        "FireRod"
-      ],
-      "nodeType": "item",
-      "nodeItem": "KeyD3",
-      "nodeAddress": "0xE9FE"
+      "id": 16,
+      "name": "Pre-Mothula Arena",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
     },
     {
-      "id": 21,
-      "name": "Skull Woods - Mothula",
-      "area": "Skull Woods Final Section (Mothula)",
-      "requires": [
-        "canSlashCurtains",
-        "isDarkLink",
-        "FireRod",
-        "KeyD3:3"
-      ],
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180155"
-    },
-    {
-      "id": 22,
-      "name": "Skull Woods - Prize",
-      "area": "Skull Woods Final Section (Mothula)",
-      "nodeType": "item",
-      "nodeItem": "Crystal3",
-      "nodeAddress": [
-        "0x120A3",
-        "0x53F12",
-        "0x53F13",
-        "0x180058",
-        "0x18007B",
-        "0xC704"
-      ]
+      "id": 17,
+      "name": "Mothula Boss",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -197,6 +163,45 @@
       "itemLocation": 11,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Final Section Bridge Room Chest",
+      "itemLocation": 13,
+      "item": "SmallKey",
+      "itemAddress": "0xE9FE"
+    },
+    {
+      "id": 9,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Pre-Mothula Arena Gibdo Key",
+      "itemLocation": 16,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 10,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Mothula - Boss Drop",
+      "itemLocation": 17,
+      "item": "HeartContainer",
+      "itemAddress": "0x180155"
+    },
+    {
+      "id": 11,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 17,
+      "item": "Crystal3",
+      "itemAddress": [
+        "0x120A3",
+        "0x53F12",
+        "0x53F13",
+        "0x180058",
+        "0x18007B",
+        "0xC704"
+      ]
     }
   ],
   "lockedDoors": [
@@ -238,6 +243,22 @@
       "locationName": "Locked Door to Useless Room",
       "doorPosition": "north",
       "doorLocation": 11,
+      "keyType": "small"
+    },
+    {
+      "id": 6,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Bridge Room North Door",
+      "doorPosition": "north",
+      "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Pre-Mothula Arena",
+      "doorPosition": "east",
+      "doorLocation": 16,
       "keyType": "small"
     }
   ],
@@ -545,14 +566,152 @@
       "name": "Base",
       "requires": []
     },
-
-
-
-
-
-
     {
-      "link": [21, 21],
+      "link": [13, 13],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spark", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6},
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"rod": 2},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"unlockDoor": 6},
+        {"combatProficiency": 2},
+        {"or": [
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 40},
+          {"cape": 40},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [14, 15],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"rod": 4},
+          {"silverArrows": 4},
+          {"sword": 3},
+          {"and": [
+            {"sword": 2},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]}
+        ]},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"combatProficiency": 2},
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [14, 15],
+      "name": "Stacked Fire Rod Kill",
+      "requires": [
+        {"fireRod": 2},
+        {"combatProficiency": 3},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ],
+      "note": ["Stack the Gibdo then kill them with fewer fire rod shots."]
+    },
+    {
+      "link": [14, 15],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 4},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": [
+        {"sword": 1},
+        {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Quick Exit",
+      "requires": [
+        {"combatProficiency": 2},
+        {"sword": 1}
+      ]
+    },
+    {
+      "link": [16, 16],
+      "name": "Gibdo Kill",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"sword": 2},
+          {"and": [
+            {"damage": {"enemy": "Gibdo", "count": 1}},
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [9],
+      "devNote": ["FIXME: This assumes Link has a sword, since the previous room requires it."]
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [17, 17],
       "name": "Mothula - Fighter Sword",
       "requires": [
         {"sword": 1},
@@ -580,11 +739,11 @@
         "h_MothulaVulnerableToGoldSword"
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22],
+      "collectsItems": [10, 11],
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
-      "link": [21, 21],
+      "link": [17, 17],
       "name": "Mothula - Master Sword",
       "requires": [
         {"sword": 2},
@@ -612,11 +771,11 @@
         "h_MothulaVulnerableToGoldSword"
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22],
+      "collectsItems": [10, 11],
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
-      "link": [21, 21],
+      "link": [17, 17],
       "name": "Mothula - Sword (L3-L4)",
       "requires": [
         {"sword": 3},
@@ -643,11 +802,11 @@
         "h_MothulaVulnerableToGoldSword"
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22],
+      "collectsItems": [10, 11],
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
-      "link": [21, 21],
+      "link": [17, 17],
       "name": "Mothula - Fire Rod",
       "requires": [
         {"or": [
@@ -676,20 +835,20 @@
         ]}
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22]
+      "collectsItems": [10, 11]
     },
     {
-      "link": [21, 21],
+      "link": [17, 17],
       "name": "Mothula - Blue Cane",
       "requires": [
         {"blueCane": 512},
         {"bossProficiency": 2}
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22]
+      "collectsItems": [10, 11]
     },
     {
-      "link": [21, 21],
+      "link": [17, 17],
       "name": "Mothula - Hammer",
       "requires": [
         "Hammer",
@@ -707,7 +866,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedMothula"],
-      "collectsItems": [21, 22]
+      "collectsItems": [10, 11]
     }
   ]
 }
