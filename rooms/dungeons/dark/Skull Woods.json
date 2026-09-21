@@ -1,0 +1,872 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 95,
+  "name": "Skull Woods",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "First Section Main Entrance",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "First Section North Drop Entrance",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "drop"
+    },
+    {
+      "id": 3,
+      "name": "Big Chest",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Southwest Drop Entrance",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "drop"
+    },
+    {
+      "id": 5,
+      "name": "Compass Chest Room",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Pot Prison",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Southeast Drop Entrance (Pinball Room)",
+      "subArea": "Skull Woods First Section",
+      "nodeType": "drop"
+    },
+    {
+      "id": 8,
+      "name": "Second Section East Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 9,
+      "name": "Chest with Big Key Room",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Second Section Bumper Hallway",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Second Section West Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 12,
+      "name": "Second Section North Drop Entrance",
+      "subArea": "Skull Woods Second Section",
+      "nodeType": "drop"
+    },
+    {
+      "id": 13,
+      "name": "Final Section Entrance",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "door"
+    },
+    {
+      "id": 14,
+      "name": "Torch Room",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Pre-Mothula First Arena",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Pre-Mothula Arena",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Mothula Boss",
+      "subArea": "Skull Woods Final Section",
+      "nodeType": "boss"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Map Chest",
+      "itemLocation": 1,
+      "item": "Map",
+      "itemAddress": "0xE99B"
+    },
+    {
+      "id": 2,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Big Chest",
+      "itemLocation": 3,
+      "item": "FireRod",
+      "itemAddress": "0xE998"
+    },
+    {
+      "id": 3,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Compass Chest",
+      "itemLocation": 5,
+      "item": "Compass",
+      "itemAddress": "0xE992"
+    },
+    {
+      "id": 4,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Pot Prison Chest",
+      "itemLocation": 6,
+      "item": "SmallKey",
+      "itemAddress": "0xE9A1"
+    },
+    {
+      "id": 5,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Pinball Room Chest",
+      "itemLocation": 7,
+      "item": "SmallKey",
+      "itemAddress": "0xE9C8"
+    },
+    {
+      "id": 6,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 9,
+      "item": "BigKey",
+      "itemAddress": "0xE99E"
+    },
+    {
+      "id": 7,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Pot Key By Useless Door",
+      "itemLocation": 11,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Final Section Bridge Room Chest",
+      "itemLocation": 13,
+      "item": "SmallKey",
+      "itemAddress": "0xE9FE"
+    },
+    {
+      "id": 9,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Pre-Mothula Arena Gibdo Key",
+      "itemLocation": 16,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 10,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Mothula - Boss Drop",
+      "itemLocation": 17,
+      "item": "HeartContainer",
+      "itemAddress": "0x180155"
+    },
+    {
+      "id": 11,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 17,
+      "item": "Crystal3",
+      "itemAddress": [
+        "0x120A3",
+        "0x53F12",
+        "0x53F13",
+        "0x180058",
+        "0x18007B",
+        "0xC704"
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Big Chest Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 2,
+      "keyType": "bomb"
+    },
+    {
+      "id": 2,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Pot Prison East Door",
+      "doorPosition": "east",
+      "doorLocation": 6,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Skull Woods First Section",
+      "locationName": "Pinball Room North Door",
+      "doorPosition": "north",
+      "doorLocation": 7,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Chest with Big Key Room - Bombable Wall",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "bomb"
+    },
+    {
+      "id": 5,
+      "subArea": "Skull Woods Second Section",
+      "locationName": "Locked Door to Useless Room",
+      "doorPosition": "north",
+      "doorLocation": 11,
+      "keyType": "small"
+    },
+    {
+      "id": 6,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Bridge Room North Door",
+      "doorPosition": "north",
+      "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Skull Woods Final Section",
+      "locationName": "Pre-Mothula Arena",
+      "doorPosition": "east",
+      "doorLocation": 16,
+      "keyType": "small"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 2],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ],
+      "devNote": ["This is maybe not overly intuitive, but it's also pretty useless until dungeons get randomized."]
+    },
+    {
+      "link": [1, 3],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost",
+        {"or": [
+          {"sword": 1},
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"redCane": 1}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"blueCane": 28}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"cape": 28}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [1, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Bomb West Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ],
+      "devNote": ["Technically also requires the wall removed, but it should be if the door is bombed open."]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [6, 6],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Gibdo", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [4],
+      "note": ["It is very easy to get hit by the Gibdo when picking up the pot."]
+    },
+    {
+      "link": [7, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"rod": 2},
+          {"silverArrows": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Gibdo", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [8, 9],
+      "name": "Gibdo Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"rod": 2},
+          {"silverArrows": 2},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"blueCane": 112}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"iceRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Blue Cane Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 112},
+          {"and": [
+            {"combatProficiency": 3},
+            {"blueCane": 68}
+          ]}
+        ]}
+      ],
+      "note": ["Position the Gibdos so that they are both getting hurt constantly. The pots can also be used to deal significant damage."]
+    },
+    {
+      "link": [8, 9],
+      "name": "Red Cane",
+      "requires": [
+        {"combatProficiency": 2},
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Gibdo", "count": 3}},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Gibdo", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "devNote": ["Use the pots to kill the Blue Bari. Dodge the Gibdo while positioning the statue."]
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [4]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Eastern Room Magic Refill",
+      "requires": [
+        {"unlockDoor": 4},
+        {"refill": {"type": "magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [10, 8],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 11],
+      "name": "Base - Collect Pot Key",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [12, 10],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spark", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6},
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"rod": 2},
+          {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base - Alternate Weapons",
+      "requires": [
+        {"unlockDoor": 6},
+        {"combatProficiency": 2},
+        {"or": [
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 40},
+          {"cape": 40},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [14, 15],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"rod": 4},
+          {"silverArrows": 4},
+          {"sword": 3},
+          {"and": [
+            {"sword": 2},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]}
+        ]},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"combatProficiency": 2},
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [14, 15],
+      "name": "Stacked Fire Rod Kill",
+      "requires": [
+        {"fireRod": 2},
+        {"combatProficiency": 3},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ],
+      "note": ["Stack the Gibdo then kill them with fewer fire rod shots."]
+    },
+    {
+      "link": [14, 15],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 4},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"lamp": 3},
+            {"fireRod": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": [
+        {"sword": 1},
+        {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
+      ]
+    },
+    {
+      "link": [15, 16],
+      "name": "Quick Exit",
+      "requires": [
+        {"combatProficiency": 2},
+        {"sword": 1}
+      ]
+    },
+    {
+      "link": [16, 16],
+      "name": "Gibdo Kill",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"sword": 2},
+          {"and": [
+            {"damage": {"enemy": "Gibdo", "count": 1}},
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [9],
+      "devNote": ["FIXME: This assumes Link has a sword, since the previous room requires it."]
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Fighter Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Mothula", "count": 14}},
+            {"damage": {"enemy": "Spike Block", "count": 20}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Mothula", "count": 8}},
+            {"damage": {"enemy": "Spike Block", "count": 14}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 12}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
+          ]}
+        ]},
+        "h_MothulaVulnerableToGoldSword"
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11],
+      "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Master Sword",
+      "requires": [
+        {"sword": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Mothula", "count": 7}},
+            {"damage": {"enemy": "Spike Block", "count": 10}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 7}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 3}}
+          ]}
+        ]},
+        "h_MothulaVulnerableToGoldSword"
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11],
+      "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Sword (L3-L4)",
+      "requires": [
+        {"sword": 3},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Mothula", "count": 4}},
+            {"damage": {"enemy": "Spike Block", "count": 7}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Spike Block", "count": 3}}
+          ]}
+        ]},
+        "h_MothulaVulnerableToGoldSword"
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11],
+      "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Fire Rod",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"fireRod": 32},
+            {"damage": {"enemy": "Mothula", "count": 3}},
+            {"damage": {"enemy": "Spike Block", "count": 10}}
+          ]},
+          {"and": [
+            {"fireRod": 24},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 6}}
+          ]},
+          {"and": [
+            {"fireRod": 16},
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Mothula", "count": 1}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
+          ]},
+          {"and": [
+            {"fireRod": 10},
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Blue Cane",
+      "requires": [
+        {"blueCane": 512},
+        {"bossProficiency": 2}
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11]
+    },
+    {
+      "link": [17, 17],
+      "name": "Mothula - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Mothula", "count": 5}},
+            {"damage": {"enemy": "Spike Block", "count": 5}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Mothula", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 4}}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedMothula"],
+      "collectsItems": [10, 11]
+    }
+  ]
+}

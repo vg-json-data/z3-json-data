@@ -997,6 +997,7 @@
       "link": [20, 20],
       "name": "Upstream Pot Key",
       "requires": [
+        "Flippers",
         {"or": [
           {"combatProficiency": 3},
           {"damage": {"enemy": "Water Tektite", "count": 1}}
@@ -1009,6 +1010,7 @@
       "link": [20, 20],
       "name": "Upstream Pot Key - Medallion Tektite Kill",
       "requires": [
+        "Flippers",
         {"combatProficiency": 2},
         {"or": [
           {"bombos": 1},
@@ -1022,6 +1024,7 @@
       "link": [20, 20],
       "name": "Base - Bomb North Wall",
       "requires": [
+        "Flippers",
         {"bombs": 1}
       ],
       "unlocksDoor": [8]
@@ -1030,6 +1033,7 @@
       "link": [20, 21],
       "name": "Base",
       "requires": [
+        "Flippers",
         {"unlockDoor": 9}
       ]
     },
