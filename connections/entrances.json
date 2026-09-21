@@ -27,7 +27,7 @@
       "underworld": {
         "roomName": "Skull Woods",
         "roomId": 95,
-        "nodeId": "unknown"
+        "nodeId": 1
       }
     },
     {
@@ -41,7 +41,7 @@
       "underworld": {
         "roomName": "Skull Woods",
         "roomId": 95,
-        "nodeId": "unknown"
+        "nodeId": 4
       }
     },
     {
@@ -55,7 +55,7 @@
       "underworld": {
         "roomName": "Skull Woods",
         "roomId": 95,
-        "nodeId": "unknown"
+        "nodeId": 7
       }
     },
     {
@@ -83,7 +83,7 @@
       "underworld": {
         "roomName": "Skull Woods",
         "roomId": 95,
-        "nodeId": "unknown"
+        "nodeId": 2
       }
     },
     {
@@ -321,7 +321,7 @@
       "underworld": {
         "roomName": "Tower of Hera",
         "roomId": 60,
-        "nodeId": "unknown"
+        "nodeId": 1
       }
     },
     {
