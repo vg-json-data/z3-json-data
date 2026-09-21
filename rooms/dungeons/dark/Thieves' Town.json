@@ -1,0 +1,316 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 96,
+  "name": "Thieves' Town",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Thieves' Town B1",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Boss Hallway",
+      "subArea": "Thieves' Town B1",
+      "nodeType": "door"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance First Chest",
+      "itemLocation": 1,
+      "item": "Map",
+      "itemAddress": "0xEA01"
+    },
+    {
+      "id": 2,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance Ambush Chest",
+      "itemLocation": 1,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEA0A"
+    },
+    {
+      "id": 3,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance Compass Chest",
+      "itemLocation": 1,
+      "item": "Compass",
+      "itemAddress": "0xEA07"
+    },
+    {
+      "id": 4,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Chest with Big Key",
+      "itemLocation": 1,
+      "item": "BigKey",
+      "itemAddress": "0xEA04"
+    },
+    {
+      "id": 5,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Boss Hallway Pot Key",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance Dash Bomb Wall",
+      "doorPosition": "east",
+      "doorLocation": 1,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 2,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance View Port Bomb Wall",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    },
+    {
+      "id": 3,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Entrance Big Key Door",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "big",
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to eenter from the north."]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Base - Open First Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Open Ambush Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Open Southeast Chest",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Winder", "count": 2}},
+            {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Winder", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Open Chest with Big Key",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Winder", "count": 2}},
+            {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Winder", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb Wall",
+      "requires": [
+        {"bombs": 1},
+        {"or": [
+          {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Dash Break Wall",
+      "requires": [
+        "canBreakDashableWall",
+        {"or": [
+          {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb Wall",
+      "requires": [
+        {"unlockDoor": 1},
+        {"bombs": 1},
+        {"or": [
+          {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ],
+      "unlocksDoor": [2]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Winder", "count": 2}},
+            {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Winder", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Winder", "count": 2}},
+            {"damage": {"enemy": "Zazak (Red)", "attack": "Spitting Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Winder", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Pot Key",
+      "requires": [],
+      "collectsItems": [5]
+    },
+
+
+
+
+    {
+      "link": [11, 11],
+      "name": "Blind - Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 7}},
+            {"damage": {"enemy": "Blind", "count": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 4}},
+            {"damage": {"enemy": "Blind", "count": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 2}}
+          ]},
+          {"bossProficiency": 4},
+          {"and": [
+            "hasSwordSparkles",
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedBlind"],
+      "collectsItems": [11, 12]
+    },
+    {
+      "link": [11, 11],
+      "name": "Blind - Blue Cane",
+      "requires": [
+        {"bossProficiency": 2},
+        {"or": [
+          {"blueCane": 192},
+          {"and": [
+            {"bossProficiency": 3},
+            {"blueCane": 128}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"blueCane": 120}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedBlind"],
+      "collectsItems": [11, 12],
+      "devNote": ["FIXME: With less magic, this could be used for just a portion of the fight."]
+    },
+    {
+      "link": [11, 11],
+      "name": "Blind - Red Cane",
+      "requires": [
+        {"redCane": 8},
+        {"bossProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 4}},
+            {"damage": {"enemy": "Blind", "count": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 2}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedBlind"],
+      "collectsItems": [11, 12],
+      "devNote": ["Place the block in Blind's path. Throw the block as needed to move it to a new location."]
+    },
+    {
+      "link": [11, 11],
+      "name": "Blind - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 9}},
+            {"damage": {"enemy": "Blind", "count": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Blind", "attack": "Fireball", "count": 6}},
+            {"damage": {"enemy": "Blind", "count": 2}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "setsFlags": ["DefeatedBlind"],
+      "collectsItems": [11, 12]
+    }
+  ]
+}

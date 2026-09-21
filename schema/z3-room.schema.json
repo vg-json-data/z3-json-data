@@ -420,6 +420,12 @@
               "light",
               "dark"
             ]
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
