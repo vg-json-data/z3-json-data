@@ -14,7 +14,37 @@
       "id": 2,
       "name": "Boss Hallway",
       "subArea": "Thieves' Town B1",
-      "nodeType": "door"
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Small Spike Conveyor Room",
+      "subArea": "Thieves' Town B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Blue Orange Switch Room",
+      "subArea": "Thieves' Town B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Attic Staircase",
+      "subArea": "Thieves' Town 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Attic Bombable Floor Room",
+      "subArea": "Thieves' Town 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Basement Staircase",
+      "subArea": "Thieves' Town B2",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -57,6 +87,22 @@
       "itemLocation": 2,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 6,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Blue Orange Switch Room Pot Key",
+      "itemLocation": 4,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 7,
+      "subArea": "Thieves' Town 1F",
+      "locationName": "Attic Bombable Floor Chest",
+      "itemLocation": 6,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEA0D"
     }
   ],
   "lockedDoors": [
@@ -84,6 +130,14 @@
       "doorLocation": 1,
       "keyType": "big",
       "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to eenter from the north."]
+    },
+    {
+      "id": 4,
+      "subArea": "Thieves' Town 1F",
+      "locationName": "Door to Attic",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "small"
     }
   ],
   "strats": [
@@ -213,6 +267,114 @@
       "name": "Base - Pot Key",
       "requires": [],
       "collectsItems": [5]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Gibo", "count": 2}}
+          ]},
+          {"damage": {"enemy": "Gibo", "count": 3}},
+          {"and": [
+            {"sword": 2},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Gibo", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Gibo", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Gibo", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Pot Key",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [4, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [6, 6],
+      "name": "Base - Open Chest",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [6, 6],
+      "name": "Bomb the Floor",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "setsFlags": ["ThievesTownBombedFloor"]
     },
 
 

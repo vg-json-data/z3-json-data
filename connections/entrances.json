@@ -335,7 +335,7 @@
       "underworld": {
         "roomName": "Ganon's Tower",
         "roomId": 100,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -461,7 +461,7 @@
       "underworld": {
         "roomName": "Turtle Rock",
         "roomId": 99,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -489,7 +489,7 @@
       "underworld": {
         "roomName": "Turtle Rock",
         "roomId": 99,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -517,7 +517,7 @@
       "underworld": {
         "roomName": "Turtle Rock",
         "roomId": 99,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -629,7 +629,7 @@
       "underworld": {
         "roomName": "Turtle Rock",
         "roomId": 99,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -1245,7 +1245,7 @@
       "underworld": {
         "roomName": "Pyramid",
         "roomId": 101,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -1259,7 +1259,7 @@
       "underworld": {
         "roomName": "Pyramid",
         "roomId": 101,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -1735,7 +1735,7 @@
       "underworld": {
         "roomName": "Misery Mire",
         "roomId": 98,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
@@ -1861,7 +1861,7 @@
       "underworld": {
         "roomName": "Ice Palace",
         "roomId": 97,
-        "nodeId": "unknown"
+        "nodeId": "TBD"
       }
     },
     {
