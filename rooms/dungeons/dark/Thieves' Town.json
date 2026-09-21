@@ -45,6 +45,30 @@
       "name": "Basement Staircase",
       "subArea": "Thieves' Town B2",
       "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Basement South Room",
+      "subArea": "Thieves' Town B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Blind's Cell",
+      "subArea": "Thieves' Town B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Big Chest",
+      "subArea": "Thieves' Town B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Blind Boss",
+      "subArea": "Thieves' Town B1",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -103,6 +127,45 @@
       "itemLocation": 6,
       "item": "ThreeBombs",
       "itemAddress": "0xEA0D"
+    },
+    {
+      "id": 8,
+      "subArea": "Thieves' Town B2",
+      "locationName": "Blind's Cell Chest",
+      "itemLocation": 9,
+      "item": "SmallKey",
+      "itemAddress": "0xEA13"
+    },
+    {
+      "id": 9,
+      "subArea": "Thieves' Town B2",
+      "locationName": "Big Chest",
+      "itemLocation": 10,
+      "item": "TitansMitt",
+      "itemAddress": "0xEA10"
+    },
+    {
+      "id": 10,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Blind - Boss Drop",
+      "itemLocation": 11,
+      "item": "HeartContainer",
+      "itemAddress": "0x180156"
+    },
+    {
+      "id": 11,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 11,
+      "item": "Crystal4",
+      "itemAddress": [
+        "0x120A6",
+        "0x53F36",
+        "0x53F37",
+        "0x18005B",
+        "0x180077",
+        "0xC707"
+      ]
     }
   ],
   "lockedDoors": [
@@ -138,6 +201,23 @@
       "doorPosition": "north",
       "doorLocation": 5,
       "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Thieves' Town B2",
+      "locationName": "Blind's Cell",
+      "doorPosition": "middle",
+      "doorLocation": 8,
+      "keyType": "big",
+      "devNote": ["This is technically three locks."]
+    },
+    {
+      "id": 6,
+      "subArea": "Thieves' Town B2",
+      "locationName": "Big Chest Room Locked Door",
+      "doorPosition": "west",
+      "doorLocation": 8,
+      "keyType": "big"
     }
   ],
   "strats": [
@@ -276,6 +356,11 @@
       ]
     },
     {
+      "link": [2, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -363,7 +448,7 @@
       "requires": [
         {"or": [
           {"combatProficiency": 2},
-          {"damage": {"enemy": "", "count": 1}}
+          {"damage": {"enemy": "Buzz", "count": 1}}
         ]}
       ],
       "collectsItems": [7]
@@ -376,14 +461,128 @@
       ],
       "setsFlags": ["ThievesTownBombedFloor"]
     },
-
-
-
-
+    {
+      "link": [7, 8],
+      "name": "Power Gloves",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Kill Enemies",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ],
+      "note": ["The pots can be used to kill two of the enemies."]
+    },
+    {
+      "link": [7, 8],
+      "name": "Kill Enemies - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"and": [
+            "Boomerang",
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "The pots can be used to kill two of the enemies.",
+        "Boomerang can be used to kill the Stalfos."
+      ]
+    },
+    {
+      "link": [7, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        "BigKey"
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6},
+        "Hammer"
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [
+        "BigKey"
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [8]
+    },
+    {
+      "link": [9, 9],
+      "name": "Blind Follower",
+      "requires": [],
+      "setsFollower": "Blind"
+    },
+    {
+      "link": [10, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [9]
+    },
+    {
+      "link": [11, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 11],
+      "name": "Bind Reveal",
+      "requires": [
+        {"flag": "ThievesTownBombedFloor"},
+        {"follower": "Blind"}
+      ],
+      "FollowerComplete": "Blind",
+      "setsFlags": ["ThievesTownBlindReveal"]
+    },
     {
       "link": [11, 11],
       "name": "Blind - Sword",
       "requires": [
+        {"flag": "ThievesTownBlindReveal"},
         {"sword": 1},
         {"or": [
           {"and": [
@@ -407,12 +606,13 @@
         ]}
       ],
       "setsFlags": ["DefeatedBlind"],
-      "collectsItems": [11, 12]
+      "collectsItems": [10, 11]
     },
     {
       "link": [11, 11],
       "name": "Blind - Blue Cane",
       "requires": [
+        {"flag": "ThievesTownBlindReveal"},
         {"bossProficiency": 2},
         {"or": [
           {"blueCane": 192},
@@ -427,13 +627,14 @@
         ]}
       ],
       "setsFlags": ["DefeatedBlind"],
-      "collectsItems": [11, 12],
+      "collectsItems": [10, 11],
       "devNote": ["FIXME: With less magic, this could be used for just a portion of the fight."]
     },
     {
       "link": [11, 11],
       "name": "Blind - Red Cane",
       "requires": [
+        {"flag": "ThievesTownBlindReveal"},
         {"redCane": 8},
         {"bossProficiency": 2},
         {"or": [
@@ -449,13 +650,14 @@
         ]}
       ],
       "setsFlags": ["DefeatedBlind"],
-      "collectsItems": [11, 12],
+      "collectsItems": [10, 11],
       "devNote": ["Place the block in Blind's path. Throw the block as needed to move it to a new location."]
     },
     {
       "link": [11, 11],
       "name": "Blind - Hammer",
       "requires": [
+        {"flag": "ThievesTownBlindReveal"},
         "Hammer",
         {"bossProficiency": 2},
         {"or": [
@@ -472,7 +674,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedBlind"],
-      "collectsItems": [11, 12]
+      "collectsItems": [10, 11]
     }
   ]
 }

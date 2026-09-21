@@ -1544,7 +1544,6 @@
       "names": [
         "Buzz"
       ],
-      "note": ["Also referred to as a Dark World rat."],
       "hp": 8,
       "dmgToLink": {
         "green": 16,
