@@ -45,6 +45,42 @@
       "name": "B1-B2 Bombable Floor",
       "subArea": "Ice Palace (Upper Floors)",
       "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Spiky Conveyor Room",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Orange Peg Bridge Room",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Pengator Line Staircase Room",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Big Spike Plus Room",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Staircase Above Big Chest",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Falling Tile Donut Room",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -63,6 +99,14 @@
       "itemLocation": 4,
       "item": "Compass",
       "itemAddress": "0xE9D4"
+    },
+    {
+      "id": 3,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Spiky Conveyor - Blue Bari Key Drop",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     }
   ],
   "lockedDoors": [
@@ -72,6 +116,14 @@
       "locationName": "Top Left 1F-2F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Spiky Conveyor South Door",
+      "doorPosition": "south",
+      "doorLocation": 9,
       "keyType": "small"
     }
   ],
@@ -237,6 +289,150 @@
       "note": [
         "Throw a Bomb over the orange pegs, into the bottom right corner of the bombable floor area to break the floor and hit the switch simultaneously."
       ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base - Stalfos Kill",
+      "requires": [
+        {"refill": {"type": "bombs", "limit": 1}},
+        {"bombs": 1},
+        {"refill": {"type": "bombs", "limit": 1}}
+      ],
+      "devNote": ["Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."]
+    },
+    {
+      "link": [8, 8],
+      "name": "Blue Bari Kill - Key Drop",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [8, 8],
+      "name": "Alternate Weapons - Blue Bari Kill - Key Drop",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ],
+      "collectsItems": [3]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2},
+        {"or": [
+          {"damage": {"enemy": "Spike Block", "count": 3}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["FIXME: Add an option that does a precise bomb boost while the orange pegs are up."]
+    },
+    {
+      "link": [10, 11],
+      "name": "Pengator Line Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 20},
+          {"silverArrows": 5},
+          {"fireRod": 8}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 11],
+      "name": "Pengator Line Kill - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"blueCane": 64},
+          {"and": [
+            {"combatProficiency": 3},
+            {"blueCane": 56}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 11],
+      "name": "Pengator Line Kill - Synced Fire Rod Kill",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          {"fireRod": 5},
+          {"and": [
+            {"combatProficiency": 4},
+            {"fireRod": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "On room entry, immediately get to the top hallway of the room and get to the top right corner to get all the Pengators fairly synced.",
+        "Hit them all with a fire rod when they are clustered in the corner, then kill the rest using another couple partially grouped hits."
+      ]
+    },
+    {
+      "link": [10, 11],
+      "name": "Pengator Line Kill - Synced Group Kill",
+      "requires": [
+        {"combatProficiency": 4},
+        {"or": [
+          {"bombs": 2},
+          {"and": [
+            {"combatProficiency": 5},
+            {"bombs": 1}
+          ]},
+          {"redCane": 8}
+        ]}
+      ],
+      "note": [
+        "On room entry, immediately get to the top hallway of the room and get to the top right corner to get all the Pengators fairly synced.",
+        "They can then be killed with two bombs or one very precisely timed bomb, or with Red Cane blocks placed safely in the top hallway."
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 13],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [12, 11],
+      "name": "Base",
+      "requires": []
     },
 
 
