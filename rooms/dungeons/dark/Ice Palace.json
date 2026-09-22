@@ -6,176 +6,245 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Ice Palace Entrance Room",
-      "area": "Ice Palace (Entrance)",
-      "requires": [
-        "canLiftDarkRocks",
-        "canMeltThings",
-        "canSwim",
-        {"flag": "GameStateZelda"}
-      ],
+      "name": "Main Entrance",
+      "subArea": "Ice Palace (Upper Floors)",
       "nodeType": "door"
     },
     {
       "id": 2,
-      "name": "Ice Palace Exit",
-      "area": "Ice Palace (Entrance)",
-      "requires": [
-        "canLiftDarkRocks",
-        "canMeltThings",
-        "canSwim",
-        {"flag": "GameStateZelda"}
-      ],
-      "nodeType": "door"
-    },
-    {
-      "id": 3,
-      "name": "Ice Palace (East)",
-      "area": "Ice Palace (Main)",
-      "nodeType": "door"
-    },
-    {
-      "id": 4,
-      "name": "Ice Palace (Kholdstare)",
-      "area": "Ice Palace (Main)",
-      "nodeType": "door"
-    },
-    {
-      "id": 5,
-      "name": "Ice Palace - Compass Chest",
-      "area": "Ice Palace (Main)",
-      "nodeType": "item",
-      "nodeItem": "CompassD5",
-      "nodeAddress": "0xE9D4"
-    },
-    {
-      "id": 6,
-      "name": "Ice Palace - Freezor Chest",
-      "area": "Ice Palace (Main)",
-      "requires": [ "canMeltThings" ],
-      "nodeType": "item",
-      "nodeItem": "ThreeBombs",
-      "nodeAddress": "0xE995"
-    },
-    {
-      "id": 7,
-      "name": "Ice Palace - Big Chest",
-      "area": "Ice Palace (Main)",
-      "requires": [ "BigKeyD5" ],
-      "nodeType": "item",
-      "nodeItem": "BlueMail",
-      "nodeAddress": "0xE9AA"
-    },
-    {
-      "id": 8,
-      "name": "Ice Palace - Iced T Room",
-      "area": "Ice Palace (Main)",
-      "nodeType": "item",
-      "nodeItem": "KeyD5",
-      "nodeAddress": "0xE9E3"
-    },
-    {
-      "id": 9,
-      "name": "Ice Palace (East Top)",
-      "area": "Ice Palace (East)",
-      "nodeType": "door"
-    },
-    {
-      "id": 10,
-      "name": "Ice Palace - Spike Room",
-      "area": "Ice Palace (East)",
-      "requires": [
-        {"or": [
-          {"not": [ "mods.ohko" ]},
-          "canGrapple",
-          "canInvul"
-        ]}
-      ],
-      "note": [
-        "FIXME: Changes based on key placement"
-      ],
-      "nodeType": "item",
-      "nodeItem": "KeyD5",
-      "nodeAddress": "0xE9E0"
-    },
-    {
-      "id": 11,
-      "name": "Ice Palace - Chest with Big Key",
-      "area": "Ice Palace (East Top)",
-      "requires": [
-        "Hammer",
-        "canLiftRocks",
-        {"or": [
-          {"not": [ "mods.ohko" ]},
-          "canGrapple",
-          "canInvul"
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "BigKeyD5",
-      "nodeAddress": "0xE9A4"
-    },
-    {
-      "id": 12,
-      "name": "Ice Palace - Map Chest",
-      "area": "Ice Palace (East Top)",
-      "requires": [
-        "Hammer",
-        "canLiftRocks",
-        {"or": [
-          {"not": [ "mods.ohko" ]},
-          "canGrapple",
-          "canInvul"
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "MapD5",
-      "nodeAddress": "0xE9DD"
-    },
-    {
-      "id": 13,
-      "name": "Ice Palace - Frozen Kholdstare Block",
-      "area": "Ice Palace (Kholdstare)",
+      "name": "Blue Bari Room",
+      "subArea": "Ice Palace (Upper Floors)",
       "nodeType": "junction"
     },
     {
-      "id": 14,
-      "name": "Ice Palace - Kholdstare (Thawed)",
-      "area": "Ice Palace (Kholdstare)",
-      "nodeType": "item",
-      "nodeItem": "BossHeartContainer",
-      "nodeAddress": "0x180157"
+      "id": 3,
+      "name": "1F-B1 Staircase",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
     },
     {
-      "id": 15,
-      "name": "Ice Palace - Prize",
-      "area": "Ice Palace (Kholdstare)",
-      "requires": [
-        "Hammer",
-        "canMeltThings",
-        "canLiftRocks",
-        "BigKeyD5",
-        {"or": [
-          {"and": [
-            "CaneOfSomaria",
-            "KeyD5"
-          ]},
-          "KeyD5:2"
-        ]}
-      ],
-      "nodeType": "item",
-      "nodeItem": "Crystal5",
-      "nodeAddress": [
-        "0x120A4",
-        "0x53F5A",
-        "0x53F5B",
-        "0x180059",
-        "0x180073",
-        "0xC705"
-      ]
+      "id": 4,
+      "name": "Pengator Compass Chest Room",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Pengator Switch Room",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "B1 Orange Blue Switch Room",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "B1-B2 Bombable Floor",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Ice Palace (Upper Floors)",
+      "locationName": "Entrance - Blue Bari Key Drop",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 2,
+      "subArea": "Ice Palace (Upper Floors)",
+      "locationName": "Pengator Compass Chest",
+      "itemLocation": 4,
+      "item": "Compass",
+      "itemAddress": "0xE9D4"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Ice Palace (Upper Floors)",
+      "locationName": "Top Left 1F-2F Staircase",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "small"
     }
   ],
   "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base - Fire Rod",
+      "requires": [
+        {"fireRod": 1}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Bombos Kill",
+      "requires": [
+        {"bombos": 1},
+        {"combatProficiency": 2}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Blue Bari Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Base - Blue Bari Kill - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Pengator Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"fireRod": 10},
+          {"silverArrows": 6},
+          {"and": [
+            {"combatProficiency": 2},
+            {"arrows": 24}
+          ]}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Pengator Kill - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"blueCane": 68}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Fire Rod Stacked Kill",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"combatProficiency": 3},
+            {"fireRod": 8}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"fireRod": 6}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Red Cane Kill",
+      "requires": [
+        {"combatProficiency": 4},
+        {"redCane": 10},
+        {"or": [
+          {"damage": {"enemy": "Pengator", "count": 3}},
+          {"and": [
+            {"combatProficiency": 5},
+            {"damage": {"enemy": "Pengator", "count": 1}}
+          ]},
+          {"combatProficiency": 6}
+        ]}
+      ],
+      "note": [
+        "Place the blocks in spots that will get some Pengator traffic, but stay far enough away that they don't bounce into Link.",
+        "Throwing the block can be helpful."
+      ]
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 3},
+          "Hookshot",
+          {"and": [
+            {"combatProficiency": 2},
+            {"blueCane": 20}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"cape": 10}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Pengator", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"bombs": 2}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Single Bomb",
+      "requires": [
+        {"bombs": 1},
+        {"combatProficiency": 2}
+      ],
+      "note": [
+        "Throw a Bomb over the orange pegs, into the bottom right corner of the bombable floor area to break the floor and hit the switch simultaneously."
+      ]
+    },
+
+
+
+
+
+
+    
     {
       "link": [13, 14],
       "name": "Thaw Kholdstare - Fire Rod",

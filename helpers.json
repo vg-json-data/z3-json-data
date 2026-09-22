@@ -102,7 +102,7 @@
   {
     "name": "h_MiseryMireMedallion",
     "requires": [
-      "Ether"
+      {"ether": 1}
     ],
     "note": [
       "The medallion required to open Misery Mire. Randomizers may wish to randomize this."
@@ -111,7 +111,7 @@
   {
     "name": "h_TurtleRockMedallion",
     "requires": [
-      "Quake"
+      {"quake": 1}
     ],
     "note": [
       "The medallion required to open Turtle Rock. Randomizers may wish to randomize this."
