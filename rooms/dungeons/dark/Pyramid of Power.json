@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 101,
+  "name": "Pyramid",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Ganon Drop",
+      "subArea": "Ganon Fight",
+      "nodeType": "drop"
+    },
+    {
+      "id": 2,
+      "name": "Collapsed Floor Drop",
+      "subArea": "Ganon Fail",
+      "nodeType": "door"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"sword": 2}
+      ],
+      "devNote": ["FIXME: Before dungeon randomization occurs, this needs to be updated to include realistic fight requirements."]
+    }
+  ]
+}
