@@ -66,7 +66,7 @@
     },
     {
       "id": 11,
-      "name": "Big Spike Plus Room",
+      "name": "Giant Spike Plus Room",
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "nodeType": "junction"
     },
@@ -80,6 +80,54 @@
       "id": 13,
       "name": "Falling Tile Donut Room",
       "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Big Chest",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Big Chest Room - Inacessible Side",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Iced T Room",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Hookshot Bridge (East)",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Giant Spike Block Hellway (Staircase)",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Spike U Room (East)",
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Big Key Chest Room",
+      "subArea": "Ice Palace (Upper Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Slippery Pot Room",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
       "nodeType": "junction"
     }
   ],
@@ -107,6 +155,62 @@
       "itemLocation": 8,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 4,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Freezor Chest",
+      "itemLocation": 12,
+      "item": "ThreeBombs",
+      "itemAddress": "0xE995"
+    },
+    {
+      "id": 5,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Big Chest",
+      "itemLocation": 14,
+      "item": "BlueMail",
+      "itemAddress": "0xE9AA"
+    },
+    {
+      "id": 6,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Spike U Room Chest",
+      "itemLocation": 18,
+      "item": "SmallKey",
+      "itemAddress": "0xE9E0"
+    },
+    {
+      "id": 7,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Map Chest Block Key",
+      "itemLocation": 19,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Map Chest",
+      "itemLocation": 19,
+      "item": "Map",
+      "itemAddress": "0xE9DD"
+    },
+    {
+      "id": 10,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Iced T Chest",
+      "itemLocation": 16,
+      "item": "SmallKey",
+      "itemAddress": "0xE9E3"
+    },
+    {
+      "id": 11,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Slippery Pot Room - Pot Key",
+      "itemLocation": 21,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     }
   ],
   "lockedDoors": [
@@ -124,6 +228,22 @@
       "locationName": "Spiky Conveyor South Door",
       "doorPosition": "south",
       "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Long Fire and Ice Room",
+      "doorPosition": "south",
+      "doorLocation": 16,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Ice Palace (Mid-Upper Floors)",
+      "locationName": "Spike U Room West Door",
+      "doorPosition": "west",
+      "doorLocation": 18,
       "keyType": "small"
     }
   ],
@@ -430,9 +550,214 @@
       ]
     },
     {
+      "link": [18, 11],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
       "link": [12, 11],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [12, 12],
+      "name": "Freezor Kill",
+      "requires": [
+        {"fireRod": 2}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [12, 12],
+      "name": "Freezor Bombos Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"bombos": 1}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [12, 14],
+      "name": "Base",
+      "requires": [
+        {"bombs": 1}
+      ]
+    },
+    {
+      "link": [12, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 15],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["FIXME: It is possible to get to 12 from here with Hookshot, but with Hookshot, Link can just push block clip."]
+    },
+    {
+      "link": [13, 16],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [13, 17],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ],
+      "devNote": ["FIXME: There is probably a bomb boost strat that can be done here."]
+    },
+    {
+      "link": [14, 14],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [14, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 14],
+      "name": "Base",
+      "requires": [
+        "canPushBlockClip",
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [16, 13],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [16, 16],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [16, 21],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [17, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Giant Spike Block", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 11],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"blueCane": 24},
+          {"cape": 20},
+          {"damage": {"enemy": "Ground Spikes", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [19, 18],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"blueCane": 24},
+          {"cape": 20},
+          {"damage": {"enemy": "Ground Spikes", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [19, 19],
+      "name": "Base - Block Key",
+      "requires": [
+        "Hammer",
+        {"glove": 1}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [19, 19],
+      "name": "Base - Open Chest",
+      "requires": [
+        "Hammer",
+        {"glove": 1}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [19, 20],
+      "name": "Base",
+      "requires": [
+        "Hammer",
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [20, 19],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [20, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [9]
+    },
+    {
+      "link": [21, 16],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"and": [
+            {"damage": {"enemy": "Babusu", "count": 1}},
+            {"damage": {"enemy": "Guruguru Bar", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Pot Key",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Babusu", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [11]
     },
 
 
@@ -452,6 +777,7 @@
       "link": [13, 14],
       "name": "Thaw Kholdstare - Bombos Medallion",
       "requires": [
+        {"combatProficiency": 2},
         {"bombos": 1}
       ]
     },
