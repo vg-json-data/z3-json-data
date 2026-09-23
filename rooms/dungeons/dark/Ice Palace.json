@@ -129,6 +129,51 @@
       "name": "Slippery Pot Room",
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Pushblock Hole Room",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Pot Drop Room",
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Pot Drop Fairies",
+      "subArea": "Ice Palace (Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Final Locked Blue Orange Switch",
+      "subArea": "Ice Palace (Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Kholdstare Drop Room",
+      "subArea": "Ice Palace (Lower Floors)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Frozen Kholdstare Block",
+      "subArea": "Ice Palace (Lower Floors)",
+      "nodeType": "boss",
+      "note": [
+        "Represents breaking Kholdstare's Ice Block."
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Kholdstare (Thawed)",
+      "subArea": "Ice Palace (Lower Floors)",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -211,6 +256,29 @@
       "itemLocation": 21,
       "item": "SmallKey",
       "itemAddress": "unknown"
+    },
+    {
+      "id": 12,
+      "subArea": "Ice Palace (Lower Floors)",
+      "locationName": "Kholdstare - Boss Drop",
+      "itemLocation": 28,
+      "item": "HeartContainer",
+      "itemAddress": "0x180157"
+    },
+    {
+      "id": 13,
+      "subArea": "Ice Palace (Lower Floors)",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 28,
+      "item": "Crystal5",
+      "itemAddress": [
+        "0x120A4",
+        "0x53F5A",
+        "0x53F5B",
+        "0x180059",
+        "0x180073",
+        "0xC705"
+      ]
     }
   ],
   "lockedDoors": [
@@ -245,6 +313,30 @@
       "doorPosition": "west",
       "doorLocation": 18,
       "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Pushblock Hole North Door",
+      "doorPosition": "north",
+      "doorLocation": 22,
+      "keyType": "big"
+    },
+    {
+      "id": 6,
+      "subArea": "Ice Palace (Mid-Lower Floors)",
+      "locationName": "Pot Drop Room North Door",
+      "doorPosition": "north",
+      "doorLocation": 23,
+      "keyType": "small"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "Blue Pegs Down",
+      "note": [
+        "Represents the blue pegs being down. If this is explicitly not set, that means the orange pegs are down."
+      ]
     }
   ],
   "strats": [
@@ -633,6 +725,20 @@
       ]
     },
     {
+      "link": [15, 22],
+      "name": "Orange Pegs Down",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
       "link": [16, 13],
       "name": "Base",
       "requires": [
@@ -759,22 +865,111 @@
       ],
       "collectsItems": [11]
     },
-
-
-
-
-
-
-    
     {
-      "link": [13, 14],
+      "link": [21, 22],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Babusu", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [22, 15],
+      "name": "Orange Pegs Down",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [22, 21],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5},
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [22, 23],
+      "name": "Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [23, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5},
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Blue Pegs Down - Into the Pot",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [23, 25],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [23, 26],
+      "name": "Red Cane",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [24, 23],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 3}}
+      ]
+    },
+    {
+      "link": [25, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [25, 25],
+      "name": "Blue Pegs Down",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [26, 27],
+      "name": "Base",
+      "requires": [
+        "Hammer",
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [27, 28],
       "name": "Thaw Kholdstare - Fire Rod",
       "requires": [
         {"fireRod": 8}
       ]
     },
     {
-      "link": [13, 14],
+      "link": [27, 28],
       "name": "Thaw Kholdstare - Bombos Medallion",
       "requires": [
         {"combatProficiency": 2},
@@ -782,7 +977,7 @@
       ]
     },
     {
-      "link": [14, 14],
+      "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Master Sword",
       "requires": [
         {"sword": 2},
@@ -809,11 +1004,11 @@
         ]}
       ],
       "setsFlags": ["DefeatedKholdstare"],
-      "collectsItems": [14, 15],
+      "collectsItems": [12, 13],
       "devNote": ["FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."]
     },
     {
-      "link": [14, 14],
+      "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Sword (L3-L4)",
       "requires": [
         {"sword": 3},
@@ -857,10 +1052,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedKholdstare"],
-      "collectsItems": [14, 15]
+      "collectsItems": [12, 13]
     },
     {
-      "link": [14, 14],
+      "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Fire Rod",
       "requires": [
         {"or": [
@@ -884,17 +1079,17 @@
         ]}
       ],
       "setsFlags": ["DefeatedKholdstare"],
-      "collectsItems": [14, 15]
+      "collectsItems": [12, 13]
     },
     {
-      "link": [14, 14],
+      "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Precise Multi-Hit Fire Rod",
       "requires": [
         {"fireRod": 6},
         {"bossProficiency": 4}
       ],
       "setsFlags": ["DefeatedKholdstare"],
-      "collectsItems": [14, 15],
+      "collectsItems": [12, 13],
       "note": [
         "Each Cloud can be killed with 4 Fire Rod shots. However, with clustering them, it is possible to kill all three with 6 shots.",
         "Precisely time the first Fire Rod shot to hit all three. Dodge until a clear shot is available to hit two at a time,",
