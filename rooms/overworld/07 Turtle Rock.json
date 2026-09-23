@@ -70,7 +70,6 @@
       "name": "Open Turtle Rock",
       "world": "dark",
       "requires": [
-        {"sword": 1},
         "h_TurtleRockMedallion"
       ],
       "setsFlags": ["OpenedTurtleRock"]

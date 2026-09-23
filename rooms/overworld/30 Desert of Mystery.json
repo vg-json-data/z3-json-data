@@ -219,7 +219,6 @@
       "name": "Open Misery Mire",
       "world": "dark",
       "requires": [
-        {"sword": 1},
         "h_MiseryMireMedallion"
       ],
       "setsFlags": ["OpenedMiseryMire"]
