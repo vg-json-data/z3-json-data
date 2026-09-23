@@ -1245,7 +1245,7 @@
       "underworld": {
         "roomName": "Pyramid",
         "roomId": 101,
-        "nodeId": "TBD"
+        "nodeId": 1
       }
     },
     {
@@ -1259,7 +1259,7 @@
       "underworld": {
         "roomName": "Pyramid",
         "roomId": 101,
-        "nodeId": "TBD"
+        "nodeId": 2
       }
     },
     {
