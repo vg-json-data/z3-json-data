@@ -1,0 +1,495 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 98,
+  "name": "Misery Mire",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Misery Mire (Upper Floor)",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Entrance Staircase",
+      "subArea": "Misery Mire (Upper Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Main Lobby",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Bridge Chest",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Spike Chest Room",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Northeast L Bridge",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Northwest Blue Oange Switch Room",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Bridge Chest",
+      "itemLocation": 4,
+      "item": "SmallKey",
+      "itemAddress": "0xEA61"
+    },
+    {
+      "id": 2,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Spike Chest",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "0xE9DA"
+    },
+    {
+      "id": 3,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Spike Chest Room Pot Key",
+      "itemLocation": 5,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 4,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Northwest Blue Orange Switch Room - Pot Key",
+      "itemLocation": 7,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 5,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Map Chest",
+      "itemLocation": 8,
+      "item": "Map",
+      "itemAddress": "0xEA6A"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Spike Chest North Door",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Spike Hallway North Door",
+      "doorPosition": "north",
+      "doorLocation": 5,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Main Lobby Northeast Door",
+      "doorPosition": "east",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Main Lobby Southwest Door",
+      "doorPosition": "west",
+      "doorLocation": 3,
+      "keyType": "small"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "Blue Pegs Down",
+      "note": [
+        "Represents the blue pegs being down. If this is explicitly not set, that means the orange pegs are down."
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Bonk Boost Over the Gap",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Bonk Boost Over the Gap",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 5},
+          {"silverArrows": 5},
+          {"fireRod": 5}
+        ]},
+        {"or": [
+          {"sword": 1},
+          {"arrows": 4},
+          {"silverArrows": 4},
+          {"rod": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]},
+          {"and": [
+            {"redCane": 2},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hookshot",
+            {"redCane": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"blueCane": 128},
+          {"and": [
+            {"blueCane": 100},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Frozen Popo Kill",
+      "requires": [
+        {"combatProficiency": 3},
+        {"iceRod": 1},
+        {"or": [
+          "Hookshot",
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ],
+      "note": ["Freeze a Popo, use it to kill everything in the room, then kill it with any attack."]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [5, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Open Spike Chest",
+      "requires": [
+        {"damage": {"enemy": "Ground Spikes", "count": 4}}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [5, 5],
+      "name": "Invulnerable - Open Spike Chest",
+      "requires": [
+        {"or": [
+          {"blueCane": 52},
+          {"cape": 44}
+        ]}
+      ],
+      "collectsItems": [2]
+    },
+    {
+      "link": [5, 5],
+      "name": "Base - Pot Key",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [5, 8],
+      "name": "Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [7, 7],
+      "name": "Base",
+      "requires": [],
+      "collectsItems": [4]
+    },
+    {
+      "link": [7, 7],
+      "name": "Blue Pegs Down",
+      "requires": [],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2},
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [8, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [8, 5],
+      "name": "Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [5]
+    },
+
+
+
+
+
+
+
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Sword (L2-L4)",
+      "requires": [
+        {"sword": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Vitreous", "count": 2}},
+            {"damage": {"enemy": "Vitreous", "attack": "Lightning", "count": 1}}
+          ]},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Vitreous", "count": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Vitreous", "count": 1}},
+            {"damage": {"enemy": "Vitreous", "attack": "Lightning", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"sword": 4},
+            {"damage": {"enemy": "Vitreous", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Sword (L1)",
+      "requires": [
+        {"sword": 1},
+        {"bossProficiency": 4},
+        {"or": [
+          {"damage": {"enemy": "Vitreous", "count": 2}},
+          {"bossProficiency": 9}
+        ]}
+      ],
+      "note": ["With just the Level 1 sword, Vitreous is only vulnerable to spin attacks."]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 10},
+          {"and": [
+            {"silverArrows": 9},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 35},
+            {"damage": {"enemy": "Vitreous", "count": 2}}
+          ]},
+          {"and": [
+            {"arrows": 30},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 27},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [13, 14],
+      "name": "Kill Vitreous Small Eyes - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 9}
+      ],
+      "devNote": ["FIXME: Needs testing."]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 2},
+          {"arrows": 8}
+        ]}
+      ],
+      "setsFlags": ["DefeatedVitreous"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Sword (L2-L4)",
+      "requires": [
+        {"sword": 2}
+      ],
+      "setsFlags": ["DefeatedVitreous"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [14, 14],
+      "name": "Vitreous (Big Eye Only) - Sword (L1)",
+      "requires": [
+        {"sword": 1},
+        {"bossProficiency": 4},
+        {"or": [
+          {"damage": {"enemy": "Vitreous", "count": 1}},
+          {"bossProficiency": 9}
+        ]}
+      ],
+      "setsFlags": ["DefeatedVitreous"],
+      "collectsItems": [14, 15],
+      "note": [
+        "With just the Level 1 sword, Vitreous is only vulnerable to spin attacks.",
+        "It is important to kite it in order to prevent taking damage. As there is not much room, a figure-8 pattern is recommended."
+      ],
+      "devNote": ["FIXME: Consider a high-level hammer kill."]
+    }
+  ]
+}
