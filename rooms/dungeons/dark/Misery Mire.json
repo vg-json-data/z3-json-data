@@ -96,9 +96,54 @@
     },
     {
       "id": 16,
-      "name": "Bridge to Basement",
+      "name": "Basement Entrance",
       "subArea": "Misery Mire (Final Section)",
       "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Basement Big Block Room",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Basement Dark Conveyor West Side",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Blue Orange Peg Prison",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Falling Slime Room",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Final Staircase",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Vitreous Small Eyes",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "boss",
+      "note": [
+        "Represents killing Vitreous's Small Eyes."
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Vitreous (Small Eyes Killed)",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -181,6 +226,29 @@
       "itemLocation": 15,
       "item": "CaneOfSomaria",
       "itemAddress": "0xEA67"
+    },
+    {
+      "id": 11,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Vitreous - Boss Drop",
+      "itemLocation": 23,
+      "item": "HeartContainer",
+      "itemAddress": "0x180158"
+    },
+    {
+      "id": 12,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 23,
+      "item": "Crystal6",
+      "itemAddress": [
+        "0x120A2",
+        "0x53F48",
+        "0x53F49",
+        "0x180057",
+        "0x180075",
+        "0xC703"
+      ]
     }
   ],
   "lockedDoors": [
@@ -240,6 +308,38 @@
       "doorLocation": 14,
       "keyType": "big",
       "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+    },
+    {
+      "id": 8,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Basement Locked Mini-Cache",
+      "doorPosition": "south",
+      "doorLocation": 16,
+      "keyType": "small"
+    },
+    {
+      "id": 9,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Basement Cache - Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 18,
+      "keyType": "bomb"
+    },
+    {
+      "id": 10,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Basement Blue Orange Peg Prison - Bombable Wall",
+      "doorPosition": "north",
+      "doorLocation": 19,
+      "keyType": "bomb"
+    },
+    {
+      "id": 11,
+      "subArea": "Misery Mire (Final Section)",
+      "locationName": "Boss Door",
+      "doorPosition": "north",
+      "doorLocation": 22,
+      "keyType": "big"
     }
   ],
   "obstacles": [
@@ -699,15 +799,140 @@
         {"refill": {"type": "magic", "limit": 128}}
       ]
     },
-
-
-
-
-
-
-
     {
-      "link": [13, 14],
+      "link": [16, 16],
+      "name": "Base - Mini Cache",
+      "requires": [
+        {"unlockDoor": 8},
+        {"refill": {"type": "Rupee", "limit": 45}}
+      ]
+    },
+    {
+      "link": [16, 17],
+      "name": "Base - Red Cane",
+      "requires": [
+        "Lamp",
+        {"redCane": 1},
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 2}}
+        ]}
+      ],
+      "devNote": ["FIXME: It seems unreasonable to get through this room without a lamp, so the full basement is going to assume it for now."]
+    },
+    {
+      "link": [17, 18],
+      "name": "Spike Tank",
+      "requires": [
+        "Lamp",
+        {"damage": {"enemy": "Spike Block", "count": 1}}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Spike Dodge",
+      "requires": [
+        "Lamp",
+        {"combatProficiency": 3}
+      ],
+      "note": ["Get in the second lane, when the spike moved right past Link, quickly move to the third or fourth lane."]
+    },
+    {
+      "link": [18, 18],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        "Lamp",
+        {"or": [
+          "h_rangeBlueOrangeSwitch",
+          "Hookshot"
+        ]}
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [18, 18],
+      "name": "Cache Bombable Wall",
+      "requires": [
+        "Lamp",
+        {"bombs": 1},
+        {"or": [
+          {"bombs": 2},
+          {"damage": {"enemy": "Bomb", "count": 1}},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "unlocksDoor": [9]
+    },
+    {
+      "link": [18, 18],
+      "name": "Loot the Cache",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 9},
+        {"refill": {"type": "Rupee", "limit": 90}}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Orange Pegs Down",
+      "requires": [
+        "Lamp",
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [19, 19],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        "Lamp",
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [19, 19],
+      "name": "Base - Hit Blue Orange Switch",
+      "requires": [
+        "Lamp",
+        {"unlockDoor": 10},
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [19, 20],
+      "name": "Blue Pegs Down",
+      "requires": [
+        "Lamp",
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [21, 21],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Zol", "count": 1}}
+        ]}
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [21, 22],
+      "name": "Orange Pegs Down",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]},
+        {"unlockDoor": 11}
+      ]
+    },
+    {
+      "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Sword (L2-L4)",
       "requires": [
         {"sword": 2},
@@ -738,7 +963,7 @@
       ]
     },
     {
-      "link": [13, 14],
+      "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Sword (L1)",
       "requires": [
         {"sword": 1},
@@ -751,7 +976,7 @@
       "note": ["With just the Level 1 sword, Vitreous is only vulnerable to spin attacks."]
     },
     {
-      "link": [13, 14],
+      "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Bow",
       "requires": [
         {"or": [
@@ -776,7 +1001,7 @@
       ]
     },
     {
-      "link": [13, 14],
+      "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Hammer",
       "requires": [
         "Hammer",
@@ -785,7 +1010,7 @@
       "devNote": ["FIXME: Needs testing."]
     },
     {
-      "link": [14, 14],
+      "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Bow",
       "requires": [
         {"or": [
@@ -794,19 +1019,19 @@
         ]}
       ],
       "setsFlags": ["DefeatedVitreous"],
-      "collectsItems": [14, 15]
+      "collectsItems": [11, 12]
     },
     {
-      "link": [14, 14],
+      "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Sword (L2-L4)",
       "requires": [
         {"sword": 2}
       ],
       "setsFlags": ["DefeatedVitreous"],
-      "collectsItems": [14, 15]
+      "collectsItems": [11, 12]
     },
     {
-      "link": [14, 14],
+      "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Sword (L1)",
       "requires": [
         {"sword": 1},
@@ -817,7 +1042,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedVitreous"],
-      "collectsItems": [14, 15],
+      "collectsItems": [11, 12],
       "note": [
         "With just the Level 1 sword, Vitreous is only vulnerable to spin attacks.",
         "It is important to kite it in order to prevent taking damage. As there is not much room, a figure-8 pattern is recommended."

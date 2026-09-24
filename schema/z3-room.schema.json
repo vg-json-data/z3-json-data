@@ -506,6 +506,13 @@
               "type": "string"
             }
           },
+          "resetsObstacles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
           "unlocksDoor": {
             "type": "array",
             "minItems": 1,
