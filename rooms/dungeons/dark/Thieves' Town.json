@@ -192,7 +192,7 @@
       "doorPosition": "north",
       "doorLocation": 1,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to eenter from the north."]
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
     },
     {
       "id": 4,
