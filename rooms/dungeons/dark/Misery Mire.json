@@ -45,6 +45,60 @@
       "name": "Northwest Blue Oange Switch Room",
       "subArea": "Misery Mire (Main Floor)",
       "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Map Chest",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Spiral Conveyor - Blue Orange Switch Room",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Torches and Tiles Room",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Attic",
+      "subArea": "Misery Mire (Upper Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Attic Drop",
+      "subArea": "Misery Mire (Upper Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Teleporter",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Big Key Door to Basement",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Big Chest Room",
+      "subArea": "Misery Mire (Main Floor)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Bridge to Basement",
+      "subArea": "Misery Mire (Final Section)",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -87,6 +141,46 @@
       "itemLocation": 8,
       "item": "Map",
       "itemAddress": "0xEA6A"
+    },
+    {
+      "id": 6,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Main Lobby Blue Peg Blocked Chest",
+      "itemLocation": 3,
+      "item": "SmallKey",
+      "itemAddress": "0xEA5E"
+    },
+    {
+      "id": 7,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Spiral Conveyor Blue Bari Key",
+      "itemLocation": 9,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 8,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Blue Peg Blocked Chest",
+      "itemLocation": 10,
+      "item": "Compass",
+      "itemAddress": "0xEA64"
+    },
+    {
+      "id": 9,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Attic Drop Chest",
+      "itemLocation": 12,
+      "item": "BigKey",
+      "itemAddress": "0xEA6D"
+    },
+    {
+      "id": 10,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Big Chest",
+      "itemLocation": 15,
+      "item": "CaneOfSomaria",
+      "itemAddress": "0xEA67"
     }
   ],
   "lockedDoors": [
@@ -121,6 +215,31 @@
       "doorPosition": "west",
       "doorLocation": 3,
       "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Torches and Tiles Room",
+      "doorPosition": "west",
+      "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 6,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Big Key Door Between Teleporters",
+      "doorPosition": "north",
+      "doorLocation": 13,
+      "keyType": "big"
+    },
+    {
+      "id": 7,
+      "subArea": "Misery Mire (Main Floor)",
+      "locationName": "Big Key Door to Basement",
+      "doorPosition": "north",
+      "doorLocation": 14,
+      "keyType": "big",
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
     }
   ],
   "obstacles": [
@@ -238,6 +357,27 @@
       "requires": []
     },
     {
+      "link": [3, 3],
+      "name": "Open Chest - Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [3, 3],
+      "name": "Unlock Spike Hallway",
+      "requires": [
+        {"unlockDoor": 2},
+        {"or": [
+          {"blueCane": 20},
+          {"cape": 24},
+          {"damage": {"enemy": "Ground Spikes", "count": 2}}
+        ]}
+      ],
+      "devNote": ["This is to track key usage options, it's less damaging to go the long way around, which also doesnt rely on the peg orientation."]
+    },
+    {
       "link": [3, 4],
       "name": "Base",
       "requires": []
@@ -252,6 +392,36 @@
       "name": "Base",
       "requires": [
         {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [3, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [3, 13],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 15],
+      "name": "Hookshot",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [3, 15],
+      "name": "Tight Movement",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Fall", "count": 2}},
+          {"combatProficiency": 3}
+        ]}
       ]
     },
     {
@@ -310,6 +480,11 @@
       ]
     },
     {
+      "link": [5, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
       "link": [6, 5],
       "name": "Base",
       "requires": [
@@ -365,6 +540,164 @@
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [5]
+    },
+    {
+      "link": [9, 3],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Blue Bari Key",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [9, 9],
+      "name": "Alternate Weapons - Blue Bari Key",
+      "requires": [
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ],
+      "collectsItems": [7]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Torches - Compass Chest",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"or": [
+          {"fireRod": 4},
+          {"lamp": 4}
+        ]},
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Flying Tile", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [11, 11],
+      "name": "Attic Torches",
+      "requires": [
+        {"refill": {"type": "magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Attic Torches",
+      "requires": [
+        {"or": [
+          {"lamp": 4},
+          {"fireRod": 4}
+        ]}
+      ],
+      "devNote": [
+        "This could be a permanent flag, but it doesnt really unlock anything besides a chest.",
+        "The teleporter that it unlocks is easier to get to from the Main Lobby."
+      ]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [9]
+    },
+    {
+      "link": [12, 13],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [14, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 16],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [15, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 8],
+      "name": "Blue Pegs Down",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [15, 15],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [10]
+    },
+    {
+      "link": [16, 14],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [16, 16],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "magic", "limit": 128}}
+      ]
     },
 
 
