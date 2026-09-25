@@ -111,6 +111,60 @@
       "name": "Double Pokey Room (Hokkubokkus Dead)",
       "subArea": "Turtle Rock B1",
       "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "West Ledge Exit",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "East Ledge Exit",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Big Chest",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Big Key Door to Lava Tube Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Lava Tube Room After Big Key Door",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Pokey and Empty Pot Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Crystaroller Room (South)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Dark Room Staircase",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Crystaroller Chest",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -169,6 +223,22 @@
       "itemLocation": 15,
       "item": "BigKey",
       "itemAddress": "0xEA25"
+    },
+    {
+      "id": 8,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Big Chest",
+      "itemLocation": 21,
+      "item": "MirrorShield",
+      "itemAddress": "0xEA19"
+    },
+    {
+      "id": 9,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Crystaroller Chest",
+      "itemLocation": 25,
+      "item": "SmallKey",
+      "itemAddress": "0xEA34"
     }
   ],
   "lockedDoors": [
@@ -202,6 +272,46 @@
       "locationName": "Door to Lava Tube Center",
       "doorPosition": "east",
       "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Turtle Rock B1",
+      "locationName": "West Ledge Exit - Bombable Wall",
+      "doorPosition": "south",
+      "doorLocation": 18,
+      "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Big Key Door to Lava Tube Room",
+      "doorPosition": "north",
+      "doorLocation": 22,
+      "keyType": "big"
+    },
+    {
+      "id": 7,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey and Empty Pots North Door",
+      "doorPosition": "north",
+      "doorLocation": 24,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 8,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey and Empty Pots East Door",
+      "doorPosition": "east",
+      "doorLocation": 24,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 9,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Crystaroller North Door",
+      "doorPosition": "north",
+      "doorLocation": 25,
       "keyType": "small"
     }
   ],
@@ -777,6 +887,227 @@
           ]}
         ]}
       ]
+    },
+    {
+      "link": [18, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [18, 18],
+      "name": "Base - Bomb West Ledge Exit",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [18, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [19, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Chest and Return",
+      "requires": [
+        "BigKey",
+        {"redCane": 1}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [21, 20],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [23, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [24, 23],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [24, 24],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [24, 24],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [24, 24],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [24, 24],
+      "name": "Dash Break East Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [24, 25],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [25, 24],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [25, 25],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [25, 25],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [25, 25],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [25, 26],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [25, 27],
+      "name": "Base",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]},
+        {"or": [
+          "h_rangeBlueOrangeSwitch",
+          "Hookshot",
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [26, 25],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [26, 26],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        {"unlockDoor": 9},
+        "h_hitBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [27, 25],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [27, 27],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [9]
     },
 
 
