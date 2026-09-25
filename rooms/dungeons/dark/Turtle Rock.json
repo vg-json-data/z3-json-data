@@ -69,6 +69,48 @@
       "name": "Chain Chomp Staircase",
       "subArea": "Turtle Rock 1F",
       "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Lava Tube Entrance",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Pokey and Bubble Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Double Pokey Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Center of Lava Tube Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Lava Tube East Return",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Double Pokey Room (Hokkubokkus Alive)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Double Pokey Room (Hokkubokkus Dead)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -111,6 +153,22 @@
       "itemLocation": 10,
       "item": "SmallKey",
       "itemAddress": "0xEA16"
+    },
+    {
+      "id": 6,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey Bubble Key",
+      "itemLocation": 13,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 7,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Lava Tube Chest",
+      "itemLocation": 15,
+      "item": "BigKey",
+      "itemAddress": "0xEA25"
     }
   ],
   "lockedDoors": [
@@ -136,6 +194,14 @@
       "locationName": "Chain Chomp North Door",
       "doorPosition": "north",
       "doorLocation": 10,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Door to Lava Tube Center",
+      "doorPosition": "east",
+      "doorLocation": 13,
       "keyType": "small"
     }
   ],
@@ -309,7 +375,7 @@
         ]}
       ],
       "collectsItems": [4],
-      "note": ["Hokkubokku dies to a single fire rod hit, or with ice rod, freeze a Zol and throw it several times."]
+      "note": ["Hokkubokku dies to a single fire rod hit."]
     },
     {
       "link": [9, 9],
@@ -338,7 +404,7 @@
         ]}
       ],
       "collectsItems": [4],
-      "note": ["Hokkubokku dies to a single fire rod hit, or with ice rod, freeze a Zol and throw it several times."]
+      "note": ["With ice rod, freeze a Zol and throw it several times."]
     },
     {
       "link": [9, 9],
@@ -404,6 +470,315 @@
         {"unlockDoor": 3}
       ]
     },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 13],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Lower Blue Pegs",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [13, 13],
+      "name": "Raise Blue Pegs",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [13, 13],
+      "name": "Pokey Sword Kill",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"or": [
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}},
+            {"damage": {"enemy": "Bubble", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [13, 13],
+      "name": "Pokey Kill",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"or": [
+          {"fireRod": 1},
+          {"and": [
+            {"iceRod": 5},
+            {"combatProficiency": 3}
+          ]},
+          {"silverArrows": 4},
+          {"and": [
+            {"silverArrows": 2},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 20},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"arrows": 15},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [13, 13],
+      "name": "Alternate Weapon Pokey Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 3}}
+          ]},
+          {"blueCane": 60}
+        ]}
+      ],
+      "collectsItems": [6],
+      "devNote": ["FIXME: Might be possible with bombs or with fewer Hokkubokku hits."]
+    },
+    {
+      "link": [13, 13],
+      "name": "Red Cane Pokey Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"redCane": 6},
+            {"damage": {"enemy": "Bubble", "count": 3}}
+          ]},
+          {"and": [
+            {"redCane": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6],
+      "devNote": [
+        "Let the Bubbles pass, then place a block with about a tile gap between the blue orange switch.",
+        "The Hokkubokku Should hit the block 3 or 4 times, then explode the block to hit the switch and lock the Bubbles down below."
+      ]
+    },
+    {
+      "link": [13, 15],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [13, 15],
+      "name": "Hookshot Raise Blue Pegs",
+      "requires": [
+        "Hookshot"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [14, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 13],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [15, 15],
+      "name": "Lower Blue Pegs",
+      "requires": [
+        {"unlockDoor": 4},
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [15, 15],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 16],
+      "name": "Magic Pot Refill",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [17, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [17, 18],
+      "name": "Hokkubokku Base Kills",
+      "requires": [
+        {"or": [
+          {"fireRod": 2},
+          {"and": [
+            {"iceRod": 8},
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 24},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 4}}
+          ]},
+          {"and": [
+            {"arrows": 16},
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Alternate Weapon Hokkubokku Kills",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 84},
+          {"and": [
+            {"blueCane": 68},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 4}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Red Cane Hokkubokku Kills",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          {"and": [
+            {"redCane": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"redCane": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 5},
+            {"redCane": 2}
+          ]}
+        ]}
+      ]
+    },
+
 
 
 
