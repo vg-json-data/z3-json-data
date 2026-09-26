@@ -126,6 +126,15 @@
     ]
   },
   {
+    "name": "h_OpenGanonsTower",
+    "requires": [
+      {"crystals": 7}
+    ],
+    "note": [
+      "In vanilla, seven crystals are required to open Ganon's Tower. Randomizers may wish to change this."
+    ]
+  },
+  {
     "name": "Boomerang",
     "requires": [
       {"or": [
