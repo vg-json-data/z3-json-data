@@ -116,13 +116,13 @@
       "id": 19,
       "name": "West Ledge Exit",
       "subArea": "Turtle Rock B1",
-      "nodeType": "junction"
+      "nodeType": "door"
     },
     {
       "id": 20,
       "name": "East Ledge Exit",
       "subArea": "Turtle Rock B1",
-      "nodeType": "junction"
+      "nodeType": "door"
     },
     {
       "id": 21,
@@ -165,6 +165,81 @@
       "name": "Crystaroller Chest",
       "subArea": "Turtle Rock B1",
       "nodeType": "junction"
+    },
+    {
+      "id": 28,
+      "name": "Dark Room South Exit",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 29,
+      "name": "South of Helmasaur's Laser Bridge",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 30,
+      "name": "Chest Laser Bridge Exit",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 31,
+      "name": "Laser Bridge Top Right Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 32,
+      "name": "Laser Bridge Top Left Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 33,
+      "name": "Laser Bridge Bottom Right Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 34,
+      "name": "Laser Bridge Bottom Left Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 35,
+      "name": "Outdoor Isolated Ledge",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "door"
+    },
+    {
+      "id": 36,
+      "name": "Final Staircase",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "junction"
+    },
+    {
+      "id": 37,
+      "name": "Boss Entrance",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "junction"
+    },
+    {
+      "id": 38,
+      "name": "Trinexx Fire and Ice Heads",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "boss",
+      "note": [
+        "Represents killing Trinexx's Fire and Ice Heads."
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Trinexx Final Phase",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "boss"
     }
   ],
   "items": [
@@ -239,6 +314,61 @@
       "itemLocation": 25,
       "item": "SmallKey",
       "itemAddress": "0xEA34"
+    },
+    {
+      "id": 10,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Top Right Chest",
+      "itemLocation": 31,
+      "item": "OneRupee",
+      "itemAddress": "0xEA28"
+    },
+    {
+      "id": 11,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Top Left Chest",
+      "itemLocation": 32,
+      "item": "FiveRupees",
+      "itemAddress": "0xEA2B"
+    },
+    {
+      "id": 12,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Bottom Right Chest",
+      "itemLocation": 33,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEA2E"
+    },
+    {
+      "id": 13,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Bottom Left Chest",
+      "itemLocation": 34,
+      "item": "SmallKey",
+      "itemAddress": "0xEA31"
+    },
+    {
+      "id": 14,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Trinexx - Boss Drop",
+      "itemLocation": 39,
+      "item": "HeartContainer",
+      "itemAddress": "0x180159"
+    },
+    {
+      "id": 15,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 39,
+      "item": "Crystal7",
+      "itemAddress": [
+        "0x120A7",
+        "0x53F24",
+        "0x53F25",
+        "0x18005C",
+        "0x180079",
+        "0xC708"
+      ]
     }
   ],
   "lockedDoors": [
@@ -313,6 +443,30 @@
       "doorPosition": "north",
       "doorLocation": 25,
       "keyType": "small"
+    },
+    {
+      "id": 10,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Door to Outside Isolated Ledge",
+      "doorPosition": "south",
+      "doorLocation": 30,
+      "keyType": "bomb"
+    },
+    {
+      "id": 11,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Entrance to Blue Orange Peg Maze",
+      "doorPosition": "west",
+      "doorLocation": 29,
+      "keyType": "small"
+    },
+    {
+      "id": 12,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Boss Entrance",
+      "doorPosition": "north",
+      "doorLocation": 37,
+      "keyType": "big"
     }
   ],
   "strats": [
@@ -1095,6 +1249,41 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "link": [26, 28],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"redCane": 1},
+        {"or": [
+          {"combatProficiency": 4},
+          {"damage": {"enemy": "Guruguru Bar", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [26, 28],
+      "name": "Dark",
+      "requires": [
+        {"darkProficiency": 2},
+        {"redCane": 1},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Fall", "count": 3}},
+            {"damage": {"enemy": "Guruguru Bar", "count": 4}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"damage": {"enemy": "Fall", "count": 1}},
+            {"damage": {"enemy": "Guruguru Bar", "count": 3}}
+          ]},
+          {"and": [
+            {"darkProficiency": 4},
+            {"damage": {"enemy": "Guruguru Bar", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
       "link": [27, 25],
       "name": "Base",
       "requires": [
@@ -1109,14 +1298,401 @@
       "requires": [],
       "collectsItems": [9]
     },
-
-
-
-
-
-
     {
-      "link": [30, 31],
+      "link": [28, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 2}},
+            {"damage": {"enemy": "Laser Eye", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Pegasus Boots",
+      "requires": [
+        "PegasusBoots",
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Helmasaur", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Helmasaur", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Helmasaur Lure and Tank",
+      "requires": [
+        {"combatProficiency": 3},
+        {"damage": {"enemy": "Helmasaur", "count": 1}}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Helmasaur up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]},
+          "Hookshot",
+          {"silverArrows": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Pegasus Boots",
+      "requires": [
+        "PegasusBoots"
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Lure and Tank",
+      "requires": [
+        {"combatProficiency": 2},
+        {"damage": {"enemy": "Hardhat Beetle (Red)", "count": 1}}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Hardhat Beetle up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 31],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 31],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 32],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 32],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 33],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 33],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Sword and Mirror Shield",
+      "requires": [
+        {"shield": 3},
+        {"sword": 1},
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Hardhat Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 1},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"redCane": 1}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 1}
+          ]}
+        ]},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Hardhat Lure",
+      "requires": [
+        {"combatProficiency": 2},
+        {"damage": {"enemy": "Hardhat Beetle (Red)", "count": 1}},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Hardhat Beetle up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 36],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 11},
+        "h_hitBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [30, 29],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [30, 30],
+      "name": "Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [30, 34],
+      "name": "Hardhat Lure and Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [30, 35],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 10}
+      ]
+    },
+    {
+      "link": [31, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [31, 31],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [32, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [32, 32],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [11]
+    },
+    {
+      "link": [33, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [33, 33],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [12]
+    },
+    {
+      "link": [34, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [34, 34],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [35, 30],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 10}
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}},
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Red Cane then Refill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"redCane": 1},
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [37, 38],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 12}
+      ]
+    },
+    {
+      "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Master Sword",
       "requires": [
         {"sword": 2},
@@ -1147,7 +1723,7 @@
       "note": ["It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"]
     },
     {
-      "link": [30, 31],
+      "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Tempered Sword",
       "requires": [
         {"sword": 3},
@@ -1175,7 +1751,7 @@
       ]
     },
     {
-      "link": [30, 31],
+      "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Gold Sword",
       "requires": [
         {"sword": 4},
@@ -1199,7 +1775,7 @@
       ]
     },
     {
-      "link": [30, 31],
+      "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Hammer",
       "requires": [
         "Hammer",
@@ -1224,7 +1800,7 @@
       ]
     },
     {
-      "link": [30, 31],
+      "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Rod Only Kill",
       "requires": [
         "FireRod",
@@ -1238,7 +1814,7 @@
       ]
     },
     {
-      "link": [31, 31],
+      "link": [39, 39],
       "name": "Trinexx (Final Phase) - Sword (L1)",
       "requires": [
         {"sword": 1},
@@ -1249,11 +1825,11 @@
         ]}
       ],
       "setsFlags": ["DefeatedTrinexx"],
-      "collectsItems": [31, 32],
+      "collectsItems": [14, 15],
       "note": ["With just the Fighter Sword, Trinexx can only be damaged with spin attacks."]
     },
     {
-      "link": [31, 31],
+      "link": [39, 39],
       "name": "Trinexx (Final Phase) - Sword (L2 - L4)",
       "requires": [
         {"sword": 2},
@@ -1279,10 +1855,10 @@
         ]}
       ],
       "setsFlags": ["DefeatedTrinexx"],
-      "collectsItems": [31, 32]
+      "collectsItems": [14, 15]
     },
     {
-      "link": [31, 31],
+      "link": [39, 39],
       "name": "Trinexx (Final Phase) - Hammer",
       "requires": [
         "Hammer",
@@ -1293,7 +1869,7 @@
         ]}
       ],
       "setsFlags": ["DefeatedTrinexx"],
-      "collectsItems": [31, 32]
+      "collectsItems": [14, 15]
     }
   ]
 }
