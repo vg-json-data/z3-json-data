@@ -102,11 +102,6 @@
           "id": 7,
           "name": "Tower of Hera Entrance",
           "world": "light"
-        },
-        {
-          "id": 8,
-          "name": "Ganon's Tower Entrance",
-          "world": "dark"
         }
       ]
     },
@@ -142,6 +137,18 @@
         {
           "id": 11,
           "name": "Spike Cave Entrance",
+          "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Ganon's Tower",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 8,
+          "name": "Ganon's Tower Entrance",
           "world": "dark"
         }
       ]
@@ -424,6 +431,14 @@
       "collectsItems": [3]
     },
     {
+      "link": [9, 13],
+      "name": "Open Ganon's Tower",
+      "world": "dark",
+      "requires": [
+        "h_OpenGanonsTower"
+      ]
+    },
+    {
       "link": [10, 5],
       "name": "Base",
       "world": "light",
@@ -440,6 +455,14 @@
       "name": "Base",
       "world": "any",
       "requires": []
+    },
+    {
+      "link": [13, 9],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "h_OpenGanonsTower"
+      ]
     }
   ]
 }
