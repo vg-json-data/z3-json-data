@@ -713,7 +713,7 @@
       "link": [11, 11],
       "name": "Attic Torches",
       "requires": [
-        {"refill": {"type": "magic", "limit": 128}}
+        {"refill": {"type": "Magic", "limit": 128}}
       ]
     },
     {
@@ -796,7 +796,7 @@
       "link": [16, 16],
       "name": "Base",
       "requires": [
-        {"refill": {"type": "magic", "limit": 128}}
+        {"refill": {"type": "Magic", "limit": 128}}
       ]
     },
     {

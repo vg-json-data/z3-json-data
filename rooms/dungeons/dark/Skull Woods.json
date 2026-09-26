@@ -537,7 +537,7 @@
       "name": "Base - Eastern Room Magic Refill",
       "requires": [
         {"unlockDoor": 4},
-        {"refill": {"type": "magic", "limit": 128}}
+        {"refill": {"type": "Magic", "limit": 128}}
       ]
     },
     {

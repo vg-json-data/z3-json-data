@@ -1,0 +1,1875 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 99,
+  "name": "Turtle Rock",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Entrance Open Room (Southeast)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Entrance Open Room (Southwest)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Entrance Open Room (East)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Entrance Open Room (NorthEast)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Entrance Open Room (NorthWest)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "Entrance Open Room (On a Red Cane Block)",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Floating Torches Locked Roller Room",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 9,
+      "name": "Pokey Room",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Chain Chomp Room",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Chain Chomp Staircase",
+      "subArea": "Turtle Rock 1F",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Lava Tube Entrance",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Pokey and Bubble Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Double Pokey Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Center of Lava Tube Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Lava Tube East Return",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Double Pokey Room (Hokkubokkus Alive)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Double Pokey Room (Hokkubokkus Dead)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "West Ledge Exit",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "door"
+    },
+    {
+      "id": 20,
+      "name": "East Ledge Exit",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "door"
+    },
+    {
+      "id": 21,
+      "name": "Big Chest",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Big Key Door to Lava Tube Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Lava Tube Room After Big Key Door",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Pokey and Empty Pot Room",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Crystaroller Room (South)",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Dark Room Staircase",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Crystaroller Chest",
+      "subArea": "Turtle Rock B1",
+      "nodeType": "junction"
+    },
+    {
+      "id": 28,
+      "name": "Dark Room South Exit",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 29,
+      "name": "South of Helmasaur's Laser Bridge",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 30,
+      "name": "Chest Laser Bridge Exit",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 31,
+      "name": "Laser Bridge Top Right Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 32,
+      "name": "Laser Bridge Top Left Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 33,
+      "name": "Laser Bridge Bottom Right Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 34,
+      "name": "Laser Bridge Bottom Left Chest",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "junction"
+    },
+    {
+      "id": 35,
+      "name": "Outdoor Isolated Ledge",
+      "subArea": "Turtle Rock B2",
+      "nodeType": "door"
+    },
+    {
+      "id": 36,
+      "name": "Final Staircase",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "junction"
+    },
+    {
+      "id": 37,
+      "name": "Boss Entrance",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "junction"
+    },
+    {
+      "id": 38,
+      "name": "Trinexx Fire and Ice Heads",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "boss",
+      "note": [
+        "Represents killing Trinexx's Fire and Ice Heads."
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Trinexx Final Phase",
+      "subArea": "Turtle Rock B3",
+      "nodeType": "boss"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Compass Chest",
+      "itemLocation": 3,
+      "item": "Compass",
+      "itemAddress": "0xEA22"
+    },
+    {
+      "id": 2,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Map Chest",
+      "itemLocation": 8,
+      "item": "Map",
+      "itemAddress": "0xEA1C"
+    },
+    {
+      "id": 3,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Roller Room - Right Chest",
+      "itemLocation": 8,
+      "item": "SmallKey",
+      "itemAddress": "0xEA1F"
+    },
+    {
+      "id": 4,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Pokey Room - Hokkubokku Key",
+      "itemLocation": 9,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 5,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Chain Chomp Chest",
+      "itemLocation": 10,
+      "item": "SmallKey",
+      "itemAddress": "0xEA16"
+    },
+    {
+      "id": 6,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey Bubble Key",
+      "itemLocation": 13,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 7,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Lava Tube Chest",
+      "itemLocation": 15,
+      "item": "BigKey",
+      "itemAddress": "0xEA25"
+    },
+    {
+      "id": 8,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Big Chest",
+      "itemLocation": 21,
+      "item": "MirrorShield",
+      "itemAddress": "0xEA19"
+    },
+    {
+      "id": 9,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Crystaroller Chest",
+      "itemLocation": 25,
+      "item": "SmallKey",
+      "itemAddress": "0xEA34"
+    },
+    {
+      "id": 10,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Top Right Chest",
+      "itemLocation": 31,
+      "item": "OneRupee",
+      "itemAddress": "0xEA28"
+    },
+    {
+      "id": 11,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Top Left Chest",
+      "itemLocation": 32,
+      "item": "FiveRupees",
+      "itemAddress": "0xEA2B"
+    },
+    {
+      "id": 12,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Bottom Right Chest",
+      "itemLocation": 33,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEA2E"
+    },
+    {
+      "id": 13,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Laser Bridge Bottom Left Chest",
+      "itemLocation": 34,
+      "item": "SmallKey",
+      "itemAddress": "0xEA31"
+    },
+    {
+      "id": 14,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Trinexx - Boss Drop",
+      "itemLocation": 39,
+      "item": "HeartContainer",
+      "itemAddress": "0x180159"
+    },
+    {
+      "id": 15,
+      "subArea": "Palace of Darkness B1",
+      "locationName": "Dungeon Prize",
+      "itemLocation": 39,
+      "item": "Crystal7",
+      "itemAddress": [
+        "0x120A7",
+        "0x53F24",
+        "0x53F25",
+        "0x18005C",
+        "0x180079",
+        "0xC708"
+      ]
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Entrance Open Room Northwest Door",
+      "doorPosition": "north",
+      "doorLocation": 3,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Chain Chomp South Door",
+      "doorPosition": "north",
+      "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Turtle Rock 1F",
+      "locationName": "Chain Chomp North Door",
+      "doorPosition": "north",
+      "doorLocation": 10,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Door to Lava Tube Center",
+      "doorPosition": "east",
+      "doorLocation": 13,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Turtle Rock B1",
+      "locationName": "West Ledge Exit - Bombable Wall",
+      "doorPosition": "south",
+      "doorLocation": 18,
+      "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Big Key Door to Lava Tube Room",
+      "doorPosition": "north",
+      "doorLocation": 22,
+      "keyType": "big"
+    },
+    {
+      "id": 7,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey and Empty Pots North Door",
+      "doorPosition": "north",
+      "doorLocation": 24,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 8,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Pokey and Empty Pots East Door",
+      "doorPosition": "east",
+      "doorLocation": 24,
+      "keyType": "bomb, boots"
+    },
+    {
+      "id": 9,
+      "subArea": "Turtle Rock B1",
+      "locationName": "Crystaroller North Door",
+      "doorPosition": "north",
+      "doorLocation": 25,
+      "keyType": "small"
+    },
+    {
+      "id": 10,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Door to Outside Isolated Ledge",
+      "doorPosition": "south",
+      "doorLocation": 30,
+      "keyType": "bomb"
+    },
+    {
+      "id": 11,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Entrance to Blue Orange Peg Maze",
+      "doorPosition": "west",
+      "doorLocation": 29,
+      "keyType": "small"
+    },
+    {
+      "id": 12,
+      "subArea": "Turtle Rock B2",
+      "locationName": "Boss Entrance",
+      "doorPosition": "north",
+      "doorLocation": 37,
+      "keyType": "big"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Magic Pot Refill",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}},
+        {"refill": {"type": "Bombs", "limit": 1}}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [2, 7],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
+      "link": [3, 7],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Magic Pot Refill",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [4, 7],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [4, 8],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1},
+        {"fireRod": 3}
+      ]
+    },
+    {
+      "link": [5, 5],
+      "name": "Flying Tile Refill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"refill": {"type": "Magic", "limit": 128}},
+        {"refill": {"type": "Fairy", "limit": 1}}
+      ],
+      "note": ["Wait in the doorway of the flying tile room to stay safe."],
+      "devNote": ["This is probably not really worth doing if you can't hide in the doorway. Link will take more damage than it's worth."]
+    },
+    {
+      "link": [5, 7],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [6, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [7, 2],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [7, 3],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [7, 4],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [7, 5],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [7, 6],
+      "name": "Base",
+      "requires": [],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [7, 7],
+      "name": "Magic Pot Refill",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ],
+      "note": ["The northwest pot has a magic refill."],
+      "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [2]
+    },
+    {
+      "link": [8, 8],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [3]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base Kill",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"fireRod": 1},
+          {"and": [
+            {"arrows": 15},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"silverArrows": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 2},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [4],
+      "note": ["Hokkubokku dies to a single fire rod hit."]
+    },
+    {
+      "link": [9, 9],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"iceRod": 1},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"iceRod": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"bombs": 8},
+            {"combatProficiency": 3}
+          ]},
+          {"blueCane": 56}
+        ]}
+      ],
+      "collectsItems": [4],
+      "note": ["With ice rod, freeze a Zol and throw it several times."]
+    },
+    {
+      "link": [9, 9],
+      "name": "Red Cane Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"redCane": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"redCane": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [4],
+      "note": ["It is possible to lure the Zol away from the block to be able to kill the Hokkubokku with only 3 red blocks."]
+    },
+    {
+      "link": [9, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [10, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [10, 10],
+      "name": "Base",
+      "requires": [
+        "h_rangeBlueOrangeSwitch",
+        "h_rangeBlueOrangeSwitch",
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Chain Chomp", "count": 1}}
+        ]}
+      ],
+      "collectsItems": [5]
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 13],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [12, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Lower Blue Pegs",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [13, 13],
+      "name": "Raise Blue Pegs",
+      "requires": [
+        "h_hitBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [13, 13],
+      "name": "Pokey Sword Kill",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"or": [
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}},
+            {"damage": {"enemy": "Bubble", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [13, 13],
+      "name": "Pokey Kill",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"or": [
+          {"fireRod": 1},
+          {"and": [
+            {"iceRod": 5},
+            {"combatProficiency": 3}
+          ]},
+          {"silverArrows": 4},
+          {"and": [
+            {"silverArrows": 2},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 20},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"arrows": 15},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6]
+    },
+    {
+      "link": [13, 13],
+      "name": "Alternate Weapon Pokey Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 3}}
+          ]},
+          {"blueCane": 60}
+        ]}
+      ],
+      "collectsItems": [6],
+      "devNote": ["FIXME: Might be possible with bombs or with fewer Hokkubokku hits."]
+    },
+    {
+      "link": [13, 13],
+      "name": "Red Cane Pokey Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"redCane": 6},
+            {"damage": {"enemy": "Bubble", "count": 3}}
+          ]},
+          {"and": [
+            {"redCane": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 3},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "collectsItems": [6],
+      "devNote": [
+        "Let the Bubbles pass, then place a block with about a tile gap between the blue orange switch.",
+        "The Hokkubokku Should hit the block 3 or 4 times, then explode the block to hit the switch and lock the Bubbles down below."
+      ]
+    },
+    {
+      "link": [13, 15],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [13, 15],
+      "name": "Hookshot Raise Blue Pegs",
+      "requires": [
+        "Hookshot"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [14, 12],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 13],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        {"unlockDoor": 4}
+      ]
+    },
+    {
+      "link": [15, 15],
+      "name": "Lower Blue Pegs",
+      "requires": [
+        {"unlockDoor": 4},
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [15, 15],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [15, 16],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 11],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 16],
+      "name": "Magic Pot Refill",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [17, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [17, 18],
+      "name": "Hokkubokku Base Kills",
+      "requires": [
+        {"or": [
+          {"fireRod": 2},
+          {"and": [
+            {"iceRod": 8},
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}},
+            {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 3},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 24},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 4}}
+          ]},
+          {"and": [
+            {"arrows": 16},
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Alternate Weapon Hokkubokku Kills",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 84},
+          {"and": [
+            {"blueCane": 68},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 4},
+            {"damage": {"enemy": "Hokkubokku", "count": 4}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Red Cane Hokkubokku Kills",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          {"and": [
+            {"redCane": 3},
+            {"damage": {"enemy": "Hokkubokku", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"redCane": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 5},
+            {"redCane": 2}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [18, 18],
+      "name": "Base - Bomb West Ledge Exit",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [18, 19],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [18, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [19, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [20, 20],
+      "name": "Base - Open Chest and Return",
+      "requires": [
+        "BigKey",
+        {"redCane": 1}
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [21, 20],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [8]
+    },
+    {
+      "link": [21, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [23, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [24, 23],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [24, 24],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [24, 24],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [24, 24],
+      "name": "Base - Bomb East Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [24, 24],
+      "name": "Dash Break East Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [24, 25],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [25, 24],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [25, 25],
+      "name": "Base - Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [25, 25],
+      "name": "Dash Break South Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [7]
+    },
+    {
+      "link": [25, 25],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [25, 26],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [25, 27],
+      "name": "Base",
+      "requires": [
+        {"obstaclesNotCleared": ["Blue Pegs Down"]},
+        {"or": [
+          "h_rangeBlueOrangeSwitch",
+          "Hookshot",
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [26, 25],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9},
+        {"obstaclesNotCleared": ["Blue Pegs Down"]}
+      ]
+    },
+    {
+      "link": [26, 26],
+      "name": "Lower Orange Pegs",
+      "requires": [
+        {"unlockDoor": 9},
+        "h_hitBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [26, 28],
+      "name": "Base",
+      "requires": [
+        "Lamp",
+        {"redCane": 1},
+        {"or": [
+          {"combatProficiency": 4},
+          {"damage": {"enemy": "Guruguru Bar", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [26, 28],
+      "name": "Dark",
+      "requires": [
+        {"darkProficiency": 2},
+        {"redCane": 1},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Fall", "count": 3}},
+            {"damage": {"enemy": "Guruguru Bar", "count": 4}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"damage": {"enemy": "Fall", "count": 1}},
+            {"damage": {"enemy": "Guruguru Bar", "count": 3}}
+          ]},
+          {"and": [
+            {"darkProficiency": 4},
+            {"damage": {"enemy": "Guruguru Bar", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 25],
+      "name": "Base",
+      "requires": [
+        {"obstaclesCleared": ["Blue Pegs Down"]},
+        "h_rangeBlueOrangeSwitch"
+      ],
+      "resetsObstacles": ["Blue Pegs Down"]
+    },
+    {
+      "link": [27, 27],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [9]
+    },
+    {
+      "link": [28, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 2}},
+            {"damage": {"enemy": "Laser Eye", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Pegasus Boots",
+      "requires": [
+        "PegasusBoots",
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Helmasaur", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Helmasaur", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [28, 29],
+      "name": "Helmasaur Lure and Tank",
+      "requires": [
+        {"combatProficiency": 3},
+        {"damage": {"enemy": "Helmasaur", "count": 1}}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Helmasaur up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]},
+          "Hookshot",
+          {"silverArrows": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Pegasus Boots",
+      "requires": [
+        "PegasusBoots"
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Lure and Tank",
+      "requires": [
+        {"combatProficiency": 2},
+        {"damage": {"enemy": "Hardhat Beetle (Red)", "count": 1}}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Hardhat Beetle up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 31],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 31],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 32],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 32],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 33],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3}
+      ]
+    },
+    {
+      "link": [29, 33],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Sword and Mirror Shield",
+      "requires": [
+        {"shield": 3},
+        {"sword": 1},
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Hardhat Kill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 1},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"redCane": 1}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 1}
+          ]}
+        ]},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [29, 34],
+      "name": "Hardhat Lure",
+      "requires": [
+        {"combatProficiency": 2},
+        {"damage": {"enemy": "Hardhat Beetle (Red)", "count": 1}},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Laser Eye", "count": 2}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Laser Eye", "count": 1}}
+          ]},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "note": [
+        "Run down and back and avoid getting hit by a laser. Lure the Hardhat Beetle up to the north door.",
+        "Between the safety rails, take a hit and then cross the bridge safely."
+      ]
+    },
+    {
+      "link": [29, 36],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 11},
+        "h_hitBlueOrangeSwitch"
+      ]
+    },
+    {
+      "link": [30, 29],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [30, 30],
+      "name": "Bomb South Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [30, 34],
+      "name": "Hardhat Lure and Dodge",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [30, 35],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 10}
+      ]
+    },
+    {
+      "link": [31, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [31, 31],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [10]
+    },
+    {
+      "link": [32, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [32, 32],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [11]
+    },
+    {
+      "link": [33, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [33, 33],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [12]
+    },
+    {
+      "link": [34, 29],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [34, 34],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [35, 30],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 10}
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}},
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Red Cane then Refill",
+      "requires": [
+        {"combatProficiency": 2},
+        {"redCane": 1},
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [37, 38],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 12}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Trinexx's Fire and Ice Heads - Master Sword",
+      "requires": [
+        {"sword": 2},
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"rod": 18},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 7}}
+          ]},
+          {"and": [
+            {"rod": 16},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
+          ]},
+          {"and": [
+            {"rod": 10},
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+          ]},
+          {"and": [
+            {"rod": 8},
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
+          ]}
+        ]}
+      ],
+      "note": ["It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"]
+    },
+    {
+      "link": [38, 39],
+      "name": "Trinexx's Fire and Ice Heads - Tempered Sword",
+      "requires": [
+        {"sword": 3},
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"rod": 8},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 5}}
+          ]},
+          {"and": [
+            {"rod": 6},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+          ]},
+          {"and": [
+            {"rod": 5},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 4},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Trinexx's Fire and Ice Heads - Gold Sword",
+      "requires": [
+        {"sword": 4},
+        "FireRod",
+        "IceRod",
+        {"or": [
+          {"and": [
+            {"rod": 6},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+          ]},
+          {"and": [
+            {"rod": 4},
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
+          ]},
+          {"and": [
+            {"rod": 2},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Trinexx's Fire and Ice Heads - Hammer",
+      "requires": [
+        "Hammer",
+        "FireRod",
+        "IceRod",
+        {"bossProficiency": 2},
+        {"or": [
+          {"and": [
+            {"rod": 14},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 4}}
+          ]},
+          {"and": [
+            {"rod": 10},
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+          ]},
+          {"and": [
+            {"rod": 8},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Trinexx's Fire and Ice Heads - Rod Only Kill",
+      "requires": [
+        "FireRod",
+        "IceRod",
+        {"rod": 24},
+        {"bossProficiency": 2},
+        {"or": [
+          {"bossProficiency": 4},
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [39, 39],
+      "name": "Trinexx (Final Phase) - Sword (L1)",
+      "requires": [
+        {"sword": 1},
+        {"bossProficiency": 3},
+        {"or": [
+          {"bossProficiency": 4},
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+        ]}
+      ],
+      "setsFlags": ["DefeatedTrinexx"],
+      "collectsItems": [14, 15],
+      "note": ["With just the Fighter Sword, Trinexx can only be damaged with spin attacks."]
+    },
+    {
+      "link": [39, 39],
+      "name": "Trinexx (Final Phase) - Sword (L2 - L4)",
+      "requires": [
+        {"sword": 2},
+        {"or": [
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 3}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
+          ]},
+          {"bossProficiency": 3},
+          {"and": [
+            {"sword": 3},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 4},
+            {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 4},
+            {"bossProficiency": 2}
+          ]}
+        ]}
+      ],
+      "setsFlags": ["DefeatedTrinexx"],
+      "collectsItems": [14, 15]
+    },
+    {
+      "link": [39, 39],
+      "name": "Trinexx (Final Phase) - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 2},
+        {"or": [
+          {"damage": {"enemy": "Trinexx (Body)", "attack": "Trinexx (Head)", "count": 3}},
+          {"bossProficiency": 3}
+        ]}
+      ],
+      "setsFlags": ["DefeatedTrinexx"],
+      "collectsItems": [14, 15]
+    }
+  ]
+}

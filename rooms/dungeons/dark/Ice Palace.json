@@ -506,9 +506,9 @@
       "link": [7, 8],
       "name": "Base - Stalfos Kill",
       "requires": [
-        {"refill": {"type": "bombs", "limit": 1}},
+        {"refill": {"type": "Bombs", "limit": 1}},
         {"bombs": 1},
-        {"refill": {"type": "bombs", "limit": 1}}
+        {"refill": {"type": "Bombs", "limit": 1}}
       ],
       "devNote": ["Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."]
     },
