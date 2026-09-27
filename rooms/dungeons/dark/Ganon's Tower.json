@@ -1,0 +1,381 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 100,
+  "name": "Ganon's Tower",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Entrance Left Staircase",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Entrance Right Staircase",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Entrance Staircase Going Up",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Hookshot Room - Northeast",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Hookshot Room - North",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "DMs Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Hookshot Room - South",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction",
+      "note": ["This is just north of the blue pegs."]
+    },
+    {
+      "id": 9,
+      "name": "Map Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Double Switch Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Portal to Firesnake Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Torch Bonk Key",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0x180161"
+    },
+    {
+      "id": 2,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Top Left",
+      "itemLocation": 7,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEAB8"
+    },
+    {
+      "id": 3,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Top Right",
+      "itemLocation": 7,
+      "item": "TenArrows",
+      "itemAddress": "0xEABB"
+    },
+    {
+      "id": 4,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Bottom Left",
+      "itemLocation": 7,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEABE"
+    },
+    {
+      "id": 5,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Bottom Right",
+      "itemLocation": 7,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAC1"
+    },
+    {
+      "id": 6,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Map Chest",
+      "itemLocation": 8,
+      "item": "Map",
+      "itemAddress": "0xEAD3"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Door Between Left and Right Entrances",
+      "doorPosition": "east",
+      "doorLocation": 2,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Map Chest Entrance",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Double Switch East Door",
+      "doorPosition": "east",
+      "doorLocation": 10,
+      "keyType": "small"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Torch Bonk",
+      "requires": [
+        "PegasusBoots"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Unlock Useless Door",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 5],
+      "name": "Base",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base - Unlock Useless Door",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Bonk Boost then Bomb Boost",
+      "requires": [
+        "canBonkBoost",
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Precise Bonk Boost",
+      "requires": [
+        "canBonkBoost",
+        {"combatProficiency": 4}
+      ],
+      "note": ["It is possible to boost across with several precise boosts."]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [7, 6],
+      "name": "Sword Kill",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Yomo Medusa", "attack": "Fireball", "count": 2}}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Yomo Medusa", "attack": "Fireball", "count": 4}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Stalfos Kill",
+      "requires": [
+        {"or": [
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"rod": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Stalfos Kill - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 2},
+          {"blueCane": 40},
+          {"bombs": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [2, 3, 4, 5]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "requires": [
+        {"bombs": 2}
+      ]
+    },
+    {
+      "link": [8, 10],
+      "name": "Boomerang",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          "RedBoomerang",
+          {"and": [
+            "BlueBoomerang",
+            "Hookshot"
+          ]},
+          {"and": [
+            "BlueBoomerang",
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Hit the switch with a boomerang to save bombs.",
+        "In the hookshot room, throw the boomerang up and move to the side to easily hit the switch.",
+        "The next room can be done a similar way with the Red Boomerang.",
+        "With a Blue Boomerang and Hookshot, quickly hookshot the pot to move over fast enough.",
+        "This is possible with the Blue Boomerang alone; stand just south of the door, a few pixels from the rail",
+        "and where Link's back is roughly centered with the left post of the doorframe; throw the boomerang diagonally and immediately move to the right."
+      ]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [10, 8],
+      "name": "Boomerang",
+      "requires": [
+        {"combatProficiency": 3},
+        "RedBoomerang"
+      ],
+      "note": [
+        "While south of the door, throw the boomerang to the left, delay breifly, then go north.",
+        "The delay is helpful to prevent double hitting the switch.",
+        "In the next room, throw the boomerang north then move to the side to hit the switch."
+      ],
+      "devNote": ["Assumes the blue pegs are down, which is safe if the dungeon is not randomized."]
+    },
+    {
+      "link": [10, 11],
+      "name": "Boomerang",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    }
+  ]
+}
