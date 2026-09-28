@@ -1,0 +1,1635 @@
+{
+  "$schema": "../../../schema/z3-room.schema.json",
+  "id": 100,
+  "name": "Ganon's Tower",
+  "roomType": "Dungeon",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Main Entrance",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 2,
+      "name": "Entrance Left Staircase",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 3,
+      "name": "Entrance Right Staircase",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 4,
+      "name": "Entrance Staircase Going Up",
+      "subArea": "Ganon's Tower (Entrance)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 5,
+      "name": "Hookshot Room - Northeast",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 6,
+      "name": "Hookshot Room - North",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 7,
+      "name": "DMs Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 8,
+      "name": "Hookshot Room - South",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction",
+      "note": ["This is just north of the blue pegs."]
+    },
+    {
+      "id": 9,
+      "name": "Map Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 10,
+      "name": "Double Switch Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 11,
+      "name": "Portal to Firesnake Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Firesnake Room Chest",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Randomizer Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Teleport Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Basement Convergence Room",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Tile Room Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Torches and Treadmills Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Enemy Jail (Enemies Alive)",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Enemy Jail (Enemies Killed)",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Conveyor To Blue Orange Switch Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Compass Chest Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Conveyor Pit Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Basement Crumble Bridge",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Right Side Final Teleport",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 25,
+      "name": "Big Chest Room",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 26,
+      "name": "Bob's Chest Room",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 27,
+      "name": "Icy Armos Knights Drop Point",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 28,
+      "name": "Big Key Chest Room",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 29,
+      "name": "Room After Icy Armos Knights",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 30,
+      "name": "Staircase to Big Chest",
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "nodeType": "junction"
+    },
+
+
+
+    
+    
+
+
+    {
+      "id": 3,
+      "name": "Ganon's Tower Big Key Door",
+      "area": "Ganon's Tower (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 34,
+      "name": "Ganon's Tower Torch Rooms",
+      "area": "Ganon's Tower (Top)",
+      "nodeType": "door"
+    },
+    {
+      "id": 35,
+      "name": "Ganon's Tower Moldorm Door",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "nodeType": "door"
+    },
+    {
+      "id": 36,
+      "name": "Ganon's Tower - Mini Helmasaur Room - Left",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEAFD"
+    },
+    {
+      "id": 37,
+      "name": "Ganon's Tower - Mini Helmasaur Room - Right",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEB00"
+    },
+    {
+      "id": 38,
+      "name": "Ganon's Tower - Pre-Moldorm Chest",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyA2",
+      "nodeAddress": "0xEB03"
+    },
+    {
+      "id": 39,
+      "name": "Ganon's Tower Moldorm Gap",
+      "area": "Ganon's Tower (Moldorm)",
+      "nodeType": "obstacle"
+    },
+    {
+      "id": 40,
+      "name": "Ganon's Tower - Validation Chest",
+      "area": "Agahnim 2",
+      "requires": [
+        "canGrapple",
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:4"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEB06",
+      "note": [
+        "Ganon's Tower - Moldorm Chest"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Agahnim 2",
+      "area": "Agahnim 2",
+      "requires": [
+        "canGrapple",
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:4"
+      ],
+      "nodeType": "item"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Torch Bonk Key (Bob's Torch)",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "0x180161"
+    },
+    {
+      "id": 2,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Top Left",
+      "itemLocation": 7,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEAB8"
+    },
+    {
+      "id": 3,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Top Right",
+      "itemLocation": 7,
+      "item": "TenArrows",
+      "itemAddress": "0xEABB"
+    },
+    {
+      "id": 4,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Bottom Left",
+      "itemLocation": 7,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEABE"
+    },
+    {
+      "id": 5,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "DMs Room - Bottom Right",
+      "itemLocation": 7,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAC1"
+    },
+    {
+      "id": 6,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Map Chest",
+      "itemLocation": 8,
+      "item": "Map",
+      "itemAddress": "0xEAD3"
+    },
+    {
+      "id": 7,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Firesnake Chest",
+      "itemLocation": 12,
+      "item": "SmallKey",
+      "itemAddress": "0xEAD0"
+    },
+    {
+      "id": 8,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Top Left",
+      "itemLocation": 13,
+      "item": "TenArrows",
+      "itemAddress": "0xEAC4"
+    },
+    {
+      "id": 9,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Top Right",
+      "itemLocation": 13,
+      "item": "TenArrows",
+      "itemAddress": "0xEAC7"
+    },
+    {
+      "id": 10,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Bottom Left",
+      "itemLocation": 13,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEACA"
+    },
+    {
+      "id": 11,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Bottom Right",
+      "itemLocation": 13,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEACD"
+    },
+    {
+      "id": 12,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Hope Room - Left",
+      "itemLocation": 3,
+      "item": "TenArrows",
+      "itemAddress": "0xEAD9"
+    },
+    {
+      "id": 13,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Hope Room - Right",
+      "itemLocation": 3,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEADC"
+    },
+    {
+      "id": 14,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Tiles Room Chest",
+      "itemLocation": 16,
+      "item": "SmallKey",
+      "itemAddress": "0xEAE2"
+    },
+    {
+      "id": 15,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Top Left Chest",
+      "itemLocation": 21,
+      "item": "Compass",
+      "itemAddress": "0xEAE5"
+    },
+    {
+      "id": 16,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Top Right Chest",
+      "itemLocation": 21,
+      "item": "OneRupee",
+      "itemAddress": "0xEAE8"
+    },
+    {
+      "id": 17,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Bottom Left Chest",
+      "itemLocation": 21,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAEB"
+    },
+    {
+      "id": 18,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Bottom Right Chest",
+      "itemLocation": 21,
+      "item": "TenArrows",
+      "itemAddress": "0xEAEE"
+    },
+    {
+      "id": 19,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Conveyor Pit Room - Pot Key",
+      "itemLocation": 22,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
+      "id": 20,
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "locationName": "Big Chest",
+      "itemLocation": 25,
+      "item": "RedMail",
+      "itemAddress": "0xEAD6"
+    },
+    {
+      "id": 21,
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "locationName": "Bob's Chest",
+      "itemLocation": 26,
+      "item": "TenArrows",
+      "itemAddress": "0xEADF"
+    },
+    {
+      "id": 22,
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "locationName": "Big Key Room - Left Chest",
+      "itemLocation": 28,
+      "item": "TenArrows",
+      "itemAddress": "0xEAF4"
+    },
+    {
+      "id": 23,
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "locationName": "Big Key Room - Right Chest",
+      "itemLocation": 28,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEAF7"
+    },
+    {
+      "id": 24,
+      "subArea": "Ganon's Tower (Basement Finale)",
+      "locationName": "Big Key Room - Big Key Chest",
+      "itemLocation": 28,
+      "item": "BigKey",
+      "itemAddress": "0xEAF1"
+    }
+  ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Door Between Left and Right Entrances",
+      "doorPosition": "east",
+      "doorLocation": 2,
+      "keyType": "small"
+    },
+    {
+      "id": 2,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Map Chest Entrance",
+      "doorPosition": "east",
+      "doorLocation": 9,
+      "keyType": "small"
+    },
+    {
+      "id": 3,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Double Switch East Door",
+      "doorPosition": "east",
+      "doorLocation": 10,
+      "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Firesnake Room South Door",
+      "doorPosition": "south",
+      "doorLocation": 12,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Teleporter Room Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 12,
+      "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Tile Room Locked Door",
+      "doorPosition": "east",
+      "doorLocation": 16,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Door to Basement Crumble Bridge",
+      "doorPosition": "east",
+      "doorLocation": 22,
+      "keyType": "small"
+    },
+    {
+      "id": 8,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Armos Knights' Fairies",
+      "doorPosition": "north",
+      "doorLocation": 29,
+      "keyType": "bomb, boots"
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Torch Bonk",
+      "requires": [
+        "PegasusBoots"
+      ],
+      "collectsItems": [1]
+    },
+    {
+      "link": [2, 3],
+      "name": "Base - Unlock Useless Door",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [2, 5],
+      "name": "Base",
+      "requires": [
+        "Hammer"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base - Unlock Useless Door",
+      "requires": [
+        {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [12]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [3, 16],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 6],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [5, 6],
+      "name": "Bonk Boost then Bomb Boost",
+      "requires": [
+        "canBonkBoost",
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [6, 5],
+      "name": "Precise Bonk Boost",
+      "requires": [
+        "canBonkBoost",
+        {"combatProficiency": 4}
+      ],
+      "note": ["It is possible to boost across with several precise boosts."]
+    },
+    {
+      "link": [6, 7],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [7, 6],
+      "name": "Sword Kill",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Yomo Medusa", "attack": "Fireball", "count": 2}}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Yomo Medusa", "attack": "Fireball", "count": 4}}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Stalfos Kill",
+      "requires": [
+        {"or": [
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"rod": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 6],
+      "name": "Stalfos Kill - Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 2},
+          {"blueCane": 40},
+          {"bombs": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [7, 7],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [2, 3, 4, 5]
+    },
+    {
+      "link": [7, 8],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [8, 7],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [8, 9],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [8, 10],
+      "name": "Base",
+      "requires": [
+        {"bombs": 2}
+      ]
+    },
+    {
+      "link": [8, 10],
+      "name": "Boomerang",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          "RedBoomerang",
+          {"and": [
+            "BlueBoomerang",
+            "Hookshot"
+          ]},
+          {"and": [
+            "BlueBoomerang",
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Hit the switch with a boomerang to save bombs.",
+        "In the hookshot room, throw the boomerang up and move to the side to easily hit the switch.",
+        "The next room can be done a similar way with the Red Boomerang.",
+        "With a Blue Boomerang and Hookshot, quickly hookshot the pot to move over fast enough.",
+        "This is possible with the Blue Boomerang alone; stand just south of the door, a few pixels from the rail",
+        "and where Link's back is roughly centered with the left post of the doorframe; throw the boomerang diagonally and immediately move to the right."
+      ]
+    },
+    {
+      "link": [9, 8],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 2}
+      ]
+    },
+    {
+      "link": [9, 9],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [6]
+    },
+    {
+      "link": [10, 8],
+      "name": "Boomerang",
+      "requires": [
+        {"combatProficiency": 3},
+        "RedBoomerang"
+      ],
+      "note": [
+        "While south of the door, throw the boomerang to the left, delay breifly, then go north.",
+        "The delay is helpful to prevent double hitting the switch.",
+        "In the next room, throw the boomerang north then move to the side to hit the switch."
+      ],
+      "devNote": ["Assumes the blue pegs are down, which is safe if the dungeon is not randomized."]
+    },
+    {
+      "link": [10, 11],
+      "name": "Boomerang",
+      "requires": [
+        {"unlockDoor": 3}
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": [
+        "Hookshot",
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Bomb Wall",
+      "requires": [
+        {"unlockDoor": 4},
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [12, 13],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4},
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [12, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [8, 9, 10, 11]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [15, 25],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 2},
+          {"combatProficiency": 2},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Fire Rod",
+      "requires": [
+        {"fireRod": 1},
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 2}}
+          ]},
+          "Hookshot",
+          {"silverArrows": 6},
+          {"and": [
+            {"redCane": 4},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Fall", "count": 2}}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost",
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 2},
+          {"combatProficiency": 2},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Lift one pot then bonk boost off of the other to the right. Be sure not to accidentally pick up both pots."
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Ether",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 4},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3}
+          ]},
+          {"redCane": 2}
+        ]},
+        {"or": [
+          {"ether": 6},
+          {"and": [
+            {"darkProficiency": 2},
+            {"ether": 4}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"ether": 2}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Use Ether multiple times to briefly see the walkway."
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Red Cane Guidance",
+      "requires": [
+        {"darkProficiency": 2},
+        {"redCane": 10}
+      ],
+      "note": [
+        "Use many red cane blocks to ensure that Link never falls off an edge.",
+        "Push the blocks slowly, and if the block falls, immediately stop and place a block in a different direction."
+      ]
+    },
+    {
+      "link": [15, 26],
+      "name": "Blind Traversal",
+      "requires": [
+        {"darkProficiency": 3},
+        {"or": [
+          {"darkProficiency": 4},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]},
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          "Hammer",
+          {"redCane": 2},
+          {"silverArrows": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [16, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 16],
+      "name": "Tiles",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Flying Tile", "count": 2}}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Flying Tile", "count": 4}}
+        ]}
+      ],
+      "collectsItems": [14]
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [17, 17],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [17, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]}
+        ]},
+        {"damage": {"enemy": "Spike Block", "count": 1}},
+        {"fireRod": 4},
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 20],
+      "name": "Fire Rod Dodge",
+      "requires": [
+        {"fireRod": 4},
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [17, 20],
+      "name": "Lamp and Fire Rod",
+      "requires": [
+        {"lamp": 3},
+        {"fireRod": 1},
+        {"combatProficiency": 4}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"sword": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Bow and Pots",
+      "requires": [
+        {"or": [
+          {"silverArrows": 4},
+          {"arrows": 10},
+          {"and": [
+            {"arrows": 8},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 4},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Stalfos and Helmasaur and hit the Red Bari twice with the bow and then other two with the pots.",
+        "The mini Red Bari can be particularly annoying to hit.",
+        "The Blue Hardhat is vulnerable to silver arrows, so with them save both pots for the mini Red Bari."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Rod and Pots",
+      "requires": [
+        {"or": [
+          {"fireRod": 2},
+          {"iceRod": 6},
+          {"and": [
+            {"iceRod": 4},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Stalfos and Red Bari with the rod and the other two with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Bombs and Pots",
+      "requires": [
+        {"or": [
+          {"bombs": 6},
+          {"and": [
+            {"bombs": 4},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Place bombs strategically to try to hit multiple enemies at a time while several enemies are still alive.",
+        "Afterwards, target them specifically by placing them directly in their prison.",
+        "The Blue Hardhat Beetle is not vulnerable to bombs; kill it and another enemy with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Hammer",
+      "requires": [
+        "Hammer",
+        {"combatProficiency": 2}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Red Cane and Pots",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 2},
+          {"and": [
+            {"redCane": 1},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "It is possible to do this with a single red cane block, but requires hitting the enemies in a specific way.",
+        "It is best to kill the Stalfos and the Red Bari while never letting the firey Winder touch the block.",
+        "Placing the block while north of the stalfos can help hit it while still being able to pick it up.",
+        "Use pots to kill the remaining two enemies."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Blue Cane and Pots",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 44},
+          {"and": [
+            {"blueCane": 36},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Helmasaur and Red Bari with the cane and the other two with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Hookshot Red Bari",
+      "requires": [
+        {"combatProficiency": 4},
+        "Hookshot",
+        {"or": [
+          "Boomerang",
+          {"rod": 1},
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": [
+        "Use the Hookshot to kill the Red Bari through the wall, it requires fairly precise positioning of the enemy, so it might take several shots.",
+        "Note that Boomerang can also kill the Stalfos."
+      ]
+    },
+    {
+      "link": [19, 17],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [19, 20],
+      "name": "Lamp Only",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hammer",
+          {"silverArrows": 1},
+          {"iceRod": 1},
+          {"bombs": 4},
+          {"redCane": 2},
+          {"blueCane": 48}
+        ]},
+        "canPreciseBombBoost",
+        {"combatProficiency": 5},
+        {"lamp": 4},
+        {"or": [
+          "PegasusBoots",
+          "Hookshot"
+        ]}
+      ],
+      "note": [
+        "After entering the room from the north door, Bomb boost across the pit, light the torch with the lamp and immediately fall into the hole.",
+        "Hold right to be aligned with the first torch. This is barely possible with either Hookshot or Pegasus Boots to quickly move across the conveyors."
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 3},
+          {"rod": 3},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2}
+          ]}
+        ]},
+        {"or": [
+          {"redCane": 2},
+          {"bombs": 3},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 2}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Hit the switch with bombs or the red cane."
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 4},
+        {"or": [
+          {"redCane": 2},
+          {"and": [
+            {"bombs": 2},
+            {"damage": {"enemy": "Gibdo", "count": 2}}
+          ]},
+          {"and": [
+            {"bombs": 2},
+            {"combatProficiency": 5}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [15, 16, 17, 18]
+    },
+    {
+      "link": [21, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 22],
+      "name": "Base - Pot Key",
+      "requires": [],
+      "collectsItems": [19]
+    },
+    {
+      "link": [22, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [23, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Guruguru Bar", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Guruguru Bar", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Invulnerability",
+      "requires": [
+        {"or": [
+          {"blueCane": 40},
+          {"cape": 40},
+          {"and": [
+            {"combatProficiency": 4},
+            {"cape": 20}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 15],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [25, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [25, 15],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          "Hookshot",
+          {"silverArrows": 2},
+          {"combatProficiency": 2},
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [25, 25],
+      "name": "Base - Open Big Chest",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [20]
+    },
+    {
+      "link": [26, 26],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [21]
+    },
+    {
+      "link": [26, 27],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Bombs", "limit": 4}},
+        {"refill": {"type": "Arrows", "limit": 5}},
+        {"bombs": 1}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 7},
+          {"and": [
+            {"silverArrows": 6},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 22},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"and": [
+            {"arrows": 20},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 18},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L1-L2)",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 20}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 15}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 6}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"bossProficiency": 5}
+        ]}
+      ],
+      "devNote": [
+        "The Master Sword does less damage than the Fighter Sword, so these numbers are for the Master Sword."
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (Full Health, Sparkles)",
+      "requires": [
+        "hasSwordSparkles",
+        {"or": [
+          {"bossProficiency": 2},
+          {"damage": {"enemy": "ArmosKnights", "count": 3}}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L1 or L3)",
+      "requires": [
+        {"or": [
+          {"sword": 3},
+          {"and": [
+            {"sword": 1},
+            {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
+          ]},
+          {"and": [
+            {"swordExact": 1},
+            "canRiskPermanentLossOfAccess"
+          ]}
+        ]},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 14}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 8}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "devNote": [
+        "The L1 and L3 swords are equally strong, but the Master Sword is weaker.",
+        "If Link has the L1 sword and full health, this will not have canRiskPermanentLossOfAccess,",
+        "because the fight consumes fewer resources with the Master Sword and full health with sparkles."
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L4)",
+      "requires": [
+        {"sword": 4},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Blue Cane",
+      "requires": [
+        {"blueCane": 212},
+        {"bossProficiency": 2}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Red Cane",
+      "requires": [
+        {"redCane": 16},
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"redCane": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"bossProficiency": 9}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Fire or Ice Rod",
+      "requires": [
+        {"bossProficiency": 2},
+        {"or": [
+          {"rod": 45},
+          {"and": [
+            {"rod": 36},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 30},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 9}
+      ]
+    },
+    {
+      "link": [28, 28],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [22, 23, 24]
+    },
+    {
+      "link": [28, 29],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [29, 29],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [29, 29],
+      "name": "Dash Break North Wall",
+      "requires": [
+        "canBreakDashableWall"
+      ],
+      "unlocksDoor": [8]
+    },
+    {
+      "link": [29, 29],
+      "name": "Fairies",
+      "requires": [
+        {"unlockDoor": 8},
+        {"refill": {"type": "Fairy", "limit": 4}}
+      ]
+    },
+    {
+      "link": [29, 30],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [30, 25],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [30, 30],
+      "name": "Collect Item and Return",
+      "requires": [
+        "BigKey"
+      ],
+      "collectsItems": [20]
+    }
+  ]
+}
