@@ -70,6 +70,30 @@
       "name": "Portal to Firesnake Room",
       "subArea": "Ganon's Tower (Basement Left)",
       "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "Firesnake Room Chest",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 13,
+      "name": "Randomizer Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 14,
+      "name": "Teleport Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 15,
+      "name": "Basement Convergence Room",
+      "subArea": "Ganon's Tower (Basement Left)",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -120,6 +144,46 @@
       "itemLocation": 8,
       "item": "Map",
       "itemAddress": "0xEAD3"
+    },
+    {
+      "id": 7,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Firesnake Chest",
+      "itemLocation": 12,
+      "item": "SmallKey",
+      "itemAddress": "0xEAD0"
+    },
+    {
+      "id": 8,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Top Left",
+      "itemLocation": 13,
+      "item": "TenArrows",
+      "itemAddress": "0xEAC4"
+    },
+    {
+      "id": 9,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Top Right",
+      "itemLocation": 13,
+      "item": "TenArrows",
+      "itemAddress": "0xEAC7"
+    },
+    {
+      "id": 10,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Bottom Left",
+      "itemLocation": 13,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEACA"
+    },
+    {
+      "id": 11,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Randomizer Room - Bottom Right",
+      "itemLocation": 13,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEACD"
     }
   ],
   "lockedDoors": [
@@ -146,6 +210,22 @@
       "doorPosition": "east",
       "doorLocation": 10,
       "keyType": "small"
+    },
+    {
+      "id": 4,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Firesnake Room South Door",
+      "doorPosition": "south",
+      "doorLocation": 12,
+      "keyType": "small"
+    },
+    {
+      "id": 5,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Teleporter Room Bombable Wall",
+      "doorPosition": "west",
+      "doorLocation": 12,
+      "keyType": "bomb"
     }
   ],
   "strats": [
@@ -376,6 +456,64 @@
       "requires": [
         {"unlockDoor": 3}
       ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [11, 12],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Open Chest",
+      "requires": [],
+      "collectsItems": [7]
+    },
+    {
+      "link": [12, 12],
+      "name": "Base - Bomb Wall",
+      "requires": [
+        {"unlockDoor": 4},
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [5]
+    },
+    {
+      "link": [12, 13],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 4},
+        {"unlockDoor": 5}
+      ]
+    },
+    {
+      "link": [12, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [13, 13],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [8, 9, 10, 11]
+    },
+    {
+      "link": [13, 14],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [14, 15],
+      "name": "Base",
+      "requires": []
     }
   ]
 }
