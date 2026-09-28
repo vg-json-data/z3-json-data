@@ -94,6 +94,36 @@
       "name": "Basement Convergence Room",
       "subArea": "Ganon's Tower (Basement Left)",
       "nodeType": "junction"
+    },
+    {
+      "id": 16,
+      "name": "Tile Room Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 17,
+      "name": "Torches and Treadmills Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 18,
+      "name": "Enemy Jail (Enemies Alive)",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 19,
+      "name": "Enemy Jail (Enemies Killed)",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 20,
+      "name": "Conveyor To Blue Orange Switch Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
     }
   ],
   "items": [
@@ -184,6 +214,30 @@
       "itemLocation": 13,
       "item": "ThreeBombs",
       "itemAddress": "0xEACD"
+    },
+    {
+      "id": 12,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Hope Room - Left",
+      "itemLocation": 3,
+      "item": "TenArrows",
+      "itemAddress": "0xEAD9"
+    },
+    {
+      "id": 13,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Hope Room - Right",
+      "itemLocation": 3,
+      "item": "ThreeBombs",
+      "itemAddress": "0xEADC"
+    },
+    {
+      "id": 14,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Tiles Room Chest",
+      "itemLocation": 16,
+      "item": "SmallKey",
+      "itemAddress": "0xEAE2"
     }
   ],
   "lockedDoors": [
@@ -226,6 +280,14 @@
       "doorPosition": "west",
       "doorLocation": 12,
       "keyType": "bomb"
+    },
+    {
+      "id": 6,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Tile Room Locked Door",
+      "doorPosition": "east",
+      "doorLocation": 16,
+      "keyType": "small"
     }
   ],
   "strats": [
@@ -281,6 +343,25 @@
       "name": "Base - Unlock Useless Door",
       "requires": [
         {"unlockDoor": 1}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Left Chest",
+      "requires": [],
+      "collectsItems": [12]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Open Right Chest",
+      "requires": [],
+      "collectsItems": [13]
+    },
+    {
+      "link": [3, 16],
+      "name": "Base",
+      "requires": [
+        {"redCane": 1}
       ]
     },
     {
@@ -461,7 +542,11 @@
       "link": [11, 12],
       "name": "Base",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        {"or": [
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
       ]
     },
     {
@@ -512,6 +597,184 @@
     },
     {
       "link": [14, 15],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [16, 16],
+      "name": "Tiles",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Flying Tile", "count": 2}}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Flying Tile", "count": 4}}
+        ]}
+      ],
+      "collectsItems": [14]
+    },
+    {
+      "link": [16, 17],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [17, 16],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 6}
+      ]
+    },
+    {
+      "link": [17, 18],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [18, 19],
+      "name": "Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"sword": 2},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Bow and Pots",
+      "requires": [
+        {"or": [
+          {"silverArrows": 4},
+          {"arrows": 10},
+          {"and": [
+            {"arrows": 8},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"arrows": 4},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Stalfos and Helmasaur and hit the Red Bari twice with the bow and then other two with the pots.",
+        "The mini Red Bari can be particularly annoying to hit.",
+        "The Blue Hardhat is vulnerable to silver arrows, so with them save both pots for the mini Red Bari."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Rod and Pots",
+      "requires": [
+        {"or": [
+          {"fireRod": 2},
+          {"iceRod": 6},
+          {"and": [
+            {"iceRod": 4},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Stalfos and Red Bari with the rod and the other two with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Bombs and Pots",
+      "requires": [
+        {"or": [
+          {"bombs": 6},
+          {"and": [
+            {"bombs": 4},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Place bombs strategically to try to hit multiple enemies at a time while several enemies are still alive.",
+        "Afterwards, target them specifically by placing them directly in their prison.",
+        "The Blue Hardhat Beetle is not vulnerable to bombs; kill it and another enemy with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Hammer",
+      "requires": [
+        "Hammer",
+        {"combatProficiency": 2}
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Red Cane and Pots",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 2},
+          {"and": [
+            {"redCane": 1},
+            {"combatProficiency": 4}
+          ]}
+        ]}
+      ],
+      "note": [
+        "It is possible to do this with a single red cane block, but requires hitting the enemies in a specific way.",
+        "It is best to kill the Stalfos and the Red Bari while never letting the firey Winder touch the block.",
+        "Placing the block while north of the stalfos can help hit it while still being able to pick it up.",
+        "Use pots to kill the remaining two enemies."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Blue Cane and Pots",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 44},
+          {"and": [
+            {"blueCane": 36},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Kill the Helmasaur and Red Bari with the cane and the other two with the pots."
+      ]
+    },
+    {
+      "link": [18, 19],
+      "name": "Hookshot Red Bari",
+      "requires": [
+        {"combatProficiency": 4},
+        "Hookshot",
+        {"or": [
+          "Boomerang",
+          {"rod": 1},
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1}
+        ]}
+      ],
+      "note": [
+        "Use the Hookshot to kill the Red Bari through the wall, it requires fairly precise positioning of the enemy, so it might take several shots.",
+        "Note that Boomerang can also kill the Stalfos."
+      ]
+    },
+    {
+      "link": [19, 17],
       "name": "Base",
       "requires": []
     }
