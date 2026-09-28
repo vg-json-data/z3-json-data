@@ -845,10 +845,14 @@
       "requires": [
         {"bossProficiency": 2},
         {"or": [
-          {"rod": 6},
+          {"rod": 45},
           {"and": [
-            {"rod": 5},
+            {"rod": 36},
             {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 30},
+            {"bossProficiency": 4}
           ]}
         ]}
       ],

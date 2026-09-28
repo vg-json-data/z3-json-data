@@ -184,6 +184,110 @@
       "name": "Staircase to Big Chest",
       "subArea": "Ganon's Tower (Basement Finale)",
       "nodeType": "junction"
+    },
+
+
+
+    
+    
+
+
+    {
+      "id": 3,
+      "name": "Ganon's Tower Big Key Door",
+      "area": "Ganon's Tower (Entrance)",
+      "nodeType": "door"
+    },
+    {
+      "id": 34,
+      "name": "Ganon's Tower Torch Rooms",
+      "area": "Ganon's Tower (Top)",
+      "nodeType": "door"
+    },
+    {
+      "id": 35,
+      "name": "Ganon's Tower Moldorm Door",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "nodeType": "door"
+    },
+    {
+      "id": 36,
+      "name": "Ganon's Tower - Mini Helmasaur Room - Left",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEAFD"
+    },
+    {
+      "id": 37,
+      "name": "Ganon's Tower - Mini Helmasaur Room - Right",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "ThreeBombs",
+      "nodeAddress": "0xEB00"
+    },
+    {
+      "id": 38,
+      "name": "Ganon's Tower - Pre-Moldorm Chest",
+      "area": "Ganon's Tower (Before Moldorm)",
+      "requires": [
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:3"
+      ],
+      "nodeType": "item",
+      "nodeItem": "KeyA2",
+      "nodeAddress": "0xEB03"
+    },
+    {
+      "id": 39,
+      "name": "Ganon's Tower Moldorm Gap",
+      "area": "Ganon's Tower (Moldorm)",
+      "nodeType": "obstacle"
+    },
+    {
+      "id": 40,
+      "name": "Ganon's Tower - Validation Chest",
+      "area": "Agahnim 2",
+      "requires": [
+        "canGrapple",
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:4"
+      ],
+      "nodeType": "item",
+      "nodeItem": "TwentyRupees",
+      "nodeAddress": "0xEB06",
+      "note": [
+        "Ganon's Tower - Moldorm Chest"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Agahnim 2",
+      "area": "Agahnim 2",
+      "requires": [
+        "canGrapple",
+        "canShootArrows",
+        "canLightTorches",
+        "BigKeyA2",
+        "KeyA2:4"
+      ],
+      "nodeType": "item"
     }
   ],
   "items": [
@@ -1304,6 +1408,174 @@
         {"refill": {"type": "Bombs", "limit": 4}},
         {"refill": {"type": "Arrows", "limit": 5}},
         {"bombs": 1}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Bow",
+      "requires": [
+        {"or": [
+          {"silverArrows": 7},
+          {"and": [
+            {"silverArrows": 6},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 22},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"and": [
+            {"arrows": 20},
+            {"bossProficiency": 2}
+          ]},
+          {"and": [
+            {"arrows": 18},
+            {"bossProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L1-L2)",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 20}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 15}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 6}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"bossProficiency": 5}
+        ]}
+      ],
+      "devNote": [
+        "The Master Sword does less damage than the Fighter Sword, so these numbers are for the Master Sword."
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (Full Health, Sparkles)",
+      "requires": [
+        "hasSwordSparkles",
+        {"or": [
+          {"bossProficiency": 2},
+          {"damage": {"enemy": "ArmosKnights", "count": 3}}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L1 or L3)",
+      "requires": [
+        {"or": [
+          {"sword": 3},
+          {"and": [
+            {"sword": 1},
+            {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
+          ]},
+          {"and": [
+            {"swordExact": 1},
+            "canRiskPermanentLossOfAccess"
+          ]}
+        ]},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 14}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 8}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ],
+      "devNote": [
+        "The L1 and L3 swords are equally strong, but the Master Sword is weaker.",
+        "If Link has the L1 sword and full health, this will not have canRiskPermanentLossOfAccess,",
+        "because the fight consumes fewer resources with the Master Sword and full health with sparkles."
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Sword (L4)",
+      "requires": [
+        {"sword": 4},
+        {"or": [
+          {"damage": {"enemy": "ArmosKnights", "count": 6}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 3}}
+          ]},
+          {"and": [
+            {"bossProficiency": 3},
+            {"damage": {"enemy": "ArmosKnights", "count": 1}}
+          ]},
+          {"bossProficiency": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Blue Cane",
+      "requires": [
+        {"blueCane": 212},
+        {"bossProficiency": 2}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Red Cane",
+      "requires": [
+        {"redCane": 16},
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"redCane": 2},
+            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+          ]},
+          {"bossProficiency": 9}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Fire or Ice Rod",
+      "requires": [
+        {"bossProficiency": 2},
+        {"or": [
+          {"rod": 45},
+          {"and": [
+            {"rod": 36},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 30},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [27, 28],
+      "name": "Armos Knights - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 9}
       ]
     },
     {
