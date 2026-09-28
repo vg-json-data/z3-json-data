@@ -124,13 +124,37 @@
       "name": "Conveyor To Blue Orange Switch Room",
       "subArea": "Ganon's Tower (Basement Right)",
       "nodeType": "junction"
+    },
+    {
+      "id": 21,
+      "name": "Compass Chest Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 22,
+      "name": "Conveyor Pit Room",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 23,
+      "name": "Basement Crumble Bridge",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 24,
+      "name": "Right Side Final Teleport",
+      "subArea": "Ganon's Tower (Basement Right)",
+      "nodeType": "junction"
     }
   ],
   "items": [
     {
       "id": 1,
       "subArea": "Ganon's Tower (Basement Left)",
-      "locationName": "Torch Bonk Key",
+      "locationName": "Torch Bonk Key (Bob's Torch)",
       "itemLocation": 2,
       "item": "SmallKey",
       "itemAddress": "0x180161"
@@ -238,6 +262,46 @@
       "itemLocation": 16,
       "item": "SmallKey",
       "itemAddress": "0xEAE2"
+    },
+    {
+      "id": 15,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Top Left Chest",
+      "itemLocation": 21,
+      "item": "Compass",
+      "itemAddress": "0xEAE5"
+    },
+    {
+      "id": 16,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Top Right Chest",
+      "itemLocation": 21,
+      "item": "OneRupee",
+      "itemAddress": "0xEAE8"
+    },
+    {
+      "id": 17,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Bottom Left Chest",
+      "itemLocation": 21,
+      "item": "TwentyRupees",
+      "itemAddress": "0xEAEB"
+    },
+    {
+      "id": 18,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Compass Chest Room - Bottom Right Chest",
+      "itemLocation": 21,
+      "item": "TenArrows",
+      "itemAddress": "0xEAEE"
+    },
+    {
+      "id": 19,
+      "subArea": "Ganon's Tower (Basement Right)",
+      "locationName": "Conveyor Pit Room - Pot Key",
+      "itemLocation": 22,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     }
   ],
   "lockedDoors": [
@@ -287,6 +351,14 @@
       "locationName": "Tile Room Locked Door",
       "doorPosition": "east",
       "doorLocation": 16,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Door to Basement Crumble Bridge",
+      "doorPosition": "east",
+      "doorLocation": 22,
       "keyType": "small"
     }
   ],
@@ -635,9 +707,54 @@
       ]
     },
     {
+      "link": [17, 17],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
       "link": [17, 18],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [17, 20],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]}
+        ]},
+        {"damage": {"enemy": "Spike Block", "count": 1}},
+        {"fireRod": 4},
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [17, 20],
+      "name": "Fire Rod Dodge",
+      "requires": [
+        {"fireRod": 4},
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [17, 20],
+      "name": "Lamp and Fire Rod",
+      "requires": [
+        {"lamp": 3},
+        {"fireRod": 1},
+        {"combatProficiency": 4}
+      ]
     },
     {
       "link": [18, 19],
@@ -777,6 +894,147 @@
       "link": [19, 17],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [19, 20],
+      "name": "Lamp Only",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hammer",
+          {"silverArrows": 1},
+          {"iceRod": 1},
+          {"bombs": 4},
+          {"redCane": 2},
+          {"blueCane": 48}
+        ]},
+        "canPreciseBombBoost",
+        {"combatProficiency": 5},
+        {"lamp": 4},
+        {"or": [
+          "PegasusBoots",
+          "Hookshot"
+        ]}
+      ],
+      "note": [
+        "After entering the room from the north door, Bomb boost across the pit, light the torch with the lamp and immediately fall into the hole.",
+        "Hold right to be aligned with the first torch. This is barely possible with either Hookshot or Pegasus Boots to quickly move across the conveyors."
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"silverArrows": 3},
+          {"rod": 3},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2}
+          ]}
+        ]},
+        {"or": [
+          {"redCane": 2},
+          {"bombs": 3},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 2}
+          ]}
+        ]}
+      ],
+      "note": [
+        "Hit the switch with bombs or the red cane."
+      ]
+    },
+    {
+      "link": [20, 21],
+      "name": "Gibdo Dodge",
+      "requires": [
+        {"combatProficiency": 4},
+        {"or": [
+          {"redCane": 2},
+          {"and": [
+            {"bombs": 2},
+            {"damage": {"enemy": "Gibdo", "count": 2}}
+          ]},
+          {"and": [
+            {"bombs": 2},
+            {"combatProficiency": 5}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [21, 21],
+      "name": "Base - Open Chests",
+      "requires": [],
+      "collectsItems": [15, 16, 17, 18]
+    },
+    {
+      "link": [21, 22],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [22, 22],
+      "name": "Base - Pot Key",
+      "requires": [],
+      "collectsItems": [19]
+    },
+    {
+      "link": [22, 23],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [23, 22],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 7}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Guruguru Bar", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Guruguru Bar", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [23, 24],
+      "name": "Invulnerability",
+      "requires": [
+        {"or": [
+          {"blueCane": 40},
+          {"cape": 40},
+          {"and": [
+            {"combatProficiency": 4},
+            {"cape": 20}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [24, 15],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Winder", "count": 1}}
+        ]}
+      ]
     }
   ]
 }
