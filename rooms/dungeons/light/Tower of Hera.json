@@ -320,7 +320,8 @@
       "link": [11, 11],
       "name": "Moldorm - Hammer",
       "requires": [
-        "Hammer"
+        "Hammer",
+        {"combatProficiency": 2}
       ],
       "setsFlags": ["DefeatedMoldorm"],
       "collectsItems": [6, 7],
