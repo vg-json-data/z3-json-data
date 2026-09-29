@@ -128,7 +128,7 @@
       "id": 21,
       "name": "Arrghus Fuzz",
       "subArea": "Swamp Palace B1",
-      "nodeType": "boss",
+      "nodeType": "pre-boss",
       "note": [
         "Represents killing the 13 Fuzz surrounding Arrghus."
       ]
@@ -137,7 +137,8 @@
       "id": 22,
       "name": "Arrghus (Fuzz Killed)",
       "subArea": "Swamp Palace B1",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [

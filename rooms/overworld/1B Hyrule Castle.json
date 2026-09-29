@@ -96,7 +96,19 @@
     {
       "id": 11,
       "name": "Castle Upper Level (Top of Pyramid)",
-      "world": "both"
+      "world": "both",
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Agahnim's Tower - Agahnim Kill",
+          "world": "dark"
+        },
+        {
+          "id": 2,
+          "name": "Ganon's Tower - Agahnim 2 Kill",
+          "world": "dark"
+        }
+      ]
     },
     {
       "id": 12,

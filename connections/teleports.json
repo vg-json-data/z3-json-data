@@ -1,0 +1,51 @@
+{
+  "$schema": null,
+  "name": "Special Underworld to Overworld Connections",
+  "connections": [
+    {
+      "type": "teleport",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "underworld": {
+        "roomName": "Agahnim's Tower",
+        "roomId": 61,
+        "nodeId": 12
+      },
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "teleportId": 1
+      }
+    },
+    {
+      "type": "teleport",
+      "fromWorld": "dark",
+      "toWorld": "dark",
+      "underworld": {
+        "roomName": "Ganon's Tower",
+        "roomId": 100,
+        "nodeId": 61
+      },
+      "overworld": {
+        "roomName": "Hyrule Castle",
+        "roomId": 18,
+        "teleportId": 2
+      }
+    },
+    {
+      "type": "teleport",
+      "fromWorld": "light",
+      "toWorld": "light",
+      "underworld": {
+        "roomName": "Chris Houlihan Room",
+        "roomId": 20,
+        "nodeId": 2
+      },
+      "overworld": {
+        "roomName": "Link's House",
+        "roomId": 27,
+        "teleportId": 1
+      }
+    }
+  ]
+}

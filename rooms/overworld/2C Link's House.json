@@ -28,7 +28,14 @@
           "world": "dark"
         }
       ],
-      "fluteLocation": 4
+      "fluteLocation": 4,
+      "teleports": [
+        {
+          "id": 1,
+          "name": "Chris Houlihan Room Exit",
+          "world": "light"
+        }
+      ]
     },
     {
       "id": 2,

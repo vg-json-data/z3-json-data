@@ -178,7 +178,7 @@
       "id": 29,
       "name": "Helmasaur Mask",
       "subArea": "Palace of Darkness B1",
-      "nodeType": "boss",
+      "nodeType": "pre-boss",
       "note": [
         "Represents breaking Helmasaur's Mask."
       ]
@@ -187,7 +187,8 @@
       "id": 30,
       "name": "Helmasaur (Mask Broken)",
       "subArea": "Palace of Darkness B1",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [

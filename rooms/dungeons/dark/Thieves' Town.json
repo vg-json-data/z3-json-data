@@ -68,7 +68,8 @@
       "id": 11,
       "name": "Blind Boss",
       "subArea": "Thieves' Town B1",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [

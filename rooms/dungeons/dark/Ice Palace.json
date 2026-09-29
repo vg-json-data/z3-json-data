@@ -164,7 +164,7 @@
       "id": 27,
       "name": "Frozen Kholdstare Block",
       "subArea": "Ice Palace (Lower Floors)",
-      "nodeType": "boss",
+      "nodeType": "pre-boss",
       "note": [
         "Represents breaking Kholdstare's Ice Block."
       ]
@@ -173,7 +173,8 @@
       "id": 28,
       "name": "Kholdstare (Thawed)",
       "subArea": "Ice Palace (Lower Floors)",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [

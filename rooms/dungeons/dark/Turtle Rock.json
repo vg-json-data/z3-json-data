@@ -230,7 +230,7 @@
       "id": 38,
       "name": "Trinexx Fire and Ice Heads",
       "subArea": "Turtle Rock B3",
-      "nodeType": "boss",
+      "nodeType": "pre-boss",
       "note": [
         "Represents killing Trinexx's Fire and Ice Heads."
       ]
@@ -239,7 +239,8 @@
       "id": 39,
       "name": "Trinexx Final Phase",
       "subArea": "Turtle Rock B3",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [

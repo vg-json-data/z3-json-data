@@ -69,7 +69,8 @@
       "id": 11,
       "name": "Moldorm Boss",
       "subArea": "Tower of Hera (Upper)",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [
