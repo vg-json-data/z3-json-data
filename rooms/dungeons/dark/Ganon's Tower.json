@@ -227,6 +227,54 @@
       "subArea": "Ganon's Tower (3F)",
       "nodeType": "junction"
     },
+    {
+      "id": 38,
+      "name": "First Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 39,
+      "name": "Second Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 40,
+      "name": "Icy Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 41,
+      "name": "Icy Beamos and Medusa Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 42,
+      "name": "Pre-Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 43,
+      "name": "Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 44,
+      "name": "Post-Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 45,
+      "name": "4F-5F Staircase",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
 
 
 
@@ -1887,6 +1935,114 @@
       ]
     },
     {
+      "link": [36, 38],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Stalfos", "count": 3}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Stalfos", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"fireRod": 6},
+          {"and": [
+            {"combatProficiency": 2},
+            {"fireRod": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Bow",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"arrows": 10},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"arrows": 8},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"arrows": 6},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"arrows": 5}
+          ]},
+          {"and": [
+            {"silverArrows": 8},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"silverArrows": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"bombs": 3},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 2},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"redCane": 2},
+            {"combatProficiency": 3}
+          ]},
+          {"blueCane": 48}
+        ]}
+      ]
+    },
+    {
       "link": [37, 36],
       "name": "Base",
       "requires": [
@@ -1924,6 +2080,310 @@
         {"refill": {"type": "Bombs", "limit": 1}},
         {"refill": {"type": "Magic", "limit": 128}}
       ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 24}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Pots Kill",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2}
+        ]},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24}
+        ]},
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Pots Kill",
+      "requires": [
+        {"combatProficiency": 4}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Zazak (Red)", "count": 2}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 4}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Zazak (Red)", "count": 1}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 15},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 15}}
+          ]},
+          {"and": [
+            {"arrows": 10},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 10}}
+          ]},
+          {"and": [
+            {"silverArrows": 10},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 10}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"fireRod": 5},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            {"fireRod": 3},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 100},
+          {"and": [
+            {"blueCane": 64},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 8}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 8},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"arrows": 6},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 4}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"fireRod": 4},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"fireRod": 2},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 100},
+          {"and": [
+            {"blueCane": 64},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 5},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 8}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [42, 42],
+      "name": "Quick Magic Powder",
+      "requires": [
+        {"combatProficiency": 3},
+        {"magicPowder": 1},
+        {"refill": {"type": "Fairy", "limit": 1}}
+      ]
+    },
+    {
+      "link": [42, 43],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [44, 45],
+      "name": "Base",
+      "requires": []
     }
   ]
 }
