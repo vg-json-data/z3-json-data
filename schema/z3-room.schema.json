@@ -208,6 +208,34 @@
             "minimum": 1,
             "maximum": 8
           },
+          "teleports": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
           "nodeItem": {
             "type": "string",
             "note": "deprecated"
