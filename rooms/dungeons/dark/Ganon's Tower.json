@@ -358,6 +358,18 @@
       "name": "Agahnim 2",
       "subArea": "Ganon's Tower (Top)",
       "nodeType": "boss"
+    },
+    {
+      "id": 60,
+      "name": "Event GateKeep",
+      "subArea": "Ganon's Tower (Top)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 61,
+      "name": "One Time Teleport to Pyramid",
+      "subArea": "Ganon's Tower (Top)",
+      "nodeType": "event"
     }
   ],
   "items": [
@@ -2858,7 +2870,7 @@
       ]
     },
     {
-      "link": [59, 59],
+      "link": [59, 60],
       "name": "Agahnim 2",
       "requires": [
         {"sword": 1},
@@ -2870,11 +2882,10 @@
           ]},
           {"combatProficiency": 3}
         ]}
-      ],
-      "setsFlags": ["DefeatedAgahnim2"]
+      ]
     },
     {
-      "link": [59, 59],
+      "link": [59, 60],
       "name": "Agahnim 2 - Bug Net",
       "requires": [
         {"combatProficiency": 2},
@@ -2887,6 +2898,20 @@
           ]},
           {"combatProficiency": 4}
         ]}
+      ]
+    },
+    {
+      "link": [60, 60],
+      "name": "Base",
+      "requires": [],
+      "setsFlags": ["DefeatedAgahnim2"]
+    },
+    {
+      "link": [60, 61],
+      "name": "Teleport To Pyramid",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim2"}
       ],
       "setsFlags": ["DefeatedAgahnim2"]
     }

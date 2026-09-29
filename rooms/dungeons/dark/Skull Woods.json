@@ -104,7 +104,8 @@
       "id": 17,
       "name": "Mothula Boss",
       "subArea": "Skull Woods Final Section",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 13
     }
   ],
   "items": [

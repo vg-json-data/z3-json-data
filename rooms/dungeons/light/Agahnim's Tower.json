@@ -65,6 +65,18 @@
       "id": 10,
       "name": "Agahnim 1",
       "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "boss"
+    },
+    {
+      "id": 11,
+      "name": "Event GateKeep",
+      "subArea": "Agahnim's Tower (Upper)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 12,
+      "name": "One Time Teleport to Pyramid",
+      "subArea": "Agahnim's Tower (Upper)",
       "nodeType": "event"
     }
   ],
@@ -516,7 +528,7 @@
       ]
     },
     {
-      "link": [10, 10],
+      "link": [10, 11],
       "name": "Agahnim 1",
       "requires": [
         {"sword": 1},
@@ -530,6 +542,21 @@
         "FIXME: Swordless variants here and throughout the top half of the dungeon should be added",
         "if the sword requirement is removed from the curtains."
       ]
+    },
+    {
+      "link": [11, 11],
+      "name": "Base",
+      "requires": [],
+      "setsFlags": ["DefeatedAgahnim1"]
+    },
+    {
+      "link": [11, 12],
+      "name": "Teleport To Pyramid",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "DefeatedAgahnim1"}
+      ],
+      "setsFlags": ["DefeatedAgahnim1"]
     }
   ]
 }

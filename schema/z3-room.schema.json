@@ -88,6 +88,7 @@
               "junction",
               "minigame",
               "obstacle",
+              "pre-boss",
               "shop",
               "transition"
             ]
@@ -221,6 +222,10 @@
               "type": "string"
             },
             "note": "deprecated"
+          },
+          "killExitNode": {
+            "type": "integer",
+            "minimum": 1
           },
           "requires": {
             "type": "array",

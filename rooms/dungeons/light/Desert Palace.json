@@ -63,7 +63,8 @@
       "id": 10,
       "name": "Lanmolas Boss",
       "subArea": "Desert Palace 2F",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 5
     }
   ],
   "items": [

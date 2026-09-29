@@ -56,7 +56,8 @@
       "id": 9,
       "name": "Armos Knights Boss",
       "subArea": "Eastern Palace 2F",
-      "nodeType": "boss"
+      "nodeType": "boss",
+      "killExitNode": 1
     }
   ],
   "items": [
