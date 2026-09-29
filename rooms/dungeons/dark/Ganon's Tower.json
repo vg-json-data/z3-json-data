@@ -185,19 +185,103 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "nodeType": "junction"
     },
-
-
-
-    
-    
-
-
     {
-      "id": 3,
-      "name": "Ganon's Tower Big Key Door",
-      "area": "Ganon's Tower (Entrance)",
-      "nodeType": "door"
+      "id": 31,
+      "name": "Dots and Boxes South Door",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
     },
+    {
+      "id": 32,
+      "name": "Beamos and Goriya Room",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 33,
+      "name": "Big Key Door Room",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 34,
+      "name": "Peg Wall Spike Hallway",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 35,
+      "name": "Cannon Bridge",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 36,
+      "name": "3F-4F Staircase",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 37,
+      "name": "Mid Tower Fairies",
+      "subArea": "Ganon's Tower (3F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 38,
+      "name": "First Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 39,
+      "name": "Second Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 40,
+      "name": "Icy Spinning Beamos Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 41,
+      "name": "Icy Beamos and Medusa Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 42,
+      "name": "Pre-Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 43,
+      "name": "Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 44,
+      "name": "Post-Lanmolas Room",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 45,
+      "name": "4F-5F Staircase",
+      "subArea": "Ganon's Tower (4F)",
+      "nodeType": "junction"
+    },
+
+
+
+    
+    
+
+
     {
       "id": 34,
       "name": "Ganon's Tower Torch Rooms",
@@ -548,6 +632,22 @@
       "doorPosition": "north",
       "doorLocation": 29,
       "keyType": "bomb, boots"
+    },
+    {
+      "id": 9,
+      "subArea": "Ganon's Tower (3F)",
+      "locationName": "Big Key Door",
+      "doorPosition": "north",
+      "doorLocation": 33,
+      "keyType": "big"
+    },
+    {
+      "id": 10,
+      "subArea": "Ganon's Tower (3F)",
+      "locationName": "Mid Climb Fairies Bombable Wall",
+      "doorPosition": "south",
+      "doorLocation": 37,
+      "keyType": "big"
     }
   ],
   "strats": [
@@ -628,6 +728,67 @@
       "link": [4, 1],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [4, 31],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          "Hammer",
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"rod": 2},
+          {"redCane": 2}
+        ]},
+        {"or": [
+          {"and": [
+            {"magicPowder": 1},
+            {"refill": {"type": "Fairy", "limit": 1}}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Bubble", "count": 2}}
+        ]},
+        {"or": [
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Goriya (Red)", "count": 1}}
+        ]},
+        {"refill": {"type": "Magic", "limit": 16}}
+      ]
+    },
+    {
+      "link": [4, 31],
+      "name": "Pots Only",
+      "requires": [
+        {"combatProficiency": 3},
+        {"or": [
+          {"and": [
+            {"magicPowder": 1},
+            {"refill": {"type": "Fairy", "limit": 1}}
+          ]},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"combatProficiency": 4},
+          {"damage": {"enemy": "Bubble", "count": 1}}
+        ]},
+        {"refill": {"type": "Magic", "limit": 16}}
+      ]
+    },
+    {
+      "link": [4, 31],
+      "name": "Invincible",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 80},
+          {"cape": 128}
+        ]},
+        {"refill": {"type": "Magic", "limit": 16}}
+      ]
     },
     {
       "link": [5, 6],
@@ -1630,6 +1791,721 @@
         "BigKey"
       ],
       "collectsItems": [20]
+    },
+    {
+      "link": [31, 32],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"arrows": 7},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"arrows": 4},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"silverArrows": 2},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [32, 33],
+      "name": "Mirror Shield",
+      "requires": [
+        {"shield": 3},
+        {"or": [
+          {"arrows": 4},
+          {"silverArrows": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [32, 33],
+      "name": "No Mirror Shield",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"arrows": 8},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"silverArrows": 4},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]},
+          {"and": [
+            {"arrows": 4},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"silverArrows": 2},
+            {"combatProficiency": 3}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [33, 34],
+      "name": "Base",
+      "requires": [
+        {"unlockDoor": 9}
+      ]
+    },
+    {
+      "link": [34, 35],
+      "name": "Eyegore Kill",
+      "requires": [
+        "h_hitBlueOrangeSwitch",
+        {"or": [
+          {"and": [
+            {"arrows": 2},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"arrows": 2},
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"silverArrows": 1},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"silverArrows": 1},
+            {"combatProficiency": 2}
+          ]}
+        ]}
+      ],
+      "note": [
+        "It's generally easier to dodge the spikes if the orange pegs remain down."
+      ]
+    },
+    {
+      "link": [34, 35],
+      "name": "Eyegore Tank or Dodge",
+      "requires": [
+        "h_hitBlueOrangeSwitch",
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Eyegore (Red)", "count": 2}},
+            {"damage": {"enemy": "Spike Block", "count": 1}}
+          ]},
+          {"and": [
+            {"damage": {"enemy": "Eyegore (Red)", "count": 2}},
+            {"combatProficiency": 2}
+          ]},
+          {"combatProficiency": 3}
+        ]}
+      ],
+      "note": [
+        "It's generally easier to dodge the spikes if the orange pegs remain down."
+      ]
+    },
+    {
+      "link": [35, 36],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Wall Turret Cannon Ball", "count": 1}},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [36, 37],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Stalfos", "count": 3}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Stalfos", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3}
+          ]},
+          {"fireRod": 6},
+          {"and": [
+            {"combatProficiency": 2},
+            {"fireRod": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Bow",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"arrows": 10},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"arrows": 8},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"arrows": 6},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 4},
+            {"arrows": 5}
+          ]},
+          {"and": [
+            {"silverArrows": 8},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"silverArrows": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [36, 38],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"bombs": 3},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 2},
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}}
+          ]},
+          {"and": [
+            {"redCane": 2},
+            {"combatProficiency": 3}
+          ]},
+          {"blueCane": 48}
+        ]}
+      ]
+    },
+    {
+      "link": [37, 36],
+      "name": "Base",
+      "requires": [
+        "Hookshot"
+      ]
+    },
+    {
+      "link": [37, 36],
+      "name": "Bonk Boost",
+      "requires": [
+        "canBonkBoost"
+      ]
+    },
+    {
+      "link": [37, 36],
+      "name": "Bomb Boost",
+      "requires": [
+        "canBombBoost"
+      ]
+    },
+    {
+      "link": [37, 37],
+      "name": "Base - Bomb Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [10]
+    },
+    {
+      "link": [37, 37],
+      "name": "Fairies",
+      "requires": [
+        {"unlockDoor": 10},
+        {"refill": {"type": "Fairy", "limit": 2}},
+        {"refill": {"type": "Bombs", "limit": 1}},
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Stalfos", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 1},
+          {"redCane": 1},
+          {"blueCane": 24}
+        ]}
+      ]
+    },
+    {
+      "link": [38, 39],
+      "name": "Pots Kill",
+      "requires": [
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"arrows": 2},
+          {"silverArrows": 2},
+          {"fireRod": 2}
+        ]},
+        {"or": [
+          {"and": [
+            {"damage": {"enemy": "Zazak (Blue)", "count": 1}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 24}
+        ]},
+        {"or": [
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [39, 40],
+      "name": "Pots Kill",
+      "requires": [
+        {"combatProficiency": 4}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Zazak (Red)", "count": 2}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 4}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Zazak (Red)", "count": 1}},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 15},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 15}}
+          ]},
+          {"and": [
+            {"arrows": 10},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 10}}
+          ]},
+          {"and": [
+            {"silverArrows": 10},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 10}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"fireRod": 5},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            {"fireRod": 3},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [40, 41],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 100},
+          {"and": [
+            {"blueCane": 64},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 8}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 8},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 5}}
+          ]},
+          {"and": [
+            {"arrows": 6},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"silverArrows": 6},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 4}}
+          ]},
+          {"and": [
+            {"silverArrows": 5},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 2}}
+          ]},
+          {"and": [
+            {"fireRod": 4},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]},
+          {"and": [
+            {"fireRod": 2},
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Quake Medallion",
+      "requires": [
+        {"combatProficiency": 2},
+        {"quake": 1}
+      ]
+    },
+    {
+      "link": [41, 42],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"blueCane": 100},
+          {"and": [
+            {"blueCane": 64},
+            {"combatProficiency": 3}
+          ]},
+          {"and": [
+            {"redCane": 5},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 8}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 6}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Beamos", "attack": "Beamos Laser Beam", "count": 3}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [42, 42],
+      "name": "Quick Magic Powder",
+      "requires": [
+        {"combatProficiency": 3},
+        {"magicPowder": 1},
+        {"refill": {"type": "Fairy", "limit": 1}}
+      ]
+    },
+    {
+      "link": [42, 43],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 4}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 2},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          "hasSwordSparkles",
+          {"sword": 3},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Blue Cane",
+      "requires": [
+        {"blueCane": 192},
+        {"bossProficiency": 2}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Red Cane",
+      "requires": [
+        {"redCane": 5},
+        {"bossProficiency": 2},
+        {"or": [
+          {"bossProficiency": 3},
+          {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"rod": 12},
+          {"and": [
+            {"rod": 8},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 6},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Bow",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"silverArrows": 15},
+          {"and": [
+            {"silverArrows": 10},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 40},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"silverArrows": 3},
+            {"bossProficiency": 9}
+          ]},
+          {"and": [
+            {"arrows": 12},
+            {"bossProficiency": 9}
+          ]}
+        ]}
+      ],
+      "note": ["Lanmolas can be very difficult to hit with arrows."]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 3},
+        {"or": [
+          {"damage": {"enemy": "Lanmolas", "count": 3}},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Lanmolas", "count": 1}}
+          ]},
+          {"bossProficiency": 9}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Bombs",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"bombs": 15},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"bombs": 10}
+          ]}
+        ]}
+      ],
+      "note": [
+        "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",
+        "When only one is remaining, throw the Bombs at the Lanmola."
+      ]
+    },
+    {
+      "link": [44, 45],
+      "name": "Base",
+      "requires": []
     }
   ]
 }
