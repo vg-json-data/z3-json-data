@@ -275,6 +275,36 @@
       "subArea": "Ganon's Tower (4F)",
       "nodeType": "junction"
     },
+    {
+      "id": 46,
+      "name": "Horizontal Bridge",
+      "subArea": "Ganon's Tower (5F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 47,
+      "name": "Four Wizzrobes on Conveyors",
+      "subArea": "Ganon's Tower (5F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 48,
+      "name": "Crumble Conveyor Bridge",
+      "subArea": "Ganon's Tower (5F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 49,
+      "name": "Torch Room",
+      "subArea": "Ganon's Tower (5F)",
+      "nodeType": "junction"
+    },
+    {
+      "id": 50,
+      "name": "Laser Staircase to 6F",
+      "subArea": "Ganon's Tower (5F)",
+      "nodeType": "junction"
+    },
 
 
 
@@ -2506,6 +2536,139 @@
       "link": [44, 45],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [45, 46],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"darkProficiency": 1},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]},
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"sword": 1},
+            {"darkProficiency": 2}
+          ]},
+          {"arrows": 3},
+          {"silverArrows": 3},
+          {"rod": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [45, 46],
+      "name": "Alternate Weapons",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"darkProficiency": 1},
+          {"damage": {"enemy": "Fall", "count": 1}}
+        ]},
+        {"or": [
+          {"and": [
+            "Hammer",
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            "Hammer",
+            {"darkProficiency": 2}
+          ]},
+          {"redCane": 1},
+          {"blueCane": 48}
+        ]}
+      ]
+    },
+    {
+      "link": [46, 47],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [47, 48],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"arrows": 4},
+          {"silverArrows": 4},
+          {"rod": 4}
+        ]}
+      ]
+    },
+    {
+      "link": [47, 48],
+      "name": "Base",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 2},
+          {"and": [
+            {"combatProficiency": 4},
+            {"redCane": 1}
+          ]},
+          {"blueCane": 52}
+        ]}
+      ]
+    },
+    {
+      "link": [48, 49],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [49, 50],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 32}},
+        {"or": [
+          {"fireRod": 4},
+          {"and": [
+            {"fireRod": 3},
+            {"lamp": 1}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [49, 50],
+      "name": "Lamp Only",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 32}},
+        {"lamp": 4},
+        {"combatProficiency": 3}
+      ]
+    },
+    {
+      "link": [50, 50],
+      "name": "Base",
+      "requires": [
+        {"refill": {"type": "Magic", "limit": 128}}
+      ]
+    },
+    {
+      "link": [50, 51],
+      "name": "Base",
+      "requires": [
+        {"fireRod": 4}
+      ]
+    },
+    {
+      "link": [50, 51],
+      "name": "Lamp Only",
+      "requires": [
+        {"lamp": 4},
+        {"combatProficiency": 3},
+        {"or": [
+          {"combatProficiency": 4},
+          {"damage": {"enemy": "Spark", "count": 1}}
+        ]}
+      ]
     }
   ]
 }
