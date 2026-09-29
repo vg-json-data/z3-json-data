@@ -2381,6 +2381,128 @@
       "requires": []
     },
     {
+      "link": [43, 44],
+      "name": "Lanmolas - Sword",
+      "requires": [
+        {"sword": 1},
+        {"or": [
+          {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 4}},
+          {"and": [
+            {"bossProficiency": 2},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          {"and": [
+            {"sword": 2},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          "hasSwordSparkles",
+          {"sword": 3},
+          {"bossProficiency": 3}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Blue Cane",
+      "requires": [
+        {"blueCane": 192},
+        {"bossProficiency": 2}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Red Cane",
+      "requires": [
+        {"redCane": 5},
+        {"bossProficiency": 2},
+        {"or": [
+          {"bossProficiency": 3},
+          {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Fire or Ice Rod",
+      "requires": [
+        {"or": [
+          {"rod": 12},
+          {"and": [
+            {"rod": 8},
+            {"bossProficiency": 3}
+          ]},
+          {"and": [
+            {"rod": 6},
+            {"bossProficiency": 4}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Bow",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"silverArrows": 15},
+          {"and": [
+            {"silverArrows": 10},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"arrows": 40},
+            {"bossProficiency": 4}
+          ]},
+          {"and": [
+            {"silverArrows": 3},
+            {"bossProficiency": 9}
+          ]},
+          {"and": [
+            {"arrows": 12},
+            {"bossProficiency": 9}
+          ]}
+        ]}
+      ],
+      "note": ["Lanmolas can be very difficult to hit with arrows."]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Hammer",
+      "requires": [
+        "Hammer",
+        {"bossProficiency": 3},
+        {"or": [
+          {"damage": {"enemy": "Lanmolas", "count": 3}},
+          {"and": [
+            {"bossProficiency": 4},
+            {"damage": {"enemy": "Lanmolas", "count": 1}}
+          ]},
+          {"bossProficiency": 9}
+        ]}
+      ]
+    },
+    {
+      "link": [43, 44],
+      "name": "Lanmolas - Bombs",
+      "requires": [
+        {"bossProficiency": 3},
+        {"or": [
+          {"and": [
+            {"bombs": 15},
+            {"damage": {"enemy": "Lanmolas", "attack": "Lanmolas' Rocks", "count": 2}}
+          ]},
+          {"and": [
+            {"bossProficiency": 4},
+            {"bombs": 10}
+          ]}
+        ]}
+      ],
+      "note": [
+        "When multiple are still alive, center the bomb in the room and time it to explode when the Lanmolas will be vulnerable.",
+        "When only one is remaining, throw the Bombs at the Lanmola."
+      ]
+    },
+    {
       "link": [44, 45],
       "name": "Base",
       "requires": []
