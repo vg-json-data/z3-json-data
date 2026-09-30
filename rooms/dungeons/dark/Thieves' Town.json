@@ -150,7 +150,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Blind - Boss Drop",
       "itemLocation": 11,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180156"
     },
     {

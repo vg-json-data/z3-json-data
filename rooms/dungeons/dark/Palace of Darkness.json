@@ -301,7 +301,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Helmasaur - Boss Drop",
       "itemLocation": 30,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180153"
     },
     {

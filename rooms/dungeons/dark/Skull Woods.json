@@ -186,7 +186,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Mothula - Boss Drop",
       "itemLocation": 17,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180155"
     },
     {

@@ -137,7 +137,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Lanmolas - Boss Drop",
       "itemLocation": 10,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180151"
     },
     {
