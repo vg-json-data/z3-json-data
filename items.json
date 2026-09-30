@@ -1,311 +1,409 @@
 {
-  "inventory": {
-    "FireRod": {
-      "data": "0x07"
+  "inventory": [
+    {
+      "name": "FireRod",
+      "itemReceiptId": "0x07"
     },
-    "IceRod": {
-      "data": "0x08"
+    {
+      "name": "IceRod",
+      "itemReceiptId": "0x08"
     },
-    "Hammer": {
-      "data": "0x09"
+    {
+      "name": "Hammer",
+      "itemReceiptId": "0x09"
     },
-    "Hookshot": {
-      "data": "0x0A"
+    {
+      "name": "Hookshot",
+      "itemReceiptId": "0x0A"
     },
-    "Bow": {
-      "data": "0x0B"
+    {
+      "name": "Bow",
+      "itemReceiptId": "0x0B"
     },
-    "BowAndArrows": {
-      "data": "0x3A"
+    {
+      "name": "BowAndArrows",
+      "itemReceiptId": "0x3A"
     },
-    "BowAndSilverArrows": {
-      "data": "0x3B"
+    {
+      "name": "BowAndSilverArrows",
+      "itemReceiptId": "0x3B"
     },
-    "Boomerang": {
-      "data": "0x0C"
+    {
+      "name": "Boomerang",
+      "itemReceiptId": "0x0C"
     },
-    "Powder": {
-      "data": "0x0D"
+    {
+      "name": "Powder",
+      "itemReceiptId": "0x0D"
     },
-    "Bombos": {
-      "data": "0x0F"
+    {
+      "name": "Bombos",
+      "itemReceiptId": "0x0F"
     },
-    "Ether": {
-      "data": "0x10"
+    {
+      "name": "Ether",
+      "itemReceiptId": "0x10"
     },
-    "Quake": {
-      "data": "0x11"
+    {
+      "name": "Quake",
+      "itemReceiptId": "0x11"
     },
-    "Lamp": {
-      "data": "0x12"
+    {
+      "name": "Lamp",
+      "itemReceiptId": "0x12"
     },
-    "Shovel": {
-      "data": "0x13"
+    {
+      "name": "Shovel",
+      "itemReceiptId": "0x13"
     },
-    "CaneOfSomaria": {
-      "data": "0x15"
+    {
+      "name": "CaneOfSomaria",
+      "itemReceiptId": "0x15"
     },
-    "CaneOfByrna": {
-      "data": "0x18"
+    {
+      "name": "CaneOfByrna",
+      "itemReceiptId": "0x18"
     },
-    "Cape": {
-      "data": "0x19"
+    {
+      "name": "Cape",
+      "itemReceiptId": "0x19"
     },
-    "MagicMirror": {
-      "data": "0x1A"
+    {
+      "name": "MagicMirror",
+      "itemReceiptId": "0x1A"
     },
-    "BookOfMudora": {
-      "data": "0x1D"
+    {
+      "name": "BookOfMudora",
+      "itemReceiptId": "0x1D"
     },
-    "Flippers": {
-      "data": "0x1E"
+    {
+      "name": "Flippers",
+      "itemReceiptId": "0x1E"
     },
-    "MoonPearl": {
-      "data": "0x1F"
+    {
+      "name": "MoonPearl",
+      "itemReceiptId": "0x1F"
     },
-    "BugCatchingNet": {
-      "data": "0x21"
+    {
+      "name": "BugCatchingNet",
+      "itemReceiptId": "0x21"
     },
-    "Mushroom": {
-      "data": "0x29"
+    {
+      "name": "Mushroom",
+      "itemReceiptId": "0x29"
     },
-    "RedBoomerang": {
-      "data": "0x2A"
+    {
+      "name": "RedBoomerang",
+      "itemReceiptId": "0x2A"
     },
-    "Bottle": {
-      "data": "0x16"
+    {
+      "name": "Bottle",
+      "itemReceiptId": "0x16"
     },
-    "PegasusBoots": {
-      "data": "0x4B"
+    {
+      "name": "PegasusBoots",
+      "itemReceiptId": "0x4B"
     },
-    "SilverArrowUpgrade": {
-      "data": "0x58"
+    {
+      "name": "SilverArrowUpgrade",
+      "itemReceiptId": "0x58",
+      "vanilla": false,
+      "note": "A randomizer receipt that grants the Silver Arrows upgrade without also granting a bow."
     },
-    "Triforce": {
-      "data": "0x6A"
+    {
+      "name": "Triforce",
+      "itemReceiptId": "0x6A",
+      "vanilla": false,
+      "note": "A randomizer win-condition item represented as an item receipt."
     }
-  },
-  "progressives": {
-    "L1Sword": {
-      "data": "0x49"
+  ],
+  "progressives": [
+    {
+      "name": "L1Sword",
+      "itemReceiptId": "0x49"
     },
-    "L1SwordAndShield": {
-      "data": "0x00"
+    {
+      "name": "L1SwordAndShield",
+      "itemReceiptId": "0x00"
     },
-    "L2Sword": {
-      "data": "0x01"
+    {
+      "name": "L2Sword",
+      "itemReceiptId": "0x01"
     },
-    "MasterSword": {
-      "data": "0x50"
+    {
+      "name": "MasterSword",
+      "itemReceiptId": "0x50",
+      "vanilla": false,
+      "note": "A randomizer receipt that grants sword level 2 without using the vanilla Master Sword receipt and its special cutscene behavior."
     },
-    "L3Sword": {
-      "data": "0x02"
+    {
+      "name": "L3Sword",
+      "itemReceiptId": "0x02"
     },
-    "L4Sword": {
-      "data": "0x03"
+    {
+      "name": "L4Sword",
+      "itemReceiptId": "0x03"
     },
-    "BlueShield": {
-      "data": "0x04"
+    {
+      "name": "BlueShield",
+      "itemReceiptId": "0x04"
     },
-    "RedShield": {
-      "data": "0x05"
+    {
+      "name": "RedShield",
+      "itemReceiptId": "0x05"
     },
-    "MirrorShield": {
-      "data": "0x06"
+    {
+      "name": "MirrorShield",
+      "itemReceiptId": "0x06"
     },
-    "OcarinaInactive": {
-      "data": "0x14"
+    {
+      "name": "OcarinaInactive",
+      "itemReceiptId": "0x14"
     },
-    "OcarinaActive": {
-      "data": "0x4A"
+    {
+      "name": "OcarinaActive",
+      "itemReceiptId": "0x4A"
     },
-    "PowerGlove": {
-      "data": "0x1B"
+    {
+      "name": "PowerGlove",
+      "itemReceiptId": "0x1B"
     },
-    "TitansMitt": {
-      "data": "0x1C"
+    {
+      "name": "TitansMitt",
+      "itemReceiptId": "0x1C"
     },
-    "BlueMail": {
-      "data": "0x22"
+    {
+      "name": "BlueMail",
+      "itemReceiptId": "0x22"
     },
-    "RedMail": {
-      "data": "0x23"
+    {
+      "name": "RedMail",
+      "itemReceiptId": "0x23"
     },
-    "HalfMagic": {
-      "data": "0x4E"
+    {
+      "name": "HalfMagic",
+      "itemReceiptId": "0x4E",
+      "vanilla": false,
+      "note": "A randomizer receipt for granting the vanilla half-magic upgrade as a shuffled item."
     },
-    "QuarterMagic": {
-      "data": "0x4F"
+    {
+      "name": "QuarterMagic",
+      "itemReceiptId": "0x4F",
+      "vanilla": false,
+      "note": "A randomizer-only upgrade that reduces magic consumption to one quarter of the normal amount."
     },
-    "ProgressiveSword": {
-      "data": "0x5E"
+    {
+      "name": "ProgressiveSword",
+      "itemReceiptId": "0x5E",
+      "vanilla": false,
+      "note": "A randomizer variant that upgrades the player's current sword by one level."
     },
-    "ProgressiveShield": {
-      "data": "0x5F"
+    {
+      "name": "ProgressiveShield",
+      "itemReceiptId": "0x5F",
+      "vanilla": false,
+      "note": "A randomizer variant that upgrades the player's current shield by one level."
     },
-    "ProgressiveArmor": {
-      "data": "0x60"
+    {
+      "name": "ProgressiveArmor",
+      "itemReceiptId": "0x60",
+      "vanilla": false,
+      "note": "A randomizer variant that upgrades the player's current armor by one level."
     },
-    "ProgressiveGlove": {
-      "data": "0x61"
+    {
+      "name": "ProgressiveGlove",
+      "itemReceiptId": "0x61",
+      "vanilla": false,
+      "note": "A randomizer variant that upgrades the player's current glove by one level."
     }
-  },
-  "ammo": {
-    "Arrow": {
-      "data": "0x43"
+  ],
+  "refills": [
+    {
+      "name": "Arrow",
+      "itemReceiptId": "0x43"
     },
-    "Bomb": {
-      "data": "0x27"
+    {
+      "name": "Bomb",
+      "itemReceiptId": "0x27"
     },
-    "SmallMagic": {
-      "data": "0x45"
+    {
+      "name": "Heart",
+      "itemReceiptId": "0x42"
     },
-    "ThreeBombs": {
-      "data": "0x28"
+    {
+      "name": "SmallMagic",
+      "itemReceiptId": "0x45"
     },
-    "TenArrows": {
-      "data": "0x44"
+    {
+      "name": "ThreeBombs",
+      "itemReceiptId": "0x28"
     },
-    "TenBombs": {
-      "data": "0x31"
+    {
+      "name": "TenArrows",
+      "itemReceiptId": "0x44"
+    },
+    {
+      "name": "TenBombs",
+      "itemReceiptId": "0x31"
     }
-  },
-  "bottleContents": {
-    "Bee": {
-      "filled": "0x3C",
-      "filling": "0x0E"
+  ],
+  "bottleContents": [
+    {
+      "name": "Bee",
+      "itemReceiptId": "0x3C",
+      "refillReceiptId": "0x0E"
     },
-    "Fairy": {
-      "filled": "0x3D"
+    {
+      "name": "Fairy",
+      "itemReceiptId": "0x3D"
     },
-    "GoldBee": {
-      "filled": "0x48"
+    {
+      "name": "GoldBee",
+      "itemReceiptId": "0x48"
     },
-    "RedPotion": {
-      "filled": "0x2B",
-      "filling": "0x2E"
+    {
+      "name": "RedPotion",
+      "itemReceiptId": "0x2B",
+      "refillReceiptId": "0x2E"
     },
-    "GreenPotion": {
-      "filled": "0x2C",
-      "filling": "0x2F"
+    {
+      "name": "GreenPotion",
+      "itemReceiptId": "0x2C",
+      "refillReceiptId": "0x2F"
     },
-    "BluePotion": {
-      "filled": "0x2D",
-      "filling": "0x30"
+    {
+      "name": "BluePotion",
+      "itemReceiptId": "0x2D",
+      "refillReceiptId": "0x30"
     }
-  },
-  "currency": {
-    "Rupoor": {
-      "data": "0x59"
+  ],
+  "currency": [
+    {
+      "name": "OneRupee",
+      "itemReceiptId": "0x34"
     },
-    "OneRupee": {
-      "data": "0x34"
+    {
+      "name": "FiveRupees",
+      "itemReceiptId": "0x35"
     },
-    "FiveRupees": {
-      "data": "0x35"
+    {
+      "name": "TwentyRupees",
+      "itemReceiptId": "0x36"
     },
-    "TwentyRupees": {
-      "data": "0x36"
+    {
+      "name": "FiftyRupees",
+      "itemReceiptId": "0x41"
     },
-    "FiftyRupees": {
-      "data": "0x41"
+    {
+      "name": "OneHundredRupees",
+      "itemReceiptId": "0x40"
     },
-    "OneHundredRupees": {
-      "data": "0x40"
-    },
-    "ThreeHundredRupees": {
-      "data": "0x46"
-    },
-    "RedClock": {
-      "data": "0x5B"
-    },
-    "BlueClock": {
-      "data": "0x5C"
-    },
-    "GreenClock": {
-      "data": "0x5D"
+    {
+      "name": "ThreeHundredRupees",
+      "itemReceiptId": "0x46"
     }
-  },
-  "drops": {
-    "Heart": {
-      "data": "0x42"
-    }
-  },
+  ],
   "dungeonItems": [
-    "Key",
+    "SmallKey",
     "Compass",
     "BigKey",
     "Map"
   ],
-  "dungeonPrizes": {
-    "PendantOfCourage": {
+  "dungeonPrizes": [
+    {
+      "name": "PendantOfCourage",
       "data": [ "0x37", "0x04", "0x38", "0x62", "0x00", "0x69", "0x01" ]
     },
-    "PendantOfWisdom": {
+    {
+      "name": "PendantOfWisdom",
       "data": [ "0x38", "0x01", "0x32", "0x60", "0x00", "0x69", "0x03" ]
     },
-    "PendantOfPower": {
+    {
+      "name": "PendantOfPower",
       "data": [ "0x39", "0x02", "0x34", "0x60", "0x00", "0x69", "0x02" ]
     },
-    "Crystal1": {
+    {
+      "name": "Crystal1",
       "data": [ null, "0x02", "0x34", "0x64", "0x40", "0x7F", "0x06" ]
     },
-    "Crystal2": {
+    {
+      "name": "Crystal2",
       "data": [ null, "0x10", "0x34", "0x64", "0x40", "0x79", "0x06" ]
     },
-    "Crystal3": {
+    {
+      "name": "Crystal3",
       "data": [ null, "0x40", "0x34", "0x64", "0x40", "0x6C", "0x06" ]
     },
-    "Crystal4": {
+    {
+      "name": "Crystal4",
       "data": [ null, "0x20", "0x34", "0x64", "0x40", "0x6D", "0x06" ]
     },
-    "Crystal5": {
+    {
+      "name": "Crystal5",
       "data": [ null, "0x04", "0x32", "0x64", "0x40", "0x6E", "0x06" ]
     },
-    "Crystal6": {
+    {
+      "name": "Crystal6",
       "data": [ null, "0x01", "0x32", "0x64", "0x40", "0x6F", "0x06" ]
     },
-    "Crystal7": {
+    {
+      "name": "Crystal7",
       "data": [ null, "0x08", "0x34", "0x64", "0x40", "0x7C", "0x06" ]
     }
-  },
-  "expansions": {
-    "SanctuaryHeart": {
-      "data": "0x3F"
-    },
-    "HeartContainer": {
-      "data": "0x3E"
-    },
-    "BossHeartContainer": {
-      "data": "0x3E"
-    },
-    "HeartContainerNoAnimation": {
-      "data": "0x26"
-    },
-    "PieceOfHeart": {
-      "data": "0x17"
-    },
-    "BombUpgrade5": {
-      "data": "0x51"
-    },
-    "BombUpgrade10": {
-      "data": "0x52"
-    },
-    "BombUpgrade50": {
-      "data": "0x4C"
-    },
-    "ArrowUpgrade5": {
-      "data": "0x53"
-    },
-    "ArrowUpgrade10": {
-      "data": "0x54"
-    },
-    "ArrowUpgrade70": {
-      "data": "0x4D"
-    }
-  },
-  "gameState": [
   ],
+  "expansions": [
+    {
+      "name": "SanctuaryHeart",
+      "itemReceiptId": "0x3F"
+    },
+    {
+      "name": "HeartContainer",
+      "itemReceiptId": "0x3E"
+    },
+    {
+      "name": "BossHeartContainer",
+      "itemReceiptId": "0x3E"
+    },
+    {
+      "name": "HeartContainerNoAnimation",
+      "itemReceiptId": "0x26"
+    },
+    {
+      "name": "PieceOfHeart",
+      "itemReceiptId": "0x17"
+    },
+    {
+      "name": "BombUpgrade5",
+      "itemReceiptId": "0x51",
+      "vanilla": false
+    },
+    {
+      "name": "BombUpgrade10",
+      "itemReceiptId": "0x52",
+      "vanilla": false
+    },
+    {
+      "name": "BombUpgrade50",
+      "itemReceiptId": "0x4C",
+      "vanilla": false
+    },
+    {
+      "name": "ArrowUpgrade5",
+      "itemReceiptId": "0x53",
+      "vanilla": false
+    },
+    {
+      "name": "ArrowUpgrade10",
+      "itemReceiptId": "0x54",
+      "vanilla": false
+    },
+    {
+      "name": "ArrowUpgrade70",
+      "itemReceiptId": "0x4D",
+      "vanilla": false
+    }
+  ],
+  "gameState": [],
   "flags": [
     "GameStateZelda",
     "GameStateAgahnim",
