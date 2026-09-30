@@ -42,7 +42,7 @@ Some names represent a logical category rather than a single concrete item. For 
 
 ### Helpers
 
-Helpers are defined in [`helpers.json`](helpers.json). A helper expands to its own requirements, allowing commonly repeated logic or configurable assumptions to be defined in one place.
+Helpers are defined in [`helpers.json`](../helpers.json). A helper expands to its own requirements, allowing commonly repeated logic or configurable assumptions to be defined in one place.
 
 By convention, most helper names begin with `h_`, although a helper may instead use a natural category name such as `Boomerang`.
 
@@ -52,7 +52,7 @@ By convention, most helper names begin with `h_`, although a helper may instead 
 
 ### Tech
 
-Techs are defined in [`tech.json`](tech.json). A tech represents an in-game technique that consumers may allow or disallow based on their logic configuration.
+Techs are defined in [`tech.json`](../tech.json). A tech represents an in-game technique that consumers may allow or disallow based on their logic configuration.
 
 ```json
 "canBombBoost"
@@ -250,7 +250,7 @@ A `damage` object represents Link taking one or more hits. It has the following 
 }}
 ```
 
-If `attack` is present, each hit uses that attack's `dmgToLink` value. Otherwise, each hit uses the enemy's `dmgToLink` value. The applicable mail reduces each hit according to the values in the [enemy data documentation](docs/enemies.md). Eight damage equals one heart.
+If `attack` is present, each hit uses that attack's `dmgToLink` value. Otherwise, each hit uses the enemy's `dmgToLink` value. The applicable mail reduces each hit according to the values in the [enemy data documentation](enemies.md). Eight damage equals one heart.
 
 Hits are applied one at a time. If a hit reduces Link to zero health or below, a bottled Fairy may be consumed to revive him with 7 hearts before the next hit is applied.
 
@@ -326,7 +326,7 @@ The available proficiencies are:
 {"combatProficiency": 3}
 ```
 
-The meanings of individual tiers are defined in [`tech.json`](tech.json).
+The meanings of individual tiers are defined in [`tech.json`](../tech.json).
 
 ## Flags
 
@@ -342,7 +342,7 @@ The meanings of individual tiers are defined in [`tech.json`](tech.json).
 {"notFlag": "DefeatedAgahnim1"}
 ```
 
-Flags are defined in [`items.json`](items.json).
+Flags are defined in [`items.json`](../items.json).
 
 ## Pendants
 

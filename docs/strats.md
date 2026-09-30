@@ -125,7 +125,7 @@ Collected items become available after the strat is complete and can satisfy req
 
 ## Setting Flags
 
-The `setsFlags` property contains game flags that are set when the strat is completed. Flags are defined in [`items.json`](items.json) and represent persistent game events.
+The `setsFlags` property contains game flags that are set when the strat is completed. Flags are defined in [`items.json`](../items.json) and represent persistent game events.
 
 ```json
 {
