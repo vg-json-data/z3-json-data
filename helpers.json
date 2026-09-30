@@ -126,6 +126,15 @@
     ]
   },
   {
+    "name": "h_PullPedestalItem",
+    "requires": [
+      {"pendants": 3}
+    ],
+    "note": [
+      "In vanilla, three pendants are required to pull the Master Sword pedestal item. Randomizers may wish to change this."
+    ]
+  },
+  {
     "name": "h_OpenGanonsTower",
     "requires": [
       {"crystals": 7}

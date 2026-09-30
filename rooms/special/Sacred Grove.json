@@ -40,9 +40,7 @@
       "link": [2, 2],
       "name": "Pedestal Item",
       "requires": [
-        "PendantOfCourage",
-        "PendantOfWisdom",
-        "PendantOfPower"
+        "h_PullPedestalItem"
       ],
       "collectsItems": [1]
     }

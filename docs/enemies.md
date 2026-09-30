@@ -15,6 +15,8 @@ A `damage` requirement identifies the enemy dealing damage. Without an `attack`,
 
 When `attack` is present, damage instead comes from the named attack's `dmgToLink` value. Naming the attack clarifies which attack hit Link and allows validation that the enemy can perform it. This matters because many attacks have generic names such as Fireball, Weak Fireball, and Spitting Fireball.
 
+Damage is applied one hit at a time. If a hit reduces Link to zero health or below, a bottled Fairy can be consumed to revive him with 7 hearts before the next hit is applied. This can allow Link to survive a multi-hit requirement that would fail if its total damage were applied all at once. See [Logical Requirements: Damage](../logicalRequirements.md#damage) for the route-state behavior of a `damage` object.
+
 ## Modeling scope
 
 Many table values are overridden by game code. This data aims to describe how the game behaves from the player's perspective, not the underlying inheritance or tables when an override changes the result.

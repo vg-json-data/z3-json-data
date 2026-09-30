@@ -43,6 +43,10 @@ Sets of logical requirements that are summarized into reusable logic blocks. The
 
 ## Important Concepts
 
+### Logical Requirements
+
+[Logical requirements represent the inventory, resources, game state, and player proficiency needed to perform actions.](logicalRequirements.md)
+
 ### Strats
 
 [Strats represent ways to perform actions within a room, including traversal and changes to logical state.](strats.md)

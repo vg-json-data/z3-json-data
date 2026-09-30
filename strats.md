@@ -11,7 +11,6 @@ A `strat` can have the following properties:
 - `link`: The IDs of the starting and ending nodes, in that order.
 - `name`: The name of the strat.
 - `requires`: The logical requirements that must be fulfilled to execute the strat.
-- `notable`: Indicates that the strat is notable.
 - `collectsItems`: The IDs of items in the room that are collected by executing the strat.
 - `setsFlags`: Game flags that are set by executing the strat.
 - `clearsObstacles`: Room-local obstacles that are cleared by executing the strat.
@@ -61,7 +60,7 @@ This does not define a special category of actions. A strat that moves between d
 
 ## Logical Requirements
 
-Every strat has a `requires` array containing the logical requirements that must be fulfilled to execute it. An empty array means that the strat has no explicit logical requirements.
+Every strat has a `requires` array containing the [logical requirements](logicalRequirements.md) that must be fulfilled to execute it. An empty array means that the strat has no explicit logical requirements.
 
 Requirements are evaluated sequentially in the order in which they appear. In most cases this is equivalent to combining all requirements with logical AND, but the order must be preserved because some requirements consume or restore resources.
 

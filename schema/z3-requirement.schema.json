@@ -24,9 +24,6 @@
         "$ref": "#"
       }
     },
-    "not": {
-      "type": "string"
-    },
     "sword": {
       "type": "integer",
       "enum": [
@@ -184,6 +181,16 @@
     "darkProficiency": {
       "type": "integer",
       "minimum": 1
+    },
+    "pendants": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "crystals": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 7
     },
     "unlockDoor": {
       "type": "integer",
