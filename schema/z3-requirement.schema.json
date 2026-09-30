@@ -152,7 +152,20 @@
       "additionalProperties": false,
       "properties": {
         "type": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "Arrows",
+            "Bee",
+            "BluePotion",
+            "Bombs",
+            "Fairy",
+            "GoldBee",
+            "GreenPotion",
+            "Health",
+            "Magic",
+            "RedPotion",
+            "Rupee"
+          ]
         },
         "limit": {
           "type": "integer",
