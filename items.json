@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema/z3-items.schema.json",
   "inventory": [
     {
       "name": "FireRod",
