@@ -1,5 +1,3 @@
-This is just a rough set of notes for now:
-
 # Overworld
 
 ## ids

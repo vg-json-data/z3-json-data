@@ -21,8 +21,8 @@ The core of the map data. Hyrule is broken down into distinct "Rooms" representi
 *   **Strats:** Represent actions that can be done to traverse between nodes, or actions that can be executed at a specific node.
 *   **Requirements:** A wide range of conditions that dictate if a strat is possible, including items, health/consumables, Link's current state, and the player's skill assumptions.
 
-### `/Entrances`
-Defines edges representing transitions between overworld and underworld rooms.
+### `/Connections`
+Defines edges representing transitions between rooms. `entrances.json` contains the main entrance connections, while `teleports.json` and `whirlpools.json` describe those specialized connection types.
 
 ### `/Items`
 Contains the definitions for both permanent and temporary items in the game.
@@ -38,3 +38,11 @@ A set of skill assumptions which the player may toggle to adjust the expected di
 
 ### `/Helpers`
 Sets of logical requirements that are summarized into reusable logic blocks. These are called within a strat's requirements to prevent repetition and provide a centralized place for a randomizer to edit or override core assumptions.
+
+---
+
+## Important Concepts
+
+### Strats
+
+[Strats represent ways to perform actions within a room, including traversal and changes to logical state.](strats.md)
