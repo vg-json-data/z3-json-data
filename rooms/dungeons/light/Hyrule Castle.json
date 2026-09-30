@@ -181,7 +181,7 @@
       "subArea": "Sanctuary",
       "locationName": "Sanctuary Chest",
       "itemLocation": 12,
-      "item": "HeartContainer",
+      "item": "SanctuaryHeartContainer",
       "itemAddress": "0xEA79"
     }
   ],

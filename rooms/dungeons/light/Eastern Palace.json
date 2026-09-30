@@ -123,7 +123,7 @@
       "subArea": "Eastern Palace 2F",
       "locationName": "Armos Knights - Boss Drop",
       "itemLocation": 9,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180150"
     },
     {

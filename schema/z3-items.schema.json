@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-items.schema.json",
+  "type": "object",
+  "description": "Items, item receipts, dungeon prizes, game-state values, and flags used by Link to the Past logic.",
+  "required": [
+    "inventory",
+    "progressives",
+    "refills",
+    "bottleContents",
+    "currency",
+    "dungeonItems",
+    "dungeonPrizes",
+    "expansions",
+    "gameState",
+    "flags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "inventory": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "progressives": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "refills": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "bottleContents": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/bottleContent"
+      }
+    },
+    "currency": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "dungeonItems": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "dungeonPrizes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/dungeonPrize"
+      }
+    },
+    "expansions": {
+      "$ref": "#/definitions/itemReceiptList"
+    },
+    "gameState": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/name"
+      }
+    },
+    "flags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/name"
+      }
+    }
+  },
+  "definitions": {
+    "name": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9]*$"
+    },
+    "byte": {
+      "type": "string",
+      "pattern": "^0x[0-9A-F]{2}$"
+    },
+    "itemReceiptList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/itemReceipt"
+      }
+    },
+    "itemReceipt": {
+      "type": "object",
+      "required": [
+        "name",
+        "itemReceiptId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/name"
+        },
+        "itemReceiptId": {
+          "$ref": "#/definitions/byte"
+        },
+        "vanilla": {
+          "const": false
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "bottleContent": {
+      "type": "object",
+      "required": [
+        "name",
+        "itemReceiptId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/name"
+        },
+        "itemReceiptId": {
+          "$ref": "#/definitions/byte"
+        },
+        "refillReceiptId": {
+          "$ref": "#/definitions/byte"
+        },
+        "vanilla": {
+          "const": false
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "dungeonPrize": {
+      "type": "object",
+      "required": [
+        "name",
+        "itemReceiptId",
+        "prizePatchBytes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/name"
+        },
+        "itemReceiptId": {
+          "$ref": "#/definitions/byte"
+        },
+        "prizePatchBytes": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/definitions/byte"
+          }
+        },
+        "vanilla": {
+          "const": false
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@ Defines edges representing transitions between overworld and underworld rooms.
 
 ### `/Items`
 Contains the definitions for both permanent and temporary items in the game.
+Item receipt records omit the `vanilla` field when the receipt ID is defined by the original game. Randomizer-defined receipt IDs include `"vanilla": false`, with an optional `note` when their behavior needs explanation.
 
 ### `/Enemies`
 Detailed information on enemy vulnerabilities, attacks, and damage values. This includes standard enemies, bosses, and environmental hazards.

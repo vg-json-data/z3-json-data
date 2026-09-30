@@ -119,7 +119,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Moldorm - Boss Drop",
       "itemLocation": 11,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180152"
     },
     {

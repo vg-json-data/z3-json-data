@@ -263,7 +263,7 @@
       "subArea": "Ice Palace (Lower Floors)",
       "locationName": "Kholdstare - Boss Drop",
       "itemLocation": 28,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180157"
     },
     {

@@ -259,7 +259,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Arrghus - Boss Drop",
       "itemLocation": 22,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180154"
     },
     {

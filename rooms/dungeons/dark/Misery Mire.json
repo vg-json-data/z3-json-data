@@ -233,7 +233,7 @@
       "subArea": "Misery Mire (Final Section)",
       "locationName": "Vitreous - Boss Drop",
       "itemLocation": 23,
-      "item": "HeartContainer",
+      "item": "BossHeartContainer",
       "itemAddress": "0x180158"
     },
     {
