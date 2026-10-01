@@ -395,9 +395,9 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"follower": "Big Bomb"}
+        {"follower": "Super Bomb"}
       ],
-      "FollowerComplete": "Big Bomb",
+      "FollowerComplete": "Super Bomb",
       "setsFlags": ["OpenedPyramidBigBomb"]
     },
     {

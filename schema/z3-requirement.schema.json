@@ -215,8 +215,24 @@
         "Blind",
         "Dwarf",
         "Purple Chest",
-        "Big Bomb"
+        "Super Bomb"
       ]
+    },
+    "followerLost": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "Zelda",
+          "Old Man",
+          "Blind",
+          "Dwarf",
+          "Purple Chest",
+          "Super Bomb"
+        ]
+      }
     },
     "obstaclesCleared": {
       "type": "array",

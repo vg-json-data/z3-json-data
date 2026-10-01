@@ -205,6 +205,8 @@ Ammunition requirements implicitly require the corresponding weapon and a state 
 {"bombs": 2}
 ```
 
+Using bombs also implicitly requires `{"followerLost": ["Super Bomb"]}`.
+
 ## Magic Requirements
 
 Magic is modeled as a normalized resource pool. Link has a base maximum of 128 magic. With Half Magic, the maximum is instead 256 and all magic refills provide twice their listed amount. Costs are not divided.
@@ -396,6 +398,14 @@ A `follower` object checks Link's current follower:
 ```
 
 The special value `"None"` requires Link to have no follower. Link can have at most one follower at a time. Followers persist and may impose traversal restrictions that are not yet fully modeled.
+
+`followerLost` represents an action that causes any of the listed followers to stop following Link:
+
+```json
+{"followerLost": ["Zelda", "Purple Chest"]}
+```
+
+This requirement is always fulfilled. If Link's current follower is in the array, that follower is removed before the next requirement is evaluated. If Link has no follower or his current follower is not listed, his follower state is unchanged.
 
 ## Obstacles
 

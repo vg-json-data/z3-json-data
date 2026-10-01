@@ -87,6 +87,8 @@ An entrance connection has:
 
 A `door` is a two-way connection and references an underworld `door` node. A `drop` references an underworld `drop` node and is one-way from the overworld to the underworld.
 
+Entering the underworld also implicitly requires `{"followerLost": ["Super Bomb"]}`.
+
 ## Teleports
 
 Each entry in `teleports.json` defines a one-way connection from an underworld node to an overworld teleport destination.

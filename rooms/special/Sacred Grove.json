@@ -40,7 +40,8 @@
       "link": [2, 2],
       "name": "Pedestal Item",
       "requires": [
-        "h_PullPedestalItem"
+        "h_PullPedestalItem",
+        {"followerLost": ["Zelda", "Old Man", "Dwarf", "Purple Chest", "Super Bomb"]}
       ],
       "collectsItems": [1]
     }
