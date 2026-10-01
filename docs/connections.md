@@ -14,7 +14,7 @@ Connection data is divided by behavior:
 
 Each file contains:
 
-- `$schema`: The connection files do not currently use a JSON schema, so this is `null`.
+- `$schema`: The relative path to the connection schema.
 - `name`: A descriptive name for the collection.
 - `connections`: The connections defined by the file.
 

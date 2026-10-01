@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-connection.schema.json",
+  "type": "object",
+  "description": "Connections between endpoints in different room files.",
+  "required": [
+    "name",
+    "connections"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/entranceConnection"
+          },
+          {
+            "$ref": "#/definitions/teleportConnection"
+          },
+          {
+            "$ref": "#/definitions/whirlpoolConnection"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "world": {
+      "type": "string",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "underworldEndpoint": {
+      "type": "object",
+      "required": [
+        "roomName",
+        "roomId",
+        "nodeId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "roomName": {
+          "type": "string"
+        },
+        "roomId": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "nodeId": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "overworldEntranceEndpoint": {
+      "type": "object",
+      "required": [
+        "roomName",
+        "roomId",
+        "entranceId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "roomName": {
+          "type": "string"
+        },
+        "roomId": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "entranceId": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "overworldTeleportEndpoint": {
+      "type": "object",
+      "required": [
+        "roomName",
+        "roomId",
+        "teleportId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "roomName": {
+          "type": "string"
+        },
+        "roomId": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "teleportId": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "overworldWhirlpoolEndpoint": {
+      "type": "object",
+      "required": [
+        "roomName",
+        "roomId",
+        "whirlpoolId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "roomName": {
+          "type": "string"
+        },
+        "roomId": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "whirlpoolId": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "entranceConnection": {
+      "type": "object",
+      "required": [
+        "type",
+        "world",
+        "overworld",
+        "underworld"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "door",
+            "drop"
+          ]
+        },
+        "world": {
+          "$ref": "#/definitions/world"
+        },
+        "overworld": {
+          "$ref": "#/definitions/overworldEntranceEndpoint"
+        },
+        "underworld": {
+          "$ref": "#/definitions/underworldEndpoint"
+        }
+      }
+    },
+    "teleportConnection": {
+      "type": "object",
+      "required": [
+        "type",
+        "fromWorld",
+        "toWorld",
+        "underworld",
+        "overworld"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "teleport"
+        },
+        "fromWorld": {
+          "$ref": "#/definitions/world"
+        },
+        "toWorld": {
+          "$ref": "#/definitions/world"
+        },
+        "underworld": {
+          "$ref": "#/definitions/underworldEndpoint"
+        },
+        "overworld": {
+          "$ref": "#/definitions/overworldTeleportEndpoint"
+        }
+      }
+    },
+    "whirlpoolConnection": {
+      "type": "object",
+      "required": [
+        "type",
+        "world",
+        "overworld",
+        "overworld2"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "whirlpool"
+        },
+        "world": {
+          "$ref": "#/definitions/world"
+        },
+        "overworld": {
+          "$ref": "#/definitions/overworldWhirlpoolEndpoint"
+        },
+        "overworld2": {
+          "$ref": "#/definitions/overworldWhirlpoolEndpoint"
+        }
+      }
+    }
+  }
+}
