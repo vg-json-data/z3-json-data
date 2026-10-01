@@ -1,5 +1,5 @@
 {
-  "$schema": null,
+  "$schema": "../schema/z3-connection.schema.json",
   "name": "Special Underworld to Overworld Connections",
   "connections": [
     {

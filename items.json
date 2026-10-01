@@ -30,11 +30,11 @@
       "itemReceiptId": "0x3B"
     },
     {
-      "name": "Boomerang",
+      "name": "BlueBoomerang",
       "itemReceiptId": "0x0C"
     },
     {
-      "name": "Powder",
+      "name": "MagicPowder",
       "itemReceiptId": "0x0D"
     },
     {
@@ -111,14 +111,6 @@
       "vanilla": false,
       "note": "A randomizer receipt that grants the Silver Arrows upgrade without also granting a bow."
     },
-    {
-      "name": "Triforce",
-      "itemReceiptId": "0x6A",
-      "vanilla": false,
-      "note": "A randomizer win-condition item represented as an item receipt."
-    }
-  ],
-  "progressives": [
     {
       "name": "L1Sword",
       "itemReceiptId": "0x49"
@@ -374,6 +366,20 @@
       "prizePatchBytes": [ "0x08", "0x34", "0x64", "0x40", "0x7C", "0x06" ]
     }
   ],
+  "goalItems": [
+    {
+      "name": "Triforce",
+      "itemReceiptId": "0x6A",
+      "vanilla": false,
+      "note": "A randomizer victory item, normally awarded by a goal location such as Ganon, the Master Sword pedestal, or Murahdahla. Receiving it completes the game; it is not a dungeon prize."
+    },
+    {
+      "name": "TriforcePiece",
+      "itemReceiptId": "0x6C",
+      "vanilla": false,
+      "note": "A collectible used by Triforce Hunt goals. Collecting one does not immediately complete the game."
+    }
+  ],
   "expansions": [
     {
       "name": "HeartContainerFromPieces",
@@ -425,7 +431,6 @@
       "vanilla": false
     }
   ],
-  "gameState": [],
   "flags": [
     "GameStateZelda",
     "GameStateAgahnim",

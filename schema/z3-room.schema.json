@@ -514,9 +514,6 @@
               "$ref": "z3-requirement.schema.json"
             }
           },
-          "notable": {
-            "type": "boolean"
-          },
           "collectsItems": {
             "type": "array",
             "minItems": 1,

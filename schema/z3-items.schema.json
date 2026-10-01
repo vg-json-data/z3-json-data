@@ -2,17 +2,16 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "z3-items.schema.json",
   "type": "object",
-  "description": "Items, item receipts, dungeon prizes, game-state values, and flags used by Link to the Past logic.",
+  "description": "Items, item receipts, dungeon prizes, goal items, and flags used by Link to the Past logic.",
   "required": [
     "inventory",
-    "progressives",
     "refills",
     "bottleContents",
     "currency",
     "dungeonItems",
     "dungeonPrizes",
+    "goalItems",
     "expansions",
-    "gameState",
     "flags"
   ],
   "additionalProperties": false,
@@ -21,9 +20,6 @@
       "type": "string"
     },
     "inventory": {
-      "$ref": "#/definitions/itemReceiptList"
-    },
-    "progressives": {
       "$ref": "#/definitions/itemReceiptList"
     },
     "refills": {
@@ -51,15 +47,11 @@
         "$ref": "#/definitions/dungeonPrize"
       }
     },
-    "expansions": {
+    "goalItems": {
       "$ref": "#/definitions/itemReceiptList"
     },
-    "gameState": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/name"
-      }
+    "expansions": {
+      "$ref": "#/definitions/itemReceiptList"
     },
     "flags": {
       "type": "array",
