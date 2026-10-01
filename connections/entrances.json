@@ -1222,7 +1222,7 @@
     },
     {
       "type": "door",
-      "world": "light",
+      "world": "dark",
       "overworld": {
         "roomName": "Hyrule Castle",
         "roomId": 18,
@@ -1236,7 +1236,7 @@
     },
     {
       "type": "drop",
-      "world": "light",
+      "world": "dark",
       "overworld": {
         "roomName": "Hyrule Castle",
         "roomId": 18,
@@ -1250,7 +1250,7 @@
     },
     {
       "type": "door",
-      "world": "light",
+      "world": "dark",
       "overworld": {
         "roomName": "Hyrule Castle",
         "roomId": 18,
@@ -1390,7 +1390,7 @@
     },
     {
       "type": "door",
-      "world": "light",
+      "world": "dark",
       "overworld": {
         "roomName": "Dwarven Smithy",
         "roomId": 21,

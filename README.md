@@ -15,13 +15,13 @@ This project is the sister repository to [sm-json-data](https://github.com/vg-js
 
 The data is broken down into modular directories and files representing different aspects of the game. 
 
-### [`/Rooms`](docs/room-readme.md)
+### [`/Rooms`](docs/rooms.md)
 The core of the map data. Hyrule is broken down into distinct "Rooms" representing each overworld area, dungeon, cave, and house. Every room file contains a list of **nodes** and **strats** for moving between nodes.
 *   **Nodes:** Represent a location or freely traversable area within a room.
 *   **Strats:** Represent actions that can be done to traverse between nodes, or actions that can be executed at a specific node.
 *   **Requirements:** A wide range of conditions that dictate if a strat is possible, including items, health/consumables, Link's current state, and the player's skill assumptions.
 
-### `/Connections`
+### [`/Connections`](docs/connections.md)
 Defines edges representing transitions between rooms. `entrances.json` contains the main entrance connections, while `teleports.json` and `whirlpools.json` describe those specialized connection types.
 
 ### `/Items`
@@ -45,7 +45,11 @@ Sets of logical requirements that are summarized into reusable logic blocks. The
 
 ### Rooms
 
-[Room files define areas, nodes, item locations, locks, obstacles, and the strats connecting them.](docs/room-readme.md)
+[Room files define areas, nodes, item locations, locks, obstacles, and the strats connecting them.](docs/rooms.md)
+
+### Connections
+
+[Connection files define traversal between overworld and underworld rooms and pair specialized overworld endpoints.](docs/connections.md)
 
 ### Logical Requirements
 
