@@ -304,7 +304,7 @@
       ]
     },
     {
-      "link": [1, 2],
+      "link": [2, 1],
       "name": "Damageless",
       "world": "dark",
       "requires": [
@@ -397,19 +397,25 @@
       "link": [2, 6],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [2, 8],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [2, 11],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [3, 2],
@@ -440,7 +446,9 @@
       "link": [4, 2],
       "name": "Base",
       "world": "dark",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [4, 4],
@@ -466,7 +474,9 @@
       "link": [6, 9],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [7, 6],
@@ -478,7 +488,9 @@
       "link": [8, 10],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [9, 9],
@@ -544,12 +556,38 @@
       "link": [10, 11],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [11, 9],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [11, 9],
+      "name": "Without Jumping",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "Boomerang",
+          {"and": [
+            {"sword": 1},
+            {"combatProficiency": 2}
+          ]},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Tektite (Red)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "world": "dark",
       "requires": []
     },
     {

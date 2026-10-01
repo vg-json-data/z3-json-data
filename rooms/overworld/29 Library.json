@@ -138,8 +138,50 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "world": "any",
-      "requires": []
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"fireRod": 1},
+          {"and": [
+            "Hammer",
+            {"combatProficiency": 2}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"blueCane": 20}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"cape": 40}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+          ]},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          {"glove": 2}
+        ]}
+      ]
     }
   ]
 }

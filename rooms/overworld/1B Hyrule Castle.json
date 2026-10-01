@@ -395,9 +395,9 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"follower": "Big Bomb"}
+        {"follower": "Super Bomb"}
       ],
-      "FollowerComplete": "Big Bomb",
+      "FollowerComplete": "Super Bomb",
       "setsFlags": ["OpenedPyramidBigBomb"]
     },
     {
@@ -471,16 +471,34 @@
       ]
     },
     {
+      "link": [11, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
       "link": [11, 7],
       "name": "Base",
-      "world": "any",
-      "requires": []
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [11, 7],
       "name": "Base",
       "world": "dark",
-      "requires": [],
+      "requires": []
+    },
+    {
+      "link": [11, 7],
+      "name": "Base - Collect Item",
+      "world": "dark",
+      "requires": [
+        "h_jumpOffLedge"
+      ],
       "collectsItems": [1]
     },
     {
@@ -610,7 +628,19 @@
       "link": [16, 7],
       "name": "Base",
       "world": "dark",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [16, 11],
+      "name": "Mirror",
+      "fromWorld": "dark",
+      "toWorld": "light",
+      "requires": [
+        "MagicMirror"
+      ],
+      "note": ["Mirror from the ledge above the ledge with the item in order to bypass jumping off of the ledge."]
     },
     {
       "link": [17, 4],

@@ -11,7 +11,7 @@
       "name": "Southeast Edge",
       "world": "both",
       "transitions": [
-        {"edge": "south", "span": [29, 30]}
+        {"edge": "east", "span": [29, 30]}
       ]
     },
     {
@@ -19,7 +19,7 @@
       "name": "East Edge (Upper)",
       "world": "both",
       "transitions": [
-        {"edge": "south", "span": [18, 19]}
+        {"edge": "east", "span": [18, 19]}
       ]
     },
     {
@@ -27,7 +27,7 @@
       "name": "West Side",
       "world": "both",
       "transitions": [
-        {"edge": "west", "span": [18, 19], "world": "light"}
+        {"edge": "west", "span": [24, 28], "world": "light"}
       ],
       "entrances": [
         {
@@ -57,6 +57,14 @@
           "name": "50 Rupee Cave",
           "world": "light"
         }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Raised Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "west", "span": [11, 19.5], "world": "light"}
       ]
     }
   ],
@@ -202,6 +210,12 @@
       "requires": []
     },
     {
+      "link": [3, 7],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
       "link": [4, 2],
       "name": "Base",
       "world": "any",
@@ -280,6 +294,14 @@
       "name": "Base",
       "world": "light",
       "requires": []
+    },
+    {
+      "link": [7, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     }
   ]
 }

@@ -54,7 +54,17 @@
       "link": [2, 1],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2}
+      ]
     },
     {
       "link": [2, 2],

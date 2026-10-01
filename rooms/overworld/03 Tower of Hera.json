@@ -306,13 +306,28 @@
       "link": [4, 2],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"combatProficiency": 3}
+        ]}
+      ]
     },
     {
       "link": [5, 1],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [5, 3],
@@ -345,7 +360,9 @@
       "link": [5, 10],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [6, 5],
@@ -369,13 +386,17 @@
       "link": [6, 10],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [6, 11],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [7, 6],
@@ -387,7 +408,9 @@
       "link": [7, 12],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [8, 6],
@@ -406,19 +429,25 @@
       "link": [8, 9],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [9, 5],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [9, 7],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [9, 9],
@@ -442,19 +471,25 @@
       "link": [10, 5],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [11, 5],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [12, 3],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [13, 9],

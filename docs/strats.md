@@ -206,7 +206,7 @@ Link can have at most one follower at a time. `setsFollower` sets the named foll
 }
 ```
 
-Followers persist and cannot necessarily be removed at will. They can also restrict traversal in ways beyond an explicit `follower` requirement. Detailed follower restrictions are not yet fully modeled.
+Followers persist until an explicit completion or loss effect removes them. A [`followerLost`](logicalRequirements.md#followers) logical element removes the current follower when it is one of the followers named by that element. Standard interactions such as dashing, bombing, collecting crystals, and traversing entrances also have [implicit follower behavior](logicalRequirements.md#implicit-follower-behavior), so individual strats do not repeat those requirements.
 
 ## Entrance and Exit State
 

@@ -87,6 +87,21 @@ An entrance connection has:
 
 A `door` is a two-way connection and references an underworld `door` node. A `drop` references an underworld `drop` node and is one-way from the overworld to the underworld.
 
+### Follower Behavior at Entrances
+
+Follower handling is an implicit part of traversing an entrance connection. It does not need to be repeated in room strats.
+
+| Entrance and destination | Zelda | Old Man | Dwarf | Purple Chest | Super Bomb |
+|---|---|---|---|---|---|
+| Door to most caves and houses | Enters | Cannot enter | Enters | Cannot enter | Lost |
+| Door to Link's House | Enters | Cannot enter | Cannot enter | Cannot enter | Lost |
+| Door to a dungeon | Enters | Cannot enter | Cannot enter | Cannot enter | Lost |
+| Drop to a cave or dungeon | Enters | Enters | Enters | Enters | Lost |
+
+At a door entrance, a Purple Chest can be dropped by grabbing a nearby wall. It then waits outside until Link returns and picks it up again. Losing the Super Bomb is equivalent to applying `{"followerLost": ["Super Bomb"]}`. A door connection that a follower cannot enter is unavailable while Link has that follower. 
+
+A `drop` connection bypasses the destination's normal door restrictions: every follower other than the Super Bomb accompanies Link into the underworld, whether the destination is a cave or a dungeon. Falling into the hole loses the Super Bomb. These are only checked when entering the underworld - if a follower enters via a drop entrance or spawns in the underworld, such as the Old Man's vanilla cave, it is able to continue following.
+
 ## Teleports
 
 Each entry in `teleports.json` defines a one-way connection from an underworld node to an overworld teleport destination.

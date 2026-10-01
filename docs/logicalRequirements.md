@@ -205,6 +205,10 @@ Ammunition requirements implicitly require the corresponding weapon and a state 
 {"bombs": 2}
 ```
 
+Using a bomb is not possible with a Super Bomb, so any strat that requires a bomb implicitly applies `{"followerLost": ["Super Bomb"]}`. 
+
+It is possible to use a Super Bomb to break a normally bombable wall, but that is not modeled yet by the logic.
+
 ## Magic Requirements
 
 Magic is modeled as a normalized resource pool. Link has a base maximum of 128 magic. With Half Magic, the maximum is instead 256 and all magic refills provide twice their listed amount. Costs are not divided.
@@ -389,13 +393,33 @@ The value can range from 0 through 7.
 
 ## Followers
 
+Link can have at most one follower at a time. The modeled follower values are `"Zelda"`, `"Old Man"`, `"Blind"`, `"Dwarf"`, `"Purple Chest"`, and `"Super Bomb"`. The Frog is represented as `"Dwarf"`; his transformation does not create a separate follower state. Area-local characters such as Kiki and the sign-cutting NPC are handled by their room logic rather than the general follower state.
+
 A `follower` object checks Link's current follower:
 
 ```json
 {"follower": "Dwarf"}
 ```
 
-The special value `"None"` requires Link to have no follower. Link can have at most one follower at a time. Followers persist and may impose traversal restrictions that are not yet fully modeled.
+The special value `"None"` requires Link to have no follower.
+
+`followerLost` represents an action that causes any of the listed followers to stop following Link:
+
+```json
+{"followerLost": ["Zelda", "Purple Chest"]}
+```
+
+This requirement is always fulfilled. If Link's current follower is in the array, that follower is removed before the next requirement is evaluated. If Link has no follower or his current follower is not listed, his follower state is unchanged.
+
+### Implicit Follower Behavior
+
+Consumers apply the following follower behavior implicitly; room data does not need to repeat these requirements on every affected strat:
+
+- A `bombs` requirement is not valid with a Super Bomb follower, see [Bombs](#bombs).
+- Entering caves, houses, and dungeons applies the follower rules defined for [entrance connections](connections.md#follower-behavior-at-entrances). A drop entrance bypasses the follower restrictions of an ordinary door entrance for every follower except the Super Bomb.
+- Collecting a crystal implicitly requires that Zelda is not the current follower; Zelda can collect a pendant.
+
+Death and Save & Quit transitions are outside the current route-state model and will define their own follower behavior when those systems are added.
 
 ## Obstacles
 

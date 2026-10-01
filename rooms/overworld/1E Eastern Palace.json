@@ -8,11 +8,10 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Southern Half",
+      "name": "Southwest Area",
       "world": "both",
       "transitions": [
-        {"edge": "south", "span": [7, 10]},
-        {"edge": "south", "span": [55, 57]}
+        {"edge": "south", "span": [7, 10]}
       ],
       "entrances": [
         {
@@ -50,6 +49,14 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Southeast Transition",
+      "world": "both",
+      "transitions": [
+        {"edge": "south", "span": [55, 57]}
+      ]
     }
   ],
   "strats": [
@@ -57,7 +64,37 @@
       "link": [1, 2],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 100}
+        ]}
+      ]
     },
     {
       "link": [1, 2],
@@ -74,6 +111,20 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
+      ]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
       ]
     },
     {
@@ -103,7 +154,39 @@
       "link": [2, 3],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}}
+          ]},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 3}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hookshot",
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 36},
+          {"cape": 38}
+        ]}
+      ]
     },
     {
       "link": [2, 3],
@@ -125,10 +208,121 @@
       ]
     },
     {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          {"glove": 1}
+        ]}
+      ]
+    },
+    {
       "link": [3, 2],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "No Jumping",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"fireRod": 4},
+          {"arrows": 6},
+          {"silverArrows": 4},
+          {"and": [
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 4}},
+            {"damage": {"enemy": "Armos", "count": 2}}
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}},
+            {"damage": {"enemy": "Armos", "count": 1}}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "No Jumping, Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"bombs": 4},
+          {"redCane": 2},
+          {"and": [
+            {"combatProficiency": 3},
+            {"redCane": 1}
+          ]},
+          {"blueCane": 68},
+          {"and": [
+            {"combatProficiency": 3},
+            {"blueCane": 44}
+          ]},
+          {"cape": 100},
+          {"and": [
+            {"combatProficiency": 3},
+            {"cape": 45}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "No Jumping, Agahnim Not Killed",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"},
+        {"or": [
+          {"fireRod": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Armos", "count": 2}},
+          {"and": [
+            {"combatProficiency": 2},
+            {"damage": {"enemy": "Armos", "count": 1}}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 2],
+      "name": "No Jumping, Alternate Weapons, Agahnim Not Killed",
+      "world": "light",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"},
+        {"combatProficiency": 2},
+        {"or": [
+          {"bombs": 2},
+          {"redCane": 1},
+          {"blueCane": 40},
+          {"cape": 40},
+          {"and": [
+            {"combatProficiency": 3},
+            {"blueCane": 20}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"cape": 26}
+          ]}
+        ]}
+      ]
     },
     {
       "link": [3, 2],
@@ -144,6 +338,65 @@
           {"rod": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          {"glove": 1}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"and": [
+            {"glove": 1},
+            "h_jumpOffLedge"
+          ]},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Alternate Weapons",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 48},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 2}
+          ]}
         ]}
       ]
     }

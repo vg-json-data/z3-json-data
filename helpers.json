@@ -153,6 +153,13 @@
     ]
   },
   {
+    "name": "h_jumpOffLedge",
+    "requires": [
+      {"followerLost": ["Super Bomb"]}
+    ],
+    "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
+  },
+  {
     "name": "useYItems",
     "requires": [
       {"or": [
