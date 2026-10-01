@@ -289,7 +289,7 @@ The optional `items` array defines item locations within a room. Each item has:
 
 Items are never collected automatically by reaching their `itemLocation`. A strat must explicitly include the item's ID in `collectsItems`. See [Strats: Collecting Items](strats.md#collecting-items).
 
-Most item locations have one `itemAddress`. Dungeon prizes may have several because their game representation is distributed across multiple addresses. The precise patching behavior is implementation-specific.
+Most item locations have one `itemAddress`. Dungeon-prize locations have six addresses; the six `prizePatchBytes` from the selected [dungeon-prize definition](items.md#dungeon-prizes) are written to those addresses in order.
 
 ## Locked Doors
 

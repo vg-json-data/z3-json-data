@@ -24,7 +24,7 @@ The core of the map data. Hyrule is broken down into distinct "Rooms" representi
 ### [`/Connections`](docs/connections.md)
 Defines edges representing transitions between rooms. `entrances.json` contains the main entrance connections, while `teleports.json` and `whirlpools.json` describe those specialized connection types.
 
-### `/Items`
+### [`/Items`](docs/items.md)
 Contains the definitions for both permanent and temporary items in the game.
 Item receipt records omit the `vanilla` field when the receipt ID is defined by the original game. Randomizer-defined receipt IDs include `"vanilla": false`, with an optional `note` when their behavior needs explanation.
 
@@ -50,6 +50,10 @@ Sets of logical requirements that are summarized into reusable logic blocks. The
 ### Connections
 
 [Connection files define traversal between overworld and underworld rooms and pair specialized overworld endpoints.](docs/connections.md)
+
+### Items
+
+[Item data defines item receipts, dungeon-prize patch values, and persistent game flags.](docs/items.md)
 
 ### Logical Requirements
 
