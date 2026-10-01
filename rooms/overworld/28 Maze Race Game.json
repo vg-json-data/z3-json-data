@@ -64,7 +64,9 @@
       "link": [2, 1],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [2, 2],
@@ -88,7 +90,15 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
       "requires": []
     },
     {

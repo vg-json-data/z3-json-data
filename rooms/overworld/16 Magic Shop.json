@@ -71,6 +71,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
+        "h_jumpOffLedge",
         "Flippers"
       ],
       "isBunny": "no"
@@ -89,6 +90,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
+        "h_jumpOffLedge",
         "Flippers"
       ],
       "isBunny": "no"

@@ -136,6 +136,15 @@
       ]
     },
     {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        "h_jumpOffLedge",
+        "Flippers"
+      ]
+    },
+    {
       "link": [2, 6],
       "name": "Base",
       "world": "any",
@@ -154,6 +163,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
+        "h_jumpOffLedge",
         "Flippers"
       ]
     },
@@ -185,6 +195,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
+        "h_jumpOffLedge",
         "Flippers"
       ]
     },
@@ -248,7 +259,16 @@
     {
       "link": [8, 6],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge",
+        "Flippers"
+      ]
+    },
+    {
+      "link": [8, 6],
+      "name": "Base",
+      "world": "dark",
       "requires": [
         "Flippers"
       ]

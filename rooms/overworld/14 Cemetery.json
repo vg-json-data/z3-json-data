@@ -201,7 +201,16 @@
     {
       "link": [4, 2],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "dark",
       "requires": [],
       "isBunny": "any"
     },

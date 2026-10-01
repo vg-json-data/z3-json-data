@@ -131,14 +131,21 @@
       "link": [2, 1],
       "name": "Base",
       "world": "any",
-      "requires": [],
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          {"glove": 1}
+        ]}
+      ],
       "isBunny": "any"
     },
     {
       "link": [3, 1],
       "name": "Base",
       "world": "light",
-      "requires": [],
+      "requires": [
+        "h_jumpOffLedge"
+      ],
       "isBunny": "any"
     },
     {
@@ -146,6 +153,7 @@
       "name": "Tank",
       "world": "dark",
       "requires": [
+        "h_jumpOffLedge",
         {"or": [
           {"combatProficiency": 3},
           {"damage": {"enemy": "Dacto", "count": 1}}

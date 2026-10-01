@@ -234,7 +234,15 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "world": "dark",
       "requires": []
     },
     {
@@ -269,7 +277,9 @@
       "link": [5, 1],
       "name": "Base",
       "world": "any",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [5, 5],
@@ -283,7 +293,15 @@
     {
       "link": [6, 1],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "dark",
       "requires": []
     },
     {
@@ -307,13 +325,17 @@
       "link": [7, 1],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [8, 1],
       "name": "Base",
       "world": "light",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [8, 8],
