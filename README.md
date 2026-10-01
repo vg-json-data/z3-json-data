@@ -31,12 +31,12 @@ Item receipt records omit the `vanilla` field when the receipt ID is defined by 
 ### `/Enemies`
 Detailed information on enemy vulnerabilities, attacks, and damage values. This includes standard enemies, bosses, and environmental hazards.
 
-### `/Tech`
+### [`/Tech`](docs/tech.md)
 A set of skill assumptions which the player may toggle to adjust the expected difficulty and logic paths.
 * **Proficiency:** Skills modeled with a range of values, allowing the player to specify their level of ability.
 * **General:** Specific tricks, sequence breaks, and glitches that a player can toggle on or off based on what they are willing to execute.
 
-### `/Helpers`
+### [`/Helpers`](docs/logicalRequirements.md#helpers)
 Sets of logical requirements that are summarized into reusable logic blocks. These are called within a strat's requirements to prevent repetition and provide a centralized place for a randomizer to edit or override core assumptions.
 
 ---

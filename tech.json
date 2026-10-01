@@ -150,10 +150,7 @@
               "id": 7,
               "name": "canPreciseBombBoost",
               "techRequires": ["canBombBoost"],
-              "otherRequires": [
-                {"bombs": 1},
-                {"damage": {"enemy": "Bomb", "count": 1}}
-              ],
+              "otherRequires": [],
               "note": [
                 "Using a bomb to boost Link over a 2-tile-wide pit, which may include a diagonal boost requirement.",
                 "This requires precise positioning of the bomb and getting hit while Link is at the very edge of the platform."
@@ -174,7 +171,7 @@
           ]
         },
         {
-          "id": 7,
+          "id": 8,
           "name": "canBreakDashableWall",
           "techRequires": [],
           "otherRequires": [
@@ -185,6 +182,17 @@
             "The walls are visually distinct, with a circular crack pattern."
           ],
           "devNote": ["FIXME: Is this always true? find and determine each use."]
+        },
+        {
+          "id": 9,
+          "name": "canRiskPermanentLossOfAccess",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Accepting that a change to game state may make a previously available strat impossible.",
+            "If the strat needed to be executed before that state change, the game may become incompletable.",
+            "The mistake may not become apparent until much later."
+          ]
         }
       ]
     }

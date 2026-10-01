@@ -30,7 +30,7 @@
       "name": "Base - Open Left Chest",
       "requires": [
         "Hammer",
-        "Gloves",
+        {"glove": 1},
         {"or": [
           {"damage": {"enemy": "Ground Spikes", "count": 15}},
           {"and": [

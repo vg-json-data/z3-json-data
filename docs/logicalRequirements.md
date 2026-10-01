@@ -44,7 +44,30 @@ Some names represent a logical category rather than a single concrete item. For 
 
 Helpers are defined in [`helpers.json`](../helpers.json). A helper expands to its own requirements, allowing commonly repeated logic or configurable assumptions to be defined in one place.
 
-By convention, most helper names begin with `h_`, although a helper may instead use a natural category name such as `Boomerang`.
+Each helper has:
+
+- `name`: The string used to require the helper.
+- `requires`: The logical requirements that replace the helper when it is evaluated.
+- `note`: Optional consumer-facing explanation.
+- `devNote`: Optional contributor-facing implementation detail.
+
+```json
+{
+  "name": "Boomerang",
+  "requires": [
+    {"or": [
+      "RedBoomerang",
+      "BlueBoomerang"
+    ]}
+  ]
+}
+```
+
+When a helper is required, its `requires` list is evaluated as though it appeared directly at that point in the containing requirement list. Its requirements retain their normal ordering, costs, and effects.
+
+Helpers also centralize assumptions that a randomizer may override, such as a required medallion, prize threshold, or whether a vanilla behavior has been changed. An empty `requires` array makes a helper free, while `["never"]` disables it.
+
+By convention, most helper names begin with `h_`, although a reusable logical category may instead use a natural name such as `Boomerang`.
 
 ```json
 "h_hitBlueOrangeSwitch"
@@ -52,7 +75,7 @@ By convention, most helper names begin with `h_`, although a helper may instead 
 
 ### Tech
 
-Techs are defined in [`tech.json`](../tech.json). A tech represents an in-game technique that consumers may allow or disallow based on their logic configuration.
+Techs are defined in [`tech.json`](../tech.json). A tech represents an in-game technique that consumers may allow or disallow based on their logic configuration. See the [Tech documentation](tech.md) for the complete format and difficulty model.
 
 ```json
 "canBombBoost"
