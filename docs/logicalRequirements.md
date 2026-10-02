@@ -418,8 +418,9 @@ Consumers apply the following follower behavior implicitly; room data does not n
 - A `bombs` requirement is not valid with a Super Bomb follower, see [Bombs](#bombs).
 - Entering caves, houses, and dungeons applies the follower rules defined for [entrance connections](connections.md#follower-behavior-at-entrances). A drop entrance bypasses the follower restrictions of an ordinary door entrance for every follower except the Super Bomb.
 - Collecting a crystal implicitly requires that Zelda is not the current follower; Zelda can collect a pendant.
+- Death or save-and-quit removes Blind or the Super Bomb if either is Link's current follower.
 
-Death and Save & Quit transitions are outside the current route-state model and will define their own follower behavior when those systems are added.
+Death and save-and-quit transitions are outside the current route-state model. Consumers implementing them should apply the follower loss above; see [Death and save-and-quit spawn points](respawn-points.md) for restart destination rules.
 
 ## Obstacles
 

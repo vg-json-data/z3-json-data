@@ -13,11 +13,17 @@
       "id": 2,
       "name": "Death Mountain Side",
       "nodeType": "door"
+    },
+    {
+      "id": 3,
+      "name": "Old Man Junction",
+      "rememberedSpawnPoint": "oldManCave",
+      "nodeType": "junction"
     }
   ],
   "strats": [
     {
-      "link": [1, 2],
+      "link": [1, 3],
       "name": "Base",
       "requires": [
         "Lamp"
@@ -25,62 +31,10 @@
       "setsFollower": "Old Man"
     },
     {
-      "link": [1, 2],
+      "link": [1, 3],
       "name": "Darkness",
       "requires": [
-        {"darkProficiency": 2},
-        {"or": [
-          {"and": [
-            {"sword": 1},
-            {"damage": {"enemy": "Fall", "count": 1}}
-          ]},
-          {"and": [
-            {"darkProficiency": 3},
-            {"sword": 1}
-          ]},
-          {"and": [
-            {"darkProficiency": 3},
-            {"damage": {"enemy": "Fall", "count": 1}},
-            {"damage": {"enemy": "Keese", "count": 1}}
-          ]}
-        ]}
-      ],
-      "setsFollower": "Old Man"
-    },
-    {
-      "link": [1, 2],
-      "name": "Darkness - Item Use Audio",
-      "requires": [
-        {"darkProficiency": 3},
-        {"damage": {"enemy": "Keese", "count": 1}},
-        {"or": [
-          "BookOfMudora",
-          "Bombos",
-          "Ether",
-          "Quake",
-          "Shovel",
-          "BugCatchingNet",
-          "PegasusBoots",
-          "Bottle",
-          "FireRod",
-          "IceRod",
-          "Bow",
-          "MagicPowder",
-          "CaneOfSomaria",
-          "CaneOfByrna",
-          "Cape",
-          {"and": [
-            "Mushroom",
-            "canRiskPermanentLossOfAccess"
-          ]}
-        ]}
-      ],
-      "devNote": [
-        "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
-        "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
-        "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
-        "It's neglected for now due to schema limitations and because it only saves one heart.",
-        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+        {"darkProficiency": 2}
       ],
       "setsFollower": "Old Man"
     },
@@ -121,6 +75,74 @@
       "requires": [
         {"darkProficiency": 3},
         {"damage": {"enemy": "Keese", "count": 3}},
+        {"or": [
+          "BookOfMudora",
+          "Bombos",
+          "Ether",
+          "Quake",
+          "Shovel",
+          "BugCatchingNet",
+          "PegasusBoots",
+          "Bottle",
+          "FireRod",
+          "IceRod",
+          "Bow",
+          "MagicPowder",
+          "CaneOfSomaria",
+          "CaneOfByrna",
+          "Cape",
+          {"and": [
+            "Mushroom",
+            "canRiskPermanentLossOfAccess"
+          ]}
+        ]}
+      ],
+      "devNote": [
+        "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
+        "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
+        "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
+        "It's neglected for now due to schema limitations and because it only saves one heart.",
+        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+      ],
+      "setsFollower": "Old Man"
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        "Lamp"
+      ],
+      "setsFollower": "Old Man"
+    },
+    {
+      "link": [3, 2],
+      "name": "Darkness",
+      "requires": [
+        {"darkProficiency": 2},
+        {"or": [
+          {"and": [
+            {"sword": 1},
+            {"damage": {"enemy": "Fall", "count": 1}}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"sword": 1}
+          ]},
+          {"and": [
+            {"darkProficiency": 3},
+            {"damage": {"enemy": "Fall", "count": 1}},
+            {"damage": {"enemy": "Keese", "count": 1}}
+          ]}
+        ]}
+      ],
+      "setsFollower": "Old Man"
+    },
+    {
+      "link": [3, 2],
+      "name": "Darkness - Item Use Audio",
+      "requires": [
+        {"darkProficiency": 3},
+        {"damage": {"enemy": "Keese", "count": 1}},
         {"or": [
           "BookOfMudora",
           "Bombos",

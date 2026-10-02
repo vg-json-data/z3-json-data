@@ -108,6 +108,32 @@ Every node has:
 
 Underworld nodes also have `nodeType`. Overworld nodes instead have `world` and can contain properties describing overworld connections.
 
+### Respawn Points
+
+Two node properties, `spawnPoint` and `rememberedSpawnPoint`, identify respawn destinations. They label the node where Link arrives; tracking when these spawn points are usable is up to the implementor.
+
+`spawnPoint` identifies one of the four regular destinations. The unlock requirements below describe normal vanilla progression; availability depends on the current story stage, which out-of-order events can replace.
+
+| Value | Destination | Unlock Requirement |
+| --- | --- | --- |
+| `house` | Link's house | Completing Zelda's Sanctuary dialogue. |
+| `sanctuary` | Sanctuary | Completing Zelda's Sanctuary dialogue. |
+| `mountainCave` | Old Man's House | Completing Zelda's Sanctuary dialogue, while Link has the Magic Mirror. |
+| `pyramid` | Pyramid | After defeating Agahnim 1. This destination uses the Dark World even though its node has `world: "both"`. |
+
+Link's House is the initial game spawn, but it is not a selectable option until completing Zelda's Sanctuary dialogue.
+
+Unlocked destinations are not always used. The Light World normally presents a start menu, while the Pyramid is an automatic Dark World destination, never a menu choice.
+
+`rememberedSpawnPoint` identifies a destination for the single remembered checkpoint. Particular events set this checkpoint, replacing the previous one; visiting a marked node does not itself remember it.
+
+Generally:
+
+- If Link dies in a dungeon, he normally respawns at the last entrance he entered from the overworld through a node with `nodeType: "door"` or `nodeType: "drop"`. This can apply before the regular spawn points unlock, though followers and the Opening stage have special rules.
+- If Link saves and quits, or dies outside a dungeon, the early game uses the initial house spawn or a remembered checkpoint. Once the regular spawns are enabled, these restarts normally show the Light World menu or automatically use the Pyramid in the Dark World. Before the Post-Agahnim story stage, restarts use Light World rules even if Link was in the Dark World.
+
+This is a simplified description of the vanilla spawn points. Story stage, current followers, and the remembered checkpoint can override these general rules. Randomizer implementors who change early-game progression need to account for these interactions. See [Death and save-and-quit spawn points](respawn-points.md) for the complete rules and exceptions.
+
 ### Sub-areas
 
 `subArea` groups nodes within a large cave or dungeon for organizational purposes. It has no direct logical effect.

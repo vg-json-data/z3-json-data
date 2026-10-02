@@ -7,6 +7,7 @@
     {
       "id": 1,
       "name": "Front Entrance",
+      "spawnPoint": "mountainCave",
       "nodeType": "door"
     },
     {

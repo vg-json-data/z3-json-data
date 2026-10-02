@@ -51,6 +51,10 @@ Sets of logical requirements that are summarized into reusable logic blocks. The
 
 [Connection files define traversal between overworld and underworld rooms and pair specialized overworld endpoints.](docs/connections.md)
 
+### Respawn Points
+
+[Node properties identify regular and remembered spawn destinations.](docs/rooms.md#respawn-points) See [Death and save-and-quit spawn points](docs/respawn-points.md) for unlocks, dungeon entrance restarts, and follower and checkpoint interactions.
+
 ### Items
 
 [Item data defines item receipts, dungeon-prize patch values, and persistent game flags.](docs/items.md)
