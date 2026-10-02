@@ -652,7 +652,7 @@
         {"or": [
           "Hookshot",
           {"redCane": 1},
-          {"blueCane": 12},
+          {"blueCane": 28},
           {"rod": 2},
           {"arrows": 5},
           {"silverArrows": 5},
