@@ -112,7 +112,7 @@ Underworld nodes also have `nodeType`. Overworld nodes instead have `world` and 
 
 Two node properties, `spawnPoint` and `rememberedSpawnPoint`, identify respawn destinations. They label the node where Link arrives; tracking when these spawn points are usable is up to the implementor.
 
-`spawnPoint` identifies one of the four regular destinations:
+`spawnPoint` identifies one of the four regular destinations. The unlock requirements below describe normal vanilla progression; availability depends on the current story stage, which out-of-order events can replace.
 
 | Value | Destination | Unlock Requirement |
 | --- | --- | --- |
@@ -123,14 +123,16 @@ Two node properties, `spawnPoint` and `rememberedSpawnPoint`, identify respawn d
 
 Link's House is the initial game spawn, but it is not a selectable option until completing Zelda's Sanctuary dialogue.
 
-Note that just because these destinations are unlocked, that does not mean that they are always available for selection. 
+Unlocked destinations are not always used. The Light World normally presents a start menu, while the Pyramid is an automatic Dark World destination, never a menu choice.
+
+`rememberedSpawnPoint` identifies a destination for the single remembered checkpoint. Particular events set this checkpoint, replacing the previous one; visiting a marked node does not itself remember it.
 
 Generally:
-- If Link dies before unlocking any spawn points, he will spawn at his house or a remembered checkpoint, discussed below.
-- If Link dies in a dungeon, he will respawn at the last traversed dungeon entrance from the overworld through a node with `nodeType: "door"` or `nodeType: "drop"`.
-- If Link Saves and Quits, or if he dies outside of a dungeoen, he will respawn at one of the unlocked options in the world he was in. If he is in the Dark World and had not unlocked the pyramid spawn, he will spawn in the Light World.
 
-Note that this is a very simplified description of the vanilla spawn points. They also depend on many other things including the story stage, current followers and remembered checkpoint destinations which are marked with `rememberedSpawnPoint`. It is highly likely that a randomizer will need to gate the early game very similarly to vanilla or completely overhaul it. Because of this, the details of their behavior is only discussed in detail at [Death and save-and-quit spawn points](respawn-points.md).
+- If Link dies in a dungeon, he normally respawns at the last entrance he entered from the overworld through a node with `nodeType: "door"` or `nodeType: "drop"`. This can apply before the regular spawn points unlock, though followers and the Opening stage have special rules.
+- If Link saves and quits, or dies outside a dungeon, the early game uses the initial house spawn or a remembered checkpoint. Once the regular spawns are enabled, these restarts normally show the Light World menu or automatically use the Pyramid in the Dark World. Before the Post-Agahnim story stage, restarts use Light World rules even if Link was in the Dark World.
+
+This is a simplified description of the vanilla spawn points. Story stage, current followers, and the remembered checkpoint can override these general rules. Randomizer implementors who change early-game progression need to account for these interactions. See [Death and save-and-quit spawn points](respawn-points.md) for the complete rules and exceptions.
 
 ### Sub-areas
 

@@ -208,6 +208,8 @@ Link can have at most one follower at a time. `setsFollower` sets the named foll
 
 Followers persist until an explicit completion or loss effect removes them. A [`followerLost`](logicalRequirements.md#followers) logical element removes the current follower when it is one of the followers named by that element. Standard interactions such as dashing, bombing, collecting crystals, and traversing entrances also have [implicit follower behavior](logicalRequirements.md#implicit-follower-behavior), so individual strats do not repeat those requirements.
 
+Blind and the Super Bomb are also lost on death or save-and-quit.
+
 ## Entrance and Exit State
 
 The `exitState` and `entranceState` properties connect special behavior across room-file boundaries. An exit-state strat leaves a room with a named temporary state, and a compatible entrance-state strat receives that state in the next room.
