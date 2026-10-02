@@ -618,6 +618,10 @@
                   "event"
                 ]
               },
+              "entranceID": {
+                "type": "integer",
+                "minimum": 1
+              },
               "type": {
                 "type": "string"
               }
@@ -636,6 +640,10 @@
                 "enum": [
                   "event"
                 ]
+              },
+              "entranceID": {
+                "type": "integer",
+                "minimum": 1
               },
               "type": {
                 "type": "string"
@@ -681,17 +689,53 @@
           },
           "strats": {
             "items": {
-              "oneOf": [
+              "allOf": [
                 {
-                  "required": [
-                    "world"
+                  "oneOf": [
+                    {
+                      "required": [
+                        "world"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "fromWorld",
+                        "toWorld"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "required": [
-                    "fromWorld",
-                    "toWorld"
-                  ]
+                  "if": {
+                    "required": [
+                      "exitState"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "exitState": {
+                        "required": [
+                          "entranceID"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "required": [
+                      "entranceState"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "entranceState": {
+                        "required": [
+                          "entranceID"
+                        ]
+                      }
+                    }
+                  }
                 }
               ]
             }

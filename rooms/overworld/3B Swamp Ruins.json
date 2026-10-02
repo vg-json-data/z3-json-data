@@ -52,6 +52,12 @@
       "note": [
         "The Floodgate has been drained."
       ]
+    },
+    {
+      "id": "Dark World Portal",
+      "note": [
+        "Link came from the dark world and there is a mirror point in this overworld room."
+      ]
     }
   ],
   "strats": [
@@ -111,14 +117,59 @@
     },
     {
       "link": [2, 2],
-      "name": "Enter with Water Drained",
+      "name": "Magic Mirror",
+      "fromWorld": "dark",
+      "toWorld": "light",
+      "requires": [
+        "MagicMirror"
+      ],
+      "clearsObstacles": ["Dark World Portal"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Enter Dam with Mirror Point",
+      "world": "light",
+      "requires": [
+        {"obstaclesCleared": ["Dark World Portal"]}
+      ],
+      "exitState": {
+        "state": "event",
+        "entranceID": 1,
+        "type": "DarkWorldPortal"
+      }
+    },
+    {
+      "link": [2, 2],
+      "name": "Enter Overworld with Water Drained",
       "world": "light",
       "entranceState": {
         "state": "event",
+        "entranceID": 1,
         "type": "DrainedFloodgate"
       },
       "requires": [],
       "clearsObstacles": ["Drained Floodgate"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Enter Overworld with Water Drained and Mirror Point",
+      "world": "light",
+      "entranceState": {
+        "state": "event",
+        "entranceID": 1,
+        "type": "DrainedFloodgateAndMirrorPoint"
+      },
+      "requires": [],
+      "clearsObstacles": ["Drained Floodgate", "Dark World Portal"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Return to Dark World",
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "requires": [
+        {"obstaclesCleared": ["Dark World Portal"]}
+      ]
     },
     {
       "link": [2, 2],
@@ -129,9 +180,9 @@
       ],
       "exitState": {
         "state": "event",
+        "entranceID": 2,
         "type": "DrainedFloodgate"
-      },
-      "devNote": ["FIXME: Need to model the dark world portal in order to go from light to dark world with the water drained."]
+      }
     }
   ]
 }

@@ -384,7 +384,11 @@
       "name": "Base",
       "requires": [
         "Flippers"
-      ]
+      ],
+      "entranceState": {
+        "state": "event",
+        "type": "DrainedFloodgate"
+      }
     },
     {
       "link": [2, 2],

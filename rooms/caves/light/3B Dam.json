@@ -30,6 +30,12 @@
       "note": [
         "The Floodgate has been drained."
       ]
+    },
+    {
+      "id": "Dark World Portal",
+      "note": [
+        "Link came from the dark world and there is a mirror point in the overworld room connected to the dam."
+      ]
     }
   ],
   "strats": [
@@ -42,13 +48,35 @@
     },
     {
       "link": [1, 1],
-      "name": "Leave with Water Drained",
+      "name": "Enter Dam with Mirror Point",
+      "entranceState": {
+        "state": "event",
+        "type": "DarkWorldPortal"
+      },
+      "requires": [],
+      "clearsObstacles": ["Dark World Portal"]
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit Dam with Water Drained",
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
       "exitState": {
         "state": "event",
         "type": "DrainedFloodgate"
+      }
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit Dam with Water Drained and Mirror Point",
+      "requires": [
+        {"obstaclesCleared": ["Drained Floodgate"]},
+        {"obstaclesCleared": ["Dark World Portal"]}
+      ],
+      "exitState": {
+        "state": "event",
+        "type": "DrainedFloodgateAndMirrorPoint"
       }
     },
     {
