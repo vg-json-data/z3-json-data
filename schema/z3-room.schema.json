@@ -77,24 +77,16 @@
           "nodeType": {
             "type": "string",
             "enum": [
-              "boss",
               "door",
               "drop",
-              "entrance",
-              "event",
-              "exit",
-              "fortune",
-              "item",
               "junction",
-              "minigame",
-              "obstacle",
               "pre-boss",
-              "shop",
-              "transition"
+              "boss",
+              "event",
+              "fortune",
+              "minigame",
+              "shop"
             ]
-          },
-          "area": {
-            "type": "string"
           },
           "subArea": {
             "type": "string"
@@ -236,97 +228,9 @@
               }
             }
           },
-          "nodeItem": {
-            "type": "string",
-            "note": "deprecated"
-          },
-          "nodeAddress": {
-            "type": [
-              "string",
-              "array"
-            ],
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            },
-            "note": "deprecated"
-          },
           "killExitNode": {
             "type": "integer",
             "minimum": 1
-          },
-          "requires": {
-            "type": "array",
-            "items": {
-              "$ref": "z3-requirement.schema.json"
-            }
-          },
-          "locks": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "object",
-              "required": [
-                "lockType",
-                "unlock"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "lockType": {
-                  "type": "string",
-                  "enum": [
-                    "bossFight",
-                    "cutscene",
-                    "gameFlag",
-                    "killEnemies",
-                    "lockedDoor",
-                    "permanent",
-                    "triggeredEvent"
-                  ]
-                },
-                "lock": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "$ref": "z3-requirement.schema.json"
-                  }
-                },
-                "unlock": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "$ref": "z3-requirement.schema.json"
-                  }
-                },
-                "note": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "view": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "$ref": "z3-requirement.schema.json"
-            }
-          },
-          "yields": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "note": {
             "type": "array",
@@ -618,6 +522,10 @@
                   "event"
                 ]
               },
+              "entranceID": {
+                "type": "integer",
+                "minimum": 1
+              },
               "type": {
                 "type": "string"
               }
@@ -636,6 +544,10 @@
                 "enum": [
                   "event"
                 ]
+              },
+              "entranceID": {
+                "type": "integer",
+                "minimum": 1
               },
               "type": {
                 "type": "string"
@@ -681,17 +593,53 @@
           },
           "strats": {
             "items": {
-              "oneOf": [
+              "allOf": [
                 {
-                  "required": [
-                    "world"
+                  "oneOf": [
+                    {
+                      "required": [
+                        "world"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "fromWorld",
+                        "toWorld"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "required": [
-                    "fromWorld",
-                    "toWorld"
-                  ]
+                  "if": {
+                    "required": [
+                      "exitState"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "exitState": {
+                        "required": [
+                          "entranceID"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "required": [
+                      "entranceState"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "entranceState": {
+                        "required": [
+                          "entranceID"
+                        ]
+                      }
+                    }
+                  }
                 }
               ]
             }

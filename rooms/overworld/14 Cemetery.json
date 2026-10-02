@@ -67,7 +67,7 @@
       "id": 1,
       "locationName": "King's Grave",
       "world": "light",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 3,
       "keyType": "boots"
     }

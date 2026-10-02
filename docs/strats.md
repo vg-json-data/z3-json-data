@@ -217,7 +217,7 @@ For example, the Dam can be left with the floodgate drained:
 ```json
 {
   "link": [1, 1],
-  "name": "Leave with Water Drained",
+  "name": "Exit Dam with Water Drained",
   "requires": [
     {"obstaclesCleared": ["Drained Floodgate"]}
   ],
@@ -233,16 +233,19 @@ The matching entrance-state strat in Swamp Ruins recreates the effect as room-lo
 ```json
 {
   "link": [2, 2],
-  "name": "Enter with Water Drained",
+  "name": "Enter Overworld with Water Drained",
   "world": "light",
   "entranceState": {
     "state": "event",
+    "entranceID": 1,
     "type": "DrainedFloodgate"
   },
   "requires": [],
   "clearsObstacles": ["Drained Floodgate"]
 }
 ```
+
+A strat with an `entranceState` must enter the room through an entrance on the `"from"` node of the strat's `link`. Similarly, a strat with an `exitState` must exit through an entrance on the `"to"` node. For an overworld screen, the state object must also define `entranceID`, identifying the entrance used to cross the room boundary. That entrance must belong to the applicable node.
 
 ## Notes
 

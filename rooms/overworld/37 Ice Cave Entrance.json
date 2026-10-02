@@ -104,7 +104,7 @@
       "id": 3,
       "locationName": "Lift Rock Entrance",
       "world": "light",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 1,
       "keyType": "glove"
     },
@@ -112,7 +112,7 @@
       "id": 4,
       "locationName": "Lift Rock Entrance",
       "world": "dark",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 1,
       "keyType": "glove"
     }

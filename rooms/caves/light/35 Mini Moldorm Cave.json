@@ -2,7 +2,7 @@
   "$schema": "../../../schema/z3-room.schema.json",
   "id": 29,
   "name": "Mini Moldorm Cave",
-  "roomType": "House",
+  "roomType": "Cave",
   "nodes": [
     {
       "id": 1,
