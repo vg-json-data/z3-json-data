@@ -25,6 +25,7 @@
     {
       "id": 4,
       "name": "Throne Room",
+      "rememberedSpawnPoint": "throneRoom",
       "subArea": "Hyrule Castle",
       "nodeType": "junction"
     },
@@ -43,6 +44,7 @@
     {
       "id": 7,
       "name": "Zelda's Prison",
+      "rememberedSpawnPoint": "zeldaPrison",
       "subArea": "Hyrule Castle Dungeon",
       "nodeType": "junction"
     },
@@ -76,6 +78,8 @@
     {
       "id": 12,
       "name": "Sanctuary Exit",
+      "spawnPoint": "sanctuary",
+      "rememberedSpawnPoint": "sanctuary",
       "subArea": "Sewers (Light)",
       "nodeType": "door"
     },

@@ -4,6 +4,8 @@ Where you restart depends on your location, follower, remembered checkpoint, and
 
 ## Regular spawn locations
 
+Room nodes identify regular destinations with `spawnPoint` and remembered checkpoint destinations with `rememberedSpawnPoint`. These are destination labels, not checkpoint-setting triggers. See [Room Data: Respawn Points](rooms.md#respawn-points) for the property values and node mapping.
+
 | Location | When you can use it |
 | --- | --- |
 | Link’s house | A choice whenever the Light World start menu appears. Also the initial start. |
@@ -51,7 +53,7 @@ Otherwise, use this table. “Restart world” means the world determined by the
 
 | Location | Follower | Where you restart |
 | --- | --- | --- |
-| Dungeon | Neither Zelda nor the Old Man | The last entrance from the overworld, including a drop through a hole. |
+| Dungeon | Neither Zelda nor the Old Man | The last entrance from the overworld: entering a dungeon through a node with `nodeType: "door"` or `nodeType: "drop"` sets the dungeon death spawn to that entrance. |
 | Dungeon | Zelda | Use the indoor with Zelda rules below. |
 | Dungeon | The Old Man | The remembered checkpoint. |
 | Ordinary cave or house | Not Zelda | Use the outdoor rules below. |

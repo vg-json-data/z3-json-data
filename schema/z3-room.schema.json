@@ -88,6 +88,16 @@
               "shop"
             ]
           },
+          "spawnPoint": {
+            "type": "string",
+            "description": "Regular restart destination identity; availability and selection follow docs/respawn-points.md. Visiting this node does not unlock it. Pyramid restarts in the Dark World.",
+            "enum": ["house", "sanctuary", "mountainCave", "pyramid"]
+          },
+          "rememberedSpawnPoint": {
+            "type": "string",
+            "description": "Remembered checkpoint destination identity, not a trigger. Only one checkpoint is remembered; see docs/respawn-points.md for setting events and restart rules.",
+            "enum": ["house", "uncle", "zeldaPrison", "throneRoom", "oldManCave", "sanctuary"]
+          },
           "subArea": {
             "type": "string"
           },

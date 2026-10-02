@@ -108,6 +108,30 @@ Every node has:
 
 Underworld nodes also have `nodeType`. Overworld nodes instead have `world` and can contain properties describing overworld connections.
 
+### Respawn Points
+
+Two node properties, `spawnPoint` and `rememberedSpawnPoint`, identify respawn destinations. They label the node where Link arrives; tracking when these spawn points are usable is up to the implementor.
+
+`spawnPoint` identifies one of the four regular destinations:
+
+| Value | Destination | Unlock Requirement |
+| --- | --- | --- |
+| `house` | Link's house | Completing Zelda's Sanctuary dialogue. |
+| `sanctuary` | Sanctuary | Completing Zelda's Sanctuary dialogue. |
+| `mountainCave` | Old Man's House | Completing Zelda's Sanctuary dialogue, while Link has the Magic Mirror. |
+| `pyramid` | Pyramid | After defeating Agahnim 1. This destination uses the Dark World even though its node has `world: "both"`. |
+
+Link's House is the initial game spawn, but it is not a selectable option until completing Zelda's Sanctuary dialogue.
+
+Note that just because these destinations are unlocked, that does not mean that they are always available for selection. 
+
+Generally:
+- If Link dies before unlocking any spawn points, he will spawn at his house or a remembered checkpoint, discussed below.
+- If Link dies in a dungeon, he will respawn at the last traversed dungeon entrance from the overworld through a node with `nodeType: "door"` or `nodeType: "drop"`.
+- If Link Saves and Quits, or if he dies outside of a dungeoen, he will respawn at one of the unlocked options in the world he was in. If he is in the Dark World and had not unlocked the pyramid spawn, he will spawn in the Light World.
+
+Note that this is a very simplified description of the vanilla spawn points. They also depend on many other things including the story stage, current followers and remembered checkpoint destinations which are marked with `rememberedSpawnPoint`. It is highly likely that a randomizer will need to gate the early game very similarly to vanilla or completely overhaul it. Because of this, the details of their behavior is only discussed in detail at [Death and save-and-quit spawn points](respawn-points.md).
+
 ### Sub-areas
 
 `subArea` groups nodes within a large cave or dungeon for organizational purposes. It has no direct logical effect.
