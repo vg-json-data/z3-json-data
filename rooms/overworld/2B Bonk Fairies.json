@@ -49,7 +49,7 @@
       "id": 1,
       "locationName": "Light Bonk Rocks",
       "world": "light",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 1,
       "keyType": "boots"
     },
@@ -57,7 +57,7 @@
       "id": 2,
       "locationName": "Dark Bonk Rocks",
       "world": "dark",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 1,
       "keyType": "boots"
     }

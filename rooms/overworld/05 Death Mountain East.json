@@ -194,7 +194,7 @@
       "id": 1,
       "locationName": "Bonk Rocks",
       "world": "dark",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 2,
       "keyType": "boots"
     }

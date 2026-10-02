@@ -152,7 +152,7 @@
       "id": 1,
       "locationName": "Northeast Lift Rock",
       "world": "light",
-      "doorPosition": "north",
+      "doorPosition": "middle",
       "doorLocation": 6,
       "keyType": "glove"
     }
