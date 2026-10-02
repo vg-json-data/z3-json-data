@@ -11,18 +11,20 @@ Where you restart depends on your location, follower, remembered checkpoint, and
 | Mountain Cave | An additional Light World menu choice if you have the Magic Mirror item. |
 | Pyramid | An automatic Dark World restart when the rules below call for it. It is not a menu choice. |
 
-## Temporary checkpoints
+## Remembered checkpoints
 
 | Checkpoint | What sets it |
 | --- | --- |
+| Link’s house | Default at the start of the game. |
 | Uncle’s secret passage | Receiving your equipment from Uncle. |
 | Zelda’s prison | Zelda joining you as a follower. |
 | Castle throne room | Starting to push the mantle with Zelda following and the Lamp in your inventory. |
 | Lost Old Man’s cave | The lost Old Man joining you as a follower. This is different from the Mountain Cave menu destination. |
+| Sanctuary | Completing Zelda’s Sanctuary dialogue or receiving the item from the Old Man. Either event sets it. |
 
 **Only one checkpoint is remembered at a time. Each new checkpoint replaces the previous one, regardless of the order you trigger them.**
 
-Completing Zelda’s Sanctuary dialogue or receiving the item from the Old Man replaces that checkpoint with **Sanctuary**. The Old Man’s checkpoint change happens during his item-giving event; it is not strictly dependent on the Magic Mirror item.
+Note that the Old Man’s checkpoint change happens during his item-giving event; it is not strictly dependent on the Magic Mirror item.
 
 Losing a follower does not erase the checkpoint. However, remembering a checkpoint does not guarantee that every restart uses it.
 
@@ -37,7 +39,7 @@ The game also remembers a story stage. This controls whether you can save, wheth
 | Complete Zelda’s Sanctuary dialogue | **Rescued:** the normal Light World start menu is enabled. |
 | Defeat Agahnim 1 | **Post-Agahnim:** Dark World restarts are also enabled. |
 
-**The most recent of these events determines the stage.** For example, receiving Uncle’s equipment after completing Zelda’s rescue puts you back in the Early stage and sets Uncle’s checkpoint. Setting other temporary checkpoints does not change the stage.
+**The most recent of these events determines the stage.** For example, receiving Uncle’s equipment after completing Zelda’s rescue puts you back in the Early stage and sets Uncle’s checkpoint. Checkpoint changes outside these events do not change the stage.
 
 In the Opening, Early, and Rescued stages, death/save-and-quit treats your restart world as Light World—even if you were in the Dark World. In the Post-Agahnim stage, it keeps your current world.
 
@@ -59,19 +61,23 @@ Otherwise, use this table. “Restart world” means the world determined by the
 
 ### Outdoor rules
 
+Apply the first matching rule:
+
 1. If your restart world is Dark World, restart at the Pyramid.
-2. Otherwise, use the Light World checkpoint/menu rules.
+2. Use the remembered checkpoint if the story stage is Early.
+3. Use the remembered checkpoint if it is the lost Old Man’s cave.
+4. Otherwise, show the regular Light World start menu.
 
 ### Indoor with Zelda rules
 
 Apply the first matching rule:
 
-1. In the Dark World: use the remembered checkpoint.
-2. The story stage is Early: use the remembered checkpoint.
-3. Lost Old Man’s cave is the remembered checkpoint: use that cave.
-4. Otherwise: show the regular Light World start menu.
+1. If your restart world is Dark World, use the remembered checkpoint.
+2. Use the remembered checkpoint if the story stage is Early.
+3. Use the remembered checkpoint if it is the lost Old Man’s cave.
+4. Otherwise, show the regular Light World start menu.
 
-For example, Zelda following with the prison temporary checkpoint gives a prison restart in the Early story stage or in the Dark World, but gives a start menu in the Light World with the Rescued stage. If you lose Zelda, a dungeon death instead retries the dungeon entrance without erasing the remembered prison checkpoint.
+For example, Zelda following with prison remembered gives a prison restart in the Early stage or when the restart world is Dark World. In the Rescued stage, even a death in the Dark World uses Light World rules and gives the start menu. If you lose Zelda, a dungeon death instead retries the dungeon entrance without erasing the remembered prison checkpoint.
 
 ## Save and Quit
 
