@@ -382,6 +382,14 @@
       "itemAddress": "0x180161"
     },
     {
+      "id": 30,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Basement First Left Room - Pot Key",
+      "itemLocation": 2,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
+    },
+    {
       "id": 2,
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "DMs Room - Top Left",
@@ -649,7 +657,7 @@
     },
     {
       "id": 6,
-      "subArea": "Ganon's Tower (Basement Left)",
+      "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Tile Room Locked Door",
       "doorPosition": "east",
       "doorLocation": 16,
@@ -657,7 +665,7 @@
     },
     {
       "id": 7,
-      "subArea": "Ganon's Tower (Basement Left)",
+      "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Door to Basement Crumble Bridge",
       "doorPosition": "east",
       "doorLocation": 22,
@@ -748,6 +756,12 @@
         "PegasusBoots"
       ],
       "collectsItems": [1]
+    },
+    {
+      "link": [2, 2],
+      "name": "Pot Key",
+      "requires": [],
+      "collectsItems": [30]
     },
     {
       "link": [2, 3],
