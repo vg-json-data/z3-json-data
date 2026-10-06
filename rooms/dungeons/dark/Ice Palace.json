@@ -243,6 +243,14 @@
       "itemAddress": "0xE9DD"
     },
     {
+      "id": 9,
+      "subArea": "Ice Palace (Upper Floors)",
+      "locationName": "Big Key Chest",
+      "itemLocation": 20,
+      "item": "BigKey",
+      "itemAddress": "0xE9A4"
+    },
+    {
       "id": 10,
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Iced T Chest",
@@ -328,6 +336,14 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Pot Drop Room North Door",
       "doorPosition": "north",
+      "doorLocation": 23,
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Ice Palace (Lower Floors)",
+      "locationName": "Door to Final Blue Orange Switch Door",
+      "doorPosition": "east",
       "doorLocation": 23,
       "keyType": "small"
     }

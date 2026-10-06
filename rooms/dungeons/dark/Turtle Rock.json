@@ -470,6 +470,12 @@
       "keyType": "big"
     }
   ],
+  "obstacles": [
+    {
+      "id": "Blue Pegs Down",
+      "note": ["Represents the blue pegs being down; when reset, the orange pegs are down."]
+    }
+  ],
   "strats": [
     {
       "link": [1, 1],
