@@ -576,7 +576,7 @@
         {"flag": "ThievesTownBombedFloor"},
         {"follower": "Blind"}
       ],
-      "FollowerComplete": "Blind",
+      "followerComplete": "Blind",
       "setsFlags": ["ThievesTownBlindReveal"]
     },
     {

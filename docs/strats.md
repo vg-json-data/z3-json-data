@@ -202,7 +202,7 @@ Link can have at most one follower at a time. `setsFollower` sets the named foll
     {"follower": "Dwarf"}
   ],
   "setsFlags": ["RescuedBlacksmith"],
-  "FollowerComplete": "Dwarf"
+  "followerComplete": "Dwarf"
 }
 ```
 
