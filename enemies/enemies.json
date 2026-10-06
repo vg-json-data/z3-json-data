@@ -1475,12 +1475,9 @@
       "names": [
         "Cannon Soldier (Blue)"
       ],
-      "attacks": [
-        "Spiked Blue Cannon Ball"
-      ],
       "note": [
         "Does not appear in the vanilla game, but exists in the code.",
-        "Shares an entry with the Spiked Blue Cannon Ball and the Cannon Ball which is smooth, black, and shot by wall cannon."
+        "Shoots a spiked blue cannon ball, which is equivalent to contact damage with this enemy."
       ],
       "hp": 3,
       "dmgToLink": {

@@ -342,9 +342,9 @@
     {
       "id": 7,
       "subArea": "Ice Palace (Lower Floors)",
-      "locationName": "Final Blue Orange Switch Room Door",
+      "locationName": "Door to Final Blue Orange Switch Door",
       "doorPosition": "east",
-      "doorLocation": 22,
+      "doorLocation": 23,
       "keyType": "small"
     }
   ],

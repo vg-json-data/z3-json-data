@@ -144,6 +144,17 @@
     },
     {
       "names": [
+        "Blind Bottom Half"
+      ],
+      "dmgToLink": {
+        "green": 8,
+        "blue": 8,
+        "red": 8
+      },
+      "spriteIndex": null
+    },
+    {
+      "names": [
         "Kholdstare's Falling Ice"
       ],
       "dmgToLink": {
