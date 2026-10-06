@@ -59,7 +59,7 @@
     {
       "id": 5,
       "name": "Long Staircase",
-      "world": "dark",
+      "world": "both",
       "entrances": [
         {
           "id": 5,
@@ -158,6 +158,7 @@
     {
       "id": 1,
       "locationName": "Rescue Old Man",
+      "world": "light",
       "itemLocation": 2,
       "item": "MagicMirror",
       "itemAddress": "0xF69FA"

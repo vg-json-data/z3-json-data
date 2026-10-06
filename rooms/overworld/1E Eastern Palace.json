@@ -24,7 +24,7 @@
     {
       "id": 2,
       "name": "Northwest Area",
-      "world": "light",
+      "world": "both",
       "entrances": [
         {
           "id": 2,
@@ -36,7 +36,7 @@
     {
       "id": 3,
       "name": "Northeast Dungeon Entrance",
-      "world": "light",
+      "world": "both",
       "entrances": [
         {
           "id": 3,

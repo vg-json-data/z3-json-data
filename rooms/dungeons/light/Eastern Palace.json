@@ -705,7 +705,7 @@
           ]},
           {"and": [
             {"arrows": 22},
-            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+            {"damage": {"enemy": "Armos Knight", "count": 2}}
           ]},
           {"and": [
             {"arrows": 20},
@@ -726,14 +726,14 @@
       "requires": [
         {"sword": 1},
         {"or": [
-          {"damage": {"enemy": "ArmosKnights", "count": 10}},
+          {"damage": {"enemy": "Armos Knight", "count": 10}},
           {"and": [
             {"bossProficiency": 2},
-            {"damage": {"enemy": "ArmosKnights", "count": 6}}
+            {"damage": {"enemy": "Armos Knight", "count": 6}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+            {"damage": {"enemy": "Armos Knight", "count": 2}}
           ]},
           {"bossProficiency": 4}
         ]}
@@ -751,7 +751,7 @@
         "hasSwordSparkles",
         {"or": [
           {"bossProficiency": 2},
-          {"damage": {"enemy": "ArmosKnights", "count": 3}}
+          {"damage": {"enemy": "Armos Knight", "count": 3}}
         ]}
       ],
       "setsFlags": ["DefeatedArmosKnights"],
@@ -773,14 +773,14 @@
           ]}
         ]},
         {"or": [
-          {"damage": {"enemy": "ArmosKnights", "count": 7}},
+          {"damage": {"enemy": "Armos Knight", "count": 7}},
           {"and": [
             {"bossProficiency": 2},
-            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+            {"damage": {"enemy": "Armos Knight", "count": 4}}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"damage": {"enemy": "ArmosKnights", "count": 1}}
+            {"damage": {"enemy": "Armos Knight", "count": 1}}
           ]}
         ]}
       ],
@@ -798,10 +798,10 @@
       "requires": [
         {"sword": 4},
         {"or": [
-          {"damage": {"enemy": "ArmosKnights", "count": 3}},
+          {"damage": {"enemy": "Armos Knight", "count": 3}},
           {"and": [
             {"bossProficiency": 2},
-            {"damage": {"enemy": "ArmosKnights", "count": 1}}
+            {"damage": {"enemy": "Armos Knight", "count": 1}}
           ]},
           {"bossProficiency": 3}
         ]}
@@ -828,11 +828,11 @@
         {"or": [
           {"and": [
             {"redCane": 2},
-            {"damage": {"enemy": "ArmosKnights", "count": 4}}
+            {"damage": {"enemy": "Armos Knight", "count": 4}}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"damage": {"enemy": "ArmosKnights", "count": 2}}
+            {"damage": {"enemy": "Armos Knight", "count": 2}}
           ]},
           {"bossProficiency": 9}
         ]}
@@ -867,7 +867,7 @@
         "Hammer",
         {"bossProficiency": 4},
         {"or": [
-          {"damage": {"enemy": "ArmosKnights", "count": 20}},
+          {"damage": {"enemy": "Armos Knight", "count": 20}},
           {"bossProficiency": 9}
         ]}
       ],

@@ -298,7 +298,7 @@ The optional `items` array defines item locations within a room. Each item has:
 - `item`: The vanilla item or item receipt at the location.
 - `itemAddress`: One or more ROM addresses involved in encoding the item at the location.
 - `subArea`: Organizational context within an underworld room.
-- `world`: The world containing an overworld item.
+- `world`: The world containing the item. This is required for overworld rooms, omitted otherwise.
 - `devNote`: Contributor-facing implementation detail.
 
 ```json
