@@ -18,9 +18,6 @@
       "id": 2,
       "name": "Lower Land",
       "world": "both",
-      "transitions": [
-        {"edge": "south", "span": [23, 26]}
-      ],
       "entrances": [
         {
           "id": 1,
