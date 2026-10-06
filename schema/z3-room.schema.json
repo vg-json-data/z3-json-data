@@ -507,7 +507,7 @@
               "Super Bomb"
             ]
           },
-          "FollowerComplete": {
+          "followerComplete": {
             "type": "string",
             "enum": [
               "Zelda",

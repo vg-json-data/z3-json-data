@@ -398,7 +398,7 @@
       "requires": [
         {"follower": "Super Bomb"}
       ],
-      "FollowerComplete": "Super Bomb",
+      "followerComplete": "Super Bomb",
       "setsFlags": ["OpenedPyramidBigBomb"]
     },
     {

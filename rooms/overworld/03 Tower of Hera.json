@@ -254,7 +254,7 @@
         {"follower": "Old Man"}
       ],
       "collectsItems": [1],
-      "FollowerComplete": "Old Man"
+      "followerComplete": "Old Man"
     },
     {
       "link": [2, 3],

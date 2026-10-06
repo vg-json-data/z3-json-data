@@ -27,7 +27,7 @@
         {"follower": "Dwarf"}
       ],
       "setsFlags": ["RescuedBlacksmith"],
-      "FollowerComplete": "Dwarf"
+      "followerComplete": "Dwarf"
     },
     {
       "link": [1, 1],

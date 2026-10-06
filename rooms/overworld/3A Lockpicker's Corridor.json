@@ -229,7 +229,7 @@
         {"follower": "Purple Chest"}
       ],
       "collectsItems": [1],
-      "FollowerComplete": "Purple Chest"
+      "followerComplete": "Purple Chest"
     },
     {
       "link": [4, 5],
