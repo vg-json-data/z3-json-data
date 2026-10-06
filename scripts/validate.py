@@ -228,6 +228,10 @@ def validate_requirements(path, document, requirements, location, references, er
         current += [kind]
         if kind in {"and", "or"}:
             validate_requirements(path, document, value, current, references, errors, room)
+        elif kind == "blueCane":
+            if value < 20 or value % 4 != 0:
+                _record(errors, path, display_path(document, current),
+                        "blueCane must be at least 20 and a multiple of 4")
         elif kind in {"flag", "notFlag"}:
             validate_reference(path, document, current, value, references["flags"], "flag", errors)
         elif kind == "damage":

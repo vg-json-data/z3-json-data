@@ -174,7 +174,7 @@
         ]},
         {"or": [
           {"combatProficiency": 2},
-          {"blueCane": 16},
+          {"blueCane": 44},
           {"damage": {"enemy": "Ball and Chain Trooper", "count": 1}}
         ]}
       ]
