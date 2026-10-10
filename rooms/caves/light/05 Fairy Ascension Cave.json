@@ -20,15 +20,6 @@
       "nodeType": "junction"
     }
   ],
-  "items": [
-    {
-      "id": 1,
-      "locationName": "Ledge Item",
-      "itemLocation": 1,
-      "item": "PieceOfHeart",
-      "itemAddress": "0x180001"
-    }
-  ],
   "strats": [
     {
       "link": [1, 1],
