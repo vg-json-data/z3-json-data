@@ -29,13 +29,14 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `note`: General information about the room.
 - `position`: The upper-left position of an overworld room on the 8×8 overworld layout.
 - `size`: The width and height of an overworld room measured in screens.
+- `edgeVariants`: Supported overworld edge variants; see [Overworld Edge Variants](edge-variants.md).
 - `nodes`: Logical positions or conditions within the room.
 - `items`: Item locations in the room.
 - `lockedDoors`: Locks that can change from locked to unlocked.
 - `obstacles`: Other mutable state local to the room file.
 - `strats`: Actions and traversal logic connecting the room's nodes.
 
-The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`.
+The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Overworld rooms also require `size` and `edgeVariants`.
 
 ### Example
 
@@ -94,6 +95,10 @@ Every overworld room defines `position` and `size`.
 ```json
 "size": [4, 4]
 ```
+
+### Edge Variants
+
+Overworld rooms must describe the edge variants supported using `edgeVariants`. Each edge segment has an independent list of choices and one `default`, shared by Light World and Dark World. Special edge types can be defined, which may be used for rooms with differences between their light and dark world variant. Normal rooms have one segment per side; large rooms have two. See [Overworld Edge Variants](edge-variants.md) for names, ordering, examples, and validation rules.
 
 ## Nodes
 
