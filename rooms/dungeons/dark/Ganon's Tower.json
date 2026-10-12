@@ -693,7 +693,7 @@
       "locationName": "Mid Climb Fairies Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 37,
-      "keyType": "big"
+      "keyType": "bomb"
     },
     {
       "id": 11,
@@ -2780,17 +2780,15 @@
     {
       "link": [53, 54],
       "name": "Base",
-      "requires": []
-    },
-    {
-      "link": [53, 54],
-      "name": "Base",
-      "requires": []
+      "requires": [
+        {"unlockDoor": 13}
+      ]
     },
     {
       "link": [53, 56],
       "name": "Base - Moldorm Already Defeated",
       "requires": [
+        {"unlockDoor": 13},
         {"flag": "GanonsTowerMoldormChest"},
         "Hookshot"
       ],

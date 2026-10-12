@@ -218,7 +218,15 @@
       "locationName": "Big Chest Room Locked Door",
       "doorPosition": "west",
       "doorLocation": 8,
-      "keyType": "big"
+      "keyType": "small"
+    },
+    {
+      "id": 7,
+      "subArea": "Thieves' Town B1",
+      "locationName": "Boss Hallway's Left Door",
+      "doorPosition": "west",
+      "doorLocation": 2,
+      "keyType": "small"
     }
   ],
   "strats": [
@@ -353,7 +361,7 @@
       "link": [2, 3],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 4}
+        {"unlockDoor": 7}
       ]
     },
     {
@@ -365,7 +373,7 @@
       "link": [3, 2],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 4}
+        {"unlockDoor": 7}
       ]
     },
     {

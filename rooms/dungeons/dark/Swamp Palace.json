@@ -333,7 +333,7 @@
       "locationName": "Big Chest Room - North Door",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "big"
+      "keyType": "small"
     },
     {
       "id": 8,
@@ -662,7 +662,8 @@
       "link": [7, 15],
       "name": "Base",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        {"unlockDoor": 7}
       ]
     },
     {
