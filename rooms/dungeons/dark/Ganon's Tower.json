@@ -425,9 +425,17 @@
       "id": 6,
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Map Chest",
-      "itemLocation": 8,
+      "itemLocation": 9,
       "item": "Map",
       "itemAddress": "0xEAD3"
+    },
+    {
+      "id": 31,
+      "subArea": "Ganon's Tower (Basement Left)",
+      "locationName": "Double Switch Room - Pot Key",
+      "itemLocation": 10,
+      "item": "SmallKey",
+      "itemAddress": "unknown"
     },
     {
       "id": 7,
@@ -981,6 +989,10 @@
       "name": "Base",
       "requires": [
         {"bombs": 2}
+      ],
+      "collectsItems": [31],
+      "devNote": [
+        "FIXME: It is possible to collect the key and Mirror out to get it with a single bomb, or a boomerang and a lower difficulty than the boomerang strat."
       ]
     },
     {
@@ -1007,7 +1019,8 @@
         "With a Blue Boomerang and Hookshot, quickly hookshot the pot to move over fast enough.",
         "This is possible with the Blue Boomerang alone; stand just south of the door, a few pixels from the rail",
         "and where Link's back is roughly centered with the left post of the doorframe; throw the boomerang diagonally and immediately move to the right."
-      ]
+      ],
+      "collectsItems": [31]
     },
     {
       "link": [9, 8],
