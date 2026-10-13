@@ -272,6 +272,24 @@ def validate_room(path, document, references, errors):
         for i, definition in enumerate(document.get(field, [])):
             index_definition(indices[namespace], definition["id"], definition,
                              path, document, [field, i, "id"], errors)
+    for edge, segments in document.get("edgeVariants", {}).items():
+        expected_count = document["size"][0 if edge in {"north", "south"} else 1] // 2
+        if len(segments) != expected_count:
+            _record(errors, path, display_path(document, ["edgeVariants", edge]),
+                    f"expected {expected_count} segment(s) for room size")
+        for i, segment in enumerate(segments):
+            location = ["edgeVariants", edge, i]
+            if segment["default"] not in segment["supported"]:
+                _record(errors, path, display_path(document, location + ["default"]),
+                        "default variant must be present in supported")
+            for variant, node_ids in segment["supported"].items():
+                for j, node_id in enumerate(node_ids):
+                    node_location = location + ["supported", variant, j]
+                    validate_reference(path, document, node_location, node_id,
+                                       indices["nodes"], "node", errors)
+                    for world in (["light"] if variant == "light-only" else ["light", "dark"]):
+                        validate_node_world(path, document, node_location,
+                                            indices["nodes"].get(node_id), world, errors)
     for i, node in enumerate(document["nodes"]):
         if "killExitNode" in node:
             validate_reference(path, document, ["nodes", i, "killExitNode"],

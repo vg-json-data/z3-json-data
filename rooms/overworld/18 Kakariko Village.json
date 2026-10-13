@@ -7,20 +7,20 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "dual-small"},
-      {"supported": ["wide", "small-2"], "default": "wide"}
+      {"supported": {"closed": [], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "dual-small"},
+      {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
     ],
     "south": [
-      {"supported": ["closed", "small-2"], "default": "closed"},
-      {"supported": ["wide", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
+      {"supported": {"wide": [1], "small-2": [1]}, "default": "small-2"}
     ],
     "east": [
-      {"supported": ["closed", "small-1"], "default": "closed"},
-      {"supported": ["closed", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"},
+      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
     ],
     "west": [
-      {"supported": ["closed", "small-1", "small-2"], "default": "closed"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"},
+      {"supported": {"closed": [], "dual-small": [1, nnn], "small-1": [1], "small-2": [nnn]}, "default": "closed"}
     ]
   },
   "nodes": [

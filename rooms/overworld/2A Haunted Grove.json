@@ -7,16 +7,16 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed"], "default": "closed"}
+      {"supported": {"closed": []}, "default": "closed"}
     ],
     "south": [
-      {"supported": ["dual-small"], "default": "dual-small"}
+      {"supported": {"dual-small": [2, 1]}, "default": "dual-small"}
     ],
     "east": [
-      {"supported": ["closed"], "default": "closed"}
+      {"supported": {"closed": []}, "default": "closed"}
     ],
     "west": [
-      {"supported": ["small-2"], "default": "small-2"}
+      {"supported": {"small-2": [2]}, "default": "small-2"}
     ]
   },
   "nodes": [

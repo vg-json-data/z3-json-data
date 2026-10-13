@@ -605,6 +605,7 @@
         "land-water-land",
         "vertical-water-land",
         "horizonal-water-land",
+        "horizontal-land-water",
         "split-house"
       ],
       "description": "Allowed edge variant names from the Variant Types section of docs/edge-variants.md."
@@ -615,10 +616,114 @@
       "required": ["supported", "default"],
       "properties": {
         "supported": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": { "$ref": "#/definitions/edgeVariantName" }
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "propertyNames": {
+            "$ref": "#/definitions/edgeVariantName"
+          },
+          "properties": {
+            "closed": {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 0,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "wide": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "dual-small": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "small-1": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "small-2": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "light-only": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "land-water-land": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "vertical-water-land": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "horizonal-water-land": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "horizontal-land-water": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "split-house": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "description": "Variant names map to ordered local node IDs, west to east or north to south. Repeated node IDs are allowed."
         },
         "default": {
           "$ref": "#/definitions/edgeVariantName"
