@@ -595,8 +595,19 @@
   "definitions": {
     "edgeVariantName": {
       "type": "string",
-      "minLength": 1,
-      "description": "Common names are closed, wide, dual-small, small-1, and small-2. Specialized names must identify documented ALTTPRetiling designs."
+      "enum": [
+        "closed",
+        "wide",
+        "dual-small",
+        "small-1",
+        "small-2",
+        "light-only",
+        "land-water-land",
+        "vertical-water-land",
+        "horizonal-water-land",
+        "split-house"
+      ],
+      "description": "Allowed edge variant names from the Variant Types section of docs/edge-variants.md."
     },
     "edgeVariantSegment": {
       "type": "object",
