@@ -27,11 +27,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 100,
           "name": "Blacksmith's Hut Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 17,
           "name": "Magic Bat Cave Entrance",
           "world": "light"
         }
@@ -52,6 +54,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 126,
           "name": "Magic Bat Cave Drop Entrance",
           "world": "light"
         }
@@ -64,6 +67,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 131,
           "name": "Dark Hammer Peg Cave",
           "world": "dark"
         }

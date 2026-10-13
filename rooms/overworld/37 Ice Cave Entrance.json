@@ -30,11 +30,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 86,
           "name": "Ice Cave East Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 106,
           "name": "Shopping Mall East Cave",
           "world": "dark"
         }
@@ -55,6 +57,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 132,
           "name": "Ice Cave West Entrance",
           "world": "light"
         }
@@ -67,6 +70,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 94,
           "name": "Shopping Mall Great Fairy",
           "world": "dark"
         }
@@ -79,6 +83,7 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 111,
           "name": "20 Rupee Cave",
           "world": "light"
         }
@@ -91,6 +96,7 @@
       "entrances": [
         {
           "id": 6,
+          "romEntranceId": 112,
           "name": "Shopping Mall Spike Cave",
           "world": "dark"
         }

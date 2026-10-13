@@ -50,11 +50,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 113,
           "name": "Light Bonk Fairies",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 113,
           "name": "Dark Bonk Fairies",
           "world": "dark"
         }

@@ -31,11 +31,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 7,
           "name": "Old Man Cave",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 94,
           "name": "Dark Death Mountain Great Fairy",
           "world": "dark"
         }
@@ -49,6 +51,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 48,
           "name": "Old Man's House Entrance",
           "world": "light"
         }
@@ -61,6 +64,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 49,
           "name": "Old Man's House Back Entrance",
           "world": "light"
         }
@@ -81,6 +85,7 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 47,
           "name": "Death Mountain Return Cave",
           "world": "light"
         }
@@ -93,6 +98,7 @@
       "entrances": [
         {
           "id": 6,
+          "romEntranceId": 35,
           "name": "Spectacle Rock Top Entrance",
           "world": "light"
         }
@@ -118,6 +124,7 @@
       "entrances": [
         {
           "id": 7,
+          "romEntranceId": 51,
           "name": "Tower of Hera Entrance",
           "world": "light"
         }
@@ -130,6 +137,7 @@
       "entrances": [
         {
           "id": 9,
+          "romEntranceId": 33,
           "name": "Spectacle Rock Bottom Left Entrance",
           "world": "light"
         }
@@ -142,6 +150,7 @@
       "entrances": [
         {
           "id": 10,
+          "romEntranceId": 34,
           "name": "Spectacle Rock Bottom Right Entrance",
           "world": "light"
         }
@@ -154,6 +163,7 @@
       "entrances": [
         {
           "id": 11,
+          "romEntranceId": 65,
           "name": "Spike Cave Entrance",
           "world": "dark"
         }
@@ -166,6 +176,7 @@
       "entrances": [
         {
           "id": 8,
+          "romEntranceId": 55,
           "name": "Ganon's Tower Entrance",
           "world": "dark"
         }

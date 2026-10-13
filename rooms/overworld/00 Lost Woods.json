@@ -55,21 +55,25 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 44,
           "name": "Lost Woods Hideout Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 42,
           "name": "Skull Woods Main Entrance",
           "world": "dark"
         },
         {
           "id": 3,
+          "romEntranceId": 119,
           "name": "Skull Woods Bottom Left Drop Entrance",
           "world": "dark"
         },
         {
           "id": 4,
+          "romEntranceId": 120,
           "name": "Skull Woods Bottom Right Drop Entrance",
           "world": "dark"
         }
@@ -82,11 +86,13 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 122,
           "name": "Lost Woods Hideout Bush Entrance",
           "world": "light"
         },
         {
           "id": 6,
+          "romEntranceId": 118,
           "name": "Skull Woods Bush Entrance",
           "world": "dark"
         }
@@ -99,6 +105,7 @@
       "entrances": [
         {
           "id": 7,
+          "romEntranceId": 41,
           "name": "Skull Woods Second Main Entrance",
           "world": "dark"
         }
@@ -114,6 +121,7 @@
       "entrances": [
         {
           "id": 8,
+          "romEntranceId": 60,
           "name": "Lost Woods Gamble",
           "world": "light"
         }
@@ -126,6 +134,7 @@
       "entrances": [
         {
           "id": 9,
+          "romEntranceId": 121,
           "name": "Skull Woods Top Left Drop Entrance",
           "world": "dark"
         }
@@ -143,6 +152,7 @@
         },
         {
           "id": 11,
+          "romEntranceId": 43,
           "name": "Skull Woods Fire Rod Entrance",
           "world": "dark"
         }
@@ -155,6 +165,7 @@
       "entrances": [
         {
           "id": 12,
+          "romEntranceId": 40,
           "name": "Skull Woods Second Area Exit",
           "world": "dark"
         }
