@@ -7,20 +7,20 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed", "small-1"], "default": "closed"},
-      {"supported": ["closed", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"},
+      {"supported": {"closed": [], "small-2": [6]}, "default": "closed"}
     ],
     "south": [
-      {"supported": ["closed", "small-1"], "default": "closed"},
-      {"supported": ["closed", "wide", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [5]}, "default": "closed"},
+      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "closed"}
     ],
     "east": [
-      {"supported": ["closed", "small-2"], "default": "closed"},
-      {"supported": ["light-only"], "default": "light-only"}
+      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
+      {"supported": {"light-only": [1]}, "default": "light-only"}
     ],
     "west": [
-      {"supported": ["closed", "wide", "small-1", "small-2"], "default": "closed"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "wide": [3], "small-1": [3], "small-2": [3]}, "default": "closed"},
+      {"supported": {"closed": [], "dual-small": [3, 5], "small-1": [3], "small-2": [5]}, "default": "closed"}
     ]
   },
   "nodes": [
@@ -67,7 +67,7 @@
     },
     {
       "id": 3,
-      "name": "Desert West Ledge",
+      "name": "Desert West Upper Ledge",
       "world": "both",
       "entrances": [
         {
@@ -75,12 +75,6 @@
           "romEntranceId": 11,
           "name": "Desert Palace West Entrance",
           "world": "light"
-        },
-        {
-          "id": 6,
-          "romEntranceId": 95,
-          "name": "Mire Shed Entrance",
-          "world": "dark"
         }
       ]
     },
@@ -155,6 +149,19 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "North West Mire - Lower",
+      "world": "dark",
+      "entrances": [
+        {
+          "id": 6,
+          "romEntranceId": 95,
+          "name": "Mire Shed Entrance",
+          "world": "dark"
+        }
+      ]
     }
   ],
   "items": [
@@ -213,7 +220,13 @@
       "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
     },
     {
-      "link": [1, 3],
+      "link": [1, 6],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [1, 11],
       "name": "Base",
       "world": "dark",
       "requires": [
@@ -229,12 +242,6 @@
         ]}
       ],
       "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
-    },
-    {
-      "link": [1, 6],
-      "name": "Base",
-      "world": "dark",
-      "requires": []
     },
     {
       "link": [2, 1],
@@ -262,16 +269,10 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "world": "light",
+      "world": "any",
       "requires": [
         "h_jumpOffLedge"
       ]
-    },
-    {
-      "link": [3, 1],
-      "name": "Base",
-      "world": "dark",
-      "requires": []
     },
     {
       "link": [3, 4],
@@ -282,10 +283,12 @@
       ]
     },
     {
-      "link": [3, 4],
+      "link": [3, 11],
       "name": "Base",
       "world": "dark",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [4, 3],
@@ -383,6 +386,28 @@
     },
     {
       "link": [10, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [11, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [11, 3],
+      "name": "Mirror",
+      "fromWorld": "dark",
+      "toWorld": "light",
+      "requires": [
+        "MagicMirror"
+      ],
+      "note": ["Mirror onto the upper ledge."]
+    },
+    {
+      "link": [11, 4],
       "name": "Base",
       "world": "dark",
       "requires": []

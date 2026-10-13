@@ -98,7 +98,7 @@ Every overworld room defines `position` and `size`.
 
 ### Edge Variants
 
-Overworld rooms must describe the edge variants supported using `edgeVariants`. Each edge segment has an independent list of choices and one `default`, shared by Light World and Dark World. Special edge types can be defined, which may be used for rooms with differences between their light and dark world variant. Normal rooms have one segment per side; large rooms have two. See [Overworld Edge Variants](edge-variants.md) for names, ordering, examples, and validation rules.
+Overworld rooms must describe the edge variants supported using `edgeVariants`. Each edge segment has a `supported` object mapping variant names to ordered local node IDs, and one `default` variant name, shared by Light World and Dark World. Choices are independent between segments. Special edge types can describe differences between the worlds. Normal rooms have one segment per side; large rooms have two. See [Overworld Edge Variants](edge-variants.md) for names, node counts, ordering, examples, and validation rules.
 
 ## Nodes
 

@@ -7,20 +7,20 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "dual-small"},
-      {"supported": ["wide", "small-2"], "default": "wide"}
+      {"supported": {"closed": [], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "dual-small"},
+      {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
     ],
     "south": [
-      {"supported": ["closed", "small-2"], "default": "closed"},
-      {"supported": ["wide", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
+      {"supported": {"wide": [1], "small-2": [1]}, "default": "small-2"}
     ],
     "east": [
-      {"supported": ["closed", "small-1"], "default": "closed"},
-      {"supported": ["closed", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"},
+      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
     ],
     "west": [
-      {"supported": ["closed", "small-1", "small-2"], "default": "closed"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"},
+      {"supported": {"closed": [], "dual-small": [1, 4], "small-1": [1], "small-2": [4]}, "default": "closed"}
     ]
   },
   "nodes": [
@@ -151,16 +151,8 @@
     },
     {
       "id": 4,
-      "name": "Southwest Bomb Shed",
-      "world": "light",
-      "entrances": [
-        {
-          "id": 17,
-          "romEntranceId": 74,
-          "name": "Kakariko Bomb Shed",
-          "world": "light"
-        }
-      ]
+      "name": "Southwest Bomb Shed Area",
+      "world": "both"
     },
     {
       "id": 5,
@@ -178,6 +170,19 @@
           "romEntranceId": 72,
           "name": "Brewery",
           "world": "dark"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Southwest Bomb Shed Entrance",
+      "world": "light",
+      "entrances": [
+        {
+          "id": 17,
+          "romEntranceId": 74,
+          "name": "Kakariko Bomb Shed",
+          "world": "light"
         }
       ]
     }
@@ -269,21 +274,10 @@
     },
     {
       "link": [1, 4],
-      "name": "Base - Bomb",
-      "world": "light",
+      "name": "Base",
+      "world": "any",
       "requires": [
-        {"glove": 0},
-        {"bombs": 1}
-      ],
-      "unlocksDoor": [1]
-    },
-    {
-      "link": [1, 4],
-      "name": "Base - Already Bombed",
-      "world": "light",
-      "requires": [
-        {"glove": 0},
-        {"unlockDoor": 1}
+        {"glove": 0}
       ]
     },
     {
@@ -343,15 +337,38 @@
     {
       "link": [4, 1],
       "name": "Base",
-      "world": "light",
+      "world": "any",
       "requires": [
         {"glove": 0}
+      ]
+    },
+    {
+      "link": [4, 6],
+      "name": "Base - Bomb",
+      "world": "light",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [4, 6],
+      "name": "Base - Already Bombed",
+      "world": "light",
+      "requires": [
+        {"unlockDoor": 1}
       ]
     },
     {
       "link": [5, 1],
       "name": "Base",
       "world": "any",
+      "requires": []
+    },
+    {
+      "link": [6, 4],
+      "name": "Base",
+      "world": "light",
       "requires": []
     }
   ]

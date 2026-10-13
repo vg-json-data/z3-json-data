@@ -7,16 +7,16 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": ["wide", "small-2"], "default": "wide"}
+      {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
     ],
     "south": [
-      {"supported": ["closed", "wide", "small-1", "small-2"], "default": "small-1"}
+      {"supported": {"closed": [], "wide": [1], "small-1": [2], "small-2": [2]}, "default": "small-1"}
     ],
     "east": [
-      {"supported": ["closed", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "small-2": [3]}, "default": "small-2"}
     ],
     "west": [
-      {"supported": ["wide", "dual-small"], "default": "wide"}
+      {"supported": {"wide": [1], "dual-small": [1, 1]}, "default": "wide"}
     ]
   },
   "nodes": [
@@ -60,7 +60,10 @@
       "transitions": [
         {"edge": "south", "span": [13, 16]}
       ],
-      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+      "devNote": [
+        "This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path.",
+        "It is assumed that if there is a wide transition then the guards do not block the full path."
+      ]
     },
     {
       "id": 3,

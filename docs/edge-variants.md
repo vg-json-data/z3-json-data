@@ -4,13 +4,13 @@
 
 These values are used when determining how overworld rooms can be shuffled while maintaining logic compatibility. They also describe which retilings are supported by the companion project [ALTTPRetiling](https://github.com/kjbranch/ALTTPRetiling).
 
-Existing node `transitions` describe traversal endpoints; `edgeVariants` does not replace those endpoints or define routing through a retiled room. This project still needs a way to define how edgeVariants, nodes, and their transitions correspond.
+Each supported variant identifies the local room nodes at its openings. Existing node `transitions` describe vanilla traversal endpoints and geometry; the selected variant's node references describe the endpoints for its retiled edge. Strats still define routing between those nodes inside the room.
 
 ## Structure and Ordering
 
 `edgeVariants` directly contains `north`, `south`, `east`, and `west`. Each segment's supported variants, default, and selected choice are shared by Light World and Dark World. All four edges must be defined, including closed edges. Omitting an edge or the entire property is invalid.
 
-The few differences between worlds are represented as distinct specialized variants. For example, `light-pathway-dark-closed` represents a pathway in the Light World and a closed edge in the Dark World. It is one choice describing both worlds together, and follows the same independence rules as other variants.
+The few differences between worlds are represented as distinct specialized variants. For example, `light-only` represents a pathway in the Light World and a closed edge in the Dark World. It is one choice describing both worlds together, and follows the same independence rules as other variants.
 
 Each edge is an array of segments. A normal room with a `size` of 2×2 will have a single segment, a 4×4 room has two per side. For those with more than one segment, the ordering is defined as follows:
 
@@ -19,23 +19,28 @@ Each edge is an array of segments. A normal room with a `size` of 2×2 will have
 
 Each segment requires:
 
-- `supported`: A nonempty list of distinct variant names. List order has no meaning.
-- `default`: One of the names in `supported`, chosen as the supported option closest to vanilla.
+- `supported`: A nonempty object mapping variant names to ordered arrays of local node IDs. The order of variant keys has no meaning.
+- `default`: One of the keys in `supported`, chosen as the supported option closest to vanilla. It remains a string; node references are defined only in `supported`.
+
+Node arrays run west to east on north/south edges, and north to south on east/west edges, within each segment. This is map order, regardless of travel direction. Each entry identifies the node at that opening on this room's side of the connection. Repeat an ID when multiple openings lead to the same node: `"dual-small": [1, 1]` still describes two openings. `"closed": []` has no openings and no node references.
+
+References must identify nodes in the same room. Referenced nodes must exist in both worlds, except for `light-only`, which may or may not exist in both worlds. For `light-only` transitions that reference a node shared by both worlds, traversal to the neighboring room is only possible while in the Light World.
 
 ## Variant Types
 
-| Name | Meaning |
-| --- | --- |
-| `closed` | No opening. |
-| `wide` | A wide opening. |
-| `dual-small` | Two small openings. |
-| `small-1` | An offset small opening: north on an east/west edge, west on a north/south edge. |
-| `small-2` | The opposite offset: south on an east/west edge, east on a north/south edge. |
-| `light-only` | A transition that only exists in the Light World. |
-| `land-water-land` | Land on both sides with a river in the middle. |
-| `vertical-water-land` | A vertical transition with a river on the left. |
-| `horizonal-water-land` | A horizontal transition with a river on the top. |
-| `split-house` | A transition with a house split in half and a land walkway south of it. |
+| Name | Meaning | Number of node references |
+| --- | --- | --- |
+| `closed` | No opening. | 0 |
+| `wide` | A wide opening. | 1 |
+| `dual-small` | Two small openings. | 2 |
+| `small-1` | An offset small opening: north on an east/west edge, west on a north/south edge. | 1 |
+| `small-2` | The opposite offset: south on an east/west edge, east on a north/south edge. | 1 |
+| `light-only` | A transition that only exists in the Light World. | 1 |
+| `land-water-land` | Land on both sides with a river in the middle. | 3 |
+| `vertical-water-land` | A vertical transition with a river on the left. | 2 |
+| `horizonal-water-land` | A horizontal transition with a river on the top. | 2 |
+| `horizontal-land-water` | A horizontal transition with a river on the bottom. | 2 |
+| `split-house` | A transition with a house split in half and a land walkway south of it. | 1 (For the walkway) |
 
 ## Overworld Randomization
 
@@ -51,7 +56,7 @@ These are illustrative fragments showing only the north edge; complete objects m
 "edgeVariants": {
   "north": [
     {
-      "supported": ["closed", "wide", "small-1"],
+      "supported": {"closed": [], "wide": [1], "dual-small": [1, 2], "small-1": [1]},
       "default": "small-1"
     }
   ]
@@ -64,11 +69,11 @@ A large room's north edge has a western segment and an eastern segment, with the
 "edgeVariants": {
   "north": [
     {
-      "supported": ["closed", "wide", "small-1"],
+      "supported": {"closed": [], "wide": [1], "small-1": [1]},
       "default": "small-1"
     },
     {
-      "supported": ["closed"],
+      "supported": {"closed": []},
       "default": "closed"
     }
   ]
@@ -77,6 +82,6 @@ A large room's north edge has a western segment and an eastern segment, with the
 
 ## Validation
 
-The schema enforces much of the object structure.
+The schema enforces variant names, positive integer node IDs, and the exact node count for each variant, along with the required object structure. Duplicate node IDs are allowed because separate openings can share a node.
 
-Required rules that are not currently checked by the schema or repository validator: `default` must occur in its segment's `supported` list, and segment counts must match the corresponding room dimensions. All variant names should be defined in the ## Variant Types section and each specified edge type should be included in the ALTTPRetiling.
+The repository validator checks that each referenced node exists in the room and the appropriate worlds, that `default` is a key in `supported`, and that segment counts match room dimensions.

@@ -7,16 +7,16 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": ["land-water-land"], "default": "land-water-land"}
+      {"supported": {"land-water-land": [3, 4, 2]}, "default": "land-water-land"}
     ],
     "south": [
-      {"supported": ["wide", "small-1"], "default": "wide"}
+      {"supported": {"wide": [1], "small-1": [1]}, "default": "wide"}
     ],
     "east": [
-      {"supported": ["closed", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
     ],
     "west": [
-      {"supported": ["closed", "small-1"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"}
     ]
   },
   "nodes": [

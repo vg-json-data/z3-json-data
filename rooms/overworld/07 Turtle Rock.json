@@ -7,16 +7,16 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed", "small-1"], "default": "closed"}
+      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
     ],
     "south": [
-      {"supported": ["closed", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-2": [4]}, "default": "closed"}
     ],
     "east": [
-      {"supported": ["closed"], "default": "closed"}
+      {"supported": {"closed": []}, "default": "closed"}
     ],
     "west": [
-      {"supported": ["closed", "small-1"], "default": "small-1"}
+      {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
     ]
   },
   "nodes": [
@@ -45,6 +45,11 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "East Area",
+      "world": "both"
     }
   ],
   "strats": [
@@ -69,6 +74,23 @@
       ]
     },
     {
+      "link": [1, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -81,7 +103,11 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 2}
+        {"glove": 2},
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
       ]
     },
     {
@@ -103,10 +129,59 @@
       "setsFlags": ["OpenedTurtleRock"]
     },
     {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2},
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
       "link": [3, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 1}},
+          {"combatProficiency": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"glove": 2},
+        {"or": [
+          {"damage": {"enemy": "Deadrock", "count": 2}},
+          {"combatProficiency": 2}
+        ]}
+      ]
     }
   ]
 }

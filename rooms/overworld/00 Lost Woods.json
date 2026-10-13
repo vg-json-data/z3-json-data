@@ -7,20 +7,20 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": ["closed", "small-2"], "default": "closed"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-2": [11]}, "default": "closed"},
+      {"supported": {"closed": [], "dual-small": [7, 7], "small-1": [7], "small-2": [7]}, "default": "closed"}
     ],
     "south": [
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "dual-small"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "small-2"}
+      {"supported": {"closed": [], "dual-small": [1, 2], "small-1": [1], "small-2": [2]}, "default": "dual-small"},
+      {"supported": {"closed": [], "dual-small": [12, 3], "small-1": [12], "small-2": [3]}, "default": "small-2"}
     ],
     "east": [
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "small-1"},
-      {"supported": ["closed", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "dual-small": [7, 4], "small-1": [7], "small-2": [4]}, "default": "small-1"},
+      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
     ],
     "west": [
-      {"supported": ["closed", "small-2"], "default": "closed"},
-      {"supported": ["closed", "dual-small", "small-1", "small-2"], "default": "closed"}
+      {"supported": {"closed": [], "small-2": [10]}, "default": "closed"},
+      {"supported": {"closed": [], "dual-small": [10, 1], "small-1": [10], "small-2": [1]}, "default": "closed"}
     ]
   },
   "nodes": [
@@ -170,6 +170,16 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "North West - West of Four Bushes",
+      "world": "both"
+    },
+    {
+      "id": 12,
+      "name": "West of Southern East-Most Entrance",
+      "world": "both"
     }
   ],
   "items": [
@@ -403,24 +413,6 @@
       "isBunny": "no"
     },
     {
-      "link": [2, 3],
-      "name": "Base",
-      "world": "dark",
-      "requires": [
-        {"glove": 1}
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [2, 4],
-      "name": "Base",
-      "world": "dark",
-      "requires": [
-        {"glove": 1}
-      ],
-      "isBunny": "no"
-    },
-    {
       "link": [2, 10],
       "name": "Base",
       "world": "light",
@@ -428,23 +420,12 @@
       "isBunny": "any"
     },
     {
-      "link": [3, 2],
+      "link": [2, 12],
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 1},
-        {"or": [
-          {"combatProficiency": 2},
-          {"sword": 1},
-          "Boomerang",
-          "Hookshot",
-          {"rod": 1},
-          {"arrows": 2},
-          {"silverArrows": 1},
-          {"damage": {"enemy": "Ropa", "count": 1}}
-        ]}
-      ],
-      "isBunny": "no"
+        {"glove": 1}
+      ]
     },
     {
       "link": [3, 4],
@@ -484,9 +465,33 @@
       "isBunny": "any"
     },
     {
-      "link": [4, 3],
+      "link": [3, 12],
       "name": "Base",
       "world": "light",
+      "requires": [],
+      "isBunny": "any"
+    },
+    {
+      "link": [3, 12],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"rod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "any",
       "requires": [],
       "isBunny": "any"
     },
@@ -537,8 +542,13 @@
       "world": "light",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
+    },
+    {
+      "link": [4, 12],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
     },
     {
       "link": [6, 4],
@@ -546,8 +556,7 @@
       "world": "dark",
       "requires": [
         {"sword": 1}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [6, 4],
@@ -759,32 +768,12 @@
       "collectsItems": [1]
     },
     {
-      "link": [8, 9],
+      "link": [8, 11],
       "name": "Base - Bush",
-      "world": "light",
+      "world": "any",
       "requires": [
-        {"glove": 0},
-        {"or": [
-          "h_NoAgahnimLoophole",
-          {"combatProficiency": 3},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [8, 10],
-      "name": "Base - Bush",
-      "world": "light",
-      "requires": [
-        {"glove": 0},
-        {"or": [
-          "h_NoAgahnimLoophole",
-          {"combatProficiency": 3},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "no"
+        {"glove": 0}
+      ]
     },
     {
       "link": [9, 10],
@@ -820,6 +809,12 @@
       "isBunny": "any"
     },
     {
+      "link": [9, 11],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
       "link": [10, 1],
       "name": "Base",
       "world": "light",
@@ -853,36 +848,6 @@
       "world": "light",
       "requires": [],
       "isBunny": "any"
-    },
-    {
-      "link": [10, 8],
-      "name": "Base - Bush",
-      "world": "light",
-      "requires": [
-        {"glove": 0},
-        {"or": [
-          "h_NoAgahnimLoophole",
-          {"combatProficiency": 3},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "no",
-      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
-      "devNote": ["FIXME: Add a thief hit."]
-    },
-    {
-      "link": [10, 8],
-      "name": "Base",
-      "world": "dark",
-      "requires": [
-        {"glove": 0},
-        {"or": [
-          {"sword": 1},
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Ropa", "count": 1}}
-        ]}
-      ],
-      "isBunny": "no"
     },
     {
       "link": [10, 9],
@@ -926,6 +891,84 @@
         {"flag": "OpenedSkullWoods"}
       ],
       "isBunny": "any"
+    },
+    {
+      "link": [10, 11],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ],
+      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
+      "devNote": ["FIXME: Add a thief hit."]
+    },
+    {
+      "link": [10, 11],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Ropa", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 8],
+      "name": "Base - Bush",
+      "world": "any",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [11, 9],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          "h_NoAgahnimLoophole",
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [11, 10],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [12, 2],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"glove": 1}
+      ]
+    },
+    {
+      "link": [12, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": []
     }
   ]
 }
