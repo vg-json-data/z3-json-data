@@ -17,11 +17,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 76,
           "name": "Potion Shop",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 96,
           "name": "Dark Potion Shop",
           "world": "dark"
         }

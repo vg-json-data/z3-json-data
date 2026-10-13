@@ -16,16 +16,19 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 77,
           "name": "Aginah's Cave",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 98,
           "name": "Mire East Cave",
           "world": "dark"
         },
         {
           "id": 3,
+          "romEntranceId": 94,
           "name": "Mire Great Fairy Cave",
           "world": "dark"
         }
@@ -38,6 +41,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 9,
           "name": "Desert Palace Main Entrance",
           "world": "light"
         }
@@ -50,11 +54,13 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 11,
           "name": "Desert Palace West Entrance",
           "world": "light"
         },
         {
           "id": 6,
+          "romEntranceId": 95,
           "name": "Mire Shed Entrance",
           "world": "dark"
         }
@@ -67,6 +73,7 @@
       "entrances": [
         {
           "id": 7,
+          "romEntranceId": 12,
           "name": "Desert Palace Second Half Entrance",
           "world": "light"
         }
@@ -90,6 +97,7 @@
       "entrances": [
         {
           "id": 8,
+          "romEntranceId": 10,
           "name": "Desert Palace East Exit",
           "world": "light"
         }
@@ -111,6 +119,7 @@
       "entrances": [
         {
           "id": 9,
+          "romEntranceId": 114,
           "name": "Checkerboard Cave",
           "world": "light"
         }
@@ -123,6 +132,7 @@
       "entrances": [
         {
           "id": 10,
+          "romEntranceId": 39,
           "name": "Misery Mire Dungeon Entrance",
           "world": "dark"
         }

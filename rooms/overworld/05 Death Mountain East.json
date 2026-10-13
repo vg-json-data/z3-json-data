@@ -21,11 +21,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 32,
           "name": "Paradox Cave Top Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 20,
           "name": "Superbunny Cave Top Entrance",
           "world": "dark"
         }
@@ -46,6 +48,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 59,
           "name": "Hookshot Cave North Exit",
           "world": "dark"
         }
@@ -58,6 +61,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 58,
           "name": "Hookshot Cave South Entrance",
           "world": "dark"
         }
@@ -70,11 +74,13 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 29,
           "name": "Spiral Cave Top Entrance",
           "world": "light"
         },
         {
           "id": 6,
+          "romEntranceId": 21,
           "name": "Turtle Rock Laser Door Exit",
           "world": "dark"
         }
@@ -87,11 +93,13 @@
       "entrances": [
         {
           "id": 7,
+          "romEntranceId": 79,
           "name": "Mimic Cave Entrance",
           "world": "light"
         },
         {
           "id": 8,
+          "romEntranceId": 25,
           "name": "Turtle Rock Big Chest Exit",
           "world": "dark"
         }
@@ -104,11 +112,13 @@
       "entrances": [
         {
           "id": 9,
+          "romEntranceId": 27,
           "name": "Fairy Ascension Trinexx Refill Entrance",
           "world": "light"
         },
         {
           "id": 10,
+          "romEntranceId": 24,
           "name": "Turtle Rock Laser Bridge Exit",
           "world": "dark"
         }
@@ -121,11 +131,13 @@
       "entrances": [
         {
           "id": 11,
+          "romEntranceId": 28,
           "name": "Spiral Cave Bottom Exit",
           "world": "light"
         },
         {
           "id": 12,
+          "romEntranceId": 31,
           "name": "Paradox Cave Entrance South of Pit",
           "world": "light"
         }
@@ -138,6 +150,7 @@
       "entrances": [
         {
           "id": 13,
+          "romEntranceId": 26,
           "name": "Fairy Ascension Cave Bottom Entrance",
           "world": "light"
         }
@@ -150,21 +163,25 @@
       "entrances": [
         {
           "id": 14,
+          "romEntranceId": 80,
           "name": "Hookshot Fairy Cave Entrance",
           "world": "light"
         },
         {
           "id": 15,
+          "romEntranceId": 30,
           "name": "Paradox Cave Entrance South of Block",
           "world": "light"
         },
         {
           "id": 16,
+          "romEntranceId": 19,
           "name": "Superbunny Cave Bottom Entrance",
           "world": "dark"
         },
         {
           "id": 17,
+          "romEntranceId": 88,
           "name": "Dark Death Mountain Shop Entrance",
           "world": "dark"
         }

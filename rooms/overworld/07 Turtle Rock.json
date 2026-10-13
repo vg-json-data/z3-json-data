@@ -26,6 +26,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 53,
           "name": "Turtle Rock Entrance",
           "world": "dark"
         }

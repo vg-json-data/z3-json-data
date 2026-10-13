@@ -16,11 +16,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 85,
           "name": "Long Fairy Cave",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 105,
           "name": "Dark East Portal Cave",
           "world": "dark"
         }

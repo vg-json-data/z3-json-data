@@ -16,16 +16,19 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 101,
           "name": "Lake Hylia Fortune Teller",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 88,
           "name": "Lake Hylia Shop",
           "world": "light"
         },
         {
           "id": 3,
+          "romEntranceId": 96,
           "name": "Ice Lake Shop",
           "world": "dark"
         }
@@ -62,6 +65,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 108,
           "name": "Mini Moldorm Cave Entrance",
           "world": "light"
         }
@@ -90,11 +94,13 @@
       "entrances": [
         {
           "id": 5,
+          "romEntranceId": 93,
           "name": "Lake Hylia Great Fairy",
           "world": "light"
         },
         {
           "id": 6,
+          "romEntranceId": 45,
           "name": "Ice Palace Entrance",
           "world": "dark"
         }

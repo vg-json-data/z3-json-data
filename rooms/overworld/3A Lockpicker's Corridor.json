@@ -32,6 +32,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 94,
           "name": "Desert Great Fairy",
           "world": "light"
         }
@@ -54,6 +55,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 109,
           "name": "50 Rupee Cave",
           "world": "light"
         }

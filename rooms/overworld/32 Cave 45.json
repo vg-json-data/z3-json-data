@@ -30,6 +30,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 81,
           "name": "Cave 45 Entrance",
           "world": "light"
         }

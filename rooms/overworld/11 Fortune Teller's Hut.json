@@ -17,11 +17,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 101,
           "name": "Fortune Teller (Light)",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 102,
           "name": "Fortune Teller (Dark)",
           "world": "dark"
         }

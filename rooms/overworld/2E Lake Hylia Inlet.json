@@ -17,11 +17,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 94,
           "name": "Lake Hylia Inlet Great Fairy",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 94,
           "name": "Ice Lake Inlet Great Fairy",
           "world": "dark"
         }

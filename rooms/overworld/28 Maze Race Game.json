@@ -24,6 +24,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 15,
           "name": "Two Brothers' House West Entrance",
           "world": "light"
         }

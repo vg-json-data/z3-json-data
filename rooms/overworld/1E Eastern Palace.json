@@ -16,6 +16,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 104,
           "name": "Palace of Darkness Cottage",
           "world": "dark"
         }
@@ -28,6 +29,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 69,
           "name": "Sahasrahla's Hut",
           "world": "light"
         }
@@ -40,11 +42,13 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 8,
           "name": "Eastern Palace Entrance",
           "world": "light"
         },
         {
           "id": 4,
+          "romEntranceId": 38,
           "name": "Palace of Darkness Entrance",
           "world": "dark"
         }

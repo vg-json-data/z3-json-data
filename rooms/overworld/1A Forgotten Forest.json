@@ -25,6 +25,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 87,
           "name": "Red Shield Shop",
           "world": "dark"
         }

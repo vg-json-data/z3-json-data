@@ -17,16 +17,19 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 107,
           "name": "Lumberjack House",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 18,
           "name": "Lumberjack Tree View Point",
           "world": "light"
         },
         {
           "id": 3,
+          "romEntranceId": 96,
           "name": "Dark Lumberjack Shop",
           "world": "dark"
         }
@@ -39,6 +42,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 127,
           "name": "Lumberjack Tree Drop Entrance",
           "world": "light"
         }

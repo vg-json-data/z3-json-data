@@ -32,6 +32,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 82,
           "name": "Graveyard Cave",
           "world": "light"
         }
@@ -44,6 +45,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 129,
           "name": "Hyrule Castle Sewers Drop Entrance",
           "world": "light"
         }
@@ -56,6 +58,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 91,
           "name": "King's Grave",
           "world": "light"
         }

@@ -17,11 +17,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 2,
           "name": "Sanctuary",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 90,
           "name": "Dark Sanctuary",
           "world": "dark"
         }
@@ -42,6 +44,7 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 110,
           "name": "Sanctuary Bonk Rock Cave",
           "world": "light"
         }

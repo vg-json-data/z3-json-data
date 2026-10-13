@@ -22,11 +22,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 6,
           "name": "Old Man Cave Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 22,
           "name": "Bumper Cave Entrance",
           "world": "dark"
         }
@@ -39,11 +41,13 @@
       "entrances": [
         {
           "id": 3,
+          "romEntranceId": 46,
           "name": "Death Mountain Return Cave Exit",
           "world": "light"
         },
         {
           "id": 4,
+          "romEntranceId": 23,
           "name": "Bumper Cave Exit",
           "world": "dark"
         }

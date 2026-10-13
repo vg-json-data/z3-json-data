@@ -248,6 +248,7 @@ Transition geometry may or may not be useful to overworld randomizer projects. C
 - `id`: An entrance ID unique within the overworld room.
 - `name`: A descriptive name.
 - `world`: The world containing the endpoint.
+- `romEntranceId`: The native ROM entrance record ID, written as an integer. Defined for ordinary doors and drops; omitted for special overworld transitions such as Sacred Grove, Under the Bridge, and Zora's Waterfall. Several endpoints may share the same native record, so this is not a unique logical entrance identity.
 
 An entrance connects an overworld node to an underworld `door` or `drop`. Door connections are two-way; drop connections go only from the overworld to the underworld.
 
