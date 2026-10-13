@@ -31,6 +31,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 56,
           "name": "North Great Fairy Blocked Entrance",
           "world": "light"
         }
@@ -74,6 +75,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 124,
           "name": "North Great Fairy Drop Entrance",
           "world": "light"
         }

@@ -46,6 +46,7 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 94,
           "name": "Swamp Great Fairy Entrance",
           "world": "light"
         }
@@ -58,6 +59,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 61,
           "name": "Hype Cave Entrance",
           "world": "dark"
         }

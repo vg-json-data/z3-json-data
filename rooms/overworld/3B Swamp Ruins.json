@@ -39,11 +39,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 78,
           "name": "Dam Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 37,
           "name": "Swamp Palace Entrance",
           "world": "dark"
         }

@@ -32,16 +32,19 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 16,
           "name": "Two Brothers' House East Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 103,
           "name": "Kakariko Gamble Game",
           "world": "light"
         },
         {
           "id": 3,
+          "romEntranceId": 89,
           "name": "Archery Game",
           "world": "dark"
         }
@@ -54,6 +57,7 @@
       "entrances": [
         {
           "id": 4,
+          "romEntranceId": 73,
           "name": "Library",
           "world": "light"
         }

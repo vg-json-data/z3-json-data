@@ -132,6 +132,12 @@
               ],
               "additionalProperties": false,
               "properties": {
+                "romEntranceId": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255,
+                  "description": "Native ROM entrance record ID for an ordinary door or drop. Omitted for special overworld transitions; multiple entrances may share a record."
+                },
                 "id": {
                   "type": "integer",
                   "minimum": 1

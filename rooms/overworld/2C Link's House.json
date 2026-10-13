@@ -33,11 +33,13 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 1,
           "name": "Link's House",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 83,
           "name": "Big Bomb Shop",
           "world": "dark"
         }

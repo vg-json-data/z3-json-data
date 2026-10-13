@@ -47,6 +47,7 @@
       "entrances": [
         {
           "id": 2,
+          "romEntranceId": 92,
           "name": "Waterfall of Wishing",
           "world": "light"
         }

@@ -38,66 +38,79 @@
       "entrances": [
         {
           "id": 1,
+          "romEntranceId": 128,
           "name": "Kakariko Well Drop Entrance",
           "world": "light"
         },
         {
           "id": 2,
+          "romEntranceId": 57,
           "name": "Kakariko Well Cave Entrance",
           "world": "light"
         },
         {
           "id": 3,
+          "romEntranceId": 97,
           "name": "Blind's Hideout",
           "world": "light"
         },
         {
           "id": 4,
+          "romEntranceId": 13,
           "name": "Elder House West Entrance",
           "world": "light"
         },
         {
           "id": 5,
+          "romEntranceId": 14,
           "name": "Elder House East Entrance",
           "world": "light"
         },
         {
           "id": 6,
+          "romEntranceId": 63,
           "name": "West Snitch Lady's House",
           "world": "light"
         },
         {
           "id": 7,
+          "romEntranceId": 62,
           "name": "East Snitch Lady's House",
           "world": "light"
         },
         {
           "id": 8,
+          "romEntranceId": 75,
           "name": "Chicken House",
           "world": "light"
         },
         {
           "id": 9,
+          "romEntranceId": 64,
           "name": "Sick Kid's House",
           "world": "light"
         },
         {
           "id": 10,
+          "romEntranceId": 67,
           "name": "Kakariko Tavern Secret Entrance",
           "world": "light"
         },
         {
           "id": 11,
+          "romEntranceId": 66,
           "name": "Kakariko Tavern Main Entrance",
           "world": "light"
         },
         {
           "id": 12,
+          "romEntranceId": 71,
           "name": "Chest Game",
           "world": "dark"
         },
         {
           "id": 13,
+          "romEntranceId": 84,
           "name": "C-Shaped House",
           "world": "dark"
         }
@@ -111,6 +124,7 @@
       "entrances": [
         {
           "id": 14,
+          "romEntranceId": 52,
           "name": "Thieves' Town",
           "world": "dark"
         }
@@ -123,11 +137,13 @@
       "entrances": [
         {
           "id": 15,
+          "romEntranceId": 68,
           "name": "Bush Blocked House",
           "world": "light"
         },
         {
           "id": 16,
+          "romEntranceId": 96,
           "name": "Village of Outcasts Shop",
           "world": "dark"
         }
@@ -140,6 +156,7 @@
       "entrances": [
         {
           "id": 17,
+          "romEntranceId": 74,
           "name": "Kakariko Bomb Shed",
           "world": "light"
         }
@@ -152,11 +169,13 @@
       "entrances": [
         {
           "id": 18,
+          "romEntranceId": 70,
           "name": "Kakariko Shop",
           "world": "light"
         },
         {
           "id": 19,
+          "romEntranceId": 72,
           "name": "Brewery",
           "world": "dark"
         }
