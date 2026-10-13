@@ -57,6 +57,18 @@
       "minItems": 2,
       "maxItems": 2
     },
+    "edgeVariants": {
+      "type": "object",
+      "description": "Required variants for every edge of an overworld room, shared by Light World and Dark World. World-specific differences use a single specialized variant. See docs/edge-variants.md.",
+      "required": ["north", "south", "east", "west"],
+      "additionalProperties": false,
+      "properties": {
+        "north": { "$ref": "#/definitions/edgeVariantSegments" },
+        "south": { "$ref": "#/definitions/edgeVariantSegments" },
+        "east": { "$ref": "#/definitions/edgeVariantSegments" },
+        "west": { "$ref": "#/definitions/edgeVariantSegments" }
+      }
+    },
     "nodes": {
       "type": "array",
       "items": {
@@ -580,7 +592,59 @@
       }
     }
   },
+  "definitions": {
+    "edgeVariantName": {
+      "type": "string",
+      "enum": [
+        "closed",
+        "wide",
+        "dual-small",
+        "small-1",
+        "small-2",
+        "light-only",
+        "land-water-land",
+        "vertical-water-land",
+        "horizonal-water-land",
+        "split-house"
+      ],
+      "description": "Allowed edge variant names from the Variant Types section of docs/edge-variants.md."
+    },
+    "edgeVariantSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supported", "default"],
+      "properties": {
+        "supported": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/definitions/edgeVariantName" }
+        },
+        "default": {
+          "$ref": "#/definitions/edgeVariantName"
+        }
+      },
+      "description": "Any supported choice can be combined with choices on other segments. default must belong to supported and is the option closest to vanilla; this membership rule requires semantic validation."
+    },
+    "edgeVariantSegments": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": { "$ref": "#/definitions/edgeVariantSegment" },
+      "description": "One segment per two screens: west to east on north/south edges, north to south on east/west edges. Length must match the corresponding room dimension divided by two; this requires semantic validation."
+    }
+  },
   "allOf": [
+    {
+      "if": { "required": ["edgeVariants"] },
+      "then": {
+        "required": ["size"],
+        "properties": {
+          "roomType": { "const": "Overworld" },
+          "size": { "items": { "enum": [2, 4] } }
+        }
+      }
+    },
     {
       "if": {
         "required": [
@@ -593,6 +657,7 @@
         }
       },
       "then": {
+        "required": ["edgeVariants"],
         "properties": {
           "nodes": {
             "items": {

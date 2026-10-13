@@ -9,6 +9,14 @@ The goal of this repository is to encode ALTTP's game data and routing logic in 
 
 This project is the sister repository to [sm-json-data](https://github.com/vg-json-data/sm-json-data), applying the same node-based logical mapping principles from Zebes to Hyrule.
 
+### Vanilla Data and Overworld Retiling
+
+The vanilla game is the starting point for this project, but describing only the unmodified game is not a reasonable constraint, because overworld shuffling is impractical if vanilla room geometry must be preserved while keeping adjacent room edges aligned.
+
+There are many possible ways to relax those constraints. This project takes a specific approach: the supported overworld changes are the edge variants and room retilings designed in [ALTTPRetiling](https://github.com/kjbranch/ALTTPRetiling), a companion repository. Those designs define the flexibility this project aims to model, with the goal of supporting shuffled overworld layouts that retain coherent geometry and clean transitions.
+
+This gives non-vanilla overworld data a concrete scope: additions should describe the supported ALTTPRetiling designs and their routing implications, rather than every conceivable modification to the overworld.
+
 ---
 
 ## Project Structure
