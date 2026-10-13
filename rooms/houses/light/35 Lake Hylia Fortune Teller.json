@@ -3,6 +3,9 @@
   "id": 56,
   "name": "Lake Hylia Fortune Teller",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

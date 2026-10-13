@@ -3,6 +3,9 @@
   "id": 28,
   "name": "Lake Hylia Shop",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

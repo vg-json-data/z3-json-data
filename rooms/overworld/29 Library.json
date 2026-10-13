@@ -19,6 +19,31 @@
       {"supported": {"split-house": [1]}, "default": "split-house"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": []
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": []
+    }
+  },
   "nodes": [
     {
       "id": 1,

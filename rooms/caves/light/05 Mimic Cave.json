@@ -3,6 +3,14 @@
   "id": 8,
   "name": "Mimic Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Goriya (Green)",
+        "count": 4
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

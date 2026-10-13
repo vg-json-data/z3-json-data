@@ -3,6 +3,9 @@
   "id": 20,
   "name": "Chris Houlihan Room",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

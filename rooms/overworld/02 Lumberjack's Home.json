@@ -19,6 +19,40 @@
       {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 1
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": []
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Moblin",
+          "count": 1
+        },
+        {
+          "name": "Snap Dragon",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

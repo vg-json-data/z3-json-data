@@ -3,6 +3,9 @@
   "id": 16,
   "name": "North Great Fairy",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

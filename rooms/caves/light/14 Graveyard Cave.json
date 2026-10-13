@@ -3,6 +3,9 @@
   "id": 14,
   "name": "Graveyard Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

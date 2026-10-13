@@ -3,6 +3,9 @@
   "id": 15,
   "name": "King's Grave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

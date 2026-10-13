@@ -3,6 +3,22 @@
   "id": 58,
   "name": "Eastern Palace",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Armos Knight",
+
+      "Eyegore (Green)",
+      "Eyegore (Red)",
+      "Head-Detaching Stalfos",
+      "Popo",
+      "Stalfos",
+
+      "Ball",
+      "Bubble",
+      "Bubble Cluster",
+      "Invincible Bubble"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

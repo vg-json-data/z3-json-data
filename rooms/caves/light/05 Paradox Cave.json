@@ -3,6 +3,14 @@
   "id": 9,
   "name": "Paradox Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Mini-Moldorm",
+        "count": 5
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

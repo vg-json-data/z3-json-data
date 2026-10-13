@@ -3,6 +3,34 @@
   "id": 98,
   "name": "Misery Mire",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Vitreous",
+      "Vitreous (Small Eye)",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Floating Stalfos Head",
+      "Popo",
+      "Sluggula",
+      "Stalfos",
+      "Wizzrobe",
+      "Zol",
+      "Zoro",
+
+      "Beamos",
+      "Bubble",
+      "Flying Tile",
+      "Giant Spike Block",
+      "Laser Eye",
+      "Medusa",
+      "Rabbit Beam",
+      "Spark",
+      "Spike Block",
+      "Winder",
+      "Yomo Medusa"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

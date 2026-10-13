@@ -3,6 +3,9 @@
   "id": 79,
   "name": "Shopping Mall Great Fairy",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

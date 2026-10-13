@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-overworld-enemies.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "light",
+    "dark"
+  ],
+  "properties": {
+    "light": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "beforeZeldaRescue",
+        "afterZeldaRescue",
+        "afterAgahnim"
+      ],
+      "properties": {
+        "beforeZeldaRescue": {
+          "$ref": "#/definitions/population"
+        },
+        "afterZeldaRescue": {
+          "$ref": "#/definitions/population"
+        },
+        "afterAgahnim": {
+          "$ref": "#/definitions/population"
+        }
+      }
+    },
+    "dark": {
+      "$ref": "#/definitions/population"
+    }
+  },
+  "definitions": {
+    "population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enemies"
+      ],
+      "properties": {
+        "enemies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "count"
+            ],
+            "properties": {
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "description": "Number of placements, or null for recurring spawns with no fixed count."
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "if": {
+              "properties": {
+                "name": {
+                  "type": "null"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "note"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

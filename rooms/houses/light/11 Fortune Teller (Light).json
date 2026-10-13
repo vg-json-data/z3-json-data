@@ -3,6 +3,9 @@
   "id": 37,
   "name": "Fortune Teller (Light)",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

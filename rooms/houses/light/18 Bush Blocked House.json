@@ -3,6 +3,9 @@
   "id": 40,
   "name": "Bush Blocked House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

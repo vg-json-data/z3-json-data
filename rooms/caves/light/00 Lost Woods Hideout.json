@@ -3,6 +3,9 @@
   "id": 1,
   "name": "Lost Woods Hideout",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

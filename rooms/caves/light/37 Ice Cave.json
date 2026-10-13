@@ -3,6 +3,9 @@
   "id": 31,
   "name": "Ice Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,26 @@
   "id": 94,
   "name": "Swamp Palace",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Arrghus",
+      "Arrghus Fuzz",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Pirogusu",
+      "Stalfos",
+      "Water Tektite",
+      "Zol",
+
+      "Guruguru Bar",
+      "Kyameron",
+      "Medusa",
+      "Spike Block",
+      "Winder",
+      "Yomo Medusa"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

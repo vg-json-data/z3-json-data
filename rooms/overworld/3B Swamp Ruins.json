@@ -19,6 +19,77 @@
       {"supported": {"wide": [1], "dual-small": [1, 1], "small-2": [1]}, "default": "dual-small"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Bow Soldier (Blue)",
+            "count": 1
+          },
+          {
+            "name": "Bow Soldier (Green, Grass)",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 2
+          },
+          {
+            "name": "Toppo",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Moblin",
+          "count": 2
+        },
+        {
+          "name": "Pikit",
+          "count": 1
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        },
+        {
+          "name": "Zirro (Blue)",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

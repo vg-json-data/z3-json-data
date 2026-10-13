@@ -19,6 +19,49 @@
       {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "small-1"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Octorok",
+            "count": 8
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Hinox",
+          "count": 1
+        },
+        {
+          "name": "Moblin",
+          "count": 4
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

@@ -23,6 +23,94 @@
       {"supported": {"closed": [], "dual-small": [5, 3], "small-1": [5], "small-2": [3]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Dagger Soldier (Green)",
+            "count": 2
+          },
+          {
+            "name": "Lightning Lock",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 1
+          }
+        ]
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Bomb Soldier (Red)",
+            "count": 3
+          },
+          {
+            "name": "Lightning Lock",
+            "count": 1
+          },
+          {
+            "name": "Spear Soldier (Red, Grass)",
+            "count": 2
+          },
+          {
+            "name": "Super Spear Soldier (Red)",
+            "count": 2
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 2
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 3
+          },
+          {
+            "name": "Spear Soldier (Red)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 3
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Hinox",
+          "count": 2
+        },
+        {
+          "name": "Moblin",
+          "count": 4
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Snap Dragon",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

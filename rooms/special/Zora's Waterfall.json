@@ -3,6 +3,18 @@
   "id": 104,
   "name": "Zora's Waterfall",
   "roomType": "Special",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Fireball Zora",
+        "count": 10
+      },
+      {
+        "name": "Zora (Walking)",
+        "count": 17
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

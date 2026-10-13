@@ -23,6 +23,53 @@
       {"supported": {"closed": [], "small-2": [12]}, "default": "small-2"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 6
+          },
+          {
+            "name": "Tektite (Blue)",
+            "count": 1
+          },
+          {
+            "name": "Tektite (Red)",
+            "count": 4
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 7
+          },
+          {
+            "name": "Tektite (Blue)",
+            "count": 2
+          },
+          {
+            "name": "Tektite (Red)",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Lynel",
+          "count": 3
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

@@ -19,6 +19,22 @@
       {"supported": {"small-2": [2]}, "default": "small-2"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": []
+      },
+      "afterAgahnim": {
+        "enemies": []
+      }
+    },
+    "dark": {
+      "enemies": []
+    }
+  },
   "nodes": [
     {
       "id": 1,

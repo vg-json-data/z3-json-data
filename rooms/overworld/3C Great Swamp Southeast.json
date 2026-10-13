@@ -19,6 +19,85 @@
       {"supported": {"wide": [1]}, "default": "wide"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Bow Soldier (Green, Grass)",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 1
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 2
+          },
+          {
+            "name": "Sand Crab",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 1
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Hinox",
+          "count": 1
+        },
+        {
+          "name": "Ropa",
+          "count": 2
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        },
+        {
+          "name": "Taros (Blue)",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,14 @@
   "id": 5,
   "name": "Spectacle Rock Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Mini-Moldorm",
+        "count": 4
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

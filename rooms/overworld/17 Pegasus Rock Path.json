@@ -19,6 +19,49 @@
       {"supported": {"horizonal-water-land": [3, 1]}, "default": "horizonal-water-land"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 5
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 4
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ku",
+          "count": 1
+        },
+        {
+          "name": "Slarok",
+          "count": 5
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,18 @@
   "id": 65,
   "name": "Hookshot Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Bari (Blue)",
+        "count": 2
+      },
+      {
+        "name": "Hardhat Beetle (Blue)",
+        "count": 1
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

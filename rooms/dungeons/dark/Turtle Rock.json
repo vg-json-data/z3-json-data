@@ -3,6 +3,31 @@
   "id": 99,
   "name": "Turtle Rock",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Trinexx (Blue Head)",
+      "Trinexx (Body)",
+      "Trinexx (Red Head)",
+
+      "Bari (Blue)",
+      "Floating Stalfos Head",
+      "Hardhat Beetle (Red)",
+      "Helmasaur",
+      "Hokkubokku",
+      "Stalfos",
+      "Zol",
+      "Zoro",
+
+      "Bubble",
+      "Chain Chomp",
+      "Flying Tile",
+      "Guruguru Bar",
+      "Laser Eye",
+      "Medusa",
+      "Rabbit Beam",
+      "Rolling Spike Trap"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

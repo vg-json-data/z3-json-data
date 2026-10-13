@@ -3,6 +3,27 @@
   "id": 95,
   "name": "Skull Woods",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Mothula",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Gibdo",
+      "Hardhat Beetle (Blue)",
+      "Hardhat Beetle (Red)",
+      "Helmasaur",
+      "Mini-Moldorm",
+      "Stalfos",
+      "Wallmaster",
+
+      "Guruguru Bar",
+      "Rabbit Beam",
+      "Spark",
+      "Spike Block",
+      "Winder"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

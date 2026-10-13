@@ -3,6 +3,9 @@
   "id": 2,
   "name": "Lumberjack Tree",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

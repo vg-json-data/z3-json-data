@@ -3,6 +3,9 @@
   "id": 24,
   "name": "Checkerboard Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

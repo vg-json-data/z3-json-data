@@ -3,6 +3,47 @@
   "id": 100,
   "name": "Ganon's Tower",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Agahnim",
+      "Armos Knight",
+      "Lanmolas",
+      "Moldorm",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Eyegore (Green)",
+      "Eyegore (Red)",
+      "Gibdo",
+      "Goriya (Green)",
+      "Goriya (Red)",
+      "Hardhat Beetle (Blue)",
+      "Hardhat Beetle (Red)",
+      "Helmasaur",
+      "Mini-Moldorm",
+      "Stalfos",
+      "Taros (Blue)",
+      "Taros (Red)",
+      "Wallmaster",
+      "Wizzrobe",
+      "Zazak (Blue)",
+      "Zazak (Red)",
+
+      "Beamos",
+      "Bubble",
+      "Flying Tile",
+      "Giant Spike Block",
+      "Guruguru Bar",
+      "Laser Eye",
+      "Medusa",
+      "Rabbit Beam",
+      "Spark",
+      "Spike Block",
+      "Wall Turret Cannon Ball",
+      "Winder",
+      "Yomo Medusa"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

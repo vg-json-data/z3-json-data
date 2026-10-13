@@ -23,6 +23,64 @@
       {"supported": {"closed": [], "dual-small": [1, 4], "small-1": [1], "small-2": [4]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Cucco",
+            "count": 2,
+            "note": "Conditional threat; retaliation is not included in the placement count."
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Cucco",
+            "count": 2,
+            "note": "Conditional threat; retaliation is not included in the placement count."
+          },
+          {
+            "name": "Spear Soldier (Red)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 5
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Cucco Skeleton",
+          "count": 3,
+          "note": "Conditional threat; retaliation is not included in the placement count."
+        },
+        {
+          "name": "Moblin",
+          "count": 3
+        },
+        {
+          "name": "Poe",
+          "count": 4
+        },
+        {
+          "name": "Taros (Blue)",
+          "count": 2
+        },
+        {
+          "name": "Thief",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

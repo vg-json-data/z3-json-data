@@ -3,6 +3,9 @@
   "id": 89,
   "name": "Palace of Darkness Cottage",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

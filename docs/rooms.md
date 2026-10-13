@@ -30,6 +30,7 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `position`: The upper-left position of an overworld room on the 8×8 overworld layout.
 - `size`: The width and height of an overworld room measured in screens.
 - `edgeVariants`: Supported overworld edge variants; see [Overworld Edge Variants](edge-variants.md).
+- `enemySpawns`: [Enemy lists](room-enemies.md), with world and story-stage profiles for overworld rooms, per-enemy counts for caves and houses, and unique names for dungeons.
 - `nodes`: Logical positions or conditions within the room.
 - `items`: Item locations in the room.
 - `lockedDoors`: Locks that can change from locked to unlocked.

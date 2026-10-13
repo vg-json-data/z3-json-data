@@ -3,6 +3,9 @@
   "id": 63,
   "name": "Spike Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,9 @@
   "id": 19,
   "name": "Light Bonk Fairies",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

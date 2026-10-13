@@ -3,6 +3,19 @@
   "id": 61,
   "name": "Agahnim's Tower",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Agahnim",
+
+      "Ball and Chain Trooper",
+      "Bow Soldier (Blue)",
+      "Keese",
+      "Spear Soldier (Red)",
+      "Super Spear Soldier (Red)",
+      "Super Sword Soldier (Blue)",
+      "Sword Soldier (Blue)"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

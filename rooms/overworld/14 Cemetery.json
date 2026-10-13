@@ -19,6 +19,54 @@
       {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Poe",
+            "count": 3,
+            "note": "Includes a Poe released by disturbing a grave."
+          },
+          {
+            "name": "Super Spear Soldier (Red)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Poe",
+            "count": 5
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Hinox",
+          "count": 1
+        },
+        {
+          "name": "Ropa",
+          "count": 4
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

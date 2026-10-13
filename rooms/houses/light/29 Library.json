@@ -3,6 +3,9 @@
   "id": 53,
   "name": "Library",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

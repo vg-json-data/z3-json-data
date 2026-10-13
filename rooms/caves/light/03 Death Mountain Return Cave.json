@@ -3,6 +3,14 @@
   "id": 3,
   "name": "Death Mountain Return Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Keese",
+        "count": 12
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

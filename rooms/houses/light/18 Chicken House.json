@@ -3,6 +3,15 @@
   "id": 41,
   "name": "Chicken House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Cucco",
+        "count": 4,
+        "note": "Conditional threat; retaliation is not included in the placement count."
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

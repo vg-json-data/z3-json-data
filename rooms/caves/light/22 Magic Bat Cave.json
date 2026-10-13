@@ -3,6 +3,9 @@
   "id": 18,
   "name": "Magic Bat Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

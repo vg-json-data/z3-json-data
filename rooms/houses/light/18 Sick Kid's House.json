@@ -3,6 +3,9 @@
   "id": 47,
   "name": "Sick Kid's House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

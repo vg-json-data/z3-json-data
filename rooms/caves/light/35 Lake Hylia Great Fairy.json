@@ -3,6 +3,9 @@
   "id": 27,
   "name": "Lake Hylia Great Fairy",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

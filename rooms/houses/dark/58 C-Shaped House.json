@@ -3,6 +3,9 @@
   "id": 85,
   "name": "C-Shaped House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

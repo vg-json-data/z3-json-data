@@ -69,6 +69,14 @@
         "west": { "$ref": "#/definitions/edgeVariantSegments" }
       }
     },
+    "enemySpawns": {
+      "anyOf": [
+        {"$ref": "z3-overworld-enemies.schema.json"},
+        {"$ref": "z3-overworld-enemies.schema.json#/definitions/population"},
+        {"$ref": "#/definitions/dungeonEnemies"}
+      ],
+      "description": "Vanilla enemies and hazards. Dungeons use unique names without counts; caves and houses use placement counts; overworld rooms use world/story profiles."
+    },
     "nodes": {
       "type": "array",
       "items": {
@@ -599,6 +607,19 @@
     }
   },
   "definitions": {
+    "dungeonEnemies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enemies"],
+      "properties": {
+        "enemies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1},
+          "description": "Unique enemy, boss, and sprite-hazard names present in the dungeon; no counts."
+        }
+      }
+    },
     "edgeVariantName": {
       "type": "string",
       "enum": [
@@ -746,6 +767,14 @@
     }
   },
   "allOf": [
+    {
+      "if": {"properties": {"roomType": {"const": "Dungeon"}}},
+      "then": {"properties": {"enemySpawns": {"$ref": "#/definitions/dungeonEnemies"}}},
+      "else": {"properties": {"enemySpawns": {"oneOf": [
+        {"$ref": "z3-overworld-enemies.schema.json"},
+        {"$ref": "z3-overworld-enemies.schema.json#/definitions/population"}
+      ]}}}
+    },
     {
       "if": { "required": ["edgeVariants"] },
       "then": {

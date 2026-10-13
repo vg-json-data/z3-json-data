@@ -3,6 +3,14 @@
   "id": 34,
   "name": "Dam",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Bubble",
+        "count": 1
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

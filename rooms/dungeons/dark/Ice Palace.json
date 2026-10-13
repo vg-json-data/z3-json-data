@@ -3,6 +3,25 @@
   "id": 97,
   "name": "Ice Palace",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Kholdstare",
+
+      "Babusu",
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Freezor",
+      "Pengator",
+      "Stalfos Knight",
+      "Zol",
+
+      "Bubble",
+      "Giant Spike Block",
+      "Guruguru Bar",
+      "Medusa",
+      "Rabbit Beam"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

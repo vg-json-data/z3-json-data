@@ -3,6 +3,18 @@
   "id": 10,
   "name": "Spiral Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Bari (Blue)",
+        "count": 4
+      },
+      {
+        "name": "Mini-Moldorm",
+        "count": 6
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

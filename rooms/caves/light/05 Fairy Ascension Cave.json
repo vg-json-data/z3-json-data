@@ -3,6 +3,18 @@
   "id": 6,
   "name": "Fairy Ascension Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Bari (Blue)",
+        "count": 2
+      },
+      {
+        "name": "Mini-Moldorm",
+        "count": 1
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

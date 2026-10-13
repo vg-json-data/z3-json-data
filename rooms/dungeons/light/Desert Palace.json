@@ -3,6 +3,21 @@
   "id": 59,
   "name": "Desert Palace",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Lanmolas",
+
+      "Devalant",
+      "Eyegore (Green)",
+      "Eyegore (Red)",
+      "Leever",
+      "Popo",
+
+      "Beamos",
+      "Flying Tile",
+      "Wall Turret Cannon Ball"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

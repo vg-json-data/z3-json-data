@@ -19,6 +19,61 @@
       {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Crow",
+            "count": 1
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Sand Crab",
+            "count": 4
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Sand Crab",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ku",
+          "count": 2
+        },
+        {
+          "name": "Slarok",
+          "count": 2
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        },
+        {
+          "name": "Zirro (Blue)",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

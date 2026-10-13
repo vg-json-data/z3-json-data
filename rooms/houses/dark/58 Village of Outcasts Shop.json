@@ -3,6 +3,9 @@
   "id": 87,
   "name": "Village of Outcasts Shop",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

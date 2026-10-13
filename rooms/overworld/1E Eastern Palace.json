@@ -23,6 +23,77 @@
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 2
+          },
+          {
+            "name": "Armos",
+            "count": 11
+          },
+          {
+            "name": "Octorok",
+            "count": 5
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Armos",
+            "count": 12
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 4
+          },
+          {
+            "name": "Spear Soldier (Red)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Dacto",
+          "count": 1
+        },
+        {
+          "name": "Hinox",
+          "count": 3
+        },
+        {
+          "name": "Moblin",
+          "count": 4
+        },
+        {
+          "name": "Ropa",
+          "count": 9
+        },
+        {
+          "name": "Snap Dragon",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,
