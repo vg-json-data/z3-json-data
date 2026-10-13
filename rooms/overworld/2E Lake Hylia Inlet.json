@@ -5,6 +5,20 @@
   "roomType": "Overworld",
   "position": [6, 5],
   "size": [2, 2],
+  "edgeVariants": {
+    "north": [
+      {"supported": ["wide", "small-1"], "default": "small-1"}
+    ],
+    "south": [
+      {"supported": ["vertical-water-land"], "default": "vertical-water-land"}
+    ],
+    "east": [
+      {"supported": ["closed"], "default": "closed"}
+    ],
+    "west": [
+      {"supported": ["small-1"], "default": "small-1"}
+    ]
+  },
   "nodes": [
     {
       "id": 1,

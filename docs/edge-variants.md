@@ -31,6 +31,11 @@ Each segment requires:
 | `dual-small` | Two small openings. |
 | `small-1` | An offset small opening: north on an east/west edge, west on a north/south edge. |
 | `small-2` | The opposite offset: south on an east/west edge, east on a north/south edge. |
+| `light-only` | A transition that only exists in the Light World. |
+| `land-water-land` | Land on both sides with a river in the middle. |
+| `vertical-water-land` | A vertical transition with a river on the left. |
+| `horizonal-water-land` | A horizontal transition with a river on the top. |
+| `split-house` | A transition with a house split in half and a land walkway south of it. |
 
 ## Overworld Randomization
 
