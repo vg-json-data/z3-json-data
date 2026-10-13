@@ -10,7 +10,7 @@
       {"supported": {"wide": [1], "dual-small": [1, 1]}, "default": "wide"}
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [nnn]}, "default": "closed"}
+      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
     ],
     "east": [
       {"supported": {"light-only": [2]}, "default": "light-only"}
@@ -43,6 +43,11 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Far South Area",
+      "world": "both"
     }
   ],
   "strats": [
@@ -100,6 +105,18 @@
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "world": "any",
       "requires": []
     }
   ]

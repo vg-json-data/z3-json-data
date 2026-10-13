@@ -10,10 +10,10 @@
       {"supported": {"closed": []}, "default": "closed"}
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [nnn]}, "default": "closed"}
+      {"supported": {"closed": [], "small-2": [5]}, "default": "closed"}
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [nnn]}, "default": "closed"}
+      {"supported": {"closed": [], "small-2": [6]}, "default": "closed"}
     ],
     "west": [
       {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
@@ -68,6 +68,18 @@
           "world": "dark"
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "Southern Non-Vanilla Edge",
+      "world": "both",
+      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
+    },
+    {
+      "id": 6,
+      "name": "Eastern Non-Vanilla Edge",
+      "world": "both",
+      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
     }
   ],
   "strats": [
@@ -120,6 +132,34 @@
       ]
     },
     {
+      "link": [1, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 5],
+      "name": "Base - Non-Vanilla Rock",
+      "world": "dark",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [1, 6],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [1, 6],
+      "name": "Base - Non-Vanilla Rock",
+      "world": "dark",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -138,6 +178,34 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [5, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [5, 1],
+      "name": "Base - Non-Vanilla Rock",
+      "world": "dark",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [6, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Base - Non-Vanilla Rock",
+      "world": "dark",
+      "requires": [
+        {"glove": 2}
+      ]
     }
   ]
 }
