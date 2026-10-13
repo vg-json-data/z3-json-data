@@ -3,6 +3,26 @@
   "id": 93,
   "name": "Palace of Darkness",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Helmasaur King",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Goriya (Green)",
+      "Goriya (Red)",
+      "Hardhat Beetle (Blue)",
+      "Hardhat Beetle (Red)",
+      "Head-Detaching Stalfos",
+      "Helmasaur",
+      "Kodongo",
+      "Terrorpin",
+
+      "Bubble",
+      "Medusa",
+      "Spike Block"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

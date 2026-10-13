@@ -19,6 +19,61 @@
       {"supported": {"small-1": [1], "horizontal-land-water": [1, 3]}, "default": "horizontal-land-water"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 2
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 1
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Taros (Blue)",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

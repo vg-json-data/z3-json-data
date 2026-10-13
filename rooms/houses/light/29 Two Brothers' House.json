@@ -3,6 +3,9 @@
   "id": 54,
   "name": "Two Brothers' House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

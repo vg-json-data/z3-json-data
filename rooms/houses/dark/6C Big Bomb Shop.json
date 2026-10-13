@@ -3,6 +3,9 @@
   "id": 91,
   "name": "Big Bomb Shop",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

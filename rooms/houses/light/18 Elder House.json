@@ -3,6 +3,9 @@
   "id": 43,
   "name": "Elder House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

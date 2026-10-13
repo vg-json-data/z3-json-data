@@ -3,6 +3,9 @@
   "id": 74,
   "name": "Mire East Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

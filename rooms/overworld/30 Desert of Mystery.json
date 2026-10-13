@@ -23,6 +23,61 @@
       {"supported": {"closed": [], "dual-small": [3, 5], "small-1": [3], "small-2": [5]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Geldman",
+            "count": 10
+          },
+          {
+            "name": "Land Mine",
+            "count": 4
+          },
+          {
+            "name": "Vulture",
+            "count": 3
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Geldman",
+            "count": 10
+          },
+          {
+            "name": "Land Mine",
+            "count": 1
+          },
+          {
+            "name": "Vulture",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Dacto",
+          "count": 2
+        },
+        {
+          "name": "Ku",
+          "count": 6
+        },
+        {
+          "name": "Swamola",
+          "count": 4
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

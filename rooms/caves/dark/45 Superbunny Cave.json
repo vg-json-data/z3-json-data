@@ -3,6 +3,14 @@
   "id": 66,
   "name": "Superbunny Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Hardhat Beetle (Blue)",
+        "count": 4
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

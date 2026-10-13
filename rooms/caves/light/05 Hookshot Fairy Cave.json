@@ -3,6 +3,9 @@
   "id": 7,
   "name": "Hookshot Fairy Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

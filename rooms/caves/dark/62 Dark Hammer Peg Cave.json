@@ -3,6 +3,9 @@
   "id": 70,
   "name": "Dark Hammer Peg Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

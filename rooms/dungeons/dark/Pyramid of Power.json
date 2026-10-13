@@ -3,6 +3,11 @@
   "id": 101,
   "name": "Pyramid",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Ganon"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

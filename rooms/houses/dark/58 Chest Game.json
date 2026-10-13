@@ -3,6 +3,9 @@
   "id": 86,
   "name": "Chest Game",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

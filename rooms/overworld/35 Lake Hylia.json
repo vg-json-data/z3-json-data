@@ -23,6 +23,105 @@
       {"supported": {"wide": [4], "small-2": [4]}, "default": "small-2"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Bow Soldier (Blue)",
+            "count": 1
+          },
+          {
+            "name": "Buzz Blob",
+            "count": 6
+          },
+          {
+            "name": "Crow",
+            "count": 2
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 6
+          },
+          {
+            "name": "Octorok",
+            "count": 3
+          },
+          {
+            "name": "Sand Crab",
+            "count": 3
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Buzz Blob",
+            "count": 6
+          },
+          {
+            "name": "Crow",
+            "count": 2
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 7
+          },
+          {
+            "name": "Octorok",
+            "count": 4
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ku",
+          "count": 5
+        },
+        {
+          "name": "Pikit",
+          "count": 4
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Slarok",
+          "count": 2
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        },
+        {
+          "name": "Taros (Blue)",
+          "count": 2
+        },
+        {
+          "name": "Zirro (Blue)",
+          "count": 2
+        },
+        {
+          "name": "Zirro (Green)",
+          "count": 5
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

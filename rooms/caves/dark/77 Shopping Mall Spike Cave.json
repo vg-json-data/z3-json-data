@@ -3,6 +3,9 @@
   "id": 80,
   "name": "Shopping Mall Spike Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

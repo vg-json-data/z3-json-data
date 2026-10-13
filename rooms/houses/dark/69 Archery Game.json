@@ -3,6 +3,9 @@
   "id": 90,
   "name": "Archery Game",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

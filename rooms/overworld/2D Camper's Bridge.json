@@ -19,6 +19,69 @@
       {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Bow Soldier (Blue)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Hinox",
+          "count": 1
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Stal",
+          "count": 2
+        },
+        {
+          "name": "Taros (Blue)",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

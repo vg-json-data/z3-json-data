@@ -3,6 +3,9 @@
   "id": 84,
   "name": "Brewery",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

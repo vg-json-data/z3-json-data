@@ -3,6 +3,9 @@
   "id": 38,
   "name": "Potion Shop",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

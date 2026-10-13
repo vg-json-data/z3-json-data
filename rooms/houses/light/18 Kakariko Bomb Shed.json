@@ -3,6 +3,14 @@
   "id": 44,
   "name": "Kakariko Bomb Shed",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Rat",
+        "count": 2
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

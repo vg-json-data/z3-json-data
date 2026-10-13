@@ -3,6 +3,21 @@
   "id": 60,
   "name": "Tower of Hera",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Moldorm",
+
+      "Hardhat Beetle (Blue)",
+      "Hardhat Beetle (Red)",
+      "Kodongo",
+      "Mini-Moldorm",
+      "Stalfos",
+
+      "Flying Tile",
+      "Guruguru Bar",
+      "Spark"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

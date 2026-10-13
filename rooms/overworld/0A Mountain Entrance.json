@@ -19,6 +19,65 @@
       {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 3
+          },
+          {
+            "name": "Crow",
+            "count": 3
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Crow",
+            "count": 3
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 1
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Dacto",
+          "count": 2
+        },
+        {
+          "name": "Moblin",
+          "count": 3
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

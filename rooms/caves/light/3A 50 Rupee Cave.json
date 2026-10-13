@@ -3,6 +3,9 @@
   "id": 32,
   "name": "50 Rupee Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

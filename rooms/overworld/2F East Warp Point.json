@@ -19,6 +19,53 @@
       {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Armos",
+            "count": 2
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 1
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Armos",
+            "count": 2
+          },
+          {
+            "name": "Spear Soldier (Green)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Dacto",
+          "count": 1
+        },
+        {
+          "name": "Snap Dragon",
+          "count": 3
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

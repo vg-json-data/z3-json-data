@@ -3,6 +3,9 @@
   "id": 25,
   "name": "Cave 45",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

@@ -19,6 +19,32 @@
       {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 5
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 5
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": []
+    }
+  },
   "nodes": [
     {
       "id": 1,

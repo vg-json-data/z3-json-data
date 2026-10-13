@@ -19,6 +19,65 @@
       {"supported": {"horizonal-water-land": [2, 1]}, "default": "horizonal-water-land"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Octoballoon",
+            "count": 1
+          },
+          {
+            "name": "Octorok",
+            "count": 2
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Octoballoon",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ku",
+          "count": 1
+        },
+        {
+          "name": "Pikit",
+          "count": 1
+        },
+        {
+          "name": "Slarok",
+          "count": 2
+        },
+        {
+          "name": "Zirro (Green)",
+          "count": 2
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

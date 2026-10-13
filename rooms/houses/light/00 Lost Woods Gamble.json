@@ -3,6 +3,9 @@
   "id": 35,
   "name": "Lost Woods Gamble",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

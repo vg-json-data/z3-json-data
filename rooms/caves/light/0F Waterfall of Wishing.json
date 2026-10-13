@@ -3,6 +3,9 @@
   "id": 12,
   "name": "Waterfall of Wishing",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

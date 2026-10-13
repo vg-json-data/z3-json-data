@@ -3,6 +3,9 @@
   "id": 72,
   "name": "Ice Lake Inlet Great Fairy",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

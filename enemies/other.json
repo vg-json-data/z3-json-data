@@ -242,6 +242,23 @@
       },
       "spriteIndex": 64,
       "prizePack": null
+    },
+    {
+      "names": [
+        "Thief"
+      ],
+      "note": [
+        "Contact causes knockback but no heart damage. When the Thief catches Link while chasing, it scatters up to six pickups from his inventory.",
+        "Each successful drop removes one rupee, one arrow, or one bomb. Each attempt randomly selects rupees (50%), arrows (25%), or bombs (25%); the sequence stops early if the selected resource is empty or a pickup cannot spawn.",
+        "Link can reclaim the dropped pickups before the Thief collects them."
+      ],
+      "dmgToLink": {
+        "green": 0,
+        "blue": 0,
+        "red": 0
+      },
+      "spriteIndex": 196,
+      "prizePack": null
     }
   ]
 }

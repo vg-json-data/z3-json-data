@@ -3,6 +3,9 @@
   "id": 75,
   "name": "Mire Great Fairy Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

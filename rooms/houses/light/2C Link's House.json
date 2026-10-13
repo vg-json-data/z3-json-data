@@ -3,6 +3,9 @@
   "id": 55,
   "name": "Link's House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

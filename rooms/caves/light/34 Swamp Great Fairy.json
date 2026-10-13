@@ -3,6 +3,9 @@
   "id": 26,
   "name": "Swamp Great Fairy",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

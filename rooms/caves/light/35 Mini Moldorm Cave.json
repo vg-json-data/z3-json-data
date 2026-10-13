@@ -3,6 +3,14 @@
   "id": 29,
   "name": "Mini Moldorm Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Mini-Moldorm",
+        "count": 4
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

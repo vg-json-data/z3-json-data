@@ -23,6 +23,69 @@
       {"supported": {"closed": [], "dual-small": [10, 1], "small-1": [10], "small-2": [1]}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 3
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 2
+          },
+          {
+            "name": "Thief",
+            "count": 2
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Buzz Blob",
+            "count": 1
+          },
+          {
+            "name": "Hoarder (Bush)",
+            "count": 3
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 3
+          },
+          {
+            "name": "Thief",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Pikit",
+          "count": 3
+        },
+        {
+          "name": "Ropa",
+          "count": 16
+        },
+        {
+          "name": "Snap Dragon",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

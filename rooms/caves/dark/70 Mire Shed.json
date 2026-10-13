@@ -3,6 +3,14 @@
   "id": 76,
   "name": "Mire Shed",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Spark",
+        "count": 2
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,17 @@
   "id": 57,
   "name": "Hyrule Castle",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Ball and Chain Trooper",
+      "Dagger Soldier (Green)",
+      "Keese",
+      "Rat",
+      "Rope",
+      "Sword Soldier (Blue)",
+      "Sword Soldier (Green)"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

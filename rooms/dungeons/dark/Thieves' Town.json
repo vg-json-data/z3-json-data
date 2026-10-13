@@ -3,6 +3,28 @@
   "id": 96,
   "name": "Thieves' Town",
   "roomType": "Dungeon",
+  "enemySpawns": {
+    "enemies": [
+      "Blind",
+
+      "Bari (Blue)",
+      "Bari (Red)",
+      "Buzz",
+      "Chasupa",
+      "Gibo",
+      "Skullrope",
+      "Stalfos",
+      "Zazak (Blue)",
+      "Zazak (Red)",
+      "Zol",
+
+      "Bubble",
+      "Rabbit Beam",
+      "Spark",
+      "Spike Block",
+      "Winder"
+    ]
+  },
   "nodes": [
     {
       "id": 1,

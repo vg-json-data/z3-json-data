@@ -3,6 +3,9 @@
   "id": 51,
   "name": "Blacksmith's Hut",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

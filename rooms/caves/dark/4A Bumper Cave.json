@@ -3,6 +3,14 @@
   "id": 67,
   "name": "Bumper Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Hardhat Beetle (Blue)",
+        "count": 2
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

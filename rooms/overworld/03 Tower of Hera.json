@@ -23,6 +23,46 @@
       {"supported": {"closed": []}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 7
+          },
+          {
+            "name": "Falling Boulder",
+            "count": null,
+            "note": "Recurring spawns; no fixed count."
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Deadrock",
+            "count": 7
+          },
+          {
+            "name": "Falling Boulder",
+            "count": null,
+            "note": "Recurring spawns; no fixed count."
+          },
+          {
+            "name": "Tektite (Blue)",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": []
+    }
+  },
   "nodes": [
     {
       "id": 1,

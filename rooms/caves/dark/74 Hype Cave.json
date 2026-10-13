@@ -3,6 +3,9 @@
   "id": 77,
   "name": "Hype Cave",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

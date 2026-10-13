@@ -3,6 +3,9 @@
   "id": 48,
   "name": "West Snitch Lady's House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

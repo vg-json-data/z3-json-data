@@ -19,6 +19,65 @@
       {"supported": {"closed": []}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Crow",
+            "count": 1
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 1
+          },
+          {
+            "name": "Sand Crab",
+            "count": 2
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "4-way Octorok",
+            "count": 1
+          },
+          {
+            "name": "Fireball Zora",
+            "count": 2
+          },
+          {
+            "name": "Sand Crab",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Ku",
+          "count": 1
+        },
+        {
+          "name": "Ropa",
+          "count": 1
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

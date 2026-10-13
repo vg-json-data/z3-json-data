@@ -4,6 +4,9 @@
   "name": "Sacred Grove",
   "roomType": "Special",
   "note": ["Technically, this is the same room as Under the Bridge."],
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

@@ -3,6 +3,9 @@
   "id": 52,
   "name": "Kakariko Gamble Game",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

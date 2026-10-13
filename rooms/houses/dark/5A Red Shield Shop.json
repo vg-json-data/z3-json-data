@@ -3,6 +3,9 @@
   "id": 88,
   "name": "Red Shield Shop",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

@@ -19,6 +19,55 @@
       {"supported": {"closed": []}, "default": "closed"}
     ]
   },
+  "enemySpawns": {
+    "light": {
+      "beforeZeldaRescue": {
+        "enemies": []
+      },
+      "afterZeldaRescue": {
+        "enemies": [
+          {
+            "name": "Cucco",
+            "count": 1,
+            "note": "Conditional threat; retaliation is not included in the placement count."
+          },
+          {
+            "name": "Sword Soldier (Green)",
+            "count": 2
+          }
+        ]
+      },
+      "afterAgahnim": {
+        "enemies": [
+          {
+            "name": "Cucco",
+            "count": 1,
+            "note": "Conditional threat; retaliation is not included in the placement count."
+          },
+          {
+            "name": "Sword Soldier (Blue)",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "dark": {
+      "enemies": [
+        {
+          "name": "Moblin",
+          "count": 2
+        },
+        {
+          "name": "Spear Soldier (Green)",
+          "count": 1
+        },
+        {
+          "name": "Stal",
+          "count": 1
+        }
+      ]
+    }
+  },
   "nodes": [
     {
       "id": 1,

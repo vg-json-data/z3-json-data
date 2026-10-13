@@ -3,6 +3,9 @@
   "id": 50,
   "name": "Sahasrahla's Hut",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

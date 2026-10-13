@@ -3,6 +3,9 @@
   "id": 36,
   "name": "Lumberjack House",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

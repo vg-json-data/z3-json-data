@@ -3,6 +3,9 @@
   "id": 46,
   "name": "Kakariko Tavern",
   "roomType": "House",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,

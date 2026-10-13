@@ -36,8 +36,8 @@ Defines edges representing transitions between rooms. `entrances.json` contains 
 Contains the definitions for both permanent and temporary items in the game.
 Item receipt records omit the `vanilla` field when the receipt ID is defined by the original game. Randomizer-defined receipt IDs include `"vanilla": false`, with an optional `note` when their behavior needs explanation.
 
-### `/Enemies`
-Detailed information on enemy vulnerabilities, attacks, and damage values. This includes standard enemies, bosses, and environmental hazards.
+### [`/Enemies`](docs/enemies.md)
+Detailed information on enemy vulnerabilities, attacks, and damage values. This includes standard enemies, bosses, and environmental hazards. See [room enemy lists](docs/room-enemies.md) for which enemies appear in each area.
 
 ### [`/Tech`](docs/tech.md)
 A set of skill assumptions which the player may toggle to adjust the expected difficulty and logic paths.

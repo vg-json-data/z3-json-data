@@ -260,8 +260,45 @@ def validate_requirements(path, document, requirements, location, references, er
             validate_reference(path, document, current, kind, references["techs"], "proficiency tech", errors)
 
 
+def validate_enemy_spawns(path, document, references, errors):
+    inventory = document["enemySpawns"]
+    if document["roomType"] == "Dungeon":
+        for i, name in enumerate(inventory["enemies"]):
+            validate_reference(path, document, ["enemySpawns", "enemies", i], name,
+                               references["enemies"], "enemy or hazard", errors)
+        return
+    if document["roomType"] == "Overworld":
+        if set(inventory) != {"light", "dark"}:
+            _record(errors, path, "/enemySpawns", "Overworld inventories require light and dark profiles")
+            return
+        profiles = [(["enemySpawns", "light", stage], population)
+                    for stage, population in inventory["light"].items()]
+        profiles.append((["enemySpawns", "dark"], inventory["dark"]))
+    elif document["roomType"] in {"Cave", "House", "Special"}:
+        if set(inventory) != {"enemies"}:
+            _record(errors, path, "/enemySpawns", "Cave, House, and Special inventories require one enemies list")
+            return
+        profiles = [(["enemySpawns"], inventory)]
+    else:
+        _record(errors, path, "/enemySpawns", "only supported for Overworld, Cave, House, Special, and Dungeon rooms")
+        return
+    for location, population in profiles:
+        seen = set()
+        for i, enemy in enumerate(population["enemies"]):
+            entry = location + ["enemies", i]
+            name = enemy["name"]
+            if name is not None:
+                validate_reference(path, document, entry + ["name"], name,
+                                   references["enemies"], "enemy or hazard", errors)
+            if name in seen:
+                _record(errors, path, display_path(document, entry), "duplicate enemy name")
+            seen.add(name)
+
+
 def validate_room(path, document, references, errors):
     overworld = document["roomType"] == "Overworld"
+    if "enemySpawns" in document:
+        validate_enemy_spawns(path, document, references, errors)
     indices = {name: {} for name in [
         "nodes", "items", "doors", "obstacles", "entrances", "teleports", "whirlpools",
     ]}

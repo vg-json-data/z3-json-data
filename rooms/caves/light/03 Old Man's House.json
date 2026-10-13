@@ -3,6 +3,14 @@
   "id": 4,
   "name": "Old Man's House",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": [
+      {
+        "name": "Keese",
+        "count": 9
+      }
+    ]
+  },
   "nodes": [
     {
       "id": 1,

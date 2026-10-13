@@ -3,6 +3,9 @@
   "id": 68,
   "name": "Dark Sanctuary",
   "roomType": "Cave",
+  "enemySpawns": {
+    "enemies": []
+  },
   "nodes": [
     {
       "id": 1,
