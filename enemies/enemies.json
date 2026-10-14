@@ -896,7 +896,7 @@
         "Spear Soldier (Red)",
         "Taros (Red)"
       ],
-      "note": ["Identical to enemy 69."],
+      "note": ["Includes placed sprite 0x45 (69). Kakariko's summoned green spear soldiers use the same sprite index with overridden stats and are modeled separately."],
       "hp": 8,
       "dmgToLink": {
         "green": 8,
@@ -961,7 +961,7 @@
         "Spear Soldier (Green)"
       ],
       "note": [
-        "These are summoned by citizens of Kakariko Village."
+        "These are summoned by citizens of Kakariko Village. CallThePolice overrides sprite 0x45 to use a green palette, 4 HP, and no prize pack; ordinary placements are Spear Soldier (Red) or Taros (Red)."
       ],
       "hp": 4,
       "dmgToLink": {
@@ -1634,7 +1634,8 @@
     },
     {
       "names": [
-        "Keese"
+        "Keese",
+        "Chasupa (Light World)"
       ],
       "hp": 1,
       "dmgToLink": {
@@ -1667,7 +1668,7 @@
       "names": [
         "Chasupa"
       ],
-      "note": ["Sometimes called a Patra. A weak, Dark World bat, with a large eye."],
+      "note": ["Sometimes called a Patra. A Dark World bat with a large eye; stronger than the Light World Chasupa in Agahnim's Tower."],
       "hp": 4,
       "dmgToLink": {
         "green": 16,

@@ -78,6 +78,9 @@ def enemy_name(sprite, x, dark, by_sprite):
         return "Buzz" if dark else "Rat"
     if sprite == 0x6F:
         return "Chasupa" if dark else "Keese"
+    if sprite == 0x45:
+        # The green spear soldier is a summoned variant, not a placement.
+        return "Taros (Red)" if dark else "Spear Soldier (Red)"
     candidates = by_sprite.get(sprite, [])
     assert len(candidates) == 1, f"Unclassified indoor sprite {sprite:02X}: {candidates}"
     return candidates[0]

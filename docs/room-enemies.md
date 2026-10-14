@@ -66,3 +66,12 @@ Lists include bosses, regular enemies, and cataloged hazards.
 Spawned enemies such as Wallmasters and Flying Tiles are included. Ordinary
 projectiles, enemies created by item transformations, and environmental hazards
 such as floor spikes are omitted.
+
+## Damage requirements
+
+Validation checks that each strat's `damage.enemy` occurs in its room's
+`enemySpawns`. Overworld checks use the strat's world, or both worlds for `world: "any"`
+and world-changing strats. A Light World enemy must appear in at least one story-stage.
+
+`Fall`, `Ground Spikes`, and Link's own `Bomb` damage are exempt because these
+sources are not placed enemies.

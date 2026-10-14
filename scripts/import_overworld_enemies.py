@@ -82,6 +82,10 @@ def resolve(sprite, x, dark, by_sprite):
         return ("Cucco Skeleton" if dark else "Cucco"), "Conditional threat; retaliation is not included in the placement count."
     if sprite == 0x55:
         return ("Ku" if dark else "Fireball Zora"), None
+    if sprite == 0x45:
+        # Placed guards have 8 HP; only Kakariko's summoned guards get the
+        # green palette, 4 HP, and no prize pack in CallThePolice.
+        return ("Taros (Red)" if dark else "Spear Soldier (Red)"), None
     if sprite in (0x41, 0x43) and dark:
         return ("Taros (Blue)" if sprite == 0x41 else "Taros (Red)"), None
     candidates = by_sprite.get(sprite, [])
