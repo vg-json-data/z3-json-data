@@ -19,12 +19,14 @@ Each edge is an array of segments. A normal room with a `size` of 2×2 will have
 
 Each segment requires:
 
-- `supported`: A nonempty object mapping variant names to ordered arrays of local node IDs. The order of variant keys has no meaning.
+- `supported`: A nonempty object mapping variant names to ordered arrays of local node references. The order of variant keys has no meaning.
 - `default`: One of the keys in `supported`, chosen as the supported option closest to vanilla. It remains a string; node references are defined only in `supported`.
 
 Node arrays run west to east on north/south edges, and north to south on east/west edges, within each segment. This is map order, regardless of travel direction. Each entry identifies the node at that opening on this room's side of the connection. Repeat an ID when multiple openings lead to the same node: `"dual-small": [1, 1]` still describes two openings. `"closed": []` has no openings and no node references.
 
-References must identify nodes in the same room. Referenced nodes must exist in both worlds, except for `light-only`, which may or may not exist in both worlds. For `light-only` transitions that reference a node shared by both worlds, traversal to the neighboring room is only possible while in the Light World.
+Integer references must identify nodes in the same room. Referenced nodes must exist in both worlds, except for `light-only`, which may or may not exist in the Dark World. For `light-only` transitions that reference a node shared by both worlds, traversal to the neighboring room is only possible while in the Light World.
+
+For `lake`, references are ordered land then water. The water reference may instead be `"return"`, as in `"lake": [4, "return"]`. This allows entering the room at that opening, but the only available action is to go back to the previous room through the same opening; it does not reference a node in `nodes`. This round trip can reset the previous room, for example for a fake flippers strat.
 
 ## Variant Types
 
@@ -41,6 +43,7 @@ References must identify nodes in the same room. Referenced nodes must exist in 
 | `horizonal-water-land` | A horizontal transition with a river on the top. | 2 |
 | `horizontal-land-water` | A horizontal transition with a river on the bottom. | 2 |
 | `split-house` | A transition with a house split in half and a land walkway south of it. | 1 (For the walkway) |
+| `lake` | A wide land opening alongside a lake, matching Great Swamp Lake. | 2 |
 
 ## Overworld Randomization
 
@@ -82,6 +85,6 @@ A large room's north edge has a western segment and an eastern segment, with the
 
 ## Validation
 
-The schema enforces variant names, positive integer node IDs, and the exact node count for each variant, along with the required object structure. Duplicate node IDs are allowed because separate openings can share a node.
+The schema enforces variant names, positive integer node IDs, and the exact reference count for each variant, along with the required object structure. It also permits string references for `lake`. Duplicate node IDs are allowed because separate openings can share a node.
 
-The repository validator checks that each referenced node exists in the room and the appropriate worlds, that `default` is a key in `supported`, and that segment counts match room dimensions.
+The repository validator checks that each referenced node ID exists in the room and the appropriate worlds, that `default` is a key in `supported`, and that segment counts match room dimensions.

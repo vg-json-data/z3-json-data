@@ -20,7 +20,7 @@
     ],
     "west": [
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
-      {"supported": {"wide": [4], "small-2": [4]}, "default": "small-2"}
+      {"supported": {"wide": [4], "small-2": [4], "lake": [4, "return"]}, "default": "small-2"}
     ]
   },
   "enemySpawns": {

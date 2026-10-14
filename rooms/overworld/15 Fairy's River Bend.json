@@ -16,7 +16,7 @@
       {"supported": {"horizonal-water-land": [3, 2]}, "default": "horizonal-water-land"}
     ],
     "west": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {"supported": {"wide": [1], "lake": [1, "return"]}, "default": "wide"}
     ]
   },
   "enemySpawns": {

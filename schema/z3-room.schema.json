@@ -633,7 +633,8 @@
         "vertical-water-land",
         "horizonal-water-land",
         "horizontal-land-water",
-        "split-house"
+        "split-house",
+        "lake"
       ],
       "description": "Allowed edge variant names from the Variant Types section of docs/edge-variants.md."
     },
@@ -746,6 +747,15 @@
               "maxItems": 1,
               "items": {
                 "type": "integer",
+                "minimum": 1
+              }
+            },
+            "lake": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": ["integer", "string"],
                 "minimum": 1
               }
             }
