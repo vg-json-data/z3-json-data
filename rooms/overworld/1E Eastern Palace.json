@@ -19,7 +19,7 @@
       {"supported": {"closed": []}, "default": "closed"}
     ],
     "west": [
-      {"supported": {"closed": [], "wide": [2], "small-1": [2], "small-2": [2]}, "default": "closed"},
+      {"supported": {"closed": [], "wide": [2], "small-1": [2], "small-2": [2], "lake": [2, "return"]}, "default": "closed"},
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
     ]
   },

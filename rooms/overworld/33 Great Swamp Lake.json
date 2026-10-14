@@ -13,7 +13,7 @@
       {"supported": {"wide": [2]}, "default": "wide"}
     ],
     "east": [
-      {"supported": {"wide": [2]}, "default": "wide"}
+      {"supported": {"wide": [2], "lake": [2, 4]}, "default": "lake"}
     ],
     "west": [
       {"supported": {"wide": [1], "small-1": [1]}, "default": "wide"}

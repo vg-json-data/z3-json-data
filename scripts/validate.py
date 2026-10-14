@@ -354,6 +354,8 @@ def validate_room(path, document, references, errors):
                         "default variant must be present in supported")
             for variant, node_ids in segment["supported"].items():
                 for j, node_id in enumerate(node_ids):
+                    if variant == "lake" and j == 1 and node_id == "return":
+                        continue  # A return-only opening has no local node to resolve.
                     node_location = location + ["supported", variant, j]
                     validate_reference(path, document, node_location, node_id,
                                        indices["nodes"], "node", errors)
