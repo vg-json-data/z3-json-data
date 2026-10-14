@@ -92,7 +92,8 @@
     {
       "link": [4, 4],
       "name": "Base - Collect Item",
-      "requires": []
+      "requires": [],
+      "collectsItems": [1]
     },
     {
       "link": [4, 5],

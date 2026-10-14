@@ -596,7 +596,8 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Spark", "count": 1}}
         ]}
-      ]
+      ],
+      "collectsItems": [8]
     },
     {
       "link": [13, 14],
