@@ -85,6 +85,6 @@ A large room's north edge has a western segment and an eastern segment, with the
 
 ## Validation
 
-The schema enforces variant names, positive integer node IDs, and the exact reference count for each variant, along with the required object structure. It also permits string references for `lake`. Duplicate node IDs are allowed because separate openings can share a node.
+The schema enforces variant names, positive integer node IDs, and the exact reference count for each variant, along with the required object structure. It also permits `"return"` as the second reference for `lake`. Duplicate node IDs are allowed because separate openings can share a node.
 
 The repository validator checks that each referenced node ID exists in the room and the appropriate worlds, that `default` is a key in `supported`, and that segment counts match room dimensions.

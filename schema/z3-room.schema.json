@@ -754,10 +754,15 @@
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": {
-                "type": ["integer", "string"],
-                "minimum": 1
-              }
+              "items": [
+                { "type": "integer", "minimum": 1 },
+                {
+                  "anyOf": [
+                    { "type": "integer", "minimum": 1 },
+                    { "const": "return" }
+                  ]
+                }
+              ]
             }
           },
           "description": "Variant names map to ordered local node IDs, west to east or north to south. Repeated node IDs are allowed."
