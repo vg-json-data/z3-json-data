@@ -55,9 +55,15 @@ def resolve(sprite, x, native, dark, catalog):
     if sprite in (0x83, 0x84):
         kind = "Goriya" if native in {0x1B, 0x4B, 0x6B} else "Eyegore"
         return f"{kind} ({'Green' if sprite == 0x83 else 'Red'})"
+    if sprite == 0x6F and not dark and native in {0xB0, 0xD0}:
+        # Agahnim's Tower uses Chasupa graphics with Light World Keese stats.
+        return "Chasupa (Light World)"
     if sprite in (0x6D, 0x6E, 0x6F):
         return {0x6D: ("Rat", "Buzz"), 0x6E: ("Rope", "Skullrope"),
                 0x6F: ("Keese", "Chasupa")}[sprite][dark]
+    if sprite == 0x45:
+        # The green spear soldier is a summoned variant, not a placement.
+        return "Taros (Red)" if dark else "Spear Soldier (Red)"
     if dark and sprite in (0x41, 0x43):
         return "Taros (Blue)" if sprite == 0x41 else "Taros (Red)"
     if sprite in (0x66, 0x67, 0x68, 0x69):
@@ -146,6 +152,9 @@ def main():
             names.add("Arrghus Fuzz")
         if "Bubble Cluster" in names:
             names.add("Invincible Bubble")
+        if room["name"] == "Ice Palace":
+            # Static gray spike blocks on the 8 -> 9 route are not sprite placements.
+            names.add("Spike Block")
         assert names <= catalog_names, names - catalog_names
         inventory, replacement = grouped_inventory(names)
         if "enemySpawns" in room:

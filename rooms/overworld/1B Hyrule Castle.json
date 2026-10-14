@@ -72,12 +72,8 @@
       "afterAgahnim": {
         "enemies": [
           {
-            "name": "Spear Soldier (Green)",
-            "count": 3
-          },
-          {
             "name": "Spear Soldier (Red)",
-            "count": 1
+            "count": 4
           },
           {
             "name": "Sword Soldier (Blue)",
@@ -437,7 +433,7 @@
             {"notFlag": "GameStateAgahnim"},
             {"or": [
               {"glove": 0},
-              {"damage": {"enemy": "Spear Soldier (Green)", "count": 1}}
+              {"damage": {"enemy": "Sword Soldier (Green)", "count": 1}}
             ]}
           ]}
         ]}

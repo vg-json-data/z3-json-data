@@ -216,7 +216,31 @@ def collect_references(documents, errors):
     return references
 
 
-def validate_requirements(path, document, requirements, location, references, errors, room=None):
+def damage_enemy_populations(document, strat):
+    """Select inventories for each world in which a strat can take damage."""
+    inventory = document.get("enemySpawns")
+    if inventory is None:
+        return []
+    if document["roomType"] == "Dungeon":
+        return [("room", set(inventory["enemies"]))]
+    if document["roomType"] != "Overworld":
+        return [("room", {enemy["name"] for enemy in inventory["enemies"]})]
+    if set(inventory) != {"light", "dark"}:
+        return []  # Report the malformed inventory in validate_enemy_spawns.
+    worlds = {strat["world"]} if strat.get("world") in {"light", "dark"} else {
+        strat.get("fromWorld", "light"), strat.get("toWorld", "dark"),
+    }
+    populations = []
+    for world in sorted(worlds):
+        profiles = inventory["light"].values() if world == "light" else [inventory["dark"]]
+        populations.append((world, {
+            enemy["name"] for profile in profiles for enemy in profile["enemies"]
+        }))
+    return populations
+
+
+def validate_requirements(path, document, requirements, location, references, errors, room=None,
+                          enemy_populations=()):
     for i, requirement in enumerate(requirements):
         current = location + [i]
         if isinstance(requirement, str):
@@ -227,7 +251,8 @@ def validate_requirements(path, document, requirements, location, references, er
         kind, value = next(iter(requirement.items()))
         current += [kind]
         if kind in {"and", "or"}:
-            validate_requirements(path, document, value, current, references, errors, room)
+            validate_requirements(path, document, value, current, references, errors, room,
+                                  enemy_populations)
         elif kind == "blueCane":
             if value < 20 or value % 4 != 0:
                 _record(errors, path, display_path(document, current),
@@ -237,6 +262,14 @@ def validate_requirements(path, document, requirements, location, references, er
         elif kind == "damage":
             validate_reference(path, document, current + ["enemy"], value["enemy"],
                                references["enemies"], "enemy or hazard", errors)
+            enemy = references["enemies"].get(value["enemy"])
+            # These sources are deliberately omitted from placed-enemy inventories.
+            if enemy is not None and value["enemy"] not in {"Fall", "Ground Spikes", "Bomb"}:
+                aliases = set(enemy[2]["names"])
+                for world, population in enemy_populations:
+                    if not aliases.intersection(population):
+                        _record(errors, path, display_path(document, current + ["enemy"]),
+                                f"{json.dumps(value['enemy'])} is absent from {world} enemySpawns")
             if "attack" in value:
                 attack = value["attack"]
                 validate_reference(path, document, current + ["attack"], attack,
@@ -375,7 +408,8 @@ def validate_room(path, document, references, errors):
             for j, value in enumerate(strat.get(field, [])):
                 validate_reference(path, document, location + [field, j], value, definitions, kind, errors)
         validate_requirements(path, document, strat["requires"],
-                              location + ["requires"], references, errors, indices)
+                              location + ["requires"], references, errors, indices,
+                              damage_enemy_populations(document, strat))
         for field, link_index in [("entranceState", 0), ("exitState", 1)]:
             event = strat.get(field)
             if event is None or "entranceID" not in event:

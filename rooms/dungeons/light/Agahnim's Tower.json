@@ -9,7 +9,7 @@
 
       "Ball and Chain Trooper",
       "Bow Soldier (Blue)",
-      "Keese",
+      "Chasupa (Light World)",
       "Spear Soldier (Red)",
       "Super Spear Soldier (Red)",
       "Super Sword Soldier (Blue)",
@@ -328,12 +328,12 @@
         "Lamp",
         {"or": [
           {"and": [
-            {"damage": {"enemy": "Chasupa", "count": 6}},
+            {"damage": {"enemy": "Chasupa (Light World)", "count": 6}},
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 4}}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"damage": {"enemy": "Chasupa", "count": 4}},
+            {"damage": {"enemy": "Chasupa (Light World)", "count": 4}},
             {"damage": {"enemy": "Super Sword Soldier (Blue)", "count": 1}}
           ]}
         ]}
@@ -367,7 +367,7 @@
               "Hammer",
               "Hookshot"
             ]},
-            {"damage": {"enemy": "Chasupa", "count": 1}},
+            {"damage": {"enemy": "Chasupa (Light World)", "count": 1}},
             {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
           ]},
           {"arrows": 3},
@@ -413,7 +413,7 @@
       "collectsItems": [2],
       "note": [
         "The only easy to reach pot is the top left; it is recommended to use it to kill the north soldier to free up a second pot.",
-        "Then use the north pot to kill the bottom right soldier or to kill a Chasupa (bat) and then use the top right pot to do so.",
+        "Then use the north pot to kill the bottom right soldier or to kill a Chasupa (Light World) and then use the top right pot to do so.",
         "This soldier guards two pots, which makes the remaining kills significantly more flexible."
       ]
     },

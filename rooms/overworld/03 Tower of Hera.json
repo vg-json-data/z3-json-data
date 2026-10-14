@@ -383,13 +383,19 @@
     {
       "link": [4, 3],
       "name": "Base",
-      "world": "any",
+      "world": "light",
       "requires": [
         {"or": [
           {"damage": {"enemy": "Deadrock", "count": 2}},
           {"combatProficiency": 3}
         ]}
       ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
     },
     {
       "link": [5, 1],
