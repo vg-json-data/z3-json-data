@@ -16,7 +16,7 @@
     ],
     "east": [
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
-      {"supported": {"light-only": [1]}, "default": "light-only"}
+      {"supported": {"light-and-mirror": [1, null, 8]}, "default": "light-and-mirror"}
     ],
     "west": [
       {"supported": {"closed": [], "wide": [3], "small-1": [3], "small-2": [3], "lake": [3, "return"]}, "default": "closed"},

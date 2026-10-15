@@ -16,7 +16,7 @@
       {"supported": {"dual-small": [2, 1], "small-2": [1]}, "default": "dual-small"}
     ],
     "west": [
-      {"supported": {"light-only": [3]}, "default": "light-only"}
+      {"supported": {"light-only": [3], "light-and-mirror": [3, 3, null]}, "default": "light-and-mirror"}
     ]
   },
   "enemySpawns": {

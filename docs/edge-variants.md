@@ -22,11 +22,25 @@ Each segment requires:
 - `supported`: A nonempty object mapping variant names to ordered arrays of local node references. The order of variant keys has no meaning.
 - `default`: One of the keys in `supported`, chosen as the supported option closest to vanilla. It remains a string; node references are defined only in `supported`.
 
-Node arrays run west to east on north/south edges, and north to south on east/west edges, within each segment. This is map order, regardless of travel direction. Each entry identifies the node at that opening on this room's side of the connection. Repeat an ID when multiple openings lead to the same node: `"dual-small": [1, 1]` still describes two openings. `"closed": []` has no openings and no node references.
+Node arrays run west to east on north/south edges, and north to south on east/west edges, within each segment, except for variants with explicit role ordering below. This is map order, regardless of travel direction. Each entry identifies a local node on this room's side of the connection. Repeat an ID when multiple openings lead to the same node: `"dual-small": [1, 1]` still describes two openings. `"closed": []` has no openings and no node references.
 
-Integer references must identify nodes in the same room. Referenced nodes must exist in both worlds, except for `light-only`, which may or may not exist in the Dark World. For `light-only` transitions that reference a node shared by both worlds, traversal to the neighboring room is only possible while in the Light World.
+Integer references must identify nodes in the same room. Referenced nodes must exist in both worlds, except for `light-only` and `light-and-mirror`. A `light-only` node must exist in the Light World and may or may not exist in the Dark World; traversal to the neighboring room is only possible while in the Light World. The required worlds for `light-and-mirror` depend on each entry's role, as described below.
 
 For `lake`, references are ordered land then water. The water reference may instead be `"return"`, as in `"lake": [4, "return"]`. This allows entering the room at that opening, but the only available action is to go back to the previous room through the same opening; it does not reference a node in `nodes`. This round trip can reset the previous room, for example for a fake flippers strat.
+
+### Light and Mirror
+
+`light-and-mirror` has exactly three entries, each a local node ID or `null`, ordered by role rather than map position:
+
+1. The ordinary Light World endpoint, used to traverse the edge from the room's accessible Light World area.
+2. The Dark World node where Link can use the Mirror to access a blocked area with a transition to the paired room.
+3. A blocked area in the Light World which is not accessible through any means except by transitioning from the neighboring room. This is typically an isolated ledge that is only accessible after using the Mirror in the previous room and then transitioning.
+
+For non-null entries, the first and third nodes must exist in the Light World; the second must exist in the Dark World. A node may also exist in the other world, and IDs may repeat when their roles share a node. `null` means there is no local node for that role. Typically, a room used only as a Mirror source for reaching the neighboring room's normally unreachable endpoint will have its third entry null, while the destination room will have its second entry null.
+
+In addition, traversal from entry 2 to the neighboring room's entry 3 implicitly requires use of the Mirror.
+
+The cross-world route is directed: reaching entry 3 does not imply a return to entry 2 in the previous room. Reverse traversal may or may not exist and if it does it needs its own explicit logic.
 
 ## Variant Types
 
@@ -44,6 +58,7 @@ For `lake`, references are ordered land then water. The water reference may inst
 | `horizontal-land-water` | A horizontal transition with a river on the bottom. | 2 |
 | `split-house` | A transition with a house split in half and a land walkway south of it. | 1 (For the walkway) |
 | `lake` | A wide land opening alongside a lake, matching Great Swamp Lake. | 2 |
+| `light-and-mirror` | A Light World traversal plus a one-way traversal only reachable by mirroring from the Dark World in the adjacent room. | 3 |
 
 ## Overworld Randomization
 
@@ -85,6 +100,6 @@ A large room's north edge has a western segment and an eastern segment, with the
 
 ## Validation
 
-The schema enforces variant names, positive integer node IDs, and the exact reference count for each variant, along with the required object structure. It also permits `"return"` as the second reference for `lake`. Duplicate node IDs are allowed because separate openings can share a node.
+The schema enforces variant names, positive integer node IDs, and the exact reference count for each variant, along with the required object structure. It also permits `"return"` as the second reference for `lake`, and `null` in any of the three entries for `light-and-mirror`. Duplicate node IDs are allowed because separate openings can share a node.
 
 The repository validator checks that each referenced node ID exists in the room and the appropriate worlds, that `default` is a key in `supported`, and that segment counts match room dimensions.

@@ -13,7 +13,7 @@
       {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
     ],
     "east": [
-      {"supported": {"light-only": [2]}, "default": "light-only"}
+      {"supported": {"light-only": [2], "light-and-mirror": [2, null, 2]}, "default": "light-only"}
     ],
     "west": [
       {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
