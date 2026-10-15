@@ -330,6 +330,13 @@
       ]
     },
     {
+      "link": [3, 3],
+      "name": "Base - Collect Item",
+      "world": "light",
+      "requires": [],
+      "collectsItems": [1]
+    },
+    {
       "link": [3, 4],
       "name": "Base",
       "world": "light",
