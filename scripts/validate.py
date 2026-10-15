@@ -356,10 +356,16 @@ def validate_room(path, document, references, errors):
                 for j, node_id in enumerate(node_ids):
                     if variant == "lake" and j == 1 and node_id == "return":
                         continue  # A return-only opening has no local node to resolve.
+                    if variant == "light-and-mirror" and node_id is None:
+                        continue  # This role has no local node.
                     node_location = location + ["supported", variant, j]
                     validate_reference(path, document, node_location, node_id,
                                        indices["nodes"], "node", errors)
-                    for world in (["light"] if variant == "light-only" else ["light", "dark"]):
+                    if variant == "light-and-mirror":
+                        worlds = ["dark" if j == 1 else "light"]
+                    else:
+                        worlds = ["light"] if variant == "light-only" else ["light", "dark"]
+                    for world in worlds:
                         validate_node_world(path, document, node_location,
                                             indices["nodes"].get(node_id), world, errors)
     for i, node in enumerate(document["nodes"]):

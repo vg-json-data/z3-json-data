@@ -19,7 +19,7 @@
       {"supported": {"small-1": [1]}, "default": "small-1"}
     ],
     "west": [
-      {"supported": {"light-only": [4]}, "default": "light-only"},
+      {"supported": {"light-only": [4], "light-and-mirror": [4, 5, null]}, "default": "light-only"},
       {"supported": {"closed": [], "dual-small": [5, 3], "small-1": [5], "small-2": [3]}, "default": "closed"}
     ]
   },

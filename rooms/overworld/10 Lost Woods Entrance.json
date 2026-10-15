@@ -44,7 +44,7 @@
     "dark": {
       "enemies": [
         {
-          "name": "Cucco Skeleton",
+          "name": "Bone Cucco",
           "count": 1,
           "note": "Conditional threat; retaliation is not included in the placement count."
         },

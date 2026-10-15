@@ -634,7 +634,8 @@
         "horizonal-water-land",
         "horizontal-land-water",
         "split-house",
-        "lake"
+        "lake",
+        "light-and-mirror"
       ],
       "description": "Allowed edge variant names from the Variant Types section of docs/edge-variants.md."
     },
@@ -763,9 +764,19 @@
                   ]
                 }
               ]
+            },
+            "light-and-mirror": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": ["integer", "null"],
+                "minimum": 1
+              },
+              "description": "By role: ordinary Light World endpoint, Dark World Mirror source, Light World unreachable destination except through a transition after mirroring."
             }
           },
-          "description": "Variant names map to ordered local node IDs, west to east or north to south. Repeated node IDs are allowed."
+          "description": "Variant names map to ordered local node IDs: map order except for role-based variants such as light-and-mirror."
         },
         "default": {
           "$ref": "#/definitions/edgeVariantName"
