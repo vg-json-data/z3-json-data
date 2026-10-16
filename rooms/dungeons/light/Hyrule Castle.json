@@ -124,8 +124,9 @@
       "locationName": "Boomerang Chest",
       "itemLocation": 6,
       "item": "BlueBoomerang",
+      "secondaryItem": "TenArrows",
       "itemAddress": "0xE974",
-      "devNote": ["This is replaced with 10 arrows if the Blue Boomerang is already owned."]
+      "devNote": ["The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."]
     },
     {
       "id": 4,
@@ -149,6 +150,7 @@
       "locationName": "Zelda's Prison Chest",
       "itemLocation": 7,
       "item": "Lamp",
+      "secondaryItem": "FiveRupees",
       "itemAddress": "0xEB09"
     },
     {

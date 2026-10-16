@@ -310,6 +310,10 @@
           "item": {
             "type": "string"
           },
+          "secondaryItem": {
+            "description": "Informational alternate vanilla item, usually received when the primary item is already owned. Exceptions are described in devNote.",
+            "type": "string"
+          },
           "itemAddress": {
             "type": [
               "string",

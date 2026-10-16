@@ -19,7 +19,11 @@
       "locationName": "Brewery Chest",
       "itemLocation": 1,
       "item": "ThreeHundredRupees",
-      "itemAddress": "0xE9EC"
+      "itemAddress": "0xE9EC",
+      "devNote": [
+        "This technically gives RedBoomerang with a secondaryItem of ThreeHundredRupees. The rupees are given if either of the boomerangs are owned.",
+        "This is just listed as ThreeHundredRupees because RedBoomerang is very uncommon to encounter here in vanilla, so it is not the item players would typically consider vanilla."
+      ]
     }
   ],
   "strats": [

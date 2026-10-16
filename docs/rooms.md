@@ -303,6 +303,7 @@ The optional `items` array defines item locations within a room. Each item has:
 - `locationName`: A descriptive name for the location.
 - `itemLocation`: The node most naturally associated with collecting the item.
 - `item`: The vanilla item or item receipt at the location.
+- `secondaryItem`: Optional alternate vanilla item name as a string, provided as useful reference information. Usually, this item is received when Link already owns the primary `item` from the chest; exceptions are described in `devNote`.
 - `itemAddress`: One or more ROM addresses involved in encoding the item at the location.
 - `subArea`: Organizational context within an underworld room.
 - `world`: The world containing the item. This is required for overworld rooms, omitted otherwise.

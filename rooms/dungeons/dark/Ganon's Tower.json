@@ -734,7 +734,8 @@
       "locationName": "Big Key Door",
       "doorPosition": "north",
       "doorLocation": 33,
-      "keyType": "big"
+      "keyType": "big",
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
     },
     {
       "id": 10,
