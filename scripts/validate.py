@@ -388,6 +388,9 @@ def validate_room(path, document, references, errors):
         validate_reference(path, document, ["items", i, "itemLocation"],
                            item["itemLocation"], indices["nodes"], "node", errors)
         validate_reference(path, document, ["items", i, "item"], item["item"], references["items"], "item", errors)
+        if "secondaryItem" in item:
+            validate_reference(path, document, ["items", i, "secondaryItem"],
+                               item["secondaryItem"], references["items"], "item", errors)
         if overworld and "world" in item:
             validate_node_world(path, document, ["items", i, "world"],
                                 indices["nodes"].get(item["itemLocation"]), item["world"], errors)

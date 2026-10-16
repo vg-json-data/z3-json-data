@@ -9,6 +9,30 @@ from jsonschema import validators
 from validate import ROOT, validate_room
 
 
+class SecondaryItemReferenceTests(unittest.TestCase):
+    def room_errors(self, secondary):
+        document = {
+            "roomType": "House",
+            "nodes": [{"id": 1}],
+            "items": [{"id": 1, "itemLocation": 1, "item": "BlueBoomerang",
+                       "secondaryItem": secondary}],
+            "strats": [],
+        }
+        names = {name: {} for name in ["BlueBoomerang", "RedBoomerang", "TenArrows"]}
+        errors = defaultdict(list)
+        validate_room(ROOT / "rooms/test.json", document,
+                      {"items": names, "named": names}, errors)
+        return [error for messages in errors.values() for error in messages]
+
+    def test_known_secondary_item(self):
+        self.assertEqual(self.room_errors("TenArrows"), [])
+
+    def test_unknown_secondary_item(self):
+        errors = self.room_errors("TypoArrows")
+        self.assertEqual(len(errors), 1)
+        self.assertIn('/secondaryItem: unknown item "TypoArrows"', errors[0])
+
+
 class EdgeReferenceTests(unittest.TestCase):
     def setUp(self):
         schema = json.loads((ROOT / "schema/z3-room.schema.json").read_text(encoding="utf-8"))

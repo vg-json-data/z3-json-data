@@ -30,8 +30,9 @@
       "locationName": "Secret Chest",
       "itemLocation": 2,
       "item": "BlueBoomerang",
+      "secondaryItem": "TenArrows",
       "itemAddress": "0xE9E9",
-      "devNote": ["This is replaced with 10 arrows if the Blue Boomerang is already owned."]
+      "devNote": ["The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."]
     }
   ],
   "lockedDoors": [

@@ -21,8 +21,8 @@
       "locationName": "Link's Chest",
       "itemLocation": 1,
       "item": "Lamp",
-      "itemAddress": "0xE9BC",
-      "devNote": ["This is replaced with 5 rupees if the Lamp is already owned."]
+      "secondaryItem": "FiveRupees",
+      "itemAddress": "0xE9BC"
     }
   ],
   "strats": [
