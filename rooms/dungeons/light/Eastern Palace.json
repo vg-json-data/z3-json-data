@@ -173,7 +173,8 @@
       "locationName": "Chest with Big Key Room",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "big"
+      "keyType": "big",
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
     },
     {
       "id": 3,
@@ -181,7 +182,8 @@
       "locationName": "Big Chest Room",
       "doorPosition": "north",
       "doorLocation": 4,
-      "keyType": "big"
+      "keyType": "big",
+      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
     },
     {
       "id": 4,
