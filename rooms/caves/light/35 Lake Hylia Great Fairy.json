@@ -58,6 +58,22 @@
       "requires": [
         {"refill": {"type": "Fairy", "limit": 4}}
       ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Buy Bomb Capacity Upgrade",
+      "requires": [
+        {"pay": 100},
+        {"upgradeCapacity": "Bombs"}
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Buy Arrow Capacity Upgrade",
+      "requires": [
+        {"pay": 100},
+        {"upgradeCapacity": "Arrows"}
+      ]
     }
   ]
 }

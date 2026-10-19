@@ -35,11 +35,10 @@
       "link": [2, 2],
       "name": "Paid Refill",
       "requires": [
-        {"pay": 10},
+        "h_FortuneTellerPayment",
         {"refill": {"type": "Health", "limit": 20}}
       ],
-      "isBunny": "any",
-      "devNote": ["FIXME: May take up to 30 rupees if Link has them."]
+      "isBunny": "any"
     }
   ]
 }

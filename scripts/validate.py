@@ -411,6 +411,7 @@ def validate_room(path, document, references, errors):
                                         indices["nodes"].get(node_id), world, errors)
         for field, definitions, kind in [
             ("collectsItems", indices["items"], "room-local item"),
+            ("grantsItems", references["items"], "item"),
             ("setsFlags", references["flags"], "flag"),
             ("clearsObstacles", indices["obstacles"], "room-local obstacle"),
             ("resetsObstacles", indices["obstacles"], "room-local obstacle"),

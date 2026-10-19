@@ -47,6 +47,30 @@
       "name": "Base",
       "requires": [],
       "isBunny": "any"
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Red Potion",
+      "requires": [
+        {"pay": 120},
+        {"refill": {"type": "RedPotion", "limit": 1}}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Green Potion",
+      "requires": [
+        {"pay": 60},
+        {"refill": {"type": "GreenPotion", "limit": 1}}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Blue Potion",
+      "requires": [
+        {"pay": 160},
+        {"refill": {"type": "BluePotion", "limit": 1}}
+      ]
     }
   ]
 }

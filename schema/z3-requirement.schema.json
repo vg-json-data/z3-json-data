@@ -56,6 +56,11 @@
         2
       ]
     },
+    "upgradeCapacity": {
+      "description": "Advance the named ammunition capacity by one vanilla fairy tier and refill it. Fails at maximum capacity.",
+      "type": "string",
+      "enum": ["Bombs", "Arrows"]
+    },
     "glove": {
       "type": "integer",
       "enum": [
