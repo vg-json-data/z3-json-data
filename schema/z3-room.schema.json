@@ -466,6 +466,12 @@
               "minimum": 1
             }
           },
+          "grantsItems": {
+            "description": "Item receipts granted after the requirements succeed. Repeatable; does not collect a room-local item location.",
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string"}
+          },
           "setsFlags": {
             "type": "array",
             "minItems": 1,

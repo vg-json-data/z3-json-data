@@ -322,6 +322,19 @@ A `pay` object consumes the given number of rupees:
 
 The requirement fails if Link does not have enough rupees.
 
+### Capacity Upgrades
+
+`upgradeCapacity` advances `"Bombs"` or `"Arrows"` to the next vanilla capacity tier and refills that ammunition. It fails at maximum capacity. The Hylia fairy charges 100 rupees per upgrade:
+
+```json
+[
+  {"pay": 100},
+  {"upgradeCapacity": "Bombs"}
+]
+```
+
+For each ammunition type, the first six upgrades add 5 capacity each; the seventh adds 10. It is possible to make a partial payment and return later; this is not modeled.
+
 ## Resource-State Checks
 
 `resourceMissingAtMost` checks how much of one or more resources Link is missing relative to their current maximum. It does not consume or restore anything.

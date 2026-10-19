@@ -30,6 +30,30 @@
       "name": "Base",
       "requires": [],
       "isBunny": "any"
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Red Shield",
+      "requires": [
+        {"pay": 500}
+      ],
+      "grantsItems": ["RedShield"]
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Bee",
+      "requires": [
+        {"pay": 10},
+        {"refill": {"type": "Bee", "limit": 1}}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy 10 Arrows",
+      "requires": [
+        {"pay": 30},
+        {"refill": {"type": "Arrows", "limit": 10}}
+      ]
     }
   ]
 }

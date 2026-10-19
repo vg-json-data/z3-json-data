@@ -30,6 +30,25 @@
       "name": "Base",
       "requires": [],
       "isBunny": "any"
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy 30 Bombs",
+      "requires": [
+        {"pay": 100},
+        {"refill": {"type": "Bombs", "limit": 30}}
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Buy Big Bomb",
+      "requires": [
+        "Crystal5",
+        "Crystal6",
+        {"flag": "RescuedBlacksmith"},
+        {"pay": 100}
+      ],
+      "setsFollower": "Super Bomb"
     }
   ]
 }

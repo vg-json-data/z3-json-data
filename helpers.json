@@ -153,6 +153,13 @@
     ]
   },
   {
+    "name": "h_FortuneTellerPayment",
+    "requires": [
+      {"pay": 10}
+    ],
+    "devNote": ["FIXME: May take up to 30 rupees if Link has them."]
+  },
+  {
     "name": "h_jumpOffLedge",
     "requires": [
       {"followerLost": ["Super Bomb"]}

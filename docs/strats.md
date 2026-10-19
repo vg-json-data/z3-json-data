@@ -12,6 +12,7 @@ A `strat` can have the following properties:
 - `name`: The name of the strat.
 - `requires`: The logical requirements that must be fulfilled to execute the strat.
 - `collectsItems`: The IDs of items in the room that are collected by executing the strat.
+- `grantsItems`: Item receipt names granted by executing the strat, without collecting a room-local item location.
 - `setsFlags`: Game flags that are set by executing the strat.
 - `clearsObstacles`: Room-local obstacles that are cleared by executing the strat.
 - `resetsObstacles`: Room-local obstacles that are returned to their reset state by executing the strat.
@@ -122,6 +123,19 @@ The `collectsItems` property is an array of IDs referencing entries in the room'
 ```
 
 Collected items become available after the strat is complete and can satisfy requirements in subsequent strats.
+
+Alternatively, `grantsItems` is used on a repeatable strat that grants an item without using a room-local item location:
+
+```json
+{
+  "link": [2, 2],
+  "name": "Buy Blue Shield",
+  "requires": [
+    {"pay": 50}
+  ],
+  "grantsItems": ["BlueShield"]
+}
+```
 
 ## Setting Flags
 
