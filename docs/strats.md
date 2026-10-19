@@ -25,6 +25,7 @@ A `strat` can have the following properties:
 - `exitState`: Carries a temporary state out of the room.
 - `entranceState`: Requires a matching temporary state when entering the room.
 - `note`: Information useful to someone interpreting or performing the strat.
+- `detailNote`: An array of strings with additional player-facing detail, such as setup steps, beyond the summary in `note`.
 - `devNote`: Information primarily useful while developing the data.
 
 ### Example
@@ -68,6 +69,34 @@ Requirements are evaluated sequentially in the order in which they appear. In mo
 After all requirements have been fulfilled, the strat is executed and its effects are applied. An item collected or flag set by a strat cannot satisfy an earlier requirement in that same strat; the resulting state is available to subsequent strats.
 
 An item requirement can include implicit conditions needed to use that item, in addition to requiring that the item be in the inventory. The complete interaction between item use and Link's normal, bunny, superbunny, and lonk states is not yet modeled.
+
+## Notable Strats
+
+A notable is a room-specific technique that consumers can enable or disable individually, like a tech scoped to one room.
+
+Define techniques in the room's optional `notables` array. Each entry has a stable positive integer `id`, a `name`, and a descriptive `note`, with optional `detailNote` and `devNote`. IDs and names must each be unique within the room; other rooms may reuse them. When `notables` is present, `nextNotableId` must also be included and must be greater than all existing notable IDs.
+
+```json
+"notables": [
+  {
+    "id": 1,
+    "name": "Icebreaker",
+    "note": ["Use the red cane to walk through the barrier in the Ice Palace Big Key Chest Room."]
+  }
+],
+"nextNotableId": 2
+```
+
+A strat opts into this technique through its requirements:
+
+```json
+"requires": [
+  {"notable": "Icebreaker"},
+  {"redCane": 1}
+]
+```
+
+The notable requirement succeeds only when that room's technique is enabled by the consumer. It alone consumes no resources and supplies no implicit item or proficiency requirements. Multiple strats can share a notable, and notable requirements may appear inside `and` or `or`.
 
 ## Worlds
 

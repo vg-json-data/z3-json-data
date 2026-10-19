@@ -693,20 +693,27 @@
     },
     {
       "link": [7, 7],
-      "name": "Grab the Pot Glitch",
+      "name": "Anti-Fairy Pot Grab",
       "requires": [
-        {"combatProficiency": 3},
-        {"damage": {"enemy": "Bubble", "count": 2}}
+        {"notable": "Anti-Fairy Pot Grab"},
+        {"damage": {"enemy": "Popo", "count": 1}},
+        {"damage": {"enemy": "Invincible Bubble", "count": 1}}
       ],
       "note": [
-        "Get i-frames from the Anti-Fairies then grab the pot between them.",
-        "Get i-frames again then step on the switch. Passing through too quickly can prevent pressing it."
+        "Use i-frames to lift the pot guarded by four Anti-Fairies in Eastern Palace's Big Key Chest Room, then press the switch beneath it to spawn the chest without needing to kill the enemies."
       ],
-      "devNote": [
-        "FIXME: This needs a better tech.",
-        "FIXME: Assumes 2 hits, grabbing the two nearby hearts, then 2 more hits. This is simplified to just 2 hits total for now."
+      "detailNote": [
+        "On room entry, quickly slip past the Popo and then touch it to get enough i-frames to quickly grab the pot between the Bubbles.",
+        "Use those i-frames to pass through the Anti-Fairies and lift the pot. Be sure not to exit too quickly or the switch may not get pressed."
       ],
       "collectsItems": [5]
+    },
+    {
+      "link": [7, 7],
+      "name": "Pot Refill",
+      "requires": [
+        {"refill": {"type": "Health", "limit": 2}}
+      ]
     },
     {
       "link": [8, 8],
@@ -908,5 +915,15 @@
       "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     }
-  ]
+  ],
+  "notables": [
+    {
+      "id": 1,
+      "name": "Anti-Fairy Pot Grab",
+      "note": [
+        "Use i-frames to lift the pot guarded by four Anti-Fairies in Eastern Palace's Big Key Chest Room, then press the switch beneath it to spawn the chest without needing to kill the enemies."
+      ]
+    }
+  ],
+  "nextNotableId": 2
 }

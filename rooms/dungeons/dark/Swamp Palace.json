@@ -552,6 +552,26 @@
       ]
     },
     {
+      "link": [5, 7],
+      "name": "Specky Clip",
+      "requires": [
+        {"notable": "Specky Clip"},
+        "Hookshot",
+        {"bombs": 1},
+        {"damage": {"enemy": "Bomb", "count": 1}}
+      ],
+      "note": [
+        "Bomb boost into the railing at the west end of Swamp Palace's Eastern Floodable Channel, then Hookshot the statue across it to reach the Big Chest Room without flooding the channel or using the Hammer."
+      ],
+      "detailNote": [
+        "Stand in the bottom right corner below the skull pot and place a bomb while facing down.",
+        "Move to the left approximately 1.5 tiles, there is a 2-pixel window in which Link can be boosted into the railing;",
+        "the rightmost pixel of Link's shadow must be in the same column as the rightmost bright pixel in the railing's knob - or Link can be one more pixel to the right.",
+        "After the bomb boosts Link slightly into the wall, Hookshot the statue then press down.",
+        "It is possible to normalize Link's position instead - after placing the bomb, walk left into the corner, hold out the sword then walk backwards as the bomb starts to explode."
+      ]
+    },
+    {
       "link": [6, 5],
       "name": "Base",
       "requires": [
@@ -1226,5 +1246,15 @@
       "setsFlags": ["DefeatedArrghus"],
       "collectsItems": [15, 16]
     }
-  ]
+  ],
+  "notables": [
+    {
+      "id": 1,
+      "name": "Specky Clip",
+      "note": [
+        "Use a bomb boost and the Hookshot to cross the railing at the west end of Swamp Palace's Eastern Floodable Channel, reaching the Big Chest Room without the Hammer."
+      ]
+    }
+  ],
+  "nextNotableId": 2
 }

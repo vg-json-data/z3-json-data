@@ -27,6 +27,7 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `name`: The room's name.
 - `roomType`: `Overworld`, `Cave`, `House`, `Dungeon`, or `Special`.
 - `note`: General information about the room.
+- `detailNote`: Additional player-facing room details; also supported on other records with `note`.
 - `position`: The upper-left position of an overworld room on the 8×8 overworld layout.
 - `size`: The width and height of an overworld room measured in screens.
 - `edgeVariants`: Supported overworld edge variants; see [Overworld Edge Variants](edge-variants.md).
@@ -36,6 +37,8 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `lockedDoors`: Locks that can change from locked to unlocked.
 - `obstacles`: Other mutable state local to the room file.
 - `strats`: Actions and traversal logic connecting the room's nodes.
+- `notables`: Optional room-specific techniques; see [Notable Strats](strats.md#notable-strats).
+- `nextNotableId`: Next ID to assign, required when `notables` is present and greater than every existing notable ID in this room.
 
 The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Overworld rooms also require `size` and `edgeVariants`.
 

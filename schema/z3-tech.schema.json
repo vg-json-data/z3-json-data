@@ -68,7 +68,8 @@
                         "items": {
                           "type": "string"
                         }
-                      }
+                      },
+                      "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
                     }
                   }
                 },
@@ -91,6 +92,7 @@
                     "type": "string"
                   }
                 },
+                "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
                 "devNote": {
                   "type": "array",
                   "minItems": 1,

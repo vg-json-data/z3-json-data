@@ -6,7 +6,105 @@ from collections import defaultdict
 
 from jsonschema import validators
 
-from validate import ROOT, validate_room
+from validate import ROOT, registry_for, validate_requirements, validate_room
+
+
+class DetailNoteTests(unittest.TestCase):
+    def test_detail_note_format_at_every_supported_location(self):
+        schemas = [json.loads(path.read_text(encoding="utf-8"))
+                   for path in (ROOT / "schema").glob("*.schema.json")]
+        registry = registry_for(schemas)
+        locations = []
+
+        def walk(value):
+            if isinstance(value, dict):
+                properties = value.get("properties", {})
+                if "note" in properties:
+                    self.assertIn("detailNote", properties)
+                    locations.append(properties["detailNote"])
+                for child in value.values():
+                    walk(child)
+            elif isinstance(value, list):
+                for child in value:
+                    walk(child)
+
+        for schema in schemas:
+            walk(schema)
+        self.assertTrue(locations)
+        for location in locations:
+            validator = validators.Draft7Validator(location, registry=registry)
+            for value in [["Step one", "Step two"], []]:
+                self.assertTrue(validator.is_valid(value))
+            for value in ["Extra detail", "", 1, True, None, {}, ["Step one", 2]]:
+                self.assertFalse(validator.is_valid(value))
+
+
+class NotableTests(unittest.TestCase):
+    def room_errors(self, notables, requires, **extra):
+        document = {
+            "id": 1, "name": "Test", "roomType": "Dungeon",
+            "nodes": [{"id": 1, "name": "Boss", "nodeType": "boss"}],
+            "notables": notables,
+            "strats": [{"link": [1, 1], "name": "Fight", "requires": requires}],
+            **extra,
+        }
+        errors = defaultdict(list)
+        references = {"items": {}, "flags": {}, "named": {}}
+        validate_room(ROOT / "rooms/test.json", document, references, errors)
+        return [error for messages in errors.values() for error in messages]
+
+    def test_room_scope_and_nested_requirements(self):
+        notable = {"id": 1, "name": "Trick", "note": []}
+        requirement = {"or": [{"and": [{"notable": "Trick"}, "free"]}, "never"]}
+        self.assertEqual(self.room_errors([notable], [requirement], nextNotableId=2), [])
+        errors = self.room_errors([], [requirement])
+        self.assertEqual(len(errors), 1)
+        self.assertIn('unknown room-local notable "Trick"', errors[0])
+        self.assertEqual(self.room_errors([notable], [{"notable": "Trick"}]), [])
+
+    def test_unique_ids_and_names(self):
+        for second in [{"id": 1, "name": "Other", "note": []},
+                       {"id": 2, "name": "Trick", "note": []}]:
+            with self.subTest(second=second):
+                errors = self.room_errors([{"id": 1, "name": "Trick", "note": []}, second], [])
+                self.assertEqual(len(errors), 1)
+                self.assertIn("duplicates definition", errors[0])
+
+    def test_next_id_must_exceed_existing_ids(self):
+        errors = self.room_errors([{"id": 3, "name": "Trick", "note": []}], [], nextNotableId=3)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("/nextNotableId", errors[0])
+
+    def test_notables_rejected_outside_rooms(self):
+        document = [{"notable": "Trick"}]
+        errors = defaultdict(list)
+        validate_requirements(ROOT / "helpers.json", document, document, [], {}, errors)
+        self.assertIn('unknown room-local notable "Trick"', next(iter(errors.values()))[0])
+
+    def test_schema_validates_notable_definitions_and_requirements(self):
+        schemas = [json.loads(path.read_text(encoding="utf-8"))
+                   for path in (ROOT / "schema").glob("*.schema.json")]
+        room_schema = next(schema for schema in schemas if schema["$id"] == "z3-room.schema.json")
+        validator = validators.validator_for(room_schema)(room_schema, registry=registry_for(schemas))
+        document = {
+            "id": 1, "name": "Test", "roomType": "Dungeon", "nodes": [],
+            "notables": [{"id": 1, "name": "Trick", "note": ["Description"]}],
+            "nextNotableId": 2,
+            "strats": [{"link": [1, 1], "name": "Test", "requires": [{"notable": "Trick"}]}],
+        }
+        self.assertEqual(list(validator.iter_errors(document)), [])
+        without_next_id = {key: value for key, value in document.items() if key != "nextNotableId"}
+        self.assertFalse(validator.is_valid(without_next_id))
+        self.assertFalse(validator.is_valid({**without_next_id, "notables": []}))
+        without_notables = {key: value for key, value in without_next_id.items() if key != "notables"}
+        self.assertTrue(validator.is_valid(without_notables))
+        for field, value in [("id", 0), ("name", ""), ("note", "Description")]:
+            with self.subTest(field=field):
+                invalid = {**document, "notables": [{**document["notables"][0], field: value}]}
+                self.assertFalse(validator.is_valid(invalid))
+        for value in [1, "", True]:
+            document["strats"][0]["requires"] = [{"notable": value}]
+            self.assertFalse(validator.is_valid(document))
 
 
 class SecondaryItemReferenceTests(unittest.TestCase):

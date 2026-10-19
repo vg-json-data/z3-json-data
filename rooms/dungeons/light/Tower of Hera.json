@@ -65,8 +65,7 @@
       "id": 8,
       "name": "Top Left 4F-5F Staircase",
       "subArea": "Tower of Hera (Upper)",
-      "nodeType": "junction",
-      "devNote": ["FIXME: Add Hera Pot Clip glitch"]
+      "nodeType": "junction"
     },
     {
       "id": 9,
@@ -172,6 +171,46 @@
     }
   ],
   "strats": [
+    {
+      "link": [1, 8],
+      "name": "Hera Pot Clip - Superspeed Setup",
+      "requires": [
+        {"notable": "Hera Pot Clip"},
+        "PegasusBoots",
+        "Hookshot"
+      ],
+      "note": [
+        "With the Pegasus Boots, gain superspeed and use Hookshot to clip into the left fairy pot in the Tower of Hera entrance room, reaching the upper tower without opening the Big Key door.",
+        "Gain superspeed using the small staircase in front of the chest. Position Link against the north wall just left of the pot, near the right of the doorframe;",
+        "while moving down right, use the Hookshot to clip partially into the bottom of the pot. Face left, then press up to fall in."
+      ],
+      "detailNote": [
+        "To gain superspeed, start by pressing dash on the same frame as using Hookshot or one frame after releasing a spin attack - either way, Link will no longer be able to swing his sword.",
+        "Walk onto and off of the staircase to enable the superspeed."
+      ]
+    },
+    {
+      "link": [1, 8],
+      "name": "Hera Pot Clip - Bomb Setup",
+      "requires": [
+        {"notable": "Hera Pot Clip"},
+        "Hookshot",
+        {"bombs": 1},
+        {"damage": {"enemy": "Bomb", "count": 1}}
+      ],
+      "note": [
+        "Use a bomb and the Hookshot to clip into the left fairy pot in the Tower of Hera entrance room, reaching the upper tower without opening the Big Key door.",
+        "Bomb boost into the bottom left corner of the pot, hookshot to the right, face left, then press up to fall into the pot."
+      ],
+      "detailNote": [
+        "The bomb and Link's positioning are precise. One setup is to press into the corner between the two lower blue pegs in the top left corner.",
+        "Turn right then walk forward approximately one more tile to where one pixel of Link's shadow is visible on the light colored portion of the next tile.",
+        "Place a bomb, which is approximately horizontally centered north of the cage, then quickly move up - position Link into the corner between the top two blue pegs,",
+        "then move right of the bomb, where Link's shadow is straddling two tiles, slightly more on the right. Link's positioning is less precise than the bomb's positioning.",
+        "If successful, Link will get stuck slightly into the pot.",
+        "Note that there is some weird interaction with the Mini-Moldorm; if its drop is picked up before it lands on the ground, the bomb boost may not work without resetting the dungeon."
+      ]
+    },
     {
       "link": [1, 2],
       "name": "Base",
@@ -347,5 +386,18 @@
         "Surprisingly, this is not really harder than with a sword, because it only takes three hits and never speeds up fully."
       ]
     }
-  ]
+  ],
+  "notables": [
+    {
+      "id": 1,
+      "name": "Hera Pot Clip",
+      "note": [
+        "Clip into the left fairy pot in the Tower of Hera entrance room with the Hookshot to reach the upper tower, bypassing the Big Key door.",
+        "This can be done with a precisely placed bomb boost or with superspeed if Link has the Pegasus Boots.",
+        "Each method has precise setups to clip into the bottom left corner of the pot.",
+        "After clipping, hookshot to the right, turn left, then press up to fall in."
+      ]
+    }
+  ],
+  "nextNotableId": 2
 }

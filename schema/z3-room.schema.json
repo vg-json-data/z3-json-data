@@ -38,6 +38,7 @@
         "type": "string"
       }
     },
+    "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
     "position": {
       "type": "array",
       "items": {
@@ -274,6 +275,7 @@
               "type": "string"
             }
           },
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
           "devNote": {
             "type": "array",
             "items": {
@@ -425,7 +427,8 @@
             "items": {
               "type": "string"
             }
-          }
+          },
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
         }
       }
     },
@@ -606,6 +609,7 @@
               "type": "string"
             }
           },
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
           "devNote": {
             "type": "array",
             "items": {
@@ -614,6 +618,31 @@
           }
         }
       }
+    },
+    "notables": {
+      "type": "array",
+      "description": "Room-specific techniques that consumers can enable individually. Strats reference these by name with a notable requirement.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Stable identifier unique among notables in this room."
+          },
+          "name": {"type": "string", "minLength": 1},
+          "note": {"type": "array", "items": {"type": "string"}},
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "devNote": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "nextNotableId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Next notable ID to assign in this room; must be greater than all existing notable IDs."
     }
   },
   "definitions": {
@@ -803,6 +832,10 @@
     }
   },
   "allOf": [
+    {
+      "if": {"required": ["notables"]},
+      "then": {"required": ["nextNotableId"]}
+    },
     {
       "if": {"properties": {"roomType": {"const": "Dungeon"}}},
       "then": {"properties": {"enemySpawns": {"$ref": "#/definitions/dungeonEnemies"}}},
