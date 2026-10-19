@@ -98,7 +98,8 @@
         "note": {
           "type": "string",
           "minLength": 1
-        }
+        },
+        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
       }
     },
     "bottleContent": {
@@ -124,7 +125,8 @@
         "note": {
           "type": "string",
           "minLength": 1
-        }
+        },
+        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
       }
     },
     "dungeonPrize": {
@@ -156,7 +158,8 @@
         "note": {
           "type": "string",
           "minLength": 1
-        }
+        },
+        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
       }
     }
   }

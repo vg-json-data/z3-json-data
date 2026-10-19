@@ -272,6 +272,7 @@
               "type": "string"
             }
           },
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
           "devNote": {
             "type": "array",
             "items": {

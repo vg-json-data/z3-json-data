@@ -10,6 +10,11 @@
   "maxProperties": 1,
   "additionalProperties": false,
   "properties": {
+    "notable": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Requires an enabled notable with this name in the containing room."
+    },
     "and": {
       "type": "array",
       "minItems": 2,

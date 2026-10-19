@@ -32,7 +32,7 @@ The top-level `techCategories` array groups related techs for organization and p
 - `description`: The purpose of the category.
 - `techs`: The tech definitions in the category.
 
-Every tech has an integer `id` unique within `tech.json` and a `name` used by logical requirements. Optional `note` and `devNote` arrays provide player-facing explanations and contributor-facing implementation details.
+Every tech has an integer `id` unique within `tech.json` and a `name` used by logical requirements. Optional `note` and `detailNote` arrays provide player-facing explanations, while `devNote` provides contributor-facing implementation details.
 
 ## Tiered Techs
 

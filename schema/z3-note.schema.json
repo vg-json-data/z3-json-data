@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-note.schema.json",
+  "title": "Link to the Past Note Schema",
+  "definitions": {
+    "detailNote": {
+      "type": "array",
+      "title": "Detail note field",
+      "description": "Additional details intended for users who want to understand an element in the model.",
+      "default": [],
+      "items": {"type": "string"}
+    }
+  }
+}

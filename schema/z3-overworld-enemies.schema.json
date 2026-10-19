@@ -68,7 +68,8 @@
               "note": {
                 "type": "string",
                 "minLength": 1
-              }
+              },
+              "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
             },
             "if": {
               "properties": {

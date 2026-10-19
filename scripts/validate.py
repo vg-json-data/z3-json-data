@@ -285,6 +285,9 @@ def validate_requirements(path, document, requirements, location, references, er
         elif kind == "unlockDoor":
             validate_reference(path, document, current, value,
                                room["doors"] if room else {}, "room-local door", errors)
+        elif kind == "notable":
+            validate_reference(path, document, current, value,
+                               room["notables"] if room else {}, "room-local notable", errors)
         elif kind in {"obstaclesCleared", "obstaclesNotCleared"}:
             for j, name in enumerate(value):
                 validate_reference(path, document, current + [j], name,
@@ -334,14 +337,21 @@ def validate_room(path, document, references, errors):
         validate_enemy_spawns(path, document, references, errors)
     indices = {name: {} for name in [
         "nodes", "items", "doors", "obstacles", "entrances", "teleports", "whirlpools",
+        "notables", "notable_ids",
     ]}
     for field, namespace in [
         ("nodes", "nodes"), ("items", "items"),
         ("lockedDoors", "doors"), ("obstacles", "obstacles"),
+        ("notables", "notable_ids"),
     ]:
         for i, definition in enumerate(document.get(field, [])):
             index_definition(indices[namespace], definition["id"], definition,
                              path, document, [field, i, "id"], errors)
+    for i, notable in enumerate(document.get("notables", [])):
+        index_definition(indices["notables"], notable["name"], notable,
+                         path, document, ["notables", i, "name"], errors)
+    if "nextNotableId" in document and document["nextNotableId"] <= max(indices["notable_ids"], default=0):
+        _record(errors, path, "/nextNotableId", "must be greater than all existing notable IDs")
     for edge, segments in document.get("edgeVariants", {}).items():
         expected_count = document["size"][0 if edge in {"north", "south"} else 1] // 2
         if len(segments) != expected_count:

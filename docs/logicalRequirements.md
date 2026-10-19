@@ -89,6 +89,10 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 `"free"` is the conceptual opposite and is always fulfilled. An empty requirements array is the normal way to represent an action with no requirements.
 
+## Room-Specific Notables
+
+`{"notable": "Icebreaker"}` requires the named technique to be enabled in the containing room's `notables` array. It acts as an independent skill toggle and has no resource cost or other effect. Names resolve only within that room. See [Notable Strats](strats.md#notable-strats) for the definition format and example.
+
 ## Structural Logical Elements
 
 ### `and`
