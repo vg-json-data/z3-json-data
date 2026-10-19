@@ -45,6 +45,7 @@
         {"pay": 30}
       ],
       "collectsItems": [1],
+      "isBunny": "no",
       "devNote": [
         "Bunny can pay, but can't open any of the chests.",
         "FIXME: Unfairly assumes you win on your first play."

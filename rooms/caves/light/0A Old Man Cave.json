@@ -85,9 +85,6 @@
         {"damage": {"enemy": "Keese", "count": 3}},
         {"or": [
           "BookOfMudora",
-          "Bombos",
-          "Ether",
-          "Quake",
           "Shovel",
           "BugCatchingNet",
           "PegasusBoots",
@@ -110,7 +107,7 @@
         "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
         "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
         "It's neglected for now due to schema limitations and because it only saves one heart.",
-        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+        "The medallions would also work, but they are annoying to use unless Link has no sword; without a sword, the medallions also can't drain magic."
       ],
       "setsFollower": "Old Man"
     },
@@ -153,9 +150,6 @@
         {"damage": {"enemy": "Keese", "count": 1}},
         {"or": [
           "BookOfMudora",
-          "Bombos",
-          "Ether",
-          "Quake",
           "Shovel",
           "BugCatchingNet",
           "PegasusBoots",
@@ -178,7 +172,7 @@
         "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
         "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
         "It's neglected for now due to schema limitations and because it only saves one heart.",
-        "Note that the medallions don't need to drain magic, unless they're changed to be usable without a sword."
+        "The medallions would also work, but they are annoying to use unless Link has no sword; without a sword, the medallions also can't drain magic."
       ],
       "setsFollower": "Old Man"
     }

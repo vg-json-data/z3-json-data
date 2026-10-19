@@ -297,8 +297,7 @@
     {
       "link": [3, 5],
       "name": "Base",
-      "requires": [],
-      "devNote": ["FIXME: Includes a moderately difficult to dodge guard but it has a heart pot before and after."]
+      "requires": []
     },
     {
       "link": [4, 3],
@@ -831,8 +830,7 @@
     {
       "link": [11, 12],
       "name": "Base",
-      "requires": [],
-      "note": ["FIXME: Add strats to go backwards to node 9."]
+      "requires": []
     },
     {
       "link": [12, 12],

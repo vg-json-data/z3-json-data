@@ -225,13 +225,14 @@
       "link": [4, 4],
       "name": "Base",
       "requires": [
+        {"refill": {"type": "Magic", "limit": 128}},
         {"or": [
           {"fireRod": 2},
           {"lamp": 4}
-        ]}
+        ]},
+        {"refill": {"type": "Magic", "limit": 16}}
       ],
-      "collectsItems": [3],
-      "devNote": ["FIXME: There are magic pots in this room."]
+      "collectsItems": [3]
     },
     {
       "link": [5, 6],

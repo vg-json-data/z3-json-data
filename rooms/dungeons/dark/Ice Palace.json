@@ -595,8 +595,16 @@
     {
       "link": [9, 10],
       "name": "Base",
-      "requires": [],
-      "devNote": ["FIXME: Add an option that does a precise bomb boost while the orange pegs are up."]
+      "requires": []
+    },
+    {
+      "link": [9, 10],
+      "name": "Bomb Jump",
+      "requires": [
+        "h_hitBlueOrangeSwitch",
+        "canPreciseBombBoost"
+      ],
+      "clearsObstacles": ["Blue Pegs Down"]
     },
     {
       "link": [10, 11],
@@ -679,7 +687,7 @@
       ]
     },
     {
-      "link": [18, 11],
+      "link": [11, 18],
       "name": "Base",
       "requires": [
         {"unlockDoor": 4}
@@ -695,6 +703,15 @@
       "name": "Freezor Kill",
       "requires": [
         {"fireRod": 2}
+      ],
+      "collectsItems": [4]
+    },
+    {
+      "link": [12, 12],
+      "name": "Freezor Stacked Kill",
+      "requires": [
+        {"combatProficiency": 3},
+        {"fireRod": 1}
       ],
       "collectsItems": [4]
     },
@@ -720,6 +737,16 @@
       "requires": []
     },
     {
+      "link": [13, 12],
+      "name": "Bomb Boost",
+      "requires": [
+        "canPreciseBombBoost"
+      ],
+      "devNote": [
+        "This is not a typical precise bomb boost, but it is very unforgiving if failed."
+      ]
+    },
+    {
       "link": [13, 15],
       "name": "Base",
       "requires": [],
@@ -737,8 +764,21 @@
       "name": "Base",
       "requires": [
         "Hookshot"
+      ]
+    },
+    {
+      "link": [13, 17],
+      "name": "Bomb Boost",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hammer",
+          {"fireRod": 2},
+          {"bombs": 2}
+        ]},
+        "canPreciseBombBoost"
       ],
-      "devNote": ["FIXME: There is probably a bomb boost strat that can be done here."]
+      "devNote": ["FIXME: It could be possible to kill the Bari with other methods."]
     },
     {
       "link": [14, 14],

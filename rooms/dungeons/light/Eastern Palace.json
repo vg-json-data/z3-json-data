@@ -107,8 +107,7 @@
       "locationName": "Dark Pot Room",
       "itemLocation": 6,
       "item": "SmallKey",
-      "itemAddress": "unknown",
-      "devNote": ["FIXME: It is possible to refill one small magic and two heats from the pots."]
+      "itemAddress": "unknown"
     },
     {
       "id": 5,
@@ -532,6 +531,15 @@
       "collectsItems": [4]
     },
     {
+      "link": [6, 6],
+      "name": "Pot Refill",
+      "requires": [
+        "Lamp",
+        {"refill": {"type": "Health", "limit": 2}},
+        {"refill": {"type": "Magic", "limit": 16}}
+      ]
+    },
+    {
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -701,15 +709,23 @@
       "collectsItems": [5]
     },
     {
+      "link": [8, 8],
+      "name": "Pot Refill",
+      "requires": [
+        {"refill": {"type": "Arrows", "limit": 10}}
+      ]
+    },
+    {
       "link": [8, 9],
       "name": "Base",
       "requires": [
         {"or": [
           {"arrows": 6},
           {"silverArrows": 3}
-        ]}
-      ],
-      "devNote": ["FIXME: Could use a way to kill the first Green Eyegore and then take into account the arrow refill in the pots."]
+        ]},
+        {"refill": {"type": "Health", "limit": 2}},
+        {"refill": {"type": "Arrows", "limit": 20}}
+      ]
     },
     {
       "link": [9, 9],

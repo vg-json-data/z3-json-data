@@ -180,8 +180,7 @@
           "note": [
             "A subset of bombable walls can also be broken by dashing into them with the Pegasus Boots.",
             "The walls are visually distinct, with a circular crack pattern."
-          ],
-          "devNote": ["FIXME: Is this always true? find and determine each use."]
+          ]
         },
         {
           "id": 9,
