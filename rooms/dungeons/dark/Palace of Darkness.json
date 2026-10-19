@@ -440,6 +440,14 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Pot Refill",
+      "requires": [
+        {"refill": {"type": "Bombs", "limit": 4}},
+        {"refill": {"type": "Health", "limit": 2}}
+      ]
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "requires": []
@@ -677,13 +685,14 @@
       "link": [8, 9],
       "name": "Bow Kill",
       "requires": [
+        {"refill": {"type": "Health", "limit": 1}},
+        {"refill": {"type": "Arrows", "limit": 5}},
         {"or": [
           {"arrows": 2},
           {"silverArrows": 1}
         ]}
       ],
-      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
-      "devNote": ["FIXME: These pots can refill arrows."]
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
       "link": [9, 8],
@@ -1251,16 +1260,25 @@
       ]
     },
     {
-      "link": [24, 25],
-      "name": "BBow Kill",
+      "link": [24, 24],
+      "name": "Pot Refill",
       "requires": [
+        {"refill": {"type": "Bombs", "limit": 2}},
+        {"refill": {"type": "Health", "limit": 3}}
+      ]
+    },
+    {
+      "link": [24, 25],
+      "name": "Bow Kill",
+      "requires": [
+        {"refill": {"type": "Arrows", "limit": 5}},
         {"or": [
           {"arrows": 2},
           {"silverArrows": 1}
-        ]}
+        ]},
+        {"refill": {"type": "Arrows", "limit": 5}}
       ],
-      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
-      "devNote": ["FIXME: These pots can refill arrows."]
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
       "link": [25, 24],
@@ -1271,8 +1289,7 @@
           {"silverArrows": 1}
         ]}
       ],
-      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."],
-      "devNote": ["FIXME: These pots can refill arrows."]
+      "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
       "link": [25, 25],

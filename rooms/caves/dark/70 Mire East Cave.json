@@ -13,6 +13,15 @@
       "nodeType": "door"
     }
   ],
+  "lockedDoors": [
+    {
+      "id": 1,
+      "locationName": "Bombable Wall (North)",
+      "doorPosition": "north",
+      "doorLocation": 1,
+      "keyType": "bomb"
+    }
+  ],
   "strats": [
     {
       "link": [1, 1],
@@ -21,8 +30,25 @@
         {"pay": 20},
         {"refill": {"type": "Health", "limit": 20}}
       ],
-      "isBunny": "any",
-      "devNote": ["FIXME: There is also a bombable wall that can refill hearts, bombs and arrows."]
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 1],
+      "name": "Base - Bomb North Wall",
+      "requires": [
+        {"bombs": 1}
+      ],
+      "unlocksDoor": [1]
+    },
+    {
+      "link": [1, 1],
+      "name": "Secret Pot Room",
+      "requires": [
+        {"unlockDoor": 1},
+        {"refill": {"type": "Health", "limit": 3}},
+        {"refill": {"type": "Bombs", "limit": 2}},
+        {"refill": {"type": "Arrows", "limit": 5}}
+      ]
     }
   ]
 }

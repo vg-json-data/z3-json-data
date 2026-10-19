@@ -844,23 +844,58 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"combatProficiency": 3},
+          {"sword": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"and": [
+            {"combatProficiency": 2},
+            "Hammer"
+          ]},
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]},
+        {"damage": {"enemy": "Thief", "count": 1}}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [9, 10],
+      "name": "Base - No Thief Hit",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          {"redCane": 1},
+          {"blueCane": 28},
+          {"cape": 32}
         ]}
       ],
+      "devNote": ["The thief is somewhat difficult to dodge; dodging it will use the Guard Despawn strat."]
+    },
+    {
+      "link": [9, 10],
+      "name": "Guard Despawn",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 3}
+      ],
       "isBunny": "any",
-      "note": ["Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."],
-      "devNote": ["FIXME: Add a thief hit."]
+      "note": ["Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."]
     },
     {
       "link": [9, 10],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
       "requires": [
-        "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no",
-      "devNote": ["FIXME: Add a thief hit."]
+        "h_NoAgahnimLoophole",
+        {"or": [
+          {"damage": {"enemy": "Thief", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ]
     },
     {
       "link": [9, 10],
@@ -923,8 +958,7 @@
         ]}
       ],
       "isBunny": "any",
-      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
-      "devNote": ["FIXME: Add a thief hit."]
+      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."]
     },
     {
       "link": [10, 9],
@@ -932,9 +966,7 @@
       "world": "light",
       "requires": [
         "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no",
-      "devNote": ["FIXME: Add a thief hit."]
+      ]
     },
     {
       "link": [10, 9],
@@ -966,8 +998,7 @@
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
-      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."],
-      "devNote": ["FIXME: Add a thief hit."]
+      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."]
     },
     {
       "link": [10, 11],

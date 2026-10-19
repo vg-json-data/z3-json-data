@@ -29,8 +29,7 @@
       "id": 2,
       "name": "West Exit",
       "subArea": "Desert Palace B1",
-      "nodeType": "door",
-      "devNote": ["FIXME: This is a good place to obtain fairies"]
+      "nodeType": "door"
     },
     {
       "id": 3,
@@ -257,6 +256,13 @@
       "link": [2, 1],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Fairies",
+      "requires": [
+        {"refill": {"type": "Fairy", "limit": 2}}
+      ]
     },
     {
       "link": [3, 1],
