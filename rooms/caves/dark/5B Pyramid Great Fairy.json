@@ -25,7 +25,7 @@
       "id": 2,
       "locationName": "Second Item",
       "itemLocation": 1,
-      "item": "SilverArrowUpgrade",
+      "item": "BowAndSilverArrows",
       "itemAddress": "0xE983"
     }
   ],

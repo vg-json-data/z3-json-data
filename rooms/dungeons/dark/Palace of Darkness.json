@@ -281,7 +281,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dark Basement Left Chest",
       "itemLocation": 21,
-      "item": "Arrow",
+      "item": "OneArrow",
       "itemAddress": "0xEA4C"
     },
     {

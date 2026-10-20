@@ -188,12 +188,14 @@ def collect_references(documents, errors):
             for category, definitions in document.items():
                 if category in {"$schema", "flags"}:
                     continue
+                category_location = [category, "items"]
+                definitions = definitions["items"]
                 for i, item in enumerate(definitions):
-                    location = [category, i, "name"]
+                    location = category_location + [i, "name"]
                     index_definition(references["named"], item["name"], item, path, document, location, errors)
                     references["items"][item["name"]] = item
-            for i, flag in enumerate(document["flags"]):
-                index_definition(references["flags"], flag, flag, path, document, ["flags", i], errors)
+            for i, flag in enumerate(document["flags"]["items"]):
+                index_definition(references["flags"], flag, flag, path, document, ["flags", "items", i], errors)
         elif path == ROOT / "helpers.json":
             for i, helper in enumerate(document):
                 index_definition(references["named"], helper["name"], helper, path, document, [i, "name"], errors)

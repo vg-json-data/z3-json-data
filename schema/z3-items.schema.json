@@ -10,8 +10,7 @@
     "currency",
     "dungeonItems",
     "dungeonPrizes",
-    "goalItems",
-    "expansions",
+    "healthUpgrades",
     "flags"
   ],
   "additionalProperties": false,
@@ -20,44 +19,188 @@
       "type": "string"
     },
     "inventory": {
-      "$ref": "#/definitions/itemReceiptList"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
     },
     "refills": {
-      "$ref": "#/definitions/itemReceiptList"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
     },
     "bottleContents": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/bottleContent"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/bottleContent"
+          }
+        }
       }
     },
     "currency": {
-      "$ref": "#/definitions/itemReceiptList"
-    },
-    "dungeonItems": {
-      "$ref": "#/definitions/itemReceiptList"
-    },
-    "dungeonPrizes": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/dungeonPrize"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
       }
     },
-    "goalItems": {
-      "$ref": "#/definitions/itemReceiptList"
+    "dungeonItems": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
     },
-    "expansions": {
-      "$ref": "#/definitions/itemReceiptList"
+    "dungeonPrizes": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/dungeonPrize"
+          }
+        }
+      }
+    },
+    "healthUpgrades": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
     },
     "flags": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/name"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/name"
+          }
+        }
+      }
+    },
+    "nonVanilla": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
       }
     }
   },
@@ -92,14 +235,13 @@
         "itemReceiptId": {
           "$ref": "#/definitions/byte"
         },
-        "vanilla": {
-          "const": false
-        },
         "note": {
           "type": "string",
           "minLength": 1
         },
-        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        }
       }
     },
     "bottleContent": {
@@ -119,14 +261,13 @@
         "refillReceiptId": {
           "$ref": "#/definitions/byte"
         },
-        "vanilla": {
-          "const": false
-        },
         "note": {
           "type": "string",
           "minLength": 1
         },
-        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        }
       }
     },
     "dungeonPrize": {
@@ -152,14 +293,13 @@
             "$ref": "#/definitions/byte"
           }
         },
-        "vanilla": {
-          "const": false
-        },
         "note": {
           "type": "string",
           "minLength": 1
         },
-        "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        }
       }
     }
   }

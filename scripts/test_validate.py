@@ -6,7 +6,26 @@ from collections import defaultdict
 
 from jsonschema import validators
 
-from validate import ROOT, registry_for, validate_requirements, validate_room
+from validate import ROOT, collect_references, registry_for, validate_requirements, validate_room
+
+
+class ItemCategoryTests(unittest.TestCase):
+    def test_section_notes_and_nested_items_are_indexed(self):
+        document = {
+            "$schema": "./schema/z3-items.schema.json",
+            "inventory": {"note": "Equipment", "items": [{"name": "Bow"}]},
+            "refills": {"note": "Rewards", "items": [{"name": "OneArrow"}]},
+            "nonVanilla": {"items": [{"name": "Bow"}]},
+            "flags": {"note": "Events", "items": ["DefeatedGanon"]},
+        }
+        path = ROOT / "items.json"
+        errors = defaultdict(list)
+        references = collect_references({path: document}, errors)
+        self.assertEqual(set(references["items"]), {"Bow", "OneArrow"})
+        self.assertEqual(set(references["flags"]), {"DefeatedGanon"})
+        self.assertEqual(len(errors[path]), 1)
+        self.assertIn('/nonVanilla/items/0:"Bow"/name', errors[path][0])
+        self.assertIn('/inventory/items/0:"Bow"/name', errors[path][0])
 
 
 class DetailNoteTests(unittest.TestCase):
