@@ -21,7 +21,7 @@
       {
         "name": "Bow",
         "itemReceiptId": "0x0B",
-        
+        "note": "When a pond fairy returns the normal bow, she uses the tossed-bow receipt 0x3A, which grants the same bow with different graphics and palette."
       },
       {
         "name": "BowAndSilverArrows",
@@ -109,8 +109,20 @@
         "itemReceiptId": "0x00"
       },
       {
+        "name": "L1Sword",
+        "itemReceiptId": "0x49",
+        "note": "The vanilla tossed-Fighter-Sword receipt used when a pond fairy returns the sword unchanged.",
+        "detailNote": [
+          "Randomizers may use this, as it grants only the level 1 sword, avoiding the additional Fighter Shield granted by the Uncle's 0x00 receipt."
+        ]
+      },
+      {
         "name": "L2Sword",
-        "itemReceiptId": "0x01"
+        "itemReceiptId": "0x01",
+        "note": "The vanilla Master Sword, obtained from the Lost Woods pedestal. Receipt 0x01 includes the special sword-pulling animation and cutscene behavior.",
+        "detailNote": [
+          "Randomizers use the alternate receipt 0x50 to grant the same level 2 sword without triggering the vanilla pedestal animation and cutscene behavior."
+        ]
       },
       {
         "name": "L3Sword",
@@ -155,77 +167,71 @@
       {
         "name": "RedMail",
         "itemReceiptId": "0x23"
-      },
-      {
-        "name": "HalfMagic",
-        "itemReceiptId": "0x4E",
-        "vanilla": false,
-        "note": "A randomizer receipt for granting the vanilla half-magic upgrade as a shuffled item."
       }
     ]
   },
-  "unnecessaryItems": [
-    "note": "Includes items that are vanilla but niche pickups that don't provide anything of use",
+  "healthUpgrades": {
+    "items": [
       {
-        "name": "TossedBow",
-        "itemReceiptId": "0x3A",
-        "note": "The vanilla tossed-bow receipt used when a pond fairy returns the normal bow unchanged. It grants the same bow as 0x0B, with different graphics and palette for the fairy sequence."
+        "name": "HeartContainerFromPieces",
+        "itemReceiptId": "0x26",
+        "note": "An internal vanilla receipt generated when the player collects a fourth Piece of Heart. It increases maximum health by one heart and refills health."
       },
       {
-        "name": "TossedL1Sword",
-        "itemReceiptId": "0x49",
-        "note": "The vanilla tossed-Fighter-Sword receipt used when a pond fairy returns the sword unchanged. It grants only the level 1 sword, avoiding the additional Fighter Shield granted by the Uncle's 0x00 receipt."
+        "name": "BossHeartContainer",
+        "itemReceiptId": "0x3E",
+        "note": "The vanilla boss-drop heart container. It increases maximum health by one heart and supplies one heart of healing."
+      },
+      {
+        "name": "SanctuaryHeartContainer",
+        "itemReceiptId": "0x3F",
+        "note": "The vanilla heart container found in the Sanctuary chest. It increases maximum health by one heart and refills health."
+      },
+      {
+        "name": "PieceOfHeart",
+        "itemReceiptId": "0x17"
       }
-  ],
-  "other": {
-    "note": "Includes items that are vanilla but niche pickups that don't provide anything of use, non-vanilla rewards that have been converted into randomizable item pickups, and ",
+    ]
+  },
+  "nonVanilla": {
+    "note": "Randomizer-defined items and receipts that require a compatible ROM patch. Some grant upgrades available through events in vanilla; others add new behavior.",
     "items": [
       {
         "name": "SilverArrows",
         "itemReceiptId": "0x58",
-        "vanilla": false,
         "note": "A randomizer receipt that grants the Silver Arrows upgrade without also granting a bow."
       },
       {
-        "name": "MasterSword",
-        "itemReceiptId": "0x50",
-        "vanilla": false,
-        "note": "A randomizer receipt that grants sword level 2 without using the vanilla Master Sword receipt and its special cutscene behavior."
-      },
-      {
-        "name": "QuarterMagic",
-        "itemReceiptId": "0x4F",
-        "vanilla": false,
-        "note": "A randomizer-only upgrade that reduces magic consumption to one quarter of the normal amount."
+        "name": "HalfMagic",
+        "itemReceiptId": "0x4E",
+        "note": "A randomizer receipt for granting the vanilla half-magic upgrade as a shuffled item.",
+        "detailNote": [
+          "Randomizers use the receipt 0x4F to grant quarter magic, which is a vanilla item that is not collectible by normal means."
+        ]
       },
       {
         "name": "ProgressiveSword",
         "itemReceiptId": "0x5E",
-        "vanilla": false,
         "note": "A randomizer variant that upgrades the player's current sword by one level."
       },
       {
         "name": "ProgressiveShield",
         "itemReceiptId": "0x5F",
-        "vanilla": false,
         "note": "A randomizer variant that upgrades the player's current shield by one level."
       },
       {
         "name": "ProgressiveArmor",
         "itemReceiptId": "0x60",
-        "vanilla": false,
         "note": "A randomizer variant that upgrades the player's current armor by one level."
       },
       {
         "name": "ProgressiveGlove",
         "itemReceiptId": "0x61",
-        "vanilla": false,
         "note": "A randomizer variant that upgrades the player's current glove by one level."
       },
       {
         "name": "BombCapacityUpgrade",
         "itemReceiptId": "0x51",
-        "vanilla": false,
         "note": "Represents randomizer bomb-capacity upgrades. Vanilla's pond fairy changes capacity directly rather than granting these receipts.",
         "detailNote": [
           "0x51 adds 5 bomb capacity; 0x52 adds 10 bomb capacity.",
@@ -235,7 +241,6 @@
       {
         "name": "ArrowCapacityUpgrade",
         "itemReceiptId": "0x53",
-        "vanilla": false,
         "note": "Represents randomizer arrow-capacity upgrades. Vanilla's pond fairy changes capacity directly rather than granting these receipts.",
         "detailNote": [
           "0x53 adds 5 arrow capacity; 0x54 adds 10 arrow capacity.",
@@ -413,45 +418,6 @@
         "name": "Crystal7",
         "itemReceiptId": "0x20",
         "prizePatchBytes": [ "0x08", "0x34", "0x64", "0x40", "0x7C", "0x06" ]
-      }
-    ]
-  },
-  "expansions": {
-    "items": [
-      {
-        "name": "HeartContainerFromPieces",
-        "itemReceiptId": "0x26",
-        "note": "An internal vanilla receipt generated when the player collects a fourth Piece of Heart. It increases maximum health by one heart and refills health."
-      },
-      {
-        "name": "BossHeartContainer",
-        "itemReceiptId": "0x3E",
-        "note": "The vanilla boss-drop heart container. It increases maximum health by one heart and supplies one heart of healing."
-      },
-      {
-        "name": "SanctuaryHeartContainer",
-        "itemReceiptId": "0x3F",
-        "note": "The vanilla heart container found in the Sanctuary chest. It increases maximum health by one heart and refills health."
-      },
-      {
-        "name": "PieceOfHeart",
-        "itemReceiptId": "0x17"
-      }
-    ]
-  },
-  "goalItems": {
-    "items": [
-      {
-        "name": "Triforce",
-        "itemReceiptId": "0x6A",
-        "vanilla": false,
-        "note": "A randomizer victory item, normally awarded by a goal location such as Ganon, the Master Sword pedestal, or Murahdahla. Receiving it completes the game; it is not a dungeon prize."
-      },
-      {
-        "name": "TriforcePiece",
-        "itemReceiptId": "0x6C",
-        "vanilla": false,
-        "note": "A collectible used by Triforce Hunt goals. Collecting one does not immediately complete the game."
       }
     ]
   },

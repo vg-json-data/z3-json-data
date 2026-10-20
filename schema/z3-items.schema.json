@@ -10,8 +10,7 @@
     "currency",
     "dungeonItems",
     "dungeonPrizes",
-    "goalItems",
-    "expansions",
+    "healthUpgrades",
     "flags"
   ],
   "additionalProperties": false,
@@ -143,26 +142,7 @@
         }
       }
     },
-    "goalItems": {
-      "type": "object",
-      "required": [
-        "items"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "note": {
-          "type": "string",
-          "minLength": 1
-        },
-        "detailNote": {
-          "$ref": "z3-note.schema.json#/definitions/detailNote"
-        },
-        "items": {
-          "$ref": "#/definitions/itemReceiptList"
-        }
-      }
-    },
-    "expansions": {
+    "healthUpgrades": {
       "type": "object",
       "required": [
         "items"
@@ -204,7 +184,7 @@
         }
       }
     },
-    "other": {
+    "nonVanilla": {
       "type": "object",
       "required": [
         "items"
@@ -255,9 +235,6 @@
         "itemReceiptId": {
           "$ref": "#/definitions/byte"
         },
-        "vanilla": {
-          "const": false
-        },
         "note": {
           "type": "string",
           "minLength": 1
@@ -283,9 +260,6 @@
         },
         "refillReceiptId": {
           "$ref": "#/definitions/byte"
-        },
-        "vanilla": {
-          "const": false
         },
         "note": {
           "type": "string",
@@ -318,9 +292,6 @@
           "items": {
             "$ref": "#/definitions/byte"
           }
-        },
-        "vanilla": {
-          "const": false
         },
         "note": {
           "type": "string",

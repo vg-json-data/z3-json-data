@@ -10,7 +10,6 @@ Most categories contain item receipt records with the following properties:
 
 - `name`: The name used to identify the item in room data and logic.
 - `itemReceiptId`: The byte passed to the game's item-receipt handler.
-- `vanilla`: Omitted for receipts defined by the original game. Randomizer-defined receipts use `false`.
 - `note`: Additional behavior or implementation details.
 
 ```json
@@ -24,14 +23,13 @@ Most categories contain item receipt records with the following properties:
 {
   "name": "ProgressiveSword",
   "itemReceiptId": "0x5E",
-  "vanilla": false,
   "note": "A randomizer variant that upgrades the player's current sword by one level."
 }
 ```
 
 Names identify items across the data model. Receipt IDs are implementation values and are not necessarily unique; for example, all seven crystals use the same vanilla receipt ID and are distinguished by their dungeon-prize patch bytes.
 
-## Vanilla and Non-vanilla Receipts
+## Non-vanilla Items
 
 The original game defines many receipt IDs, but randomizers add others to make normally event-based upgrades work as ordinary shuffled items, provide safer progressive behavior, or support new game modes.
 
@@ -39,15 +37,14 @@ Examples include receipts that:
 
 - Grant the Master Sword, Half Magic, or Silver Arrow upgrade without reproducing the original event or its unwanted side effects.
 - Upgrade the current sword, shield, armor, or glove level instead of potentially replacing a higher level with a lower one.
-- Add new goal items such as the Triforce and Triforce Pieces.
 
-These records use `"vanilla": false`. When their behavior needs explanation, `note` describes what a randomizer must implement. Publishing their receipt-ID assignments provides a shared convention that randomizers, trackers, and other tools can adopt for improved compatibility.
+These records are grouped in `nonVanilla`, which replaces per-item vanilla markers. The section includes both upgrades obtainable through vanilla events and items with new behavior; their receipt IDs require a compatible randomizer ROM patch. When their behavior needs explanation, `note` describes what a randomizer must implement. Publishing their receipt-ID assignments provides a shared convention that randomizers, trackers, and other tools can adopt for improved compatibility.
 
 ## Inventory
 
-`inventory` contains lasting inventory and equipment. It includes ordinary items, specific equipment levels, and randomizer-defined progressive receipts.
+`inventory` contains vanilla inventory and equipment, including ordinary items and specific equipment levels. Randomizer-defined progressive items are listed in `nonVanilla`.
 
-The category does not imply that every record behaves progressively. For example, a fixed sword-level receipt and `ProgressiveSword` are both inventory receipts, but their effects differ.
+Fixed equipment-level receipts and progressive items have different effects: a fixed receipt grants its specified level, while a progressive item upgrades the current level.
 
 ## Refills
 
@@ -99,17 +96,11 @@ These receipt IDs operate on the currently loaded dungeon. A Small Key receipt i
 
 The first patch byte is written to the first address, the second byte to the second address, and so on. All seven crystals use receipt `0x20`; their individual identities are encoded by `prizePatchBytes`.
 
-## Goal Items
+## Health Upgrades
 
-`goalItems` contains randomizer receipts used to complete or advance a game goal rather than ordinary inventory or dungeon prizes.
+`healthUpgrades` contains heart pieces and heart containers that increase maximum health. Randomizer bomb- and arrow-capacity upgrades are listed in `nonVanilla`.
 
-The effect of an individual goal receipt is described by its `note`. For example, receiving the Triforce completes the game, while a Triforce Piece contributes toward a separately configured collection goal.
-
-## Expansions
-
-`expansions` contains receipts that increase health or resource capacity. This includes heart pieces and containers, bomb-capacity upgrades, and arrow-capacity upgrades.
-
-Some expansion receipts have specialized vanilla behavior. Their `note` describes relevant differences such as whether receiving the item also restores health.
+Some health-upgrade receipts have specialized vanilla behavior. Their `note` describes relevant differences such as whether receiving the item also restores health.
 
 ## Flags
 

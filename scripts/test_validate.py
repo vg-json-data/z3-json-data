@@ -15,7 +15,7 @@ class ItemCategoryTests(unittest.TestCase):
             "$schema": "./schema/z3-items.schema.json",
             "inventory": {"note": "Equipment", "items": [{"name": "Bow"}]},
             "refills": {"note": "Rewards", "items": [{"name": "OneArrow"}]},
-            "other": {"items": [{"name": "Bow"}]},
+            "nonVanilla": {"items": [{"name": "Bow"}]},
             "flags": {"note": "Events", "items": ["DefeatedGanon"]},
         }
         path = ROOT / "items.json"
@@ -24,7 +24,7 @@ class ItemCategoryTests(unittest.TestCase):
         self.assertEqual(set(references["items"]), {"Bow", "OneArrow"})
         self.assertEqual(set(references["flags"]), {"DefeatedGanon"})
         self.assertEqual(len(errors[path]), 1)
-        self.assertIn('/other/items/0:"Bow"/name', errors[path][0])
+        self.assertIn('/nonVanilla/items/0:"Bow"/name', errors[path][0])
         self.assertIn('/inventory/items/0:"Bow"/name', errors[path][0])
 
 
