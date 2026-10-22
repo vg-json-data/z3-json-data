@@ -150,6 +150,94 @@ class SecondaryItemReferenceTests(unittest.TestCase):
         self.assertIn('/secondaryItem: unknown item "TypoArrows"', errors[0])
 
 
+class OverheadStateTests(unittest.TestCase):
+    def setUp(self):
+        schemas = [json.loads(path.read_text(encoding="utf-8"))
+                   for path in (ROOT / "schema").glob("*.schema.json")]
+        schema = next(schema for schema in schemas if schema["$id"] == "z3-room.schema.json")
+        self.validator = validators.validator_for(schema)(schema, registry=registry_for(schemas))
+        self.room = {
+            "id": 1, "name": "Test", "roomType": "Overworld", "size": [2, 2],
+            "edgeVariants": {
+                edge: [{"supported": {"wide": [1]}, "default": "wide"}]
+                for edge in ["north", "south", "east", "west"]
+            },
+            "nodes": [{"id": 1, "name": "Edge", "world": "both"},
+                      {"id": 2, "name": "Interior", "world": "both"}],
+            "strats": [{"link": [1, 1], "name": "Carry", "world": "dark", "requires": []}],
+        }
+
+    def errors(self):
+        errors = defaultdict(list)
+        validate_room(ROOT / "rooms/test.json", self.room, {"items": {}, "flags": {}}, errors)
+        return [error for messages in errors.values() for error in messages]
+
+    def test_both_strengths_and_implicit_round_trip(self):
+        strat = self.room["strats"][0]
+        for strength in ["class1", "class3"]:
+            state = {"state": "overhead", "type": strength}
+            strat.update(entranceState=state, exitState=state)
+            with self.subTest(strength=strength):
+                self.assertTrue(self.validator.is_valid(self.room))
+                self.assertEqual(self.errors(), [])
+
+    def test_invalid_overhead_states(self):
+        for field in ["entranceState", "exitState"]:
+            for state in [
+                {"state": "overhead"},
+                {"state": "overhead", "type": "class2"},
+                {"state": "overhead", "type": "pot"},
+                {"state": "overhead", "type": "class3", "entranceID": 1},
+            ]:
+                with self.subTest(field=field, state=state):
+                    self.room["strats"][0] = {
+                        "link": [1, 1], "name": "Carry", "world": "dark", "requires": [], field: state
+                    }
+                    self.assertFalse(self.validator.is_valid(self.room))
+
+    def test_underworld_and_world_changes_rejected(self):
+        for field in ["entranceState", "exitState"]:
+            state = {"state": "overhead", "type": "class3"}
+            self.room["strats"][0] = {
+                "link": [1, 1], "name": "Carry", "fromWorld": "dark", "toWorld": "light",
+                "requires": [], field: state,
+            }
+            self.assertFalse(self.validator.is_valid(self.room))
+            interior = {
+                "id": 1, "name": "Interior", "roomType": "Cave",
+                "nodes": [{"id": 1, "name": "Door", "nodeType": "door"}],
+                "strats": [{"link": [1, 1], "name": "Carry", "requires": [], field: state}],
+            }
+            self.assertFalse(self.validator.is_valid(interior))
+            interior["strats"][0][field] = {"state": "event", "type": "DrainedFloodgate"}
+            self.assertTrue(self.validator.is_valid(interior))
+
+    def test_event_entrance_id_rule_is_preserved(self):
+        for field in ["entranceState", "exitState"]:
+            strat = {"link": [1, 1], "name": "Event", "world": "light", "requires": [],
+                     field: {"state": "event", "type": "DrainedFloodgate"}}
+            self.room["strats"] = [strat]
+            self.assertFalse(self.validator.is_valid(self.room))
+            strat[field]["entranceID"] = 1
+            self.assertTrue(self.validator.is_valid(self.room))
+
+    def test_state_checks_the_correct_endpoint(self):
+        strat = self.room["strats"][0]
+        for field, valid_link, invalid_link in [
+            ("entranceState", [1, 2], [2, 1]),
+            ("exitState", [2, 1], [1, 2]),
+        ]:
+            strat.pop("entranceState", None)
+            strat.pop("exitState", None)
+            strat[field] = {"state": "overhead", "type": "class3"}
+            strat["link"] = valid_link
+            self.assertEqual(self.errors(), [])
+            strat["link"] = invalid_link
+            errors = self.errors()
+            self.assertEqual(len(errors), 1)
+            self.assertIn("overhead state endpoint node has no overworld screen transition", errors[0])
+
+
 class EdgeReferenceTests(unittest.TestCase):
     def setUp(self):
         schema = json.loads((ROOT / "schema/z3-room.schema.json").read_text(encoding="utf-8"))

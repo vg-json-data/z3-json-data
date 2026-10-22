@@ -255,7 +255,7 @@ Blind and the Super Bomb are also lost on death or save-and-quit.
 
 ## Entrance and Exit State
 
-The `exitState` and `entranceState` properties connect special behavior across room-file boundaries. An exit-state strat leaves a room with a named temporary state, and a compatible entrance-state strat receives that state in the next room.
+The `exitState` and `entranceState` properties connect special behavior across room-file boundaries, through either an overworld-underworld entrance or an overworld-overworld screen transition. An exit-state strat leaves through an entrance or transition on the `"to"` node of its `link` with a named temporary state. A compatible entrance-state strat receives that state through an entrance or transition on the `"from"` node of its `link` in the next room. The state type determines which kind of connection it uses, as described below.
 
 For example, the Dam can be left with the floodgate drained:
 
@@ -290,7 +290,45 @@ The matching entrance-state strat in Swamp Ruins recreates the effect as room-lo
 }
 ```
 
-A strat with an `entranceState` must enter the room through an entrance on the `"from"` node of the strat's `link`. Similarly, a strat with an `exitState` must exit through an entrance on the `"to"` node. For an overworld screen, the state object must also define `entranceID`, identifying the entrance used to cross the room boundary. That entrance must belong to the applicable node.
+The connection used depends on the state. For `"state": "event"`, an `entranceState` uses an entrance on the `"from"` node of the strat's `link`, and an `exitState` uses an entrance on the `"to"` node. On the overworld side, these event states require `entranceID` to identify that entrance. For `"state": "overhead"`, the corresponding endpoints are overworld screen transitions on those nodes, and no `entranceID` is used; see below.
+
+### Objects Held Overhead
+
+Overworld screen-edge transitions can carry an object held overhead using `"state": "overhead"`. The `type` identifies its thrown-object damage class:
+
+| Type | Objects | Typical damage |
+|---|---|---|
+| `class1` | Green or purple bushes | 2 |
+| `class3` | Brown/yellow bushes, rocks, and signs | 8 |
+
+For overhead-state matching, `class3` is strictly stronger than `class1`: a `class1` entrance requirement can be fulfilled by either type, while a `class3` entrance requirement requires `class3`. When a strat can leave with either strength under the same requirements, only the `class3` exit needs to be listed. Actual damage follows the target enemy's `dmgFromLink` entry for the held object's class. This state describes an object already held overhead; any lifting requirement needed to obtain it belongs in the pickup strat.
+
+An overhead `exitState` leaves through an overworld screen edge at the `"to"` node. An overhead `entranceState` enters through a screen edge at the `"from"` node. Any screen-edge opening on the relevant node can be used, as long as the selected edge variant is valid on that world.
+
+### Implicit Overhead Transition Strats
+
+At every overworld screen transition, consumers must include an implicit same-node strat with both entrance and exit states for each overhead type. Entry and exit may use the same transition or different usable transitions at that node. These implicit strats require `canCrossRoomOverheadPickups` and look like the following example:
+
+```json
+[
+  {
+    "link": [1, 1],
+    "name": "Return with Weak Overhead Object",
+    "world": "any",
+    "entranceState": {"state": "overhead", "type": "class1"},
+    "requires": ["canCrossRoomOverheadPickups"],
+    "exitState": {"state": "overhead", "type": "class1"}
+  },
+  {
+    "link": [1, 1],
+    "name": "Return with Strong Overhead Object",
+    "world": "any",
+    "entranceState": {"state": "overhead", "type": "class3"},
+    "requires": ["canCrossRoomOverheadPickups"],
+    "exitState": {"state": "overhead", "type": "class3"}
+  }
+]
+```
 
 ## Notes
 

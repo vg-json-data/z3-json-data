@@ -192,6 +192,20 @@
             "If the strat needed to be executed before that state change, the game may become incompletable.",
             "The mistake may not become apparent until much later."
           ]
+        },
+        {
+          "id": 10,
+          "name": "canCrossRoomOverheadPickups",
+          "techRequires": [],
+          "otherRequires": [
+            {"glove": 0}
+          ],
+          "note": [
+            "Using room transitions to obtain additional objects to carry overhead and throw, such as bushes, rocks, or signposts.",
+            "In the overworld, carry an object out of a screen and back in. The original object respawns while Link still holds the carried object, providing one extra throw.",
+            "An object can also be carried in from an adjacent room or screen to use where no suitable object is normally available.",
+            "In the underworld, it is possible to kill enemies with pots before resetting the room to to respawn the pots but not the enemies."
+          ]
         }
       ]
     }

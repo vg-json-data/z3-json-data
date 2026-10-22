@@ -190,6 +190,32 @@
       "requires": []
     },
     {
+      "link": [3, 3],
+      "name": "Exit with Skull Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 3],
+      "name": "Enter with Strong Overhead Object - Hinox Bomb Refill",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1},
+        {"combatProficiency": 4},
+        {"refill": {"type": "Bombs", "limit": 1}}
+      ],
+      "note": [
+        "Reset the room with a skull rock to be able to have three which can be used to kill the Hinox and collect a bomb.",
+        "Be sure not to let the Hinox go too far off-screen, or it will regain its health."
+      ]
+    },
+    {
       "link": [3, 4],
       "name": "Base",
       "world": "any",
