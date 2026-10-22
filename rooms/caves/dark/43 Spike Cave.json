@@ -29,7 +29,7 @@
   ],
   "strats": [
     {
-      "link": [1, 1],
+      "link": [1, 2],
       "name": "Base - Open Left Chest",
       "requires": [
         "Hammer",
