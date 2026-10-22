@@ -880,6 +880,7 @@
       "link": [16, 24],
       "name": "Hardhat Arena - Precise Dodge, Pot Kill",
       "requires": [
+        "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
       "note": [

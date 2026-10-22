@@ -285,6 +285,7 @@
       "link": [4, 4],
       "name": "Pot Kill",
       "requires": [
+        "canCrossRoomOverheadPickups",
         {"unlockDoor": 3},
         "Lamp",
         {"or": [

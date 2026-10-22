@@ -557,52 +557,8 @@
               "Super Bomb"
             ]
           },
-          "exitState": {
-            "type": "object",
-            "required": [
-              "state",
-              "type"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "state": {
-                "type": "string",
-                "enum": [
-                  "event"
-                ]
-              },
-              "entranceID": {
-                "type": "integer",
-                "minimum": 1
-              },
-              "type": {
-                "type": "string"
-              }
-            }
-          },
-          "entranceState": {
-            "type": "object",
-            "required": [
-              "state",
-              "type"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "state": {
-                "type": "string",
-                "enum": [
-                  "event"
-                ]
-              },
-              "entranceID": {
-                "type": "integer",
-                "minimum": 1
-              },
-              "type": {
-                "type": "string"
-              }
-            }
-          },
+          "exitState": {"$ref": "#/definitions/transitionState"},
+          "entranceState": {"$ref": "#/definitions/transitionState"},
           "note": {
             "type": "array",
             "items": {
@@ -646,6 +602,32 @@
     }
   },
   "definitions": {
+    "transitionState": {
+      "oneOf": [
+        {"$ref": "#/definitions/eventState"},
+        {"$ref": "#/definitions/overheadState"}
+      ]
+    },
+    "eventState": {
+      "type": "object",
+      "required": ["state", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "state": {"const": "event"},
+        "entranceID": {"type": "integer", "minimum": 1},
+        "type": {"type": "string"}
+      }
+    },
+    "overheadState": {
+      "type": "object",
+      "description": "An object held overhead across an overworld screen edge. The strat endpoint node identifies the transition; no entranceID is used.",
+      "required": ["state", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "state": {"const": "overhead"},
+        "type": {"enum": ["class1", "class3"], "description": "Thrown-object damage class, matched exactly."}
+      }
+    },
     "dungeonEnemies": {
       "type": "object",
       "additionalProperties": false,
@@ -879,6 +861,15 @@
             "items": {
               "allOf": [
                 {
+                  "if": {
+                    "anyOf": [
+                      {"required": ["exitState"], "properties": {"exitState": {"properties": {"state": {"const": "overhead"}}}}},
+                      {"required": ["entranceState"], "properties": {"entranceState": {"properties": {"state": {"const": "overhead"}}}}}
+                    ]
+                  },
+                  "then": {"required": ["world"]}
+                },
+                {
                   "oneOf": [
                     {
                       "required": [
@@ -897,7 +888,10 @@
                   "if": {
                     "required": [
                       "exitState"
-                    ]
+                    ],
+                    "properties": {
+                      "exitState": {"properties": {"state": {"const": "event"}}}
+                    }
                   },
                   "then": {
                     "properties": {
@@ -913,7 +907,10 @@
                   "if": {
                     "required": [
                       "entranceState"
-                    ]
+                    ],
+                    "properties": {
+                      "entranceState": {"properties": {"state": {"const": "event"}}}
+                    }
                   },
                   "then": {
                     "properties": {
@@ -932,6 +929,14 @@
       },
       "else": {
         "properties": {
+          "strats": {
+            "items": {
+              "properties": {
+                "exitState": {"$ref": "#/definitions/eventState"},
+                "entranceState": {"$ref": "#/definitions/eventState"}
+              }
+            }
+          },
           "nodes": {
             "items": {
               "required": [
