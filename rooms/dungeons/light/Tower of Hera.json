@@ -309,6 +309,17 @@
       ]
     },
     {
+      "link": [5, 6],
+      "name": "Respawning Pot Kill",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "note": [
+        "Use the pots to kill the enemies then reset the room. The pots will respawn and the killed enemies will not."
+      ],
+      "collectsItems": [5]
+    },
+    {
       "link": [6, 7],
       "name": "Base",
       "requires": [

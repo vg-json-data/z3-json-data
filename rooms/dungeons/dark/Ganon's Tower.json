@@ -1295,7 +1295,8 @@
           "Hookshot",
           "Hammer",
           {"redCane": 2},
-          {"silverArrows": 3}
+          {"silverArrows": 3},
+          "canCrossRoomOverheadPickups"
         ]}
       ]
     },

@@ -510,7 +510,7 @@
           {"rod": 1}
         ]}
       ],
-      "note": ["The pots can be used to kill two of the enemies."]
+      "note": ["The pots can be used to kill two of the enemies. It is possible but not expected to reset the room to respawn the pots but not the enemies."]
     },
     {
       "link": [7, 8],
@@ -528,8 +528,18 @@
         ]}
       ],
       "note": [
-        "The pots can be used to kill two of the enemies.",
+        "The pots can be used to kill two of the enemies. It is possible but not expected to reset the room to respawn the pots but not the enemies.",
         "Boomerang can be used to kill the Stalfos."
+      ]
+    },
+    {
+      "link": [7, 8],
+      "name": "Respawning Pot Kill",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "note": [
+        "Use the pots to kill the enemies then reset the room. The pots will respawn and the killed enemies will not."
       ]
     },
     {
