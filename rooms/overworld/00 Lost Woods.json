@@ -419,6 +419,29 @@
     },
     {
       "link": [1, 7],
+      "name": "Enter with Strong Overhead Object - Double Ropa Kill",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        {"combatProficiency": 3},
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"glove": 1},
+          {"combatProficiency": 4}
+        ]}
+      ],
+      "note": [
+        "Reset the room with a skull rock to be able to have two which can be used to kill both Ropa.",
+        "Be sure to pick up the first Ropa's drop or it will respawn when going off screen to grab the other rock."
+      ],
+      "detailNote": [
+        "Without a glove, lure the second Ropa to the left then sneak past it, or kill it using all 4 available bushes.",
+        "If the Ropa goes off screen, it regains its health, so it is important to lure it north for each bush.",
+        "If a Bee or guard spawns, it is typically required to reset the room."
+      ]
+    },
+    {
+      "link": [1, 7],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
       "requires": [
@@ -442,7 +465,7 @@
       "isBunny": "no",
       "note": [
         "Kill the first Ropa using all 4 available bushes. If a Bee or guard spawns, reset the room.",
-        "If the Ropa respawns, it regains its health, so it is important to lure it north for each bush.",
+        "If the Ropa goes off screen, it regains its health, so it is important to lure it north for each bush.",
         "The rest are much easier to lure and dodge."
       ]
     },
@@ -649,8 +672,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [7, 1],
@@ -682,7 +704,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "note": [
         "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
         "With the Power Glove, it can save magic to kill one with a rock found north."
@@ -725,7 +746,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
     {
@@ -751,7 +771,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
     },
     {
@@ -786,7 +805,8 @@
         "Lure the third Ropa up to the top right and kill it with bushes.",
         "Grab a skull rock and skip the next Ropa and use the rock to kill one of the bottom left two.",
         "Return for another rock or manipulate the last Ropa very precisely to sneak past it."
-      ]
+      ],
+      "detailNote": ["Note that it is also possible to grab a skull rock and reset the room, to kill one of the first Ropas quicker"]
     },
     {
       "link": [7, 1],
@@ -805,6 +825,9 @@
         "At the end, lure the Ropa right of the bush up north and sneak past it.",
         "There is a way to despawn it because it goes too far north while still preventing it from respawning - that can make things easier.",
         "Repeat for the last one to escape."
+      ],
+      "detailNote": [
+        "If Link is able to enter the room with a strong overhead object, like a brown bush or a signpost, this could be a fair bit easier."
       ]
     },
     {

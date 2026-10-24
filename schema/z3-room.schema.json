@@ -26,7 +26,7 @@
     "darkWorldName": {
       "type": "string",
       "minLength": 1,
-      "description": "The Dark World name of an overworld room, required even when it matches name."
+      "description": "The Dark World name of an overworld room."
     },
     "roomType": {
       "type": "string",

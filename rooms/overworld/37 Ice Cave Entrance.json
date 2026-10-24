@@ -217,7 +217,7 @@
       "name": "Base - Glove",
       "world": "light",
       "requires": [
-        {"bombs": 1}
+        {"glove": 1}
       ],
       "unlocksDoor": [3]
     },
@@ -226,7 +226,7 @@
       "name": "Base - Glove",
       "world": "dark",
       "requires": [
-        {"bombs": 1}
+        {"glove": 1}
       ],
       "unlocksDoor": [4]
     },

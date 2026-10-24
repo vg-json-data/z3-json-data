@@ -297,6 +297,21 @@
     },
     {
       "link": [1, 2],
+      "name": "Base - Mirror Shield",
+      "world": "dark",
+      "requires": [
+        {"shield": 3},
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Lynel", "count": 1}}
+        ]}
+      ],
+      "note": [
+        "Cross the bridge, with the Mirror Shield. Walking close to the Lynels will eventually make them step backwards."
+      ]
+    },
+    {
+      "link": [1, 2],
       "name": "Tank the Damage",
       "world": "dark",
       "requires": [
@@ -347,6 +362,19 @@
         "Without boots, walk to the end of the bridge, hit the lynels with a tempered or golden sword, then dodge or kill the lynels.",
         "It is also possible to shoot a silver arrow once the first lynel is on screen then continue moving right;",
         "this will kill the second lynel and Link can walk just above the first one."
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Enter with Strong Overhead Object - Lynel Push",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        {"combatProficiency": 3},
+        "canCrossRoomOverheadPickups"
+      ],
+      "note": [
+        "Dodge the first Lynel, then cross the bridge and throw the object at the third Lynel to push it back and sneak past."
       ]
     },
     {
@@ -498,6 +526,20 @@
       "world": "any",
       "requires": [
         "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Enter with Strong Overhead Object - Lynel Push",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        {"combatProficiency": 4},
+        "canCrossRoomOverheadPickups"
+      ],
+      "note": [
+        "Dodge the first two Lynels, then cross the bridge and throw the object at the third Lynel to push it back and sneak past.",
+        "This has to be done in a way so that the right Lynels don't shoot a fireball directly down the bridge."
       ]
     },
     {
