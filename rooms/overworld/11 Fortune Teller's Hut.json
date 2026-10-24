@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 9,
   "name": "Fortune Teller's Hut",
+  "darkWorldName": "Dark Fortune Teller",
   "roomType": "Overworld",
   "position": [1, 2],
   "size": [2, 2],

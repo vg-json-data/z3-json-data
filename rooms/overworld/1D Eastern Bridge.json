@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 19,
   "name": "Eastern Bridge",
+  "darkWorldName": "Collapsed Bridge",
   "roomType": "Overworld",
   "position": [5, 3],
   "size": [2, 2],

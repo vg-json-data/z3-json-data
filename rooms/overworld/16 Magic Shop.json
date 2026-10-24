@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 14,
   "name": "Magic Shop",
+  "darkWorldName": "Dark Potion Shop",
   "roomType": "Overworld",
   "position": [6, 2],
   "size": [2, 2],

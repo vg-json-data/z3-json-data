@@ -24,7 +24,8 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 
 - `$schema`: The relative path to the room schema.
 - `id`: The room's ID within its room-ID space.
-- `name`: The room's name.
+- `name`: The room's name; for overworld rooms, its Light World name.
+- `darkWorldName`: The Dark World name, used only for overworld rooms.
 - `roomType`: `Overworld`, `Cave`, `House`, `Dungeon`, or `Special`.
 - `note`: General information about the room.
 - `detailNote`: Additional player-facing room details; also supported on other records with `note`.
@@ -40,7 +41,7 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `notables`: Optional room-specific techniques; see [Notable Strats](strats.md#notable-strats).
 - `nextNotableId`: Next ID to assign, required when `notables` is present and greater than every existing notable ID in this room.
 
-The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Overworld rooms also require `size` and `edgeVariants`.
+The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Overworld rooms also require `darkWorldName`, `size`, and `edgeVariants`.
 
 ### Example
 

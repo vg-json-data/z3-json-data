@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 37,
   "name": "Lockpicker's Corridor",
+  "darkWorldName": "Blocked Mire Pathway",
   "roomType": "Overworld",
   "position": [2, 7],
   "size": [2, 2],

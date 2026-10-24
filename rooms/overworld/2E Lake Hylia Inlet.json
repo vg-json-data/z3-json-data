@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 29,
   "name": "Lake Hylia Inlet",
+  "darkWorldName": "Ice Lake Inlet",
   "roomType": "Overworld",
   "position": [6, 5],
   "size": [2, 2],

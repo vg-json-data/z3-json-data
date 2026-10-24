@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 4,
   "name": "Death Mountain East",
+  "darkWorldName": "Dark Death Mountain East",
   "roomType": "Overworld",
   "position": [5, 0],
   "size": [4, 4],

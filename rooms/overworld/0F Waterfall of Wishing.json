@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 7,
   "name": "Waterfall of Wishing",
+  "darkWorldName": "Lake of Ill Omen",
   "roomType": "Overworld",
   "position": [7, 1],
   "size": [2, 2],

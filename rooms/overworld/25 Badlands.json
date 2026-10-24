@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 22,
   "name": "Badlands",
+  "darkWorldName": "Dark Badlands",
   "roomType": "Overworld",
   "position": [5, 4],
   "size": [2, 2],

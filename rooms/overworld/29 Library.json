@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 24,
   "name": "Library",
+  "darkWorldName": "Shooting Gallery",
   "roomType": "Overworld",
   "position": [1, 5],
   "size": [2, 2],

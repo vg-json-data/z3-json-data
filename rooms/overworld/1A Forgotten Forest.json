@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 17,
   "name": "Forgotten Forest",
+  "darkWorldName": "Shield Shop",
   "roomType": "Overworld",
   "position": [2, 3],
   "size": [2, 2],

@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 38,
   "name": "Swamp Ruins",
+  "darkWorldName": "Swamp Palace",
   "roomType": "Overworld",
   "position": [3, 7],
   "size": [2, 2],

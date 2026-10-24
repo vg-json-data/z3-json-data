@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 15,
   "name": "Pegasus Rock Path",
+  "darkWorldName": "Dark Bonk Rock Path",
   "roomType": "Overworld",
   "position": [7, 2],
   "size": [2, 2],

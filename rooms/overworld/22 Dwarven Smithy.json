@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 21,
   "name": "Dwarven Smithy",
+  "darkWorldName": "Purple Chest Ruins",
   "roomType": "Overworld",
   "position": [2, 4],
   "size": [2, 2],

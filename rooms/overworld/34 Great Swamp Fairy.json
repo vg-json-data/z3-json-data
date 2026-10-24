@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 34,
   "name": "Great Swamp Fairy",
+  "darkWorldName": "Hype Cave",
   "roomType": "Overworld",
   "position": [4, 6],
   "size": [2, 2],

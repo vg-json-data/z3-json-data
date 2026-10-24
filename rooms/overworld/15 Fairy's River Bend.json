@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 13,
   "name": "Fairy's River Bend",
+  "darkWorldName": "Dark River Bend",
   "roomType": "Overworld",
   "position": [5, 2],
   "size": [2, 2],

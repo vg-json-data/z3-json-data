@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 33,
   "name": "Great Swamp Lake",
+  "darkWorldName": "Plains of Ruin Lake",
   "roomType": "Overworld",
   "position": [3, 6],
   "size": [2, 2],

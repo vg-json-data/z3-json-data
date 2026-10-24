@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 12,
   "name": "Cemetery",
+  "darkWorldName": "Ghostly Garden",
   "roomType": "Overworld",
   "position": [4, 2],
   "size": [2, 2],

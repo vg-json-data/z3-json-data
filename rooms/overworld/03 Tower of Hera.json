@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 3,
   "name": "Tower of Hera",
+  "darkWorldName": "Ganon's Tower",
   "roomType": "Overworld",
   "position": [3, 0],
   "size": [4, 4],

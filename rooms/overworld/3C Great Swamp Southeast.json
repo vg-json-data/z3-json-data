@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 39,
   "name": "Great Swamp Southeast",
+  "darkWorldName": "Plains of Ruin Southeast",
   "roomType": "Overworld",
   "position": [4, 7],
   "size": [2, 2],

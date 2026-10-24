@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 10,
   "name": "Sanctuary Pond",
+  "darkWorldName": "Empty Pond",
   "roomType": "Overworld",
   "position": [2, 2],
   "size": [2, 2],

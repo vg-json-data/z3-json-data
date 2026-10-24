@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 23,
   "name": "Maze Race Game",
+  "darkWorldName": "Digging Game",
   "roomType": "Overworld",
   "position": [0, 5],
   "size": [2, 2],

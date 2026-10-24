@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 36,
   "name": "Ice Cave Entrance",
+  "darkWorldName": "Shopping Mall",
   "roomType": "Overworld",
   "position": [7, 6],
   "size": [2, 2],
