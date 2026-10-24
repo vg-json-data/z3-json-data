@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 27,
   "name": "Link's House",
+  "darkWorldName": "Bomb Shop",
   "roomType": "Overworld",
   "position": [4, 5],
   "size": [2, 2],

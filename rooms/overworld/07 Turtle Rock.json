@@ -1,7 +1,8 @@
 {
   "$schema": "../../schema/z3-room.schema.json",
   "id": 5,
-  "name": "Turtle Rock",
+  "name": "Light Turtle Rock",
+  "darkWorldName": "Turtle Rock",
   "roomType": "Overworld",
   "position": [7, 0],
   "size": [2, 2],

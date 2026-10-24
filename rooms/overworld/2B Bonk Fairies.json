@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 26,
   "name": "Bonk Fairies",
+  "darkWorldName": "Dark Bonk Fairies",
   "roomType": "Overworld",
   "position": [3, 5],
   "size": [2, 2],

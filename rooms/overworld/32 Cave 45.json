@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 32,
   "name": "Cave 45",
+  "darkWorldName": "Dark Cave 45 Setup",
   "roomType": "Overworld",
   "position": [2, 6],
   "size": [2, 2],

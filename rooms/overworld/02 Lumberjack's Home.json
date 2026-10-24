@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 2,
   "name": "Lumberjack's Home",
+  "darkWorldName": "Dark Lumberjack Shop",
   "roomType": "Overworld",
   "position": [2, 0],
   "size": [2, 2],

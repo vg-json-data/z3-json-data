@@ -150,6 +150,35 @@ class SecondaryItemReferenceTests(unittest.TestCase):
         self.assertIn('/secondaryItem: unknown item "TypoArrows"', errors[0])
 
 
+class RoomNameTests(unittest.TestCase):
+    def setUp(self):
+        schemas = [json.loads(path.read_text(encoding="utf-8"))
+                   for path in (ROOT / "schema").glob("*.schema.json")]
+        schema = next(schema for schema in schemas if schema["$id"] == "z3-room.schema.json")
+        self.validator = validators.validator_for(schema)(schema, registry=registry_for(schemas))
+
+    def test_overworld_requires_nonempty_dark_world_name(self):
+        room = json.loads((ROOT / "rooms/overworld/18 Kakariko Village.json").read_text(encoding="utf-8"))
+        self.assertTrue(self.validator.is_valid(room))
+        room["darkWorldName"] = room["name"]
+        self.assertTrue(self.validator.is_valid(room))
+        for value in ["", None, [], 1]:
+            with self.subTest(value=value):
+                room["darkWorldName"] = value
+                self.assertFalse(self.validator.is_valid(room))
+        del room["darkWorldName"]
+        self.assertFalse(self.validator.is_valid(room))
+
+    def test_other_room_types_disallow_dark_world_name(self):
+        for room_type in ["Cave", "House", "Dungeon", "Special"]:
+            with self.subTest(room_type=room_type):
+                room = {"id": 1, "name": "Interior", "roomType": room_type,
+                        "nodes": [], "strats": []}
+                self.assertTrue(self.validator.is_valid(room))
+                room["darkWorldName"] = "Dark Interior"
+                self.assertFalse(self.validator.is_valid(room))
+
+
 class OverheadStateTests(unittest.TestCase):
     def setUp(self):
         schemas = [json.loads(path.read_text(encoding="utf-8"))
@@ -157,7 +186,8 @@ class OverheadStateTests(unittest.TestCase):
         schema = next(schema for schema in schemas if schema["$id"] == "z3-room.schema.json")
         self.validator = validators.validator_for(schema)(schema, registry=registry_for(schemas))
         self.room = {
-            "id": 1, "name": "Test", "roomType": "Overworld", "size": [2, 2],
+            "id": 1, "name": "Test", "darkWorldName": "Dark Test",
+            "roomType": "Overworld", "size": [2, 2],
             "edgeVariants": {
                 edge: [{"supported": {"wide": [1]}, "default": "wide"}]
                 for edge in ["north", "south", "east", "west"]

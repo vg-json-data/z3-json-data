@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 30,
   "name": "East Warp Point",
+  "darkWorldName": "South Dark Palace",
   "roomType": "Overworld",
   "position": [7, 5],
   "size": [2, 2],

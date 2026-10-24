@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 8,
   "name": "Lost Woods Entrance",
+  "darkWorldName": "Skull Woods Entrance",
   "roomType": "Overworld",
   "position": [0, 2],
   "size": [2, 2],

@@ -20,7 +20,13 @@
       "minimum": 0
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "The room's name; for overworld rooms, the Light World name."
+    },
+    "darkWorldName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The Dark World name of an overworld room, required even when it matches name."
     },
     "roomType": {
       "type": "string",
@@ -848,7 +854,7 @@
         }
       },
       "then": {
-        "required": ["edgeVariants"],
+        "required": ["edgeVariants", "darkWorldName"],
         "properties": {
           "nodes": {
             "items": {
@@ -929,6 +935,7 @@
       },
       "else": {
         "properties": {
+          "darkWorldName": false,
           "strats": {
             "items": {
               "properties": {

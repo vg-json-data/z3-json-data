@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 28,
   "name": "Camper's Bridge",
+  "darkWorldName": "Ice Lake Bridge",
   "roomType": "Overworld",
   "position": [5, 5],
   "size": [2, 2],

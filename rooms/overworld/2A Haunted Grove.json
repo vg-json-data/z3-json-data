@@ -2,6 +2,7 @@
   "$schema": "../../schema/z3-room.schema.json",
   "id": 25,
   "name": "Haunted Grove",
+  "darkWorldName": "Stumpy's Grove",
   "roomType": "Overworld",
   "position": [2, 5],
   "size": [2, 2],
