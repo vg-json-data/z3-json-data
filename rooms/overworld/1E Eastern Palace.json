@@ -445,12 +445,6 @@
     {
       "link": [4, 1],
       "name": "Base",
-      "world": "dark",
-      "requires": []
-    },
-    {
-      "link": [4, 1],
-      "name": "Base",
       "world": "light",
       "requires": [
         {"or": [
@@ -489,6 +483,25 @@
           ]}
         ]}
       ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Enter with Strong Overhead Object - Guard Kill",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "note": [
+        "Two strong objects can kill the guard. This is only useful at avoiding jumping off the ledge."
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
+      "requires": []
     }
   ]
 }
