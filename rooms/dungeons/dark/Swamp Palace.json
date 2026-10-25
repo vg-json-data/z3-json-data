@@ -3,6 +3,7 @@
   "id": 94,
   "name": "Swamp Palace",
   "roomType": "Dungeon",
+  "dungeonId": 10,
   "enemySpawns": {
     "enemies": [
       "Arrghus",
@@ -183,16 +184,14 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Middle Floor Eastern Room Pot Key",
       "itemLocation": 4,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 4,
       "subArea": "Swamp Palace B1",
       "locationName": "Eastern Floodable Pot Key",
       "itemLocation": 5,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 5,
@@ -215,16 +214,14 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Hookshot Pot Key",
       "itemLocation": 7,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
       "subArea": "Swamp Palace B1",
       "locationName": "Western Floodable Pot Key",
       "itemLocation": 8,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 9,
@@ -271,8 +268,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Fast River Room Pot Key",
       "itemLocation": 20,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 15,
@@ -287,15 +283,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 22,
-      "item": "Crystal2",
-      "itemAddress": [
-        "0x120A0",
-        "0x53F6C",
-        "0x53F6D",
-        "0x180055",
-        "0x180071",
-        "0xC701"
-      ]
+      "item": "Crystal2"
     }
   ],
   "lockedDoors": [

@@ -3,6 +3,7 @@
   "id": 59,
   "name": "Desert Palace",
   "roomType": "Dungeon",
+  "dungeonId": 6,
   "enemySpawns": {
     "enemies": [
       "Lanmolas",
@@ -127,24 +128,21 @@
       "subArea": "Desert Palace 1F",
       "locationName": "First Tile Room Pot",
       "itemLocation": 5,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 7,
       "subArea": "Desert Palace 2F",
       "locationName": "Long Room Pot",
       "itemLocation": 8,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
       "subArea": "Desert Palace 2F",
       "locationName": "Second Tile Room Pot",
       "itemLocation": 8,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 9,
@@ -159,15 +157,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Dungeon Prize",
       "itemLocation": 10,
-      "item": "PendantOfWisdom",
-      "itemAddress": [
-        "0x1209E",
-        "0x53F1C",
-        "0x53F1D",
-        "0x180053",
-        "0x180078",
-        "0xC6FF"
-      ]
+      "item": "PendantOfWisdom"
     }
   ],
   "lockedDoors": [

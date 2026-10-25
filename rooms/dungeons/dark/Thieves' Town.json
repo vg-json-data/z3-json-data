@@ -3,6 +3,7 @@
   "id": 96,
   "name": "Thieves' Town",
   "roomType": "Dungeon",
+  "dungeonId": 22,
   "enemySpawns": {
     "enemies": [
       "Blind",
@@ -132,16 +133,14 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Boss Hallway Pot Key",
       "itemLocation": 2,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 6,
       "subArea": "Thieves' Town B1",
       "locationName": "Blue Orange Switch Room Pot Key",
       "itemLocation": 4,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 7,
@@ -180,15 +179,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 11,
-      "item": "Crystal4",
-      "itemAddress": [
-        "0x120A6",
-        "0x53F36",
-        "0x53F37",
-        "0x18005B",
-        "0x180077",
-        "0xC707"
-      ]
+      "item": "Crystal4"
     }
   ],
   "lockedDoors": [

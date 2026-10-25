@@ -3,6 +3,7 @@
   "id": 93,
   "name": "Palace of Darkness",
   "roomType": "Dungeon",
+  "dungeonId": 12,
   "enemySpawns": {
     "enemies": [
       "Helmasaur King",
@@ -329,15 +330,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 30,
-      "item": "Crystal1",
-      "itemAddress": [
-        "0x120A1",
-        "0x53F00",
-        "0x53F01",
-        "0x180056",
-        "0x18007D",
-        "0xC702"
-      ]
+      "item": "Crystal1"
     }
   ],
   "lockedDoors": [

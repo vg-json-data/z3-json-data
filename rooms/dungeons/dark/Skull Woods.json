@@ -3,6 +3,7 @@
   "id": 95,
   "name": "Skull Woods",
   "roomType": "Dungeon",
+  "dungeonId": 16,
   "enemySpawns": {
     "enemies": [
       "Mothula",
@@ -183,8 +184,7 @@
       "subArea": "Skull Woods Second Section",
       "locationName": "Pot Key By Useless Door",
       "itemLocation": 11,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
@@ -199,8 +199,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Pre-Mothula Arena Gibdo Key",
       "itemLocation": 16,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 10,
@@ -215,15 +214,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Dungeon Prize",
       "itemLocation": 17,
-      "item": "Crystal3",
-      "itemAddress": [
-        "0x120A3",
-        "0x53F12",
-        "0x53F13",
-        "0x180058",
-        "0x18007B",
-        "0xC704"
-      ]
+      "item": "Crystal3"
     }
   ],
   "lockedDoors": [

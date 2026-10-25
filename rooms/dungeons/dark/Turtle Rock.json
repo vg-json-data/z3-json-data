@@ -3,6 +3,7 @@
   "id": 99,
   "name": "Turtle Rock",
   "roomType": "Dungeon",
+  "dungeonId": 24,
   "enemySpawns": {
     "enemies": [
       "Trinexx (Blue Head)",
@@ -298,8 +299,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Pokey Room - Hokkubokku Key",
       "itemLocation": 9,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 5,
@@ -314,8 +314,7 @@
       "subArea": "Turtle Rock B1",
       "locationName": "Pokey Bubble Key",
       "itemLocation": 13,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 7,
@@ -386,15 +385,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 39,
-      "item": "Crystal7",
-      "itemAddress": [
-        "0x120A7",
-        "0x53F24",
-        "0x53F25",
-        "0x18005C",
-        "0x180079",
-        "0xC708"
-      ]
+      "item": "Crystal7"
     }
   ],
   "lockedDoors": [

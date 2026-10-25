@@ -3,6 +3,7 @@
   "id": 98,
   "name": "Misery Mire",
   "roomType": "Dungeon",
+  "dungeonId": 14,
   "enemySpawns": {
     "enemies": [
       "Vitreous",
@@ -197,16 +198,14 @@
       "subArea": "Misery Mire (Main Floor)",
       "locationName": "Spike Chest Room Pot Key",
       "itemLocation": 5,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 4,
       "subArea": "Misery Mire (Main Floor)",
       "locationName": "Northwest Blue Orange Switch Room - Pot Key",
       "itemLocation": 7,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 5,
@@ -229,8 +228,7 @@
       "subArea": "Misery Mire (Main Floor)",
       "locationName": "Spiral Conveyor Blue Bari Key",
       "itemLocation": 9,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
@@ -269,15 +267,7 @@
       "subArea": "Misery Mire (Final Section)",
       "locationName": "Dungeon Prize",
       "itemLocation": 23,
-      "item": "Crystal6",
-      "itemAddress": [
-        "0x120A2",
-        "0x53F48",
-        "0x53F49",
-        "0x180057",
-        "0x180075",
-        "0xC703"
-      ]
+      "item": "Crystal6"
     }
   ],
   "lockedDoors": [

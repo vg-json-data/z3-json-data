@@ -251,8 +251,7 @@
       "locationName": "Activate Flute",
       "itemLocation": 2,
       "world": "light",
-      "item": "OcarinaActive",
-      "itemAddress": "unknown"
+      "item": "OcarinaActive"
     },
     {
       "id": 2,

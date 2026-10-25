@@ -125,6 +125,12 @@
       ],
       "additionalProperties": false,
       "properties": {
+        "devNote": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "note": {
           "type": "string",
           "minLength": 1
@@ -274,8 +280,7 @@
       "type": "object",
       "required": [
         "name",
-        "itemReceiptId",
-        "prizePatchBytes"
+        "itemReceiptId"
       ],
       "additionalProperties": false,
       "properties": {
@@ -285,12 +290,10 @@
         "itemReceiptId": {
           "$ref": "#/definitions/byte"
         },
-        "prizePatchBytes": {
+        "devNote": {
           "type": "array",
-          "minItems": 6,
-          "maxItems": 6,
           "items": {
-            "$ref": "#/definitions/byte"
+            "type": "string"
           }
         },
         "note": {

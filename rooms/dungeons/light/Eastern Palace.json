@@ -3,6 +3,7 @@
   "id": 58,
   "name": "Eastern Palace",
   "roomType": "Dungeon",
+  "dungeonId": 4,
   "enemySpawns": {
     "enemies": [
       "Armos Knight",
@@ -106,8 +107,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Dark Pot Room",
       "itemLocation": 6,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 5,
@@ -130,8 +130,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Dark Eyegore Room",
       "itemLocation": 4,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
@@ -146,15 +145,7 @@
       "subArea": "Eastern Palace 2F",
       "locationName": "Dungeon Prize",
       "itemLocation": 9,
-      "item": "PendantOfCourage",
-      "itemAddress": [
-        "0x1209D",
-        "0x53EF8",
-        "0x53EF9",
-        "0x180052",
-        "0x18007C",
-        "0xC6FE"
-      ]
+      "item": "PendantOfCourage"
     }
   ],
   "lockedDoors": [
