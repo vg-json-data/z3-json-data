@@ -91,12 +91,6 @@
       ]
     },
     {
-      "link": [3, 3],
-      "name": "Base - Grab the Item",
-      "requires": [],
-      "collectsItems": [1]
-    },
-    {
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -107,6 +101,12 @@
         ]}
       ],
       "devNote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
+    },
+    {
+      "link": [3, 3],
+      "name": "Base - Grab the Item",
+      "requires": [],
+      "collectsItems": [1]
     }
   ]
 }

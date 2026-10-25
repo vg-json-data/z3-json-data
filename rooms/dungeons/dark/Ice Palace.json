@@ -491,24 +491,6 @@
       "requires": []
     },
     {
-      "link": [5, 20],
-      "name": "Icebreaker",
-      "requires": [
-        {"notable": "Icebreaker"},
-        {"redCane": 1}
-      ],
-      "note": [
-        "Use the red cane to walk through the barrier in the Ice Palace Big Key Chest Room."
-      ],
-      "detailNote": [
-        "Face left into the doorway with one pixel of Link's shadow overlapping the brightest part of the floor's threshold.",
-        "Hold down and right and if done properly, Link will be walking into the right wall without going downwards.",
-        "Use the red cane while releasing the d-pad. Tap left so Link faces left with only a single pixel of horizontal movement,",
-        "then hold up or down and Link will walk through the right wall.",
-        "Pause buffers are very helpful during several of the small precise movements."
-      ]
-    },
-    {
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -526,6 +508,24 @@
           {"combatProficiency": 3},
           {"damage": {"enemy": "Pengator", "count": 2}}
         ]}
+      ]
+    },
+    {
+      "link": [5, 20],
+      "name": "Icebreaker",
+      "requires": [
+        {"notable": "Icebreaker"},
+        {"redCane": 1}
+      ],
+      "note": [
+        "Use the red cane to walk through the barrier in the Ice Palace Big Key Chest Room."
+      ],
+      "detailNote": [
+        "Face left into the doorway with one pixel of Link's shadow overlapping the brightest part of the floor's threshold.",
+        "Hold down and right and if done properly, Link will be walking into the right wall without going downwards.",
+        "Use the red cane while releasing the d-pad. Tap left so Link faces left with only a single pixel of horizontal movement,",
+        "then hold up or down and Link will walk through the right wall.",
+        "Pause buffers are very helpful during several of the small precise movements."
       ]
     },
     {
@@ -909,12 +909,12 @@
       ]
     },
     {
-      "link": [20, 19],
+      "link": [20, 5],
       "name": "Base",
       "requires": []
     },
     {
-      "link": [20, 5],
+      "link": [20, 19],
       "name": "Base",
       "requires": []
     },
