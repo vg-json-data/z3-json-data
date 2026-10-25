@@ -3,6 +3,7 @@
   "id": 97,
   "name": "Ice Palace",
   "roomType": "Dungeon",
+  "dungeonId": 18,
   "enemySpawns": {
     "enemies": [
       "Kholdstare",
@@ -203,8 +204,7 @@
       "subArea": "Ice Palace (Upper Floors)",
       "locationName": "Entrance - Blue Bari Key Drop",
       "itemLocation": 2,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 2,
@@ -219,8 +219,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Spiky Conveyor - Blue Bari Key Drop",
       "itemLocation": 8,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 4,
@@ -251,8 +250,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Map Chest Block Key",
       "itemLocation": 19,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 8,
@@ -283,8 +281,7 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Slippery Pot Room - Pot Key",
       "itemLocation": 21,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 12,
@@ -299,15 +296,7 @@
       "subArea": "Ice Palace (Lower Floors)",
       "locationName": "Dungeon Prize",
       "itemLocation": 28,
-      "item": "Crystal5",
-      "itemAddress": [
-        "0x120A4",
-        "0x53F5A",
-        "0x53F5B",
-        "0x180059",
-        "0x180073",
-        "0xC705"
-      ]
+      "item": "Crystal5"
     }
   ],
   "lockedDoors": [

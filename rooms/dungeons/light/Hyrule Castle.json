@@ -115,8 +115,7 @@
       "subArea": "Hyrule Castle Dungeon",
       "locationName": "First Guard",
       "itemLocation": 5,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 3,
@@ -133,16 +132,14 @@
       "subArea": "Hyrule Castle Dungeon",
       "locationName": "Boomerang Chest Guard",
       "itemLocation": 6,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 5,
       "subArea": "Hyrule Castle Dungeon",
       "locationName": "Zalda's Prison Guard",
       "itemLocation": 7,
-      "item": "BigKey",
-      "itemAddress": "unknown"
+      "item": "BigKey"
     },
     {
       "id": 6,
@@ -166,8 +163,7 @@
       "subArea": "Sewers (Dark)",
       "locationName": "Last Dark Room Rat",
       "itemLocation": 10,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 9,

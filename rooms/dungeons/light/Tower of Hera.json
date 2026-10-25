@@ -3,6 +3,7 @@
   "id": 60,
   "name": "Tower of Hera",
   "roomType": "Dungeon",
+  "dungeonId": 20,
   "enemySpawns": {
     "enemies": [
       "Moldorm",
@@ -141,15 +142,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Dungeon Prize",
       "itemLocation": 11,
-      "item": "PendantOfPower",
-      "itemAddress": [
-        "0x120A5",
-        "0x53F0A",
-        "0x53F0B",
-        "0x18005A",
-        "0x18007A",
-        "0xC706"
-      ]
+      "item": "PendantOfPower"
     }
   ],
   "lockedDoors": [

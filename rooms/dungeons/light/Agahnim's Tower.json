@@ -115,16 +115,14 @@
       "subArea": "Agahnim's Tower (Lower)",
       "locationName": "Dark Guard Key",
       "itemLocation": 6,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 4,
       "subArea": "Agahnim's Tower (Upper)",
       "locationName": "Guarded Pot Room Key",
       "itemLocation": 8,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     }
   ],
   "lockedDoors": [

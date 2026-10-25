@@ -371,53 +371,43 @@
     "items": [
       {
         "name": "PendantOfCourage",
-        "itemReceiptId": "0x37",
-        "prizePatchBytes": [ "0x04", "0x38", "0x62", "0x00", "0x69", "0x01" ]
+        "itemReceiptId": "0x37"
       },
       {
         "name": "PendantOfWisdom",
-        "itemReceiptId": "0x38",
-        "prizePatchBytes": [ "0x01", "0x32", "0x60", "0x00", "0x69", "0x03" ]
+        "itemReceiptId": "0x38"
       },
       {
         "name": "PendantOfPower",
-        "itemReceiptId": "0x39",
-        "prizePatchBytes": [ "0x02", "0x34", "0x60", "0x00", "0x69", "0x02" ]
+        "itemReceiptId": "0x39"
       },
       {
         "name": "Crystal1",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x02", "0x34", "0x64", "0x40", "0x7F", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal2",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x10", "0x34", "0x64", "0x40", "0x79", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal3",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x40", "0x34", "0x64", "0x40", "0x6C", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal4",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x20", "0x34", "0x64", "0x40", "0x6D", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal5",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x04", "0x32", "0x64", "0x40", "0x6E", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal6",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x01", "0x32", "0x64", "0x40", "0x6F", "0x06" ]
+        "itemReceiptId": "0x20"
       },
       {
         "name": "Crystal7",
-        "itemReceiptId": "0x20",
-        "prizePatchBytes": [ "0x08", "0x34", "0x64", "0x40", "0x7C", "0x06" ]
+        "itemReceiptId": "0x20"
       }
     ]
   },

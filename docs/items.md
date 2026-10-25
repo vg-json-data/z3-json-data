@@ -1,6 +1,6 @@
 # Item Data
 
-[`items.json`](../items.json) defines item receipts, dungeon-prize patch data, and persistent flags used by *The Legend of Zelda: A Link to the Past* logic.
+[`items.json`](../items.json) defines items and persistent flags used by *The Legend of Zelda: A Link to the Past* logic.
 
 Item definitions describe what a room item represents and how it is encoded by the game. A room item's `item` property names one of these definitions. Its location, ROM address, and the strat that collects it are defined separately in the [room data](rooms.md#items) and [strat data](strats.md#collecting-items).
 
@@ -27,7 +27,7 @@ Most categories contain item receipt records with the following properties:
 }
 ```
 
-Names identify items across the data model. Receipt IDs are implementation values and are not necessarily unique; for example, all seven crystals use the same vanilla receipt ID and are distinguished by their dungeon-prize patch bytes.
+Names identify items across the data model. Receipt IDs are implementation values and are not necessarily unique; for example, all seven crystals use the same vanilla receipt ID and are distinguished by their names.
 
 ## Non-vanilla Items
 
@@ -80,21 +80,19 @@ These receipt IDs operate on the currently loaded dungeon. A Small Key receipt i
 
 ## Dungeon Prizes
 
-`dungeonPrizes` contains pendants and crystals. Each record has:
+`dungeonPrizes.items` contains pendants and crystals. Each record has:
 
 - `name`: The specific pendant or crystal.
 - `itemReceiptId`: The receipt used when the prize is collected.
-- `prizePatchBytes`: Six bytes written positionally to the six `itemAddress` values of a dungeon-prize location.
 
 ```json
 {
   "name": "Crystal1",
-  "itemReceiptId": "0x20",
-  "prizePatchBytes": ["0x02", "0x34", "0x64", "0x40", "0x7F", "0x06"]
+  "itemReceiptId": "0x20"
 }
 ```
 
-The first patch byte is written to the first address, the second byte to the second address, and so on. All seven crystals use receipt `0x20`; their individual identities are encoded by `prizePatchBytes`.
+All seven crystals use receipt `0x20`; their names identify the specific crystals.
 
 ## Health Upgrades
 

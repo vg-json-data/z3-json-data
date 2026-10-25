@@ -27,6 +27,7 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `name`: The room's name; for overworld rooms, its Light World name.
 - `darkWorldName`: The Dark World name, used only for overworld rooms.
 - `roomType`: `Overworld`, `Cave`, `House`, `Dungeon`, or `Special`.
+- `dungeonId`: Vanilla dungeon identity, expressed as the raw even integer ID. This is distinct from the logical room `id` and is not a divided table index.
 - `note`: General information about the room.
 - `detailNote`: Additional player-facing room details; also supported on other records with `note`.
 - `position`: The upper-left position of an overworld room on the 8×8 overworld layout.
@@ -308,7 +309,7 @@ The optional `items` array defines item locations within a room. Each item has:
 - `itemLocation`: The node most naturally associated with collecting the item.
 - `item`: The vanilla item or item receipt at the location.
 - `secondaryItem`: Optional alternate vanilla item name as a string, provided as useful reference information. Usually, this item is received when Link already owns the primary `item` from the chest; exceptions are described in `devNote`.
-- `itemAddress`: One or more ROM addresses involved in encoding the item at the location.
+- `itemAddress`: Optional hexadecimal string giving the unheadered ROM file offset of the location-specific item receipt-ID byte. Omitted when the location has no independent item receipt-ID byte.
 - `subArea`: Organizational context within an underworld room.
 - `world`: The world containing the item. This is required for overworld rooms, omitted otherwise.
 - `devNote`: Contributor-facing implementation detail.
@@ -327,7 +328,7 @@ The optional `items` array defines item locations within a room. Each item has:
 
 Items are never collected automatically by reaching their `itemLocation`. A strat must explicitly include the item's ID in `collectsItems`. See [Strats: Collecting Items](strats.md#collecting-items).
 
-Most item locations have one `itemAddress`. Dungeon-prize locations have six addresses; the six `prizePatchBytes` from the selected [dungeon-prize definition](items.md#dungeon-prizes) are written to those addresses in order.
+Locations such as pot keys, enemy drops, scripted events, and dungeon prizes omit `itemAddress` because they have no independent item receipt-ID byte. Dungeon-prize locations identify their dungeon through the room's `dungeonId`, and their `item` refers to the vanilla [dungeon-prize definition](items.md#dungeon-prizes).
 
 ## Locked Doors
 

@@ -427,8 +427,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Basement First Left Room - Pot Key",
       "itemLocation": 2,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 2,
@@ -475,8 +474,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Double Switch Room - Pot Key",
       "itemLocation": 10,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 7,
@@ -579,8 +577,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Conveyor Pit Room - Pot Key",
       "itemLocation": 22,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 20,
@@ -643,8 +640,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Mini Helmasaur Room - Helmasaur Key Drop",
       "itemLocation": 51,
-      "item": "SmallKey",
-      "itemAddress": "unknown"
+      "item": "SmallKey"
     },
     {
       "id": 28,

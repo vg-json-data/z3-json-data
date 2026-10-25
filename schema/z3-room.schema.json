@@ -38,6 +38,13 @@
         "Special"
       ]
     },
+    "dungeonId": {
+      "description": "Vanilla dungeon identity, distinct from the logical room id. This is the raw even ID, not a divided table index.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 26,
+      "multipleOf": 2
+    },
     "note": {
       "type": "array",
       "items": {
@@ -299,8 +306,7 @@
           "id",
           "locationName",
           "itemLocation",
-          "item",
-          "itemAddress"
+          "item"
         ],
         "additionalProperties": false,
         "properties": {
@@ -323,14 +329,9 @@
             "type": "string"
           },
           "itemAddress": {
-            "type": [
-              "string",
-              "array"
-            ],
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            }
+            "description": "Optional hexadecimal string giving the unheadered ROM file offset of the location-specific item receipt-ID byte. Omitted when the location has no independent item receipt-ID byte.",
+            "type": "string",
+            "pattern": "^0x[0-9A-Fa-f]+$"
           },
           "subArea": {
             "type": "string"
