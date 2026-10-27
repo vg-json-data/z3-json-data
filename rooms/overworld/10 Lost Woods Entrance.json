@@ -101,6 +101,44 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          "Hammer",
+          {"rod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"redCane": 1},
+          {"blueCane": 32},
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "On entry, quickly sneak past the guard by moving southeast.",
+        "Kill the second guard with the three bushes. If a third guard spawns, dodge it."
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -110,8 +148,7 @@
           "Hookshot",
           "Boomerang"
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -127,29 +164,27 @@
             "h_NoAgahnimLoophole"
           ]}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
       "name": "Base - Bushes",
       "world": "light",
       "requires": [
-        {"combatProficiency": 2},
+        {"combatProficiency": 3},
         {"glove": 0},
         {"or": [
           "h_NoAgahnimLoophole",
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
       "name": "Precise Dodge",
       "world": "light",
       "requires": [
-        {"combatProficiency": 3}
+        {"combatProficiency": 4}
       ],
       "isBunny": "any",
       "note": [
@@ -176,8 +211,17 @@
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
+    },
+    {
+      "link": [1, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [1, 3],
@@ -185,8 +229,7 @@
       "world": "dark",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
@@ -198,8 +241,7 @@
           "Hookshot",
           "Boomerang"
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
@@ -224,7 +266,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "note": ["Kill the first guard(s) then take the east path to avoid the last guard."]
     },
     {
@@ -235,7 +276,6 @@
         {"combatProficiency": 2},
         {"glove": 0}
       ],
-      "isBunny": "no",
       "note": ["Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."]
     },
     {
@@ -267,8 +307,35 @@
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     },
     {
       "link": [3, 1],
@@ -276,8 +343,37 @@
       "world": "dark",
       "requires": [
         {"glove": 0}
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Bush Overhead",
+      "world": "light",
+      "requires": [
+        "Hammer",
+        "canCrossRoomOverheadPickups"
       ],
-      "isBunny": "no"
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "Hammer",
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     },
     {
       "link": [3, 4],
@@ -285,8 +381,7 @@
       "world": "light",
       "requires": [
         "Hammer"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [3, 4],
@@ -302,8 +397,7 @@
       "world": "light",
       "requires": [
         "Hammer"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [4, 3],
@@ -321,6 +415,45 @@
       "requires": [
         {"glove": 1}
       ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [5, 5],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [5, 5],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     },
     {
       "link": [4, 5],

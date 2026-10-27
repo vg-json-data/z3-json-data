@@ -81,6 +81,26 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -116,6 +136,26 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [2, 1],
@@ -199,6 +239,26 @@
       "requires": []
     },
     {
+      "link": [4, 1],
+      "name": "Carry Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [4, 2],
       "name": "Base",
       "world": "light",
@@ -209,6 +269,26 @@
           {"combatProficiency": 2}
         ]}
       ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     }
   ]
 }

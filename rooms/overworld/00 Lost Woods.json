@@ -21,7 +21,7 @@
     ],
     "west": [
       {"supported": {"closed": [], "small-2": [10]}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [10, 1], "small-1": [10], "small-2": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "dual-small": [13, 1], "small-1": [13], "small-2": [1]}, "default": "closed"}
     ]
   },
   "enemySpawns": {

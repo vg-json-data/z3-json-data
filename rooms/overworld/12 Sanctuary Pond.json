@@ -93,6 +93,15 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base - Swim",
       "world": "any",

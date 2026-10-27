@@ -91,6 +91,41 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          "Hammer",
+          {"and": [
+            "h_NoAgahnimLoophole",
+            {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Throw the strong bushes directly up the ladder to kill the guard. Throwing up the rock wall will not work."
+      ],
+      "devNote": [
+        "This strat is for if you can't jump off ledges, otherwise Link will start at node 2.",
+        "Killing the guard this way will be dependent on the tiling theme."
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -105,7 +140,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"combatProficiency": 3},
+          {"combatProficiency": 4},
           {"and": [
             "canRiskPermanentLossOfAccess",
             {"notFlag": "GameStateAgahnim"}
@@ -162,6 +197,11 @@
             {"notFlag": "GameStateAgahnim"}
           ]},
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+        ]},
+        {"or": [
+          "h_jumpOffLedge",
+          "PegasusBoots",
+          {"glove": 2}
         ]}
       ],
       "isBunny": "any",
@@ -174,7 +214,45 @@
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
-      "requires": []
+      "requires": [
+        {"or": [
+          "h_jumpOffLedge",
+          "PegasusBoots",
+          {"glove": 2}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          "PegasusBoots",
+          {"glove": 2}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Throw the strong bushes directly up the ladder to kill the guard. Throwing up the rock wall will not work."
+      ],
+      "devNote": [
+        "Killing the guard this way will be dependent on the tiling theme."
+      ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme. There is a rock and signpost which is usable with more requirements; it should always remain."
+      ]
     }
   ]
 }
