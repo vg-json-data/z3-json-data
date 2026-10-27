@@ -147,15 +147,13 @@
       "world": "dark",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
@@ -182,8 +180,7 @@
           {"arrows": 2},
           {"silverArrows": 1}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     }
   ]
 }

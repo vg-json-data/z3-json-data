@@ -106,8 +106,7 @@
       "requires": [
         {"flag": "DefeatedAgahnim1"},
         "PegasusBoots"
-      ],
-      "isBunny": "no"
+      ]
     }
   ]
 }

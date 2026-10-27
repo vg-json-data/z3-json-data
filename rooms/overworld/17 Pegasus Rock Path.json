@@ -127,8 +127,7 @@
           "PegasusBoots",
           {"glove": 2}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -149,8 +148,7 @@
       "requires": [
         "h_jumpOffLedge",
         "Flippers"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
@@ -176,8 +174,7 @@
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     }
   ]
 }

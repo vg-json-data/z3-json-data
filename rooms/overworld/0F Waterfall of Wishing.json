@@ -141,15 +141,13 @@
       "link": [1, 2],
       "name": "Base",
       "world": "any",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": [],
-      "isBunny": "any",
       "devNote": ["FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."]
     },
     {
@@ -159,7 +157,6 @@
       "requires": [
         {"glove": 0}
       ],
-      "isBunny": "no",
       "collectsItems": [1]
     },
     {

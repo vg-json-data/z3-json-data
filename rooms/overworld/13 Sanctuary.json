@@ -128,8 +128,7 @@
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
@@ -137,15 +136,13 @@
       "world": "light",
       "requires": [
         "h_jumpOffLedge"
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 2],
@@ -168,8 +165,7 @@
       "link": [3, 2],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     }
   ]
 }

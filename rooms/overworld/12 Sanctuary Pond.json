@@ -98,8 +98,7 @@
       "world": "any",
       "requires": [
         "Flippers"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],

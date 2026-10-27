@@ -292,8 +292,26 @@
       "link": [3, 4],
       "name": "Base",
       "world": "dark",
-      "requires": [],
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "Hammer"
+      ],
       "isBunny": "no"
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "dark",
+      "requires": [
+        {"glove": 0}
+      ]
     },
     {
       "link": [4, 4],
@@ -310,8 +328,7 @@
       "world": "any",
       "requires": [
         {"glove": 2}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [5, 4],
@@ -319,8 +336,7 @@
       "world": "any",
       "requires": [
         {"glove": 2}
-      ],
-      "isBunny": "no"
+      ]
     }
   ]
 }
