@@ -6,6 +6,8 @@ These values are used when determining how overworld rooms can be shuffled while
 
 Each supported variant identifies the local room nodes at its openings. Existing node `transitions` describe vanilla traversal endpoints and geometry; the selected variant's node references describe the endpoints for its retiled edge. Strats still define routing between those nodes inside the room.
 
+All [`exitState` and `entranceState`](strats.md#entrance-and-exit-state) screen transitions require a selected edge variant that includes the relevant endpoint node: the strat's destination node for `exitState`, or its source node for `entranceState`.
+
 ## Structure and Ordering
 
 `edgeVariants` directly contains `north`, `south`, `east`, and `west`. Each segment's supported variants, default, and selected choice are shared by Light World and Dark World. All four edges must be defined, including closed edges. Omitting an edge or the entire property is invalid.

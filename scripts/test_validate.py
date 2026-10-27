@@ -179,7 +179,7 @@ class RoomNameTests(unittest.TestCase):
                 self.assertFalse(self.validator.is_valid(room))
 
 
-class OverheadStateTests(unittest.TestCase):
+class ScreenTransitionStateTests(unittest.TestCase):
     def setUp(self):
         schemas = [json.loads(path.read_text(encoding="utf-8"))
                    for path in (ROOT / "schema").glob("*.schema.json")]
@@ -210,6 +210,32 @@ class OverheadStateTests(unittest.TestCase):
             with self.subTest(strength=strength):
                 self.assertTrue(self.validator.is_valid(self.room))
                 self.assertEqual(self.errors(), [])
+
+    def test_leave_normally_needs_no_entrance_state(self):
+        strat = self.room["strats"][0]
+        strat.update(link=[2, 1], exitState={"state": "leaveNormally"})
+        self.assertTrue(self.validator.is_valid(self.room))
+        self.assertEqual(self.errors(), [])
+        strat["link"] = [1, 2]
+        self.assertTrue(any("leaveNormally state endpoint node has no overworld screen transition"
+                            in error for error in self.errors()))
+
+    def test_leave_normally_is_exit_only_and_has_no_payload(self):
+        strat = self.room["strats"][0]
+        strat["entranceState"] = {"state": "leaveNormally"}
+        self.assertFalse(self.validator.is_valid(self.room))
+        del strat["entranceState"]
+        for extra in [{"type": "class1"}, {"entranceID": 1}]:
+            with self.subTest(extra=extra):
+                strat["exitState"] = {"state": "leaveNormally", **extra}
+                self.assertFalse(self.validator.is_valid(self.room))
+        interior = {
+            "id": 1, "name": "Interior", "roomType": "Cave",
+            "nodes": [{"id": 1, "name": "Door", "nodeType": "door"}],
+            "strats": [{"link": [1, 1], "name": "Leave", "requires": [],
+                        "exitState": {"state": "leaveNormally"}}],
+        }
+        self.assertFalse(self.validator.is_valid(interior))
 
     def test_invalid_overhead_states(self):
         for field in ["entranceState", "exitState"]:

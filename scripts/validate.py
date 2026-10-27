@@ -436,7 +436,7 @@ def validate_room(path, document, references, errors):
                               damage_enemy_populations(document, strat))
         for field, link_index in [("entranceState", 0), ("exitState", 1)]:
             event = strat.get(field)
-            if event is not None and event.get("state") == "overhead":
+            if event is not None and event.get("state") in {"overhead", "leaveNormally"}:
                 node_id = strat["link"][link_index]
                 node = indices["nodes"].get(node_id)
                 edge_node_ids = {
@@ -448,7 +448,7 @@ def validate_room(path, document, references, errors):
                 }
                 if node is not None and not node[2].get("transitions") and node_id not in edge_node_ids:
                     _record(errors, path, display_path(document, location + [field]),
-                            "overhead state endpoint node has no overworld screen transition")
+                            f"{event['state']} state endpoint node has no overworld screen transition")
                 continue
             if event is None or "entranceID" not in event:
                 continue
