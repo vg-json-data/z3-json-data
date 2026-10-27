@@ -204,10 +204,122 @@
       ]
     },
     {
+      "link": [1, 2],
+      "name": "Carry Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 2],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 4],
       "name": "Base",
       "world": "any",
       "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 4],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [2, 1],
@@ -239,6 +351,62 @@
           {"damage": {"enemy": "Ropa", "count": 2}}
         ]}
       ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [2, 3],
@@ -296,6 +464,62 @@
       "requires": [
         {"flag": "OpenedPalaceOfDarkness"}
       ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Carry Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 4],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          "h_jumpOffLedge",
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 4],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 4],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [3, 1],
@@ -502,6 +726,182 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1},
+        {"or": [
+          "h_jumpOffLedge",
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          "Hammer",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 48},
+          {"and": [
+            {"combatProficiency": 3},
+            {"bombs": 2}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+          ]},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "With no way to deal with the guard, and if Link can't jump off a ledge,",
+        "it is possible to tank a hit and lure it north, then return while getting it stuck just to the north."
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Carry Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 1],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 2],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1},
+        {"combatProficiency": 3},
+        {"or": [
+          "h_jumpOffLedge",
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          "Hammer",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"redCane": 1},
+          {"blueCane": 20},
+          {"cape": 48},
+          {"bombs": 2},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Climb up two sets of staircases, jump down once, then climb one more.",
+        "Alternatively, kill the first and take the east ladder up while dodging the guards.",
+        "With no way to deal with the first guard, and if Link can't jump off a ledge,",
+        "it is possible to tank a hit and lure it north, then return while getting it stuck just to the north."
+      ],
+      "devNote": [
+        "Assumes a combat proficiency of 3 to avoid making the strat complex just to avoid jumping off of a ledge"
+      ]
+    },
+    {
+      "link": [4, 2],
+      "name": "Carry Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 2],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 2],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     }
   ]
 }

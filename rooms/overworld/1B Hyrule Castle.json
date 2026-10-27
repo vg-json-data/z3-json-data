@@ -321,6 +321,39 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": ["Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner."]
+    },
+    {
+      "link": [1, 5],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 5],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 6],
       "name": "Base",
       "world": "light",
@@ -335,6 +368,24 @@
       "requires": []
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -347,6 +398,42 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 4],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
+      ]
+    },
+    {
+      "link": [2, 5],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
+      ]
     },
     {
       "link": [2, 13],
@@ -396,6 +483,66 @@
       "requires": []
     },
     {
+      "link": [3, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": ["If a guard is in the way, kill it with bushes."]
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        {"flag": "GameStateZelda"},
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
+        "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
+      ]
+    },
+    {
+      "link": [4, 13],
+      "name": "Enter with Strong Overhead Object - Guard Kill",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        {"flag": "GameStateZelda"},
+        {"combatProficiency": 3},
+        "canCrossRoomOverheadPickups"
+      ],
+      "note": [
+        "If Agahnim is killed and Link has no weapons, the guards can be killed if Link enters with a strong overhead object.",
+        "The easiest way is to kill the first guard with the strong object and two bushes, then the next with 4 bushes just south of it.",
+        "Walk to the right just enough to trigger the guards and retreat at the correct speed so that the red guard follows but not the blue.",
+        "Kill the red guard with the 4 remaining bushes, then sneak past the blue guard."
+      ]
+    },
+    {
       "link": [4, 17],
       "name": "Rescued Zelda",
       "world": "light",
@@ -403,6 +550,28 @@
         {"flag": "GameStateZelda"}
       ],
       "devNote": ["Entering through this transition without this flag will softlock the game."]
+    },
+    {
+      "link": [5, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [5, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [5, 5],
@@ -415,13 +584,25 @@
       "note": ["The left tree will release a fairy when dashed into."]
     },
     {
+      "link": [5, 5],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
+        "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
+      ]
+    },
+    {
       "link": [5, 13],
       "name": "Base",
       "world": "light",
       "requires": [
         {"or": [
           "h_NoAgahnimLoophole",
-          {"combatProficiency": 3},
           {"sword": 1},
           "Boomerang",
           "Hookshot",
@@ -454,6 +635,20 @@
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateZelda"},
         {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [5, 13],
+      "name": "Guard Bush Kill",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 3},
+        {"glove": 0}
+      ],
+      "note": [
+        "Kill the guard with 4 bushes just south of it.",
+        "Walk to the right just enough to trigger the guards and retreat at the correct speed so that the red guard follows but not the blue.",
+        "Kill the red guard with the 4 remaining bushes, then sneak past the blue guard."
       ]
     },
     {
@@ -770,7 +965,6 @@
       "requires": [
         {"or": [
           "h_NoAgahnimLoophole",
-          {"combatProficiency": 2},
           {"sword": 1},
           "Boomerang",
           "Hookshot",
@@ -793,6 +987,50 @@
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateZelda"},
         {"notFlag": "DefeatedAgahnim1"}
+      ]
+    },
+    {
+      "link": [17, 5],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+        ]}
+      ],
+      "exitState": {"state": "leaveNormally"}
+    },
+    {
+      "link": [17, 13],
+      "name": "Guard Tank",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"and": [
+            {"combatProficiency": 3},
+            {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+          ]},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}}
+        ]}
+      ],
+      "note": [
+        "If Agahnim is killed and Link has no weapons, the guards can be dodged.",
+        "Run south, left of the first guard, in order to have the north guard follow Link but the south one despawn off-camera."
+      ]
+    },
+    {
+      "link": [17, 13],
+      "name": "Precise Guard Dodge",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 4}
+      ],
+      "note": [
+        "If Agahnim is killed and Link has no weapons, the guards can be dodged.",
+        "Run south, left of the first guard, in order to have the north guard follow Link but the south one despawn off-camera.",
+        "Quickly grab a bush and continue right. The blue guard on the bridge will not spawn, giving Link an opportunity to hit the red guard and sneak through.",
+        "This is possible without a bush, and requires just slightly more precise timing to squeeze past."
       ]
     },
     {

@@ -627,6 +627,25 @@
       ]
     },
     {
+      "link": [9, 9],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [9, 9],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [9, 10],
       "name": "Base",
       "world": "light",
