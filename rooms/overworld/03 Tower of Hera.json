@@ -328,6 +328,15 @@
       "followerComplete": "Old Man"
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -382,6 +391,20 @@
       ]
     },
     {
+      "link": [4, 2],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1},
+        {"or": [
+          {"combatProficiency": 3},
+          "h_jumpOffLedge"
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [4, 3],
       "name": "Base",
       "world": "light",
@@ -397,6 +420,25 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     },
     {
       "link": [5, 1],

@@ -564,7 +564,12 @@
               "Super Bomb"
             ]
           },
-          "exitState": {"$ref": "#/definitions/transitionState"},
+          "exitState": {
+            "oneOf": [
+              {"$ref": "#/definitions/transitionState"},
+              {"$ref": "#/definitions/leaveNormallyState"}
+            ]
+          },
           "entranceState": {"$ref": "#/definitions/transitionState"},
           "note": {
             "type": "array",
@@ -614,6 +619,15 @@
         {"$ref": "#/definitions/eventState"},
         {"$ref": "#/definitions/overheadState"}
       ]
+    },
+    "leaveNormallyState": {
+      "type": "object",
+      "description": "Forces an immediate normal overworld screen transition at the strat's destination node, as determined by the selected edgeVariants. No matching entranceState is required.",
+      "required": ["state"],
+      "additionalProperties": false,
+      "properties": {
+        "state": {"const": "leaveNormally"}
+      }
     },
     "eventState": {
       "type": "object",

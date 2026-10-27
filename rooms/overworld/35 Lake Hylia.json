@@ -252,6 +252,34 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Skull Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 6],
       "name": "Base",
       "world": "any",
@@ -274,6 +302,18 @@
       "world": "any",
       "requires": [
         "Flippers"
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme."
       ]
     },
     {
@@ -305,6 +345,18 @@
         {"bombs": 1}
       ],
       "unlocksDoor": [1]
+    },
+    {
+      "link": [4, 4],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme."
+      ]
     },
     {
       "link": [4, 5],
