@@ -102,8 +102,8 @@
           "Boomerang",
           "Hammer",
           {"and": [
-            "h_NoAgahnimLoophole",
-            {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
           ]}
         ]}
       ],
