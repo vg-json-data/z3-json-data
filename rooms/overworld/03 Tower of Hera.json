@@ -482,6 +482,13 @@
       "requires": []
     },
     {
+      "link": [7, 7],
+      "fromWorld": "light",
+      "toWorld": "dark",
+      "name": "Dark World Portal",
+      "requires": []
+    },
+    {
       "link": [7, 12],
       "name": "Base",
       "world": "any",
