@@ -250,6 +250,21 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "There is a patch of bushes in the northeast."
+      ],
+      "devNote": [
+        "This will be dependent on the tiling theme. There is a rock which is usable instead that should always remain."
+      ]
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -280,6 +295,26 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [1, 6],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 6],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [1, 11],
@@ -332,10 +367,34 @@
     },
     {
       "link": [3, 3],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme."
+      ]
+    },
+    {
+      "link": [3, 3],
       "name": "Base - Collect Item",
       "world": "light",
       "requires": [],
       "collectsItems": [1]
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme. There is a rock in the Light World which is usable instead that should always remain."
+      ]
     },
     {
       "link": [3, 4],
@@ -343,6 +402,18 @@
       "world": "light",
       "requires": [
         {"glove": 1}
+      ]
+    },
+    {
+      "link": [3, 6],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": [
+        "This will be dependent on the tiling theme."
       ]
     },
     {
@@ -376,6 +447,26 @@
       ]
     },
     {
+      "link": [5, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [5, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [5, 5],
       "fromWorld": "light",
       "toWorld": "dark",
@@ -383,6 +474,36 @@
       "requires": [
         {"glove": 2}
       ]
+    },
+    {
+      "link": [5, 5],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [5, 6],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [5, 6],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [6, 1],
@@ -397,6 +518,26 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [6, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [6, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [6, 6],
