@@ -140,13 +140,21 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
       "requires": [
         {"glove": 1}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -155,8 +163,7 @@
       "requires": [
         {"glove": 1},
         {"sword": 1}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -178,8 +185,7 @@
             {"damage": {"enemy": "Dacto", "count": 1}}
           ]}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -189,7 +195,6 @@
         {"glove": 1},
         {"combatProficiency": 3}
       ],
-      "isBunny": "no",
       "note": [
         "Use the sign post to kill the Dacto.",
         "Be sure to only lure one and don't throw it too early, when the Dacto is still invulnerable."
@@ -202,8 +207,7 @@
       "requires": [
         {"glove": 1},
         {"damage": {"enemy": "Dacto", "count": 2}}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
@@ -214,8 +218,7 @@
           "h_jumpOffLedge",
           {"glove": 1}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [3, 1],
@@ -223,8 +226,7 @@
       "world": "light",
       "requires": [
         "h_jumpOffLedge"
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [3, 1],
@@ -237,7 +239,6 @@
           {"damage": {"enemy": "Dacto", "count": 1}}
         ]}
       ],
-      "isBunny": "any",
       "note": ["The Dacto will fly straight at Link. Hold left or jump off with a charged spin attack to prevent getting hit."]
     },
     {

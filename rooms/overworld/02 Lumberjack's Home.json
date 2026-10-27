@@ -100,14 +100,31 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [1, 2],
       "name": "Base - Tree Dash",
       "world": "light",
       "requires": [
         {"flag": "DefeatedAgahnim1"},
         "PegasusBoots"
-      ],
-      "isBunny": "no"
+      ]
     }
   ]
 }

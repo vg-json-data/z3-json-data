@@ -21,7 +21,7 @@
     ],
     "west": [
       {"supported": {"closed": [], "small-2": [10]}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [10, 1], "small-1": [10], "small-2": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "dual-small": [13, 1], "small-1": [13], "small-2": [1]}, "default": "closed"}
     ]
   },
   "enemySpawns": {
@@ -244,6 +244,11 @@
       "id": 12,
       "name": "West of Southern East-Most Entrance",
       "world": "both"
+    },
+    {
+      "id": 13,
+      "name": "North of Southwestern-Most Entrance",
+      "world": "both"
     }
   ],
   "items": [
@@ -283,8 +288,7 @@
       "world": "light",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -339,8 +343,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 7],
@@ -379,7 +382,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "note": [
         "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
         "With the Power Glove, it can save resources to kill one with a rock found north."
@@ -412,8 +414,7 @@
             {"redCane": 2}
           ]}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 7],
@@ -433,7 +434,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "devNote": ["It is possible to Lure some of the Ropa away and take less damage."]
     },
     {
@@ -451,7 +451,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "devNote": ["It is possible to Lure some of the Ropa away to use less magic."]
     },
     {
@@ -485,7 +484,6 @@
         {"combatProficiency": 4},
         {"glove": 1}
       ],
-      "isBunny": "no",
       "note": [
         "Kill the first Ropa using the rock to the north. Lure the second Ropa to the left then sneak past it.",
         "Dodge the remaining enemies to get to the other side."
@@ -499,42 +497,11 @@
         {"combatProficiency": 5},
         {"glove": 0}
       ],
-      "isBunny": "no",
       "note": [
         "Kill the first Ropa using all 4 available bushes. If a Bee or guard spawns, reset the room.",
         "If the Ropa goes off screen, it regains its health, so it is important to lure it north for each bush.",
         "The rest are much easier to lure and dodge."
       ]
-    },
-    {
-      "link": [1, 10],
-      "name": "Base - Bush",
-      "world": "light",
-      "requires": [
-        {"glove": 0}
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [1, 10],
-      "name": "Dodge",
-      "world": "light",
-      "requires": [
-        {"or": [
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "any"
-    },
-    {
-      "link": [1, 10],
-      "name": "Base - Sword or No Agahnim",
-      "world": "light",
-      "requires": [
-        "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
     },
     {
       "link": [1, 10],
@@ -562,6 +529,45 @@
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 13],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [1, 13],
+      "name": "Dodge",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 13],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 13],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -596,13 +602,6 @@
     },
     {
       "link": [2, 10],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
-    },
-    {
-      "link": [2, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
       "entranceState": {"state": "overhead", "type": "class3"},
@@ -630,6 +629,22 @@
       "requires": [
         {"glove": 1}
       ]
+    },
+    {
+      "link": [2, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 13],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [3, 3],
@@ -685,8 +700,7 @@
       "link": [3, 4],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [3, 4],
@@ -722,8 +736,7 @@
       "link": [3, 12],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [3, 12],
@@ -746,8 +759,7 @@
       "link": [4, 3],
       "name": "Base",
       "world": "any",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [4, 3],
@@ -785,8 +797,7 @@
       "world": "any",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [4, 6],
@@ -817,8 +828,7 @@
       "link": [4, 7],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [4, 7],
@@ -1005,7 +1015,6 @@
           ]}
         ]}
       ],
-      "isBunny": "no",
       "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
     {
@@ -1016,7 +1025,6 @@
         {"combatProficiency": 4},
         {"glove": 1}
       ],
-      "isBunny": "no",
       "note": [
         "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
         "Lure the third Ropa up to the top right and kill it with bushes.",
@@ -1033,7 +1041,6 @@
         {"combatProficiency": 5},
         {"glove": 0}
       ],
-      "isBunny": "no",
       "note": [
         "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
         "Lure the third Ropa up to the top right and either kill it with bushes or run past it.",
@@ -1061,8 +1068,7 @@
       "link": [7, 4],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [7, 4],
@@ -1110,8 +1116,7 @@
       "world": "light",
       "requires": [
         {"glove": 0}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [8, 8],
@@ -1205,27 +1210,6 @@
     },
     {
       "link": [10, 1],
-      "name": "Base",
-      "world": "light",
-      "requires": [
-        {"or": [
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "any"
-    },
-    {
-      "link": [10, 1],
-      "name": "Base - Sword or No Agahnim",
-      "world": "light",
-      "requires": [
-        "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [10, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
       "entranceState": {"state": "overhead", "type": "class3"},
@@ -1235,20 +1219,6 @@
         {"notFlag": "GameStateAgahnim"}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
-    },
-    {
-      "link": [10, 2],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
-    },
-    {
-      "link": [10, 2],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
     },
     {
       "link": [10, 2],
@@ -1290,7 +1260,6 @@
       "requires": [
         {"fireRod": 1}
       ],
-      "isBunny": "no",
       "setsFlags": ["OpenedSkullWoods"]
     },
     {
@@ -1299,8 +1268,7 @@
       "world": "dark",
       "requires": [
         {"flag": "OpenedSkullWoods"}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [10, 10],
@@ -1365,6 +1333,42 @@
       "entranceState": {"state": "overhead", "type": "class3"},
       "requires": [
         "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [10, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"glove": 0},
+          {"damage": {"enemy": "Thief", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "PegasusBoots",
+        {"combatProficiency": 3}
+      ],
+      "devNote": [
+        "FIXME: This strat is if node 10 is a transition.",
+        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated."
+      ]
+    },
+    {
+      "link": [10, 13],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -1472,6 +1476,18 @@
       "exitState": {"state": "overhead", "type": "class3"}
     },
     {
+      "link": [11, 13],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [12, 2],
       "name": "Base",
       "world": "dark",
@@ -1531,6 +1547,81 @@
       "requires": [
         "canCrossRoomOverheadPickups",
         {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [13, 1],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [13, 1],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [13, 2],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [13, 10],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 11],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

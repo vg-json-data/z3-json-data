@@ -123,6 +123,15 @@
       ]
     },
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -147,15 +156,22 @@
       "world": "dark",
       "requires": [
         {"glove": 0}
+      ]
+    },
+    {
+      "link": [1, 2],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
       ],
-      "isBunny": "no"
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
@@ -163,7 +179,10 @@
       "world": "dark",
       "requires": [
         {"or": [
-          {"combatProficiency": 2},
+          {"and": [
+            {"combatProficiency": 2},
+            "h_jumpOffLedge"
+          ]},
           {"damage": {"enemy": "Taros (Red)", "count": 1}}
         ]}
       ],
@@ -182,8 +201,21 @@
           {"arrows": 2},
           {"silverArrows": 1}
         ]}
-      ],
-      "isBunny": "no"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base - Alternate Weapons",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"redCane": 1},
+          {"blueCane": 36},
+          {"cape": 54}
+        ]}
+      ]
     }
   ]
 }
