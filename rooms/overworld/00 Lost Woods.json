@@ -244,6 +244,11 @@
       "id": 12,
       "name": "West of Southern East-Most Entrance",
       "world": "both"
+    },
+    {
+      "id": 13,
+      "name": "North of Southwestern-Most Entrance",
+      "world": "both"
     }
   ],
   "items": [
@@ -508,36 +513,6 @@
     },
     {
       "link": [1, 10],
-      "name": "Base - Bush",
-      "world": "light",
-      "requires": [
-        {"glove": 0}
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [1, 10],
-      "name": "Dodge",
-      "world": "light",
-      "requires": [
-        {"or": [
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "any"
-    },
-    {
-      "link": [1, 10],
-      "name": "Base - Sword or No Agahnim",
-      "world": "light",
-      "requires": [
-        "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [1, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
       "entranceState": {"state": "overhead", "type": "class3"},
@@ -562,6 +537,45 @@
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 13],
+      "name": "Base - Bush",
+      "world": "light",
+      "requires": [
+        {"glove": 0}
+      ]
+    },
+    {
+      "link": [1, 13],
+      "name": "Dodge",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [1, 13],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [1, 13],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -596,13 +610,6 @@
     },
     {
       "link": [2, 10],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
-    },
-    {
-      "link": [2, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
       "entranceState": {"state": "overhead", "type": "class3"},
@@ -630,6 +637,22 @@
       "requires": [
         {"glove": 1}
       ]
+    },
+    {
+      "link": [2, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [2, 13],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [3, 3],
@@ -1205,27 +1228,6 @@
     },
     {
       "link": [10, 1],
-      "name": "Base",
-      "world": "light",
-      "requires": [
-        {"or": [
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "any"
-    },
-    {
-      "link": [10, 1],
-      "name": "Base - Sword or No Agahnim",
-      "world": "light",
-      "requires": [
-        "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
-    },
-    {
-      "link": [10, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
       "entranceState": {"state": "overhead", "type": "class3"},
@@ -1235,20 +1237,6 @@
         {"notFlag": "GameStateAgahnim"}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
-    },
-    {
-      "link": [10, 2],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
-    },
-    {
-      "link": [10, 2],
-      "name": "Base",
-      "world": "light",
-      "requires": [],
-      "isBunny": "any"
     },
     {
       "link": [10, 2],
@@ -1369,6 +1357,42 @@
       "exitState": {"state": "overhead", "type": "class3"}
     },
     {
+      "link": [10, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"glove": 0},
+          {"damage": {"enemy": "Thief", "count": 1}}
+        ]}
+      ]
+    },
+    {
+      "link": [10, 13],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        "PegasusBoots",
+        {"combatProficiency": 3}
+      ],
+      "devNote": [
+        "FIXME: This strat is if node 10 is a transition.",
+        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated."
+      ]
+    },
+    {
+      "link": [10, 13],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [11, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1472,6 +1496,18 @@
       "exitState": {"state": "overhead", "type": "class3"}
     },
     {
+      "link": [11, 13],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [12, 2],
       "name": "Base",
       "world": "dark",
@@ -1531,6 +1567,81 @@
       "requires": [
         "canCrossRoomOverheadPickups",
         {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 1],
+      "name": "Base",
+      "world": "light",
+      "requires": [
+        {"or": [
+          {"combatProficiency": 2},
+          {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
+        ]}
+      ],
+      "isBunny": "any"
+    },
+    {
+      "link": [13, 1],
+      "name": "Base - Sword or No Agahnim",
+      "world": "light",
+      "requires": [
+        "h_NoAgahnimLoophole"
+      ],
+      "isBunny": "no"
+    },
+    {
+      "link": [13, 1],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 2],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [13, 2],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 10],
+      "name": "Base",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [13, 10],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [13, 11],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

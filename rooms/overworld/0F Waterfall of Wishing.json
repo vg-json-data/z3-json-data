@@ -102,8 +102,8 @@
     },
     {
       "id": 3,
-      "name": "Water",
-      "world": "both",
+      "name": "Waterfall",
+      "world": "light",
       "entrances": [
         {
           "id": 2,
@@ -111,7 +111,12 @@
           "name": "Waterfall of Wishing",
           "world": "light"
         }
-      ],
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Water",
+      "world": "both",
       "whirlpools": [
         {
           "id": 1,
@@ -163,8 +168,15 @@
       "world": "light",
       "requires": [
         "Flippers"
-      ],
-      "isBunny": "no"
+      ]
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        "Flippers"
+      ]
     },
     {
       "link": [3, 2],
@@ -172,8 +184,19 @@
       "world": "light",
       "requires": [
         "Flippers"
-      ],
-      "isBunny": "no"
+      ]
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "world": "any",
+      "requires": []
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "world": "light",
+      "requires": []
     }
   ]
 }
