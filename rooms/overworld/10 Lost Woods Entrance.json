@@ -17,7 +17,7 @@
       {"supported": {"closed": [], "small-2": [4]}, "default": "closed"}
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "small-1": [1], "small-2": [2], "dual-small": [1, 2]}, "default": "closed"}
     ]
   },
   "enemySpawns": {

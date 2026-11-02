@@ -11,7 +11,7 @@
       {"supported": {"closed": []}, "default": "closed"}
     ],
     "south": [
-      {"supported": {"small-2": [1]}, "default": "small-2"}
+      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
     ],
     "east": [
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}

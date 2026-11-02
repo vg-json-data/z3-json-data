@@ -8,7 +8,7 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"wide": [1], "small-1": [1]}, "default": "small-1"}
+      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "small-1"}
     ],
     "south": [
       {"supported": {"wide": [1]}, "default": "wide"}
