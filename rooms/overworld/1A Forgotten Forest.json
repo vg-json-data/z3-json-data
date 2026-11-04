@@ -74,7 +74,7 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Main Area",
+      "name": "Northern Area",
       "world": "both",
       "transitions": [
         {"edge": "north", "span": [7.5, 14]},
@@ -105,6 +105,25 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -133,6 +152,26 @@
       "requires": []
     },
     {
+      "link": [1, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 3],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -159,6 +198,35 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [2, 3],
@@ -167,10 +235,74 @@
       "requires": []
     },
     {
+      "link": [2, 3],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 1],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [3, 2],
       "name": "Base",
       "world": "any",
       "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "GameStateAgahnim"}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": ["FIXME: Might be possible, depending on how the tiling is done."]
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Rock Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     }
   ]
 }

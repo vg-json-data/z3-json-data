@@ -217,6 +217,15 @@
       ]
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [4, 1],
       "name": "Base",
       "world": "dark",
@@ -237,6 +246,25 @@
       ]
     },
     {
+      "link": [5, 5],
+      "name": "Exit with Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [5, 5],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [6, 1],
       "name": "Base",
       "world": "light",
@@ -249,6 +277,25 @@
       "requires": [
         {"glove": 2}
       ]
+    },
+    {
+      "link": [6, 6],
+      "name": "Exit with Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [6, 6],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 2}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     }
   ]
 }
