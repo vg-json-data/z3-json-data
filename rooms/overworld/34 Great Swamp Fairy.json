@@ -95,6 +95,7 @@
       "id": 2,
       "name": "Lake Transition",
       "world": "both",
+      "mirrorPoint": false,
       "transitions": [
         {"edge": "west", "span": [15, 21], "terrain": "water"}
       ]

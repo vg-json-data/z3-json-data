@@ -122,7 +122,7 @@ For a strat that begins and ends in the same world, `world` has one of the follo
 }
 ```
 
-For every overworld node with `"world": "both"`, there is an implicit strat to use the Magic Mirror from the Dark World to the Light World, as in the example above.
+For every overworld node with `"world": "both"`, there is an implicit strat to use the Magic Mirror from the Dark World to the Light World, as in the example above, unless that node has `"mirrorPoint": false`.
 
 The underworld is represented differently from the two overworlds. Cave, house, dungeon, and special-room strats do not use `world`, `fromWorld`, or `toWorld`; these properties are incompatible with underworld strats.
 

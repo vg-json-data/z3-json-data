@@ -82,6 +82,7 @@
       "id": 2,
       "name": "In the Pond",
       "world": "both",
+      "mirrorPoint": false,
       "whirlpools": [
         {
           "id": 1,

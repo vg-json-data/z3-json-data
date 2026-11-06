@@ -143,6 +143,11 @@
               "both"
             ]
           },
+          "mirrorPoint": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether a node present in both worlds permits the implicit Dark World to Light World Magic Mirror strat."
+          },
           "entrances": {
             "type": "array",
             "items": {

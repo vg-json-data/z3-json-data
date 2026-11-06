@@ -111,6 +111,7 @@
       "id": 3,
       "name": "River",
       "world": "both",
+      "mirrorPoint": false,
       "transitions": [
         {"edge": "south", "span": [19.5, 22.5], "terrain": "water"},
         {"edge": "west", "span": [16.5, 25], "terrain": "water"}

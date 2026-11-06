@@ -193,6 +193,7 @@
       "id": 6,
       "name": "Water",
       "world": "both",
+      "mirrorPoint": false,
       "transitions": [
         {"edge": "north", "span": [51.5, 54.5], "terrain": "water"},
         {"edge": "east", "span": [50.5, 53.5], "terrain": "water"}

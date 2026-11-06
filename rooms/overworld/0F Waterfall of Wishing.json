@@ -117,6 +117,7 @@
       "id": 4,
       "name": "Water",
       "world": "both",
+      "mirrorPoint": false,
       "whirlpools": [
         {
           "id": 1,

@@ -94,6 +94,7 @@
       "id": 2,
       "name": "Lower River",
       "world": "both",
+      "mirrorPoint": false,
       "transitions": [
         {"edge": "west", "span": [18.5, 21.5], "terrain": "water"}
       ],
@@ -114,6 +115,7 @@
       "id": 3,
       "name": "Above Waterfall",
       "world": "both",
+      "mirrorPoint": false,
       "transitions": [
         {"edge": "north", "span": [7.5, 9.5], "terrain": "water"}
       ]
