@@ -116,6 +116,34 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Skull Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -169,6 +197,25 @@
       ]
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Skull Rock Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
@@ -190,6 +237,32 @@
       "name": "Base",
       "world": "light",
       "requires": []
+    },
+    {
+      "link": [3, 3],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"sword": 1},
+          "Hookshot",
+          "Boomerang",
+          "Hammer",
+          {"fireRod": 1},
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"glove": 1},
+          {"redCane": 1},
+          {"blueCane": 28},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": ["FIXME: This could also be done with some sort of high-level dodging, or if there is a transition on the right half of the room."]
     },
     {
       "link": [3, 3],

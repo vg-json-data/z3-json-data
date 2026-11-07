@@ -75,5 +75,15 @@
       ]
     }
   ],
-  "strats": []
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    }
+  ]
 }
