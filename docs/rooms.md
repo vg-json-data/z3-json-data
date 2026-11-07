@@ -233,7 +233,7 @@ Overworld nodes represent logical areas on an overworld screen. They do not use 
 - `"dark"`: The node exists in the Dark World.
 - `"both"`: The corresponding logical area exists in both worlds.
 
-For every node with `"world": "both"`, there is an implicit strat to use the Magic Mirror from the Dark World to the Light World. See [Strats: Worlds](strats.md#worlds).
+For every node with `"world": "both"`, there is an implicit strat to use the Magic Mirror from the Dark World to the Light World unless the node has `"mirrorPoint": false`. See [Strats: Worlds](strats.md#worlds).
 
 An overworld node can also contain transitions, entrances, whirlpools, teleports, or a flute destination.
 

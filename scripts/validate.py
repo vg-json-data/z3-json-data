@@ -414,6 +414,10 @@ def validate_room(path, document, references, errors):
                                 indices["nodes"].get(door["doorLocation"]), door["world"], errors)
     for i, strat in enumerate(document["strats"]):
         location = ["strats", i]
+        if i > 0 and strat["link"] < document["strats"][i - 1]["link"]:
+            _record(errors, path, display_path(document, location + ["link"]),
+                    f"{strat['link']} is out of order after {document['strats'][i - 1]['link']}; "
+                    "expected ordering by starting node ID, then ending node ID")
         for j, node_id in enumerate(strat["link"]):
             validate_reference(path, document, location + ["link", j], node_id, indices["nodes"], "node", errors)
             if overworld:

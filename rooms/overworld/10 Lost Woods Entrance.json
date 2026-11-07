@@ -436,6 +436,22 @@
       "exitState": {"state": "overhead", "type": "class3"}
     },
     {
+      "link": [4, 5],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "world": "any",
+      "requires": [
+        {"glove": 2}
+      ]
+    },
+    {
       "link": [5, 5],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -454,22 +470,6 @@
         {"glove": 2}
       ],
       "exitState": {"state": "overhead", "type": "class1"}
-    },
-    {
-      "link": [4, 5],
-      "name": "Base",
-      "world": "any",
-      "requires": [
-        {"glove": 2}
-      ]
-    },
-    {
-      "link": [5, 4],
-      "name": "Base",
-      "world": "any",
-      "requires": [
-        {"glove": 2}
-      ]
     }
   ]
 }
