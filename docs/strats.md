@@ -46,6 +46,8 @@ Here is a simple strat that moves from node 1 to node 2:
 
 The `link` property is an array containing the starting node ID followed by the ending node ID. Strats are directional: a strat with `"link": [1, 2]` does not imply that the same strat can be executed from node 2 to node 1.
 
+Strats must be ordered lexicographically by starting node ID, then ending node ID, comparing IDs numerically. Strats with the same link may appear in any order, but it is preferred to place easier strats before harder ones, and Light World ones before Dark World ones.
+
 A strat whose link begins and ends at the same node performs its actions without any modeled movement:
 
 ```json
