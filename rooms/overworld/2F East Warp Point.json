@@ -11,13 +11,13 @@
       {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"}
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "small-1": [1], "small-2": [3], "dual-small": [1, 3]}, "default": "closed"}
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"}
     ]
   },
   "enemySpawns": {
