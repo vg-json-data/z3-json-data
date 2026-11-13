@@ -126,6 +126,28 @@
       "requires": []
     },
     {
+      "link": [1, 2],
+      "name": "Carry Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 2],
+      "name": "Carry Strong Overhead Object",
+      "world": "any",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -147,6 +169,66 @@
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
       ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class1"},
+      "note": [
+        "Move quickly if Agahnim is defeated, as the left red guard moves quickly. Weave between the trees to get it stuck."
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class1"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "light",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"or": [
+          {"combatProficiency": 3},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
+        ]}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "Move quickly if Agahnim is defeated, as the left red guard moves quickly. Weave between the trees to get it stuck."
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     }
   ]
 }

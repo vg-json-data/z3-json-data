@@ -126,6 +126,29 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"combatProficiency": 3}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "note": [
+        "It is possible to get past with nothing. It can help to lure some of the guards up and get them stuck on the statues in the top right."
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "Hammer"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -145,6 +168,9 @@
             {"notFlag": "GameStateAgahnim"}
           ]}
         ]}
+      ],
+      "note": [
+        "It is possible to get past with nothing. It can help to lure some of the guards up and get them stuck on the statues in the top right."
       ]
     },
     {
@@ -200,6 +226,15 @@
           {"damage": {"enemy": "Taros (Blue)", "count": 2}}
         ]}
       ]
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Signpost Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [3, 1],
