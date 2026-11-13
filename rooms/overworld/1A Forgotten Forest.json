@@ -149,7 +149,9 @@
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [1, 2],

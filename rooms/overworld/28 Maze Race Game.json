@@ -106,6 +106,37 @@
       ]
     },
     {
+      "link": [2, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [2, 1],
+      "name": "Carry Strong Overhead Object",
+      "world": "dark",
+      "entranceState": {"state": "overhead", "type": "class3"},
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [2, 2],
       "name": "Maze Race Game and Return",
       "world": "light",
@@ -114,6 +145,15 @@
       ],
       "collectsItems": [1],
       "devNote": ["The lady will not let Link pass left to right unless he already just started the game going right to left."]
+    },
+    {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "dark",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
     },
     {
       "link": [2, 3],
@@ -139,15 +179,59 @@
       "requires": []
     },
     {
+      "link": [3, 1],
+      "name": "Exit with Signpost Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 1],
+      "name": "Exit with Bush Overhead - Enter Digging Game",
+      "world": "dark",
+      "requires": [
+        {"pay": 80},
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [3, 1],
+      "name": "Exit with Rock Overhead - Enter Digging Game",
+      "world": "dark",
+      "requires": [
+        {"pay": 80},
+        {"glove": 1},
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [3, 2],
       "name": "Digging Game Jump Point",
       "world": "dark",
       "requires": [
         {"pay": 80},
-        {"glove": 2}
+        {"glove": 2},
+        "h_jumpOffLedge"
       ],
       "collectsItems": [2],
       "devNote": ["Usually you will get the 80 rupees back from digging."]
+    },
+    {
+      "link": [3, 2],
+      "name": "Exit with Rock Overhead - Digging Game Jump Point",
+      "world": "dark",
+      "requires": [
+        {"pay": 80},
+        {"glove": 2},
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     },
     {
       "link": [3, 3],
