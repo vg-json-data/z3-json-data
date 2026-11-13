@@ -232,6 +232,16 @@
       "unlocksDoor": [4]
     },
     {
+      "link": [1, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "any",
