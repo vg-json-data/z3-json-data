@@ -111,5 +111,25 @@
       ]
     }
   ],
-  "strats": []
+  "strats": [
+    {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Exit with Rock Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    }
+  ]
 }
