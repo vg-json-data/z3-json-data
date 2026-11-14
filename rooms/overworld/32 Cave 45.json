@@ -107,6 +107,15 @@
       "note": ["The southeast tree will release a fairy when dashed into."]
     },
     {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "any",
@@ -129,6 +138,15 @@
       ]
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -141,6 +159,16 @@
       "name": "Base",
       "world": "dark",
       "requires": []
+    },
+    {
+      "link": [3, 1],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "h_jumpOffLedge"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
     }
   ]
 }

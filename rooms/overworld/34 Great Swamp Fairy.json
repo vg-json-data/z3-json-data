@@ -165,6 +165,15 @@
       "unlocksDoor": [2]
     },
     {
+      "link": [1, 1],
+      "name": "Exit with Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class1"}
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "any",

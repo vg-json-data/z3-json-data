@@ -123,6 +123,16 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Exit with Strong Bush Overhead",
+      "world": "any",
+      "requires": [
+        "canCrossRoomOverheadPickups"
+      ],
+      "exitState": {"state": "overhead", "type": "class3"},
+      "devNote": ["The strong bush is tile theme dependent. In the vanilla tiling, the strong bush is here."]
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "any",

@@ -135,6 +135,17 @@
       ]
     },
     {
+      "link": [2, 2],
+      "name": "Exit with Rock Overhead",
+      "world": "light",
+      "requires": [
+        "canCrossRoomOverheadPickups",
+        "Hammer",
+        {"glove": 1}
+      ],
+      "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
       "link": [2, 3],
       "name": "Base",
       "world": "any",
