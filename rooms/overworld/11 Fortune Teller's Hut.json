@@ -14,7 +14,7 @@
       {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
     ],
     "east": [
-      {"supported": {"closed": [], "dual-small": [2, 1], "small-1": [2], "small-2": [1]}, "default": "dual-small"}
+      {"supported": {"closed": [], "dual-small": [2, 1], "dual-upper": [2, 1], "small-1": [2], "small-2": [1]}, "default": "dual-small"}
     ],
     "west": [
       {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}

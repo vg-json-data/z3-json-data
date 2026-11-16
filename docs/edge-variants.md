@@ -51,6 +51,7 @@ The cross-world route is directed: reaching entry 3 does not imply a return to e
 | `closed` | No opening. | 0 |
 | `wide` | A wide opening. | 1 |
 | `dual-small` | Two small openings. | 2 |
+| `dual-upper` | Two small openings plus a walkable upper rim between them. Only the two small openings have logical connections. | 2 |
 | `small-1` | An offset small opening: north on an east/west edge, west on a north/south edge. | 1 |
 | `small-2` | The opposite offset: south on an east/west edge, east on a north/south edge. | 1 |
 | `light-only` | A transition that only exists in the Light World. | 1 |

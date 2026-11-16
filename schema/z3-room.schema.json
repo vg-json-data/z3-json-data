@@ -673,6 +673,7 @@
         "closed",
         "wide",
         "dual-small",
+        "dual-upper",
         "small-1",
         "small-2",
         "light-only",
@@ -718,6 +719,15 @@
               }
             },
             "dual-small": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "dual-upper": {
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
