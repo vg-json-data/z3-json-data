@@ -14,7 +14,7 @@
       {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "closed"}
     ],
     "east": [
-      {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
+      {"supported": {"closed": [], "wide": [1], "small-2": [1]}, "default": "wide"}
     ],
     "west": [
       {"supported": {"wide": [1], "dual-small": [2, 1], "small-2": [1], "lake": [1, "return"]}, "default": "dual-small"}
