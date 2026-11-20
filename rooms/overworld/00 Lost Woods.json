@@ -277,7 +277,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["Grab the rock to the north."]
@@ -287,7 +287,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -348,7 +348,7 @@
       "name": "Range Kill",
       "world": "dark",
       "requires": [
-        {"glove": 0},
+        {"lift": 0},
         {"or": [
           {"rod": 4},
           {"arrows": 10},
@@ -363,7 +363,7 @@
           {"and": [
             {"combatProficiency": 2},
             {"iceRod": 1},
-            "h_holdOverheadObjects"
+            {"carry": 0}
           ]},
           {"and": [
             {"combatProficiency": 3},
@@ -375,8 +375,7 @@
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"glove": 1},
-            "h_holdOverheadObjects",
+            {"carry": 1},
             {"or": [
               {"fireRod": 1},
               {"arrows": 2},
@@ -396,7 +395,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 2},
-        {"glove": 0},
+        {"lift": 0},
         {"or": [
           {"and": [
             "Hammer",
@@ -424,16 +423,20 @@
       "name": "Tank",
       "world": "dark",
       "requires": [
-        {"glove": 0},
+        {"damage": {"enemy": "Ropa", "count": 4}},
+        {"lift": 0}
+      ],
+      "note": ["It is possible to Lure some of the Ropa away and take less damage."]
+    },
+    {
+      "link": [1, 7],
+      "name": "Dodge and Tank",
+      "world": "dark",
+      "requires": [
+        {"combatProficiency": 2},
+        {"lift": 0},
         {"or": [
-          {"and": [
-            {"damage": {"enemy": "Ropa", "count": 4}},
-            {"noBunny": {}}
-          ]},
-          {"and": [
-            {"combatProficiency": 2},
-            {"damage": {"enemy": "Ropa", "count": 2}}
-          ]},
+          {"damage": {"enemy": "Ropa", "count": 2}},
           {"and": [
             {"combatProficiency": 3},
             {"damage": {"enemy": "Ropa", "count": 1}}
@@ -441,7 +444,7 @@
         ]}
       ],
       "note": ["It is possible to Lure some of the Ropa away and take less damage."],
-      "devNote": ["This is possible as a superbunny, as the bush needs to be lifted before taking damage, with combatProficiency 2."]
+      "devNote": ["This is possible as a superbunny, as the bush needs to be lifted before taking damage."]
     },
     {
       "link": [1, 7],
@@ -449,7 +452,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 2},
-        {"glove": 0},
+        {"lift": 0},
         {"or": [
           {"cape": 62},
           {"and": [
@@ -469,7 +472,7 @@
         {"combatProficiency": 3},
         "canCrossRoomOverheadPickups",
         {"or": [
-          {"glove": 1},
+          {"carry": 1},
           {"combatProficiency": 4}
         ]}
       ],
@@ -489,8 +492,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 4},
-        {"glove": 1},
-        "h_holdOverheadObjects"
+        {"carry": 1}
       ],
       "note": [
         "Kill the first Ropa using the rock to the north. Lure the second Ropa to the left then sneak past it.",
@@ -503,7 +505,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 5},
-        "h_holdOverheadObjects"
+        {"carry": 0}
       ],
       "note": [
         "Kill the first Ropa using all 4 available bushes. If a Bee or guard spawns, reset the room.",
@@ -545,7 +547,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -602,7 +604,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -633,7 +635,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -667,7 +669,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["It may be necessary to use the nearby bushes to push back the first Ropa, then use one of the two skull rocks to kill it."]
@@ -677,7 +679,7 @@
       "name": "Base - Bush Throw",
       "world": "dark",
       "requires": [
-        {"glove": 0},
+        {"lift": 0},
         {"or": [
           {"combatProficiency": 2},
           {"sword": 1},
@@ -791,7 +793,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["It may be necessary to use the nearby bushes to kill or push back the Ropa to get to the rock."]
@@ -801,7 +803,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -809,7 +811,7 @@
       "name": "Base - Bush Throw",
       "world": "dark",
       "requires": [
-        "h_holdOverheadObjects",
+        {"carry": 0},
         {"or": [
           {"sword": 1},
           {"combatProficiency": 2},
@@ -849,7 +851,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -895,7 +897,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]},
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -918,12 +920,11 @@
           {"and": [
             {"combatProficiency": 2},
             {"iceRod": 1},
-            "h_holdOverheadObjects"
+            {"carry": 0}
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"glove": 1},
-            "h_holdOverheadObjects",
+            {"carry": 1},
             {"or": [
               {"rod": 2},
               {"arrows": 4},
@@ -931,7 +932,7 @@
             ]}
           ]}
         ]},
-        {"glove": 0}
+        {"lift": 0}
       ],
       "note": [
         "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
@@ -957,27 +958,25 @@
           {"and": [
             {"combatProficiency": 3},
             {"blueCane": 36},
-            "h_holdOverheadObjects"
+            {"carry": 0}
           ]},
           {"redCane": 3},
           {"and": [
             {"combatProficiency": 3},
             {"redCane": 2},
-            "h_holdOverheadObjects"
+            {"carry": 0}
           ]},
           {"and": [
-            {"glove": 1},
-            {"redCane": 2},
-            "h_holdOverheadObjects"
+            {"carry": 1},
+            {"redCane": 2}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            {"glove": 1},
-            {"redCane": 1},
-            "h_holdOverheadObjects"
+            {"carry": 1},
+            {"redCane": 1}
           ]}
         ]},
-        {"glove": 0}
+        {"lift": 0}
       ],
       "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
@@ -986,8 +985,6 @@
       "name": "Tank",
       "world": "dark",
       "requires": [
-        {"glove": 0},
-        {"noBunny": {}},
         {"or": [
           {"damage": {"enemy": "Ropa", "count": 4}},
           {"and": [
@@ -996,16 +993,16 @@
           ]},
           {"and": [
             {"combatProficiency": 2},
-            {"glove": 1},
-            "h_holdOverheadObjects",
+            {"carry": 1},
             {"damage": {"enemy": "Ropa", "count": 2}}
           ]},
           {"and": [
             {"combatProficiency": 3},
-            "h_holdOverheadObjects",
+            {"carry": 0},
             {"damage": {"enemy": "Ropa", "count": 2}}
           ]}
-        ]}
+        ]},
+        {"lift": 0}
       ],
       "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
     },
@@ -1016,19 +1013,16 @@
       "requires": [
         {"combatProficiency": 2},
         {"or": [
-          "h_holdOverheadObjects",
           {"and": [
-            {"glove": 0},
-            {"combatProficiency": 3}
-          ]}
-        ]},
-        {"or": [
-          {"cape": 58},
+            {"carry": 0},
+            {"cape": 58}
+          ]},
           {"and": [
             {"combatProficiency": 3},
             {"cape": 42}
           ]}
-        ]}
+        ]},
+        {"lift": 0}
       ],
       "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
@@ -1038,8 +1032,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 4},
-        {"glove": 1},
-        "h_holdOverheadObjects"
+        {"carry": 1}
       ],
       "note": [
         "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
@@ -1055,7 +1048,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 5},
-        {"glove": 0}
+        {"lift": 0}
       ],
       "note": [
         "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
@@ -1111,7 +1104,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["It may be necessary to use the nearby bushes to kill the Ropas to get to the rock."]
@@ -1131,7 +1124,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -1146,7 +1139,7 @@
       "name": "Base - Bush",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -1296,7 +1289,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -1353,7 +1346,7 @@
       "world": "light",
       "requires": [
         {"or": [
-          {"glove": 0},
+          {"lift": 0},
           {"damage": {"enemy": "Thief", "count": 1}}
         ]}
       ]
@@ -1412,7 +1405,7 @@
       "name": "Base - Bush",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -1482,7 +1475,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -1503,7 +1496,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -1557,7 +1550,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
