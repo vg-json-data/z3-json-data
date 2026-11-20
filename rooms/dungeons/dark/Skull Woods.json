@@ -524,7 +524,8 @@
     {
       "link": [8, 10],
       "name": "Base",
-      "requires": []
+      "requires": [],
+      "isBunny": "any"
     },
     {
       "link": [9, 8],
@@ -556,17 +557,20 @@
     {
       "link": [10, 8],
       "name": "Base",
-      "requires": []
+      "requires": [],
+      "isBunny": "any"
     },
     {
       "link": [10, 11],
       "name": "Base",
-      "requires": []
+      "requires": [],
+      "isBunny": "any"
     },
     {
       "link": [11, 10],
       "name": "Base",
-      "requires": []
+      "requires": [],
+      "isBunny": "any"
     },
     {
       "link": [11, 11],
