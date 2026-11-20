@@ -60,14 +60,20 @@
   },
   {
     "name": "h_NoAgahnimLoophole",
-    "requires": [],
+    "requires": [
+      {"or": [
+        {"noBunny": {}},
+        {"superbunny": {}}
+      ]}
+    ],
     "note": [
       "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",
       "i.e. sword or sufficient skill to kill Agahnim with swordless methods, then traversal is also free."
     ],
     "devNote": [
       "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
-      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free."
+      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free.",
+      "This is assumed to not be true if Link is Bunny, as he wouldn't have the ability to use a sword."
     ]
   },
   {
@@ -165,5 +171,21 @@
       {"followerLost": ["Super Bomb"]}
     ],
     "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
+  },
+  {
+    "name": "h_holdOverheadObjects",
+    "requires": [
+      {"glove": 0},
+      {"noBunny": {}}
+    ],
+    "note": ["The ability to hold objects overhead. Superbunny can lift objects but can't hold them, so this is a separate ability that cant be done in either bunny form."]
+  },
+  {
+    "name": "h_PegasusBootsBonk",
+    "requires": [
+      "PegasusBoots",
+      {"noSuperbunny": {}}
+    ],
+    "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
   }
 ]

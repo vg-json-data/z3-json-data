@@ -299,8 +299,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [1, 2],
@@ -308,8 +307,7 @@
       "world": "light",
       "requires": [
         "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 2],
@@ -358,15 +356,19 @@
           {"and": [
             {"combatProficiency": 2},
             {"or": [
-              {"iceRod": 1},
               {"arrows": 7},
               {"silverArrows": 3}
             ]}
           ]},
           {"and": [
+            {"combatProficiency": 2},
+            {"iceRod": 1},
+            "h_holdOverheadObjects"
+          ]},
+          {"and": [
             {"combatProficiency": 3},
             {"or": [
-              {"fireRod": 3},
+              {"rod": 3},
               {"arrows": 4},
               {"silverArrows": 2}
             ]}
@@ -374,6 +376,7 @@
           {"and": [
             {"combatProficiency": 3},
             {"glove": 1},
+            "h_holdOverheadObjects",
             {"or": [
               {"fireRod": 1},
               {"arrows": 2},
@@ -423,7 +426,10 @@
       "requires": [
         {"glove": 0},
         {"or": [
-          {"damage": {"enemy": "Ropa", "count": 4}},
+          {"and": [
+            {"damage": {"enemy": "Ropa", "count": 4}},
+            {"noBunny": {}}
+          ]},
           {"and": [
             {"combatProficiency": 2},
             {"damage": {"enemy": "Ropa", "count": 2}}
@@ -434,7 +440,8 @@
           ]}
         ]}
       ],
-      "devNote": ["It is possible to Lure some of the Ropa away and take less damage."]
+      "note": ["It is possible to Lure some of the Ropa away and take less damage."],
+      "devNote": ["This is possible as a superbunny, as the bush needs to be lifted before taking damage, with combatProficiency 2."]
     },
     {
       "link": [1, 7],
@@ -482,7 +489,8 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 4},
-        {"glove": 1}
+        {"glove": 1},
+        "h_holdOverheadObjects"
       ],
       "note": [
         "Kill the first Ropa using the rock to the north. Lure the second Ropa to the left then sneak past it.",
@@ -495,7 +503,7 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 5},
-        {"glove": 0}
+        "h_holdOverheadObjects"
       ],
       "note": [
         "Kill the first Ropa using all 4 available bushes. If a Bee or guard spawns, reset the room.",
@@ -549,8 +557,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [1, 13],
@@ -558,8 +565,7 @@
       "world": "light",
       "requires": [
         "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [1, 13],
@@ -668,9 +674,10 @@
     },
     {
       "link": [3, 4],
-      "name": "Base",
+      "name": "Base - Bush Throw",
       "world": "dark",
       "requires": [
+        {"glove": 0},
         {"or": [
           {"combatProficiency": 2},
           {"sword": 1},
@@ -681,8 +688,7 @@
           {"silverArrows": 1},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [3, 4],
@@ -693,8 +699,7 @@
           {"combatProficiency": 3},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [3, 4],
@@ -801,16 +806,16 @@
     },
     {
       "link": [4, 6],
-      "name": "Base",
+      "name": "Base - Bush Throw",
       "world": "dark",
       "requires": [
+        "h_holdOverheadObjects",
         {"or": [
           {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [4, 6],
@@ -821,8 +826,7 @@
           {"combatProficiency": 3},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [4, 7],
@@ -869,20 +873,12 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"sword": 1}
-      ]
-    },
-    {
-      "link": [6, 4],
-      "name": "Base - Dodge or Tank",
-      "world": "dark",
-      "requires": [
         {"or": [
+          {"sword": 1},
           {"combatProficiency": 3},
           {"damage": {"enemy": "Ropa", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [7, 1],
@@ -898,7 +894,8 @@
           {"sword": 2},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Ropa", "count": 1}}
-        ]}
+        ]},
+        {"glove": 0}
       ]
     },
     {
@@ -906,7 +903,6 @@
       "name": "Range Kill",
       "world": "dark",
       "requires": [
-        {"glove": 0},
         {"or": [
           {"rod": 5},
           {"arrows": 10},
@@ -914,22 +910,28 @@
           {"and": [
             {"combatProficiency": 2},
             {"or": [
-              {"iceRod": 1},
-              {"fireRod": 3},
+              {"rod": 3},
               {"arrows": 7},
               {"silverArrows": 3}
             ]}
           ]},
           {"and": [
             {"combatProficiency": 2},
+            {"iceRod": 1},
+            "h_holdOverheadObjects"
+          ]},
+          {"and": [
+            {"combatProficiency": 2},
             {"glove": 1},
+            "h_holdOverheadObjects",
             {"or": [
-              {"fireRod": 2},
+              {"rod": 2},
               {"arrows": 4},
               {"silverArrows": 2}
             ]}
           ]}
-        ]}
+        ]},
+        {"glove": 0}
       ],
       "note": [
         "With Ice Rod, it is possible to throw the frozen enemy to kill all the other enemies.",
@@ -942,7 +944,6 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 2},
-        {"glove": 0},
         {"or": [
           {"and": [
             "Hammer",
@@ -955,25 +956,30 @@
           {"blueCane": 64},
           {"and": [
             {"combatProficiency": 3},
-            {"blueCane": 36}
+            {"blueCane": 36},
+            "h_holdOverheadObjects"
           ]},
           {"redCane": 3},
           {"and": [
             {"combatProficiency": 3},
-            {"redCane": 2}
+            {"redCane": 2},
+            "h_holdOverheadObjects"
           ]},
           {"and": [
             {"glove": 1},
-            {"redCane": 2}
+            {"redCane": 2},
+            "h_holdOverheadObjects"
           ]},
           {"and": [
             {"combatProficiency": 3},
             {"glove": 1},
-            {"redCane": 1}
+            {"redCane": 1},
+            "h_holdOverheadObjects"
           ]}
-        ]}
+        ]},
+        {"glove": 0}
       ],
-      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
+      "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
     },
     {
       "link": [7, 1],
@@ -981,6 +987,7 @@
       "world": "dark",
       "requires": [
         {"glove": 0},
+        {"noBunny": {}},
         {"or": [
           {"damage": {"enemy": "Ropa", "count": 4}},
           {"and": [
@@ -990,15 +997,17 @@
           {"and": [
             {"combatProficiency": 2},
             {"glove": 1},
+            "h_holdOverheadObjects",
             {"damage": {"enemy": "Ropa", "count": 2}}
           ]},
           {"and": [
             {"combatProficiency": 3},
+            "h_holdOverheadObjects",
             {"damage": {"enemy": "Ropa", "count": 2}}
           ]}
         ]}
       ],
-      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
+      "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
     },
     {
       "link": [7, 1],
@@ -1006,7 +1015,13 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 2},
-        {"glove": 0},
+        {"or": [
+          "h_holdOverheadObjects",
+          {"and": [
+            {"glove": 0},
+            {"combatProficiency": 3}
+          ]}
+        ]},
         {"or": [
           {"cape": 58},
           {"and": [
@@ -1023,7 +1038,8 @@
       "world": "dark",
       "requires": [
         {"combatProficiency": 4},
-        {"glove": 1}
+        {"glove": 1},
+        "h_holdOverheadObjects"
       ],
       "note": [
         "Kill the first two Ropa using 8 bushes. If a Bee or guard spawns, reset the room.",
@@ -1051,7 +1067,7 @@
         "Repeat for the last one to escape."
       ],
       "detailNote": [
-        "If Link is able to enter the room with a strong overhead object, like a brown bush or a signpost, this could be a fair bit easier."
+        "FIXME: If Link is able to enter the room with a strong overhead object, like a brown bush or a signpost, this could be a fair bit easier."
       ]
     },
     {
@@ -1123,7 +1139,6 @@
       "name": "Base - Collect Item",
       "world": "light",
       "requires": [],
-      "isBunny": "any",
       "collectsItems": [1]
     },
     {
@@ -1151,8 +1166,7 @@
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]},
         {"damage": {"enemy": "Thief", "count": 1}}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [9, 10],
@@ -1175,7 +1189,6 @@
       "requires": [
         {"combatProficiency": 3}
       ],
-      "isBunny": "any",
       "note": ["Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."]
     },
     {
@@ -1199,8 +1212,7 @@
       "world": "dark",
       "requires": [
         {"flag": "OpenedSkullWoods"}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [9, 11],
@@ -1242,7 +1254,6 @@
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
-      "isBunny": "any",
       "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."]
     },
     {
@@ -1291,7 +1302,7 @@
     },
     {
       "link": [10, 11],
-      "name": "Base - Bush",
+      "name": "Base",
       "world": "light",
       "requires": [
         {"or": [
@@ -1357,7 +1368,8 @@
       ],
       "devNote": [
         "FIXME: This strat is if node 10 is a transition.",
-        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated."
+        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated.",
+        "These Pegasus Boots don't require bonking, so they would not lose superbunny (for a light/dark world swap)."
       ]
     },
     {
@@ -1559,8 +1571,7 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [13, 1],
@@ -1568,8 +1579,7 @@
       "world": "light",
       "requires": [
         "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [13, 1],

@@ -126,7 +126,7 @@
           "name": "canBonkBoost",
           "techRequires": [],
           "otherRequires": [
-            "PegasusBoots"
+            "h_PegasusBootsBonk"
           ],
           "note": [
             "Dashing into an object, like a pot or wall, to boost backwards over a pit.",
@@ -175,7 +175,7 @@
           "name": "canBreakDashableWall",
           "techRequires": [],
           "otherRequires": [
-            "PegasusBoots"
+            "h_PegasusBootsBonk"
           ],
           "note": [
             "A subset of bombable walls can also be broken by dashing into them with the Pegasus Boots.",
@@ -198,7 +198,7 @@
           "name": "canCrossRoomOverheadPickups",
           "techRequires": [],
           "otherRequires": [
-            {"glove": 0}
+            "h_holdOverheadObjects"
           ],
           "note": [
             "Using room transitions to obtain additional objects to carry overhead and throw, such as bushes, rocks, or signposts.",
