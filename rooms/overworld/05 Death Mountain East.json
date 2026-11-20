@@ -275,11 +275,11 @@
   "lockedDoors": [
     {
       "id": 1,
-      "locationName": "Bonk Rocks",
+      "locationName": "Big Rock",
       "world": "dark",
       "doorPosition": "middle",
       "doorLocation": 2,
-      "keyType": "boots"
+      "keyType": "glove"
     }
   ],
   "strats": [
@@ -467,7 +467,7 @@
       "name": "Base - Bonk Rocks",
       "world": "dark",
       "requires": [
-        "PegasusBoots"
+        {"glove": 1}
       ],
       "unlocksDoor": [1]
     },

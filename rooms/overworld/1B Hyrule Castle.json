@@ -807,7 +807,8 @@
       "requires": [
         "h_jumpOffLedge"
       ],
-      "collectsItems": [1]
+      "collectsItems": [1],
+      "isBunny": "any"
     },
     {
       "link": [11, 9],
