@@ -122,6 +122,14 @@ Consumers should preserve every meaningful successful result of an `or`. Differe
 
 Only the costs and effects of the selected branch are applied.
 
+## Bunny Forms
+
+| Requirement | Effect |
+| --- | --- |
+| `{"noBunny": {}}` | Fails in normal bunny and superbunny form. Succeeds in other forms. |
+| `{"superbunny": {}}` | Succeeds only in superbunny form. |
+| `{"noSuperbunny": {}}` | Succeeds in every form. If Link is superbunny, he reverts to normal bunny before the next requirement is evaluated. |
+
 ## Equipment Requirements
 
 Equipment objects require a level of progressive equipment. They do not consume the equipment, but they include any implicit state needed to use it.
