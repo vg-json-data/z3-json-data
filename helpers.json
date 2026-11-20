@@ -187,5 +187,12 @@
       {"noSuperbunny": {}}
     ],
     "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
+  },
+  {
+    "name": "h_PegasusBootsNoBonk",
+    "requires": [
+      "PegasusBoots"
+    ],
+    "note": ["The ability to dash using Pegasus Boots without needing to bonk. This can be done without losing the Superbunny form."]
   }
 ]

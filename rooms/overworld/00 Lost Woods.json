@@ -1363,13 +1363,12 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsNoBonk",
         {"combatProficiency": 3}
       ],
       "devNote": [
         "FIXME: This strat is if node 10 is a transition.",
-        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated.",
-        "These Pegasus Boots don't require bonking, so they would not lose superbunny (for a light/dark world swap)."
+        "If coming from the north, the thief is free to avoid if Agahnim is not defeated, and Pegasus Boots helps if Agahnim is defeated."
       ]
     },
     {
