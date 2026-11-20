@@ -173,21 +173,19 @@ Shield levels are:
 
 `shieldExact` requires exactly level 1 or 2. `{"shield": 3}` already has exact semantics because no higher shield exists. As with `swordExact`, an exact lower-tier shield requirement should normally be accompanied by `"canRiskPermanentLossOfAccess"`.
 
-### Glove
+### Lift and Carry
 
-`glove` requires the given lifting capability or higher:
+`lift` requires Link to be able to pick up an object. `carry` requires him to be able to pick up and keep holding it overhead. Superbunny can lift objects but cannot carry them; normal bunny can do neither.
 
-```json
-{"glove": 1}
-```
+Both requirements use the minimum glove level.
 
-Glove levels are:
+| Level | Required equipment |
+| --- | --- |
+| `0` | No glove upgrade, for objects such as ordinary bushes. |
+| `1` | Power Glove or Titan's Mitt. |
+| `2` | Titan's Mitt. |
 
-- `0`: Ordinary lifting, primarily bushes and other objects that do not require a glove upgrade.
-- `1`: Power Glove lifting capability.
-- `2`: Titan's Mitt lifting capability.
-
-`{"glove": 0}` requires Link to be in a state that can lift ordinary objects. The exact interaction with future lonk and superbunny state modeling is not yet settled.
+The `glove` requirement is deprecated. Use `lift` or `carry` for new strats, depending on what the action requires.
 
 ## Ammunition Requirements
 

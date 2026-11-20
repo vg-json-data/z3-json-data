@@ -173,14 +173,6 @@
     "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
   },
   {
-    "name": "h_holdOverheadObjects",
-    "requires": [
-      {"glove": 0},
-      {"noBunny": {}}
-    ],
-    "note": ["The ability to hold objects overhead. Superbunny can lift objects but can't hold them, so this is a separate ability that cant be done in either bunny form."]
-  },
-  {
     "name": "h_PegasusBootsBonk",
     "requires": [
       "PegasusBoots",
