@@ -123,7 +123,7 @@
       "world": "light",
       "requires": [
         {"flag": "DefeatedAgahnim1"},
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ]
     }
   ]

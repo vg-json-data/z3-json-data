@@ -345,7 +345,8 @@
           {"cape": 16},
           {"and": [
             {"sword": 3},
-            "PegasusBoots"
+            "h_PegasusBootsNoBonk",
+            "loseSuperbunny"
           ]},
           {"and": [
             {"sword": 3},
@@ -441,8 +442,12 @@
           ]},
           {"and": [
             {"sword": 3},
-            "PegasusBoots",
-            {"combatProficiency": 3}
+            "h_PegasusBootsNoBonk",
+            {"combatProficiency": 3},
+            {"or": [
+              "loseSuperbunny",
+              {"combatProficiency": 4}
+            ]}
           ]}
         ]}
       ],
@@ -458,16 +463,16 @@
       "name": "Bonk Fairy",
       "world": "light",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Fairy", "limit": 1}}
       ]
     },
     {
       "link": [2, 2],
-      "name": "Base - Bonk Rocks",
+      "name": "Base - Lift Rock",
       "world": "dark",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ],
       "unlocksDoor": [1]
     },
@@ -623,7 +628,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -632,7 +637,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -650,7 +655,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -658,7 +663,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -693,7 +698,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
