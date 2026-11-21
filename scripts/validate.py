@@ -298,7 +298,12 @@ def validate_requirements(path, document, requirements, location, references, er
                 validate_reference(path, document, current + [j], name,
                                    room["obstacles"] if room else {}, "room-local obstacle", errors)
         elif kind in {"combatProficiency", "bossProficiency", "darkProficiency"}:
-            validate_reference(path, document, current, kind, references["techs"], "proficiency tech", errors)
+            techs = references["techs"]
+            if kind not in techs:
+                validate_reference(path, document, current, kind, techs, "proficiency tech", errors)
+            else:
+                tiers = {tier["value"] for tier in techs[kind].get("tiers", [])}
+                validate_reference(path, document, current, value, tiers, f"{kind} level", errors)
 
 
 def validate_enemy_spawns(path, document, references, errors):
