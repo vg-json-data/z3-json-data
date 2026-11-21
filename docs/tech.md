@@ -57,7 +57,7 @@ A requirement is fulfilled when the configured proficiency is at least its reque
 
 Tier notes describe the additional ability expected at that value. Consumers can use them when presenting difficulty settings to a player. 
 
-Tiered requirements begin at 1, which is the minimum supported value in the logic. A value of 9 may be used for any tiered proficiency when a strat is believed to be possible but has not yet been tested or placed precisely on the ordinary difficulty scale.
+Each proficiency requirement must reference a level defined in that proficiency's `tiers` array. Where tier 9 is defined, it marks strats believed to be possible but that have not yet been tested or placed precisely on the ordinary difficulty scale.
 
 ## General Techs
 
