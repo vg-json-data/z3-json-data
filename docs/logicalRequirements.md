@@ -36,7 +36,7 @@ An item name requires Link to possess that item and to be in a state in which it
 "Hookshot"
 ```
 
-When an item has a `requires` list in [item data](items.md#item-receipt-records), evaluate it when checking whether Link can use the item, regardless of if the item is called directly or when an equipment or ammo requirement implies using the item, such as `{"sword": 1}` or `{"fireRod": 1}`.
+When an item has a `requires` list in [item data](items.md#item-receipt-records), evaluate it when checking whether Link can use the item, regardless of if the item is called directly or when an equipment or ammo requirement implies using the item, such as `{"sword": 1}` or `{"fireRod": 1}`. Placing a bomb also requires `useYItems`.
 
 Some names represent a logical category rather than a single concrete item. For example, `"Boomerang"` is a helper that accepts either `"BlueBoomerang"` or `"RedBoomerang"`.
 

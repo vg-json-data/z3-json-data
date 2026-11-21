@@ -198,7 +198,7 @@
           "name": "canCrossRoomOverheadPickups",
           "techRequires": [],
           "otherRequires": [
-            "h_holdOverheadObjects"
+            {"carry": 0}
           ],
           "note": [
             "Using room transitions to obtain additional objects to carry overhead and throw, such as bushes, rocks, or signposts.",
