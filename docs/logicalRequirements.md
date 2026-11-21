@@ -131,12 +131,13 @@ Only the costs and effects of the selected branch are applied.
 
 Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
 
-The following objects check or change Link's form directly.
+The following requirements always succeed. They change Link's form only when the starting form matches.
 
 | Requirement | Effect |
 | --- | --- |
-| `{"noSuperbunny": {}}` | Always succeeds. If Link is superbunny, he reverts to normal bunny. |
-| `{"noLonk": {}}` | Always succeeds. If Link is Lonk, he reverts to Link. |
+| `"loseSuperbunny"` | Changes superbunny to normal bunny. |
+| `"lonkToLink"` | Changes Lonk to normal Link. |
+| `"lonkToBunny"` | Changes Lonk to normal bunny. |
 
 ## Equipment Requirements
 

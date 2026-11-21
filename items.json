@@ -20,7 +20,7 @@
       {
         "name": "Hookshot",
         "itemReceiptId": "0x0A",
-        "requires": ["useYItems", "useABItems"]
+        "requires": ["useYItems", "lonkToLink"]
       },
       {
         "name": "Bow",
@@ -47,17 +47,17 @@
       {
         "name": "Bombos",
         "itemReceiptId": "0x0F",
-        "requires": ["useYItems", "useABItems", {"sword": 1}]
+        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
       },
       {
         "name": "Ether",
         "itemReceiptId": "0x10",
-        "requires": ["useYItems", "useABItems", {"sword": 1}]
+        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
       },
       {
         "name": "Quake",
         "itemReceiptId": "0x11",
-        "requires": ["useYItems", "useABItems", {"sword": 1}]
+        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
       },
       {
         "name": "Lamp",
@@ -94,7 +94,7 @@
       {
         "name": "Flippers",
         "itemReceiptId": "0x1E",
-        "requires": ["useYItems", "useABItems"]
+        "requires": ["useYItems", "lonkToLink"]
       },
       {
         "name": "MoonPearl",
@@ -159,17 +159,17 @@
       {
         "name": "BlueShield",
         "itemReceiptId": "0x04",
-        "requires": ["useYItems", "useABItems"]
+        "requires": ["useYItems"]
       },
       {
         "name": "RedShield",
         "itemReceiptId": "0x05",
-        "requires": ["useYItems", "useABItems"]
+        "requires": ["useYItems"]
       },
       {
         "name": "MirrorShield",
         "itemReceiptId": "0x06",
-        "requires": ["useYItems", "useABItems"]
+        "requires": ["useYItems"]
       },
       {
         "name": "OcarinaInactive",

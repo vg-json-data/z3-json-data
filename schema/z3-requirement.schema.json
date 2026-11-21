@@ -15,16 +15,6 @@
       "minLength": 1,
       "description": "Requires an enabled notable with this name in the containing room."
     },
-    "noSuperbunny": {
-      "type": "object",
-      "maxProperties": 0,
-      "description": "Always succeeds. If Link is superbunny, he reverts to normal bunny."
-    },
-    "noLonk": {
-      "type": "object",
-      "maxProperties": 0,
-      "description": "Always succeeds. If Link is Lonk, he reverts to Link."
-    },
     "and": {
       "type": "array",
       "minItems": 2,

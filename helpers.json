@@ -165,6 +165,8 @@
   {
     "name": "h_jumpOffLedge",
     "requires": [
+      "lonkToLink",
+      "loseSuperbunny",
       {"followerLost": ["Super Bomb"]}
     ],
     "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
@@ -173,7 +175,7 @@
     "name": "h_PegasusBootsBonk",
     "requires": [
       "PegasusBoots",
-      {"noSuperbunny": {}}
+      "loseSuperbunny"
     ],
     "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
   },

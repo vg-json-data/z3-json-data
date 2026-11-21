@@ -246,7 +246,10 @@ def validate_requirements(path, document, requirements, location, references, er
     for i, requirement in enumerate(requirements):
         current = location + [i]
         if isinstance(requirement, str):
-            if requirement not in {"free", "never", "useYItems", "useABItems"}:
+            if requirement not in {
+                "free", "never", "useYItems", "useABItems",
+                "lonkToLink", "lonkToBunny", "loseSuperbunny",
+            }:
                 validate_reference(path, document, current, requirement, references["named"],
                                    "item, helper, or tech", errors)
             continue
