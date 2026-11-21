@@ -799,7 +799,7 @@
       "link": [2, 2],
       "name": "Torch Bonk",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "collectsItems": [1]
     },
@@ -1536,7 +1536,7 @@
         {"combatProficiency": 5},
         {"lamp": 4},
         {"or": [
-          "PegasusBoots",
+          "h_PegasusBootsNoBonk",
           "Hookshot"
         ]}
       ],
@@ -2919,7 +2919,7 @@
         {"or": [
           {"blueCane": 60},
           {"and": [
-            "PegasusBoots",
+            "h_PegasusBootsNoBonk",
             {"blueCane": 48}
           ]},
           {"cape": 50}

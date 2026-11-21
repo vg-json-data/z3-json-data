@@ -101,7 +101,7 @@
       "name": "Bonk Fairy",
       "world": "light",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Fairy", "limit": 1}}
       ],
       "note": ["The southeast tree will release a fairy when dashed into."]

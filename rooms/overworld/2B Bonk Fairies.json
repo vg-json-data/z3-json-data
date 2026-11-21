@@ -123,7 +123,7 @@
       "name": "Base - Bonk Rocks",
       "world": "light",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [1]
     },
@@ -132,7 +132,7 @@
       "name": "Base - Bonk Rocks",
       "world": "dark",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [2]
     },

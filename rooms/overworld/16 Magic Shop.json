@@ -107,8 +107,7 @@
       "requires": [
         "Mushroom"
       ],
-      "setsFlags": ["GaveWitchMushroom"],
-      "isBunny": "no"
+      "setsFlags": ["GaveWitchMushroom"]
     },
     {
       "link": [1, 1],
@@ -134,7 +133,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -143,7 +142,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -160,7 +159,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -169,7 +168,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -179,7 +178,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class1"}
     },
@@ -189,7 +188,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },

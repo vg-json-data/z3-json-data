@@ -139,7 +139,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -155,7 +155,8 @@
       "world": "light",
       "requires": [
         "h_jumpOffLedge"
-      ]
+      ],
+      "devNote": ["FIXME: With some edge variants, there is a walkway here."]
     },
     {
       "link": [2, 1],
@@ -168,7 +169,7 @@
       "name": "Base - Bonk Rocks",
       "world": "light",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [1]
     },

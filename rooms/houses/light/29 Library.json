@@ -27,7 +27,7 @@
       "link": [1, 1],
       "name": "Base - Dash Into Bookcase",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "collectsItems": [1]
     }
