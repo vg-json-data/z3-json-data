@@ -70,7 +70,7 @@ Requirements are evaluated sequentially in the order in which they appear. In mo
 
 After all requirements have been fulfilled, the strat is executed and its effects are applied. An item collected or flag set by a strat cannot satisfy an earlier requirement in that same strat; the resulting state is available to subsequent strats.
 
-An item requirement can include implicit conditions needed to use that item, in addition to requiring that the item be in the inventory. The complete interaction between item use and Link's normal, bunny, superbunny, and lonk states is not yet modeled.
+An item requirement can include implicit conditions needed to use that item, in addition to requiring that the item be in the inventory. See [Item Use and Bunny Forms](logicalRequirements.md#item-use-and-bunny-forms) for the built-in item-use checks.
 
 ## Notable Strats
 

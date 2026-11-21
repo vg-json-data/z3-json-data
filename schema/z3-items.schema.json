@@ -241,6 +241,13 @@
         "itemReceiptId": {
           "$ref": "#/definitions/byte"
         },
+        "requires": {
+          "description": "Additional logical requirements for using this item.",
+          "type": "array",
+          "items": {
+            "$ref": "z3-requirement.schema.json"
+          }
+        },
         "note": {
           "type": "string",
           "minLength": 1

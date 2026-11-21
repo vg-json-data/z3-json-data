@@ -60,14 +60,17 @@
   },
   {
     "name": "h_NoAgahnimLoophole",
-    "requires": [],
+    "requires": [
+      "useABItems"
+    ],
     "note": [
       "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",
       "i.e. sword or sufficient skill to kill Agahnim with swordless methods, then traversal is also free."
     ],
     "devNote": [
       "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
-      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free."
+      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free.",
+      "This is assumed to not be true if Link is Bunny, as he wouldn't have the ability to use a sword."
     ]
   },
   {
@@ -162,8 +165,25 @@
   {
     "name": "h_jumpOffLedge",
     "requires": [
+      "lonkToLink",
+      "loseSuperbunny",
       {"followerLost": ["Super Bomb"]}
     ],
     "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
+  },
+  {
+    "name": "h_PegasusBootsBonk",
+    "requires": [
+      "PegasusBoots",
+      "loseSuperbunny"
+    ],
+    "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
+  },
+  {
+    "name": "h_PegasusBootsNoBonk",
+    "requires": [
+      "PegasusBoots"
+    ],
+    "note": ["The ability to dash using Pegasus Boots without needing to bonk. This can be done without losing the Superbunny form."]
   }
 ]

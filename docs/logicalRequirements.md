@@ -36,7 +36,7 @@ An item name requires Link to possess that item and to be in a state in which it
 "Hookshot"
 ```
 
-The detailed interaction between item use and Link's normal, bunny, superbunny, and lonk states is not yet fully modeled.
+When an item has a `requires` list in [item data](items.md#item-receipt-records), evaluate it when checking whether Link can use the item, regardless of if the item is called directly or when an equipment or ammo requirement implies using the item, such as `{"sword": 1}` or `{"fireRod": 1}`. Placing a bomb also requires `useYItems`.
 
 Some names represent a logical category rather than a single concrete item. For example, `"Boomerang"` is a helper that accepts either `"BlueBoomerang"` or `"RedBoomerang"`.
 
@@ -88,6 +88,23 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 `"never"` is a requirement that cannot be fulfilled. It is useful for disabling helpers or behavior without removing their definitions.
 
 `"free"` is the conceptual opposite and is always fulfilled. An empty requirements array is the normal way to represent an action with no requirements.
+
+### Item Use and Bunny Forms
+
+| Requirement | Normal Link | Lonk | Normal bunny | Superbunny |
+| --- | --- | --- | --- |
+| `"useYItems"` | Yes | Yes | No | No |
+| `"useABItems"` | Yes | No | No | Yes |
+
+Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
+
+The following requirements always succeed. They change Link's form only when the starting form matches.
+
+| Requirement | Effect |
+| --- | --- |
+| `"loseSuperbunny"` | Changes superbunny to normal bunny. |
+| `"lonkToLink"` | Changes Lonk to normal Link. |
+| `"lonkToBunny"` | Changes Lonk to normal bunny. |
 
 ## Room-Specific Notables
 
@@ -165,21 +182,19 @@ Shield levels are:
 
 `shieldExact` requires exactly level 1 or 2. `{"shield": 3}` already has exact semantics because no higher shield exists. As with `swordExact`, an exact lower-tier shield requirement should normally be accompanied by `"canRiskPermanentLossOfAccess"`.
 
-### Glove
+### Lift and Carry
 
-`glove` requires the given lifting capability or higher:
+`lift` requires Link to be able to pick up an object. `carry` requires him to be able to pick up and keep holding it overhead. Superbunny can lift objects but cannot carry them; normal bunny can do neither.
 
-```json
-{"glove": 1}
-```
+Both requirements use the minimum glove level.
 
-Glove levels are:
+| Level | Required equipment |
+| --- | --- |
+| `0` | No glove upgrade, for objects such as ordinary bushes. |
+| `1` | Power Glove or Titan's Mitt. |
+| `2` | Titan's Mitt. |
 
-- `0`: Ordinary lifting, primarily bushes and other objects that do not require a glove upgrade.
-- `1`: Power Glove lifting capability.
-- `2`: Titan's Mitt lifting capability.
-
-`{"glove": 0}` requires Link to be in a state that can lift ordinary objects. The exact interaction with future lonk and superbunny state modeling is not yet settled.
+The `glove` requirement is deprecated. Use `lift` or `carry` for new strats, depending on what the action requires.
 
 ## Ammunition Requirements
 
@@ -243,7 +258,7 @@ For example, this requirement consumes 48 magic using the Fire Rod:
 
 `rod` allows the given number of shots from either the Fire Rod or Ice Rod, whichever can perform the interaction.
 
-Using Bombos, Ether, or Quake also implicitly requires `{"sword": 1}`.
+`lamp` also requires `useYItems`.
 
 ### Blue Cane
 
