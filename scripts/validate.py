@@ -246,7 +246,7 @@ def validate_requirements(path, document, requirements, location, references, er
     for i, requirement in enumerate(requirements):
         current = location + [i]
         if isinstance(requirement, str):
-            if requirement not in {"free", "never"}:
+            if requirement not in {"free", "never", "useYItems", "useABItems"}:
                 validate_reference(path, document, current, requirement, references["named"],
                                    "item, helper, or tech", errors)
             continue
@@ -470,7 +470,14 @@ def validate_room(path, document, references, errors):
 
 
 def validate_definitions(path, document, references, errors):
-    if path == ROOT / "helpers.json":
+    if path == ROOT / "items.json":
+        for category, definitions in document.items():
+            if category in {"$schema", "flags"}:
+                continue
+            for i, item in enumerate(definitions["items"]):
+                validate_requirements(path, document, item.get("requires", []),
+                                      [category, "items", i, "requires"], references, errors)
+    elif path == ROOT / "helpers.json":
         for i, helper in enumerate(document):
             validate_requirements(path, document, helper["requires"], [i, "requires"], references, errors)
     elif path == ROOT / "tech.json":

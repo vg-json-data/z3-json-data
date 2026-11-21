@@ -10,12 +10,14 @@ Most categories contain item receipt records with the following properties:
 
 - `name`: The name used to identify the item in room data and logic.
 - `itemReceiptId`: The byte passed to the game's item-receipt handler.
+- `requires`: Optional [logical requirements](logicalRequirements.md#item-use-and-bunny-forms) for using the item.
 - `note`: Additional behavior or implementation details.
 
 ```json
 {
   "name": "Hookshot",
-  "itemReceiptId": "0x0A"
+  "itemReceiptId": "0x0A",
+  "requires": ["useYItems"]
 }
 ```
 

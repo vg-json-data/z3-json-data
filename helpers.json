@@ -61,10 +61,7 @@
   {
     "name": "h_NoAgahnimLoophole",
     "requires": [
-      {"or": [
-        {"noBunny": {}},
-        {"superbunny": {}}
-      ]}
+      "useABItems"
     ],
     "note": [
       "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",

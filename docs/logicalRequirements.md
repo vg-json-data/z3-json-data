@@ -36,7 +36,7 @@ An item name requires Link to possess that item and to be in a state in which it
 "Hookshot"
 ```
 
-The detailed interaction between item use and Link's normal, bunny, superbunny, and lonk states is not yet fully modeled.
+When an item has a `requires` list in [item data](items.md#item-receipt-records), evaluate it when checking whether Link can use the item, regardless of if the item is called directly or when an equipment or ammo requirement implies using the item, such as `{"sword": 1}` or `{"fireRod": 1}`.
 
 Some names represent a logical category rather than a single concrete item. For example, `"Boomerang"` is a helper that accepts either `"BlueBoomerang"` or `"RedBoomerang"`.
 
@@ -122,13 +122,21 @@ Consumers should preserve every meaningful successful result of an `or`. Differe
 
 Only the costs and effects of the selected branch are applied.
 
-## Bunny Forms
+## Item Use and Bunny Forms
+
+| Requirement | Normal Link | Lonk | Normal bunny | Superbunny |
+| --- | --- | --- | --- |
+| `"useYItems"` | Yes | Yes | No | No |
+| `"useABItems"` | Yes | No | No | Yes |
+
+Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
+
+The following objects check or change Link's form directly.
 
 | Requirement | Effect |
 | --- | --- |
-| `{"noBunny": {}}` | Fails in normal bunny and superbunny form. Succeeds in other forms. |
-| `{"superbunny": {}}` | Succeeds only in superbunny form. |
-| `{"noSuperbunny": {}}` | Succeeds in every form. If Link is superbunny, he reverts to normal bunny before the next requirement is evaluated. |
+| `{"noSuperbunny": {}}` | Always succeeds. If Link is superbunny, he reverts to normal bunny. |
+| `{"noLonk": {}}` | Always succeeds. If Link is Lonk, he reverts to Link. |
 
 ## Equipment Requirements
 
@@ -249,7 +257,7 @@ For example, this requirement consumes 48 magic using the Fire Rod:
 
 `rod` allows the given number of shots from either the Fire Rod or Ice Rod, whichever can perform the interaction.
 
-Using Bombos, Ether, or Quake also implicitly requires `{"sword": 1}`.
+`lamp` also requires `useYItems`.
 
 ### Blue Cane
 
