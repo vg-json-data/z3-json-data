@@ -89,7 +89,7 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 `"free"` is the conceptual opposite and is always fulfilled. An empty requirements array is the normal way to represent an action with no requirements.
 
-## Item Use and Bunny Forms
+### Item Use and Bunny Forms
 
 | Requirement | Normal Link | Lonk | Normal bunny | Superbunny |
 | --- | --- | --- | --- |
