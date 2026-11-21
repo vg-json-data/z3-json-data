@@ -331,9 +331,38 @@
     },
     {
       "link": [2, 1],
-      "name": "Base",
+      "name": "No Jumping",
       "world": "light",
-      "requires": []
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Boomerang",
+          "Hookshot",
+          {"arrows": 6},
+          {"silverArrows": 3},
+          {"rod": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 2}}
+        ]}
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Dodge Some Guards",
+      "world": "light",
+      "requires": [
+        {"combatProficiency": 2},
+        {"or": [
+          "Hammer",
+          {"arrows": 2},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"redCane": 1},
+          {"blueCane": 32},
+          {"cape": 95},
+          {"combatProficiency": 3},
+          {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
+        ]}
+      ]
     },
     {
       "link": [2, 1],
@@ -452,7 +481,8 @@
       "world": "dark",
       "requires": [
         {"follower": "None"},
-        {"pay": 110}
+        {"pay": 110},
+        "useYItems"
       ],
       "setsFlags": ["OpenedPalaceOfDarkness"],
       "devNote": ["Kiki cannot leave the room, so there isn't much need to use a Kiki follower object to represent unlocking the dungeon."]
@@ -526,10 +556,19 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"or": [
-          "h_jumpOffLedge",
-          {"glove": 1}
-        ]}
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "No Jumping",
+      "world": "light",
+      "requires": [
+        {"lift": 1},
+        "h_NoAgahnimLoophole"
+      ],
+      "note": [
+        "Without jumping or any weapons, Dodge the Armos and lure the guard north a bit to get it stuck."
       ]
     },
     {
@@ -591,6 +630,11 @@
           {"and": [
             {"combatProficiency": 3},
             {"cape": 45}
+          ]},
+          {"and": [
+            {"combatProficiency": 3},
+            {"iceRod": 1},
+            {"carry": 0}
           ]}
         ]}
       ]
@@ -660,10 +704,19 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"or": [
-          "h_jumpOffLedge",
-          {"glove": 1}
-        ]}
+        "h_jumpOffLedge"
+      ]
+    },
+    {
+      "link": [3, 4],
+      "name": "No Jumping",
+      "world": "light",
+      "requires": [
+        {"lift": 1},
+        "h_NoAgahnimLoophole"
+      ],
+      "note": [
+        "Without jumping or any weapons, Dodge the Armos and lure the guard north a bit to get it stuck."
       ]
     },
     {
@@ -679,7 +732,7 @@
           {"arrows": 2},
           {"silverArrows": 1},
           {"and": [
-            {"glove": 1},
+            {"lift": 1},
             "h_jumpOffLedge"
           ]},
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}},
@@ -704,6 +757,10 @@
           {"and": [
             {"combatProficiency": 3},
             {"bombs": 2}
+          ]},
+          {"and": [
+            {"carry": 1},
+            {"bombs": 1}
           ]}
         ]}
       ]
@@ -715,7 +772,7 @@
       "entranceState": {"state": "overhead", "type": "class3"},
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "note": [
         "Two strong objects can kill the guard. This is only useful at avoiding jumping off the ledge."
@@ -733,7 +790,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1},
+        {"carry": 1},
         {"or": [
           "h_jumpOffLedge",
           {"sword": 1},
@@ -816,7 +873,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1},
+        {"carry": 1},
         {"combatProficiency": 3},
         {"or": [
           "h_jumpOffLedge",
@@ -899,7 +956,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

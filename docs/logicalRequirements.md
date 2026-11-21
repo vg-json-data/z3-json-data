@@ -102,7 +102,8 @@ The following requirements always succeed. They change Link's form only when the
 
 | Requirement | Effect |
 | --- | --- |
-| `"loseSuperbunny"` | Changes superbunny to normal bunny. |
+| `"superbunnyToBunny"` | Changes superbunny to normal bunny. |
+| `"superbunnyToLink"` | Changes superbunny to normal Link. |
 | `"lonkToLink"` | Changes Lonk to normal Link. |
 | `"lonkToBunny"` | Changes Lonk to normal bunny. |
 

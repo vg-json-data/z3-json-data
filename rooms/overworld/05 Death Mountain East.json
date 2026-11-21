@@ -346,7 +346,7 @@
           {"and": [
             {"sword": 3},
             "h_PegasusBootsNoBonk",
-            "loseSuperbunny"
+            "superbunnyToBunny"
           ]},
           {"and": [
             {"sword": 3},
@@ -445,7 +445,7 @@
             "h_PegasusBootsNoBonk",
             {"combatProficiency": 3},
             {"or": [
-              "loseSuperbunny",
+              "superbunnyToBunny",
               {"combatProficiency": 4}
             ]}
           ]}
