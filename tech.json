@@ -39,13 +39,13 @@
             {
               "value": 5,
               "note": [
-                "Expects very precise enemy manipulation or attack timing to conserve resources or limit damage."
+                "Expects high-precision dodging and full-room enemy manipulations to avoid damage."
               ]
             },
             {
               "value": 6,
               "note": [
-                "Expects precise enemy manipulation and weapon placement to defeat groups of enemies without taking damage."
+                "Expects high-precision dodging and full-room enemy manipulations to avoid damage."
               ]
             }
           ]
@@ -83,7 +83,7 @@
             {
               "value": 5,
               "note": [
-                "Expects defeating bosses without taking damage even when using weak weapons."
+                "Expects high-precision kills that only come with practicing bosses with unusual, weak weapons."
               ]
             },
             {
