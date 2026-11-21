@@ -89,6 +89,23 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 `"free"` is the conceptual opposite and is always fulfilled. An empty requirements array is the normal way to represent an action with no requirements.
 
+## Item Use and Bunny Forms
+
+| Requirement | Normal Link | Lonk | Normal bunny | Superbunny |
+| --- | --- | --- | --- |
+| `"useYItems"` | Yes | Yes | No | No |
+| `"useABItems"` | Yes | No | No | Yes |
+
+Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
+
+The following requirements always succeed. They change Link's form only when the starting form matches.
+
+| Requirement | Effect |
+| --- | --- |
+| `"loseSuperbunny"` | Changes superbunny to normal bunny. |
+| `"lonkToLink"` | Changes Lonk to normal Link. |
+| `"lonkToBunny"` | Changes Lonk to normal bunny. |
+
 ## Room-Specific Notables
 
 `{"notable": "Icebreaker"}` requires the named technique to be enabled in the containing room's `notables` array. It acts as an independent skill toggle and has no resource cost or other effect. Names resolve only within that room. See [Notable Strats](strats.md#notable-strats) for the definition format and example.
@@ -121,23 +138,6 @@ An `or` object is fulfilled by fulfilling any one of its elements.
 Consumers should preserve every meaningful successful result of an `or`. Different branches may leave Link with different amounts of health, magic, ammunition, or other state. Selecting only the first or apparently cheapest successful branch can rarely discard a more useful result, such as a branch that includes a refill.
 
 Only the costs and effects of the selected branch are applied.
-
-## Item Use and Bunny Forms
-
-| Requirement | Normal Link | Lonk | Normal bunny | Superbunny |
-| --- | --- | --- | --- |
-| `"useYItems"` | Yes | Yes | No | No |
-| `"useABItems"` | Yes | No | No | Yes |
-
-Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
-
-The following requirements always succeed. They change Link's form only when the starting form matches.
-
-| Requirement | Effect |
-| --- | --- |
-| `"loseSuperbunny"` | Changes superbunny to normal bunny. |
-| `"lonkToLink"` | Changes Lonk to normal Link. |
-| `"lonkToBunny"` | Changes Lonk to normal bunny. |
 
 ## Equipment Requirements
 
