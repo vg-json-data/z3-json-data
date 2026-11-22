@@ -224,6 +224,49 @@
             "An object can also be carried in from an adjacent room or screen to use where no suitable object is normally available.",
             "In the underworld, it is possible to kill enemies with pots before resetting the room to to respawn the pots but not the enemies."
           ]
+        },
+        {
+          "id": 11,
+          "name": "canCarryLonk",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Lonk is a fairly fragile character state which has more abilities than a normal bunny.",
+            "It is generally only considered useful in the Dark World with no Moon Pearl.",
+            "Lonk can use most Y-items and can move during many item animations. Lonk cannot swing the sword, dash, lift or throw objects, pull levers, or open chests."
+          ],
+          "detailNote": [
+            "There are many ways to lose the Lonk state, most of which convert him to Link:",
+            "taking damage with knockback (including Thieves who deal zero damage, but not damage sources without knockback),",
+            "jumping from any ledge or falling into a pit to a lower floor, entering deep water to swim, and obtaining overhead item animations including shop purchases.",
+            "Some Y-items can be used but convert to Link as well, including the Hookshot, Medallions, and traveling with the Flute.",
+            "World crossings also lose the Lonk state (and rechecks if he should be Link or Bunny).",
+            "Dark World, pearlless Lonk becomes a bunny when exiting the underworld, becomes Link after a bottled Fairy revival (unless the saved Bunny flag is set, then he becomes bunny),",
+            "and also becomes Link when falling into a damaging pit (unless the saved Bunny flag is set, then he remains Lonk)."
+          ],
+          "devNote": [
+            "Lonk is considered strictly inferior to Link in the Light World or if Link owns Moon Pearl.",
+            "Lonk is not considered strictly worse than Link otherwise, however, due to the Bunny Pocket ability."
+          ]
+        },
+        {
+          "id": 12,
+          "name": "canCarrySuperbunny",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Superbunny is a fairly fragile character state which has more abilities than a normal bunny.",
+            "It is generally only considered useful in the Dark World with no Moon Pearl.",
+            "Superbunny can swing the sword, dash, lift and throw objects, pull levers, and open chests. Superbunny cannot keep objects held overhead, swim normally, or use Y-items that ordinary bunny cannot use."
+          ],
+          "detailNote": [
+            "There are many ways to lose the Superbunny state, most of which convert him to normal bunny:",
+            "taking damage with knockback (including Thieves who deal zero damage, but not damage sources without knockback),",
+            "jumping from a ledge, and bonking into something from a Pegasus Boots dash (dashing without a bonk preserves it), .",
+            "World crossings also lose the Superbunny state (and rechecks if he should be Link or Bunny).",
+            "Dark World, pearlless Superbunny becomes a normal bunny when exiting the underworld, becomes Link after a bottled Fairy revival (unless the saved Bunny flag is set, then he becomes bunny),",
+            "and he becomes a bunny when falling into a damaging pit if the saved Bunny flag is set (otherwise he remains Superbunny)."
+          ]
         }
       ]
     }

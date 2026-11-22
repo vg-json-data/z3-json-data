@@ -117,14 +117,21 @@ The randomizer applies these rules automatically when traversing the correspondi
 | Transition | Resulting form | Equivalent form effect |
 | --- | --- | --- |
 | Enter the underworld through a normal entrance | Keeps the current form. | `free` |
-| Enter the underworld through a drop entrance and land on dry ground or in shallow water | Normal bunny becomes superbunny, Lonk becomes Link, and Link and superbunny keep their forms. | `h_fallToLowerFloor` |
-| Exit the underworld to the overworld (Dark World) | With the Moon Pearl, becomes Link. Without the Moon Pearl, becomes normal bunny. | `recheckLinkState` |
-| Exit the underworld to the overworld (Light World, Moon Pearl) | With the Moon Pearl, becomes Link. | `recheckLinkState` |
-| Exit the underworld to the overworld (Light World, No Moon Pearl) | Without the Moon Pearl, keeps the current form. | `free` |
-| Travel with the Flute | Sets the form to normal Link when the bird picks Link up. Assumes all Flute destinations are in the Light World. | `lonkToLink` |
-| Travel through a whirlpool | Keeps the current form during the warp. | `free` |
+| Enter the underworld through a drop entrance | Normal bunny becomes superbunny and Lonk becomes Link. | `h_fallToLowerFloor` |
+| Exit the underworld (Dark World) | Rechecks Link's state. | `recheckLinkState` |
+| Exit the underworld (Light World, Moon Pearl) | Becomes Link. | `recheckLinkState` |
+| Exit the underworld (Light World, No Moon Pearl) | Keeps the current form. | `free` |
+| Travel with the Flute | Becomes Link (assumes all Flute destinations are in the Light World). | `recheckLinkState` |
+| Travel through a whirlpool | Keeps the current form. | `free` |
+| Damage knockback (No Moon Pearl) | Superbunny becomes normal bunny and Lonk becomes Link. | `superbunnyToBunny`, `lonkToLink` |
+| Damage knockback (Moon Pearl) | Becomes Link. | `recheckLinkState` |
+| Continue or Save and Quit | Rechecks Link's state. | `recheckLinkState` |
+| Defeat Agahnim Teleports | Rechecks Link's state. | `recheckLinkState` |
+| Exit Chris Houlihan Room | Keeps the current form. | `free` |
 
-Fake worlds and deep-water landings are deferred until a route needs them.
+Fake worlds, Fake Flippers, Dungeon Bunny Revival, and drops that land in deep water are deferred until a route needs them.
+
+Note that a "Damage Knockback" can deal zero damage, such as from a Thief, and it does not include damage that has no knockback, such as floor spikes.
 
 ## Room-Specific Notables
 
@@ -319,6 +326,8 @@ A `damage` object represents Link taking one or more hits. It has the following 
 If `attack` is present, each hit uses that attack's `dmgToLink` value. Otherwise, each hit uses the enemy's `dmgToLink` value. The applicable mail reduces each hit according to the values in the [enemy data documentation](enemies.md). Eight damage equals one heart.
 
 Hits are applied one at a time. If a hit reduces Link to zero health or below, a bottled Fairy may be consumed to revive him with 7 hearts before the next hit is applied.
+
+The randomizer implicitly applies the form change from ordinary knockback recovery after a surviving hit that causes it. Form changes depend on the attack or hazard. For example, walking over `Ground Spikes` queues damage without ordinary knockback. It preserves pearlless superbunny and Lonk on a nonlethal hit. With the Moon Pearl, the spike floor clears the Bunny flag, which turns superbunny into Link; it does not itself run Lonk's knockback recovery. Attacks with special transitions and hits that trigger a Fairy revival use their own recovery behavior.
 
 For example, suppose Link has 1 heart and takes two 2-heart hits. The first hit reduces him to zero, a bottled Fairy revives him to 7 hearts, and the second hit leaves him with 5 hearts. Treating the two hits as one combined 4-heart damage event would produce the wrong result.
 
