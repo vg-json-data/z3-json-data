@@ -18,6 +18,7 @@
       "link": [1, 1],
       "name": "Two Heart Pots",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 2}}
       ]
     },

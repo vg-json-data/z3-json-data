@@ -19,8 +19,7 @@
       "name": "Great Fairy Refill",
       "requires": [
         {"refill": {"type": "Health", "limit": 20}}
-      ],
-      "isBunny": "any"
+      ]
     }
   ]
 }

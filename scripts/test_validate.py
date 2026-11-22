@@ -9,6 +9,18 @@ from jsonschema import validators
 from validate import ROOT, collect_references, registry_for, validate_requirements, validate_room
 
 
+class FormChangeRequirementTests(unittest.TestCase):
+    def test_form_changes_are_recognized_without_named_definitions(self):
+        requirements = [
+            "bunnyToSuperbunny", "bunnyToLonk", "superbunnyToBunny",
+            "superbunnyToLink", "lonkToLink", "lonkToBunny",
+        ]
+        errors = defaultdict(list)
+        validate_requirements(ROOT / "helpers.json", requirements, requirements,
+                              [], {"named": {}}, errors)
+        self.assertFalse(errors)
+
+
 class ItemCategoryTests(unittest.TestCase):
     def test_section_notes_and_nested_items_are_indexed(self):
         document = {

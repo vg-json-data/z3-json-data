@@ -59,36 +59,29 @@
           "Hookshot",
           {"combatProficiency": 2},
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
-        ]}
+        ]},
+        "h_fallToLowerFloor"
       ]
-    },
-    {
-      "link": [2, 3],
-      "name": "Bunny",
-      "requires": [
-        {"or": [
-          {"combatProficiency": 2},
-          {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
-        ]}
-      ],
-      "isBunny": "yes"
     },
     {
       "link": [3, 1],
       "name": "Base",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [3, 3],
       "name": "Base - Top Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     },
     {
       "link": [3, 3],
       "name": "Base - Bottom Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [2]
     }
   ]
