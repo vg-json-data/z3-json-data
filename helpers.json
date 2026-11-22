@@ -221,5 +221,22 @@
       ]}
     ],
     "note": ["Throwing an item to the great fairy ponds converts bunny to Lonk and Superbunny to Link."]
+  },
+  {
+    "name": "h_collectNPCItem",
+    "requires": [
+      {"or": [
+        "free",
+        {"and": [
+          "canRiskPermanentLossOfAccess",
+          "bunnyToSuperbunny"
+        ]},
+        {"and": [
+          "canRiskPermanentLossOfAccess",
+          "lonkToLink"
+        ]}
+      ]}
+    ],
+    "note": ["Collecting an NPC item converts bunny to Superbunny and Lonk to Link, but is only doable one time."]
   }
 ]

@@ -68,7 +68,9 @@
     {
       "link": [1, 1],
       "name": "Base - Generous Guy",
-      "requires": [],
+      "requires": [
+        "h_collectNPCItem"
+      ],
       "collectsItems": [1]
     },
     {

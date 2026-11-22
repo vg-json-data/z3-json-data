@@ -81,38 +81,49 @@
     {
       "link": [1, 1],
       "name": "Base - Bottom Left Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     },
     {
       "link": [1, 1],
       "name": "Base - Top Left Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [2]
     },
     {
       "link": [1, 1],
       "name": "Base - Top Middle Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [3]
     },
     {
       "link": [1, 1],
       "name": "Base - Top Right Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [4]
     },
     {
       "link": [1, 2],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 1},
+        {"lift": 0}
       ]
     },
     {
       "link": [1, 3],
       "name": "Base",
-      "requires": []
+      "requires": [
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [2, 1],
@@ -124,13 +135,16 @@
     {
       "link": [2, 2],
       "name": "Base - Secret Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [5]
     },
     {
       "link": [3, 3],
       "name": "Pot Refill",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 2}}
       ]
     }

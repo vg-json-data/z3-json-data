@@ -591,7 +591,8 @@
       "name": "Deliver Purple Chest",
       "world": "light",
       "requires": [
-        {"follower": "Purple Chest"}
+        {"follower": "Purple Chest"},
+        "h_collectNPCItem"
       ],
       "collectsItems": [1],
       "followerComplete": "Purple Chest"

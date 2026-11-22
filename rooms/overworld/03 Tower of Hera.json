@@ -322,7 +322,8 @@
       "name": "Rescue Old Man",
       "world": "light",
       "requires": [
-        {"follower": "Old Man"}
+        {"follower": "Old Man"},
+        "h_collectNPCItem"
       ],
       "collectsItems": [1],
       "followerComplete": "Old Man"

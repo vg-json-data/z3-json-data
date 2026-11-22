@@ -45,7 +45,9 @@
     {
       "link": [1, 1],
       "name": "Base",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     },
     {

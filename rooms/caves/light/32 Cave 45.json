@@ -33,6 +33,7 @@
       "link": [1, 1],
       "name": "Heart Pots",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 5}}
       ]
     }

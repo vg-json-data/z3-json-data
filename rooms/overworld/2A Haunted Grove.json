@@ -87,7 +87,9 @@
       "link": [1, 1],
       "name": "Stumpy",
       "world": "dark",
-      "requires": [],
+      "requires": [
+        "h_collectNPCItem"
+      ],
       "collectsItems": [2]
     }
   ]
