@@ -98,11 +98,11 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
 
-The randomizer tracks Link's current form along each route and uses it to evaluate form-dependent requirements. The following requirements always succeed. When the current form matches the starting form, the randomizer updates it for subsequent requirements and strats. Otherwise, the form stays the same.
+The randomizer tracks Link's current form along each route and uses it to evaluate form-dependent requirements. The requirements below always succeed, and their effects apply to subsequent requirements and strats. Each `*To*` requirement changes the form only if it matches the listed starting form.
 
 | Requirement | Effect |
 | --- | --- |
-| `"recheckLinkState"` | Forces Link unless he is in the Dark World without the Moon Pearl. |
+| `"recheckLinkState"` | Sets the form to normal bunny if the resulting world is the Dark World and Link lacks the Moon Pearl. Otherwise, sets it to normal Link. For a world-changing strat, use `toWorld`. |
 | `"bunnyToSuperbunny"` | Changes normal bunny to superbunny. |
 | `"bunnyToLonk"` | Changes normal bunny to Lonk. |
 | `"superbunnyToBunny"` | Changes superbunny to normal bunny. |
@@ -114,15 +114,15 @@ The randomizer tracks Link's current form along each route and uses it to evalua
 
 The randomizer applies these rules automatically when traversing the corresponding transition. Room and connection data can rely on these rules without listing a form-change requirement for each transition.
 
-| Transition | Resulting form | Logical Requirement | 
+| Transition | Resulting form | Equivalent form effect |
 | --- | --- | --- |
 | Enter the underworld through a normal entrance | Keeps the current form. | `free` |
-| Enter the underworld through a normal drop entrance | Normal bunny becomes superbunny, Lonk becomes Link, and Link and superbunny keep their forms. | `bunnyToSuperbunny`, `lonkToLink` |
+| Enter the underworld through a drop entrance and land on dry ground or in shallow water | Normal bunny becomes superbunny, Lonk becomes Link, and Link and superbunny keep their forms. | `h_fallToLowerFloor` |
 | Exit the underworld to the overworld (Dark World) | With the Moon Pearl, becomes Link. Without the Moon Pearl, becomes normal bunny. | `recheckLinkState` |
 | Exit the underworld to the overworld (Light World, Moon Pearl) | With the Moon Pearl, becomes Link. | `recheckLinkState` |
 | Exit the underworld to the overworld (Light World, No Moon Pearl) | Without the Moon Pearl, keeps the current form. | `free` |
 
-Note that Fake worlds and drops into the underworld that land in deep water are deferred until a route needs them.
+Fake worlds and deep-water landings are deferred until a route needs them.
 
 ## Room-Specific Notables
 
