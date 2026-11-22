@@ -32,7 +32,8 @@
       "link": [1, 1],
       "name": "Mimic Kill",
       "requires": [
-        "Hammer"
+        "Hammer",
+        "h_openChest"
       ],
       "collectsItems": [1],
       "note": [

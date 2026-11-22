@@ -68,8 +68,9 @@
     {
       "link": [1, 1],
       "name": "Base - Generous Guy",
-      "requires": [],
-      "isBunny": "any",
+      "requires": [
+        "h_collectNPCItem"
+      ],
       "collectsItems": [1]
     },
     {
@@ -97,25 +98,33 @@
     {
       "link": [2, 2],
       "name": "Base - Top Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [2]
     },
     {
       "link": [2, 2],
       "name": "Base - Top Middle Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [3]
     },
     {
       "link": [2, 2],
       "name": "Base - Bottom Middle Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [4]
     },
     {
       "link": [2, 2],
       "name": "Base - Bottom Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [5]
     }
   ]

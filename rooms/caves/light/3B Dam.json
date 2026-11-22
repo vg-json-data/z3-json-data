@@ -50,7 +50,9 @@
     {
       "link": [1, 1],
       "name": "Base",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1],
       "devNote": ["Without a block clip, this prevents going to Node 2 without resetting the room."]
     },
@@ -100,7 +102,9 @@
     {
       "link": [2, 2],
       "name": "Open The Floodgates",
-      "requires": [],
+      "requires": [
+        "useABItems"
+      ],
       "clearsObstacles": ["Drained Floodgate"]
     }
   ]

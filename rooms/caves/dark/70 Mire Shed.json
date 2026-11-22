@@ -38,13 +38,17 @@
     {
       "link": [1, 1],
       "name": "Base - Open Left Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     },
     {
       "link": [1, 1],
       "name": "Base - Open Right Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [2]
     }
   ]

@@ -55,7 +55,10 @@
         {"magicPowder": 1}
       ],
       "collectsItems": [1],
-      "devNote": ["FIXME: Add fake powder method."]
+      "devNote": [
+        "FIXME: Add fake powder method.",
+        "FIXME: It is not clear if this removes Lonk state, as the practice hack regularly crashes when obtaining this item location."
+      ]
     }
   ]
 }

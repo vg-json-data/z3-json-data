@@ -28,10 +28,12 @@
       "link": [1, 1],
       "name": "Magic Refill",
       "requires": [
+        "lonkToLink",
         {"or": [
           "Hookshot",
           {"combatProficiency": 2}
         ]},
+        {"lift": 0},
         {"refill": {"type": "Magic", "limit": 32}}
       ]
     },
@@ -39,9 +41,13 @@
       "link": [1, 2],
       "name": "Base",
       "requires": [
+        "lonkToLink",
         {"or": [
           "Hookshot",
-          {"combatProficiency": 2}
+          {"and": [
+            {"combatProficiency": 2},
+            {"lift": 0}
+          ]}
         ]},
         {"cape": 16}
       ]
@@ -51,6 +57,8 @@
       "name": "Base",
       "requires": [
         {"cape": 16},
+        "lonkToLink",
+        {"lift": 0},
         {"refill": {"type": "Magic", "limit": 32}}
       ]
     }

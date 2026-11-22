@@ -33,6 +33,7 @@
       "link": [2, 2],
       "name": "Buy Red Potion",
       "requires": [
+        "h_purchaseItem",
         {"pay": 150},
         {"refill": {"type": "RedPotion", "limit": 1}}
       ]
@@ -41,6 +42,7 @@
       "link": [2, 2],
       "name": "Buy Heart",
       "requires": [
+        "h_purchaseItem",
         {"pay": 10},
         {"refill": {"type": "Health", "limit": 1}}
       ]
@@ -49,6 +51,7 @@
       "link": [2, 2],
       "name": "Buy 10 Bombs",
       "requires": [
+        "h_purchaseItem",
         {"pay": 50},
         {"refill": {"type": "Bombs", "limit": 10}}
       ]

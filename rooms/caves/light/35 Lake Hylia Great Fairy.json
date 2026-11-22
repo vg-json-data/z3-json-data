@@ -34,14 +34,15 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [1] 
     },
     {
       "link": [1, 1],
       "name": "Buy Bomb Capacity Upgrade",
       "requires": [
         {"pay": 100},
-        {"upgradeCapacity": "Bombs"}
+        {"upgradeCapacity": "Bombs"},
+        "h_greatFairyThrowItem"
       ]
     },
     {
@@ -49,7 +50,15 @@
       "name": "Buy Arrow Capacity Upgrade",
       "requires": [
         {"pay": 100},
-        {"upgradeCapacity": "Arrows"}
+        {"upgradeCapacity": "Arrows"},
+        "h_greatFairyThrowItem"
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Interact with the Pond",
+      "requires": [
+        "h_greatFairyThrowItem"
       ]
     },
     {

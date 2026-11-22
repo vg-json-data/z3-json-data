@@ -104,7 +104,8 @@
       "link": [1, 1],
       "name": "Base - Bottom Right Chest",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        "h_openChest"
       ],
       "collectsItems": [1]
     },
@@ -112,7 +113,8 @@
       "link": [1, 1],
       "name": "Base - Top Right Chest",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        "h_openChest"
       ],
       "collectsItems": [2]
     },
@@ -120,7 +122,8 @@
       "link": [1, 1],
       "name": "Base - Top Left Chest",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        "h_openChest"
       ],
       "collectsItems": [3]
     },
@@ -128,7 +131,8 @@
       "link": [1, 1],
       "name": "Base - Bottom Left Chest",
       "requires": [
-        "Hookshot"
+        "Hookshot",
+        "h_openChest"
       ],
       "collectsItems": [4]
     },
@@ -136,7 +140,8 @@
       "link": [1, 1],
       "name": "Bonk Boost - Bottom Right Chest",
       "requires": [
-        "canBonkBoost"
+        "canBonkBoost",
+        "h_openChest"
       ],
       "collectsItems": [1],
       "note": ["Bonk Boost twice to get to the bottom right chest."]
