@@ -269,7 +269,9 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        "BookOfMudora"
+        "BookOfMudora",
+        "lonkToLink",
+        "bunnyToSuperbunny"
       ]
     },
     {
@@ -401,7 +403,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -429,7 +431,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -472,7 +474,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -481,7 +483,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -544,7 +546,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ],
       "unlocksDoor": [1]
     },
@@ -577,8 +579,9 @@
       "name": "Bombos Tablet",
       "world": "light",
       "requires": [
-        {"sword": 2},
-        "BookOfMudora"
+        "BookOfMudora",
+        "lonkToLink",
+        {"sword": 2}
       ],
       "collectsItems": [2]
     },

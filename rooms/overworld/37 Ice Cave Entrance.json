@@ -218,7 +218,7 @@
       "name": "Base - Glove",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ],
       "unlocksDoor": [3]
     },
@@ -227,7 +227,7 @@
       "name": "Base - Glove",
       "world": "dark",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ],
       "unlocksDoor": [4]
     },
@@ -237,7 +237,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },

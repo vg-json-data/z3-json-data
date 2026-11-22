@@ -120,7 +120,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -134,7 +134,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {

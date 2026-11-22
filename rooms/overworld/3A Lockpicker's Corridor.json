@@ -159,7 +159,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -168,7 +168,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -242,7 +242,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -277,7 +277,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -303,7 +303,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -351,7 +351,6 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"sword": 1},
-          {"glove": 1},
           "Boomerang",
           "Hookshot",
           {"combatProficiency": 2},
@@ -370,7 +369,7 @@
       "requires": [
         {"or": [
           {"sword": 1},
-          {"glove": 1},
+          {"carry": 1},
           "Boomerang",
           "Hookshot",
           {"arrows": 2},
@@ -612,7 +611,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -624,7 +623,7 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"sword": 1},
-          {"glove": 1},
+          {"carry": 1},
           "Boomerang",
           "Hookshot",
           {"arrows": 2},
@@ -662,7 +661,7 @@
       "name": "Base - Glove",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ],
       "unlocksDoor": [1]
     },
