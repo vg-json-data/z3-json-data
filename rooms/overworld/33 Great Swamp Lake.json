@@ -123,7 +123,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -131,7 +131,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -141,7 +141,7 @@
       "requires": [
         "canCrossRoomOverheadPickups",
         "Hammer",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -175,7 +175,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {

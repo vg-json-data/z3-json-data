@@ -326,7 +326,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner."]
@@ -358,7 +358,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -390,7 +390,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -443,7 +443,7 @@
         {"or": [
           "h_NoAgahnimLoophole",
           {"combatProficiency": 2},
-          {"glove": 0},
+          {"carry": 0},
           {"sword": 1},
           "Boomerang",
           "Hookshot",
@@ -473,7 +473,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -578,7 +578,7 @@
       "name": "Bonk Fairy",
       "world": "dark",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Fairy", "limit": 1}}
       ],
       "note": ["The left tree will release a fairy when dashed into."]
@@ -614,7 +614,8 @@
             "canRiskPermanentLossOfAccess",
             {"notFlag": "GameStateAgahnim"},
             {"or": [
-              {"glove": 0},
+              {"combatProficiency": 2},
+              {"carry": 0},
               {"damage": {"enemy": "Sword Soldier (Green)", "count": 1}}
             ]}
           ]}
@@ -643,7 +644,7 @@
       "world": "light",
       "requires": [
         {"combatProficiency": 3},
-        {"glove": 0}
+        {"carry": 0}
       ],
       "note": [
         "Kill the guard with 4 bushes just south of it.",
@@ -662,7 +663,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -676,7 +677,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -721,7 +722,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -775,7 +776,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -807,8 +808,7 @@
       "requires": [
         "h_jumpOffLedge"
       ],
-      "collectsItems": [1],
-      "isBunny": "any"
+      "collectsItems": [1]
     },
     {
       "link": [11, 9],

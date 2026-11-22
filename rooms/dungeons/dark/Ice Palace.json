@@ -873,6 +873,7 @@
       "link": [19, 18],
       "name": "Base",
       "requires": [
+        {"lift": 0},
         {"or": [
           "Hookshot",
           {"blueCane": 24},
@@ -887,7 +888,7 @@
       "name": "Base - Block Key",
       "requires": [
         "Hammer",
-        {"glove": 1}
+        {"lift": 1}
       ],
       "collectsItems": [7]
     },
@@ -896,7 +897,7 @@
       "name": "Base - Open Chest",
       "requires": [
         "Hammer",
-        {"glove": 1}
+        {"lift": 1}
       ],
       "collectsItems": [8]
     },
@@ -905,7 +906,7 @@
       "name": "Base",
       "requires": [
         "Hammer",
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -1042,7 +1043,7 @@
       "name": "Base",
       "requires": [
         "Hammer",
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {

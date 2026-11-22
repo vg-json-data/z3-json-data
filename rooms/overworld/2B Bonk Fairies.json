@@ -81,15 +81,22 @@
     },
     {
       "id": 3,
-      "name": "Bonk Rock Entrance",
-      "world": "both",
+      "name": "Light Bonk Rock Entrance",
+      "world": "light",
       "entrances": [
         {
           "id": 1,
           "romEntranceId": 113,
           "name": "Light Bonk Fairies",
           "world": "light"
-        },
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dark Bonk Rock Entrance",
+      "world": "dark",
+      "entrances": [
         {
           "id": 2,
           "romEntranceId": 113,
@@ -123,7 +130,7 @@
       "name": "Base - Bonk Rocks",
       "world": "light",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [1]
     },
@@ -132,7 +139,7 @@
       "name": "Base - Bonk Rocks",
       "world": "dark",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [2]
     },
@@ -189,7 +196,7 @@
       ]
     },
     {
-      "link": [1, 3],
+      "link": [1, 4],
       "name": "Base - Already Opened",
       "world": "dark",
       "requires": [
@@ -254,7 +261,13 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "world": "any",
+      "world": "light",
+      "requires": []
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "world": "dark",
       "requires": []
     }
   ]

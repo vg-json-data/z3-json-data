@@ -139,7 +139,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -148,7 +148,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -158,7 +158,7 @@
       "requires": [
         {"or": [
           "Hammer",
-          {"glove": 1}
+          {"lift": 1}
         ]}
       ]
     },
@@ -182,7 +182,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -192,7 +192,7 @@
       "requires": [
         {"or": [
           "Hammer",
-          {"glove": 1}
+          {"lift": 1}
         ]}
       ]
     },
@@ -211,7 +211,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -252,7 +252,7 @@
           {"fireRod": 1},
           {"arrows": 2},
           {"silverArrows": 1},
-          {"glove": 1},
+          {"carry": 1},
           {"redCane": 1},
           {"blueCane": 28},
           {"and": [
@@ -270,7 +270,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -281,7 +281,7 @@
       "entranceState": {"state": "overhead", "type": "class3"},
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1},
+        {"carry": 1},
         {"combatProficiency": 4},
         {"refill": {"type": "Bombs", "limit": 1}}
       ],

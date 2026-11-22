@@ -139,7 +139,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -266,7 +266,7 @@
       "requires": [
         "canCrossRoomOverheadPickups",
         {"flag": "GameStateZelda"},
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -285,7 +285,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -384,7 +384,7 @@
       "requires": [
         "canCrossRoomOverheadPickups",
         {"flag": "GameStateZelda"},
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -403,7 +403,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

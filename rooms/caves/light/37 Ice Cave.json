@@ -81,7 +81,7 @@
       "link": [3, 3],
       "name": "Good Bee",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "GoldBee", "limit": 1}}
       ],
       "note": ["Dash into the statue to spawn a gold bee."]

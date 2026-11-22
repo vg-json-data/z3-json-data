@@ -172,7 +172,7 @@
       "world": "light",
       "requires": [
         {"combatProficiency": 3},
-        {"glove": 0},
+        {"carry": 0},
         {"or": [
           "h_NoAgahnimLoophole",
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
@@ -186,7 +186,6 @@
       "requires": [
         {"combatProficiency": 4}
       ],
-      "isBunny": "any",
       "note": [
         "On entry, quickly sneak past the guard by moving southeast.",
         "Trigger the second guard and use the bush to block him and run on the other side."
@@ -204,8 +203,7 @@
             {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
           ]}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [1, 2],
@@ -228,7 +226,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -274,7 +272,7 @@
       "world": "light",
       "requires": [
         {"combatProficiency": 2},
-        {"glove": 0}
+        {"carry": 0}
       ],
       "note": ["Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."]
     },
@@ -285,7 +283,6 @@
       "requires": [
         {"combatProficiency": 3}
       ],
-      "isBunny": "any",
       "note": ["Wait for the guard to notice Link, then use the signpost to get the guard to go left, run up right and precisely dodge the other guard(s)."]
     },
     {
@@ -300,8 +297,7 @@
             {"damage": {"enemy": "Sword Soldier (Green)", "count": 2}}
           ]}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [2, 1],
@@ -342,7 +338,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -362,7 +358,7 @@
       "requires": [
         "Hammer",
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -388,7 +384,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -404,7 +400,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -413,7 +409,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -431,7 +427,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -440,7 +436,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -448,7 +444,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -457,7 +453,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -467,7 +463,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class1"}
     }

@@ -39,14 +39,12 @@
     {
       "link": [1, 2],
       "name": "Base",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 1],
       "name": "Base",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [2, 2],

@@ -144,7 +144,7 @@
       "name": "Bonk Bomb",
       "world": "dark",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Bombs", "limit": 1}}
       ],
       "note": ["The top left bonk rock contains a bomb."]
@@ -154,7 +154,7 @@
       "name": "Bonk Fairy",
       "world": "dark",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Fairy", "limit": 1}}
       ],
       "note": ["The top middle bonk rock contains a fairy."]
@@ -174,7 +174,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -184,7 +184,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["With no weapons, Link can kill the bottom left two Ropas with bushes."]
@@ -194,7 +194,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -202,7 +202,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -210,7 +210,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -218,18 +218,16 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 1}
-      ],
-      "isBunny": "no"
+        {"lift": 1}
+      ]
     },
     {
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 0}
-      ],
-      "isBunny": "no"
+        {"lift": 0}
+      ]
     },
     {
       "link": [2, 2],
@@ -246,7 +244,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -256,7 +254,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "note": ["With no weapons, Link can kill some of the Ropas with bushes."]
@@ -266,7 +264,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -280,7 +278,7 @@
       "name": "Base",
       "world": "light",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -288,7 +286,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -296,7 +294,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -304,7 +302,7 @@
       "name": "Base - Open Grave",
       "world": "light",
       "requires": [
-        "PegasusBoots"
+        "h_PegasusBootsBonk"
       ],
       "unlocksDoor": [1]
     },

@@ -287,7 +287,8 @@
       "name": "Bottle Merchant",
       "world": "light",
       "requires": [
-        {"pay": 100}
+        {"pay": 100},
+        "lonkToLink"
       ],
       "collectsItems": [2]
     },
@@ -301,6 +302,18 @@
       "exitState": {"state": "overhead", "type": "class3"}
     },
     {
+      "link": [1, 1],
+      "name": "Grab Thieves' Town Gate - Convert Superbunny to Link (Loss of Access)",
+      "world": "dark",
+      "requires": [
+        "useABItems",
+        "canRiskPermanentLossOfAccess",
+        {"notFlag": "OpenedThievesTown"},
+        "superbunnyToLink"
+      ],
+      "note": ["Grabbing the gate converts superbunny to Link and can be done an unlimited number of times until the dungeon is opened."]
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -311,7 +324,7 @@
       "name": "Base - Open Thieves' Town",
       "world": "dark",
       "requires": [
-        {"glove": 1}
+        "useABItems"
       ],
       "setsFlags": ["OpenedThievesTown"]
     },
@@ -328,7 +341,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -344,7 +357,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -390,7 +403,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {
@@ -406,7 +419,7 @@
       "name": "Base",
       "world": "any",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {

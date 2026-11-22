@@ -33,7 +33,6 @@
       "name": "Base - Open Left Chest",
       "requires": [
         "Hammer",
-        {"glove": 1},
         {"or": [
           {"damage": {"enemy": "Ground Spikes", "count": 15}},
           {"and": [
@@ -66,7 +65,8 @@
             "HalfMagic",
             {"cape": 206}
           ]}
-        ]}
+        ]},
+        {"lift": 1}
       ]
     },
     {

@@ -141,7 +141,7 @@
       "name": "Maze Race Game and Return",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ],
       "collectsItems": [1],
       "devNote": ["The lady will not let Link pass left to right unless he already just started the game going right to left."]
@@ -160,7 +160,7 @@
       "name": "Maze Race Game",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ],
       "collectsItems": [1]
     },
@@ -204,10 +204,23 @@
       "world": "dark",
       "requires": [
         {"pay": 80},
-        {"glove": 1},
+        {"carry": 1},
         "canCrossRoomOverheadPickups"
       ],
       "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [3, 2],
+      "name": "Digging Game and Jump Point",
+      "world": "dark",
+      "requires": [
+        {"pay": 80},
+        "useYItems",
+        {"lift": 2},
+        "h_jumpOffLedge"
+      ],
+      "collectsItems": [2],
+      "devNote": ["Usually Link will get the 80 rupees back from digging."]
     },
     {
       "link": [3, 2],
@@ -215,11 +228,9 @@
       "world": "dark",
       "requires": [
         {"pay": 80},
-        {"glove": 2},
+        {"lift": 2},
         "h_jumpOffLedge"
-      ],
-      "collectsItems": [2],
-      "devNote": ["Usually you will get the 80 rupees back from digging."]
+      ]
     },
     {
       "link": [3, 2],
@@ -227,7 +238,7 @@
       "world": "dark",
       "requires": [
         {"pay": 80},
-        {"glove": 2},
+        {"carry": 2},
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
@@ -238,11 +249,11 @@
       "name": "Digging Game",
       "world": "dark",
       "requires": [
-        {"pay": 80}
+        {"pay": 80},
+        "useYItems"
       ],
       "collectsItems": [2],
-      "isBunny": "no",
-      "devNote": ["Usually you will get the 80 rupees back from digging."]
+      "devNote": ["Usually Link will get the 80 rupees back from digging."]
     }
   ]
 }

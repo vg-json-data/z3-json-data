@@ -139,7 +139,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -165,7 +165,7 @@
       "name": "Base - Bush",
       "world": "light",
       "requires": [
-        {"glove": 0}
+        {"lift": 0}
       ]
     },
     {

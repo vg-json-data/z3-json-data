@@ -192,7 +192,7 @@
       "name": "Hera Pot Clip - Superspeed Setup",
       "requires": [
         {"notable": "Hera Pot Clip"},
-        "PegasusBoots",
+        "h_PegasusBootsNoBonk",
         "Hookshot"
       ],
       "note": [

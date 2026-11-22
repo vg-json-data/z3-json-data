@@ -196,7 +196,7 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"glove": 1}
+        {"lift": 1}
       ]
     },
     {
@@ -219,7 +219,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -257,7 +257,7 @@
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

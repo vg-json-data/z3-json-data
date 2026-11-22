@@ -109,7 +109,7 @@
       "name": "Bonk Bomb",
       "world": "light",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Bombs", "limit": 1}}
       ]
     },
@@ -118,7 +118,7 @@
       "name": "Bonk Fairies",
       "world": "dark",
       "requires": [
-        "PegasusBoots",
+        "h_PegasusBootsBonk",
         {"refill": {"type": "Fairy", "limit": 2}}
       ]
     },
@@ -135,8 +135,7 @@
       "link": [1, 2],
       "name": "Base",
       "world": "light",
-      "requires": [],
-      "isBunny": "any"
+      "requires": []
     },
     {
       "link": [1, 2],
@@ -147,15 +146,14 @@
           {"combatProficiency": 2},
           {"damage": {"enemy": "Taros (Red)", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [1, 2],
       "name": "Base - Bush Kill",
       "world": "dark",
       "requires": [
-        {"glove": 0}
+        {"carry": 0}
       ]
     },
     {
@@ -185,8 +183,7 @@
           ]},
           {"damage": {"enemy": "Taros (Red)", "count": 1}}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [2, 1],

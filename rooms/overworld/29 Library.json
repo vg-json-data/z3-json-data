@@ -114,7 +114,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -124,7 +124,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -139,7 +139,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -148,7 +148,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"},
       "devNote": ["If there is a guard in the way, lure and get it stuck behind bushes before passing it."]
@@ -170,8 +170,7 @@
       "world": "light",
       "requires": [
         "h_NoAgahnimLoophole"
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 1],
@@ -186,15 +185,14 @@
             {"notFlag": "GameStateAgahnim"}
           ]}
         ]}
-      ],
-      "isBunny": "any"
+      ]
     },
     {
       "link": [2, 2],
       "name": "Rescue Frog (Dwarf)",
-      "world": "light",
+      "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ],
       "setsFollower": "Dwarf"
     },
@@ -207,11 +205,10 @@
           "h_NoAgahnimLoophole",
           {"and": [
             {"combatProficiency": 2},
-            {"glove": 0}
+            {"carry": 0}
           ]}
         ]}
-      ],
-      "isBunny": "no"
+      ]
     },
     {
       "link": [2, 3],
@@ -227,7 +224,6 @@
           ]}
         ]}
       ],
-      "isBunny": "any",
       "note": ["It is possible to lure the guard around the bushes, to avoid damage."]
     },
     {
@@ -274,7 +270,7 @@
       "requires": [
         {"or": [
           "h_jumpOffLedge",
-          {"glove": 2}
+          {"lift": 2}
         ]}
       ]
     },
@@ -316,7 +312,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     }

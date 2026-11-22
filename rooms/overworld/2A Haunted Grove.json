@@ -88,8 +88,7 @@
       "name": "Stumpy",
       "world": "dark",
       "requires": [],
-      "collectsItems": [2],
-      "isBunny": "any"
+      "collectsItems": [2]
     }
   ]
 }

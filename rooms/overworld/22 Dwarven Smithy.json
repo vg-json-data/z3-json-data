@@ -146,7 +146,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -182,10 +182,10 @@
     },
     {
       "link": [1, 5],
-      "name": "Base - Non-Vanilla Rock",
+      "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -196,10 +196,10 @@
     },
     {
       "link": [1, 6],
-      "name": "Base - Non-Vanilla Rock",
+      "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -213,7 +213,7 @@
       "name": "Base",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -239,10 +239,10 @@
     },
     {
       "link": [5, 1],
-      "name": "Base - Non-Vanilla Rock",
+      "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -260,7 +260,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class1"}
     },
@@ -272,10 +272,10 @@
     },
     {
       "link": [6, 1],
-      "name": "Base - Non-Vanilla Rock",
+      "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
       "requires": [
-        {"glove": 2}
+        {"lift": 2}
       ]
     },
     {
@@ -293,7 +293,7 @@
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 2}
+        {"carry": 2}
       ],
       "exitState": {"state": "overhead", "type": "class1"}
     }

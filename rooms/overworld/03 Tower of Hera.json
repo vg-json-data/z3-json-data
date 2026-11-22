@@ -396,7 +396,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1},
+        {"carry": 1},
         {"or": [
           {"combatProficiency": 3},
           "h_jumpOffLedge"
@@ -427,7 +427,7 @@
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups",
-        {"glove": 1}
+        {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
     },
@@ -465,7 +465,11 @@
           "h_NoAgahnimLoophole",
           {"arrows": 2},
           {"silverArrows": 2},
-          {"rod": 2}
+          {"rod": 2},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            {"notFlag": "GameStateAgahnim"}
+          ]}
         ]}
       ]
     },
@@ -580,8 +584,9 @@
       "name": "Ether Tablet",
       "world": "light",
       "requires": [
-        {"sword": 2},
-        "BookOfMudora"
+        "BookOfMudora",
+        "lonkToLink",
+        {"sword": 2}
       ],
       "collectsItems": [3]
     },

@@ -66,15 +66,6 @@
       "type": "string",
       "enum": ["Bombs", "Arrows"]
     },
-    "glove": {
-      "description": "Deprecated. Use lift or carry depending on the action.",
-      "type": "integer",
-      "enum": [
-        0,
-        1,
-        2
-      ]
-    },
     "lift": {
       "description": "Requires the given glove level or higher and the ability to lift. Superbunny can lift.",
       "type": "integer",
