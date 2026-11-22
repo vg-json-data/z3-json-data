@@ -207,8 +207,10 @@
       "lonkToLink",
       "bunnyToSuperbunny"
     ],
-    "note": ["Falling in a pit to a lower floor will convert Lonk to Link and Bunny to Superbunny."],
-    "devNote": ["FIXME: Does it behave the same way in the overworld to underworld?"]
+    "note": [
+      "Falling in a pit to a lower floor will convert Lonk to Link and Bunny to Superbunny.",
+      "This also behaves the same way if Link enters the underworld from a drop entrance."
+    ]
   },
   {
     "name": "h_greatFairyThrowItem",

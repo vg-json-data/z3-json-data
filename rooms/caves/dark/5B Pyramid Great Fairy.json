@@ -45,6 +45,22 @@
         "h_greatFairyThrowItem"
       ],
       "collectsItems": [2]
+    },
+    {
+      "link": [1, 1],
+      "name": "Fill Empty Bottle",
+      "requires": [
+        {"refill": {"type": "GreenPotion", "limit": 1}},
+        "h_greatFairyThrowItem"
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Throw Any Item",
+      "requires": [
+        "h_greatFairyThrowItem"
+      ],
+      "note": ["If Link has zero throwable items, select 'No' in order to prevent a softlock."]
     }
   ]
 }

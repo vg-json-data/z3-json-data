@@ -143,7 +143,7 @@
     },
     {
       "link": [1, 3],
-      "name": "Push Block Moved",
+      "name": "Push Block Already Moved",
       "requires": [
         {"obstaclesCleared": ["Push Block"]}
       ]
@@ -162,7 +162,8 @@
       "name": "Buy Red Potion",
       "requires": [
         {"pay": 150},
-        {"refill": {"type": "RedPotion", "limit": 1}}
+        {"refill": {"type": "RedPotion", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -170,7 +171,8 @@
       "name": "Buy Heart",
       "requires": [
         {"pay": 10},
-        {"refill": {"type": "Health", "limit": 1}}
+        {"refill": {"type": "Health", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -178,7 +180,8 @@
       "name": "Buy 10 Bombs",
       "requires": [
         {"pay": 50},
-        {"refill": {"type": "Bombs", "limit": 10}}
+        {"refill": {"type": "Bombs", "limit": 10}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -199,7 +202,9 @@
       "link": [3, 3],
       "name": "Base - Open Left Chest",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 2},
+        {"lift": 0},
+        "h_openChest"
       ],
       "collectsItems": [6]
     },
@@ -207,9 +212,18 @@
       "link": [3, 3],
       "name": "Base - Open Right Chest",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 2},
+        {"lift": 0},
+        "h_openChest"
       ],
       "collectsItems": [7]
+    },
+    {
+      "link": [3, 3],
+      "name": "Climb then Fall - Gain Superbunny",
+      "requires": [
+        "h_fallToLowerFloor"
+      ]
     },
     {
       "link": [3, 4],
@@ -235,7 +249,8 @@
             {"damage": {"enemy": "Mini-Moldorm", "count": 1}}
           ]},
           {"combatProficiency": 4}
-        ]}
+        ]},
+        "h_openChest"
       ],
       "collectsItems": [1, 2, 3, 4, 5]
     },
@@ -290,13 +305,17 @@
     {
       "link": [5, 5],
       "name": "Base - Open Chests",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1, 2, 3, 4, 5]
     },
     {
       "link": [6, 3],
       "name": "Base",
-      "requires": []
+      "requires": [
+        "h_fallToLowerFloor"
+      ]
     },
     {
       "link": [6, 3],

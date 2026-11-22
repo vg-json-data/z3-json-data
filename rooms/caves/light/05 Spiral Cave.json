@@ -50,7 +50,8 @@
           {"sword": 1},
           "Hookshot",
           {"damage": {"enemy": "Mini-Moldorm", "count": 3}}
-        ]}
+        ]},
+        "h_fallToLowerFloor"
       ]
     },
     {
@@ -87,7 +88,8 @@
             {"combatProficiency": 4},
             {"bombs": 3}
           ]}
-        ]}
+        ]},
+        "h_fallToLowerFloor"
       ]
     },
     {
@@ -98,14 +100,17 @@
           {"sword": 1},
           {"combatProficiency": 2},
           {"damage": {"enemy": "Mini-Moldorm", "count": 2}}
-        ]}
+        ]},
+        "h_jumpOffLedge"
       ],
       "devNote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
     },
     {
       "link": [3, 3],
       "name": "Base - Grab the Item",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     }
   ]

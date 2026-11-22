@@ -34,7 +34,8 @@
       "link": [1, 3],
       "name": "Base",
       "requires": [
-        "Lamp"
+        "Lamp",
+        "h_jumpOffLedge"
       ],
       "setsFollower": "Old Man"
     },
@@ -42,7 +43,8 @@
       "link": [1, 3],
       "name": "Darkness",
       "requires": [
-        {"darkProficiency": 2}
+        {"darkProficiency": 2},
+        "h_jumpOffLedge"
       ],
       "setsFollower": "Old Man"
     },

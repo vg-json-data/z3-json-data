@@ -43,7 +43,10 @@
     {
       "link": [1, 2],
       "name": "Base",
-      "requires": []
+      "requires": [
+        "h_fallToLowerFloor",
+        "h_jumpOffLedge"
+      ]
     },
     {
       "link": [2, 3],
@@ -58,8 +61,18 @@
     {
       "link": [3, 1],
       "name": "Base",
-      "requires": [],
+      "requires": [
+        "h_fallToLowerFloor"
+      ],
       "note": ["Drop using the top right pit."]
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": [
+        "h_fallToLowerFloor"
+      ],
+      "note": ["Drop using one of the southern pits to convert bunny to superbunnyand remain at the lower entrance."]
     }
   ]
 }
