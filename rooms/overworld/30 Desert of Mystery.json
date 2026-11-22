@@ -474,7 +474,8 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        {"lift": 2}
+        {"lift": 2},
+        "recheckLinkState"
       ]
     },
     {
@@ -609,7 +610,8 @@
       "fromWorld": "dark",
       "toWorld": "light",
       "requires": [
-        "MagicMirror"
+        "MagicMirror",
+        "recheckLinkState"
       ],
       "note": ["Mirror onto the upper ledge."]
     },

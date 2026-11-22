@@ -119,7 +119,8 @@ For a strat that begins and ends in the same world, `world` has one of the follo
   "toWorld": "light",
   "name": "Base",
   "requires": [
-    "MagicMirror"
+    "MagicMirror",
+    "recheckLinkState"
   ]
 }
 ```

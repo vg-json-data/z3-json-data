@@ -218,7 +218,8 @@
       "fromWorld": "dark",
       "toWorld": "light",
       "requires": [
-        "MagicMirror"
+        "MagicMirror",
+        "recheckLinkState"
       ],
       "clearsObstacles": ["Dark World Portal"]
     },
@@ -265,7 +266,8 @@
       "fromWorld": "light",
       "toWorld": "dark",
       "requires": [
-        {"obstaclesCleared": ["Dark World Portal"]}
+        {"obstaclesCleared": ["Dark World Portal"]},
+        "recheckLinkState"
       ]
     },
     {

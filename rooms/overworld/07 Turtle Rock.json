@@ -183,7 +183,8 @@
       "toWorld": "dark",
       "name": "Dark World Portal",
       "requires": [
-        "Hammer"
+        "Hammer",
+        "recheckLinkState"
       ]
     },
     {

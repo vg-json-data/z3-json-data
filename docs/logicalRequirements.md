@@ -98,16 +98,31 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
 
-The following requirements always succeed. They change Link's form only when the starting form matches.
+The randomizer tracks Link's current form along each route and uses it to evaluate form-dependent requirements. The following requirements always succeed. When the current form matches the starting form, the randomizer updates it for subsequent requirements and strats. Otherwise, the form stays the same.
 
 | Requirement | Effect |
 | --- | --- |
+| `"recheckLinkState"` | Forces Link unless he is in the Dark World without the Moon Pearl. |
 | `"bunnyToSuperbunny"` | Changes normal bunny to superbunny. |
 | `"bunnyToLonk"` | Changes normal bunny to Lonk. |
 | `"superbunnyToBunny"` | Changes superbunny to normal bunny. |
 | `"superbunnyToLink"` | Changes superbunny to normal Link. |
 | `"lonkToLink"` | Changes Lonk to normal Link. |
 | `"lonkToBunny"` | Changes Lonk to normal bunny. |
+
+#### Implicit Form Changes
+
+The randomizer applies these rules automatically when traversing the corresponding transition. Room and connection data can rely on these rules without listing a form-change requirement for each transition.
+
+| Transition | Resulting form | Logical Requirement | 
+| --- | --- | --- |
+| Enter the underworld through a normal entrance | Keeps the current form. | `free` |
+| Enter the underworld through a normal drop entrance | Normal bunny becomes superbunny, Lonk becomes Link, and Link and superbunny keep their forms. | `bunnyToSuperbunny`, `lonkToLink` |
+| Exit the underworld to the overworld (Dark World) | With the Moon Pearl, becomes Link. Without the Moon Pearl, becomes normal bunny. | `recheckLinkState` |
+| Exit the underworld to the overworld (Light World, Moon Pearl) | With the Moon Pearl, becomes Link. | `recheckLinkState` |
+| Exit the underworld to the overworld (Light World, No Moon Pearl) | Without the Moon Pearl, keeps the current form. | `free` |
+
+Note that Fake worlds and drops into the underworld that land in deep water are deferred until a route needs them.
 
 ## Room-Specific Notables
 
