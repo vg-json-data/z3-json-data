@@ -121,6 +121,8 @@ The randomizer applies these rules automatically when traversing the correspondi
 | Exit the underworld to the overworld (Dark World) | With the Moon Pearl, becomes Link. Without the Moon Pearl, becomes normal bunny. | `recheckLinkState` |
 | Exit the underworld to the overworld (Light World, Moon Pearl) | With the Moon Pearl, becomes Link. | `recheckLinkState` |
 | Exit the underworld to the overworld (Light World, No Moon Pearl) | Without the Moon Pearl, keeps the current form. | `free` |
+| Travel with the Flute | Sets the form to normal Link when the bird picks Link up. Assumes all Flute destinations are in the Light World. | `lonkToLink` |
+| Travel through a whirlpool | Keeps the current form during the warp. | `free` |
 
 Fake worlds and deep-water landings are deferred until a route needs them.
 

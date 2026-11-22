@@ -396,7 +396,8 @@
       "requires": [
         "OcarinaInactive"
       ],
-      "collectsItems": [1]
+      "collectsItems": [1],
+      "devNote": ["Using the Flute to travel converts Lonk to Link, but simply activating it does not change states."]
     },
     {
       "link": [3, 1],
