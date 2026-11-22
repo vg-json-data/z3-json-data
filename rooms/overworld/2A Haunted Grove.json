@@ -79,7 +79,8 @@
       "name": "Dig",
       "world": "light",
       "requires": [
-        "Shovel"
+        "Shovel",
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     },

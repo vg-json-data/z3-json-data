@@ -1131,8 +1131,11 @@
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
-      "requires": [],
-      "collectsItems": [1]
+      "requires": [
+        "h_collectItemOverhead"
+      ],
+      "collectsItems": [1],
+      "devNote": ["FIXME: This item can actually be collected multiple times in vanilla, as long as Link doesn't give it to the witch."]
     },
     {
       "link": [8, 11],

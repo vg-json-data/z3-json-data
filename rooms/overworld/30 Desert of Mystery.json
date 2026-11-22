@@ -580,7 +580,7 @@
       "world": "light",
       "requires": [
         "BookOfMudora",
-        "lonkToLink",
+        "h_collectItemOverhead",
         {"sword": 2}
       ],
       "collectsItems": [2]
