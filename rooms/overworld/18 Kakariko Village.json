@@ -288,7 +288,7 @@
       "world": "light",
       "requires": [
         {"pay": 100},
-        "h_collectNPCItem"
+        "h_collectItemOverhead"
       ],
       "collectsItems": [2]
     },

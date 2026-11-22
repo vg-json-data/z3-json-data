@@ -27,6 +27,7 @@
       "link": [1, 1],
       "name": "Heart Pot",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 2}}
       ]
     },
@@ -34,7 +35,8 @@
       "link": [1, 1],
       "name": "Show Bottle to Sick Kid",
       "requires": [
-        "Bottle"
+        "Bottle",
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     }

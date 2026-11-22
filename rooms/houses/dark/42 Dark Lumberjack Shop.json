@@ -34,14 +34,16 @@
       "name": "Buy Red Potion",
       "requires": [
         {"pay": 150},
-        {"refill": {"type": "RedPotion", "limit": 1}}
+        {"refill": {"type": "RedPotion", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
       "link": [2, 2],
       "name": "Buy Blue Shield",
       "requires": [
-        {"pay": 50}
+        {"pay": 50},
+        "h_purchaseItem"
       ],
       "grantsItems": ["BlueShield"]
     },
@@ -50,7 +52,8 @@
       "name": "Buy 10 Bombs",
       "requires": [
         {"pay": 50},
-        {"refill": {"type": "Bombs", "limit": 10}}
+        {"refill": {"type": "Bombs", "limit": 10}},
+        "h_purchaseItem"
       ]
     }
   ]

@@ -28,6 +28,14 @@
       "link": [2, 1],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Gamble Minigame",
+      "requires": [
+        {"pay": 100},
+        "h_openChest"
+      ]
     }
   ]
 }

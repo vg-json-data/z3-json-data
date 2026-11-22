@@ -35,8 +35,7 @@
       "requires": [
         "h_FortuneTellerPayment",
         {"refill": {"type": "Health", "limit": 20}}
-      ],
-      "isBunny": "any"
+      ]
     }
   ]
 }

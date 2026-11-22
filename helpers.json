@@ -223,7 +223,7 @@
     "note": ["Throwing an item to the great fairy ponds converts bunny to Lonk and Superbunny to Link."]
   },
   {
-    "name": "h_collectNPCItem",
+    "name": "h_collectItemOverhead",
     "requires": [
       {"or": [
         "free",
@@ -237,6 +237,6 @@
         ]}
       ]}
     ],
-    "note": ["Collecting an NPC item converts bunny to Superbunny and Lonk to Link, but is only doable one time."]
+    "note": ["Collecting an item overhead converts bunny to Superbunny and Lonk to Link, but is only doable one time."]
   }
 ]

@@ -33,7 +33,8 @@
       "link": [2, 2],
       "name": "Buy Red Shield",
       "requires": [
-        {"pay": 500}
+        {"pay": 500},
+        "h_purchaseItem"
       ],
       "grantsItems": ["RedShield"]
     },
@@ -42,7 +43,8 @@
       "name": "Buy Bee",
       "requires": [
         {"pay": 10},
-        {"refill": {"type": "Bee", "limit": 1}}
+        {"refill": {"type": "Bee", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -50,7 +52,8 @@
       "name": "Buy 10 Arrows",
       "requires": [
         {"pay": 30},
-        {"refill": {"type": "Arrows", "limit": 10}}
+        {"refill": {"type": "Arrows", "limit": 10}},
+        "h_purchaseItem"
       ]
     }
   ]

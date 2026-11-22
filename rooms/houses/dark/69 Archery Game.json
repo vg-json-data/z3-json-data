@@ -28,6 +28,14 @@
       "link": [2, 1],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [2, 2],
+      "name": "Archery Minigame",
+      "requires": [
+        {"pay": 20},
+        "useYItems"
+      ]
     }
   ]
 }
