@@ -592,7 +592,7 @@
       "world": "light",
       "requires": [
         {"follower": "Purple Chest"},
-        "h_collectNPCItem"
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1],
       "followerComplete": "Purple Chest"

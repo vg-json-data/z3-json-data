@@ -23,6 +23,7 @@
       "link": [1, 1],
       "name": "Ammo Refill Pots",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Bombs", "limit": 4}},
         {"refill": {"type": "Arrows", "limit": 5}}
       ]

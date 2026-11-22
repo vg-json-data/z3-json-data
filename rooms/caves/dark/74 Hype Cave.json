@@ -69,7 +69,7 @@
       "link": [1, 1],
       "name": "Base - Generous Guy",
       "requires": [
-        "h_collectNPCItem"
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     },

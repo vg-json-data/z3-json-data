@@ -34,7 +34,8 @@
       "name": "Buy 30 Bombs",
       "requires": [
         {"pay": 100},
-        {"refill": {"type": "Bombs", "limit": 30}}
+        {"refill": {"type": "Bombs", "limit": 30}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -46,7 +47,8 @@
         {"flag": "RescuedBlacksmith"},
         {"pay": 100}
       ],
-      "setsFollower": "Super Bomb"
+      "setsFollower": "Super Bomb",
+      "devNote": ["This item does not behave like a normal purchase and does not convert Link's state."]
     }
   ]
 }

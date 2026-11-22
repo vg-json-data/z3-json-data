@@ -323,7 +323,7 @@
       "world": "light",
       "requires": [
         {"follower": "Old Man"},
-        "h_collectNPCItem"
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1],
       "followerComplete": "Old Man"
@@ -586,7 +586,7 @@
       "world": "light",
       "requires": [
         "BookOfMudora",
-        "lonkToLink",
+        "h_collectItemOverhead",
         {"sword": 2}
       ],
       "collectsItems": [3]

@@ -70,7 +70,9 @@
     {
       "link": [2, 2],
       "name": "Base",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [1]
     }
   ]

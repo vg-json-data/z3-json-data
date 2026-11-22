@@ -32,7 +32,8 @@
       "link": [1, 1],
       "name": "Base - Mushroom Reward",
       "requires": [
-        {"flag": "GaveWitchMushroom"}
+        {"flag": "GaveWitchMushroom"},
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     },
@@ -51,7 +52,8 @@
       "name": "Buy Red Potion",
       "requires": [
         {"pay": 120},
-        {"refill": {"type": "RedPotion", "limit": 1}}
+        {"refill": {"type": "RedPotion", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -59,7 +61,8 @@
       "name": "Buy Green Potion",
       "requires": [
         {"pay": 60},
-        {"refill": {"type": "GreenPotion", "limit": 1}}
+        {"refill": {"type": "GreenPotion", "limit": 1}},
+        "h_purchaseItem"
       ]
     },
     {
@@ -67,7 +70,8 @@
       "name": "Buy Blue Potion",
       "requires": [
         {"pay": 160},
-        {"refill": {"type": "BluePotion", "limit": 1}}
+        {"refill": {"type": "BluePotion", "limit": 1}},
+        "h_purchaseItem"
       ]
     }
   ]

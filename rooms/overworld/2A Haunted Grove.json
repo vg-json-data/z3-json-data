@@ -79,7 +79,8 @@
       "name": "Dig",
       "world": "light",
       "requires": [
-        "Shovel"
+        "Shovel",
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     },
@@ -88,7 +89,7 @@
       "name": "Stumpy",
       "world": "dark",
       "requires": [
-        "h_collectNPCItem"
+        "h_collectItemOverhead"
       ],
       "collectsItems": [2]
     }

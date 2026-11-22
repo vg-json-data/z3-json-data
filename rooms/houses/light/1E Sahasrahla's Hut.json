@@ -62,6 +62,7 @@
       "link": [1, 1],
       "name": "Heart Pots",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 3}}
       ]
     },
@@ -77,6 +78,7 @@
       "link": [1, 1],
       "name": "Dash Break North Wall",
       "requires": [
+        {"lift": 0},
         "canBreakDashableWall"
       ],
       "unlocksDoor": [1]
@@ -85,7 +87,8 @@
       "link": [1, 1],
       "name": "Sahasrahla's Reward",
       "requires": [
-        "h_SahasrahlasRequest"
+        "h_SahasrahlasRequest",
+        "h_collectItemOverhead"
       ],
       "collectsItems": [1]
     },
@@ -93,7 +96,8 @@
       "link": [1, 2],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 1},
+        {"lift": 0}
       ]
     },
     {
@@ -106,19 +110,25 @@
     {
       "link": [2, 2],
       "name": "Base - Left Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [2]
     },
     {
       "link": [2, 2],
       "name": "Base - Middle Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [3]
     },
     {
       "link": [2, 2],
       "name": "Base - Right Chest",
-      "requires": [],
+      "requires": [
+        "h_openChest"
+      ],
       "collectsItems": [4]
     }
   ]

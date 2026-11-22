@@ -37,9 +37,11 @@
       "name": "Base - Blacksmith Reward",
       "requires": [
         {"flag": "RescuedBlacksmith"},
-        {"pay": 10}
+        {"pay": 10},
+        "h_collectItemOverhead"
       ],
-      "collectsItems": [1]
+      "collectsItems": [1],
+      "devNote": ["FIXME: This requires Link to leave the overworld screen and return."]
     }
   ]
 }

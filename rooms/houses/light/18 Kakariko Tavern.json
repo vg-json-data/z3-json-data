@@ -32,13 +32,17 @@
       "link": [1, 1],
       "name": "Heart Pot",
       "requires": [
+        {"lift": 0},
         {"refill": {"type": "Health", "limit": 1}}
       ]
     },
     {
       "link": [2, 2],
       "name": "Base",
-      "requires": [],
+      "requires": [
+        {"lift": 0},
+        "h_openChest"
+      ],
       "collectsItems": [1]
     }
   ]
