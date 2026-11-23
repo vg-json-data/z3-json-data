@@ -98,6 +98,8 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
 
+The randomizer only allows entering and using Lonk form with `canCarryLonk` enabled, and Superbunny form with `canCarrySuperbunny` enabled. If an explicit or implicit transition would turn normal bunny into a form whose tech is disabled, the logic should assume that Link stays in normal bunny form.
+
 The randomizer tracks Link's current form along each route and uses it to evaluate form-dependent requirements. The requirements below always succeed, and their effects apply to subsequent requirements and strats. Each `*To*` requirement changes the form only if it matches the listed starting form.
 
 | Requirement | Effect |
