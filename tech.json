@@ -236,17 +236,17 @@
             "Lonk can use most Y-items and can move during many item animations. Lonk cannot swing the sword, dash, lift or throw objects, pull levers, or open chests."
           ],
           "detailNote": [
-            "There are many ways to lose the Lonk state, most of which convert him to Link:",
-            "taking damage with knockback (including Thieves who deal zero damage, but not damage sources without knockback),",
-            "jumping from any ledge or falling into a pit to a lower floor, entering deep water to swim, and obtaining overhead item animations including shop purchases.",
-            "Some Y-items can be used but convert to Link as well, including the Hookshot, Medallions, and traveling with the Flute.",
-            "World crossings also lose the Lonk state (and rechecks if he should be Link or Bunny).",
-            "Dark World, pearlless Lonk becomes a bunny when exiting the underworld, becomes Link after a bottled Fairy revival (unless the saved Bunny flag is set, then he becomes bunny),",
-            "and also becomes Link when falling into a damaging pit (unless the saved Bunny flag is set, then he remains Lonk)."
+            "Lonk becomes Link after ordinary knockback recovery, including a Thief's shove, or after landing from a ledge hop or a drop to a lower floor.",
+            "Entering deep water to swim, receiving an overhead item or shop purchase, using the Hookshot or a medallion, and traveling with the Flute also turn Lonk into Link.",
+            "Ordinary underworld exits in the Dark World will lose Lonk and recheck Link's form.",
+            "A bottled Fairy revival converts to Bunny if the saved Bunny flag is set; otherwise, it converts to Link.",
+            "A damaging pit preserves Lonk if the saved Bunny flag is set; otherwise, it converts to Link."
           ],
           "devNote": [
-            "Lonk is considered strictly inferior to Link in the Light World or if Link owns Moon Pearl.",
-            "Lonk is not considered strictly worse than Link otherwise, however, due to the Bunny Pocket ability."
+            "The tech description assumes that Link has no Moon Pearl and is in the Dark World.",
+            "With Moon Pearl or in the Light World, it is assumed that Link's form is available, which it is considered strictly superior in this scenario.",
+            "Note, however, that Lonk is not considered inferior to Link otherwise, due to the Bunny Pocket ability.",
+            "FIXME: Fairy revival while swimming converts you to Link."
           ]
         },
         {
@@ -260,12 +260,16 @@
             "Superbunny can swing the sword, dash, lift and throw objects, pull levers, and open chests. Superbunny cannot keep objects held overhead, swim normally, or use Y-items that ordinary bunny cannot use."
           ],
           "detailNote": [
-            "There are many ways to lose the Superbunny state, most of which convert him to normal bunny:",
-            "taking damage with knockback (including Thieves who deal zero damage, but not damage sources without knockback),",
-            "jumping from a ledge, and bonking into something from a Pegasus Boots dash (dashing without a bonk preserves it), .",
-            "World crossings also lose the Superbunny state (and rechecks if he should be Link or Bunny).",
-            "Dark World, pearlless Superbunny becomes a normal bunny when exiting the underworld, becomes Link after a bottled Fairy revival (unless the saved Bunny flag is set, then he becomes bunny),",
-            "and he becomes a bunny when falling into a damaging pit if the saved Bunny flag is set (otherwise he remains Superbunny)."
+            "Superbunny becomes normal bunny after ordinary knockback recovery, including a Thief's shove, or after landing from a ledge hop.",
+            "A Pegasus Boots bonk also ends Superbunny, but dashing without bonking preserves it.",
+            "Ordinary underworld exits in the Dark World will lose Superbunny and recheck Link's form.",
+            "A bottled Fairy revival converts to Bunny if the saved Bunny flag is set; otherwise, it converts to Link.",
+            "A damaging pit converts to Bunny if the saved Bunny flag is set; otherwise, it preserves Superbunny."
+          ],
+          "devNote": [
+            "The tech description assumes that Link has no Moon Pearl and is in the Dark World.",
+            "With Moon Pearl or in the Light World, it is assumed that Link's form is available, which is considered strictly superior.",
+            "FIXME: Fairy revival while swimming converts you to Link."
           ]
         }
       ]

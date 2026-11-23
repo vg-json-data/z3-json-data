@@ -126,8 +126,10 @@ The randomizer applies these rules automatically when traversing the correspondi
 | Damage knockback (No Moon Pearl) | Superbunny becomes normal bunny and Lonk becomes Link. | `superbunnyToBunny`, `lonkToLink` |
 | Damage knockback (Moon Pearl) | Becomes Link. | `recheckLinkState` |
 | Continue or Save and Quit | Rechecks Link's state. | `recheckLinkState` |
-| Defeat Agahnim Teleports | Rechecks Link's state. | `recheckLinkState` |
-| Exit Chris Houlihan Room | Keeps the current form. | `free` |
+| Defeat Agahnim 1 and warp to the Pyramid | Rechecks Link's state. | `recheckLinkState` |
+| Defeat Agahnim 2 and warp to the Pyramid | Becomes Link regardless of Moon Pearl ownership. | Set form to Link |
+| Exit Chris Houlihan Room (No Moon Pearl) | Keeps the current form. | `free` |
+| Exit Chris Houlihan Room (Moon Pearl) | Becomes Link. | `recheckLinkState` |
 
 Fake worlds, Fake Flippers, Dungeon Bunny Revival, and drops that land in deep water are deferred until a route needs them.
 
