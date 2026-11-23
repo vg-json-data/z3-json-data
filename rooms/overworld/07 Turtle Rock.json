@@ -290,6 +290,15 @@
         {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [4, 4],
+      "name": "Superbunny to Link - Rupee Pull Turtle Rock's Right Foot",
+      "world": "dark",
+      "requires": [
+        "useABItems",
+        "superbunnyToLink"
+      ]
     }
   ]
 }

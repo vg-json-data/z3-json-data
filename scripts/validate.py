@@ -248,7 +248,7 @@ def validate_requirements(path, document, requirements, location, references, er
         if isinstance(requirement, str):
             if requirement not in {
                 "free", "never", "useYItems", "useABItems", "recheckLinkState",
-                "bunnyToSuperbunny", "bunnyToLonk", "superbunnyToBunny", "superbunnyToLink",
+                "bunnyToSuperbunny", "bunnyToLink", "bunnyToLonk", "superbunnyToBunny", "superbunnyToLink",
                 "lonkToLink", "lonkToBunny",
             }:
                 validate_reference(path, document, current, requirement, references["named"],

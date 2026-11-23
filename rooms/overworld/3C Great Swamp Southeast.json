@@ -130,6 +130,15 @@
         {"carry": 1}
       ],
       "exitState": {"state": "overhead", "type": "class3"}
+    },
+    {
+      "link": [1, 1],
+      "name": "Superbunny to Link - Rupee Pull Middle Totem",
+      "world": "dark",
+      "requires": [
+        "useABItems",
+        "superbunnyToLink"
+      ]
     }
   ]
 }

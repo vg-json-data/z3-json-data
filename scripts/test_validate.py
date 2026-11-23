@@ -12,7 +12,7 @@ from validate import ROOT, collect_references, registry_for, validate_requiremen
 class FormChangeRequirementTests(unittest.TestCase):
     def test_form_changes_are_recognized_without_named_definitions(self):
         requirements = [
-            "bunnyToSuperbunny", "bunnyToLonk", "superbunnyToBunny",
+            "bunnyToSuperbunny", "bunnyToLink", "bunnyToLonk", "superbunnyToBunny",
             "superbunnyToLink", "lonkToLink", "lonkToBunny", "recheckLinkState",
         ]
         errors = defaultdict(list)
