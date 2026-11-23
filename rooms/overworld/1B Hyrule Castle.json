@@ -597,6 +597,15 @@
       ]
     },
     {
+      "link": [5, 5],
+      "name": "Superbunny to Link - Rupee Pull Westmost Statue",
+      "world": "dark",
+      "requires": [
+        "useABItems",
+        "superbunnyToLink"
+      ]
+    },
+    {
       "link": [5, 13],
       "name": "Base",
       "world": "light",

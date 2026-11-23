@@ -98,7 +98,14 @@ A tech's `techRequires` contains other required techs, while `otherRequires` con
 
 Note that some items can be used in bunny form, such as the Magic Mirror, Book of Mudora, and bottles, so they omit `useYItems`.
 
-The randomizer only allows entering and using Lonk form with `canCarryLonk` enabled, and Superbunny form with `canCarrySuperbunny` enabled. If an explicit or implicit transition would turn normal bunny into a form whose tech is disabled, the logic should assume that Link stays in normal bunny form.
+The randomizer applies these tech requirements implicitly to form changes. Strats can omit the tech name when the form change already checks it.
+
+| Form change | Required tech | Effect when the tech is disabled |
+| --- | --- | --- |
+| Enter Lonk form | `canCarryLonk` | Remain in normal bunny form. |
+| Enter Superbunny form | `canSuperbunny` | Remain in normal bunny form. |
+| Apply `"bunnyToLink"` | `canPearllessLink` | Remain in normal bunny form. |
+| Apply `"superbunnyToLink"` | `canPearllessLink` | Remain in Superbunny form. |
 
 The randomizer tracks Link's current form along each route and uses it to evaluate form-dependent requirements. The requirements below always succeed, and their effects apply to subsequent requirements and strats. Each `*To*` requirement changes the form only if it matches the listed starting form.
 
@@ -106,6 +113,7 @@ The randomizer tracks Link's current form along each route and uses it to evalua
 | --- | --- |
 | `"recheckLinkState"` | Sets the form to normal bunny if the resulting world is the Dark World and Link lacks the Moon Pearl. Otherwise, sets it to normal Link. For a world-changing strat, use `toWorld`. |
 | `"bunnyToSuperbunny"` | Changes normal bunny to superbunny. |
+| `"bunnyToLink"` | Changes normal bunny to normal Link. |
 | `"bunnyToLonk"` | Changes normal bunny to Lonk. |
 | `"superbunnyToBunny"` | Changes superbunny to normal bunny. |
 | `"superbunnyToLink"` | Changes superbunny to normal Link. |

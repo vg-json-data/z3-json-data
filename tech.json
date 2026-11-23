@@ -251,10 +251,11 @@
         },
         {
           "id": 12,
-          "name": "canCarrySuperbunny",
+          "name": "canSuperbunny",
           "techRequires": [],
           "otherRequires": [],
           "note": [
+            "Become a Superbunny by buying an item from a shop or by falling through a hole that leads you to the underworld or from the underworld to a lower floor.",
             "Superbunny is a fairly fragile character state which has more abilities than a normal bunny.",
             "It is generally only considered useful in the Dark World with no Moon Pearl.",
             "Superbunny can swing the sword, dash, lift and throw objects, pull levers, and open chests. Superbunny cannot keep objects held overhead, swim normally, or use Y-items that ordinary bunny cannot use."
@@ -270,6 +271,17 @@
             "The tech description assumes that Link has no Moon Pearl and is in the Dark World.",
             "With Moon Pearl or in the Light World, it is assumed that Link's form is available, which is considered strictly superior.",
             "FIXME: Fairy revival while swimming converts you to Link."
+          ]
+        },
+        {
+          "id": 13,
+          "name": "canPearllessLink",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Become Link in the Dark World without the Moon Pearl by converting a bunny or Superbunny form,",
+            "The simplest way is to have a Wallmaster grab normal bunny.",
+            "Additionally, from Superbunny form, use a rupee pull point, throw an item into a Great Fairy pool, or get hit by a Bunny Beam."
           ]
         }
       ]
