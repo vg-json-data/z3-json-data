@@ -119,12 +119,13 @@ For a strat that begins and ends in the same world, `world` has one of the follo
   "toWorld": "light",
   "name": "Base",
   "requires": [
-    "MagicMirror"
+    "MagicMirror",
+    "recheckLinkState"
   ]
 }
 ```
 
-For every overworld node with `"world": "both"`, there is an implicit strat to use the Magic Mirror from the Dark World to the Light World, as in the example above, unless that node has `"mirrorPoint": false`.
+For every overworld node with `"world": "both"`, the randomizer generates a Magic Mirror strat from the Dark World to the Light World unless the node has `"mirrorPoint": false`. The generated strat requires `MagicMirror` followed by `recheckLinkState`, as in the example above. A strat that models a blocked Mirror crossing returning to the Dark World also uses `recheckLinkState`, with the Dark World as the resulting world.
 
 The underworld is represented differently from the two overworlds. Cave, house, dungeon, and special-room strats do not use `world`, `fromWorld`, or `toWorld`; these properties are incompatible with underworld strats.
 

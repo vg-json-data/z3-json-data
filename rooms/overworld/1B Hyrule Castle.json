@@ -696,7 +696,8 @@
       "fromWorld": "light",
       "toWorld": "dark",
       "requires": [
-        {"flag": "DefeatedAgahnim1"}
+        {"flag": "DefeatedAgahnim1"},
+        "recheckLinkState"
       ]
     },
     {
@@ -816,7 +817,8 @@
       "fromWorld": "dark",
       "toWorld": "light",
       "requires": [
-        "MagicMirror"
+        "MagicMirror",
+        "recheckLinkState"
       ],
       "note": ["Mirror from the ledge above the ledge with the item in order to bypass the bushes."]
     },
@@ -924,7 +926,8 @@
       "fromWorld": "light",
       "toWorld": "dark",
       "requires": [
-        {"flag": "DefeatedAgahnim1"}
+        {"flag": "DefeatedAgahnim1"},
+        "recheckLinkState"
       ]
     },
     {
@@ -947,7 +950,8 @@
       "fromWorld": "dark",
       "toWorld": "light",
       "requires": [
-        "MagicMirror"
+        "MagicMirror",
+        "recheckLinkState"
       ],
       "note": ["Mirror from the ledge above the ledge with the item in order to bypass jumping off of the ledge."]
     },

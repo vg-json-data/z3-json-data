@@ -224,6 +224,53 @@
             "An object can also be carried in from an adjacent room or screen to use where no suitable object is normally available.",
             "In the underworld, it is possible to kill enemies with pots before resetting the room to to respawn the pots but not the enemies."
           ]
+        },
+        {
+          "id": 11,
+          "name": "canCarryLonk",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Lonk is a fairly fragile character state which has more abilities than a normal bunny.",
+            "It is generally only considered useful in the Dark World with no Moon Pearl.",
+            "Lonk can use most Y-items and can move during many item animations. Lonk cannot swing the sword, dash, lift or throw objects, pull levers, or open chests."
+          ],
+          "detailNote": [
+            "Lonk becomes Link after ordinary knockback recovery, including a Thief's shove, or after landing from a ledge hop or a drop to a lower floor.",
+            "Entering deep water to swim, receiving an overhead item or shop purchase, using the Hookshot or a medallion, and traveling with the Flute also turn Lonk into Link.",
+            "Ordinary underworld exits in the Dark World will lose Lonk and recheck Link's form.",
+            "A bottled Fairy revival converts to Bunny if the saved Bunny flag is set; otherwise, it converts to Link.",
+            "A damaging pit preserves Lonk if the saved Bunny flag is set; otherwise, it converts to Link."
+          ],
+          "devNote": [
+            "The tech description assumes that Link has no Moon Pearl and is in the Dark World.",
+            "With Moon Pearl or in the Light World, it is assumed that Link's form is available, which it is considered strictly superior in this scenario.",
+            "Note, however, that Lonk is not considered inferior to Link otherwise, due to the Bunny Pocket ability.",
+            "FIXME: Fairy revival while swimming converts you to Link."
+          ]
+        },
+        {
+          "id": 12,
+          "name": "canCarrySuperbunny",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Superbunny is a fairly fragile character state which has more abilities than a normal bunny.",
+            "It is generally only considered useful in the Dark World with no Moon Pearl.",
+            "Superbunny can swing the sword, dash, lift and throw objects, pull levers, and open chests. Superbunny cannot keep objects held overhead, swim normally, or use Y-items that ordinary bunny cannot use."
+          ],
+          "detailNote": [
+            "Superbunny becomes normal bunny after ordinary knockback recovery, including a Thief's shove, or after landing from a ledge hop.",
+            "A Pegasus Boots bonk also ends Superbunny, but dashing without bonking preserves it.",
+            "Ordinary underworld exits in the Dark World will lose Superbunny and recheck Link's form.",
+            "A bottled Fairy revival converts to Bunny if the saved Bunny flag is set; otherwise, it converts to Link.",
+            "A damaging pit converts to Bunny if the saved Bunny flag is set; otherwise, it preserves Superbunny."
+          ],
+          "devNote": [
+            "The tech description assumes that Link has no Moon Pearl and is in the Dark World.",
+            "With Moon Pearl or in the Light World, it is assumed that Link's form is available, which is considered strictly superior.",
+            "FIXME: Fairy revival while swimming converts you to Link."
+          ]
         }
       ]
     }

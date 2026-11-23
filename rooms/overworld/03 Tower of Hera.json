@@ -533,7 +533,9 @@
       "fromWorld": "light",
       "toWorld": "dark",
       "name": "Dark World Portal",
-      "requires": []
+      "requires": [
+        "recheckLinkState"
+      ]
     },
     {
       "link": [7, 12],
