@@ -8,16 +8,40 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -95,14 +119,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 6,
+          "id": 1,
           "name": "Old Man Cave Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 22,
+          "id": 2,
           "name": "Bumper Cave Entrance",
           "world": "dark"
         }
@@ -114,14 +138,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 46,
+          "id": 3,
           "name": "Death Mountain Return Cave Exit",
           "world": "light"
         },
         {
-          "id": 4,
           "romEntranceId": 23,
+          "id": 4,
           "name": "Bumper Cave Exit",
           "world": "dark"
         }
@@ -146,7 +170,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -248,7 +276,9 @@
           {"damage": {"enemy": "Dacto", "count": 1}}
         ]}
       ],
-      "note": ["The Dacto will fly straight at Link. Hold left or jump off with a charged spin attack to prevent getting hit."]
+      "note": [
+        "The Dacto will fly straight at Link. Hold left or jump off with a charged spin attack to prevent getting hit."
+      ]
     },
     {
       "link": [3, 3],

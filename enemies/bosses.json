@@ -137,9 +137,7 @@
       "attacks": [
         "Helmasaur King's Fireball"
       ],
-      "note": [
-        "Not to be confused with a small Helmasaur"
-      ],
+      "note": ["Not to be confused with a small Helmasaur"],
       "hp": 48,
       "dmgToLink": {
         "green": 16,
@@ -170,9 +168,7 @@
       "names": [
         "Arrghus"
       ],
-      "note": [
-        "This is the main eyeball. The boss fight includes 13 Arrghus Fuzz"
-      ],
+      "note": ["This is the main eyeball. The boss fight includes 13 Arrghus Fuzz"],
       "hp": 32,
       "dmgToLink": {
         "green": 16,
@@ -236,9 +232,7 @@
       "attacks": [
         "Mothula's Loops"
       ],
-      "note": [
-        "Surprisingly, this is vulnerable to swords except the Gold Sword."
-      ],
+      "note": ["Surprisingly, this is vulnerable to swords except the Gold Sword."],
       "hp": 32,
       "dmgToLink": {
         "green": 16,
@@ -311,9 +305,7 @@
       "attacks": [
         "Kholdstare's Falling Ice"
       ],
-      "note": [
-        "This is the main three enemies. The boss fight includes Kholdstare's Shell."
-      ],
+      "note": ["This is the main three enemies. The boss fight includes Kholdstare's Shell."],
       "hp": 64,
       "dmgToLink": {
         "green": 32,
@@ -381,9 +373,7 @@
       "attacks": [
         "Lightning"
       ],
-      "note": [
-        "This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye)."
-      ],
+      "note": ["This is the main eyeball. The boss fight includes 9 Vitreous (Small Eye)."],
       "hp": 128,
       "dmgToLink": {
         "green": 32,

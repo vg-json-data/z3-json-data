@@ -72,7 +72,9 @@
       "requires": [
         "h_fallToLowerFloor"
       ],
-      "note": ["Drop using one of the southern pits to convert bunny to superbunnyand remain at the lower entrance."]
+      "note": [
+        "Drop using one of the southern pits to convert bunny to superbunnyand remain at the lower entrance."
+      ]
     }
   ]
 }

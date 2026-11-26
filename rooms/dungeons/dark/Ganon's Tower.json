@@ -9,7 +9,6 @@
       {"name": "Armos Knight"},
       {"name": "Lanmolas"},
       {"name": "Moldorm"},
-
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
       {"name": "Eyegore (Green)"},
@@ -28,7 +27,6 @@
       {"name": "Wizzrobe"},
       {"name": "Zazak (Blue)"},
       {"name": "Zazak (Red)"},
-
       {"name": "Beamos"},
       {"name": "Bubble"},
       {"name": "Flying Tile"},
@@ -731,7 +729,9 @@
       "doorPosition": "north",
       "doorLocation": 33,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 10,
@@ -1050,6 +1050,7 @@
           ]}
         ]}
       ],
+      "collectsItems": [31],
       "note": [
         "Hit the switch with a boomerang to save bombs.",
         "In the hookshot room, throw the boomerang up and move to the side to easily hit the switch.",
@@ -1057,8 +1058,7 @@
         "With a Blue Boomerang and Hookshot, quickly hookshot the pot to move over fast enough.",
         "This is possible with the Blue Boomerang alone; stand just south of the door, a few pixels from the rail",
         "and where Link's back is roughly centered with the left post of the doorframe; throw the boomerang diagonally and immediately move to the right."
-      ],
-      "collectsItems": [31]
+      ]
     },
     {
       "link": [9, 8],
@@ -1085,7 +1085,9 @@
         "The delay is helpful to prevent double hitting the switch.",
         "In the next room, throw the boomerang north then move to the side to hit the switch."
       ],
-      "devNote": ["Assumes the blue pegs are down, which is safe if the dungeon is not randomized."]
+      "devNote": [
+        "Assumes the blue pegs are down, which is safe if the dungeon is not randomized."
+      ]
     },
     {
       "link": [10, 11],
@@ -1261,9 +1263,7 @@
           ]}
         ]}
       ],
-      "note": [
-        "Use Ether multiple times to briefly see the walkway."
-      ]
+      "note": ["Use Ether multiple times to briefly see the walkway."]
     },
     {
       "link": [15, 26],
@@ -1428,9 +1428,7 @@
           ]}
         ]}
       ],
-      "note": [
-        "Kill the Stalfos and Red Bari with the rod and the other two with the pots."
-      ]
+      "note": ["Kill the Stalfos and Red Bari with the rod and the other two with the pots."]
     },
     {
       "link": [18, 19],
@@ -1567,9 +1565,7 @@
           ]}
         ]}
       ],
-      "note": [
-        "Hit the switch with bombs or the red cane."
-      ]
+      "note": ["Hit the switch with bombs or the red cane."]
     },
     {
       "link": [20, 21],
@@ -2018,9 +2014,7 @@
           ]}
         ]}
       ],
-      "note": [
-        "It's generally easier to dodge the spikes if the orange pegs remain down."
-      ]
+      "note": ["It's generally easier to dodge the spikes if the orange pegs remain down."]
     },
     {
       "link": [34, 35],
@@ -2039,9 +2033,7 @@
           {"combatProficiency": 3}
         ]}
       ],
-      "note": [
-        "It's generally easier to dodge the spikes if the orange pegs remain down."
-      ]
+      "note": ["It's generally easier to dodge the spikes if the orange pegs remain down."]
     },
     {
       "link": [35, 36],
@@ -2889,8 +2881,8 @@
       "requires": [
         "Hookshot"
       ],
-      "collectsItems": [29],
-      "setsFlags": ["GanonsTowerMoldormChest"]
+      "setsFlags": ["GanonsTowerMoldormChest"],
+      "collectsItems": [29]
     },
     {
       "link": [56, 57],

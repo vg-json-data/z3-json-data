@@ -8,16 +8,43 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "west": [
-      {"supported": {"wide": [1], "dual-small": [1, 1], "dual-upper": [1, 1], "small-2": [1], "lake": [1, "return"]}, "default": "dual-small"}
+      {
+        "supported": {
+          "wide": [1],
+          "dual-small": [1, 1],
+          "dual-upper": [1, 1],
+          "small-2": [1],
+          "lake": [1, "return"]
+        },
+        "default": "dual-small"
+      }
     ]
   },
   "enemySpawns": {
@@ -110,14 +137,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 78,
+          "id": 1,
           "name": "Dam Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 37,
+          "id": 2,
           "name": "Swamp Palace Entrance",
           "world": "dark"
         }
@@ -135,12 +162,7 @@
     }
   ],
   "obstacles": [
-    {
-      "id": "Drained Floodgate",
-      "note": [
-        "The Floodgate has been drained."
-      ]
-    },
+    {"id": "Drained Floodgate", "note": ["The Floodgate has been drained."]},
     {
       "id": "Dark World Portal",
       "note": [
@@ -165,7 +187,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -230,19 +256,23 @@
       "requires": [
         {"obstaclesCleared": ["Dark World Portal"]}
       ],
-      "exitState": {"event": {
-        "entranceID": 1,
-        "type": "DarkWorldPortal"
-      }}
+      "exitState": {
+        "event": {
+          "entranceID": 1,
+          "type": "DarkWorldPortal"
+        }
+      }
     },
     {
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained",
       "world": "light",
-      "entranceState": {"event": {
-        "entranceID": 1,
-        "type": "DrainedFloodgate"
-      }},
+      "entranceState": {
+        "event": {
+          "entranceID": 1,
+          "type": "DrainedFloodgate"
+        }
+      },
       "requires": [],
       "clearsObstacles": ["Drained Floodgate"]
     },
@@ -250,10 +280,12 @@
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained and Mirror Point",
       "world": "light",
-      "entranceState": {"event": {
-        "entranceID": 1,
-        "type": "DrainedFloodgateAndMirrorPoint"
-      }},
+      "entranceState": {
+        "event": {
+          "entranceID": 1,
+          "type": "DrainedFloodgateAndMirrorPoint"
+        }
+      },
       "requires": [],
       "clearsObstacles": ["Drained Floodgate", "Dark World Portal"]
     },
@@ -274,10 +306,12 @@
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
-      "exitState": {"event": {
-        "entranceID": 2,
-        "type": "DrainedFloodgate"
-      }}
+      "exitState": {
+        "event": {
+          "entranceID": 2,
+          "type": "DrainedFloodgate"
+        }
+      }
     }
   ]
 }

@@ -7,13 +7,11 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Armos Knight"},
-
       {"name": "Eyegore (Green)"},
       {"name": "Eyegore (Red)"},
       {"name": "Head-Detaching Stalfos"},
       {"name": "Popo"},
       {"name": "Stalfos"},
-
       {"name": "Ball"},
       {"name": "Bubble"},
       {"name": "Bubble Cluster"},
@@ -164,7 +162,9 @@
       "doorPosition": "north",
       "doorLocation": 7,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 3,
@@ -173,7 +173,9 @@
       "doorPosition": "north",
       "doorLocation": 4,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 4,
@@ -400,7 +402,9 @@
         "Lamp",
         {"combatProficiency": 3}
       ],
-      "note": ["Wait for the Popo to get out of the way then quickly dodge it and the next one and loop around the room."]
+      "note": [
+        "Wait for the Popo to get out of the way then quickly dodge it and the next one and loop around the room."
+      ]
     },
     {
       "link": [5, 6],
@@ -440,7 +444,8 @@
           {"damage": {"enemy": "Popo", "count": 1}}
         ]}
       ]
-    },{
+    },
+    {
       "link": [5, 7],
       "name": "Base",
       "requires": [
@@ -487,7 +492,9 @@
         {"unlockDoor": 1},
         {"combatProficiency": 3}
       ],
-      "note": ["Wait for the Popo to get out of the way then quickly dodge it and the next one."],
+      "note": [
+        "Wait for the Popo to get out of the way then quickly dodge it and the next one."
+      ],
       "devNote": ["This strat does not obtain the key from the room to the right."]
     },
     {
@@ -681,7 +688,9 @@
         ]}
       ],
       "collectsItems": [5],
-      "note": ["The Popos are vulnerable to Hookshot, the Stalfos are vulnerable to Boomerang."]
+      "note": [
+        "The Popos are vulnerable to Hookshot, the Stalfos are vulnerable to Boomerang."
+      ]
     },
     {
       "link": [7, 7],
@@ -689,10 +698,10 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
+      "collectsItems": [5],
       "note": [
         "Use the pots to kill the enemies then reset the room. The pots will respawn and the killed enemies will not."
-      ],
-      "collectsItems": [5]
+      ]
     },
     {
       "link": [7, 7],
@@ -702,6 +711,7 @@
         {"damage": {"enemy": "Popo", "count": 1}},
         {"damage": {"enemy": "Invincible Bubble", "count": 1}}
       ],
+      "collectsItems": [5],
       "note": [
         "Use i-frames to lift the pot guarded by four Anti-Fairies in Eastern Palace's Big Key Chest Room, then press the switch beneath it to spawn the chest without needing to kill the enemies."
       ],
@@ -709,8 +719,9 @@
         "On room entry, quickly slip past the Popo and then touch it to get enough i-frames to quickly grab the pot between the Bubbles.",
         "Use those i-frames to pass through the Anti-Fairies and lift the pot. Be sure not to exit too quickly or the switch may not get pressed."
       ],
-      "devNote": ["This is not particularly useful if you can reset the room, because the pots respawn and the enemies do not."],
-      "collectsItems": [5]
+      "devNote": [
+        "This is not particularly useful if you can reset the room, because the pots respawn and the enemies do not."
+      ]
     },
     {
       "link": [7, 7],

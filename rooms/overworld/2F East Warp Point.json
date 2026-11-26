@@ -8,16 +8,42 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [3]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [3], "dual-small": [1, 3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 3],
+          "small-1": [1],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [3]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -77,14 +103,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 85,
+          "id": 1,
           "name": "Long Fairy Cave",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 105,
+          "id": 2,
           "name": "Dark East Portal Cave",
           "world": "dark"
         }
@@ -142,45 +168,77 @@
       "link": [1, 3],
       "name": "Carry Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 3],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 3],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 3],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
@@ -192,9 +250,9 @@
     },
     {
       "link": [2, 2],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         {"lift": 1},
         "recheckLinkState"
@@ -222,27 +280,47 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
       "name": "Carry Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 1],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 2],
@@ -260,7 +338,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
   ]
 }

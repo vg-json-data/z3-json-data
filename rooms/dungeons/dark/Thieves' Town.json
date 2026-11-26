@@ -7,7 +7,6 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Blind"},
-
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
       {"name": "Buzz"},
@@ -18,7 +17,6 @@
       {"name": "Zazak (Blue)"},
       {"name": "Zazak (Red)"},
       {"name": "Zol"},
-
       {"name": "Bubble"},
       {"name": "Rabbit Beam"},
       {"name": "Spark"},
@@ -206,7 +204,9 @@
       "doorPosition": "north",
       "doorLocation": 1,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 4,
@@ -501,7 +501,9 @@
           {"rod": 1}
         ]}
       ],
-      "note": ["The pots can be used to kill two of the enemies. It is possible but not expected to reset the room to respawn the pots but not the enemies."]
+      "note": [
+        "The pots can be used to kill two of the enemies. It is possible but not expected to reset the room to respawn the pots but not the enemies."
+      ]
     },
     {
       "link": [7, 8],
@@ -607,8 +609,8 @@
         {"flag": "ThievesTownBombedFloor"},
         {"follower": "Blind"}
       ],
-      "followerComplete": "Blind",
-      "setsFlags": ["ThievesTownBlindReveal"]
+      "setsFlags": ["ThievesTownBlindReveal"],
+      "followerComplete": "Blind"
     },
     {
       "link": [11, 11],
@@ -683,7 +685,9 @@
       ],
       "setsFlags": ["DefeatedBlind"],
       "collectsItems": [10, 11],
-      "devNote": ["Place the block in Blind's path. Throw the block as needed to move it to a new location."]
+      "devNote": [
+        "Place the block in Blind's path. Throw the block as needed to move it to a new location."
+      ]
     },
     {
       "link": [11, 11],

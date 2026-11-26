@@ -73,7 +73,9 @@
           ]}
         ]}
       ],
-      "note": ["It is possible to walk across the bottom edge of the room and kill the Mini-Moldorms with a sword."]
+      "note": [
+        "It is possible to walk across the bottom edge of the room and kill the Mini-Moldorms with a sword."
+      ]
     },
     {
       "link": [1, 2],

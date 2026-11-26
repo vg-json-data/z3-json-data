@@ -8,16 +8,38 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -106,8 +128,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 92,
+          "id": 2,
           "name": "Waterfall of Wishing",
           "world": "light"
         }
@@ -146,7 +168,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -155,7 +181,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -168,7 +198,9 @@
       "name": "Base",
       "world": "any",
       "requires": [],
-      "devNote": ["FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."]
+      "devNote": [
+        "FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."
+      ]
     },
     {
       "link": [2, 2],

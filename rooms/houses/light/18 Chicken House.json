@@ -32,7 +32,9 @@
       "item": "BlueBoomerang",
       "secondaryItem": "TenArrows",
       "itemAddress": "0xE9E9",
-      "devNote": ["The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."]
+      "devNote": [
+        "The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."
+      ]
     }
   ],
   "lockedDoors": [

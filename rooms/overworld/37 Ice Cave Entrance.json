@@ -8,16 +8,38 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"vertical-water-land": [2, 1]}, "default": "vertical-water-land"}
+      {
+        "supported": {
+          "vertical-water-land": [2, 1]
+        },
+        "default": "vertical-water-land"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -85,14 +107,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 86,
+          "id": 1,
           "name": "Ice Cave East Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 106,
+          "id": 2,
           "name": "Shopping Mall East Cave",
           "world": "dark"
         }
@@ -113,8 +135,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 132,
+          "id": 3,
           "name": "Ice Cave West Entrance",
           "world": "light"
         }
@@ -126,8 +148,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 94,
+          "id": 4,
           "name": "Shopping Mall Great Fairy",
           "world": "dark"
         }
@@ -139,8 +161,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 111,
+          "id": 5,
           "name": "20 Rupee Cave",
           "world": "light"
         }
@@ -152,8 +174,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 6,
           "romEntranceId": 112,
+          "id": 6,
           "name": "Shopping Mall Spike Cave",
           "world": "dark"
         }
@@ -239,7 +261,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],

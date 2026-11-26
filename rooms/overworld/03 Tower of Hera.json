@@ -8,20 +8,66 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "closed"},
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "small-1"},
-      {"supported": {"closed": [], "small-2": [4]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [4]
+        },
+        "default": "small-2"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -71,14 +117,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 7,
+          "id": 1,
           "name": "Old Man Cave",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 94,
+          "id": 2,
           "name": "Dark Death Mountain Great Fairy",
           "world": "dark"
         }
@@ -91,8 +137,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 48,
+          "id": 3,
           "name": "Old Man's House Entrance",
           "world": "light"
         }
@@ -104,8 +150,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 49,
+          "id": 4,
           "name": "Old Man's House Back Entrance",
           "world": "light"
         }
@@ -125,8 +171,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 47,
+          "id": 5,
           "name": "Death Mountain Return Cave",
           "world": "light"
         }
@@ -138,8 +184,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 6,
           "romEntranceId": 35,
+          "id": 6,
           "name": "Spectacle Rock Top Entrance",
           "world": "light"
         }
@@ -164,8 +210,8 @@
       ],
       "entrances": [
         {
-          "id": 7,
           "romEntranceId": 51,
+          "id": 7,
           "name": "Tower of Hera Entrance",
           "world": "light"
         }
@@ -177,8 +223,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 9,
           "romEntranceId": 33,
+          "id": 9,
           "name": "Spectacle Rock Bottom Left Entrance",
           "world": "light"
         }
@@ -190,8 +236,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 10,
           "romEntranceId": 34,
+          "id": 10,
           "name": "Spectacle Rock Bottom Right Entrance",
           "world": "light"
         }
@@ -203,8 +249,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 11,
           "romEntranceId": 65,
+          "id": 11,
           "name": "Spike Cave Entrance",
           "world": "dark"
         }
@@ -216,8 +262,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 8,
           "romEntranceId": 55,
+          "id": 8,
           "name": "Ganon's Tower Entrance",
           "world": "dark"
         }
@@ -228,8 +274,8 @@
     {
       "id": 1,
       "locationName": "Rescue Old Man",
-      "world": "light",
       "itemLocation": 2,
+      "world": "light",
       "item": "MagicMirror",
       "itemAddress": "0xF69FA"
     },
@@ -335,7 +381,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 3],
@@ -403,7 +453,11 @@
           "h_jumpOffLedge"
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 3],
@@ -430,7 +484,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 4],
@@ -439,7 +497,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [5, 1],
@@ -530,9 +592,9 @@
     },
     {
       "link": [7, 7],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         "recheckLinkState"
       ]

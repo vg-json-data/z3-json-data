@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [5]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [5]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [6]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [6]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "small-2"
+      }
     ]
   },
   "enemySpawns": {
@@ -65,14 +88,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 100,
+          "id": 1,
           "name": "Blacksmith's Hut Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 17,
+          "id": 2,
           "name": "Magic Bat Cave Entrance",
           "world": "light"
         }
@@ -92,8 +115,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 126,
+          "id": 3,
           "name": "Magic Bat Cave Drop Entrance",
           "world": "light"
         }
@@ -105,8 +128,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 131,
+          "id": 4,
           "name": "Dark Hammer Peg Cave",
           "world": "dark"
         }
@@ -116,13 +139,17 @@
       "id": 5,
       "name": "Southern Non-Vanilla Edge",
       "world": "both",
-      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
+      "note": [
+        "This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."
+      ]
     },
     {
       "id": 6,
       "name": "Eastern Non-Vanilla Edge",
       "world": "both",
-      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
+      "note": [
+        "This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."
+      ]
     }
   ],
   "strats": [
@@ -223,7 +250,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 1],
@@ -252,7 +283,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [5, 5],
@@ -262,7 +297,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [6, 1],
@@ -285,7 +324,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [6, 6],
@@ -295,7 +338,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     }
   ]
 }

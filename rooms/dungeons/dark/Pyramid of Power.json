@@ -29,7 +29,9 @@
       "requires": [
         {"sword": 2}
       ],
-      "devNote": ["FIXME: Before dungeon randomization occurs, this needs to be updated to include realistic fight requirements."]
+      "devNote": [
+        "FIXME: Before dungeon randomization occurs, this needs to be updated to include realistic fight requirements."
+      ]
     }
   ]
 }

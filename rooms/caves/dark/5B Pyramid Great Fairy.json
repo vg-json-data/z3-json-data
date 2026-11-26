@@ -60,7 +60,9 @@
       "requires": [
         "h_greatFairyThrowItem"
       ],
-      "note": ["If Link has zero throwable items, select 'No' in order to prevent a softlock."]
+      "note": [
+        "If Link has zero throwable items, select 'No' in order to prevent a softlock."
+      ]
     }
   ]
 }

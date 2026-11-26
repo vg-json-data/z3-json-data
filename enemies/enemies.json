@@ -896,7 +896,9 @@
         "Spear Soldier (Red)",
         "Taros (Red)"
       ],
-      "note": ["Includes placed sprite 0x45 (69). Kakariko's summoned green spear soldiers use the same sprite index with overridden stats and are modeled separately."],
+      "note": [
+        "Includes placed sprite 0x45 (69). Kakariko's summoned green spear soldiers use the same sprite index with overridden stats and are modeled separately."
+      ],
       "hp": 8,
       "dmgToLink": {
         "green": 8,
@@ -1217,7 +1219,9 @@
       "names": [
         "Toppo"
       ],
-      "note": ["Removing the grass and stranding it lets it talk to you, giving an item from Prize Pack 6."],
+      "note": [
+        "Removing the grass and stranding it lets it talk to you, giving an item from Prize Pack 6."
+      ],
       "hp": 2,
       "dmgToLink": {
         "green": 4,
@@ -1668,7 +1672,9 @@
       "names": [
         "Chasupa"
       ],
-      "note": ["Sometimes called a Patra. A Dark World bat with a large eye; stronger than the Light World Chasupa in Agahnim's Tower."],
+      "note": [
+        "Sometimes called a Patra. A Dark World bat with a large eye; stronger than the Light World Chasupa in Agahnim's Tower."
+      ],
       "hp": 4,
       "dmgToLink": {
         "green": 16,
@@ -1763,9 +1769,7 @@
       "names": [
         "Floating Stalfos Head"
       ],
-      "note": [
-        "This is not the same as an already detached Detatched Stalfos Head."
-      ],
+      "note": ["This is not the same as an already detached Detatched Stalfos Head."],
       "hp": 24,
       "dmgToLink": {
         "green": 32,
@@ -1928,9 +1932,7 @@
       "attacks": [
         "Kodongo Fireball"
       ],
-      "note": [
-        "Represents both the Green and Red varieties"
-      ],
+      "note": ["Represents both the Green and Red varieties"],
       "hp": 2,
       "dmgToLink": {
         "green": 8,
@@ -2123,7 +2125,8 @@
       ],
       "note": [
         "They are immune to bombs until they are knocked down.",
-        "The damage vulnerability to bombs is global until they stand up, so it is possible to knock one down then bomb another."],
+        "The damage vulnerability to bombs is global until they stand up, so it is possible to knock one down then bomb another."
+      ],
       "hp": 64,
       "dmgToLink": {
         "green": 16,
@@ -2248,7 +2251,9 @@
       "names": [
         "Zoro"
       ],
-      "note": ["Sometimes referred to as little black spiders, they come out of bombed doorways."],
+      "note": [
+        "Sometimes referred to as little black spiders, they come out of bombed doorways."
+      ],
       "hp": 4,
       "dmgToLink": {
         "green": 16,
@@ -2342,7 +2347,9 @@
       "names": [
         "Zazak (Blue)"
       ],
-      "note": ["Shares an entry with Spitting Fireball, which is created by a Zazak (Red) and a Lynel."],
+      "note": [
+        "Shares an entry with Spitting Fireball, which is created by a Zazak (Red) and a Lynel."
+      ],
       "hp": 4,
       "dmgToLink": {
         "green": 16,

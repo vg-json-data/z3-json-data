@@ -7,13 +7,11 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Lanmolas"},
-
       {"name": "Devalant"},
       {"name": "Eyegore (Green)"},
       {"name": "Eyegore (Red)"},
       {"name": "Leever"},
       {"name": "Popo"},
-
       {"name": "Beamos"},
       {"name": "Flying Tile"},
       {"name": "Wall Turret Cannon Ball"}

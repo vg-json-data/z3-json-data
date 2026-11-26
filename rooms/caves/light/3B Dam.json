@@ -33,12 +33,7 @@
     }
   ],
   "obstacles": [
-    {
-      "id": "Drained Floodgate",
-      "note": [
-        "The Floodgate has been drained."
-      ]
-    },
+    {"id": "Drained Floodgate", "note": ["The Floodgate has been drained."]},
     {
       "id": "Dark World Portal",
       "note": [
@@ -54,14 +49,18 @@
         "h_openChest"
       ],
       "collectsItems": [1],
-      "devNote": ["Without a block clip, this prevents going to Node 2 without resetting the room."]
+      "devNote": [
+        "Without a block clip, this prevents going to Node 2 without resetting the room."
+      ]
     },
     {
       "link": [1, 1],
       "name": "Enter Dam with Mirror Point",
-      "entranceState": {"event": {
-        "type": "DarkWorldPortal"
-      }},
+      "entranceState": {
+        "event": {
+          "type": "DarkWorldPortal"
+        }
+      },
       "requires": [],
       "clearsObstacles": ["Dark World Portal"]
     },
@@ -71,9 +70,11 @@
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
-      "exitState": {"event": {
-        "type": "DrainedFloodgate"
-      }}
+      "exitState": {
+        "event": {
+          "type": "DrainedFloodgate"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -82,9 +83,11 @@
         {"obstaclesCleared": ["Drained Floodgate"]},
         {"obstaclesCleared": ["Dark World Portal"]}
       ],
-      "exitState": {"event": {
-        "type": "DrainedFloodgateAndMirrorPoint"
-      }}
+      "exitState": {
+        "event": {
+          "type": "DrainedFloodgateAndMirrorPoint"
+        }
+      }
     },
     {
       "link": [1, 2],

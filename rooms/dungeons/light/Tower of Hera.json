@@ -7,13 +7,11 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Moldorm"},
-
       {"name": "Hardhat Beetle (Blue)"},
       {"name": "Hardhat Beetle (Red)"},
       {"name": "Kodongo"},
       {"name": "Mini-Moldorm"},
       {"name": "Stalfos"},
-
       {"name": "Flying Tile"},
       {"name": "Guruguru Bar"},
       {"name": "Spark"}
@@ -307,10 +305,10 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
+      "collectsItems": [5],
       "note": [
         "Use the pots to kill the enemies then reset the room. The pots will respawn and the killed enemies will not."
-      ],
-      "collectsItems": [5]
+      ]
     },
     {
       "link": [6, 7],
@@ -351,7 +349,9 @@
       "link": [9, 8],
       "name": "Base",
       "requires": [],
-      "devNote": ["It is possible to get to the big chest with Hookshot, but it's free to just go up and fall back down."]
+      "devNote": [
+        "It is possible to get to the big chest with Hookshot, but it's free to just go up and fall back down."
+      ]
     },
     {
       "link": [9, 9],

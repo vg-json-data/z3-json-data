@@ -3,9 +3,7 @@
   "$id": "z3-tech.schema.json",
   "type": "object",
   "description": "Techniques and proficiency tiers used by Link to the Past logic.",
-  "required": [
-    "techCategories"
-  ],
+  "required": ["techCategories"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -16,11 +14,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": [
-          "name",
-          "description",
-          "techs"
-        ],
+        "required": ["name", "description", "techs"],
         "additionalProperties": false,
         "properties": {
           "name": {
@@ -34,10 +28,7 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name"
-              ],
+              "required": ["id", "name"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -52,10 +43,7 @@
                   "minItems": 1,
                   "items": {
                     "type": "object",
-                    "required": [
-                      "value",
-                      "note"
-                    ],
+                    "required": ["value", "note"],
                     "additionalProperties": false,
                     "properties": {
                       "value": {
@@ -69,7 +57,9 @@
                           "type": "string"
                         }
                       },
-                      "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+                      "detailNote": {
+                        "$ref": "z3-note.schema.json#/definitions/detailNote"
+                      }
                     }
                   }
                 },
@@ -92,7 +82,9 @@
                     "type": "string"
                   }
                 },
-                "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+                "detailNote": {
+                  "$ref": "z3-note.schema.json#/definitions/detailNote"
+                },
                 "devNote": {
                   "type": "array",
                   "minItems": 1,
@@ -111,33 +103,18 @@
               },
               "oneOf": [
                 {
-                  "required": [
-                    "tiers"
-                  ],
+                  "required": ["tiers"],
                   "not": {
                     "anyOf": [
-                      {
-                        "required": [
-                          "techRequires"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "otherRequires"
-                        ]
-                      }
+                      {"required": ["techRequires"]},
+                      {"required": ["otherRequires"]}
                     ]
                   }
                 },
                 {
-                  "required": [
-                    "techRequires",
-                    "otherRequires"
-                  ],
+                  "required": ["techRequires", "otherRequires"],
                   "not": {
-                    "required": [
-                      "tiers"
-                    ]
+                    "required": ["tiers"]
                   }
                 }
               ]

@@ -7,7 +7,6 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Helmasaur King"},
-
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
       {"name": "Goriya (Green)"},
@@ -18,7 +17,6 @@
       {"name": "Helmasaur"},
       {"name": "Kodongo"},
       {"name": "Terrorpin"},
-
       {"name": "Bubble"},
       {"name": "Medusa"},
       {"name": "Spike Block"}
@@ -200,9 +198,7 @@
       "name": "Helmasaur Mask",
       "subArea": "Palace of Darkness B1",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents breaking Helmasaur's Mask."
-      ]
+      "note": ["Represents breaking Helmasaur's Mask."]
     },
     {
       "id": 30,
@@ -893,7 +889,9 @@
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ],
-      "devNote": ["FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."]
+      "devNote": [
+        "FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."
+      ]
     },
     {
       "link": [17, 18],
@@ -1113,7 +1111,9 @@
         ]}
       ],
       "collectsItems": [9],
-      "note": ["Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."]
+      "note": [
+        "Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."
+      ]
     },
     {
       "link": [22, 17],
@@ -1429,7 +1429,9 @@
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [14, 15],
-      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+      "note": [
+        "With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."
+      ]
     },
     {
       "link": [30, 30],
@@ -1473,7 +1475,9 @@
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [14, 15],
-      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
+      "note": [
+        "Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."
+      ]
     }
   ]
 }

@@ -8,16 +8,37 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"horizonal-water-land": [3, 2]}, "default": "horizonal-water-land"}
+      {
+        "supported": {
+          "horizonal-water-land": [3, 2]
+        },
+        "default": "horizonal-water-land"
+      }
     ],
     "west": [
-      {"supported": {"horizonal-water-land": [3, 1]}, "default": "horizonal-water-land"}
+      {
+        "supported": {
+          "horizonal-water-land": [3, 1]
+        },
+        "default": "horizonal-water-land"
+      }
     ]
   },
   "enemySpawns": {
@@ -66,14 +87,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 76,
+          "id": 1,
           "name": "Potion Shop",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 96,
+          "id": 2,
           "name": "Dark Potion Shop",
           "world": "dark"
         }
@@ -116,7 +137,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -125,7 +150,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -135,7 +164,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -170,7 +203,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -180,7 +217,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -190,7 +231,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 3],

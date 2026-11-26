@@ -3,9 +3,7 @@
   "$id": "z3-enemies.schema.json",
   "type": "object",
   "description": "Enemies, bosses, hazards, and attacks in Link to the Past.",
-  "required": [
-    "enemies"
-  ],
+  "required": ["enemies"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -22,11 +20,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": [
-          "names",
-          "dmgToLink",
-          "spriteIndex"
-        ],
+        "required": ["names", "dmgToLink", "spriteIndex"],
         "additionalProperties": false,
         "properties": {
           "names": {
@@ -56,11 +50,7 @@
           },
           "dmgToLink": {
             "type": "object",
-            "required": [
-              "green",
-              "blue",
-              "red"
-            ],
+            "required": ["green", "blue", "red"],
             "additionalProperties": false,
             "properties": {
               "green": {
@@ -101,17 +91,8 @@
             "properties": {
               "boomerang": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "enum": [
-                      "stun1Second",
-                      "stun4Seconds",
-                      "stun10Seconds"
-                    ]
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"enum": ["stun1Second", "stun4Seconds", "stun10Seconds"]}
                 ]
               },
               "class1": {
@@ -140,24 +121,14 @@
               },
               "hookshot": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "stun10Seconds"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "stun10Seconds"}
                 ]
               },
               "bombs": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "stun10Seconds"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "stun10Seconds"}
                 ]
               },
               "silverArrows": {
@@ -166,83 +137,44 @@
               },
               "magicPowder": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "enum": [
-                      "fairy",
-                      "slime"
-                    ]
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"enum": ["fairy", "slime"]}
                 ]
               },
               "fireRod": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "incinerate"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "incinerate"}
                 ]
               },
               "iceRod": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "freeze"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "freeze"}
                 ]
               },
               "bombos": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "incinerate"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "incinerate"}
                 ]
               },
               "ether": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "const": "freeze"
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"const": "freeze"}
                 ]
               },
               "quake": {
                 "oneOf": [
-                  {
-                    "type": "integer",
-                    "minimum": 0
-                  },
-                  {
-                    "enum": [
-                      "stun10Seconds",
-                      "slime"
-                    ]
-                  }
+                  {"type": "integer", "minimum": 0},
+                  {"enum": ["stun10Seconds", "slime"]}
                 ]
               }
             }
           },
           "spriteIndex": {
-            "type": [
-              "integer",
-              "null"
-            ],
+            "type": ["integer", "null"],
             "minimum": 0,
             "maximum": 255
           },
@@ -261,18 +193,11 @@
             "maximum": 255
           },
           "prizePack": {
-            "enum": [
-              0,
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              null
-            ]
+            "enum": [0, 1, 2, 3, 4, 5, 6, null]
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {

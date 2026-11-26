@@ -7,7 +7,6 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Kholdstare"},
-
       {"name": "Babusu"},
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
@@ -15,7 +14,6 @@
       {"name": "Pengator"},
       {"name": "Stalfos Knight"},
       {"name": "Zol"},
-
       {"name": "Bubble"},
       {"name": "Giant Spike Block"},
       {"name": "Guruguru Bar"},
@@ -186,9 +184,7 @@
       "name": "Frozen Kholdstare Block",
       "subArea": "Ice Palace (Lower Floors)",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents breaking Kholdstare's Ice Block."
-      ]
+      "note": ["Represents breaking Kholdstare's Ice Block."]
     },
     {
       "id": 28,
@@ -554,7 +550,9 @@
         {"bombs": 1},
         {"refill": {"type": "Bombs", "limit": 1}}
       ],
-      "devNote": ["Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."]
+      "devNote": [
+        "Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."
+      ]
     },
     {
       "link": [8, 8],
@@ -757,7 +755,9 @@
       "link": [13, 15],
       "name": "Base",
       "requires": [],
-      "devNote": ["FIXME: It is possible to get to 12 from here with Hookshot, but with Hookshot, Link can just push block clip."]
+      "devNote": [
+        "FIXME: It is possible to get to 12 from here with Hookshot, but with Hookshot, Link can just push block clip."
+      ]
     },
     {
       "link": [13, 16],
@@ -1069,28 +1069,46 @@
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 5}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 10}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 10
+            }}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "count": 3}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 6}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 6
+            }}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"damage": {"enemy": "Kholdstare", "count": 2}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]}
         ]}
       ],
       "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [12, 13],
-      "devNote": ["FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."]
+      "devNote": [
+        "FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."
+      ]
     },
     {
       "link": [28, 28],
@@ -1100,35 +1118,63 @@
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 2}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 4}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 4
+            }}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 2
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"bossProficiency": 2},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"bossProficiency": 3},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 2
+            }}
           ]},
           {"and": [
             {"sword": 4},
@@ -1146,12 +1192,20 @@
         {"or": [
           {"and": [
             {"fireRod": 14},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"fireRod": 12},
             {"bossProficiency": 2},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 1}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 1
+            }}
           ]},
           {"and": [
             {"fireRod": 12},

@@ -8,20 +8,76 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "dual-small"},
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "dual-small"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"},
-      {"supported": {"wide": [1], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "wide": [1],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"},
-      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [1, 4], "dual-upper": [1, 4], "small-1": [1], "small-2": [4]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 4],
+          "dual-upper": [1, 4],
+          "small-1": [1],
+          "small-2": [4]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -96,80 +152,80 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 128,
+          "id": 1,
           "name": "Kakariko Well Drop Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 57,
+          "id": 2,
           "name": "Kakariko Well Cave Entrance",
           "world": "light"
         },
         {
-          "id": 3,
           "romEntranceId": 97,
+          "id": 3,
           "name": "Blind's Hideout",
           "world": "light"
         },
         {
-          "id": 4,
           "romEntranceId": 13,
+          "id": 4,
           "name": "Elder House West Entrance",
           "world": "light"
         },
         {
-          "id": 5,
           "romEntranceId": 14,
+          "id": 5,
           "name": "Elder House East Entrance",
           "world": "light"
         },
         {
-          "id": 6,
           "romEntranceId": 63,
+          "id": 6,
           "name": "West Snitch Lady's House",
           "world": "light"
         },
         {
-          "id": 7,
           "romEntranceId": 62,
+          "id": 7,
           "name": "East Snitch Lady's House",
           "world": "light"
         },
         {
-          "id": 8,
           "romEntranceId": 75,
+          "id": 8,
           "name": "Chicken House",
           "world": "light"
         },
         {
-          "id": 9,
           "romEntranceId": 64,
+          "id": 9,
           "name": "Sick Kid's House",
           "world": "light"
         },
         {
-          "id": 10,
           "romEntranceId": 67,
+          "id": 10,
           "name": "Kakariko Tavern Secret Entrance",
           "world": "light"
         },
         {
-          "id": 11,
           "romEntranceId": 66,
+          "id": 11,
           "name": "Kakariko Tavern Main Entrance",
           "world": "light"
         },
         {
-          "id": 12,
           "romEntranceId": 71,
+          "id": 12,
           "name": "Chest Game",
           "world": "dark"
         },
         {
-          "id": 13,
           "romEntranceId": 84,
+          "id": 13,
           "name": "C-Shaped House",
           "world": "dark"
         }
@@ -182,8 +238,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 14,
           "romEntranceId": 52,
+          "id": 14,
           "name": "Thieves' Town",
           "world": "dark"
         }
@@ -195,14 +251,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 15,
           "romEntranceId": 68,
+          "id": 15,
           "name": "Bush Blocked House",
           "world": "light"
         },
         {
-          "id": 16,
           "romEntranceId": 96,
+          "id": 16,
           "name": "Village of Outcasts Shop",
           "world": "dark"
         }
@@ -219,14 +275,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 18,
           "romEntranceId": 70,
+          "id": 18,
           "name": "Kakariko Shop",
           "world": "light"
         },
         {
-          "id": 19,
           "romEntranceId": 72,
+          "id": 19,
           "name": "Brewery",
           "world": "dark"
         }
@@ -238,8 +294,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 17,
           "romEntranceId": 74,
+          "id": 17,
           "name": "Kakariko Bomb Shed",
           "world": "light"
         }
@@ -299,7 +355,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -311,7 +371,9 @@
         {"notFlag": "OpenedThievesTown"},
         "superbunnyToLink"
       ],
-      "note": ["Grabbing the gate converts superbunny to Link and can be done an unlimited number of times until the dungeon is opened."]
+      "note": [
+        "Grabbing the gate converts superbunny to Link and can be done an unlimited number of times until the dungeon is opened."
+      ]
     },
     {
       "link": [1, 2],
@@ -397,7 +459,9 @@
         "OcarinaInactive"
       ],
       "collectsItems": [1],
-      "devNote": ["Using the Flute to travel converts Lonk to Link, but simply activating it does not change states."]
+      "devNote": [
+        "Using the Flute to travel converts Lonk to Link, but simply activating it does not change states."
+      ]
     },
     {
       "link": [3, 1],
@@ -430,7 +494,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 6],

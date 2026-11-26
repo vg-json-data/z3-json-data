@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"vertical-water-land": [3, 1]}, "default": "vertical-water-land"}
+      {
+        "supported": {
+          "vertical-water-land": [3, 1]
+        },
+        "default": "vertical-water-land"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"horizonal-water-land": [2, 1]}, "default": "horizonal-water-land"}
+      {
+        "supported": {
+          "horizonal-water-land": [2, 1]
+        },
+        "default": "horizonal-water-land"
+      }
     ]
   },
   "enemySpawns": {
@@ -129,8 +152,14 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}},
-      "devNote": ["The strong bush is tile theme dependent. In the vanilla tiling, the strong bush is here."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "devNote": [
+        "The strong bush is tile theme dependent. In the vanilla tiling, the strong bush is here."
+      ]
     },
     {
       "link": [1, 2],

@@ -34,7 +34,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1] 
+      "unlocksDoor": [1]
     },
     {
       "link": [1, 1],

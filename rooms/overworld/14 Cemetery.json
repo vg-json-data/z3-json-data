@@ -8,16 +8,44 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "wide": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "wide": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ]
   },
   "enemySpawns": {
@@ -94,8 +122,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 82,
+          "id": 1,
           "name": "Graveyard Cave",
           "world": "light"
         }
@@ -107,8 +135,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 129,
+          "id": 2,
           "name": "Hyrule Castle Sewers Drop Entrance",
           "world": "light"
         }
@@ -120,8 +148,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 91,
+          "id": 3,
           "name": "King's Grave",
           "world": "light"
         }
@@ -166,7 +194,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -176,7 +208,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -186,7 +222,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": ["With no weapons, Link can kill the bottom left two Ropas with bushes."]
     },
     {
@@ -236,7 +276,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -246,7 +290,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -256,7 +304,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": ["With no weapons, Link can kill some of the Ropas with bushes."]
     },
     {

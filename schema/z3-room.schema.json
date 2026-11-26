@@ -3,13 +3,7 @@
   "$id": "z3-room.schema.json",
   "type": "object",
   "description": "A contiguous area in Link to the Past.",
-  "required": [
-    "id",
-    "name",
-    "roomType",
-    "nodes",
-    "strats"
-  ],
+  "required": ["id", "name", "roomType", "nodes", "strats"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -30,13 +24,7 @@
     },
     "roomType": {
       "type": "string",
-      "enum": [
-        "Cave",
-        "Dungeon",
-        "House",
-        "Overworld",
-        "Special"
-      ]
+      "enum": ["Cave", "Dungeon", "House", "Overworld", "Special"]
     },
     "dungeonId": {
       "description": "Vanilla dungeon identity, distinct from the logical room id. This is the raw even ID, not a divided table index.",
@@ -51,7 +39,9 @@
         "type": "string"
       }
     },
-    "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+    "detailNote": {
+      "$ref": "z3-note.schema.json#/definitions/detailNote"
+    },
     "position": {
       "type": "array",
       "items": {
@@ -77,21 +67,28 @@
       "required": ["north", "south", "east", "west"],
       "additionalProperties": false,
       "properties": {
-        "north": { "$ref": "#/definitions/edgeVariantSegments" },
-        "south": { "$ref": "#/definitions/edgeVariantSegments" },
-        "east": { "$ref": "#/definitions/edgeVariantSegments" },
-        "west": { "$ref": "#/definitions/edgeVariantSegments" }
+        "north": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "south": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "east": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "west": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        }
       }
     },
-    "enemySpawns": {"$ref": "z3-room-enemies.schema.json"},
+    "enemySpawns": {
+      "$ref": "z3-room-enemies.schema.json"
+    },
     "nodes": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "name"
-        ],
+        "required": ["id", "name"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -130,11 +127,7 @@
           },
           "world": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark",
-              "both"
-            ]
+            "enum": ["light", "dark", "both"]
           },
           "mirrorPoint": {
             "type": "boolean",
@@ -145,20 +138,12 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "edge",
-                "span"
-              ],
+              "required": ["edge", "span"],
               "additionalProperties": false,
               "properties": {
                 "edge": {
                   "type": "string",
-                  "enum": [
-                    "north",
-                    "south",
-                    "east",
-                    "west"
-                  ]
+                  "enum": ["north", "south", "east", "west"]
                 },
                 "span": {
                   "type": "array",
@@ -173,10 +158,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -185,11 +167,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "romEntranceId": {
@@ -207,10 +185,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -219,11 +194,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -235,10 +206,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -252,11 +220,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -268,10 +232,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -286,7 +247,9 @@
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {
@@ -300,12 +263,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "locationName",
-          "itemLocation",
-          "item"
-        ],
+        "required": ["id", "locationName", "itemLocation", "item"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -324,10 +282,7 @@
           },
           "world": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
+            "enum": ["light", "dark"]
           },
           "item": {
             "type": "string"
@@ -354,13 +309,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "locationName",
-          "doorPosition",
-          "doorLocation",
-          "keyType"
-        ],
+        "required": ["id", "locationName", "doorPosition", "doorLocation", "keyType"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -375,20 +324,11 @@
           },
           "world": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
+            "enum": ["light", "dark"]
           },
           "doorPosition": {
             "type": "string",
-            "enum": [
-              "north",
-              "south",
-              "east",
-              "west",
-              "middle"
-            ]
+            "enum": ["north", "south", "east", "west", "middle"]
           },
           "doorLocation": {
             "type": "integer",
@@ -396,14 +336,7 @@
           },
           "keyType": {
             "type": "string",
-            "enum": [
-              "big",
-              "small",
-              "bomb",
-              "bomb, boots",
-              "boots",
-              "glove"
-            ]
+            "enum": ["big", "small", "bomb", "bomb, boots", "boots", "glove"]
           },
           "devNote": {
             "type": "array",
@@ -418,10 +351,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "note"
-        ],
+        "required": ["id", "note"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -433,7 +363,9 @@
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          }
         }
       }
     },
@@ -441,11 +373,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "link",
-          "name",
-          "requires"
-        ],
+        "required": ["link", "name", "requires"],
         "additionalProperties": false,
         "properties": {
           "link": {
@@ -462,27 +390,19 @@
           },
           "world": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark",
-              "any"
-            ]
+            "enum": ["light", "dark", "any"]
           },
           "fromWorld": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
+            "enum": ["light", "dark"]
           },
           "toWorld": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
+            "enum": ["light", "dark"]
           },
-          "entranceState": {"$ref": "#/definitions/entranceState"},
+          "entranceState": {
+            "$ref": "#/definitions/entranceState"
+          },
           "requires": {
             "type": "array",
             "items": {
@@ -491,11 +411,7 @@
           },
           "isBunny": {
             "type": "string",
-            "enum": [
-              "yes",
-              "no",
-              "any"
-            ]
+            "enum": ["yes", "no", "any"]
           },
           "setsFlags": {
             "type": "array",
@@ -516,7 +432,9 @@
             "description": "Item receipts granted after the requirements succeed. Repeatable; does not collect a room-local item location.",
             "type": "array",
             "minItems": 1,
-            "items": {"type": "string"}
+            "items": {
+              "type": "string"
+            }
           },
           "clearsObstacles": {
             "type": "array",
@@ -542,35 +460,24 @@
           },
           "setsFollower": {
             "type": "string",
-            "enum": [
-              "None",
-              "Zelda",
-              "Old Man",
-              "Blind",
-              "Dwarf",
-              "Purple Chest",
-              "Super Bomb"
-            ]
+            "enum": ["None", "Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
           },
           "followerComplete": {
             "type": "string",
-            "enum": [
-              "Zelda",
-              "Old Man",
-              "Blind",
-              "Dwarf",
-              "Purple Chest",
-              "Super Bomb"
-            ]
+            "enum": ["Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
           },
-          "exitState": {"$ref": "#/definitions/exitState"},
+          "exitState": {
+            "$ref": "#/definitions/exitState"
+          },
           "note": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {
@@ -593,10 +500,25 @@
             "minimum": 1,
             "description": "Stable identifier unique among notables in this room."
           },
-          "name": {"type": "string", "minLength": 1},
-          "note": {"type": "array", "items": {"type": "string"}},
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
-          "devNote": {"type": "array", "items": {"type": "string"}}
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     },
@@ -614,8 +536,12 @@
       "maxProperties": 1,
       "additionalProperties": false,
       "properties": {
-        "event": {"$ref": "#/definitions/eventState"},
-        "overhead": {"$ref": "#/definitions/overheadState"}
+        "event": {
+          "$ref": "#/definitions/eventState"
+        },
+        "overhead": {
+          "$ref": "#/definitions/overheadState"
+        }
       }
     },
     "exitState": {
@@ -625,9 +551,15 @@
       "maxProperties": 1,
       "additionalProperties": false,
       "properties": {
-        "event": {"$ref": "#/definitions/eventState"},
-        "overhead": {"$ref": "#/definitions/overheadState"},
-        "leaveNormally": {"$ref": "#/definitions/leaveNormallyState"}
+        "event": {
+          "$ref": "#/definitions/eventState"
+        },
+        "overhead": {
+          "$ref": "#/definitions/overheadState"
+        },
+        "leaveNormally": {
+          "$ref": "#/definitions/leaveNormallyState"
+        }
       }
     },
     "leaveNormallyState": {
@@ -641,8 +573,13 @@
       "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "entranceID": {"type": "integer", "minimum": 1},
-        "type": {"type": "string"}
+        "entranceID": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type": {
+          "type": "string"
+        }
       }
     },
     "overheadState": {
@@ -651,7 +588,10 @@
       "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "type": {"enum": ["class1", "class3"], "description": "Thrown-object damage class, matched exactly."}
+        "type": {
+          "enum": ["class1", "class3"],
+          "description": "Thrown-object damage class, matched exactly."
+        }
       }
     },
     "edgeVariantName": {
@@ -800,13 +740,11 @@
               "minItems": 2,
               "maxItems": 2,
               "items": [
-                { "type": "integer", "minimum": 1 },
-                {
-                  "anyOf": [
-                    { "type": "integer", "minimum": 1 },
-                    { "const": "return" }
-                  ]
-                }
+                {"type": "integer", "minimum": 1},
+                {"anyOf": [
+                  {"type": "integer", "minimum": 1},
+                  {"const": "return"}
+                ]}
               ]
             },
             "light-and-mirror": {
@@ -832,30 +770,42 @@
       "type": "array",
       "minItems": 1,
       "maxItems": 2,
-      "items": { "$ref": "#/definitions/edgeVariantSegment" },
+      "items": {
+        "$ref": "#/definitions/edgeVariantSegment"
+      },
       "description": "One segment per two screens: west to east on north/south edges, north to south on east/west edges. Length must match the corresponding room dimension divided by two; this requires semantic validation."
     }
   },
   "allOf": [
     {
-      "if": {"required": ["notables"]},
-      "then": {"required": ["nextNotableId"]}
+      "if": {
+        "required": ["notables"]
+      },
+      "then": {
+        "required": ["nextNotableId"]
+      }
     },
     {
-      "if": { "required": ["edgeVariants"] },
+      "if": {
+        "required": ["edgeVariants"]
+      },
       "then": {
         "required": ["size"],
         "properties": {
-          "roomType": { "const": "Overworld" },
-          "size": { "items": { "enum": [2, 4] } }
+          "roomType": {
+            "const": "Overworld"
+          },
+          "size": {
+            "items": {
+              "enum": [2, 4]
+            }
+          }
         }
       }
     },
     {
       "if": {
-        "required": [
-          "roomType"
-        ],
+        "required": ["roomType"],
         "properties": {
           "roomType": {
             "const": "Overworld"
@@ -867,9 +817,7 @@
         "properties": {
           "nodes": {
             "items": {
-              "required": [
-                "world"
-              ]
+              "required": ["world"]
             }
           },
           "strats": {
@@ -878,33 +826,48 @@
                 {
                   "if": {
                     "anyOf": [
-                      {"required": ["exitState"], "properties": {"exitState": {"required": ["overhead"]}}},
-                      {"required": ["entranceState"], "properties": {"entranceState": {"required": ["overhead"]}}}
+                      {
+                        "required": ["exitState"],
+                        "properties": {
+                          "exitState": {
+                            "required": ["overhead"]
+                          }
+                        }
+                      },
+                      {
+                        "required": ["entranceState"],
+                        "properties": {
+                          "entranceState": {
+                            "required": ["overhead"]
+                          }
+                        }
+                      }
                     ]
                   },
-                  "then": {"required": ["world"]}
-                },
-                {
-                  "oneOf": [
-                    {
-                      "required": [
-                        "world"
-                      ]
-                    },
-                    {
-                      "required": [
-                        "fromWorld",
-                        "toWorld"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "properties": {
-                    "exitState": {"properties": {"event": {"required": ["entranceID"]}}},
-                    "entranceState": {"properties": {"event": {"required": ["entranceID"]}}}
+                  "then": {
+                    "required": ["world"]
                   }
-                }
+                },
+                {"oneOf": [
+                  {"required": ["world"]},
+                  {"required": ["fromWorld", "toWorld"]}
+                ]},
+                {"properties": {
+                  "exitState": {
+                    "properties": {
+                      "event": {
+                        "required": ["entranceID"]
+                      }
+                    }
+                  },
+                  "entranceState": {
+                    "properties": {
+                      "event": {
+                        "required": ["entranceID"]
+                      }
+                    }
+                  }
+                }}
               ]
             }
           }
@@ -916,16 +879,18 @@
           "strats": {
             "items": {
               "properties": {
-                "exitState": {"required": ["event"]},
-                "entranceState": {"required": ["event"]}
+                "exitState": {
+                  "required": ["event"]
+                },
+                "entranceState": {
+                  "required": ["event"]
+                }
               }
             }
           },
           "nodes": {
             "items": {
-              "required": [
-                "nodeType"
-              ]
+              "required": ["nodeType"]
             }
           }
         }

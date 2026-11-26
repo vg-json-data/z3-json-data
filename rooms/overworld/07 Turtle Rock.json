@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [4]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [4]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ]
   },
   "enemySpawns": {
@@ -66,8 +89,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 53,
+          "id": 1,
           "name": "Turtle Rock Entrance",
           "world": "dark"
         }
@@ -88,7 +111,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -98,7 +125,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -141,21 +172,37 @@
       "link": [1, 4],
       "name": "Carry Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 4],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
@@ -179,9 +226,9 @@
     },
     {
       "link": [2, 2],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         "Hammer",
         "recheckLinkState"
@@ -243,21 +290,37 @@
       "link": [4, 1],
       "name": "Carry Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 1],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 2],
@@ -279,7 +342,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 4],
@@ -289,7 +356,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 4],

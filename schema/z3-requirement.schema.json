@@ -2,10 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "z3-requirement.schema.json",
   "description": "A single logical condition used in a requirements list. A string names a base requirement such as an item, flag, tech, or helper.",
-  "type": [
-    "string",
-    "object"
-  ],
+  "type": ["string", "object"],
   "minProperties": 1,
   "maxProperties": 1,
   "additionalProperties": false,
@@ -31,35 +28,19 @@
     },
     "sword": {
       "type": "integer",
-      "enum": [
-        1,
-        2,
-        3,
-        4
-      ]
+      "enum": [1, 2, 3, 4]
     },
     "swordExact": {
       "type": "integer",
-      "enum": [
-        1,
-        2,
-        3
-      ]
+      "enum": [1, 2, 3]
     },
     "shield": {
       "type": "integer",
-      "enum": [
-        1,
-        2,
-        3
-      ]
+      "enum": [1, 2, 3]
     },
     "shieldExact": {
       "type": "integer",
-      "enum": [
-        1,
-        2
-      ]
+      "enum": [1, 2]
     },
     "upgradeCapacity": {
       "description": "Advance the named ammunition capacity by one vanilla fairy tier and refill it. Fails at maximum capacity.",
@@ -134,10 +115,7 @@
     },
     "damage": {
       "type": "object",
-      "required": [
-        "enemy",
-        "count"
-      ],
+      "required": ["enemy", "count"],
       "additionalProperties": false,
       "properties": {
         "enemy": {
@@ -154,10 +132,7 @@
     },
     "refill": {
       "type": "object",
-      "required": [
-        "type",
-        "limit"
-      ],
+      "required": ["type", "limit"],
       "additionalProperties": false,
       "properties": {
         "type": {
@@ -220,15 +195,7 @@
     },
     "follower": {
       "type": "string",
-      "enum": [
-        "None",
-        "Zelda",
-        "Old Man",
-        "Blind",
-        "Dwarf",
-        "Purple Chest",
-        "Super Bomb"
-      ]
+      "enum": ["None", "Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
     },
     "followerLost": {
       "type": "array",
@@ -236,14 +203,7 @@
       "uniqueItems": true,
       "items": {
         "type": "string",
-        "enum": [
-          "Zelda",
-          "Old Man",
-          "Blind",
-          "Dwarf",
-          "Purple Chest",
-          "Super Bomb"
-        ]
+        "enum": ["Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
       }
     },
     "obstaclesCleared": {
@@ -265,10 +225,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": [
-          "type",
-          "count"
-        ],
+        "required": ["type", "count"],
         "additionalProperties": false,
         "properties": {
           "type": {

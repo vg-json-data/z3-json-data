@@ -8,16 +8,38 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "small-2"
+      }
     ],
     "south": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"horizonal-water-land": [3, 1]}, "default": "horizonal-water-land"}
+      {
+        "supported": {
+          "horizonal-water-land": [3, 1]
+        },
+        "default": "horizonal-water-land"
+      }
     ]
   },
   "enemySpawns": {
@@ -108,7 +130,11 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Throw the strong bushes directly up the ladder to kill the guard. Throwing up the rock wall will not work."
       ],
@@ -124,7 +150,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -231,13 +261,15 @@
           {"lift": 2}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Throw the strong bushes directly up the ladder to kill the guard. Throwing up the rock wall will not work."
       ],
-      "devNote": [
-        "Killing the guard this way will be dependent on the tiling theme."
-      ]
+      "devNote": ["Killing the guard this way will be dependent on the tiling theme."]
     },
     {
       "link": [2, 2],
@@ -246,7 +278,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "devNote": [
         "This will be dependent on the tiling theme. There is a rock and signpost which is usable with more requirements; it should always remain."
       ]

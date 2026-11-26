@@ -58,9 +58,7 @@
       "names": [
         "Spitting Fireball"
       ],
-      "note": [
-        "This is also created by a Zazak (Red) and a Lynel."
-      ],
+      "note": ["This is also created by a Zazak (Red) and a Lynel."],
       "dmgToLink": {
         "green": 16,
         "blue": 8,
@@ -109,9 +107,7 @@
       "names": [
         "Agahnim's Blue Ball"
       ],
-      "note": [
-        "Creates 6 Fireball when struck or when it hits a wall."
-      ],
+      "note": ["Creates 6 Fireball when struck or when it hits a wall."],
       "dmgToLink": {
         "green": 8,
         "blue": 8,
@@ -168,9 +164,7 @@
       "names": [
         "Lightning"
       ],
-      "note": [
-        "Used by Agahnim and by Vitreous."
-      ],
+      "note": ["Used by Agahnim and by Vitreous."],
       "dmgToLink": {
         "green": 16,
         "blue": 8,
@@ -215,9 +209,7 @@
       "names": [
         "Trinexx (Fire Breath)"
       ],
-      "note": [
-        "This is generated using a garnish."
-      ],
+      "note": ["This is generated using a garnish."],
       "dmgToLink": {
         "green": 16,
         "blue": 16,
@@ -229,9 +221,7 @@
       "names": [
         "Trinexx (Ice Breath)"
       ],
-      "note": [
-        "This is generated using a garnish."
-      ],
+      "note": ["This is generated using a garnish."],
       "dmgToLink": {
         "green": 0,
         "blue": 0,

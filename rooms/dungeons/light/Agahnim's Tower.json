@@ -6,7 +6,6 @@
   "enemySpawns": {
     "enemies": [
       {"name": "Agahnim"},
-
       {"name": "Ball and Chain Trooper"},
       {"name": "Bow Soldier (Blue)"},
       {"name": "Chasupa (Light World)"},
@@ -22,9 +21,7 @@
       "name": "Main Entrance",
       "subArea": "Agahnim's Tower (Lower)",
       "nodeType": "door",
-      "note": [
-        "Note that this dungeon's entrance is on floor 2F"
-      ]
+      "note": ["Note that this dungeon's entrance is on floor 2F"]
     },
     {
       "id": 2,
@@ -267,11 +264,11 @@
         {"combatProficiency": 3},
         {"bombs": 2}
       ],
+      "collectsItems": [1],
       "note": [
         "Quickly place a bomb a bit away from the doorway, wait a second then place another and retreat to the safety of the doorway.",
         "With a proper setup, the soldiers will not be able to reach Link and the second bomb will explode just after the soldiers lose their i-frames."
-      ],
-      "collectsItems": [1]
+      ]
     },
     {
       "link": [2, 3],
@@ -466,7 +463,9 @@
         "Lamp",
         {"sword": 1}
       ],
-      "devNote": ["FIXME: Node 5 and higher assume a sword, because it is needed for the curtains."]
+      "devNote": [
+        "FIXME: Node 5 and higher assume a sword, because it is needed for the curtains."
+      ]
     },
     {
       "link": [6, 7],
@@ -529,10 +528,18 @@
       "requires": [
         {"sword": 1},
         {"or": [
-          {"damage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "count": 2}},
+          {"damage": {
+            "enemy": "Bow Soldier (Blue)",
+            "attack": "Archer Arrow",
+            "count": 2
+          }},
           {"and": [
             {"combatProficiency": 2},
-            {"damage": {"enemy": "Bow Soldier (Blue)", "attack": "Archer Arrow", "count": 1}}
+            {"damage": {
+              "enemy": "Bow Soldier (Blue)",
+              "attack": "Archer Arrow",
+              "count": 1
+            }}
           ]},
           {"combatProficiency": 3}
         ]}

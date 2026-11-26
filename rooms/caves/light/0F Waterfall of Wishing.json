@@ -53,7 +53,9 @@
         "h_greatFairyThrowItem"
       ],
       "collectsItems": [2],
-      "devNote": ["This is not really a second item, but instead an upgrade that can be done multiple times."]
+      "devNote": [
+        "This is not really a second item, but instead an upgrade that can be done multiple times."
+      ]
     },
     {
       "link": [1, 1],
@@ -69,7 +71,9 @@
       "requires": [
         "h_greatFairyThrowItem"
       ],
-      "note": ["If Link has zero throwable items, select 'No' in order to prevent a softlock."]
+      "note": [
+        "If Link has zero throwable items, select 'No' in order to prevent a softlock."
+      ]
     }
   ]
 }

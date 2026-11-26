@@ -8,16 +8,40 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"split-house": [1]}, "default": "split-house"}
+      {
+        "supported": {
+          "split-house": [1]
+        },
+        "default": "split-house"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -59,8 +83,8 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 15,
+          "id": 1,
           "name": "Two Brothers' House West Entrance",
           "world": "light"
         }
@@ -113,7 +137,11 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
@@ -123,18 +151,30 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -144,7 +184,9 @@
         {"lift": 0}
       ],
       "collectsItems": [1],
-      "devNote": ["The lady will not let Link pass left to right unless he already just started the game going right to left."]
+      "devNote": [
+        "The lady will not let Link pass left to right unless he already just started the game going right to left."
+      ]
     },
     {
       "link": [2, 2],
@@ -153,7 +195,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 3],
@@ -186,7 +232,11 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
@@ -196,7 +246,11 @@
         {"pay": 80},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 1],
@@ -207,7 +261,11 @@
         {"carry": 1},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 2],
@@ -242,7 +300,11 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 3],

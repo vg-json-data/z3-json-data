@@ -8,7 +8,6 @@
     "enemies": [
       {"name": "Vitreous"},
       {"name": "Vitreous (Small Eye)"},
-
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
       {"name": "Floating Stalfos Head"},
@@ -18,7 +17,6 @@
       {"name": "Wizzrobe"},
       {"name": "Zol"},
       {"name": "Zoro"},
-
       {"name": "Beamos"},
       {"name": "Bubble"},
       {"name": "Flying Tile"},
@@ -164,9 +162,7 @@
       "name": "Vitreous Small Eyes",
       "subArea": "Misery Mire (Final Section)",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing Vitreous's Small Eyes."
-      ]
+      "note": ["Represents killing Vitreous's Small Eyes."]
     },
     {
       "id": 23,
@@ -326,7 +322,9 @@
       "doorPosition": "north",
       "doorLocation": 14,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 8,
@@ -468,7 +466,9 @@
           {"blueCane": 20}
         ]}
       ],
-      "note": ["Freeze a Popo, use it to kill everything in the room, then kill it with any attack."]
+      "note": [
+        "Freeze a Popo, use it to kill everything in the room, then kill it with any attack."
+      ]
     },
     {
       "link": [3, 2],
@@ -494,7 +494,9 @@
           {"damage": {"enemy": "Ground Spikes", "count": 2}}
         ]}
       ],
-      "devNote": ["This is to track key usage options, it's less damaging to go the long way around, which also doesnt rely on the peg orientation."]
+      "devNote": [
+        "This is to track key usage options, it's less damaging to go the long way around, which also doesnt rely on the peg orientation."
+      ]
     },
     {
       "link": [3, 4],
@@ -837,7 +839,9 @@
           {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 2}}
         ]}
       ],
-      "devNote": ["FIXME: It seems unreasonable to get through this room without a lamp, so the full basement is going to assume it for now."]
+      "devNote": [
+        "FIXME: It seems unreasonable to get through this room without a lamp, so the full basement is going to assume it for now."
+      ]
     },
     {
       "link": [17, 18],
@@ -854,7 +858,9 @@
         "Lamp",
         {"combatProficiency": 3}
       ],
-      "note": ["Get in the second lane, when the spike moved right past Link, quickly move to the third or fourth lane."]
+      "note": [
+        "Get in the second lane, when the spike moved right past Link, quickly move to the third or fourth lane."
+      ]
     },
     {
       "link": [18, 18],

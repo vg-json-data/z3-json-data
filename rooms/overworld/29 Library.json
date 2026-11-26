@@ -8,16 +8,43 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [3], "small-2": [3]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [3],
+          "small-2": [3]
+        },
+        "default": "small-2"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "dual-small": [3, 1], "small-1": [3], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [3, 1],
+          "small-1": [3],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "west": [
-      {"supported": {"split-house": [1]}, "default": "split-house"}
+      {
+        "supported": {
+          "split-house": [1]
+        },
+        "default": "split-house"
+      }
     ]
   },
   "enemySpawns": {
@@ -57,20 +84,20 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 16,
+          "id": 1,
           "name": "Two Brothers' House East Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 103,
+          "id": 2,
           "name": "Kakariko Gamble Game",
           "world": "light"
         },
         {
-          "id": 3,
           "romEntranceId": 89,
+          "id": 3,
           "name": "Archery Game",
           "world": "dark"
         }
@@ -82,8 +109,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 73,
+          "id": 4,
           "name": "Library",
           "world": "light"
         }
@@ -106,7 +133,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -116,7 +147,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -126,7 +161,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -150,19 +189,35 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
-      "devNote": ["If there is a guard in the way, lure and get it stuck behind bushes before passing it."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "devNote": [
+        "If there is a guard in the way, lure and get it stuck behind bushes before passing it."
+      ]
     },
     {
       "link": [1, 3],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}},
-      "devNote": ["If there is a guard in the way, lure and get it stuck behind bushes before passing it."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "devNote": [
+        "If there is a guard in the way, lure and get it stuck behind bushes before passing it."
+      ]
     },
     {
       "link": [2, 1],
@@ -278,24 +333,40 @@
       "link": [3, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -304,7 +375,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -314,7 +389,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
   ]
 }

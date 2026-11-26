@@ -8,14 +8,12 @@
     "enemies": [
       {"name": "Arrghus"},
       {"name": "Arrghus Fuzz"},
-
       {"name": "Bari (Blue)"},
       {"name": "Bari (Red)"},
       {"name": "Pirogusu"},
       {"name": "Stalfos"},
       {"name": "Water Tektite"},
       {"name": "Zol"},
-
       {"name": "Guruguru Bar"},
       {"name": "Kyameron"},
       {"name": "Medusa"},
@@ -150,9 +148,7 @@
       "name": "Arrghus Fuzz",
       "subArea": "Swamp Palace B1",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing the 13 Fuzz surrounding Arrghus."
-      ]
+      "note": ["Represents killing the 13 Fuzz surrounding Arrghus."]
     },
     {
       "id": 22,
@@ -363,15 +359,11 @@
   "obstacles": [
     {
       "id": "Flood Eastern Channel",
-      "note": [
-        "The eastern channel has been flooded."
-      ]
+      "note": ["The eastern channel has been flooded."]
     },
     {
       "id": "Flood Western Channel",
-      "note": [
-        "The western channel has been flooded."
-      ]
+      "note": ["The western channel has been flooded."]
     },
     {
       "id": "Western Floodgate Exit Strategy",
@@ -390,12 +382,14 @@
     {
       "link": [1, 2],
       "name": "Base",
+      "entranceState": {
+        "event": {
+          "type": "DrainedFloodgate"
+        }
+      },
       "requires": [
         "Flippers"
-      ],
-      "entranceState": {"event": {
-        "type": "DrainedFloodgate"
-      }}
+      ]
     },
     {
       "link": [2, 2],
@@ -571,8 +565,8 @@
       "requires": [
         "Hammer"
       ],
-      "clearsObstacles": ["Flood Eastern Channel"],
-      "setsFlags": ["OpenedSwampPalaceEastFloodgate"]
+      "setsFlags": ["OpenedSwampPalaceEastFloodgate"],
+      "clearsObstacles": ["Flood Eastern Channel"]
     },
     {
       "link": [6, 6],
@@ -869,8 +863,8 @@
       "link": [10, 10],
       "name": "Flood Western Channel",
       "requires": [],
-      "clearsObstacles": ["Flood Western Channel"],
-      "setsFlags": ["OpenedSwampPalaceWestFloodgate"]
+      "setsFlags": ["OpenedSwampPalaceWestFloodgate"],
+      "clearsObstacles": ["Flood Western Channel"]
     },
     {
       "link": [11, 12],
@@ -942,7 +936,9 @@
       "link": [16, 17],
       "name": "Base",
       "requires": [],
-      "note": ["The easiest way to get to the southern flooded room without damage is to go back upstairs."]
+      "note": [
+        "The easiest way to get to the southern flooded room without damage is to go back upstairs."
+      ]
     },
     {
       "link": [16, 18],
@@ -963,7 +959,9 @@
       "link": [17, 16],
       "name": "Base",
       "requires": [],
-      "note": ["The easiest way to get to the northen flooded room without damage is to go back upstairs."]
+      "note": [
+        "The easiest way to get to the northen flooded room without damage is to go back upstairs."
+      ]
     },
     {
       "link": [17, 17],
@@ -1037,7 +1035,9 @@
         ]}
       ],
       "collectsItems": [14],
-      "devNote": ["This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."]
+      "devNote": [
+        "This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."
+      ]
     },
     {
       "link": [20, 20],
@@ -1117,7 +1117,9 @@
         {"bossProficiency": 9},
         {"bombs": 20}
       ],
-      "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
+      "devNote": [
+        "It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."
+      ]
     },
     {
       "link": [22, 22],

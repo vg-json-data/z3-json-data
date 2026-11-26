@@ -104,14 +104,14 @@
           ]}
         ]}
       ],
+      "setsFollower": "Old Man",
       "devNote": [
         "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
         "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
         "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
         "It's neglected for now due to schema limitations and because it only saves one heart.",
         "The medallions would also work, but they are annoying to use unless Link has no sword; without a sword, the medallions also can't drain magic."
-      ],
-      "setsFollower": "Old Man"
+      ]
     },
     {
       "link": [3, 2],
@@ -169,14 +169,14 @@
           ]}
         ]}
       ],
+      "setsFollower": "Old Man",
       "devNote": [
         "Nearly any item can get through here with using the audio or visual cue to determine when Link goes through the door to prevent falling into the pit.",
         "Because it's nearly every item, but some would drain Link's resources, this is just listed as free.",
         "FIXME: Add a way to represent each item drains its resourse: i.e. magic, arrows, empty bottle.",
         "It's neglected for now due to schema limitations and because it only saves one heart.",
         "The medallions would also work, but they are annoying to use unless Link has no sword; without a sword, the medallions also can't drain magic."
-      ],
-      "setsFollower": "Old Man"
+      ]
     }
   ]
 }

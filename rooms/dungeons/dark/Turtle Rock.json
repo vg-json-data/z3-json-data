@@ -9,7 +9,6 @@
       {"name": "Trinexx (Blue Head)"},
       {"name": "Trinexx (Body)"},
       {"name": "Trinexx (Red Head)"},
-
       {"name": "Bari (Blue)"},
       {"name": "Floating Stalfos Head"},
       {"name": "Hardhat Beetle (Red)"},
@@ -18,7 +17,6 @@
       {"name": "Stalfos"},
       {"name": "Zol"},
       {"name": "Zoro"},
-
       {"name": "Bubble"},
       {"name": "Chain Chomp"},
       {"name": "Flying Tile"},
@@ -257,9 +255,7 @@
       "name": "Trinexx Fire and Ice Heads",
       "subArea": "Turtle Rock B3",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing Trinexx's Fire and Ice Heads."
-      ]
+      "note": ["Represents killing Trinexx's Fire and Ice Heads."]
     },
     {
       "id": 39,
@@ -436,7 +432,9 @@
       "doorPosition": "north",
       "doorLocation": 22,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 7,
@@ -567,7 +565,9 @@
         {"refill": {"type": "Fairy", "limit": 1}}
       ],
       "note": ["Wait in the doorway of the flying tile room to stay safe."],
-      "devNote": ["This is probably not really worth doing if you can't hide in the doorway. Link will take more damage than it's worth."]
+      "devNote": [
+        "This is probably not really worth doing if you can't hide in the doorway. Link will take more damage than it's worth."
+      ]
     },
     {
       "link": [5, 7],
@@ -715,7 +715,9 @@
         ]}
       ],
       "collectsItems": [4],
-      "note": ["It is possible to lure the Zol away from the block to be able to kill the Hokkubokku with only 3 red blocks."]
+      "note": [
+        "It is possible to lure the Zol away from the block to be able to kill the Hokkubokku with only 3 red blocks."
+      ]
     },
     {
       "link": [9, 10],
@@ -1744,7 +1746,9 @@
           ]}
         ]}
       ],
-      "note": ["It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"]
+      "note": [
+        "It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"
+      ]
     },
     {
       "link": [38, 39],

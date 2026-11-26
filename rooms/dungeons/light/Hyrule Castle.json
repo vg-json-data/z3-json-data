@@ -70,9 +70,7 @@
       "name": "Dark Cross Room",
       "subArea": "Sewers (Dark)",
       "nodeType": "junction",
-      "note": [
-        "Represents being in the middle of the room, after the first two snakes"
-      ]
+      "note": ["Represents being in the middle of the room, after the first two snakes"]
     },
     {
       "id": 10,
@@ -125,7 +123,9 @@
       "item": "BlueBoomerang",
       "secondaryItem": "TenArrows",
       "itemAddress": "0xE974",
-      "devNote": ["The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."]
+      "devNote": [
+        "The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."
+      ]
     },
     {
       "id": 4,
@@ -257,12 +257,7 @@
     }
   ],
   "obstacles": [
-    {
-      "id": "Zelda Following",
-      "note": [
-        "Rescued Zelda and she is following Link."
-      ]
-    }
+    {"id": "Zelda Following", "note": ["Rescued Zelda and she is following Link."]}
   ],
   "strats": [
     {
@@ -517,7 +512,9 @@
         {"fireRod": 1},
         {"damage": {"enemy": "Rope", "count": 1}}
       ],
-      "note": ["Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."]
+      "note": [
+        "Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."
+      ]
     },
     {
       "link": [8, 9],
@@ -543,7 +540,9 @@
         {"damage": {"enemy": "Rat", "count": 1}},
         {"damage": {"enemy": "Rope", "count": 4}}
       ],
-      "note": ["Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."]
+      "note": [
+        "Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."
+      ]
     },
     {
       "link": [9, 9],

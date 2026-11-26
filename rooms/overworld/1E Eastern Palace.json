@@ -8,20 +8,72 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [2], "small-1": [2], "small-2": [2]}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [2],
+          "small-1": [2],
+          "small-2": [2]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "small-1"},
-      {"supported": {"closed": [], "small-2": [4]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [4]
+        },
+        "default": "small-2"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "wide": [2], "small-1": [2], "small-2": [2], "lake": [2, "return"]}, "default": "closed"},
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [2],
+          "small-1": [2],
+          "small-2": [2],
+          "lake": [2, "return"]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -101,8 +153,8 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 104,
+          "id": 1,
           "name": "Palace of Darkness Cottage",
           "world": "dark"
         }
@@ -114,8 +166,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 69,
+          "id": 2,
           "name": "Sahasrahla's Hut",
           "world": "light"
         }
@@ -127,14 +179,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 8,
+          "id": 3,
           "name": "Eastern Palace Entrance",
           "world": "light"
         },
         {
-          "id": 4,
           "romEntranceId": 38,
+          "id": 4,
           "name": "Palace of Darkness Entrance",
           "world": "dark"
         }
@@ -207,7 +259,11 @@
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -219,13 +275,21 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -237,27 +301,47 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 4],
@@ -269,7 +353,11 @@
       "link": [1, 4],
       "name": "Carry Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -281,13 +369,21 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -299,27 +395,47 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 4],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 4],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
@@ -385,7 +501,11 @@
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -397,13 +517,21 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -415,27 +543,47 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 3],
@@ -485,7 +633,9 @@
         "useYItems"
       ],
       "setsFlags": ["OpenedPalaceOfDarkness"],
-      "devNote": ["Kiki cannot leave the room, so there isn't much need to use a Kiki follower object to represent unlocking the dungeon."]
+      "devNote": [
+        "Kiki cannot leave the room, so there isn't much need to use a Kiki follower object to represent unlocking the dungeon."
+      ]
     },
     {
       "link": [2, 3],
@@ -499,7 +649,11 @@
       "link": [2, 4],
       "name": "Carry Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -511,13 +665,21 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -529,27 +691,47 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 4],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 4],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
@@ -769,7 +951,11 @@
       "link": [4, 1],
       "name": "Enter with Strong Overhead Object - Guard Kill",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"carry": 1}
@@ -817,7 +1003,11 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "With no way to deal with the guard, and if Link can't jump off a ledge,",
         "it is possible to tank a hit and lure it north, then return while getting it stuck just to the north."
@@ -827,45 +1017,77 @@
       "link": [4, 1],
       "name": "Carry Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 2],
@@ -895,7 +1117,11 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Climb up two sets of staircases, jump down once, then climb one more.",
         "Alternatively, kill the first and take the east ladder up while dodging the guards.",
@@ -910,45 +1136,77 @@
       "link": [4, 2],
       "name": "Carry Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 2],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class1"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 4],
@@ -958,7 +1216,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
   ]
 }

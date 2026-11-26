@@ -8,16 +8,42 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"dual-small": [1, 3], "small-2": [3]}, "default": "dual-small"}
+      {
+        "supported": {
+          "dual-small": [1, 3],
+          "small-2": [3]
+        },
+        "default": "dual-small"
+      }
     ],
     "south": [
-      {"supported": {"dual-small": [2, 5]}, "default": "dual-small"}
+      {
+        "supported": {
+          "dual-small": [2, 5]
+        },
+        "default": "dual-small"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [4]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [4]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [2], "dual-small": [1, 2], "dual-upper": [1, 2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 2],
+          "dual-upper": [1, 2],
+          "small-1": [1],
+          "small-2": [2]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -123,7 +149,11 @@
           ]}
         ]}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "On entry, quickly sneak past the guard by moving southeast.",
         "Kill the second guard with the three bushes. If a third guard spawns, dodge it."
@@ -136,7 +166,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -215,11 +249,19 @@
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 3],
@@ -274,7 +316,9 @@
         {"combatProficiency": 2},
         {"carry": 0}
       ],
-      "note": ["Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."]
+      "note": [
+        "Kill the first guard with the signpost, dodge the second if Agahnim is defeated, then take the east path to avoid the last guard."
+      ]
     },
     {
       "link": [2, 1],
@@ -283,7 +327,9 @@
       "requires": [
         {"combatProficiency": 3}
       ],
-      "note": ["Wait for the guard to notice Link, then use the signpost to get the guard to go left, run up right and precisely dodge the other guard(s)."]
+      "note": [
+        "Wait for the guard to notice Link, then use the signpost to get the guard to go left, run up right and precisely dodge the other guard(s)."
+      ]
     },
     {
       "link": [2, 1],
@@ -309,11 +355,19 @@
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -322,7 +376,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -331,7 +389,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 1],
@@ -349,7 +411,11 @@
         "Hammer",
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -360,7 +426,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -369,7 +439,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 4],
@@ -405,9 +479,9 @@
     },
     {
       "link": [4, 4],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         {"lift": 1},
         "recheckLinkState"
@@ -420,7 +494,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [4, 4],
@@ -430,7 +508,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [4, 5],
@@ -456,7 +538,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [5, 5],
@@ -466,7 +552,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     }
   ]
 }

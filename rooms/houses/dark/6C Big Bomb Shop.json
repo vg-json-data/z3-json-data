@@ -48,7 +48,9 @@
         {"pay": 100}
       ],
       "setsFollower": "Super Bomb",
-      "devNote": ["This item does not behave like a normal purchase and does not convert Link's state."]
+      "devNote": [
+        "This item does not behave like a normal purchase and does not convert Link's state."
+      ]
     }
   ]
 }

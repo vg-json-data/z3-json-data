@@ -26,9 +26,7 @@
             },
             {
               "value": 3,
-              "note": [
-                "Expects refined and practiced movement to dodge enemies."
-              ]
+              "note": ["Expects refined and practiced movement to dodge enemies."]
             },
             {
               "value": 4,
@@ -167,7 +165,9 @@
             {
               "id": 7,
               "name": "canPreciseBombBoost",
-              "techRequires": ["canBombBoost"],
+              "techRequires": [
+                "canBombBoost"
+              ],
               "otherRequires": [],
               "note": [
                 "Using a bomb to boost Link over a 2-tile-wide pit, which may include a diagonal boost requirement.",

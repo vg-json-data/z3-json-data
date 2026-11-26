@@ -8,11 +8,7 @@
     "light": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "beforeZeldaRescue",
-        "afterZeldaRescue",
-        "afterAgahnim"
-      ],
+      "required": ["beforeZeldaRescue", "afterZeldaRescue", "afterAgahnim"],
       "properties": {
         "beforeZeldaRescue": {
           "$ref": "#/definitions/population"
@@ -36,9 +32,7 @@
     "population": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "enemies"
-      ],
+      "required": ["enemies"],
       "properties": {
         "enemies": {
           "$ref": "#/definitions/enemies"
@@ -50,22 +44,14 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "properties": {
           "name": {
-            "type": [
-              "string",
-              "null"
-            ],
+            "type": ["string", "null"],
             "minLength": 1
           },
           "count": {
-            "type": [
-              "integer",
-              "null"
-            ],
+            "type": ["integer", "null"],
             "minimum": 1,
             "description": "Number of placements, or null for recurring spawns with no fixed count. Omitted in dungeons, which list unique names."
           },
@@ -73,7 +59,9 @@
             "type": "string",
             "minLength": 1
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          }
         },
         "if": {
           "properties": {
@@ -83,9 +71,7 @@
           }
         },
         "then": {
-          "required": [
-            "note"
-          ]
+          "required": ["note"]
         }
       }
     }

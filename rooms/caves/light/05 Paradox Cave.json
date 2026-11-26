@@ -117,14 +117,7 @@
       "keyType": "bomb"
     }
   ],
-  "obstacles": [
-    {
-      "id": "Push Block",
-      "note": [
-        "The push block is no longer in the way."
-      ]
-    }
-  ],
+  "obstacles": [{"id": "Push Block", "note": ["The push block is no longer in the way."]}],
   "strats": [
     {
       "link": [1, 1],
@@ -323,7 +316,9 @@
       "requires": [
         "canPreciseBombBoost"
       ],
-      "devNote": ["This is not particularly useful as Link could drop down then climb the stairs."]
+      "devNote": [
+        "This is not particularly useful as Link could drop down then climb the stairs."
+      ]
     },
     {
       "link": [6, 7],

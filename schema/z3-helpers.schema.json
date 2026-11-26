@@ -16,7 +16,10 @@
         "required": ["name", "requires"],
         "additionalProperties": false,
         "properties": {
-          "name": {"type": "string", "minLength": 1},
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
           "requires": {
             "type": "array",
             "items": {
@@ -29,7 +32,9 @@
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {

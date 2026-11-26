@@ -103,7 +103,9 @@
         ]},
         "h_jumpOffLedge"
       ],
-      "devNote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
+      "devNote": [
+        "It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."
+      ]
     },
     {
       "link": [3, 3],

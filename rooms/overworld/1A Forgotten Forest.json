@@ -8,16 +8,44 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"wide": [1], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "dual-small": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [2], "light-only": [2], "light-and-mirror": [2, null, 2]}, "default": "light-only"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2],
+          "light-only": [2],
+          "light-and-mirror": [2, null, 2]
+        },
+        "default": "light-only"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -90,8 +118,8 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 87,
+          "id": 1,
           "name": "Red Shield Shop",
           "world": "dark"
         }
@@ -111,7 +139,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 1],
@@ -121,7 +153,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -157,21 +193,37 @@
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],
@@ -205,11 +257,19 @@
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -218,7 +278,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [2, 2],
@@ -228,7 +292,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 3],
@@ -240,33 +308,57 @@
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [3, 2],
@@ -278,13 +370,21 @@
       "link": [3, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"overhead": {"type": "class3"}},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"overhead": {"type": "class3"}},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "devNote": ["FIXME: Might be possible, depending on how the tiling is done."]
     },
     {
@@ -294,7 +394,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -304,7 +408,11 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
   ]
 }

@@ -9,9 +9,7 @@
         "Ball",
         "Gargantuan Ball"
       ],
-      "note": [
-        "Spawned from a hole in the wall"
-      ],
+      "note": ["Spawned from a hole in the wall"],
       "dmgToLink": {
         "green": 4,
         "blue": 4,
@@ -29,9 +27,7 @@
         "red": 8
       },
       "spriteIndex": 91,
-      "additionalSpriteIndex": [
-        92
-      ]
+      "additionalSpriteIndex": [92]
     },
     {
       "names": [
@@ -43,11 +39,7 @@
         "red": 8
       },
       "spriteIndex": 93,
-      "additionalSpriteIndex": [
-        94,
-        95,
-        96
-      ]
+      "additionalSpriteIndex": [94, 95, 96]
     },
     {
       "names": [
@@ -56,9 +48,7 @@
       "attacks": [
         "Beamos Laser Beam"
       ],
-      "note": [
-        "The Beamos Laser Beam shares the same entry."
-      ],
+      "note": ["The Beamos Laser Beam shares the same entry."],
       "dmgToLink": {
         "green": 8,
         "blue": 8,
@@ -92,26 +82,20 @@
       "names": [
         "Guruguru Bar"
       ],
-      "note": [
-        "Sometimes referred to as a Fire Bar."
-      ],
+      "note": ["Sometimes referred to as a Fire Bar."],
       "dmgToLink": {
         "green": 8,
         "blue": 8,
         "red": 8
       },
       "spriteIndex": 126,
-      "additionalSpriteIndex": [
-        127
-      ]
+      "additionalSpriteIndex": [127]
     },
     {
       "names": [
         "Winder"
       ],
-      "note": [
-        "Sometimes referred to as a Fire Snake."
-      ],
+      "note": ["Sometimes referred to as a Fire Snake."],
       "dmgToLink": {
         "green": 8,
         "blue": 8,
@@ -140,11 +124,7 @@
         "red": 8
       },
       "spriteIndex": 149,
-      "additionalSpriteIndex": [
-        150,
-        151,
-        152
-      ]
+      "additionalSpriteIndex": [150, 151, 152]
     },
     {
       "names": [

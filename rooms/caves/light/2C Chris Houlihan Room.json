@@ -16,7 +16,9 @@
       "id": 2,
       "name": "Exit",
       "nodeType": "door",
-      "note": ["This room is not accessible by normal means, exiting it takes Link outside of his house."]
+      "note": [
+        "This room is not accessible by normal means, exiting it takes Link outside of his house."
+      ]
     }
   ],
   "strats": [

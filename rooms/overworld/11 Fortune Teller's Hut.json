@@ -8,16 +8,43 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "small-2"
+      }
     ],
     "south": [
-      {"supported": {"wide": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "dual-small": [2, 1], "dual-upper": [2, 1], "small-1": [2], "small-2": [1]}, "default": "dual-small"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [2, 1],
+          "dual-upper": [2, 1],
+          "small-1": [2],
+          "small-2": [1]
+        },
+        "default": "dual-small"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -80,14 +107,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 101,
+          "id": 1,
           "name": "Fortune Teller (Light)",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 102,
+          "id": 2,
           "name": "Fortune Teller (Dark)",
           "world": "dark"
         }
@@ -129,7 +156,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [1, 2],
@@ -163,7 +194,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class3"}}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
       "link": [2, 1],

@@ -8,16 +8,40 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ],
     "south": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"wide": [1], "lake": [1, "return"]}, "default": "lake"}
+      {
+        "supported": {
+          "wide": [1],
+          "lake": [1, "return"]
+        },
+        "default": "lake"
+      }
     ]
   },
   "enemySpawns": {
@@ -106,8 +130,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 94,
+          "id": 1,
           "name": "Swamp Great Fairy Entrance",
           "world": "light"
         }
@@ -119,8 +143,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 61,
+          "id": 2,
           "name": "Hype Cave Entrance",
           "world": "dark"
         }
@@ -171,7 +195,11 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"overhead": {"type": "class1"}}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
       "link": [1, 1],
