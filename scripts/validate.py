@@ -445,8 +445,10 @@ def validate_room(path, document, references, errors):
                               location + ["requires"], references, errors, indices,
                               damage_enemy_populations(document, strat))
         for field, link_index in [("entranceState", 0), ("exitState", 1)]:
-            event = strat.get(field)
-            if event is not None and event.get("state") in {"overhead", "leaveNormally"}:
+            if field not in strat:
+                continue
+            kind, state = next(iter(strat[field].items()))
+            if kind in {"overhead", "leaveNormally"}:
                 node_id = strat["link"][link_index]
                 node = indices["nodes"].get(node_id)
                 edge_node_ids = {
@@ -458,20 +460,21 @@ def validate_room(path, document, references, errors):
                 }
                 if node is not None and not node[2].get("transitions") and node_id not in edge_node_ids:
                     _record(errors, path, display_path(document, location + [field]),
-                            f"{event['state']} state endpoint node has no overworld screen transition")
+                            f"{kind} state endpoint node has no overworld screen transition")
                 continue
-            if event is None or "entranceID" not in event:
+            if "entranceID" not in state:
                 continue
-            validate_reference(path, document, location + [field, "entranceID"],
-                               event["entranceID"], indices["entrances"], "room-local entrance", errors)
+            entrance_location = location + [field, kind, "entranceID"]
+            validate_reference(path, document, entrance_location,
+                               state["entranceID"], indices["entrances"], "room-local entrance", errors)
             node = indices["nodes"].get(strat["link"][link_index])
-            if node is not None and event["entranceID"] in indices["entrances"]:
-                if not any(entrance["id"] == event["entranceID"] for entrance in node[2].get("entrances", [])):
-                    _record(errors, path, display_path(document, location + [field, "entranceID"]),
+            if node is not None and state["entranceID"] in indices["entrances"]:
+                if not any(entrance["id"] == state["entranceID"] for entrance in node[2].get("entrances", [])):
+                    _record(errors, path, display_path(document, entrance_location),
                             "event entrance does not belong to the strat endpoint node")
                 world = strat.get("fromWorld" if link_index == 0 else "toWorld", strat.get("world"))
-                if world in {"light", "dark"} and indices["entrances"][event["entranceID"]][2]["world"] != world:
-                    _record(errors, path, display_path(document, location + [field, "entranceID"]),
+                if world in {"light", "dark"} and indices["entrances"][state["entranceID"]][2]["world"] != world:
+                    _record(errors, path, display_path(document, entrance_location),
                             f"event entrance is not in {world} world")
 
 

@@ -328,30 +328,30 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": ["Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner."]
     },
     {
       "link": [1, 5],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {"overhead": {"type": "class1"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [1, 5],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 6],
@@ -374,7 +374,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 2],
@@ -383,7 +383,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [2, 3],
@@ -403,11 +403,11 @@
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 4],
@@ -417,7 +417,7 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": [
         "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
       ]
@@ -430,7 +430,7 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": [
         "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
       ]
@@ -486,11 +486,11 @@
       "link": [3, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 3],
@@ -499,7 +499,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": ["If a guard is in the way, kill it with bushes."]
     },
     {
@@ -509,7 +509,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [4, 4],
@@ -519,7 +519,7 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": [
         "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
         "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
@@ -529,7 +529,7 @@
       "link": [4, 13],
       "name": "Enter with Strong Overhead Object - Guard Kill",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         {"flag": "GameStateZelda"},
         {"combatProficiency": 3},
@@ -555,23 +555,23 @@
       "link": [5, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {"overhead": {"type": "class1"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [5, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [5, 5],
@@ -590,7 +590,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": [
         "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
         "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
@@ -1013,7 +1013,7 @@
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
         ]}
       ],
-      "exitState": {"state": "leaveNormally"}
+      "exitState": {"leaveNormally": {}}
     },
     {
       "link": [17, 13],

@@ -122,7 +122,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 1],
@@ -131,7 +131,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [1, 1],
@@ -141,7 +141,7 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 2],
@@ -203,7 +203,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 2],
@@ -213,7 +213,7 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 3],
@@ -261,7 +261,7 @@
           ]}
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "devNote": ["FIXME: This could also be done with some sort of high-level dodging, or if there is a transition on the right half of the room."]
     },
     {
@@ -272,13 +272,13 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 3],
       "name": "Enter with Strong Overhead Object - Hinox Bomb Refill",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         {"carry": 1},

@@ -131,7 +131,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [1, 1],
@@ -141,7 +141,7 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 2],
@@ -180,7 +180,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [2, 3],

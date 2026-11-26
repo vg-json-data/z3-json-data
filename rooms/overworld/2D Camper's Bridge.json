@@ -133,7 +133,7 @@
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {"overhead": {"type": "class3"}},
       "note": [
         "It is possible to get past with nothing. It can help to lure some of the guards up and get them stuck on the statues in the top right."
       ]
@@ -146,7 +146,7 @@
         "canCrossRoomOverheadPickups",
         "Hammer"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 2],
@@ -234,7 +234,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 1],

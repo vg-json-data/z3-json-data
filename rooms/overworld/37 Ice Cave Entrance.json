@@ -239,7 +239,7 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 2],

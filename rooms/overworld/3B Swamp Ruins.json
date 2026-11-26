@@ -165,7 +165,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [1, 2],
@@ -230,21 +230,19 @@
       "requires": [
         {"obstaclesCleared": ["Dark World Portal"]}
       ],
-      "exitState": {
-        "state": "event",
+      "exitState": {"event": {
         "entranceID": 1,
         "type": "DarkWorldPortal"
-      }
+      }}
     },
     {
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained",
       "world": "light",
-      "entranceState": {
-        "state": "event",
+      "entranceState": {"event": {
         "entranceID": 1,
         "type": "DrainedFloodgate"
-      },
+      }},
       "requires": [],
       "clearsObstacles": ["Drained Floodgate"]
     },
@@ -252,11 +250,10 @@
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained and Mirror Point",
       "world": "light",
-      "entranceState": {
-        "state": "event",
+      "entranceState": {"event": {
         "entranceID": 1,
         "type": "DrainedFloodgateAndMirrorPoint"
-      },
+      }},
       "requires": [],
       "clearsObstacles": ["Drained Floodgate", "Dark World Portal"]
     },
@@ -277,11 +274,10 @@
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
-      "exitState": {
-        "state": "event",
+      "exitState": {"event": {
         "entranceID": 2,
         "type": "DrainedFloodgate"
-      }
+      }}
     }
   ]
 }

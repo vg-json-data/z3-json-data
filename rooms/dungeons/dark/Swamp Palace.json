@@ -393,10 +393,9 @@
       "requires": [
         "Flippers"
       ],
-      "entranceState": {
-        "state": "event",
+      "entranceState": {"event": {
         "type": "DrainedFloodgate"
-      }
+      }}
     },
     {
       "link": [2, 2],

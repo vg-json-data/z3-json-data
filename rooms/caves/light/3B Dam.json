@@ -59,10 +59,9 @@
     {
       "link": [1, 1],
       "name": "Enter Dam with Mirror Point",
-      "entranceState": {
-        "state": "event",
+      "entranceState": {"event": {
         "type": "DarkWorldPortal"
-      },
+      }},
       "requires": [],
       "clearsObstacles": ["Dark World Portal"]
     },
@@ -72,10 +71,9 @@
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
-      "exitState": {
-        "state": "event",
+      "exitState": {"event": {
         "type": "DrainedFloodgate"
-      }
+      }}
     },
     {
       "link": [1, 1],
@@ -84,10 +82,9 @@
         {"obstaclesCleared": ["Drained Floodgate"]},
         {"obstaclesCleared": ["Dark World Portal"]}
       ],
-      "exitState": {
-        "state": "event",
+      "exitState": {"event": {
         "type": "DrainedFloodgateAndMirrorPoint"
-      }
+      }}
     },
     {
       "link": [1, 2],

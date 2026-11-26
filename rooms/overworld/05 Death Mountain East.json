@@ -369,7 +369,7 @@
       "link": [1, 2],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         {"combatProficiency": 3},
         "canCrossRoomOverheadPickups"
@@ -537,7 +537,7 @@
       "link": [3, 1],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         {"combatProficiency": 4},
         "canCrossRoomOverheadPickups"
@@ -640,7 +640,7 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [9, 9],
@@ -649,7 +649,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [9, 10],

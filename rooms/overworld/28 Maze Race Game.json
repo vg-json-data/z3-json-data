@@ -113,7 +113,7 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 1],
@@ -123,18 +123,18 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {"overhead": {"type": "class3"}},
       "requires": [
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [2, 2],
@@ -153,7 +153,7 @@
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [2, 3],
@@ -186,7 +186,7 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 1],
@@ -196,7 +196,7 @@
         {"pay": 80},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {"overhead": {"type": "class1"}}
     },
     {
       "link": [3, 1],
@@ -207,7 +207,7 @@
         {"carry": 1},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 2],
@@ -242,7 +242,7 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {"overhead": {"type": "class3"}}
     },
     {
       "link": [3, 3],

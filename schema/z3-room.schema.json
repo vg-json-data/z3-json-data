@@ -562,13 +562,8 @@
               "Super Bomb"
             ]
           },
-          "exitState": {
-            "oneOf": [
-              {"$ref": "#/definitions/transitionState"},
-              {"$ref": "#/definitions/leaveNormallyState"}
-            ]
-          },
-          "entranceState": {"$ref": "#/definitions/transitionState"},
+          "exitState": {"$ref": "#/definitions/exitState"},
+          "entranceState": {"$ref": "#/definitions/entranceState"},
           "note": {
             "type": "array",
             "items": {
@@ -612,27 +607,40 @@
     }
   },
   "definitions": {
-    "transitionState": {
-      "oneOf": [
-        {"$ref": "#/definitions/eventState"},
-        {"$ref": "#/definitions/overheadState"}
-      ]
+    "entranceState": {
+      "type": "object",
+      "description": "A temporary state received on entering through the strat's from node. Exactly one property names the state.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "event": {"$ref": "#/definitions/eventState"},
+        "overhead": {"$ref": "#/definitions/overheadState"}
+      }
+    },
+    "exitState": {
+      "type": "object",
+      "description": "A temporary state carried, or a forced transition, on leaving through the strat's to node. Exactly one property names the state.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "event": {"$ref": "#/definitions/eventState"},
+        "overhead": {"$ref": "#/definitions/overheadState"},
+        "leaveNormally": {"$ref": "#/definitions/leaveNormallyState"}
+      }
     },
     "leaveNormallyState": {
       "type": "object",
       "description": "Forces an immediate normal overworld screen transition at the strat's destination node, as determined by the selected edgeVariants. No matching entranceState is required.",
-      "required": ["state"],
       "additionalProperties": false,
-      "properties": {
-        "state": {"const": "leaveNormally"}
-      }
+      "properties": {}
     },
     "eventState": {
       "type": "object",
-      "required": ["state", "type"],
+      "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "state": {"const": "event"},
         "entranceID": {"type": "integer", "minimum": 1},
         "type": {"type": "string"}
       }
@@ -640,10 +648,9 @@
     "overheadState": {
       "type": "object",
       "description": "An object held overhead across an overworld screen edge. The strat endpoint node identifies the transition; no entranceID is used.",
-      "required": ["state", "type"],
+      "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "state": {"const": "overhead"},
         "type": {"enum": ["class1", "class3"], "description": "Thrown-object damage class, matched exactly."}
       }
     },
@@ -871,8 +878,8 @@
                 {
                   "if": {
                     "anyOf": [
-                      {"required": ["exitState"], "properties": {"exitState": {"properties": {"state": {"const": "overhead"}}}}},
-                      {"required": ["entranceState"], "properties": {"entranceState": {"properties": {"state": {"const": "overhead"}}}}}
+                      {"required": ["exitState"], "properties": {"exitState": {"required": ["overhead"]}}},
+                      {"required": ["entranceState"], "properties": {"entranceState": {"required": ["overhead"]}}}
                     ]
                   },
                   "then": {"required": ["world"]}
@@ -893,41 +900,9 @@
                   ]
                 },
                 {
-                  "if": {
-                    "required": [
-                      "exitState"
-                    ],
-                    "properties": {
-                      "exitState": {"properties": {"state": {"const": "event"}}}
-                    }
-                  },
-                  "then": {
-                    "properties": {
-                      "exitState": {
-                        "required": [
-                          "entranceID"
-                        ]
-                      }
-                    }
-                  }
-                },
-                {
-                  "if": {
-                    "required": [
-                      "entranceState"
-                    ],
-                    "properties": {
-                      "entranceState": {"properties": {"state": {"const": "event"}}}
-                    }
-                  },
-                  "then": {
-                    "properties": {
-                      "entranceState": {
-                        "required": [
-                          "entranceID"
-                        ]
-                      }
-                    }
+                  "properties": {
+                    "exitState": {"properties": {"event": {"required": ["entranceID"]}}},
+                    "entranceState": {"properties": {"event": {"required": ["entranceID"]}}}
                   }
                 }
               ]
@@ -941,8 +916,8 @@
           "strats": {
             "items": {
               "properties": {
-                "exitState": {"$ref": "#/definitions/eventState"},
-                "entranceState": {"$ref": "#/definitions/eventState"}
+                "exitState": {"required": ["event"]},
+                "entranceState": {"required": ["event"]}
               }
             }
           },

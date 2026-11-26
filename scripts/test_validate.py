@@ -217,7 +217,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
     def test_both_strengths_and_implicit_round_trip(self):
         strat = self.room["strats"][0]
         for strength in ["class1", "class3"]:
-            state = {"state": "overhead", "type": strength}
+            state = {"overhead": {"type": strength}}
             strat.update(entranceState=state, exitState=state)
             with self.subTest(strength=strength):
                 self.assertTrue(self.validator.is_valid(self.room))
@@ -225,7 +225,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
 
     def test_leave_normally_needs_no_entrance_state(self):
         strat = self.room["strats"][0]
-        strat.update(link=[2, 1], exitState={"state": "leaveNormally"})
+        strat.update(link=[2, 1], exitState={"leaveNormally": {}})
         self.assertTrue(self.validator.is_valid(self.room))
         self.assertEqual(self.errors(), [])
         strat["link"] = [1, 2]
@@ -234,28 +234,28 @@ class ScreenTransitionStateTests(unittest.TestCase):
 
     def test_leave_normally_is_exit_only_and_has_no_payload(self):
         strat = self.room["strats"][0]
-        strat["entranceState"] = {"state": "leaveNormally"}
+        strat["entranceState"] = {"leaveNormally": {}}
         self.assertFalse(self.validator.is_valid(self.room))
         del strat["entranceState"]
         for extra in [{"type": "class1"}, {"entranceID": 1}]:
             with self.subTest(extra=extra):
-                strat["exitState"] = {"state": "leaveNormally", **extra}
+                strat["exitState"] = {"leaveNormally": extra}
                 self.assertFalse(self.validator.is_valid(self.room))
         interior = {
             "id": 1, "name": "Interior", "roomType": "Cave",
             "nodes": [{"id": 1, "name": "Door", "nodeType": "door"}],
             "strats": [{"link": [1, 1], "name": "Leave", "requires": [],
-                        "exitState": {"state": "leaveNormally"}}],
+                        "exitState": {"leaveNormally": {}}}],
         }
         self.assertFalse(self.validator.is_valid(interior))
 
     def test_invalid_overhead_states(self):
         for field in ["entranceState", "exitState"]:
             for state in [
-                {"state": "overhead"},
-                {"state": "overhead", "type": "class2"},
-                {"state": "overhead", "type": "pot"},
-                {"state": "overhead", "type": "class3", "entranceID": 1},
+                {"overhead": {}},
+                {"overhead": {"type": "class2"}},
+                {"overhead": {"type": "pot"}},
+                {"overhead": {"type": "class3", "entranceID": 1}},
             ]:
                 with self.subTest(field=field, state=state):
                     self.room["strats"][0] = {
@@ -265,7 +265,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
 
     def test_underworld_and_world_changes_rejected(self):
         for field in ["entranceState", "exitState"]:
-            state = {"state": "overhead", "type": "class3"}
+            state = {"overhead": {"type": "class3"}}
             self.room["strats"][0] = {
                 "link": [1, 1], "name": "Carry", "fromWorld": "dark", "toWorld": "light",
                 "requires": [], field: state,
@@ -277,16 +277,16 @@ class ScreenTransitionStateTests(unittest.TestCase):
                 "strats": [{"link": [1, 1], "name": "Carry", "requires": [], field: state}],
             }
             self.assertFalse(self.validator.is_valid(interior))
-            interior["strats"][0][field] = {"state": "event", "type": "DrainedFloodgate"}
+            interior["strats"][0][field] = {"event": {"type": "DrainedFloodgate"}}
             self.assertTrue(self.validator.is_valid(interior))
 
     def test_event_entrance_id_rule_is_preserved(self):
         for field in ["entranceState", "exitState"]:
             strat = {"link": [1, 1], "name": "Event", "world": "light", "requires": [],
-                     field: {"state": "event", "type": "DrainedFloodgate"}}
+                     field: {"event": {"type": "DrainedFloodgate"}}}
             self.room["strats"] = [strat]
             self.assertFalse(self.validator.is_valid(self.room))
-            strat[field]["entranceID"] = 1
+            strat[field]["event"]["entranceID"] = 1
             self.assertTrue(self.validator.is_valid(self.room))
 
     def test_state_checks_the_correct_endpoint(self):
@@ -297,7 +297,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
         ]:
             strat.pop("entranceState", None)
             strat.pop("exitState", None)
-            strat[field] = {"state": "overhead", "type": "class3"}
+            strat[field] = {"overhead": {"type": "class3"}}
             strat["link"] = valid_link
             self.assertEqual(self.errors(), [])
             strat["link"] = invalid_link
