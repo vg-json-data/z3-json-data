@@ -503,12 +503,16 @@ def validate_definitions(path, document, references, errors):
 
 
 def validate_connections(path, document, references, errors):
-    for i, connection in enumerate(document["connections"]):
+    connections = []
+    for kind in ["entrances", "teleports", "whirlpools"]:
+        for i, connection in enumerate(document.get(kind, [])):
+            connections.append(([kind, i], connection))
+    for connection_location, connection in connections:
         for field in ["overworld", "overworld2", "underworld"]:
             if field not in connection:
                 continue
             endpoint = connection[field]
-            location = ["connections", i, field]
+            location = connection_location + [field]
             namespace = "Underworld" if field == "underworld" else "Overworld"
             room_key = (namespace, endpoint["roomId"])
             if room_key not in references["rooms"]:

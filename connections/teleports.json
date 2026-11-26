@@ -1,9 +1,8 @@
 {
   "$schema": "../schema/z3-connection.schema.json",
   "name": "Special Underworld to Overworld Connections",
-  "connections": [
+  "teleports": [
     {
-      "type": "teleport",
       "fromWorld": "light",
       "toWorld": "dark",
       "underworld": {
@@ -18,7 +17,6 @@
       }
     },
     {
-      "type": "teleport",
       "fromWorld": "dark",
       "toWorld": "dark",
       "underworld": {
@@ -33,7 +31,6 @@
       }
     },
     {
-      "type": "teleport",
       "fromWorld": "light",
       "toWorld": "light",
       "underworld": {

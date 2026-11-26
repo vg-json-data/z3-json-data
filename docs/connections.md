@@ -16,7 +16,7 @@ Each file contains:
 
 - `$schema`: The relative path to the connection schema.
 - `name`: A descriptive name for the collection.
-- `connections`: The connections defined by the file.
+- One array of connections named for its kind: `entrances`, `teleports`, or `whirlpools`.
 
 ## Endpoint References
 
@@ -57,7 +57,7 @@ Overworld and underworld rooms use separate room-ID spaces, so the endpoint type
 
 ## Entrances
 
-Each entry in `entrances.json` connects one overworld entrance to one underworld node.
+Each entry in the `entrances` array of `entrances.json` connects one overworld entrance to one underworld node.
 
 ```json
 {
@@ -104,11 +104,10 @@ A `drop` connection bypasses the destination's normal door restrictions: every f
 
 ## Teleports
 
-Each entry in `teleports.json` defines a one-way connection from an underworld node to an overworld teleport destination.
+Each entry in the `teleports` array of `teleports.json` defines a one-way connection from an underworld node to an overworld teleport destination.
 
 ```json
 {
-  "type": "teleport",
   "fromWorld": "light",
   "toWorld": "dark",
   "underworld": {
@@ -126,7 +125,6 @@ Each entry in `teleports.json` defines a one-way connection from an underworld n
 
 A teleport connection has:
 
-- `type`: Always `teleport`.
 - `fromWorld`: Link's world state before using the teleport.
 - `toWorld`: Link's world state after using the teleport and the world containing the destination.
 - `underworld`: A reference to the source node in an underworld room.
@@ -136,11 +134,10 @@ Underworld rooms do not define a world of their own, but Link's route retains it
 
 ## Whirlpools
 
-Each entry in `whirlpools.json` pairs two overworld whirlpool endpoints.
+Each entry in the `whirlpools` array of `whirlpools.json` pairs two overworld whirlpool endpoints.
 
 ```json
 {
-  "type": "whirlpool",
   "world": "light",
   "overworld": {
     "roomName": "Waterfall of Wishing",
@@ -157,7 +154,6 @@ Each entry in `whirlpools.json` pairs two overworld whirlpool endpoints.
 
 A whirlpool connection has:
 
-- `type`: Always `whirlpool`.
 - `world`: The world containing both endpoints: `light` or `dark`.
 - `overworld`: A reference to one overworld whirlpool.
 - `overworld2`: A reference to the other overworld whirlpool.

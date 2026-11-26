@@ -4,8 +4,7 @@
   "type": "object",
   "description": "Connections between endpoints in different room files.",
   "required": [
-    "name",
-    "connections"
+    "name"
   ],
   "additionalProperties": false,
   "properties": {
@@ -15,20 +14,22 @@
     "name": {
       "type": "string"
     },
-    "connections": {
+    "entrances": {
       "type": "array",
       "items": {
-        "oneOf": [
-          {
-            "$ref": "#/definitions/entranceConnection"
-          },
-          {
-            "$ref": "#/definitions/teleportConnection"
-          },
-          {
-            "$ref": "#/definitions/whirlpoolConnection"
-          }
-        ]
+        "$ref": "#/definitions/entranceConnection"
+      }
+    },
+    "teleports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/teleportConnection"
+      }
+    },
+    "whirlpools": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/whirlpoolConnection"
       }
     }
   },
@@ -159,7 +160,6 @@
     "teleportConnection": {
       "type": "object",
       "required": [
-        "type",
         "fromWorld",
         "toWorld",
         "underworld",
@@ -167,10 +167,6 @@
       ],
       "additionalProperties": false,
       "properties": {
-        "type": {
-          "type": "string",
-          "const": "teleport"
-        },
         "fromWorld": {
           "$ref": "#/definitions/world"
         },
@@ -188,17 +184,12 @@
     "whirlpoolConnection": {
       "type": "object",
       "required": [
-        "type",
         "world",
         "overworld",
         "overworld2"
       ],
       "additionalProperties": false,
       "properties": {
-        "type": {
-          "type": "string",
-          "const": "whirlpool"
-        },
         "world": {
           "$ref": "#/definitions/world"
         },

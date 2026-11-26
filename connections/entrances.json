@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/z3-connection.schema.json",
   "name": "Overworld to Underworld Connections",
-  "connections": [
+  "entrances": [
     {
       "type": "door",
       "world": "light",
