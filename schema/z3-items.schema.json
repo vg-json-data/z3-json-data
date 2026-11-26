@@ -37,6 +37,44 @@
         }
       }
     },
+    "healthUpgrades": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
+    },
+    "nonVanilla": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
+    },
     "refills": {
       "type": "object",
       "required": [
@@ -148,25 +186,6 @@
         }
       }
     },
-    "healthUpgrades": {
-      "type": "object",
-      "required": [
-        "items"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "note": {
-          "type": "string",
-          "minLength": 1
-        },
-        "detailNote": {
-          "$ref": "z3-note.schema.json#/definitions/detailNote"
-        },
-        "items": {
-          "$ref": "#/definitions/itemReceiptList"
-        }
-      }
-    },
     "flags": {
       "type": "object",
       "required": [
@@ -187,25 +206,6 @@
           "items": {
             "$ref": "#/definitions/name"
           }
-        }
-      }
-    },
-    "nonVanilla": {
-      "type": "object",
-      "required": [
-        "items"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "note": {
-          "type": "string",
-          "minLength": 1
-        },
-        "detailNote": {
-          "$ref": "z3-note.schema.json#/definitions/detailNote"
-        },
-        "items": {
-          "$ref": "#/definitions/itemReceiptList"
         }
       }
     }

@@ -101,6 +101,19 @@
           "name": {
             "type": "string"
           },
+          "spawnPoint": {
+            "type": "string",
+            "description": "Regular restart destination identity; availability and selection follow docs/respawn-points.md. Visiting this node does not unlock it. Pyramid restarts in the Dark World.",
+            "enum": ["house", "sanctuary", "mountainCave", "pyramid"]
+          },
+          "rememberedSpawnPoint": {
+            "type": "string",
+            "description": "Remembered checkpoint destination identity, not a trigger. Only one checkpoint is remembered; see docs/respawn-points.md for setting events and restart rules.",
+            "enum": ["house", "uncle", "zeldaPrison", "throneRoom", "oldManCave", "sanctuary"]
+          },
+          "subArea": {
+            "type": "string"
+          },
           "nodeType": {
             "type": "string",
             "enum": [
@@ -115,19 +128,6 @@
               "shop"
             ]
           },
-          "spawnPoint": {
-            "type": "string",
-            "description": "Regular restart destination identity; availability and selection follow docs/respawn-points.md. Visiting this node does not unlock it. Pyramid restarts in the Dark World.",
-            "enum": ["house", "sanctuary", "mountainCave", "pyramid"]
-          },
-          "rememberedSpawnPoint": {
-            "type": "string",
-            "description": "Remembered checkpoint destination identity, not a trigger. Only one checkpoint is remembered; see docs/respawn-points.md for setting events and restart rules.",
-            "enum": ["house", "uncle", "zeldaPrison", "throneRoom", "oldManCave", "sanctuary"]
-          },
-          "subArea": {
-            "type": "string"
-          },
           "world": {
             "type": "string",
             "enum": [
@@ -140,40 +140,6 @@
             "type": "boolean",
             "default": true,
             "description": "Whether a node present in both worlds permits the implicit Dark World to Light World Magic Mirror strat."
-          },
-          "entrances": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "romEntranceId": {
-                  "type": "integer",
-                  "minimum": 0,
-                  "maximum": 255,
-                  "description": "Native ROM entrance record ID for an ordinary door or drop. Omitted for special overworld transitions; multiple entrances may share a record."
-                },
-                "id": {
-                  "type": "integer",
-                  "minimum": 1
-                },
-                "name": {
-                  "type": "string"
-                },
-                "world": {
-                  "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
-                }
-              }
-            }
           },
           "transitions": {
             "type": "array",
@@ -203,6 +169,40 @@
                   }
                 },
                 "terrain": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "dark"
+                  ]
+                }
+              }
+            }
+          },
+          "entrances": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "world"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "romEntranceId": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255,
+                  "description": "Native ROM entrance record ID for an ordinary door or drop. Omitted for special overworld transitions; multiple entrances may share a record."
+                },
+                "id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
                   "type": "string"
                 },
                 "world": {
@@ -312,12 +312,22 @@
             "type": "integer",
             "minimum": 1
           },
+          "subArea": {
+            "type": "string"
+          },
           "locationName": {
             "type": "string"
           },
           "itemLocation": {
             "type": "integer",
             "minimum": 1
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
           },
           "item": {
             "type": "string"
@@ -330,16 +340,6 @@
             "description": "Optional hexadecimal string giving the unheadered ROM file offset of the location-specific item receipt-ID byte. Omitted when the location has no independent item receipt-ID byte.",
             "type": "string",
             "pattern": "^0x[0-9A-Fa-f]+$"
-          },
-          "subArea": {
-            "type": "string"
-          },
-          "world": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
           },
           "devNote": {
             "type": "array",
@@ -367,8 +367,18 @@
             "type": "integer",
             "minimum": 1
           },
+          "subArea": {
+            "type": "string"
+          },
           "locationName": {
             "type": "string"
+          },
+          "world": {
+            "type": "string",
+            "enum": [
+              "light",
+              "dark"
+            ]
           },
           "doorPosition": {
             "type": "string",
@@ -393,16 +403,6 @@
               "bomb, boots",
               "boots",
               "glove"
-            ]
-          },
-          "subArea": {
-            "type": "string"
-          },
-          "world": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
             ]
           },
           "devNote": {
@@ -460,55 +460,6 @@
           "name": {
             "type": "string"
           },
-          "requires": {
-            "type": "array",
-            "items": {
-              "$ref": "z3-requirement.schema.json"
-            }
-          },
-          "collectsItems": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "integer",
-              "minimum": 1
-            }
-          },
-          "grantsItems": {
-            "description": "Item receipts granted after the requirements succeed. Repeatable; does not collect a room-local item location.",
-            "type": "array",
-            "minItems": 1,
-            "items": {"type": "string"}
-          },
-          "setsFlags": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            }
-          },
-          "clearsObstacles": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            }
-          },
-          "resetsObstacles": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            }
-          },
-          "unlocksDoor": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "integer",
-              "minimum": 1
-            }
-          },
           "world": {
             "type": "string",
             "enum": [
@@ -531,6 +482,13 @@
               "dark"
             ]
           },
+          "entranceState": {"$ref": "#/definitions/entranceState"},
+          "requires": {
+            "type": "array",
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
           "isBunny": {
             "type": "string",
             "enum": [
@@ -538,6 +496,49 @@
               "no",
               "any"
             ]
+          },
+          "setsFlags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "collectsItems": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "grantsItems": {
+            "description": "Item receipts granted after the requirements succeed. Repeatable; does not collect a room-local item location.",
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string"}
+          },
+          "clearsObstacles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "resetsObstacles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "unlocksDoor": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
           },
           "setsFollower": {
             "type": "string",
@@ -563,7 +564,6 @@
             ]
           },
           "exitState": {"$ref": "#/definitions/exitState"},
-          "entranceState": {"$ref": "#/definitions/entranceState"},
           "note": {
             "type": "array",
             "items": {

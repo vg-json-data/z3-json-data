@@ -43,6 +43,12 @@
               "type": "string"
             }
           },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "hp": {
             "type": "integer",
             "minimum": 0,
@@ -265,12 +271,6 @@
               6,
               null
             ]
-          },
-          "note": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
           "devNote": {
