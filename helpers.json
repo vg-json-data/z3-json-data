@@ -1,242 +1,245 @@
-[
-  {
-    "name": "hasSwordSparkles",
-    "requires": [
-      {"sword": 2},
-      {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
-    ]
-  },
-  {
-    "name": "h_hitBlueOrangeSwitch",
-    "requires": [
-      {"or": [
-        {"sword": 1},
-        "Hammer",
-        "Boomerang",
-        "Hookshot",
-        {"bombs": 1},
-        {"arrows": 1},
-        {"silverArrows": 1},
-        {"rod": 1},
-        {"redCane": 1},
-        {"blueCane": 20}
-      ]}
-    ]
-  },
-  {
-    "name": "h_rangeBlueOrangeSwitch",
-    "requires": [
-      {"or": [
-        "Boomerang",
-        {"bombs": 1},
-        {"arrows": 1},
-        {"silverArrows": 1},
-        {"rod": 1},
-        {"redCane": 1}
-      ]}
-    ],
-    "note": ["This is specifically for shooting a switch from behind a set of blue/orange pegs."]
-  },
-  {
-    "name": "h_greatFairyFreeUpgrades",
-    "requires": [
-      "never"
-    ],
-    "note": [
-      "Represents having to throw a specific item into one of the Great Fairy pools in order to receive a reward.",
-      "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerang;",
-      "in randomizers, it will typically be the case that the Great Fairies that give items won't require throwing specific items into the pool to receive a reward."
-    ]
-  },
-  {
-    "name": "h_SahasrahlasRequest",
-    "requires": [
-      "PendantOfCourage"
-    ],
-    "note": [
-      "In the vanilla game Sahasrahla gives link a reward for having the Green Pendant.",
-      "Randomizers may be interested in changing this requirement to requiring any pendant or no pendant."
-    ]
-  },
-  {
-    "name": "h_NoAgahnimLoophole",
-    "requires": [
-      "useABItems"
-    ],
-    "note": [
-      "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",
-      "i.e. sword or sufficient skill to kill Agahnim with swordless methods, then traversal is also free."
-    ],
-    "devNote": [
-      "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
-      "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free.",
-      "This is assumed to not be true if Link is Bunny, as he wouldn't have the ability to use a sword."
-    ]
-  },
-  {
-    "name": "h_MothulaVulnerableToGoldSword",
-    "requires": [
-      "canRiskPermanentLossOfAccess",
-      {"or": [
-        {"swordExact": 1},
-        {"swordExact": 2},
-        {"swordExact": 3}
-      ]}
-    ],
-    "note": [
-      "In the vanilla game, Mothula is invulnerable to the gold sword, but vulnerable to all others.",
-      "Most randomizers would want to fix this, as it could create a canRiskPermanentLossOfAccess situation."
-    ],
-    "devNote": ["The requires of this helper should all be removed if Mothula takes damage to the gold sword."]
-  },
-  {
-    "name": "h_castleNotLocked",
-    "requires": [],
-    "note": [
-      "In the vanilla game, the castle doors lock after Agahnim is defeated.",
-      "This helper is a combination of both enabling randomizers to easily not lock the door,",
-      "as well as some hand-waving of pretending the door is not locked, because in vanilla, you don't have a reason to enter the castle if Agahnim is defeated."
-    ],
-    "devNote": [
-      "To model the game more accurately, there would need to be some sort of canRiskPermanentLossOfAccess tied to this helper.",
-      "This is especially true if door locations are randomized and there is a reason to go through these doors after Agahnim is defeated."
-    ]
-  },
-  {
-    "name": "h_MiseryMireMedallion",
-    "requires": [
-      {"ether": 1}
-    ],
-    "note": [
-      "The medallion required to open Misery Mire. Randomizers may wish to randomize this."
-    ]
-  },
-  {
-    "name": "h_TurtleRockMedallion",
-    "requires": [
-      {"quake": 1}
-    ],
-    "note": [
-      "The medallion required to open Turtle Rock. Randomizers may wish to randomize this."
-    ]
-  },
-  {
-    "name": "h_SwampPalacePermanentFloodgates",
-    "requires": [],
-    "note": [
-      "In vanilla, the east and west floodgates are permanent. Randomizers may wish to disable this in order to prevent permanently losing access to the pot keys.",
-      "This helper is not used to flood the dungeon's entrance moat."
-    ]
-  },
-  {
-    "name": "h_PullPedestalItem",
-    "requires": [
-      {"pendants": 3}
-    ],
-    "note": [
-      "In vanilla, three pendants are required to pull the Master Sword pedestal item. Randomizers may wish to change this."
-    ]
-  },
-  {
-    "name": "h_OpenGanonsTower",
-    "requires": [
-      {"crystals": 7}
-    ],
-    "note": [
-      "In vanilla, seven crystals are required to open Ganon's Tower. Randomizers may wish to change this."
-    ]
-  },
-  {
-    "name": "Boomerang",
-    "requires": [
-      {"or": [
-        "RedBoomerang",
-        "BlueBoomerang"
-      ]}
-    ]
-  },
-  {
-    "name": "h_FortuneTellerPayment",
-    "requires": [
-      {"pay": 10}
-    ],
-    "devNote": ["FIXME: May take up to 30 rupees if Link has them."]
-  },
-  {
-    "name": "h_jumpOffLedge",
-    "requires": [
-      "lonkToLink",
-      "superbunnyToBunny",
-      {"followerLost": ["Super Bomb"]}
-    ],
-    "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
-  },
-  {
-    "name": "h_PegasusBootsBonk",
-    "requires": [
-      "PegasusBoots",
-      "superbunnyToBunny"
-    ],
-    "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
-  },
-  {
-    "name": "h_PegasusBootsNoBonk",
-    "requires": [
-      "PegasusBoots"
-    ],
-    "note": ["The ability to dash using Pegasus Boots without needing to bonk. This can be done without losing the Superbunny form."]
-  },
-  {
-    "name": "h_openChest",
-    "requires": [
-      "useABItems"
-    ],
-    "note": ["The ability to open a chest, which requires being in Link or Superbunny form."]
-  },
-  {
-    "name": "h_purchaseItem",
-    "requires": [
-      "lonkToLink",
-      "bunnyToSuperbunny"
-    ],
-    "note": ["Purchasing an item will convert Lonk to Link and Bunny to Superbunny."]
-  },
-  {
-    "name": "h_fallToLowerFloor",
-    "requires": [
-      "lonkToLink",
-      "bunnyToSuperbunny"
-    ],
-    "note": [
-      "Falling in a pit to a lower floor will convert Lonk to Link and Bunny to Superbunny.",
-      "This also behaves the same way if Link enters the underworld from a drop entrance."
-    ]
-  },
-  {
-    "name": "h_greatFairyThrowItem",
-    "requires": [
-      {"or": [
-        "bunnyToLonk",
-        "superbunnyToLink"
-      ]}
-    ],
-    "note": ["Throwing an item to the great fairy ponds converts bunny to Lonk and Superbunny to Link."]
-  },
-  {
-    "name": "h_collectItemOverhead",
-    "requires": [
-      {"or": [
-        "free",
-        {"and": [
-          "canRiskPermanentLossOfAccess",
-          "bunnyToSuperbunny"
-        ]},
-        {"and": [
-          "canRiskPermanentLossOfAccess",
-          "lonkToLink"
+{
+  "$schema": "./schema/z3-helpers.schema.json",
+  "helpers": [
+    {
+      "name": "hasSwordSparkles",
+      "requires": [
+        {"sword": 2},
+        {"resourceMissingAtMost": [{"type": "Health", "count": 0}]}
+      ]
+    },
+    {
+      "name": "h_hitBlueOrangeSwitch",
+      "requires": [
+        {"or": [
+          {"sword": 1},
+          "Hammer",
+          "Boomerang",
+          "Hookshot",
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"redCane": 1},
+          {"blueCane": 20}
         ]}
-      ]}
-    ],
-    "note": ["Collecting an item overhead converts bunny to Superbunny and Lonk to Link, but is only doable one time."]
-  }
-]
+      ]
+    },
+    {
+      "name": "h_rangeBlueOrangeSwitch",
+      "requires": [
+        {"or": [
+          "Boomerang",
+          {"bombs": 1},
+          {"arrows": 1},
+          {"silverArrows": 1},
+          {"rod": 1},
+          {"redCane": 1}
+        ]}
+      ],
+      "note": ["This is specifically for shooting a switch from behind a set of blue/orange pegs."]
+    },
+    {
+      "name": "h_greatFairyFreeUpgrades",
+      "requires": [
+        "never"
+      ],
+      "note": [
+        "Represents having to throw a specific item into one of the Great Fairy pools in order to receive a reward.",
+        "In the vanilla game, it is required to have the Blue Boomerang to upgrade to the Red Boomerang;",
+        "in randomizers, it will typically be the case that the Great Fairies that give items won't require throwing specific items into the pool to receive a reward."
+      ]
+    },
+    {
+      "name": "h_SahasrahlasRequest",
+      "requires": [
+        "PendantOfCourage"
+      ],
+      "note": [
+        "In the vanilla game Sahasrahla gives link a reward for having the Green Pendant.",
+        "Randomizers may be interested in changing this requirement to requiring any pendant or no pendant."
+      ]
+    },
+    {
+      "name": "h_NoAgahnimLoophole",
+      "requires": [
+        "useABItems"
+      ],
+      "note": [
+        "This helper can be used in places where traversal is free unless Agahnim is defeated, but if you had the ability to defeat Agahnim,",
+        "i.e. sword or sufficient skill to kill Agahnim with swordless methods, then traversal is also free."
+      ],
+      "devNote": [
+        "Typically would only apply to places where there are no enemies unless Agahnim is defeated.",
+        "So, this is a way to avoid canRiskPermanentLossOfAccess while still making traversal free.",
+        "This is assumed to not be true if Link is Bunny, as he wouldn't have the ability to use a sword."
+      ]
+    },
+    {
+      "name": "h_MothulaVulnerableToGoldSword",
+      "requires": [
+        "canRiskPermanentLossOfAccess",
+        {"or": [
+          {"swordExact": 1},
+          {"swordExact": 2},
+          {"swordExact": 3}
+        ]}
+      ],
+      "note": [
+        "In the vanilla game, Mothula is invulnerable to the gold sword, but vulnerable to all others.",
+        "Most randomizers would want to fix this, as it could create a canRiskPermanentLossOfAccess situation."
+      ],
+      "devNote": ["The requires of this helper should all be removed if Mothula takes damage to the gold sword."]
+    },
+    {
+      "name": "h_castleNotLocked",
+      "requires": [],
+      "note": [
+        "In the vanilla game, the castle doors lock after Agahnim is defeated.",
+        "This helper is a combination of both enabling randomizers to easily not lock the door,",
+        "as well as some hand-waving of pretending the door is not locked, because in vanilla, you don't have a reason to enter the castle if Agahnim is defeated."
+      ],
+      "devNote": [
+        "To model the game more accurately, there would need to be some sort of canRiskPermanentLossOfAccess tied to this helper.",
+        "This is especially true if door locations are randomized and there is a reason to go through these doors after Agahnim is defeated."
+      ]
+    },
+    {
+      "name": "h_MiseryMireMedallion",
+      "requires": [
+        {"ether": 1}
+      ],
+      "note": [
+        "The medallion required to open Misery Mire. Randomizers may wish to randomize this."
+      ]
+    },
+    {
+      "name": "h_TurtleRockMedallion",
+      "requires": [
+        {"quake": 1}
+      ],
+      "note": [
+        "The medallion required to open Turtle Rock. Randomizers may wish to randomize this."
+      ]
+    },
+    {
+      "name": "h_SwampPalacePermanentFloodgates",
+      "requires": [],
+      "note": [
+        "In vanilla, the east and west floodgates are permanent. Randomizers may wish to disable this in order to prevent permanently losing access to the pot keys.",
+        "This helper is not used to flood the dungeon's entrance moat."
+      ]
+    },
+    {
+      "name": "h_PullPedestalItem",
+      "requires": [
+        {"pendants": 3}
+      ],
+      "note": [
+        "In vanilla, three pendants are required to pull the Master Sword pedestal item. Randomizers may wish to change this."
+      ]
+    },
+    {
+      "name": "h_OpenGanonsTower",
+      "requires": [
+        {"crystals": 7}
+      ],
+      "note": [
+        "In vanilla, seven crystals are required to open Ganon's Tower. Randomizers may wish to change this."
+      ]
+    },
+    {
+      "name": "Boomerang",
+      "requires": [
+        {"or": [
+          "RedBoomerang",
+          "BlueBoomerang"
+        ]}
+      ]
+    },
+    {
+      "name": "h_FortuneTellerPayment",
+      "requires": [
+        {"pay": 10}
+      ],
+      "devNote": ["FIXME: May take up to 30 rupees if Link has them."]
+    },
+    {
+      "name": "h_jumpOffLedge",
+      "requires": [
+        "lonkToLink",
+        "superbunnyToBunny",
+        {"followerLost": ["Super Bomb"]}
+      ],
+      "note": ["This is only technically required if Link is not able to return and pick up the big bomb before it explodes."]
+    },
+    {
+      "name": "h_PegasusBootsBonk",
+      "requires": [
+        "PegasusBoots",
+        "superbunnyToBunny"
+      ],
+      "note": ["The ability to dash into an object using Pegasus Boots. This can be done with Superbunny, but Link will revert to the base bunny form."]
+    },
+    {
+      "name": "h_PegasusBootsNoBonk",
+      "requires": [
+        "PegasusBoots"
+      ],
+      "note": ["The ability to dash using Pegasus Boots without needing to bonk. This can be done without losing the Superbunny form."]
+    },
+    {
+      "name": "h_openChest",
+      "requires": [
+        "useABItems"
+      ],
+      "note": ["The ability to open a chest, which requires being in Link or Superbunny form."]
+    },
+    {
+      "name": "h_purchaseItem",
+      "requires": [
+        "lonkToLink",
+        "bunnyToSuperbunny"
+      ],
+      "note": ["Purchasing an item will convert Lonk to Link and Bunny to Superbunny."]
+    },
+    {
+      "name": "h_fallToLowerFloor",
+      "requires": [
+        "lonkToLink",
+        "bunnyToSuperbunny"
+      ],
+      "note": [
+        "Falling in a pit to a lower floor will convert Lonk to Link and Bunny to Superbunny.",
+        "This also behaves the same way if Link enters the underworld from a drop entrance."
+      ]
+    },
+    {
+      "name": "h_greatFairyThrowItem",
+      "requires": [
+        {"or": [
+          "bunnyToLonk",
+          "superbunnyToLink"
+        ]}
+      ],
+      "note": ["Throwing an item to the great fairy ponds converts bunny to Lonk and Superbunny to Link."]
+    },
+    {
+      "name": "h_collectItemOverhead",
+      "requires": [
+        {"or": [
+          "free",
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            "bunnyToSuperbunny"
+          ]},
+          {"and": [
+            "canRiskPermanentLossOfAccess",
+            "lonkToLink"
+          ]}
+        ]}
+      ],
+      "note": ["Collecting an item overhead converts bunny to Superbunny and Lonk to Link, but is only doable one time."]
+    }
+  ]
+}

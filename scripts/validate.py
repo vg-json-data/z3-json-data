@@ -197,8 +197,9 @@ def collect_references(documents, errors):
             for i, flag in enumerate(document["flags"]["items"]):
                 index_definition(references["flags"], flag, flag, path, document, ["flags", "items", i], errors)
         elif path == ROOT / "helpers.json":
-            for i, helper in enumerate(document):
-                index_definition(references["named"], helper["name"], helper, path, document, [i, "name"], errors)
+            for i, helper in enumerate(document["helpers"]):
+                index_definition(references["named"], helper["name"], helper, path, document,
+                                 ["helpers", i, "name"], errors)
         elif path == ROOT / "tech.json":
             for i, category in enumerate(document["techCategories"]):
                 for tech, location in walk_techs(category["techs"], ["techCategories", i, "techs"]):
@@ -487,8 +488,8 @@ def validate_definitions(path, document, references, errors):
                 validate_requirements(path, document, item.get("requires", []),
                                       [category, "items", i, "requires"], references, errors)
     elif path == ROOT / "helpers.json":
-        for i, helper in enumerate(document):
-            validate_requirements(path, document, helper["requires"], [i, "requires"], references, errors)
+        for i, helper in enumerate(document["helpers"]):
+            validate_requirements(path, document, helper["requires"], ["helpers", i, "requires"], references, errors)
     elif path == ROOT / "tech.json":
         for i, category in enumerate(document["techCategories"]):
             for tech, location in walk_techs(category["techs"], ["techCategories", i, "techs"]):
@@ -564,8 +565,6 @@ def main():
         declaration = document.get("$schema") if isinstance(document, dict) else None
         if declaration is None:
             skipped.append(path)
-            if path == ROOT / "helpers.json":
-                reference_documents[path] = document
             continue
         if not isinstance(declaration, str):
             _record(errors, path, "/$schema", "must be a string")
@@ -600,8 +599,7 @@ def main():
             validate_definitions(path, document, references, errors)
 
     for path in skipped:
-        note = "no $schema; references checked" if path in reference_documents else "no $schema"
-        print(f"🟡 {path.relative_to(ROOT)}: skipped schema validation ({note})\n")
+        print(f"🟡 {path.relative_to(ROOT)}: skipped schema validation (no $schema)\n")
     for path in sorted(errors):
         print(path.relative_to(ROOT))
         for error in errors[path]:

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "z3-helpers.schema.json",
+  "type": "object",
+  "description": "Named, reusable sets of logical requirements.",
+  "required": ["helpers"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "helpers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "requires"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "requires": {
+            "type": "array",
+            "items": {
+              "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
