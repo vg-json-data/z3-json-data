@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 72,
+  "id": 112,
   "name": "Ice Lake Inlet Great Fairy",
   "roomType": "Cave",
   "enemySpawns": {

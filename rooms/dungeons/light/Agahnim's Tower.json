@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 61,
+  "id": 101,
   "name": "Agahnim's Tower",
   "roomType": "Dungeon",
   "enemySpawns": {

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 76,
+  "id": 116,
   "name": "Mire Shed",
   "roomType": "Cave",
   "enemySpawns": {

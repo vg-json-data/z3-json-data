@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 54,
+  "id": 94,
   "name": "Two Brothers' House",
   "roomType": "House",
   "enemySpawns": {

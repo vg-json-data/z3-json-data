@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 36,
+  "id": 76,
   "name": "Lumberjack House",
   "roomType": "House",
   "enemySpawns": {

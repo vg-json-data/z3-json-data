@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 64,
+  "id": 104,
   "name": "Dark Death Mountain Shop",
   "roomType": "Cave",
   "enemySpawns": {

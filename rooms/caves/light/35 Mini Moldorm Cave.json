@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 29,
+  "id": 69,
   "name": "Mini Moldorm Cave",
   "roomType": "Cave",
   "enemySpawns": {

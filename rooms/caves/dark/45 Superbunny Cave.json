@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 66,
+  "id": 106,
   "name": "Superbunny Cave",
   "roomType": "Cave",
   "enemySpawns": {

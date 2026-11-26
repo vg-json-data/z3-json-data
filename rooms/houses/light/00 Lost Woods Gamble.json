@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 35,
+  "id": 75,
   "name": "Lost Woods Gamble",
   "roomType": "House",
   "enemySpawns": {

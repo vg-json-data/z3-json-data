@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 18,
+  "id": 58,
   "name": "Magic Bat Cave",
   "roomType": "Cave",
   "enemySpawns": {

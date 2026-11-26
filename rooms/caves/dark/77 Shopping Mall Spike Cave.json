@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 80,
+  "id": 120,
   "name": "Shopping Mall Spike Cave",
   "roomType": "Cave",
   "enemySpawns": {

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 37,
+  "id": 77,
   "name": "Fortune Teller (Light)",
   "roomType": "House",
   "enemySpawns": {

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 57,
+  "id": 97,
   "name": "Hyrule Castle",
   "roomType": "Dungeon",
   "enemySpawns": {

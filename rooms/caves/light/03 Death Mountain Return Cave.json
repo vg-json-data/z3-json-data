@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 3,
+  "id": 43,
   "name": "Death Mountain Return Cave",
   "roomType": "Cave",
   "enemySpawns": {

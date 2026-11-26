@@ -213,8 +213,7 @@ def collect_references(documents, errors):
                     index_definition(references[namespace], name, enemy, path, document,
                                      ["enemies", i, "names", j], errors)
         elif path.is_relative_to(ROOT / "rooms"):
-            namespace = "Overworld" if document["roomType"] == "Overworld" else "Underworld"
-            index_definition(references["rooms"], (namespace, document["id"]), document,
+            index_definition(references["rooms"], document["id"], document,
                              path, document, ["id"], errors)
     return references
 
@@ -519,14 +518,15 @@ def validate_connections(path, document, references, errors):
                 continue
             endpoint = connection[field]
             location = connection_location + [field]
-            namespace = "Underworld" if field == "underworld" else "Overworld"
-            room_key = (namespace, endpoint["roomId"])
-            if room_key not in references["rooms"]:
+            entry = references["rooms"].get(endpoint["roomId"])
+            underworld = field == "underworld"
+            if entry is None or (entry[2]["roomType"] == "Overworld") == underworld:
+                expected = "underworld" if underworld else "overworld"
                 _record(errors, path, display_path(document, location + ["roomId"]),
-                        f"unknown {namespace.lower()} room {endpoint['roomId']}")
+                        f"unknown {expected} room {endpoint['roomId']}")
                 continue
-            room = references["rooms"][room_key][2]
-            if namespace == "Underworld":
+            room = entry[2]
+            if underworld:
                 nodes = {node["id"] for node in room["nodes"]}
                 validate_reference(path, document, location + ["nodeId"],
                                    endpoint["nodeId"], nodes, "node", errors)

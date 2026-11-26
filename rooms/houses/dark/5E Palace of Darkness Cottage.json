@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 89,
+  "id": 129,
   "name": "Palace of Darkness Cottage",
   "roomType": "House",
   "enemySpawns": {

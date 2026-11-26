@@ -1,6 +1,6 @@
 {
   "$schema": "../../schema/z3-room.schema.json",
-  "id": 102,
+  "id": 142,
   "name": "Sacred Grove",
   "roomType": "Special",
   "note": ["Technically, this is the same room as Under the Bridge."],

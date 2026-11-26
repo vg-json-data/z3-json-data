@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 60,
+  "id": 100,
   "name": "Tower of Hera",
   "roomType": "Dungeon",
   "dungeonId": 20,

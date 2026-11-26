@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 91,
+  "id": 131,
   "name": "Big Bomb Shop",
   "roomType": "House",
   "enemySpawns": {

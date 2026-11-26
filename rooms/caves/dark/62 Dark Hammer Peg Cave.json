@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 70,
+  "id": 110,
   "name": "Dark Hammer Peg Cave",
   "roomType": "Cave",
   "enemySpawns": {

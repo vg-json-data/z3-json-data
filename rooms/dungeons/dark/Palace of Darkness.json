@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 93,
+  "id": 133,
   "name": "Palace of Darkness",
   "roomType": "Dungeon",
   "dungeonId": 12,
