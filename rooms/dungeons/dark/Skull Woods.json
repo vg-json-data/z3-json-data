@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 95,
+  "id": 135,
   "name": "Skull Woods",
   "roomType": "Dungeon",
   "dungeonId": 16,

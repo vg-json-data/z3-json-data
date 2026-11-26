@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 87,
+  "id": 127,
   "name": "Village of Outcasts Shop",
   "roomType": "House",
   "enemySpawns": {

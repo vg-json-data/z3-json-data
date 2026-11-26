@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 28,
+  "id": 68,
   "name": "Lake Hylia Shop",
   "roomType": "Cave",
   "enemySpawns": {

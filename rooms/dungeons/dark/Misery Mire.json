@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 98,
+  "id": 138,
   "name": "Misery Mire",
   "roomType": "Dungeon",
   "dungeonId": 14,

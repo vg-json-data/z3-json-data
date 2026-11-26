@@ -23,7 +23,7 @@ Dungeons and large overworld areas also contain `roomDiagrams`. These images sho
 Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room can contain the following top-level properties:
 
 - `$schema`: The relative path to the room schema.
-- `id`: The room's ID within its room-ID space.
+- `id`: The room's ID, unique across all rooms.
 - `name`: The room's name; for overworld rooms, its Light World name.
 - `darkWorldName`: The Dark World name, used only for overworld rooms.
 - `roomType`: `Overworld`, `Cave`, `House`, `Dungeon`, or `Special`.
@@ -50,7 +50,7 @@ The required properties are `id`, `name`, `roomType`, `nodes`, `strats`, and `ne
 ```json
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 34,
+  "id": 74,
   "name": "Dam",
   "roomType": "Cave",
   "nodes": [
@@ -79,13 +79,10 @@ The required properties are `id`, `name`, `roomType`, `nodes`, `strats`, and `ne
 
 ## Room IDs
 
-Overworld and underworld rooms use separate ID spaces.
+All rooms share one ID space, so a room ID alone identifies a room.
 
 - Overworld room IDs range from 1 through 40.
-- Cave, House, Dungeon, and Special rooms share the underworld room-ID space.
-- Special rooms are treated as underworld rooms and currently follow the other underworld rooms at IDs 102 through 104.
-
-Room IDs are unique within their respective ID space, not across both spaces. References to a room must therefore include enough context to distinguish an overworld room from an underworld room.
+- Cave, House, Dungeon, and Special rooms follow at IDs 41 through 144, with Special rooms last at IDs 142 through 144.
 
 The hexadecimal prefix on an overworld filename reflects its position in the overworld layout. Similar prefixes on overworld and cave filenames make commonly associated vanilla entrances easier to find, but the filename prefix is not a stable connection identifier. Some caves span or connect through multiple overworld areas.
 

@@ -7,7 +7,7 @@
       "toWorld": "dark",
       "underworld": {
         "roomName": "Agahnim's Tower",
-        "roomId": 61,
+        "roomId": 101,
         "nodeId": 12
       },
       "overworld": {
@@ -21,7 +21,7 @@
       "toWorld": "dark",
       "underworld": {
         "roomName": "Ganon's Tower",
-        "roomId": 100,
+        "roomId": 140,
         "nodeId": 61
       },
       "overworld": {
@@ -35,7 +35,7 @@
       "toWorld": "light",
       "underworld": {
         "roomName": "Chris Houlihan Room",
-        "roomId": 20,
+        "roomId": 60,
         "nodeId": 2
       },
       "overworld": {

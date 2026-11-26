@@ -1,6 +1,6 @@
 {
   "$schema": "../../schema/z3-room.schema.json",
-  "id": 104,
+  "id": 144,
   "name": "Zora's Waterfall",
   "roomType": "Special",
   "enemySpawns": {

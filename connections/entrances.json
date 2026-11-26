@@ -12,7 +12,7 @@
       },
       "underworld": {
         "roomName": "Lost Woods Hideout",
-        "roomId": 1,
+        "roomId": 41,
         "nodeId": 2
       }
     },
@@ -26,7 +26,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 1
       }
     },
@@ -40,7 +40,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 4
       }
     },
@@ -54,7 +54,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 7
       }
     },
@@ -68,7 +68,7 @@
       },
       "underworld": {
         "roomName": "Lost Woods Hideout",
-        "roomId": 1,
+        "roomId": 41,
         "nodeId": 1
       }
     },
@@ -82,7 +82,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 2
       }
     },
@@ -96,7 +96,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 8
       }
     },
@@ -110,7 +110,7 @@
       },
       "underworld": {
         "roomName": "Lost Woods Gamble",
-        "roomId": 35,
+        "roomId": 75,
         "nodeId": 1
       }
     },
@@ -124,7 +124,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 12
       }
     },
@@ -138,7 +138,7 @@
       },
       "underworld": {
         "roomName": "Sacred Grove",
-        "roomId": 102,
+        "roomId": 142,
         "nodeId": 1
       }
     },
@@ -152,7 +152,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 13
       }
     },
@@ -166,7 +166,7 @@
       },
       "underworld": {
         "roomName": "Skull Woods",
-        "roomId": 95,
+        "roomId": 135,
         "nodeId": 11
       }
     },
@@ -180,7 +180,7 @@
       },
       "underworld": {
         "roomName": "Lumberjack House",
-        "roomId": 36,
+        "roomId": 76,
         "nodeId": 1
       }
     },
@@ -194,7 +194,7 @@
       },
       "underworld": {
         "roomName": "Lumberjack Tree",
-        "roomId": 2,
+        "roomId": 42,
         "nodeId": 2
       }
     },
@@ -208,7 +208,7 @@
       },
       "underworld": {
         "roomName": "Dark Lumberjack Shop",
-        "roomId": 81,
+        "roomId": 121,
         "nodeId": 1
       }
     },
@@ -222,7 +222,7 @@
       },
       "underworld": {
         "roomName": "Lumberjack Tree",
-        "roomId": 2,
+        "roomId": 42,
         "nodeId": 1
       }
     },
@@ -236,7 +236,7 @@
       },
       "underworld": {
         "roomName": "Old Man Cave",
-        "roomId": 11,
+        "roomId": 51,
         "nodeId": 2
       }
     },
@@ -250,7 +250,7 @@
       },
       "underworld": {
         "roomName": "Dark Death Mountain Great Fairy",
-        "roomId": 62,
+        "roomId": 102,
         "nodeId": 1
       }
     },
@@ -264,7 +264,7 @@
       },
       "underworld": {
         "roomName": "Old Man's House",
-        "roomId": 4,
+        "roomId": 44,
         "nodeId": 1
       }
     },
@@ -278,7 +278,7 @@
       },
       "underworld": {
         "roomName": "Old Man's House",
-        "roomId": 4,
+        "roomId": 44,
         "nodeId": 2
       }
     },
@@ -292,7 +292,7 @@
       },
       "underworld": {
         "roomName": "Death Mountain Return Cave",
-        "roomId": 3,
+        "roomId": 43,
         "nodeId": 1
       }
     },
@@ -306,7 +306,7 @@
       },
       "underworld": {
         "roomName": "Spectacle Rock Cave",
-        "roomId": 5,
+        "roomId": 45,
         "nodeId": 1
       }
     },
@@ -320,7 +320,7 @@
       },
       "underworld": {
         "roomName": "Tower of Hera",
-        "roomId": 60,
+        "roomId": 100,
         "nodeId": 1
       }
     },
@@ -334,7 +334,7 @@
       },
       "underworld": {
         "roomName": "Ganon's Tower",
-        "roomId": 100,
+        "roomId": 140,
         "nodeId": 1
       }
     },
@@ -348,7 +348,7 @@
       },
       "underworld": {
         "roomName": "Spectacle Rock Cave",
-        "roomId": 5,
+        "roomId": 45,
         "nodeId": 2
       }
     },
@@ -362,7 +362,7 @@
       },
       "underworld": {
         "roomName": "Spectacle Rock Cave",
-        "roomId": 5,
+        "roomId": 45,
         "nodeId": 3
       }
     },
@@ -376,7 +376,7 @@
       },
       "underworld": {
         "roomName": "Spike Cave",
-        "roomId": 63,
+        "roomId": 103,
         "nodeId": 1
       }
     },
@@ -390,7 +390,7 @@
       },
       "underworld": {
         "roomName": "Paradox Cave",
-        "roomId": 9,
+        "roomId": 49,
         "nodeId": 7
       }
     },
@@ -404,7 +404,7 @@
       },
       "underworld": {
         "roomName": "Superbunny Cave",
-        "roomId": 66,
+        "roomId": 106,
         "nodeId": 1
       }
     },
@@ -418,7 +418,7 @@
       },
       "underworld": {
         "roomName": "Hookshot Cave",
-        "roomId": 65,
+        "roomId": 105,
         "nodeId": 2
       }
     },
@@ -432,7 +432,7 @@
       },
       "underworld": {
         "roomName": "Hookshot Cave",
-        "roomId": 65,
+        "roomId": 105,
         "nodeId": 1
       }
     },
@@ -446,7 +446,7 @@
       },
       "underworld": {
         "roomName": "Spiral Cave",
-        "roomId": 10,
+        "roomId": 50,
         "nodeId": 1
       }
     },
@@ -460,7 +460,7 @@
       },
       "underworld": {
         "roomName": "Turtle Rock",
-        "roomId": 99,
+        "roomId": 139,
         "nodeId": 19
       }
     },
@@ -474,7 +474,7 @@
       },
       "underworld": {
         "roomName": "Mimic Cave",
-        "roomId": 8,
+        "roomId": 48,
         "nodeId": 1
       }
     },
@@ -488,7 +488,7 @@
       },
       "underworld": {
         "roomName": "Turtle Rock",
-        "roomId": 99,
+        "roomId": 139,
         "nodeId": 20
       }
     },
@@ -502,7 +502,7 @@
       },
       "underworld": {
         "roomName": "Fairy Ascension Cave",
-        "roomId": 6,
+        "roomId": 46,
         "nodeId": 1
       }
     },
@@ -516,7 +516,7 @@
       },
       "underworld": {
         "roomName": "Turtle Rock",
-        "roomId": 99,
+        "roomId": 139,
         "nodeId": 35
       }
     },
@@ -530,7 +530,7 @@
       },
       "underworld": {
         "roomName": "Spiral Cave",
-        "roomId": 10,
+        "roomId": 50,
         "nodeId": 2
       }
     },
@@ -544,7 +544,7 @@
       },
       "underworld": {
         "roomName": "Paradox Cave",
-        "roomId": 9,
+        "roomId": 49,
         "nodeId": 6
       }
     },
@@ -558,7 +558,7 @@
       },
       "underworld": {
         "roomName": "Fairy Ascension Cave",
-        "roomId": 6,
+        "roomId": 46,
         "nodeId": 2
       }
     },
@@ -572,7 +572,7 @@
       },
       "underworld": {
         "roomName": "Hookshot Fairy Cave",
-        "roomId": 7,
+        "roomId": 47,
         "nodeId": 1
       }
     },
@@ -586,7 +586,7 @@
       },
       "underworld": {
         "roomName": "Paradox Cave",
-        "roomId": 9,
+        "roomId": 49,
         "nodeId": 1
       }
     },
@@ -600,7 +600,7 @@
       },
       "underworld": {
         "roomName": "Superbunny Cave",
-        "roomId": 66,
+        "roomId": 106,
         "nodeId": 2
       }
     },
@@ -614,7 +614,7 @@
       },
       "underworld": {
         "roomName": "Dark Death Mountain Shop",
-        "roomId": 64,
+        "roomId": 104,
         "nodeId": 1
       }
     },
@@ -628,7 +628,7 @@
       },
       "underworld": {
         "roomName": "Turtle Rock",
-        "roomId": 99,
+        "roomId": 139,
         "nodeId": 1
       }
     },
@@ -642,7 +642,7 @@
       },
       "underworld": {
         "roomName": "Old Man Cave",
-        "roomId": 11,
+        "roomId": 51,
         "nodeId": 1
       }
     },
@@ -656,7 +656,7 @@
       },
       "underworld": {
         "roomName": "Bumper Cave",
-        "roomId": 67,
+        "roomId": 107,
         "nodeId": 1
       }
     },
@@ -670,7 +670,7 @@
       },
       "underworld": {
         "roomName": "Death Mountain Return Cave",
-        "roomId": 3,
+        "roomId": 43,
         "nodeId": 2
       }
     },
@@ -684,7 +684,7 @@
       },
       "underworld": {
         "roomName": "Bumper Cave",
-        "roomId": 67,
+        "roomId": 107,
         "nodeId": 2
       }
     },
@@ -698,7 +698,7 @@
       },
       "underworld": {
         "roomName": "Zora's Waterfall",
-        "roomId": 104,
+        "roomId": 144,
         "nodeId": 1
       }
     },
@@ -712,7 +712,7 @@
       },
       "underworld": {
         "roomName": "Waterfall of Wishing",
-        "roomId": 12,
+        "roomId": 52,
         "nodeId": 1
       }
     },
@@ -726,7 +726,7 @@
       },
       "underworld": {
         "roomName": "Fortune Teller (Light)",
-        "roomId": 37,
+        "roomId": 77,
         "nodeId": 1
       }
     },
@@ -740,7 +740,7 @@
       },
       "underworld": {
         "roomName": "Fortune Teller (Dark)",
-        "roomId": 82,
+        "roomId": 122,
         "nodeId": 1
       }
     },
@@ -754,7 +754,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle",
-        "roomId": 57,
+        "roomId": 97,
         "nodeId": 12
       }
     },
@@ -768,7 +768,7 @@
       },
       "underworld": {
         "roomName": "Dark Sanctuary",
-        "roomId": 68,
+        "roomId": 108,
         "nodeId": 1
       }
     },
@@ -782,7 +782,7 @@
       },
       "underworld": {
         "roomName": "Sanctuary Bonk Rock Cave",
-        "roomId": 13,
+        "roomId": 53,
         "nodeId": 1
       }
     },
@@ -796,7 +796,7 @@
       },
       "underworld": {
         "roomName": "Graveyard Cave",
-        "roomId": 14,
+        "roomId": 54,
         "nodeId": 1
       }
     },
@@ -810,7 +810,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle",
-        "roomId": 57,
+        "roomId": 97,
         "nodeId": 13
       }
     },
@@ -824,7 +824,7 @@
       },
       "underworld": {
         "roomName": "King's Grave",
-        "roomId": 15,
+        "roomId": 55,
         "nodeId": 1
       }
     },
@@ -838,7 +838,7 @@
       },
       "underworld": {
         "roomName": "North Great Fairy",
-        "roomId": 16,
+        "roomId": 56,
         "nodeId": 2
       }
     },
@@ -852,7 +852,7 @@
       },
       "underworld": {
         "roomName": "North Great Fairy",
-        "roomId": 16,
+        "roomId": 56,
         "nodeId": 1
       }
     },
@@ -866,7 +866,7 @@
       },
       "underworld": {
         "roomName": "Potion Shop",
-        "roomId": 38,
+        "roomId": 78,
         "nodeId": 1
       }
     },
@@ -880,7 +880,7 @@
       },
       "underworld": {
         "roomName": "Dark Potion Shop",
-        "roomId": 83,
+        "roomId": 123,
         "nodeId": 1
       }
     },
@@ -894,7 +894,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Well",
-        "roomId": 17,
+        "roomId": 57,
         "nodeId": 1
       }
     },
@@ -908,7 +908,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Well",
-        "roomId": 17,
+        "roomId": 57,
         "nodeId": 3
       }
     },
@@ -922,7 +922,7 @@
       },
       "underworld": {
         "roomName": "Blind's Hideout",
-        "roomId": 39,
+        "roomId": 79,
         "nodeId": 1
       }
     },
@@ -936,7 +936,7 @@
       },
       "underworld": {
         "roomName": "Elder House",
-        "roomId": 43,
+        "roomId": 83,
         "nodeId": 2
       }
     },
@@ -950,7 +950,7 @@
       },
       "underworld": {
         "roomName": "Elder House",
-        "roomId": 43,
+        "roomId": 83,
         "nodeId": 1
       }
     },
@@ -964,7 +964,7 @@
       },
       "underworld": {
         "roomName": "West Snitch Lady's House",
-        "roomId": 48,
+        "roomId": 88,
         "nodeId": 1
       }
     },
@@ -978,7 +978,7 @@
       },
       "underworld": {
         "roomName": "East Snitch Lady's House",
-        "roomId": 42,
+        "roomId": 82,
         "nodeId": 1
       }
     },
@@ -992,7 +992,7 @@
       },
       "underworld": {
         "roomName": "Chicken House",
-        "roomId": 41,
+        "roomId": 81,
         "nodeId": 1
       }
     },
@@ -1006,7 +1006,7 @@
       },
       "underworld": {
         "roomName": "Sick Kid's House",
-        "roomId": 47,
+        "roomId": 87,
         "nodeId": 1
       }
     },
@@ -1020,7 +1020,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Tavern",
-        "roomId": 46,
+        "roomId": 86,
         "nodeId": 2
       }
     },
@@ -1034,7 +1034,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Tavern",
-        "roomId": 46,
+        "roomId": 86,
         "nodeId": 1
       }
     },
@@ -1048,7 +1048,7 @@
       },
       "underworld": {
         "roomName": "Chest Game",
-        "roomId": 86,
+        "roomId": 126,
         "nodeId": 1
       }
     },
@@ -1062,7 +1062,7 @@
       },
       "underworld": {
         "roomName": "C-Shaped House",
-        "roomId": 85,
+        "roomId": 125,
         "nodeId": 1
       }
     },
@@ -1076,7 +1076,7 @@
       },
       "underworld": {
         "roomName": "Thieves' Town",
-        "roomId": 96,
+        "roomId": 136,
         "nodeId": 1
       }
     },
@@ -1090,7 +1090,7 @@
       },
       "underworld": {
         "roomName": "Bush Blocked House",
-        "roomId": 40,
+        "roomId": 80,
         "nodeId": 1
       }
     },
@@ -1104,7 +1104,7 @@
       },
       "underworld": {
         "roomName": "Village of Outcasts Shop",
-        "roomId": 87,
+        "roomId": 127,
         "nodeId": 1
       }
     },
@@ -1118,7 +1118,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Bomb Shed",
-        "roomId": 44,
+        "roomId": 84,
         "nodeId": 1
       }
     },
@@ -1132,7 +1132,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Shop",
-        "roomId": 45,
+        "roomId": 85,
         "nodeId": 1
       }
     },
@@ -1146,7 +1146,7 @@
       },
       "underworld": {
         "roomName": "Brewery",
-        "roomId": 84,
+        "roomId": 124,
         "nodeId": 1
       }
     },
@@ -1160,7 +1160,7 @@
       },
       "underworld": {
         "roomName": "Red Shield Shop",
-        "roomId": 88,
+        "roomId": 128,
         "nodeId": 1
       }
     },
@@ -1174,7 +1174,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle",
-        "roomId": 57,
+        "roomId": 97,
         "nodeId": 3
       }
     },
@@ -1188,7 +1188,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle Secret Entrance",
-        "roomId": 49,
+        "roomId": 89,
         "nodeId": 2
       }
     },
@@ -1202,7 +1202,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle Secret Entrance",
-        "roomId": 49,
+        "roomId": 89,
         "nodeId": 1
       }
     },
@@ -1216,7 +1216,7 @@
       },
       "underworld": {
         "roomName": "Agahnim's Tower",
-        "roomId": 61,
+        "roomId": 101,
         "nodeId": 1
       }
     },
@@ -1230,7 +1230,7 @@
       },
       "underworld": {
         "roomName": "Pyramid Great Fairy",
-        "roomId": 69,
+        "roomId": 109,
         "nodeId": 1
       }
     },
@@ -1244,7 +1244,7 @@
       },
       "underworld": {
         "roomName": "Pyramid",
-        "roomId": 101,
+        "roomId": 141,
         "nodeId": 1
       }
     },
@@ -1258,7 +1258,7 @@
       },
       "underworld": {
         "roomName": "Pyramid",
-        "roomId": 101,
+        "roomId": 141,
         "nodeId": 2
       }
     },
@@ -1272,7 +1272,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle",
-        "roomId": 57,
+        "roomId": 97,
         "nodeId": 1
       }
     },
@@ -1286,7 +1286,7 @@
       },
       "underworld": {
         "roomName": "Hyrule Castle",
-        "roomId": 57,
+        "roomId": 97,
         "nodeId": 2
       }
     },
@@ -1300,7 +1300,7 @@
       },
       "underworld": {
         "roomName": "Palace of Darkness Cottage",
-        "roomId": 89,
+        "roomId": 129,
         "nodeId": 1
       }
     },
@@ -1314,7 +1314,7 @@
       },
       "underworld": {
         "roomName": "Sahasrahla's Hut",
-        "roomId": 50,
+        "roomId": 90,
         "nodeId": 1
       }
     },
@@ -1328,7 +1328,7 @@
       },
       "underworld": {
         "roomName": "Eastern Palace",
-        "roomId": 58,
+        "roomId": 98,
         "nodeId": 1
       }
     },
@@ -1342,7 +1342,7 @@
       },
       "underworld": {
         "roomName": "Palace of Darkness",
-        "roomId": 93,
+        "roomId": 133,
         "nodeId": 1
       }
     },
@@ -1356,7 +1356,7 @@
       },
       "underworld": {
         "roomName": "Blacksmith's Hut",
-        "roomId": 51,
+        "roomId": 91,
         "nodeId": 1
       }
     },
@@ -1370,7 +1370,7 @@
       },
       "underworld": {
         "roomName": "Magic Bat Cave",
-        "roomId": 18,
+        "roomId": 58,
         "nodeId": 1
       }
     },
@@ -1384,7 +1384,7 @@
       },
       "underworld": {
         "roomName": "Magic Bat Cave",
-        "roomId": 18,
+        "roomId": 58,
         "nodeId": 2
       }
     },
@@ -1398,7 +1398,7 @@
       },
       "underworld": {
         "roomName": "Dark Hammer Peg Cave",
-        "roomId": 70,
+        "roomId": 110,
         "nodeId": 1
       }
     },
@@ -1412,7 +1412,7 @@
       },
       "underworld": {
         "roomName": "Two Brothers' House",
-        "roomId": 54,
+        "roomId": 94,
         "nodeId": 2
       }
     },
@@ -1426,7 +1426,7 @@
       },
       "underworld": {
         "roomName": "Two Brothers' House",
-        "roomId": 54,
+        "roomId": 94,
         "nodeId": 1
       }
     },
@@ -1440,7 +1440,7 @@
       },
       "underworld": {
         "roomName": "Kakariko Gamble Game",
-        "roomId": 52,
+        "roomId": 92,
         "nodeId": 1
       }
     },
@@ -1454,7 +1454,7 @@
       },
       "underworld": {
         "roomName": "Archery Game",
-        "roomId": 90,
+        "roomId": 130,
         "nodeId": 1
       }
     },
@@ -1468,7 +1468,7 @@
       },
       "underworld": {
         "roomName": "Library",
-        "roomId": 53,
+        "roomId": 93,
         "nodeId": 1
       }
     },
@@ -1482,7 +1482,7 @@
       },
       "underworld": {
         "roomName": "Light Bonk Fairies",
-        "roomId": 19,
+        "roomId": 59,
         "nodeId": 1
       }
     },
@@ -1496,7 +1496,7 @@
       },
       "underworld": {
         "roomName": "Dark Bonk Fairies",
-        "roomId": 71,
+        "roomId": 111,
         "nodeId": 1
       }
     },
@@ -1510,7 +1510,7 @@
       },
       "underworld": {
         "roomName": "Link's House",
-        "roomId": 55,
+        "roomId": 95,
         "nodeId": 1
       }
     },
@@ -1524,7 +1524,7 @@
       },
       "underworld": {
         "roomName": "Big Bomb Shop",
-        "roomId": 91,
+        "roomId": 131,
         "nodeId": 1
       }
     },
@@ -1538,7 +1538,7 @@
       },
       "underworld": {
         "roomName": "Under the Bridge",
-        "roomId": 103,
+        "roomId": 143,
         "nodeId": 1
       }
     },
@@ -1552,7 +1552,7 @@
       },
       "underworld": {
         "roomName": "Lake Hylia Inlet Great Fairy",
-        "roomId": 21,
+        "roomId": 61,
         "nodeId": 1
       }
     },
@@ -1566,7 +1566,7 @@
       },
       "underworld": {
         "roomName": "Ice Lake Inlet Great Fairy",
-        "roomId": 72,
+        "roomId": 112,
         "nodeId": 1
       }
     },
@@ -1580,7 +1580,7 @@
       },
       "underworld": {
         "roomName": "Long Fairy Cave",
-        "roomId": 22,
+        "roomId": 62,
         "nodeId": 1
       }
     },
@@ -1594,7 +1594,7 @@
       },
       "underworld": {
         "roomName": "Dark East Portal Cave",
-        "roomId": 73,
+        "roomId": 113,
         "nodeId": 1
       }
     },
@@ -1608,7 +1608,7 @@
       },
       "underworld": {
         "roomName": "Aginah's Cave",
-        "roomId": 23,
+        "roomId": 63,
         "nodeId": 1
       }
     },
@@ -1622,7 +1622,7 @@
       },
       "underworld": {
         "roomName": "Mire East Cave",
-        "roomId": 74,
+        "roomId": 114,
         "nodeId": 1
       }
     },
@@ -1636,7 +1636,7 @@
       },
       "underworld": {
         "roomName": "Mire Great Fairy Cave",
-        "roomId": 75,
+        "roomId": 115,
         "nodeId": 1
       }
     },
@@ -1650,7 +1650,7 @@
       },
       "underworld": {
         "roomName": "Desert Palace",
-        "roomId": 59,
+        "roomId": 99,
         "nodeId": 1
       }
     },
@@ -1664,7 +1664,7 @@
       },
       "underworld": {
         "roomName": "Desert Palace",
-        "roomId": 59,
+        "roomId": 99,
         "nodeId": 2
       }
     },
@@ -1678,7 +1678,7 @@
       },
       "underworld": {
         "roomName": "Mire Shed",
-        "roomId": 76,
+        "roomId": 116,
         "nodeId": 1
       }
     },
@@ -1692,7 +1692,7 @@
       },
       "underworld": {
         "roomName": "Desert Palace",
-        "roomId": 59,
+        "roomId": 99,
         "nodeId": 5
       }
     },
@@ -1706,7 +1706,7 @@
       },
       "underworld": {
         "roomName": "Desert Palace",
-        "roomId": 59,
+        "roomId": 99,
         "nodeId": 3
       }
     },
@@ -1720,7 +1720,7 @@
       },
       "underworld": {
         "roomName": "Checkerboard Cave",
-        "roomId": 24,
+        "roomId": 64,
         "nodeId": 1
       }
     },
@@ -1734,7 +1734,7 @@
       },
       "underworld": {
         "roomName": "Misery Mire",
-        "roomId": 98,
+        "roomId": 138,
         "nodeId": 1
       }
     },
@@ -1748,7 +1748,7 @@
       },
       "underworld": {
         "roomName": "Cave 45",
-        "roomId": 25,
+        "roomId": 65,
         "nodeId": 1
       }
     },
@@ -1762,7 +1762,7 @@
       },
       "underworld": {
         "roomName": "Swamp Great Fairy",
-        "roomId": 26,
+        "roomId": 66,
         "nodeId": 1
       }
     },
@@ -1776,7 +1776,7 @@
       },
       "underworld": {
         "roomName": "Hype Cave",
-        "roomId": 77,
+        "roomId": 117,
         "nodeId": 1
       }
     },
@@ -1790,7 +1790,7 @@
       },
       "underworld": {
         "roomName": "Lake Hylia Fortune Teller",
-        "roomId": 56,
+        "roomId": 96,
         "nodeId": 1
       }
     },
@@ -1804,7 +1804,7 @@
       },
       "underworld": {
         "roomName": "Lake Hylia Shop",
-        "roomId": 28,
+        "roomId": 68,
         "nodeId": 1
       }
     },
@@ -1818,7 +1818,7 @@
       },
       "underworld": {
         "roomName": "Ice Lake Shop",
-        "roomId": 92,
+        "roomId": 132,
         "nodeId": 1
       }
     },
@@ -1832,7 +1832,7 @@
       },
       "underworld": {
         "roomName": "Mini Moldorm Cave",
-        "roomId": 29,
+        "roomId": 69,
         "nodeId": 1
       }
     },
@@ -1846,7 +1846,7 @@
       },
       "underworld": {
         "roomName": "Lake Hylia Great Fairy",
-        "roomId": 27,
+        "roomId": 67,
         "nodeId": 1
       }
     },
@@ -1860,7 +1860,7 @@
       },
       "underworld": {
         "roomName": "Ice Palace",
-        "roomId": 97,
+        "roomId": 137,
         "nodeId": 1
       }
     },
@@ -1874,7 +1874,7 @@
       },
       "underworld": {
         "roomName": "Ice Cave",
-        "roomId": 31,
+        "roomId": 71,
         "nodeId": 2
       }
     },
@@ -1888,7 +1888,7 @@
       },
       "underworld": {
         "roomName": "Shopping Mall East Cave",
-        "roomId": 78,
+        "roomId": 118,
         "nodeId": 1
       }
     },
@@ -1902,7 +1902,7 @@
       },
       "underworld": {
         "roomName": "Ice Cave",
-        "roomId": 31,
+        "roomId": 71,
         "nodeId": 1
       }
     },
@@ -1916,7 +1916,7 @@
       },
       "underworld": {
         "roomName": "Shopping Mall Great Fairy",
-        "roomId": 79,
+        "roomId": 119,
         "nodeId": 1
       }
     },
@@ -1930,7 +1930,7 @@
       },
       "underworld": {
         "roomName": "20 Rupee Cave",
-        "roomId": 30,
+        "roomId": 70,
         "nodeId": 1
       }
     },
@@ -1944,7 +1944,7 @@
       },
       "underworld": {
         "roomName": "Shopping Mall Spike Cave",
-        "roomId": 80,
+        "roomId": 120,
         "nodeId": 1
       }
     },
@@ -1958,7 +1958,7 @@
       },
       "underworld": {
         "roomName": "Desert Great Fairy",
-        "roomId": 33,
+        "roomId": 73,
         "nodeId": 1
       }
     },
@@ -1972,7 +1972,7 @@
       },
       "underworld": {
         "roomName": "50 Rupee Cave",
-        "roomId": 32,
+        "roomId": 72,
         "nodeId": 1
       }
     },
@@ -1986,7 +1986,7 @@
       },
       "underworld": {
         "roomName": "Dam",
-        "roomId": 34,
+        "roomId": 74,
         "nodeId": 1
       }
     },
@@ -2000,7 +2000,7 @@
       },
       "underworld": {
         "roomName": "Swamp Palace",
-        "roomId": 94,
+        "roomId": 134,
         "nodeId": 1
       }
     }

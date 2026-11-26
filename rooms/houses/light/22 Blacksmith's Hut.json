@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 51,
+  "id": 91,
   "name": "Blacksmith's Hut",
   "roomType": "House",
   "enemySpawns": {

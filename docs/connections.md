@@ -43,15 +43,13 @@ An underworld reference identifies a node directly:
 ```json
 {
   "roomName": "Lost Woods Hideout",
-  "roomId": 1,
+  "roomId": 41,
   "nodeId": 2
 }
 ```
 
-- `roomId` identifies a Cave, House, Dungeon, or Special room in the shared underworld room-ID space.
+- `roomId` identifies a Cave, House, Dungeon, or Special room.
 - `nodeId` identifies a node within that room.
-
-Overworld and underworld rooms use separate room-ID spaces, so the endpoint type determines which space a `roomId` belongs to.
 
 `roomName` is included only for readability. IDs form the actual reference and should be used to resolve an endpoint.
 
@@ -70,7 +68,7 @@ Each entry in the `entrances` array of `entrances.json` connects one overworld e
   },
   "underworld": {
     "roomName": "Lost Woods Hideout",
-    "roomId": 1,
+    "roomId": 41,
     "nodeId": 2
   }
 }
@@ -112,7 +110,7 @@ Each entry in the `teleports` array of `teleports.json` defines a one-way connec
   "toWorld": "dark",
   "underworld": {
     "roomName": "Agahnim's Tower",
-    "roomId": 61,
+    "roomId": 101,
     "nodeId": 12
   },
   "overworld": {

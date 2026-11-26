@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 12,
+  "id": 52,
   "name": "Waterfall of Wishing",
   "roomType": "Cave",
   "enemySpawns": {

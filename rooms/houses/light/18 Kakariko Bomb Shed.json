@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 44,
+  "id": 84,
   "name": "Kakariko Bomb Shed",
   "roomType": "House",
   "enemySpawns": {

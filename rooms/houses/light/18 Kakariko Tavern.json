@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 46,
+  "id": 86,
   "name": "Kakariko Tavern",
   "roomType": "House",
   "enemySpawns": {

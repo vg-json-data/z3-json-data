@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 56,
+  "id": 96,
   "name": "Lake Hylia Fortune Teller",
   "roomType": "House",
   "enemySpawns": {

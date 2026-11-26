@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 52,
+  "id": 92,
   "name": "Kakariko Gamble Game",
   "roomType": "House",
   "enemySpawns": {

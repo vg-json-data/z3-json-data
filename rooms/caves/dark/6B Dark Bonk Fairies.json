@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 71,
+  "id": 111,
   "name": "Dark Bonk Fairies",
   "roomType": "Cave",
   "enemySpawns": {

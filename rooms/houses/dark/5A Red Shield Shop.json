@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 88,
+  "id": 128,
   "name": "Red Shield Shop",
   "roomType": "House",
   "enemySpawns": {

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 17,
+  "id": 57,
   "name": "Kakariko Well",
   "roomType": "Cave",
   "enemySpawns": {

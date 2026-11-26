@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 100,
+  "id": 140,
   "name": "Ganon's Tower",
   "roomType": "Dungeon",
   "enemySpawns": {

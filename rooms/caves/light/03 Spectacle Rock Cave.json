@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 5,
+  "id": 45,
   "name": "Spectacle Rock Cave",
   "roomType": "Cave",
   "enemySpawns": {

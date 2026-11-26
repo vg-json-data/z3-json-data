@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 48,
+  "id": 88,
   "name": "West Snitch Lady's House",
   "roomType": "House",
   "enemySpawns": {

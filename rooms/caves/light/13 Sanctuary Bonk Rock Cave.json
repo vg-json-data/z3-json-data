@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 13,
+  "id": 53,
   "name": "Sanctuary Bonk Rock Cave",
   "roomType": "Cave",
   "enemySpawns": {

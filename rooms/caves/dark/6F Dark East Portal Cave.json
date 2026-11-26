@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/z3-room.schema.json",
-  "id": 73,
+  "id": 113,
   "name": "Dark East Portal Cave",
   "roomType": "Cave",
   "enemySpawns": {
