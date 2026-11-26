@@ -5,13 +5,13 @@
   "roomType": "Dungeon",
   "enemySpawns": {
     "enemies": [
-      "Ball and Chain Trooper",
-      "Dagger Soldier (Green)",
-      "Keese",
-      "Rat",
-      "Rope",
-      "Sword Soldier (Blue)",
-      "Sword Soldier (Green)"
+      {"name": "Ball and Chain Trooper"},
+      {"name": "Dagger Soldier (Green)"},
+      {"name": "Keese"},
+      {"name": "Rat"},
+      {"name": "Rope"},
+      {"name": "Sword Soldier (Blue)"},
+      {"name": "Sword Soldier (Green)"}
     ]
   },
   "nodes": [

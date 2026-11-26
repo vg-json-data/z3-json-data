@@ -6,27 +6,27 @@
   "dungeonId": 24,
   "enemySpawns": {
     "enemies": [
-      "Trinexx (Blue Head)",
-      "Trinexx (Body)",
-      "Trinexx (Red Head)",
+      {"name": "Trinexx (Blue Head)"},
+      {"name": "Trinexx (Body)"},
+      {"name": "Trinexx (Red Head)"},
 
-      "Bari (Blue)",
-      "Floating Stalfos Head",
-      "Hardhat Beetle (Red)",
-      "Helmasaur",
-      "Hokkubokku",
-      "Stalfos",
-      "Zol",
-      "Zoro",
+      {"name": "Bari (Blue)"},
+      {"name": "Floating Stalfos Head"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Helmasaur"},
+      {"name": "Hokkubokku"},
+      {"name": "Stalfos"},
+      {"name": "Zol"},
+      {"name": "Zoro"},
 
-      "Bubble",
-      "Chain Chomp",
-      "Flying Tile",
-      "Guruguru Bar",
-      "Laser Eye",
-      "Medusa",
-      "Rabbit Beam",
-      "Rolling Spike Trap"
+      {"name": "Bubble"},
+      {"name": "Chain Chomp"},
+      {"name": "Flying Tile"},
+      {"name": "Guruguru Bar"},
+      {"name": "Laser Eye"},
+      {"name": "Medusa"},
+      {"name": "Rabbit Beam"},
+      {"name": "Rolling Spike Trap"}
     ]
   },
   "nodes": [

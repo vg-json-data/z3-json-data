@@ -6,24 +6,24 @@
   "dungeonId": 22,
   "enemySpawns": {
     "enemies": [
-      "Blind",
+      {"name": "Blind"},
 
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Buzz",
-      "Chasupa",
-      "Gibo",
-      "Skullrope",
-      "Stalfos",
-      "Zazak (Blue)",
-      "Zazak (Red)",
-      "Zol",
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Buzz"},
+      {"name": "Chasupa"},
+      {"name": "Gibo"},
+      {"name": "Skullrope"},
+      {"name": "Stalfos"},
+      {"name": "Zazak (Blue)"},
+      {"name": "Zazak (Red)"},
+      {"name": "Zol"},
 
-      "Bubble",
-      "Rabbit Beam",
-      "Spark",
-      "Spike Block",
-      "Winder"
+      {"name": "Bubble"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spark"},
+      {"name": "Spike Block"},
+      {"name": "Winder"}
     ]
   },
   "nodes": [

@@ -6,17 +6,17 @@
   "dungeonId": 20,
   "enemySpawns": {
     "enemies": [
-      "Moldorm",
+      {"name": "Moldorm"},
 
-      "Hardhat Beetle (Blue)",
-      "Hardhat Beetle (Red)",
-      "Kodongo",
-      "Mini-Moldorm",
-      "Stalfos",
+      {"name": "Hardhat Beetle (Blue)"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Kodongo"},
+      {"name": "Mini-Moldorm"},
+      {"name": "Stalfos"},
 
-      "Flying Tile",
-      "Guruguru Bar",
-      "Spark"
+      {"name": "Flying Tile"},
+      {"name": "Guruguru Bar"},
+      {"name": "Spark"}
     ]
   },
   "nodes": [

@@ -1,6 +1,7 @@
 # Room enemies
 
-Room files use `enemySpawns` to list enemies, with names matching the definitions
+Room files use `enemySpawns` to list enemies, following
+[`z3-room-enemies.schema.json`](../schema/z3-room-enemies.schema.json), with names matching the definitions
 in [`enemies/`](../enemies/). Overworld rooms, caves, houses, and special areas include per-enemy
 counts; dungeons list unique enemy types without counts.
 
@@ -53,11 +54,13 @@ comprehensively included.
 
 ## Dungeons
 
-Dungeons list each enemy type once, without counts:
+Dungeons list each enemy type once, omitting `count`:
 
 ```json
 "enemySpawns": {
-  "enemies": ["Ganon"]
+  "enemies": [
+    {"name": "Ganon"}
+  ]
 }
 ```
 

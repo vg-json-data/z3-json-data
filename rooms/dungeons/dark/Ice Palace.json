@@ -6,22 +6,22 @@
   "dungeonId": 18,
   "enemySpawns": {
     "enemies": [
-      "Kholdstare",
+      {"name": "Kholdstare"},
 
-      "Babusu",
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Freezor",
-      "Pengator",
-      "Stalfos Knight",
-      "Zol",
+      {"name": "Babusu"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Freezor"},
+      {"name": "Pengator"},
+      {"name": "Stalfos Knight"},
+      {"name": "Zol"},
 
-      "Bubble",
-      "Giant Spike Block",
-      "Guruguru Bar",
-      "Medusa",
-      "Rabbit Beam",
-      "Spike Block"
+      {"name": "Bubble"},
+      {"name": "Giant Spike Block"},
+      {"name": "Guruguru Bar"},
+      {"name": "Medusa"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spike Block"}
     ]
   },
   "nodes": [

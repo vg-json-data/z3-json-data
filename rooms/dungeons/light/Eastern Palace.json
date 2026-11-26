@@ -6,18 +6,18 @@
   "dungeonId": 4,
   "enemySpawns": {
     "enemies": [
-      "Armos Knight",
+      {"name": "Armos Knight"},
 
-      "Eyegore (Green)",
-      "Eyegore (Red)",
-      "Head-Detaching Stalfos",
-      "Popo",
-      "Stalfos",
+      {"name": "Eyegore (Green)"},
+      {"name": "Eyegore (Red)"},
+      {"name": "Head-Detaching Stalfos"},
+      {"name": "Popo"},
+      {"name": "Stalfos"},
 
-      "Ball",
-      "Bubble",
-      "Bubble Cluster",
-      "Invincible Bubble"
+      {"name": "Ball"},
+      {"name": "Bubble"},
+      {"name": "Bubble Cluster"},
+      {"name": "Invincible Bubble"}
     ]
   },
   "nodes": [

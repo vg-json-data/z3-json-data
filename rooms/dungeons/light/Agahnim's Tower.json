@@ -5,15 +5,15 @@
   "roomType": "Dungeon",
   "enemySpawns": {
     "enemies": [
-      "Agahnim",
+      {"name": "Agahnim"},
 
-      "Ball and Chain Trooper",
-      "Bow Soldier (Blue)",
-      "Chasupa (Light World)",
-      "Spear Soldier (Red)",
-      "Super Spear Soldier (Red)",
-      "Super Sword Soldier (Blue)",
-      "Sword Soldier (Blue)"
+      {"name": "Ball and Chain Trooper"},
+      {"name": "Bow Soldier (Blue)"},
+      {"name": "Chasupa (Light World)"},
+      {"name": "Spear Soldier (Red)"},
+      {"name": "Super Spear Soldier (Red)"},
+      {"name": "Super Sword Soldier (Blue)"},
+      {"name": "Sword Soldier (Blue)"}
     ]
   },
   "nodes": [

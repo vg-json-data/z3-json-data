@@ -223,9 +223,9 @@ def damage_enemy_populations(document, strat):
     inventory = document.get("enemySpawns")
     if inventory is None:
         return []
-    if document["roomType"] == "Dungeon":
-        return [("room", set(inventory["enemies"]))]
     if document["roomType"] != "Overworld":
+        if "enemies" not in inventory:
+            return []  # Report the malformed inventory in validate_enemy_spawns.
         return [("room", {enemy["name"] for enemy in inventory["enemies"]})]
     if set(inventory) != {"light", "dark"}:
         return []  # Report the malformed inventory in validate_enemy_spawns.
@@ -309,11 +309,6 @@ def validate_requirements(path, document, requirements, location, references, er
 
 def validate_enemy_spawns(path, document, references, errors):
     inventory = document["enemySpawns"]
-    if document["roomType"] == "Dungeon":
-        for i, name in enumerate(inventory["enemies"]):
-            validate_reference(path, document, ["enemySpawns", "enemies", i], name,
-                               references["enemies"], "enemy or hazard", errors)
-        return
     if document["roomType"] == "Overworld":
         if set(inventory) != {"light", "dark"}:
             _record(errors, path, "/enemySpawns", "Overworld inventories require light and dark profiles")
@@ -321,18 +316,20 @@ def validate_enemy_spawns(path, document, references, errors):
         profiles = [(["enemySpawns", "light", stage], population)
                     for stage, population in inventory["light"].items()]
         profiles.append((["enemySpawns", "dark"], inventory["dark"]))
-    elif document["roomType"] in {"Cave", "House", "Special"}:
+    else:
         if set(inventory) != {"enemies"}:
-            _record(errors, path, "/enemySpawns", "Cave, House, and Special inventories require one enemies list")
+            _record(errors, path, "/enemySpawns", "non-Overworld inventories require one enemies list")
             return
         profiles = [(["enemySpawns"], inventory)]
-    else:
-        _record(errors, path, "/enemySpawns", "only supported for Overworld, Cave, House, Special, and Dungeon rooms")
-        return
+    # Dungeons list unique enemy types; other rooms count placements.
+    counted = document["roomType"] != "Dungeon"
     for location, population in profiles:
         seen = set()
         for i, enemy in enumerate(population["enemies"]):
             entry = location + ["enemies", i]
+            if ("count" in enemy) != counted:
+                message = "requires count" if counted else "Dungeon entries have no count"
+                _record(errors, path, display_path(document, entry), message)
             name = enemy["name"]
             if name is not None:
                 validate_reference(path, document, entry + ["name"], name,

@@ -6,22 +6,22 @@
   "dungeonId": 12,
   "enemySpawns": {
     "enemies": [
-      "Helmasaur King",
+      {"name": "Helmasaur King"},
 
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Goriya (Green)",
-      "Goriya (Red)",
-      "Hardhat Beetle (Blue)",
-      "Hardhat Beetle (Red)",
-      "Head-Detaching Stalfos",
-      "Helmasaur",
-      "Kodongo",
-      "Terrorpin",
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Goriya (Green)"},
+      {"name": "Goriya (Red)"},
+      {"name": "Hardhat Beetle (Blue)"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Head-Detaching Stalfos"},
+      {"name": "Helmasaur"},
+      {"name": "Kodongo"},
+      {"name": "Terrorpin"},
 
-      "Bubble",
-      "Medusa",
-      "Spike Block"
+      {"name": "Bubble"},
+      {"name": "Medusa"},
+      {"name": "Spike Block"}
     ]
   },
   "nodes": [

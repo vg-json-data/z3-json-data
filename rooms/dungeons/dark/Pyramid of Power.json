@@ -5,7 +5,7 @@
   "roomType": "Dungeon",
   "enemySpawns": {
     "enemies": [
-      "Ganon"
+      {"name": "Ganon"}
     ]
   },
   "nodes": [

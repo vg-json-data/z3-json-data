@@ -6,17 +6,17 @@
   "dungeonId": 6,
   "enemySpawns": {
     "enemies": [
-      "Lanmolas",
+      {"name": "Lanmolas"},
 
-      "Devalant",
-      "Eyegore (Green)",
-      "Eyegore (Red)",
-      "Leever",
-      "Popo",
+      {"name": "Devalant"},
+      {"name": "Eyegore (Green)"},
+      {"name": "Eyegore (Red)"},
+      {"name": "Leever"},
+      {"name": "Popo"},
 
-      "Beamos",
-      "Flying Tile",
-      "Wall Turret Cannon Ball"
+      {"name": "Beamos"},
+      {"name": "Flying Tile"},
+      {"name": "Wall Turret Cannon Ball"}
     ]
   },
   "nodes": [

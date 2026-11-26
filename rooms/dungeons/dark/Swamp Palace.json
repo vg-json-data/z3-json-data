@@ -6,22 +6,22 @@
   "dungeonId": 10,
   "enemySpawns": {
     "enemies": [
-      "Arrghus",
-      "Arrghus Fuzz",
+      {"name": "Arrghus"},
+      {"name": "Arrghus Fuzz"},
 
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Pirogusu",
-      "Stalfos",
-      "Water Tektite",
-      "Zol",
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Pirogusu"},
+      {"name": "Stalfos"},
+      {"name": "Water Tektite"},
+      {"name": "Zol"},
 
-      "Guruguru Bar",
-      "Kyameron",
-      "Medusa",
-      "Spike Block",
-      "Winder",
-      "Yomo Medusa"
+      {"name": "Guruguru Bar"},
+      {"name": "Kyameron"},
+      {"name": "Medusa"},
+      {"name": "Spike Block"},
+      {"name": "Winder"},
+      {"name": "Yomo Medusa"}
     ]
   },
   "nodes": [

@@ -6,23 +6,23 @@
   "dungeonId": 16,
   "enemySpawns": {
     "enemies": [
-      "Mothula",
+      {"name": "Mothula"},
 
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Gibdo",
-      "Hardhat Beetle (Blue)",
-      "Hardhat Beetle (Red)",
-      "Helmasaur",
-      "Mini-Moldorm",
-      "Stalfos",
-      "Wallmaster",
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Gibdo"},
+      {"name": "Hardhat Beetle (Blue)"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Helmasaur"},
+      {"name": "Mini-Moldorm"},
+      {"name": "Stalfos"},
+      {"name": "Wallmaster"},
 
-      "Guruguru Bar",
-      "Rabbit Beam",
-      "Spark",
-      "Spike Block",
-      "Winder"
+      {"name": "Guruguru Bar"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spark"},
+      {"name": "Spike Block"},
+      {"name": "Winder"}
     ]
   },
   "nodes": [
