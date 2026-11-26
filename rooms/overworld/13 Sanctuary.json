@@ -154,6 +154,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -167,6 +168,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -181,12 +183,14 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -196,12 +200,14 @@
       "devNote": ["FIXME: With some edge variants, there is a walkway here."]
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base - Bonk Rocks",
       "world": "light",
@@ -211,6 +217,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -224,6 +231,7 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Base - Already Opened",
       "world": "light",
@@ -232,10 +240,12 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 10
 }

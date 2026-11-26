@@ -304,6 +304,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
@@ -321,6 +322,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -331,6 +333,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -349,12 +352,14 @@
       "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 5,
       "link": [1, 6],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -373,6 +378,7 @@
       }
     },
     {
+      "id": 6,
       "link": [1, 6],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -391,6 +397,7 @@
       }
     },
     {
+      "id": 7,
       "link": [1, 11],
       "name": "Base",
       "world": "dark",
@@ -409,12 +416,14 @@
       "note": ["Traversing the room counter-clockwise can make the Dactos not target Link."]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 9,
       "link": [2, 2],
       "name": "Open Misery Mire",
       "world": "dark",
@@ -424,6 +433,7 @@
       "setsFlags": ["OpenedMiseryMire"]
     },
     {
+      "id": 10,
       "link": [2, 10],
       "name": "Base",
       "world": "dark",
@@ -432,6 +442,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [3, 1],
       "name": "Base",
       "world": "any",
@@ -440,6 +451,7 @@
       ]
     },
     {
+      "id": 12,
       "link": [3, 3],
       "name": "Exit with Strong Bush Overhead",
       "world": "dark",
@@ -454,6 +466,7 @@
       "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 13,
       "link": [3, 3],
       "name": "Base - Collect Item",
       "world": "light",
@@ -461,6 +474,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 14,
       "link": [3, 3],
       "name": "Exit with Strong Bush Overhead",
       "world": "any",
@@ -477,6 +491,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
@@ -485,6 +500,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [3, 6],
       "name": "Exit with Strong Bush Overhead",
       "world": "dark",
@@ -499,6 +515,7 @@
       "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 17,
       "link": [3, 11],
       "name": "Base",
       "world": "dark",
@@ -507,6 +524,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
@@ -515,12 +533,14 @@
       ]
     },
     {
+      "id": 19,
       "link": [4, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 20,
       "link": [5, 1],
       "name": "Base",
       "world": "any",
@@ -529,6 +549,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [5, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -547,6 +568,7 @@
       }
     },
     {
+      "id": 22,
       "link": [5, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -565,6 +587,7 @@
       }
     },
     {
+      "id": 23,
       "link": [5, 5],
       "name": "Dark World Portal",
       "fromWorld": "light",
@@ -575,6 +598,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [5, 5],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -589,6 +613,7 @@
       }
     },
     {
+      "id": 25,
       "link": [5, 6],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -607,6 +632,7 @@
       }
     },
     {
+      "id": 26,
       "link": [5, 6],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -625,6 +651,7 @@
       }
     },
     {
+      "id": 27,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
@@ -633,12 +660,14 @@
       ]
     },
     {
+      "id": 28,
       "link": [6, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 29,
       "link": [6, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -657,6 +686,7 @@
       }
     },
     {
+      "id": 30,
       "link": [6, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -675,6 +705,7 @@
       }
     },
     {
+      "id": 31,
       "link": [6, 6],
       "name": "Base",
       "world": "light",
@@ -684,6 +715,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 32,
       "link": [6, 9],
       "name": "Base",
       "world": "light",
@@ -692,6 +724,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [7, 1],
       "name": "Base",
       "world": "light",
@@ -700,6 +733,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [8, 1],
       "name": "Base",
       "world": "light",
@@ -708,6 +742,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [8, 8],
       "name": "Bombos Tablet",
       "world": "light",
@@ -719,24 +754,28 @@
       "collectsItems": [2]
     },
     {
+      "id": 36,
       "link": [9, 6],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 37,
       "link": [10, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 38,
       "link": [11, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 39,
       "link": [11, 3],
       "name": "Mirror",
       "fromWorld": "dark",
@@ -748,10 +787,12 @@
       "note": ["Mirror onto the upper ledge."]
     },
     {
+      "id": 40,
       "link": [11, 4],
       "name": "Base",
       "world": "dark",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 41
 }

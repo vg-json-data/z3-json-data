@@ -203,6 +203,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -225,6 +226,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Alternate Weapons",
       "world": "light",
@@ -239,6 +241,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -256,6 +259,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "light",
@@ -282,6 +286,7 @@
       }
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -308,6 +313,7 @@
       }
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -326,6 +332,7 @@
       }
     },
     {
+      "id": 7,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -344,12 +351,14 @@
       }
     },
     {
+      "id": 8,
       "link": [1, 4],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 9,
       "link": [1, 4],
       "name": "Carry Overhead Object",
       "world": "light",
@@ -376,6 +385,7 @@
       }
     },
     {
+      "id": 10,
       "link": [1, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -402,6 +412,7 @@
       }
     },
     {
+      "id": 11,
       "link": [1, 4],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -420,6 +431,7 @@
       }
     },
     {
+      "id": 12,
       "link": [1, 4],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -438,6 +450,7 @@
       }
     },
     {
+      "id": 13,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -446,6 +459,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [2, 1],
       "name": "No Jumping",
       "world": "light",
@@ -462,6 +476,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [2, 1],
       "name": "Dodge Some Guards",
       "world": "light",
@@ -481,6 +496,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -498,6 +514,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "light",
@@ -524,6 +541,7 @@
       }
     },
     {
+      "id": 18,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -550,6 +568,7 @@
       }
     },
     {
+      "id": 19,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -568,6 +587,7 @@
       }
     },
     {
+      "id": 20,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -586,6 +606,7 @@
       }
     },
     {
+      "id": 21,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -609,6 +630,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [2, 3],
       "name": "Alternate Weapons",
       "world": "light",
@@ -624,6 +646,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [2, 3],
       "name": "Pay Kiki",
       "world": "dark",
@@ -638,6 +661,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [2, 3],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -646,6 +670,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [2, 4],
       "name": "Carry Overhead Object",
       "world": "light",
@@ -672,6 +697,7 @@
       }
     },
     {
+      "id": 26,
       "link": [2, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -698,6 +724,7 @@
       }
     },
     {
+      "id": 27,
       "link": [2, 4],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -716,6 +743,7 @@
       }
     },
     {
+      "id": 28,
       "link": [2, 4],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -734,6 +762,7 @@
       }
     },
     {
+      "id": 29,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -742,6 +771,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [3, 1],
       "name": "No Jumping",
       "world": "light",
@@ -754,6 +784,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -762,6 +793,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [3, 2],
       "name": "No Jumping",
       "world": "light",
@@ -790,6 +822,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [3, 2],
       "name": "No Jumping, Alternate Weapons",
       "world": "light",
@@ -822,6 +855,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [3, 2],
       "name": "No Jumping, Agahnim Not Killed",
       "world": "light",
@@ -841,6 +875,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [3, 2],
       "name": "No Jumping, Alternate Weapons, Agahnim Not Killed",
       "world": "light",
@@ -865,6 +900,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [3, 2],
       "name": "Base",
       "world": "dark",
@@ -882,6 +918,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
@@ -890,6 +927,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [3, 4],
       "name": "No Jumping",
       "world": "light",
@@ -902,6 +940,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [4, 1],
       "name": "Base",
       "world": "light",
@@ -926,6 +965,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [4, 1],
       "name": "Alternate Weapons",
       "world": "light",
@@ -948,6 +988,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [4, 1],
       "name": "Enter with Strong Overhead Object - Guard Kill",
       "world": "light",
@@ -965,12 +1006,14 @@
       ]
     },
     {
+      "id": 42,
       "link": [4, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 43,
       "link": [4, 1],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -1014,6 +1057,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [4, 1],
       "name": "Carry Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1034,6 +1078,7 @@
       }
     },
     {
+      "id": 45,
       "link": [4, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1054,6 +1099,7 @@
       }
     },
     {
+      "id": 46,
       "link": [4, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -1072,6 +1118,7 @@
       }
     },
     {
+      "id": 47,
       "link": [4, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -1090,6 +1137,7 @@
       }
     },
     {
+      "id": 48,
       "link": [4, 2],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -1133,6 +1181,7 @@
       ]
     },
     {
+      "id": 49,
       "link": [4, 2],
       "name": "Carry Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1153,6 +1202,7 @@
       }
     },
     {
+      "id": 50,
       "link": [4, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1173,6 +1223,7 @@
       }
     },
     {
+      "id": 51,
       "link": [4, 2],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -1191,6 +1242,7 @@
       }
     },
     {
+      "id": 52,
       "link": [4, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -1209,6 +1261,7 @@
       }
     },
     {
+      "id": 53,
       "link": [4, 4],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -1222,5 +1275,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 54
 }

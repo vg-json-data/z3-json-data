@@ -163,6 +163,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -170,6 +171,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 3],
       "name": "Base",
       "requires": [
@@ -178,6 +180,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 5],
       "name": "Base",
       "requires": [
@@ -186,6 +189,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 8],
       "name": "Hera Pot Clip - Superspeed Setup",
       "requires": [
@@ -204,6 +208,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 8],
       "name": "Hera Pot Clip - Bomb Setup",
       "requires": [
@@ -226,6 +231,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base",
       "requires": [
@@ -234,12 +240,14 @@
       "collectsItems": [2]
     },
     {
+      "id": 7,
       "link": [3, 3],
       "name": "Base",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 8,
       "link": [3, 4],
       "name": "Base",
       "requires": [
@@ -252,6 +260,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [4, 4],
       "name": "Base",
       "requires": [
@@ -265,6 +274,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 10,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -282,6 +292,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [5, 6],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -300,6 +311,7 @@
       ]
     },
     {
+      "id": 12,
       "link": [5, 6],
       "name": "Respawning Pot Kill",
       "requires": [
@@ -311,6 +323,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -325,27 +338,32 @@
       ]
     },
     {
+      "id": 14,
       "link": [7, 8],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 15,
       "link": [8, 8],
       "name": "Base",
       "requires": [],
       "collectsItems": [4]
     },
     {
+      "id": 16,
       "link": [8, 9],
       "name": "Base - Fall Into Pit",
       "requires": []
     },
     {
+      "id": 17,
       "link": [8, 10],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 18,
       "link": [9, 8],
       "name": "Base",
       "requires": [],
@@ -354,6 +372,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [9, 9],
       "name": "Base - Big Chest",
       "requires": [
@@ -362,11 +381,13 @@
       "collectsItems": [5]
     },
     {
+      "id": 20,
       "link": [10, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 21,
       "link": [11, 11],
       "name": "Moldorm - Sword",
       "requires": [
@@ -377,6 +398,7 @@
       "devNote": ["This is simplified because of the pots filled with hearts below."]
     },
     {
+      "id": 22,
       "link": [11, 11],
       "name": "Moldorm - Hammer",
       "requires": [
@@ -403,5 +425,6 @@
       ]
     }
   ],
-  "nextNotableId": 2
+  "nextNotableId": 2,
+  "nextStratId": 23
 }

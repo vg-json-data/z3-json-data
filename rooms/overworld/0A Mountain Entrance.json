@@ -164,6 +164,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -177,6 +178,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Superbunny to Link - Rupee Pull Northern Tree",
       "world": "dark",
@@ -186,6 +188,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -194,6 +197,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -203,6 +207,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Alternate Weapons",
       "world": "dark",
@@ -225,6 +230,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Sign Post Kill",
       "world": "dark",
@@ -238,6 +244,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 2],
       "name": "Tank",
       "world": "dark",
@@ -247,6 +254,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -258,6 +266,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -266,6 +275,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [3, 1],
       "name": "Tank",
       "world": "dark",
@@ -281,11 +291,13 @@
       ]
     },
     {
+      "id": 11,
       "link": [3, 3],
       "name": "Base - Item Pickup",
       "world": "dark",
       "requires": [],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 12
 }

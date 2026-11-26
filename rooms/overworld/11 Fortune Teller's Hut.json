@@ -132,6 +132,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Bonk Bomb",
       "world": "light",
@@ -141,6 +142,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Bonk Fairies",
       "world": "dark",
@@ -150,6 +152,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -163,12 +166,14 @@
       }
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base - Tank or Dodge",
       "world": "dark",
@@ -180,6 +185,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Base - Bush Kill",
       "world": "dark",
@@ -188,6 +194,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 2],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -201,12 +208,14 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Base - Tank or Dodge",
       "world": "dark",
@@ -221,6 +230,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [2, 1],
       "name": "Base - Kill",
       "world": "dark",
@@ -236,6 +246,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [2, 1],
       "name": "Base - Alternate Weapons",
       "world": "dark",
@@ -249,5 +260,6 @@
         ]}
       ]
     }
-  ]
+  ],
+  "nextStratId": 12
 }

@@ -15,11 +15,13 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Great Fairy Refill",
       "requires": [
         {"refill": {"type": "Health", "limit": 20}}
       ]
     }
-  ]
+  ],
+  "nextStratId": 2
 }

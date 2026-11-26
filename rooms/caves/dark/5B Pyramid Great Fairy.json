@@ -31,6 +31,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Collect First Item",
       "requires": [
@@ -39,6 +40,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Collect Second Item",
       "requires": [
@@ -47,6 +49,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Fill Empty Bottle",
       "requires": [
@@ -55,6 +58,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Throw Any Item",
       "requires": [
@@ -64,5 +68,6 @@
         "If Link has zero throwable items, select 'No' in order to prevent a softlock."
       ]
     }
-  ]
+  ],
+  "nextStratId": 5
 }

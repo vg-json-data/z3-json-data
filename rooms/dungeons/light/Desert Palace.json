@@ -202,12 +202,14 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Open North Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Bonk Torch",
       "requires": [
@@ -216,6 +218,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -224,16 +227,19 @@
       "collectsItems": [5]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 5,
       "link": [1, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 6,
       "link": [1, 4],
       "name": "Base",
       "requires": [
@@ -241,11 +247,13 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Fairies",
       "requires": [
@@ -253,17 +261,20 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 10,
       "link": [4, 4],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 11,
       "link": [4, 4],
       "name": "Base - Open Chest to North",
       "requires": [
@@ -279,6 +290,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 12,
       "link": [4, 4],
       "name": "Base - Open Chest to North (Alternate Weapons)",
       "requires": [
@@ -296,12 +308,14 @@
       "collectsItems": [4]
     },
     {
+      "id": 13,
       "link": [5, 5],
       "name": "Base - Small Key Pot",
       "requires": [],
       "collectsItems": [6]
     },
     {
+      "id": 14,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -309,6 +323,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -323,6 +338,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [6, 7],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -339,6 +355,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [7, 8],
       "name": "Base",
       "requires": [
@@ -349,12 +366,14 @@
       ]
     },
     {
+      "id": 18,
       "link": [8, 8],
       "name": "Base - Small Key Pot",
       "requires": [],
       "collectsItems": [7]
     },
     {
+      "id": 19,
       "link": [8, 8],
       "name": "Base - Second Tile Room Small Key Pot",
       "requires": [
@@ -363,6 +382,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 20,
       "link": [8, 9],
       "name": "Base - Second Tile Room Small Key Pot",
       "requires": [
@@ -371,6 +391,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [9, 9],
       "name": "Base - Light Torches",
       "requires": [
@@ -397,6 +418,7 @@
       "setsFlags": ["OpenedDesertPalaceWall"]
     },
     {
+      "id": 22,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -405,6 +427,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [10, 10],
       "name": "Lanmolas - Sword",
       "requires": [
@@ -428,6 +451,7 @@
       "collectsItems": [9, 10]
     },
     {
+      "id": 24,
       "link": [10, 10],
       "name": "Lanmolas - Blue Cane",
       "requires": [
@@ -438,6 +462,7 @@
       "collectsItems": [9, 10]
     },
     {
+      "id": 25,
       "link": [10, 10],
       "name": "Lanmolas - Red Cane",
       "requires": [
@@ -452,6 +477,7 @@
       "collectsItems": [9, 10]
     },
     {
+      "id": 26,
       "link": [10, 10],
       "name": "Lanmolas - Fire or Ice Rod",
       "requires": [
@@ -471,6 +497,7 @@
       "collectsItems": [9, 10]
     },
     {
+      "id": 27,
       "link": [10, 10],
       "name": "Lanmolas - Bow",
       "requires": [
@@ -500,6 +527,7 @@
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
     {
+      "id": 28,
       "link": [10, 10],
       "name": "Lanmolas - Hammer",
       "requires": [
@@ -518,6 +546,7 @@
       "collectsItems": [9, 10]
     },
     {
+      "id": 29,
       "link": [10, 10],
       "name": "Lanmolas - Bombs",
       "requires": [
@@ -540,5 +569,6 @@
         "When only one is remaining, throw the Bombs at the Lanmola."
       ]
     }
-  ]
+  ],
+  "nextStratId": 30
 }

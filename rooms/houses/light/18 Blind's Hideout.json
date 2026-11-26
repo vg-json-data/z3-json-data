@@ -71,6 +71,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Pot Refill",
       "requires": [
@@ -79,16 +80,19 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 2],
       "name": "Base - Left Chest",
       "requires": [
@@ -97,6 +101,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Base - Mid Left Chest",
       "requires": [
@@ -105,6 +110,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base - Mid Right Chest",
       "requires": [
@@ -113,6 +119,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Base - Right Chest",
       "requires": [
@@ -121,6 +128,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -129,6 +137,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 9,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -136,6 +145,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -143,6 +153,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [3, 3],
       "name": "Base",
       "requires": [
@@ -151,5 +162,6 @@
       ],
       "collectsItems": [5]
     }
-  ]
+  ],
+  "nextStratId": 12
 }

@@ -172,6 +172,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base",
       "world": "light",
@@ -181,6 +182,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -194,12 +196,14 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -222,6 +226,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -239,6 +244,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Magic Mirror",
       "fromWorld": "dark",
@@ -250,6 +256,7 @@
       "clearsObstacles": ["Dark World Portal"]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Enter Dam with Mirror Point",
       "world": "light",
@@ -264,6 +271,7 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained",
       "world": "light",
@@ -277,6 +285,7 @@
       "clearsObstacles": ["Drained Floodgate"]
     },
     {
+      "id": 9,
       "link": [2, 2],
       "name": "Enter Overworld with Water Drained and Mirror Point",
       "world": "light",
@@ -290,6 +299,7 @@
       "clearsObstacles": ["Drained Floodgate", "Dark World Portal"]
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Return to Dark World",
       "fromWorld": "light",
@@ -300,6 +310,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [2, 2],
       "name": "Enter Swamp Palace with Water Drained",
       "world": "dark",
@@ -313,5 +324,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 12
 }

@@ -339,6 +339,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Bottle Merchant",
       "world": "light",
@@ -349,6 +350,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -362,6 +364,7 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Grab Thieves' Town Gate - Convert Superbunny to Link (Loss of Access)",
       "world": "dark",
@@ -376,12 +379,14 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base - Open Thieves' Town",
       "world": "dark",
@@ -391,6 +396,7 @@
       "setsFlags": ["OpenedThievesTown"]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Base - Already Open",
       "world": "dark",
@@ -399,6 +405,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 3],
       "name": "Base - Bush",
       "world": "light",
@@ -407,6 +414,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [1, 3],
       "name": "Base - Hammer Pegs",
       "world": "dark",
@@ -415,6 +423,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [1, 4],
       "name": "Base",
       "world": "any",
@@ -423,12 +432,14 @@
       ]
     },
     {
+      "id": 10,
       "link": [1, 5],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 11,
       "link": [1, 5],
       "name": "Base - Bomb",
       "world": "dark",
@@ -438,6 +449,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 12,
       "link": [1, 5],
       "name": "Base - Already Bombed",
       "world": "dark",
@@ -446,12 +458,14 @@
       ]
     },
     {
+      "id": 13,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 14,
       "link": [2, 2],
       "name": "Activate Flute",
       "world": "light",
@@ -464,6 +478,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [3, 1],
       "name": "Base - Bush",
       "world": "light",
@@ -472,6 +487,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [3, 1],
       "name": "Base - Hammer Pegs",
       "world": "dark",
@@ -480,6 +496,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [4, 1],
       "name": "Base",
       "world": "any",
@@ -488,6 +505,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [4, 4],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -501,6 +519,7 @@
       }
     },
     {
+      "id": 19,
       "link": [4, 6],
       "name": "Base - Bomb",
       "world": "light",
@@ -510,6 +529,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 20,
       "link": [4, 6],
       "name": "Base - Already Bombed",
       "world": "light",
@@ -518,16 +538,19 @@
       ]
     },
     {
+      "id": 21,
       "link": [5, 1],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 22,
       "link": [6, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 23
 }

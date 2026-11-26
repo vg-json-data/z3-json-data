@@ -29,6 +29,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Mimic Kill",
       "requires": [
@@ -41,5 +42,6 @@
         "This makes the kill much easier to set up, and enables a Hammer only room traversal."
       ]
     }
-  ]
+  ],
+  "nextStratId": 2
 }

@@ -133,6 +133,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -146,6 +147,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -160,6 +162,7 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -182,6 +185,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -190,6 +194,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -208,6 +213,7 @@
       }
     },
     {
+      "id": 6,
       "link": [1, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -226,6 +232,7 @@
       }
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -248,12 +255,14 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -272,6 +281,7 @@
       }
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "light",
@@ -285,6 +295,7 @@
       }
     },
     {
+      "id": 11,
       "link": [2, 2],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -299,12 +310,14 @@
       }
     },
     {
+      "id": 12,
       "link": [2, 3],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 13,
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -323,6 +336,7 @@
       }
     },
     {
+      "id": 14,
       "link": [3, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -341,6 +355,7 @@
       }
     },
     {
+      "id": 15,
       "link": [3, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -361,12 +376,14 @@
       }
     },
     {
+      "id": 16,
       "link": [3, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 17,
       "link": [3, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -388,6 +405,7 @@
       "devNote": ["FIXME: Might be possible, depending on how the tiling is done."]
     },
     {
+      "id": 18,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -401,6 +419,7 @@
       }
     },
     {
+      "id": 19,
       "link": [3, 3],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -414,5 +433,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 20
 }

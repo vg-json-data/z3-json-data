@@ -29,6 +29,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Bomb East Wall",
       "requires": [
@@ -37,6 +38,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Buy Bomb Capacity Upgrade",
       "requires": [
@@ -46,6 +48,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Buy Arrow Capacity Upgrade",
       "requires": [
@@ -55,6 +58,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Interact with the Pond",
       "requires": [
@@ -62,6 +66,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -69,6 +74,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -76,11 +82,13 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Fairies",
       "requires": [
         {"refill": {"type": "Fairy", "limit": 4}}
       ]
     }
-  ]
+  ],
+  "nextStratId": 8
 }

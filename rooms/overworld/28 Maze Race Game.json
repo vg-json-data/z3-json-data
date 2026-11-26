@@ -116,12 +116,14 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -130,6 +132,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -144,6 +147,7 @@
       }
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -158,6 +162,7 @@
       }
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -177,6 +182,7 @@
       }
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Maze Race Game and Return",
       "world": "light",
@@ -189,6 +195,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -202,6 +209,7 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Maze Race Game",
       "world": "light",
@@ -211,6 +219,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -219,12 +228,14 @@
       ]
     },
     {
+      "id": 10,
       "link": [3, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 11,
       "link": [3, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -239,6 +250,7 @@
       }
     },
     {
+      "id": 12,
       "link": [3, 1],
       "name": "Exit with Bush Overhead - Enter Digging Game",
       "world": "dark",
@@ -253,6 +265,7 @@
       }
     },
     {
+      "id": 13,
       "link": [3, 1],
       "name": "Exit with Rock Overhead - Enter Digging Game",
       "world": "dark",
@@ -268,6 +281,7 @@
       }
     },
     {
+      "id": 14,
       "link": [3, 2],
       "name": "Digging Game and Jump Point",
       "world": "dark",
@@ -281,6 +295,7 @@
       "devNote": ["Usually Link will get the 80 rupees back from digging."]
     },
     {
+      "id": 15,
       "link": [3, 2],
       "name": "Digging Game Jump Point",
       "world": "dark",
@@ -291,6 +306,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [3, 2],
       "name": "Exit with Rock Overhead - Digging Game Jump Point",
       "world": "dark",
@@ -307,6 +323,7 @@
       }
     },
     {
+      "id": 17,
       "link": [3, 3],
       "name": "Digging Game",
       "world": "dark",
@@ -317,5 +334,6 @@
       "collectsItems": [2],
       "devNote": ["Usually Link will get the 80 rupees back from digging."]
     }
-  ]
+  ],
+  "nextStratId": 18
 }

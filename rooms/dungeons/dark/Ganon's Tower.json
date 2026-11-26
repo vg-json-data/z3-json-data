@@ -776,26 +776,31 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [1, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [1, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Torch Bonk",
       "requires": [
@@ -804,12 +809,14 @@
       "collectsItems": [1]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Pot Key",
       "requires": [],
       "collectsItems": [30]
     },
     {
+      "id": 7,
       "link": [2, 3],
       "name": "Base - Unlock Useless Door",
       "requires": [
@@ -817,6 +824,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 5],
       "name": "Base",
       "requires": [
@@ -824,11 +832,13 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 10,
       "link": [3, 2],
       "name": "Base - Unlock Useless Door",
       "requires": [
@@ -836,18 +846,21 @@
       ]
     },
     {
+      "id": 11,
       "link": [3, 3],
       "name": "Base - Open Left Chest",
       "requires": [],
       "collectsItems": [12]
     },
     {
+      "id": 12,
       "link": [3, 3],
       "name": "Base - Open Right Chest",
       "requires": [],
       "collectsItems": [13]
     },
     {
+      "id": 13,
       "link": [3, 16],
       "name": "Base",
       "requires": [
@@ -855,11 +868,13 @@
       ]
     },
     {
+      "id": 14,
       "link": [4, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 15,
       "link": [4, 31],
       "name": "Base",
       "requires": [
@@ -891,6 +906,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [4, 31],
       "name": "Pots Only",
       "requires": [
@@ -909,6 +925,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [4, 31],
       "name": "Invincible",
       "requires": [
@@ -921,6 +938,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -928,6 +946,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [5, 6],
       "name": "Bonk Boost then Bomb Boost",
       "requires": [
@@ -936,6 +955,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [6, 5],
       "name": "Precise Bonk Boost",
       "requires": [
@@ -945,11 +965,13 @@
       "note": ["It is possible to boost across with several precise boosts."]
     },
     {
+      "id": 21,
       "link": [6, 7],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 22,
       "link": [7, 6],
       "name": "Sword Kill",
       "requires": [
@@ -965,6 +987,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [7, 6],
       "name": "Stalfos Kill",
       "requires": [
@@ -976,6 +999,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [7, 6],
       "name": "Stalfos Kill - Alternate Weapons",
       "requires": [
@@ -989,12 +1013,14 @@
       ]
     },
     {
+      "id": 25,
       "link": [7, 7],
       "name": "Base - Open Chests",
       "requires": [],
       "collectsItems": [2, 3, 4, 5]
     },
     {
+      "id": 26,
       "link": [7, 8],
       "name": "Base",
       "requires": [
@@ -1002,6 +1028,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [7, 8],
       "name": "Bonk Boost",
       "requires": [
@@ -1009,6 +1036,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [8, 7],
       "name": "Base",
       "requires": [
@@ -1016,6 +1044,7 @@
       ]
     },
     {
+      "id": 29,
       "link": [8, 9],
       "name": "Base",
       "requires": [
@@ -1023,6 +1052,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [8, 10],
       "name": "Base",
       "requires": [
@@ -1034,6 +1064,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [8, 10],
       "name": "Boomerang",
       "requires": [
@@ -1061,6 +1092,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [9, 8],
       "name": "Base",
       "requires": [
@@ -1068,12 +1100,14 @@
       ]
     },
     {
+      "id": 33,
       "link": [9, 9],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [6]
     },
     {
+      "id": 34,
       "link": [10, 8],
       "name": "Boomerang",
       "requires": [
@@ -1090,6 +1124,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [10, 11],
       "name": "Boomerang",
       "requires": [
@@ -1097,6 +1132,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [11, 12],
       "name": "Base",
       "requires": [
@@ -1108,6 +1144,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [11, 12],
       "name": "Bomb Boost",
       "requires": [
@@ -1115,12 +1152,14 @@
       ]
     },
     {
+      "id": 38,
       "link": [12, 12],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [7]
     },
     {
+      "id": 39,
       "link": [12, 12],
       "name": "Base - Bomb Wall",
       "requires": [
@@ -1130,6 +1169,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 40,
       "link": [12, 13],
       "name": "Base",
       "requires": [
@@ -1138,27 +1178,32 @@
       ]
     },
     {
+      "id": 41,
       "link": [12, 14],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 42,
       "link": [13, 13],
       "name": "Base - Open Chests",
       "requires": [],
       "collectsItems": [8, 9, 10, 11]
     },
     {
+      "id": 43,
       "link": [13, 14],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 44,
       "link": [14, 15],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 45,
       "link": [15, 25],
       "name": "Base",
       "requires": [
@@ -1178,6 +1223,7 @@
       ]
     },
     {
+      "id": 46,
       "link": [15, 26],
       "name": "Fire Rod",
       "requires": [
@@ -1203,6 +1249,7 @@
       ]
     },
     {
+      "id": 47,
       "link": [15, 26],
       "name": "Bonk Boost",
       "requires": [
@@ -1226,6 +1273,7 @@
       ]
     },
     {
+      "id": 48,
       "link": [15, 26],
       "name": "Ether",
       "requires": [
@@ -1266,6 +1314,7 @@
       "note": ["Use Ether multiple times to briefly see the walkway."]
     },
     {
+      "id": 49,
       "link": [15, 26],
       "name": "Red Cane Guidance",
       "requires": [
@@ -1278,6 +1327,7 @@
       ]
     },
     {
+      "id": 50,
       "link": [15, 26],
       "name": "Blind Traversal",
       "requires": [
@@ -1297,11 +1347,13 @@
       ]
     },
     {
+      "id": 51,
       "link": [16, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 52,
       "link": [16, 16],
       "name": "Tiles",
       "requires": [
@@ -1317,6 +1369,7 @@
       "collectsItems": [14]
     },
     {
+      "id": 53,
       "link": [16, 17],
       "name": "Base",
       "requires": [
@@ -1324,6 +1377,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [17, 16],
       "name": "Base",
       "requires": [
@@ -1331,6 +1385,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [17, 17],
       "name": "Base",
       "requires": [
@@ -1338,11 +1393,13 @@
       ]
     },
     {
+      "id": 56,
       "link": [17, 18],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 57,
       "link": [17, 20],
       "name": "Base",
       "requires": [
@@ -1364,6 +1421,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [17, 20],
       "name": "Fire Rod Dodge",
       "requires": [
@@ -1372,6 +1430,7 @@
       ]
     },
     {
+      "id": 59,
       "link": [17, 20],
       "name": "Lamp and Fire Rod",
       "requires": [
@@ -1381,6 +1440,7 @@
       ]
     },
     {
+      "id": 60,
       "link": [18, 19],
       "name": "Sword",
       "requires": [
@@ -1393,6 +1453,7 @@
       ]
     },
     {
+      "id": 61,
       "link": [18, 19],
       "name": "Bow and Pots",
       "requires": [
@@ -1416,6 +1477,7 @@
       ]
     },
     {
+      "id": 62,
       "link": [18, 19],
       "name": "Rod and Pots",
       "requires": [
@@ -1431,6 +1493,7 @@
       "note": ["Kill the Stalfos and Red Bari with the rod and the other two with the pots."]
     },
     {
+      "id": 63,
       "link": [18, 19],
       "name": "Bombs and Pots",
       "requires": [
@@ -1449,6 +1512,7 @@
       ]
     },
     {
+      "id": 64,
       "link": [18, 19],
       "name": "Hammer",
       "requires": [
@@ -1457,6 +1521,7 @@
       ]
     },
     {
+      "id": 65,
       "link": [18, 19],
       "name": "Red Cane and Pots",
       "requires": [
@@ -1477,6 +1542,7 @@
       ]
     },
     {
+      "id": 66,
       "link": [18, 19],
       "name": "Blue Cane and Pots",
       "requires": [
@@ -1494,6 +1560,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [18, 19],
       "name": "Hookshot Red Bari",
       "requires": [
@@ -1513,11 +1580,13 @@
       ]
     },
     {
+      "id": 68,
       "link": [19, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 69,
       "link": [19, 20],
       "name": "Lamp Only",
       "requires": [
@@ -1544,6 +1613,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [20, 21],
       "name": "Base",
       "requires": [
@@ -1568,6 +1638,7 @@
       "note": ["Hit the switch with bombs or the red cane."]
     },
     {
+      "id": 71,
       "link": [20, 21],
       "name": "Gibdo Dodge",
       "requires": [
@@ -1586,23 +1657,27 @@
       ]
     },
     {
+      "id": 72,
       "link": [21, 21],
       "name": "Base - Open Chests",
       "requires": [],
       "collectsItems": [15, 16, 17, 18]
     },
     {
+      "id": 73,
       "link": [21, 22],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 74,
       "link": [22, 22],
       "name": "Base - Pot Key",
       "requires": [],
       "collectsItems": [19]
     },
     {
+      "id": 75,
       "link": [22, 23],
       "name": "Base",
       "requires": [
@@ -1610,6 +1685,7 @@
       ]
     },
     {
+      "id": 76,
       "link": [23, 22],
       "name": "Base",
       "requires": [
@@ -1617,6 +1693,7 @@
       ]
     },
     {
+      "id": 77,
       "link": [23, 24],
       "name": "Base",
       "requires": [
@@ -1633,6 +1710,7 @@
       ]
     },
     {
+      "id": 78,
       "link": [23, 24],
       "name": "Invulnerability",
       "requires": [
@@ -1647,6 +1725,7 @@
       ]
     },
     {
+      "id": 79,
       "link": [24, 15],
       "name": "Base",
       "requires": [
@@ -1657,11 +1736,13 @@
       ]
     },
     {
+      "id": 80,
       "link": [25, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 81,
       "link": [25, 15],
       "name": "Base",
       "requires": [
@@ -1681,6 +1762,7 @@
       ]
     },
     {
+      "id": 82,
       "link": [25, 25],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -1689,12 +1771,14 @@
       "collectsItems": [20]
     },
     {
+      "id": 83,
       "link": [26, 26],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [21]
     },
     {
+      "id": 84,
       "link": [26, 27],
       "name": "Base",
       "requires": [
@@ -1704,6 +1788,7 @@
       ]
     },
     {
+      "id": 85,
       "link": [27, 28],
       "name": "Armos Knights - Bow",
       "requires": [
@@ -1729,6 +1814,7 @@
       ]
     },
     {
+      "id": 86,
       "link": [27, 28],
       "name": "Armos Knights - Sword (L1-L2)",
       "requires": [
@@ -1755,6 +1841,7 @@
       ]
     },
     {
+      "id": 87,
       "link": [27, 28],
       "name": "Armos Knights - Sword (Full Health, Sparkles)",
       "requires": [
@@ -1766,6 +1853,7 @@
       ]
     },
     {
+      "id": 88,
       "link": [27, 28],
       "name": "Armos Knights - Sword (L1 or L3)",
       "requires": [
@@ -1800,6 +1888,7 @@
       ]
     },
     {
+      "id": 89,
       "link": [27, 28],
       "name": "Armos Knights - Sword (L4)",
       "requires": [
@@ -1819,6 +1908,7 @@
       ]
     },
     {
+      "id": 90,
       "link": [27, 28],
       "name": "Armos Knights - Blue Cane",
       "requires": [
@@ -1827,6 +1917,7 @@
       ]
     },
     {
+      "id": 91,
       "link": [27, 28],
       "name": "Armos Knights - Red Cane",
       "requires": [
@@ -1846,6 +1937,7 @@
       ]
     },
     {
+      "id": 92,
       "link": [27, 28],
       "name": "Armos Knights - Fire or Ice Rod",
       "requires": [
@@ -1864,6 +1956,7 @@
       ]
     },
     {
+      "id": 93,
       "link": [27, 28],
       "name": "Armos Knights - Hammer",
       "requires": [
@@ -1872,17 +1965,20 @@
       ]
     },
     {
+      "id": 94,
       "link": [28, 28],
       "name": "Base - Open Chests",
       "requires": [],
       "collectsItems": [22, 23, 24]
     },
     {
+      "id": 95,
       "link": [28, 29],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 96,
       "link": [29, 29],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -1891,6 +1987,7 @@
       "unlocksDoor": [8]
     },
     {
+      "id": 97,
       "link": [29, 29],
       "name": "Dash Break North Wall",
       "requires": [
@@ -1899,6 +1996,7 @@
       "unlocksDoor": [8]
     },
     {
+      "id": 98,
       "link": [29, 29],
       "name": "Fairies",
       "requires": [
@@ -1907,16 +2005,19 @@
       ]
     },
     {
+      "id": 99,
       "link": [29, 30],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 100,
       "link": [30, 25],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 101,
       "link": [30, 30],
       "name": "Collect Item and Return",
       "requires": [
@@ -1925,6 +2026,7 @@
       "collectsItems": [20]
     },
     {
+      "id": 102,
       "link": [31, 32],
       "name": "Base",
       "requires": [
@@ -1949,6 +2051,7 @@
       ]
     },
     {
+      "id": 103,
       "link": [32, 33],
       "name": "Mirror Shield",
       "requires": [
@@ -1960,6 +2063,7 @@
       ]
     },
     {
+      "id": 104,
       "link": [32, 33],
       "name": "No Mirror Shield",
       "requires": [
@@ -1984,6 +2088,7 @@
       ]
     },
     {
+      "id": 105,
       "link": [33, 34],
       "name": "Base",
       "requires": [
@@ -1991,6 +2096,7 @@
       ]
     },
     {
+      "id": 106,
       "link": [34, 35],
       "name": "Eyegore Kill",
       "requires": [
@@ -2017,6 +2123,7 @@
       "note": ["It's generally easier to dodge the spikes if the orange pegs remain down."]
     },
     {
+      "id": 107,
       "link": [34, 35],
       "name": "Eyegore Tank or Dodge",
       "requires": [
@@ -2036,6 +2143,7 @@
       "note": ["It's generally easier to dodge the spikes if the orange pegs remain down."]
     },
     {
+      "id": 108,
       "link": [35, 36],
       "name": "Base",
       "requires": [
@@ -2049,6 +2157,7 @@
       ]
     },
     {
+      "id": 109,
       "link": [36, 37],
       "name": "Bonk Boost",
       "requires": [
@@ -2056,6 +2165,7 @@
       ]
     },
     {
+      "id": 110,
       "link": [36, 37],
       "name": "Bomb Boost",
       "requires": [
@@ -2063,6 +2173,7 @@
       ]
     },
     {
+      "id": 111,
       "link": [36, 38],
       "name": "Base",
       "requires": [
@@ -2089,6 +2200,7 @@
       ]
     },
     {
+      "id": 112,
       "link": [36, 38],
       "name": "Quake Medallion",
       "requires": [
@@ -2097,6 +2209,7 @@
       ]
     },
     {
+      "id": 113,
       "link": [36, 38],
       "name": "Bow",
       "requires": [
@@ -2136,6 +2249,7 @@
       ]
     },
     {
+      "id": 114,
       "link": [36, 38],
       "name": "Alternate Weapons",
       "requires": [
@@ -2171,6 +2285,7 @@
       ]
     },
     {
+      "id": 115,
       "link": [37, 36],
       "name": "Base",
       "requires": [
@@ -2178,6 +2293,7 @@
       ]
     },
     {
+      "id": 116,
       "link": [37, 36],
       "name": "Bonk Boost",
       "requires": [
@@ -2185,6 +2301,7 @@
       ]
     },
     {
+      "id": 117,
       "link": [37, 36],
       "name": "Bomb Boost",
       "requires": [
@@ -2192,6 +2309,7 @@
       ]
     },
     {
+      "id": 118,
       "link": [37, 37],
       "name": "Base - Bomb Wall",
       "requires": [
@@ -2200,6 +2318,7 @@
       "unlocksDoor": [10]
     },
     {
+      "id": 119,
       "link": [37, 37],
       "name": "Fairies",
       "requires": [
@@ -2210,6 +2329,7 @@
       ]
     },
     {
+      "id": 120,
       "link": [38, 39],
       "name": "Base",
       "requires": [
@@ -2229,6 +2349,7 @@
       ]
     },
     {
+      "id": 121,
       "link": [38, 39],
       "name": "Quake Medallion",
       "requires": [
@@ -2237,6 +2358,7 @@
       ]
     },
     {
+      "id": 122,
       "link": [38, 39],
       "name": "Alternate Weapons",
       "requires": [
@@ -2250,6 +2372,7 @@
       ]
     },
     {
+      "id": 123,
       "link": [38, 39],
       "name": "Pots Kill",
       "requires": [
@@ -2257,6 +2380,7 @@
       ]
     },
     {
+      "id": 124,
       "link": [39, 40],
       "name": "Base",
       "requires": [
@@ -2283,6 +2407,7 @@
       ]
     },
     {
+      "id": 125,
       "link": [39, 40],
       "name": "Quake Medallion",
       "requires": [
@@ -2291,6 +2416,7 @@
       ]
     },
     {
+      "id": 126,
       "link": [39, 40],
       "name": "Alternate Weapons",
       "requires": [
@@ -2314,6 +2440,7 @@
       ]
     },
     {
+      "id": 127,
       "link": [39, 40],
       "name": "Pots Kill",
       "requires": [
@@ -2321,6 +2448,7 @@
       ]
     },
     {
+      "id": 128,
       "link": [40, 41],
       "name": "Base",
       "requires": [
@@ -2376,6 +2504,7 @@
       ]
     },
     {
+      "id": 129,
       "link": [40, 41],
       "name": "Quake Medallion",
       "requires": [
@@ -2384,6 +2513,7 @@
       ]
     },
     {
+      "id": 130,
       "link": [40, 41],
       "name": "Alternate Weapons",
       "requires": [
@@ -2407,6 +2537,7 @@
       ]
     },
     {
+      "id": 131,
       "link": [41, 42],
       "name": "Base",
       "requires": [
@@ -2460,6 +2591,7 @@
       ]
     },
     {
+      "id": 132,
       "link": [41, 42],
       "name": "Quake Medallion",
       "requires": [
@@ -2468,6 +2600,7 @@
       ]
     },
     {
+      "id": 133,
       "link": [41, 42],
       "name": "Alternate Weapons",
       "requires": [
@@ -2495,6 +2628,7 @@
       ]
     },
     {
+      "id": 134,
       "link": [42, 42],
       "name": "Quick Magic Powder",
       "requires": [
@@ -2504,11 +2638,13 @@
       ]
     },
     {
+      "id": 135,
       "link": [42, 43],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 136,
       "link": [43, 44],
       "name": "Lanmolas - Sword",
       "requires": [
@@ -2530,6 +2666,7 @@
       ]
     },
     {
+      "id": 137,
       "link": [43, 44],
       "name": "Lanmolas - Blue Cane",
       "requires": [
@@ -2538,6 +2675,7 @@
       ]
     },
     {
+      "id": 138,
       "link": [43, 44],
       "name": "Lanmolas - Red Cane",
       "requires": [
@@ -2550,6 +2688,7 @@
       ]
     },
     {
+      "id": 139,
       "link": [43, 44],
       "name": "Lanmolas - Fire or Ice Rod",
       "requires": [
@@ -2567,6 +2706,7 @@
       ]
     },
     {
+      "id": 140,
       "link": [43, 44],
       "name": "Lanmolas - Bow",
       "requires": [
@@ -2594,6 +2734,7 @@
       "note": ["Lanmolas can be very difficult to hit with arrows."]
     },
     {
+      "id": 141,
       "link": [43, 44],
       "name": "Lanmolas - Hammer",
       "requires": [
@@ -2610,6 +2751,7 @@
       ]
     },
     {
+      "id": 142,
       "link": [43, 44],
       "name": "Lanmolas - Bombs",
       "requires": [
@@ -2631,11 +2773,13 @@
       ]
     },
     {
+      "id": 143,
       "link": [44, 45],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 144,
       "link": [45, 46],
       "name": "Base",
       "requires": [
@@ -2659,6 +2803,7 @@
       ]
     },
     {
+      "id": 145,
       "link": [45, 46],
       "name": "Alternate Weapons",
       "requires": [
@@ -2682,11 +2827,13 @@
       ]
     },
     {
+      "id": 146,
       "link": [46, 47],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 147,
       "link": [47, 48],
       "name": "Base",
       "requires": [
@@ -2699,6 +2846,7 @@
       ]
     },
     {
+      "id": 148,
       "link": [47, 48],
       "name": "Base",
       "requires": [
@@ -2715,11 +2863,13 @@
       ]
     },
     {
+      "id": 149,
       "link": [48, 49],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 150,
       "link": [49, 50],
       "name": "Base",
       "requires": [
@@ -2734,6 +2884,7 @@
       ]
     },
     {
+      "id": 151,
       "link": [49, 50],
       "name": "Lamp Only",
       "requires": [
@@ -2743,6 +2894,7 @@
       ]
     },
     {
+      "id": 152,
       "link": [50, 50],
       "name": "Base",
       "requires": [
@@ -2750,6 +2902,7 @@
       ]
     },
     {
+      "id": 153,
       "link": [50, 51],
       "name": "Base",
       "requires": [
@@ -2757,6 +2910,7 @@
       ]
     },
     {
+      "id": 154,
       "link": [50, 51],
       "name": "Lamp Only",
       "requires": [
@@ -2769,18 +2923,21 @@
       ]
     },
     {
+      "id": 155,
       "link": [51, 51],
       "name": "Base - Open Chests",
       "requires": [],
       "collectsItems": [25, 26]
     },
     {
+      "id": 156,
       "link": [51, 51],
       "name": "Base - Kill Left Helmasaur",
       "requires": [],
       "collectsItems": [27]
     },
     {
+      "id": 157,
       "link": [51, 52],
       "name": "Base",
       "requires": [
@@ -2788,6 +2945,7 @@
       ]
     },
     {
+      "id": 158,
       "link": [52, 52],
       "name": "Base - Bomb South Wall",
       "requires": [
@@ -2802,6 +2960,7 @@
       "unlocksDoor": [12]
     },
     {
+      "id": 159,
       "link": [52, 53],
       "name": "Base",
       "requires": [
@@ -2809,12 +2968,14 @@
       ]
     },
     {
+      "id": 160,
       "link": [53, 53],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [28]
     },
     {
+      "id": 161,
       "link": [53, 53],
       "name": "Base",
       "requires": [
@@ -2822,6 +2983,7 @@
       ]
     },
     {
+      "id": 162,
       "link": [53, 54],
       "name": "Base",
       "requires": [
@@ -2829,6 +2991,7 @@
       ]
     },
     {
+      "id": 163,
       "link": [53, 56],
       "name": "Base - Moldorm Already Defeated",
       "requires": [
@@ -2841,6 +3004,7 @@
       ]
     },
     {
+      "id": 164,
       "link": [54, 55],
       "name": "Moldorm - Sword",
       "requires": [
@@ -2864,6 +3028,7 @@
       ]
     },
     {
+      "id": 165,
       "link": [54, 55],
       "name": "Moldorm - Hammer",
       "requires": [
@@ -2876,6 +3041,7 @@
       ]
     },
     {
+      "id": 166,
       "link": [55, 56],
       "name": "Base - Open Chest",
       "requires": [
@@ -2885,11 +3051,13 @@
       "collectsItems": [29]
     },
     {
+      "id": 167,
       "link": [56, 57],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 168,
       "link": [57, 58],
       "name": "Base",
       "requires": [
@@ -2904,6 +3072,7 @@
       ]
     },
     {
+      "id": 169,
       "link": [57, 58],
       "name": "Invincible",
       "requires": [
@@ -2919,6 +3088,7 @@
       ]
     },
     {
+      "id": 170,
       "link": [58, 59],
       "name": "Base",
       "requires": [
@@ -2926,6 +3096,7 @@
       ]
     },
     {
+      "id": 171,
       "link": [59, 60],
       "name": "Agahnim 2",
       "requires": [
@@ -2941,6 +3112,7 @@
       ]
     },
     {
+      "id": 172,
       "link": [59, 60],
       "name": "Agahnim 2 - Bug Net",
       "requires": [
@@ -2957,12 +3129,14 @@
       ]
     },
     {
+      "id": 173,
       "link": [60, 60],
       "name": "Base",
       "requires": [],
       "setsFlags": ["DefeatedAgahnim2"]
     },
     {
+      "id": 174,
       "link": [60, 61],
       "name": "Teleport To Pyramid",
       "requires": [
@@ -2971,5 +3145,6 @@
       ],
       "setsFlags": ["DefeatedAgahnim2"]
     }
-  ]
+  ],
+  "nextStratId": 175
 }

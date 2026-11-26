@@ -129,6 +129,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
@@ -142,6 +143,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base - Swim",
       "world": "any",
@@ -150,10 +152,12 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 4
 }

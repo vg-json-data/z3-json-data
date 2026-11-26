@@ -244,18 +244,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Open First Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Open Ambush Chest",
       "requires": [],
       "collectsItems": [2]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Base - Open Southeast Chest",
       "requires": [
@@ -274,6 +277,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Base - Open Chest with Big Key",
       "requires": [
@@ -292,6 +296,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 5,
       "link": [1, 1],
       "name": "Base - Bomb Wall",
       "requires": [
@@ -304,6 +309,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 6,
       "link": [1, 1],
       "name": "Dash Break Wall",
       "requires": [
@@ -316,6 +322,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 7,
       "link": [1, 1],
       "name": "Base - Bomb Wall",
       "requires": [
@@ -329,6 +336,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 8,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -347,6 +355,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -365,12 +374,14 @@
       ]
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Base - Pot Key",
       "requires": [],
       "collectsItems": [5]
     },
     {
+      "id": 11,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -378,11 +389,13 @@
       ]
     },
     {
+      "id": 12,
       "link": [2, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 13,
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -390,6 +403,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [3, 4],
       "name": "Base",
       "requires": [
@@ -420,6 +434,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [4, 3],
       "name": "Base",
       "requires": [
@@ -430,12 +445,14 @@
       ]
     },
     {
+      "id": 16,
       "link": [4, 4],
       "name": "Base - Pot Key",
       "requires": [],
       "collectsItems": [6]
     },
     {
+      "id": 17,
       "link": [4, 5],
       "name": "Base",
       "requires": [
@@ -443,11 +460,13 @@
       ]
     },
     {
+      "id": 18,
       "link": [4, 7],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 19,
       "link": [5, 4],
       "name": "Base",
       "requires": [
@@ -455,16 +474,19 @@
       ]
     },
     {
+      "id": 20,
       "link": [5, 6],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 21,
       "link": [6, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 22,
       "link": [6, 6],
       "name": "Base - Open Chest",
       "requires": [
@@ -476,6 +498,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 23,
       "link": [6, 6],
       "name": "Bomb the Floor",
       "requires": [
@@ -484,6 +507,7 @@
       "setsFlags": ["ThievesTownBombedFloor"]
     },
     {
+      "id": 24,
       "link": [7, 8],
       "name": "Power Gloves",
       "requires": [
@@ -491,6 +515,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [7, 8],
       "name": "Kill Enemies",
       "requires": [
@@ -506,6 +531,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [7, 8],
       "name": "Kill Enemies - Alternate Weapons",
       "requires": [
@@ -526,6 +552,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [7, 8],
       "name": "Respawning Pot Kill",
       "requires": [
@@ -536,16 +563,19 @@
       ]
     },
     {
+      "id": 28,
       "link": [7, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 29,
       "link": [8, 7],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 30,
       "link": [8, 9],
       "name": "Base",
       "requires": [
@@ -554,6 +584,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 31,
       "link": [8, 10],
       "name": "Base",
       "requires": [
@@ -563,6 +594,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 32,
       "link": [9, 8],
       "name": "Base",
       "requires": [
@@ -571,18 +603,21 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 33,
       "link": [9, 9],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [8]
     },
     {
+      "id": 34,
       "link": [9, 9],
       "name": "Blind Follower",
       "requires": [],
       "setsFollower": "Blind"
     },
     {
+      "id": 35,
       "link": [10, 8],
       "name": "Base",
       "requires": [
@@ -590,6 +625,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [10, 10],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -598,11 +634,13 @@
       "collectsItems": [9]
     },
     {
+      "id": 37,
       "link": [11, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 38,
       "link": [11, 11],
       "name": "Bind Reveal",
       "requires": [
@@ -613,6 +651,7 @@
       "followerComplete": "Blind"
     },
     {
+      "id": 39,
       "link": [11, 11],
       "name": "Blind - Sword",
       "requires": [
@@ -643,6 +682,7 @@
       "collectsItems": [10, 11]
     },
     {
+      "id": 40,
       "link": [11, 11],
       "name": "Blind - Blue Cane",
       "requires": [
@@ -665,6 +705,7 @@
       "devNote": ["FIXME: With less magic, this could be used for just a portion of the fight."]
     },
     {
+      "id": 41,
       "link": [11, 11],
       "name": "Blind - Red Cane",
       "requires": [
@@ -690,6 +731,7 @@
       ]
     },
     {
+      "id": 42,
       "link": [11, 11],
       "name": "Blind - Hammer",
       "requires": [
@@ -712,5 +754,6 @@
       "setsFlags": ["DefeatedBlind"],
       "collectsItems": [10, 11]
     }
-  ]
+  ],
+  "nextStratId": 43
 }

@@ -143,12 +143,14 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "any",
@@ -168,6 +170,7 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -187,12 +190,14 @@
       }
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -210,6 +215,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "light",
@@ -238,6 +244,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -256,6 +263,7 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -284,6 +292,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -301,5 +310,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 10
 }

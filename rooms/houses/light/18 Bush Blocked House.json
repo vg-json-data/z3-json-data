@@ -13,5 +13,6 @@
       "nodeType": "door"
     }
   ],
-  "strats": []
+  "strats": [],
+  "nextStratId": 1
 }

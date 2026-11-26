@@ -376,6 +376,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -393,6 +394,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 5],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -412,6 +414,7 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 5],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -431,6 +434,7 @@
       }
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "world": "light",
@@ -439,12 +443,14 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -458,6 +464,7 @@
       }
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -471,6 +478,7 @@
       }
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -479,12 +487,14 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 10,
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -503,6 +513,7 @@
       }
     },
     {
+      "id": 11,
       "link": [2, 4],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -520,6 +531,7 @@
       ]
     },
     {
+      "id": 12,
       "link": [2, 5],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -537,6 +549,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [2, 13],
       "name": "Base",
       "world": "light",
@@ -560,6 +573,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [2, 13],
       "name": "No Guards Yet",
       "world": "light",
@@ -570,6 +584,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -578,12 +593,14 @@
       ]
     },
     {
+      "id": 16,
       "link": [3, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 17,
       "link": [3, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -602,6 +619,7 @@
       }
     },
     {
+      "id": 18,
       "link": [3, 3],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -616,6 +634,7 @@
       "note": ["If a guard is in the way, kill it with bushes."]
     },
     {
+      "id": 19,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -629,6 +648,7 @@
       }
     },
     {
+      "id": 20,
       "link": [4, 4],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -647,6 +667,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [4, 13],
       "name": "Enter with Strong Overhead Object - Guard Kill",
       "world": "light",
@@ -668,6 +689,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [4, 17],
       "name": "Rescued Zelda",
       "world": "light",
@@ -677,6 +699,7 @@
       "devNote": ["Entering through this transition without this flag will softlock the game."]
     },
     {
+      "id": 23,
       "link": [5, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
@@ -696,6 +719,7 @@
       }
     },
     {
+      "id": 24,
       "link": [5, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -715,6 +739,7 @@
       }
     },
     {
+      "id": 25,
       "link": [5, 5],
       "name": "Bonk Fairy",
       "world": "dark",
@@ -725,6 +750,7 @@
       "note": ["The left tree will release a fairy when dashed into."]
     },
     {
+      "id": 26,
       "link": [5, 5],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -742,6 +768,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [5, 5],
       "name": "Superbunny to Link - Rupee Pull Westmost Statue",
       "world": "dark",
@@ -751,6 +778,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [5, 13],
       "name": "Base",
       "world": "light",
@@ -777,12 +805,14 @@
       ]
     },
     {
+      "id": 29,
       "link": [5, 13],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 30,
       "link": [5, 13],
       "name": "No Guards Yet",
       "world": "light",
@@ -793,6 +823,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [5, 13],
       "name": "Guard Bush Kill",
       "world": "light",
@@ -807,12 +838,14 @@
       ]
     },
     {
+      "id": 32,
       "link": [5, 17],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 33,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
@@ -821,12 +854,14 @@
       ]
     },
     {
+      "id": 34,
       "link": [6, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 35,
       "link": [6, 10],
       "name": "Base",
       "world": "light",
@@ -835,6 +870,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [6, 13],
       "name": "Base",
       "world": "any",
@@ -845,6 +881,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [7, 7],
       "name": "Castle Gate Portal - Agahnim Defeated",
       "fromWorld": "light",
@@ -855,6 +892,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [7, 7],
       "name": "Base",
       "world": "dark",
@@ -865,6 +903,7 @@
       "followerComplete": "Super Bomb"
     },
     {
+      "id": 39,
       "link": [7, 8],
       "name": "Base",
       "world": "light",
@@ -873,6 +912,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [7, 9],
       "name": "Base",
       "world": "light",
@@ -881,6 +921,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [7, 11],
       "name": "Base",
       "world": "dark",
@@ -897,6 +938,7 @@
       "note": ["Lure the Ropa to the left and squeeze past it."]
     },
     {
+      "id": 42,
       "link": [7, 13],
       "name": "Agahnim Not Defeated",
       "world": "light",
@@ -907,12 +949,14 @@
       ]
     },
     {
+      "id": 43,
       "link": [7, 13],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 44,
       "link": [7, 14],
       "name": "Base",
       "world": "dark",
@@ -921,12 +965,14 @@
       ]
     },
     {
+      "id": 45,
       "link": [8, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 46,
       "link": [9, 7],
       "name": "Base",
       "world": "light",
@@ -935,6 +981,7 @@
       ]
     },
     {
+      "id": 47,
       "link": [11, 6],
       "name": "Base",
       "world": "light",
@@ -943,6 +990,7 @@
       ]
     },
     {
+      "id": 48,
       "link": [11, 7],
       "name": "Base",
       "world": "light",
@@ -951,12 +999,14 @@
       ]
     },
     {
+      "id": 49,
       "link": [11, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 50,
       "link": [11, 7],
       "name": "Base - Collect Item",
       "world": "dark",
@@ -966,6 +1016,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 51,
       "link": [11, 9],
       "name": "Base",
       "fromWorld": "dark",
@@ -979,6 +1030,7 @@
       ]
     },
     {
+      "id": 52,
       "link": [11, 11],
       "name": "Base",
       "world": "light",
@@ -988,6 +1040,7 @@
       "setsFlags": ["OpenedCastleElectricBarrier"]
     },
     {
+      "id": 53,
       "link": [11, 12],
       "name": "Base",
       "world": "light",
@@ -1000,6 +1053,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [11, 12],
       "name": "Cape",
       "world": "light",
@@ -1008,6 +1062,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [11, 15],
       "name": "Base",
       "world": "dark",
@@ -1016,6 +1071,7 @@
       ]
     },
     {
+      "id": 56,
       "link": [11, 18],
       "name": "Base",
       "world": "light",
@@ -1024,6 +1080,7 @@
       ]
     },
     {
+      "id": 57,
       "link": [11, 19],
       "name": "Base",
       "world": "light",
@@ -1032,6 +1089,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [12, 11],
       "name": "Base",
       "world": "light",
@@ -1047,12 +1105,14 @@
       ]
     },
     {
+      "id": 59,
       "link": [13, 5],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 60,
       "link": [13, 6],
       "name": "Base",
       "world": "any",
@@ -1063,6 +1123,7 @@
       ]
     },
     {
+      "id": 61,
       "link": [13, 7],
       "name": "Agahnim Not Defeated",
       "world": "light",
@@ -1073,12 +1134,14 @@
       ]
     },
     {
+      "id": 62,
       "link": [13, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 63,
       "link": [13, 13],
       "name": "Castle Gate Portal - Agahnim Defeated",
       "fromWorld": "light",
@@ -1089,12 +1152,14 @@
       ]
     },
     {
+      "id": 64,
       "link": [14, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 65,
       "link": [16, 7],
       "name": "Base",
       "world": "dark",
@@ -1103,6 +1168,7 @@
       ]
     },
     {
+      "id": 66,
       "link": [16, 11],
       "name": "Mirror",
       "fromWorld": "dark",
@@ -1116,6 +1182,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [17, 4],
       "name": "Rescued Zelda",
       "world": "light",
@@ -1124,6 +1191,7 @@
       ]
     },
     {
+      "id": 68,
       "link": [17, 5],
       "name": "Base",
       "world": "light",
@@ -1145,6 +1213,7 @@
       ]
     },
     {
+      "id": 69,
       "link": [17, 5],
       "name": "No Guards Yet",
       "world": "light",
@@ -1155,6 +1224,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [17, 5],
       "name": "Base",
       "world": "light",
@@ -1169,6 +1239,7 @@
       }
     },
     {
+      "id": 71,
       "link": [17, 13],
       "name": "Guard Tank",
       "world": "light",
@@ -1187,6 +1258,7 @@
       ]
     },
     {
+      "id": 72,
       "link": [17, 13],
       "name": "Precise Guard Dodge",
       "world": "light",
@@ -1201,16 +1273,19 @@
       ]
     },
     {
+      "id": 73,
       "link": [18, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 74,
       "link": [19, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 75
 }

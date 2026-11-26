@@ -302,6 +302,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -315,6 +316,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -328,6 +330,7 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -342,6 +345,7 @@
       }
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "world": "any",
@@ -350,6 +354,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 6],
       "name": "Base",
       "world": "dark",
@@ -359,6 +364,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 6],
       "name": "Base",
       "world": "any",
@@ -367,6 +373,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [3, 3],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
@@ -381,12 +388,14 @@
       "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 8,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 9,
       "link": [3, 6],
       "name": "Base",
       "world": "any",
@@ -396,12 +405,14 @@
       ]
     },
     {
+      "id": 10,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 11,
       "link": [4, 4],
       "name": "Base - Bomb Wall",
       "world": "light",
@@ -411,6 +422,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 12,
       "link": [4, 4],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
@@ -425,6 +437,7 @@
       "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 13,
       "link": [4, 5],
       "name": "Base - Already Opened",
       "world": "light",
@@ -433,6 +446,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [4, 6],
       "name": "Base",
       "world": "any",
@@ -442,30 +456,35 @@
       ]
     },
     {
+      "id": 15,
       "link": [5, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 16,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 17,
       "link": [6, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 18,
       "link": [6, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 19,
       "link": [6, 8],
       "name": "Base",
       "world": "dark",
@@ -482,6 +501,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [7, 6],
       "name": "Base",
       "world": "light",
@@ -490,6 +510,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [7, 7],
       "name": "Dark World Portal",
       "fromWorld": "light",
@@ -500,6 +521,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [8, 6],
       "name": "Base",
       "world": "light",
@@ -509,6 +531,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [8, 6],
       "name": "Base",
       "world": "dark",
@@ -517,11 +540,13 @@
       ]
     },
     {
+      "id": 24,
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
       "requires": [],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 25
 }

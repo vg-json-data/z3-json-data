@@ -154,6 +154,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base",
       "world": "dark",
@@ -163,12 +164,14 @@
       "setsFollower": "Purple Chest"
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -177,6 +180,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 3],
       "name": "Base - Drop",
       "world": "light",
@@ -185,6 +189,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 4],
       "name": "Base - Hammer Pegs",
       "world": "dark",
@@ -194,6 +199,7 @@
       "setsFlags": ["OpenedHammerPegsStaircase"]
     },
     {
+      "id": 6,
       "link": [1, 4],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -202,12 +208,14 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 5],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 8,
       "link": [1, 5],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -216,12 +224,14 @@
       ]
     },
     {
+      "id": 9,
       "link": [1, 6],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 10,
       "link": [1, 6],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -230,12 +240,14 @@
       ]
     },
     {
+      "id": 11,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 12,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -244,6 +256,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -257,18 +270,21 @@
       }
     },
     {
+      "id": 14,
       "link": [4, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 15,
       "link": [5, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 16,
       "link": [5, 1],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -277,6 +293,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [5, 5],
       "name": "Exit with Bush Overhead",
       "world": "light",
@@ -290,6 +307,7 @@
       }
     },
     {
+      "id": 18,
       "link": [5, 5],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -304,12 +322,14 @@
       }
     },
     {
+      "id": 19,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 20,
       "link": [6, 1],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -318,6 +338,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [6, 6],
       "name": "Exit with Bush Overhead",
       "world": "light",
@@ -331,6 +352,7 @@
       }
     },
     {
+      "id": 22,
       "link": [6, 6],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -344,5 +366,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 23
 }

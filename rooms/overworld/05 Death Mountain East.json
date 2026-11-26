@@ -331,6 +331,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -343,6 +344,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base - Mirror Shield",
       "world": "dark",
@@ -358,6 +360,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Tank the Damage",
       "world": "dark",
@@ -382,6 +385,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Damageless",
       "world": "dark",
@@ -413,6 +417,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
@@ -430,6 +435,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -442,6 +448,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Tank the Damage",
       "world": "dark",
@@ -467,6 +474,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Damageless",
       "world": "dark",
@@ -510,6 +518,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 2],
       "name": "Bonk Fairy",
       "world": "light",
@@ -519,6 +528,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Base - Lift Rock",
       "world": "dark",
@@ -528,6 +538,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 11,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -547,12 +558,14 @@
       ]
     },
     {
+      "id": 12,
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 13,
       "link": [2, 5],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -561,6 +574,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [2, 6],
       "name": "Base",
       "world": "light",
@@ -569,6 +583,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [2, 8],
       "name": "Base",
       "world": "light",
@@ -577,6 +592,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [2, 11],
       "name": "Base",
       "world": "any",
@@ -585,6 +601,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [3, 1],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
@@ -603,6 +620,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -622,12 +640,14 @@
       ]
     },
     {
+      "id": 19,
       "link": [3, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 20,
       "link": [4, 2],
       "name": "Base",
       "world": "dark",
@@ -636,6 +656,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [4, 4],
       "name": "Base - Item Pickup",
       "world": "light",
@@ -643,12 +664,14 @@
       "collectsItems": [1]
     },
     {
+      "id": 22,
       "link": [5, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 23,
       "link": [6, 7],
       "name": "Base",
       "world": "dark",
@@ -658,6 +681,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [6, 9],
       "name": "Base",
       "world": "light",
@@ -666,12 +690,14 @@
       ]
     },
     {
+      "id": 25,
       "link": [7, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 26,
       "link": [8, 10],
       "name": "Base",
       "world": "light",
@@ -680,6 +706,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [9, 9],
       "name": "Dark World Portal",
       "fromWorld": "light",
@@ -690,6 +717,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [9, 9],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -704,6 +732,7 @@
       }
     },
     {
+      "id": 29,
       "link": [9, 9],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -717,6 +746,7 @@
       }
     },
     {
+      "id": 30,
       "link": [9, 10],
       "name": "Base",
       "world": "light",
@@ -725,6 +755,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [9, 10],
       "name": "Base",
       "world": "dark",
@@ -733,6 +764,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [9, 11],
       "name": "Base",
       "world": "light",
@@ -746,12 +778,14 @@
       ]
     },
     {
+      "id": 33,
       "link": [9, 11],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 34,
       "link": [9, 12],
       "name": "Base - Hookshot",
       "world": "light",
@@ -760,6 +794,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [10, 9],
       "name": "Base",
       "world": "light",
@@ -768,6 +803,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [10, 11],
       "name": "Base",
       "world": "any",
@@ -776,6 +812,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [11, 9],
       "name": "Base",
       "world": "light",
@@ -784,6 +821,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [11, 9],
       "name": "Without Jumping",
       "world": "light",
@@ -800,12 +838,14 @@
       ]
     },
     {
+      "id": 39,
       "link": [11, 9],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 40,
       "link": [12, 9],
       "name": "Base - Hookshot",
       "world": "light",
@@ -813,5 +853,6 @@
         "Hookshot"
       ]
     }
-  ]
+  ],
+  "nextStratId": 41
 }

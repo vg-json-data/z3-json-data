@@ -323,6 +323,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -336,6 +337,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -351,6 +353,7 @@
       "note": ["Grab the rock to the north."]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base - Bush",
       "world": "light",
@@ -359,6 +362,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Dodge",
       "world": "light",
@@ -370,6 +374,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -378,6 +383,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -403,6 +409,7 @@
       }
     },
     {
+      "id": 7,
       "link": [1, 7],
       "name": "Base",
       "world": "dark",
@@ -420,6 +427,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [1, 7],
       "name": "Range Kill",
       "world": "dark",
@@ -466,6 +474,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [1, 7],
       "name": "Base - Alternate Weapons",
       "world": "dark",
@@ -495,6 +504,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [1, 7],
       "name": "Tank",
       "world": "dark",
@@ -505,6 +515,7 @@
       "note": ["It is possible to Lure some of the Ropa away and take less damage."]
     },
     {
+      "id": 11,
       "link": [1, 7],
       "name": "Dodge and Tank",
       "world": "dark",
@@ -525,6 +536,7 @@
       ]
     },
     {
+      "id": 12,
       "link": [1, 7],
       "name": "Cape",
       "world": "dark",
@@ -542,6 +554,7 @@
       "devNote": ["It is possible to Lure some of the Ropa away to use less magic."]
     },
     {
+      "id": 13,
       "link": [1, 7],
       "name": "Enter with Strong Overhead Object - Double Ropa Kill",
       "world": "dark",
@@ -569,6 +582,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [1, 7],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
@@ -582,6 +596,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [1, 7],
       "name": "Very Precise Manipulation",
       "world": "dark",
@@ -596,6 +611,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [1, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -621,6 +637,7 @@
       }
     },
     {
+      "id": 17,
       "link": [1, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -641,6 +658,7 @@
       }
     },
     {
+      "id": 18,
       "link": [1, 13],
       "name": "Base - Bush",
       "world": "light",
@@ -649,6 +667,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [1, 13],
       "name": "Dodge",
       "world": "light",
@@ -660,6 +679,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [1, 13],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -668,6 +688,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [1, 13],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -686,6 +707,7 @@
       }
     },
     {
+      "id": 22,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -704,6 +726,7 @@
       }
     },
     {
+      "id": 23,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -717,6 +740,7 @@
       }
     },
     {
+      "id": 24,
       "link": [2, 2],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -731,6 +755,7 @@
       }
     },
     {
+      "id": 25,
       "link": [2, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -749,6 +774,7 @@
       }
     },
     {
+      "id": 26,
       "link": [2, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -769,6 +795,7 @@
       }
     },
     {
+      "id": 27,
       "link": [2, 12],
       "name": "Base",
       "world": "dark",
@@ -777,12 +804,14 @@
       ]
     },
     {
+      "id": 28,
       "link": [2, 13],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 29,
       "link": [2, 13],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -801,6 +830,7 @@
       }
     },
     {
+      "id": 30,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -814,6 +844,7 @@
       }
     },
     {
+      "id": 31,
       "link": [3, 3],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -831,6 +862,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [3, 4],
       "name": "Base - Bush Throw",
       "world": "dark",
@@ -849,6 +881,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [3, 4],
       "name": "Bunny",
       "world": "dark",
@@ -860,12 +893,14 @@
       ]
     },
     {
+      "id": 34,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 35,
       "link": [3, 4],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -884,6 +919,7 @@
       }
     },
     {
+      "id": 36,
       "link": [3, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -902,6 +938,7 @@
       }
     },
     {
+      "id": 37,
       "link": [3, 12],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -920,12 +957,14 @@
       }
     },
     {
+      "id": 38,
       "link": [3, 12],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 39,
       "link": [3, 12],
       "name": "Base",
       "world": "dark",
@@ -943,12 +982,14 @@
       ]
     },
     {
+      "id": 40,
       "link": [4, 3],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 41,
       "link": [4, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -967,6 +1008,7 @@
       }
     },
     {
+      "id": 42,
       "link": [4, 4],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -980,6 +1022,7 @@
       }
     },
     {
+      "id": 43,
       "link": [4, 4],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -997,6 +1040,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [4, 5],
       "name": "Base",
       "world": "any",
@@ -1005,6 +1049,7 @@
       ]
     },
     {
+      "id": 45,
       "link": [4, 6],
       "name": "Base - Bush Throw",
       "world": "dark",
@@ -1018,6 +1063,7 @@
       ]
     },
     {
+      "id": 46,
       "link": [4, 6],
       "name": "Bunny",
       "world": "dark",
@@ -1029,12 +1075,14 @@
       ]
     },
     {
+      "id": 47,
       "link": [4, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 48,
       "link": [4, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -1053,6 +1101,7 @@
       }
     },
     {
+      "id": 49,
       "link": [4, 8],
       "name": "Base - Bush",
       "world": "light",
@@ -1061,12 +1110,14 @@
       ]
     },
     {
+      "id": 50,
       "link": [4, 12],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 51,
       "link": [4, 12],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -1085,6 +1136,7 @@
       }
     },
     {
+      "id": 52,
       "link": [6, 4],
       "name": "Base",
       "world": "dark",
@@ -1097,6 +1149,7 @@
       ]
     },
     {
+      "id": 53,
       "link": [7, 1],
       "name": "Base",
       "world": "dark",
@@ -1115,6 +1168,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [7, 1],
       "name": "Range Kill",
       "world": "dark",
@@ -1154,6 +1208,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [7, 1],
       "name": "Base - Alternate Weapons",
       "world": "dark",
@@ -1197,6 +1252,7 @@
       ]
     },
     {
+      "id": 56,
       "link": [7, 1],
       "name": "Tank",
       "world": "dark",
@@ -1225,6 +1281,7 @@
       ]
     },
     {
+      "id": 57,
       "link": [7, 1],
       "name": "Cape",
       "world": "dark",
@@ -1247,6 +1304,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [7, 1],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
@@ -1265,6 +1323,7 @@
       ]
     },
     {
+      "id": 59,
       "link": [7, 1],
       "name": "Very Precise Manipulation",
       "world": "dark",
@@ -1286,6 +1345,7 @@
       ]
     },
     {
+      "id": 60,
       "link": [7, 3],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -1304,12 +1364,14 @@
       }
     },
     {
+      "id": 61,
       "link": [7, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 62,
       "link": [7, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -1328,6 +1390,7 @@
       }
     },
     {
+      "id": 63,
       "link": [7, 7],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -1341,6 +1404,7 @@
       }
     },
     {
+      "id": 64,
       "link": [7, 7],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1358,6 +1422,7 @@
       ]
     },
     {
+      "id": 65,
       "link": [7, 12],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -1376,6 +1441,7 @@
       }
     },
     {
+      "id": 66,
       "link": [8, 4],
       "name": "Base - Bush",
       "world": "light",
@@ -1384,6 +1450,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
@@ -1396,6 +1463,7 @@
       ]
     },
     {
+      "id": 68,
       "link": [8, 11],
       "name": "Base - Bush",
       "world": "any",
@@ -1404,6 +1472,7 @@
       ]
     },
     {
+      "id": 69,
       "link": [9, 10],
       "name": "Base",
       "world": "light",
@@ -1423,6 +1492,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [9, 10],
       "name": "Base - No Thief Hit",
       "world": "light",
@@ -1439,6 +1509,7 @@
       ]
     },
     {
+      "id": 71,
       "link": [9, 10],
       "name": "Guard Despawn",
       "world": "light",
@@ -1450,6 +1521,7 @@
       ]
     },
     {
+      "id": 72,
       "link": [9, 10],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1465,6 +1537,7 @@
       ]
     },
     {
+      "id": 73,
       "link": [9, 10],
       "name": "Base",
       "world": "dark",
@@ -1473,12 +1546,14 @@
       ]
     },
     {
+      "id": 74,
       "link": [9, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 75,
       "link": [10, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1499,6 +1574,7 @@
       }
     },
     {
+      "id": 76,
       "link": [10, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1519,6 +1595,7 @@
       }
     },
     {
+      "id": 77,
       "link": [10, 9],
       "name": "Base - Bush",
       "world": "light",
@@ -1533,6 +1610,7 @@
       ]
     },
     {
+      "id": 78,
       "link": [10, 9],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1541,6 +1619,7 @@
       ]
     },
     {
+      "id": 79,
       "link": [10, 9],
       "name": "Open Skull Woods",
       "world": "dark",
@@ -1550,6 +1629,7 @@
       "setsFlags": ["OpenedSkullWoods"]
     },
     {
+      "id": 80,
       "link": [10, 9],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -1558,6 +1638,7 @@
       ]
     },
     {
+      "id": 81,
       "link": [10, 10],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -1571,6 +1652,7 @@
       }
     },
     {
+      "id": 82,
       "link": [10, 10],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1585,6 +1667,7 @@
       }
     },
     {
+      "id": 83,
       "link": [10, 11],
       "name": "Base",
       "world": "light",
@@ -1600,6 +1683,7 @@
       ]
     },
     {
+      "id": 84,
       "link": [10, 11],
       "name": "Base",
       "world": "dark",
@@ -1612,6 +1696,7 @@
       ]
     },
     {
+      "id": 85,
       "link": [10, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1632,6 +1717,7 @@
       }
     },
     {
+      "id": 86,
       "link": [10, 11],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -1650,6 +1736,7 @@
       }
     },
     {
+      "id": 87,
       "link": [10, 13],
       "name": "Base",
       "world": "light",
@@ -1661,6 +1748,7 @@
       ]
     },
     {
+      "id": 88,
       "link": [10, 13],
       "name": "Base",
       "world": "light",
@@ -1674,6 +1762,7 @@
       ]
     },
     {
+      "id": 89,
       "link": [10, 13],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1694,6 +1783,7 @@
       }
     },
     {
+      "id": 90,
       "link": [11, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1714,6 +1804,7 @@
       }
     },
     {
+      "id": 91,
       "link": [11, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1734,6 +1825,7 @@
       }
     },
     {
+      "id": 92,
       "link": [11, 8],
       "name": "Base - Bush",
       "world": "any",
@@ -1742,6 +1834,7 @@
       ]
     },
     {
+      "id": 93,
       "link": [11, 9],
       "name": "Base",
       "world": "light",
@@ -1754,6 +1847,7 @@
       ]
     },
     {
+      "id": 94,
       "link": [11, 10],
       "name": "Base",
       "world": "light",
@@ -1766,12 +1860,14 @@
       ]
     },
     {
+      "id": 95,
       "link": [11, 10],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 96,
       "link": [11, 10],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1792,6 +1888,7 @@
       }
     },
     {
+      "id": 97,
       "link": [11, 10],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
@@ -1810,6 +1907,7 @@
       }
     },
     {
+      "id": 98,
       "link": [11, 11],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -1823,6 +1921,7 @@
       }
     },
     {
+      "id": 99,
       "link": [11, 11],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1837,6 +1936,7 @@
       }
     },
     {
+      "id": 100,
       "link": [11, 13],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1857,6 +1957,7 @@
       }
     },
     {
+      "id": 101,
       "link": [12, 2],
       "name": "Base",
       "world": "dark",
@@ -1865,6 +1966,7 @@
       ]
     },
     {
+      "id": 102,
       "link": [12, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -1883,12 +1985,14 @@
       }
     },
     {
+      "id": 103,
       "link": [12, 4],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 104,
       "link": [12, 4],
       "name": "Carry Strong Overhead Object",
       "world": "any",
@@ -1907,6 +2011,7 @@
       }
     },
     {
+      "id": 105,
       "link": [12, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
@@ -1925,6 +2030,7 @@
       }
     },
     {
+      "id": 106,
       "link": [12, 12],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -1938,6 +2044,7 @@
       }
     },
     {
+      "id": 107,
       "link": [12, 12],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1952,6 +2059,7 @@
       }
     },
     {
+      "id": 108,
       "link": [13, 1],
       "name": "Base",
       "world": "light",
@@ -1963,6 +2071,7 @@
       ]
     },
     {
+      "id": 109,
       "link": [13, 1],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1971,6 +2080,7 @@
       ]
     },
     {
+      "id": 110,
       "link": [13, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -1989,12 +2099,14 @@
       }
     },
     {
+      "id": 111,
       "link": [13, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 112,
       "link": [13, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -2013,12 +2125,14 @@
       }
     },
     {
+      "id": 113,
       "link": [13, 10],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 114,
       "link": [13, 10],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -2037,6 +2151,7 @@
       }
     },
     {
+      "id": 115,
       "link": [13, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
@@ -2056,5 +2171,6 @@
         }
       }
     }
-  ]
+  ],
+  "nextStratId": 116
 }

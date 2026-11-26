@@ -188,6 +188,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -198,12 +199,14 @@
       ]
     },
     {
+      "id": 2,
       "link": [2, 2],
       "name": "Base",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Base",
       "requires": [
@@ -216,6 +219,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 4,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -227,6 +231,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [3, 4],
       "name": "Base",
       "requires": [
@@ -240,6 +245,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [3, 4],
       "name": "Base - Pot Kill",
       "requires": [
@@ -247,12 +253,14 @@
       ]
     },
     {
+      "id": 7,
       "link": [4, 4],
       "name": "Base",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 8,
       "link": [4, 4],
       "name": "Big Chest",
       "requires": [
@@ -261,6 +269,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 9,
       "link": [4, 4],
       "name": "Base",
       "requires": [
@@ -275,6 +284,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 10,
       "link": [4, 4],
       "name": "Pot Kill",
       "requires": [
@@ -293,6 +303,7 @@
       "note": ["Killing the enemies with pots is viable. Reset the room to refresh the pots."]
     },
     {
+      "id": 11,
       "link": [4, 4],
       "name": "Dark Kill - Fire Rod",
       "requires": [
@@ -311,6 +322,7 @@
       "note": ["Light the torch then quickly kill the right Eyegore with a pot."]
     },
     {
+      "id": 12,
       "link": [4, 4],
       "name": "Dark Kill - Strong Weapon",
       "requires": [
@@ -324,6 +336,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 13,
       "link": [4, 4],
       "name": "Dark Kill",
       "requires": [
@@ -354,11 +367,13 @@
       "collectsItems": [7]
     },
     {
+      "id": 14,
       "link": [4, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 15,
       "link": [4, 8],
       "name": "Base",
       "requires": [
@@ -371,6 +386,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -396,6 +412,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [5, 6],
       "name": "Damageless Dodge",
       "requires": [
@@ -407,6 +424,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [5, 6],
       "name": "Darkness - Lenient",
       "requires": [
@@ -422,6 +440,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [5, 6],
       "name": "Darkness - Blue Cane",
       "requires": [
@@ -430,6 +449,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [5, 6],
       "name": "Darkness",
       "requires": [
@@ -446,6 +466,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [5, 7],
       "name": "Base",
       "requires": [
@@ -473,6 +494,7 @@
       "devNote": ["This strat does not obtain the key from the room to the right."]
     },
     {
+      "id": 22,
       "link": [5, 7],
       "name": "Magic Powder Kill",
       "requires": [
@@ -485,6 +507,7 @@
       "devNote": ["This strat does not obtain the key from the room to the right."]
     },
     {
+      "id": 23,
       "link": [5, 7],
       "name": "Damageless Dodge",
       "requires": [
@@ -498,6 +521,7 @@
       "devNote": ["This strat does not obtain the key from the room to the right."]
     },
     {
+      "id": 24,
       "link": [5, 7],
       "name": "Darkness",
       "requires": [
@@ -510,6 +534,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [5, 7],
       "name": "Darkness - Hookshot i-Frames",
       "requires": [
@@ -524,12 +549,14 @@
       ]
     },
     {
+      "id": 26,
       "link": [6, 6],
       "name": "Grab the Key",
       "requires": [],
       "collectsItems": [4]
     },
     {
+      "id": 27,
       "link": [6, 6],
       "name": "Pot Refill",
       "requires": [
@@ -539,6 +566,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -552,6 +580,7 @@
       ]
     },
     {
+      "id": 29,
       "link": [6, 7],
       "name": "Damageless Dodge",
       "requires": [
@@ -565,6 +594,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [6, 7],
       "name": "Darkness - Lenient",
       "requires": [
@@ -589,6 +619,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [6, 7],
       "name": "Darkness - Blue Cane",
       "requires": [
@@ -607,6 +638,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [6, 7],
       "name": "Darkness",
       "requires": [
@@ -626,6 +658,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [7, 4],
       "name": "Base",
       "requires": [
@@ -633,6 +666,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [7, 7],
       "name": "Base - Kill All Enemies",
       "requires": [
@@ -641,6 +675,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 35,
       "link": [7, 7],
       "name": "Base - Kill All Enemies (Alternate Weapons)",
       "requires": [
@@ -662,6 +697,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 36,
       "link": [7, 7],
       "name": "Base - Kill All Enemies (Boomerang or Hookshot)",
       "requires": [
@@ -693,6 +729,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [7, 7],
       "name": "Respawning Pot Kill",
       "requires": [
@@ -704,6 +741,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [7, 7],
       "name": "Anti-Fairy Pot Grab",
       "requires": [
@@ -724,6 +762,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [7, 7],
       "name": "Pot Refill",
       "requires": [
@@ -731,6 +770,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [8, 8],
       "name": "Pot Refill",
       "requires": [
@@ -738,6 +778,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [8, 9],
       "name": "Base",
       "requires": [
@@ -750,6 +791,7 @@
       ]
     },
     {
+      "id": 42,
       "link": [9, 9],
       "name": "Armos Knights - Bow",
       "requires": [
@@ -777,6 +819,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 43,
       "link": [9, 9],
       "name": "Armos Knights - Sword (L1-L2)",
       "requires": [
@@ -801,6 +844,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [9, 9],
       "name": "Armos Knights - Sword (Full Health, Sparkles)",
       "requires": [
@@ -814,6 +858,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 45,
       "link": [9, 9],
       "name": "Armos Knights - Sword (L1 or L3)",
       "requires": [
@@ -849,6 +894,7 @@
       ]
     },
     {
+      "id": 46,
       "link": [9, 9],
       "name": "Armos Knights - Sword (L4)",
       "requires": [
@@ -866,6 +912,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 47,
       "link": [9, 9],
       "name": "Armos Knights - Blue Cane",
       "requires": [
@@ -876,6 +923,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 48,
       "link": [9, 9],
       "name": "Armos Knights - Red Cane",
       "requires": [
@@ -897,6 +945,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 49,
       "link": [9, 9],
       "name": "Armos Knights - Fire or Ice Rod",
       "requires": [
@@ -917,6 +966,7 @@
       "collectsItems": [8, 9]
     },
     {
+      "id": 50,
       "link": [9, 9],
       "name": "Armos Knights - Hammer",
       "requires": [
@@ -930,5 +980,6 @@
       "setsFlags": ["DefeatedArmosKnights"],
       "collectsItems": [8, 9]
     }
-  ]
+  ],
+  "nextStratId": 51
 }

@@ -161,6 +161,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -175,6 +176,7 @@
       }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "dark",
@@ -188,12 +190,14 @@
       }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -203,6 +207,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Disturb Catfish",
       "world": "dark",
@@ -212,6 +217,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 6,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -220,6 +226,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 4],
       "name": "Base",
       "world": "any",
@@ -228,6 +235,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -236,16 +244,19 @@
       ]
     },
     {
+      "id": 9,
       "link": [4, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 10,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 11
 }

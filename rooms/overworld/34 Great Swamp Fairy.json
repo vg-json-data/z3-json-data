@@ -171,6 +171,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Bomb",
       "world": "light",
@@ -180,6 +181,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Bomb",
       "world": "dark",
@@ -189,6 +191,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
@@ -202,6 +205,7 @@
       }
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Rupee Pull - Northeast Totem",
       "world": "dark",
@@ -211,6 +215,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
@@ -219,6 +224,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 3],
       "name": "Base - Already Bombed",
       "world": "light",
@@ -227,6 +233,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 4],
       "name": "Base - Already Bombed",
       "world": "dark",
@@ -235,22 +242,26 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 10,
       "link": [4, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 11
 }
