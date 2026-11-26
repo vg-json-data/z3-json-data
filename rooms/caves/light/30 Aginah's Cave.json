@@ -38,6 +38,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Bomb South Wall",
       "requires": [
@@ -46,6 +47,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -53,6 +55,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -60,6 +63,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [2, 2],
       "name": "Base",
       "requires": [
@@ -67,5 +71,6 @@
       ],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 5
 }

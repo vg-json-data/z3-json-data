@@ -16,11 +16,14 @@
       "id": 2,
       "name": "Exit",
       "nodeType": "door",
-      "note": ["This room is not accessible by normal means, exiting it takes Link outside of his house."]
+      "note": [
+        "This room is not accessible by normal means, exiting it takes Link outside of his house."
+      ]
     }
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Rupees",
       "requires": [
@@ -28,14 +31,17 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 4
 }

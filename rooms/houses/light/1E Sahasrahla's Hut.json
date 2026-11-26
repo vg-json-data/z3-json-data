@@ -59,6 +59,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Heart Pots",
       "requires": [
@@ -67,6 +68,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -75,6 +77,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Dash Break North Wall",
       "requires": [
@@ -84,6 +87,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Sahasrahla's Reward",
       "requires": [
@@ -93,6 +97,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -101,6 +106,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -108,6 +114,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Base - Left Chest",
       "requires": [
@@ -116,6 +123,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Base - Middle Chest",
       "requires": [
@@ -124,6 +132,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 9,
       "link": [2, 2],
       "name": "Base - Right Chest",
       "requires": [
@@ -131,5 +140,6 @@
       ],
       "collectsItems": [4]
     }
-  ]
+  ],
+  "nextStratId": 10
 }

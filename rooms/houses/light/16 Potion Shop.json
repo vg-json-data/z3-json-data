@@ -29,6 +29,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Mushroom Reward",
       "requires": [
@@ -38,16 +39,19 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 2],
       "name": "Buy Red Potion",
       "requires": [
@@ -57,6 +61,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Buy Green Potion",
       "requires": [
@@ -66,6 +71,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Buy Blue Potion",
       "requires": [
@@ -74,5 +80,6 @@
         "h_purchaseItem"
       ]
     }
-  ]
+  ],
+  "nextStratId": 7
 }

@@ -6,23 +6,21 @@
   "dungeonId": 16,
   "enemySpawns": {
     "enemies": [
-      "Mothula",
-
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Gibdo",
-      "Hardhat Beetle (Blue)",
-      "Hardhat Beetle (Red)",
-      "Helmasaur",
-      "Mini-Moldorm",
-      "Stalfos",
-      "Wallmaster",
-
-      "Guruguru Bar",
-      "Rabbit Beam",
-      "Spark",
-      "Spike Block",
-      "Winder"
+      {"name": "Mothula"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Gibdo"},
+      {"name": "Hardhat Beetle (Blue)"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Helmasaur"},
+      {"name": "Mini-Moldorm"},
+      {"name": "Stalfos"},
+      {"name": "Wallmaster"},
+      {"name": "Guruguru Bar"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spark"},
+      {"name": "Spike Block"},
+      {"name": "Winder"}
     ]
   },
   "nodes": [
@@ -277,20 +275,25 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Hookshot",
       "requires": [
         "Hookshot"
       ],
-      "devNote": ["This is maybe not overly intuitive, but it's also pretty useless until dungeons get randomized."]
+      "devNote": [
+        "This is maybe not overly intuitive, but it's also pretty useless until dungeons get randomized."
+      ]
     },
     {
+      "id": 3,
       "link": [1, 3],
       "name": "Bomb Boost",
       "requires": [
@@ -322,6 +325,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "requires": [
@@ -329,6 +333,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 7],
       "name": "Base",
       "requires": [
@@ -336,11 +341,13 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Base - Bomb West Wall",
       "requires": [
@@ -349,6 +356,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -356,6 +364,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Hookshot",
       "requires": [
@@ -363,6 +372,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [3, 1],
       "name": "Bonk Boost",
       "requires": [
@@ -370,6 +380,7 @@
       ]
     },
     {
+      "id": 11,
       "link": [3, 1],
       "name": "Bomb Boost",
       "requires": [
@@ -377,14 +388,18 @@
       ]
     },
     {
+      "id": 12,
       "link": [3, 2],
       "name": "Base",
       "requires": [
         {"unlockDoor": 1}
       ],
-      "devNote": ["Technically also requires the wall removed, but it should be if the door is bombed open."]
+      "devNote": [
+        "Technically also requires the wall removed, but it should be if the door is bombed open."
+      ]
     },
     {
+      "id": 13,
       "link": [3, 3],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -393,27 +408,32 @@
       "collectsItems": [2]
     },
     {
+      "id": 14,
       "link": [4, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 15,
       "link": [5, 5],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 16,
       "link": [5, 6],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 17,
       "link": [5, 7],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 18,
       "link": [6, 1],
       "name": "Base",
       "requires": [
@@ -421,11 +441,13 @@
       ]
     },
     {
+      "id": 19,
       "link": [6, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 20,
       "link": [6, 6],
       "name": "Base - Open Chest",
       "requires": [
@@ -439,6 +461,7 @@
       "note": ["It is very easy to get hit by the Gibdo when picking up the pot."]
     },
     {
+      "id": 21,
       "link": [7, 1],
       "name": "Base",
       "requires": [
@@ -446,6 +469,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [7, 7],
       "name": "Base - Open Chest",
       "requires": [
@@ -460,6 +484,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 23,
       "link": [8, 9],
       "name": "Gibdo Kill",
       "requires": [
@@ -483,6 +508,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [8, 9],
       "name": "Blue Cane Kill",
       "requires": [
@@ -495,9 +521,12 @@
           ]}
         ]}
       ],
-      "note": ["Position the Gibdos so that they are both getting hurt constantly. The pots can also be used to deal significant damage."]
+      "note": [
+        "Position the Gibdos so that they are both getting hurt constantly. The pots can also be used to deal significant damage."
+      ]
     },
     {
+      "id": 25,
       "link": [8, 9],
       "name": "Red Cane",
       "requires": [
@@ -506,6 +535,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [8, 9],
       "name": "Gibdo Dodge",
       "requires": [
@@ -519,26 +549,32 @@
           {"combatProficiency": 4}
         ]}
       ],
-      "devNote": ["Use the pots to kill the Blue Bari. Dodge the Gibdo while positioning the statue."]
+      "devNote": [
+        "Use the pots to kill the Blue Bari. Dodge the Gibdo while positioning the statue."
+      ]
     },
     {
+      "id": 27,
       "link": [8, 10],
       "name": "Base",
       "requires": [],
       "isBunny": "any"
     },
     {
+      "id": 28,
       "link": [9, 8],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 29,
       "link": [9, 9],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [6]
     },
     {
+      "id": 30,
       "link": [9, 9],
       "name": "Base - Bomb East Wall",
       "requires": [
@@ -547,6 +583,7 @@
       "unlocksDoor": [4]
     },
     {
+      "id": 31,
       "link": [9, 9],
       "name": "Base - Eastern Room Magic Refill",
       "requires": [
@@ -555,35 +592,41 @@
       ]
     },
     {
+      "id": 32,
       "link": [10, 8],
       "name": "Base",
       "requires": [],
       "isBunny": "any"
     },
     {
+      "id": 33,
       "link": [10, 11],
       "name": "Base",
       "requires": [],
       "isBunny": "any"
     },
     {
+      "id": 34,
       "link": [11, 10],
       "name": "Base",
       "requires": [],
       "isBunny": "any"
     },
     {
+      "id": 35,
       "link": [11, 11],
       "name": "Base - Collect Pot Key",
       "requires": [],
       "collectsItems": [7]
     },
     {
+      "id": 36,
       "link": [12, 10],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 37,
       "link": [13, 13],
       "name": "Base - Open Chest",
       "requires": [
@@ -595,6 +638,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 38,
       "link": [13, 14],
       "name": "Base",
       "requires": [
@@ -610,6 +654,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [13, 14],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -628,6 +673,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [14, 15],
       "name": "Base",
       "requires": [
@@ -655,6 +701,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [14, 15],
       "name": "Stacked Fire Rod Kill",
       "requires": [
@@ -671,6 +718,7 @@
       "note": ["Stack the Gibdo then kill them with fewer fire rod shots."]
     },
     {
+      "id": 42,
       "link": [14, 15],
       "name": "Gibdo Dodge",
       "requires": [
@@ -685,6 +733,7 @@
       ]
     },
     {
+      "id": 43,
       "link": [15, 16],
       "name": "Base",
       "requires": [
@@ -693,6 +742,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [15, 16],
       "name": "Quick Exit",
       "requires": [
@@ -701,6 +751,7 @@
       ]
     },
     {
+      "id": 45,
       "link": [16, 16],
       "name": "Gibdo Kill",
       "requires": [
@@ -722,6 +773,7 @@
       "devNote": ["FIXME: This assumes Link has a sword, since the previous room requires it."]
     },
     {
+      "id": 46,
       "link": [16, 17],
       "name": "Base",
       "requires": [
@@ -729,6 +781,7 @@
       ]
     },
     {
+      "id": 47,
       "link": [17, 17],
       "name": "Mothula - Fighter Sword",
       "requires": [
@@ -761,6 +814,7 @@
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
+      "id": 48,
       "link": [17, 17],
       "name": "Mothula - Master Sword",
       "requires": [
@@ -793,6 +847,7 @@
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
+      "id": 49,
       "link": [17, 17],
       "name": "Mothula - Sword (L3-L4)",
       "requires": [
@@ -824,6 +879,7 @@
       "devNote": ["Mothula does not take damage from the gold sword in vanilla."]
     },
     {
+      "id": 50,
       "link": [17, 17],
       "name": "Mothula - Fire Rod",
       "requires": [
@@ -856,6 +912,7 @@
       "collectsItems": [10, 11]
     },
     {
+      "id": 51,
       "link": [17, 17],
       "name": "Mothula - Blue Cane",
       "requires": [
@@ -866,6 +923,7 @@
       "collectsItems": [10, 11]
     },
     {
+      "id": 52,
       "link": [17, 17],
       "name": "Mothula - Hammer",
       "requires": [
@@ -886,5 +944,6 @@
       "setsFlags": ["DefeatedMothula"],
       "collectsItems": [10, 11]
     }
-  ]
+  ],
+  "nextStratId": 53
 }

@@ -3,13 +3,7 @@
   "$id": "z3-room.schema.json",
   "type": "object",
   "description": "A contiguous area in Link to the Past.",
-  "required": [
-    "id",
-    "name",
-    "roomType",
-    "nodes",
-    "strats"
-  ],
+  "required": ["id", "name", "roomType", "nodes", "strats", "nextStratId"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -30,13 +24,7 @@
     },
     "roomType": {
       "type": "string",
-      "enum": [
-        "Cave",
-        "Dungeon",
-        "House",
-        "Overworld",
-        "Special"
-      ]
+      "enum": ["Cave", "Dungeon", "House", "Overworld", "Special"]
     },
     "dungeonId": {
       "description": "Vanilla dungeon identity, distinct from the logical room id. This is the raw even ID, not a divided table index.",
@@ -51,7 +39,9 @@
         "type": "string"
       }
     },
-    "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+    "detailNote": {
+      "$ref": "z3-note.schema.json#/definitions/detailNote"
+    },
     "position": {
       "type": "array",
       "items": {
@@ -77,28 +67,28 @@
       "required": ["north", "south", "east", "west"],
       "additionalProperties": false,
       "properties": {
-        "north": { "$ref": "#/definitions/edgeVariantSegments" },
-        "south": { "$ref": "#/definitions/edgeVariantSegments" },
-        "east": { "$ref": "#/definitions/edgeVariantSegments" },
-        "west": { "$ref": "#/definitions/edgeVariantSegments" }
+        "north": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "south": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "east": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        },
+        "west": {
+          "$ref": "#/definitions/edgeVariantSegments"
+        }
       }
     },
     "enemySpawns": {
-      "anyOf": [
-        {"$ref": "z3-overworld-enemies.schema.json"},
-        {"$ref": "z3-overworld-enemies.schema.json#/definitions/population"},
-        {"$ref": "#/definitions/dungeonEnemies"}
-      ],
-      "description": "Vanilla enemies and hazards. Dungeons use unique names without counts; caves and houses use placement counts; overworld rooms use world/story profiles."
+      "$ref": "z3-room-enemies.schema.json"
     },
     "nodes": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "name"
-        ],
+        "required": ["id", "name"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -106,6 +96,19 @@
             "minimum": 1
           },
           "name": {
+            "type": "string"
+          },
+          "spawnPoint": {
+            "type": "string",
+            "description": "Regular restart destination identity; availability and selection follow docs/respawn-points.md. Visiting this node does not unlock it. Pyramid restarts in the Dark World.",
+            "enum": ["house", "sanctuary", "mountainCave", "pyramid"]
+          },
+          "rememberedSpawnPoint": {
+            "type": "string",
+            "description": "Remembered checkpoint destination identity, not a trigger. Only one checkpoint is remembered; see docs/respawn-points.md for setting events and restart rules.",
+            "enum": ["house", "uncle", "zeldaPrison", "throneRoom", "oldManCave", "sanctuary"]
+          },
+          "subArea": {
             "type": "string"
           },
           "nodeType": {
@@ -122,41 +125,49 @@
               "shop"
             ]
           },
-          "spawnPoint": {
-            "type": "string",
-            "description": "Regular restart destination identity; availability and selection follow docs/respawn-points.md. Visiting this node does not unlock it. Pyramid restarts in the Dark World.",
-            "enum": ["house", "sanctuary", "mountainCave", "pyramid"]
-          },
-          "rememberedSpawnPoint": {
-            "type": "string",
-            "description": "Remembered checkpoint destination identity, not a trigger. Only one checkpoint is remembered; see docs/respawn-points.md for setting events and restart rules.",
-            "enum": ["house", "uncle", "zeldaPrison", "throneRoom", "oldManCave", "sanctuary"]
-          },
-          "subArea": {
-            "type": "string"
-          },
           "world": {
             "type": "string",
-            "enum": [
-              "light",
-              "dark",
-              "both"
-            ]
+            "enum": ["light", "dark", "both"]
           },
           "mirrorPoint": {
             "type": "boolean",
             "default": true,
             "description": "Whether a node present in both worlds permits the implicit Dark World to Light World Magic Mirror strat."
           },
+          "transitions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["edge", "span"],
+              "additionalProperties": false,
+              "properties": {
+                "edge": {
+                  "type": "string",
+                  "enum": ["north", "south", "east", "west"]
+                },
+                "span": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "terrain": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "enum": ["light", "dark"]
+                }
+              }
+            }
+          },
           "entrances": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "romEntranceId": {
@@ -174,50 +185,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
-                }
-              }
-            }
-          },
-          "transitions": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "edge",
-                "span"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "edge": {
-                  "type": "string",
-                  "enum": [
-                    "north",
-                    "south",
-                    "east",
-                    "west"
-                  ]
-                },
-                "span": {
-                  "type": "array",
-                  "minItems": 2,
-                  "maxItems": 2,
-                  "items": {
-                    "type": "number"
-                  }
-                },
-                "terrain": {
-                  "type": "string"
-                },
-                "world": {
-                  "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -226,11 +194,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -242,10 +206,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -259,11 +220,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "name",
-                "world"
-              ],
+              "required": ["id", "name", "world"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -275,10 +232,7 @@
                 },
                 "world": {
                   "type": "string",
-                  "enum": [
-                    "light",
-                    "dark"
-                  ]
+                  "enum": ["light", "dark"]
                 }
               }
             }
@@ -293,7 +247,9 @@
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {
@@ -307,17 +263,15 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "locationName",
-          "itemLocation",
-          "item"
-        ],
+        "required": ["id", "locationName", "itemLocation", "item"],
         "additionalProperties": false,
         "properties": {
           "id": {
             "type": "integer",
             "minimum": 1
+          },
+          "subArea": {
+            "type": "string"
           },
           "locationName": {
             "type": "string"
@@ -325,6 +279,10 @@
           "itemLocation": {
             "type": "integer",
             "minimum": 1
+          },
+          "world": {
+            "type": "string",
+            "enum": ["light", "dark"]
           },
           "item": {
             "type": "string"
@@ -337,16 +295,6 @@
             "description": "Optional hexadecimal string giving the unheadered ROM file offset of the location-specific item receipt-ID byte. Omitted when the location has no independent item receipt-ID byte.",
             "type": "string",
             "pattern": "^0x[0-9A-Fa-f]+$"
-          },
-          "subArea": {
-            "type": "string"
-          },
-          "world": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
           },
           "devNote": {
             "type": "array",
@@ -361,31 +309,26 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "locationName",
-          "doorPosition",
-          "doorLocation",
-          "keyType"
-        ],
+        "required": ["id", "locationName", "doorPosition", "doorLocation", "keyType"],
         "additionalProperties": false,
         "properties": {
           "id": {
             "type": "integer",
             "minimum": 1
           },
+          "subArea": {
+            "type": "string"
+          },
           "locationName": {
             "type": "string"
           },
+          "world": {
+            "type": "string",
+            "enum": ["light", "dark"]
+          },
           "doorPosition": {
             "type": "string",
-            "enum": [
-              "north",
-              "south",
-              "east",
-              "west",
-              "middle"
-            ]
+            "enum": ["north", "south", "east", "west", "middle"]
           },
           "doorLocation": {
             "type": "integer",
@@ -393,24 +336,7 @@
           },
           "keyType": {
             "type": "string",
-            "enum": [
-              "big",
-              "small",
-              "bomb",
-              "bomb, boots",
-              "boots",
-              "glove"
-            ]
-          },
-          "subArea": {
-            "type": "string"
-          },
-          "world": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
+            "enum": ["big", "small", "bomb", "bomb, boots", "boots", "glove"]
           },
           "devNote": {
             "type": "array",
@@ -425,10 +351,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "note"
-        ],
+        "required": ["id", "note"],
         "additionalProperties": false,
         "properties": {
           "id": {
@@ -440,7 +363,9 @@
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"}
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          }
         }
       }
     },
@@ -448,13 +373,14 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "link",
-          "name",
-          "requires"
-        ],
+        "required": ["link", "name", "requires"],
         "additionalProperties": false,
         "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Stable identifier unique among strats in this room. Missing IDs are assigned by scripts/populate_strat_ids.py."
+          },
           "link": {
             "type": "array",
             "minItems": 2,
@@ -467,10 +393,36 @@
           "name": {
             "type": "string"
           },
+          "world": {
+            "type": "string",
+            "enum": ["light", "dark", "any"]
+          },
+          "fromWorld": {
+            "type": "string",
+            "enum": ["light", "dark"]
+          },
+          "toWorld": {
+            "type": "string",
+            "enum": ["light", "dark"]
+          },
+          "entranceState": {
+            "$ref": "#/definitions/entranceState"
+          },
           "requires": {
             "type": "array",
             "items": {
               "$ref": "z3-requirement.schema.json"
+            }
+          },
+          "isBunny": {
+            "type": "string",
+            "enum": ["yes", "no", "any"]
+          },
+          "setsFlags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
             }
           },
           "collectsItems": {
@@ -483,11 +435,6 @@
           },
           "grantsItems": {
             "description": "Item receipts granted after the requirements succeed. Repeatable; does not collect a room-local item location.",
-            "type": "array",
-            "minItems": 1,
-            "items": {"type": "string"}
-          },
-          "setsFlags": {
             "type": "array",
             "minItems": 1,
             "items": {
@@ -516,73 +463,26 @@
               "minimum": 1
             }
           },
-          "world": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark",
-              "any"
-            ]
-          },
-          "fromWorld": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
-          },
-          "toWorld": {
-            "type": "string",
-            "enum": [
-              "light",
-              "dark"
-            ]
-          },
-          "isBunny": {
-            "type": "string",
-            "enum": [
-              "yes",
-              "no",
-              "any"
-            ]
-          },
           "setsFollower": {
             "type": "string",
-            "enum": [
-              "None",
-              "Zelda",
-              "Old Man",
-              "Blind",
-              "Dwarf",
-              "Purple Chest",
-              "Super Bomb"
-            ]
+            "enum": ["None", "Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
           },
           "followerComplete": {
             "type": "string",
-            "enum": [
-              "Zelda",
-              "Old Man",
-              "Blind",
-              "Dwarf",
-              "Purple Chest",
-              "Super Bomb"
-            ]
+            "enum": ["Zelda", "Old Man", "Blind", "Dwarf", "Purple Chest", "Super Bomb"]
           },
           "exitState": {
-            "oneOf": [
-              {"$ref": "#/definitions/transitionState"},
-              {"$ref": "#/definitions/leaveNormallyState"}
-            ]
+            "$ref": "#/definitions/exitState"
           },
-          "entranceState": {"$ref": "#/definitions/transitionState"},
           "note": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
           "devNote": {
             "type": "array",
             "items": {
@@ -605,10 +505,25 @@
             "minimum": 1,
             "description": "Stable identifier unique among notables in this room."
           },
-          "name": {"type": "string", "minLength": 1},
-          "note": {"type": "array", "items": {"type": "string"}},
-          "detailNote": {"$ref": "z3-note.schema.json#/definitions/detailNote"},
-          "devNote": {"type": "array", "items": {"type": "string"}}
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "detailNote": {
+            "$ref": "z3-note.schema.json#/definitions/detailNote"
+          },
+          "devNote": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     },
@@ -616,54 +531,76 @@
       "type": "integer",
       "minimum": 1,
       "description": "Next notable ID to assign in this room; must be greater than all existing notable IDs."
+    },
+    "nextStratId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Next strat ID to assign in this room; must be greater than all existing strat IDs."
     }
   },
   "definitions": {
-    "transitionState": {
-      "oneOf": [
-        {"$ref": "#/definitions/eventState"},
-        {"$ref": "#/definitions/overheadState"}
-      ]
+    "entranceState": {
+      "type": "object",
+      "description": "A temporary state received on entering through the strat's from node. Exactly one property names the state.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "$ref": "#/definitions/eventState"
+        },
+        "overhead": {
+          "$ref": "#/definitions/overheadState"
+        }
+      }
+    },
+    "exitState": {
+      "type": "object",
+      "description": "A temporary state carried, or a forced transition, on leaving through the strat's to node. Exactly one property names the state.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "$ref": "#/definitions/eventState"
+        },
+        "overhead": {
+          "$ref": "#/definitions/overheadState"
+        },
+        "leaveNormally": {
+          "$ref": "#/definitions/leaveNormallyState"
+        }
+      }
     },
     "leaveNormallyState": {
       "type": "object",
       "description": "Forces an immediate normal overworld screen transition at the strat's destination node, as determined by the selected edgeVariants. No matching entranceState is required.",
-      "required": ["state"],
       "additionalProperties": false,
-      "properties": {
-        "state": {"const": "leaveNormally"}
-      }
+      "properties": {}
     },
     "eventState": {
       "type": "object",
-      "required": ["state", "type"],
+      "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "state": {"const": "event"},
-        "entranceID": {"type": "integer", "minimum": 1},
-        "type": {"type": "string"}
+        "entranceID": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type": {
+          "type": "string"
+        }
       }
     },
     "overheadState": {
       "type": "object",
       "description": "An object held overhead across an overworld screen edge. The strat endpoint node identifies the transition; no entranceID is used.",
-      "required": ["state", "type"],
+      "required": ["type"],
       "additionalProperties": false,
       "properties": {
-        "state": {"const": "overhead"},
-        "type": {"enum": ["class1", "class3"], "description": "Thrown-object damage class, matched exactly."}
-      }
-    },
-    "dungeonEnemies": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["enemies"],
-      "properties": {
-        "enemies": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {"type": "string", "minLength": 1},
-          "description": "Unique enemy, boss, and sprite-hazard names present in the dungeon; no counts."
+        "type": {
+          "enum": ["class1", "class3"],
+          "description": "Thrown-object damage class, matched exactly."
         }
       }
     },
@@ -813,13 +750,11 @@
               "minItems": 2,
               "maxItems": 2,
               "items": [
-                { "type": "integer", "minimum": 1 },
-                {
-                  "anyOf": [
-                    { "type": "integer", "minimum": 1 },
-                    { "const": "return" }
-                  ]
-                }
+                {"type": "integer", "minimum": 1},
+                {"anyOf": [
+                  {"type": "integer", "minimum": 1},
+                  {"const": "return"}
+                ]}
               ]
             },
             "light-and-mirror": {
@@ -845,38 +780,42 @@
       "type": "array",
       "minItems": 1,
       "maxItems": 2,
-      "items": { "$ref": "#/definitions/edgeVariantSegment" },
+      "items": {
+        "$ref": "#/definitions/edgeVariantSegment"
+      },
       "description": "One segment per two screens: west to east on north/south edges, north to south on east/west edges. Length must match the corresponding room dimension divided by two; this requires semantic validation."
     }
   },
   "allOf": [
     {
-      "if": {"required": ["notables"]},
-      "then": {"required": ["nextNotableId"]}
+      "if": {
+        "required": ["notables"]
+      },
+      "then": {
+        "required": ["nextNotableId"]
+      }
     },
     {
-      "if": {"properties": {"roomType": {"const": "Dungeon"}}},
-      "then": {"properties": {"enemySpawns": {"$ref": "#/definitions/dungeonEnemies"}}},
-      "else": {"properties": {"enemySpawns": {"oneOf": [
-        {"$ref": "z3-overworld-enemies.schema.json"},
-        {"$ref": "z3-overworld-enemies.schema.json#/definitions/population"}
-      ]}}}
-    },
-    {
-      "if": { "required": ["edgeVariants"] },
+      "if": {
+        "required": ["edgeVariants"]
+      },
       "then": {
         "required": ["size"],
         "properties": {
-          "roomType": { "const": "Overworld" },
-          "size": { "items": { "enum": [2, 4] } }
+          "roomType": {
+            "const": "Overworld"
+          },
+          "size": {
+            "items": {
+              "enum": [2, 4]
+            }
+          }
         }
       }
     },
     {
       "if": {
-        "required": [
-          "roomType"
-        ],
+        "required": ["roomType"],
         "properties": {
           "roomType": {
             "const": "Overworld"
@@ -888,9 +827,7 @@
         "properties": {
           "nodes": {
             "items": {
-              "required": [
-                "world"
-              ]
+              "required": ["world"]
             }
           },
           "strats": {
@@ -899,65 +836,48 @@
                 {
                   "if": {
                     "anyOf": [
-                      {"required": ["exitState"], "properties": {"exitState": {"properties": {"state": {"const": "overhead"}}}}},
-                      {"required": ["entranceState"], "properties": {"entranceState": {"properties": {"state": {"const": "overhead"}}}}}
+                      {
+                        "required": ["exitState"],
+                        "properties": {
+                          "exitState": {
+                            "required": ["overhead"]
+                          }
+                        }
+                      },
+                      {
+                        "required": ["entranceState"],
+                        "properties": {
+                          "entranceState": {
+                            "required": ["overhead"]
+                          }
+                        }
+                      }
                     ]
                   },
-                  "then": {"required": ["world"]}
+                  "then": {
+                    "required": ["world"]
+                  }
                 },
-                {
-                  "oneOf": [
-                    {
-                      "required": [
-                        "world"
-                      ]
-                    },
-                    {
-                      "required": [
-                        "fromWorld",
-                        "toWorld"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "if": {
-                    "required": [
-                      "exitState"
-                    ],
+                {"oneOf": [
+                  {"required": ["world"]},
+                  {"required": ["fromWorld", "toWorld"]}
+                ]},
+                {"properties": {
+                  "exitState": {
                     "properties": {
-                      "exitState": {"properties": {"state": {"const": "event"}}}
+                      "event": {
+                        "required": ["entranceID"]
+                      }
                     }
                   },
-                  "then": {
+                  "entranceState": {
                     "properties": {
-                      "exitState": {
-                        "required": [
-                          "entranceID"
-                        ]
+                      "event": {
+                        "required": ["entranceID"]
                       }
                     }
                   }
-                },
-                {
-                  "if": {
-                    "required": [
-                      "entranceState"
-                    ],
-                    "properties": {
-                      "entranceState": {"properties": {"state": {"const": "event"}}}
-                    }
-                  },
-                  "then": {
-                    "properties": {
-                      "entranceState": {
-                        "required": [
-                          "entranceID"
-                        ]
-                      }
-                    }
-                  }
-                }
+                }}
               ]
             }
           }
@@ -969,16 +889,18 @@
           "strats": {
             "items": {
               "properties": {
-                "exitState": {"$ref": "#/definitions/eventState"},
-                "entranceState": {"$ref": "#/definitions/eventState"}
+                "exitState": {
+                  "required": ["event"]
+                },
+                "entranceState": {
+                  "required": ["event"]
+                }
               }
             }
           },
           "nodes": {
             "items": {
-              "required": [
-                "nodeType"
-              ]
+              "required": ["nodeType"]
             }
           }
         }

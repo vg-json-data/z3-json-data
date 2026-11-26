@@ -36,6 +36,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Open Left Chest",
       "requires": [
@@ -44,6 +45,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Open Right Chest",
       "requires": [
@@ -51,5 +53,6 @@
       ],
       "collectsItems": [2]
     }
-  ]
+  ],
+  "nextStratId": 3
 }

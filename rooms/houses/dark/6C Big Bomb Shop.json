@@ -20,16 +20,19 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Buy 30 Bombs",
       "requires": [
@@ -39,6 +42,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [2, 2],
       "name": "Buy Big Bomb",
       "requires": [
@@ -48,7 +52,10 @@
         {"pay": 100}
       ],
       "setsFollower": "Super Bomb",
-      "devNote": ["This item does not behave like a normal purchase and does not convert Link's state."]
+      "devNote": [
+        "This item does not behave like a normal purchase and does not convert Link's state."
+      ]
     }
-  ]
+  ],
+  "nextStratId": 5
 }

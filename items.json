@@ -5,59 +5,88 @@
       {
         "name": "FireRod",
         "itemReceiptId": "0x07",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "IceRod",
         "itemReceiptId": "0x08",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Hammer",
         "itemReceiptId": "0x09",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Hookshot",
         "itemReceiptId": "0x0A",
-        "requires": ["useYItems", "lonkToLink"]
+        "requires": [
+          "useYItems",
+          "lonkToLink"
+        ]
       },
       {
         "name": "Bow",
         "itemReceiptId": "0x0B",
-        "requires": ["useYItems"],
+        "requires": [
+          "useYItems"
+        ],
         "note": "When a pond fairy returns the normal bow, she uses the tossed-bow receipt 0x3A, which grants the same bow with different graphics and palette."
       },
       {
         "name": "BowAndSilverArrows",
         "itemReceiptId": "0x3B",
-        "requires": ["useYItems"],
+        "requires": [
+          "useYItems"
+        ],
         "note": "The vanilla silver-bow receipt used by the pond fairy upgrade. It grants a bow with Silver Arrow capability even if the player has no bow."
       },
       {
         "name": "BlueBoomerang",
         "itemReceiptId": "0x0C",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "MagicPowder",
         "itemReceiptId": "0x0D",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Bombos",
         "itemReceiptId": "0x0F",
-        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
+        "requires": [
+          "useYItems",
+          "lonkToLink",
+          {"sword": 1}
+        ]
       },
       {
         "name": "Ether",
         "itemReceiptId": "0x10",
-        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
+        "requires": [
+          "useYItems",
+          "lonkToLink",
+          {"sword": 1}
+        ]
       },
       {
         "name": "Quake",
         "itemReceiptId": "0x11",
-        "requires": ["useYItems", "lonkToLink", {"sword": 1}]
+        "requires": [
+          "useYItems",
+          "lonkToLink",
+          {"sword": 1}
+        ]
       },
       {
         "name": "Lamp",
@@ -66,22 +95,30 @@
       {
         "name": "Shovel",
         "itemReceiptId": "0x13",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "CaneOfSomaria",
         "itemReceiptId": "0x15",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "CaneOfByrna",
         "itemReceiptId": "0x18",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Cape",
         "itemReceiptId": "0x19",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "MagicMirror",
@@ -94,7 +131,10 @@
       {
         "name": "Flippers",
         "itemReceiptId": "0x1E",
-        "requires": ["useYItems", "lonkToLink"]
+        "requires": [
+          "useYItems",
+          "lonkToLink"
+        ]
       },
       {
         "name": "MoonPearl",
@@ -103,7 +143,9 @@
       {
         "name": "BugCatchingNet",
         "itemReceiptId": "0x21",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Mushroom",
@@ -112,7 +154,9 @@
       {
         "name": "RedBoomerang",
         "itemReceiptId": "0x2A",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "Bottle",
@@ -121,17 +165,23 @@
       {
         "name": "PegasusBoots",
         "itemReceiptId": "0x4B",
-        "requires": ["useABItems"]
+        "requires": [
+          "useABItems"
+        ]
       },
       {
         "name": "L1SwordAndShield",
         "itemReceiptId": "0x00",
-        "requires": ["useABItems"]
+        "requires": [
+          "useABItems"
+        ]
       },
       {
         "name": "L1Sword",
         "itemReceiptId": "0x49",
-        "requires": ["useABItems"],
+        "requires": [
+          "useABItems"
+        ],
         "note": "The vanilla tossed-Fighter-Sword receipt used when a pond fairy returns the sword unchanged.",
         "detailNote": [
           "Randomizers may use this, as it grants only the level 1 sword, avoiding the additional Fighter Shield granted by the Uncle's 0x00 receipt."
@@ -140,7 +190,9 @@
       {
         "name": "L2Sword",
         "itemReceiptId": "0x01",
-        "requires": ["useABItems"],
+        "requires": [
+          "useABItems"
+        ],
         "note": "The vanilla Master Sword, obtained from the Lost Woods pedestal. Receipt 0x01 includes the special sword-pulling animation and cutscene behavior.",
         "detailNote": [
           "Randomizers use the alternate receipt 0x50 to grant the same level 2 sword without triggering the vanilla pedestal animation and cutscene behavior."
@@ -149,37 +201,51 @@
       {
         "name": "L3Sword",
         "itemReceiptId": "0x02",
-        "requires": ["useABItems"]
+        "requires": [
+          "useABItems"
+        ]
       },
       {
         "name": "L4Sword",
         "itemReceiptId": "0x03",
-        "requires": ["useABItems"]
+        "requires": [
+          "useABItems"
+        ]
       },
       {
         "name": "BlueShield",
         "itemReceiptId": "0x04",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "RedShield",
         "itemReceiptId": "0x05",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "MirrorShield",
         "itemReceiptId": "0x06",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "OcarinaInactive",
         "itemReceiptId": "0x14",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "OcarinaActive",
         "itemReceiptId": "0x4A",
-        "requires": ["useYItems"]
+        "requires": [
+          "useYItems"
+        ]
       },
       {
         "name": "PowerGlove",
@@ -228,7 +294,9 @@
       {
         "name": "SilverArrows",
         "itemReceiptId": "0x58",
-        "requires": ["useYItems"],
+        "requires": [
+          "useYItems"
+        ],
         "note": "A randomizer receipt that grants the Silver Arrows upgrade without also granting a bow."
       },
       {

@@ -29,16 +29,19 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Chest Game",
       "requires": [
@@ -51,5 +54,6 @@
         "FIXME: Unfairly assumes you win on your first play."
       ]
     }
-  ]
+  ],
+  "nextStratId": 4
 }

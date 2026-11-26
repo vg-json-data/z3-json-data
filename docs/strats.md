@@ -8,6 +8,7 @@ Strats are usually presented in an array of strats. Multiple strats with the sam
 
 A `strat` can have the following properties:
 
+- `id`: A stable identifier unique among strats in the room; see [Strat IDs](#strat-ids).
 - `link`: The IDs of the starting and ending nodes, in that order.
 - `name`: The name of the strat.
 - `requires`: The logical requirements that must be fulfilled to execute the strat.
@@ -71,6 +72,12 @@ Requirements are evaluated sequentially in the order in which they appear. In mo
 After all requirements have been fulfilled, the strat is executed and its effects are applied. An item collected or flag set by a strat cannot satisfy an earlier requirement in that same strat; the resulting state is available to subsequent strats.
 
 An item requirement can include implicit conditions needed to use that item, in addition to requiring that the item be in the inventory. See [Item Use and Bunny Forms](logicalRequirements.md#item-use-and-bunny-forms) for the built-in item-use checks.
+
+## Strat IDs
+
+Each strat has an `id`, a positive integer unique within its room, and each room has `nextStratId`, greater than all of its strat IDs. IDs give consumers a stable way to refer to a strat; they are never changed or reused, even when strats are reordered or deleted.
+
+Contributors should omit `id` when adding strats; a new room file starts with `"nextStratId": 1`. [`scripts/populate_strat_ids.py`](../scripts/populate_strat_ids.py) assigns missing IDs in source order, starting from `nextStratId`, and updates `nextStratId`. The "Run Scripts" GitHub workflow runs it weekly, together with the [`autoformat.py`](../scripts/autoformat.py) formatter, and opens a pull request with any changes.
 
 ## Notable Strats
 
@@ -258,7 +265,7 @@ Blind and the Super Bomb are also lost on death or save-and-quit.
 
 ## Entrance and Exit State
 
-The `exitState` and `entranceState` properties describe special behavior across room-file boundaries, through either an overworld-underworld entrance or an overworld-overworld screen transition. For temporary states such as `event` and `overhead`, an exit-state strat leaves through an entrance or transition on the `"to"` node of its `link` with a named temporary state. A compatible entrance-state strat receives that state through an entrance or transition on the `"from"` node of its `link` in the next room. The exit-only `leaveNormally` state instead forces a normal screen transition without requiring a matching entrance state. The state type determines which kind of connection it uses, as described below.
+The `exitState` and `entranceState` properties describe special behavior across room-file boundaries, through either an overworld-underworld entrance or an overworld-overworld screen transition. For temporary states such as `event` and `overhead`, an exit-state strat leaves through an entrance or transition on the `"to"` node of its `link` with a named temporary state. A compatible entrance-state strat receives that state through an entrance or transition on the `"from"` node of its `link` in the next room. The exit-only `leaveNormally` state instead forces a normal screen transition without requiring a matching entrance state. Each state is an object with exactly one property, named for the state: `event`, `overhead`, or `leaveNormally`. Its value holds that state's details. The state determines which kind of connection it uses, as described below.
 
 For example, the Dam can be left with the floodgate drained:
 
@@ -269,10 +276,7 @@ For example, the Dam can be left with the floodgate drained:
   "requires": [
     {"obstaclesCleared": ["Drained Floodgate"]}
   ],
-  "exitState": {
-    "state": "event",
-    "type": "DrainedFloodgate"
-  }
+  "exitState": {"event": {"type": "DrainedFloodgate"}}
 }
 ```
 
@@ -283,27 +287,23 @@ The matching entrance-state strat in Swamp Ruins recreates the effect as room-lo
   "link": [2, 2],
   "name": "Enter Overworld with Water Drained",
   "world": "light",
-  "entranceState": {
-    "state": "event",
-    "entranceID": 1,
-    "type": "DrainedFloodgate"
-  },
+  "entranceState": {"event": {"entranceID": 1, "type": "DrainedFloodgate"}},
   "requires": [],
   "clearsObstacles": ["Drained Floodgate"]
 }
 ```
 
-The connection used depends on the state. For `"state": "event"`, an `entranceState` uses an entrance on the `"from"` node of the strat's `link`, and an `exitState` uses an entrance on the `"to"` node. On the overworld side, these event states require `entranceID` to identify that entrance. For `"state": "overhead"`, the corresponding endpoints are overworld screen transitions on those nodes, and no `entranceID` is used; see below.
+The connection used depends on the state. For an `event` state, an `entranceState` uses an entrance on the `"from"` node of the strat's `link`, and an `exitState` uses an entrance on the `"to"` node. On the overworld side, these event states require `entranceID` to identify that entrance. For an `overhead` state, the corresponding endpoints are overworld screen transitions on those nodes, and no `entranceID` is used; see below.
 
 ### Forced Normal Exit
 
-Use `"exitState": {"state": "leaveNormally"}` when a strat must immediately leave the overworld room at the `"to"` node of its `link`. The strat cannot finish at that node and continue with another strat inside the same room; completing it requires an outgoing screen transition.
+Use `"exitState": {"leaveNormally": {}}` when a strat must immediately leave the overworld room at the `"to"` node of its `link`. The strat cannot finish at that node and continue with another strat inside the same room; completing it requires an outgoing screen transition.
 
-`leaveNormally` is only an `exitState`. It requires no paired `entranceState` in the next room and carries no temporary state across the transition. The object contains only `state`, with no `type` or `entranceID`.
+`leaveNormally` is only an `exitState`. It requires no paired `entranceState` in the next room and carries no temporary state across the transition. Its value is an empty object, with no `type` or `entranceID`.
 
 ### Objects Held Overhead
 
-Overworld screen-edge transitions can carry an object held overhead using `"state": "overhead"`. The `type` identifies its thrown-object damage class:
+Overworld screen-edge transitions can carry an object held overhead using an `overhead` state. Its `type` identifies its thrown-object damage class:
 
 | Type | Objects | Typical damage |
 |---|---|---|
@@ -324,17 +324,17 @@ At every overworld screen transition, consumers must include an implicit same-no
     "link": [1, 1],
     "name": "Return with Weak Overhead Object",
     "world": "any",
-    "entranceState": {"state": "overhead", "type": "class1"},
+    "entranceState": {"overhead": {"type": "class1"}},
     "requires": ["canCrossRoomOverheadPickups"],
-    "exitState": {"state": "overhead", "type": "class1"}
+    "exitState": {"overhead": {"type": "class1"}}
   },
   {
     "link": [1, 1],
     "name": "Return with Strong Overhead Object",
     "world": "any",
-    "entranceState": {"state": "overhead", "type": "class3"},
+    "entranceState": {"overhead": {"type": "class3"}},
     "requires": ["canCrossRoomOverheadPickups"],
-    "exitState": {"state": "overhead", "type": "class3"}
+    "exitState": {"overhead": {"type": "class3"}}
   }
 ]
 ```

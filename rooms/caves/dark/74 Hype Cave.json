@@ -66,6 +66,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Generous Guy",
       "requires": [
@@ -74,6 +75,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -82,6 +84,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -89,6 +92,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -96,6 +100,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Base - Top Chest",
       "requires": [
@@ -104,6 +109,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base - Top Middle Chest",
       "requires": [
@@ -112,6 +118,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Base - Bottom Middle Chest",
       "requires": [
@@ -120,6 +127,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Base - Bottom Chest",
       "requires": [
@@ -127,5 +135,6 @@
       ],
       "collectsItems": [5]
     }
-  ]
+  ],
+  "nextStratId": 9
 }

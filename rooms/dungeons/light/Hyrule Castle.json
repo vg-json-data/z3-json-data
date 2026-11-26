@@ -5,13 +5,13 @@
   "roomType": "Dungeon",
   "enemySpawns": {
     "enemies": [
-      "Ball and Chain Trooper",
-      "Dagger Soldier (Green)",
-      "Keese",
-      "Rat",
-      "Rope",
-      "Sword Soldier (Blue)",
-      "Sword Soldier (Green)"
+      {"name": "Ball and Chain Trooper"},
+      {"name": "Dagger Soldier (Green)"},
+      {"name": "Keese"},
+      {"name": "Rat"},
+      {"name": "Rope"},
+      {"name": "Sword Soldier (Blue)"},
+      {"name": "Sword Soldier (Green)"}
     ]
   },
   "nodes": [
@@ -70,9 +70,7 @@
       "name": "Dark Cross Room",
       "subArea": "Sewers (Dark)",
       "nodeType": "junction",
-      "note": [
-        "Represents being in the middle of the room, after the first two snakes"
-      ]
+      "note": ["Represents being in the middle of the room, after the first two snakes"]
     },
     {
       "id": 10,
@@ -125,7 +123,9 @@
       "item": "BlueBoomerang",
       "secondaryItem": "TenArrows",
       "itemAddress": "0xE974",
-      "devNote": ["The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."]
+      "devNote": [
+        "The secondary item is received if either the Blue Boomerang or Red Boomerang is already owned."
+      ]
     },
     {
       "id": 4,
@@ -257,50 +257,53 @@
     }
   ],
   "obstacles": [
-    {
-      "id": "Zelda Following",
-      "note": [
-        "Rescued Zelda and she is following Link."
-      ]
-    }
+    {"id": "Zelda Following", "note": ["Rescued Zelda and she is following Link."]}
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [3, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [3, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 5,
       "link": [3, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 6,
       "link": [3, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 7,
       "link": [4, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 8,
       "link": [4, 8],
       "name": "Push Door with Zelda",
       "requires": [
@@ -308,17 +311,20 @@
       ]
     },
     {
+      "id": 9,
       "link": [5, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 10,
       "link": [5, 5],
       "name": "Base",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 11,
       "link": [5, 5],
       "name": "Kill Guard for Key",
       "requires": [
@@ -333,6 +339,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 12,
       "link": [5, 5],
       "name": "Kill Guard for Key (Alternate Weapons)",
       "requires": [
@@ -346,6 +353,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 13,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -360,6 +368,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [5, 6],
       "name": "Base (Alternate Weapons)",
       "requires": [
@@ -373,6 +382,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [5, 7],
       "name": "Base",
       "requires": [
@@ -381,12 +391,14 @@
       ]
     },
     {
+      "id": 16,
       "link": [6, 6],
       "name": "Base",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 17,
       "link": [6, 6],
       "name": "Kill Guard for Key",
       "requires": [
@@ -401,6 +413,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 18,
       "link": [6, 6],
       "name": "Kill Guard for Key (Alternate Weapons)",
       "requires": [
@@ -414,6 +427,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 19,
       "link": [7, 5],
       "name": "Base",
       "requires": [
@@ -446,6 +460,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [7, 7],
       "name": "Base - Kill Guard",
       "requires": [],
@@ -453,6 +468,7 @@
       "note": ["Without any weapons, it is still possible to kill the guard with pots."]
     },
     {
+      "id": 21,
       "link": [7, 7],
       "name": "Base - Open Chest",
       "requires": [
@@ -461,6 +477,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 22,
       "link": [7, 7],
       "name": "Base - Rescue Zelda",
       "requires": [
@@ -469,6 +486,7 @@
       "clearsObstacles": ["Zelda Following"]
     },
     {
+      "id": 23,
       "link": [8, 9],
       "name": "Base",
       "requires": [
@@ -480,6 +498,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [8, 9],
       "name": "Base (Alternate Weapons)",
       "requires": [
@@ -500,6 +519,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [8, 9],
       "name": "Snake Dodge",
       "requires": [
@@ -508,6 +528,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [8, 9],
       "name": "Fire Rod",
       "requires": [
@@ -517,9 +538,12 @@
         {"fireRod": 1},
         {"damage": {"enemy": "Rope", "count": 1}}
       ],
-      "note": ["Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."]
+      "note": [
+        "Use the Fire Rod to light the torch in the bottom right corner of the snake room, then dodge the snakes."
+      ]
     },
     {
+      "id": 27,
       "link": [8, 9],
       "name": "Darkness",
       "requires": [
@@ -536,6 +560,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [8, 9],
       "name": "Darkness (Fully Blind)",
       "requires": [
@@ -543,9 +568,12 @@
         {"damage": {"enemy": "Rat", "count": 1}},
         {"damage": {"enemy": "Rope", "count": 4}}
       ],
-      "note": ["Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."]
+      "note": [
+        "Getting through the snake room is the hardest part. The rest just requires knowing the layout of the rooms."
+      ]
     },
     {
+      "id": 29,
       "link": [9, 9],
       "name": "Base",
       "requires": [
@@ -554,6 +582,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 30,
       "link": [9, 9],
       "name": "Darkness",
       "requires": [
@@ -570,6 +599,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 31,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -578,6 +608,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [9, 10],
       "name": "Darkness",
       "requires": [
@@ -602,6 +633,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [10, 9],
       "name": "Base",
       "requires": [
@@ -618,6 +650,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [10, 9],
       "name": "Darkness",
       "requires": [
@@ -647,6 +680,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [10, 10],
       "name": "Base",
       "requires": [
@@ -656,6 +690,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 36,
       "link": [10, 10],
       "name": "Base (Alternate Weapons)",
       "requires": [
@@ -685,6 +720,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 37,
       "link": [10, 10],
       "name": "Darkness",
       "requires": [
@@ -700,6 +736,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 38,
       "link": [10, 10],
       "name": "Darkness - Fire Rod",
       "requires": [
@@ -728,6 +765,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 39,
       "link": [10, 11],
       "name": "Base",
       "requires": [
@@ -736,6 +774,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [10, 11],
       "name": "Darkness",
       "requires": [
@@ -757,6 +796,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [11, 10],
       "name": "Base",
       "requires": [
@@ -765,6 +805,7 @@
       ]
     },
     {
+      "id": 42,
       "link": [11, 10],
       "name": "Darkness",
       "requires": [
@@ -781,6 +822,7 @@
       ]
     },
     {
+      "id": 43,
       "link": [11, 11],
       "name": "Base - Bomb Wall (South)",
       "requires": [
@@ -789,6 +831,7 @@
       "unlocksDoor": [6]
     },
     {
+      "id": 44,
       "link": [11, 11],
       "name": "Dash Break Wall (South)",
       "requires": [
@@ -797,6 +840,7 @@
       "unlocksDoor": [6]
     },
     {
+      "id": 45,
       "link": [11, 11],
       "name": "Base - Bomb Wall (North)",
       "requires": [
@@ -805,6 +849,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 46,
       "link": [11, 11],
       "name": "Dash Break Wall (North)",
       "requires": [
@@ -813,6 +858,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 47,
       "link": [11, 11],
       "name": "Base - Open Chests",
       "requires": [
@@ -824,11 +870,13 @@
       "collectsItems": [9, 10, 11]
     },
     {
+      "id": 48,
       "link": [11, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 49,
       "link": [12, 12],
       "name": "Zelda Escaped",
       "requires": [
@@ -837,6 +885,7 @@
       "setsFlags": ["GameStateZelda"]
     },
     {
+      "id": 50,
       "link": [12, 12],
       "name": "Base - Sanctuary Chest",
       "requires": [],
@@ -844,9 +893,11 @@
       "devNote": ["Does not require going through the sewers or rescuing Zelda."]
     },
     {
+      "id": 51,
       "link": [13, 11],
       "name": "Base",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 52
 }

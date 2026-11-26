@@ -197,8 +197,9 @@ def collect_references(documents, errors):
             for i, flag in enumerate(document["flags"]["items"]):
                 index_definition(references["flags"], flag, flag, path, document, ["flags", "items", i], errors)
         elif path == ROOT / "helpers.json":
-            for i, helper in enumerate(document):
-                index_definition(references["named"], helper["name"], helper, path, document, [i, "name"], errors)
+            for i, helper in enumerate(document["helpers"]):
+                index_definition(references["named"], helper["name"], helper, path, document,
+                                 ["helpers", i, "name"], errors)
         elif path == ROOT / "tech.json":
             for i, category in enumerate(document["techCategories"]):
                 for tech, location in walk_techs(category["techs"], ["techCategories", i, "techs"]):
@@ -223,9 +224,9 @@ def damage_enemy_populations(document, strat):
     inventory = document.get("enemySpawns")
     if inventory is None:
         return []
-    if document["roomType"] == "Dungeon":
-        return [("room", set(inventory["enemies"]))]
     if document["roomType"] != "Overworld":
+        if "enemies" not in inventory:
+            return []  # Report the malformed inventory in validate_enemy_spawns.
         return [("room", {enemy["name"] for enemy in inventory["enemies"]})]
     if set(inventory) != {"light", "dark"}:
         return []  # Report the malformed inventory in validate_enemy_spawns.
@@ -309,11 +310,6 @@ def validate_requirements(path, document, requirements, location, references, er
 
 def validate_enemy_spawns(path, document, references, errors):
     inventory = document["enemySpawns"]
-    if document["roomType"] == "Dungeon":
-        for i, name in enumerate(inventory["enemies"]):
-            validate_reference(path, document, ["enemySpawns", "enemies", i], name,
-                               references["enemies"], "enemy or hazard", errors)
-        return
     if document["roomType"] == "Overworld":
         if set(inventory) != {"light", "dark"}:
             _record(errors, path, "/enemySpawns", "Overworld inventories require light and dark profiles")
@@ -321,18 +317,20 @@ def validate_enemy_spawns(path, document, references, errors):
         profiles = [(["enemySpawns", "light", stage], population)
                     for stage, population in inventory["light"].items()]
         profiles.append((["enemySpawns", "dark"], inventory["dark"]))
-    elif document["roomType"] in {"Cave", "House", "Special"}:
+    else:
         if set(inventory) != {"enemies"}:
-            _record(errors, path, "/enemySpawns", "Cave, House, and Special inventories require one enemies list")
+            _record(errors, path, "/enemySpawns", "non-Overworld inventories require one enemies list")
             return
         profiles = [(["enemySpawns"], inventory)]
-    else:
-        _record(errors, path, "/enemySpawns", "only supported for Overworld, Cave, House, Special, and Dungeon rooms")
-        return
+    # Dungeons list unique enemy types; other rooms count placements.
+    counted = document["roomType"] != "Dungeon"
     for location, population in profiles:
         seen = set()
         for i, enemy in enumerate(population["enemies"]):
             entry = location + ["enemies", i]
+            if ("count" in enemy) != counted:
+                message = "requires count" if counted else "Dungeon entries have no count"
+                _record(errors, path, display_path(document, entry), message)
             name = enemy["name"]
             if name is not None:
                 validate_reference(path, document, entry + ["name"], name,
@@ -348,7 +346,7 @@ def validate_room(path, document, references, errors):
         validate_enemy_spawns(path, document, references, errors)
     indices = {name: {} for name in [
         "nodes", "items", "doors", "obstacles", "entrances", "teleports", "whirlpools",
-        "notables", "notable_ids",
+        "notables", "notable_ids", "strat_ids",
     ]}
     for field, namespace in [
         ("nodes", "nodes"), ("items", "items"),
@@ -363,6 +361,11 @@ def validate_room(path, document, references, errors):
                          path, document, ["notables", i, "name"], errors)
     if "nextNotableId" in document and document["nextNotableId"] <= max(indices["notable_ids"], default=0):
         _record(errors, path, "/nextNotableId", "must be greater than all existing notable IDs")
+    for i, strat in enumerate(document["strats"]):
+        if "id" in strat:
+            index_definition(indices["strat_ids"], strat["id"], strat, path, document, ["strats", i, "id"], errors)
+    if "nextStratId" in document and document["nextStratId"] <= max(indices["strat_ids"], default=0):
+        _record(errors, path, "/nextStratId", "must be greater than all existing strat IDs")
     for edge, segments in document.get("edgeVariants", {}).items():
         expected_count = document["size"][0 if edge in {"north", "south"} else 1] // 2
         if len(segments) != expected_count:
@@ -448,8 +451,10 @@ def validate_room(path, document, references, errors):
                               location + ["requires"], references, errors, indices,
                               damage_enemy_populations(document, strat))
         for field, link_index in [("entranceState", 0), ("exitState", 1)]:
-            event = strat.get(field)
-            if event is not None and event.get("state") in {"overhead", "leaveNormally"}:
+            if field not in strat:
+                continue
+            kind, state = next(iter(strat[field].items()))
+            if kind in {"overhead", "leaveNormally"}:
                 node_id = strat["link"][link_index]
                 node = indices["nodes"].get(node_id)
                 edge_node_ids = {
@@ -461,20 +466,21 @@ def validate_room(path, document, references, errors):
                 }
                 if node is not None and not node[2].get("transitions") and node_id not in edge_node_ids:
                     _record(errors, path, display_path(document, location + [field]),
-                            f"{event['state']} state endpoint node has no overworld screen transition")
+                            f"{kind} state endpoint node has no overworld screen transition")
                 continue
-            if event is None or "entranceID" not in event:
+            if "entranceID" not in state:
                 continue
-            validate_reference(path, document, location + [field, "entranceID"],
-                               event["entranceID"], indices["entrances"], "room-local entrance", errors)
+            entrance_location = location + [field, kind, "entranceID"]
+            validate_reference(path, document, entrance_location,
+                               state["entranceID"], indices["entrances"], "room-local entrance", errors)
             node = indices["nodes"].get(strat["link"][link_index])
-            if node is not None and event["entranceID"] in indices["entrances"]:
-                if not any(entrance["id"] == event["entranceID"] for entrance in node[2].get("entrances", [])):
-                    _record(errors, path, display_path(document, location + [field, "entranceID"]),
+            if node is not None and state["entranceID"] in indices["entrances"]:
+                if not any(entrance["id"] == state["entranceID"] for entrance in node[2].get("entrances", [])):
+                    _record(errors, path, display_path(document, entrance_location),
                             "event entrance does not belong to the strat endpoint node")
                 world = strat.get("fromWorld" if link_index == 0 else "toWorld", strat.get("world"))
-                if world in {"light", "dark"} and indices["entrances"][event["entranceID"]][2]["world"] != world:
-                    _record(errors, path, display_path(document, location + [field, "entranceID"]),
+                if world in {"light", "dark"} and indices["entrances"][state["entranceID"]][2]["world"] != world:
+                    _record(errors, path, display_path(document, entrance_location),
                             f"event entrance is not in {world} world")
 
 
@@ -487,8 +493,8 @@ def validate_definitions(path, document, references, errors):
                 validate_requirements(path, document, item.get("requires", []),
                                       [category, "items", i, "requires"], references, errors)
     elif path == ROOT / "helpers.json":
-        for i, helper in enumerate(document):
-            validate_requirements(path, document, helper["requires"], [i, "requires"], references, errors)
+        for i, helper in enumerate(document["helpers"]):
+            validate_requirements(path, document, helper["requires"], ["helpers", i, "requires"], references, errors)
     elif path == ROOT / "tech.json":
         for i, category in enumerate(document["techCategories"]):
             for tech, location in walk_techs(category["techs"], ["techCategories", i, "techs"]):
@@ -503,12 +509,16 @@ def validate_definitions(path, document, references, errors):
 
 
 def validate_connections(path, document, references, errors):
-    for i, connection in enumerate(document["connections"]):
+    connections = []
+    for kind in ["entrances", "teleports", "whirlpools"]:
+        for i, connection in enumerate(document.get(kind, [])):
+            connections.append(([kind, i], connection))
+    for connection_location, connection in connections:
         for field in ["overworld", "overworld2", "underworld"]:
             if field not in connection:
                 continue
             endpoint = connection[field]
-            location = ["connections", i, field]
+            location = connection_location + [field]
             namespace = "Underworld" if field == "underworld" else "Overworld"
             room_key = (namespace, endpoint["roomId"])
             if room_key not in references["rooms"]:
@@ -560,8 +570,6 @@ def main():
         declaration = document.get("$schema") if isinstance(document, dict) else None
         if declaration is None:
             skipped.append(path)
-            if path == ROOT / "helpers.json":
-                reference_documents[path] = document
             continue
         if not isinstance(declaration, str):
             _record(errors, path, "/$schema", "must be a string")
@@ -596,8 +604,7 @@ def main():
             validate_definitions(path, document, references, errors)
 
     for path in skipped:
-        note = "no $schema; references checked" if path in reference_documents else "no $schema"
-        print(f"🟡 {path.relative_to(ROOT)}: skipped schema validation ({note})\n")
+        print(f"🟡 {path.relative_to(ROOT)}: skipped schema validation (no $schema)\n")
     for path in sorted(errors):
         print(path.relative_to(ROOT))
         for error in errors[path]:

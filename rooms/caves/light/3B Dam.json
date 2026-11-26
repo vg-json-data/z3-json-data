@@ -33,12 +33,7 @@
     }
   ],
   "obstacles": [
-    {
-      "id": "Drained Floodgate",
-      "note": [
-        "The Floodgate has been drained."
-      ]
-    },
+    {"id": "Drained Floodgate", "note": ["The Floodgate has been drained."]},
     {
       "id": "Dark World Portal",
       "note": [
@@ -48,36 +43,44 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base",
       "requires": [
         "h_openChest"
       ],
       "collectsItems": [1],
-      "devNote": ["Without a block clip, this prevents going to Node 2 without resetting the room."]
+      "devNote": [
+        "Without a block clip, this prevents going to Node 2 without resetting the room."
+      ]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Enter Dam with Mirror Point",
       "entranceState": {
-        "state": "event",
-        "type": "DarkWorldPortal"
+        "event": {
+          "type": "DarkWorldPortal"
+        }
       },
       "requires": [],
       "clearsObstacles": ["Dark World Portal"]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Exit Dam with Water Drained",
       "requires": [
         {"obstaclesCleared": ["Drained Floodgate"]}
       ],
       "exitState": {
-        "state": "event",
-        "type": "DrainedFloodgate"
+        "event": {
+          "type": "DrainedFloodgate"
+        }
       }
     },
     {
+      "id": 4,
       "link": [1, 1],
       "name": "Exit Dam with Water Drained and Mirror Point",
       "requires": [
@@ -85,21 +88,25 @@
         {"obstaclesCleared": ["Dark World Portal"]}
       ],
       "exitState": {
-        "state": "event",
-        "type": "DrainedFloodgateAndMirrorPoint"
+        "event": {
+          "type": "DrainedFloodgateAndMirrorPoint"
+        }
       }
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Open The Floodgates",
       "requires": [
@@ -107,5 +114,6 @@
       ],
       "clearsObstacles": ["Drained Floodgate"]
     }
-  ]
+  ],
+  "nextStratId": 8
 }

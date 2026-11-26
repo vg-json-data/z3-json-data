@@ -8,20 +8,69 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "wide"},
-      {"supported": {"vertical-water-land": [6, 2]}, "default": "vertical-water-land"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      },
+      {
+        "supported": {
+          "vertical-water-land": [6, 2]
+        },
+        "default": "vertical-water-land"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-1": [4]}, "default": "closed"},
-      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [4]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"},
-      {"supported": {"horizonal-water-land": [6, 3]}, "default": "horizonal-water-land"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "horizonal-water-land": [6, 3]
+        },
+        "default": "horizonal-water-land"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "closed"},
-      {"supported": {"wide": [4], "small-2": [4], "lake": [4, "return"]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "wide": [4],
+          "small-2": [4],
+          "lake": [4, "return"]
+        },
+        "default": "small-2"
+      }
     ]
   },
   "enemySpawns": {
@@ -133,20 +182,20 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 101,
+          "id": 1,
           "name": "Lake Hylia Fortune Teller",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 88,
+          "id": 2,
           "name": "Lake Hylia Shop",
           "world": "light"
         },
         {
-          "id": 3,
           "romEntranceId": 96,
+          "id": 3,
           "name": "Ice Lake Shop",
           "world": "dark"
         }
@@ -182,8 +231,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 108,
+          "id": 4,
           "name": "Mini Moldorm Cave Entrance",
           "world": "light"
         }
@@ -212,14 +261,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 93,
+          "id": 5,
           "name": "Lake Hylia Great Fairy",
           "world": "light"
         },
         {
-          "id": 6,
           "romEntranceId": 45,
+          "id": 6,
           "name": "Ice Palace Entrance",
           "world": "dark"
         }
@@ -253,24 +302,35 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -278,9 +338,14 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "world": "any",
@@ -289,6 +354,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 6],
       "name": "Base",
       "world": "dark",
@@ -298,6 +364,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 6],
       "name": "Base",
       "world": "any",
@@ -306,24 +373,29 @@
       ]
     },
     {
+      "id": 7,
       "link": [3, 3],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "devNote": [
-        "This will be dependent on the tiling theme."
-      ]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 8,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 9,
       "link": [3, 6],
       "name": "Base",
       "world": "any",
@@ -333,12 +405,14 @@
       ]
     },
     {
+      "id": 10,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 11,
       "link": [4, 4],
       "name": "Base - Bomb Wall",
       "world": "light",
@@ -348,18 +422,22 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 12,
       "link": [4, 4],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "devNote": [
-        "This will be dependent on the tiling theme."
-      ]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "devNote": ["This will be dependent on the tiling theme."]
     },
     {
+      "id": 13,
       "link": [4, 5],
       "name": "Base - Already Opened",
       "world": "light",
@@ -368,6 +446,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [4, 6],
       "name": "Base",
       "world": "any",
@@ -377,30 +456,35 @@
       ]
     },
     {
+      "id": 15,
       "link": [5, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 16,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 17,
       "link": [6, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 18,
       "link": [6, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 19,
       "link": [6, 8],
       "name": "Base",
       "world": "dark",
@@ -417,6 +501,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [7, 6],
       "name": "Base",
       "world": "light",
@@ -425,16 +510,18 @@
       ]
     },
     {
+      "id": 21,
       "link": [7, 7],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         {"lift": 2},
         "recheckLinkState"
       ]
     },
     {
+      "id": 22,
       "link": [8, 6],
       "name": "Base",
       "world": "light",
@@ -444,6 +531,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [8, 6],
       "name": "Base",
       "world": "dark",
@@ -452,11 +540,13 @@
       ]
     },
     {
+      "id": 24,
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
       "requires": [],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 25
 }

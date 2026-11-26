@@ -8,16 +8,40 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1], "small-2": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "small-1"
+      }
     ]
   },
   "enemySpawns": {
@@ -77,13 +101,19 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 2
 }

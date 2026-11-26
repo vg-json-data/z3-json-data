@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ],
     "south": [
-      {"supported": {"vertical-water-land": [3, 2]}, "default": "vertical-water-land"}
+      {
+        "supported": {
+          "vertical-water-land": [3, 2]
+        },
+        "default": "vertical-water-land"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"small-1": [1], "horizontal-land-water": [1, 3]}, "default": "horizontal-land-water"}
+      {
+        "supported": {
+          "small-1": [1],
+          "horizontal-land-water": [1, 3]
+        },
+        "default": "horizontal-land-water"
+      }
     ]
   },
   "enemySpawns": {
@@ -86,14 +109,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 94,
+          "id": 1,
           "name": "Lake Hylia Inlet Great Fairy",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 94,
+          "id": 2,
           "name": "Ice Lake Inlet Great Fairy",
           "world": "dark"
         }
@@ -120,40 +143,61 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Carry Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -171,10 +215,15 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -185,26 +234,44 @@
           ]}
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class1"},
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "note": [
         "Move quickly if Agahnim is defeated, as the left red guard moves quickly. Weave between the trees to get it stuck."
       ]
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -215,20 +282,34 @@
           ]}
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Move quickly if Agahnim is defeated, as the left red guard moves quickly. Weave between the trees to get it stuck."
       ]
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 10
 }

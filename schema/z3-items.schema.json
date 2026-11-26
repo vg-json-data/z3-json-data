@@ -20,9 +20,41 @@
     },
     "inventory": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
+    },
+    "healthUpgrades": {
+      "type": "object",
+      "required": ["items"],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detailNote": {
+          "$ref": "z3-note.schema.json#/definitions/detailNote"
+        },
+        "items": {
+          "$ref": "#/definitions/itemReceiptList"
+        }
+      }
+    },
+    "nonVanilla": {
+      "type": "object",
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -39,9 +71,7 @@
     },
     "refills": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -58,9 +88,7 @@
     },
     "bottleContents": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -82,9 +110,7 @@
     },
     "currency": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -101,9 +127,7 @@
     },
     "dungeonItems": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -120,9 +144,7 @@
     },
     "dungeonPrizes": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "devNote": {
@@ -148,30 +170,9 @@
         }
       }
     },
-    "healthUpgrades": {
-      "type": "object",
-      "required": [
-        "items"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "note": {
-          "type": "string",
-          "minLength": 1
-        },
-        "detailNote": {
-          "$ref": "z3-note.schema.json#/definitions/detailNote"
-        },
-        "items": {
-          "$ref": "#/definitions/itemReceiptList"
-        }
-      }
-    },
     "flags": {
       "type": "object",
-      "required": [
-        "items"
-      ],
+      "required": ["items"],
       "additionalProperties": false,
       "properties": {
         "note": {
@@ -187,25 +188,6 @@
           "items": {
             "$ref": "#/definitions/name"
           }
-        }
-      }
-    },
-    "nonVanilla": {
-      "type": "object",
-      "required": [
-        "items"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "note": {
-          "type": "string",
-          "minLength": 1
-        },
-        "detailNote": {
-          "$ref": "z3-note.schema.json#/definitions/detailNote"
-        },
-        "items": {
-          "$ref": "#/definitions/itemReceiptList"
         }
       }
     }
@@ -229,10 +211,7 @@
     },
     "itemReceipt": {
       "type": "object",
-      "required": [
-        "name",
-        "itemReceiptId"
-      ],
+      "required": ["name", "itemReceiptId"],
       "additionalProperties": false,
       "properties": {
         "name": {
@@ -259,10 +238,7 @@
     },
     "bottleContent": {
       "type": "object",
-      "required": [
-        "name",
-        "itemReceiptId"
-      ],
+      "required": ["name", "itemReceiptId"],
       "additionalProperties": false,
       "properties": {
         "name": {
@@ -285,10 +261,7 @@
     },
     "dungeonPrize": {
       "type": "object",
-      "required": [
-        "name",
-        "itemReceiptId"
-      ],
+      "required": ["name", "itemReceiptId"],
       "additionalProperties": false,
       "properties": {
         "name": {

@@ -6,22 +6,20 @@
   "dungeonId": 10,
   "enemySpawns": {
     "enemies": [
-      "Arrghus",
-      "Arrghus Fuzz",
-
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Pirogusu",
-      "Stalfos",
-      "Water Tektite",
-      "Zol",
-
-      "Guruguru Bar",
-      "Kyameron",
-      "Medusa",
-      "Spike Block",
-      "Winder",
-      "Yomo Medusa"
+      {"name": "Arrghus"},
+      {"name": "Arrghus Fuzz"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Pirogusu"},
+      {"name": "Stalfos"},
+      {"name": "Water Tektite"},
+      {"name": "Zol"},
+      {"name": "Guruguru Bar"},
+      {"name": "Kyameron"},
+      {"name": "Medusa"},
+      {"name": "Spike Block"},
+      {"name": "Winder"},
+      {"name": "Yomo Medusa"}
     ]
   },
   "nodes": [
@@ -150,9 +148,7 @@
       "name": "Arrghus Fuzz",
       "subArea": "Swamp Palace B1",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing the 13 Fuzz surrounding Arrghus."
-      ]
+      "note": ["Represents killing the 13 Fuzz surrounding Arrghus."]
     },
     {
       "id": 22,
@@ -363,15 +359,11 @@
   "obstacles": [
     {
       "id": "Flood Eastern Channel",
-      "note": [
-        "The eastern channel has been flooded."
-      ]
+      "note": ["The eastern channel has been flooded."]
     },
     {
       "id": "Flood Western Channel",
-      "note": [
-        "The western channel has been flooded."
-      ]
+      "note": ["The western channel has been flooded."]
     },
     {
       "id": "Western Floodgate Exit Strategy",
@@ -388,17 +380,20 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
+      "entranceState": {
+        "event": {
+          "type": "DrainedFloodgate"
+        }
+      },
       "requires": [
         "Flippers"
-      ],
-      "entranceState": {
-        "state": "event",
-        "type": "DrainedFloodgate"
-      }
+      ]
     },
     {
+      "id": 2,
       "link": [2, 2],
       "name": "Base - Kill Water Tektite",
       "requires": [
@@ -414,6 +409,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Base - Kill Water Tektite - Alternate Weapons",
       "requires": [
@@ -431,6 +427,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 4,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -438,6 +435,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -445,6 +443,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [3, 3],
       "name": "Base - Bomb Northwest Wall",
       "requires": [
@@ -453,6 +452,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 7,
       "link": [3, 3],
       "name": "Base - Wall Already Bombed",
       "requires": [
@@ -461,6 +461,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 8,
       "link": [3, 4],
       "name": "Base",
       "requires": [
@@ -478,6 +479,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 4],
       "name": "Base",
       "requires": [
@@ -489,11 +491,13 @@
       ]
     },
     {
+      "id": 10,
       "link": [4, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 11,
       "link": [4, 4],
       "name": "Eastern Room Pot Key",
       "requires": [
@@ -505,6 +509,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 12,
       "link": [4, 5],
       "name": "Base",
       "requires": [
@@ -512,6 +517,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [5, 5],
       "name": "Eastern Floodable Pot Key",
       "requires": [],
@@ -519,6 +525,7 @@
       "devNote": ["FIXME: This assumes that this can be reached without flooding it."]
     },
     {
+      "id": 14,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -526,6 +533,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [5, 7],
       "name": "Base",
       "requires": [
@@ -540,6 +548,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [5, 7],
       "name": "Specky Clip",
       "requires": [
@@ -560,6 +569,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [6, 5],
       "name": "Base",
       "requires": [
@@ -567,15 +577,17 @@
       ]
     },
     {
+      "id": 18,
       "link": [6, 6],
       "name": "Flood Eastern Channel",
       "requires": [
         "Hammer"
       ],
-      "clearsObstacles": ["Flood Eastern Channel"],
-      "setsFlags": ["OpenedSwampPalaceEastFloodgate"]
+      "setsFlags": ["OpenedSwampPalaceEastFloodgate"],
+      "clearsObstacles": ["Flood Eastern Channel"]
     },
     {
+      "id": 19,
       "link": [6, 6],
       "name": "Base - Bomb Western Wall",
       "requires": [
@@ -584,6 +596,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 20,
       "link": [7, 7],
       "name": "Base - Open South Chest",
       "requires": [
@@ -599,6 +612,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 21,
       "link": [7, 7],
       "name": "Base - Alternate Weapons - Open South Chest",
       "requires": [
@@ -614,6 +628,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 22,
       "link": [7, 7],
       "name": "Water Tektite Precise Dodge - Open South Chest",
       "requires": [
@@ -622,6 +637,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 23,
       "link": [7, 7],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -630,6 +646,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 24,
       "link": [7, 7],
       "name": "Base - Hookshot Pot Key",
       "requires": [
@@ -638,6 +655,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 25,
       "link": [7, 8],
       "name": "Base",
       "requires": [
@@ -653,6 +671,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [7, 9],
       "name": "Base",
       "requires": [
@@ -673,6 +692,7 @@
       "devNote": ["This path feels a bit harder than the others in the room."]
     },
     {
+      "id": 27,
       "link": [7, 9],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -687,6 +707,7 @@
       "devNote": ["This path feels a bit harder than the others in the room."]
     },
     {
+      "id": 28,
       "link": [7, 15],
       "name": "Base",
       "requires": [
@@ -695,6 +716,7 @@
       ]
     },
     {
+      "id": 29,
       "link": [8, 7],
       "name": "Base",
       "requires": [
@@ -710,6 +732,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [8, 8],
       "name": "Western Floodable Pot Key",
       "requires": [],
@@ -717,6 +740,7 @@
       "devNote": ["FIXME: This assumes that this can be reached without flooding it."]
     },
     {
+      "id": 31,
       "link": [8, 11],
       "name": "Base",
       "requires": [
@@ -731,6 +755,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [9, 7],
       "name": "Base",
       "requires": [
@@ -747,6 +772,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [9, 8],
       "name": "Base",
       "requires": [
@@ -754,6 +780,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [9, 10],
       "name": "Base with Return Strategy",
       "requires": [
@@ -763,6 +790,7 @@
       "clearsObstacles": ["Western Floodgate Exit Strategy"]
     },
     {
+      "id": 35,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -774,6 +802,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [9, 10],
       "name": "Base - Blue Pegs Down",
       "requires": [
@@ -788,6 +817,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [9, 10],
       "name": "Through the Spike Block with Return Strategy",
       "requires": [
@@ -811,6 +841,7 @@
       "clearsObstacles": ["Western Floodgate Exit Strategy"]
     },
     {
+      "id": 38,
       "link": [9, 10],
       "name": "Through the Spike Block",
       "requires": [
@@ -827,6 +858,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [9, 10],
       "name": "Through the Spike Block - Blue Pegs Down",
       "requires": [
@@ -847,6 +879,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [10, 9],
       "name": "Base - Return",
       "requires": [
@@ -854,6 +887,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [10, 9],
       "name": "Base - Blue Pegs Down",
       "requires": [
@@ -867,13 +901,15 @@
       ]
     },
     {
+      "id": 42,
       "link": [10, 10],
       "name": "Flood Western Channel",
       "requires": [],
-      "clearsObstacles": ["Flood Western Channel"],
-      "setsFlags": ["OpenedSwampPalaceWestFloodgate"]
+      "setsFlags": ["OpenedSwampPalaceWestFloodgate"],
+      "clearsObstacles": ["Flood Western Channel"]
     },
     {
+      "id": 43,
       "link": [11, 12],
       "name": "Base",
       "requires": [
@@ -888,6 +924,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [11, 13],
       "name": "Base",
       "requires": [
@@ -902,12 +939,14 @@
       ]
     },
     {
+      "id": 45,
       "link": [12, 12],
       "name": "Base - Open West Chest",
       "requires": [],
       "collectsItems": [9]
     },
     {
+      "id": 46,
       "link": [12, 13],
       "name": "Hookshot",
       "requires": [
@@ -915,6 +954,7 @@
       ]
     },
     {
+      "id": 47,
       "link": [13, 12],
       "name": "Hookshot",
       "requires": [
@@ -922,6 +962,7 @@
       ]
     },
     {
+      "id": 48,
       "link": [13, 14],
       "name": "Orange Pegs Down",
       "requires": [
@@ -929,23 +970,29 @@
       ]
     },
     {
+      "id": 49,
       "link": [14, 14],
       "name": "Base - Open Big Key Chest",
       "requires": [],
       "collectsItems": [10]
     },
     {
+      "id": 50,
       "link": [15, 16],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 51,
       "link": [16, 17],
       "name": "Base",
       "requires": [],
-      "note": ["The easiest way to get to the southern flooded room without damage is to go back upstairs."]
+      "note": [
+        "The easiest way to get to the southern flooded room without damage is to go back upstairs."
+      ]
     },
     {
+      "id": 52,
       "link": [16, 18],
       "name": "Base",
       "requires": [
@@ -961,30 +1008,37 @@
       ]
     },
     {
+      "id": 53,
       "link": [17, 16],
       "name": "Base",
       "requires": [],
-      "note": ["The easiest way to get to the northen flooded room without damage is to go back upstairs."]
+      "note": [
+        "The easiest way to get to the northen flooded room without damage is to go back upstairs."
+      ]
     },
     {
+      "id": 54,
       "link": [17, 17],
       "name": "Base - Open Left Chest",
       "requires": [],
       "collectsItems": [11]
     },
     {
+      "id": 55,
       "link": [17, 17],
       "name": "Base - Open Right Chest",
       "requires": [],
       "collectsItems": [12]
     },
     {
+      "id": 56,
       "link": [18, 18],
       "name": "Base - Open Waterfall Chest",
       "requires": [],
       "collectsItems": [13]
     },
     {
+      "id": 57,
       "link": [18, 19],
       "name": "Base",
       "requires": [
@@ -1000,6 +1054,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [19, 20],
       "name": "Base",
       "requires": [
@@ -1014,6 +1069,7 @@
       ]
     },
     {
+      "id": 59,
       "link": [19, 20],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -1028,6 +1084,7 @@
       ]
     },
     {
+      "id": 60,
       "link": [20, 20],
       "name": "Upstream Pot Key",
       "requires": [
@@ -1038,9 +1095,12 @@
         ]}
       ],
       "collectsItems": [14],
-      "devNote": ["This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."]
+      "devNote": [
+        "This is also possible with the blue cane, but it uses a lot of magic and seems a little unnecessary."
+      ]
     },
     {
+      "id": 61,
       "link": [20, 20],
       "name": "Upstream Pot Key - Medallion Tektite Kill",
       "requires": [
@@ -1055,6 +1115,7 @@
       "collectsItems": [14]
     },
     {
+      "id": 62,
       "link": [20, 20],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -1064,6 +1125,7 @@
       "unlocksDoor": [8]
     },
     {
+      "id": 63,
       "link": [20, 21],
       "name": "Base",
       "requires": [
@@ -1072,6 +1134,7 @@
       ]
     },
     {
+      "id": 64,
       "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Sword (L2-L4)",
       "requires": [
@@ -1084,6 +1147,7 @@
       ]
     },
     {
+      "id": 65,
       "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Sword (L1)",
       "requires": [
@@ -1098,6 +1162,7 @@
       ]
     },
     {
+      "id": 66,
       "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Swordless",
       "requires": [
@@ -1111,6 +1176,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [21, 22],
       "name": "Kill Arrghus's Fuzz - Bombs",
       "requires": [
@@ -1118,9 +1184,12 @@
         {"bossProficiency": 9},
         {"bombs": 20}
       ],
-      "devNote": ["It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."]
+      "devNote": [
+        "It is possible to pull two Fuzz each time, but it can be tricky. Needs more testing."
+      ]
     },
     {
+      "id": 68,
       "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Sword",
       "requires": [
@@ -1146,6 +1215,7 @@
       "note": ["With a Level 1 sword, Arrghus is only vulnerable to spin attacks."]
     },
     {
+      "id": 69,
       "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Hammer",
       "requires": [
@@ -1164,6 +1234,7 @@
       "collectsItems": [15, 16]
     },
     {
+      "id": 70,
       "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Fire or Ice Rod",
       "requires": [
@@ -1187,6 +1258,7 @@
       "collectsItems": [15, 16]
     },
     {
+      "id": 71,
       "link": [22, 22],
       "name": "Arrghus (Fuzz Killed) - Bow",
       "requires": [
@@ -1244,5 +1316,6 @@
       ]
     }
   ],
-  "nextNotableId": 2
+  "nextNotableId": 2,
+  "nextStratId": 72
 }

@@ -110,10 +110,7 @@
       "names": [
         "Bubble Cluster"
       ],
-      "note": [
-        "Often named Anti-Fairy Cluster.",
-        "The 4 spawned Bubbles are invincible."
-      ],
+      "note": ["Often named Anti-Fairy Cluster.", "The 4 spawned Bubbles are invincible."],
       "hp": 255,
       "dmgToLink": {
         "green": 8,

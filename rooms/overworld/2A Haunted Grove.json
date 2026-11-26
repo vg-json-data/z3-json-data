@@ -8,16 +8,36 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"dual-small": [2, 1]}, "default": "dual-small"}
+      {
+        "supported": {
+          "dual-small": [2, 1]
+        },
+        "default": "dual-small"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"small-2": [2]}, "default": "small-2"}
+      {
+        "supported": {
+          "small-2": [2]
+        },
+        "default": "small-2"
+      }
     ]
   },
   "enemySpawns": {
@@ -75,6 +95,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Dig",
       "world": "light",
@@ -85,6 +106,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Stumpy",
       "world": "dark",
@@ -93,5 +115,6 @@
       ],
       "collectsItems": [2]
     }
-  ]
+  ],
+  "nextStratId": 3
 }

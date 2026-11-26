@@ -20,16 +20,19 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Gamble Minigame",
       "requires": [
@@ -37,5 +40,6 @@
         "h_openChest"
       ]
     }
-  ]
+  ],
+  "nextStratId": 4
 }

@@ -20,6 +20,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Great Fairy Refill",
       "requires": [
@@ -27,9 +28,11 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 3
 }

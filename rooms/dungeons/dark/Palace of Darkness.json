@@ -6,22 +6,20 @@
   "dungeonId": 12,
   "enemySpawns": {
     "enemies": [
-      "Helmasaur King",
-
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Goriya (Green)",
-      "Goriya (Red)",
-      "Hardhat Beetle (Blue)",
-      "Hardhat Beetle (Red)",
-      "Head-Detaching Stalfos",
-      "Helmasaur",
-      "Kodongo",
-      "Terrorpin",
-
-      "Bubble",
-      "Medusa",
-      "Spike Block"
+      {"name": "Helmasaur King"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Goriya (Green)"},
+      {"name": "Goriya (Red)"},
+      {"name": "Hardhat Beetle (Blue)"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Head-Detaching Stalfos"},
+      {"name": "Helmasaur"},
+      {"name": "Kodongo"},
+      {"name": "Terrorpin"},
+      {"name": "Bubble"},
+      {"name": "Medusa"},
+      {"name": "Spike Block"}
     ]
   },
   "nodes": [
@@ -200,9 +198,7 @@
       "name": "Helmasaur Mask",
       "subArea": "Palace of Darkness B1",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents breaking Helmasaur's Mask."
-      ]
+      "note": ["Represents breaking Helmasaur's Mask."]
     },
     {
       "id": 30,
@@ -433,6 +429,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Pot Refill",
       "requires": [
@@ -441,16 +438,19 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [1, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [1, 4],
       "name": "Base",
       "requires": [
@@ -458,27 +458,32 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 7,
       "link": [3, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 8,
       "link": [3, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 9,
       "link": [4, 1],
       "name": "Base",
       "requires": [
@@ -486,11 +491,13 @@
       ]
     },
     {
+      "id": 10,
       "link": [4, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 11,
       "link": [4, 13],
       "name": "Base - Bomb the Bridge",
       "requires": [
@@ -498,21 +505,25 @@
       ]
     },
     {
+      "id": 12,
       "link": [4, 15],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 13,
       "link": [4, 16],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 14,
       "link": [5, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 15,
       "link": [5, 5],
       "name": "Base - Bomb South Wall",
       "requires": [
@@ -521,6 +532,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 16,
       "link": [5, 5],
       "name": "Dash Break South Wall",
       "requires": [
@@ -529,6 +541,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 17,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -536,6 +549,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [6, 5],
       "name": "Base",
       "requires": [
@@ -543,6 +557,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [6, 6],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -551,6 +566,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 20,
       "link": [6, 6],
       "name": "Dash Break North Wall",
       "requires": [
@@ -559,6 +575,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 21,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -573,6 +590,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [6, 7],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -587,6 +605,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [6, 7],
       "name": "Bari Dodge",
       "requires": [
@@ -594,6 +613,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [7, 6],
       "name": "Base",
       "requires": [
@@ -608,6 +628,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [7, 6],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -622,6 +643,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [7, 6],
       "name": "Bari Dodge",
       "requires": [
@@ -629,6 +651,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [7, 7],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -637,6 +660,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 28,
       "link": [7, 7],
       "name": "Dash Break North Wall",
       "requires": [
@@ -645,6 +669,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 29,
       "link": [7, 8],
       "name": "Base",
       "requires": [
@@ -652,6 +677,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [8, 7],
       "name": "Base",
       "requires": [
@@ -659,6 +685,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [8, 8],
       "name": "Base - Bomb South Wall",
       "requires": [
@@ -667,6 +694,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 32,
       "link": [8, 8],
       "name": "Dash Break South Wall",
       "requires": [
@@ -675,6 +703,7 @@
       "unlocksDoor": [2]
     },
     {
+      "id": 33,
       "link": [8, 9],
       "name": "Bow Kill",
       "requires": [
@@ -688,17 +717,20 @@
       "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
+      "id": 34,
       "link": [9, 8],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 35,
       "link": [9, 9],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [2]
     },
     {
+      "id": 36,
       "link": [9, 9],
       "name": "Base - Bomb West Wall",
       "requires": [
@@ -707,6 +739,7 @@
       "unlocksDoor": [4]
     },
     {
+      "id": 37,
       "link": [9, 9],
       "name": "Base - Bomb East Wall",
       "requires": [
@@ -715,6 +748,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 38,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -722,6 +756,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [9, 11],
       "name": "Base",
       "requires": [
@@ -729,6 +764,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [9, 24],
       "name": "Base",
       "requires": [
@@ -736,6 +772,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [10, 9],
       "name": "Base",
       "requires": [
@@ -743,12 +780,14 @@
       ]
     },
     {
+      "id": 42,
       "link": [10, 10],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 43,
       "link": [11, 9],
       "name": "Base",
       "requires": [
@@ -756,6 +795,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [11, 11],
       "name": "Fairies",
       "requires": [
@@ -763,22 +803,26 @@
       ]
     },
     {
+      "id": 45,
       "link": [12, 5],
       "name": "Teleporter",
       "requires": []
     },
     {
+      "id": 46,
       "link": [12, 12],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [4]
     },
     {
+      "id": 47,
       "link": [13, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 48,
       "link": [13, 14],
       "name": "Base",
       "requires": [
@@ -786,11 +830,13 @@
       ]
     },
     {
+      "id": 49,
       "link": [14, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 50,
       "link": [14, 13],
       "name": "Base",
       "requires": [
@@ -798,33 +844,39 @@
       ]
     },
     {
+      "id": 51,
       "link": [14, 14],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [5]
     },
     {
+      "id": 52,
       "link": [15, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 53,
       "link": [15, 15],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [6]
     },
     {
+      "id": 54,
       "link": [15, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 55,
       "link": [16, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 56,
       "link": [16, 24],
       "name": "Hardhat Arena",
       "requires": [
@@ -842,6 +894,7 @@
       ]
     },
     {
+      "id": 57,
       "link": [16, 24],
       "name": "Hardhat Arena - Alternate Weapons",
       "requires": [
@@ -859,6 +912,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [16, 24],
       "name": "Hardhat Arena - Invincible",
       "requires": [
@@ -870,6 +924,7 @@
       ]
     },
     {
+      "id": 59,
       "link": [16, 24],
       "name": "Hardhat Arena - Precise Dodge, Pot Kill",
       "requires": [
@@ -882,6 +937,7 @@
       ]
     },
     {
+      "id": 60,
       "link": [17, 16],
       "name": "Base",
       "requires": [
@@ -893,9 +949,12 @@
           {"damage": {"enemy": "Hardhat Beetle (Blue)", "count": 1}}
         ]}
       ],
-      "devNote": ["FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."]
+      "devNote": [
+        "FIXME: There are ways to go from 16 to 17 with a bomb, red cane, or boomerang, but they aren't useful with the vanilla layout."
+      ]
     },
     {
+      "id": 61,
       "link": [17, 18],
       "name": "Base",
       "requires": [
@@ -909,6 +968,7 @@
       ]
     },
     {
+      "id": 62,
       "link": [18, 16],
       "name": "Base",
       "requires": [
@@ -922,6 +982,7 @@
       ]
     },
     {
+      "id": 63,
       "link": [18, 19],
       "name": "Base",
       "requires": [
@@ -929,6 +990,7 @@
       ]
     },
     {
+      "id": 64,
       "link": [19, 20],
       "name": "Base",
       "requires": [
@@ -942,12 +1004,14 @@
       ]
     },
     {
+      "id": 65,
       "link": [20, 20],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [7]
     },
     {
+      "id": 66,
       "link": [20, 20],
       "name": "Base - Open Top Left Dark Maze Chest",
       "requires": [
@@ -957,6 +1021,7 @@
       "collectsItems": [11]
     },
     {
+      "id": 67,
       "link": [20, 20],
       "name": "Base - Open Bottom Right Dark Maze Chest",
       "requires": [
@@ -966,6 +1031,7 @@
       "collectsItems": [12]
     },
     {
+      "id": 68,
       "link": [20, 20],
       "name": "Base - Bomb Big Chest Wall",
       "requires": [
@@ -976,6 +1042,7 @@
       "unlocksDoor": [10]
     },
     {
+      "id": 69,
       "link": [20, 20],
       "name": "Dark - Open Top Left Dark Maze Chest",
       "requires": [
@@ -991,6 +1058,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 70,
       "link": [20, 20],
       "name": "Dark - Open Bottom Right Dark Maze Chest",
       "requires": [
@@ -1006,6 +1074,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 71,
       "link": [20, 20],
       "name": "Dark - Bomb Big Chest Wall",
       "requires": [
@@ -1022,6 +1091,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 72,
       "link": [20, 21],
       "name": "Base",
       "requires": [
@@ -1030,6 +1100,7 @@
       ]
     },
     {
+      "id": 73,
       "link": [20, 21],
       "name": "Dark",
       "requires": [
@@ -1041,6 +1112,7 @@
       ]
     },
     {
+      "id": 74,
       "link": [20, 22],
       "name": "Base",
       "requires": [
@@ -1048,6 +1120,7 @@
       ]
     },
     {
+      "id": 75,
       "link": [20, 23],
       "name": "Base",
       "requires": [
@@ -1057,6 +1130,7 @@
       ]
     },
     {
+      "id": 76,
       "link": [20, 23],
       "name": "Dark Maze Traversal",
       "requires": [
@@ -1072,6 +1146,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 77,
       "link": [21, 20],
       "name": "Base",
       "requires": [
@@ -1079,6 +1154,7 @@
       ]
     },
     {
+      "id": 78,
       "link": [21, 21],
       "name": "Base - Open Right Chest",
       "requires": [
@@ -1087,6 +1163,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 79,
       "link": [21, 21],
       "name": "Base - Open Left Chest",
       "requires": [
@@ -1095,6 +1172,7 @@
       "collectsItems": [9]
     },
     {
+      "id": 80,
       "link": [21, 21],
       "name": "Dark - Open Right Chest",
       "requires": [
@@ -1103,6 +1181,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 81,
       "link": [21, 21],
       "name": "Dark - Open Left Chest",
       "requires": [
@@ -1113,14 +1192,18 @@
         ]}
       ],
       "collectsItems": [9],
-      "note": ["Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."]
+      "note": [
+        "Link can not be pressed against the left wall to open this chest. He must move right at least 1 pixel."
+      ]
     },
     {
+      "id": 82,
       "link": [22, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 83,
       "link": [22, 20],
       "name": "Base",
       "requires": [
@@ -1128,12 +1211,14 @@
       ]
     },
     {
+      "id": 84,
       "link": [22, 22],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [10]
     },
     {
+      "id": 85,
       "link": [23, 20],
       "name": "Base",
       "requires": [
@@ -1143,6 +1228,7 @@
       ]
     },
     {
+      "id": 86,
       "link": [23, 20],
       "name": "Dark Maze Traversal",
       "requires": [
@@ -1158,6 +1244,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 87,
       "link": [23, 23],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -1166,6 +1253,7 @@
       "collectsItems": [13]
     },
     {
+      "id": 88,
       "link": [23, 23],
       "name": "Base - Bomb West Wall",
       "requires": [
@@ -1174,6 +1262,7 @@
       "unlocksDoor": [10]
     },
     {
+      "id": 89,
       "link": [23, 23],
       "name": "Base - Open Bottom Right Dark Maze Chest",
       "requires": [
@@ -1183,6 +1272,7 @@
       "collectsItems": [12]
     },
     {
+      "id": 90,
       "link": [23, 23],
       "name": "Base - Open Top Left Dark Maze Chest",
       "requires": [
@@ -1192,6 +1282,7 @@
       "collectsItems": [11]
     },
     {
+      "id": 91,
       "link": [23, 23],
       "name": "Dark - Open Bottom Right Dark Maze Chest",
       "requires": [
@@ -1203,6 +1294,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 92,
       "link": [23, 23],
       "name": "Dark - Open Top Left Dark Maze Chest",
       "requires": [
@@ -1218,6 +1310,7 @@
       "devNote": ["FIXME: This could be done without a sword, but it would be much harder."]
     },
     {
+      "id": 93,
       "link": [24, 16],
       "name": "Base",
       "requires": [
@@ -1230,6 +1323,7 @@
       ]
     },
     {
+      "id": 94,
       "link": [24, 16],
       "name": "Base - Alternate Weapons",
       "requires": [
@@ -1242,6 +1336,7 @@
       ]
     },
     {
+      "id": 95,
       "link": [24, 16],
       "name": "Precise Hardhat Dodge",
       "requires": [
@@ -1254,6 +1349,7 @@
       ]
     },
     {
+      "id": 96,
       "link": [24, 24],
       "name": "Pot Refill",
       "requires": [
@@ -1262,6 +1358,7 @@
       ]
     },
     {
+      "id": 97,
       "link": [24, 25],
       "name": "Bow Kill",
       "requires": [
@@ -1275,6 +1372,7 @@
       "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
+      "id": 98,
       "link": [25, 24],
       "name": "Base",
       "requires": [
@@ -1286,6 +1384,7 @@
       "note": ["Kill the Red Goriya with arrows, then kill the Green Goriyas with pots."]
     },
     {
+      "id": 99,
       "link": [25, 25],
       "name": "Shoot Statue's Eye",
       "requires": [
@@ -1297,6 +1396,7 @@
       "setsFlags": ["OpenedPalaceOfDarknessBasement"]
     },
     {
+      "id": 100,
       "link": [25, 26],
       "name": "Base - Already Opened",
       "requires": [
@@ -1304,6 +1404,7 @@
       ]
     },
     {
+      "id": 101,
       "link": [26, 27],
       "name": "Base",
       "requires": [
@@ -1329,6 +1430,7 @@
       ]
     },
     {
+      "id": 102,
       "link": [27, 28],
       "name": "Base",
       "requires": [
@@ -1341,6 +1443,7 @@
       ]
     },
     {
+      "id": 103,
       "link": [28, 29],
       "name": "Base",
       "requires": [
@@ -1350,6 +1453,7 @@
       ]
     },
     {
+      "id": 104,
       "link": [29, 30],
       "name": "Break Helmasaur's Mask - Hammer",
       "requires": [
@@ -1365,6 +1469,7 @@
       ]
     },
     {
+      "id": 105,
       "link": [29, 30],
       "name": "Break Helmasaur's Mask - Bombs",
       "requires": [
@@ -1386,6 +1491,7 @@
       ]
     },
     {
+      "id": 106,
       "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Bow",
       "requires": [
@@ -1410,6 +1516,7 @@
       "collectsItems": [14, 15]
     },
     {
+      "id": 107,
       "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Sword (L1)",
       "requires": [
@@ -1429,9 +1536,12 @@
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [14, 15],
-      "note": ["With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."]
+      "note": [
+        "With just the Fighter Sword, Helmasaur can only be damaged with spin attacks."
+      ]
     },
     {
+      "id": 108,
       "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Sword (L2-L4)",
       "requires": [
@@ -1458,6 +1568,7 @@
       "collectsItems": [14, 15]
     },
     {
+      "id": 109,
       "link": [30, 30],
       "name": "Helmasaur (Mask Broken) - Hammer",
       "requires": [
@@ -1473,7 +1584,10 @@
       ],
       "setsFlags": ["DefeatedHelmasaurKing"],
       "collectsItems": [14, 15],
-      "note": ["Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."]
+      "note": [
+        "Take damage then go inside Helmasaur's head and hammer the crystal. This takes 4 hammer hits."
+      ]
     }
-  ]
+  ],
+  "nextStratId": 110
 }

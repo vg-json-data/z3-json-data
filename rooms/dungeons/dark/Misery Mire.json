@@ -6,30 +6,28 @@
   "dungeonId": 14,
   "enemySpawns": {
     "enemies": [
-      "Vitreous",
-      "Vitreous (Small Eye)",
-
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Floating Stalfos Head",
-      "Popo",
-      "Sluggula",
-      "Stalfos",
-      "Wizzrobe",
-      "Zol",
-      "Zoro",
-
-      "Beamos",
-      "Bubble",
-      "Flying Tile",
-      "Giant Spike Block",
-      "Laser Eye",
-      "Medusa",
-      "Rabbit Beam",
-      "Spark",
-      "Spike Block",
-      "Winder",
-      "Yomo Medusa"
+      {"name": "Vitreous"},
+      {"name": "Vitreous (Small Eye)"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Floating Stalfos Head"},
+      {"name": "Popo"},
+      {"name": "Sluggula"},
+      {"name": "Stalfos"},
+      {"name": "Wizzrobe"},
+      {"name": "Zol"},
+      {"name": "Zoro"},
+      {"name": "Beamos"},
+      {"name": "Bubble"},
+      {"name": "Flying Tile"},
+      {"name": "Giant Spike Block"},
+      {"name": "Laser Eye"},
+      {"name": "Medusa"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spark"},
+      {"name": "Spike Block"},
+      {"name": "Winder"},
+      {"name": "Yomo Medusa"}
     ]
   },
   "nodes": [
@@ -164,9 +162,7 @@
       "name": "Vitreous Small Eyes",
       "subArea": "Misery Mire (Final Section)",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing Vitreous's Small Eyes."
-      ]
+      "note": ["Represents killing Vitreous's Small Eyes."]
     },
     {
       "id": 23,
@@ -326,7 +322,9 @@
       "doorPosition": "north",
       "doorLocation": 14,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 8,
@@ -371,6 +369,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -378,6 +377,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Bonk Boost Over the Gap",
       "requires": [
@@ -385,6 +385,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -392,6 +393,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Bonk Boost Over the Gap",
       "requires": [
@@ -399,6 +401,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -418,6 +421,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 3],
       "name": "Alternate Weapons",
       "requires": [
@@ -453,6 +457,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 3],
       "name": "Frozen Popo Kill",
       "requires": [
@@ -468,14 +473,18 @@
           {"blueCane": 20}
         ]}
       ],
-      "note": ["Freeze a Popo, use it to kill everything in the room, then kill it with any attack."]
+      "note": [
+        "Freeze a Popo, use it to kill everything in the room, then kill it with any attack."
+      ]
     },
     {
+      "id": 8,
       "link": [3, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 9,
       "link": [3, 3],
       "name": "Open Chest - Blue Pegs Down",
       "requires": [
@@ -484,6 +493,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 10,
       "link": [3, 3],
       "name": "Unlock Spike Hallway",
       "requires": [
@@ -494,19 +504,24 @@
           {"damage": {"enemy": "Ground Spikes", "count": 2}}
         ]}
       ],
-      "devNote": ["This is to track key usage options, it's less damaging to go the long way around, which also doesnt rely on the peg orientation."]
+      "devNote": [
+        "This is to track key usage options, it's less damaging to go the long way around, which also doesnt rely on the peg orientation."
+      ]
     },
     {
+      "id": 11,
       "link": [3, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 12,
       "link": [3, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 13,
       "link": [3, 8],
       "name": "Base",
       "requires": [
@@ -514,6 +529,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [3, 9],
       "name": "Base",
       "requires": [
@@ -521,11 +537,13 @@
       ]
     },
     {
+      "id": 15,
       "link": [3, 13],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 16,
       "link": [3, 15],
       "name": "Hookshot",
       "requires": [
@@ -533,6 +551,7 @@
       ]
     },
     {
+      "id": 17,
       "link": [3, 15],
       "name": "Tight Movement",
       "requires": [
@@ -544,22 +563,26 @@
       ]
     },
     {
+      "id": 18,
       "link": [4, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 19,
       "link": [4, 4],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 20,
       "link": [5, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 21,
       "link": [5, 5],
       "name": "Base - Open Spike Chest",
       "requires": [
@@ -568,6 +591,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 22,
       "link": [5, 5],
       "name": "Invulnerable - Open Spike Chest",
       "requires": [
@@ -579,12 +603,14 @@
       "collectsItems": [2]
     },
     {
+      "id": 23,
       "link": [5, 5],
       "name": "Base - Pot Key",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 24,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -592,6 +618,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [5, 8],
       "name": "Blue Pegs Down",
       "requires": [
@@ -599,11 +626,13 @@
       ]
     },
     {
+      "id": 26,
       "link": [5, 14],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 27,
       "link": [6, 5],
       "name": "Base",
       "requires": [
@@ -611,28 +640,33 @@
       ]
     },
     {
+      "id": 28,
       "link": [6, 7],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 29,
       "link": [7, 6],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 30,
       "link": [7, 7],
       "name": "Base",
       "requires": [],
       "collectsItems": [4]
     },
     {
+      "id": 31,
       "link": [7, 7],
       "name": "Blue Pegs Down",
       "requires": [],
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 32,
       "link": [7, 7],
       "name": "Base",
       "requires": [
@@ -641,6 +675,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [8, 3],
       "name": "Base",
       "requires": [
@@ -648,6 +683,7 @@
       ]
     },
     {
+      "id": 34,
       "link": [8, 5],
       "name": "Blue Pegs Down",
       "requires": [
@@ -655,12 +691,14 @@
       ]
     },
     {
+      "id": 35,
       "link": [8, 8],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [5]
     },
     {
+      "id": 36,
       "link": [9, 3],
       "name": "Base",
       "requires": [
@@ -668,6 +706,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [9, 9],
       "name": "Base - Blue Bari Key",
       "requires": [
@@ -682,6 +721,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 38,
       "link": [9, 9],
       "name": "Alternate Weapons - Blue Bari Key",
       "requires": [
@@ -694,6 +734,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 39,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -701,6 +742,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [10, 9],
       "name": "Base",
       "requires": [
@@ -708,6 +750,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [10, 10],
       "name": "Torches - Compass Chest",
       "requires": [
@@ -724,11 +767,13 @@
       "collectsItems": [8]
     },
     {
+      "id": 42,
       "link": [10, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 43,
       "link": [11, 11],
       "name": "Attic Torches",
       "requires": [
@@ -736,6 +781,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [11, 12],
       "name": "Attic Torches",
       "requires": [
@@ -750,22 +796,26 @@
       ]
     },
     {
+      "id": 45,
       "link": [12, 12],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [9]
     },
     {
+      "id": 46,
       "link": [12, 13],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 47,
       "link": [13, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 48,
       "link": [13, 14],
       "name": "Base",
       "requires": [
@@ -773,11 +823,13 @@
       ]
     },
     {
+      "id": 49,
       "link": [14, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 50,
       "link": [14, 16],
       "name": "Base",
       "requires": [
@@ -785,11 +837,13 @@
       ]
     },
     {
+      "id": 51,
       "link": [15, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 52,
       "link": [15, 8],
       "name": "Blue Pegs Down",
       "requires": [
@@ -797,6 +851,7 @@
       ]
     },
     {
+      "id": 53,
       "link": [15, 15],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -805,6 +860,7 @@
       "collectsItems": [10]
     },
     {
+      "id": 54,
       "link": [16, 14],
       "name": "Base",
       "requires": [
@@ -812,6 +868,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [16, 16],
       "name": "Base",
       "requires": [
@@ -819,6 +876,7 @@
       ]
     },
     {
+      "id": 56,
       "link": [16, 16],
       "name": "Base - Mini Cache",
       "requires": [
@@ -827,6 +885,7 @@
       ]
     },
     {
+      "id": 57,
       "link": [16, 17],
       "name": "Base - Red Cane",
       "requires": [
@@ -837,9 +896,12 @@
           {"damage": {"enemy": "Medusa", "attack": "Fireball", "count": 2}}
         ]}
       ],
-      "devNote": ["FIXME: It seems unreasonable to get through this room without a lamp, so the full basement is going to assume it for now."]
+      "devNote": [
+        "FIXME: It seems unreasonable to get through this room without a lamp, so the full basement is going to assume it for now."
+      ]
     },
     {
+      "id": 58,
       "link": [17, 18],
       "name": "Spike Tank",
       "requires": [
@@ -848,15 +910,19 @@
       ]
     },
     {
+      "id": 59,
       "link": [17, 18],
       "name": "Spike Dodge",
       "requires": [
         "Lamp",
         {"combatProficiency": 3}
       ],
-      "note": ["Get in the second lane, when the spike moved right past Link, quickly move to the third or fourth lane."]
+      "note": [
+        "Get in the second lane, when the spike moved right past Link, quickly move to the third or fourth lane."
+      ]
     },
     {
+      "id": 60,
       "link": [18, 18],
       "name": "Lower Orange Pegs",
       "requires": [
@@ -869,6 +935,7 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 61,
       "link": [18, 18],
       "name": "Cache Bombable Wall",
       "requires": [
@@ -883,6 +950,7 @@
       "unlocksDoor": [9]
     },
     {
+      "id": 62,
       "link": [18, 18],
       "name": "Loot the Cache",
       "requires": [
@@ -892,6 +960,7 @@
       ]
     },
     {
+      "id": 63,
       "link": [18, 19],
       "name": "Orange Pegs Down",
       "requires": [
@@ -900,6 +969,7 @@
       ]
     },
     {
+      "id": 64,
       "link": [19, 19],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -909,6 +979,7 @@
       "unlocksDoor": [10]
     },
     {
+      "id": 65,
       "link": [19, 19],
       "name": "Base - Hit Blue Orange Switch",
       "requires": [
@@ -919,6 +990,7 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 66,
       "link": [19, 20],
       "name": "Blue Pegs Down",
       "requires": [
@@ -927,11 +999,13 @@
       ]
     },
     {
+      "id": 67,
       "link": [20, 21],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 68,
       "link": [21, 21],
       "name": "Lower Orange Pegs",
       "requires": [
@@ -943,6 +1017,7 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 69,
       "link": [21, 22],
       "name": "Orange Pegs Down",
       "requires": [
@@ -951,6 +1026,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Sword (L2-L4)",
       "requires": [
@@ -982,6 +1058,7 @@
       ]
     },
     {
+      "id": 71,
       "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Sword (L1)",
       "requires": [
@@ -995,6 +1072,7 @@
       "note": ["With just the Level 1 sword, Vitreous is only vulnerable to spin attacks."]
     },
     {
+      "id": 72,
       "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Bow",
       "requires": [
@@ -1020,6 +1098,7 @@
       ]
     },
     {
+      "id": 73,
       "link": [22, 23],
       "name": "Kill Vitreous Small Eyes - Hammer",
       "requires": [
@@ -1029,6 +1108,7 @@
       "devNote": ["FIXME: Needs testing."]
     },
     {
+      "id": 74,
       "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Bow",
       "requires": [
@@ -1041,6 +1121,7 @@
       "collectsItems": [11, 12]
     },
     {
+      "id": 75,
       "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Sword (L2-L4)",
       "requires": [
@@ -1050,6 +1131,7 @@
       "collectsItems": [11, 12]
     },
     {
+      "id": 76,
       "link": [23, 23],
       "name": "Vitreous (Big Eye Only) - Sword (L1)",
       "requires": [
@@ -1068,5 +1150,6 @@
       ],
       "devNote": ["FIXME: Consider a high-level hammer kill."]
     }
-  ]
+  ],
+  "nextStratId": 77
 }

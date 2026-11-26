@@ -43,6 +43,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 3],
       "name": "Base",
       "requires": [
@@ -55,6 +56,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 3],
       "name": "Alternate Weapons",
       "requires": [
@@ -93,6 +95,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [3, 2],
       "name": "Base",
       "requires": [
@@ -103,9 +106,12 @@
         ]},
         "h_jumpOffLedge"
       ],
-      "devNote": ["It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."]
+      "devNote": [
+        "It feels chaotic but also reliable to dodge. Hookshot makes it feel easier but didn't seem to reduce the chance of getting hit."
+      ]
     },
     {
+      "id": 4,
       "link": [3, 3],
       "name": "Base - Grab the Item",
       "requires": [
@@ -113,5 +119,6 @@
       ],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 5
 }

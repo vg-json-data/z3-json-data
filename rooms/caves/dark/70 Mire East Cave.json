@@ -24,6 +24,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Paid Refill",
       "requires": [
@@ -32,6 +33,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -40,6 +42,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 3,
       "link": [1, 1],
       "name": "Secret Pot Room",
       "requires": [
@@ -50,5 +53,6 @@
         {"refill": {"type": "Arrows", "limit": 5}}
       ]
     }
-  ]
+  ],
+  "nextStratId": 4
 }

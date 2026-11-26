@@ -6,22 +6,20 @@
   "dungeonId": 18,
   "enemySpawns": {
     "enemies": [
-      "Kholdstare",
-
-      "Babusu",
-      "Bari (Blue)",
-      "Bari (Red)",
-      "Freezor",
-      "Pengator",
-      "Stalfos Knight",
-      "Zol",
-
-      "Bubble",
-      "Giant Spike Block",
-      "Guruguru Bar",
-      "Medusa",
-      "Rabbit Beam",
-      "Spike Block"
+      {"name": "Kholdstare"},
+      {"name": "Babusu"},
+      {"name": "Bari (Blue)"},
+      {"name": "Bari (Red)"},
+      {"name": "Freezor"},
+      {"name": "Pengator"},
+      {"name": "Stalfos Knight"},
+      {"name": "Zol"},
+      {"name": "Bubble"},
+      {"name": "Giant Spike Block"},
+      {"name": "Guruguru Bar"},
+      {"name": "Medusa"},
+      {"name": "Rabbit Beam"},
+      {"name": "Spike Block"}
     ]
   },
   "nodes": [
@@ -186,9 +184,7 @@
       "name": "Frozen Kholdstare Block",
       "subArea": "Ice Palace (Lower Floors)",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents breaking Kholdstare's Ice Block."
-      ]
+      "note": ["Represents breaking Kholdstare's Ice Block."]
     },
     {
       "id": 28,
@@ -367,6 +363,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base - Fire Rod",
       "requires": [
@@ -374,6 +371,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Bombos Kill",
       "requires": [
@@ -382,6 +380,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Base - Blue Bari Kill",
       "requires": [
@@ -396,6 +395,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 4,
       "link": [2, 2],
       "name": "Base - Blue Bari Kill - Alternate Weapons",
       "requires": [
@@ -410,6 +410,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 5,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -417,11 +418,13 @@
       ]
     },
     {
+      "id": 6,
       "link": [3, 4],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 7,
       "link": [4, 4],
       "name": "Base - Pengator Kill",
       "requires": [
@@ -439,6 +442,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 8,
       "link": [4, 4],
       "name": "Base - Pengator Kill - Alternate Weapons",
       "requires": [
@@ -450,6 +454,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [4, 4],
       "name": "Base - Fire Rod Stacked Kill",
       "requires": [
@@ -466,6 +471,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [4, 4],
       "name": "Red Cane Kill",
       "requires": [
@@ -486,11 +492,13 @@
       ]
     },
     {
+      "id": 11,
       "link": [4, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 12,
       "link": [5, 6],
       "name": "Base",
       "requires": [
@@ -511,6 +519,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [5, 20],
       "name": "Icebreaker",
       "requires": [
@@ -529,6 +538,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -536,6 +546,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [6, 7],
       "name": "Single Bomb",
       "requires": [
@@ -547,6 +558,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [7, 8],
       "name": "Base - Stalfos Kill",
       "requires": [
@@ -554,9 +566,12 @@
         {"bombs": 1},
         {"refill": {"type": "Bombs", "limit": 1}}
       ],
-      "devNote": ["Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."]
+      "devNote": [
+        "Use two bombs to kill the Stalfos and they each are guarenteed to drop one in return, in addition to the pot."
+      ]
     },
     {
+      "id": 17,
       "link": [8, 8],
       "name": "Blue Bari Kill - Key Drop",
       "requires": [
@@ -571,6 +586,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 18,
       "link": [8, 8],
       "name": "Alternate Weapons - Blue Bari Kill - Key Drop",
       "requires": [
@@ -585,6 +601,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 19,
       "link": [8, 9],
       "name": "Base",
       "requires": [
@@ -600,11 +617,13 @@
       ]
     },
     {
+      "id": 20,
       "link": [9, 10],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 21,
       "link": [9, 10],
       "name": "Bomb Jump",
       "requires": [
@@ -614,6 +633,7 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 22,
       "link": [10, 11],
       "name": "Pengator Line Kill",
       "requires": [
@@ -627,6 +647,7 @@
       ]
     },
     {
+      "id": 23,
       "link": [10, 11],
       "name": "Pengator Line Kill - Alternate Weapons",
       "requires": [
@@ -642,6 +663,7 @@
       ]
     },
     {
+      "id": 24,
       "link": [10, 11],
       "name": "Pengator Line Kill - Synced Fire Rod Kill",
       "requires": [
@@ -660,6 +682,7 @@
       ]
     },
     {
+      "id": 25,
       "link": [10, 11],
       "name": "Pengator Line Kill - Synced Group Kill",
       "requires": [
@@ -679,11 +702,13 @@
       ]
     },
     {
+      "id": 26,
       "link": [11, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 27,
       "link": [11, 13],
       "name": "Base",
       "requires": [
@@ -694,6 +719,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [11, 18],
       "name": "Base",
       "requires": [
@@ -701,11 +727,13 @@
       ]
     },
     {
+      "id": 29,
       "link": [12, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 30,
       "link": [12, 12],
       "name": "Freezor Kill",
       "requires": [
@@ -714,6 +742,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 31,
       "link": [12, 12],
       "name": "Freezor Stacked Kill",
       "requires": [
@@ -723,6 +752,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 32,
       "link": [12, 12],
       "name": "Freezor Bombos Kill",
       "requires": [
@@ -732,6 +762,7 @@
       "collectsItems": [4]
     },
     {
+      "id": 33,
       "link": [12, 14],
       "name": "Base",
       "requires": [
@@ -739,11 +770,13 @@
       ]
     },
     {
+      "id": 34,
       "link": [12, 15],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 35,
       "link": [13, 12],
       "name": "Bomb Boost",
       "requires": [
@@ -754,12 +787,16 @@
       ]
     },
     {
+      "id": 36,
       "link": [13, 15],
       "name": "Base",
       "requires": [],
-      "devNote": ["FIXME: It is possible to get to 12 from here with Hookshot, but with Hookshot, Link can just push block clip."]
+      "devNote": [
+        "FIXME: It is possible to get to 12 from here with Hookshot, but with Hookshot, Link can just push block clip."
+      ]
     },
     {
+      "id": 37,
       "link": [13, 16],
       "name": "Base",
       "requires": [
@@ -767,6 +804,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [13, 17],
       "name": "Base",
       "requires": [
@@ -774,6 +812,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [13, 17],
       "name": "Bomb Boost",
       "requires": [
@@ -788,6 +827,7 @@
       "devNote": ["FIXME: It could be possible to kill the Bari with other methods."]
     },
     {
+      "id": 40,
       "link": [14, 14],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -796,11 +836,13 @@
       "collectsItems": [5]
     },
     {
+      "id": 41,
       "link": [14, 15],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 42,
       "link": [15, 14],
       "name": "Base",
       "requires": [
@@ -809,6 +851,7 @@
       ]
     },
     {
+      "id": 43,
       "link": [15, 22],
       "name": "Orange Pegs Down",
       "requires": [
@@ -816,6 +859,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [15, 26],
       "name": "Blue Pegs Down",
       "requires": [
@@ -823,6 +867,7 @@
       ]
     },
     {
+      "id": 45,
       "link": [16, 13],
       "name": "Base",
       "requires": [
@@ -830,17 +875,20 @@
       ]
     },
     {
+      "id": 46,
       "link": [16, 16],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [10]
     },
     {
+      "id": 47,
       "link": [16, 21],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 48,
       "link": [17, 18],
       "name": "Base",
       "requires": [
@@ -851,6 +899,7 @@
       ]
     },
     {
+      "id": 49,
       "link": [18, 11],
       "name": "Base",
       "requires": [
@@ -858,6 +907,7 @@
       ]
     },
     {
+      "id": 50,
       "link": [18, 19],
       "name": "Base",
       "requires": [
@@ -870,6 +920,7 @@
       ]
     },
     {
+      "id": 51,
       "link": [19, 18],
       "name": "Base",
       "requires": [
@@ -884,6 +935,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 52,
       "link": [19, 19],
       "name": "Base - Block Key",
       "requires": [
@@ -893,6 +945,7 @@
       "collectsItems": [7]
     },
     {
+      "id": 53,
       "link": [19, 19],
       "name": "Base - Open Chest",
       "requires": [
@@ -902,6 +955,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 54,
       "link": [19, 20],
       "name": "Base",
       "requires": [
@@ -910,22 +964,26 @@
       ]
     },
     {
+      "id": 55,
       "link": [20, 5],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 56,
       "link": [20, 19],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 57,
       "link": [20, 20],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [9]
     },
     {
+      "id": 58,
       "link": [21, 16],
       "name": "Base",
       "requires": [
@@ -940,6 +998,7 @@
       ]
     },
     {
+      "id": 59,
       "link": [21, 21],
       "name": "Base - Pot Key",
       "requires": [
@@ -951,6 +1010,7 @@
       "collectsItems": [11]
     },
     {
+      "id": 60,
       "link": [21, 22],
       "name": "Base",
       "requires": [
@@ -961,6 +1021,7 @@
       ]
     },
     {
+      "id": 61,
       "link": [22, 15],
       "name": "Orange Pegs Down",
       "requires": [
@@ -968,11 +1029,13 @@
       ]
     },
     {
+      "id": 62,
       "link": [22, 21],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 63,
       "link": [22, 23],
       "name": "Base",
       "requires": [
@@ -981,6 +1044,7 @@
       ]
     },
     {
+      "id": 64,
       "link": [22, 23],
       "name": "Blue Pegs Down",
       "requires": [
@@ -988,6 +1052,7 @@
       ]
     },
     {
+      "id": 65,
       "link": [23, 22],
       "name": "Base",
       "requires": [
@@ -996,6 +1061,7 @@
       ]
     },
     {
+      "id": 66,
       "link": [23, 24],
       "name": "Blue Pegs Down - Into the Pot",
       "requires": [
@@ -1003,6 +1069,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [23, 25],
       "name": "Base",
       "requires": [
@@ -1010,6 +1077,7 @@
       ]
     },
     {
+      "id": 68,
       "link": [23, 26],
       "name": "Red Cane",
       "requires": [
@@ -1017,6 +1085,7 @@
       ]
     },
     {
+      "id": 69,
       "link": [24, 23],
       "name": "Fairies",
       "requires": [
@@ -1024,6 +1093,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [25, 23],
       "name": "Base",
       "requires": [
@@ -1031,6 +1101,7 @@
       ]
     },
     {
+      "id": 71,
       "link": [25, 25],
       "name": "Blue Pegs Down",
       "requires": [
@@ -1039,6 +1110,7 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 72,
       "link": [26, 27],
       "name": "Base",
       "requires": [
@@ -1047,6 +1119,7 @@
       ]
     },
     {
+      "id": 73,
       "link": [27, 28],
       "name": "Thaw Kholdstare - Fire Rod",
       "requires": [
@@ -1054,6 +1127,7 @@
       ]
     },
     {
+      "id": 74,
       "link": [27, 28],
       "name": "Thaw Kholdstare - Bombos Medallion",
       "requires": [
@@ -1062,6 +1136,7 @@
       ]
     },
     {
+      "id": 75,
       "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Master Sword",
       "requires": [
@@ -1069,30 +1144,49 @@
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 5}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 10}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 10
+            }}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "count": 3}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 6}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 6
+            }}
           ]},
           {"and": [
             {"bossProficiency": 3},
             {"damage": {"enemy": "Kholdstare", "count": 2}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 4},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]}
         ]}
       ],
       "setsFlags": ["DefeatedKholdstare"],
       "collectsItems": [12, 13],
-      "devNote": ["FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."]
+      "devNote": [
+        "FIXME: This is also possible with the fighter sword and spin attacks, and the hammer. Both are quite difficult."
+      ]
     },
     {
+      "id": 76,
       "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Sword (L3-L4)",
       "requires": [
@@ -1100,35 +1194,63 @@
         {"or": [
           {"and": [
             {"damage": {"enemy": "Kholdstare", "count": 2}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 4}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 4
+            }}
           ]},
           {"and": [
             {"bossProficiency": 2},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 3},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"bossProficiency": 4},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 2
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"damage": {"enemy": "Kholdstare", "count": 1}},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"bossProficiency": 2},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"sword": 4},
             {"bossProficiency": 3},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 2}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 2
+            }}
           ]},
           {"and": [
             {"sword": 4},
@@ -1140,18 +1262,27 @@
       "collectsItems": [12, 13]
     },
     {
+      "id": 77,
       "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Fire Rod",
       "requires": [
         {"or": [
           {"and": [
             {"fireRod": 14},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 3}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 3
+            }}
           ]},
           {"and": [
             {"fireRod": 12},
             {"bossProficiency": 2},
-            {"damage": {"enemy": "Kholdstare", "attack": "Kholdstare's Falling Ice", "count": 1}}
+            {"damage": {
+              "enemy": "Kholdstare",
+              "attack": "Kholdstare's Falling Ice",
+              "count": 1
+            }}
           ]},
           {"and": [
             {"fireRod": 12},
@@ -1167,6 +1298,7 @@
       "collectsItems": [12, 13]
     },
     {
+      "id": 78,
       "link": [28, 28],
       "name": "Kholdstare (Already Thawed) - Precise Multi-Hit Fire Rod",
       "requires": [
@@ -1210,5 +1342,6 @@
       ]
     }
   ],
-  "nextNotableId": 3
+  "nextNotableId": 3,
+  "nextStratId": 79
 }

@@ -8,20 +8,66 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "closed"},
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "small-1"},
-      {"supported": {"closed": [], "small-2": [4]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [4]
+        },
+        "default": "small-2"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [9]}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [9]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -71,14 +117,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 7,
+          "id": 1,
           "name": "Old Man Cave",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 94,
+          "id": 2,
           "name": "Dark Death Mountain Great Fairy",
           "world": "dark"
         }
@@ -91,8 +137,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 48,
+          "id": 3,
           "name": "Old Man's House Entrance",
           "world": "light"
         }
@@ -104,8 +150,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 49,
+          "id": 4,
           "name": "Old Man's House Back Entrance",
           "world": "light"
         }
@@ -125,8 +171,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 47,
+          "id": 5,
           "name": "Death Mountain Return Cave",
           "world": "light"
         }
@@ -138,8 +184,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 6,
           "romEntranceId": 35,
+          "id": 6,
           "name": "Spectacle Rock Top Entrance",
           "world": "light"
         }
@@ -164,8 +210,8 @@
       ],
       "entrances": [
         {
-          "id": 7,
           "romEntranceId": 51,
+          "id": 7,
           "name": "Tower of Hera Entrance",
           "world": "light"
         }
@@ -177,8 +223,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 9,
           "romEntranceId": 33,
+          "id": 9,
           "name": "Spectacle Rock Bottom Left Entrance",
           "world": "light"
         }
@@ -190,8 +236,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 10,
           "romEntranceId": 34,
+          "id": 10,
           "name": "Spectacle Rock Bottom Right Entrance",
           "world": "light"
         }
@@ -203,8 +249,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 11,
           "romEntranceId": 65,
+          "id": 11,
           "name": "Spike Cave Entrance",
           "world": "dark"
         }
@@ -216,8 +262,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 8,
           "romEntranceId": 55,
+          "id": 8,
           "name": "Ganon's Tower Entrance",
           "world": "dark"
         }
@@ -228,8 +274,8 @@
     {
       "id": 1,
       "locationName": "Rescue Old Man",
-      "world": "light",
       "itemLocation": 2,
+      "world": "light",
       "item": "MagicMirror",
       "itemAddress": "0xF69FA"
     },
@@ -252,6 +298,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -267,6 +314,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Invincibility",
       "world": "light",
@@ -279,12 +327,14 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -300,6 +350,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Invincibility",
       "world": "light",
@@ -312,12 +363,14 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Rescue Old Man",
       "world": "light",
@@ -329,15 +382,21 @@
       "followerComplete": "Old Man"
     },
     {
+      "id": 8,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 9,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -349,18 +408,21 @@
       ]
     },
     {
+      "id": 10,
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 11,
       "link": [3, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 12,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
@@ -372,18 +434,21 @@
       ]
     },
     {
+      "id": 13,
       "link": [3, 4],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 14,
       "link": [3, 5],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 15,
       "link": [4, 2],
       "name": "Base",
       "world": "any",
@@ -392,6 +457,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [4, 2],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -403,9 +469,14 @@
           "h_jumpOffLedge"
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 17,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
@@ -417,12 +488,14 @@
       ]
     },
     {
+      "id": 18,
       "link": [4, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 19,
       "link": [4, 4],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -430,18 +503,28 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 20,
       "link": [4, 4],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 21,
       "link": [5, 1],
       "name": "Base",
       "world": "any",
@@ -450,12 +533,14 @@
       ]
     },
     {
+      "id": 22,
       "link": [5, 3],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 23,
       "link": [5, 6],
       "name": "Base",
       "world": "light",
@@ -475,12 +560,14 @@
       ]
     },
     {
+      "id": 24,
       "link": [5, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 25,
       "link": [5, 10],
       "name": "Base",
       "world": "light",
@@ -489,24 +576,28 @@
       ]
     },
     {
+      "id": 26,
       "link": [6, 5],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 27,
       "link": [6, 7],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 28,
       "link": [6, 8],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 29,
       "link": [6, 10],
       "name": "Base",
       "world": "light",
@@ -515,6 +606,7 @@
       ]
     },
     {
+      "id": 30,
       "link": [6, 11],
       "name": "Base",
       "world": "light",
@@ -523,21 +615,24 @@
       ]
     },
     {
+      "id": 31,
       "link": [7, 6],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 32,
       "link": [7, 7],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         "recheckLinkState"
       ]
     },
     {
+      "id": 33,
       "link": [7, 12],
       "name": "Base",
       "world": "any",
@@ -546,12 +641,14 @@
       ]
     },
     {
+      "id": 34,
       "link": [8, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 35,
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
@@ -559,6 +656,7 @@
       "collectsItems": [2]
     },
     {
+      "id": 36,
       "link": [8, 9],
       "name": "Base",
       "world": "light",
@@ -567,6 +665,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [9, 5],
       "name": "Base",
       "world": "any",
@@ -575,6 +674,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [9, 7],
       "name": "Base",
       "world": "any",
@@ -583,6 +683,7 @@
       ]
     },
     {
+      "id": 39,
       "link": [9, 9],
       "name": "Ether Tablet",
       "world": "light",
@@ -594,6 +695,7 @@
       "collectsItems": [3]
     },
     {
+      "id": 40,
       "link": [9, 13],
       "name": "Open Ganon's Tower",
       "world": "dark",
@@ -602,6 +704,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [10, 5],
       "name": "Base",
       "world": "light",
@@ -610,6 +713,7 @@
       ]
     },
     {
+      "id": 42,
       "link": [11, 5],
       "name": "Base",
       "world": "light",
@@ -618,6 +722,7 @@
       ]
     },
     {
+      "id": 43,
       "link": [12, 3],
       "name": "Base",
       "world": "any",
@@ -626,6 +731,7 @@
       ]
     },
     {
+      "id": 44,
       "link": [13, 9],
       "name": "Base",
       "world": "dark",
@@ -633,5 +739,6 @@
         "h_OpenGanonsTower"
       ]
     }
-  ]
+  ],
+  "nextStratId": 45
 }

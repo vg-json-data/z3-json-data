@@ -15,6 +15,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Fairies",
       "requires": [
@@ -22,5 +23,6 @@
         {"refill": {"type": "Fairy", "limit": 4}}
       ]
     }
-  ]
+  ],
+  "nextStratId": 2
 }

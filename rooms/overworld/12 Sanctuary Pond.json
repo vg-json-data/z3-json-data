@@ -8,16 +8,51 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "dual-small": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "dual-small": [1, 1], "dual-upper": [1, 1], "small-1": [1], "small-2": [1]}, "default": "dual-small"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 1],
+          "dual-upper": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "dual-small"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "dual-small": [1, 1], "dual-upper": [1, 1], "small-1": [1], "small-2": [1]}, "default": "dual-small"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 1],
+          "dual-upper": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "dual-small"
+      }
     ]
   },
   "enemySpawns": {
@@ -94,15 +129,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base - Swim",
       "world": "any",
@@ -111,10 +152,12 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 4
 }

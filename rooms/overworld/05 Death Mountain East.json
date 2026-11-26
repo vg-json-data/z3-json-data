@@ -8,20 +8,67 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"},
-      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": []}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [9, 9], "small-1": [9], "small-2": [9]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [9, 9],
+          "small-1": [9],
+          "small-2": [9]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [3]}, "default": "small-1"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [3]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"},
-      {"supported": {"closed": [], "small-2": [12]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [12]
+        },
+        "default": "small-2"
+      }
     ]
   },
   "enemySpawns": {
@@ -86,14 +133,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 32,
+          "id": 1,
           "name": "Paradox Cave Top Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 20,
+          "id": 2,
           "name": "Superbunny Cave Top Entrance",
           "world": "dark"
         }
@@ -113,8 +160,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 59,
+          "id": 3,
           "name": "Hookshot Cave North Exit",
           "world": "dark"
         }
@@ -126,8 +173,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 58,
+          "id": 4,
           "name": "Hookshot Cave South Entrance",
           "world": "dark"
         }
@@ -139,14 +186,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 29,
+          "id": 5,
           "name": "Spiral Cave Top Entrance",
           "world": "light"
         },
         {
-          "id": 6,
           "romEntranceId": 21,
+          "id": 6,
           "name": "Turtle Rock Laser Door Exit",
           "world": "dark"
         }
@@ -158,14 +205,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 7,
           "romEntranceId": 79,
+          "id": 7,
           "name": "Mimic Cave Entrance",
           "world": "light"
         },
         {
-          "id": 8,
           "romEntranceId": 25,
+          "id": 8,
           "name": "Turtle Rock Big Chest Exit",
           "world": "dark"
         }
@@ -177,14 +224,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 9,
           "romEntranceId": 27,
+          "id": 9,
           "name": "Fairy Ascension Trinexx Refill Entrance",
           "world": "light"
         },
         {
-          "id": 10,
           "romEntranceId": 24,
+          "id": 10,
           "name": "Turtle Rock Laser Bridge Exit",
           "world": "dark"
         }
@@ -196,14 +243,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 11,
           "romEntranceId": 28,
+          "id": 11,
           "name": "Spiral Cave Bottom Exit",
           "world": "light"
         },
         {
-          "id": 12,
           "romEntranceId": 31,
+          "id": 12,
           "name": "Paradox Cave Entrance South of Pit",
           "world": "light"
         }
@@ -215,8 +262,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 13,
           "romEntranceId": 26,
+          "id": 13,
           "name": "Fairy Ascension Cave Bottom Entrance",
           "world": "light"
         }
@@ -228,26 +275,26 @@
       "world": "both",
       "entrances": [
         {
-          "id": 14,
           "romEntranceId": 80,
+          "id": 14,
           "name": "Hookshot Fairy Cave Entrance",
           "world": "light"
         },
         {
-          "id": 15,
           "romEntranceId": 30,
+          "id": 15,
           "name": "Paradox Cave Entrance South of Block",
           "world": "light"
         },
         {
-          "id": 16,
           "romEntranceId": 19,
+          "id": 16,
           "name": "Superbunny Cave Bottom Entrance",
           "world": "dark"
         },
         {
-          "id": 17,
           "romEntranceId": 88,
+          "id": 17,
           "name": "Dark Death Mountain Shop Entrance",
           "world": "dark"
         }
@@ -284,6 +331,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -296,6 +344,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base - Mirror Shield",
       "world": "dark",
@@ -311,6 +360,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Tank the Damage",
       "world": "dark",
@@ -335,6 +385,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Damageless",
       "world": "dark",
@@ -366,10 +417,15 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         {"combatProficiency": 3},
         "canCrossRoomOverheadPickups"
@@ -379,6 +435,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -391,6 +448,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Tank the Damage",
       "world": "dark",
@@ -416,6 +474,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Damageless",
       "world": "dark",
@@ -459,6 +518,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 2],
       "name": "Bonk Fairy",
       "world": "light",
@@ -468,6 +528,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Base - Lift Rock",
       "world": "dark",
@@ -477,6 +538,7 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 11,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -496,12 +558,14 @@
       ]
     },
     {
+      "id": 12,
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 13,
       "link": [2, 5],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -510,6 +574,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [2, 6],
       "name": "Base",
       "world": "light",
@@ -518,6 +583,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [2, 8],
       "name": "Base",
       "world": "light",
@@ -526,6 +592,7 @@
       ]
     },
     {
+      "id": 16,
       "link": [2, 11],
       "name": "Base",
       "world": "any",
@@ -534,10 +601,15 @@
       ]
     },
     {
+      "id": 17,
       "link": [3, 1],
       "name": "Enter with Strong Overhead Object - Lynel Push",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         {"combatProficiency": 4},
         "canCrossRoomOverheadPickups"
@@ -548,6 +620,7 @@
       ]
     },
     {
+      "id": 18,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -567,12 +640,14 @@
       ]
     },
     {
+      "id": 19,
       "link": [3, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 20,
       "link": [4, 2],
       "name": "Base",
       "world": "dark",
@@ -581,6 +656,7 @@
       ]
     },
     {
+      "id": 21,
       "link": [4, 4],
       "name": "Base - Item Pickup",
       "world": "light",
@@ -588,19 +664,24 @@
       "collectsItems": [1]
     },
     {
+      "id": 22,
       "link": [5, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 23,
       "link": [6, 7],
       "name": "Base",
       "world": "dark",
       "requires": [],
-      "devNote": ["FIXME: There is a way to go from 2 to 7 from the dark world to dark world with mirror."]
+      "devNote": [
+        "FIXME: There is a way to go from 2 to 7 from the dark world to dark world with mirror."
+      ]
     },
     {
+      "id": 24,
       "link": [6, 9],
       "name": "Base",
       "world": "light",
@@ -609,12 +690,14 @@
       ]
     },
     {
+      "id": 25,
       "link": [7, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 26,
       "link": [8, 10],
       "name": "Base",
       "world": "light",
@@ -623,16 +706,18 @@
       ]
     },
     {
+      "id": 27,
       "link": [9, 9],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         {"lift": 2},
         "recheckLinkState"
       ]
     },
     {
+      "id": 28,
       "link": [9, 9],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -640,18 +725,28 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 29,
       "link": [9, 9],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 30,
       "link": [9, 10],
       "name": "Base",
       "world": "light",
@@ -660,6 +755,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [9, 10],
       "name": "Base",
       "world": "dark",
@@ -668,6 +764,7 @@
       ]
     },
     {
+      "id": 32,
       "link": [9, 11],
       "name": "Base",
       "world": "light",
@@ -681,12 +778,14 @@
       ]
     },
     {
+      "id": 33,
       "link": [9, 11],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 34,
       "link": [9, 12],
       "name": "Base - Hookshot",
       "world": "light",
@@ -695,6 +794,7 @@
       ]
     },
     {
+      "id": 35,
       "link": [10, 9],
       "name": "Base",
       "world": "light",
@@ -703,6 +803,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [10, 11],
       "name": "Base",
       "world": "any",
@@ -711,6 +812,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [11, 9],
       "name": "Base",
       "world": "light",
@@ -719,6 +821,7 @@
       ]
     },
     {
+      "id": 38,
       "link": [11, 9],
       "name": "Without Jumping",
       "world": "light",
@@ -735,12 +838,14 @@
       ]
     },
     {
+      "id": 39,
       "link": [11, 9],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 40,
       "link": [12, 9],
       "name": "Base - Hookshot",
       "world": "light",
@@ -748,5 +853,6 @@
         "Hookshot"
       ]
     }
-  ]
+  ],
+  "nextStratId": 41
 }

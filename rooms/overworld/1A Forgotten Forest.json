@@ -8,16 +8,44 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"wide": [1], "dual-small": [1, 1], "small-1": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "dual-small": [1, 1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [2], "light-only": [2], "light-and-mirror": [2, null, 2]}, "default": "light-only"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2],
+          "light-only": [2],
+          "light-and-mirror": [2, null, 2]
+        },
+        "default": "light-only"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -90,8 +118,8 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 87,
+          "id": 1,
           "name": "Red Shield Shop",
           "world": "dark"
         }
@@ -105,15 +133,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -121,9 +155,14 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -146,6 +185,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -154,26 +194,45 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 6,
       "link": [1, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 7,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -196,31 +255,47 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 9,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 10,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 11,
       "link": [2, 2],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -228,75 +303,123 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 12,
       "link": [2, 3],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 13,
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 14,
       "link": [3, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 15,
       "link": [3, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 16,
       "link": [3, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 17,
       "link": [3, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "devNote": ["FIXME: Might be possible, depending on how the tiling is done."]
     },
     {
+      "id": 18,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 19,
       "link": [3, 3],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -304,7 +427,12 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 20
 }

@@ -8,16 +8,45 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [2]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [2]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "wide": [1], "small-2": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-2": [1]
+        },
+        "default": "wide"
+      }
     ],
     "west": [
-      {"supported": {"wide": [1], "dual-small": [2, 1], "small-2": [1], "lake": [1, "return"]}, "default": "dual-small"}
+      {
+        "supported": {
+          "wide": [1],
+          "dual-small": [2, 1],
+          "small-2": [1],
+          "lake": [1, "return"]
+        },
+        "default": "dual-small"
+      }
     ]
   },
   "enemySpawns": {
@@ -78,14 +107,14 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 2,
+          "id": 1,
           "name": "Sanctuary",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 90,
+          "id": 2,
           "name": "Dark Sanctuary",
           "world": "dark"
         }
@@ -105,8 +134,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 110,
+          "id": 3,
           "name": "Sanctuary Bonk Rock Cave",
           "world": "light"
         }
@@ -125,15 +154,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "any",
@@ -141,15 +176,21 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
@@ -159,12 +200,14 @@
       "devNote": ["FIXME: With some edge variants, there is a walkway here."]
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Base - Bonk Rocks",
       "world": "light",
@@ -174,15 +217,21 @@
       "unlocksDoor": [1]
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Base - Already Opened",
       "world": "light",
@@ -191,10 +240,12 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 10
 }

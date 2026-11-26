@@ -8,20 +8,80 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-2": [11]}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [7, 7], "small-1": [7], "small-2": [7]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [11]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [7, 7],
+          "small-1": [7],
+          "small-2": [7]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "dual-small": [1, 2], "small-1": [1], "small-2": [2]}, "default": "dual-small"},
-      {"supported": {"closed": [], "dual-small": [12, 3], "small-1": [12], "small-2": [3]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [1, 2],
+          "small-1": [1],
+          "small-2": [2]
+        },
+        "default": "dual-small"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [12, 3],
+          "small-1": [12],
+          "small-2": [3]
+        },
+        "default": "small-2"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "dual-small": [7, 4], "dual-upper": [7, 4], "small-1": [7], "small-2": [4]}, "default": "small-1"},
-      {"supported": {"closed": [], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [7, 4],
+          "dual-upper": [7, 4],
+          "small-1": [7],
+          "small-2": [4]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-2": [10]}, "default": "closed"},
-      {"supported": {"closed": [], "dual-small": [13, 1], "dual-upper": [13, 1], "small-1": [13], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [10]
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [13, 1],
+          "dual-upper": [13, 1],
+          "small-1": [13],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -118,26 +178,26 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 44,
+          "id": 1,
           "name": "Lost Woods Hideout Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 42,
+          "id": 2,
           "name": "Skull Woods Main Entrance",
           "world": "dark"
         },
         {
-          "id": 3,
           "romEntranceId": 119,
+          "id": 3,
           "name": "Skull Woods Bottom Left Drop Entrance",
           "world": "dark"
         },
         {
-          "id": 4,
           "romEntranceId": 120,
+          "id": 4,
           "name": "Skull Woods Bottom Right Drop Entrance",
           "world": "dark"
         }
@@ -149,14 +209,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 122,
+          "id": 5,
           "name": "Lost Woods Hideout Bush Entrance",
           "world": "light"
         },
         {
-          "id": 6,
           "romEntranceId": 118,
+          "id": 6,
           "name": "Skull Woods Bush Entrance",
           "world": "dark"
         }
@@ -168,8 +228,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 7,
           "romEntranceId": 41,
+          "id": 7,
           "name": "Skull Woods Second Main Entrance",
           "world": "dark"
         }
@@ -184,8 +244,8 @@
       ],
       "entrances": [
         {
-          "id": 8,
           "romEntranceId": 60,
+          "id": 8,
           "name": "Lost Woods Gamble",
           "world": "light"
         }
@@ -197,8 +257,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 9,
           "romEntranceId": 121,
+          "id": 9,
           "name": "Skull Woods Top Left Drop Entrance",
           "world": "dark"
         }
@@ -215,8 +275,8 @@
           "world": "light"
         },
         {
-          "id": 11,
           "romEntranceId": 43,
+          "id": 11,
           "name": "Skull Woods Fire Rod Entrance",
           "world": "dark"
         }
@@ -228,8 +288,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 12,
           "romEntranceId": 40,
+          "id": 12,
           "name": "Skull Woods Second Area Exit",
           "world": "dark"
         }
@@ -263,15 +323,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -279,10 +345,15 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": ["Grab the rock to the north."]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base - Bush",
       "world": "light",
@@ -291,6 +362,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Dodge",
       "world": "light",
@@ -302,6 +374,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -310,10 +383,15 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -324,9 +402,14 @@
           ]}
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 7,
       "link": [1, 7],
       "name": "Base",
       "world": "dark",
@@ -344,6 +427,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [1, 7],
       "name": "Range Kill",
       "world": "dark",
@@ -390,6 +474,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [1, 7],
       "name": "Base - Alternate Weapons",
       "world": "dark",
@@ -419,6 +504,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [1, 7],
       "name": "Tank",
       "world": "dark",
@@ -429,6 +515,7 @@
       "note": ["It is possible to Lure some of the Ropa away and take less damage."]
     },
     {
+      "id": 11,
       "link": [1, 7],
       "name": "Dodge and Tank",
       "world": "dark",
@@ -444,9 +531,12 @@
         ]}
       ],
       "note": ["It is possible to Lure some of the Ropa away and take less damage."],
-      "devNote": ["This is possible as a superbunny, as the bush needs to be lifted before taking damage."]
+      "devNote": [
+        "This is possible as a superbunny, as the bush needs to be lifted before taking damage."
+      ]
     },
     {
+      "id": 12,
       "link": [1, 7],
       "name": "Cape",
       "world": "dark",
@@ -464,10 +554,15 @@
       "devNote": ["It is possible to Lure some of the Ropa away to use less magic."]
     },
     {
+      "id": 13,
       "link": [1, 7],
       "name": "Enter with Strong Overhead Object - Double Ropa Kill",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         {"combatProficiency": 3},
         "canCrossRoomOverheadPickups",
@@ -487,6 +582,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [1, 7],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
@@ -500,6 +596,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [1, 7],
       "name": "Very Precise Manipulation",
       "world": "dark",
@@ -514,10 +611,15 @@
       ]
     },
     {
+      "id": 16,
       "link": [1, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"or": [
@@ -528,21 +630,35 @@
           ]}
         ]}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 17,
       "link": [1, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 18,
       "link": [1, 13],
       "name": "Base - Bush",
       "world": "light",
@@ -551,6 +667,7 @@
       ]
     },
     {
+      "id": 19,
       "link": [1, 13],
       "name": "Dodge",
       "world": "light",
@@ -562,6 +679,7 @@
       ]
     },
     {
+      "id": 20,
       "link": [1, 13],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -570,35 +688,59 @@
       ]
     },
     {
+      "id": 21,
       "link": [1, 13],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 22,
       "link": [2, 1],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 23,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 24,
       "link": [2, 2],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -606,31 +748,54 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 25,
       "link": [2, 10],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 26,
       "link": [2, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 27,
       "link": [2, 12],
       "name": "Base",
       "world": "dark",
@@ -639,31 +804,47 @@
       ]
     },
     {
+      "id": 28,
       "link": [2, 13],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 29,
       "link": [2, 13],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 30,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 31,
       "link": [3, 3],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -671,10 +852,17 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "note": ["It may be necessary to use the nearby bushes to push back the first Ropa, then use one of the two skull rocks to kill it."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "note": [
+        "It may be necessary to use the nearby bushes to push back the first Ropa, then use one of the two skull rocks to kill it."
+      ]
     },
     {
+      "id": 32,
       "link": [3, 4],
       "name": "Base - Bush Throw",
       "world": "dark",
@@ -693,6 +881,7 @@
       ]
     },
     {
+      "id": 33,
       "link": [3, 4],
       "name": "Bunny",
       "world": "dark",
@@ -704,48 +893,78 @@
       ]
     },
     {
+      "id": 34,
       "link": [3, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 35,
       "link": [3, 4],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 36,
       "link": [3, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 37,
       "link": [3, 12],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 38,
       "link": [3, 12],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 39,
       "link": [3, 12],
       "name": "Base",
       "world": "dark",
@@ -763,31 +982,47 @@
       ]
     },
     {
+      "id": 40,
       "link": [4, 3],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 41,
       "link": [4, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 42,
       "link": [4, 4],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 43,
       "link": [4, 4],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -795,10 +1030,17 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "note": ["It may be necessary to use the nearby bushes to kill or push back the Ropa to get to the rock."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "note": [
+        "It may be necessary to use the nearby bushes to kill or push back the Ropa to get to the rock."
+      ]
     },
     {
+      "id": 44,
       "link": [4, 5],
       "name": "Base",
       "world": "any",
@@ -807,6 +1049,7 @@
       ]
     },
     {
+      "id": 45,
       "link": [4, 6],
       "name": "Base - Bush Throw",
       "world": "dark",
@@ -820,6 +1063,7 @@
       ]
     },
     {
+      "id": 46,
       "link": [4, 6],
       "name": "Bunny",
       "world": "dark",
@@ -831,22 +1075,33 @@
       ]
     },
     {
+      "id": 47,
       "link": [4, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 48,
       "link": [4, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 49,
       "link": [4, 8],
       "name": "Base - Bush",
       "world": "light",
@@ -855,22 +1110,33 @@
       ]
     },
     {
+      "id": 50,
       "link": [4, 12],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 51,
       "link": [4, 12],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 52,
       "link": [6, 4],
       "name": "Base",
       "world": "dark",
@@ -883,6 +1149,7 @@
       ]
     },
     {
+      "id": 53,
       "link": [7, 1],
       "name": "Base",
       "world": "dark",
@@ -901,6 +1168,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [7, 1],
       "name": "Range Kill",
       "world": "dark",
@@ -940,6 +1208,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [7, 1],
       "name": "Base - Alternate Weapons",
       "world": "dark",
@@ -978,9 +1247,12 @@
         ]},
         {"lift": 0}
       ],
-      "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
+      "note": [
+        "It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."
+      ]
     },
     {
+      "id": 56,
       "link": [7, 1],
       "name": "Tank",
       "world": "dark",
@@ -1004,9 +1276,12 @@
         ]},
         {"lift": 0}
       ],
-      "note": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."]
+      "note": [
+        "It is possible to kill the first two Ropa with Bushes then lure the third out of the way to take less damage."
+      ]
     },
     {
+      "id": 57,
       "link": [7, 1],
       "name": "Cape",
       "world": "dark",
@@ -1024,9 +1299,12 @@
         ]},
         {"lift": 0}
       ],
-      "devNote": ["It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."]
+      "devNote": [
+        "It is possible to kill the first two Ropa with Bushes then lure the third out of the way to save magic."
+      ]
     },
     {
+      "id": 58,
       "link": [7, 1],
       "name": "Precise Manipulation, Rock Kill",
       "world": "dark",
@@ -1040,9 +1318,12 @@
         "Grab a skull rock and skip the next Ropa and use the rock to kill one of the bottom left two.",
         "Return for another rock or manipulate the last Ropa very precisely to sneak past it."
       ],
-      "detailNote": ["Note that it is also possible to grab a skull rock and reset the room, to kill one of the first Ropas quicker"]
+      "detailNote": [
+        "Note that it is also possible to grab a skull rock and reset the room, to kill one of the first Ropas quicker"
+      ]
     },
     {
+      "id": 59,
       "link": [7, 1],
       "name": "Very Precise Manipulation",
       "world": "dark",
@@ -1064,41 +1345,66 @@
       ]
     },
     {
+      "id": 60,
       "link": [7, 3],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 61,
       "link": [7, 4],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 62,
       "link": [7, 4],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 63,
       "link": [7, 7],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 64,
       "link": [7, 7],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1106,20 +1412,36 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "note": ["It may be necessary to use the nearby bushes to kill the Ropas to get to the rock."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "note": [
+        "It may be necessary to use the nearby bushes to kill the Ropas to get to the rock."
+      ]
     },
     {
+      "id": 65,
       "link": [7, 12],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 66,
       "link": [8, 4],
       "name": "Base - Bush",
       "world": "light",
@@ -1128,6 +1450,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [8, 8],
       "name": "Base - Collect Item",
       "world": "light",
@@ -1135,9 +1458,12 @@
         "h_collectItemOverhead"
       ],
       "collectsItems": [1],
-      "devNote": ["FIXME: This item can actually be collected multiple times in vanilla, as long as Link doesn't give it to the witch."]
+      "devNote": [
+        "FIXME: This item can actually be collected multiple times in vanilla, as long as Link doesn't give it to the witch."
+      ]
     },
     {
+      "id": 68,
       "link": [8, 11],
       "name": "Base - Bush",
       "world": "any",
@@ -1146,6 +1472,7 @@
       ]
     },
     {
+      "id": 69,
       "link": [9, 10],
       "name": "Base",
       "world": "light",
@@ -1165,6 +1492,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [9, 10],
       "name": "Base - No Thief Hit",
       "world": "light",
@@ -1176,18 +1504,24 @@
           {"cape": 32}
         ]}
       ],
-      "devNote": ["The thief is somewhat difficult to dodge; dodging it will use the Guard Despawn strat."]
+      "devNote": [
+        "The thief is somewhat difficult to dodge; dodging it will use the Guard Despawn strat."
+      ]
     },
     {
+      "id": 71,
       "link": [9, 10],
       "name": "Guard Despawn",
       "world": "light",
       "requires": [
         {"combatProficiency": 3}
       ],
-      "note": ["Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."]
+      "note": [
+        "Go up to the right to move the guard far enough off camera to despawn it, but not so far as it will respawn at its starting position."
+      ]
     },
     {
+      "id": 72,
       "link": [9, 10],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1203,6 +1537,7 @@
       ]
     },
     {
+      "id": 73,
       "link": [9, 10],
       "name": "Base",
       "world": "dark",
@@ -1211,36 +1546,56 @@
       ]
     },
     {
+      "id": 74,
       "link": [9, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 75,
       "link": [10, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 76,
       "link": [10, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 77,
       "link": [10, 9],
       "name": "Base - Bush",
       "world": "light",
@@ -1250,9 +1605,12 @@
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
-      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."]
+      "note": [
+        "If there are guards in the forest, it can help to bring a bush to throw at the guard."
+      ]
     },
     {
+      "id": 78,
       "link": [10, 9],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1261,6 +1619,7 @@
       ]
     },
     {
+      "id": 79,
       "link": [10, 9],
       "name": "Open Skull Woods",
       "world": "dark",
@@ -1270,6 +1629,7 @@
       "setsFlags": ["OpenedSkullWoods"]
     },
     {
+      "id": 80,
       "link": [10, 9],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -1278,15 +1638,21 @@
       ]
     },
     {
+      "id": 81,
       "link": [10, 10],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 82,
       "link": [10, 10],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1294,9 +1660,14 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 83,
       "link": [10, 11],
       "name": "Base",
       "world": "light",
@@ -1307,9 +1678,12 @@
           {"damage": {"enemy": "Sword Soldier (Blue)", "count": 1}}
         ]}
       ],
-      "note": ["If there are guards in the forest, it can help to bring a bush to throw at the guard."]
+      "note": [
+        "If there are guards in the forest, it can help to bring a bush to throw at the guard."
+      ]
     },
     {
+      "id": 84,
       "link": [10, 11],
       "name": "Base",
       "world": "dark",
@@ -1322,28 +1696,47 @@
       ]
     },
     {
+      "id": 85,
       "link": [10, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 86,
       "link": [10, 11],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 87,
       "link": [10, 13],
       "name": "Base",
       "world": "light",
@@ -1355,6 +1748,7 @@
       ]
     },
     {
+      "id": 88,
       "link": [10, 13],
       "name": "Base",
       "world": "light",
@@ -1368,42 +1762,70 @@
       ]
     },
     {
+      "id": 89,
       "link": [10, 13],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 90,
       "link": [11, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 91,
       "link": [11, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 92,
       "link": [11, 8],
       "name": "Base - Bush",
       "world": "any",
@@ -1412,6 +1834,7 @@
       ]
     },
     {
+      "id": 93,
       "link": [11, 9],
       "name": "Base",
       "world": "light",
@@ -1424,6 +1847,7 @@
       ]
     },
     {
+      "id": 94,
       "link": [11, 10],
       "name": "Base",
       "world": "light",
@@ -1436,43 +1860,68 @@
       ]
     },
     {
+      "id": 95,
       "link": [11, 10],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 96,
       "link": [11, 10],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 97,
       "link": [11, 10],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 98,
       "link": [11, 11],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 99,
       "link": [11, 11],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1480,21 +1929,35 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 100,
       "link": [11, 13],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 101,
       "link": [12, 2],
       "name": "Base",
       "world": "dark",
@@ -1503,51 +1966,85 @@
       ]
     },
     {
+      "id": 102,
       "link": [12, 3],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 103,
       "link": [12, 4],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 104,
       "link": [12, 4],
       "name": "Carry Strong Overhead Object",
       "world": "any",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 105,
       "link": [12, 7],
       "name": "Carry Strong Overhead Object",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 106,
       "link": [12, 12],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 107,
       "link": [12, 12],
       "name": "Exit with Skull Rock Overhead",
       "world": "dark",
@@ -1555,9 +2052,14 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 108,
       "link": [13, 1],
       "name": "Base",
       "world": "light",
@@ -1569,6 +2071,7 @@
       ]
     },
     {
+      "id": 109,
       "link": [13, 1],
       "name": "Base - Sword or No Agahnim",
       "world": "light",
@@ -1577,58 +2080,97 @@
       ]
     },
     {
+      "id": 110,
       "link": [13, 1],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 111,
       "link": [13, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 112,
       "link": [13, 2],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 113,
       "link": [13, 10],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 114,
       "link": [13, 10],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 115,
       "link": [13, 11],
       "name": "Carry Strong Overhead Object - Agahnim Not Defeated",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         "canRiskPermanentLossOfAccess",
         {"notFlag": "GameStateAgahnim"}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 116
 }

@@ -24,6 +24,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base - Dash Into Bookcase",
       "requires": [
@@ -32,5 +33,6 @@
       ],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 2
 }

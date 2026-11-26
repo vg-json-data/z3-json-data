@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ],
     "south": [
-      {"supported": {"wide": [2]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [2]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"wide": [2], "lake": [2, 4]}, "default": "lake"}
+      {
+        "supported": {
+          "wide": [2],
+          "lake": [2, 4]
+        },
+        "default": "lake"
+      }
     ],
     "west": [
-      {"supported": {"wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ]
   },
   "enemySpawns": {
@@ -119,6 +142,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
@@ -127,6 +151,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -135,6 +160,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 2],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -143,9 +169,14 @@
         "Hammer",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 4,
       "link": [2, 3],
       "name": "Base",
       "world": "any",
@@ -154,6 +185,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [2, 4],
       "name": "Base",
       "world": "any",
@@ -162,6 +194,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [3, 2],
       "name": "Base",
       "world": "any",
@@ -170,20 +203,23 @@
       ]
     },
     {
+      "id": 7,
       "link": [3, 3],
+      "name": "Dark World Portal",
       "fromWorld": "light",
       "toWorld": "dark",
-      "name": "Dark World Portal",
       "requires": [
         {"lift": 1},
         "recheckLinkState"
       ]
     },
     {
+      "id": 8,
       "link": [4, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 9
 }

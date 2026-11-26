@@ -8,16 +8,38 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "small-2"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -106,8 +128,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 92,
+          "id": 2,
           "name": "Waterfall of Wishing",
           "world": "light"
         }
@@ -139,6 +161,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Rock Overhead",
       "world": "light",
@@ -146,31 +169,45 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 4,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
       "requires": [],
-      "devNote": ["FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."]
+      "devNote": [
+        "FIXME: Is this too hard? You can kill the Ropa before going down and the crabs arent too hard to dodge, but both are on the cusp."
+      ]
     },
     {
+      "id": 5,
       "link": [2, 2],
       "name": "Disturb Catfish",
       "world": "dark",
@@ -180,6 +217,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 6,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -188,6 +226,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [2, 4],
       "name": "Base",
       "world": "any",
@@ -196,6 +235,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -204,16 +244,19 @@
       ]
     },
     {
+      "id": 9,
       "link": [4, 2],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 10,
       "link": [4, 3],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 11
 }

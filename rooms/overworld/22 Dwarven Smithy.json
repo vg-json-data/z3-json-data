@@ -8,16 +8,39 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [5]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [5]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [6]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [6]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-2": [2]}, "default": "small-2"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [2]
+        },
+        "default": "small-2"
+      }
     ]
   },
   "enemySpawns": {
@@ -65,14 +88,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 100,
+          "id": 1,
           "name": "Blacksmith's Hut Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 17,
+          "id": 2,
           "name": "Magic Bat Cave Entrance",
           "world": "light"
         }
@@ -92,8 +115,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 126,
+          "id": 3,
           "name": "Magic Bat Cave Drop Entrance",
           "world": "light"
         }
@@ -105,8 +128,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 131,
+          "id": 4,
           "name": "Dark Hammer Peg Cave",
           "world": "dark"
         }
@@ -116,17 +139,22 @@
       "id": 5,
       "name": "Southern Non-Vanilla Edge",
       "world": "both",
-      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
+      "note": [
+        "This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."
+      ]
     },
     {
       "id": 6,
       "name": "Eastern Non-Vanilla Edge",
       "world": "both",
-      "note": ["This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."]
+      "note": [
+        "This is included because ALTTPRetiling uses a dark rock to enter the room in the Dark World."
+      ]
     }
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Base",
       "world": "dark",
@@ -136,12 +164,14 @@
       "setsFollower": "Purple Chest"
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -150,6 +180,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 3],
       "name": "Base - Drop",
       "world": "light",
@@ -158,6 +189,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 4],
       "name": "Base - Hammer Pegs",
       "world": "dark",
@@ -167,6 +199,7 @@
       "setsFlags": ["OpenedHammerPegsStaircase"]
     },
     {
+      "id": 6,
       "link": [1, 4],
       "name": "Base - Already Opened",
       "world": "dark",
@@ -175,12 +208,14 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 5],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 8,
       "link": [1, 5],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -189,12 +224,14 @@
       ]
     },
     {
+      "id": 9,
       "link": [1, 6],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 10,
       "link": [1, 6],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -203,12 +240,14 @@
       ]
     },
     {
+      "id": 11,
       "link": [2, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 12,
       "link": [2, 1],
       "name": "Base",
       "world": "dark",
@@ -217,27 +256,35 @@
       ]
     },
     {
+      "id": 13,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 14,
       "link": [4, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 15,
       "link": [5, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 16,
       "link": [5, 1],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -246,15 +293,21 @@
       ]
     },
     {
+      "id": 17,
       "link": [5, 5],
       "name": "Exit with Bush Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 18,
       "link": [5, 5],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -262,15 +315,21 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 19,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 20,
       "link": [6, 1],
       "name": "Base - Lift Non-Vanilla Rock",
       "world": "dark",
@@ -279,15 +338,21 @@
       ]
     },
     {
+      "id": 21,
       "link": [6, 6],
       "name": "Exit with Bush Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 22,
       "link": [6, 6],
       "name": "Exit with Bush Overhead",
       "world": "dark",
@@ -295,7 +360,12 @@
         "canCrossRoomOverheadPickups",
         {"carry": 2}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 23
 }

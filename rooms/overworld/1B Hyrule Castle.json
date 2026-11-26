@@ -8,20 +8,67 @@
   "size": [4, 4],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": []}, "default": "closed"},
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"wide": [3], "small-1": [3]}, "default": "small-1"},
-      {"supported": {"wide": [2], "small-2": [2]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [3],
+          "small-1": [3]
+        },
+        "default": "small-1"
+      },
+      {
+        "supported": {
+          "wide": [2],
+          "small-2": [2]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": []}, "default": "closed"},
-      {"supported": {"small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      },
+      {
+        "supported": {
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "light-only": [4], "light-and-mirror": [4, 5, null]}, "default": "light-only"},
-      {"supported": {"closed": [], "dual-small": [5, 3], "small-1": [5], "small-2": [3]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "light-only": [4],
+          "light-and-mirror": [4, 5, null]
+        },
+        "default": "light-only"
+      },
+      {
+        "supported": {
+          "closed": [],
+          "dual-small": [5, 3],
+          "small-1": [5],
+          "small-2": [3]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -165,13 +212,15 @@
       "world": "light",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 4,
+          "id": 1,
           "name": "Hyrule Castle Main Entrance",
           "world": "light"
         }
       ],
-      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+      "devNote": [
+        "This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."
+      ]
     },
     {
       "id": 9,
@@ -179,8 +228,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 2,
           "romEntranceId": 50,
+          "id": 2,
           "name": "Hyrule Castle Secret Entrance (Stairs)",
           "world": "light"
         }
@@ -192,8 +241,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 125,
+          "id": 3,
           "name": "Hyrule Castle Secret Entrance (Drop)",
           "world": "light"
         }
@@ -223,8 +272,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 36,
+          "id": 4,
           "name": "Agahnim's Tower Entrance",
           "world": "light"
         }
@@ -241,8 +290,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 5,
           "romEntranceId": 99,
+          "id": 5,
           "name": "Pyramid Great Fairy",
           "world": "dark"
         }
@@ -254,8 +303,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 6,
           "romEntranceId": 123,
+          "id": 6,
           "name": "Ganon Drop",
           "world": "dark"
         }
@@ -267,8 +316,8 @@
       "world": "dark",
       "entrances": [
         {
-          "id": 7,
           "romEntranceId": 54,
+          "id": 7,
           "name": "Pyramid Exit",
           "world": "dark"
         }
@@ -278,7 +327,9 @@
       "id": 17,
       "name": "West Area",
       "world": "light",
-      "devNote": ["This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."]
+      "devNote": [
+        "This is separated because in the Light World, if Zelda hasn't been rescued, guards block the path."
+      ]
     },
     {
       "id": 18,
@@ -286,13 +337,15 @@
       "world": "light",
       "entrances": [
         {
-          "id": 8,
           "romEntranceId": 5,
+          "id": 8,
           "name": "Hyrule Castle Upper East Entrance",
           "world": "light"
         }
       ],
-      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+      "devNote": [
+        "This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."
+      ]
     },
     {
       "id": 19,
@@ -300,13 +353,15 @@
       "world": "light",
       "entrances": [
         {
-          "id": 9,
           "romEntranceId": 3,
+          "id": 9,
           "name": "Hyrule Castle Upper West Entrance",
           "world": "light"
         }
       ],
-      "devNote": ["This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."]
+      "devNote": [
+        "This is a separate node because after Agahnim 1 is defeated, the door is permanently locked."
+      ]
     }
   ],
   "items": [
@@ -321,6 +376,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -328,32 +384,57 @@
         "canCrossRoomOverheadPickups",
         {"carry": 1}
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
-      "note": ["Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner."]
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
+      "note": [
+        "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner."
+      ]
     },
     {
+      "id": 2,
       "link": [1, 5],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 5],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 4,
       "link": [1, 6],
       "name": "Base",
       "world": "light",
@@ -362,30 +443,42 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 6],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Exit with Signpost Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 7,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 8,
       "link": [2, 3],
       "name": "Base",
       "world": "light",
@@ -394,22 +487,33 @@
       ]
     },
     {
+      "id": 9,
       "link": [2, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 10,
       "link": [2, 3],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 11,
       "link": [2, 4],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -417,12 +521,17 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
       ]
     },
     {
+      "id": 12,
       "link": [2, 5],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -430,12 +539,17 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "All of the enemies can be killed with bushes. Be sure not to let damaged enemies get off-screen or they can despawn and regain their health."
       ]
     },
     {
+      "id": 13,
       "link": [2, 13],
       "name": "Base",
       "world": "light",
@@ -459,6 +573,7 @@
       ]
     },
     {
+      "id": 14,
       "link": [2, 13],
       "name": "No Guards Yet",
       "world": "light",
@@ -469,6 +584,7 @@
       ]
     },
     {
+      "id": 15,
       "link": [3, 2],
       "name": "Base",
       "world": "light",
@@ -477,41 +593,62 @@
       ]
     },
     {
+      "id": 16,
       "link": [3, 2],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 17,
       "link": [3, 2],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 18,
       "link": [3, 3],
       "name": "Exit with Signpost Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": ["If a guard is in the way, kill it with bushes."]
     },
     {
+      "id": 19,
       "link": [3, 3],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 20,
       "link": [4, 4],
       "name": "Exit with Signpost Overhead",
       "world": "light",
@@ -519,17 +656,26 @@
         {"flag": "GameStateZelda"},
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
         "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
       ]
     },
     {
+      "id": 21,
       "link": [4, 13],
       "name": "Enter with Strong Overhead Object - Guard Kill",
       "world": "light",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         {"flag": "GameStateZelda"},
         {"combatProficiency": 3},
@@ -543,6 +689,7 @@
       ]
     },
     {
+      "id": 22,
       "link": [4, 17],
       "name": "Rescued Zelda",
       "world": "light",
@@ -552,28 +699,47 @@
       "devNote": ["Entering through this transition without this flag will softlock the game."]
     },
     {
+      "id": 23,
       "link": [5, 1],
       "name": "Carry Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class1"},
+      "entranceState": {
+        "overhead": {
+          "type": "class1"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 24,
       "link": [5, 1],
       "name": "Carry Strong Overhead Object",
       "world": "dark",
-      "entranceState": {"state": "overhead", "type": "class3"},
+      "entranceState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "requires": [
         "canCrossRoomOverheadPickups",
         {"combatProficiency": 3}
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 25,
       "link": [5, 5],
       "name": "Bonk Fairy",
       "world": "dark",
@@ -584,19 +750,25 @@
       "note": ["The left tree will release a fairy when dashed into."]
     },
     {
+      "id": 26,
       "link": [5, 5],
       "name": "Exit with Signpost Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"},
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      },
       "note": [
         "Kill the enemies with nearby bushes if needed, and grab the signpost or a rock in the southeast corner.",
         "With no weapons besides bushes, be sure not to lure more enemies at a time than there are bushes to kill with."
       ]
     },
     {
+      "id": 27,
       "link": [5, 5],
       "name": "Superbunny to Link - Rupee Pull Westmost Statue",
       "world": "dark",
@@ -606,6 +778,7 @@
       ]
     },
     {
+      "id": 28,
       "link": [5, 13],
       "name": "Base",
       "world": "light",
@@ -632,12 +805,14 @@
       ]
     },
     {
+      "id": 29,
       "link": [5, 13],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 30,
       "link": [5, 13],
       "name": "No Guards Yet",
       "world": "light",
@@ -648,6 +823,7 @@
       ]
     },
     {
+      "id": 31,
       "link": [5, 13],
       "name": "Guard Bush Kill",
       "world": "light",
@@ -662,12 +838,14 @@
       ]
     },
     {
+      "id": 32,
       "link": [5, 17],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 33,
       "link": [6, 1],
       "name": "Base",
       "world": "light",
@@ -676,12 +854,14 @@
       ]
     },
     {
+      "id": 34,
       "link": [6, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 35,
       "link": [6, 10],
       "name": "Base",
       "world": "light",
@@ -690,6 +870,7 @@
       ]
     },
     {
+      "id": 36,
       "link": [6, 13],
       "name": "Base",
       "world": "any",
@@ -700,6 +881,7 @@
       ]
     },
     {
+      "id": 37,
       "link": [7, 7],
       "name": "Castle Gate Portal - Agahnim Defeated",
       "fromWorld": "light",
@@ -710,16 +892,18 @@
       ]
     },
     {
+      "id": 38,
       "link": [7, 7],
       "name": "Base",
       "world": "dark",
       "requires": [
         {"follower": "Super Bomb"}
       ],
-      "followerComplete": "Super Bomb",
-      "setsFlags": ["OpenedPyramidBigBomb"]
+      "setsFlags": ["OpenedPyramidBigBomb"],
+      "followerComplete": "Super Bomb"
     },
     {
+      "id": 39,
       "link": [7, 8],
       "name": "Base",
       "world": "light",
@@ -728,6 +912,7 @@
       ]
     },
     {
+      "id": 40,
       "link": [7, 9],
       "name": "Base",
       "world": "light",
@@ -736,6 +921,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [7, 11],
       "name": "Base",
       "world": "dark",
@@ -752,6 +938,7 @@
       "note": ["Lure the Ropa to the left and squeeze past it."]
     },
     {
+      "id": 42,
       "link": [7, 13],
       "name": "Agahnim Not Defeated",
       "world": "light",
@@ -762,12 +949,14 @@
       ]
     },
     {
+      "id": 43,
       "link": [7, 13],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 44,
       "link": [7, 14],
       "name": "Base",
       "world": "dark",
@@ -776,12 +965,14 @@
       ]
     },
     {
+      "id": 45,
       "link": [8, 7],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 46,
       "link": [9, 7],
       "name": "Base",
       "world": "light",
@@ -790,6 +981,7 @@
       ]
     },
     {
+      "id": 47,
       "link": [11, 6],
       "name": "Base",
       "world": "light",
@@ -798,6 +990,7 @@
       ]
     },
     {
+      "id": 48,
       "link": [11, 7],
       "name": "Base",
       "world": "light",
@@ -806,12 +999,14 @@
       ]
     },
     {
+      "id": 49,
       "link": [11, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 50,
       "link": [11, 7],
       "name": "Base - Collect Item",
       "world": "dark",
@@ -821,6 +1016,7 @@
       "collectsItems": [1]
     },
     {
+      "id": 51,
       "link": [11, 9],
       "name": "Base",
       "fromWorld": "dark",
@@ -829,9 +1025,12 @@
         "MagicMirror",
         "recheckLinkState"
       ],
-      "note": ["Mirror from the ledge above the ledge with the item in order to bypass the bushes."]
+      "note": [
+        "Mirror from the ledge above the ledge with the item in order to bypass the bushes."
+      ]
     },
     {
+      "id": 52,
       "link": [11, 11],
       "name": "Base",
       "world": "light",
@@ -841,6 +1040,7 @@
       "setsFlags": ["OpenedCastleElectricBarrier"]
     },
     {
+      "id": 53,
       "link": [11, 12],
       "name": "Base",
       "world": "light",
@@ -853,6 +1053,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [11, 12],
       "name": "Cape",
       "world": "light",
@@ -861,6 +1062,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [11, 15],
       "name": "Base",
       "world": "dark",
@@ -869,6 +1071,7 @@
       ]
     },
     {
+      "id": 56,
       "link": [11, 18],
       "name": "Base",
       "world": "light",
@@ -877,6 +1080,7 @@
       ]
     },
     {
+      "id": 57,
       "link": [11, 19],
       "name": "Base",
       "world": "light",
@@ -885,6 +1089,7 @@
       ]
     },
     {
+      "id": 58,
       "link": [12, 11],
       "name": "Base",
       "world": "light",
@@ -895,15 +1100,19 @@
           {"damage": {"enemy": "Lightning Lock", "count": 1}}
         ]}
       ],
-      "note": ["Hold down while exiting the door to move through the lightning lock without taking damage."]
+      "note": [
+        "Hold down while exiting the door to move through the lightning lock without taking damage."
+      ]
     },
     {
+      "id": 59,
       "link": [13, 5],
       "name": "Base",
       "world": "any",
       "requires": []
     },
     {
+      "id": 60,
       "link": [13, 6],
       "name": "Base",
       "world": "any",
@@ -914,6 +1123,7 @@
       ]
     },
     {
+      "id": 61,
       "link": [13, 7],
       "name": "Agahnim Not Defeated",
       "world": "light",
@@ -924,12 +1134,14 @@
       ]
     },
     {
+      "id": 62,
       "link": [13, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 63,
       "link": [13, 13],
       "name": "Castle Gate Portal - Agahnim Defeated",
       "fromWorld": "light",
@@ -940,12 +1152,14 @@
       ]
     },
     {
+      "id": 64,
       "link": [14, 7],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 65,
       "link": [16, 7],
       "name": "Base",
       "world": "dark",
@@ -954,6 +1168,7 @@
       ]
     },
     {
+      "id": 66,
       "link": [16, 11],
       "name": "Mirror",
       "fromWorld": "dark",
@@ -962,9 +1177,12 @@
         "MagicMirror",
         "recheckLinkState"
       ],
-      "note": ["Mirror from the ledge above the ledge with the item in order to bypass jumping off of the ledge."]
+      "note": [
+        "Mirror from the ledge above the ledge with the item in order to bypass jumping off of the ledge."
+      ]
     },
     {
+      "id": 67,
       "link": [17, 4],
       "name": "Rescued Zelda",
       "world": "light",
@@ -973,6 +1191,7 @@
       ]
     },
     {
+      "id": 68,
       "link": [17, 5],
       "name": "Base",
       "world": "light",
@@ -994,6 +1213,7 @@
       ]
     },
     {
+      "id": 69,
       "link": [17, 5],
       "name": "No Guards Yet",
       "world": "light",
@@ -1004,6 +1224,7 @@
       ]
     },
     {
+      "id": 70,
       "link": [17, 5],
       "name": "Base",
       "world": "light",
@@ -1013,9 +1234,12 @@
           {"damage": {"enemy": "Spear Soldier (Red)", "count": 1}}
         ]}
       ],
-      "exitState": {"state": "leaveNormally"}
+      "exitState": {
+        "leaveNormally": {}
+      }
     },
     {
+      "id": 71,
       "link": [17, 13],
       "name": "Guard Tank",
       "world": "light",
@@ -1034,6 +1258,7 @@
       ]
     },
     {
+      "id": 72,
       "link": [17, 13],
       "name": "Precise Guard Dodge",
       "world": "light",
@@ -1048,16 +1273,19 @@
       ]
     },
     {
+      "id": 73,
       "link": [18, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     },
     {
+      "id": 74,
       "link": [19, 11],
       "name": "Base",
       "world": "light",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 75
 }

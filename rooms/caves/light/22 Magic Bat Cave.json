@@ -34,21 +34,25 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [2, 1],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 2,
       "link": [2, 3],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 3,
       "link": [3, 2],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 4,
       "link": [3, 3],
       "name": "Base - Magic Powder",
       "requires": [
@@ -60,5 +64,6 @@
         "FIXME: It is not clear if this removes Lonk state, as the practice hack regularly crashes when obtaining this item location."
       ]
     }
-  ]
+  ],
+  "nextStratId": 5
 }

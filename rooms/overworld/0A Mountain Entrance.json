@@ -8,16 +8,40 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ],
     "south": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -95,14 +119,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 6,
+          "id": 1,
           "name": "Old Man Cave Entrance",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 22,
+          "id": 2,
           "name": "Bumper Cave Entrance",
           "world": "dark"
         }
@@ -114,14 +138,14 @@
       "world": "both",
       "entrances": [
         {
-          "id": 3,
           "romEntranceId": 46,
+          "id": 3,
           "name": "Death Mountain Return Cave Exit",
           "world": "light"
         },
         {
-          "id": 4,
           "romEntranceId": 23,
+          "id": 4,
           "name": "Bumper Cave Exit",
           "world": "dark"
         }
@@ -140,15 +164,21 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Superbunny to Link - Rupee Pull Northern Tree",
       "world": "dark",
@@ -158,6 +188,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "light",
@@ -166,6 +197,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 2],
       "name": "Base",
       "world": "dark",
@@ -175,6 +207,7 @@
       ]
     },
     {
+      "id": 5,
       "link": [1, 2],
       "name": "Alternate Weapons",
       "world": "dark",
@@ -197,6 +230,7 @@
       ]
     },
     {
+      "id": 6,
       "link": [1, 2],
       "name": "Sign Post Kill",
       "world": "dark",
@@ -210,6 +244,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [1, 2],
       "name": "Tank",
       "world": "dark",
@@ -219,6 +254,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -230,6 +266,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -238,6 +275,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [3, 1],
       "name": "Tank",
       "world": "dark",
@@ -248,14 +286,18 @@
           {"damage": {"enemy": "Dacto", "count": 1}}
         ]}
       ],
-      "note": ["The Dacto will fly straight at Link. Hold left or jump off with a charged spin attack to prevent getting hit."]
+      "note": [
+        "The Dacto will fly straight at Link. Hold left or jump off with a charged spin attack to prevent getting hit."
+      ]
     },
     {
+      "id": 11,
       "link": [3, 3],
       "name": "Base - Item Pickup",
       "world": "dark",
       "requires": [],
       "collectsItems": [1]
     }
-  ]
+  ],
+  "nextStratId": 12
 }

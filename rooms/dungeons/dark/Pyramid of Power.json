@@ -5,7 +5,7 @@
   "roomType": "Dungeon",
   "enemySpawns": {
     "enemies": [
-      "Ganon"
+      {"name": "Ganon"}
     ]
   },
   "nodes": [
@@ -24,12 +24,16 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": [
         {"sword": 2}
       ],
-      "devNote": ["FIXME: Before dungeon randomization occurs, this needs to be updated to include realistic fight requirements."]
+      "devNote": [
+        "FIXME: Before dungeon randomization occurs, this needs to be updated to include realistic fight requirements."
+      ]
     }
-  ]
+  ],
+  "nextStratId": 2
 }

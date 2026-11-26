@@ -34,6 +34,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Fairies",
       "requires": [
@@ -41,6 +42,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -49,6 +51,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 3],
       "name": "Base",
       "requires": [
@@ -59,6 +62,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [3, 1],
       "name": "Base",
       "requires": [
@@ -67,12 +71,16 @@
       "note": ["Drop using the top right pit."]
     },
     {
+      "id": 5,
       "link": [3, 2],
       "name": "Base",
       "requires": [
         "h_fallToLowerFloor"
       ],
-      "note": ["Drop using one of the southern pits to convert bunny to superbunnyand remain at the lower entrance."]
+      "note": [
+        "Drop using one of the southern pits to convert bunny to superbunnyand remain at the lower entrance."
+      ]
     }
-  ]
+  ],
+  "nextStratId": 6
 }

@@ -8,16 +8,38 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"dual-small": [1, 2], "small-1": [2]}, "default": "dual-small"}
+      {
+        "supported": {
+          "dual-small": [1, 2],
+          "small-1": [2]
+        },
+        "default": "dual-small"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "small-2": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-2": [1]
+        },
+        "default": "closed"
+      }
     ],
     "east": [
-      {"supported": {"wide": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "wide": [1]
+        },
+        "default": "wide"
+      }
     ],
     "west": [
-      {"supported": {"closed": []}, "default": "closed"}
+      {
+        "supported": {
+          "closed": []
+        },
+        "default": "closed"
+      }
     ]
   },
   "enemySpawns": {
@@ -87,8 +109,8 @@
       "world": "both",
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 81,
+          "id": 1,
           "name": "Cave 45 Entrance",
           "world": "light"
         }
@@ -97,6 +119,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Bonk Fairy",
       "world": "light",
@@ -107,15 +130,21 @@
       "note": ["The southeast tree will release a fairy when dashed into."]
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base",
       "world": "any",
@@ -124,12 +153,14 @@
       ]
     },
     {
+      "id": 4,
       "link": [1, 3],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 5,
       "link": [2, 1],
       "name": "Base",
       "world": "any",
@@ -138,15 +169,21 @@
       ]
     },
     {
+      "id": 6,
       "link": [2, 2],
       "name": "Exit with Bush Overhead",
       "world": "any",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 7,
       "link": [3, 1],
       "name": "Base",
       "world": "light",
@@ -155,12 +192,14 @@
       ]
     },
     {
+      "id": 8,
       "link": [3, 1],
       "name": "Base",
       "world": "dark",
       "requires": []
     },
     {
+      "id": 9,
       "link": [3, 1],
       "name": "Exit with Strong Bush Overhead",
       "world": "light",
@@ -168,7 +207,12 @@
         "canCrossRoomOverheadPickups",
         "h_jumpOffLedge"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     }
-  ]
+  ],
+  "nextStratId": 10
 }

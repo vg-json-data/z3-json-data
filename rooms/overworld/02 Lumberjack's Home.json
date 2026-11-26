@@ -8,16 +8,41 @@
   "size": [2, 2],
   "edgeVariants": {
     "north": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ],
     "south": [
-      {"supported": {"closed": [], "wide": [1], "small-1": [1]}, "default": "wide"}
+      {
+        "supported": {
+          "closed": [],
+          "wide": [1],
+          "small-1": [1]
+        },
+        "default": "wide"
+      }
     ],
     "east": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "closed"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "closed"
+      }
     ],
     "west": [
-      {"supported": {"closed": [], "small-1": [1]}, "default": "small-1"}
+      {
+        "supported": {
+          "closed": [],
+          "small-1": [1]
+        },
+        "default": "small-1"
+      }
     ]
   },
   "enemySpawns": {
@@ -65,20 +90,20 @@
       ],
       "entrances": [
         {
-          "id": 1,
           "romEntranceId": 107,
+          "id": 1,
           "name": "Lumberjack House",
           "world": "light"
         },
         {
-          "id": 2,
           "romEntranceId": 18,
+          "id": 2,
           "name": "Lumberjack Tree View Point",
           "world": "light"
         },
         {
-          "id": 3,
           "romEntranceId": 96,
+          "id": 3,
           "name": "Dark Lumberjack Shop",
           "world": "dark"
         }
@@ -90,8 +115,8 @@
       "world": "light",
       "entrances": [
         {
-          "id": 4,
           "romEntranceId": 127,
+          "id": 4,
           "name": "Lumberjack Tree Drop Entrance",
           "world": "light"
         }
@@ -100,24 +125,35 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Exit with Signpost Overhead",
       "world": "light",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class3"}
+      "exitState": {
+        "overhead": {
+          "type": "class3"
+        }
+      }
     },
     {
+      "id": 2,
       "link": [1, 1],
       "name": "Exit with Bush Overhead",
       "world": "dark",
       "requires": [
         "canCrossRoomOverheadPickups"
       ],
-      "exitState": {"state": "overhead", "type": "class1"}
+      "exitState": {
+        "overhead": {
+          "type": "class1"
+        }
+      }
     },
     {
+      "id": 3,
       "link": [1, 2],
       "name": "Base - Tree Dash",
       "world": "light",
@@ -126,5 +162,6 @@
         "h_PegasusBootsBonk"
       ]
     }
-  ]
+  ],
+  "nextStratId": 4
 }

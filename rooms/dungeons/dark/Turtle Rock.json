@@ -6,27 +6,25 @@
   "dungeonId": 24,
   "enemySpawns": {
     "enemies": [
-      "Trinexx (Blue Head)",
-      "Trinexx (Body)",
-      "Trinexx (Red Head)",
-
-      "Bari (Blue)",
-      "Floating Stalfos Head",
-      "Hardhat Beetle (Red)",
-      "Helmasaur",
-      "Hokkubokku",
-      "Stalfos",
-      "Zol",
-      "Zoro",
-
-      "Bubble",
-      "Chain Chomp",
-      "Flying Tile",
-      "Guruguru Bar",
-      "Laser Eye",
-      "Medusa",
-      "Rabbit Beam",
-      "Rolling Spike Trap"
+      {"name": "Trinexx (Blue Head)"},
+      {"name": "Trinexx (Body)"},
+      {"name": "Trinexx (Red Head)"},
+      {"name": "Bari (Blue)"},
+      {"name": "Floating Stalfos Head"},
+      {"name": "Hardhat Beetle (Red)"},
+      {"name": "Helmasaur"},
+      {"name": "Hokkubokku"},
+      {"name": "Stalfos"},
+      {"name": "Zol"},
+      {"name": "Zoro"},
+      {"name": "Bubble"},
+      {"name": "Chain Chomp"},
+      {"name": "Flying Tile"},
+      {"name": "Guruguru Bar"},
+      {"name": "Laser Eye"},
+      {"name": "Medusa"},
+      {"name": "Rabbit Beam"},
+      {"name": "Rolling Spike Trap"}
     ]
   },
   "nodes": [
@@ -257,9 +255,7 @@
       "name": "Trinexx Fire and Ice Heads",
       "subArea": "Turtle Rock B3",
       "nodeType": "pre-boss",
-      "note": [
-        "Represents killing Trinexx's Fire and Ice Heads."
-      ]
+      "note": ["Represents killing Trinexx's Fire and Ice Heads."]
     },
     {
       "id": 39,
@@ -436,7 +432,9 @@
       "doorPosition": "north",
       "doorLocation": 22,
       "keyType": "big",
-      "devNote": ["This door requires a big key to enter it normally, from the south, but a small key to enter from the north."]
+      "devNote": [
+        "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
+      ]
     },
     {
       "id": 7,
@@ -495,6 +493,7 @@
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 1],
       "name": "Magic Pot Refill",
       "requires": [
@@ -503,6 +502,7 @@
       ]
     },
     {
+      "id": 2,
       "link": [1, 2],
       "name": "Base",
       "requires": [
@@ -510,6 +510,7 @@
       ]
     },
     {
+      "id": 3,
       "link": [2, 1],
       "name": "Base",
       "requires": [
@@ -517,6 +518,7 @@
       ]
     },
     {
+      "id": 4,
       "link": [2, 7],
       "name": "Base",
       "requires": [
@@ -524,12 +526,14 @@
       ]
     },
     {
+      "id": 5,
       "link": [3, 3],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [1]
     },
     {
+      "id": 6,
       "link": [3, 7],
       "name": "Base",
       "requires": [
@@ -537,6 +541,7 @@
       ]
     },
     {
+      "id": 7,
       "link": [4, 4],
       "name": "Magic Pot Refill",
       "requires": [
@@ -544,6 +549,7 @@
       ]
     },
     {
+      "id": 8,
       "link": [4, 7],
       "name": "Base",
       "requires": [
@@ -551,6 +557,7 @@
       ]
     },
     {
+      "id": 9,
       "link": [4, 8],
       "name": "Base",
       "requires": [
@@ -559,6 +566,7 @@
       ]
     },
     {
+      "id": 10,
       "link": [5, 5],
       "name": "Flying Tile Refill",
       "requires": [
@@ -567,9 +575,12 @@
         {"refill": {"type": "Fairy", "limit": 1}}
       ],
       "note": ["Wait in the doorway of the flying tile room to stay safe."],
-      "devNote": ["This is probably not really worth doing if you can't hide in the doorway. Link will take more damage than it's worth."]
+      "devNote": [
+        "This is probably not really worth doing if you can't hide in the doorway. Link will take more damage than it's worth."
+      ]
     },
     {
+      "id": 11,
       "link": [5, 7],
       "name": "Base",
       "requires": [
@@ -577,6 +588,7 @@
       ]
     },
     {
+      "id": 12,
       "link": [6, 7],
       "name": "Base",
       "requires": [
@@ -584,6 +596,7 @@
       ]
     },
     {
+      "id": 13,
       "link": [6, 9],
       "name": "Base",
       "requires": [
@@ -591,36 +604,42 @@
       ]
     },
     {
+      "id": 14,
       "link": [7, 2],
       "name": "Base",
       "requires": [],
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 15,
       "link": [7, 3],
       "name": "Base",
       "requires": [],
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 16,
       "link": [7, 4],
       "name": "Base",
       "requires": [],
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 17,
       "link": [7, 5],
       "name": "Base",
       "requires": [],
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 18,
       "link": [7, 6],
       "name": "Base",
       "requires": [],
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 19,
       "link": [7, 7],
       "name": "Magic Pot Refill",
       "requires": [
@@ -630,18 +649,21 @@
       "devNote": ["Doesn't require anything because node 7 already required red cane to get to."]
     },
     {
+      "id": 20,
       "link": [8, 8],
       "name": "Base - Open Left Chest",
       "requires": [],
       "collectsItems": [2]
     },
     {
+      "id": 21,
       "link": [8, 8],
       "name": "Base - Open Right Chest",
       "requires": [],
       "collectsItems": [3]
     },
     {
+      "id": 22,
       "link": [9, 9],
       "name": "Base Kill",
       "requires": [
@@ -666,6 +688,7 @@
       "note": ["Hokkubokku dies to a single fire rod hit."]
     },
     {
+      "id": 23,
       "link": [9, 9],
       "name": "Alternate Weapons",
       "requires": [
@@ -695,6 +718,7 @@
       "note": ["With ice rod, freeze a Zol and throw it several times."]
     },
     {
+      "id": 24,
       "link": [9, 9],
       "name": "Red Cane Kill",
       "requires": [
@@ -715,9 +739,12 @@
         ]}
       ],
       "collectsItems": [4],
-      "note": ["It is possible to lure the Zol away from the block to be able to kill the Hokkubokku with only 3 red blocks."]
+      "note": [
+        "It is possible to lure the Zol away from the block to be able to kill the Hokkubokku with only 3 red blocks."
+      ]
     },
     {
+      "id": 25,
       "link": [9, 10],
       "name": "Base",
       "requires": [
@@ -725,6 +752,7 @@
       ]
     },
     {
+      "id": 26,
       "link": [10, 9],
       "name": "Base",
       "requires": [
@@ -732,6 +760,7 @@
       ]
     },
     {
+      "id": 27,
       "link": [10, 10],
       "name": "Base",
       "requires": [
@@ -745,6 +774,7 @@
       "collectsItems": [5]
     },
     {
+      "id": 28,
       "link": [10, 11],
       "name": "Base",
       "requires": [
@@ -752,6 +782,7 @@
       ]
     },
     {
+      "id": 29,
       "link": [11, 10],
       "name": "Base",
       "requires": [
@@ -759,31 +790,37 @@
       ]
     },
     {
+      "id": 30,
       "link": [11, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 31,
       "link": [12, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 32,
       "link": [12, 13],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 33,
       "link": [12, 14],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 34,
       "link": [13, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 35,
       "link": [13, 13],
       "name": "Lower Blue Pegs",
       "requires": [
@@ -792,6 +829,7 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 36,
       "link": [13, 13],
       "name": "Raise Blue Pegs",
       "requires": [
@@ -800,6 +838,7 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 37,
       "link": [13, 13],
       "name": "Pokey Sword Kill",
       "requires": [
@@ -828,6 +867,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 38,
       "link": [13, 13],
       "name": "Pokey Kill",
       "requires": [
@@ -857,6 +897,7 @@
       "collectsItems": [6]
     },
     {
+      "id": 39,
       "link": [13, 13],
       "name": "Alternate Weapon Pokey Kill",
       "requires": [
@@ -874,6 +915,7 @@
       "devNote": ["FIXME: Might be possible with bombs or with fewer Hokkubokku hits."]
     },
     {
+      "id": 40,
       "link": [13, 13],
       "name": "Red Cane Pokey Kill",
       "requires": [
@@ -900,6 +942,7 @@
       ]
     },
     {
+      "id": 41,
       "link": [13, 15],
       "name": "Base",
       "requires": [
@@ -908,6 +951,7 @@
       ]
     },
     {
+      "id": 42,
       "link": [13, 15],
       "name": "Hookshot Raise Blue Pegs",
       "requires": [
@@ -916,16 +960,19 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 43,
       "link": [14, 12],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 44,
       "link": [14, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 45,
       "link": [15, 13],
       "name": "Base",
       "requires": [
@@ -934,6 +981,7 @@
       ]
     },
     {
+      "id": 46,
       "link": [15, 15],
       "name": "Lower Blue Pegs",
       "requires": [
@@ -943,22 +991,26 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 47,
       "link": [15, 15],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [7]
     },
     {
+      "id": 48,
       "link": [15, 16],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 49,
       "link": [16, 11],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 50,
       "link": [16, 16],
       "name": "Magic Pot Refill",
       "requires": [
@@ -966,11 +1018,13 @@
       ]
     },
     {
+      "id": 51,
       "link": [17, 14],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 52,
       "link": [17, 18],
       "name": "Hokkubokku Base Kills",
       "requires": [
@@ -1027,6 +1081,7 @@
       ]
     },
     {
+      "id": 53,
       "link": [17, 18],
       "name": "Alternate Weapon Hokkubokku Kills",
       "requires": [
@@ -1046,6 +1101,7 @@
       ]
     },
     {
+      "id": 54,
       "link": [17, 18],
       "name": "Red Cane Hokkubokku Kills",
       "requires": [
@@ -1067,11 +1123,13 @@
       ]
     },
     {
+      "id": 55,
       "link": [18, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 56,
       "link": [18, 18],
       "name": "Base - Bomb West Ledge Exit",
       "requires": [
@@ -1080,6 +1138,7 @@
       "unlocksDoor": [5]
     },
     {
+      "id": 57,
       "link": [18, 19],
       "name": "Base",
       "requires": [
@@ -1087,16 +1146,19 @@
       ]
     },
     {
+      "id": 58,
       "link": [18, 22],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 59,
       "link": [19, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 60,
       "link": [20, 20],
       "name": "Base - Open Chest and Return",
       "requires": [
@@ -1106,6 +1168,7 @@
       "collectsItems": [8]
     },
     {
+      "id": 61,
       "link": [20, 21],
       "name": "Base",
       "requires": [
@@ -1113,6 +1176,7 @@
       ]
     },
     {
+      "id": 62,
       "link": [21, 20],
       "name": "Base",
       "requires": [
@@ -1120,6 +1184,7 @@
       ]
     },
     {
+      "id": 63,
       "link": [21, 21],
       "name": "Base - Open Big Chest",
       "requires": [
@@ -1128,16 +1193,19 @@
       "collectsItems": [8]
     },
     {
+      "id": 64,
       "link": [21, 22],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 65,
       "link": [22, 17],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 66,
       "link": [22, 23],
       "name": "Base",
       "requires": [
@@ -1145,6 +1213,7 @@
       ]
     },
     {
+      "id": 67,
       "link": [23, 22],
       "name": "Base",
       "requires": [
@@ -1152,16 +1221,19 @@
       ]
     },
     {
+      "id": 68,
       "link": [23, 24],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 69,
       "link": [24, 23],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 70,
       "link": [24, 24],
       "name": "Base - Bomb North Wall",
       "requires": [
@@ -1170,6 +1242,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 71,
       "link": [24, 24],
       "name": "Dash Break North Wall",
       "requires": [
@@ -1178,6 +1251,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 72,
       "link": [24, 24],
       "name": "Base - Bomb East Wall",
       "requires": [
@@ -1186,6 +1260,7 @@
       "unlocksDoor": [8]
     },
     {
+      "id": 73,
       "link": [24, 24],
       "name": "Dash Break East Wall",
       "requires": [
@@ -1194,6 +1269,7 @@
       "unlocksDoor": [8]
     },
     {
+      "id": 74,
       "link": [24, 25],
       "name": "Base",
       "requires": [
@@ -1201,6 +1277,7 @@
       ]
     },
     {
+      "id": 75,
       "link": [25, 24],
       "name": "Base",
       "requires": [
@@ -1208,6 +1285,7 @@
       ]
     },
     {
+      "id": 76,
       "link": [25, 25],
       "name": "Base - Bomb South Wall",
       "requires": [
@@ -1216,6 +1294,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 77,
       "link": [25, 25],
       "name": "Dash Break South Wall",
       "requires": [
@@ -1224,6 +1303,7 @@
       "unlocksDoor": [7]
     },
     {
+      "id": 78,
       "link": [25, 25],
       "name": "Lower Orange Pegs",
       "requires": [
@@ -1232,6 +1312,7 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 79,
       "link": [25, 26],
       "name": "Base",
       "requires": [
@@ -1240,6 +1321,7 @@
       ]
     },
     {
+      "id": 80,
       "link": [25, 27],
       "name": "Base",
       "requires": [
@@ -1256,6 +1338,7 @@
       "clearsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 81,
       "link": [26, 25],
       "name": "Base",
       "requires": [
@@ -1264,6 +1347,7 @@
       ]
     },
     {
+      "id": 82,
       "link": [26, 26],
       "name": "Lower Orange Pegs",
       "requires": [
@@ -1273,6 +1357,7 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 83,
       "link": [26, 28],
       "name": "Base",
       "requires": [
@@ -1285,6 +1370,7 @@
       ]
     },
     {
+      "id": 84,
       "link": [26, 28],
       "name": "Dark",
       "requires": [
@@ -1308,6 +1394,7 @@
       ]
     },
     {
+      "id": 85,
       "link": [27, 25],
       "name": "Base",
       "requires": [
@@ -1317,12 +1404,14 @@
       "resetsObstacles": ["Blue Pegs Down"]
     },
     {
+      "id": 86,
       "link": [27, 27],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [9]
     },
     {
+      "id": 87,
       "link": [28, 29],
       "name": "Base",
       "requires": [
@@ -1343,6 +1432,7 @@
       ]
     },
     {
+      "id": 88,
       "link": [28, 29],
       "name": "Alternate Weapons",
       "requires": [
@@ -1354,6 +1444,7 @@
       ]
     },
     {
+      "id": 89,
       "link": [28, 29],
       "name": "Pegasus Boots",
       "requires": [
@@ -1380,6 +1471,7 @@
       ]
     },
     {
+      "id": 90,
       "link": [28, 29],
       "name": "Helmasaur Lure and Tank",
       "requires": [
@@ -1392,6 +1484,7 @@
       ]
     },
     {
+      "id": 91,
       "link": [29, 30],
       "name": "Base",
       "requires": [
@@ -1410,6 +1503,7 @@
       ]
     },
     {
+      "id": 92,
       "link": [29, 30],
       "name": "Pegasus Boots",
       "requires": [
@@ -1417,6 +1511,7 @@
       ]
     },
     {
+      "id": 93,
       "link": [29, 30],
       "name": "Alternate Weapons",
       "requires": [
@@ -1430,6 +1525,7 @@
       ]
     },
     {
+      "id": 94,
       "link": [29, 30],
       "name": "Lure and Tank",
       "requires": [
@@ -1442,6 +1538,7 @@
       ]
     },
     {
+      "id": 95,
       "link": [29, 31],
       "name": "Mirror Shield",
       "requires": [
@@ -1449,6 +1546,7 @@
       ]
     },
     {
+      "id": 96,
       "link": [29, 31],
       "name": "No Mirror Shield",
       "requires": [
@@ -1467,6 +1565,7 @@
       ]
     },
     {
+      "id": 97,
       "link": [29, 32],
       "name": "Mirror Shield",
       "requires": [
@@ -1474,6 +1573,7 @@
       ]
     },
     {
+      "id": 98,
       "link": [29, 32],
       "name": "No Mirror Shield",
       "requires": [
@@ -1492,6 +1592,7 @@
       ]
     },
     {
+      "id": 99,
       "link": [29, 33],
       "name": "Mirror Shield",
       "requires": [
@@ -1499,6 +1600,7 @@
       ]
     },
     {
+      "id": 100,
       "link": [29, 33],
       "name": "No Mirror Shield",
       "requires": [
@@ -1517,6 +1619,7 @@
       ]
     },
     {
+      "id": 101,
       "link": [29, 34],
       "name": "Sword and Mirror Shield",
       "requires": [
@@ -1529,6 +1632,7 @@
       ]
     },
     {
+      "id": 102,
       "link": [29, 34],
       "name": "Hardhat Kill",
       "requires": [
@@ -1563,6 +1667,7 @@
       ]
     },
     {
+      "id": 103,
       "link": [29, 34],
       "name": "Hardhat Lure",
       "requires": [
@@ -1586,6 +1691,7 @@
       ]
     },
     {
+      "id": 104,
       "link": [29, 36],
       "name": "Base",
       "requires": [
@@ -1594,11 +1700,13 @@
       ]
     },
     {
+      "id": 105,
       "link": [30, 29],
       "name": "Base",
       "requires": []
     },
     {
+      "id": 106,
       "link": [30, 30],
       "name": "Bomb South Wall",
       "requires": [
@@ -1607,6 +1715,7 @@
       "unlocksDoor": [10]
     },
     {
+      "id": 107,
       "link": [30, 34],
       "name": "Hardhat Lure and Dodge",
       "requires": [
@@ -1614,6 +1723,7 @@
       ]
     },
     {
+      "id": 108,
       "link": [30, 35],
       "name": "Base",
       "requires": [
@@ -1621,6 +1731,7 @@
       ]
     },
     {
+      "id": 109,
       "link": [31, 29],
       "name": "Base",
       "requires": [
@@ -1631,12 +1742,14 @@
       ]
     },
     {
+      "id": 110,
       "link": [31, 31],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [10]
     },
     {
+      "id": 111,
       "link": [32, 29],
       "name": "Base",
       "requires": [
@@ -1647,12 +1760,14 @@
       ]
     },
     {
+      "id": 112,
       "link": [32, 32],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [11]
     },
     {
+      "id": 113,
       "link": [33, 29],
       "name": "Base",
       "requires": [
@@ -1663,12 +1778,14 @@
       ]
     },
     {
+      "id": 114,
       "link": [33, 33],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [12]
     },
     {
+      "id": 115,
       "link": [34, 29],
       "name": "Base",
       "requires": [
@@ -1679,12 +1796,14 @@
       ]
     },
     {
+      "id": 116,
       "link": [34, 34],
       "name": "Base - Open Chest",
       "requires": [],
       "collectsItems": [13]
     },
     {
+      "id": 117,
       "link": [35, 30],
       "name": "Base",
       "requires": [
@@ -1692,6 +1811,7 @@
       ]
     },
     {
+      "id": 118,
       "link": [36, 37],
       "name": "Base",
       "requires": [
@@ -1700,6 +1820,7 @@
       ]
     },
     {
+      "id": 119,
       "link": [36, 37],
       "name": "Red Cane then Refill",
       "requires": [
@@ -1709,6 +1830,7 @@
       ]
     },
     {
+      "id": 120,
       "link": [37, 38],
       "name": "Base",
       "requires": [
@@ -1716,6 +1838,7 @@
       ]
     },
     {
+      "id": 121,
       "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Master Sword",
       "requires": [
@@ -1744,9 +1867,12 @@
           ]}
         ]}
       ],
-      "note": ["It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"]
+      "note": [
+        "It may be possible with Fighter sword, but typically its just better to have enough magic for a rod only kill"
+      ]
     },
     {
+      "id": 122,
       "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Tempered Sword",
       "requires": [
@@ -1775,6 +1901,7 @@
       ]
     },
     {
+      "id": 123,
       "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Gold Sword",
       "requires": [
@@ -1799,6 +1926,7 @@
       ]
     },
     {
+      "id": 124,
       "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Hammer",
       "requires": [
@@ -1824,6 +1952,7 @@
       ]
     },
     {
+      "id": 125,
       "link": [38, 39],
       "name": "Trinexx's Fire and Ice Heads - Rod Only Kill",
       "requires": [
@@ -1838,6 +1967,7 @@
       ]
     },
     {
+      "id": 126,
       "link": [39, 39],
       "name": "Trinexx (Final Phase) - Sword (L1)",
       "requires": [
@@ -1853,6 +1983,7 @@
       "note": ["With just the Fighter Sword, Trinexx can only be damaged with spin attacks."]
     },
     {
+      "id": 127,
       "link": [39, 39],
       "name": "Trinexx (Final Phase) - Sword (L2 - L4)",
       "requires": [
@@ -1882,6 +2013,7 @@
       "collectsItems": [14, 15]
     },
     {
+      "id": 128,
       "link": [39, 39],
       "name": "Trinexx (Final Phase) - Hammer",
       "requires": [
@@ -1895,5 +2027,6 @@
       "setsFlags": ["DefeatedTrinexx"],
       "collectsItems": [14, 15]
     }
-  ]
+  ],
+  "nextStratId": 129
 }

@@ -42,13 +42,14 @@ Some names represent a logical category rather than a single concrete item. For 
 
 ### Helpers
 
-Helpers are defined in [`helpers.json`](../helpers.json). A helper expands to its own requirements, allowing commonly repeated logic or configurable assumptions to be defined in one place.
+Helpers are defined in the `helpers` array of [`helpers.json`](../helpers.json), which follows [`z3-helpers.schema.json`](../schema/z3-helpers.schema.json). A helper expands to its own requirements, allowing commonly repeated logic or configurable assumptions to be defined in one place.
 
 Each helper has:
 
 - `name`: The string used to require the helper.
 - `requires`: The logical requirements that replace the helper when it is evaluated.
 - `note`: Optional consumer-facing explanation.
+- `detailNote`: Optional additional player-facing details.
 - `devNote`: Optional contributor-facing implementation detail.
 
 ```json
