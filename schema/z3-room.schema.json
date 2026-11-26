@@ -3,7 +3,7 @@
   "$id": "z3-room.schema.json",
   "type": "object",
   "description": "A contiguous area in Link to the Past.",
-  "required": ["id", "name", "roomType", "nodes", "strats"],
+  "required": ["id", "name", "roomType", "nodes", "strats", "nextStratId"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -376,6 +376,11 @@
         "required": ["link", "name", "requires"],
         "additionalProperties": false,
         "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Stable identifier unique among strats in this room. Missing IDs are assigned by scripts/populate_strat_ids.py."
+          },
           "link": {
             "type": "array",
             "minItems": 2,
@@ -526,6 +531,11 @@
       "type": "integer",
       "minimum": 1,
       "description": "Next notable ID to assign in this room; must be greater than all existing notable IDs."
+    },
+    "nextStratId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Next strat ID to assign in this room; must be greater than all existing strat IDs."
     }
   },
   "definitions": {

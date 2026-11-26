@@ -41,8 +41,9 @@ Room files follow [`z3-room.schema.json`](../schema/z3-room.schema.json). A room
 - `strats`: Actions and traversal logic connecting the room's nodes.
 - `notables`: Optional room-specific techniques; see [Notable Strats](strats.md#notable-strats).
 - `nextNotableId`: Next ID to assign, required when `notables` is present and greater than every existing notable ID in this room.
+- `nextStratId`: Next strat ID to assign, greater than every existing strat ID in this room; see [Strat IDs](strats.md#strat-ids).
 
-The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Overworld rooms also require `darkWorldName`, `size`, and `edgeVariants`.
+The required properties are `id`, `name`, `roomType`, `nodes`, `strats`, and `nextStratId`. Overworld rooms also require `darkWorldName`, `size`, and `edgeVariants`.
 
 ### Example
 
@@ -66,11 +67,13 @@ The required properties are `id`, `name`, `roomType`, `nodes`, and `strats`. Ove
   ],
   "strats": [
     {
+      "id": 1,
       "link": [1, 2],
       "name": "Base",
       "requires": []
     }
-  ]
+  ],
+  "nextStratId": 2
 }
 ```
 

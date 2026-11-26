@@ -122,6 +122,7 @@ class NotableTests(unittest.TestCase):
             "notables": [{"id": 1, "name": "Trick", "note": ["Description"]}],
             "nextNotableId": 2,
             "strats": [{"link": [1, 1], "name": "Test", "requires": [{"notable": "Trick"}]}],
+            "nextStratId": 1,
         }
         self.assertEqual(list(validator.iter_errors(document)), [])
         without_next_id = {key: value for key, value in document.items() if key != "nextNotableId"}
@@ -185,7 +186,7 @@ class RoomNameTests(unittest.TestCase):
         for room_type in ["Cave", "House", "Dungeon", "Special"]:
             with self.subTest(room_type=room_type):
                 room = {"id": 1, "name": "Interior", "roomType": room_type,
-                        "nodes": [], "strats": []}
+                        "nodes": [], "strats": [], "nextStratId": 1}
                 self.assertTrue(self.validator.is_valid(room))
                 room["darkWorldName"] = "Dark Interior"
                 self.assertFalse(self.validator.is_valid(room))
@@ -207,6 +208,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
             "nodes": [{"id": 1, "name": "Edge", "world": "both"},
                       {"id": 2, "name": "Interior", "world": "both"}],
             "strats": [{"link": [1, 1], "name": "Carry", "world": "dark", "requires": []}],
+            "nextStratId": 1,
         }
 
     def errors(self):
@@ -246,6 +248,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
             "nodes": [{"id": 1, "name": "Door", "nodeType": "door"}],
             "strats": [{"link": [1, 1], "name": "Leave", "requires": [],
                         "exitState": {"leaveNormally": {}}}],
+            "nextStratId": 1,
         }
         self.assertFalse(self.validator.is_valid(interior))
 
@@ -275,6 +278,7 @@ class ScreenTransitionStateTests(unittest.TestCase):
                 "id": 1, "name": "Interior", "roomType": "Cave",
                 "nodes": [{"id": 1, "name": "Door", "nodeType": "door"}],
                 "strats": [{"link": [1, 1], "name": "Carry", "requires": [], field: state}],
+                "nextStratId": 1,
             }
             self.assertFalse(self.validator.is_valid(interior))
             interior["strats"][0][field] = {"event": {"type": "DrainedFloodgate"}}

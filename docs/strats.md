@@ -8,6 +8,7 @@ Strats are usually presented in an array of strats. Multiple strats with the sam
 
 A `strat` can have the following properties:
 
+- `id`: A stable identifier unique among strats in the room; see [Strat IDs](#strat-ids).
 - `link`: The IDs of the starting and ending nodes, in that order.
 - `name`: The name of the strat.
 - `requires`: The logical requirements that must be fulfilled to execute the strat.
@@ -71,6 +72,12 @@ Requirements are evaluated sequentially in the order in which they appear. In mo
 After all requirements have been fulfilled, the strat is executed and its effects are applied. An item collected or flag set by a strat cannot satisfy an earlier requirement in that same strat; the resulting state is available to subsequent strats.
 
 An item requirement can include implicit conditions needed to use that item, in addition to requiring that the item be in the inventory. See [Item Use and Bunny Forms](logicalRequirements.md#item-use-and-bunny-forms) for the built-in item-use checks.
+
+## Strat IDs
+
+Each strat has an `id`, a positive integer unique within its room, and each room has `nextStratId`, greater than all of its strat IDs. IDs give consumers a stable way to refer to a strat; they are never changed or reused, even when strats are reordered or deleted.
+
+Contributors should omit `id` when adding strats; a new room file starts with `"nextStratId": 1`. [`scripts/populate_strat_ids.py`](../scripts/populate_strat_ids.py) assigns missing IDs in source order, starting from `nextStratId`, and updates `nextStratId`. The "Run Scripts" GitHub workflow runs it weekly, together with the [`autoformat.py`](../scripts/autoformat.py) formatter, and opens a pull request with any changes.
 
 ## Notable Strats
 

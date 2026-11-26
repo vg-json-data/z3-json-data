@@ -346,7 +346,7 @@ def validate_room(path, document, references, errors):
         validate_enemy_spawns(path, document, references, errors)
     indices = {name: {} for name in [
         "nodes", "items", "doors", "obstacles", "entrances", "teleports", "whirlpools",
-        "notables", "notable_ids",
+        "notables", "notable_ids", "strat_ids",
     ]}
     for field, namespace in [
         ("nodes", "nodes"), ("items", "items"),
@@ -361,6 +361,11 @@ def validate_room(path, document, references, errors):
                          path, document, ["notables", i, "name"], errors)
     if "nextNotableId" in document and document["nextNotableId"] <= max(indices["notable_ids"], default=0):
         _record(errors, path, "/nextNotableId", "must be greater than all existing notable IDs")
+    for i, strat in enumerate(document["strats"]):
+        if "id" in strat:
+            index_definition(indices["strat_ids"], strat["id"], strat, path, document, ["strats", i, "id"], errors)
+    if "nextStratId" in document and document["nextStratId"] <= max(indices["strat_ids"], default=0):
+        _record(errors, path, "/nextStratId", "must be greater than all existing strat IDs")
     for edge, segments in document.get("edgeVariants", {}).items():
         expected_count = document["size"][0 if edge in {"north", "south"} else 1] // 2
         if len(segments) != expected_count:
