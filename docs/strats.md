@@ -152,6 +152,8 @@ This is currently a coarse model. Detailed interactions between normal Link, bun
 
 The `collectsItems` property is an array of IDs referencing entries in the room's `items` array. Each referenced item is collected when the strat is completed.
 
+Collecting an item in the Dark World implicitly requires either the Moon Pearl or `canCollectItemsPearlless`, regardless of Link's current form.
+
 ```json
 {
   "link": [8, 8],

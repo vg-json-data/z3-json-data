@@ -283,6 +283,18 @@
             "The simplest way is to have a Wallmaster grab normal bunny.",
             "Additionally, from Superbunny form, use a rupee pull point, throw an item into a Great Fairy pool, or get hit by a Bunny Beam."
           ]
+        },
+        {
+          "id": 14,
+          "name": "canCollectItemsPearlless",
+          "techRequires": [],
+          "otherRequires": [],
+          "note": [
+            "Collect an item in the Dark World without having the Moon Pearl."
+          ],
+          "devNote": [
+            "This tech is checked implicitly when collecting an item in the Dark World without the Moon Pearl."
+          ]
         }
       ]
     }
