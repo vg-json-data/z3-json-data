@@ -571,7 +571,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 16,
@@ -580,14 +580,14 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 17,
       "link": [5, 6],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 2}
       ]
     },
     {
@@ -595,7 +595,7 @@
       "link": [6, 5],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 2}
       ]
     },
     {
@@ -605,7 +605,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 20,
@@ -614,7 +614,7 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 21,
@@ -699,7 +699,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 28,
@@ -708,14 +708,14 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 29,
       "link": [7, 8],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 3}
       ]
     },
     {
@@ -723,7 +723,7 @@
       "link": [8, 7],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 3}
       ]
     },
     {
@@ -733,7 +733,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 32,
@@ -742,7 +742,7 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 33,
