@@ -150,7 +150,8 @@
       "locationName": "Top Left 1F-2F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x77", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -158,7 +159,8 @@
       "locationName": "Top Left 3F Big Key Door",
       "doorPosition": "north",
       "doorLocation": 6,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x31", "doorIndex": 0}]
     }
   ],
   "strats": [

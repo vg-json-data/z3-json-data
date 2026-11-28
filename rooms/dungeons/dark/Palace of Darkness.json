@@ -336,7 +336,11 @@
       "locationName": "Central Path",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x4A", "doorIndex": 2},
+        {"supertile": "0x3A", "doorIndex": 0}
+      ]
     },
     {
       "id": 2,
@@ -344,7 +348,8 @@
       "locationName": "Teleporter Room South Wall - Bomb or Dash",
       "doorPosition": "south",
       "doorLocation": 5,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x4B", "doorIndex": 2}]
     },
     {
       "id": 3,
@@ -352,7 +357,8 @@
       "locationName": "West Blue Bari Hallway - Bomb or Dash",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x4B", "doorIndex": 1}]
     },
     {
       "id": 4,
@@ -360,7 +366,11 @@
       "locationName": "Map Chest Room West Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x2B", "doorIndex": 1},
+        {"supertile": "0x2A", "doorIndex": 2}
+      ]
     },
     {
       "id": 5,
@@ -368,7 +378,8 @@
       "locationName": "Map Chest Room East Bombable Wall",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x2B", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -376,7 +387,8 @@
       "locationName": "Stalfos Basement",
       "doorPosition": "north",
       "doorLocation": 13,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x0A", "doorIndex": 0}]
     },
     {
       "id": 7,
@@ -384,7 +396,11 @@
       "locationName": "The Arena North West Door",
       "doorPosition": "north",
       "doorLocation": 18,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x2A", "doorIndex": 1},
+        {"supertile": "0x1A", "doorIndex": 3}
+      ]
     },
     {
       "id": 8,
@@ -392,7 +408,8 @@
       "locationName": "Harmless Hellway Room",
       "doorPosition": "north",
       "doorLocation": 22,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x1A", "doorIndex": 0}]
     },
     {
       "id": 9,
@@ -400,7 +417,11 @@
       "locationName": "Dark Maze Locked Door",
       "doorPosition": "west",
       "doorLocation": 20,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x1A", "doorIndex": 1},
+        {"supertile": "0x19", "doorIndex": 1}
+      ]
     },
     {
       "id": 10,
@@ -408,7 +429,11 @@
       "locationName": "Big Chest Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 23,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x1A", "doorIndex": 2},
+        {"supertile": "0x19", "doorIndex": 0}
+      ]
     },
     {
       "id": 11,
@@ -416,7 +441,8 @@
       "locationName": "Dark Basement Entrance West Door",
       "doorPosition": "west",
       "doorLocation": 26,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x0B", "doorIndex": 2}]
     },
     {
       "id": 12,
@@ -424,7 +450,8 @@
       "locationName": "Dark Basement Boss Door",
       "doorPosition": "north",
       "doorLocation": 28,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x6A", "doorIndex": 0}]
     }
   ],
   "strats": [

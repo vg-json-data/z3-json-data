@@ -289,7 +289,8 @@
       "locationName": "Entrance Room North Door",
       "doorPosition": "north",
       "doorLocation": 2,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x28", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -297,7 +298,11 @@
       "locationName": "Middle Floor Eastern Room - Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 3,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x38", "doorIndex": 0},
+        {"supertile": "0x37", "doorIndex": 1}
+      ]
     },
     {
       "id": 3,
@@ -305,7 +310,11 @@
       "locationName": "Middle Floor Eastern Room - Locked Door",
       "doorPosition": "west",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x38", "doorIndex": 1},
+        {"supertile": "0x37", "doorIndex": 3}
+      ]
     },
     {
       "id": 4,
@@ -313,7 +322,8 @@
       "locationName": "Eastern Floodable Channel - North Door",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x37", "doorIndex": 2}]
     },
     {
       "id": 5,
@@ -321,7 +331,11 @@
       "locationName": "Eastern Floodgate Switch Room - Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 6,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x37", "doorIndex": 0},
+        {"supertile": "0x36", "doorIndex": 0}
+      ]
     },
     {
       "id": 6,
@@ -329,7 +343,11 @@
       "locationName": "Big Chest Room - Northwest Door",
       "doorPosition": "west",
       "doorLocation": 7,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x36", "doorIndex": 2},
+        {"supertile": "0x35", "doorIndex": 0}
+      ]
     },
     {
       "id": 7,
@@ -337,7 +355,11 @@
       "locationName": "Big Chest Room - North Door",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x36", "doorIndex": 1},
+        {"supertile": "0x26", "doorIndex": 0}
+      ]
     },
     {
       "id": 8,
@@ -345,7 +367,8 @@
       "locationName": "Fast River Room - Bombable Wall",
       "doorPosition": "north",
       "doorLocation": 20,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x16", "doorIndex": 0}]
     },
     {
       "id": 9,
@@ -353,7 +376,8 @@
       "locationName": "Fast River Room - Northwest Door",
       "doorPosition": "north",
       "doorLocation": 20,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x16", "doorIndex": 1}]
     }
   ],
   "obstacles": [

@@ -664,7 +664,8 @@
       "locationName": "Door Between Left and Right Entrances",
       "doorPosition": "east",
       "doorLocation": 2,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8C", "doorIndex": 2}]
     },
     {
       "id": 2,
@@ -672,7 +673,8 @@
       "locationName": "Map Chest Entrance",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8B", "doorIndex": 1}]
     },
     {
       "id": 3,
@@ -680,7 +682,8 @@
       "locationName": "Double Switch East Door",
       "doorPosition": "east",
       "doorLocation": 10,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x9B", "doorIndex": 0}]
     },
     {
       "id": 4,
@@ -688,7 +691,8 @@
       "locationName": "Firesnake Room South Door",
       "doorPosition": "south",
       "doorLocation": 12,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x7D", "doorIndex": 2}]
     },
     {
       "id": 5,
@@ -696,7 +700,11 @@
       "locationName": "Teleporter Room Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 12,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x7D", "doorIndex": 1},
+        {"supertile": "0x7C", "doorIndex": 1}
+      ]
     },
     {
       "id": 6,
@@ -704,7 +712,8 @@
       "locationName": "Tile Room Locked Door",
       "doorPosition": "east",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8D", "doorIndex": 1}]
     },
     {
       "id": 7,
@@ -712,7 +721,11 @@
       "locationName": "Door to Basement Crumble Bridge",
       "doorPosition": "east",
       "doorLocation": 22,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x7B", "doorIndex": 1},
+        {"supertile": "0x7C", "doorIndex": 2}
+      ]
     },
     {
       "id": 8,
@@ -720,7 +733,8 @@
       "locationName": "Armos Knights' Fairies",
       "doorPosition": "north",
       "doorLocation": 29,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x1C", "doorIndex": 2}]
     },
     {
       "id": 9,
@@ -729,6 +743,10 @@
       "doorPosition": "north",
       "doorLocation": 33,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0x6B", "doorIndex": 0},
+        {"supertile": "0x5B", "doorIndex": 0}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -739,7 +757,8 @@
       "locationName": "Mid Climb Fairies Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 37,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x5C", "doorIndex": 0}]
     },
     {
       "id": 11,
@@ -747,7 +766,8 @@
       "locationName": "Mini Helmasaur Room",
       "doorPosition": "west",
       "doorLocation": 51,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x3D", "doorIndex": 1}]
     },
     {
       "id": 12,
@@ -755,7 +775,8 @@
       "locationName": "Pre-Moldorm Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 52,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x3D", "doorIndex": 3}]
     },
     {
       "id": 13,
@@ -763,7 +784,11 @@
       "locationName": "Pre-Moldorm Locked Door",
       "doorPosition": "south",
       "doorLocation": 53,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x3D", "doorIndex": 2},
+        {"supertile": "0x4D", "doorIndex": 0}
+      ]
     },
     {
       "id": 14,
@@ -771,7 +796,8 @@
       "locationName": "Agahnim's Door",
       "doorPosition": "north",
       "doorLocation": 58,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x1D", "doorIndex": 0}]
     }
   ],
   "strats": [

@@ -339,11 +339,29 @@ The optional `lockedDoors` array defines doors, walls, or other locks whose stat
 - `doorLocation`: The node most naturally associated with the door.
 - `doorPosition`: The wall orientation: `north`, `south`, `east`, `west`, or `middle`.
 - `keyType`: The normal unlocking method.
+- `faces`: Vanilla underworld door records for this lock. Each face gives the hexadecimal `supertile` number and the zero-based `doorIndex` within that supertile's complete door list. Overworld locks and prison-cell locks use other game data and omit this field.
 - `subArea`: Organizational context within an underworld room.
 - `world`: The world containing an overworld lock.
 - `devNote`: Contributor-facing implementation detail.
 
 Like `itemLocation`, `doorLocation` identifies the most natural associated node. It does not require every interaction with the door to occur from that node.
+
+List one face per door record. A single record can draw both sides of a doorway within a supertile. When a door lock spans two supertiles, such as the Last Dark Room lock in Hyrule Castle, each supertile has its own door record.
+
+```json
+{
+  "id": 5,
+  "subArea": "Sewers (Dark)",
+  "locationName": "Last Dark Room",
+  "doorPosition": "north",
+  "doorLocation": 10,
+  "keyType": "small",
+  "faces": [
+    {"supertile": "0x21", "doorIndex": 0},
+    {"supertile": "0x11", "doorIndex": 2}
+  ]
+}
+```
 
 `doorPosition` describes the wall the door occupies, not the door's broad location within the room. A door on a north-facing wall remains `"north"` even if the wall is near the southern end of a room. Paired doors usually use opposite orientations, with the recorded orientation chosen from the perspective of the `doorLocation` reference.
 

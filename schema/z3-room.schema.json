@@ -338,6 +338,28 @@
             "type": "string",
             "enum": ["big", "small", "bomb", "bomb, boots", "boots", "glove"]
           },
+          "faces": {
+            "description": "Underworld door records that implement this lock.",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["supertile", "doorIndex"],
+              "additionalProperties": false,
+              "properties": {
+                "supertile": {
+                  "description": "Native underworld room number in hexadecimal.",
+                  "type": "string",
+                  "pattern": "^0x[0-9A-Fa-f]+$"
+                },
+                "doorIndex": {
+                  "description": "Zero-based index in the supertile's complete door list.",
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          },
           "devNote": {
             "type": "array",
             "items": {

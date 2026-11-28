@@ -222,7 +222,8 @@
       "locationName": "Big Chest Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 2,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x58", "doorIndex": 3}]
     },
     {
       "id": 2,
@@ -230,7 +231,11 @@
       "locationName": "Pot Prison East Door",
       "doorPosition": "east",
       "doorLocation": 6,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x57", "doorIndex": 2},
+        {"supertile": "0x58", "doorIndex": 1}
+      ]
     },
     {
       "id": 3,
@@ -238,7 +243,11 @@
       "locationName": "Pinball Room North Door",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x68", "doorIndex": 1},
+        {"supertile": "0x58", "doorIndex": 2}
+      ]
     },
     {
       "id": 4,
@@ -246,7 +255,8 @@
       "locationName": "Chest with Big Key Room - Bombable Wall",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x57", "doorIndex": 0}]
     },
     {
       "id": 5,
@@ -254,7 +264,8 @@
       "locationName": "Locked Door to Useless Room",
       "doorPosition": "north",
       "doorLocation": 11,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x56", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -262,7 +273,11 @@
       "locationName": "Bridge Room North Door",
       "doorPosition": "north",
       "doorLocation": 13,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x59", "doorIndex": 0},
+        {"supertile": "0x49", "doorIndex": 2}
+      ]
     },
     {
       "id": 7,
@@ -270,7 +285,8 @@
       "locationName": "Pre-Mothula Arena",
       "doorPosition": "east",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x39", "doorIndex": 1}]
     }
   ],
   "strats": [

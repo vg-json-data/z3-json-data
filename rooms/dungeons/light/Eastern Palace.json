@@ -153,7 +153,11 @@
       "locationName": "Dark Room",
       "doorPosition": "west",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xBA", "doorIndex": 0},
+        {"supertile": "0xB9", "doorIndex": 0}
+      ]
     },
     {
       "id": 2,
@@ -162,6 +166,10 @@
       "doorPosition": "north",
       "doorLocation": 7,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0xB8", "doorIndex": 0},
+        {"supertile": "0xA8", "doorIndex": 2}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -173,6 +181,10 @@
       "doorPosition": "north",
       "doorLocation": 4,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0xA9", "doorIndex": 2},
+        {"supertile": "0x99", "doorIndex": 1}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -183,7 +195,8 @@
       "locationName": "Dark Eyegore Room",
       "doorPosition": "north",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x99", "doorIndex": 0}]
     }
   ],
   "strats": [

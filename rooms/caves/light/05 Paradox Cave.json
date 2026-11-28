@@ -106,7 +106,8 @@
       "locationName": "Left Side - To Shop",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0xFF", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -114,7 +115,8 @@
       "locationName": "Right Side - To Two Chest Room",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0xFF", "doorIndex": 1}]
     }
   ],
   "obstacles": [{"id": "Push Block", "note": ["The push block is no longer in the way."]}],

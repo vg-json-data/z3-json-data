@@ -24,7 +24,11 @@
       "locationName": "Bombable Wall (West)",
       "doorPosition": "west",
       "doorLocation": 1,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [
+        {"supertile": "0xF5", "doorIndex": 0},
+        {"supertile": "0xF4", "doorIndex": 0}
+      ]
     }
   ],
   "strats": [

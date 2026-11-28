@@ -187,7 +187,11 @@
       "locationName": "Entrance Dash Bomb Wall",
       "doorPosition": "east",
       "doorLocation": 1,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [
+        {"supertile": "0xCB", "doorIndex": 0},
+        {"supertile": "0xCC", "doorIndex": 2}
+      ]
     },
     {
       "id": 2,
@@ -195,7 +199,11 @@
       "locationName": "Entrance View Port Bomb Wall",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0xCC", "doorIndex": 1},
+        {"supertile": "0xBC", "doorIndex": 3}
+      ]
     },
     {
       "id": 3,
@@ -204,6 +212,10 @@
       "doorPosition": "north",
       "doorLocation": 1,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0xCC", "doorIndex": 0},
+        {"supertile": "0xBC", "doorIndex": 1}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -214,7 +226,8 @@
       "locationName": "Door to Attic",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xAB", "doorIndex": 0}]
     },
     {
       "id": 5,
@@ -231,7 +244,8 @@
       "locationName": "Big Chest Room Locked Door",
       "doorPosition": "west",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x44", "doorIndex": 1}]
     },
     {
       "id": 7,
@@ -239,7 +253,8 @@
       "locationName": "Boss Hallway's Left Door",
       "doorPosition": "west",
       "doorLocation": 2,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xBC", "doorIndex": 0}]
     }
   ],
   "strats": [

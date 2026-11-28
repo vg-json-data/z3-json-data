@@ -273,7 +273,8 @@
       "locationName": "Spike Chest North Door",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xB3", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -281,7 +282,11 @@
       "locationName": "Spike Hallway North Door",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xB1", "doorIndex": 1},
+        {"supertile": "0xA1", "doorIndex": 0}
+      ]
     },
     {
       "id": 3,
@@ -289,7 +294,11 @@
       "locationName": "Main Lobby Northeast Door",
       "doorPosition": "east",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xC2", "doorIndex": 0},
+        {"supertile": "0xC3", "doorIndex": 0}
+      ]
     },
     {
       "id": 4,
@@ -297,7 +306,11 @@
       "locationName": "Main Lobby Southwest Door",
       "doorPosition": "west",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xC2", "doorIndex": 1},
+        {"supertile": "0xC1", "doorIndex": 1}
+      ]
     },
     {
       "id": 5,
@@ -305,7 +318,8 @@
       "locationName": "Torches and Tiles Room",
       "doorPosition": "west",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xC1", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -313,7 +327,8 @@
       "locationName": "Big Key Door Between Teleporters",
       "doorPosition": "north",
       "doorLocation": 13,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0xB1", "doorIndex": 0}]
     },
     {
       "id": 7,
@@ -322,6 +337,10 @@
       "doorPosition": "north",
       "doorLocation": 14,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0xB2", "doorIndex": 0},
+        {"supertile": "0xA2", "doorIndex": 0}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -332,7 +351,8 @@
       "locationName": "Basement Locked Mini-Cache",
       "doorPosition": "south",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x93", "doorIndex": 1}]
     },
     {
       "id": 9,
@@ -340,7 +360,8 @@
       "locationName": "Basement Cache - Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 18,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x92", "doorIndex": 0}]
     },
     {
       "id": 10,
@@ -348,7 +369,8 @@
       "locationName": "Basement Blue Orange Peg Prison - Bombable Wall",
       "doorPosition": "north",
       "doorLocation": 19,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x92", "doorIndex": 1}]
     },
     {
       "id": 11,
@@ -356,7 +378,8 @@
       "locationName": "Boss Door",
       "doorPosition": "north",
       "doorLocation": 22,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0xA0", "doorIndex": 0}]
     }
   ],
   "obstacles": [

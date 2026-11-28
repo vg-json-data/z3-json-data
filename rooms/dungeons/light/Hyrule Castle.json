@@ -205,7 +205,8 @@
       "locationName": "First Room",
       "doorPosition": "south",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x72", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -213,7 +214,8 @@
       "locationName": "Before Boomerang",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x71", "doorIndex": 0}]
     },
     {
       "id": 3,
@@ -229,7 +231,11 @@
       "locationName": "Dark Cross Room",
       "doorPosition": "north",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x32", "doorIndex": 0},
+        {"supertile": "0x22", "doorIndex": 0}
+      ]
     },
     {
       "id": 5,
@@ -237,7 +243,11 @@
       "locationName": "Last Dark Room",
       "doorPosition": "north",
       "doorLocation": 10,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x21", "doorIndex": 0},
+        {"supertile": "0x11", "doorIndex": 2}
+      ]
     },
     {
       "id": 6,
@@ -245,7 +255,8 @@
       "locationName": "Secret Room - Bombable Wall (South)",
       "doorPosition": "west",
       "doorLocation": 11,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x11", "doorIndex": 1}]
     },
     {
       "id": 7,
@@ -253,7 +264,8 @@
       "locationName": "Secret Room - Bombable Wall (North)",
       "doorPosition": "west",
       "doorLocation": 11,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x11", "doorIndex": 0}]
     }
   ],
   "obstacles": [

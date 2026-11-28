@@ -165,7 +165,8 @@
       "locationName": "East Wing",
       "doorPosition": "east",
       "doorLocation": 4,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x85", "doorIndex": 1}]
     },
     {
       "id": 2,
@@ -173,7 +174,8 @@
       "locationName": "First Tile Room",
       "doorPosition": "north",
       "doorLocation": 6,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x63", "doorIndex": 0}]
     },
     {
       "id": 3,
@@ -181,7 +183,11 @@
       "locationName": "Top of Long Room",
       "doorPosition": "north",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x53", "doorIndex": 2},
+        {"supertile": "0x43", "doorIndex": 2}
+      ]
     },
     {
       "id": 4,
@@ -189,7 +195,8 @@
       "locationName": "Second Tile Room",
       "doorPosition": "north",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x43", "doorIndex": 1}]
     },
     {
       "id": 5,
@@ -197,7 +204,8 @@
       "locationName": "Boss Door",
       "doorPosition": "north",
       "doorLocation": 9,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x43", "doorIndex": 0}]
     }
   ],
   "strats": [

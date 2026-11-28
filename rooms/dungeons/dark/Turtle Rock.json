@@ -391,7 +391,11 @@
       "locationName": "Entrance Open Room Northwest Door",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xC6", "doorIndex": 0},
+        {"supertile": "0xB6", "doorIndex": 2}
+      ]
     },
     {
       "id": 2,
@@ -399,7 +403,8 @@
       "locationName": "Chain Chomp South Door",
       "doorPosition": "north",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xB6", "doorIndex": 3}]
     },
     {
       "id": 3,
@@ -407,7 +412,8 @@
       "locationName": "Chain Chomp North Door",
       "doorPosition": "north",
       "doorLocation": 10,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xB6", "doorIndex": 0}]
     },
     {
       "id": 4,
@@ -415,7 +421,11 @@
       "locationName": "Door to Lava Tube Center",
       "doorPosition": "east",
       "doorLocation": 13,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x13", "doorIndex": 0},
+        {"supertile": "0x14", "doorIndex": 1}
+      ]
     },
     {
       "id": 5,
@@ -423,7 +433,8 @@
       "locationName": "West Ledge Exit - Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 18,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x23", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -432,6 +443,10 @@
       "doorPosition": "north",
       "doorLocation": 22,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0x24", "doorIndex": 0},
+        {"supertile": "0x14", "doorIndex": 0}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -442,7 +457,8 @@
       "locationName": "Pokey and Empty Pots North Door",
       "doorPosition": "north",
       "doorLocation": 24,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x04", "doorIndex": 1}]
     },
     {
       "id": 8,
@@ -450,7 +466,8 @@
       "locationName": "Pokey and Empty Pots East Door",
       "doorPosition": "east",
       "doorLocation": 24,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x04", "doorIndex": 2}]
     },
     {
       "id": 9,
@@ -458,7 +475,8 @@
       "locationName": "Crystaroller North Door",
       "doorPosition": "north",
       "doorLocation": 25,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x04", "doorIndex": 0}]
     },
     {
       "id": 10,
@@ -466,7 +484,8 @@
       "locationName": "Door to Outside Isolated Ledge",
       "doorPosition": "south",
       "doorLocation": 30,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0xD5", "doorIndex": 0}]
     },
     {
       "id": 11,
@@ -474,7 +493,11 @@
       "locationName": "Entrance to Blue Orange Peg Maze",
       "doorPosition": "west",
       "doorLocation": 29,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xC5", "doorIndex": 0},
+        {"supertile": "0xC4", "doorIndex": 0}
+      ]
     },
     {
       "id": 12,
@@ -482,7 +505,8 @@
       "locationName": "Boss Entrance",
       "doorPosition": "north",
       "doorLocation": 37,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0xB4", "doorIndex": 0}]
     }
   ],
   "obstacles": [

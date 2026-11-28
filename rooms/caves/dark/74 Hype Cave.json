@@ -61,7 +61,8 @@
       "locationName": "Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x11E", "doorIndex": 0}]
     }
   ],
   "strats": [
