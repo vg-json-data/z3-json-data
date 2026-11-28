@@ -40,6 +40,7 @@
       "id": 1,
       "locationName": "Bottom Right Chest",
       "itemLocation": 1,
+      "supertile": "0x3C",
       "item": "FiftyRupees",
       "itemAddress": "0xEB5A"
     },
@@ -47,6 +48,7 @@
       "id": 2,
       "locationName": "Top Right Chest",
       "itemLocation": 1,
+      "supertile": "0x3C",
       "item": "FiftyRupees",
       "itemAddress": "0xEB51"
     },
@@ -54,6 +56,7 @@
       "id": 3,
       "locationName": "Top Left Chest",
       "itemLocation": 1,
+      "supertile": "0x3C",
       "item": "FiftyRupees",
       "itemAddress": "0xEB54"
     },
@@ -61,6 +64,7 @@
       "id": 4,
       "locationName": "Bottom Left Chest",
       "itemLocation": 1,
+      "supertile": "0x3C",
       "item": "FiftyRupees",
       "itemAddress": "0xEB57"
     }
@@ -72,7 +76,11 @@
       "locationName": "Main Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x3C", "doorIndex": 0},
+        {"supertile": "0x2C", "doorIndex": 3}
+      ]
     },
     {
       "id": 2,
@@ -80,7 +88,8 @@
       "locationName": "Plus Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x2C", "doorIndex": 1}]
     },
     {
       "id": 3,
@@ -88,7 +97,8 @@
       "locationName": "Plus Room - Bombable Wall (West)",
       "doorPosition": "west",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x2C", "doorIndex": 2}]
     },
     {
       "id": 4,
@@ -96,7 +106,8 @@
       "locationName": "T-Room - Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 2,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x2C", "doorIndex": 0}]
     }
   ],
   "strats": [

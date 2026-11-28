@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Smithed Item",
       "itemLocation": 1,
+      "supertile": "0x121",
       "item": "L3Sword",
       "itemAddress": "0x18002A"
     }

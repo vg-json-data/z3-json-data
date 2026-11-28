@@ -29,6 +29,7 @@
       "id": 1,
       "locationName": "Secret Chest",
       "itemLocation": 2,
+      "supertile": "0x108",
       "item": "BlueBoomerang",
       "secondaryItem": "TenArrows",
       "itemAddress": "0xE9E9",
@@ -43,7 +44,8 @@
       "locationName": "Bombable Wall (East)",
       "doorPosition": "east",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x108", "doorIndex": 0}]
     }
   ],
   "strats": [

@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Ice Chest",
       "itemLocation": 1,
+      "supertile": "0x120",
       "item": "IceRod",
       "itemAddress": "0xEB4E"
     }
@@ -38,7 +39,8 @@
       "locationName": "Bombable Wall (North)",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x120", "doorIndex": 0}]
     }
   ],
   "strats": [

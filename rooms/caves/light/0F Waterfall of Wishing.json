@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "First Item",
       "itemLocation": 1,
+      "supertile": "0x114",
       "item": "RedBoomerang",
       "itemAddress": "0xE9B0"
     },
@@ -25,6 +26,7 @@
       "id": 2,
       "locationName": "Second Item",
       "itemLocation": 1,
+      "supertile": "0x114",
       "item": "RedShield",
       "itemAddress": "0xE9D1"
     }

@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Left Chest",
       "itemLocation": 1,
+      "supertile": "0x10D",
       "item": "PieceOfHeart",
       "itemAddress": "0xEA73"
     },
@@ -30,6 +31,7 @@
       "id": 2,
       "locationName": "Right Chest",
       "itemLocation": 1,
+      "supertile": "0x10D",
       "item": "TwentyRupees",
       "itemAddress": "0xEA76"
     }

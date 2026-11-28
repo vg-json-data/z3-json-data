@@ -200,6 +200,7 @@
       "subArea": "Ice Palace (Upper Floors)",
       "locationName": "Entrance - Blue Bari Key Drop",
       "itemLocation": 2,
+      "supertile": "0x0E",
       "item": "SmallKey"
     },
     {
@@ -207,6 +208,7 @@
       "subArea": "Ice Palace (Upper Floors)",
       "locationName": "Pengator Compass Chest",
       "itemLocation": 4,
+      "supertile": "0x2E",
       "item": "Compass",
       "itemAddress": "0xE9D4"
     },
@@ -215,6 +217,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Spiky Conveyor - Blue Bari Key Drop",
       "itemLocation": 8,
+      "supertile": "0x3E",
       "item": "SmallKey"
     },
     {
@@ -222,6 +225,7 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Freezor Chest",
       "itemLocation": 12,
+      "supertile": "0x7E",
       "item": "ThreeBombs",
       "itemAddress": "0xE995"
     },
@@ -230,6 +234,7 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Big Chest",
       "itemLocation": 14,
+      "supertile": "0x9E",
       "item": "BlueMail",
       "itemAddress": "0xE9AA"
     },
@@ -238,6 +243,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Spike U Room Chest",
       "itemLocation": 18,
+      "supertile": "0x5F",
       "item": "SmallKey",
       "itemAddress": "0xE9E0"
     },
@@ -246,6 +252,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Map Chest Block Key",
       "itemLocation": 19,
+      "supertile": "0x3F",
       "item": "SmallKey"
     },
     {
@@ -253,6 +260,7 @@
       "subArea": "Ice Palace (Mid-Upper Floors)",
       "locationName": "Map Chest",
       "itemLocation": 19,
+      "supertile": "0x3F",
       "item": "Map",
       "itemAddress": "0xE9DD"
     },
@@ -261,6 +269,7 @@
       "subArea": "Ice Palace (Upper Floors)",
       "locationName": "Big Key Chest",
       "itemLocation": 20,
+      "supertile": "0x1F",
       "item": "BigKey",
       "itemAddress": "0xE9A4"
     },
@@ -269,6 +278,7 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Iced T Chest",
       "itemLocation": 16,
+      "supertile": "0xAE",
       "item": "SmallKey",
       "itemAddress": "0xE9E3"
     },
@@ -277,6 +287,7 @@
       "subArea": "Ice Palace (Mid-Lower Floors)",
       "locationName": "Slippery Pot Room - Pot Key",
       "itemLocation": 21,
+      "supertile": "0x9F",
       "item": "SmallKey"
     },
     {
@@ -284,6 +295,7 @@
       "subArea": "Ice Palace (Lower Floors)",
       "locationName": "Kholdstare - Boss Drop",
       "itemLocation": 28,
+      "supertile": "0xDE",
       "item": "BossHeartContainer",
       "itemAddress": "0x180157"
     },
@@ -292,6 +304,7 @@
       "subArea": "Ice Palace (Lower Floors)",
       "locationName": "Dungeon Prize",
       "itemLocation": 28,
+      "supertile": "0xDE",
       "item": "Crystal5"
     }
   ],
@@ -302,7 +315,8 @@
       "locationName": "Top Left 1F-2F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x0E", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -310,7 +324,11 @@
       "locationName": "Spiky Conveyor South Door",
       "doorPosition": "south",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x3E", "doorIndex": 1},
+        {"supertile": "0x4E", "doorIndex": 1}
+      ]
     },
     {
       "id": 3,
@@ -318,7 +336,11 @@
       "locationName": "Long Fire and Ice Room",
       "doorPosition": "south",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x7E", "doorIndex": 0},
+        {"supertile": "0x8E", "doorIndex": 0}
+      ]
     },
     {
       "id": 4,
@@ -326,7 +348,11 @@
       "locationName": "Spike U Room West Door",
       "doorPosition": "west",
       "doorLocation": 18,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x5E", "doorIndex": 0},
+        {"supertile": "0x5F", "doorIndex": 0}
+      ]
     },
     {
       "id": 5,
@@ -334,7 +360,8 @@
       "locationName": "Pushblock Hole North Door",
       "doorPosition": "north",
       "doorLocation": 22,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x9E", "doorIndex": 1}]
     },
     {
       "id": 6,
@@ -342,7 +369,8 @@
       "locationName": "Pot Drop Room North Door",
       "doorPosition": "north",
       "doorLocation": 23,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x9E", "doorIndex": 0}]
     },
     {
       "id": 7,
@@ -350,7 +378,11 @@
       "locationName": "Door to Final Blue Orange Switch Door",
       "doorPosition": "east",
       "doorLocation": 23,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0xBE", "doorIndex": 1},
+        {"supertile": "0xBF", "doorIndex": 0}
+      ]
     }
   ],
   "obstacles": [

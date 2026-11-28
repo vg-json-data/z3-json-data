@@ -134,6 +134,7 @@
       "subArea": "Skull Woods First Section",
       "locationName": "Map Chest",
       "itemLocation": 1,
+      "supertile": "0x58",
       "item": "Map",
       "itemAddress": "0xE99B"
     },
@@ -142,6 +143,7 @@
       "subArea": "Skull Woods First Section",
       "locationName": "Big Chest",
       "itemLocation": 3,
+      "supertile": "0x58",
       "item": "FireRod",
       "itemAddress": "0xE998"
     },
@@ -150,6 +152,7 @@
       "subArea": "Skull Woods First Section",
       "locationName": "Compass Chest",
       "itemLocation": 5,
+      "supertile": "0x67",
       "item": "Compass",
       "itemAddress": "0xE992"
     },
@@ -158,6 +161,7 @@
       "subArea": "Skull Woods First Section",
       "locationName": "Pot Prison Chest",
       "itemLocation": 6,
+      "supertile": "0x57",
       "item": "SmallKey",
       "itemAddress": "0xE9A1"
     },
@@ -166,6 +170,7 @@
       "subArea": "Skull Woods First Section",
       "locationName": "Pinball Room Chest",
       "itemLocation": 7,
+      "supertile": "0x68",
       "item": "SmallKey",
       "itemAddress": "0xE9C8"
     },
@@ -174,6 +179,7 @@
       "subArea": "Skull Woods Second Section",
       "locationName": "Chest with Big Key",
       "itemLocation": 9,
+      "supertile": "0x57",
       "item": "BigKey",
       "itemAddress": "0xE99E"
     },
@@ -182,6 +188,7 @@
       "subArea": "Skull Woods Second Section",
       "locationName": "Pot Key By Useless Door",
       "itemLocation": 11,
+      "supertile": "0x56",
       "item": "SmallKey"
     },
     {
@@ -189,6 +196,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Final Section Bridge Room Chest",
       "itemLocation": 13,
+      "supertile": "0x59",
       "item": "SmallKey",
       "itemAddress": "0xE9FE"
     },
@@ -197,6 +205,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Pre-Mothula Arena Gibdo Key",
       "itemLocation": 16,
+      "supertile": "0x39",
       "item": "SmallKey"
     },
     {
@@ -204,6 +213,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Mothula - Boss Drop",
       "itemLocation": 17,
+      "supertile": "0x29",
       "item": "BossHeartContainer",
       "itemAddress": "0x180155"
     },
@@ -212,6 +222,7 @@
       "subArea": "Skull Woods Final Section",
       "locationName": "Dungeon Prize",
       "itemLocation": 17,
+      "supertile": "0x29",
       "item": "Crystal3"
     }
   ],
@@ -222,7 +233,8 @@
       "locationName": "Big Chest Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 2,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x58", "doorIndex": 3}]
     },
     {
       "id": 2,
@@ -230,7 +242,11 @@
       "locationName": "Pot Prison East Door",
       "doorPosition": "east",
       "doorLocation": 6,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x57", "doorIndex": 2},
+        {"supertile": "0x58", "doorIndex": 1}
+      ]
     },
     {
       "id": 3,
@@ -238,7 +254,11 @@
       "locationName": "Pinball Room North Door",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x68", "doorIndex": 1},
+        {"supertile": "0x58", "doorIndex": 2}
+      ]
     },
     {
       "id": 4,
@@ -246,7 +266,8 @@
       "locationName": "Chest with Big Key Room - Bombable Wall",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x57", "doorIndex": 0}]
     },
     {
       "id": 5,
@@ -254,7 +275,8 @@
       "locationName": "Locked Door to Useless Room",
       "doorPosition": "north",
       "doorLocation": 11,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x56", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -262,7 +284,11 @@
       "locationName": "Bridge Room North Door",
       "doorPosition": "north",
       "doorLocation": 13,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x59", "doorIndex": 0},
+        {"supertile": "0x49", "doorIndex": 2}
+      ]
     },
     {
       "id": 7,
@@ -270,7 +296,8 @@
       "locationName": "Pre-Mothula Arena",
       "doorPosition": "east",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x39", "doorIndex": 1}]
     }
   ],
   "strats": [

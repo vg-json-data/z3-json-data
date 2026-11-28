@@ -214,6 +214,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Basement Left Path Chest",
       "itemLocation": 2,
+      "supertile": "0x09",
       "item": "SmallKey",
       "itemAddress": "0xEA5B"
     },
@@ -222,6 +223,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Map Chest",
       "itemLocation": 9,
+      "supertile": "0x2B",
       "item": "Map",
       "itemAddress": "0xEA52"
     },
@@ -230,6 +232,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "The Arena Bombable Ledge Chest",
       "itemLocation": 10,
+      "supertile": "0x2A",
       "item": "SmallKey",
       "itemAddress": "0xEA3A"
     },
@@ -238,6 +241,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Stalfos Basement Chest",
       "itemLocation": 12,
+      "supertile": "0x0A",
       "item": "SmallKey",
       "itemAddress": "0xEA49"
     },
@@ -246,6 +250,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Double Bridge Room Big Key Chest",
       "itemLocation": 14,
+      "supertile": "0x3A",
       "item": "BigKey",
       "itemAddress": "0xEA37"
     },
@@ -254,6 +259,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "The Arena Bridge Chest",
       "itemLocation": 15,
+      "supertile": "0x2A",
       "item": "SmallKey",
       "itemAddress": "0xEA3D"
     },
@@ -262,6 +268,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Compass Chest",
       "itemLocation": 20,
+      "supertile": "0x1A",
       "item": "Compass",
       "itemAddress": "0xEA43"
     },
@@ -270,6 +277,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dark Basement Right Chest",
       "itemLocation": 21,
+      "supertile": "0x6A",
       "item": "SmallKey",
       "itemAddress": "0xEA4F"
     },
@@ -278,6 +286,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dark Basement Left Chest",
       "itemLocation": 21,
+      "supertile": "0x6A",
       "item": "OneArrow",
       "itemAddress": "0xEA4C"
     },
@@ -286,6 +295,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Harmless Hellway Chest",
       "itemLocation": 22,
+      "supertile": "0x1A",
       "item": "FiveRupees",
       "itemAddress": "0xEA46"
     },
@@ -294,6 +304,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Dark Maze Top Left Chest",
       "itemLocation": 20,
+      "supertile": "0x19",
       "item": "ThreeBombs",
       "itemAddress": "0xEA55"
     },
@@ -302,6 +313,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Dark Maze Bottom Right Chest",
       "itemLocation": 20,
+      "supertile": "0x19",
       "item": "SmallKey",
       "itemAddress": "0xEA58"
     },
@@ -310,6 +322,7 @@
       "subArea": "Palace of Darkness 1F",
       "locationName": "Big Chest",
       "itemLocation": 23,
+      "supertile": "0x1A",
       "item": "Hammer",
       "itemAddress": "0xEA40"
     },
@@ -318,6 +331,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Helmasaur - Boss Drop",
       "itemLocation": 30,
+      "supertile": "0x5A",
       "item": "BossHeartContainer",
       "itemAddress": "0x180153"
     },
@@ -326,6 +340,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 30,
+      "supertile": "0x5A",
       "item": "Crystal1"
     }
   ],
@@ -336,7 +351,11 @@
       "locationName": "Central Path",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x4A", "doorIndex": 2},
+        {"supertile": "0x3A", "doorIndex": 0}
+      ]
     },
     {
       "id": 2,
@@ -344,7 +363,8 @@
       "locationName": "Teleporter Room South Wall - Bomb or Dash",
       "doorPosition": "south",
       "doorLocation": 5,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x4B", "doorIndex": 2}]
     },
     {
       "id": 3,
@@ -352,7 +372,8 @@
       "locationName": "West Blue Bari Hallway - Bomb or Dash",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x4B", "doorIndex": 1}]
     },
     {
       "id": 4,
@@ -360,7 +381,11 @@
       "locationName": "Map Chest Room West Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x2B", "doorIndex": 1},
+        {"supertile": "0x2A", "doorIndex": 2}
+      ]
     },
     {
       "id": 5,
@@ -368,7 +393,8 @@
       "locationName": "Map Chest Room East Bombable Wall",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x2B", "doorIndex": 0}]
     },
     {
       "id": 6,
@@ -376,7 +402,8 @@
       "locationName": "Stalfos Basement",
       "doorPosition": "north",
       "doorLocation": 13,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x0A", "doorIndex": 0}]
     },
     {
       "id": 7,
@@ -384,7 +411,11 @@
       "locationName": "The Arena North West Door",
       "doorPosition": "north",
       "doorLocation": 18,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x2A", "doorIndex": 1},
+        {"supertile": "0x1A", "doorIndex": 3}
+      ]
     },
     {
       "id": 8,
@@ -392,7 +423,8 @@
       "locationName": "Harmless Hellway Room",
       "doorPosition": "north",
       "doorLocation": 22,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x1A", "doorIndex": 0}]
     },
     {
       "id": 9,
@@ -400,7 +432,11 @@
       "locationName": "Dark Maze Locked Door",
       "doorPosition": "west",
       "doorLocation": 20,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x1A", "doorIndex": 1},
+        {"supertile": "0x19", "doorIndex": 1}
+      ]
     },
     {
       "id": 10,
@@ -408,7 +444,11 @@
       "locationName": "Big Chest Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 23,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x1A", "doorIndex": 2},
+        {"supertile": "0x19", "doorIndex": 0}
+      ]
     },
     {
       "id": 11,
@@ -416,7 +456,8 @@
       "locationName": "Dark Basement Entrance West Door",
       "doorPosition": "west",
       "doorLocation": 26,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x0B", "doorIndex": 2}]
     },
     {
       "id": 12,
@@ -424,7 +465,8 @@
       "locationName": "Dark Basement Boss Door",
       "doorPosition": "north",
       "doorLocation": 28,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x6A", "doorIndex": 0}]
     }
   ],
   "strats": [
@@ -529,7 +571,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 16,
@@ -538,14 +580,14 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 17,
       "link": [5, 6],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 2}
       ]
     },
     {
@@ -553,7 +595,7 @@
       "link": [6, 5],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 1}
+        {"unlockDoor": 2}
       ]
     },
     {
@@ -563,7 +605,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 20,
@@ -572,7 +614,7 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [1]
+      "unlocksDoor": [2]
     },
     {
       "id": 21,
@@ -657,7 +699,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 28,
@@ -666,14 +708,14 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 29,
       "link": [7, 8],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 3}
       ]
     },
     {
@@ -681,7 +723,7 @@
       "link": [8, 7],
       "name": "Base",
       "requires": [
-        {"unlockDoor": 2}
+        {"unlockDoor": 3}
       ]
     },
     {
@@ -691,7 +733,7 @@
       "requires": [
         {"bombs": 1}
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 32,
@@ -700,7 +742,7 @@
       "requires": [
         "canBreakDashableWall"
       ],
-      "unlocksDoor": [2]
+      "unlocksDoor": [3]
     },
     {
       "id": 33,

@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Aginah's Item",
       "itemLocation": 1,
+      "supertile": "0x10A",
       "item": "PieceOfHeart",
       "itemAddress": "0xE9F2"
     }
@@ -33,7 +34,8 @@
       "locationName": "Bombable Wall (South)",
       "doorPosition": "south",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x10A", "doorIndex": 0}]
     }
   ],
   "strats": [

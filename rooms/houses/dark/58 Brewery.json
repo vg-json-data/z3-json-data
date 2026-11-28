@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Brewery Chest",
       "itemLocation": 1,
+      "supertile": "0x106",
       "item": "ThreeHundredRupees",
       "itemAddress": "0xE9EC",
       "devNote": [

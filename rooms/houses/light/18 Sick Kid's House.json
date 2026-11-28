@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Sick Kid",
       "itemLocation": 1,
+      "supertile": "0x102",
       "item": "BugCatchingNet",
       "itemAddress": "0x339CF"
     }

@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Pot Blocked Item",
       "itemLocation": 1,
+      "supertile": "0x11B",
       "item": "PieceOfHeart",
       "itemAddress": "0x180003"
     }

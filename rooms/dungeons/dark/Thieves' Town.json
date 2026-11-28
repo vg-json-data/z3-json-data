@@ -99,6 +99,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Entrance First Chest",
       "itemLocation": 1,
+      "supertile": "0xDB",
       "item": "Map",
       "itemAddress": "0xEA01"
     },
@@ -107,6 +108,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Entrance Ambush Chest",
       "itemLocation": 1,
+      "supertile": "0xCB",
       "item": "TwentyRupees",
       "itemAddress": "0xEA0A"
     },
@@ -115,6 +117,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Entrance Compass Chest",
       "itemLocation": 1,
+      "supertile": "0xDC",
       "item": "Compass",
       "itemAddress": "0xEA07"
     },
@@ -123,6 +126,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Chest with Big Key",
       "itemLocation": 1,
+      "supertile": "0xDB",
       "item": "BigKey",
       "itemAddress": "0xEA04"
     },
@@ -131,6 +135,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Boss Hallway Pot Key",
       "itemLocation": 2,
+      "supertile": "0xBC",
       "item": "SmallKey"
     },
     {
@@ -138,6 +143,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Blue Orange Switch Room Pot Key",
       "itemLocation": 4,
+      "supertile": "0xAB",
       "item": "SmallKey"
     },
     {
@@ -145,6 +151,7 @@
       "subArea": "Thieves' Town 1F",
       "locationName": "Attic Bombable Floor Chest",
       "itemLocation": 6,
+      "supertile": "0x65",
       "item": "ThreeBombs",
       "itemAddress": "0xEA0D"
     },
@@ -153,6 +160,7 @@
       "subArea": "Thieves' Town B2",
       "locationName": "Blind's Cell Chest",
       "itemLocation": 9,
+      "supertile": "0x45",
       "item": "SmallKey",
       "itemAddress": "0xEA13"
     },
@@ -161,6 +169,7 @@
       "subArea": "Thieves' Town B2",
       "locationName": "Big Chest",
       "itemLocation": 10,
+      "supertile": "0x44",
       "item": "TitansMitt",
       "itemAddress": "0xEA10"
     },
@@ -169,6 +178,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Blind - Boss Drop",
       "itemLocation": 11,
+      "supertile": "0xAC",
       "item": "BossHeartContainer",
       "itemAddress": "0x180156"
     },
@@ -177,6 +187,7 @@
       "subArea": "Thieves' Town B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 11,
+      "supertile": "0xAC",
       "item": "Crystal4"
     }
   ],
@@ -187,7 +198,11 @@
       "locationName": "Entrance Dash Bomb Wall",
       "doorPosition": "east",
       "doorLocation": 1,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [
+        {"supertile": "0xCB", "doorIndex": 0},
+        {"supertile": "0xCC", "doorIndex": 2}
+      ]
     },
     {
       "id": 2,
@@ -195,7 +210,11 @@
       "locationName": "Entrance View Port Bomb Wall",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0xCC", "doorIndex": 1},
+        {"supertile": "0xBC", "doorIndex": 3}
+      ]
     },
     {
       "id": 3,
@@ -204,6 +223,10 @@
       "doorPosition": "north",
       "doorLocation": 1,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0xCC", "doorIndex": 0},
+        {"supertile": "0xBC", "doorIndex": 1}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -214,7 +237,8 @@
       "locationName": "Door to Attic",
       "doorPosition": "north",
       "doorLocation": 5,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xAB", "doorIndex": 0}]
     },
     {
       "id": 5,
@@ -231,7 +255,8 @@
       "locationName": "Big Chest Room Locked Door",
       "doorPosition": "west",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x44", "doorIndex": 1}]
     },
     {
       "id": 7,
@@ -239,7 +264,8 @@
       "locationName": "Boss Hallway's Left Door",
       "doorPosition": "west",
       "doorLocation": 2,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xBC", "doorIndex": 0}]
     }
   ],
   "strats": [

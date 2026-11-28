@@ -37,6 +37,7 @@
       "id": 1,
       "locationName": "Ledge Item",
       "itemLocation": 3,
+      "supertile": "0xFE",
       "item": "FiftyRupees",
       "itemAddress": "0xE9BF"
     }

@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "King's Tomb",
       "itemLocation": 1,
+      "supertile": "0x113",
       "item": "Cape",
       "itemAddress": "0xE97A"
     }

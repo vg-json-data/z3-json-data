@@ -53,6 +53,7 @@
       "id": 1,
       "locationName": "Five Chest Room - Far Left",
       "itemLocation": 4,
+      "supertile": "0xEF",
       "item": "TwentyRupees",
       "itemAddress": "0xEB2A"
     },
@@ -60,6 +61,7 @@
       "id": 2,
       "locationName": "Five Chest Room - Mid Left",
       "itemLocation": 4,
+      "supertile": "0xEF",
       "item": "TwentyRupees",
       "itemAddress": "0xEB2D"
     },
@@ -67,6 +69,7 @@
       "id": 3,
       "locationName": "Five Chest Room - Middle",
       "itemLocation": 4,
+      "supertile": "0xEF",
       "item": "TwentyRupees",
       "itemAddress": "0xEB36"
     },
@@ -74,6 +77,7 @@
       "id": 4,
       "locationName": "Five Chest Room - Mid Right",
       "itemLocation": 4,
+      "supertile": "0xEF",
       "item": "TwentyRupees",
       "itemAddress": "0xEB30"
     },
@@ -81,6 +85,7 @@
       "id": 5,
       "locationName": "Five Chest Room - Far Right",
       "itemLocation": 4,
+      "supertile": "0xEF",
       "item": "TwentyRupees",
       "itemAddress": "0xEB33"
     },
@@ -88,6 +93,7 @@
       "id": 6,
       "locationName": "Two Chest Room - Left",
       "itemLocation": 3,
+      "supertile": "0xFF",
       "item": "ThreeBombs",
       "itemAddress": "0xEB39"
     },
@@ -95,6 +101,7 @@
       "id": 7,
       "locationName": "Two Chest Room - Right",
       "itemLocation": 3,
+      "supertile": "0xFF",
       "item": "TenArrows",
       "itemAddress": "0xEB3C"
     }
@@ -106,7 +113,8 @@
       "locationName": "Left Side - To Shop",
       "doorPosition": "north",
       "doorLocation": 1,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0xFF", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -114,7 +122,8 @@
       "locationName": "Right Side - To Two Chest Room",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0xFF", "doorIndex": 1}]
     }
   ],
   "obstacles": [{"id": "Push Block", "note": ["The push block is no longer in the way."]}],

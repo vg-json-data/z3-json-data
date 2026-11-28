@@ -417,6 +417,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Torch Bonk Key (Bob's Torch)",
       "itemLocation": 2,
+      "supertile": "0x8C",
       "item": "SmallKey",
       "itemAddress": "0x180161"
     },
@@ -425,6 +426,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Basement First Left Room - Pot Key",
       "itemLocation": 2,
+      "supertile": "0x8B",
       "item": "SmallKey"
     },
     {
@@ -432,6 +434,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "DMs Room - Top Left",
       "itemLocation": 7,
+      "supertile": "0x7B",
       "item": "ThreeBombs",
       "itemAddress": "0xEAB8"
     },
@@ -440,6 +443,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "DMs Room - Top Right",
       "itemLocation": 7,
+      "supertile": "0x7B",
       "item": "TenArrows",
       "itemAddress": "0xEABB"
     },
@@ -448,6 +452,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "DMs Room - Bottom Left",
       "itemLocation": 7,
+      "supertile": "0x7B",
       "item": "TwentyRupees",
       "itemAddress": "0xEABE"
     },
@@ -456,6 +461,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "DMs Room - Bottom Right",
       "itemLocation": 7,
+      "supertile": "0x7B",
       "item": "TwentyRupees",
       "itemAddress": "0xEAC1"
     },
@@ -464,6 +470,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Map Chest",
       "itemLocation": 9,
+      "supertile": "0x8B",
       "item": "Map",
       "itemAddress": "0xEAD3"
     },
@@ -472,6 +479,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Double Switch Room - Pot Key",
       "itemLocation": 10,
+      "supertile": "0x9B",
       "item": "SmallKey"
     },
     {
@@ -479,6 +487,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Firesnake Chest",
       "itemLocation": 12,
+      "supertile": "0x7D",
       "item": "SmallKey",
       "itemAddress": "0xEAD0"
     },
@@ -487,6 +496,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Randomizer Room - Top Left",
       "itemLocation": 13,
+      "supertile": "0x7C",
       "item": "TenArrows",
       "itemAddress": "0xEAC4"
     },
@@ -495,6 +505,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Randomizer Room - Top Right",
       "itemLocation": 13,
+      "supertile": "0x7C",
       "item": "TenArrows",
       "itemAddress": "0xEAC7"
     },
@@ -503,6 +514,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Randomizer Room - Bottom Left",
       "itemLocation": 13,
+      "supertile": "0x7C",
       "item": "ThreeBombs",
       "itemAddress": "0xEACA"
     },
@@ -511,6 +523,7 @@
       "subArea": "Ganon's Tower (Basement Left)",
       "locationName": "Randomizer Room - Bottom Right",
       "itemLocation": 13,
+      "supertile": "0x7C",
       "item": "ThreeBombs",
       "itemAddress": "0xEACD"
     },
@@ -519,6 +532,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Hope Room - Left",
       "itemLocation": 3,
+      "supertile": "0x8C",
       "item": "TenArrows",
       "itemAddress": "0xEAD9"
     },
@@ -527,6 +541,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Hope Room - Right",
       "itemLocation": 3,
+      "supertile": "0x8C",
       "item": "ThreeBombs",
       "itemAddress": "0xEADC"
     },
@@ -535,6 +550,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Tiles Room Chest",
       "itemLocation": 16,
+      "supertile": "0x8D",
       "item": "SmallKey",
       "itemAddress": "0xEAE2"
     },
@@ -543,6 +559,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Compass Chest Room - Top Left Chest",
       "itemLocation": 21,
+      "supertile": "0x9D",
       "item": "Compass",
       "itemAddress": "0xEAE5"
     },
@@ -551,6 +568,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Compass Chest Room - Top Right Chest",
       "itemLocation": 21,
+      "supertile": "0x9D",
       "item": "OneRupee",
       "itemAddress": "0xEAE8"
     },
@@ -559,6 +577,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Compass Chest Room - Bottom Left Chest",
       "itemLocation": 21,
+      "supertile": "0x9D",
       "item": "TwentyRupees",
       "itemAddress": "0xEAEB"
     },
@@ -567,6 +586,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Compass Chest Room - Bottom Right Chest",
       "itemLocation": 21,
+      "supertile": "0x9D",
       "item": "TenArrows",
       "itemAddress": "0xEAEE"
     },
@@ -575,6 +595,7 @@
       "subArea": "Ganon's Tower (Basement Right)",
       "locationName": "Conveyor Pit Room - Pot Key",
       "itemLocation": 22,
+      "supertile": "0x7B",
       "item": "SmallKey"
     },
     {
@@ -582,6 +603,7 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "locationName": "Big Chest",
       "itemLocation": 25,
+      "supertile": "0x8C",
       "item": "RedMail",
       "itemAddress": "0xEAD6"
     },
@@ -590,6 +612,7 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "locationName": "Bob's Chest",
       "itemLocation": 26,
+      "supertile": "0x8C",
       "item": "TenArrows",
       "itemAddress": "0xEADF"
     },
@@ -598,6 +621,7 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "locationName": "Big Key Room - Left Chest",
       "itemLocation": 28,
+      "supertile": "0x1C",
       "item": "TenArrows",
       "itemAddress": "0xEAF4"
     },
@@ -606,6 +630,7 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "locationName": "Big Key Room - Right Chest",
       "itemLocation": 28,
+      "supertile": "0x1C",
       "item": "ThreeBombs",
       "itemAddress": "0xEAF7"
     },
@@ -614,6 +639,7 @@
       "subArea": "Ganon's Tower (Basement Finale)",
       "locationName": "Big Key Room - Big Key Chest",
       "itemLocation": 28,
+      "supertile": "0x1C",
       "item": "BigKey",
       "itemAddress": "0xEAF1"
     },
@@ -622,6 +648,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Mini Helmasaur Room - Left Chest",
       "itemLocation": 51,
+      "supertile": "0x3D",
       "item": "ThreeBombs",
       "itemAddress": "0xEAFD"
     },
@@ -630,6 +657,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Mini Helmasaur Room - Right Chest",
       "itemLocation": 51,
+      "supertile": "0x3D",
       "item": "ThreeBombs",
       "itemAddress": "0xEB00"
     },
@@ -638,6 +666,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Mini Helmasaur Room - Helmasaur Key Drop",
       "itemLocation": 51,
+      "supertile": "0x3D",
       "item": "SmallKey"
     },
     {
@@ -645,6 +674,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Pre-Moldorm Chest",
       "itemLocation": 53,
+      "supertile": "0x3D",
       "item": "SmallKey",
       "itemAddress": "0xEB03"
     },
@@ -653,6 +683,7 @@
       "subArea": "Ganon's Tower (Top)",
       "locationName": "Moldorm's Validation Chest",
       "itemLocation": 55,
+      "supertile": "0x4D",
       "item": "TwentyRupees",
       "itemAddress": "0xEB06"
     }
@@ -664,7 +695,8 @@
       "locationName": "Door Between Left and Right Entrances",
       "doorPosition": "east",
       "doorLocation": 2,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8C", "doorIndex": 2}]
     },
     {
       "id": 2,
@@ -672,7 +704,8 @@
       "locationName": "Map Chest Entrance",
       "doorPosition": "east",
       "doorLocation": 9,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8B", "doorIndex": 1}]
     },
     {
       "id": 3,
@@ -680,7 +713,8 @@
       "locationName": "Double Switch East Door",
       "doorPosition": "east",
       "doorLocation": 10,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x9B", "doorIndex": 0}]
     },
     {
       "id": 4,
@@ -688,7 +722,8 @@
       "locationName": "Firesnake Room South Door",
       "doorPosition": "south",
       "doorLocation": 12,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x7D", "doorIndex": 2}]
     },
     {
       "id": 5,
@@ -696,7 +731,11 @@
       "locationName": "Teleporter Room Bombable Wall",
       "doorPosition": "west",
       "doorLocation": 12,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [
+        {"supertile": "0x7D", "doorIndex": 1},
+        {"supertile": "0x7C", "doorIndex": 1}
+      ]
     },
     {
       "id": 6,
@@ -704,7 +743,8 @@
       "locationName": "Tile Room Locked Door",
       "doorPosition": "east",
       "doorLocation": 16,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x8D", "doorIndex": 1}]
     },
     {
       "id": 7,
@@ -712,7 +752,11 @@
       "locationName": "Door to Basement Crumble Bridge",
       "doorPosition": "east",
       "doorLocation": 22,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x7B", "doorIndex": 1},
+        {"supertile": "0x7C", "doorIndex": 2}
+      ]
     },
     {
       "id": 8,
@@ -720,7 +764,8 @@
       "locationName": "Armos Knights' Fairies",
       "doorPosition": "north",
       "doorLocation": 29,
-      "keyType": "bomb, boots"
+      "keyType": "bomb, boots",
+      "faces": [{"supertile": "0x1C", "doorIndex": 2}]
     },
     {
       "id": 9,
@@ -729,6 +774,10 @@
       "doorPosition": "north",
       "doorLocation": 33,
       "keyType": "big",
+      "faces": [
+        {"supertile": "0x6B", "doorIndex": 0},
+        {"supertile": "0x5B", "doorIndex": 0}
+      ],
       "devNote": [
         "This door requires a big key to enter it normally, from the south, but a small key to enter from the north."
       ]
@@ -739,7 +788,8 @@
       "locationName": "Mid Climb Fairies Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 37,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x5C", "doorIndex": 0}]
     },
     {
       "id": 11,
@@ -747,7 +797,8 @@
       "locationName": "Mini Helmasaur Room",
       "doorPosition": "west",
       "doorLocation": 51,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x3D", "doorIndex": 1}]
     },
     {
       "id": 12,
@@ -755,7 +806,8 @@
       "locationName": "Pre-Moldorm Bombable Wall",
       "doorPosition": "south",
       "doorLocation": 52,
-      "keyType": "bomb"
+      "keyType": "bomb",
+      "faces": [{"supertile": "0x3D", "doorIndex": 3}]
     },
     {
       "id": 13,
@@ -763,7 +815,11 @@
       "locationName": "Pre-Moldorm Locked Door",
       "doorPosition": "south",
       "doorLocation": 53,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [
+        {"supertile": "0x3D", "doorIndex": 2},
+        {"supertile": "0x4D", "doorIndex": 0}
+      ]
     },
     {
       "id": 14,
@@ -771,7 +827,8 @@
       "locationName": "Agahnim's Door",
       "doorPosition": "north",
       "doorLocation": 58,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x1D", "doorIndex": 0}]
     }
   ],
   "strats": [

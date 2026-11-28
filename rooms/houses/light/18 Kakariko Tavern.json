@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Back Room Chest",
       "itemLocation": 2,
+      "supertile": "0x103",
       "item": "Bottle",
       "itemAddress": "0xE9CE"
     }

@@ -96,6 +96,7 @@
       "subArea": "Agahnim's Tower (Lower)",
       "locationName": "Room 03 Chest",
       "itemLocation": 2,
+      "supertile": "0xE0",
       "item": "SmallKey",
       "itemAddress": "0xEAB5"
     },
@@ -104,6 +105,7 @@
       "subArea": "Agahnim's Tower (Lower)",
       "locationName": "Dark Maze Chest",
       "itemLocation": 3,
+      "supertile": "0xD0",
       "item": "SmallKey",
       "itemAddress": "0xEAB2"
     },
@@ -112,6 +114,7 @@
       "subArea": "Agahnim's Tower (Lower)",
       "locationName": "Dark Guard Key",
       "itemLocation": 6,
+      "supertile": "0xC0",
       "item": "SmallKey"
     },
     {
@@ -119,6 +122,7 @@
       "subArea": "Agahnim's Tower (Upper)",
       "locationName": "Guarded Pot Room Key",
       "itemLocation": 8,
+      "supertile": "0xB0",
       "item": "SmallKey"
     }
   ],
@@ -129,7 +133,8 @@
       "locationName": "Top Right 2F-3F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xE0", "doorIndex": 2}]
     },
     {
       "id": 2,
@@ -137,7 +142,8 @@
       "locationName": "Dark Maze Room Lower Door",
       "doorPosition": "east",
       "doorLocation": 4,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xD0", "doorIndex": 0}]
     },
     {
       "id": 3,
@@ -145,7 +151,8 @@
       "locationName": "Top Right 4F-5F Staircase",
       "doorPosition": "north",
       "doorLocation": 7,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xC0", "doorIndex": 2}]
     },
     {
       "id": 4,
@@ -153,7 +160,8 @@
       "locationName": "Guarded Pot Room",
       "doorPosition": "east",
       "doorLocation": 8,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0xB0", "doorIndex": 2}]
     }
   ],
   "strats": [

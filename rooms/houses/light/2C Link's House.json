@@ -20,6 +20,7 @@
       "id": 1,
       "locationName": "Link's Chest",
       "itemLocation": 1,
+      "supertile": "0x104",
       "item": "Lamp",
       "secondaryItem": "FiveRupees",
       "itemAddress": "0xE9BC"

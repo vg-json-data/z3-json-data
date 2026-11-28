@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Mushroom Reward",
       "itemLocation": 1,
+      "supertile": "0x109",
       "item": "MagicPowder",
       "itemAddress": "0x180014"
     }

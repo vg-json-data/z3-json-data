@@ -43,6 +43,7 @@
       "id": 1,
       "locationName": "Ledge Item",
       "itemLocation": 4,
+      "supertile": "0xEA",
       "item": "PieceOfHeart",
       "itemAddress": "0x180002"
     }

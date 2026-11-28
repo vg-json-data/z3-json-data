@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Guarded Item",
       "itemLocation": 1,
+      "supertile": "0x10C",
       "item": "PieceOfHeart",
       "itemAddress": "0xE9C5"
     }

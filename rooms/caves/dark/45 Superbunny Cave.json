@@ -33,6 +33,7 @@
       "id": 1,
       "locationName": "Top Chest",
       "itemLocation": 3,
+      "supertile": "0xF8",
       "item": "ThreeBombs",
       "itemAddress": "0xEA7C"
     },
@@ -40,6 +41,7 @@
       "id": 2,
       "locationName": "Bottom Chest",
       "itemLocation": 3,
+      "supertile": "0xF8",
       "item": "TwentyRupees",
       "itemAddress": "0xEA7F"
     }

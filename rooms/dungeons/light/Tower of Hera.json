@@ -92,6 +92,7 @@
       "subArea": "Tower of Hera (Lower)",
       "locationName": "Map Chest",
       "itemLocation": 3,
+      "supertile": "0x77",
       "item": "Map",
       "itemAddress": "0xE9AD"
     },
@@ -100,6 +101,7 @@
       "subArea": "Tower of Hera (Lower)",
       "locationName": "Basement Cage",
       "itemLocation": 2,
+      "supertile": "0x87",
       "item": "SmallKey",
       "itemAddress": "0x180162"
     },
@@ -108,6 +110,7 @@
       "subArea": "Tower of Hera (Lower)",
       "locationName": "Chest with Big Key",
       "itemLocation": 4,
+      "supertile": "0x87",
       "item": "BigKey",
       "itemAddress": "0xE9E6"
     },
@@ -116,6 +119,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Compass Chest",
       "itemLocation": 8,
+      "supertile": "0x27",
       "item": "Compass",
       "itemAddress": "0xE9FB"
     },
@@ -124,6 +128,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Big Chest",
       "itemLocation": 9,
+      "supertile": "0x27",
       "item": "MoonPearl",
       "itemAddress": "0xE9F8"
     },
@@ -132,6 +137,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Moldorm - Boss Drop",
       "itemLocation": 11,
+      "supertile": "0x07",
       "item": "BossHeartContainer",
       "itemAddress": "0x180152"
     },
@@ -140,6 +146,7 @@
       "subArea": "Tower of Hera (Upper)",
       "locationName": "Dungeon Prize",
       "itemLocation": 11,
+      "supertile": "0x07",
       "item": "PendantOfPower"
     }
   ],
@@ -150,7 +157,8 @@
       "locationName": "Top Left 1F-2F Staircase",
       "doorPosition": "north",
       "doorLocation": 3,
-      "keyType": "small"
+      "keyType": "small",
+      "faces": [{"supertile": "0x77", "doorIndex": 0}]
     },
     {
       "id": 2,
@@ -158,7 +166,8 @@
       "locationName": "Top Left 3F Big Key Door",
       "doorPosition": "north",
       "doorLocation": 6,
-      "keyType": "big"
+      "keyType": "big",
+      "faces": [{"supertile": "0x31", "doorIndex": 0}]
     }
   ],
   "strats": [

@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Chest Game",
       "itemLocation": 2,
+      "supertile": "0x106",
       "item": "PieceOfHeart",
       "itemAddress": "0xEDA8"
     }

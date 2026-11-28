@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Bookcase Item",
       "itemLocation": 1,
+      "supertile": "0x107",
       "item": "BookOfMudora",
       "itemAddress": "0x180012"
     }
