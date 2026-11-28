@@ -81,6 +81,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Cannonball Chest",
       "itemLocation": 2,
+      "supertile": "0xB9",
       "item": "OneHundredRupees",
       "itemAddress": "0xE9B3"
     },
@@ -89,6 +90,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Map Chest",
       "itemLocation": 2,
+      "supertile": "0xAA",
       "item": "Map",
       "itemAddress": "0xE9F5"
     },
@@ -97,6 +99,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Compass Chest",
       "itemLocation": 4,
+      "supertile": "0xA8",
       "item": "Compass",
       "itemAddress": "0xE977"
     },
@@ -105,6 +108,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Dark Pot Room",
       "itemLocation": 6,
+      "supertile": "0xBA",
       "item": "SmallKey"
     },
     {
@@ -112,6 +116,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Chest with Big Key",
       "itemLocation": 7,
+      "supertile": "0xB8",
       "item": "BigKey",
       "itemAddress": "0xE9B9"
     },
@@ -120,6 +125,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Big Chest",
       "itemLocation": 4,
+      "supertile": "0xA9",
       "item": "Bow",
       "itemAddress": "0xE97D"
     },
@@ -128,6 +134,7 @@
       "subArea": "Eastern Palace 1F",
       "locationName": "Dark Eyegore Room",
       "itemLocation": 4,
+      "supertile": "0x99",
       "item": "SmallKey"
     },
     {
@@ -135,6 +142,7 @@
       "subArea": "Eastern Palace 2F",
       "locationName": "Armos Knights - Boss Drop",
       "itemLocation": 9,
+      "supertile": "0xC8",
       "item": "BossHeartContainer",
       "itemAddress": "0x180150"
     },
@@ -143,6 +151,7 @@
       "subArea": "Eastern Palace 2F",
       "locationName": "Dungeon Prize",
       "itemLocation": 9,
+      "supertile": "0xC8",
       "item": "PendantOfCourage"
     }
   ],

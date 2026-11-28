@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Sahasrahla's Reward",
       "itemLocation": 1,
+      "supertile": "0x105",
       "item": "PegasusBoots",
       "itemAddress": "0x2F1FC"
     },
@@ -30,6 +31,7 @@
       "id": 2,
       "locationName": "Left Secret Chest",
       "itemLocation": 2,
+      "supertile": "0x105",
       "item": "FiftyRupees",
       "itemAddress": "0xEA82"
     },
@@ -37,6 +39,7 @@
       "id": 3,
       "locationName": "Middle Secret Chest",
       "itemLocation": 2,
+      "supertile": "0x105",
       "item": "ThreeBombs",
       "itemAddress": "0xEA85"
     },
@@ -44,6 +47,7 @@
       "id": 4,
       "locationName": "Right Secret Chest",
       "itemLocation": 2,
+      "supertile": "0x105",
       "item": "FiftyRupees",
       "itemAddress": "0xEA88"
     }

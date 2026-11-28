@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Blocked Item",
       "itemLocation": 1,
+      "supertile": "0x126",
       "item": "PieceOfHeart",
       "itemAddress": "0x180005"
     }

@@ -164,6 +164,7 @@
       "subArea": "Swamp Palace 1F",
       "locationName": "Entrance Room Chest",
       "itemLocation": 2,
+      "supertile": "0x28",
       "item": "SmallKey",
       "itemAddress": "0xEA9D"
     },
@@ -172,6 +173,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Map Chest",
       "itemLocation": 3,
+      "supertile": "0x37",
       "item": "Map",
       "itemAddress": "0xE986"
     },
@@ -180,6 +182,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Middle Floor Eastern Room Pot Key",
       "itemLocation": 4,
+      "supertile": "0x38",
       "item": "SmallKey"
     },
     {
@@ -187,6 +190,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Eastern Floodable Pot Key",
       "itemLocation": 5,
+      "supertile": "0x37",
       "item": "SmallKey"
     },
     {
@@ -194,6 +198,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Compass Chest",
       "itemLocation": 7,
+      "supertile": "0x46",
       "item": "Compass",
       "itemAddress": "0xEAA0"
     },
@@ -202,6 +207,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Big Chest",
       "itemLocation": 7,
+      "supertile": "0x36",
       "item": "Hookshot",
       "itemAddress": "0xE989"
     },
@@ -210,6 +216,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Hookshot Pot Key",
       "itemLocation": 7,
+      "supertile": "0x36",
       "item": "SmallKey"
     },
     {
@@ -217,6 +224,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Western Floodable Pot Key",
       "itemLocation": 8,
+      "supertile": "0x35",
       "item": "SmallKey"
     },
     {
@@ -224,6 +232,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "West Chest",
       "itemLocation": 12,
+      "supertile": "0x34",
       "item": "TwentyRupees",
       "itemAddress": "0xEAA3"
     },
@@ -232,6 +241,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Chest with Big Key",
       "itemLocation": 14,
+      "supertile": "0x35",
       "item": "BigKey",
       "itemAddress": "0xEAA6"
     },
@@ -240,6 +250,7 @@
       "subArea": "Swamp Palace B2",
       "locationName": "Flooded Room Left Chest",
       "itemLocation": 17,
+      "supertile": "0x76",
       "item": "TwentyRupees",
       "itemAddress": "0xEAA9"
     },
@@ -248,6 +259,7 @@
       "subArea": "Swamp Palace B2",
       "locationName": "Flooded Room Right Chest",
       "itemLocation": 17,
+      "supertile": "0x76",
       "item": "TwentyRupees",
       "itemAddress": "0xEAAC"
     },
@@ -256,6 +268,7 @@
       "subArea": "Swamp Palace B2",
       "locationName": "Waterfall Room Chest",
       "itemLocation": 18,
+      "supertile": "0x66",
       "item": "TwentyRupees",
       "itemAddress": "0xEAAF"
     },
@@ -264,6 +277,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Fast River Room Pot Key",
       "itemLocation": 20,
+      "supertile": "0x16",
       "item": "SmallKey"
     },
     {
@@ -271,6 +285,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Arrghus - Boss Drop",
       "itemLocation": 22,
+      "supertile": "0x06",
       "item": "BossHeartContainer",
       "itemAddress": "0x180154"
     },
@@ -279,6 +294,7 @@
       "subArea": "Swamp Palace B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 22,
+      "supertile": "0x06",
       "item": "Crystal2"
     }
   ],

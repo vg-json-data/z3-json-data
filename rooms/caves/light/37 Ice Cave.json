@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Ice Chest",
       "itemLocation": 1,
+      "supertile": "0x120",
       "item": "IceRod",
       "itemAddress": "0xEB4E"
     }

@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Hammer Peg Cave Item",
       "itemLocation": 1,
+      "supertile": "0x127",
       "item": "PieceOfHeart",
       "itemAddress": "0x180006"
     }

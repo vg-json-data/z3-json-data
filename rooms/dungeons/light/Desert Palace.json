@@ -86,6 +86,7 @@
       "subArea": "Desert Palace B1",
       "locationName": "Map Chest",
       "itemLocation": 1,
+      "supertile": "0x74",
       "item": "Map",
       "itemAddress": "0xE9B6"
     },
@@ -94,6 +95,7 @@
       "subArea": "Desert Palace B1",
       "locationName": "Bonk Torch",
       "itemLocation": 1,
+      "supertile": "0x73",
       "item": "SmallKey",
       "itemAddress": "0x180160"
     },
@@ -102,6 +104,7 @@
       "subArea": "Desert Palace B1",
       "locationName": "Compass Chest",
       "itemLocation": 4,
+      "supertile": "0x85",
       "item": "Compass",
       "itemAddress": "0xE9CB"
     },
@@ -110,6 +113,7 @@
       "subArea": "Desert Palace B1",
       "locationName": "Chest with Big Key",
       "itemLocation": 4,
+      "supertile": "0x75",
       "item": "BigKey",
       "itemAddress": "0xE9C2"
     },
@@ -118,6 +122,7 @@
       "subArea": "Desert Palace B1",
       "locationName": "Big Chest",
       "itemLocation": 1,
+      "supertile": "0x73",
       "item": "PowerGlove",
       "itemAddress": "0xE98F"
     },
@@ -126,6 +131,7 @@
       "subArea": "Desert Palace 1F",
       "locationName": "First Tile Room Pot",
       "itemLocation": 5,
+      "supertile": "0x63",
       "item": "SmallKey"
     },
     {
@@ -133,6 +139,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Long Room Pot",
       "itemLocation": 8,
+      "supertile": "0x53",
       "item": "SmallKey"
     },
     {
@@ -140,6 +147,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Second Tile Room Pot",
       "itemLocation": 8,
+      "supertile": "0x43",
       "item": "SmallKey"
     },
     {
@@ -147,6 +155,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Lanmolas - Boss Drop",
       "itemLocation": 10,
+      "supertile": "0x33",
       "item": "BossHeartContainer",
       "itemAddress": "0x180151"
     },
@@ -155,6 +164,7 @@
       "subArea": "Desert Palace 2F",
       "locationName": "Dungeon Prize",
       "itemLocation": 10,
+      "supertile": "0x33",
       "item": "PendantOfWisdom"
     }
   ],

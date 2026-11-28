@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Floodgate Chest",
       "itemLocation": 1,
+      "supertile": "0x10B",
       "item": "ThreeBombs",
       "itemAddress": "0xE98C"
     }

@@ -307,6 +307,7 @@ The optional `items` array defines item locations within a room. Each item has:
 - `id`: An item-location ID unique within the room and referenced by a strat's `collectsItems`.
 - `locationName`: A descriptive name for the location.
 - `itemLocation`: The node most naturally associated with collecting the item.
+- `supertile`: The hexadecimal underworld room number where Link receives the item. Dungeon, cave, and house pickups include this field. Overworld and special-area pickups omit it. Several pickups can share a supertile.
 - `item`: The vanilla item or item receipt at the location.
 - `secondaryItem`: Optional alternate vanilla item name as a string, provided as useful reference information. Usually, this item is received when Link already owns the primary `item` from the chest; exceptions are described in `devNote`.
 - `itemAddress`: Optional hexadecimal string giving the unheadered ROM file offset of the location-specific item receipt-ID byte. Omitted when the location has no independent item receipt-ID byte.
@@ -319,6 +320,7 @@ The optional `items` array defines item locations within a room. Each item has:
   "id": 1,
   "locationName": "Five Chest Room - Far Left",
   "itemLocation": 4,
+  "supertile": "0xEF",
   "item": "TwentyRupees",
   "itemAddress": "0xEB2A"
 }

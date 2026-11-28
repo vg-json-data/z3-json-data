@@ -271,6 +271,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Compass Chest",
       "itemLocation": 3,
+      "supertile": "0xD6",
       "item": "Compass",
       "itemAddress": "0xEA22"
     },
@@ -279,6 +280,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Map Chest",
       "itemLocation": 8,
+      "supertile": "0xB7",
       "item": "Map",
       "itemAddress": "0xEA1C"
     },
@@ -287,6 +289,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Roller Room - Right Chest",
       "itemLocation": 8,
+      "supertile": "0xB7",
       "item": "SmallKey",
       "itemAddress": "0xEA1F"
     },
@@ -295,6 +298,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Pokey Room - Hokkubokku Key",
       "itemLocation": 9,
+      "supertile": "0xB6",
       "item": "SmallKey"
     },
     {
@@ -302,6 +306,7 @@
       "subArea": "Turtle Rock 1F",
       "locationName": "Chain Chomp Chest",
       "itemLocation": 10,
+      "supertile": "0xB6",
       "item": "SmallKey",
       "itemAddress": "0xEA16"
     },
@@ -310,6 +315,7 @@
       "subArea": "Turtle Rock B1",
       "locationName": "Pokey Bubble Key",
       "itemLocation": 13,
+      "supertile": "0x13",
       "item": "SmallKey"
     },
     {
@@ -317,6 +323,7 @@
       "subArea": "Turtle Rock B1",
       "locationName": "Lava Tube Chest",
       "itemLocation": 15,
+      "supertile": "0x14",
       "item": "BigKey",
       "itemAddress": "0xEA25"
     },
@@ -325,6 +332,7 @@
       "subArea": "Turtle Rock B1",
       "locationName": "Big Chest",
       "itemLocation": 21,
+      "supertile": "0x24",
       "item": "MirrorShield",
       "itemAddress": "0xEA19"
     },
@@ -333,6 +341,7 @@
       "subArea": "Turtle Rock B1",
       "locationName": "Crystaroller Chest",
       "itemLocation": 25,
+      "supertile": "0x04",
       "item": "SmallKey",
       "itemAddress": "0xEA34"
     },
@@ -341,6 +350,7 @@
       "subArea": "Turtle Rock B2",
       "locationName": "Laser Bridge Top Right Chest",
       "itemLocation": 31,
+      "supertile": "0xD5",
       "item": "OneRupee",
       "itemAddress": "0xEA28"
     },
@@ -349,6 +359,7 @@
       "subArea": "Turtle Rock B2",
       "locationName": "Laser Bridge Top Left Chest",
       "itemLocation": 32,
+      "supertile": "0xD5",
       "item": "FiveRupees",
       "itemAddress": "0xEA2B"
     },
@@ -357,6 +368,7 @@
       "subArea": "Turtle Rock B2",
       "locationName": "Laser Bridge Bottom Right Chest",
       "itemLocation": 33,
+      "supertile": "0xD5",
       "item": "TwentyRupees",
       "itemAddress": "0xEA2E"
     },
@@ -365,6 +377,7 @@
       "subArea": "Turtle Rock B2",
       "locationName": "Laser Bridge Bottom Left Chest",
       "itemLocation": 34,
+      "supertile": "0xD5",
       "item": "SmallKey",
       "itemAddress": "0xEA31"
     },
@@ -373,6 +386,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Trinexx - Boss Drop",
       "itemLocation": 39,
+      "supertile": "0xA4",
       "item": "BossHeartContainer",
       "itemAddress": "0x180159"
     },
@@ -381,6 +395,7 @@
       "subArea": "Palace of Darkness B1",
       "locationName": "Dungeon Prize",
       "itemLocation": 39,
+      "supertile": "0xA4",
       "item": "Crystal7"
     }
   ],

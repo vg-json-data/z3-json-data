@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Generous Guy",
       "itemLocation": 1,
+      "supertile": "0x11E",
       "item": "ThreeHundredRupees",
       "itemAddress": "0x180011"
     },
@@ -30,6 +31,7 @@
       "id": 2,
       "locationName": "Top Chest",
       "itemLocation": 2,
+      "supertile": "0x11E",
       "item": "TwentyRupees",
       "itemAddress": "0xEB1E"
     },
@@ -37,6 +39,7 @@
       "id": 3,
       "locationName": "Top Middle Chest",
       "itemLocation": 2,
+      "supertile": "0x11E",
       "item": "TwentyRupees",
       "itemAddress": "0xEB21"
     },
@@ -44,6 +47,7 @@
       "id": 4,
       "locationName": "Bottom Middle Chest",
       "itemLocation": 2,
+      "supertile": "0x11E",
       "item": "TwentyRupees",
       "itemAddress": "0xEB24"
     },
@@ -51,6 +55,7 @@
       "id": 5,
       "locationName": "Bottom Chest",
       "itemLocation": 2,
+      "supertile": "0x11E",
       "item": "TwentyRupees",
       "itemAddress": "0xEB27"
     }

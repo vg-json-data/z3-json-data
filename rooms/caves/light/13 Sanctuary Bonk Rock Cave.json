@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "Chest",
       "itemLocation": 1,
+      "supertile": "0x124",
       "item": "PieceOfHeart",
       "itemAddress": "0xEB3F"
     }

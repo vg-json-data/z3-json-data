@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Left Chest",
       "itemLocation": 2,
+      "supertile": "0x11D",
       "item": "TwentyRupees",
       "itemAddress": "0xEB18"
     },
@@ -35,6 +36,7 @@
       "id": 2,
       "locationName": "Mid Left Chest",
       "itemLocation": 2,
+      "supertile": "0x11D",
       "item": "TwentyRupees",
       "itemAddress": "0xEB12"
     },
@@ -42,6 +44,7 @@
       "id": 3,
       "locationName": "Mid Right Chest",
       "itemLocation": 2,
+      "supertile": "0x11D",
       "item": "TwentyRupees",
       "itemAddress": "0xEB15"
     },
@@ -49,6 +52,7 @@
       "id": 4,
       "locationName": "Right Chest",
       "itemLocation": 2,
+      "supertile": "0x11D",
       "item": "TwentyRupees",
       "itemAddress": "0xEB1B"
     },
@@ -56,6 +60,7 @@
       "id": 5,
       "locationName": "Hidden Chest",
       "itemLocation": 3,
+      "supertile": "0x11D",
       "item": "PieceOfHeart",
       "itemAddress": "0xEB0F"
     }

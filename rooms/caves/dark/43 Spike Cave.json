@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Chest",
       "itemLocation": 2,
+      "supertile": "0x117",
       "item": "CaneOfByrna",
       "itemAddress": "0xEA8B"
     }

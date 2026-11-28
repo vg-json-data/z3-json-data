@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Magic Bat Reward",
       "itemLocation": 3,
+      "supertile": "0xE3",
       "item": "HalfMagic",
       "itemAddress": "0x180015"
     }

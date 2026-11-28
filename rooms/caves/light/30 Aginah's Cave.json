@@ -23,6 +23,7 @@
       "id": 1,
       "locationName": "Aginah's Item",
       "itemLocation": 1,
+      "supertile": "0x10A",
       "item": "PieceOfHeart",
       "itemAddress": "0xE9F2"
     }

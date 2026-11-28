@@ -280,6 +280,11 @@
             "type": "integer",
             "minimum": 1
           },
+          "supertile": {
+            "description": "Native underworld room number where the item is collected, in hexadecimal.",
+            "type": "string",
+            "pattern": "^0x[0-9A-Fa-f]+$"
+          },
           "world": {
             "type": "string",
             "enum": ["light", "dark"]

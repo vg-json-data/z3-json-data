@@ -28,6 +28,7 @@
       "id": 1,
       "locationName": "Left Chest",
       "itemLocation": 2,
+      "supertile": "0x123",
       "item": "ThreeBombs",
       "itemAddress": "0xEB42"
     },
@@ -35,6 +36,7 @@
       "id": 2,
       "locationName": "Mid Left Chest",
       "itemLocation": 2,
+      "supertile": "0x123",
       "item": "TwentyRupees",
       "itemAddress": "0xEB45"
     },
@@ -42,6 +44,7 @@
       "id": 3,
       "locationName": "Mid Right Chest",
       "itemLocation": 2,
+      "supertile": "0x123",
       "item": "TwentyRupees",
       "itemAddress": "0xEB48"
     },
@@ -49,6 +52,7 @@
       "id": 4,
       "locationName": "Right Chest",
       "itemLocation": 2,
+      "supertile": "0x123",
       "item": "TenArrows",
       "itemAddress": "0xEB4B"
     },
@@ -56,6 +60,7 @@
       "id": 5,
       "locationName": "Generous Guy",
       "itemLocation": 2,
+      "supertile": "0x123",
       "item": "ThreeHundredRupees",
       "itemAddress": "0x180010"
     }

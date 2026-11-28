@@ -18,6 +18,7 @@
       "id": 1,
       "locationName": "C-Shaped House Chest",
       "itemLocation": 1,
+      "supertile": "0x11C",
       "item": "ThreeHundredRupees",
       "itemAddress": "0xE9EF"
     }

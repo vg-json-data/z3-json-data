@@ -29,6 +29,7 @@
       "id": 1,
       "locationName": "Secret Chest",
       "itemLocation": 2,
+      "supertile": "0x108",
       "item": "BlueBoomerang",
       "secondaryItem": "TenArrows",
       "itemAddress": "0xE9E9",
